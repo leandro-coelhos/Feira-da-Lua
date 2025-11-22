@@ -1,6 +1,7 @@
 from django.test import TestCase
 from .service import CreateUser, GetUserById, GetUserByEmail, UpdateUser, DeleteUser
 from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail, UpdateMarketer, DeleteMarketer
+from marketplace.models import MarketPlace
 
 # Service tests
 
@@ -46,5 +47,35 @@ class MarketerServiceTest(TestCase):
           marketer_id = marketer.user.id
           DeleteMarketer(marketer_id)
           self.assertIsNone(GetMarketerById(marketer_id))
+
+class AvaliationServiceTest(TestCase):
+     def test_create_avaliation(self):
+          user = CreateUser(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva")
+          marketePlace = MarketPlace(name="Feira da Lua", marketer=None, address="Some Address", coordinates="0,0")
+          avaliation = CreateAvaliation(user=user, marketplace=marketePlace, grade=5, comment="Great marketplace!")
+          self.assertIsNotNone(avaliation)
+
+     def test_get_avaliation(self):
+          user = CreateUser(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva")
+          marketePlace = MarketPlace(name="Feira da Lua", marketer=None, address="Some Address", coordinates="0,0")
+          avaliation = CreateAvaliation(user=user, marketplace=marketePlace, grade=5, comment="Great marketplace!")
+          self.assertEqual(avaliation, GetAvaliationById(avaliation.id))
+     
+     def test_update_avaliation(self):
+          user = CreateUser(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva")
+          marketePlace = MarketPlace(name="Feira da Lua", marketer=None, address="Some Address", coordinates="0,0")
+          avaliation = CreateAvaliation(user=user, marketplace=marketePlace, grade=5, comment="Great marketplace!")
+          UpdateAvaliation(avaliation.id, grade=4, comment="Good marketplace.")
+          avaliation = GetAvaliationById(avaliation.id)
+          self.assertEqual(avaliation.grade, 4)
+          self.assertEqual(avaliation.comment, "Good marketplace.")
+
+     def test_delete_avaliation(self):
+          user = CreateUser(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva")
+          marketePlace = MarketPlace(name="Feira da Lua", marketer=None, address="Some Address", coordinates="0,0")
+          avaliation = CreateAvaliation(user=user, marketplace=marketePlace, grade=5, comment="Great marketplace!")
+          avaliation_id = avaliation.id
+          DeleteAvaliation(avaliation_id)
+          self.assertIsNone(GetAvaliationById(avaliation_id))
 
 # Create your tests here.
