@@ -21,7 +21,7 @@ def CreateMarketPlace(name: str, marketer: Marketer, address: str, coordinates: 
     marketplace.save()
     return marketplace
 
-def GetMarketplaceById(marketplace_id: int):
+def GetMarketplaceById(marketplace_id: int) -> MarketPlace | None:
     """
     Obtém um marketplace pelo seu ID.
 
@@ -29,14 +29,16 @@ def GetMarketplaceById(marketplace_id: int):
     @return O objeto MarketPlace correspondente ao ID informado, 
             ou None caso não exista.
     """
-    return None  # implementação mínima para falhar nos testes
+    try:
+        return MarketPlace.objects.get(id=marketplace_id)
+    except MarketPlace.DoesNotExist:
+        return None
 
 
-def GetAllMarketPlaces():
+def GetAllMarketPlaces() -> list[MarketPlace]:
     """
     Retorna todos os marketplaces cadastrados.
 
     @return Uma lista contendo todos os objetos MarketPlace existentes.
     """
-    return []  # implementação mínima para falhar nos testes
-
+    return list(MarketPlace.objects.all())
