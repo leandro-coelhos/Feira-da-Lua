@@ -34,3 +34,4 @@ def GetUserByEmail(email: str) -> User:
      @return O objeto User correspondente ao email fornecido.
      """
      return User.objects.get(email=email)
+
