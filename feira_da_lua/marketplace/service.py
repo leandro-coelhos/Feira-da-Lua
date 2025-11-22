@@ -42,3 +42,16 @@ def GetAllMarketPlaces() -> list[MarketPlace]:
     @return Uma lista contendo todos os objetos MarketPlace existentes.
     """
     return list(MarketPlace.objects.all())
+
+def UpdateMarketPlace(marketplace_id: int, name=None, address=None, coordinates=None):
+    """
+    Atualiza um marketplace existente.
+
+    @param marketplace_id: ID do marketplace a ser atualizado.
+    @param name: Novo nome (opcional).
+    @param address: Novo endereço (opcional).
+    @param coordinates: Novas coordenadas (opcional).
+
+    @return O objeto atualizado, ou None caso não exista.
+    """
+    pass

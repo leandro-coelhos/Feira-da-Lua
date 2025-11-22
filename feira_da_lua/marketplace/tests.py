@@ -3,7 +3,8 @@ from users.models import User, Marketer
 from marketplace.service import (
     CreateMarketPlace,
     GetMarketplaceById,
-    GetAllMarketPlaces
+    GetAllMarketPlaces,
+    UpdateMarketPlace
 )
 
 
@@ -88,3 +89,60 @@ class MarketPlaceServiceReadTest(TestCase):
         self.assertEqual(len(marketplaces), 2)
         self.assertIn(self.market1, marketplaces)
         self.assertIn(self.market2, marketplaces)
+
+class MarketPlaceServiceUpdateTest(TestCase):
+
+    def setUp(self):
+        # Criar user
+        self.user = User.objects.create(
+            email="update@example.com",
+            username="update_user",
+            password="123456",
+            complete_name="User Update"
+        )
+
+        # Criar marketer
+        self.marketer = Marketer.objects.create(
+            user=self.user,
+            cellphone="61988888888"
+        )
+
+        # Criar marketplace inicial
+        self.marketplace = CreateMarketPlace(
+            name="Feira Antiga",
+            marketer=self.marketer,
+            address="Rua Velha",
+            coordinates="1,1"
+        )
+
+    def test_update_marketplace(self):
+        updated = UpdateMarketPlace(
+            marketplace_id=self.marketplace.id,
+            name="Feira Nova",
+            address="Rua Nova",
+            coordinates="2,2"
+        )
+
+        self.assertIsNotNone(updated)
+        self.assertEqual(updated.name, "Feira Nova")
+        self.assertEqual(updated.address, "Rua Nova")
+        self.assertEqual(updated.coordinates, "2,2")
+
+    def test_partial_update_marketplace(self):
+        updated = UpdateMarketPlace(
+            marketplace_id=self.marketplace.id,
+            address="Rua Atualizada"
+        )
+
+        self.assertIsNotNone(updated)
+        self.assertEqual(updated.address, "Rua Atualizada")
+        # Campos não passados devem permanecer iguais
+        self.assertEqual(updated.name, "Feira Antiga")
+
+    def test_update_marketplace_not_found(self):
+        updated = UpdateMarketPlace(
+            marketplace_id=999,
+            name="Inexistente"
+        )
+
+        self.assertIsNone(updated)
