@@ -23,7 +23,11 @@ def GetUserById(user_id: int) -> User:
 
      @return O objeto User correspondente ao ID fornecido.
      """
-     return User.objects.get(id=user_id)
+     try:
+          user = User.objects.get(id=user_id)
+     except User.DoesNotExist:
+          return None
+     return user
 
 def GetUserByEmail(email: str) -> User:
      """
@@ -57,5 +61,14 @@ def UpdateUser(user_id: int, username: str = None, complete_name: str = None, pa
 
      return user
 
+def DeleteUser(user_id: int) -> None:
+     """
+     Deleta um usuário pelo seu ID.
 
+     @param user_id: O ID do usuário a ser deletado.
+     """
+     user = GetUserById(user_id)
+     user.delete()
+
+     return None
 
