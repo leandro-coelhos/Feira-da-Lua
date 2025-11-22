@@ -149,3 +149,16 @@ def UpdateMarketer(marketer_id: int, username: str = None, complete_name: str = 
      marketer.save()
 
      return marketer
+
+def DeleteMarketer(marketer_id: int) -> None:
+     """
+     Deleta um marketer pelo seu ID.
+
+     @param marketer_id: O ID do marketer a ser deletado.
+     """
+     marketer = GetMarketerById(marketer_id)
+     user = marketer.user
+     marketer.delete()
+     user.delete()
+
+     return None
