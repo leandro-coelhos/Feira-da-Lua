@@ -1,6 +1,6 @@
 from django.test import TestCase
 from .service import CreateUser, GetUserById, GetUserByEmail, UpdateUser, DeleteUser
-from .service import CreateMarketer
+from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail
 
 # Service tests
 
@@ -31,19 +31,19 @@ class MarketerServiceTest(TestCase):
           self.assertIsNotNone(marketer)
      def test_get_marketer(self):
           marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
-          self.assertEqual(marketer, GetMarketerById(marketer.id))
-          self.assertEqual(marketer, GetMarketerByEmail(marketer.email))
+          self.assertEqual(marketer, GetMarketerById(marketer.user.id))
+          self.assertEqual(marketer, GetMarketerByEmail(marketer.user.email))
      def test_update_marketer(self):
           marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
-          UpdateMarketer(marketer.id, username="newusername", complete_name="New Name", password="newpassword", cellphone="987654321")
-          marketer = GetMarketerById(marketer.id)
-          self.assertEqual(marketer.username, "newusername")
-          self.assertEqual(marketer.complete_name, "New Name")
-          self.assertEqual(marketer.password, "newpassword")
+          UpdateMarketer(marketer.user.id, username="newusername", complete_name="New Name", password="newpassword", cellphone="987654321")
+          marketer = GetMarketerById(marketer.user.id)
+          self.assertEqual(marketer.user.username, "newusername")
+          self.assertEqual(marketer.user.complete_name, "New Name")
+          self.assertEqual(marketer.user.password, "newpassword")
           self.assertEqual(marketer.cellphone, "987654321")
      def test_delete_marketer(self):
           marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
-          marketer_id = marketer.id
+          marketer_id = marketer.user.id
           DeleteMarketer(marketer_id)
           self.assertIsNone(GetMarketerById(marketer_id))
 

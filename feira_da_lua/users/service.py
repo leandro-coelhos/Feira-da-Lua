@@ -93,3 +93,32 @@ def CreateMarketer(email: str, username: str, password: str, complete_name: str,
      marketer = Marketer(user=user, cellphone=cellphone)
      marketer.save()
      return marketer
+
+def GetMarketerById(marketer_id: int) -> Marketer:
+     """
+     Recupera um marketer pelo seu ID.
+
+     @param marketer_id: O ID do marketer.
+
+     @return O objeto Marketer correspondente ao ID fornecido.
+     """
+     try:
+          marketer = Marketer.objects.get(user__id=marketer_id)
+     except Marketer.DoesNotExist:
+          return None
+     return marketer
+
+def GetMarketerByEmail(email: str) -> Marketer:
+     """
+     Recupera um marketer pelo seu email.
+
+     @param email: O email do marketer.
+
+     @return O objeto Marketer correspondente ao email fornecido.
+     """
+     user = GetUserByEmail(email)
+     try:
+          marketer = Marketer.objects.get(user=user)
+     except Marketer.DoesNotExist:
+          return None
+     return marketer
