@@ -76,6 +76,13 @@ def DeleteMarketPlace(marketplace_id: int) -> bool:
     Deleta um marketplace pelo ID.
 
     @param marketplace_id: ID do marketplace a ser deletado.
-    @return True se deletou, False caso não exista.
+    @return True se deletou com sucesso, False se não existir.
     """
-    pass
+    marketplace = GetMarketplaceById(marketplace_id)
+
+    if marketplace is None:
+        return False
+
+    marketplace.delete()
+    return True
+
