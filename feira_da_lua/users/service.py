@@ -234,3 +234,14 @@ def UpdateAvaliation(avaliation_id: int, grade: int = None, comment: str = None)
      avaliation.save()
 
      return avaliation
+
+def DeleteAvaliation(avaliation_id: int) -> None:
+     """
+     Deleta uma avaliação pelo seu ID.
+
+     @param avaliation_id: O ID da avaliação a ser deletada.
+     """
+     avaliation = GetAvaliationById(avaliation_id)
+     avaliation.delete()
+
+     return None
