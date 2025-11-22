@@ -35,7 +35,7 @@ def GetUserByEmail(email: str) -> User:
      """
      return User.objects.get(email=email)
 
-def UpdateUser(user_id: int, username: str = None, complete_name: str = None, password: str = None) -> None:
+def UpdateUser(user_id: int, username: str = None, complete_name: str = None, password: str = None) -> User:
      """
      Atualiza os detalhes de um usuário existente.
 
@@ -56,4 +56,6 @@ def UpdateUser(user_id: int, username: str = None, complete_name: str = None, pa
      user.save()
 
      return user
+
+
 
