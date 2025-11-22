@@ -54,4 +54,20 @@ def UpdateMarketPlace(marketplace_id: int, name=None, address=None, coordinates=
 
     @return O objeto atualizado, ou None caso não exista.
     """
-    pass
+    try:
+        marketplace = MarketPlace.objects.get(id=marketplace_id)
+    except MarketPlace.DoesNotExist:
+        return None
+
+    if name is not None:
+        marketplace.name = name
+
+    if address is not None:
+        marketplace.address = address
+
+    if coordinates is not None:
+        marketplace.coordinates = coordinates
+
+    marketplace.save()
+    return marketplace
+
