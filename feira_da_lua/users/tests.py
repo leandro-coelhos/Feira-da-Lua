@@ -23,4 +23,27 @@ class UserServiceTest(TestCase):
           user_id = user.id
           DeleteUser(user_id)
           self.assertIsNone(GetUserById(user_id))
+
+class MarketerServiceTest(TestCase):
+     def test_create_marketer(self):
+          marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
+          self.assertIsNotNone(marketer)
+     def test_get_marketer(self):
+          marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
+          self.assertEqual(marketer, GetMarketerById(marketer.id))
+          self.assertEqual(marketer, GetMarketerByEmail(marketer.email))
+     def test_update_marketer(self):
+          marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
+          UpdateMarketer(marketer.id, username="newusername", complete_name="New Name", password="newpassword", cellphone="987654321")
+          marketer = GetMarketerById(marketer.id)
+          self.assertEqual(marketer.username, "newusername")
+          self.assertEqual(marketer.complete_name, "New Name")
+          self.assertEqual(marketer.password, "newpassword")
+          self.assertEqual(marketer.cellphone, "987654321")
+     def test_delete_marketer(self):
+          marketer = CreateMarketer(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva", cellphone="123456789")
+          marketer_id = marketer.id
+          DeleteMarketer(marketer_id)
+          self.assertIsNone(GetMarketerById(marketer_id))
+
 # Create your tests here.
