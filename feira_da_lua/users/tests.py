@@ -1,7 +1,8 @@
 from django.test import TestCase
 from .service import CreateUser, GetUserById, GetUserByEmail, UpdateUser, DeleteUser
 from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail, UpdateMarketer, DeleteMarketer
-from .service import CreateAvaliation
+from .service import CreateAvaliation, GetAvaliationById, GetAvaliationsByUser, GetAvaliationsByMarketplace
+
 from marketplace.models import MarketPlace
 
 # Service tests
@@ -63,6 +64,8 @@ class AvaliationServiceTest(TestCase):
           MarketPlace.save(marketePlace)
           avaliation = CreateAvaliation(user=user, marketplace=marketePlace, grade=5, comment="Great marketplace!")
           self.assertEqual(avaliation, GetAvaliationById(avaliation.id))
+          self.assertEqual(avaliation, GetAvaliationsByUser(user)[0])
+          self.assertEqual(avaliation, GetAvaliationsByMarketplace(marketePlace)[0])
      
      def test_update_avaliation(self):
           user = CreateUser(email="leandrocs1500@gmail.com", username="leandrocs1500", password="securepassword", complete_name="Leandro Coelho Silva")

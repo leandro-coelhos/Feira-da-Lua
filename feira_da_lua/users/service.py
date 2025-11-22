@@ -179,3 +179,39 @@ def CreateAvaliation(user: User, marketplace, grade: int, comment: str) -> Avali
      avaliation = Avaliation(user=user, marketplace=marketplace, grade=grade, comment=comment)
      avaliation.save()
      return avaliation
+
+def GetAvaliationById(avaliation_id: int) -> Avaliation:
+     """
+     Recupera uma avaliação pelo seu ID.
+
+     @param avaliation_id: O ID da avaliação.
+
+     @return O objeto Avaliation correspondente ao ID fornecido.
+     """
+     try:
+          avaliation = Avaliation.objects.get(id=avaliation_id)
+     except Avaliation.DoesNotExist:
+          return None
+     return avaliation
+
+def GetAvaliationsByUser(user: User):
+     """
+     Recupera todas as avaliações feitas por um usuário.
+
+     @param user: O usuário cujas avaliações serão recuperadas.
+
+     @return Uma lista de objetos Avaliation feitos pelo usuário.
+     """
+     avaliations = Avaliation.objects.filter(user=user)
+     return avaliations
+
+def GetAvaliationsByMarketplace(marketplace):
+     """
+     Recupera todas as avaliações de um marketplace.
+
+     @param marketplace: O marketplace cujas avaliações serão recuperadas.
+
+     @return Uma lista de objetos Avaliation do marketplace.
+     """
+     avaliations = Avaliation.objects.filter(marketplace=marketplace)
+     return avaliations
