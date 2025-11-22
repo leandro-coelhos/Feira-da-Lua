@@ -3,7 +3,7 @@ from django.conf import settings
 
 class MarketPlace(models.Model):
     name = models.CharField(max_length=255)
-    marketer = models.ForeignKey("users.Marketer",on_delete=models.CASCADE)
+    marketer = models.ForeignKey("users.Marketer", blank=True, null=True, on_delete=models.SET_NULL)
     address = models.CharField(max_length=255)
     coordinates = models.CharField(max_length=255)
 

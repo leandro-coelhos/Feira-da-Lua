@@ -1,4 +1,4 @@
-from .models import User, Marketer
+from .models import User, Marketer, Avaliation
 
 ## User Services
 
@@ -162,3 +162,20 @@ def DeleteMarketer(marketer_id: int) -> None:
      user.delete()
 
      return None
+
+# Avaliation Services
+
+def CreateAvaliation(user: User, marketplace, grade: int, comment: str) -> Avaliation:
+     """
+     Cria uma nova avaliação.
+
+     @param user: O usuário que faz a avaliação.
+     @param marketplace: O marketplace sendo avaliado.
+     @param grade: A nota da avaliação.
+     @param comment: O comentário da avaliação.
+
+     @return O objeto Avaliation criado.
+     """
+     avaliation = Avaliation(user=user, marketplace=marketplace, grade=grade, comment=comment)
+     avaliation.save()
+     return avaliation
