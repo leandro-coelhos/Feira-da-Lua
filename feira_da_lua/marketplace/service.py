@@ -71,3 +71,11 @@ def UpdateMarketPlace(marketplace_id: int, name=None, address=None, coordinates=
     marketplace.save()
     return marketplace
 
+def DeleteMarketPlace(marketplace_id: int) -> bool:
+    """
+    Deleta um marketplace pelo ID.
+
+    @param marketplace_id: ID do marketplace a ser deletado.
+    @return True se deletou, False caso não exista.
+    """
+    pass

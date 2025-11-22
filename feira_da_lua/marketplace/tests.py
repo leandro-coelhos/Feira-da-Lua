@@ -4,7 +4,8 @@ from marketplace.service import (
     CreateMarketPlace,
     GetMarketplaceById,
     GetAllMarketPlaces,
-    UpdateMarketPlace
+    UpdateMarketPlace,
+    DeleteMarketPlace
 )
 
 
@@ -146,3 +147,36 @@ class MarketPlaceServiceUpdateTest(TestCase):
         )
 
         self.assertIsNone(updated)
+
+class MarketPlaceServiceDeleteTest(TestCase):
+
+    def setUp(self):
+        self.user = User.objects.create(
+            email="del@example.com",
+            username="del_user",
+            password="123456",
+            complete_name="User Delete"
+        )
+
+        self.marketer = Marketer.objects.create(
+            user=self.user,
+            cellphone="61977777777"
+        )
+
+        self.marketplace = CreateMarketPlace(
+            name="Feira Delete",
+            marketer=self.marketer,
+            address="Rua X",
+            coordinates="10,10"
+        )
+
+    def test_delete_marketplace(self):
+        deleted = DeleteMarketPlace(self.marketplace.id)
+
+        self.assertTrue(deleted)
+        self.assertIsNone(GetMarketplaceById(self.marketplace.id))
+
+    def test_delete_marketplace_not_found(self):
+        deleted = DeleteMarketPlace(999)
+
+        self.assertFalse(deleted)
