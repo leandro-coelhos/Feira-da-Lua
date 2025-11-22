@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+FIELD_ENCRYPTION_KEY = "FKIO5dp4gmUsJoZcRv2A_kN11BSCKDUgar0VeO0vAM0="
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'marketplace',
+    'users',
 ]
 
 MIDDLEWARE = [

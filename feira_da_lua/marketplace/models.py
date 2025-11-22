@@ -1,20 +1,32 @@
 from django.db import models
 from django.conf import settings
 
-
 class MarketPlace(models.Model):
     name = models.CharField(max_length=255)
-    marketer = models.ForeignKey(
-        "marketers.Marketer",     # Marketer ainda não existe, mas Django aceita referência por string
-        on_delete=models.CASCADE,
-        related_name="marketplaces"
-    )
+    marketer = models.ForeignKey("users.Marketer",on_delete=models.CASCADE)
     address = models.CharField(max_length=255)
     coordinates = models.CharField(max_length=255)
 
-    # Imaginei que poderia ser campos nulos que poderiam ser atualizados dinamicamente
-    average_grade = models.FloatField(null=True, blank=True)
-    average_price = models.FloatField(null=True, blank=True)
+    def __str__(self):
+        return self.name
+    
+    def __init__(self, name, marketer, address, coordinates):
+        self.name = name
+        self.marketer = marketer
+        self.address = address
+        self.coordinates = coordinates
+
+class Products(models.Model):
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    photo = models.BinaryField()
+    marketer = models.ForeignKey("users.Marketer",on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
+    
+    def __init__(self, name, price, photo, marketer):
+        self.name = name
+        self.price = price
+        self.photo = photo
+        self.marketer = marketer
