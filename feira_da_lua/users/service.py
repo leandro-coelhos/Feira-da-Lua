@@ -215,3 +215,22 @@ def GetAvaliationsByMarketplace(marketplace):
      """
      avaliations = Avaliation.objects.filter(marketplace=marketplace)
      return avaliations
+
+def UpdateAvaliation(avaliation_id: int, grade: int = None, comment: str = None) -> Avaliation:
+     """
+     Atualiza os detalhes de uma avaliação existente.
+
+     @param avaliation_id: O ID da avaliação a ser atualizada.
+     @param grade: A nova nota (opcional).
+     @param comment: O novo comentário (opcional).
+
+     @return O objeto Avaliation atualizado.
+     """
+     avaliation = GetAvaliationById(avaliation_id)
+     if grade is not None:
+          avaliation.grade = grade
+     if comment is not None:
+          avaliation.comment = comment
+     avaliation.save()
+
+     return avaliation

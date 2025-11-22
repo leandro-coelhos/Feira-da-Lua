@@ -2,7 +2,7 @@ from django.test import TestCase
 from .service import CreateUser, GetUserById, GetUserByEmail, UpdateUser, DeleteUser
 from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail, UpdateMarketer, DeleteMarketer
 from .service import CreateAvaliation, GetAvaliationById, GetAvaliationsByUser, GetAvaliationsByMarketplace
-
+from .service import UpdateAvaliation
 from marketplace.models import MarketPlace
 
 # Service tests
