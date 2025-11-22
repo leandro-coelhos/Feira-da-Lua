@@ -122,3 +122,30 @@ def GetMarketerByEmail(email: str) -> Marketer:
      except Marketer.DoesNotExist:
           return None
      return marketer
+
+def UpdateMarketer(marketer_id: int, username: str = None, complete_name: str = None, password: str = None, cellphone: str = None) -> Marketer:
+     """
+     Atualiza os detalhes de um marketer existente.
+
+     @param marketer_id: O ID do marketer a ser atualizado.
+     @param username: O novo nome de usuário (opcional).
+     @param complete_name: O novo nome completo (opcional).
+     @param password: A nova senha (opcional).
+     @param cellphone: O novo celular (opcional).
+
+     @return O objeto Marketer atualizado.
+     """
+     marketer = GetMarketerById(marketer_id)
+     user = marketer.user
+     if username is not None:
+          user.username = username
+     if complete_name is not None:
+          user.complete_name = complete_name
+     if password is not None:
+          user.password = password
+     user.save()
+     if cellphone is not None:
+          marketer.cellphone = cellphone
+     marketer.save()
+
+     return marketer

@@ -1,6 +1,6 @@
 from django.test import TestCase
 from .service import CreateUser, GetUserById, GetUserByEmail, UpdateUser, DeleteUser
-from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail
+from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail, UpdateMarketer
 
 # Service tests
 
