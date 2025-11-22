@@ -1,4 +1,6 @@
-from .models import User
+from .models import User, Marketer
+
+## User Services
 
 def CreateUser(email: str, username: str, password: str, complete_name: str) -> User:
      """
@@ -72,3 +74,22 @@ def DeleteUser(user_id: int) -> None:
 
      return None
 
+
+## Marketer Services
+
+def CreateMarketer(email: str, username: str, password: str, complete_name: str, cellphone: str) -> Marketer:
+     """
+     Cria um novo marketer.
+
+     @param email: O email do marketer.
+     @param username: O nome de usuário do marketer.
+     @param password: A senha do marketer.
+     @param complete_name: O nome completo do marketer.
+     @param cellphone: O celular do marketer.
+
+     @return O objeto Marketer criado.
+     """
+     user = CreateUser(email=email, username=username, password=password, complete_name=complete_name)
+     marketer = Marketer(user=user, cellphone=cellphone)
+     marketer.save()
+     return marketer
