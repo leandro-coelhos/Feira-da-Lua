@@ -10,11 +10,6 @@ class MarketPlace(models.Model):
     def __str__(self):
         return self.name
     
-    def __init__(self, name, marketer, address, coordinates):
-        self.name = name
-        self.marketer = marketer
-        self.address = address
-        self.coordinates = coordinates
 
 class Products(models.Model):
     name = models.CharField(max_length=255)
@@ -25,8 +20,3 @@ class Products(models.Model):
     def __str__(self):
         return self.name
     
-    def __init__(self, name, price, photo, marketer):
-        self.name = name
-        self.price = price
-        self.photo = photo
-        self.marketer = marketer

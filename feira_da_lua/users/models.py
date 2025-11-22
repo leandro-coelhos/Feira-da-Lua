@@ -9,12 +9,6 @@ class User(models.Model):
 
     def __str__(self):
         return self.username
-    
-    def __init__(self, email, username, password, complete_name):
-        self.email = email
-        self.username = username
-        self.password = password
-        self.complete_name = complete_name
 
 class Marketer(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
@@ -22,19 +16,10 @@ class Marketer(models.Model):
 
     def __str__(self):
         return self.user.username
-    
-    def __init__(self, user, cellphone):
-        self.user = user
-        self.cellphone = cellphone
+
     
 class Avaliation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     marketplace = models.ForeignKey("marketplace.MarketPlace", on_delete=models.CASCADE)
     grade = models.IntegerField()
     comment = models.TextField()
-
-    def __init__(self, user, marketplace, grade, comment):
-        self.user = user
-        self.marketplace = marketplace
-        self.grade = grade
-        self.comment = comment
