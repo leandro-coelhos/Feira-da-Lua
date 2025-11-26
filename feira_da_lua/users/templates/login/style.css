@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+ /* Left: large image */
+.esquerda {
+    flex: 1;
+    background-image: url("feirante.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+/* Right: login box */
+.direita {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    width: 70%;
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-box h2, h1 {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+}
+
+.options .remember {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.options .forgot {
+    text-decoration: none;
+    color: #4b79ff;
+}
+
+.options .forgot:hover {
+    text-decoration: underline;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #39962D;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #186e0d;
+}
+
+.signup-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup-link {
+    color: #4b79ff;      /* same blue as forgot password */
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
