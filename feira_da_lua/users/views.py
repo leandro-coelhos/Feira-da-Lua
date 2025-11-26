@@ -34,5 +34,4 @@ def UpdateComment(View):
 def ListComments(View):
      pass
 
-
 # Create your views here.
