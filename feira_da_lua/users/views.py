@@ -1,41 +1,59 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import UserLoginForm
-from .service import GetUserByEmail
+from .forms import UserLoginForm, UserRegistrationForm
+from .service import GetUserByEmail, GetUserById
 from marketplace.models import MarketPlace
 from .service import CreateAvaliation, DeleteAvaliation, UpdateAvaliation, GetAvaliationsByMarketplace, GetAvaliationById
+from .service import CreateUser
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 
 def LoginUser(request):
+    if request.session.get('user_id'):
+        return redirect('profile', user_id=request.session['user_id'])
     if request.method == 'POST':
         formulario = UserLoginForm(request.POST)
         if formulario.is_valid():
             email = formulario.cleaned_data['email']
-            password = formulario.cleaned_data['senha']
+            password = formulario.cleaned_data['password']
 
             user = GetUserByEmail(email)
             if user and user.password == password:
-                return redirect('profile', user_id=user.id)
+                request.session['user_id'] = user.id
+                return redirect('profile')
     return render(request, 'users/login.html', {'form': UserLoginForm()})
 
-def RegisterUser(View):
-    pass
+def RegisterUser(request):
+    if request.session.get('user_id'):
+        return redirect('profile', user_id=request.session['user_id'])
+    if request.method == 'POST':
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            complete_name = form.cleaned_data['complete_name']
+            username = form.cleaned_data['username']
 
-def LogoutUser(View):
-    pass
+            user = CreateUser(email=email, password=password, complete_name=complete_name, username=username)
+            print(user)
+            
+            request.session['user_id'] = user.id
 
-def ProfileUser(View):
-    pass
+            if not user:
+                return redirect('login_user')
+    return render(request, 'users/register.html', {'form': UserRegistrationForm()})
 
-def DeleteUser(View):
-    pass
 
-def UpdateUser(View):
-    pass
+def LogoutUser(request):
+    request.session.flush()
+    return redirect('login_user')
 
-def ListUsers(View):
-    pass
+def ProfileUser(request):
+    if not request.session.get('user_id'):
+        return redirect('login_user')
+    user_id = request.session['user_id']
+    user = GetUserById(user_id)
+    return render(request, 'users/profile.html', {'user': user})
 
 @login_required
 def CreateComment(request):
