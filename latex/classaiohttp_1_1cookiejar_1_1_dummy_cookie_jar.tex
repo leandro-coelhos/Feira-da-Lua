@@ -1,0 +1,135 @@
+\doxysection{aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar Class Reference}
+\hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar}{}\label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+Inheritance diagram for aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_acf75fea7c0f57c613cf3012bcba2610b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None)
+\item 
+"{}Iterator\mbox{[}Morsel\mbox{[}str\mbox{]}\mbox{]}"{} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a26bb0192f91a2a54b8d80798ec0e40a0}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a115c6126df5a00281e39f74f5a3c54b7}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_ae796e2317100af34ddd0c0e8265d8d9a}{quote\+\_\+cookie}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a75a2f7c292cdd3afc6fbc01490e96191}{clear}} (self, Optional\mbox{[}Clear\+Cookie\+Predicate\mbox{]} predicate=None)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a701ebed2d232a277bb2bb86f902a92b2}{clear\+\_\+domain}} (self, str domain)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_adf86a7269970a6a18b6baeef62a08528}{update\+\_\+cookies}} (self, Loose\+Cookies cookies, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} response\+\_\+url=\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}())
+\item 
+"{}Base\+Cookie\mbox{[}str\mbox{]}"{} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_ad90b9b6b4d5e5ebf7aad9bcec0acaaee}{filter\+\_\+cookies}} (self, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} request\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a3ffec625f39d952d96022cf86ccc0e61}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a1b3c8a246f9f9c2031d344ed8e7d72e9}{update\+\_\+cookies\+\_\+from\+\_\+headers}} (self, Sequence\mbox{[}str\mbox{]} headers, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} response\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a107dcb24c2e6c255ab8a10c2b4511c6a}{\+\_\+loop}} = loop or asyncio.\+get\+\_\+running\+\_\+loop()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements a dummy cookie storage.
+
+It can be used with the ClientSession when no cookie processing is needed.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_acf75fea7c0f57c613cf3012bcba2610b}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_acf75fea7c0f57c613cf3012bcba2610b} 
+ None aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a26bb0192f91a2a54b8d80798ec0e40a0}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a26bb0192f91a2a54b8d80798ec0e40a0} 
+ "{}Iterator\mbox{[}Morsel\mbox{[}str\mbox{]}\mbox{]}"{} aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a115c6126df5a00281e39f74f5a3c54b7}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a115c6126df5a00281e39f74f5a3c54b7} 
+ int aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a75a2f7c292cdd3afc6fbc01490e96191}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!clear@{clear}}
+\index{clear@{clear}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a75a2f7c292cdd3afc6fbc01490e96191} 
+ None aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Clear\+Cookie\+Predicate\mbox{]} }]{predicate}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear all cookies if no predicate is passed.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a29f3fa0c12e3e6d340e573ac8762eed1}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a701ebed2d232a277bb2bb86f902a92b2}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!clear\_domain@{clear\_domain}}
+\index{clear\_domain@{clear\_domain}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{clear\_domain()}{clear\_domain()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_a701ebed2d232a277bb2bb86f902a92b2} 
+ None aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+clear\+\_\+domain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{domain}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear all cookies for domain and all subdomains.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_aa28fb148c31551106efd60af87bd9cda}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_ad90b9b6b4d5e5ebf7aad9bcec0acaaee}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!filter\_cookies@{filter\_cookies}}
+\index{filter\_cookies@{filter\_cookies}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{filter\_cookies()}{filter\_cookies()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_ad90b9b6b4d5e5ebf7aad9bcec0acaaee} 
+ "{}Base\+Cookie\mbox{[}str\mbox{]}"{} aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+filter\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{request\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the jar's cookies filtered by their attributes.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a2c3578edfd18a04ac3c50819e574f45c}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_ae796e2317100af34ddd0c0e8265d8d9a}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!quote\_cookie@{quote\_cookie}}
+\index{quote\_cookie@{quote\_cookie}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{quote\_cookie()}{quote\_cookie()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_ae796e2317100af34ddd0c0e8265d8d9a} 
+ bool aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+quote\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if cookies should be quoted.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_ac931f684b0bbda9af3647e8129cfd6b4}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_adf86a7269970a6a18b6baeef62a08528}\index{aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}!update\_cookies@{update\_cookies}}
+\index{update\_cookies@{update\_cookies}!aiohttp.cookiejar.DummyCookieJar@{aiohttp.cookiejar.DummyCookieJar}}
+\doxysubsubsection{\texorpdfstring{update\_cookies()}{update\_cookies()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_dummy_cookie_jar_adf86a7269970a6a18b6baeef62a08528} 
+ None aiohttp.\+cookiejar.\+Dummy\+Cookie\+Jar.\+update\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Loose\+Cookies}]{cookies}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} }]{response\+\_\+url}{ = {\ttfamily \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update cookies.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a0f2a5ab762363b4c63c51de5f583594f}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{cookiejar_8py}{cookiejar.\+py}}\end{DoxyCompactItemize}

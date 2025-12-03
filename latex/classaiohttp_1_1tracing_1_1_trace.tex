@@ -1,0 +1,196 @@
+\doxysection{aiohttp.\+tracing.\+Trace Class Reference}
+\hypertarget{classaiohttp_1_1tracing_1_1_trace}{}\label{classaiohttp_1_1tracing_1_1_trace}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a0b179d8ceb05ac617d9fa747f362c327}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Client\+Session"{} session, \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_config}{Trace\+Config}} trace\+\_\+config, Simple\+Namespace trace\+\_\+config\+\_\+ctx)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a98587291c91e092b75e3a6ff32c8efee}{send\+\_\+request\+\_\+start}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, "{}CIMulti\+Dict\mbox{[}str\mbox{]}"{} headers)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_aed189871a0843b17c4a41d074f362eb0}{send\+\_\+request\+\_\+chunk\+\_\+sent}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, bytes chunk)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a0c62d893dcda4d8b7caa799581a0fe54}{send\+\_\+response\+\_\+chunk\+\_\+received}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, bytes chunk)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a5b6eb9cd29a9fd6413e952759fd30637}{send\+\_\+request\+\_\+end}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, "{}CIMulti\+Dict\mbox{[}str\mbox{]}"{} headers, \mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_response}{Client\+Response}} response)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a9067bdb3b3e3a0ac2834bf5f9340cc11}{send\+\_\+request\+\_\+exception}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, "{}CIMulti\+Dict\mbox{[}str\mbox{]}"{} headers, Base\+Exception exception)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_ac4c6cc01a3786c90834695c13e09c9ca}{send\+\_\+request\+\_\+redirect}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, "{}CIMulti\+Dict\mbox{[}str\mbox{]}"{} headers, \mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_response}{Client\+Response}} response)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_aae635e2e9322577d86c0c5dc95929bd2}{send\+\_\+connection\+\_\+queued\+\_\+start}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a644950ac5cdda6ecd73ca471b7602747}{send\+\_\+connection\+\_\+queued\+\_\+end}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_aae6b36e8b8c48ed40f7913af22f3e0b9}{send\+\_\+connection\+\_\+create\+\_\+start}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a59b6ae496bc14a4c448c16492037358d}{send\+\_\+connection\+\_\+create\+\_\+end}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_ab0c35da8592c700b68a71c9f9ed4e0ed}{send\+\_\+connection\+\_\+reuseconn}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a6260eaf217fe20b1ee31b2906635b6c2}{send\+\_\+dns\+\_\+resolvehost\+\_\+start}} (self, str host)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a56d06f80fd8fd82099c66f5430ec216c}{send\+\_\+dns\+\_\+resolvehost\+\_\+end}} (self, str host)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a469323aedec845b78e5b285a6c6bea53}{send\+\_\+dns\+\_\+cache\+\_\+hit}} (self, str host)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a1ec4fa139bc7f4aaa19e6cc90cdca930}{send\+\_\+dns\+\_\+cache\+\_\+miss}} (self, str host)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a80205357bf8a3e041af0ffaad7c468d9}{send\+\_\+request\+\_\+headers}} (self, str method, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, "{}CIMulti\+Dict\mbox{[}str\mbox{]}"{} headers)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_af9e546190e1490598bc2bfbaa92bedd1}{\+\_\+trace\+\_\+config}} = trace\+\_\+config
+\item 
+\mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_aad02f043e4d2d8a8c6136ea321a6b5bb}{\+\_\+trace\+\_\+config\+\_\+ctx}} = trace\+\_\+config\+\_\+ctx
+\item 
+\mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_a9590d60fdcc77237f8684b6e1a2e264e}{\+\_\+session}} = session
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Internal dependency holder class.
+
+Used to keep together the main dependencies used
+at the moment of send a signal.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a0b179d8ceb05ac617d9fa747f362c327}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a0b179d8ceb05ac617d9fa747f362c327} 
+ None aiohttp.\+tracing.\+Trace.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Client\+Session"{}}]{session}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1tracing_1_1_trace_config}{Trace\+Config}}}]{trace\+\_\+config}{, }\item[{Simple\+Namespace}]{trace\+\_\+config\+\_\+ctx}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a59b6ae496bc14a4c448c16492037358d}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_connection\_create\_end@{send\_connection\_create\_end}}
+\index{send\_connection\_create\_end@{send\_connection\_create\_end}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_connection\_create\_end()}{send\_connection\_create\_end()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a59b6ae496bc14a4c448c16492037358d} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+connection\+\_\+create\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_aae6b36e8b8c48ed40f7913af22f3e0b9}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_connection\_create\_start@{send\_connection\_create\_start}}
+\index{send\_connection\_create\_start@{send\_connection\_create\_start}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_connection\_create\_start()}{send\_connection\_create\_start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_aae6b36e8b8c48ed40f7913af22f3e0b9} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+connection\+\_\+create\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a644950ac5cdda6ecd73ca471b7602747}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_connection\_queued\_end@{send\_connection\_queued\_end}}
+\index{send\_connection\_queued\_end@{send\_connection\_queued\_end}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_connection\_queued\_end()}{send\_connection\_queued\_end()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a644950ac5cdda6ecd73ca471b7602747} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+connection\+\_\+queued\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_aae635e2e9322577d86c0c5dc95929bd2}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_connection\_queued\_start@{send\_connection\_queued\_start}}
+\index{send\_connection\_queued\_start@{send\_connection\_queued\_start}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_connection\_queued\_start()}{send\_connection\_queued\_start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_aae635e2e9322577d86c0c5dc95929bd2} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+connection\+\_\+queued\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ab0c35da8592c700b68a71c9f9ed4e0ed}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_connection\_reuseconn@{send\_connection\_reuseconn}}
+\index{send\_connection\_reuseconn@{send\_connection\_reuseconn}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_connection\_reuseconn()}{send\_connection\_reuseconn()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_ab0c35da8592c700b68a71c9f9ed4e0ed} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+connection\+\_\+reuseconn (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a469323aedec845b78e5b285a6c6bea53}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_dns\_cache\_hit@{send\_dns\_cache\_hit}}
+\index{send\_dns\_cache\_hit@{send\_dns\_cache\_hit}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_dns\_cache\_hit()}{send\_dns\_cache\_hit()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a469323aedec845b78e5b285a6c6bea53} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+dns\+\_\+cache\+\_\+hit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a1ec4fa139bc7f4aaa19e6cc90cdca930}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_dns\_cache\_miss@{send\_dns\_cache\_miss}}
+\index{send\_dns\_cache\_miss@{send\_dns\_cache\_miss}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_dns\_cache\_miss()}{send\_dns\_cache\_miss()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a1ec4fa139bc7f4aaa19e6cc90cdca930} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+dns\+\_\+cache\+\_\+miss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a56d06f80fd8fd82099c66f5430ec216c}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_dns\_resolvehost\_end@{send\_dns\_resolvehost\_end}}
+\index{send\_dns\_resolvehost\_end@{send\_dns\_resolvehost\_end}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_dns\_resolvehost\_end()}{send\_dns\_resolvehost\_end()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a56d06f80fd8fd82099c66f5430ec216c} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+dns\+\_\+resolvehost\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a6260eaf217fe20b1ee31b2906635b6c2}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_dns\_resolvehost\_start@{send\_dns\_resolvehost\_start}}
+\index{send\_dns\_resolvehost\_start@{send\_dns\_resolvehost\_start}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_dns\_resolvehost\_start()}{send\_dns\_resolvehost\_start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a6260eaf217fe20b1ee31b2906635b6c2} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+dns\+\_\+resolvehost\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_aed189871a0843b17c4a41d074f362eb0}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_request\_chunk\_sent@{send\_request\_chunk\_sent}}
+\index{send\_request\_chunk\_sent@{send\_request\_chunk\_sent}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_request\_chunk\_sent()}{send\_request\_chunk\_sent()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_aed189871a0843b17c4a41d074f362eb0} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+request\+\_\+chunk\+\_\+sent (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{bytes     }]{chunk}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a5b6eb9cd29a9fd6413e952759fd30637}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_request\_end@{send\_request\_end}}
+\index{send\_request\_end@{send\_request\_end}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_request\_end()}{send\_request\_end()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a5b6eb9cd29a9fd6413e952759fd30637} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+request\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}}]{headers}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_response}{Client\+Response}}}]{response}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a9067bdb3b3e3a0ac2834bf5f9340cc11}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_request\_exception@{send\_request\_exception}}
+\index{send\_request\_exception@{send\_request\_exception}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_request\_exception()}{send\_request\_exception()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a9067bdb3b3e3a0ac2834bf5f9340cc11} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+request\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}}]{headers}{, }\item[{Base\+Exception}]{exception}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a80205357bf8a3e041af0ffaad7c468d9}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_request\_headers@{send\_request\_headers}}
+\index{send\_request\_headers@{send\_request\_headers}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_request\_headers()}{send\_request\_headers()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a80205357bf8a3e041af0ffaad7c468d9} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+request\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}     }]{headers}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_ac4c6cc01a3786c90834695c13e09c9ca}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_request\_redirect@{send\_request\_redirect}}
+\index{send\_request\_redirect@{send\_request\_redirect}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_request\_redirect()}{send\_request\_redirect()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_ac4c6cc01a3786c90834695c13e09c9ca} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+request\+\_\+redirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}}]{headers}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_response}{Client\+Response}}}]{response}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a98587291c91e092b75e3a6ff32c8efee}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_request\_start@{send\_request\_start}}
+\index{send\_request\_start@{send\_request\_start}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_request\_start()}{send\_request\_start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a98587291c91e092b75e3a6ff32c8efee} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+request\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}     }]{headers}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a0c62d893dcda4d8b7caa799581a0fe54}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!send\_response\_chunk\_received@{send\_response\_chunk\_received}}
+\index{send\_response\_chunk\_received@{send\_response\_chunk\_received}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{send\_response\_chunk\_received()}{send\_response\_chunk\_received()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a0c62d893dcda4d8b7caa799581a0fe54} 
+ None aiohttp.\+tracing.\+Trace.\+send\+\_\+response\+\_\+chunk\+\_\+received (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{bytes     }]{chunk}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_a9590d60fdcc77237f8684b6e1a2e264e}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!\_session@{\_session}}
+\index{\_session@{\_session}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{\_session}{\_session}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_a9590d60fdcc77237f8684b6e1a2e264e} 
+aiohttp.\+tracing.\+Trace.\+\_\+session = session\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_af9e546190e1490598bc2bfbaa92bedd1}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!\_trace\_config@{\_trace\_config}}
+\index{\_trace\_config@{\_trace\_config}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{\_trace\_config}{\_trace\_config}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_af9e546190e1490598bc2bfbaa92bedd1} 
+aiohttp.\+tracing.\+Trace.\+\_\+trace\+\_\+config = trace\+\_\+config\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1tracing_1_1_trace_aad02f043e4d2d8a8c6136ea321a6b5bb}\index{aiohttp.tracing.Trace@{aiohttp.tracing.Trace}!\_trace\_config\_ctx@{\_trace\_config\_ctx}}
+\index{\_trace\_config\_ctx@{\_trace\_config\_ctx}!aiohttp.tracing.Trace@{aiohttp.tracing.Trace}}
+\doxysubsubsection{\texorpdfstring{\_trace\_config\_ctx}{\_trace\_config\_ctx}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1tracing_1_1_trace_aad02f043e4d2d8a8c6136ea321a6b5bb} 
+aiohttp.\+tracing.\+Trace.\+\_\+trace\+\_\+config\+\_\+ctx = trace\+\_\+config\+\_\+ctx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{tracing_8py}{tracing.\+py}}\end{DoxyCompactItemize}

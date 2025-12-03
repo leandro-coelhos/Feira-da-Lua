@@ -1,0 +1,26 @@
+var namespaceaiohttp_1_1connector =
+[
+    [ "_ConnectTunnelConnection", "classaiohttp_1_1connector_1_1___connect_tunnel_connection.html", "classaiohttp_1_1connector_1_1___connect_tunnel_connection" ],
+    [ "_DeprecationWaiter", "classaiohttp_1_1connector_1_1___deprecation_waiter.html", "classaiohttp_1_1connector_1_1___deprecation_waiter" ],
+    [ "_DNSCacheTable", "classaiohttp_1_1connector_1_1___d_n_s_cache_table.html", "classaiohttp_1_1connector_1_1___d_n_s_cache_table" ],
+    [ "_TransportPlaceholder", "classaiohttp_1_1connector_1_1___transport_placeholder.html", "classaiohttp_1_1connector_1_1___transport_placeholder" ],
+    [ "BaseConnector", "classaiohttp_1_1connector_1_1_base_connector.html", "classaiohttp_1_1connector_1_1_base_connector" ],
+    [ "Connection", "classaiohttp_1_1connector_1_1_connection.html", "classaiohttp_1_1connector_1_1_connection" ],
+    [ "NamedPipeConnector", "classaiohttp_1_1connector_1_1_named_pipe_connector.html", "classaiohttp_1_1connector_1_1_named_pipe_connector" ],
+    [ "TCPConnector", "classaiohttp_1_1connector_1_1_t_c_p_connector.html", "classaiohttp_1_1connector_1_1_t_c_p_connector" ],
+    [ "UnixConnector", "classaiohttp_1_1connector_1_1_unix_connector.html", "classaiohttp_1_1connector_1_1_unix_connector" ],
+    [ "_make_ssl_context", "namespaceaiohttp_1_1connector.html#a78232ceafaef367f2fa59079fd2e72ad", null ],
+    [ "_wait_for_close", "namespaceaiohttp_1_1connector.html#affd9d2d29a91003c77046a980b873dfe", null ],
+    [ "__all__", "namespaceaiohttp_1_1connector.html#a6c8d637f010fc6d34afb39c9cdf211bb", null ],
+    [ "_SSL_CONTEXT_UNVERIFIED", "namespaceaiohttp_1_1connector.html#a4f9130f6e5f6d993fde9dc5ddad789f9", null ],
+    [ "_SSL_CONTEXT_VERIFIED", "namespaceaiohttp_1_1connector.html#a058c784f3187b684c6507bf1b5c625a5", null ],
+    [ "Buffer", "namespaceaiohttp_1_1connector.html#a1e072833b7118acfa3f0e7e584ca8e78", null ],
+    [ "EMPTY_SCHEMA_SET", "namespaceaiohttp_1_1connector.html#ac0ca200abb663fd5aab9a1426dc3a168", null ],
+    [ "HIGH_LEVEL_SCHEMA_SET", "namespaceaiohttp_1_1connector.html#a2320a90429b028c9e1b7d50c949a939f", null ],
+    [ "HTTP_AND_EMPTY_SCHEMA_SET", "namespaceaiohttp_1_1connector.html#a8df75ed9c97af9d6f22dcb3568022ffd", null ],
+    [ "HTTP_SCHEMA_SET", "namespaceaiohttp_1_1connector.html#aa0713834a13443857eb76ce74f049e5f", null ],
+    [ "NEEDS_CLEANUP_CLOSED", "namespaceaiohttp_1_1connector.html#a4515d76df9a92b95729a18a081bffa62", null ],
+    [ "ssl", "namespaceaiohttp_1_1connector.html#a3dc645f44b7bc9eaebb2a39ec23c728a", null ],
+    [ "SSLContext", "namespaceaiohttp_1_1connector.html#ac28cf44a96d8fc8cf033394f2cbc1434", null ],
+    [ "WS_SCHEMA_SET", "namespaceaiohttp_1_1connector.html#a3e410c1c47cb0f20618b2d8c64889dbd", null ]
+];

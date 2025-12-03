@@ -1,0 +1,249 @@
+\doxysection{aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server Class Reference}
+\hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server}{}\label{classaiohttp_1_1test__utils_1_1_base_test_server}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+Inheritance diagram for aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1test__utils_1_1_base_test_server}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a19fccb7954e91f54d1ec8aeaedcf5edc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, str \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_ac211d4e4bc6b1e891b42f46efa17fbe7}{scheme}}="{}"{}, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None, str \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a9bcb2fec2d5ecb26ded68136d10c8e7d}{host}}="{}127.\+0.\+0.\+1"{}, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_aed13bb0a1ea72c0e9b26281d2731681a}{port}}=None, bool \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_adcc147ff2b13ae5aa99fceb102b61fe1}{skip\+\_\+url\+\_\+asserts}}=False, Callable\mbox{[}\mbox{[}str, int, socket.\+Address\+Family\mbox{]}, socket.\+socket\mbox{]} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a2c38dc281046342512eeef55b8bf16fe}{socket\+\_\+factory}}=\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a49965ea9adfe6fc4ea16ad760e4e6b30}{get\+\_\+port\+\_\+socket}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_ae5591c047984acfc688a310ab20ebcb7}{start\+\_\+server}} (self, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_adf4873db28d4ec93782d9c1b041075e6}{make\+\_\+url}} (self, Str\+Or\+URL path)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a58877b4bc2a06d05c44b939ba587ae35}{started}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a2efcb60a7085e65a124a208888834946}{closed}} (self)
+\item 
+Server \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a1f060956b1c5bf6749d203d33e58368a}{handler}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a39f950fa6f8bb830c00739b3708973d9}{close}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a634a387d502dbd74e991d4589959d972}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a38fe9eef1294114ad5c7a83c046e6340}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} exc\+\_\+type, Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+value, Optional\mbox{[}Traceback\+Type\mbox{]} traceback)
+\item 
+"{}Base\+Test\+Server"{} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a3cdace07865d651af2dfc45dcccdecbf}{\+\_\+\+\_\+aenter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a934ae986884f1069917ce1fac1d5bb56}{\+\_\+\+\_\+aexit\+\_\+\+\_\+}} (self, Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} exc\+\_\+type, Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+value, Optional\mbox{[}Traceback\+Type\mbox{]} traceback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}Base\+Runner\mbox{]} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_aaba0d47d7f643ef3e13a237a00c9d097}{runner}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a9bcb2fec2d5ecb26ded68136d10c8e7d}{host}} = host
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_aed13bb0a1ea72c0e9b26281d2731681a}{port}} = port
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_ac211d4e4bc6b1e891b42f46efa17fbe7}{scheme}} = scheme
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_adcc147ff2b13ae5aa99fceb102b61fe1}{skip\+\_\+url\+\_\+asserts}} = skip\+\_\+url\+\_\+asserts
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a2c38dc281046342512eeef55b8bf16fe}{socket\+\_\+factory}} = socket\+\_\+factory
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a7d34eb82e96d1d73f0491cca13701901}{closed}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Base\+Runner \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a3c672d8e019e359493ddde5eee65348e}{\+\_\+make\+\_\+runner}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a8bff1312969937231576c17a64d052c2}{\+\_\+loop}} = loop
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_ad3f37c54852baefa58f7a7e79ffb1b95}{\+\_\+root}} = None
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_a8d62251d9b565f5cc76f2aec3eea30ce}{\+\_\+closed}} = False
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_aad3e7ffb96a45f79eaaa56e1c5e68823}{\+\_\+ssl}} = kwargs.\+pop("{}ssl"{}, None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server_ad375ff19f1d170b1a387aa6e9f25f3c2}{\+\_\+\+\_\+test\+\_\+\+\_\+}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a19fccb7954e91f54d1ec8aeaedcf5edc}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a19fccb7954e91f54d1ec8aeaedcf5edc} 
+ None aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{scheme}{ = {\ttfamily "{}"{}}, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}, }\item[{str }]{host}{ = {\ttfamily "{}127.0.0.1"{}}, }\item[{Optional\mbox{[}int\mbox{]} }]{port}{ = {\ttfamily None}, }\item[{bool }]{skip\+\_\+url\+\_\+asserts}{ = {\ttfamily False}, }\item[{Callable\mbox{[}             \mbox{[}str, int, socket.\+Address\+Family\mbox{]}, socket.\+socket         \mbox{]} }]{socket\+\_\+factory}{ = {\ttfamily \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a49965ea9adfe6fc4ea16ad760e4e6b30}{get\+\_\+port\+\_\+socket}}}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a3cdace07865d651af2dfc45dcccdecbf}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_\_aenter\_\_@{\_\_aenter\_\_}}
+\index{\_\_aenter\_\_@{\_\_aenter\_\_}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_\_aenter\_\_()}{\_\_aenter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a3cdace07865d651af2dfc45dcccdecbf} 
+ "{}Base\+Test\+Server"{} aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+\+\_\+aenter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a934ae986884f1069917ce1fac1d5bb56}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_\_aexit\_\_@{\_\_aexit\_\_}}
+\index{\_\_aexit\_\_@{\_\_aexit\_\_}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_\_aexit\_\_()}{\_\_aexit\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a934ae986884f1069917ce1fac1d5bb56} 
+ None aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+\+\_\+aexit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]}}]{exc\+\_\+type}{, }\item[{Optional\mbox{[}Base\+Exception\mbox{]}}]{exc\+\_\+value}{, }\item[{Optional\mbox{[}Traceback\+Type\mbox{]}}]{traceback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a634a387d502dbd74e991d4589959d972}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a634a387d502dbd74e991d4589959d972} 
+ None aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a38fe9eef1294114ad5c7a83c046e6340}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a38fe9eef1294114ad5c7a83c046e6340} 
+ None aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]}}]{exc\+\_\+type}{, }\item[{Optional\mbox{[}Base\+Exception\mbox{]}}]{exc\+\_\+value}{, }\item[{Optional\mbox{[}Traceback\+Type\mbox{]}}]{traceback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a3c672d8e019e359493ddde5eee65348e}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_make\_runner@{\_make\_runner}}
+\index{\_make\_runner@{\_make\_runner}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_make\_runner()}{\_make\_runner()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a3c672d8e019e359493ddde5eee65348e} 
+ Base\+Runner aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+make\+\_\+runner (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_raw_test_server_ae06171d53fab83566af4199887d08155}{aiohttp.\+test\+\_\+utils.\+Raw\+Test\+Server}}, and \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server_a52a6777a4a8be8e9c10cfccd1fb45d36}{aiohttp.\+test\+\_\+utils.\+Test\+Server}}.
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a39f950fa6f8bb830c00739b3708973d9}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!close@{close}}
+\index{close@{close}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a39f950fa6f8bb830c00739b3708973d9} 
+ None aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close all fixtures created by the test client.
+
+After that point, the TestClient is no longer usable.
+
+This is an idempotent function: running close multiple times
+will not have any additional effects.
+
+close is also run when the object is garbage collected, and on
+exit when used as a context manager.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a2efcb60a7085e65a124a208888834946}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!closed@{closed}}
+\index{closed@{closed}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a2efcb60a7085e65a124a208888834946} 
+ bool aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+closed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a1f060956b1c5bf6749d203d33e58368a}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!handler@{handler}}
+\index{handler@{handler}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{handler()}{handler()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a1f060956b1c5bf6749d203d33e58368a} 
+ Server aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+handler (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_adf4873db28d4ec93782d9c1b041075e6}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!make\_url@{make\_url}}
+\index{make\_url@{make\_url}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{make\_url()}{make\_url()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_adf4873db28d4ec93782d9c1b041075e6} 
+ \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+make\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Str\+Or\+URL}]{path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_ae5591c047984acfc688a310ab20ebcb7}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!start\_server@{start\_server}}
+\index{start\_server@{start\_server}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{start\_server()}{start\_server()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_ae5591c047984acfc688a310ab20ebcb7} 
+ None aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+start\+\_\+server (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a58877b4bc2a06d05c44b939ba587ae35}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!started@{started}}
+\index{started@{started}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{started()}{started()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a58877b4bc2a06d05c44b939ba587ae35} 
+ bool aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+started (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_ad375ff19f1d170b1a387aa6e9f25f3c2}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_\_test\_\_@{\_\_test\_\_}}
+\index{\_\_test\_\_@{\_\_test\_\_}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_\_test\_\_}{\_\_test\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_ad375ff19f1d170b1a387aa6e9f25f3c2} 
+bool aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+\+\_\+test\+\_\+\+\_\+ = False\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a8d62251d9b565f5cc76f2aec3eea30ce}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_closed@{\_closed}}
+\index{\_closed@{\_closed}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_closed}{\_closed}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a8d62251d9b565f5cc76f2aec3eea30ce} 
+bool aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+closed = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a8bff1312969937231576c17a64d052c2}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a8bff1312969937231576c17a64d052c2} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+loop = loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_ad3f37c54852baefa58f7a7e79ffb1b95}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_root@{\_root}}
+\index{\_root@{\_root}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_root}{\_root}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_ad3f37c54852baefa58f7a7e79ffb1b95} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+root = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_aad3e7ffb96a45f79eaaa56e1c5e68823}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!\_ssl@{\_ssl}}
+\index{\_ssl@{\_ssl}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{\_ssl}{\_ssl}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_aad3e7ffb96a45f79eaaa56e1c5e68823} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+\_\+ssl = kwargs.\+pop("{}ssl"{}, None)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a7d34eb82e96d1d73f0491cca13701901}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!closed@{closed}}
+\index{closed@{closed}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a7d34eb82e96d1d73f0491cca13701901} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+closed}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a9bcb2fec2d5ecb26ded68136d10c8e7d}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!host@{host}}
+\index{host@{host}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a9bcb2fec2d5ecb26ded68136d10c8e7d} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+host = host}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_aed13bb0a1ea72c0e9b26281d2731681a}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!port@{port}}
+\index{port@{port}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_aed13bb0a1ea72c0e9b26281d2731681a} 
+int aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+port = port}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_aaba0d47d7f643ef3e13a237a00c9d097}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!runner@{runner}}
+\index{runner@{runner}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{runner}{runner}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_aaba0d47d7f643ef3e13a237a00c9d097} 
+Optional\mbox{[}Base\+Runner\mbox{]} aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+runner = None}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_ac211d4e4bc6b1e891b42f46efa17fbe7}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!scheme@{scheme}}
+\index{scheme@{scheme}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{scheme}{scheme}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_ac211d4e4bc6b1e891b42f46efa17fbe7} 
+str aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+scheme = scheme}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_adcc147ff2b13ae5aa99fceb102b61fe1}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!skip\_url\_asserts@{skip\_url\_asserts}}
+\index{skip\_url\_asserts@{skip\_url\_asserts}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{skip\_url\_asserts}{skip\_url\_asserts}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_adcc147ff2b13ae5aa99fceb102b61fe1} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+skip\+\_\+url\+\_\+asserts = skip\+\_\+url\+\_\+asserts}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_base_test_server_a2c38dc281046342512eeef55b8bf16fe}\index{aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}!socket\_factory@{socket\_factory}}
+\index{socket\_factory@{socket\_factory}!aiohttp.test\_utils.BaseTestServer@{aiohttp.test\_utils.BaseTestServer}}
+\doxysubsubsection{\texorpdfstring{socket\_factory}{socket\_factory}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_base_test_server_a2c38dc281046342512eeef55b8bf16fe} 
+aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server.\+socket\+\_\+factory = socket\+\_\+factory}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{test__utils_8py}{test\+\_\+utils.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\doxysection{pycparser.\+ast\+\_\+transforms Namespace Reference}
+\hypertarget{namespacepycparser_1_1ast__transforms}{}\label{namespacepycparser_1_1ast__transforms}\index{pycparser.ast\_transforms@{pycparser.ast\_transforms}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepycparser_1_1ast__transforms_a15ec544dd8f83afcd7c3fa20f789fcc3}{fix\+\_\+switch\+\_\+cases}} (switch\+\_\+node)
+\item 
+\mbox{\hyperlink{namespacepycparser_1_1ast__transforms_a3ef4f4527a2f1b7612cb76df2b8df5a5}{\+\_\+extract\+\_\+nested\+\_\+case}} (case\+\_\+node, stmts\+\_\+list)
+\item 
+\mbox{\hyperlink{namespacepycparser_1_1ast__transforms_a383db6574e509d42c4c998c2bb0c906a}{fix\+\_\+atomic\+\_\+specifiers}} (decl)
+\item 
+\mbox{\hyperlink{namespacepycparser_1_1ast__transforms_a05352772fa8ba24c533fe2ff211488e6}{\+\_\+fix\+\_\+atomic\+\_\+specifiers\+\_\+once}} (decl)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepycparser_1_1ast__transforms_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepycparser_1_1ast__transforms_a3ef4f4527a2f1b7612cb76df2b8df5a5}\index{pycparser.ast\_transforms@{pycparser.ast\_transforms}!\_extract\_nested\_case@{\_extract\_nested\_case}}
+\index{\_extract\_nested\_case@{\_extract\_nested\_case}!pycparser.ast\_transforms@{pycparser.ast\_transforms}}
+\doxysubsubsection{\texorpdfstring{\_extract\_nested\_case()}{\_extract\_nested\_case()}}
+{\footnotesize\ttfamily \label{namespacepycparser_1_1ast__transforms_a3ef4f4527a2f1b7612cb76df2b8df5a5} 
+pycparser.\+ast\+\_\+transforms.\+\_\+extract\+\_\+nested\+\_\+case (\begin{DoxyParamCaption}\item[{}]{case\+\_\+node}{, }\item[{}]{stmts\+\_\+list}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Recursively extract consecutive Case statements that are made nested
+    by the parser and add them to the stmts_list.
+\end{DoxyVerb}
+ \Hypertarget{namespacepycparser_1_1ast__transforms_a05352772fa8ba24c533fe2ff211488e6}\index{pycparser.ast\_transforms@{pycparser.ast\_transforms}!\_fix\_atomic\_specifiers\_once@{\_fix\_atomic\_specifiers\_once}}
+\index{\_fix\_atomic\_specifiers\_once@{\_fix\_atomic\_specifiers\_once}!pycparser.ast\_transforms@{pycparser.ast\_transforms}}
+\doxysubsubsection{\texorpdfstring{\_fix\_atomic\_specifiers\_once()}{\_fix\_atomic\_specifiers\_once()}}
+{\footnotesize\ttfamily \label{namespacepycparser_1_1ast__transforms_a05352772fa8ba24c533fe2ff211488e6} 
+pycparser.\+ast\+\_\+transforms.\+\_\+fix\+\_\+atomic\+\_\+specifiers\+\_\+once (\begin{DoxyParamCaption}\item[{}]{decl}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Performs one 'fix' round of atomic specifiers.
+    Returns (modified_decl, found) where found is True iff a fix was made.
+\end{DoxyVerb}
+ \Hypertarget{namespacepycparser_1_1ast__transforms_a383db6574e509d42c4c998c2bb0c906a}\index{pycparser.ast\_transforms@{pycparser.ast\_transforms}!fix\_atomic\_specifiers@{fix\_atomic\_specifiers}}
+\index{fix\_atomic\_specifiers@{fix\_atomic\_specifiers}!pycparser.ast\_transforms@{pycparser.ast\_transforms}}
+\doxysubsubsection{\texorpdfstring{fix\_atomic\_specifiers()}{fix\_atomic\_specifiers()}}
+{\footnotesize\ttfamily \label{namespacepycparser_1_1ast__transforms_a383db6574e509d42c4c998c2bb0c906a} 
+pycparser.\+ast\+\_\+transforms.\+fix\+\_\+atomic\+\_\+specifiers (\begin{DoxyParamCaption}\item[{}]{decl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Atomic specifiers like _Atomic(type) are unusually structured,
+    conferring a qualifier upon the contained type.
+
+    This function fixes a decl with atomic specifiers to have a sane AST
+    structure, by removing spurious Typename->TypeDecl pairs and attaching
+    the _Atomic qualifier in the right place.
+\end{DoxyVerb}
+ \Hypertarget{namespacepycparser_1_1ast__transforms_a15ec544dd8f83afcd7c3fa20f789fcc3}\index{pycparser.ast\_transforms@{pycparser.ast\_transforms}!fix\_switch\_cases@{fix\_switch\_cases}}
+\index{fix\_switch\_cases@{fix\_switch\_cases}!pycparser.ast\_transforms@{pycparser.ast\_transforms}}
+\doxysubsubsection{\texorpdfstring{fix\_switch\_cases()}{fix\_switch\_cases()}}
+{\footnotesize\ttfamily \label{namespacepycparser_1_1ast__transforms_a15ec544dd8f83afcd7c3fa20f789fcc3} 
+pycparser.\+ast\+\_\+transforms.\+fix\+\_\+switch\+\_\+cases (\begin{DoxyParamCaption}\item[{}]{switch\+\_\+node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The 'case' statements in a 'switch' come out of parsing with one
+    child node, so subsequent statements are just tucked to the parent
+    Compound. Additionally, consecutive (fall-through) case statements
+    come out messy. This is a peculiarity of the C grammar. The following:
+
+        switch (myvar) {
+            case 10:
+                k = 10;
+                p = k + 1;
+                return 10;
+            case 20:
+            case 30:
+                return 20;
+            default:
+                break;
+        }
+
+    Creates this tree (pseudo-dump):
+
+        Switch
+            ID: myvar
+            Compound:
+                Case 10:
+                    k = 10
+                p = k + 1
+                return 10
+                Case 20:
+                    Case 30:
+                        return 20
+                Default:
+                    break
+
+    The goal of this transform is to fix this mess, turning it into the
+    following:
+
+        Switch
+            ID: myvar
+            Compound:
+                Case 10:
+                    k = 10
+                    p = k + 1
+                    return 10
+                Case 20:
+                Case 30:
+                    return 20
+                Default:
+                    break
+
+    A fixed AST node is returned. The argument may be modified.
+\end{DoxyVerb}
+ 

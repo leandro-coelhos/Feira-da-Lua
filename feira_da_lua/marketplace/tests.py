@@ -1,6 +1,6 @@
 from django.test import TestCase
-from users.models import User, Marketer
-from marketplace.service import (
+from feira_da_lua.users.models import User, Marketer
+from feira_da_lua.marketplace.service import (
     CreateMarketPlace,
     GetMarketplaceById,
     GetAllMarketPlaces,

@@ -1,0 +1,208 @@
+\doxysection{\+\_\+pytest.\+legacypath Namespace Reference}
+\hypertarget{namespace__pytest_1_1legacypath}{}\label{namespace__pytest_1_1legacypath}\index{\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1legacypath_1_1_legacy_testdir_plugin}{Legacy\+Testdir\+Plugin}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1legacypath_1_1_legacy_tmpdir_plugin}{Legacy\+Tmpdir\+Plugin}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1legacypath_1_1_tempdir_factory}{Tempdir\+Factory}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1legacypath_1_1_testdir}{Testdir}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_a493216f6803256c4394e15010371ddf0}{Cache\+\_\+makedir}} (\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} self, str name)
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_ad1b4661c449a94606babacd810eef2f1}{Fixture\+Request\+\_\+fspath}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} self)
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_a9990b3d1a245fc31f73abecc4834d7f4}{Terminal\+Reporter\+\_\+startdir}} (\mbox{\hyperlink{class__pytest_1_1terminal_1_1_terminal_reporter}{Terminal\+Reporter}} self)
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_a777bca9821164b30483d1720e1757a2f}{Config\+\_\+invocation\+\_\+dir}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} self)
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_af9d68947ad5ad6f51a296256ae0d8498}{Config\+\_\+rootdir}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} self)
+\item 
+LEGACY\+\_\+\+PATH\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1legacypath_a6bb1508a42740153a429b0005ab2b732}{Config\+\_\+inifile}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} self)
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_a075a832e45464b3b398e76d2c58faf12}{Session\+\_\+startdir}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} self)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1legacypath_a9acc83743c572c6bc2aa96a113c9adbb}{Config\+\_\+\+\_\+getini\+\_\+unknown\+\_\+type}} (self, str name, str type, str\texorpdfstring{$\vert$}{|}list\mbox{[}str\mbox{]} value)
+\item 
+LEGACY\+\_\+\+PATH \mbox{\hyperlink{namespace__pytest_1_1legacypath_a045b721377a41913bc020c888007a410}{Node\+\_\+fspath}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_node}{Node}} self)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1legacypath_a3f52f7764fdc08fc023370e86e70f2d9}{Node\+\_\+fspath\+\_\+set}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_node}{Node}} self, LEGACY\+\_\+\+PATH value)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1legacypath_a25ed44ae8a2cc0cd44a15cb207e41f72}{pytest\+\_\+load\+\_\+initial\+\_\+conftests}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} early\+\_\+config)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1legacypath_ad782e748d90b411ac030991acf408246}{pytest\+\_\+configure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1legacypath_ac3533293188b7bd9fd1f2d8efe6b6b6b}{pytest\+\_\+plugin\+\_\+registered}} (object plugin, \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} manager)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1legacypath_a882d079ec9d6785d3f4708a06b40441a}{path}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1legacypath_aef0cabfe7888624be2c500785b450c7e}{startpath}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1legacypath_acaaa97bdc221db6bcecff7c1078976b7}{rootpath}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1legacypath_a08723a54946051327b999d9637d84816}{inipath}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Add backward compatibility support for the legacy py path type.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1legacypath_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1legacypath_a493216f6803256c4394e15010371ddf0}\index{\_pytest.legacypath@{\_pytest.legacypath}!Cache\_makedir@{Cache\_makedir}}
+\index{Cache\_makedir@{Cache\_makedir}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Cache\_makedir()}{Cache\_makedir()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a493216f6803256c4394e15010371ddf0} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Cache\+\_\+makedir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}}}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a directory path object with the given name.
+
+Same as :func:`mkdir`, but returns a legacy py path instance.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_a9acc83743c572c6bc2aa96a113c9adbb}\index{\_pytest.legacypath@{\_pytest.legacypath}!Config\_\_getini\_unknown\_type@{Config\_\_getini\_unknown\_type}}
+\index{Config\_\_getini\_unknown\_type@{Config\_\_getini\_unknown\_type}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Config\_\_getini\_unknown\_type()}{Config\_\_getini\_unknown\_type()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a9acc83743c572c6bc2aa96a113c9adbb} 
+\+\_\+pytest.\+legacypath.\+Config\+\_\+\+\_\+getini\+\_\+unknown\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{str}]{type}{, }\item[{str \texorpdfstring{$\vert$}{|} list\mbox{[}str\mbox{]}}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1legacypath_a6bb1508a42740153a429b0005ab2b732}\index{\_pytest.legacypath@{\_pytest.legacypath}!Config\_inifile@{Config\_inifile}}
+\index{Config\_inifile@{Config\_inifile}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Config\_inifile()}{Config\_inifile()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a6bb1508a42740153a429b0005ab2b732} 
+ LEGACY\+\_\+\+PATH \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+legacypath.\+Config\+\_\+inifile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The path to the :ref:`configfile <configfiles>`.
+
+Prefer to use :attr:`inipath`, which is a :class:`pathlib.Path`.
+
+:type: Optional[LEGACY_PATH]
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_a777bca9821164b30483d1720e1757a2f}\index{\_pytest.legacypath@{\_pytest.legacypath}!Config\_invocation\_dir@{Config\_invocation\_dir}}
+\index{Config\_invocation\_dir@{Config\_invocation\_dir}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Config\_invocation\_dir()}{Config\_invocation\_dir()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a777bca9821164b30483d1720e1757a2f} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Config\+\_\+invocation\+\_\+dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The directory from which pytest was invoked.
+
+Prefer to use :attr:`invocation_params.dir <InvocationParams.dir>`,
+which is a :class:`pathlib.Path`.
+
+:type: LEGACY_PATH
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_af9d68947ad5ad6f51a296256ae0d8498}\index{\_pytest.legacypath@{\_pytest.legacypath}!Config\_rootdir@{Config\_rootdir}}
+\index{Config\_rootdir@{Config\_rootdir}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Config\_rootdir()}{Config\_rootdir()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_af9d68947ad5ad6f51a296256ae0d8498} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Config\+\_\+rootdir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The path to the :ref:`rootdir <rootdir>`.
+
+Prefer to use :attr:`rootpath`, which is a :class:`pathlib.Path`.
+
+:type: LEGACY_PATH
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_ad1b4661c449a94606babacd810eef2f1}\index{\_pytest.legacypath@{\_pytest.legacypath}!FixtureRequest\_fspath@{FixtureRequest\_fspath}}
+\index{FixtureRequest\_fspath@{FixtureRequest\_fspath}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{FixtureRequest\_fspath()}{FixtureRequest\_fspath()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_ad1b4661c449a94606babacd810eef2f1} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Fixture\+Request\+\_\+fspath (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(deprecated) The file system path of the test module which collected this test.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_a045b721377a41913bc020c888007a410}\index{\_pytest.legacypath@{\_pytest.legacypath}!Node\_fspath@{Node\_fspath}}
+\index{Node\_fspath@{Node\_fspath}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Node\_fspath()}{Node\_fspath()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a045b721377a41913bc020c888007a410} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Node\+\_\+fspath (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_node}{Node}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(deprecated) returns a legacy_path copy of self.path\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_a3f52f7764fdc08fc023370e86e70f2d9}\index{\_pytest.legacypath@{\_pytest.legacypath}!Node\_fspath\_set@{Node\_fspath\_set}}
+\index{Node\_fspath\_set@{Node\_fspath\_set}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Node\_fspath\_set()}{Node\_fspath\_set()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a3f52f7764fdc08fc023370e86e70f2d9} 
+ None \+\_\+pytest.\+legacypath.\+Node\+\_\+fspath\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_node}{Node}}}]{self}{, }\item[{LEGACY\+\_\+\+PATH}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1legacypath_ad782e748d90b411ac030991acf408246}\index{\_pytest.legacypath@{\_pytest.legacypath}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_ad782e748d90b411ac030991acf408246} 
+ None \+\_\+pytest.\+legacypath.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Installs the LegacyTmpdirPlugin if the ``tmpdir`` plugin is also installed.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_a25ed44ae8a2cc0cd44a15cb207e41f72}\index{\_pytest.legacypath@{\_pytest.legacypath}!pytest\_load\_initial\_conftests@{pytest\_load\_initial\_conftests}}
+\index{pytest\_load\_initial\_conftests@{pytest\_load\_initial\_conftests}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{pytest\_load\_initial\_conftests()}{pytest\_load\_initial\_conftests()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a25ed44ae8a2cc0cd44a15cb207e41f72} 
+ None \+\_\+pytest.\+legacypath.\+pytest\+\_\+load\+\_\+initial\+\_\+conftests (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{early\+\_\+config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Monkeypatch legacy path attributes in several classes, as early as possible.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_ac3533293188b7bd9fd1f2d8efe6b6b6b}\index{\_pytest.legacypath@{\_pytest.legacypath}!pytest\_plugin\_registered@{pytest\_plugin\_registered}}
+\index{pytest\_plugin\_registered@{pytest\_plugin\_registered}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{pytest\_plugin\_registered()}{pytest\_plugin\_registered()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_ac3533293188b7bd9fd1f2d8efe6b6b6b} 
+ None \+\_\+pytest.\+legacypath.\+pytest\+\_\+plugin\+\_\+registered (\begin{DoxyParamCaption}\item[{object}]{plugin}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{manager}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1legacypath_a075a832e45464b3b398e76d2c58faf12}\index{\_pytest.legacypath@{\_pytest.legacypath}!Session\_startdir@{Session\_startdir}}
+\index{Session\_startdir@{Session\_startdir}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{Session\_startdir()}{Session\_startdir()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a075a832e45464b3b398e76d2c58faf12} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Session\+\_\+startdir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The path from which pytest was invoked.
+
+Prefer to use ``startpath`` which is a :class:`pathlib.Path`.
+
+:type: LEGACY_PATH
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1legacypath_a9990b3d1a245fc31f73abecc4834d7f4}\index{\_pytest.legacypath@{\_pytest.legacypath}!TerminalReporter\_startdir@{TerminalReporter\_startdir}}
+\index{TerminalReporter\_startdir@{TerminalReporter\_startdir}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{TerminalReporter\_startdir()}{TerminalReporter\_startdir()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a9990b3d1a245fc31f73abecc4834d7f4} 
+ LEGACY\+\_\+\+PATH \+\_\+pytest.\+legacypath.\+Terminal\+Reporter\+\_\+startdir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1terminal_1_1_terminal_reporter}{Terminal\+Reporter}}}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The directory from which pytest was invoked.
+
+Prefer to use ``startpath`` which is a :class:`pathlib.Path`.
+
+:type: LEGACY_PATH
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1legacypath_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1legacypath_a08723a54946051327b999d9637d84816}\index{\_pytest.legacypath@{\_pytest.legacypath}!inipath@{inipath}}
+\index{inipath@{inipath}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{inipath}{inipath}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a08723a54946051327b999d9637d84816} 
+\+\_\+pytest.\+legacypath.\+inipath}
+
+\Hypertarget{namespace__pytest_1_1legacypath_a882d079ec9d6785d3f4708a06b40441a}\index{\_pytest.legacypath@{\_pytest.legacypath}!path@{path}}
+\index{path@{path}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_a882d079ec9d6785d3f4708a06b40441a} 
+\+\_\+pytest.\+legacypath.\+path}
+
+\Hypertarget{namespace__pytest_1_1legacypath_acaaa97bdc221db6bcecff7c1078976b7}\index{\_pytest.legacypath@{\_pytest.legacypath}!rootpath@{rootpath}}
+\index{rootpath@{rootpath}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{rootpath}{rootpath}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_acaaa97bdc221db6bcecff7c1078976b7} 
+\+\_\+pytest.\+legacypath.\+rootpath}
+
+\Hypertarget{namespace__pytest_1_1legacypath_aef0cabfe7888624be2c500785b450c7e}\index{\_pytest.legacypath@{\_pytest.legacypath}!startpath@{startpath}}
+\index{startpath@{startpath}!\_pytest.legacypath@{\_pytest.legacypath}}
+\doxysubsubsection{\texorpdfstring{startpath}{startpath}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1legacypath_aef0cabfe7888624be2c500785b450c7e} 
+\+\_\+pytest.\+legacypath.\+startpath}
+

@@ -1,0 +1,105 @@
+\doxysection{urllib3.\+response.\+Bytes\+Queue\+Buffer Class Reference}
+\hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer}{}\label{classurllib3_1_1response_1_1_bytes_queue_buffer}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_a7797564ed5c0194ba1556a135b6b6f36}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_a09db60bd82d91909c553004b47362791}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_aae9bd682e9c545ebda81b90f17bafd5e}{put}} (self, bytes data)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_a57474bca633f44542bb53fc9e81fecc5}{get}} (self, int n)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_a8c4706019134344d4d8f9ca0e41f3ad9}{get\+\_\+all}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+typing.\+Deque\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_ac61ab1ce7789a62ae9a1f1483fa68cd5}{buffer}} = collections.\+deque()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classurllib3_1_1response_1_1_bytes_queue_buffer_af6f09e31534d6e07ba8f8bf0408ed5b6}{\+\_\+size}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Memory-efficient bytes buffer
+
+To return decoded data in read() and still follow the BufferedIOBase API, we need a
+buffer to always return the correct amount of bytes.
+
+This buffer should be filled using calls to put()
+
+Our maximum memory usage is determined by the sum of the size of:
+
+ * self.buffer, which contains the full data
+ * the largest chunk that we will copy in get()
+
+The worst case scenario is a single chunk, in which case we'll make a full copy of
+the data inside get().
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_a7797564ed5c0194ba1556a135b6b6f36}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_a7797564ed5c0194ba1556a135b6b6f36} 
+ None urllib3.\+response.\+Bytes\+Queue\+Buffer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_a09db60bd82d91909c553004b47362791}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_a09db60bd82d91909c553004b47362791} 
+ int urllib3.\+response.\+Bytes\+Queue\+Buffer.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_a57474bca633f44542bb53fc9e81fecc5}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!get@{get}}
+\index{get@{get}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_a57474bca633f44542bb53fc9e81fecc5} 
+ bytes urllib3.\+response.\+Bytes\+Queue\+Buffer.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_a8c4706019134344d4d8f9ca0e41f3ad9}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!get\_all@{get\_all}}
+\index{get\_all@{get\_all}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{get\_all()}{get\_all()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_a8c4706019134344d4d8f9ca0e41f3ad9} 
+ bytes urllib3.\+response.\+Bytes\+Queue\+Buffer.\+get\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_aae9bd682e9c545ebda81b90f17bafd5e}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!put@{put}}
+\index{put@{put}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_aae9bd682e9c545ebda81b90f17bafd5e} 
+ None urllib3.\+response.\+Bytes\+Queue\+Buffer.\+put (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_af6f09e31534d6e07ba8f8bf0408ed5b6}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!\_size@{\_size}}
+\index{\_size@{\_size}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_af6f09e31534d6e07ba8f8bf0408ed5b6} 
+int urllib3.\+response.\+Bytes\+Queue\+Buffer.\+\_\+size = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1response_1_1_bytes_queue_buffer_ac61ab1ce7789a62ae9a1f1483fa68cd5}\index{urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}!buffer@{buffer}}
+\index{buffer@{buffer}!urllib3.response.BytesQueueBuffer@{urllib3.response.BytesQueueBuffer}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_bytes_queue_buffer_ac61ab1ce7789a62ae9a1f1483fa68cd5} 
+typing.\+Deque\mbox{[}bytes\mbox{]} urllib3.\+response.\+Bytes\+Queue\+Buffer.\+buffer = collections.\+deque()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/urllib3/\mbox{\hyperlink{urllib3_2response_8py}{response.\+py}}\end{DoxyCompactItemize}

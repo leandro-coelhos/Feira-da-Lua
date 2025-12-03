@@ -1,0 +1,101 @@
+\doxysection{django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin Class Reference}
+\hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin}{}\label{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin}\index{django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}}
+Inheritance diagram for django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.870466cm]{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a50aa80c706b326590422e7c624ebba77}{get\+\_\+template\+\_\+names}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin}{django.\+views.\+generic.\+base.\+Template\+Response\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin_acb779fab0e9d87e1ae49b9b4ad4e4492}{render\+\_\+to\+\_\+response}} (self, context, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}response\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a10dfba2af2818ea7cb71fa722c9c2d64}{object}}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_ad61c99756c644cb593e688eedc133036}{model}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_ab1dc88455d91a88a90cd67a690dc4261}{template\+\_\+name\+\_\+field}} = None
+\item 
+str \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a0c70e8165c5291263e07deb2f71379d4}{template\+\_\+name\+\_\+suffix}} = "{}\+\_\+detail"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin}{django.\+views.\+generic.\+base.\+Template\+Response\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin_a203af2f64354c5223cea755d99dfe483}{template\+\_\+name}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin_aabffc27d67e1201218ffe8dc2c8720ec}{template\+\_\+engine}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin_a59c7ed2c6969f34356114af4462544e9}{response\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1template_1_1response_1_1_template_response}{Template\+Response}}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin_ac1c20ee7dbee798ca478d705f8096226}{content\+\_\+type}} = None
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a50aa80c706b326590422e7c624ebba77}\index{django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}!get\_template\_names@{get\_template\_names}}
+\index{get\_template\_names@{get\_template\_names}!django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{get\_template\_names()}{get\_template\_names()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a50aa80c706b326590422e7c624ebba77} 
+django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin.\+get\+\_\+template\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of template names to be used for the request. May not be
+called if render_to_response() is overridden. Return a list containing
+``template_name``, if set on the value. Otherwise, return a list
+containing:
+
+* the contents of the ``template_name_field`` field on the
+  object instance that the view is operating upon (if available)
+* ``<app_label>/<model_name><template_name_suffix>.html``
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1_template_response_mixin_a01e86f80f6149ac9356850cbeba9bd22}{django.\+views.\+generic.\+base.\+Template\+Response\+Mixin}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_ad61c99756c644cb593e688eedc133036}\index{django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}!model@{model}}
+\index{model@{model}!django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_ad61c99756c644cb593e688eedc133036} 
+django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin.\+model}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a10dfba2af2818ea7cb71fa722c9c2d64}\index{django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}!object@{object}}
+\index{object@{object}!django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{object}{object}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a10dfba2af2818ea7cb71fa722c9c2d64} 
+django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin.\+object}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_ab1dc88455d91a88a90cd67a690dc4261}\index{django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}!template\_name\_field@{template\_name\_field}}
+\index{template\_name\_field@{template\_name\_field}!django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{template\_name\_field}{template\_name\_field}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_ab1dc88455d91a88a90cd67a690dc4261} 
+django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin.\+template\+\_\+name\+\_\+field = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a0c70e8165c5291263e07deb2f71379d4}\index{django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}!template\_name\_suffix@{template\_name\_suffix}}
+\index{template\_name\_suffix@{template\_name\_suffix}!django.views.generic.detail.SingleObjectTemplateResponseMixin@{django.views.generic.detail.SingleObjectTemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{template\_name\_suffix}{template\_name\_suffix}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1detail_1_1_single_object_template_response_mixin_a0c70e8165c5291263e07deb2f71379d4} 
+django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin.\+template\+\_\+name\+\_\+suffix = "{}\+\_\+detail"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/views/generic/\mbox{\hyperlink{detail_8py}{detail.\+py}}\end{DoxyCompactItemize}

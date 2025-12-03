@@ -1,0 +1,133 @@
+\doxysection{aiohttp.\+http\+\_\+writer Namespace Reference}
+\hypertarget{namespaceaiohttp_1_1http__writer}{}\label{namespaceaiohttp_1_1http__writer}\index{aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_stream_writer}{Stream\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a3c9933be845ff8f14042fda313128151}{\+\_\+safe\+\_\+header}} (str string)
+\item 
+bytes \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a4bcb690e17151fe0caa63567fddbd9b3}{\+\_\+py\+\_\+serialize\+\_\+headers}} (str status\+\_\+line, "{}CIMulti\+Dict\mbox{[}str\mbox{]}"{} headers)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a8596493b8707965348f84057a7f957cf}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = ("{}Stream\+Writer"{}, "{}Http\+Version"{}, "{}Http\+Version10"{}, "{}Http\+Version11"{})
+\item 
+int \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_ad7e358bc26de0c3d1c2827e7db5b1e16}{MIN\+\_\+\+PAYLOAD\+\_\+\+FOR\+\_\+\+WRITELINES}} = 2048
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_ad71af0a6386740db925d41155b9493eb}{IS\+\_\+\+PY313\+\_\+\+BEFORE\+\_\+313\+\_\+2}} = sys.\+version\+\_\+info $<$ (3, 13, 2)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__writer_af9a2658523363f3531c6cac7c0bcd545}{IS\+\_\+\+PY\+\_\+\+BEFORE\+\_\+312\+\_\+9}} = sys.\+version\+\_\+info $<$ (3, 12, 9)
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_aaa450c17d5648202fb73e3bccc956618}{SKIP\+\_\+\+WRITELINES}} = \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_ad71af0a6386740db925d41155b9493eb}{IS\+\_\+\+PY313\+\_\+\+BEFORE\+\_\+313\+\_\+2}} or \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_af9a2658523363f3531c6cac7c0bcd545}{IS\+\_\+\+PY\+\_\+\+BEFORE\+\_\+312\+\_\+9}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a049a0a0be3fc753a29db74e27ca3f8cc}{Http\+Version10}} = \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}}(1, 0)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__writer_ae93c3af7a8ee18a48be87637fb21397a}{Http\+Version11}} = \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}}(1, 1)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a31009f6b98668abb1f31453034ebf930}{\+\_\+\+T\+\_\+\+On\+Chunk\+Sent}} = Optional\mbox{[}Callable\mbox{[}\mbox{[}bytes\mbox{]}, Awaitable\mbox{[}None\mbox{]}\mbox{]}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a78ef92e3050c8365eb0d4746712e2c81}{\+\_\+\+T\+\_\+\+On\+Headers\+Sent}} = Optional\mbox{[}Callable\mbox{[}\mbox{[}"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}\mbox{]}, Awaitable\mbox{[}None\mbox{]}\mbox{]}\mbox{]}
+\item 
+bytes \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_aae34a650a8280a5e8e7d88a0d12c03e5}{\+\_\+serialize\+\_\+headers}} = \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a4bcb690e17151fe0caa63567fddbd9b3}{\+\_\+py\+\_\+serialize\+\_\+headers}}
+\item 
+bytes \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a8039e39e58e5e86460a973d9b7c06d77}{\+\_\+c\+\_\+serialize\+\_\+headers}} = \+\_\+http\+\_\+writer.\+\_\+serialize\+\_\+headers
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Http related parsers and protocol.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespaceaiohttp_1_1http__writer_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceaiohttp_1_1http__writer_a4bcb690e17151fe0caa63567fddbd9b3}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_py\_serialize\_headers@{\_py\_serialize\_headers}}
+\index{\_py\_serialize\_headers@{\_py\_serialize\_headers}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_py\_serialize\_headers()}{\_py\_serialize\_headers()}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a4bcb690e17151fe0caa63567fddbd9b3} 
+ bytes aiohttp.\+http\+\_\+writer.\+\_\+py\+\_\+serialize\+\_\+headers (\begin{DoxyParamCaption}\item[{str}]{status\+\_\+line}{, }\item[{"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}}]{headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_a3c9933be845ff8f14042fda313128151}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_safe\_header@{\_safe\_header}}
+\index{\_safe\_header@{\_safe\_header}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_safe\_header()}{\_safe\_header()}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a3c9933be845ff8f14042fda313128151} 
+ str aiohttp.\+http\+\_\+writer.\+\_\+safe\+\_\+header (\begin{DoxyParamCaption}\item[{str}]{string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespaceaiohttp_1_1http__writer_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceaiohttp_1_1http__writer_a8596493b8707965348f84057a7f957cf}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a8596493b8707965348f84057a7f957cf} 
+tuple aiohttp.\+http\+\_\+writer.\+\_\+\+\_\+all\+\_\+\+\_\+ = ("{}Stream\+Writer"{}, "{}Http\+Version"{}, "{}Http\+Version10"{}, "{}Http\+Version11"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_a8039e39e58e5e86460a973d9b7c06d77}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_c\_serialize\_headers@{\_c\_serialize\_headers}}
+\index{\_c\_serialize\_headers@{\_c\_serialize\_headers}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_c\_serialize\_headers}{\_c\_serialize\_headers}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a8039e39e58e5e86460a973d9b7c06d77} 
+bytes aiohttp.\+http\+\_\+writer.\+\_\+c\+\_\+serialize\+\_\+headers = \+\_\+http\+\_\+writer.\+\_\+serialize\+\_\+headers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_aae34a650a8280a5e8e7d88a0d12c03e5}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_serialize\_headers@{\_serialize\_headers}}
+\index{\_serialize\_headers@{\_serialize\_headers}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_serialize\_headers}{\_serialize\_headers}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_aae34a650a8280a5e8e7d88a0d12c03e5} 
+bytes aiohttp.\+http\+\_\+writer.\+\_\+serialize\+\_\+headers = \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_a4bcb690e17151fe0caa63567fddbd9b3}{\+\_\+py\+\_\+serialize\+\_\+headers}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_a31009f6b98668abb1f31453034ebf930}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_T\_OnChunkSent@{\_T\_OnChunkSent}}
+\index{\_T\_OnChunkSent@{\_T\_OnChunkSent}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_T\_OnChunkSent}{\_T\_OnChunkSent}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a31009f6b98668abb1f31453034ebf930} 
+aiohttp.\+http\+\_\+writer.\+\_\+\+T\+\_\+\+On\+Chunk\+Sent = Optional\mbox{[}Callable\mbox{[}\mbox{[}bytes\mbox{]}, Awaitable\mbox{[}None\mbox{]}\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_a78ef92e3050c8365eb0d4746712e2c81}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!\_T\_OnHeadersSent@{\_T\_OnHeadersSent}}
+\index{\_T\_OnHeadersSent@{\_T\_OnHeadersSent}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{\_T\_OnHeadersSent}{\_T\_OnHeadersSent}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a78ef92e3050c8365eb0d4746712e2c81} 
+aiohttp.\+http\+\_\+writer.\+\_\+\+T\+\_\+\+On\+Headers\+Sent = Optional\mbox{[}Callable\mbox{[}\mbox{[}"{}CIMulti\+Dict\mbox{[}str\mbox{]}"{}\mbox{]}, Awaitable\mbox{[}None\mbox{]}\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_a049a0a0be3fc753a29db74e27ca3f8cc}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!HttpVersion10@{HttpVersion10}}
+\index{HttpVersion10@{HttpVersion10}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{HttpVersion10}{HttpVersion10}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_a049a0a0be3fc753a29db74e27ca3f8cc} 
+aiohttp.\+http\+\_\+writer.\+Http\+Version10 = \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}}(1, 0)}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_ae93c3af7a8ee18a48be87637fb21397a}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!HttpVersion11@{HttpVersion11}}
+\index{HttpVersion11@{HttpVersion11}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{HttpVersion11}{HttpVersion11}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_ae93c3af7a8ee18a48be87637fb21397a} 
+aiohttp.\+http\+\_\+writer.\+Http\+Version11 = \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}}(1, 1)}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_ad71af0a6386740db925d41155b9493eb}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!IS\_PY313\_BEFORE\_313\_2@{IS\_PY313\_BEFORE\_313\_2}}
+\index{IS\_PY313\_BEFORE\_313\_2@{IS\_PY313\_BEFORE\_313\_2}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{IS\_PY313\_BEFORE\_313\_2}{IS\_PY313\_BEFORE\_313\_2}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_ad71af0a6386740db925d41155b9493eb} 
+tuple aiohttp.\+http\+\_\+writer.\+IS\+\_\+\+PY313\+\_\+\+BEFORE\+\_\+313\+\_\+2 = sys.\+version\+\_\+info $<$ (3, 13, 2)}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_af9a2658523363f3531c6cac7c0bcd545}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!IS\_PY\_BEFORE\_312\_9@{IS\_PY\_BEFORE\_312\_9}}
+\index{IS\_PY\_BEFORE\_312\_9@{IS\_PY\_BEFORE\_312\_9}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{IS\_PY\_BEFORE\_312\_9}{IS\_PY\_BEFORE\_312\_9}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_af9a2658523363f3531c6cac7c0bcd545} 
+aiohttp.\+http\+\_\+writer.\+IS\+\_\+\+PY\+\_\+\+BEFORE\+\_\+312\+\_\+9 = sys.\+version\+\_\+info $<$ (3, 12, 9)}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_ad7e358bc26de0c3d1c2827e7db5b1e16}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!MIN\_PAYLOAD\_FOR\_WRITELINES@{MIN\_PAYLOAD\_FOR\_WRITELINES}}
+\index{MIN\_PAYLOAD\_FOR\_WRITELINES@{MIN\_PAYLOAD\_FOR\_WRITELINES}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{MIN\_PAYLOAD\_FOR\_WRITELINES}{MIN\_PAYLOAD\_FOR\_WRITELINES}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_ad7e358bc26de0c3d1c2827e7db5b1e16} 
+int aiohttp.\+http\+\_\+writer.\+MIN\+\_\+\+PAYLOAD\+\_\+\+FOR\+\_\+\+WRITELINES = 2048}
+
+\Hypertarget{namespaceaiohttp_1_1http__writer_aaa450c17d5648202fb73e3bccc956618}\index{aiohttp.http\_writer@{aiohttp.http\_writer}!SKIP\_WRITELINES@{SKIP\_WRITELINES}}
+\index{SKIP\_WRITELINES@{SKIP\_WRITELINES}!aiohttp.http\_writer@{aiohttp.http\_writer}}
+\doxysubsubsection{\texorpdfstring{SKIP\_WRITELINES}{SKIP\_WRITELINES}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__writer_aaa450c17d5648202fb73e3bccc956618} 
+tuple aiohttp.\+http\+\_\+writer.\+SKIP\+\_\+\+WRITELINES = \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_ad71af0a6386740db925d41155b9493eb}{IS\+\_\+\+PY313\+\_\+\+BEFORE\+\_\+313\+\_\+2}} or \mbox{\hyperlink{namespaceaiohttp_1_1http__writer_af9a2658523363f3531c6cac7c0bcd545}{IS\+\_\+\+PY\+\_\+\+BEFORE\+\_\+312\+\_\+9}}}
+

@@ -1,0 +1,85 @@
+\doxysection{django.\+utils.\+crypto Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1crypto}{}\label{namespacedjango_1_1utils_1_1crypto}\index{django.utils.crypto@{django.utils.crypto}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1crypto_1_1_invalid_algorithm}{Invalid\+Algorithm}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_a326cb0632699dcf567391a768e011893}{salted\+\_\+hmac}} (key\+\_\+salt, value, secret=None, \texorpdfstring{$\ast$}{*}, algorithm="{}sha1"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_ae71b15fe07506061e65225724bd8de22}{get\+\_\+random\+\_\+string}} (length, allowed\+\_\+chars=\mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_a10ca6fd43c121c15a7145a106dcff35c}{RANDOM\+\_\+\+STRING\+\_\+\+CHARS}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_a66e9bbabdf324ab1ee9230e6944976ba}{constant\+\_\+time\+\_\+compare}} (val1, val2)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_a9480474eb1b93207418057f44d6ae163}{pbkdf2}} (password, salt, iterations, dklen=0, digest=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_a10ca6fd43c121c15a7145a106dcff35c}{RANDOM\+\_\+\+STRING\+\_\+\+CHARS}} = "{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Django's standard crypto functions and utilities.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1crypto_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1crypto_a66e9bbabdf324ab1ee9230e6944976ba}\index{django.utils.crypto@{django.utils.crypto}!constant\_time\_compare@{constant\_time\_compare}}
+\index{constant\_time\_compare@{constant\_time\_compare}!django.utils.crypto@{django.utils.crypto}}
+\doxysubsubsection{\texorpdfstring{constant\_time\_compare()}{constant\_time\_compare()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1crypto_a66e9bbabdf324ab1ee9230e6944976ba} 
+django.\+utils.\+crypto.\+constant\+\_\+time\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{val1}{, }\item[{}]{val2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the two strings are equal, False otherwise.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1crypto_ae71b15fe07506061e65225724bd8de22}\index{django.utils.crypto@{django.utils.crypto}!get\_random\_string@{get\_random\_string}}
+\index{get\_random\_string@{get\_random\_string}!django.utils.crypto@{django.utils.crypto}}
+\doxysubsubsection{\texorpdfstring{get\_random\_string()}{get\_random\_string()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1crypto_ae71b15fe07506061e65225724bd8de22} 
+django.\+utils.\+crypto.\+get\+\_\+random\+\_\+string (\begin{DoxyParamCaption}\item[{}]{length}{, }\item[{}]{allowed\+\_\+chars}{ = {\ttfamily \mbox{\hyperlink{namespacedjango_1_1utils_1_1crypto_a10ca6fd43c121c15a7145a106dcff35c}{RANDOM\+\_\+\+STRING\+\_\+\+CHARS}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a securely generated random string.
+
+The bit length of the returned value can be calculated with the formula:
+    log_2(len(allowed_chars)^length)
+
+For example, with default `allowed_chars` (26+26+10), this gives:
+  * length: 12, bit length =~ 71 bits
+  * length: 22, bit length =~ 131 bits
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1crypto_a9480474eb1b93207418057f44d6ae163}\index{django.utils.crypto@{django.utils.crypto}!pbkdf2@{pbkdf2}}
+\index{pbkdf2@{pbkdf2}!django.utils.crypto@{django.utils.crypto}}
+\doxysubsubsection{\texorpdfstring{pbkdf2()}{pbkdf2()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1crypto_a9480474eb1b93207418057f44d6ae163} 
+django.\+utils.\+crypto.\+pbkdf2 (\begin{DoxyParamCaption}\item[{}]{password}{, }\item[{}]{salt}{, }\item[{}]{iterations}{, }\item[{}]{dklen}{ = {\ttfamily 0}, }\item[{}]{digest}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the hash of password using pbkdf2.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1crypto_a326cb0632699dcf567391a768e011893}\index{django.utils.crypto@{django.utils.crypto}!salted\_hmac@{salted\_hmac}}
+\index{salted\_hmac@{salted\_hmac}!django.utils.crypto@{django.utils.crypto}}
+\doxysubsubsection{\texorpdfstring{salted\_hmac()}{salted\_hmac()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1crypto_a326cb0632699dcf567391a768e011893} 
+django.\+utils.\+crypto.\+salted\+\_\+hmac (\begin{DoxyParamCaption}\item[{}]{key\+\_\+salt}{, }\item[{}]{value}{, }\item[{}]{secret}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{algorithm}{ = {\ttfamily "{}sha1"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the HMAC of 'value', using a key generated from key_salt and a
+secret (which defaults to settings.SECRET_KEY). Default algorithm is SHA1,
+but any algorithm name supported by hashlib can be passed.
+
+A different key_salt should be passed in for every application of HMAC.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1utils_1_1crypto_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1crypto_a10ca6fd43c121c15a7145a106dcff35c}\index{django.utils.crypto@{django.utils.crypto}!RANDOM\_STRING\_CHARS@{RANDOM\_STRING\_CHARS}}
+\index{RANDOM\_STRING\_CHARS@{RANDOM\_STRING\_CHARS}!django.utils.crypto@{django.utils.crypto}}
+\doxysubsubsection{\texorpdfstring{RANDOM\_STRING\_CHARS}{RANDOM\_STRING\_CHARS}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1crypto_a10ca6fd43c121c15a7145a106dcff35c} 
+str django.\+utils.\+crypto.\+RANDOM\+\_\+\+STRING\+\_\+\+CHARS = "{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"{}}
+

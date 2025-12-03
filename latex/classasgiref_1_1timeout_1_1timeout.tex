@@ -1,0 +1,183 @@
+\doxysection{asgiref.\+timeout.\+timeout Class Reference}
+\hypertarget{classasgiref_1_1timeout_1_1timeout}{}\label{classasgiref_1_1timeout_1_1timeout}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_aeb0db768168b78a6440668d1d7f165f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout}{timeout}}, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None)
+\item 
+"{}timeout"{} \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_af3089a039b3b94f8ba959afa13d28fa1}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+Optional\mbox{[}bool\mbox{]} \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_aeb2c7ee3fe7eb679e617a836a6b52a6c}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, Type\mbox{[}Base\+Exception\mbox{]} exc\+\_\+type, Base\+Exception exc\+\_\+val, Traceback\+Type exc\+\_\+tb)
+\item 
+"{}timeout"{} \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_affea679228c0923f2c108eddf47ef204}{\+\_\+\+\_\+aenter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_abc140aeed4d3fdd184afdf47bc771e43}{\+\_\+\+\_\+aexit\+\_\+\+\_\+}} (self, Type\mbox{[}Base\+Exception\mbox{]} exc\+\_\+type, Base\+Exception exc\+\_\+val, Traceback\+Type exc\+\_\+tb)
+\item 
+bool \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a07a91a9c763661aca8764e9f9347cb8c}{expired}} (self)
+\item 
+Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a03dd154d80cdeded1703f3c5cdb63a8a}{remaining}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+"{}timeout"{} \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_ac538639ad42a8acfc471c619b28f9f89}{\+\_\+do\+\_\+enter}} (self)
+\item 
+None \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a7d09d7aea51663900fb5ff20cfba1769}{\+\_\+do\+\_\+exit}} (self, Type\mbox{[}Base\+Exception\mbox{]} exc\+\_\+type)
+\item 
+None \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a3ee6a9dafe31a61c0ee38c4e83c32b39}{\+\_\+cancel\+\_\+task}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a118ea1a25a7af5e302c41f4333203298}{\+\_\+timeout}} = \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout}{timeout}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a7eb9c5de9f8ab17e7c6699b44b94f0e3}{\+\_\+loop}} = loop
+\item 
+\mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a9c9d44588520e5c3a3b1ccecacdaaacb}{\+\_\+task}} = None
+\item 
+bool \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_af660381bd353fbb338b5725aafc03f58}{\+\_\+cancelled}} = False
+\item 
+\mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_ae5c59ea03386a3b11fa17804395944d3}{\+\_\+cancel\+\_\+handler}} = None
+\item 
+\mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a4d9f3d46cdeb3eff8fa56b43ca011e34}{\+\_\+cancel\+\_\+at}} = None
+\item 
+\mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout_a416ffb08ec0651515ee84211960bdf55}{\+\_\+cancel\+\_\+task}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}timeout context manager.
+
+Useful in cases when you want to apply timeout logic around block
+of code or in cases when asyncio.wait_for is not suitable. For example:
+
+>>> with timeout(0.001):
+...     async with aiohttp.get('https://github.com') as r:
+...         await r.text()
+
+
+timeout - value in seconds or None to disable timeout logic
+loop - asyncio compatible event loop
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_aeb0db768168b78a6440668d1d7f165f2}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_aeb0db768168b78a6440668d1d7f165f2} 
+ None asgiref.\+timeout.\+timeout.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}float\mbox{]}}]{timeout}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_affea679228c0923f2c108eddf47ef204}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_\_aenter\_\_@{\_\_aenter\_\_}}
+\index{\_\_aenter\_\_@{\_\_aenter\_\_}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_\_aenter\_\_()}{\_\_aenter\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_affea679228c0923f2c108eddf47ef204} 
+ "{}timeout"{} asgiref.\+timeout.\+timeout.\+\_\+\+\_\+aenter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_abc140aeed4d3fdd184afdf47bc771e43}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_\_aexit\_\_@{\_\_aexit\_\_}}
+\index{\_\_aexit\_\_@{\_\_aexit\_\_}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_\_aexit\_\_()}{\_\_aexit\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_abc140aeed4d3fdd184afdf47bc771e43} 
+ None asgiref.\+timeout.\+timeout.\+\_\+\+\_\+aexit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Type\mbox{[}Base\+Exception\mbox{]}}]{exc\+\_\+type}{, }\item[{Base\+Exception}]{exc\+\_\+val}{, }\item[{Traceback\+Type}]{exc\+\_\+tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_af3089a039b3b94f8ba959afa13d28fa1}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_af3089a039b3b94f8ba959afa13d28fa1} 
+ "{}timeout"{} asgiref.\+timeout.\+timeout.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_aeb2c7ee3fe7eb679e617a836a6b52a6c}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_aeb2c7ee3fe7eb679e617a836a6b52a6c} 
+ Optional\mbox{[}bool\mbox{]} asgiref.\+timeout.\+timeout.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Type\mbox{[}Base\+Exception\mbox{]}}]{exc\+\_\+type}{, }\item[{Base\+Exception}]{exc\+\_\+val}{, }\item[{Traceback\+Type}]{exc\+\_\+tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a3ee6a9dafe31a61c0ee38c4e83c32b39}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_cancel\_task@{\_cancel\_task}}
+\index{\_cancel\_task@{\_cancel\_task}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_cancel\_task()}{\_cancel\_task()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a3ee6a9dafe31a61c0ee38c4e83c32b39} 
+ None asgiref.\+timeout.\+timeout.\+\_\+cancel\+\_\+task (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_ac538639ad42a8acfc471c619b28f9f89}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_do\_enter@{\_do\_enter}}
+\index{\_do\_enter@{\_do\_enter}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_do\_enter()}{\_do\_enter()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_ac538639ad42a8acfc471c619b28f9f89} 
+ "{}timeout"{} asgiref.\+timeout.\+timeout.\+\_\+do\+\_\+enter (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a7d09d7aea51663900fb5ff20cfba1769}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_do\_exit@{\_do\_exit}}
+\index{\_do\_exit@{\_do\_exit}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_do\_exit()}{\_do\_exit()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a7d09d7aea51663900fb5ff20cfba1769} 
+ None asgiref.\+timeout.\+timeout.\+\_\+do\+\_\+exit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Type\mbox{[}Base\+Exception\mbox{]}}]{exc\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a07a91a9c763661aca8764e9f9347cb8c}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!expired@{expired}}
+\index{expired@{expired}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{expired()}{expired()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a07a91a9c763661aca8764e9f9347cb8c} 
+ bool asgiref.\+timeout.\+timeout.\+expired (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a03dd154d80cdeded1703f3c5cdb63a8a}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!remaining@{remaining}}
+\index{remaining@{remaining}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{remaining()}{remaining()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a03dd154d80cdeded1703f3c5cdb63a8a} 
+ Optional\mbox{[}float\mbox{]} asgiref.\+timeout.\+timeout.\+remaining (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a4d9f3d46cdeb3eff8fa56b43ca011e34}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_cancel\_at@{\_cancel\_at}}
+\index{\_cancel\_at@{\_cancel\_at}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_cancel\_at}{\_cancel\_at}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a4d9f3d46cdeb3eff8fa56b43ca011e34} 
+asgiref.\+timeout.\+timeout.\+\_\+cancel\+\_\+at = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_ae5c59ea03386a3b11fa17804395944d3}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_cancel\_handler@{\_cancel\_handler}}
+\index{\_cancel\_handler@{\_cancel\_handler}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_cancel\_handler}{\_cancel\_handler}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_ae5c59ea03386a3b11fa17804395944d3} 
+asgiref.\+timeout.\+timeout.\+\_\+cancel\+\_\+handler = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a416ffb08ec0651515ee84211960bdf55}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_cancel\_task@{\_cancel\_task}}
+\index{\_cancel\_task@{\_cancel\_task}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_cancel\_task}{\_cancel\_task}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a416ffb08ec0651515ee84211960bdf55} 
+asgiref.\+timeout.\+timeout.\+\_\+cancel\+\_\+task\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_af660381bd353fbb338b5725aafc03f58}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_cancelled@{\_cancelled}}
+\index{\_cancelled@{\_cancelled}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_cancelled}{\_cancelled}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_af660381bd353fbb338b5725aafc03f58} 
+bool asgiref.\+timeout.\+timeout.\+\_\+cancelled = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a7eb9c5de9f8ab17e7c6699b44b94f0e3}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a7eb9c5de9f8ab17e7c6699b44b94f0e3} 
+asgiref.\+timeout.\+timeout.\+\_\+loop = loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a9c9d44588520e5c3a3b1ccecacdaaacb}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_task@{\_task}}
+\index{\_task@{\_task}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_task}{\_task}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a9c9d44588520e5c3a3b1ccecacdaaacb} 
+asgiref.\+timeout.\+timeout.\+\_\+task = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1timeout_1_1timeout_a118ea1a25a7af5e302c41f4333203298}\index{asgiref.timeout.timeout@{asgiref.timeout.timeout}!\_timeout@{\_timeout}}
+\index{\_timeout@{\_timeout}!asgiref.timeout.timeout@{asgiref.timeout.timeout}}
+\doxysubsubsection{\texorpdfstring{\_timeout}{\_timeout}}
+{\footnotesize\ttfamily \label{classasgiref_1_1timeout_1_1timeout_a118ea1a25a7af5e302c41f4333203298} 
+asgiref.\+timeout.\+timeout.\+\_\+timeout = \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout}{timeout}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/asgiref/\mbox{\hyperlink{asgiref_2timeout_8py}{timeout.\+py}}\end{DoxyCompactItemize}

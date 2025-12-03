@@ -1,0 +1,208 @@
+\doxysection{django.\+contrib.\+admindocs.\+utils Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils}{}\label{namespacedjango_1_1contrib_1_1admindocs_1_1utils}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a4f240918761ccfb0ec02d42e377bd34a}{get\+\_\+view\+\_\+name}} (view\+\_\+func)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a44be691d3d93dfaaf557ec04333e4d8d}{parse\+\_\+docstring}} (docstring)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ad6f6b87aa90667a7aca27eff94735611}{parse\+\_\+rst}} (text, default\+\_\+reference\+\_\+context, thing\+\_\+being\+\_\+parsed=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a9aa47efd7384784774f2d795aee6a579}{split\+\_\+explicit\+\_\+title}} (text)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a31af94bd862e2d8801b278a42ff17a48}{create\+\_\+reference\+\_\+role}} (rolename, urlbase)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_aa3f29788dbd1edb2695642dae093fc52}{default\+\_\+reference\+\_\+role}} (name, rawtext, text, lineno, inliner, options=None, content=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a974ebc1f95a69e8fcd98980fcedf1db8}{replace\+\_\+metacharacters}} (pattern)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a7182f716e8297b22b0b464a9001189d9}{\+\_\+get\+\_\+group\+\_\+start\+\_\+end}} (start, end, pattern)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_aaaa0598ccc92961478635ddbd95d7a73}{\+\_\+find\+\_\+groups}} (pattern, group\+\_\+matcher)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a943edaf70fd00e1f4b9e68906ec09f23}{replace\+\_\+named\+\_\+groups}} (pattern)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ace110b8456e88a162223bb51856223a1}{replace\+\_\+unnamed\+\_\+groups}} (pattern)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a37245b4c569edffcf39904532192123d}{remove\+\_\+non\+\_\+capturing\+\_\+groups}} (pattern)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a36d28d05b818bcb635344a688c439cd7}{strip\+\_\+p\+\_\+tags}} (value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a28597d42b87a13d80d01eeb107638948}{docutils\+\_\+is\+\_\+available}} = False
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a5aa41ed56981071859477b096f57da45}{ROLES}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a6423d78886f9a1387c8c882c303b7720}{explicit\+\_\+title\+\_\+re}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(.+?)\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$!\textbackslash{}x00)$<$(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}$<$\mbox{]}\texorpdfstring{$\ast$}{*}?)$>$\$"{}, re.\+DOTALL)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a25f087db43c6166e107b41cc67959bca}{named\+\_\+group\+\_\+matcher}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}(\textbackslash{}?P($<$\textbackslash{}w+$>$)"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a6a9b4fff14646e4190afdb66a46d32c8}{unnamed\+\_\+group\+\_\+matcher}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}("{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ad494cf54add77c87567def761736870f}{non\+\_\+capturing\+\_\+group\+\_\+matcher}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}(\textbackslash{}?\textbackslash{}\+:"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_aaaa0598ccc92961478635ddbd95d7a73}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!\_find\_groups@{\_find\_groups}}
+\index{\_find\_groups@{\_find\_groups}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{\_find\_groups()}{\_find\_groups()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_aaaa0598ccc92961478635ddbd95d7a73} 
+django.\+contrib.\+admindocs.\+utils.\+\_\+find\+\_\+groups (\begin{DoxyParamCaption}\item[{}]{pattern}{, }\item[{}]{group\+\_\+matcher}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a7182f716e8297b22b0b464a9001189d9}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!\_get\_group\_start\_end@{\_get\_group\_start\_end}}
+\index{\_get\_group\_start\_end@{\_get\_group\_start\_end}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{\_get\_group\_start\_end()}{\_get\_group\_start\_end()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a7182f716e8297b22b0b464a9001189d9} 
+django.\+contrib.\+admindocs.\+utils.\+\_\+get\+\_\+group\+\_\+start\+\_\+end (\begin{DoxyParamCaption}\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{pattern}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a31af94bd862e2d8801b278a42ff17a48}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!create\_reference\_role@{create\_reference\_role}}
+\index{create\_reference\_role@{create\_reference\_role}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{create\_reference\_role()}{create\_reference\_role()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a31af94bd862e2d8801b278a42ff17a48} 
+django.\+contrib.\+admindocs.\+utils.\+create\+\_\+reference\+\_\+role (\begin{DoxyParamCaption}\item[{}]{rolename}{, }\item[{}]{urlbase}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_aa3f29788dbd1edb2695642dae093fc52}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!default\_reference\_role@{default\_reference\_role}}
+\index{default\_reference\_role@{default\_reference\_role}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{default\_reference\_role()}{default\_reference\_role()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_aa3f29788dbd1edb2695642dae093fc52} 
+django.\+contrib.\+admindocs.\+utils.\+default\+\_\+reference\+\_\+role (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{rawtext}{, }\item[{}]{text}{, }\item[{}]{lineno}{, }\item[{}]{inliner}{, }\item[{}]{options}{ = {\ttfamily None}, }\item[{}]{content}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a4f240918761ccfb0ec02d42e377bd34a}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!get\_view\_name@{get\_view\_name}}
+\index{get\_view\_name@{get\_view\_name}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{get\_view\_name()}{get\_view\_name()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a4f240918761ccfb0ec02d42e377bd34a} 
+django.\+contrib.\+admindocs.\+utils.\+get\+\_\+view\+\_\+name (\begin{DoxyParamCaption}\item[{}]{view\+\_\+func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a44be691d3d93dfaaf557ec04333e4d8d}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!parse\_docstring@{parse\_docstring}}
+\index{parse\_docstring@{parse\_docstring}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{parse\_docstring()}{parse\_docstring()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a44be691d3d93dfaaf557ec04333e4d8d} 
+django.\+contrib.\+admindocs.\+utils.\+parse\+\_\+docstring (\begin{DoxyParamCaption}\item[{}]{docstring}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse out the parts of a docstring.  Return (title, body, metadata).
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ad6f6b87aa90667a7aca27eff94735611}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!parse\_rst@{parse\_rst}}
+\index{parse\_rst@{parse\_rst}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{parse\_rst()}{parse\_rst()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ad6f6b87aa90667a7aca27eff94735611} 
+django.\+contrib.\+admindocs.\+utils.\+parse\+\_\+rst (\begin{DoxyParamCaption}\item[{}]{text}{, }\item[{}]{default\+\_\+reference\+\_\+context}{, }\item[{}]{thing\+\_\+being\+\_\+parsed}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the string from reST to an XHTML fragment.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a37245b4c569edffcf39904532192123d}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!remove\_non\_capturing\_groups@{remove\_non\_capturing\_groups}}
+\index{remove\_non\_capturing\_groups@{remove\_non\_capturing\_groups}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{remove\_non\_capturing\_groups()}{remove\_non\_capturing\_groups()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a37245b4c569edffcf39904532192123d} 
+django.\+contrib.\+admindocs.\+utils.\+remove\+\_\+non\+\_\+capturing\+\_\+groups (\begin{DoxyParamCaption}\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find non-capturing groups in the given `pattern` and remove them, e.g.
+1. (?P<a>\w+)/b/(?:\w+)c(?:\w+) => (?P<a>\\w+)/b/c
+2. ^(?:\w+(?:\w+))a => ^a
+3. ^a(?:\w+)/b(?:\w+) => ^a/b
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a974ebc1f95a69e8fcd98980fcedf1db8}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!replace\_metacharacters@{replace\_metacharacters}}
+\index{replace\_metacharacters@{replace\_metacharacters}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{replace\_metacharacters()}{replace\_metacharacters()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a974ebc1f95a69e8fcd98980fcedf1db8} 
+django.\+contrib.\+admindocs.\+utils.\+replace\+\_\+metacharacters (\begin{DoxyParamCaption}\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove unescaped metacharacters from the pattern.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a943edaf70fd00e1f4b9e68906ec09f23}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!replace\_named\_groups@{replace\_named\_groups}}
+\index{replace\_named\_groups@{replace\_named\_groups}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{replace\_named\_groups()}{replace\_named\_groups()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a943edaf70fd00e1f4b9e68906ec09f23} 
+django.\+contrib.\+admindocs.\+utils.\+replace\+\_\+named\+\_\+groups (\begin{DoxyParamCaption}\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find named groups in `pattern` and replace them with the group name. E.g.,
+1. ^(?P<a>\w+)/b/(\w+)$ ==> ^<a>/b/(\w+)$
+2. ^(?P<a>\w+)/b/(?P<c>\w+)/$ ==> ^<a>/b/<c>/$
+3. ^(?P<a>\w+)/b/(\w+) ==> ^<a>/b/(\w+)
+4. ^(?P<a>\w+)/b/(?P<c>\w+) ==> ^<a>/b/<c>
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ace110b8456e88a162223bb51856223a1}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!replace\_unnamed\_groups@{replace\_unnamed\_groups}}
+\index{replace\_unnamed\_groups@{replace\_unnamed\_groups}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{replace\_unnamed\_groups()}{replace\_unnamed\_groups()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ace110b8456e88a162223bb51856223a1} 
+django.\+contrib.\+admindocs.\+utils.\+replace\+\_\+unnamed\+\_\+groups (\begin{DoxyParamCaption}\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find unnamed groups in `pattern` and replace them with '<var>'. E.g.,
+1. ^(?P<a>\w+)/b/(\w+)$ ==> ^(?P<a>\w+)/b/<var>$
+2. ^(?P<a>\w+)/b/((x|y)\w+)$ ==> ^(?P<a>\w+)/b/<var>$
+3. ^(?P<a>\w+)/b/(\w+) ==> ^(?P<a>\w+)/b/<var>
+4. ^(?P<a>\w+)/b/((x|y)\w+) ==> ^(?P<a>\w+)/b/<var>
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a9aa47efd7384784774f2d795aee6a579}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!split\_explicit\_title@{split\_explicit\_title}}
+\index{split\_explicit\_title@{split\_explicit\_title}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{split\_explicit\_title()}{split\_explicit\_title()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a9aa47efd7384784774f2d795aee6a579} 
+django.\+contrib.\+admindocs.\+utils.\+split\+\_\+explicit\+\_\+title (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split role content into title and target, if given.
+
+From sphinx.util.nodes.split_explicit_title
+See https://github.com/sphinx-doc/sphinx/blob/230ccf2/sphinx/util/nodes.py#L389
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a36d28d05b818bcb635344a688c439cd7}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!strip\_p\_tags@{strip\_p\_tags}}
+\index{strip\_p\_tags@{strip\_p\_tags}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{strip\_p\_tags()}{strip\_p\_tags()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a36d28d05b818bcb635344a688c439cd7} 
+django.\+contrib.\+admindocs.\+utils.\+strip\+\_\+p\+\_\+tags (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a28597d42b87a13d80d01eeb107638948}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!docutils\_is\_available@{docutils\_is\_available}}
+\index{docutils\_is\_available@{docutils\_is\_available}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{docutils\_is\_available}{docutils\_is\_available}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a28597d42b87a13d80d01eeb107638948} 
+bool django.\+contrib.\+admindocs.\+utils.\+docutils\+\_\+is\+\_\+available = False}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a6423d78886f9a1387c8c882c303b7720}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!explicit\_title\_re@{explicit\_title\_re}}
+\index{explicit\_title\_re@{explicit\_title\_re}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{explicit\_title\_re}{explicit\_title\_re}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a6423d78886f9a1387c8c882c303b7720} 
+django.\+contrib.\+admindocs.\+utils.\+explicit\+\_\+title\+\_\+re = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(.+?)\textbackslash{}s\texorpdfstring{$\ast$}{*}(?$<$!\textbackslash{}x00)$<$(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}$<$\mbox{]}\texorpdfstring{$\ast$}{*}?)$>$\$"{}, re.\+DOTALL)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a25f087db43c6166e107b41cc67959bca}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!named\_group\_matcher@{named\_group\_matcher}}
+\index{named\_group\_matcher@{named\_group\_matcher}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{named\_group\_matcher}{named\_group\_matcher}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a25f087db43c6166e107b41cc67959bca} 
+django.\+contrib.\+admindocs.\+utils.\+named\+\_\+group\+\_\+matcher = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}(\textbackslash{}?P($<$\textbackslash{}w+$>$)"{})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ad494cf54add77c87567def761736870f}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!non\_capturing\_group\_matcher@{non\_capturing\_group\_matcher}}
+\index{non\_capturing\_group\_matcher@{non\_capturing\_group\_matcher}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{non\_capturing\_group\_matcher}{non\_capturing\_group\_matcher}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_ad494cf54add77c87567def761736870f} 
+django.\+contrib.\+admindocs.\+utils.\+non\+\_\+capturing\+\_\+group\+\_\+matcher = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}(\textbackslash{}?\textbackslash{}\+:"{})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a5aa41ed56981071859477b096f57da45}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!ROLES@{ROLES}}
+\index{ROLES@{ROLES}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{ROLES}{ROLES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a5aa41ed56981071859477b096f57da45} 
+dict django.\+contrib.\+admindocs.\+utils.\+ROLES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}model"{}}:\ \textcolor{stringliteral}{"{}\%s/models/\%s/"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}view"{}}:\ \textcolor{stringliteral}{"{}\%s/views/\%s/"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}template"{}}:\ \textcolor{stringliteral}{"{}\%s/templates/\%s/"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}filter"{}}:\ \textcolor{stringliteral}{"{}\%s/filters/\#\%s"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}tag"{}}:\ \textcolor{stringliteral}{"{}\%s/tags/\#\%s"{}},}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a6a9b4fff14646e4190afdb66a46d32c8}\index{django.contrib.admindocs.utils@{django.contrib.admindocs.utils}!unnamed\_group\_matcher@{unnamed\_group\_matcher}}
+\index{unnamed\_group\_matcher@{unnamed\_group\_matcher}!django.contrib.admindocs.utils@{django.contrib.admindocs.utils}}
+\doxysubsubsection{\texorpdfstring{unnamed\_group\_matcher}{unnamed\_group\_matcher}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admindocs_1_1utils_a6a9b4fff14646e4190afdb66a46d32c8} 
+django.\+contrib.\+admindocs.\+utils.\+unnamed\+\_\+group\+\_\+matcher = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}("{})}
+

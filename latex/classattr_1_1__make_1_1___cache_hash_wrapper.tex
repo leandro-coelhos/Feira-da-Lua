@@ -1,0 +1,41 @@
+\doxysection{attr.\+\_\+make.\+\_\+\+Cache\+Hash\+Wrapper Class Reference}
+\hypertarget{classattr_1_1__make_1_1___cache_hash_wrapper}{}\label{classattr_1_1__make_1_1___cache_hash_wrapper}\index{attr.\_make.\_CacheHashWrapper@{attr.\_make.\_CacheHashWrapper}}
+Inheritance diagram for attr.\+\_\+make.\+\_\+\+Cache\+Hash\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classattr_1_1__make_1_1___cache_hash_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1___cache_hash_wrapper_a8bf594b6f168e2bd0dccb02332e5b485}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self, \+\_\+none\+\_\+constructor=type(None), \+\_\+args=())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An integer subclass that pickles / copies as None
+
+This is used for non-slots classes with ``cache_hash=True``, to avoid
+serializing a potentially (even likely) invalid hash value. Since `None`
+is the default value for uncalculated hashes, whenever this is copied,
+the copy's value for the hash should automatically reset.
+
+See GH #613 for more details.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classattr_1_1__make_1_1___cache_hash_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classattr_1_1__make_1_1___cache_hash_wrapper_a8bf594b6f168e2bd0dccb02332e5b485}\index{attr.\_make.\_CacheHashWrapper@{attr.\_make.\_CacheHashWrapper}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!attr.\_make.\_CacheHashWrapper@{attr.\_make.\_CacheHashWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1___cache_hash_wrapper_a8bf594b6f168e2bd0dccb02332e5b485} 
+attr.\+\_\+make.\+\_\+\+Cache\+Hash\+Wrapper.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{\+\_\+none\+\_\+constructor}{ = {\ttfamily type(None)}, }\item[{}]{\+\_\+args}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/attr/\mbox{\hyperlink{__make_8py}{\+\_\+make.\+py}}\end{DoxyCompactItemize}

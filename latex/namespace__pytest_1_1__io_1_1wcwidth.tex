@@ -1,0 +1,36 @@
+\doxysection{\+\_\+pytest.\+\_\+io.\+wcwidth Namespace Reference}
+\hypertarget{namespace__pytest_1_1__io_1_1wcwidth}{}\label{namespace__pytest_1_1__io_1_1wcwidth}\index{\_pytest.\_io.wcwidth@{\_pytest.\_io.wcwidth}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace__pytest_1_1__io_1_1wcwidth_a663042ac75fcdd4ab8d44017a310dcf6}{wcwidth}} (str c)
+\item 
+int \mbox{\hyperlink{namespace__pytest_1_1__io_1_1wcwidth_a04a9fe7ec695e6cfe9aa4b03e335fcea}{wcswidth}} (str s)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1__io_1_1wcwidth_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1__io_1_1wcwidth_a04a9fe7ec695e6cfe9aa4b03e335fcea}\index{\_pytest.\_io.wcwidth@{\_pytest.\_io.wcwidth}!wcswidth@{wcswidth}}
+\index{wcswidth@{wcswidth}!\_pytest.\_io.wcwidth@{\_pytest.\_io.wcwidth}}
+\doxysubsubsection{\texorpdfstring{wcswidth()}{wcswidth()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__io_1_1wcwidth_a04a9fe7ec695e6cfe9aa4b03e335fcea} 
+ int \+\_\+pytest.\+\_\+io.\+wcwidth.\+wcswidth (\begin{DoxyParamCaption}\item[{str}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine how many columns are needed to display a string in a terminal.
+
+Returns -1 if the string contains non-printable characters.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1__io_1_1wcwidth_a663042ac75fcdd4ab8d44017a310dcf6}\index{\_pytest.\_io.wcwidth@{\_pytest.\_io.wcwidth}!wcwidth@{wcwidth}}
+\index{wcwidth@{wcwidth}!\_pytest.\_io.wcwidth@{\_pytest.\_io.wcwidth}}
+\doxysubsubsection{\texorpdfstring{wcwidth()}{wcwidth()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__io_1_1wcwidth_a663042ac75fcdd4ab8d44017a310dcf6} 
+ int \+\_\+pytest.\+\_\+io.\+wcwidth.\+wcwidth (\begin{DoxyParamCaption}\item[{str}]{c}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine how many columns are needed to display a character in a terminal.
+
+Returns -1 if the character is not printable.
+Returns 0, 1 or 2 for other characters.
+\end{DoxyVerb}
+ 

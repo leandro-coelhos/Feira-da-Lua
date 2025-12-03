@@ -1,0 +1,313 @@
+\doxysection{geoip2.\+database.\+Reader Class Reference}
+\hypertarget{classgeoip2_1_1database_1_1_reader}{}\label{classgeoip2_1_1database_1_1_reader}\index{geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a7a2bf49bbe61549e7995e05f2da7988c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self,(Any\+Str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}IO\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}IO\mbox{[}bytes\mbox{]}) fileish, Sequence\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None locales=None, int mode=MODE\+\_\+\+AUTO)
+\item 
+Self \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a261774f3928f4a3f074bb826187808e5}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a4db63ae587324df9d187f20831f340f2}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, object exc\+\_\+type, object exc\+\_\+value, object traceback)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_country}{Country}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a364d704f49b432f8d591c8c10eba6c32}{country}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_city}{City}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a2f9de9d4e82757abcf4126fb5fcadd87}{city}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_i_p}{Anonymous\+IP}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a1f75a69c36306d63fbbdc708514630af}{anonymous\+\_\+ip}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_plus}{Anonymous\+Plus}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a7fdf8b9aba80312d25ba3e3d81e93d5a}{anonymous\+\_\+plus}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_a_s_n}{ASN}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_acad82da4828086194c44b3ff69933b8f}{asn}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_connection_type}{Connection\+Type}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_ab2dcaa47a2b32d67a2b55b0f10810f41}{connection\+\_\+type}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_domain}{Domain}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a1146f9b7625cb00e4ca062f19e73b521}{domain}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_enterprise}{Enterprise}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_ac8f899c4b0b21095213bed5e80824ccd}{enterprise}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_i_s_p}{ISP}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_ab04d8bf3cda1d082b503a5445be01e9c}{isp}} (self, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classmaxminddb_1_1reader_1_1_metadata}{maxminddb.\+reader.\+Metadata}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a2a27203b5e11c944236ba7d8e4cc59d1}{metadata}} (self)
+\item 
+None \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a09993ab1226c215dc19735636f33045b}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}dict, int\mbox{]} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a092699ebad1bfd59f204055a9a24cda8}{\+\_\+get}} (self, str database\+\_\+type, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_city}{City}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_country}{Country}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_enterprise}{Enterprise}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_ac82f7919c41c7ee814e7b30b2e45451e}{\+\_\+model\+\_\+for}} (self, type\mbox{[}\mbox{\hyperlink{classgeoip2_1_1models_1_1_city}{City}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_country}{Country}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_enterprise}{Enterprise}}\mbox{]} model\+\_\+class, str types, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1models_1_1_connection_type}{Connection\+Type}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_i_s_p}{ISP}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_i_p}{Anonymous\+IP}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_domain}{Domain}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_a_s_n}{ASN}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a6a986aaa87a76fac30d07b7aa1aa7364}{\+\_\+flat\+\_\+model\+\_\+for}} (self, type\mbox{[}\mbox{\hyperlink{classgeoip2_1_1models_1_1_domain}{Domain}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_i_s_p}{ISP}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_connection_type}{Connection\+Type}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_a_s_n}{ASN}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_i_p}{Anonymous\+IP}}\mbox{]} model\+\_\+class, str types, IPAddress ip\+\_\+address)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a2742758c3bafc199fda9f24a73c29443}{\+\_\+db\+\_\+reader}} = \mbox{\hyperlink{namespacemaxminddb_accac2d71d61fa26144a9af8f0d9219a4}{maxminddb.\+open\+\_\+database}}(fileish, mode)
+\item 
+\mbox{\hyperlink{classmaxminddb_1_1reader_1_1_metadata}{maxminddb.\+reader.\+Metadata}} \mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a726187cd6965c1c5afd51dec7f4d142c}{\+\_\+db\+\_\+type}} = self.\+\_\+db\+\_\+reader.\+metadata().database\+\_\+type
+\item 
+\mbox{\hyperlink{classgeoip2_1_1database_1_1_reader_a6900c6e5b15a594dfc0c5a0dac509d9c}{\+\_\+locales}} = locales
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}GeoIP2 database Reader object.
+
+Instances of this class provide a reader for the GeoIP2 database format.
+IP addresses can be looked up using the ``country`` and ``city`` methods.
+
+The basic API for this class is the same for every database. First, you
+create a reader object, specifying a file name or file descriptor.
+You then call the method corresponding to the specific database, passing
+it the IP address you want to look up.
+
+If the request succeeds, the method call will return a model class for the
+method you called. This model in turn contains multiple record classes,
+each of which represents part of the data returned by the database. If the
+database does not contain the requested information, the attributes on the
+record class will have a ``None`` value.
+
+If the address is not in the database, an
+``geoip2.errors.AddressNotFoundError`` exception will be thrown. If the
+database is corrupt or invalid, a ``maxminddb.InvalidDatabaseError`` will
+be thrown.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classgeoip2_1_1database_1_1_reader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a7a2bf49bbe61549e7995e05f2da7988c}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a7a2bf49bbe61549e7995e05f2da7988c} 
+ None geoip2.\+database.\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             Any\+Str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}bytes\mbox{]} \texorpdfstring{$\vert$}{|} IO\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} IO\mbox{[}bytes\mbox{]}         )}]{fileish}{, }\item[{Sequence\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{locales}{ = {\ttfamily None}, }\item[{int }]{mode}{ = {\ttfamily MODE\+\_\+AUTO}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create GeoIP2 Reader.
+
+:param fileish: A path to the GeoIP2 database or an existing file
+  descriptor pointing to the database. Note that a file descriptor
+  is only valid when mode is MODE_FD.
+:param locales: This is list of locale codes. This argument will be
+  passed on to record classes to use when their name properties are
+  called. The default value is ['en'].
+
+  The order of the locales is significant. When a record class has
+  multiple names (country, city, etc.), its name property will return
+  the name in the first locale that has one.
+
+  Note that the only locale which is always present in the GeoIP2
+  data is "en". If you do not include this locale, the name property
+  may end up returning None even when the record has an English name.
+
+  Currently, the valid locale codes are:
+
+  * de -- German
+  * en -- English names may still include accented characters if that
+    is the accepted spelling in English. In other words, English does
+    not mean ASCII.
+  * es -- Spanish
+  * fr -- French
+  * ja -- Japanese
+  * pt-BR -- Brazilian Portuguese
+  * ru -- Russian
+  * zh-CN -- Simplified Chinese.
+:param mode: The mode to open the database with. Valid mode are:
+  * MODE_MMAP_EXT - use the C extension with memory map.
+  * MODE_MMAP - read from memory map. Pure Python.
+  * MODE_FILE - read database as standard file. Pure Python.
+  * MODE_MEMORY - load database into memory. Pure Python.
+  * MODE_FD - the param passed via fileish is a file descriptor, not a
+     path. This mode implies MODE_MEMORY. Pure Python.
+  * MODE_AUTO - try MODE_MMAP_EXT, MODE_MMAP, MODE_FILE in that order.
+     Default.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classgeoip2_1_1database_1_1_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a261774f3928f4a3f074bb826187808e5}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a261774f3928f4a3f074bb826187808e5} 
+ Self geoip2.\+database.\+Reader.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a4db63ae587324df9d187f20831f340f2}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a4db63ae587324df9d187f20831f340f2} 
+ None geoip2.\+database.\+Reader.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{exc\+\_\+type}{, }\item[{object}]{exc\+\_\+value}{, }\item[{object}]{traceback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a6a986aaa87a76fac30d07b7aa1aa7364}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_flat\_model\_for@{\_flat\_model\_for}}
+\index{\_flat\_model\_for@{\_flat\_model\_for}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_flat\_model\_for()}{\_flat\_model\_for()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a6a986aaa87a76fac30d07b7aa1aa7364} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_connection_type}{Connection\+Type}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_i_s_p}{ISP}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_i_p}{Anonymous\+IP}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_domain}{Domain}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_a_s_n}{ASN}} geoip2.\+database.\+Reader.\+\_\+flat\+\_\+model\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\mbox{[}\mbox{\hyperlink{classgeoip2_1_1models_1_1_domain}{Domain}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_i_s_p}{ISP}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_connection_type}{Connection\+Type}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_a_s_n}{ASN}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_i_p}{Anonymous\+IP}}\mbox{]}}]{model\+\_\+class}{, }\item[{str}]{types}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a092699ebad1bfd59f204055a9a24cda8}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_get@{\_get}}
+\index{\_get@{\_get}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a092699ebad1bfd59f204055a9a24cda8} 
+ tuple\mbox{[}dict, int\mbox{]} geoip2.\+database.\+Reader.\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{database\+\_\+type}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_ac82f7919c41c7ee814e7b30b2e45451e}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_model\_for@{\_model\_for}}
+\index{\_model\_for@{\_model\_for}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_model\_for()}{\_model\_for()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_ac82f7919c41c7ee814e7b30b2e45451e} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_city}{City}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_country}{Country}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_enterprise}{Enterprise}} geoip2.\+database.\+Reader.\+\_\+model\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\mbox{[}\mbox{\hyperlink{classgeoip2_1_1models_1_1_city}{City}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_country}{Country}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1models_1_1_enterprise}{Enterprise}}\mbox{]}}]{model\+\_\+class}{, }\item[{str}]{types}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a1f75a69c36306d63fbbdc708514630af}\index{geoip2.database.Reader@{geoip2.database.Reader}!anonymous\_ip@{anonymous\_ip}}
+\index{anonymous\_ip@{anonymous\_ip}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{anonymous\_ip()}{anonymous\_ip()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a1f75a69c36306d63fbbdc708514630af} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_i_p}{Anonymous\+IP}} geoip2.\+database.\+Reader.\+anonymous\+\_\+ip (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the AnonymousIP object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.AnonymousIP` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_a7fdf8b9aba80312d25ba3e3d81e93d5a}\index{geoip2.database.Reader@{geoip2.database.Reader}!anonymous\_plus@{anonymous\_plus}}
+\index{anonymous\_plus@{anonymous\_plus}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{anonymous\_plus()}{anonymous\_plus()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a7fdf8b9aba80312d25ba3e3d81e93d5a} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_anonymous_plus}{Anonymous\+Plus}} geoip2.\+database.\+Reader.\+anonymous\+\_\+plus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the AnonymousPlus object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.AnonymousPlus` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_acad82da4828086194c44b3ff69933b8f}\index{geoip2.database.Reader@{geoip2.database.Reader}!asn@{asn}}
+\index{asn@{asn}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{asn()}{asn()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_acad82da4828086194c44b3ff69933b8f} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_a_s_n}{ASN}} geoip2.\+database.\+Reader.\+asn (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the ASN object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.ASN` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_a2f9de9d4e82757abcf4126fb5fcadd87}\index{geoip2.database.Reader@{geoip2.database.Reader}!city@{city}}
+\index{city@{city}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{city()}{city()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a2f9de9d4e82757abcf4126fb5fcadd87} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_city}{City}} geoip2.\+database.\+Reader.\+city (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the City object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.City` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_a09993ab1226c215dc19735636f33045b}\index{geoip2.database.Reader@{geoip2.database.Reader}!close@{close}}
+\index{close@{close}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a09993ab1226c215dc19735636f33045b} 
+ None geoip2.\+database.\+Reader.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close the GeoIP2 database.\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_ab2dcaa47a2b32d67a2b55b0f10810f41}\index{geoip2.database.Reader@{geoip2.database.Reader}!connection\_type@{connection\_type}}
+\index{connection\_type@{connection\_type}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{connection\_type()}{connection\_type()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_ab2dcaa47a2b32d67a2b55b0f10810f41} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_connection_type}{Connection\+Type}} geoip2.\+database.\+Reader.\+connection\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the ConnectionType object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.ConnectionType` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_a364d704f49b432f8d591c8c10eba6c32}\index{geoip2.database.Reader@{geoip2.database.Reader}!country@{country}}
+\index{country@{country}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{country()}{country()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a364d704f49b432f8d591c8c10eba6c32} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_country}{Country}} geoip2.\+database.\+Reader.\+country (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Country object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.Country` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_a1146f9b7625cb00e4ca062f19e73b521}\index{geoip2.database.Reader@{geoip2.database.Reader}!domain@{domain}}
+\index{domain@{domain}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{domain()}{domain()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a1146f9b7625cb00e4ca062f19e73b521} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_domain}{Domain}} geoip2.\+database.\+Reader.\+domain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Domain object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.Domain` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_ac8f899c4b0b21095213bed5e80824ccd}\index{geoip2.database.Reader@{geoip2.database.Reader}!enterprise@{enterprise}}
+\index{enterprise@{enterprise}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{enterprise()}{enterprise()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_ac8f899c4b0b21095213bed5e80824ccd} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_enterprise}{Enterprise}} geoip2.\+database.\+Reader.\+enterprise (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Enterprise object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.Enterprise` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_ab04d8bf3cda1d082b503a5445be01e9c}\index{geoip2.database.Reader@{geoip2.database.Reader}!isp@{isp}}
+\index{isp@{isp}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{isp()}{isp()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_ab04d8bf3cda1d082b503a5445be01e9c} 
+ \mbox{\hyperlink{classgeoip2_1_1models_1_1_i_s_p}{ISP}} geoip2.\+database.\+Reader.\+isp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the ISP object for the IP address.
+
+:param ip_address: IPv4 or IPv6 address as a string.
+
+:returns: :py:class:`geoip2.models.ISP` object
+\end{DoxyVerb}
+ \Hypertarget{classgeoip2_1_1database_1_1_reader_a2a27203b5e11c944236ba7d8e4cc59d1}\index{geoip2.database.Reader@{geoip2.database.Reader}!metadata@{metadata}}
+\index{metadata@{metadata}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{metadata()}{metadata()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a2a27203b5e11c944236ba7d8e4cc59d1} 
+ \mbox{\hyperlink{classmaxminddb_1_1reader_1_1_metadata}{maxminddb.\+reader.\+Metadata}} geoip2.\+database.\+Reader.\+metadata (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the metadata for the open database.
+
+:returns: :py:class:`maxminddb.reader.Metadata` object
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classgeoip2_1_1database_1_1_reader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a2742758c3bafc199fda9f24a73c29443}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_db\_reader@{\_db\_reader}}
+\index{\_db\_reader@{\_db\_reader}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_db\_reader}{\_db\_reader}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a2742758c3bafc199fda9f24a73c29443} 
+geoip2.\+database.\+Reader.\+\_\+db\+\_\+reader = \mbox{\hyperlink{namespacemaxminddb_accac2d71d61fa26144a9af8f0d9219a4}{maxminddb.\+open\+\_\+database}}(fileish, mode)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a726187cd6965c1c5afd51dec7f4d142c}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_db\_type@{\_db\_type}}
+\index{\_db\_type@{\_db\_type}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_db\_type}{\_db\_type}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a726187cd6965c1c5afd51dec7f4d142c} 
+\mbox{\hyperlink{classmaxminddb_1_1reader_1_1_metadata}{maxminddb.\+reader.\+Metadata}} geoip2.\+database.\+Reader.\+\_\+db\+\_\+type = self.\+\_\+db\+\_\+reader.\+metadata().database\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1database_1_1_reader_a6900c6e5b15a594dfc0c5a0dac509d9c}\index{geoip2.database.Reader@{geoip2.database.Reader}!\_locales@{\_locales}}
+\index{\_locales@{\_locales}!geoip2.database.Reader@{geoip2.database.Reader}}
+\doxysubsubsection{\texorpdfstring{\_locales}{\_locales}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1database_1_1_reader_a6900c6e5b15a594dfc0c5a0dac509d9c} 
+geoip2.\+database.\+Reader.\+\_\+locales = locales\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/geoip2/\mbox{\hyperlink{geoip2_2database_8py}{database.\+py}}\end{DoxyCompactItemize}

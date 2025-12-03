@@ -1,0 +1,80 @@
+\doxysection{django.\+contrib.\+admin.\+decorators Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1admin_1_1decorators}{}\label{namespacedjango_1_1contrib_1_1admin_1_1decorators}\index{django.contrib.admin.decorators@{django.contrib.admin.decorators}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1decorators_aee99884e1cfb3c6e8291932b0fd0c5b5}{action}} (function=None, \texorpdfstring{$\ast$}{*}, permissions=None, description=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1decorators_a3102ec225f6af019d406516b2b2eaca8}{display}} (function=None, \texorpdfstring{$\ast$}{*}, boolean=None, ordering=None, description=None, empty\+\_\+value=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1decorators_a17ed2340d004290e26ffa08efc0feae4}{register}} (\texorpdfstring{$\ast$}{*}models, site=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1decorators_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1decorators_aee99884e1cfb3c6e8291932b0fd0c5b5}\index{django.contrib.admin.decorators@{django.contrib.admin.decorators}!action@{action}}
+\index{action@{action}!django.contrib.admin.decorators@{django.contrib.admin.decorators}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admin_1_1decorators_aee99884e1cfb3c6e8291932b0fd0c5b5} 
+django.\+contrib.\+admin.\+decorators.\+action (\begin{DoxyParamCaption}\item[{}]{function}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{permissions}{ = {\ttfamily None}, }\item[{}]{description}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Conveniently add attributes to an action function::
+
+    @admin.action(
+        permissions=['publish'],
+        description='Mark selected stories as published',
+    )
+    def make_published(self, request, queryset):
+        queryset.update(status='p')
+
+This is equivalent to setting some attributes (with the original, longer
+names) on the function directly::
+
+    def make_published(self, request, queryset):
+        queryset.update(status='p')
+    make_published.allowed_permissions = ['publish']
+    make_published.short_description = 'Mark selected stories as published'
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1decorators_a3102ec225f6af019d406516b2b2eaca8}\index{django.contrib.admin.decorators@{django.contrib.admin.decorators}!display@{display}}
+\index{display@{display}!django.contrib.admin.decorators@{django.contrib.admin.decorators}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admin_1_1decorators_a3102ec225f6af019d406516b2b2eaca8} 
+django.\+contrib.\+admin.\+decorators.\+display (\begin{DoxyParamCaption}\item[{}]{function}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{boolean}{ = {\ttfamily None}, }\item[{}]{ordering}{ = {\ttfamily None}, }\item[{}]{description}{ = {\ttfamily None}, }\item[{}]{empty\+\_\+value}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Conveniently add attributes to a display function::
+
+    @admin.display(
+        boolean=True,
+        ordering='-publish_date',
+        description='Is Published?',
+    )
+    def is_published(self, obj):
+        return obj.publish_date is not None
+
+This is equivalent to setting some attributes (with the original, longer
+names) on the function directly::
+
+    def is_published(self, obj):
+        return obj.publish_date is not None
+    is_published.boolean = True
+    is_published.admin_order_field = '-publish_date'
+    is_published.short_description = 'Is Published?'
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1decorators_a17ed2340d004290e26ffa08efc0feae4}\index{django.contrib.admin.decorators@{django.contrib.admin.decorators}!register@{register}}
+\index{register@{register}!django.contrib.admin.decorators@{django.contrib.admin.decorators}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admin_1_1decorators_a17ed2340d004290e26ffa08efc0feae4} 
+django.\+contrib.\+admin.\+decorators.\+register (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{models}{, }\item[{}]{site}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register the given model(s) classes and wrapped ModelAdmin class with
+admin site:
+
+@register(Author)
+class AuthorAdmin(admin.ModelAdmin):
+    pass
+
+The `site` kwarg is an admin site to use instead of the default admin site.
+\end{DoxyVerb}
+ 

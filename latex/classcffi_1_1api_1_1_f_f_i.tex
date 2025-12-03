@@ -1,0 +1,836 @@
+\doxysection{cffi.\+api.\+FFI Class Reference}
+\hypertarget{classcffi_1_1api_1_1_f_f_i}{}\label{classcffi_1_1api_1_1_f_f_i}\index{cffi.api.FFI@{cffi.api.FFI}}
+Inheritance diagram for cffi.\+api.\+FFI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcffi_1_1api_1_1_f_f_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aee1b22182f689d715d5474fd5a844e77}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, backend=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a4f9181dacf9028e0ae99e85d5618ca09}{cdef}} (self, csource, override=False, packed=False, pack=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a3f6f9e02eaeb37fc5f7b3bd12560f073}{embedding\+\_\+api}} (self, csource, packed=False, pack=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aea799c446f412e99447d460fe6be24c8}{dlopen}} (self, name, flags=0)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a4f3d3656cd3514ca479120c3e4619573}{dlclose}} (self, lib)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ab8edf3725c8266273a6ca03d3cb5c9d7}{typeof}} (self, cdecl)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a4c1a9dc6a18e5fa13d97c91bf45dfd77}{sizeof}} (self, cdecl)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aabc1e0a48f6f9a0098abde4d7bb9f048}{alignof}} (self, cdecl)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ae496642d5b7aea3754059bfc920041f8}{offsetof}} (self, cdecl, \texorpdfstring{$\ast$}{*}fields\+\_\+or\+\_\+indexes)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a8683df0d048f312ff118f16dae752887}{new}} (self, cdecl, init=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a555a91cb1d4e9d770343f05525a51df7}{new\+\_\+allocator}} (self, alloc=None, free=None, should\+\_\+clear\+\_\+after\+\_\+alloc=True)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a59f7a81f8bd98454d453a3ee29163ef8}{cast}} (self, cdecl, source)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a2a000a76e36332cd702a6ebcc705b3c2}{string}} (self, cdata, maxlen=-\/1)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ae69d64e0481f29abdfda8c50927174e9}{unpack}} (self, cdata, length)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ac67ae624d2ec53ef9ee072a0058e75a3}{from\+\_\+buffer}} (self, cdecl, python\+\_\+buffer=\mbox{\hyperlink{namespacecffi_1_1api_a4ce25cead8c096b1a9ba65abfd6c647a}{\+\_\+unspecified}}, require\+\_\+writable=False)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a958cba99c1ca0b8b9440d495660b6c47}{memmove}} (self, dest, src, n)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a4e791803c5d07525465c8f1caeead188}{callback}} (self, cdecl, python\+\_\+callable=None, error=None, onerror=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a6dc2efc5b0e65b537291e6de3906308e}{getctype}} (self, cdecl, replace\+\_\+with=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ae3b6f714b7108585808ba3b298cabd07}{gc}} (self, cdata, destructor, size=0)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ac05cd4cf779cb85543c4cd5fa8a6d333}{verify}} (self, source=\textquotesingle{}\textquotesingle{}, tmpdir=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_af9886ac67dc4fd0161043c549d6f047a}{getwinerror}} (self, code=-\/1)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a833be3d222c2bdf1b53e38156c7f49ff}{addressof}} (self, cdata, \texorpdfstring{$\ast$}{*}fields\+\_\+or\+\_\+indexes)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a238704a5564e3e7b79bf91f18e793cd0}{include}} (self, ffi\+\_\+to\+\_\+include)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a65da31f57756aabb3a966ee7ecf5a86c}{new\+\_\+handle}} (self, x)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a7c5b41ffd6aab39af4b4cc6838a529ff}{from\+\_\+handle}} (self, x)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_afcb24afa6635314530a3844a0e2461da}{release}} (self, x)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a6508aa930b9457cfbaafa44dced58034}{set\+\_\+unicode}} (self, enabled\+\_\+flag)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_abb221cec505e62904f65ff4265e8dbbd}{set\+\_\+source}} (self, module\+\_\+name, source, source\+\_\+extension=\textquotesingle{}.c\textquotesingle{}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a2374ba4072e75f0fa7fdd0711b4ac4d3}{set\+\_\+source\+\_\+pkgconfig}} (self, module\+\_\+name, pkgconfig\+\_\+libs, source, source\+\_\+extension=\textquotesingle{}.c\textquotesingle{}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a65478739f42c77c695a0435fc34e540c}{distutils\+\_\+extension}} (self, tmpdir=\textquotesingle{}build\textquotesingle{}, verbose=True)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a8723be140eb590d792e2500c948bfc63}{emit\+\_\+c\+\_\+code}} (self, filename)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ac73f4f28afffeaceb54147258d3380d6}{emit\+\_\+python\+\_\+code}} (self, filename)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aa299db05eaf9e8845167d09760888799}{compile}} (self, tmpdir=\textquotesingle{}.\textquotesingle{}, verbose=0, target=None, debug=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ac2d5a33b557a8f3bb278bc29a1b57c7a}{init\+\_\+once}} (self, func, tag)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a9628eb02b20db1f36e7c1e5af2948a8e}{embedding\+\_\+init\+\_\+code}} (self, pysource)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a9670ddf1e75f19861154d9f4fd97753a}{def\+\_\+extern}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aff27576452418978004c761a65567f1a}{list\+\_\+types}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a9a85c587f1201ecd46f7f8abe379320c}{BVoidP}} = self.\+\_\+get\+\_\+cached\+\_\+btype(\mbox{\hyperlink{namespacecffi_1_1model_ac518a60288f3f2223e624fb1b3a63a17}{model.\+voidp\+\_\+type}})
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ade6f42877a840fbc2c4f17600c23f52f}{BCharA}} = self.\+\_\+get\+\_\+cached\+\_\+btype(\mbox{\hyperlink{namespacecffi_1_1model_a8dc6a53ac42250dda1ae7ed5bdabf627}{model.\+char\+\_\+array\+\_\+type}})
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ab8e1eeaa08f6e7b2f37908f9fe4bc7b3}{NULL}} = self.\+cast(self.\+BVoidP, 0)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_adf510bcfc24282ea58d3965a1f9218cb}{CData}}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a082c8747dbbe357b4aa370d327c42396}{CType}} = backend.\+\_\+get\+\_\+types()
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a8f0b2f671204fc8f39fe9eb8bb9c21c7}{buffer}} = backend.\+buffer
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aed6c99ee811eca48a3cd859ae6828fc9}{verifier}} = Verifier(self, source, tmpdir, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ad4d50f28ca59d18d9cc7223d6da95071}{\+\_\+cdef}} (self, csource, override=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a464c07e3916dd91d26ab4647d593fd57}{\+\_\+typeof\+\_\+locked}} (self, cdecl)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ae128b7679d5b0a942d275377c4c675ff}{\+\_\+typeof}} (self, cdecl, consider\+\_\+function\+\_\+as\+\_\+funcptr=False)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a0f956670cd48a5442fb5cad7cba46b53}{\+\_\+get\+\_\+cached\+\_\+btype}} (self, type)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a84d56001c5337541a20db0ca5eb1304c}{\+\_\+get\+\_\+errno}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a9ca86ea7fed31b4f11369e8aea527c0f}{\+\_\+set\+\_\+errno}} (self, \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_af218ef6bbb0f3643fa5e6c3044350848}{errno}})
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a81cfc05444a1a37cf929289eef902922}{\+\_\+pointer\+\_\+to}} (self, ctype)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ac48e568ec9ab730f59294def17f06f6a}{\+\_\+typeoffsetof}} (self, ctype, field\+\_\+or\+\_\+index, \texorpdfstring{$\ast$}{*}fields\+\_\+or\+\_\+indexes)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_acfc04c18ef54d4ca1461735b8804cd0f}{\+\_\+apply\+\_\+windows\+\_\+unicode}} (self, kwds)
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a8880d5c2a463242db5f0a7b7b2119b1e}{\+\_\+apply\+\_\+embedding\+\_\+fix}} (self, kwds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_adc7e780ad02747e1efcbc2d812941653}{\+\_\+backend}} = backend
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a56d73463e8407ec3e144cf5a9c5ad4f8}{\+\_\+lock}} = allocate\+\_\+lock()
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_afaec00462858674520df3f1fe08345f7}{\+\_\+parser}} = \mbox{\hyperlink{classcffi_1_1cparser_1_1_parser}{cparser.\+Parser}}()
+\item 
+dict \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aaf26038d51162eb09ecc9768b6f47cd2}{\+\_\+cached\+\_\+btypes}} = \{\}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a033dabead52aa3872c7ec601ccdc8313}{\+\_\+parsed\+\_\+types}} = types.\+Module\+Type(\textquotesingle{}parsed\+\_\+types\textquotesingle{}).\+\_\+\+\_\+dict\+\_\+\+\_\+
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_afc2e7f642ebc37fa584ab2beb19a366a}{\+\_\+new\+\_\+types}} = types.\+Module\+Type(\textquotesingle{}new\+\_\+types\textquotesingle{}).\+\_\+\+\_\+dict\+\_\+\+\_\+
+\item 
+list \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a38ff72f3ac164a70631329a587c4afe5}{\+\_\+function\+\_\+caches}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a3bdeacfa7951ae18f507542ba50b2a83}{\+\_\+libraries}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ac5c0538e7f946505499013571e5e4a58}{\+\_\+cdefsources}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a0e6a5adcf9ccd31180d496828f1384a8}{\+\_\+included\+\_\+ffis}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a09856131f030f85ca407ceefce49b01b}{\+\_\+windows\+\_\+unicode}} = None
+\item 
+dict \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a35fb1ae7c47a350ffcbb6de01d19b9ad}{\+\_\+init\+\_\+once\+\_\+cache}} = \{\}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a87893117d141eedb270f52886255569d}{\+\_\+cdef\+\_\+version}} = None
+\item 
+str \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_ab9f81909b794030060d0a55958b36194}{\+\_\+embedding}} = None
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_aa8297f44df40ea34217d829b18be4692}{\+\_\+typecache}} = \mbox{\hyperlink{namespacecffi_1_1model_a094e5b14ba34b24b78cae1d52cbcce67}{model.\+get\+\_\+typecache}}(backend)
+\item 
+tuple \mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_a2f0bd3e15046e854c133ab1630db3db4}{\+\_\+assigned\+\_\+source}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1api_1_1_f_f_i_af218ef6bbb0f3643fa5e6c3044350848}{errno}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The main top-level class that you instantiate once, or once per module.
+
+Example usage:
+
+    ffi = FFI()
+    ffi.cdef("""
+        int printf(const char *, ...);
+    """)
+
+    C = ffi.dlopen(None)   # standard library
+    -or-
+    C = ffi.verify()  # use a C compiler: verify the decl above is right
+
+    C.printf("hello, %s!\n", ffi.new("char[]", "world"))
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_aee1b22182f689d715d5474fd5a844e77}\index{cffi.api.FFI@{cffi.api.FFI}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aee1b22182f689d715d5474fd5a844e77} 
+cffi.\+api.\+FFI.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an FFI instance.  The 'backend' argument is used to
+select a non-default backend, mostly for tests.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a8880d5c2a463242db5f0a7b7b2119b1e}\index{cffi.api.FFI@{cffi.api.FFI}!\_apply\_embedding\_fix@{\_apply\_embedding\_fix}}
+\index{\_apply\_embedding\_fix@{\_apply\_embedding\_fix}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_apply\_embedding\_fix()}{\_apply\_embedding\_fix()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a8880d5c2a463242db5f0a7b7b2119b1e} 
+cffi.\+api.\+FFI.\+\_\+apply\+\_\+embedding\+\_\+fix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kwds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_acfc04c18ef54d4ca1461735b8804cd0f}\index{cffi.api.FFI@{cffi.api.FFI}!\_apply\_windows\_unicode@{\_apply\_windows\_unicode}}
+\index{\_apply\_windows\_unicode@{\_apply\_windows\_unicode}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_apply\_windows\_unicode()}{\_apply\_windows\_unicode()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_acfc04c18ef54d4ca1461735b8804cd0f} 
+cffi.\+api.\+FFI.\+\_\+apply\+\_\+windows\+\_\+unicode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kwds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ad4d50f28ca59d18d9cc7223d6da95071}\index{cffi.api.FFI@{cffi.api.FFI}!\_cdef@{\_cdef}}
+\index{\_cdef@{\_cdef}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_cdef()}{\_cdef()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ad4d50f28ca59d18d9cc7223d6da95071} 
+cffi.\+api.\+FFI.\+\_\+cdef (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{csource}{, }\item[{}]{override}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a0f956670cd48a5442fb5cad7cba46b53}\index{cffi.api.FFI@{cffi.api.FFI}!\_get\_cached\_btype@{\_get\_cached\_btype}}
+\index{\_get\_cached\_btype@{\_get\_cached\_btype}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_get\_cached\_btype()}{\_get\_cached\_btype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a0f956670cd48a5442fb5cad7cba46b53} 
+cffi.\+api.\+FFI.\+\_\+get\+\_\+cached\+\_\+btype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a84d56001c5337541a20db0ca5eb1304c}\index{cffi.api.FFI@{cffi.api.FFI}!\_get\_errno@{\_get\_errno}}
+\index{\_get\_errno@{\_get\_errno}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_get\_errno()}{\_get\_errno()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a84d56001c5337541a20db0ca5eb1304c} 
+cffi.\+api.\+FFI.\+\_\+get\+\_\+errno (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a81cfc05444a1a37cf929289eef902922}\index{cffi.api.FFI@{cffi.api.FFI}!\_pointer\_to@{\_pointer\_to}}
+\index{\_pointer\_to@{\_pointer\_to}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_pointer\_to()}{\_pointer\_to()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a81cfc05444a1a37cf929289eef902922} 
+cffi.\+api.\+FFI.\+\_\+pointer\+\_\+to (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ctype}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a9ca86ea7fed31b4f11369e8aea527c0f}\index{cffi.api.FFI@{cffi.api.FFI}!\_set\_errno@{\_set\_errno}}
+\index{\_set\_errno@{\_set\_errno}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_set\_errno()}{\_set\_errno()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a9ca86ea7fed31b4f11369e8aea527c0f} 
+cffi.\+api.\+FFI.\+\_\+set\+\_\+errno (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{errno}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ae128b7679d5b0a942d275377c4c675ff}\index{cffi.api.FFI@{cffi.api.FFI}!\_typeof@{\_typeof}}
+\index{\_typeof@{\_typeof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_typeof()}{\_typeof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ae128b7679d5b0a942d275377c4c675ff} 
+cffi.\+api.\+FFI.\+\_\+typeof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{}]{consider\+\_\+function\+\_\+as\+\_\+funcptr}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a464c07e3916dd91d26ab4647d593fd57}\index{cffi.api.FFI@{cffi.api.FFI}!\_typeof\_locked@{\_typeof\_locked}}
+\index{\_typeof\_locked@{\_typeof\_locked}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_typeof\_locked()}{\_typeof\_locked()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a464c07e3916dd91d26ab4647d593fd57} 
+cffi.\+api.\+FFI.\+\_\+typeof\+\_\+locked (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ac48e568ec9ab730f59294def17f06f6a}\index{cffi.api.FFI@{cffi.api.FFI}!\_typeoffsetof@{\_typeoffsetof}}
+\index{\_typeoffsetof@{\_typeoffsetof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_typeoffsetof()}{\_typeoffsetof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ac48e568ec9ab730f59294def17f06f6a} 
+cffi.\+api.\+FFI.\+\_\+typeoffsetof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ctype}{, }\item[{}]{field\+\_\+or\+\_\+index}{, }\item[{\texorpdfstring{$\ast$}{*}}]{fields\+\_\+or\+\_\+indexes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a833be3d222c2bdf1b53e38156c7f49ff}\index{cffi.api.FFI@{cffi.api.FFI}!addressof@{addressof}}
+\index{addressof@{addressof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{addressof()}{addressof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a833be3d222c2bdf1b53e38156c7f49ff} 
+cffi.\+api.\+FFI.\+addressof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdata}{, }\item[{\texorpdfstring{$\ast$}{*}}]{fields\+\_\+or\+\_\+indexes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the address of a <cdata 'struct-or-union'>.
+If 'fields_or_indexes' are given, returns the address of that
+field or array item in the structure or array, recursively in
+case of nested structures.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_aabc1e0a48f6f9a0098abde4d7bb9f048}\index{cffi.api.FFI@{cffi.api.FFI}!alignof@{alignof}}
+\index{alignof@{alignof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{alignof()}{alignof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aabc1e0a48f6f9a0098abde4d7bb9f048} 
+cffi.\+api.\+FFI.\+alignof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the natural alignment size in bytes of the C type
+given as a string.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a4e791803c5d07525465c8f1caeead188}\index{cffi.api.FFI@{cffi.api.FFI}!callback@{callback}}
+\index{callback@{callback}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a4e791803c5d07525465c8f1caeead188} 
+cffi.\+api.\+FFI.\+callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{}]{python\+\_\+callable}{ = {\ttfamily None}, }\item[{}]{error}{ = {\ttfamily None}, }\item[{}]{onerror}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a callback object or a decorator making such a
+callback object.  'cdecl' must name a C function pointer type.
+The callback invokes the specified 'python_callable' (which may
+be provided either directly or via a decorator).  Important: the
+callback object must be manually kept alive for as long as the
+callback may be invoked from the C level.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a59f7a81f8bd98454d453a3ee29163ef8}\index{cffi.api.FFI@{cffi.api.FFI}!cast@{cast}}
+\index{cast@{cast}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{cast()}{cast()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a59f7a81f8bd98454d453a3ee29163ef8} 
+cffi.\+api.\+FFI.\+cast (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Similar to a C cast: returns an instance of the named C
+type initialized with the given 'source'.  The source is
+casted between integers or pointers of any type.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a4f9181dacf9028e0ae99e85d5618ca09}\index{cffi.api.FFI@{cffi.api.FFI}!cdef@{cdef}}
+\index{cdef@{cdef}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{cdef()}{cdef()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a4f9181dacf9028e0ae99e85d5618ca09} 
+cffi.\+api.\+FFI.\+cdef (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{csource}{, }\item[{}]{override}{ = {\ttfamily False}, }\item[{}]{packed}{ = {\ttfamily False}, }\item[{}]{pack}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the given C source.  This registers all declared functions,
+types, and global variables.  The functions and global variables can
+then be accessed via either 'ffi.dlopen()' or 'ffi.verify()'.
+The types can be used in 'ffi.new()' and other functions.
+If 'packed' is specified as True, all structs declared inside this
+cdef are packed, i.e. laid out without any field alignment at all.
+Alternatively, 'pack' can be a small integer, and requests for
+alignment greater than that are ignored (pack=1 is equivalent to
+packed=True).
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_aa299db05eaf9e8845167d09760888799}\index{cffi.api.FFI@{cffi.api.FFI}!compile@{compile}}
+\index{compile@{compile}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aa299db05eaf9e8845167d09760888799} 
+cffi.\+api.\+FFI.\+compile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tmpdir}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}, }\item[{}]{verbose}{ = {\ttfamily 0}, }\item[{}]{target}{ = {\ttfamily None}, }\item[{}]{debug}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The 'target' argument gives the final file name of the
+compiled DLL.  Use '*' to force distutils' choice, suitable for
+regular CPython C API modules.  Use a file name ending in '.*'
+to ask for the system's default extension for dynamic libraries
+(.so/.dll/.dylib).
+
+The default is '*' when building a non-embedded C API extension,
+and (module_name + '.*') when building an embedded library.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a9670ddf1e75f19861154d9f4fd97753a}\index{cffi.api.FFI@{cffi.api.FFI}!def\_extern@{def\_extern}}
+\index{def\_extern@{def\_extern}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{def\_extern()}{def\_extern()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a9670ddf1e75f19861154d9f4fd97753a} 
+cffi.\+api.\+FFI.\+def\+\_\+extern (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a65478739f42c77c695a0435fc34e540c}\index{cffi.api.FFI@{cffi.api.FFI}!distutils\_extension@{distutils\_extension}}
+\index{distutils\_extension@{distutils\_extension}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{distutils\_extension()}{distutils\_extension()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a65478739f42c77c695a0435fc34e540c} 
+cffi.\+api.\+FFI.\+distutils\+\_\+extension (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tmpdir}{ = {\ttfamily \textquotesingle{}build\textquotesingle{}}, }\item[{}]{verbose}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a4f3d3656cd3514ca479120c3e4619573}\index{cffi.api.FFI@{cffi.api.FFI}!dlclose@{dlclose}}
+\index{dlclose@{dlclose}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{dlclose()}{dlclose()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a4f3d3656cd3514ca479120c3e4619573} 
+cffi.\+api.\+FFI.\+dlclose (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lib}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close a library obtained with ffi.dlopen().  After this call,
+access to functions or variables from the library will fail
+(possibly with a segmentation fault).
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_aea799c446f412e99447d460fe6be24c8}\index{cffi.api.FFI@{cffi.api.FFI}!dlopen@{dlopen}}
+\index{dlopen@{dlopen}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{dlopen()}{dlopen()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aea799c446f412e99447d460fe6be24c8} 
+cffi.\+api.\+FFI.\+dlopen (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load and return a dynamic library identified by 'name'.
+The standard C library can be loaded by passing None.
+Note that functions and types declared by 'ffi.cdef()' are not
+linked to a particular library, just like C headers; in the
+library we only look for the actual (untyped) symbols.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a3f6f9e02eaeb37fc5f7b3bd12560f073}\index{cffi.api.FFI@{cffi.api.FFI}!embedding\_api@{embedding\_api}}
+\index{embedding\_api@{embedding\_api}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{embedding\_api()}{embedding\_api()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a3f6f9e02eaeb37fc5f7b3bd12560f073} 
+cffi.\+api.\+FFI.\+embedding\+\_\+api (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{csource}{, }\item[{}]{packed}{ = {\ttfamily False}, }\item[{}]{pack}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a9628eb02b20db1f36e7c1e5af2948a8e}\index{cffi.api.FFI@{cffi.api.FFI}!embedding\_init\_code@{embedding\_init\_code}}
+\index{embedding\_init\_code@{embedding\_init\_code}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{embedding\_init\_code()}{embedding\_init\_code()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a9628eb02b20db1f36e7c1e5af2948a8e} 
+cffi.\+api.\+FFI.\+embedding\+\_\+init\+\_\+code (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pysource}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a8723be140eb590d792e2500c948bfc63}\index{cffi.api.FFI@{cffi.api.FFI}!emit\_c\_code@{emit\_c\_code}}
+\index{emit\_c\_code@{emit\_c\_code}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{emit\_c\_code()}{emit\_c\_code()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a8723be140eb590d792e2500c948bfc63} 
+cffi.\+api.\+FFI.\+emit\+\_\+c\+\_\+code (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ac73f4f28afffeaceb54147258d3380d6}\index{cffi.api.FFI@{cffi.api.FFI}!emit\_python\_code@{emit\_python\_code}}
+\index{emit\_python\_code@{emit\_python\_code}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{emit\_python\_code()}{emit\_python\_code()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ac73f4f28afffeaceb54147258d3380d6} 
+cffi.\+api.\+FFI.\+emit\+\_\+python\+\_\+code (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ac67ae624d2ec53ef9ee072a0058e75a3}\index{cffi.api.FFI@{cffi.api.FFI}!from\_buffer@{from\_buffer}}
+\index{from\_buffer@{from\_buffer}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{from\_buffer()}{from\_buffer()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ac67ae624d2ec53ef9ee072a0058e75a3} 
+cffi.\+api.\+FFI.\+from\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{}]{python\+\_\+buffer}{ = {\ttfamily \mbox{\hyperlink{namespacecffi_1_1api_a4ce25cead8c096b1a9ba65abfd6c647a}{\+\_\+unspecified}}}, }\item[{}]{require\+\_\+writable}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a cdata of the given type pointing to the data of the
+given Python object, which must support the buffer interface.
+Note that this is not meant to be used on the built-in types
+str or unicode (you can build 'char[]' arrays explicitly)
+but only on objects containing large quantities of raw data
+in some other format, like 'array.array' or numpy arrays.
+
+The first argument is optional and default to 'char[]'.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a7c5b41ffd6aab39af4b4cc6838a529ff}\index{cffi.api.FFI@{cffi.api.FFI}!from\_handle@{from\_handle}}
+\index{from\_handle@{from\_handle}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{from\_handle()}{from\_handle()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a7c5b41ffd6aab39af4b4cc6838a529ff} 
+cffi.\+api.\+FFI.\+from\+\_\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ae3b6f714b7108585808ba3b298cabd07}\index{cffi.api.FFI@{cffi.api.FFI}!gc@{gc}}
+\index{gc@{gc}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ae3b6f714b7108585808ba3b298cabd07} 
+cffi.\+api.\+FFI.\+gc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdata}{, }\item[{}]{destructor}{, }\item[{}]{size}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new cdata object that points to the same
+data.  Later, when this new cdata object is garbage-collected,
+'destructor(old_cdata_object)' will be called.
+
+The optional 'size' gives an estimate of the size, used to
+trigger the garbage collection more eagerly.  So far only used
+on PyPy.  It tells the GC that the returned object keeps alive
+roughly 'size' bytes of external memory.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a6dc2efc5b0e65b537291e6de3906308e}\index{cffi.api.FFI@{cffi.api.FFI}!getctype@{getctype}}
+\index{getctype@{getctype}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{getctype()}{getctype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a6dc2efc5b0e65b537291e6de3906308e} 
+cffi.\+api.\+FFI.\+getctype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{}]{replace\+\_\+with}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string giving the C type 'cdecl', which may be itself
+a string or a <ctype> object.  If 'replace_with' is given, it gives
+extra text to append (or insert for more complicated C types), like
+a variable name, or '*' to get actually the C type 'pointer-to-cdecl'.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_af9886ac67dc4fd0161043c549d6f047a}\index{cffi.api.FFI@{cffi.api.FFI}!getwinerror@{getwinerror}}
+\index{getwinerror@{getwinerror}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{getwinerror()}{getwinerror()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_af9886ac67dc4fd0161043c549d6f047a} 
+cffi.\+api.\+FFI.\+getwinerror (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{code}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a238704a5564e3e7b79bf91f18e793cd0}\index{cffi.api.FFI@{cffi.api.FFI}!include@{include}}
+\index{include@{include}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{include()}{include()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a238704a5564e3e7b79bf91f18e793cd0} 
+cffi.\+api.\+FFI.\+include (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ffi\+\_\+to\+\_\+include}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Includes the typedefs, structs, unions and enums defined
+in another FFI instance.  Usage is similar to a #include in C,
+where a part of the program might include types defined in
+another part for its own usage.  Note that the include()
+method has no effect on functions, constants and global
+variables, which must anyway be accessed directly from the
+lib object returned by the original FFI instance.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_ac2d5a33b557a8f3bb278bc29a1b57c7a}\index{cffi.api.FFI@{cffi.api.FFI}!init\_once@{init\_once}}
+\index{init\_once@{init\_once}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{init\_once()}{init\_once()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ac2d5a33b557a8f3bb278bc29a1b57c7a} 
+cffi.\+api.\+FFI.\+init\+\_\+once (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{func}{, }\item[{}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_aff27576452418978004c761a65567f1a}\index{cffi.api.FFI@{cffi.api.FFI}!list\_types@{list\_types}}
+\index{list\_types@{list\_types}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{list\_types()}{list\_types()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aff27576452418978004c761a65567f1a} 
+cffi.\+api.\+FFI.\+list\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the user type names known to this FFI instance.
+This returns a tuple containing three lists of names:
+(typedef_names, names_of_structs, names_of_unions)
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a958cba99c1ca0b8b9440d495660b6c47}\index{cffi.api.FFI@{cffi.api.FFI}!memmove@{memmove}}
+\index{memmove@{memmove}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{memmove()}{memmove()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a958cba99c1ca0b8b9440d495660b6c47} 
+cffi.\+api.\+FFI.\+memmove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dest}{, }\item[{}]{src}{, }\item[{}]{n}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ffi.memmove(dest, src, n) copies n bytes of memory from src to dest.
+
+Like the C function memmove(), the memory areas may overlap;
+apart from that it behaves like the C function memcpy().
+
+'src' can be any cdata ptr or array, or any Python buffer object.
+'dest' can be any cdata ptr or array, or a writable Python buffer
+object.  The size to copy, 'n', is always measured in bytes.
+
+Unlike other methods, this one supports all Python buffer including
+byte strings and bytearrays---but it still does not support
+non-contiguous buffers.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a8683df0d048f312ff118f16dae752887}\index{cffi.api.FFI@{cffi.api.FFI}!new@{new}}
+\index{new@{new}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{new()}{new()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a8683df0d048f312ff118f16dae752887} 
+cffi.\+api.\+FFI.\+new (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{}]{init}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allocate an instance according to the specified C type and
+return a pointer to it.  The specified C type must be either a
+pointer or an array: ``new('X *')`` allocates an X and returns
+a pointer to it, whereas ``new('X[n]')`` allocates an array of
+n X'es and returns an array referencing it (which works
+mostly like a pointer, like in C).  You can also use
+``new('X[]', n)`` to allocate an array of a non-constant
+length n.
+
+The memory is initialized following the rules of declaring a
+global variable in C: by default it is zero-initialized, but
+an explicit initializer can be given which can be used to
+fill all or part of the memory.
+
+When the returned <cdata> object goes out of scope, the memory
+is freed.  In other words the returned <cdata> object has
+ownership of the value of type 'cdecl' that it points to.  This
+means that the raw data can be used as long as this object is
+kept alive, but must not be used for a longer time.  Be careful
+about that when copying the pointer to the memory somewhere
+else, e.g. into another structure.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a555a91cb1d4e9d770343f05525a51df7}\index{cffi.api.FFI@{cffi.api.FFI}!new\_allocator@{new\_allocator}}
+\index{new\_allocator@{new\_allocator}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{new\_allocator()}{new\_allocator()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a555a91cb1d4e9d770343f05525a51df7} 
+cffi.\+api.\+FFI.\+new\+\_\+allocator (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{alloc}{ = {\ttfamily None}, }\item[{}]{free}{ = {\ttfamily None}, }\item[{}]{should\+\_\+clear\+\_\+after\+\_\+alloc}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new allocator, i.e. a function that behaves like ffi.new()
+but uses the provided low-level 'alloc' and 'free' functions.
+
+'alloc' is called with the size as argument.  If it returns NULL, a
+MemoryError is raised.  'free' is called with the result of 'alloc'
+as argument.  Both can be either Python function or directly C
+functions.  If 'free' is None, then no free function is called.
+If both 'alloc' and 'free' are None, the default is used.
+
+If 'should_clear_after_alloc' is set to False, then the memory
+returned by 'alloc' is assumed to be already cleared (or you are
+fine with garbage); otherwise CFFI will clear it.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a65da31f57756aabb3a966ee7ecf5a86c}\index{cffi.api.FFI@{cffi.api.FFI}!new\_handle@{new\_handle}}
+\index{new\_handle@{new\_handle}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{new\_handle()}{new\_handle()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a65da31f57756aabb3a966ee7ecf5a86c} 
+cffi.\+api.\+FFI.\+new\+\_\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ae496642d5b7aea3754059bfc920041f8}\index{cffi.api.FFI@{cffi.api.FFI}!offsetof@{offsetof}}
+\index{offsetof@{offsetof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{offsetof()}{offsetof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ae496642d5b7aea3754059bfc920041f8} 
+cffi.\+api.\+FFI.\+offsetof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{, }\item[{\texorpdfstring{$\ast$}{*}}]{fields\+\_\+or\+\_\+indexes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the offset of the named field inside the given
+structure or array, which must be given as a C type name.
+You can give several field names in case of nested structures.
+You can also give numeric values which correspond to array
+items, in case of an array type.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_afcb24afa6635314530a3844a0e2461da}\index{cffi.api.FFI@{cffi.api.FFI}!release@{release}}
+\index{release@{release}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_afcb24afa6635314530a3844a0e2461da} 
+cffi.\+api.\+FFI.\+release (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_abb221cec505e62904f65ff4265e8dbbd}\index{cffi.api.FFI@{cffi.api.FFI}!set\_source@{set\_source}}
+\index{set\_source@{set\_source}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{set\_source()}{set\_source()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_abb221cec505e62904f65ff4265e8dbbd} 
+cffi.\+api.\+FFI.\+set\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module\+\_\+name}{, }\item[{}]{source}{, }\item[{}]{source\+\_\+extension}{ = {\ttfamily \textquotesingle{}.c\textquotesingle{}}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a2374ba4072e75f0fa7fdd0711b4ac4d3}\index{cffi.api.FFI@{cffi.api.FFI}!set\_source\_pkgconfig@{set\_source\_pkgconfig}}
+\index{set\_source\_pkgconfig@{set\_source\_pkgconfig}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{set\_source\_pkgconfig()}{set\_source\_pkgconfig()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a2374ba4072e75f0fa7fdd0711b4ac4d3} 
+cffi.\+api.\+FFI.\+set\+\_\+source\+\_\+pkgconfig (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module\+\_\+name}{, }\item[{}]{pkgconfig\+\_\+libs}{, }\item[{}]{source}{, }\item[{}]{source\+\_\+extension}{ = {\ttfamily \textquotesingle{}.c\textquotesingle{}}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a6508aa930b9457cfbaafa44dced58034}\index{cffi.api.FFI@{cffi.api.FFI}!set\_unicode@{set\_unicode}}
+\index{set\_unicode@{set\_unicode}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{set\_unicode()}{set\_unicode()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a6508aa930b9457cfbaafa44dced58034} 
+cffi.\+api.\+FFI.\+set\+\_\+unicode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{enabled\+\_\+flag}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Windows: if 'enabled_flag' is True, enable the UNICODE and
+_UNICODE defines in C, and declare the types like TCHAR and LPTCSTR
+to be (pointers to) wchar_t.  If 'enabled_flag' is False,
+declare these types to be (pointers to) plain 8-bit characters.
+This is mostly for backward compatibility; you usually want True.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a4c1a9dc6a18e5fa13d97c91bf45dfd77}\index{cffi.api.FFI@{cffi.api.FFI}!sizeof@{sizeof}}
+\index{sizeof@{sizeof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{sizeof()}{sizeof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a4c1a9dc6a18e5fa13d97c91bf45dfd77} 
+cffi.\+api.\+FFI.\+sizeof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the size in bytes of the argument.  It can be a
+string naming a C type, or a 'cdata' instance.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_a2a000a76e36332cd702a6ebcc705b3c2}\index{cffi.api.FFI@{cffi.api.FFI}!string@{string}}
+\index{string@{string}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a2a000a76e36332cd702a6ebcc705b3c2} 
+cffi.\+api.\+FFI.\+string (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdata}{, }\item[{}]{maxlen}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a Python string (or unicode string) from the 'cdata'.
+If 'cdata' is a pointer or array of characters or bytes, returns
+the null-terminated string.  The returned string extends until
+the first null character, or at most 'maxlen' characters.  If
+'cdata' is an array then 'maxlen' defaults to its length.
+
+If 'cdata' is a pointer or array of wchar_t, returns a unicode
+string following the same rules.
+
+If 'cdata' is a single character or byte or a wchar_t, returns
+it as a string or unicode string.
+
+If 'cdata' is an enum, returns the value of the enumerator as a
+string, or 'NUMBER' if the value is out of range.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_ab8edf3725c8266273a6ca03d3cb5c9d7}\index{cffi.api.FFI@{cffi.api.FFI}!typeof@{typeof}}
+\index{typeof@{typeof}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{typeof()}{typeof()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ab8edf3725c8266273a6ca03d3cb5c9d7} 
+cffi.\+api.\+FFI.\+typeof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdecl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the C type given as a string and return the
+corresponding <ctype> object.
+It can also be used on 'cdata' instance to get its C type.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_ae69d64e0481f29abdfda8c50927174e9}\index{cffi.api.FFI@{cffi.api.FFI}!unpack@{unpack}}
+\index{unpack@{unpack}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{unpack()}{unpack()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ae69d64e0481f29abdfda8c50927174e9} 
+cffi.\+api.\+FFI.\+unpack (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cdata}{, }\item[{}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unpack an array of C data of the given length,
+returning a Python string/unicode/list.
+
+If 'cdata' is a pointer to 'char', returns a byte string.
+It does not stop at the first null.  This is equivalent to:
+ffi.buffer(cdata, length)[:]
+
+If 'cdata' is a pointer to 'wchar_t', returns a unicode string.
+'length' is measured in wchar_t's; it is not the size in bytes.
+
+If 'cdata' is a pointer to anything else, returns a list of
+'length' items.  This is a faster equivalent to:
+[cdata[i] for i in range(length)]
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1api_1_1_f_f_i_ac05cd4cf779cb85543c4cd5fa8a6d333}\index{cffi.api.FFI@{cffi.api.FFI}!verify@{verify}}
+\index{verify@{verify}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ac05cd4cf779cb85543c4cd5fa8a6d333} 
+cffi.\+api.\+FFI.\+verify (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{tmpdir}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify that the current ffi signatures compile on this
+machine, and return a dynamic library object.  The dynamic
+library can be used to call functions and access global
+variables declared in this 'ffi'.  The library is compiled
+by the C compiler: it gives you C-level API compatibility
+(including calling macros).  This is unlike 'ffi.dlopen()',
+which requires binary compatibility in the signatures.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a2f0bd3e15046e854c133ab1630db3db4}\index{cffi.api.FFI@{cffi.api.FFI}!\_assigned\_source@{\_assigned\_source}}
+\index{\_assigned\_source@{\_assigned\_source}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_assigned\_source}{\_assigned\_source}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a2f0bd3e15046e854c133ab1630db3db4} 
+tuple cffi.\+api.\+FFI.\+\_\+assigned\+\_\+source\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (str(module\_name),\ source,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ source\_extension,\ kwds)}
+
+\end{DoxyCode}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_adc7e780ad02747e1efcbc2d812941653}\index{cffi.api.FFI@{cffi.api.FFI}!\_backend@{\_backend}}
+\index{\_backend@{\_backend}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_backend}{\_backend}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_adc7e780ad02747e1efcbc2d812941653} 
+cffi.\+api.\+FFI.\+\_\+backend = backend\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_aaf26038d51162eb09ecc9768b6f47cd2}\index{cffi.api.FFI@{cffi.api.FFI}!\_cached\_btypes@{\_cached\_btypes}}
+\index{\_cached\_btypes@{\_cached\_btypes}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_cached\_btypes}{\_cached\_btypes}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aaf26038d51162eb09ecc9768b6f47cd2} 
+dict cffi.\+api.\+FFI.\+\_\+cached\+\_\+btypes = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a87893117d141eedb270f52886255569d}\index{cffi.api.FFI@{cffi.api.FFI}!\_cdef\_version@{\_cdef\_version}}
+\index{\_cdef\_version@{\_cdef\_version}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_cdef\_version}{\_cdef\_version}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a87893117d141eedb270f52886255569d} 
+cffi.\+api.\+FFI.\+\_\+cdef\+\_\+version = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ac5c0538e7f946505499013571e5e4a58}\index{cffi.api.FFI@{cffi.api.FFI}!\_cdefsources@{\_cdefsources}}
+\index{\_cdefsources@{\_cdefsources}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_cdefsources}{\_cdefsources}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ac5c0538e7f946505499013571e5e4a58} 
+list cffi.\+api.\+FFI.\+\_\+cdefsources = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ab9f81909b794030060d0a55958b36194}\index{cffi.api.FFI@{cffi.api.FFI}!\_embedding@{\_embedding}}
+\index{\_embedding@{\_embedding}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_embedding}{\_embedding}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ab9f81909b794030060d0a55958b36194} 
+str cffi.\+api.\+FFI.\+\_\+embedding = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a38ff72f3ac164a70631329a587c4afe5}\index{cffi.api.FFI@{cffi.api.FFI}!\_function\_caches@{\_function\_caches}}
+\index{\_function\_caches@{\_function\_caches}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_function\_caches}{\_function\_caches}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a38ff72f3ac164a70631329a587c4afe5} 
+list cffi.\+api.\+FFI.\+\_\+function\+\_\+caches = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a0e6a5adcf9ccd31180d496828f1384a8}\index{cffi.api.FFI@{cffi.api.FFI}!\_included\_ffis@{\_included\_ffis}}
+\index{\_included\_ffis@{\_included\_ffis}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_included\_ffis}{\_included\_ffis}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a0e6a5adcf9ccd31180d496828f1384a8} 
+list cffi.\+api.\+FFI.\+\_\+included\+\_\+ffis = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a35fb1ae7c47a350ffcbb6de01d19b9ad}\index{cffi.api.FFI@{cffi.api.FFI}!\_init\_once\_cache@{\_init\_once\_cache}}
+\index{\_init\_once\_cache@{\_init\_once\_cache}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_init\_once\_cache}{\_init\_once\_cache}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a35fb1ae7c47a350ffcbb6de01d19b9ad} 
+dict cffi.\+api.\+FFI.\+\_\+init\+\_\+once\+\_\+cache = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a3bdeacfa7951ae18f507542ba50b2a83}\index{cffi.api.FFI@{cffi.api.FFI}!\_libraries@{\_libraries}}
+\index{\_libraries@{\_libraries}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_libraries}{\_libraries}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a3bdeacfa7951ae18f507542ba50b2a83} 
+list cffi.\+api.\+FFI.\+\_\+libraries = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a56d73463e8407ec3e144cf5a9c5ad4f8}\index{cffi.api.FFI@{cffi.api.FFI}!\_lock@{\_lock}}
+\index{\_lock@{\_lock}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_lock}{\_lock}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a56d73463e8407ec3e144cf5a9c5ad4f8} 
+cffi.\+api.\+FFI.\+\_\+lock = allocate\+\_\+lock()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_afc2e7f642ebc37fa584ab2beb19a366a}\index{cffi.api.FFI@{cffi.api.FFI}!\_new\_types@{\_new\_types}}
+\index{\_new\_types@{\_new\_types}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_new\_types}{\_new\_types}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_afc2e7f642ebc37fa584ab2beb19a366a} 
+cffi.\+api.\+FFI.\+\_\+new\+\_\+types = types.\+Module\+Type(\textquotesingle{}new\+\_\+types\textquotesingle{}).\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a033dabead52aa3872c7ec601ccdc8313}\index{cffi.api.FFI@{cffi.api.FFI}!\_parsed\_types@{\_parsed\_types}}
+\index{\_parsed\_types@{\_parsed\_types}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_parsed\_types}{\_parsed\_types}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a033dabead52aa3872c7ec601ccdc8313} 
+cffi.\+api.\+FFI.\+\_\+parsed\+\_\+types = types.\+Module\+Type(\textquotesingle{}parsed\+\_\+types\textquotesingle{}).\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_afaec00462858674520df3f1fe08345f7}\index{cffi.api.FFI@{cffi.api.FFI}!\_parser@{\_parser}}
+\index{\_parser@{\_parser}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_parser}{\_parser}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_afaec00462858674520df3f1fe08345f7} 
+cffi.\+api.\+FFI.\+\_\+parser = \mbox{\hyperlink{classcffi_1_1cparser_1_1_parser}{cparser.\+Parser}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_aa8297f44df40ea34217d829b18be4692}\index{cffi.api.FFI@{cffi.api.FFI}!\_typecache@{\_typecache}}
+\index{\_typecache@{\_typecache}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_typecache}{\_typecache}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aa8297f44df40ea34217d829b18be4692} 
+cffi.\+api.\+FFI.\+\_\+typecache = \mbox{\hyperlink{namespacecffi_1_1model_a094e5b14ba34b24b78cae1d52cbcce67}{model.\+get\+\_\+typecache}}(backend)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a09856131f030f85ca407ceefce49b01b}\index{cffi.api.FFI@{cffi.api.FFI}!\_windows\_unicode@{\_windows\_unicode}}
+\index{\_windows\_unicode@{\_windows\_unicode}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{\_windows\_unicode}{\_windows\_unicode}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a09856131f030f85ca407ceefce49b01b} 
+cffi.\+api.\+FFI.\+\_\+windows\+\_\+unicode = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ade6f42877a840fbc2c4f17600c23f52f}\index{cffi.api.FFI@{cffi.api.FFI}!BCharA@{BCharA}}
+\index{BCharA@{BCharA}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{BCharA}{BCharA}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ade6f42877a840fbc2c4f17600c23f52f} 
+cffi.\+api.\+FFI.\+BCharA = self.\+\_\+get\+\_\+cached\+\_\+btype(\mbox{\hyperlink{namespacecffi_1_1model_a8dc6a53ac42250dda1ae7ed5bdabf627}{model.\+char\+\_\+array\+\_\+type}})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a8f0b2f671204fc8f39fe9eb8bb9c21c7}\index{cffi.api.FFI@{cffi.api.FFI}!buffer@{buffer}}
+\index{buffer@{buffer}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a8f0b2f671204fc8f39fe9eb8bb9c21c7} 
+cffi.\+api.\+FFI.\+buffer = backend.\+buffer}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a9a85c587f1201ecd46f7f8abe379320c}\index{cffi.api.FFI@{cffi.api.FFI}!BVoidP@{BVoidP}}
+\index{BVoidP@{BVoidP}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{BVoidP}{BVoidP}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a9a85c587f1201ecd46f7f8abe379320c} 
+cffi.\+api.\+FFI.\+BVoidP = self.\+\_\+get\+\_\+cached\+\_\+btype(\mbox{\hyperlink{namespacecffi_1_1model_ac518a60288f3f2223e624fb1b3a63a17}{model.\+voidp\+\_\+type}})}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_adf510bcfc24282ea58d3965a1f9218cb}\index{cffi.api.FFI@{cffi.api.FFI}!CData@{CData}}
+\index{CData@{CData}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{CData}{CData}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_adf510bcfc24282ea58d3965a1f9218cb} 
+cffi.\+api.\+FFI.\+CData}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_a082c8747dbbe357b4aa370d327c42396}\index{cffi.api.FFI@{cffi.api.FFI}!CType@{CType}}
+\index{CType@{CType}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{CType}{CType}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_a082c8747dbbe357b4aa370d327c42396} 
+cffi.\+api.\+FFI.\+CType = backend.\+\_\+get\+\_\+types()}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_ab8e1eeaa08f6e7b2f37908f9fe4bc7b3}\index{cffi.api.FFI@{cffi.api.FFI}!NULL@{NULL}}
+\index{NULL@{NULL}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_ab8e1eeaa08f6e7b2f37908f9fe4bc7b3} 
+cffi.\+api.\+FFI.\+NULL = self.\+cast(self.\+BVoidP, 0)}
+
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_aed6c99ee811eca48a3cd859ae6828fc9}\index{cffi.api.FFI@{cffi.api.FFI}!verifier@{verifier}}
+\index{verifier@{verifier}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{verifier}{verifier}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_aed6c99ee811eca48a3cd859ae6828fc9} 
+cffi.\+api.\+FFI.\+verifier = Verifier(self, source, tmpdir, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)}
+
+
+
+\label{doc-property-members}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classcffi_1_1api_1_1_f_f_i_af218ef6bbb0f3643fa5e6c3044350848}\index{cffi.api.FFI@{cffi.api.FFI}!errno@{errno}}
+\index{errno@{errno}!cffi.api.FFI@{cffi.api.FFI}}
+\doxysubsubsection{\texorpdfstring{errno}{errno}}
+{\footnotesize\ttfamily \label{classcffi_1_1api_1_1_f_f_i_af218ef6bbb0f3643fa5e6c3044350848} 
+cffi.\+api.\+FFI.\+errno\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ property(\_get\_errno,\ \_set\_errno,\ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}the\ value\ of\ 'errno'\ from/to\ the\ C\ calls"{}})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cffi/\mbox{\hyperlink{cffi_2api_8py}{api.\+py}}\end{DoxyCompactItemize}

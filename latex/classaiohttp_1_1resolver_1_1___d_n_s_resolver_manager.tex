@@ -1,0 +1,98 @@
+\doxysection{aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager Class Reference}
+\hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager}{}\label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+"{}\+\_\+\+DNSResolver\+Manager"{} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae23b3269fbfbb6a774da41d5f98d4398}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls)
+\item 
+"{}aiodns.\+DNSResolver"{} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_a5631d873e45d25fd4778a01b02f6945f}{get\+\_\+resolver}} (self, "{}Async\+Resolver"{} client, asyncio.\+Abstract\+Event\+Loop loop)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_a7f937187c22dca20c19dea9b576a4a0a}{release\+\_\+resolver}} (self, "{}Async\+Resolver"{} client, asyncio.\+Abstract\+Event\+Loop loop)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae7e46f706270ce783cf557b5fac4b8ee}{\+\_\+init}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+weakref.\+Weak\+Key\+Dictionary\mbox{[} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_add8c1ce6ec4d86717beb89ae73e9fdfb}{\+\_\+loop\+\_\+data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Optional \mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae9e9510cceac722220ddab09e420aac2}{\+\_\+instance}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Manager for aiodns.DNSResolver objects.
+
+This class manages shared aiodns.DNSResolver instances
+with no custom arguments across different event loops.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae23b3269fbfbb6a774da41d5f98d4398}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae23b3269fbfbb6a774da41d5f98d4398} 
+ "{}\+\_\+\+DNSResolver\+Manager"{} aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae7e46f706270ce783cf557b5fac4b8ee}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}!\_init@{\_init}}
+\index{\_init@{\_init}!aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection{\texorpdfstring{\_init()}{\_init()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae7e46f706270ce783cf557b5fac4b8ee} 
+ None aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager.\+\_\+init (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_a5631d873e45d25fd4778a01b02f6945f}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}!get\_resolver@{get\_resolver}}
+\index{get\_resolver@{get\_resolver}!aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection{\texorpdfstring{get\_resolver()}{get\_resolver()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_a5631d873e45d25fd4778a01b02f6945f} 
+ "{}aiodns.\+DNSResolver"{} aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager.\+get\+\_\+resolver (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Async\+Resolver"{}}]{client}{, }\item[{asyncio.\+Abstract\+Event\+Loop     }]{loop}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get or create the shared aiodns.DNSResolver instance for a specific event loop.
+
+Args:
+    client: The AsyncResolver instance requesting the resolver.
+           This is required to track resolver usage.
+    loop: The event loop to use for the resolver.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_a7f937187c22dca20c19dea9b576a4a0a}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}!release\_resolver@{release\_resolver}}
+\index{release\_resolver@{release\_resolver}!aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection{\texorpdfstring{release\_resolver()}{release\_resolver()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_a7f937187c22dca20c19dea9b576a4a0a} 
+ None aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager.\+release\+\_\+resolver (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Async\+Resolver"{}}]{client}{, }\item[{asyncio.\+Abstract\+Event\+Loop     }]{loop}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release the resolver for an AsyncResolver client when it's closed.
+
+Args:
+    client: The AsyncResolver instance to release.
+    loop: The event loop the resolver was using.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae9e9510cceac722220ddab09e420aac2}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_ae9e9510cceac722220ddab09e420aac2} 
+Optional aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager.\+\_\+instance = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_add8c1ce6ec4d86717beb89ae73e9fdfb}\index{aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}!\_loop\_data@{\_loop\_data}}
+\index{\_loop\_data@{\_loop\_data}!aiohttp.resolver.\_DNSResolverManager@{aiohttp.resolver.\_DNSResolverManager}}
+\doxysubsubsection{\texorpdfstring{\_loop\_data}{\_loop\_data}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager_add8c1ce6ec4d86717beb89ae73e9fdfb} 
+weakref.\+Weak\+Key\+Dictionary\mbox{[} aiohttp.\+resolver.\+\_\+\+DNSResolver\+Manager.\+\_\+loop\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{aiohttp_2resolver_8py}{resolver.\+py}}\end{DoxyCompactItemize}

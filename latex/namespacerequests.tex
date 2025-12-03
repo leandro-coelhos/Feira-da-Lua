@@ -1,0 +1,147 @@
+\doxysection{requests Namespace Reference}
+\hypertarget{namespacerequests}{}\label{namespacerequests}\index{requests@{requests}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1____version____}{\+\_\+\+\_\+version\+\_\+\+\_\+}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1__internal__utils}{\+\_\+internal\+\_\+utils}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1adapters}{adapters}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1api}{api}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1auth}{auth}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1certs}{certs}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1compat}{compat}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1cookies}{cookies}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1exceptions}{exceptions}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1help}{help}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1hooks}{hooks}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1models}{models}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1packages}{packages}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1sessions}{sessions}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1status__codes}{status\+\_\+codes}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1structures}{structures}}
+\item 
+namespace \mbox{\hyperlink{namespacerequests_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerequests_aaed042a04927747839d16c1c487e2f57}{check\+\_\+compatibility}} (urllib3\+\_\+version, \mbox{\hyperlink{namespacerequests_ab2a0a08489850fb8ac395a9f75cf8670}{chardet\+\_\+version}}, \mbox{\hyperlink{namespacerequests_a642d1138b9bd82a5cf801fb37abaa7ea}{charset\+\_\+normalizer\+\_\+version}})
+\item 
+\mbox{\hyperlink{namespacerequests_ade8e00008e3c561aa347784e436cf584}{\+\_\+check\+\_\+cryptography}} (cryptography\+\_\+version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerequests_a642d1138b9bd82a5cf801fb37abaa7ea}{charset\+\_\+normalizer\+\_\+version}} = None
+\item 
+\mbox{\hyperlink{namespacerequests_ab2a0a08489850fb8ac395a9f75cf8670}{chardet\+\_\+version}} = None
+\item 
+\mbox{\hyperlink{namespacerequests_a1f62fecb8055ee3566913109f199108f}{ssl}} = None
+\item 
+\mbox{\hyperlink{namespacerequests_ab8f5dd8056c1d26e3f3f29ae36413bd2}{File\+Mode\+Warning}}
+\item 
+\mbox{\hyperlink{namespacerequests_a2be4969f9e5198f867a2c7c842266705}{append}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Requests HTTP Library
+~~~~~~~~~~~~~~~~~~~~~
+
+Requests is an HTTP library, written in Python, for human beings.
+Basic GET usage:
+
+   >>> import requests
+   >>> r = requests.get('https://www.python.org')
+   >>> r.status_code
+   200
+   >>> b'Python is a programming language' in r.content
+   True
+
+... or POST:
+
+   >>> payload = dict(key1='value1', key2='value2')
+   >>> r = requests.post('https://httpbin.org/post', data=payload)
+   >>> print(r.text)
+   {
+     ...
+     "form": {
+       "key1": "value1",
+       "key2": "value2"
+     },
+     ...
+   }
+
+The other HTTP methods are supported - see `requests.api`. Full documentation
+is at <https://requests.readthedocs.io>.
+
+:copyright: (c) 2017 by Kenneth Reitz.
+:license: Apache 2.0, see LICENSE for more details.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacerequests_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacerequests_ade8e00008e3c561aa347784e436cf584}\index{requests@{requests}!\_check\_cryptography@{\_check\_cryptography}}
+\index{\_check\_cryptography@{\_check\_cryptography}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{\_check\_cryptography()}{\_check\_cryptography()}}
+{\footnotesize\ttfamily \label{namespacerequests_ade8e00008e3c561aa347784e436cf584} 
+requests.\+\_\+check\+\_\+cryptography (\begin{DoxyParamCaption}\item[{}]{cryptography\+\_\+version}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_aaed042a04927747839d16c1c487e2f57}\index{requests@{requests}!check\_compatibility@{check\_compatibility}}
+\index{check\_compatibility@{check\_compatibility}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{check\_compatibility()}{check\_compatibility()}}
+{\footnotesize\ttfamily \label{namespacerequests_aaed042a04927747839d16c1c487e2f57} 
+requests.\+check\+\_\+compatibility (\begin{DoxyParamCaption}\item[{}]{urllib3\+\_\+version}{, }\item[{}]{chardet\+\_\+version}{, }\item[{}]{charset\+\_\+normalizer\+\_\+version}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacerequests_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacerequests_a2be4969f9e5198f867a2c7c842266705}\index{requests@{requests}!append@{append}}
+\index{append@{append}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{append}{append}}
+{\footnotesize\ttfamily \label{namespacerequests_a2be4969f9e5198f867a2c7c842266705} 
+requests.\+append}
+
+\Hypertarget{namespacerequests_ab2a0a08489850fb8ac395a9f75cf8670}\index{requests@{requests}!chardet\_version@{chardet\_version}}
+\index{chardet\_version@{chardet\_version}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{chardet\_version}{chardet\_version}}
+{\footnotesize\ttfamily \label{namespacerequests_ab2a0a08489850fb8ac395a9f75cf8670} 
+requests.\+chardet\+\_\+version = None}
+
+\Hypertarget{namespacerequests_a642d1138b9bd82a5cf801fb37abaa7ea}\index{requests@{requests}!charset\_normalizer\_version@{charset\_normalizer\_version}}
+\index{charset\_normalizer\_version@{charset\_normalizer\_version}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{charset\_normalizer\_version}{charset\_normalizer\_version}}
+{\footnotesize\ttfamily \label{namespacerequests_a642d1138b9bd82a5cf801fb37abaa7ea} 
+requests.\+charset\+\_\+normalizer\+\_\+version = None}
+
+\Hypertarget{namespacerequests_ab8f5dd8056c1d26e3f3f29ae36413bd2}\index{requests@{requests}!FileModeWarning@{FileModeWarning}}
+\index{FileModeWarning@{FileModeWarning}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{FileModeWarning}{FileModeWarning}}
+{\footnotesize\ttfamily \label{namespacerequests_ab8f5dd8056c1d26e3f3f29ae36413bd2} 
+\mbox{\hyperlink{classrequests_1_1exceptions_1_1_file_mode_warning}{requests.\+File\+Mode\+Warning}}}
+
+\Hypertarget{namespacerequests_a1f62fecb8055ee3566913109f199108f}\index{requests@{requests}!ssl@{ssl}}
+\index{ssl@{ssl}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{ssl}{ssl}}
+{\footnotesize\ttfamily \label{namespacerequests_a1f62fecb8055ee3566913109f199108f} 
+requests.\+ssl = None}
+

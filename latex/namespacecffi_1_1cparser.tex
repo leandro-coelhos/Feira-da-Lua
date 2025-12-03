@@ -1,0 +1,278 @@
+\doxysection{cffi.\+cparser Namespace Reference}
+\hypertarget{namespacecffi_1_1cparser}{}\label{namespacecffi_1_1cparser}\index{cffi.cparser@{cffi.cparser}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcffi_1_1cparser_1_1_parser}{Parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a09a23b669bcabaa449962ec882d428b4}{\+\_\+workaround\+\_\+for\+\_\+static\+\_\+import\+\_\+finders}} ()
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a5fac6df4b37bff6d34bddf1011e17744}{\+\_\+get\+\_\+parser}} ()
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_aa1712a110c72a0d44d42d230991be639}{\+\_\+workaround\+\_\+for\+\_\+old\+\_\+pycparser}} (csource)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a090012863f6fccac6726f3e19025a92c}{\+\_\+preprocess\+\_\+extern\+\_\+python}} (csource)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a7786690dfc03408208a845fc266a7e03}{\+\_\+warn\+\_\+for\+\_\+string\+\_\+literal}} (csource)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a9f7e9c1f2f1f2c46926d2fe6f3774ea6}{\+\_\+warn\+\_\+for\+\_\+non\+\_\+extern\+\_\+non\+\_\+static\+\_\+global\+\_\+variable}} (decl)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_ab428a3bb10a03448d6d18fecdf3fb6c4}{\+\_\+remove\+\_\+line\+\_\+directives}} (csource)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a3a8b9d59df776d9eceec2456ade71826}{\+\_\+put\+\_\+back\+\_\+line\+\_\+directives}} (csource, line\+\_\+directives)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a66b1e3de638efcf1ccd505832e306bdb}{\+\_\+preprocess}} (csource)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_ad1e7fbfe345d73658edbbb69143d6af4}{\+\_\+common\+\_\+type\+\_\+names}} (csource)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a5c2e73029e2b3b961dea7488d7b2fc61}{lock}} = \+\_\+thread.\+allocate\+\_\+lock()
+\item 
+str \mbox{\hyperlink{namespacecffi_1_1cparser_ab653f450ee23b490ddbcd2024ec7b251}{CDEF\+\_\+\+SOURCE\+\_\+\+STRING}} = "{}$<$cdef source string$>$"{}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a5a8bf0e3090bc1ac3b817283e6c22d3c}{\+\_\+r\+\_\+comment}}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a1b71f776af43617ae39e701b03fd1d69}{\+\_\+r\+\_\+define}}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a0a026ed3b00a848ff5e1d11edd754cfc}{\+\_\+r\+\_\+line\+\_\+directive}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}\#\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:line\texorpdfstring{$\vert$}{|}\textbackslash{}d+)\textbackslash{}b.\texorpdfstring{$\ast$}{*}\$"{}, re.\+MULTILINE)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_aa256d10b954c005836c0f38ac10fee58}{\+\_\+r\+\_\+partial\+\_\+enum}} = re.\+compile(r"{}=\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}.\textbackslash{}.\textbackslash{}s\texorpdfstring{$\ast$}{*}\mbox{[},\}\mbox{]}\texorpdfstring{$\vert$}{|}\textbackslash{}.\textbackslash{}.\textbackslash{}.\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}\}"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a8d28501e3316a584ee2f7a61fad02d8d}{\+\_\+r\+\_\+enum\+\_\+dotdotdot}} = re.\+compile(r"{}\+\_\+\+\_\+dotdotdot\textbackslash{}d+\+\_\+\+\_\+\$"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a60b2bb16823635a284555b8dddf46450}{\+\_\+r\+\_\+partial\+\_\+array}} = re.\+compile(r"{}\textbackslash{}\mbox{[}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}.\textbackslash{}.\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}\mbox{]}"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a2edc3639e95064b54a44a2a0adc07e2c}{\+\_\+r\+\_\+words}} = re.\+compile(r"{}\textbackslash{}w+\texorpdfstring{$\vert$}{|}\textbackslash{}S"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a550b09554f39f811896f8ebf615ef0c3}{\+\_\+parser\+\_\+cache}} = None
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_af3d5e0ab34b918c6b1611cb03ead6907}{\+\_\+r\+\_\+int\+\_\+literal}} = re.\+compile(r"{}-\/?0?x?\mbox{[}0-\/9a-\/f\mbox{]}+\mbox{[}lu\mbox{]}\texorpdfstring{$\ast$}{*}\$"{}, re.\+IGNORECASE)
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_ad83ca048b84b715bd77e0cc5a29d1655}{\+\_\+r\+\_\+stdcall1}} = re.\+compile(r"{}\textbackslash{}b(\+\_\+\+\_\+stdcall\texorpdfstring{$\vert$}{|}WINAPI)\textbackslash{}b"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_aa649dae824b03ce27cf2d5802b3baca4}{\+\_\+r\+\_\+stdcall2}} = re.\+compile(r"{}\mbox{[}(\mbox{]}\textbackslash{}s\texorpdfstring{$\ast$}{*}(\+\_\+\+\_\+stdcall\texorpdfstring{$\vert$}{|}WINAPI)\textbackslash{}b"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_aac0c6ec6dd1ba3ea1293e2ff514b0596}{\+\_\+r\+\_\+cdecl}} = re.\+compile(r"{}\textbackslash{}b\+\_\+\+\_\+cdecl\textbackslash{}b"{})
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_acac73b0083e2ca1b7d565a5e34c29390}{\+\_\+r\+\_\+extern\+\_\+python}}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_a14628af41e099980dd2f5c8c89cc3516}{\+\_\+r\+\_\+star\+\_\+const\+\_\+space}}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_aebba2f97500e38c5e1cf8e857ce03bf9}{\+\_\+r\+\_\+int\+\_\+dotdotdot}}
+\item 
+\mbox{\hyperlink{namespacecffi_1_1cparser_ad9bd73f49b6eb356e326a6c72bf16ec1}{\+\_\+r\+\_\+float\+\_\+dotdotdot}} = re.\+compile(r"{}\textbackslash{}b(double\texorpdfstring{$\vert$}{|}float)\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}.\textbackslash{}."{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecffi_1_1cparser_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecffi_1_1cparser_ad1e7fbfe345d73658edbbb69143d6af4}\index{cffi.cparser@{cffi.cparser}!\_common\_type\_names@{\_common\_type\_names}}
+\index{\_common\_type\_names@{\_common\_type\_names}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_common\_type\_names()}{\_common\_type\_names()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_ad1e7fbfe345d73658edbbb69143d6af4} 
+cffi.\+cparser.\+\_\+common\+\_\+type\+\_\+names (\begin{DoxyParamCaption}\item[{}]{csource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a5fac6df4b37bff6d34bddf1011e17744}\index{cffi.cparser@{cffi.cparser}!\_get\_parser@{\_get\_parser}}
+\index{\_get\_parser@{\_get\_parser}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_get\_parser()}{\_get\_parser()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a5fac6df4b37bff6d34bddf1011e17744} 
+cffi.\+cparser.\+\_\+get\+\_\+parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a66b1e3de638efcf1ccd505832e306bdb}\index{cffi.cparser@{cffi.cparser}!\_preprocess@{\_preprocess}}
+\index{\_preprocess@{\_preprocess}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_preprocess()}{\_preprocess()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a66b1e3de638efcf1ccd505832e306bdb} 
+cffi.\+cparser.\+\_\+preprocess (\begin{DoxyParamCaption}\item[{}]{csource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a090012863f6fccac6726f3e19025a92c}\index{cffi.cparser@{cffi.cparser}!\_preprocess\_extern\_python@{\_preprocess\_extern\_python}}
+\index{\_preprocess\_extern\_python@{\_preprocess\_extern\_python}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_preprocess\_extern\_python()}{\_preprocess\_extern\_python()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a090012863f6fccac6726f3e19025a92c} 
+cffi.\+cparser.\+\_\+preprocess\+\_\+extern\+\_\+python (\begin{DoxyParamCaption}\item[{}]{csource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a3a8b9d59df776d9eceec2456ade71826}\index{cffi.cparser@{cffi.cparser}!\_put\_back\_line\_directives@{\_put\_back\_line\_directives}}
+\index{\_put\_back\_line\_directives@{\_put\_back\_line\_directives}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_put\_back\_line\_directives()}{\_put\_back\_line\_directives()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a3a8b9d59df776d9eceec2456ade71826} 
+cffi.\+cparser.\+\_\+put\+\_\+back\+\_\+line\+\_\+directives (\begin{DoxyParamCaption}\item[{}]{csource}{, }\item[{}]{line\+\_\+directives}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_ab428a3bb10a03448d6d18fecdf3fb6c4}\index{cffi.cparser@{cffi.cparser}!\_remove\_line\_directives@{\_remove\_line\_directives}}
+\index{\_remove\_line\_directives@{\_remove\_line\_directives}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_remove\_line\_directives()}{\_remove\_line\_directives()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_ab428a3bb10a03448d6d18fecdf3fb6c4} 
+cffi.\+cparser.\+\_\+remove\+\_\+line\+\_\+directives (\begin{DoxyParamCaption}\item[{}]{csource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a9f7e9c1f2f1f2c46926d2fe6f3774ea6}\index{cffi.cparser@{cffi.cparser}!\_warn\_for\_non\_extern\_non\_static\_global\_variable@{\_warn\_for\_non\_extern\_non\_static\_global\_variable}}
+\index{\_warn\_for\_non\_extern\_non\_static\_global\_variable@{\_warn\_for\_non\_extern\_non\_static\_global\_variable}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_warn\_for\_non\_extern\_non\_static\_global\_variable()}{\_warn\_for\_non\_extern\_non\_static\_global\_variable()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a9f7e9c1f2f1f2c46926d2fe6f3774ea6} 
+cffi.\+cparser.\+\_\+warn\+\_\+for\+\_\+non\+\_\+extern\+\_\+non\+\_\+static\+\_\+global\+\_\+variable (\begin{DoxyParamCaption}\item[{}]{decl}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a7786690dfc03408208a845fc266a7e03}\index{cffi.cparser@{cffi.cparser}!\_warn\_for\_string\_literal@{\_warn\_for\_string\_literal}}
+\index{\_warn\_for\_string\_literal@{\_warn\_for\_string\_literal}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_warn\_for\_string\_literal()}{\_warn\_for\_string\_literal()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a7786690dfc03408208a845fc266a7e03} 
+cffi.\+cparser.\+\_\+warn\+\_\+for\+\_\+string\+\_\+literal (\begin{DoxyParamCaption}\item[{}]{csource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_aa1712a110c72a0d44d42d230991be639}\index{cffi.cparser@{cffi.cparser}!\_workaround\_for\_old\_pycparser@{\_workaround\_for\_old\_pycparser}}
+\index{\_workaround\_for\_old\_pycparser@{\_workaround\_for\_old\_pycparser}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_workaround\_for\_old\_pycparser()}{\_workaround\_for\_old\_pycparser()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_aa1712a110c72a0d44d42d230991be639} 
+cffi.\+cparser.\+\_\+workaround\+\_\+for\+\_\+old\+\_\+pycparser (\begin{DoxyParamCaption}\item[{}]{csource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a09a23b669bcabaa449962ec882d428b4}\index{cffi.cparser@{cffi.cparser}!\_workaround\_for\_static\_import\_finders@{\_workaround\_for\_static\_import\_finders}}
+\index{\_workaround\_for\_static\_import\_finders@{\_workaround\_for\_static\_import\_finders}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_workaround\_for\_static\_import\_finders()}{\_workaround\_for\_static\_import\_finders()}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a09a23b669bcabaa449962ec882d428b4} 
+cffi.\+cparser.\+\_\+workaround\+\_\+for\+\_\+static\+\_\+import\+\_\+finders (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacecffi_1_1cparser_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecffi_1_1cparser_a550b09554f39f811896f8ebf615ef0c3}\index{cffi.cparser@{cffi.cparser}!\_parser\_cache@{\_parser\_cache}}
+\index{\_parser\_cache@{\_parser\_cache}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_parser\_cache}{\_parser\_cache}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a550b09554f39f811896f8ebf615ef0c3} 
+cffi.\+cparser.\+\_\+parser\+\_\+cache = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_aac0c6ec6dd1ba3ea1293e2ff514b0596}\index{cffi.cparser@{cffi.cparser}!\_r\_cdecl@{\_r\_cdecl}}
+\index{\_r\_cdecl@{\_r\_cdecl}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_cdecl}{\_r\_cdecl}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_aac0c6ec6dd1ba3ea1293e2ff514b0596} 
+cffi.\+cparser.\+\_\+r\+\_\+cdecl = re.\+compile(r"{}\textbackslash{}b\+\_\+\+\_\+cdecl\textbackslash{}b"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a5a8bf0e3090bc1ac3b817283e6c22d3c}\index{cffi.cparser@{cffi.cparser}!\_r\_comment@{\_r\_comment}}
+\index{\_r\_comment@{\_r\_comment}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_comment}{\_r\_comment}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a5a8bf0e3090bc1ac3b817283e6c22d3c} 
+cffi.\+cparser.\+\_\+r\+\_\+comment\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(\textcolor{stringliteral}{r"{}/\(\backslash\)*.*?\(\backslash\)*/|//([\string^\(\backslash\)n\(\backslash\)\(\backslash\)]|\(\backslash\)\(\backslash\).)*?\$"{}},}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ re.DOTALL\ |\ re.MULTILINE)}
+
+\end{DoxyCode}
+\Hypertarget{namespacecffi_1_1cparser_a1b71f776af43617ae39e701b03fd1d69}\index{cffi.cparser@{cffi.cparser}!\_r\_define@{\_r\_define}}
+\index{\_r\_define@{\_r\_define}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_define}{\_r\_define}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a1b71f776af43617ae39e701b03fd1d69} 
+cffi.\+cparser.\+\_\+r\+\_\+define\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(\textcolor{stringliteral}{r"{}\string^\(\backslash\)s*\#\(\backslash\)s*define\(\backslash\)s+([A-\/Za-\/z\_][A-\/Za-\/z\_0-\/9]*)"{}}}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\(\backslash\)b((?:[\string^\(\backslash\)n\(\backslash\)\(\backslash\)]|\(\backslash\)\(\backslash\).)*?)\$"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ re.DOTALL\ |\ re.MULTILINE)}
+
+\end{DoxyCode}
+\Hypertarget{namespacecffi_1_1cparser_a8d28501e3316a584ee2f7a61fad02d8d}\index{cffi.cparser@{cffi.cparser}!\_r\_enum\_dotdotdot@{\_r\_enum\_dotdotdot}}
+\index{\_r\_enum\_dotdotdot@{\_r\_enum\_dotdotdot}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_enum\_dotdotdot}{\_r\_enum\_dotdotdot}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a8d28501e3316a584ee2f7a61fad02d8d} 
+cffi.\+cparser.\+\_\+r\+\_\+enum\+\_\+dotdotdot = re.\+compile(r"{}\+\_\+\+\_\+dotdotdot\textbackslash{}d+\+\_\+\+\_\+\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_acac73b0083e2ca1b7d565a5e34c29390}\index{cffi.cparser@{cffi.cparser}!\_r\_extern\_python@{\_r\_extern\_python}}
+\index{\_r\_extern\_python@{\_r\_extern\_python}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_extern\_python}{\_r\_extern\_python}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_acac73b0083e2ca1b7d565a5e34c29390} 
+cffi.\+cparser.\+\_\+r\+\_\+extern\+\_\+python\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(\textcolor{stringliteral}{r'\(\backslash\)bextern\(\backslash\)s*"{}'}}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'(Python|Python\(\backslash\)s*\(\backslash\)+\(\backslash\)s*C|C\(\backslash\)s*\(\backslash\)+\(\backslash\)s*Python)"{}\(\backslash\)s*.'})}
+
+\end{DoxyCode}
+\Hypertarget{namespacecffi_1_1cparser_ad9bd73f49b6eb356e326a6c72bf16ec1}\index{cffi.cparser@{cffi.cparser}!\_r\_float\_dotdotdot@{\_r\_float\_dotdotdot}}
+\index{\_r\_float\_dotdotdot@{\_r\_float\_dotdotdot}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_float\_dotdotdot}{\_r\_float\_dotdotdot}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_ad9bd73f49b6eb356e326a6c72bf16ec1} 
+cffi.\+cparser.\+\_\+r\+\_\+float\+\_\+dotdotdot = re.\+compile(r"{}\textbackslash{}b(double\texorpdfstring{$\vert$}{|}float)\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}.\textbackslash{}."{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_aebba2f97500e38c5e1cf8e857ce03bf9}\index{cffi.cparser@{cffi.cparser}!\_r\_int\_dotdotdot@{\_r\_int\_dotdotdot}}
+\index{\_r\_int\_dotdotdot@{\_r\_int\_dotdotdot}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_int\_dotdotdot}{\_r\_int\_dotdotdot}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_aebba2f97500e38c5e1cf8e857ce03bf9} 
+cffi.\+cparser.\+\_\+r\+\_\+int\+\_\+dotdotdot\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(\textcolor{stringliteral}{r"{}(\(\backslash\)b(int|long|short|signed|unsigned|char)\(\backslash\)s*)+"{}}}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\(\backslash\).\(\backslash\).\(\backslash\)."{}})}
+
+\end{DoxyCode}
+\Hypertarget{namespacecffi_1_1cparser_af3d5e0ab34b918c6b1611cb03ead6907}\index{cffi.cparser@{cffi.cparser}!\_r\_int\_literal@{\_r\_int\_literal}}
+\index{\_r\_int\_literal@{\_r\_int\_literal}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_int\_literal}{\_r\_int\_literal}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_af3d5e0ab34b918c6b1611cb03ead6907} 
+cffi.\+cparser.\+\_\+r\+\_\+int\+\_\+literal = re.\+compile(r"{}-\/?0?x?\mbox{[}0-\/9a-\/f\mbox{]}+\mbox{[}lu\mbox{]}\texorpdfstring{$\ast$}{*}\$"{}, re.\+IGNORECASE)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a0a026ed3b00a848ff5e1d11edd754cfc}\index{cffi.cparser@{cffi.cparser}!\_r\_line\_directive@{\_r\_line\_directive}}
+\index{\_r\_line\_directive@{\_r\_line\_directive}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_line\_directive}{\_r\_line\_directive}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a0a026ed3b00a848ff5e1d11edd754cfc} 
+cffi.\+cparser.\+\_\+r\+\_\+line\+\_\+directive = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}\#\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:line\texorpdfstring{$\vert$}{|}\textbackslash{}d+)\textbackslash{}b.\texorpdfstring{$\ast$}{*}\$"{}, re.\+MULTILINE)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a60b2bb16823635a284555b8dddf46450}\index{cffi.cparser@{cffi.cparser}!\_r\_partial\_array@{\_r\_partial\_array}}
+\index{\_r\_partial\_array@{\_r\_partial\_array}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_partial\_array}{\_r\_partial\_array}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a60b2bb16823635a284555b8dddf46450} 
+cffi.\+cparser.\+\_\+r\+\_\+partial\+\_\+array = re.\+compile(r"{}\textbackslash{}\mbox{[}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}.\textbackslash{}.\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}\mbox{]}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_aa256d10b954c005836c0f38ac10fee58}\index{cffi.cparser@{cffi.cparser}!\_r\_partial\_enum@{\_r\_partial\_enum}}
+\index{\_r\_partial\_enum@{\_r\_partial\_enum}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_partial\_enum}{\_r\_partial\_enum}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_aa256d10b954c005836c0f38ac10fee58} 
+cffi.\+cparser.\+\_\+r\+\_\+partial\+\_\+enum = re.\+compile(r"{}=\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}.\textbackslash{}.\textbackslash{}.\textbackslash{}s\texorpdfstring{$\ast$}{*}\mbox{[},\}\mbox{]}\texorpdfstring{$\vert$}{|}\textbackslash{}.\textbackslash{}.\textbackslash{}.\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}\}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a14628af41e099980dd2f5c8c89cc3516}\index{cffi.cparser@{cffi.cparser}!\_r\_star\_const\_space@{\_r\_star\_const\_space}}
+\index{\_r\_star\_const\_space@{\_r\_star\_const\_space}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_star\_const\_space}{\_r\_star\_const\_space}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a14628af41e099980dd2f5c8c89cc3516} 
+cffi.\+cparser.\+\_\+r\+\_\+star\+\_\+const\+\_\+space\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(\ \ \ \ \ \ \ \textcolor{comment}{\#\ matches\ "{}*\ const\ "{}}}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r"{}[*]\(\backslash\)s*((const|volatile|restrict)\(\backslash\)b\(\backslash\)s*)+"{}})}
+
+\end{DoxyCode}
+\Hypertarget{namespacecffi_1_1cparser_ad83ca048b84b715bd77e0cc5a29d1655}\index{cffi.cparser@{cffi.cparser}!\_r\_stdcall1@{\_r\_stdcall1}}
+\index{\_r\_stdcall1@{\_r\_stdcall1}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_stdcall1}{\_r\_stdcall1}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_ad83ca048b84b715bd77e0cc5a29d1655} 
+cffi.\+cparser.\+\_\+r\+\_\+stdcall1 = re.\+compile(r"{}\textbackslash{}b(\+\_\+\+\_\+stdcall\texorpdfstring{$\vert$}{|}WINAPI)\textbackslash{}b"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_aa649dae824b03ce27cf2d5802b3baca4}\index{cffi.cparser@{cffi.cparser}!\_r\_stdcall2@{\_r\_stdcall2}}
+\index{\_r\_stdcall2@{\_r\_stdcall2}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_stdcall2}{\_r\_stdcall2}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_aa649dae824b03ce27cf2d5802b3baca4} 
+cffi.\+cparser.\+\_\+r\+\_\+stdcall2 = re.\+compile(r"{}\mbox{[}(\mbox{]}\textbackslash{}s\texorpdfstring{$\ast$}{*}(\+\_\+\+\_\+stdcall\texorpdfstring{$\vert$}{|}WINAPI)\textbackslash{}b"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_a2edc3639e95064b54a44a2a0adc07e2c}\index{cffi.cparser@{cffi.cparser}!\_r\_words@{\_r\_words}}
+\index{\_r\_words@{\_r\_words}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{\_r\_words}{\_r\_words}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a2edc3639e95064b54a44a2a0adc07e2c} 
+cffi.\+cparser.\+\_\+r\+\_\+words = re.\+compile(r"{}\textbackslash{}w+\texorpdfstring{$\vert$}{|}\textbackslash{}S"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecffi_1_1cparser_ab653f450ee23b490ddbcd2024ec7b251}\index{cffi.cparser@{cffi.cparser}!CDEF\_SOURCE\_STRING@{CDEF\_SOURCE\_STRING}}
+\index{CDEF\_SOURCE\_STRING@{CDEF\_SOURCE\_STRING}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{CDEF\_SOURCE\_STRING}{CDEF\_SOURCE\_STRING}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_ab653f450ee23b490ddbcd2024ec7b251} 
+str cffi.\+cparser.\+CDEF\+\_\+\+SOURCE\+\_\+\+STRING = "{}$<$cdef source string$>$"{}}
+
+\Hypertarget{namespacecffi_1_1cparser_a5c2e73029e2b3b961dea7488d7b2fc61}\index{cffi.cparser@{cffi.cparser}!lock@{lock}}
+\index{lock@{lock}!cffi.cparser@{cffi.cparser}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily \label{namespacecffi_1_1cparser_a5c2e73029e2b3b961dea7488d7b2fc61} 
+cffi.\+cparser.\+lock = \+\_\+thread.\+allocate\+\_\+lock()}
+

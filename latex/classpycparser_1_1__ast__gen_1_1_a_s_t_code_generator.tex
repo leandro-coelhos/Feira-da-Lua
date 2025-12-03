@@ -1,0 +1,88 @@
+\doxysection{pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator Class Reference}
+\hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator}{}\label{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator}\index{pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}}
+Inheritance diagram for pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a4580a29e63cc4f52fd29509c90cd8760}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_aecd063bb337a161338f7a00fb7a7406f}{cfg\+\_\+filename}}=\textquotesingle{}\+\_\+c\+\_\+ast.\+cfg\textquotesingle{})
+\item 
+\mbox{\hyperlink{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a0106584b520d6c0cb8e47b87083fe9d0}{generate}} (self, file=None)
+\item 
+\mbox{\hyperlink{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a4ede2e4e8deea2dfac0374171bfffafe}{parse\+\_\+cfgfile}} (self, filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_aecd063bb337a161338f7a00fb7a7406f}{cfg\+\_\+filename}} = cfg\+\_\+filename
+\item 
+list \mbox{\hyperlink{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a9e3651b50c43a80f147863871756082b}{node\+\_\+cfg}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a4580a29e63cc4f52fd29509c90cd8760}\index{pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a4580a29e63cc4f52fd29509c90cd8760} 
+pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cfg\+\_\+filename}{ = {\ttfamily \textquotesingle{}\+\_\+c\+\_\+ast.cfg\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Initialize the code generator from a configuration
+    file.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a0106584b520d6c0cb8e47b87083fe9d0}\index{pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}!generate@{generate}}
+\index{generate@{generate}!pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a0106584b520d6c0cb8e47b87083fe9d0} 
+pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator.\+generate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Generates the code into file, an open file buffer.
+\end{DoxyVerb}
+ \Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a4ede2e4e8deea2dfac0374171bfffafe}\index{pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}!parse\_cfgfile@{parse\_cfgfile}}
+\index{parse\_cfgfile@{parse\_cfgfile}!pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{parse\_cfgfile()}{parse\_cfgfile()}}
+{\footnotesize\ttfamily \label{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a4ede2e4e8deea2dfac0374171bfffafe} 
+pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator.\+parse\+\_\+cfgfile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Parse the configuration file and yield pairs of
+    (name, contents) for each node.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_aecd063bb337a161338f7a00fb7a7406f}\index{pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}!cfg\_filename@{cfg\_filename}}
+\index{cfg\_filename@{cfg\_filename}!pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{cfg\_filename}{cfg\_filename}}
+{\footnotesize\ttfamily \label{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_aecd063bb337a161338f7a00fb7a7406f} 
+pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator.\+cfg\+\_\+filename = cfg\+\_\+filename}
+
+\Hypertarget{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a9e3651b50c43a80f147863871756082b}\index{pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}!node\_cfg@{node\_cfg}}
+\index{node\_cfg@{node\_cfg}!pycparser.\_ast\_gen.ASTCodeGenerator@{pycparser.\_ast\_gen.ASTCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{node\_cfg}{node\_cfg}}
+{\footnotesize\ttfamily \label{classpycparser_1_1__ast__gen_1_1_a_s_t_code_generator_a9e3651b50c43a80f147863871756082b} 
+list pycparser.\+\_\+ast\+\_\+gen.\+ASTCode\+Generator.\+node\+\_\+cfg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [NodeCfg(name,\ contents)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (name,\ contents)\ \textcolor{keywordflow}{in}\ self.parse\_cfgfile(cfg\_filename)]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pycparser/\mbox{\hyperlink{__ast__gen_8py}{\+\_\+ast\+\_\+gen.\+py}}\end{DoxyCompactItemize}

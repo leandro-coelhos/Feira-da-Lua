@@ -1,0 +1,122 @@
+\doxysection{pygments.\+lexers.\+wgsl Namespace Reference}
+\hypertarget{namespacepygments_1_1lexers_1_1wgsl}{}\label{namespacepygments_1_1lexers_1_1wgsl}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexers_1_1wgsl_1_1_wgsl_lexer}{Wgsl\+Lexer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_adf223e073d6c39c6ceacb5c6a15e1f78}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}\textquotesingle{}\mbox{\hyperlink{classpygments_1_1lexers_1_1wgsl_1_1_wgsl_lexer}{Wgsl\+Lexer}}\textquotesingle{}\mbox{]}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a185841a0ff6fc4fd876e418ba4640b6f}{LF}} = \textquotesingle{}\textbackslash{}\textbackslash{}u000a\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a8122fb8f5bf9020e2c185dfb8be92e0d}{VT}} = \textquotesingle{}\textbackslash{}\textbackslash{}u000b\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_acd2291bdf5d2c2b65d7cc3adb434a952}{FF}} = \textquotesingle{}\textbackslash{}\textbackslash{}u000c\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_ad12d998e7c218157732766262d6d596f}{CR}} = \textquotesingle{}\textbackslash{}\textbackslash{}u000d\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a02c53e5b1621f6719e2524fb78624630}{Next\+Line}} = \textquotesingle{}\textbackslash{}\textbackslash{}u0085\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_aa68900e843b3d2ce826d191dfa9ac323}{Line\+Sep}} = \textquotesingle{}\textbackslash{}\textbackslash{}u2028\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a45b1c20ae3b521322b5e7474a3bdbdc3}{Para\+Sep}} = \textquotesingle{}\textbackslash{}\textbackslash{}u2029\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}{Line\+End\+Code\+Points}} = \mbox{[}\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a185841a0ff6fc4fd876e418ba4640b6f}{LF}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a8122fb8f5bf9020e2c185dfb8be92e0d}{VT}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_acd2291bdf5d2c2b65d7cc3adb434a952}{FF}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_ad12d998e7c218157732766262d6d596f}{CR}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a02c53e5b1621f6719e2524fb78624630}{Next\+Line}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_aa68900e843b3d2ce826d191dfa9ac323}{Line\+Sep}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a45b1c20ae3b521322b5e7474a3bdbdc3}{Para\+Sep}}\mbox{]}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a4b37ef808fe75d3cfaf1b26d94d894e3}{Not\+Line\+End\+RE}} = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + "{}"{}.join(\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}{Line\+End\+Code\+Points}}) + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_ae01583382d93eb235ea603da8d0113ee}{Line\+End\+RE}} = \textquotesingle{}\mbox{[}\textquotesingle{} + "{}"{}.join(\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}{Line\+End\+Code\+Points}}) + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a5c18792e89123cf97b3e6a3a08d5e248}{ident\+\_\+pattern\+\_\+token}} = f\textquotesingle{}(\mbox{[}\{uni.\+xid\+\_\+start\}\mbox{]}\mbox{[}\{uni.\+xid\+\_\+continue\}\mbox{]}+)\texorpdfstring{$\vert$}{|}\mbox{[}\{uni.\+xid\+\_\+start\}\mbox{]}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.lexers.wgsl
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Lexer for the WebGPU Shading Language.
+
+    :copyright: Copyright 2006-2025 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_adf223e073d6c39c6ceacb5c6a15e1f78}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_adf223e073d6c39c6ceacb5c6a15e1f78} 
+list pygments.\+lexers.\+wgsl.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}\textquotesingle{}\mbox{\hyperlink{classpygments_1_1lexers_1_1wgsl_1_1_wgsl_lexer}{Wgsl\+Lexer}}\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_ad12d998e7c218157732766262d6d596f}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!CR@{CR}}
+\index{CR@{CR}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{CR}{CR}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_ad12d998e7c218157732766262d6d596f} 
+str pygments.\+lexers.\+wgsl.\+CR = \textquotesingle{}\textbackslash{}\textbackslash{}u000d\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_acd2291bdf5d2c2b65d7cc3adb434a952}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!FF@{FF}}
+\index{FF@{FF}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{FF}{FF}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_acd2291bdf5d2c2b65d7cc3adb434a952} 
+str pygments.\+lexers.\+wgsl.\+FF = \textquotesingle{}\textbackslash{}\textbackslash{}u000c\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a5c18792e89123cf97b3e6a3a08d5e248}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!ident\_pattern\_token@{ident\_pattern\_token}}
+\index{ident\_pattern\_token@{ident\_pattern\_token}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{ident\_pattern\_token}{ident\_pattern\_token}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_a5c18792e89123cf97b3e6a3a08d5e248} 
+str pygments.\+lexers.\+wgsl.\+ident\+\_\+pattern\+\_\+token = f\textquotesingle{}(\mbox{[}\{uni.\+xid\+\_\+start\}\mbox{]}\mbox{[}\{uni.\+xid\+\_\+continue\}\mbox{]}+)\texorpdfstring{$\vert$}{|}\mbox{[}\{uni.\+xid\+\_\+start\}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a185841a0ff6fc4fd876e418ba4640b6f}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!LF@{LF}}
+\index{LF@{LF}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{LF}{LF}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_a185841a0ff6fc4fd876e418ba4640b6f} 
+str pygments.\+lexers.\+wgsl.\+LF = \textquotesingle{}\textbackslash{}\textbackslash{}u000a\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!LineEndCodePoints@{LineEndCodePoints}}
+\index{LineEndCodePoints@{LineEndCodePoints}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{LineEndCodePoints}{LineEndCodePoints}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9} 
+list pygments.\+lexers.\+wgsl.\+Line\+End\+Code\+Points = \mbox{[}\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a185841a0ff6fc4fd876e418ba4640b6f}{LF}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a8122fb8f5bf9020e2c185dfb8be92e0d}{VT}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_acd2291bdf5d2c2b65d7cc3adb434a952}{FF}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_ad12d998e7c218157732766262d6d596f}{CR}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a02c53e5b1621f6719e2524fb78624630}{Next\+Line}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_aa68900e843b3d2ce826d191dfa9ac323}{Line\+Sep}},\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_a45b1c20ae3b521322b5e7474a3bdbdc3}{Para\+Sep}}\mbox{]}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_ae01583382d93eb235ea603da8d0113ee}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!LineEndRE@{LineEndRE}}
+\index{LineEndRE@{LineEndRE}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{LineEndRE}{LineEndRE}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_ae01583382d93eb235ea603da8d0113ee} 
+str pygments.\+lexers.\+wgsl.\+Line\+End\+RE = \textquotesingle{}\mbox{[}\textquotesingle{} + "{}"{}.join(\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}{Line\+End\+Code\+Points}}) + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_aa68900e843b3d2ce826d191dfa9ac323}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!LineSep@{LineSep}}
+\index{LineSep@{LineSep}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{LineSep}{LineSep}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_aa68900e843b3d2ce826d191dfa9ac323} 
+str pygments.\+lexers.\+wgsl.\+Line\+Sep = \textquotesingle{}\textbackslash{}\textbackslash{}u2028\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a02c53e5b1621f6719e2524fb78624630}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!NextLine@{NextLine}}
+\index{NextLine@{NextLine}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{NextLine}{NextLine}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_a02c53e5b1621f6719e2524fb78624630} 
+str pygments.\+lexers.\+wgsl.\+Next\+Line = \textquotesingle{}\textbackslash{}\textbackslash{}u0085\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a4b37ef808fe75d3cfaf1b26d94d894e3}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!NotLineEndRE@{NotLineEndRE}}
+\index{NotLineEndRE@{NotLineEndRE}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{NotLineEndRE}{NotLineEndRE}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_a4b37ef808fe75d3cfaf1b26d94d894e3} 
+str pygments.\+lexers.\+wgsl.\+Not\+Line\+End\+RE = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + "{}"{}.join(\mbox{\hyperlink{namespacepygments_1_1lexers_1_1wgsl_af2a600b4311c4dc60b35f876d3fbc1a9}{Line\+End\+Code\+Points}}) + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a45b1c20ae3b521322b5e7474a3bdbdc3}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!ParaSep@{ParaSep}}
+\index{ParaSep@{ParaSep}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{ParaSep}{ParaSep}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_a45b1c20ae3b521322b5e7474a3bdbdc3} 
+str pygments.\+lexers.\+wgsl.\+Para\+Sep = \textquotesingle{}\textbackslash{}\textbackslash{}u2029\textquotesingle{}}
+
+\Hypertarget{namespacepygments_1_1lexers_1_1wgsl_a8122fb8f5bf9020e2c185dfb8be92e0d}\index{pygments.lexers.wgsl@{pygments.lexers.wgsl}!VT@{VT}}
+\index{VT@{VT}!pygments.lexers.wgsl@{pygments.lexers.wgsl}}
+\doxysubsubsection{\texorpdfstring{VT}{VT}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexers_1_1wgsl_a8122fb8f5bf9020e2c185dfb8be92e0d} 
+str pygments.\+lexers.\+wgsl.\+VT = \textquotesingle{}\textbackslash{}\textbackslash{}u000b\textquotesingle{}}
+

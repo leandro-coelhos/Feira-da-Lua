@@ -1,0 +1,116 @@
+\doxysection{django.\+utils.\+timesince Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1timesince}{}\label{namespacedjango_1_1utils_1_1timesince}\index{django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1timesince_a883c1abafa8c9fdaeca8525294a7c6f7}{timesince}} (d, now=None, reversed=False, time\+\_\+strings=None, depth=2)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1timesince_ae93983e3ca39e4c7be2ea457deead2dc}{timeuntil}} (d, now=None, time\+\_\+strings=None, depth=2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1utils_1_1timesince_aea03e43bdfcf2d09e7c4e6c9809d8b32}{TIME\+\_\+\+STRINGS}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1timesince_aed9f46b92312acd16322677b3736b815}{TIME\+\_\+\+STRINGS\+\_\+\+KEYS}} = list(TIME\+\_\+\+STRINGS.\+keys())
+\item 
+list \mbox{\hyperlink{namespacedjango_1_1utils_1_1timesince_aaa948ca8245681725839fe92b76f5084}{TIME\+\_\+\+CHUNKS}}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1utils_1_1timesince_ae096cfea0d5be31a1bdb496c0c0f0f8e}{MONTHS\+\_\+\+DAYS}} = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_a883c1abafa8c9fdaeca8525294a7c6f7}\index{django.utils.timesince@{django.utils.timesince}!timesince@{timesince}}
+\index{timesince@{timesince}!django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection{\texorpdfstring{timesince()}{timesince()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1timesince_a883c1abafa8c9fdaeca8525294a7c6f7} 
+django.\+utils.\+timesince.\+timesince (\begin{DoxyParamCaption}\item[{}]{d}{, }\item[{}]{now}{ = {\ttfamily None}, }\item[{}]{reversed}{ = {\ttfamily False}, }\item[{}]{time\+\_\+strings}{ = {\ttfamily None}, }\item[{}]{depth}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take two datetime objects and return the time between d and now as a nicely
+formatted string, e.g. "10 minutes". If d occurs after now, return
+"0 minutes".
+
+Units used are years, months, weeks, days, hours, and minutes.
+Seconds and microseconds are ignored.
+
+The algorithm takes into account the varying duration of years and months.
+There is exactly "1 year, 1 month" between 2013/02/10 and 2014/03/10,
+but also between 2007/08/10 and 2008/09/10 despite the delta being 393 days
+in the former case and 397 in the latter.
+
+Up to `depth` adjacent units will be displayed.  For example,
+"2 weeks, 3 days" and "1 year, 3 months" are possible outputs, but
+"2 weeks, 3 hours" and "1 year, 5 days" are not.
+
+`time_strings` is an optional dict of strings to replace the default
+TIME_STRINGS dict.
+
+`depth` is an optional integer to control the number of adjacent time
+units returned.
+
+Originally adapted from
+https://web.archive.org/web/20060617175230/http://blog.natbat.co.uk/archive/2003/Jun/14/time_since
+Modified to improve results for years and months.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1timesince_ae93983e3ca39e4c7be2ea457deead2dc}\index{django.utils.timesince@{django.utils.timesince}!timeuntil@{timeuntil}}
+\index{timeuntil@{timeuntil}!django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection{\texorpdfstring{timeuntil()}{timeuntil()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1timesince_ae93983e3ca39e4c7be2ea457deead2dc} 
+django.\+utils.\+timesince.\+timeuntil (\begin{DoxyParamCaption}\item[{}]{d}{, }\item[{}]{now}{ = {\ttfamily None}, }\item[{}]{time\+\_\+strings}{ = {\ttfamily None}, }\item[{}]{depth}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like timesince, but return a string measuring the time until the given time.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_ae096cfea0d5be31a1bdb496c0c0f0f8e}\index{django.utils.timesince@{django.utils.timesince}!MONTHS\_DAYS@{MONTHS\_DAYS}}
+\index{MONTHS\_DAYS@{MONTHS\_DAYS}!django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection{\texorpdfstring{MONTHS\_DAYS}{MONTHS\_DAYS}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1timesince_ae096cfea0d5be31a1bdb496c0c0f0f8e} 
+tuple django.\+utils.\+timesince.\+MONTHS\+\_\+\+DAYS = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)}
+
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_aaa948ca8245681725839fe92b76f5084}\index{django.utils.timesince@{django.utils.timesince}!TIME\_CHUNKS@{TIME\_CHUNKS}}
+\index{TIME\_CHUNKS@{TIME\_CHUNKS}!django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection{\texorpdfstring{TIME\_CHUNKS}{TIME\_CHUNKS}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1timesince_aaa948ca8245681725839fe92b76f5084} 
+list django.\+utils.\+timesince.\+TIME\+\_\+\+CHUNKS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ 60\ *\ 60\ *\ 24\ *\ 7,\ \ \textcolor{comment}{\#\ week}}
+\DoxyCodeLine{00003\ \ \ \ \ 60\ *\ 60\ *\ 24,\ \ \textcolor{comment}{\#\ day}}
+\DoxyCodeLine{00004\ \ \ \ \ 60\ *\ 60,\ \ \textcolor{comment}{\#\ hour}}
+\DoxyCodeLine{00005\ \ \ \ \ 60,\ \ \textcolor{comment}{\#\ minute}}
+\DoxyCodeLine{00006\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_aea03e43bdfcf2d09e7c4e6c9809d8b32}\index{django.utils.timesince@{django.utils.timesince}!TIME\_STRINGS@{TIME\_STRINGS}}
+\index{TIME\_STRINGS@{TIME\_STRINGS}!django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection{\texorpdfstring{TIME\_STRINGS}{TIME\_STRINGS}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1timesince_aea03e43bdfcf2d09e7c4e6c9809d8b32} 
+dict django.\+utils.\+timesince.\+TIME\+\_\+\+STRINGS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}year"{}}:\ ngettext\_lazy(\textcolor{stringliteral}{"{}\%(num)d\ year"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ years"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}month"{}}:\ ngettext\_lazy(\textcolor{stringliteral}{"{}\%(num)d\ month"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ months"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}week"{}}:\ ngettext\_lazy(\textcolor{stringliteral}{"{}\%(num)d\ week"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ weeks"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}day"{}}:\ ngettext\_lazy(\textcolor{stringliteral}{"{}\%(num)d\ day"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ days"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}}:\ ngettext\_lazy(\textcolor{stringliteral}{"{}\%(num)d\ hour"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ hours"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}}:\ ngettext\_lazy(\textcolor{stringliteral}{"{}\%(num)d\ minute"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ minutes"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1utils_1_1timesince_aed9f46b92312acd16322677b3736b815}\index{django.utils.timesince@{django.utils.timesince}!TIME\_STRINGS\_KEYS@{TIME\_STRINGS\_KEYS}}
+\index{TIME\_STRINGS\_KEYS@{TIME\_STRINGS\_KEYS}!django.utils.timesince@{django.utils.timesince}}
+\doxysubsubsection{\texorpdfstring{TIME\_STRINGS\_KEYS}{TIME\_STRINGS\_KEYS}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1timesince_aed9f46b92312acd16322677b3736b815} 
+django.\+utils.\+timesince.\+TIME\+\_\+\+STRINGS\+\_\+\+KEYS = list(TIME\+\_\+\+STRINGS.\+keys())}
+

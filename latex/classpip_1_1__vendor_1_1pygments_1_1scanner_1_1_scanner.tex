@@ -1,0 +1,195 @@
+\doxysection{pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner}{}\label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a89469a071ecbb4aaa9075a396e08591e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, text, \mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a4e9677b2a8e1182a2737a1ad3382c334}{flags}}=0)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ace2e8e3ae8debb740a79b6e616d24d13}{eos}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a40f26bfe3c57607db66676e8a797a62b}{check}} (self, pattern)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a6b521090362821e85c40252b24f39a1c}{test}} (self, pattern)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ad5d78ecbc95ccf586582a0734e4b6faf}{scan}} (self, pattern)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_aef99ab9f8fc024928948fe6be511ce90}{get\+\_\+char}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ae3802e475a18e7027cfe706710277ee0}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a3537f7bfaf14801c1dd300c3401a42cc}{data}} = text
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a3b435bc7536b993de74efde8416fb3a0}{data\+\_\+length}} = len(text)
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a8c52105aac15b02ec6927083a4ee66d9}{start\+\_\+pos}} = 0
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a7ed99d2189fd07b3c073725254794adc}{pos}} = 0
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a4e9677b2a8e1182a2737a1ad3382c334}{flags}} = flags
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a770511b868fcf36c46b09f447381e883}{last}} = None
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a86110fb88bcb0545598bc98ab037e337}{match}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_aeeb95001db5c99479d56086513dc33ef}{\+\_\+re\+\_\+cache}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a511c6588f76f0ca219a776757c2e97b8}{eos}} = property(eos, eos.\+\_\+\+\_\+doc\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Simple scanner
+
+All method patterns are regular expression strings (not
+compiled expressions!)
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a89469a071ecbb4aaa9075a396e08591e}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a89469a071ecbb4aaa9075a396e08591e} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{, }\item[{}]{flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param text:    The text which should be scanned
+:param flags:   default regular expression flags
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ae3802e475a18e7027cfe706710277ee0}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ae3802e475a18e7027cfe706710277ee0} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a40f26bfe3c57607db66676e8a797a62b}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!check@{check}}
+\index{check@{check}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a40f26bfe3c57607db66676e8a797a62b} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply `pattern` on the current position and return
+the match object. (Doesn't touch pos). Use this for
+lookahead.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ace2e8e3ae8debb740a79b6e616d24d13}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!eos@{eos}}
+\index{eos@{eos}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{eos()}{eos()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ace2e8e3ae8debb740a79b6e616d24d13} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+eos (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`True` if the scanner reached the end of text.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_aef99ab9f8fc024928948fe6be511ce90}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!get\_char@{get\_char}}
+\index{get\_char@{get\_char}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{get\_char()}{get\_char()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_aef99ab9f8fc024928948fe6be511ce90} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+get\+\_\+char (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Scan exactly one char.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ad5d78ecbc95ccf586582a0734e4b6faf}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!scan@{scan}}
+\index{scan@{scan}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_ad5d78ecbc95ccf586582a0734e4b6faf} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+scan (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Scan the text for the given pattern and update pos/match
+and related fields. The return value is a boolean that
+indicates if the pattern matched. The matched value is
+stored on the instance as ``match``, the last value is
+stored as ``last``. ``start_pos`` is the position of the
+pointer before the pattern was matched, ``pos`` is the
+end position.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a6b521090362821e85c40252b24f39a1c}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!test@{test}}
+\index{test@{test}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a6b521090362821e85c40252b24f39a1c} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pattern}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply a pattern on the current position and check
+if it patches. Doesn't touch pos.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_aeeb95001db5c99479d56086513dc33ef}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!\_re\_cache@{\_re\_cache}}
+\index{\_re\_cache@{\_re\_cache}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{\_re\_cache}{\_re\_cache}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_aeeb95001db5c99479d56086513dc33ef} 
+dict pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+\_\+re\+\_\+cache = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a3537f7bfaf14801c1dd300c3401a42cc}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!data@{data}}
+\index{data@{data}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a3537f7bfaf14801c1dd300c3401a42cc} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+data = text}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a3b435bc7536b993de74efde8416fb3a0}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!data\_length@{data\_length}}
+\index{data\_length@{data\_length}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{data\_length}{data\_length}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a3b435bc7536b993de74efde8416fb3a0} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+data\+\_\+length = len(text)}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a4e9677b2a8e1182a2737a1ad3382c334}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!flags@{flags}}
+\index{flags@{flags}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a4e9677b2a8e1182a2737a1ad3382c334} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+flags = flags}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a770511b868fcf36c46b09f447381e883}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!last@{last}}
+\index{last@{last}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a770511b868fcf36c46b09f447381e883} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+last = None}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a86110fb88bcb0545598bc98ab037e337}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!match@{match}}
+\index{match@{match}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{match}{match}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a86110fb88bcb0545598bc98ab037e337} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+match = None}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a7ed99d2189fd07b3c073725254794adc}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!pos@{pos}}
+\index{pos@{pos}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a7ed99d2189fd07b3c073725254794adc} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+pos = 0}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a8c52105aac15b02ec6927083a4ee66d9}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!start\_pos@{start\_pos}}
+\index{start\_pos@{start\_pos}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{start\_pos}{start\_pos}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a8c52105aac15b02ec6927083a4ee66d9} 
+int pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+start\+\_\+pos = 0}
+
+
+
+\label{doc-property-members}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a511c6588f76f0ca219a776757c2e97b8}\index{pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}!eos@{eos}}
+\index{eos@{eos}!pip.\_vendor.pygments.scanner.Scanner@{pip.\_vendor.pygments.scanner.Scanner}}
+\doxysubsubsection{\texorpdfstring{eos}{eos}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1scanner_1_1_scanner_a511c6588f76f0ca219a776757c2e97b8} 
+pip.\+\_\+vendor.\+pygments.\+scanner.\+Scanner.\+eos = property(eos, eos.\+\_\+\+\_\+doc\+\_\+\+\_\+)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/pygments/\mbox{\hyperlink{pip_2__vendor_2pygments_2scanner_8py}{scanner.\+py}}\end{DoxyCompactItemize}

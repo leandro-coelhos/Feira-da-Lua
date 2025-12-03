@@ -1,0 +1,160 @@
+\doxysection{\+\_\+pytest.\+logging Namespace Reference}
+\hypertarget{namespace__pytest_1_1logging}{}\label{namespace__pytest_1_1logging}\index{\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1___file_handler}{\+\_\+\+File\+Handler}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1___live_logging_null_handler}{\+\_\+\+Live\+Logging\+Null\+Handler}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1___live_logging_stream_handler}{\+\_\+\+Live\+Logging\+Stream\+Handler}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1catching__logs}{catching\+\_\+logs}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1_colored_level_formatter}{Colored\+Level\+Formatter}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1_datetime_formatter}{Datetime\+Formatter}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture}{Log\+Capture\+Fixture}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1_log_capture_handler}{Log\+Capture\+Handler}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1_logging_plugin}{Logging\+Plugin}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1logging_1_1_percent_style_multiline}{Percent\+Style\+Multiline}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1logging_a1d62e543c7b5c0623fc03bac50195964}{\+\_\+remove\+\_\+ansi\+\_\+escape\+\_\+sequences}} (str text)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1logging_a486a0c8cf48e647d1a6526590088c62c}{get\+\_\+option\+\_\+ini}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \texorpdfstring{$\ast$}{*}str names)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1logging_a1a93b365f9544f66531faf35a7b6cc26}{pytest\+\_\+addoption}} (\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}} parser)
+\item 
+Generator\mbox{[}\mbox{\hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture}{Log\+Capture\+Fixture}}\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1logging_a801af47c7ecc256db19e6d0a3b87ce58}{caplog}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} request)
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1logging_a923d420110200662df76af39e508f079}{get\+\_\+log\+\_\+level\+\_\+for\+\_\+setting}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \texorpdfstring{$\ast$}{*}str setting\+\_\+names)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1logging_a2d4c0f412d84a8af79543d14cced7f58}{pytest\+\_\+configure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1logging_ae0cec2b79e90c6b767e05477ee3cad19}{logging\+\_\+\+Stream\+Handler}} = logging.\+Stream\+Handler\mbox{[}String\+IO\mbox{]}
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1logging_a41d59457984251b7a95c69ef03686616}{DEFAULT\+\_\+\+LOG\+\_\+\+FORMAT}} = "{}\%(levelname)-\/8s \%(name)s\+:\%(filename)s\+:\%(lineno)d \%(message)s"{}
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1logging_a1cdd921d02caa2315bc5bf939d3e2950}{DEFAULT\+\_\+\+LOG\+\_\+\+DATE\+\_\+\+FORMAT}} = "{}\%H\+:\%M\+:\%S"{}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1logging_ade753b32905cd6741a3b3a35a4755869}{\+\_\+\+ANSI\+\_\+\+ESCAPE\+\_\+\+SEQ}} = re.\+compile(r"{}\textbackslash{}x1b\textbackslash{}\mbox{[}\mbox{[}\textbackslash{}d;\mbox{]}+m"{})
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1logging_a6411316a612d096aaf1b6bf6e6b6e760}{caplog\+\_\+handler\+\_\+key}} = \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}"{}Log\+Capture\+Handler"{}\mbox{]}()
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1logging_a31650fbf33b439e898c8a8d3c1064cfe}{caplog\+\_\+records\+\_\+key}} = \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}dict\mbox{[}str, list\mbox{[}logging.\+Log\+Record\mbox{]}\mbox{]}\mbox{]}()
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1logging_adc0482ec01c49b4eade8494717675e94}{\+\_\+\+Handler\+Type}} = Type\+Var("{}\+\_\+\+Handler\+Type"{}, bound=logging.\+Handler)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Access and control log capturing.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1logging_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1logging_a1d62e543c7b5c0623fc03bac50195964}\index{\_pytest.logging@{\_pytest.logging}!\_remove\_ansi\_escape\_sequences@{\_remove\_ansi\_escape\_sequences}}
+\index{\_remove\_ansi\_escape\_sequences@{\_remove\_ansi\_escape\_sequences}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{\_remove\_ansi\_escape\_sequences()}{\_remove\_ansi\_escape\_sequences()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a1d62e543c7b5c0623fc03bac50195964} 
+ str \+\_\+pytest.\+logging.\+\_\+remove\+\_\+ansi\+\_\+escape\+\_\+sequences (\begin{DoxyParamCaption}\item[{str}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace__pytest_1_1logging_a801af47c7ecc256db19e6d0a3b87ce58}\index{\_pytest.logging@{\_pytest.logging}!caplog@{caplog}}
+\index{caplog@{caplog}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{caplog()}{caplog()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a801af47c7ecc256db19e6d0a3b87ce58} 
+ Generator\mbox{[}\mbox{\hyperlink{class__pytest_1_1logging_1_1_log_capture_fixture}{Log\+Capture\+Fixture}}\mbox{]} \+\_\+pytest.\+logging.\+caplog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Access and control log capturing.
+
+Captured logs are available through the following properties/methods::
+
+* caplog.messages        -> list of format-interpolated log messages
+* caplog.text            -> string containing formatted log output
+* caplog.records         -> list of logging.LogRecord instances
+* caplog.record_tuples   -> list of (logger_name, level, message) tuples
+* caplog.clear()         -> clear captured records and formatted log output string
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1logging_a923d420110200662df76af39e508f079}\index{\_pytest.logging@{\_pytest.logging}!get\_log\_level\_for\_setting@{get\_log\_level\_for\_setting}}
+\index{get\_log\_level\_for\_setting@{get\_log\_level\_for\_setting}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{get\_log\_level\_for\_setting()}{get\_log\_level\_for\_setting()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a923d420110200662df76af39e508f079} 
+ int \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+logging.\+get\+\_\+log\+\_\+level\+\_\+for\+\_\+setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{setting\+\_\+names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1logging_a486a0c8cf48e647d1a6526590088c62c}\index{\_pytest.logging@{\_pytest.logging}!get\_option\_ini@{get\_option\_ini}}
+\index{get\_option\_ini@{get\_option\_ini}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{get\_option\_ini()}{get\_option\_ini()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a486a0c8cf48e647d1a6526590088c62c} 
+\+\_\+pytest.\+logging.\+get\+\_\+option\+\_\+ini (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1logging_a1a93b365f9544f66531faf35a7b6cc26}\index{\_pytest.logging@{\_pytest.logging}!pytest\_addoption@{pytest\_addoption}}
+\index{pytest\_addoption@{pytest\_addoption}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{pytest\_addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a1a93b365f9544f66531faf35a7b6cc26} 
+ None \+\_\+pytest.\+logging.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}}}]{parser}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add options to control log capturing.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1logging_a2d4c0f412d84a8af79543d14cced7f58}\index{\_pytest.logging@{\_pytest.logging}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a2d4c0f412d84a8af79543d14cced7f58} 
+ None \+\_\+pytest.\+logging.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1logging_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1logging_ade753b32905cd6741a3b3a35a4755869}\index{\_pytest.logging@{\_pytest.logging}!\_ANSI\_ESCAPE\_SEQ@{\_ANSI\_ESCAPE\_SEQ}}
+\index{\_ANSI\_ESCAPE\_SEQ@{\_ANSI\_ESCAPE\_SEQ}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{\_ANSI\_ESCAPE\_SEQ}{\_ANSI\_ESCAPE\_SEQ}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_ade753b32905cd6741a3b3a35a4755869} 
+\+\_\+pytest.\+logging.\+\_\+\+ANSI\+\_\+\+ESCAPE\+\_\+\+SEQ = re.\+compile(r"{}\textbackslash{}x1b\textbackslash{}\mbox{[}\mbox{[}\textbackslash{}d;\mbox{]}+m"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace__pytest_1_1logging_adc0482ec01c49b4eade8494717675e94}\index{\_pytest.logging@{\_pytest.logging}!\_HandlerType@{\_HandlerType}}
+\index{\_HandlerType@{\_HandlerType}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{\_HandlerType}{\_HandlerType}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_adc0482ec01c49b4eade8494717675e94} 
+\+\_\+pytest.\+logging.\+\_\+\+Handler\+Type = Type\+Var("{}\+\_\+\+Handler\+Type"{}, bound=logging.\+Handler)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace__pytest_1_1logging_a6411316a612d096aaf1b6bf6e6b6e760}\index{\_pytest.logging@{\_pytest.logging}!caplog\_handler\_key@{caplog\_handler\_key}}
+\index{caplog\_handler\_key@{caplog\_handler\_key}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{caplog\_handler\_key}{caplog\_handler\_key}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a6411316a612d096aaf1b6bf6e6b6e760} 
+\+\_\+pytest.\+logging.\+caplog\+\_\+handler\+\_\+key = \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}"{}Log\+Capture\+Handler"{}\mbox{]}()}
+
+\Hypertarget{namespace__pytest_1_1logging_a31650fbf33b439e898c8a8d3c1064cfe}\index{\_pytest.logging@{\_pytest.logging}!caplog\_records\_key@{caplog\_records\_key}}
+\index{caplog\_records\_key@{caplog\_records\_key}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{caplog\_records\_key}{caplog\_records\_key}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a31650fbf33b439e898c8a8d3c1064cfe} 
+\+\_\+pytest.\+logging.\+caplog\+\_\+records\+\_\+key = \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}dict\mbox{[}str, list\mbox{[}logging.\+Log\+Record\mbox{]}\mbox{]}\mbox{]}()}
+
+\Hypertarget{namespace__pytest_1_1logging_a1cdd921d02caa2315bc5bf939d3e2950}\index{\_pytest.logging@{\_pytest.logging}!DEFAULT\_LOG\_DATE\_FORMAT@{DEFAULT\_LOG\_DATE\_FORMAT}}
+\index{DEFAULT\_LOG\_DATE\_FORMAT@{DEFAULT\_LOG\_DATE\_FORMAT}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_LOG\_DATE\_FORMAT}{DEFAULT\_LOG\_DATE\_FORMAT}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a1cdd921d02caa2315bc5bf939d3e2950} 
+str \+\_\+pytest.\+logging.\+DEFAULT\+\_\+\+LOG\+\_\+\+DATE\+\_\+\+FORMAT = "{}\%H\+:\%M\+:\%S"{}}
+
+\Hypertarget{namespace__pytest_1_1logging_a41d59457984251b7a95c69ef03686616}\index{\_pytest.logging@{\_pytest.logging}!DEFAULT\_LOG\_FORMAT@{DEFAULT\_LOG\_FORMAT}}
+\index{DEFAULT\_LOG\_FORMAT@{DEFAULT\_LOG\_FORMAT}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_LOG\_FORMAT}{DEFAULT\_LOG\_FORMAT}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_a41d59457984251b7a95c69ef03686616} 
+str \+\_\+pytest.\+logging.\+DEFAULT\+\_\+\+LOG\+\_\+\+FORMAT = "{}\%(levelname)-\/8s \%(name)s\+:\%(filename)s\+:\%(lineno)d \%(message)s"{}}
+
+\Hypertarget{namespace__pytest_1_1logging_ae0cec2b79e90c6b767e05477ee3cad19}\index{\_pytest.logging@{\_pytest.logging}!logging\_StreamHandler@{logging\_StreamHandler}}
+\index{logging\_StreamHandler@{logging\_StreamHandler}!\_pytest.logging@{\_pytest.logging}}
+\doxysubsubsection{\texorpdfstring{logging\_StreamHandler}{logging\_StreamHandler}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1logging_ae0cec2b79e90c6b767e05477ee3cad19} 
+\+\_\+pytest.\+logging.\+logging\+\_\+\+Stream\+Handler = logging.\+Stream\+Handler\mbox{[}String\+IO\mbox{]}}
+

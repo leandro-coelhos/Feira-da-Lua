@@ -1,0 +1,143 @@
+\doxysection{\+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory Class Reference}
+\hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory}{}\label{class__pytest_1_1tmpdir_1_1_temp_path_factory}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a1d362744a84e782b60a4b37d7cc44172}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Path\texorpdfstring{$\vert$}{|}None given\+\_\+basetemp, int retention\+\_\+count, \mbox{\hyperlink{namespace__pytest_1_1tmpdir_a90e20aaf29cfdfc3633992f54b926e08}{Retention\+Type}} retention\+\_\+policy, trace, Path\texorpdfstring{$\vert$}{|}None basetemp=None, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory}{Temp\+Path\+Factory}} \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a4387c444130f2e2d298ac1669dd31c1c}{from\+\_\+config}} (cls, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_ae7963891ed8146e3f6667123ba751944}{mktemp}} (self, str basename, bool numbered=True)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a0323022566b9f068f26664db8a644182}{getbasetemp}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_ad0aa2ac287a2a7c0a7ee4dbe5290455f}{\+\_\+ensure\+\_\+relative\+\_\+to\+\_\+basetemp}} (self, str basename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a0dbbe025fd957d31abe9cde2d0ef1470}{\+\_\+trace}} = trace
+\item 
+\mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a03777dc883ef394247a6e4b23a3f6001}{\+\_\+retention\+\_\+count}} = retention\+\_\+count
+\item 
+str \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a003eff23949b2d64ece3d79f85e12a86}{\+\_\+retention\+\_\+policy}} = retention\+\_\+policy
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_a651a1a529f1ca9138d1b7f6d8ea0e131}{\+\_\+given\+\_\+basetemp}} \texorpdfstring{$\vert$}{|} None
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory_af2d085734f05ac2d6ba61f3c665fa9b3}{\+\_\+basetemp}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Factory for temporary directories under the common base temp directory,
+as discussed at :ref:`temporary directory location and retention`.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a1d362744a84e782b60a4b37d7cc44172}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a1d362744a84e782b60a4b37d7cc44172} 
+ None \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Path \texorpdfstring{$\vert$}{|} None}]{given\+\_\+basetemp}{, }\item[{int}]{retention\+\_\+count}{, }\item[{\mbox{\hyperlink{namespace__pytest_1_1tmpdir_a90e20aaf29cfdfc3633992f54b926e08}{Retention\+Type}}}]{retention\+\_\+policy}{, }\item[{}]{trace}{, }\item[{Path \texorpdfstring{$\vert$}{|} None }]{basetemp}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_ad0aa2ac287a2a7c0a7ee4dbe5290455f}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_ensure\_relative\_to\_basetemp@{\_ensure\_relative\_to\_basetemp}}
+\index{\_ensure\_relative\_to\_basetemp@{\_ensure\_relative\_to\_basetemp}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_relative\_to\_basetemp()}{\_ensure\_relative\_to\_basetemp()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_ad0aa2ac287a2a7c0a7ee4dbe5290455f} 
+ str \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+ensure\+\_\+relative\+\_\+to\+\_\+basetemp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{basename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a4387c444130f2e2d298ac1669dd31c1c}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!from\_config@{from\_config}}
+\index{from\_config@{from\_config}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{from\_config()}{from\_config()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a4387c444130f2e2d298ac1669dd31c1c} 
+ \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory}{Temp\+Path\+Factory}} \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+from\+\_\+config (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a factory according to pytest configuration.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a0323022566b9f068f26664db8a644182}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!getbasetemp@{getbasetemp}}
+\index{getbasetemp@{getbasetemp}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{getbasetemp()}{getbasetemp()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a0323022566b9f068f26664db8a644182} 
+ Path \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+getbasetemp (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the base temporary directory, creating it if needed.
+
+:returns:
+    The base temporary directory.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_ae7963891ed8146e3f6667123ba751944}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!mktemp@{mktemp}}
+\index{mktemp@{mktemp}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{mktemp()}{mktemp()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_ae7963891ed8146e3f6667123ba751944} 
+ Path \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+mktemp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{basename}{, }\item[{bool }]{numbered}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new temporary directory managed by the factory.
+
+:param basename:
+    Directory base name, must be a relative path.
+
+:param numbered:
+    If ``True``, ensure the directory is unique by adding a numbered
+    suffix greater than any existing one: ``basename="foo-"`` and ``numbered=True``
+    means that this function will create directories named ``"foo-0"``,
+    ``"foo-1"``, ``"foo-2"`` and so on.
+
+:returns:
+    The path to the new directory.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_af2d085734f05ac2d6ba61f3c665fa9b3}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_basetemp@{\_basetemp}}
+\index{\_basetemp@{\_basetemp}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_basetemp}{\_basetemp}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_af2d085734f05ac2d6ba61f3c665fa9b3} 
+Path \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+basetemp \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a651a1a529f1ca9138d1b7f6d8ea0e131}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_given\_basetemp@{\_given\_basetemp}}
+\index{\_given\_basetemp@{\_given\_basetemp}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_given\_basetemp}{\_given\_basetemp}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a651a1a529f1ca9138d1b7f6d8ea0e131} 
+Path \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+given\+\_\+basetemp \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a03777dc883ef394247a6e4b23a3f6001}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_retention\_count@{\_retention\_count}}
+\index{\_retention\_count@{\_retention\_count}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_retention\_count}{\_retention\_count}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a03777dc883ef394247a6e4b23a3f6001} 
+\+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+retention\+\_\+count = retention\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a003eff23949b2d64ece3d79f85e12a86}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_retention\_policy@{\_retention\_policy}}
+\index{\_retention\_policy@{\_retention\_policy}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_retention\_policy}{\_retention\_policy}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a003eff23949b2d64ece3d79f85e12a86} 
+str \+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+retention\+\_\+policy = retention\+\_\+policy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1tmpdir_1_1_temp_path_factory_a0dbbe025fd957d31abe9cde2d0ef1470}\index{\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}!\_trace@{\_trace}}
+\index{\_trace@{\_trace}!\_pytest.tmpdir.TempPathFactory@{\_pytest.tmpdir.TempPathFactory}}
+\doxysubsubsection{\texorpdfstring{\_trace}{\_trace}}
+{\footnotesize\ttfamily \label{class__pytest_1_1tmpdir_1_1_temp_path_factory_a0dbbe025fd957d31abe9cde2d0ef1470} 
+\+\_\+pytest.\+tmpdir.\+Temp\+Path\+Factory.\+\_\+trace = trace\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{tmpdir_8py}{tmpdir.\+py}}\end{DoxyCompactItemize}

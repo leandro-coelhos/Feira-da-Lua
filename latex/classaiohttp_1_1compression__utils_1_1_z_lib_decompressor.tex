@@ -1,0 +1,110 @@
+\doxysection{aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor Class Reference}
+\hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}{}\label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+Inheritance diagram for aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a6d2424d9aff80f7992a62214ca175153}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Optional\mbox{[}str\mbox{]} encoding=None, bool suppress\+\_\+deflate\+\_\+header=False, Optional\mbox{[}Executor\mbox{]} executor=None, Optional\mbox{[}int\mbox{]} max\+\_\+sync\+\_\+chunk\+\_\+size=\mbox{\hyperlink{namespaceaiohttp_1_1compression__utils_aef938f528e1a8037c6eec7e39fa271c5}{MAX\+\_\+\+SYNC\+\_\+\+CHUNK\+\_\+\+SIZE}})
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_aa9a155bc7c1d8bd43c07b3d8cff68c56}{decompress\+\_\+sync}} (self, bytes data, int max\+\_\+length=0)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a7a86860ae8342abaf4fb4527db7bd4b4}{decompress}} (self, bytes data, int max\+\_\+length=0)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a146058c39b6332e8e70fdd0129fab9f6}{flush}} (self, int length=0)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a5fca87ba18fcabb39ce277fdd33b0942}{eof}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_zlib_base_handler}{aiohttp.\+compression\+\_\+utils.\+Zlib\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_zlib_base_handler_a065895f6ec0fea953b7c68ccbdab06a5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int mode, Optional\mbox{[}Executor\mbox{]} executor=None, Optional\mbox{[}int\mbox{]} max\+\_\+sync\+\_\+chunk\+\_\+size=\mbox{\hyperlink{namespaceaiohttp_1_1compression__utils_aef938f528e1a8037c6eec7e39fa271c5}{MAX\+\_\+\+SYNC\+\_\+\+CHUNK\+\_\+\+SIZE}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Final \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_ad73bfeca8bfa733b2b96718b2336af92}{\+\_\+zlib\+\_\+backend}} = \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_backend_wrapper}{ZLib\+Backend\+Wrapper}}(ZLib\+Backend.\+\_\+zlib\+\_\+backend)
+\item 
+Final \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_abeb05256348e223dd0bcfe8855823b18}{\+\_\+decompressor}} = self.\+\_\+zlib\+\_\+backend.\+decompressobj(wbits=self.\+\_\+mode)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_zlib_base_handler}{aiohttp.\+compression\+\_\+utils.\+Zlib\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_zlib_base_handler_a4a69690f224fa67b977e2c1288b02008}{\+\_\+mode}} = mode
+\item 
+\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_zlib_base_handler_ad28733a318ddf98970e807cb0fe65d7b}{\+\_\+executor}} = executor
+\item 
+\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_zlib_base_handler_a6e8d48486fbcb631a921399ae4f7fc07}{\+\_\+max\+\_\+sync\+\_\+chunk\+\_\+size}} = max\+\_\+sync\+\_\+chunk\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a6d2424d9aff80f7992a62214ca175153}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a6d2424d9aff80f7992a62214ca175153} 
+aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}str\mbox{]} }]{encoding}{ = {\ttfamily None}, }\item[{bool }]{suppress\+\_\+deflate\+\_\+header}{ = {\ttfamily False}, }\item[{Optional\mbox{[}Executor\mbox{]} }]{executor}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{max\+\_\+sync\+\_\+chunk\+\_\+size}{ = {\ttfamily \mbox{\hyperlink{namespaceaiohttp_1_1compression__utils_aef938f528e1a8037c6eec7e39fa271c5}{MAX\+\_\+\+SYNC\+\_\+\+CHUNK\+\_\+\+SIZE}}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a7a86860ae8342abaf4fb4527db7bd4b4}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!decompress@{decompress}}
+\index{decompress@{decompress}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a7a86860ae8342abaf4fb4527db7bd4b4} 
+ bytes aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+decompress (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{int }]{max\+\_\+length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decompress the data and return the decompressed bytes.
+
+If the data size is large than the max_sync_chunk_size, the decompression
+will be done in the executor. Otherwise, the decompression will be done
+in the event loop.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_aa9a155bc7c1d8bd43c07b3d8cff68c56}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!decompress\_sync@{decompress\_sync}}
+\index{decompress\_sync@{decompress\_sync}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{decompress\_sync()}{decompress\_sync()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_aa9a155bc7c1d8bd43c07b3d8cff68c56} 
+ bytes aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+decompress\+\_\+sync (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{int }]{max\+\_\+length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a5fca87ba18fcabb39ce277fdd33b0942}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!eof@{eof}}
+\index{eof@{eof}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a5fca87ba18fcabb39ce277fdd33b0942} 
+ bool aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a146058c39b6332e8e70fdd0129fab9f6}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!flush@{flush}}
+\index{flush@{flush}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_a146058c39b6332e8e70fdd0129fab9f6} 
+ bytes aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+flush (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_abeb05256348e223dd0bcfe8855823b18}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!\_decompressor@{\_decompressor}}
+\index{\_decompressor@{\_decompressor}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{\_decompressor}{\_decompressor}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_abeb05256348e223dd0bcfe8855823b18} 
+Final aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+\_\+decompressor = self.\+\_\+zlib\+\_\+backend.\+decompressobj(wbits=self.\+\_\+mode)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_ad73bfeca8bfa733b2b96718b2336af92}\index{aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}!\_zlib\_backend@{\_zlib\_backend}}
+\index{\_zlib\_backend@{\_zlib\_backend}!aiohttp.compression\_utils.ZLibDecompressor@{aiohttp.compression\_utils.ZLibDecompressor}}
+\doxysubsubsection{\texorpdfstring{\_zlib\_backend}{\_zlib\_backend}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor_ad73bfeca8bfa733b2b96718b2336af92} 
+Final aiohttp.\+compression\+\_\+utils.\+ZLib\+Decompressor.\+\_\+zlib\+\_\+backend = \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_backend_wrapper}{ZLib\+Backend\+Wrapper}}(ZLib\+Backend.\+\_\+zlib\+\_\+backend)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{compression__utils_8py}{compression\+\_\+utils.\+py}}\end{DoxyCompactItemize}

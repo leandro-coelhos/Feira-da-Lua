@@ -1,0 +1,75 @@
+\doxysection{pygments.\+lexers.\+sql.\+Postgres\+Base Class Reference}
+\hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base}{}\label{classpygments_1_1lexers_1_1sql_1_1_postgres_base}\index{pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}}
+Inheritance diagram for pygments.\+lexers.\+sql.\+Postgres\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.666667cm]{classpygments_1_1lexers_1_1sql_1_1_postgres_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexers_1_1sql_1_1_postgres_base_a805f5832c4f56054378740cf503c1d37}{get\+\_\+tokens\+\_\+unprocessed}} (self, \mbox{\hyperlink{classpygments_1_1lexers_1_1sql_1_1_postgres_base_af18c61d1f28e2194b07719131e3bcb5f}{text}}, \texorpdfstring{$\ast$}{*}args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexers_1_1sql_1_1_postgres_base_af18c61d1f28e2194b07719131e3bcb5f}{text}} = text
+\item 
+\mbox{\hyperlink{classpygments_1_1lexers_1_1sql_1_1_postgres_base_acd95bb1077614fe93be0ac4f2b7ee4c3}{options}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexers_1_1sql_1_1_postgres_base_a82b0103ff053d31cb4f8e877c8357464}{\+\_\+get\+\_\+lexer}} (self, lang)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for Postgres-related lexers.
+
+This is implemented as a mixin to avoid the Lexer metaclass kicking in.
+this way the different lexer don't have a common Lexer ancestor. If they
+had, _tokens could be created on this ancestor and not updated for the
+other classes, resulting e.g. in PL/pgSQL parsed as SQL. This shortcoming
+seem to suggest that regexp lexers are not really subclassable.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base_a82b0103ff053d31cb4f8e877c8357464}\index{pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}!\_get\_lexer@{\_get\_lexer}}
+\index{\_get\_lexer@{\_get\_lexer}!pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}}
+\doxysubsubsection{\texorpdfstring{\_get\_lexer()}{\_get\_lexer()}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1sql_1_1_postgres_base_a82b0103ff053d31cb4f8e877c8357464} 
+pygments.\+lexers.\+sql.\+Postgres\+Base.\+\_\+get\+\_\+lexer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lang}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base_a805f5832c4f56054378740cf503c1d37}\index{pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}!get\_tokens\_unprocessed@{get\_tokens\_unprocessed}}
+\index{get\_tokens\_unprocessed@{get\_tokens\_unprocessed}!pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}}
+\doxysubsubsection{\texorpdfstring{get\_tokens\_unprocessed()}{get\_tokens\_unprocessed()}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1sql_1_1_postgres_base_a805f5832c4f56054378740cf503c1d37} 
+pygments.\+lexers.\+sql.\+Postgres\+Base.\+get\+\_\+tokens\+\_\+unprocessed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base_acd95bb1077614fe93be0ac4f2b7ee4c3}\index{pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}!options@{options}}
+\index{options@{options}!pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1sql_1_1_postgres_base_acd95bb1077614fe93be0ac4f2b7ee4c3} 
+pygments.\+lexers.\+sql.\+Postgres\+Base.\+options}
+
+\Hypertarget{classpygments_1_1lexers_1_1sql_1_1_postgres_base_af18c61d1f28e2194b07719131e3bcb5f}\index{pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}!text@{text}}
+\index{text@{text}!pygments.lexers.sql.PostgresBase@{pygments.lexers.sql.PostgresBase}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1sql_1_1_postgres_base_af18c61d1f28e2194b07719131e3bcb5f} 
+pygments.\+lexers.\+sql.\+Postgres\+Base.\+text = text}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pygments/lexers/\mbox{\hyperlink{pygments_2lexers_2sql_8py}{sql.\+py}}\end{DoxyCompactItemize}

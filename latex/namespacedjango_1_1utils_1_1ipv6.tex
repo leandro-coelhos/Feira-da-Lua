@@ -1,0 +1,67 @@
+\doxysection{django.\+utils.\+ipv6 Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1ipv6}{}\label{namespacedjango_1_1utils_1_1ipv6}\index{django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a4898691ed72689adc3097de499f88810}{\+\_\+ipv6\+\_\+address\+\_\+from\+\_\+str}} (ip\+\_\+str, max\+\_\+length=\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896}{MAX\+\_\+\+IPV6\+\_\+\+ADDRESS\+\_\+\+LENGTH}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a0e49c4202dc45663ddad45ab9b50d8e3}{clean\+\_\+ipv6\+\_\+address}} (ip\+\_\+str, unpack\+\_\+ipv4=False, error\+\_\+message=\+\_\+("{}This is not a valid IPv6 address."{}), max\+\_\+length=\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896}{MAX\+\_\+\+IPV6\+\_\+\+ADDRESS\+\_\+\+LENGTH}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a002f89c91db4ff883618a7243d9d4f12}{is\+\_\+valid\+\_\+ipv6\+\_\+address}} (ip\+\_\+addr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896}{MAX\+\_\+\+IPV6\+\_\+\+ADDRESS\+\_\+\+LENGTH}} = 39
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1ipv6_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1ipv6_a4898691ed72689adc3097de499f88810}\index{django.utils.ipv6@{django.utils.ipv6}!\_ipv6\_address\_from\_str@{\_ipv6\_address\_from\_str}}
+\index{\_ipv6\_address\_from\_str@{\_ipv6\_address\_from\_str}!django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection{\texorpdfstring{\_ipv6\_address\_from\_str()}{\_ipv6\_address\_from\_str()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1ipv6_a4898691ed72689adc3097de499f88810} 
+django.\+utils.\+ipv6.\+\_\+ipv6\+\_\+address\+\_\+from\+\_\+str (\begin{DoxyParamCaption}\item[{}]{ip\+\_\+str}{, }\item[{}]{max\+\_\+length}{ = {\ttfamily \mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896}{MAX\+\_\+\+IPV6\+\_\+\+ADDRESS\+\_\+\+LENGTH}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1ipv6_a0e49c4202dc45663ddad45ab9b50d8e3}\index{django.utils.ipv6@{django.utils.ipv6}!clean\_ipv6\_address@{clean\_ipv6\_address}}
+\index{clean\_ipv6\_address@{clean\_ipv6\_address}!django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection{\texorpdfstring{clean\_ipv6\_address()}{clean\_ipv6\_address()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1ipv6_a0e49c4202dc45663ddad45ab9b50d8e3} 
+django.\+utils.\+ipv6.\+clean\+\_\+ipv6\+\_\+address (\begin{DoxyParamCaption}\item[{}]{ip\+\_\+str}{, }\item[{}]{unpack\+\_\+ipv4}{ = {\ttfamily False}, }\item[{}]{error\+\_\+message}{ = {\ttfamily \+\_\+("{}This~is~not~a~valid~IPv6~address."{})}, }\item[{}]{max\+\_\+length}{ = {\ttfamily \mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896}{MAX\+\_\+\+IPV6\+\_\+\+ADDRESS\+\_\+\+LENGTH}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean an IPv6 address string.
+
+Raise ValidationError if the address is invalid.
+
+Replace the longest continuous zero-sequence with "::", remove leading
+zeroes, and make sure all hextets are lowercase.
+
+Args:
+    ip_str: A valid IPv6 address.
+    unpack_ipv4: if an IPv4-mapped address is found,
+    return the plain IPv4 address (default=False).
+    error_message: An error message used in the ValidationError.
+
+Return a compressed IPv6 address or the same value.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1ipv6_a002f89c91db4ff883618a7243d9d4f12}\index{django.utils.ipv6@{django.utils.ipv6}!is\_valid\_ipv6\_address@{is\_valid\_ipv6\_address}}
+\index{is\_valid\_ipv6\_address@{is\_valid\_ipv6\_address}!django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_ipv6\_address()}{is\_valid\_ipv6\_address()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1ipv6_a002f89c91db4ff883618a7243d9d4f12} 
+django.\+utils.\+ipv6.\+is\+\_\+valid\+\_\+ipv6\+\_\+address (\begin{DoxyParamCaption}\item[{}]{ip\+\_\+addr}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the `ip_addr` object is a valid IPv6 address.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1utils_1_1ipv6_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896}\index{django.utils.ipv6@{django.utils.ipv6}!MAX\_IPV6\_ADDRESS\_LENGTH@{MAX\_IPV6\_ADDRESS\_LENGTH}}
+\index{MAX\_IPV6\_ADDRESS\_LENGTH@{MAX\_IPV6\_ADDRESS\_LENGTH}!django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection{\texorpdfstring{MAX\_IPV6\_ADDRESS\_LENGTH}{MAX\_IPV6\_ADDRESS\_LENGTH}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1ipv6_a56b2edc9060927c72bdf76417b730896} 
+int django.\+utils.\+ipv6.\+MAX\+\_\+\+IPV6\+\_\+\+ADDRESS\+\_\+\+LENGTH = 39}
+

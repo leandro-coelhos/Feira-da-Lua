@@ -1,0 +1,49 @@
+\doxysection{django.\+contrib.\+auth.\+handlers.\+modwsgi Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi}{}\label{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi}\index{django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_acfac6711a417ea7f83605d0d9ec23955}{check\+\_\+password}} (environ, username, password)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_a3429f0a787750817fb00161b3964b8e5}{groups\+\_\+for\+\_\+user}} (environ, username)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_a90fd6d8c35586bef1f770884305905ee}{User\+Model}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_a67ab26af833409db97f30ee5584842d5}{auth.\+get\+\_\+user\+\_\+model}}()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_acfac6711a417ea7f83605d0d9ec23955}\index{django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}!check\_password@{check\_password}}
+\index{check\_password@{check\_password}!django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}}
+\doxysubsubsection{\texorpdfstring{check\_password()}{check\_password()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_acfac6711a417ea7f83605d0d9ec23955} 
+django.\+contrib.\+auth.\+handlers.\+modwsgi.\+check\+\_\+password (\begin{DoxyParamCaption}\item[{}]{environ}{, }\item[{}]{username}{, }\item[{}]{password}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Authenticate against Django's auth database.
+
+mod_wsgi docs specify None, True, False as return value depending
+on whether the user exists and authenticates.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_a3429f0a787750817fb00161b3964b8e5}\index{django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}!groups\_for\_user@{groups\_for\_user}}
+\index{groups\_for\_user@{groups\_for\_user}!django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}}
+\doxysubsubsection{\texorpdfstring{groups\_for\_user()}{groups\_for\_user()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_a3429f0a787750817fb00161b3964b8e5} 
+django.\+contrib.\+auth.\+handlers.\+modwsgi.\+groups\+\_\+for\+\_\+user (\begin{DoxyParamCaption}\item[{}]{environ}{, }\item[{}]{username}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Authorize a user based on groups
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_a90fd6d8c35586bef1f770884305905ee}\index{django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}!UserModel@{UserModel}}
+\index{UserModel@{UserModel}!django.contrib.auth.handlers.modwsgi@{django.contrib.auth.handlers.modwsgi}}
+\doxysubsubsection{\texorpdfstring{UserModel}{UserModel}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1auth_1_1handlers_1_1modwsgi_a90fd6d8c35586bef1f770884305905ee} 
+django.\+contrib.\+auth.\+handlers.\+modwsgi.\+User\+Model = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_a67ab26af833409db97f30ee5584842d5}{auth.\+get\+\_\+user\+\_\+model}}()}
+

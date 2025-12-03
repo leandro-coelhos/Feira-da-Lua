@@ -1,0 +1,79 @@
+\doxysection{django.\+middleware.\+common.\+Broken\+Link\+Emails\+Middleware Class Reference}
+\hypertarget{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware}{}\label{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware}\index{django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}}
+Inheritance diagram for django.\+middleware.\+common.\+Broken\+Link\+Emails\+Middleware\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a08a138aac48be0cf26f364df53252688}{process\+\_\+response}} (self, request, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a323d0ba6f9312918175e56d6dadf2ec8}{is\+\_\+internal\+\_\+request}} (self, domain, referer)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a0f4c5ee4a4ee220560712ebbafc6050d}{is\+\_\+ignorable\+\_\+request}} (self, request, uri, domain, referer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}} = get\+\_\+response
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}} = iscoroutinefunction(self.\+get\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a0f4c5ee4a4ee220560712ebbafc6050d}\index{django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}!is\_ignorable\_request@{is\_ignorable\_request}}
+\index{is\_ignorable\_request@{is\_ignorable\_request}!django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_ignorable\_request()}{is\_ignorable\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a0f4c5ee4a4ee220560712ebbafc6050d} 
+django.\+middleware.\+common.\+Broken\+Link\+Emails\+Middleware.\+is\+\_\+ignorable\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{uri}{, }\item[{}]{domain}{, }\item[{}]{referer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the given request *shouldn't* notify the site managers
+according to project settings or in situations outlined by the inline
+comments.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a323d0ba6f9312918175e56d6dadf2ec8}\index{django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}!is\_internal\_request@{is\_internal\_request}}
+\index{is\_internal\_request@{is\_internal\_request}!django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_internal\_request()}{is\_internal\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a323d0ba6f9312918175e56d6dadf2ec8} 
+django.\+middleware.\+common.\+Broken\+Link\+Emails\+Middleware.\+is\+\_\+internal\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{domain}{, }\item[{}]{referer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the referring URL is the same domain as the current
+request.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a08a138aac48be0cf26f364df53252688}\index{django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}!process\_response@{process\_response}}
+\index{process\_response@{process\_response}!django.middleware.common.BrokenLinkEmailsMiddleware@{django.middleware.common.BrokenLinkEmailsMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_response()}{process\_response()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1common_1_1_broken_link_emails_middleware_a08a138aac48be0cf26f364df53252688} 
+django.\+middleware.\+common.\+Broken\+Link\+Emails\+Middleware.\+process\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send broken link emails for relevant 404 NOT FOUND responses.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/middleware/\mbox{\hyperlink{middleware_2common_8py}{common.\+py}}\end{DoxyCompactItemize}

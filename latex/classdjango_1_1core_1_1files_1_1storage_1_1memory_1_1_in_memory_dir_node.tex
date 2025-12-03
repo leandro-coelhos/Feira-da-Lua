@@ -1,0 +1,120 @@
+\doxysection{django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node Class Reference}
+\hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node}{}\label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+Inheritance diagram for django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_aaf536db452fd2970989884c89da4fcca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_ac1f3b696c47a8c8f2156c8e573b401c8}{resolve}} (self, path, create\+\_\+if\+\_\+missing=False, leaf\+\_\+cls=None, check\+\_\+exists=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a86ff44b53a1d4e69f2461a9429969750}{listdir}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a9ad383e886893779be24ea1ff5c19a7b}{remove\+\_\+child}} (self, name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a3c3786c6f175be99f96795e9cfd645bf}{\+\_\+resolve\+\_\+child}} (self, path\+\_\+segment, create\+\_\+if\+\_\+missing, child\+\_\+cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin}{django.\+core.\+files.\+storage.\+memory.\+Timing\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin_ae6defbc33ca6bbe2a1846f8747309168}{\+\_\+initialize\+\_\+times}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin_a39dcefa94d11a08b9b76b34fc39e2d34}{\+\_\+update\+\_\+accessed\+\_\+time}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin_a6844c78590a8110d3d43a621f7761ec8}{\+\_\+update\+\_\+modified\+\_\+time}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_ab000f1f40127d0c22e79eeb0cc8a3b99}{\+\_\+children}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin}{django.\+core.\+files.\+storage.\+memory.\+Timing\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin_a74c83b7cc92b3f8a224a85a42ac06a68}{created\+\_\+time}} = now()
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin_aacf6c88e8b9ad84a6d67257b15df95b0}{accessed\+\_\+time}} = self.\+created\+\_\+time
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_timing_mixin_ae8ec463003ac17796b3b6387ca3fee7b}{modified\+\_\+time}} = self.\+created\+\_\+time
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper class representing an in-memory directory node.
+
+Handle path navigation of directory trees, creating missing nodes if
+needed.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_aaf536db452fd2970989884c89da4fcca}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_aaf536db452fd2970989884c89da4fcca} 
+django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a3c3786c6f175be99f96795e9cfd645bf}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}!\_resolve\_child@{\_resolve\_child}}
+\index{\_resolve\_child@{\_resolve\_child}!django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+\doxysubsubsection{\texorpdfstring{\_resolve\_child()}{\_resolve\_child()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a3c3786c6f175be99f96795e9cfd645bf} 
+django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node.\+\_\+resolve\+\_\+child (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path\+\_\+segment}{, }\item[{}]{create\+\_\+if\+\_\+missing}{, }\item[{}]{child\+\_\+cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a86ff44b53a1d4e69f2461a9429969750}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}!listdir@{listdir}}
+\index{listdir@{listdir}!django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+\doxysubsubsection{\texorpdfstring{listdir()}{listdir()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a86ff44b53a1d4e69f2461a9429969750} 
+django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node.\+listdir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a9ad383e886893779be24ea1ff5c19a7b}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}!remove\_child@{remove\_child}}
+\index{remove\_child@{remove\_child}!django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+\doxysubsubsection{\texorpdfstring{remove\_child()}{remove\_child()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_a9ad383e886893779be24ea1ff5c19a7b} 
+django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node.\+remove\+\_\+child (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_ac1f3b696c47a8c8f2156c8e573b401c8}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}!resolve@{resolve}}
+\index{resolve@{resolve}!django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_ac1f3b696c47a8c8f2156c8e573b401c8} 
+django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{, }\item[{}]{create\+\_\+if\+\_\+missing}{ = {\ttfamily False}, }\item[{}]{leaf\+\_\+cls}{ = {\ttfamily None}, }\item[{}]{check\+\_\+exists}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Navigate current directory tree, returning node matching path or
+creating a new one, if missing.
+- path: path of the node to search
+- create_if_missing: create nodes if not exist. Defaults to False.
+- leaf_cls: expected type of leaf node. Defaults to None.
+- check_exists: if True and the leaf node does not exist, raise a
+  FileNotFoundError. Defaults to True.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_ab000f1f40127d0c22e79eeb0cc8a3b99}\index{django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}!\_children@{\_children}}
+\index{\_children@{\_children}!django.core.files.storage.memory.InMemoryDirNode@{django.core.files.storage.memory.InMemoryDirNode}}
+\doxysubsubsection{\texorpdfstring{\_children}{\_children}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1_in_memory_dir_node_ab000f1f40127d0c22e79eeb0cc8a3b99} 
+dict django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+Dir\+Node.\+\_\+children = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/files/storage/\mbox{\hyperlink{memory_8py}{memory.\+py}}\end{DoxyCompactItemize}

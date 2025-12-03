@@ -1,0 +1,352 @@
+\doxysection{django.\+core.\+management.\+base.\+Base\+Command Class Reference}
+\hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{}\label{classdjango_1_1core_1_1management_1_1base_1_1_base_command}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+Inheritance diagram for django.\+core.\+management.\+base.\+Base\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classdjango_1_1core_1_1management_1_1base_1_1_base_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9695953f0be8c6f8c6d1ef34d7ea5d49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}}=None, no\+\_\+color=False, force\+\_\+color=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad1a0ff17727df93596c37baec5368461}{get\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae878e488f18d67acf1037a7e2db5b478}{create\+\_\+parser}} (self, prog\+\_\+name, subcommand, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a00539c5da3157007e2485338da279887}{add\+\_\+arguments}} (self, parser)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae1a4dc5642d9d1f21301d519f3221e84}{add\+\_\+base\+\_\+argument}} (self, parser, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9f81b6c52db3a2b0a123ca7bdd0ee819}{print\+\_\+help}} (self, prog\+\_\+name, subcommand)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a6c1cc5fc9ec35d268e45ebaadd2ac4a7}{run\+\_\+from\+\_\+argv}} (self, argv)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5621c1fb51be6a2deff6777d90c25ee0}{execute}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ab2ff3d25e971a2ba69819666c6f064b2}{get\+\_\+check\+\_\+kwargs}} (self, options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ff1b562b3f6e68600b828fce3cf09b6}{check}} (self, app\+\_\+configs=None, tags=None, display\+\_\+num\+\_\+errors=False, include\+\_\+deployment\+\_\+checks=False, fail\+\_\+level=checks.\+ERROR, databases=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a163d7c2584c28d8775107140aa16237b}{check\+\_\+migrations}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a52656ddf33d25f682f484c5d505a811d}{handle}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stdout or sys.\+stdout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stderr or sys.\+stderr)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad6d1595308e72c47dffa375715cbad81}{style}} = no\+\_\+style()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5251899eaa230e9dc39d6f13bfb7738b}{help}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_afa4724a6b9eaa88dc153bcf618638984}{output\+\_\+transaction}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_af863dc49e813257bcc3f5ab2adbe1133}{requires\+\_\+migrations\+\_\+checks}} = False
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aba2da6354253ce03349947d947e49993}{requires\+\_\+system\+\_\+checks}} = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a792d54d83b488928d57a8c6d06651b93}{base\+\_\+stealth\+\_\+options}} = ("{}stderr"{}, "{}stdout"{})
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ae78baa0f34d38dada61deb73b45650}{stealth\+\_\+options}} = ()
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a26536fa90d5c93dbc2e0d3218d1ae1dc}{suppressed\+\_\+base\+\_\+arguments}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ac73d933ceec032782fbcbec37d6c8ebb}{\+\_\+called\+\_\+from\+\_\+command\+\_\+line}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The base class from which all management commands ultimately
+derive.
+
+Use this class if you want access to all of the mechanisms which
+parse the command-line arguments and work out what code to call in
+response; if you don't need to change any of that behavior,
+consider using one of the subclasses defined in this file.
+
+If you are interested in overriding/customizing various aspects of
+the command-parsing and -execution behavior, the normal flow works
+as follows:
+
+1. ``django-admin`` or ``manage.py`` loads the command class
+   and calls its ``run_from_argv()`` method.
+
+2. The ``run_from_argv()`` method calls ``create_parser()`` to get
+   an ``ArgumentParser`` for the arguments, parses them, performs
+   any environment changes requested by options like
+   ``pythonpath``, and then calls the ``execute()`` method,
+   passing the parsed arguments.
+
+3. The ``execute()`` method attempts to carry out the command by
+   calling the ``handle()`` method with the parsed arguments; any
+   output produced by ``handle()`` will be printed to standard
+   output and, if the command is intended to produce a block of
+   SQL statements, will be wrapped in ``BEGIN`` and ``COMMIT``.
+
+4. If ``handle()`` or ``execute()`` raised any exception (e.g.
+   ``CommandError``), ``run_from_argv()`` will  instead print an error
+   message to ``stderr``.
+
+Thus, the ``handle()`` method is typically the starting point for
+subclasses; many built-in commands and command types either place
+all of their logic in ``handle()``, or perform some additional
+parsing work in ``handle()`` and then delegate from it to more
+specialized methods as needed.
+
+Several attributes affect behavior at various steps along the way:
+
+``help``
+    A short description of the command, which will be printed in
+    help messages.
+
+``output_transaction``
+    A boolean indicating whether the command outputs SQL
+    statements; if ``True``, the output will automatically be
+    wrapped with ``BEGIN;`` and ``COMMIT;``. Default value is
+    ``False``.
+
+``requires_migrations_checks``
+    A boolean; if ``True``, the command prints a warning if the set of
+    migrations on disk don't match the migrations in the database.
+
+``requires_system_checks``
+    A list or tuple of tags, e.g. [Tags.staticfiles, Tags.models]. System
+    checks registered in the chosen tags will be checked for errors prior
+    to executing the command. The value '__all__' can be used to specify
+    that all system checks should be performed. Default value is '__all__'.
+
+    To validate an individual application's models
+    rather than all applications' models, call
+    ``self.check(app_configs)`` from ``handle()``, where ``app_configs``
+    is the list of application's configuration provided by the
+    app registry.
+
+``stealth_options``
+    A tuple of any options the command uses which aren't defined by the
+    argument parser.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9695953f0be8c6f8c6d1ef34d7ea5d49}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9695953f0be8c6f8c6d1ef34d7ea5d49} 
+django.\+core.\+management.\+base.\+Base\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stdout}{ = {\ttfamily None}, }\item[{}]{stderr}{ = {\ttfamily None}, }\item[{}]{no\+\_\+color}{ = {\ttfamily False}, }\item[{}]{force\+\_\+color}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a00539c5da3157007e2485338da279887}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!add\_arguments@{add\_arguments}}
+\index{add\_arguments@{add\_arguments}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{add\_arguments()}{add\_arguments()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a00539c5da3157007e2485338da279887} 
+django.\+core.\+management.\+base.\+Base\+Command.\+add\+\_\+arguments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parser}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Entry point for subclassed commands to add custom arguments.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1management_1_1commands_1_1changepassword_1_1_command_afd2d21f92b27d2fdca8e03039c1cd7c1}{django.\+contrib.\+auth.\+management.\+commands.\+changepassword.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1management_1_1commands_1_1createsuperuser_1_1_command_a533cda0f467cc4dbeda68b9bf098a909}{django.\+contrib.\+auth.\+management.\+commands.\+createsuperuser.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command_acc60e60f927ff5d218c23c16910d8e67}{django.\+contrib.\+contenttypes.\+management.\+commands.\+remove\+\_\+stale\+\_\+contenttypes.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1management_1_1commands_1_1ogrinspect_1_1_command_ae02e8308c0019758c456736df16b4f3b}{django.\+contrib.\+gis.\+management.\+commands.\+ogrinspect.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1management_1_1commands_1_1collectstatic_1_1_command_aa213d9c6ef77abad27c34c619cbb4ccf}{django.\+contrib.\+staticfiles.\+management.\+commands.\+collectstatic.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1management_1_1commands_1_1findstatic_1_1_command_a2596e9b4837bf1ff8bf0280ab02971d5}{django.\+contrib.\+staticfiles.\+management.\+commands.\+findstatic.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_app_command_aec521341cc38bde16372c8512315b3a7}{django.\+core.\+management.\+base.\+App\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_label_command_a98b987df765f27398ed8f8e80e166263}{django.\+core.\+management.\+base.\+Label\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1check_1_1_command_a11813ba0591b2c269ee986e66de844a9}{django.\+core.\+management.\+commands.\+check.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1compilemessages_1_1_command_a4b5a29d8e0aca9e32c27922bfff55b3a}{django.\+core.\+management.\+commands.\+compilemessages.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1createcachetable_1_1_command_a9d91a0c8e724ea71d2f5094698f7408d}{django.\+core.\+management.\+commands.\+createcachetable.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1dbshell_1_1_command_ae09d58299ee3f592a74acd77b4f013ad}{django.\+core.\+management.\+commands.\+dbshell.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1diffsettings_1_1_command_aec90aee3deb3474ccb91382dd826a8e6}{django.\+core.\+management.\+commands.\+diffsettings.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1dumpdata_1_1_command_a122e3ad06938f563f5ac4ee48624a0fe}{django.\+core.\+management.\+commands.\+dumpdata.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1flush_1_1_command_af878673b67cc66d6c29d0ca30483fd52}{django.\+core.\+management.\+commands.\+flush.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a549ee7e9a1f86263e308d49dab69ae46}{django.\+core.\+management.\+commands.\+inspectdb.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1_command_a6dd4b35eb4f4052c1980566a478e4567}{django.\+core.\+management.\+commands.\+loaddata.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa37fa28cef269d841212992650598ee0}{django.\+core.\+management.\+commands.\+makemessages.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6e6748fa88271de8e2dd0193aa31d940}{django.\+core.\+management.\+commands.\+makemigrations.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1migrate_1_1_command_ae5fa1a875ebd1ab0e503991ff637c340}{django.\+core.\+management.\+commands.\+migrate.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1optimizemigration_1_1_command_af9691ed25aded20b60f2be4935686d13}{django.\+core.\+management.\+commands.\+optimizemigration.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1runserver_1_1_command_a38eefc3ed3ac5e28dd734973e2a1b97b}{django.\+core.\+management.\+commands.\+runserver.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sendtestemail_1_1_command_a71b71b6211ab1492fabfa58742736e11}{django.\+core.\+management.\+commands.\+sendtestemail.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1shell_1_1_command_af4a280bd3f4fd19e2d433280d0bad4c9}{django.\+core.\+management.\+commands.\+shell.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1showmigrations_1_1_command_ad79060431fff2772f1b883e7bdbfd5e7}{django.\+core.\+management.\+commands.\+showmigrations.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sqlflush_1_1_command_ab764d469a6e7221c5aaddc28bdb52e3f}{django.\+core.\+management.\+commands.\+sqlflush.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sqlmigrate_1_1_command_ab75ce514d2c981016bc9e64ed2d46b74}{django.\+core.\+management.\+commands.\+sqlmigrate.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sqlsequencereset_1_1_command_a28a72f3acad35f0ff4599839b4348e73}{django.\+core.\+management.\+commands.\+sqlsequencereset.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1squashmigrations_1_1_command_a0a2be2599cb49baf725d20a1b33acfd8}{django.\+core.\+management.\+commands.\+squashmigrations.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1test_1_1_command_af3060d37977de5947d6a1d58d591d846}{django.\+core.\+management.\+commands.\+test.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1testserver_1_1_command_a60121229c808686cf7a5481864fbc6f5}{django.\+core.\+management.\+commands.\+testserver.\+Command}}, and \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1templates_1_1_template_command_ae16f8d968ca3b8bb1a268140cfaaaa8d}{django.\+core.\+management.\+templates.\+Template\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae1a4dc5642d9d1f21301d519f3221e84}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!add\_base\_argument@{add\_base\_argument}}
+\index{add\_base\_argument@{add\_base\_argument}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{add\_base\_argument()}{add\_base\_argument()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae1a4dc5642d9d1f21301d519f3221e84} 
+django.\+core.\+management.\+base.\+Base\+Command.\+add\+\_\+base\+\_\+argument (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parser}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the parser's add_argument() method, suppressing the help text
+according to BaseCommand.suppressed_base_arguments.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ff1b562b3f6e68600b828fce3cf09b6}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!check@{check}}
+\index{check@{check}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ff1b562b3f6e68600b828fce3cf09b6} 
+django.\+core.\+management.\+base.\+Base\+Command.\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+configs}{ = {\ttfamily None}, }\item[{}]{tags}{ = {\ttfamily None}, }\item[{}]{display\+\_\+num\+\_\+errors}{ = {\ttfamily False}, }\item[{}]{include\+\_\+deployment\+\_\+checks}{ = {\ttfamily False}, }\item[{}]{fail\+\_\+level}{ = {\ttfamily checks.ERROR}, }\item[{}]{databases}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use the system check framework to validate entire Django project.
+Raise CommandError for any serious message (error or critical errors).
+If there are only light messages (like warnings), print them to stderr
+and don't raise an exception.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a163d7c2584c28d8775107140aa16237b}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!check\_migrations@{check\_migrations}}
+\index{check\_migrations@{check\_migrations}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{check\_migrations()}{check\_migrations()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a163d7c2584c28d8775107140aa16237b} 
+django.\+core.\+management.\+base.\+Base\+Command.\+check\+\_\+migrations (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print a warning if the set of migrations on disk don't match the
+migrations in the database.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae878e488f18d67acf1037a7e2db5b478}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!create\_parser@{create\_parser}}
+\index{create\_parser@{create\_parser}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{create\_parser()}{create\_parser()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae878e488f18d67acf1037a7e2db5b478} 
+django.\+core.\+management.\+base.\+Base\+Command.\+create\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{prog\+\_\+name}{, }\item[{}]{subcommand}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return the ``ArgumentParser`` which will be used to
+parse the arguments to this command.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5621c1fb51be6a2deff6777d90c25ee0}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!execute@{execute}}
+\index{execute@{execute}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5621c1fb51be6a2deff6777d90c25ee0} 
+django.\+core.\+management.\+base.\+Base\+Command.\+execute (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Try to execute this command, performing system checks if needed (as
+controlled by the ``requires_system_checks`` attribute, except if
+force-skipped).
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1management_1_1commands_1_1createsuperuser_1_1_command_a4dc8ad9953fcae01a4c61c32fe4c6540}{django.\+contrib.\+auth.\+management.\+commands.\+createsuperuser.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1runserver_1_1_command_a86b4bdbf596d9f612125e143148d9919}{django.\+core.\+management.\+commands.\+runserver.\+Command}}, and \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sqlmigrate_1_1_command_ad47c65d3d4820430ce43bb5f2086789d}{django.\+core.\+management.\+commands.\+sqlmigrate.\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ab2ff3d25e971a2ba69819666c6f064b2}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!get\_check\_kwargs@{get\_check\_kwargs}}
+\index{get\_check\_kwargs@{get\_check\_kwargs}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{get\_check\_kwargs()}{get\_check\_kwargs()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ab2ff3d25e971a2ba69819666c6f064b2} 
+django.\+core.\+management.\+base.\+Base\+Command.\+get\+\_\+check\+\_\+kwargs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1migrate_1_1_command_aad0ccff5ac049da52419587246adf0cf}{django.\+core.\+management.\+commands.\+migrate.\+Command}}, and \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1runserver_1_1_command_a10e7f197ce13991b2108e85ed9642d93}{django.\+core.\+management.\+commands.\+runserver.\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad1a0ff17727df93596c37baec5368461}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!get\_version@{get\_version}}
+\index{get\_version@{get\_version}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{get\_version()}{get\_version()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad1a0ff17727df93596c37baec5368461} 
+django.\+core.\+management.\+base.\+Base\+Command.\+get\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the Django version, which should be correct for all built-in
+Django commands. User-supplied commands can override this method to
+return their own version.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a52656ddf33d25f682f484c5d505a811d}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!handle@{handle}}
+\index{handle@{handle}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a52656ddf33d25f682f484c5d505a811d} 
+django.\+core.\+management.\+base.\+Base\+Command.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual logic of the command. Subclasses must implement
+this method.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1management_1_1commands_1_1changepassword_1_1_command_a8967db67e9ba34055e8053ad062d9006}{django.\+contrib.\+auth.\+management.\+commands.\+changepassword.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1management_1_1commands_1_1createsuperuser_1_1_command_acc63f22a8181da25db0750a091470287}{django.\+contrib.\+auth.\+management.\+commands.\+createsuperuser.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command_a4877da71ed28ae791e138ba2fbf1dffe}{django.\+contrib.\+contenttypes.\+management.\+commands.\+remove\+\_\+stale\+\_\+contenttypes.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1management_1_1commands_1_1ogrinspect_1_1_command_ae6396324a38c7fcad96d9521034036b7}{django.\+contrib.\+gis.\+management.\+commands.\+ogrinspect.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1management_1_1commands_1_1clearsessions_1_1_command_a729564a5d4b467fcc23bc0f9a4fa07c8}{django.\+contrib.\+sessions.\+management.\+commands.\+clearsessions.\+Command}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1management_1_1commands_1_1collectstatic_1_1_command_a77042fe151f5e5c26990bdd187c9f21e}{django.\+contrib.\+staticfiles.\+management.\+commands.\+collectstatic.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_app_command_ae9ba2e4e61b6a84c5937979789996637}{django.\+core.\+management.\+base.\+App\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_label_command_a5c44b4382ba6b7ead19c692f18811a09}{django.\+core.\+management.\+base.\+Label\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1check_1_1_command_a4170f8ebcb94254dfffabf874e7c8a37}{django.\+core.\+management.\+commands.\+check.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1compilemessages_1_1_command_a9567423b370d867833616c271a896ea4}{django.\+core.\+management.\+commands.\+compilemessages.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1createcachetable_1_1_command_ac8cec4d5951f73d3fbebaa3c1ed5d018}{django.\+core.\+management.\+commands.\+createcachetable.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1dbshell_1_1_command_a91779bec0f76dbee6a02931805fd27cc}{django.\+core.\+management.\+commands.\+dbshell.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1diffsettings_1_1_command_aee3bf2e90e75bf3e5764ab1803632a9a}{django.\+core.\+management.\+commands.\+diffsettings.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1dumpdata_1_1_command_a22426384e97349e4c9682023ae722caa}{django.\+core.\+management.\+commands.\+dumpdata.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1flush_1_1_command_a588f5474800a8da0685eb6a9f0bb8224}{django.\+core.\+management.\+commands.\+flush.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a668a81e8e42d3dafc2d6e00ac61e1dab}{django.\+core.\+management.\+commands.\+inspectdb.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1_command_a72ede845c482467e0484e2fdeebc4a42}{django.\+core.\+management.\+commands.\+loaddata.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a10de58af9924679bd2c747fa210ac674}{django.\+core.\+management.\+commands.\+makemessages.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ab5e944d112a1c969d97ff2625e4f2f4d}{django.\+core.\+management.\+commands.\+makemigrations.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1migrate_1_1_command_a659ec347367471d5c828fc3520ebc0fa}{django.\+core.\+management.\+commands.\+migrate.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1optimizemigration_1_1_command_aad48454ff16af042fe3eafb74f18bd2d}{django.\+core.\+management.\+commands.\+optimizemigration.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1runserver_1_1_command_ae12b29ba60ddf9ac264355e8de072af9}{django.\+core.\+management.\+commands.\+runserver.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sendtestemail_1_1_command_aaa80e8ffebec9a8b315828cd39935042}{django.\+core.\+management.\+commands.\+sendtestemail.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1shell_1_1_command_aabeac47a7a91f53cc4df73e4530144e7}{django.\+core.\+management.\+commands.\+shell.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1showmigrations_1_1_command_a8da90881bf50eeb72240a450f2ab4775}{django.\+core.\+management.\+commands.\+showmigrations.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sqlflush_1_1_command_a29eeac6c5f1e914695f34b99149ba2bf}{django.\+core.\+management.\+commands.\+sqlflush.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1sqlmigrate_1_1_command_a45808df3ca77fee1b3352a7c7d726324}{django.\+core.\+management.\+commands.\+sqlmigrate.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1squashmigrations_1_1_command_addb0b909d1ea64fb8694d253c4dfda6f}{django.\+core.\+management.\+commands.\+squashmigrations.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1startapp_1_1_command_af9042fd91e810384b3c75baa209bfdd2}{django.\+core.\+management.\+commands.\+startapp.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1startproject_1_1_command_ad05f059b3c977996fd95a60cad73a321}{django.\+core.\+management.\+commands.\+startproject.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1test_1_1_command_aab6805eb63d011015ea561f7a9741f85}{django.\+core.\+management.\+commands.\+test.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1testserver_1_1_command_a065a7dad287450d77c02ab5c3ee57a90}{django.\+core.\+management.\+commands.\+testserver.\+Command}}, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1templates_1_1_template_command_a231f1a500976e364b2f3fc89e3b77ac3}{django.\+core.\+management.\+templates.\+Template\+Command}}, and \mbox{\hyperlink{classencrypted__model__fields_1_1management_1_1commands_1_1generate__encryption__key_1_1_command_a117499cd508fc96c7e88f0fcd6c359c4}{encrypted\+\_\+model\+\_\+fields.\+management.\+commands.\+generate\+\_\+encryption\+\_\+key.\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9f81b6c52db3a2b0a123ca7bdd0ee819}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!print\_help@{print\_help}}
+\index{print\_help@{print\_help}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{print\_help()}{print\_help()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9f81b6c52db3a2b0a123ca7bdd0ee819} 
+django.\+core.\+management.\+base.\+Base\+Command.\+print\+\_\+help (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{prog\+\_\+name}{, }\item[{}]{subcommand}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print the help message for this command, derived from
+``self.usage()``.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a6c1cc5fc9ec35d268e45ebaadd2ac4a7}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!run\_from\_argv@{run\_from\_argv}}
+\index{run\_from\_argv@{run\_from\_argv}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{run\_from\_argv()}{run\_from\_argv()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a6c1cc5fc9ec35d268e45ebaadd2ac4a7} 
+django.\+core.\+management.\+base.\+Base\+Command.\+run\+\_\+from\+\_\+argv (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{argv}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set up any environment changes requested (e.g., Python path
+and Django settings), then run this command. If the
+command raises a ``CommandError``, intercept it and print it sensibly
+to stderr. If the ``--traceback`` option is present or the raised
+``Exception`` is not ``CommandError``, raise it.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1test_1_1_command_a10aa022f00e5453d8fa6ef9e03b572ca}{django.\+core.\+management.\+commands.\+test.\+Command}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ac73d933ceec032782fbcbec37d6c8ebb}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!\_called\_from\_command\_line@{\_called\_from\_command\_line}}
+\index{\_called\_from\_command\_line@{\_called\_from\_command\_line}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{\_called\_from\_command\_line}{\_called\_from\_command\_line}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ac73d933ceec032782fbcbec37d6c8ebb} 
+bool django.\+core.\+management.\+base.\+Base\+Command.\+\_\+called\+\_\+from\+\_\+command\+\_\+line = False\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a792d54d83b488928d57a8c6d06651b93}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!base\_stealth\_options@{base\_stealth\_options}}
+\index{base\_stealth\_options@{base\_stealth\_options}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{base\_stealth\_options}{base\_stealth\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a792d54d83b488928d57a8c6d06651b93} 
+tuple django.\+core.\+management.\+base.\+Base\+Command.\+base\+\_\+stealth\+\_\+options = ("{}stderr"{}, "{}stdout"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5251899eaa230e9dc39d6f13bfb7738b}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!help@{help}}
+\index{help@{help}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5251899eaa230e9dc39d6f13bfb7738b} 
+str django.\+core.\+management.\+base.\+Base\+Command.\+help = "{}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_afa4724a6b9eaa88dc153bcf618638984}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!output\_transaction@{output\_transaction}}
+\index{output\_transaction@{output\_transaction}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{output\_transaction}{output\_transaction}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_afa4724a6b9eaa88dc153bcf618638984} 
+bool django.\+core.\+management.\+base.\+Base\+Command.\+output\+\_\+transaction = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_af863dc49e813257bcc3f5ab2adbe1133}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!requires\_migrations\_checks@{requires\_migrations\_checks}}
+\index{requires\_migrations\_checks@{requires\_migrations\_checks}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{requires\_migrations\_checks}{requires\_migrations\_checks}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_af863dc49e813257bcc3f5ab2adbe1133} 
+bool django.\+core.\+management.\+base.\+Base\+Command.\+requires\+\_\+migrations\+\_\+checks = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aba2da6354253ce03349947d947e49993}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!requires\_system\_checks@{requires\_system\_checks}}
+\index{requires\_system\_checks@{requires\_system\_checks}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{requires\_system\_checks}{requires\_system\_checks}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aba2da6354253ce03349947d947e49993} 
+django.\+core.\+management.\+base.\+Base\+Command.\+requires\+\_\+system\+\_\+checks = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!stderr@{stderr}}
+\index{stderr@{stderr}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{stderr}{stderr}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26} 
+django.\+core.\+management.\+base.\+Base\+Command.\+stderr = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stderr or sys.\+stderr)}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!stdout@{stdout}}
+\index{stdout@{stdout}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{stdout}{stdout}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d} 
+django.\+core.\+management.\+base.\+Base\+Command.\+stdout = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stdout or sys.\+stdout)}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ae78baa0f34d38dada61deb73b45650}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!stealth\_options@{stealth\_options}}
+\index{stealth\_options@{stealth\_options}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{stealth\_options}{stealth\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ae78baa0f34d38dada61deb73b45650} 
+tuple django.\+core.\+management.\+base.\+Base\+Command.\+stealth\+\_\+options = ()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad6d1595308e72c47dffa375715cbad81}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!style@{style}}
+\index{style@{style}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad6d1595308e72c47dffa375715cbad81} 
+django.\+core.\+management.\+base.\+Base\+Command.\+style = no\+\_\+style()}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a26536fa90d5c93dbc2e0d3218d1ae1dc}\index{django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}!suppressed\_base\_arguments@{suppressed\_base\_arguments}}
+\index{suppressed\_base\_arguments@{suppressed\_base\_arguments}!django.core.management.base.BaseCommand@{django.core.management.base.BaseCommand}}
+\doxysubsubsection{\texorpdfstring{suppressed\_base\_arguments}{suppressed\_base\_arguments}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a26536fa90d5c93dbc2e0d3218d1ae1dc} 
+django.\+core.\+management.\+base.\+Base\+Command.\+suppressed\+\_\+base\+\_\+arguments = set()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/management/\mbox{\hyperlink{django_2core_2management_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

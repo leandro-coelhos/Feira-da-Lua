@@ -1,0 +1,204 @@
+\doxysection{django.\+middleware.\+csrf.\+Csrf\+View\+Middleware Class Reference}
+\hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware}{}\label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+Inheritance diagram for django.\+middleware.\+csrf.\+Csrf\+View\+Middleware\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.809365cm]{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_aec505eee529b3a994c93a91b378db144}{csrf\+\_\+trusted\+\_\+origins\+\_\+hosts}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_affdeb2be4ed79ed642d5ab0e51354121}{allowed\+\_\+origins\+\_\+exact}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a907d146b39b00c78e6aa28e0ae9a9e9c}{allowed\+\_\+origin\+\_\+subdomains}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a093f9959c6543fdec577c69b41fefcee}{process\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a9b25cdf2d6490558e21ecb99654df3e8}{process\+\_\+view}} (self, request, callback, callback\+\_\+args, callback\+\_\+kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a4f5197591f5523133e6f6de6eebc1cf5}{process\+\_\+response}} (self, request, response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a1fe8508b4c8bf96ed757424703b466c0}{allowed\+\_\+origins\+\_\+exact}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}} = get\+\_\+response
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}} = iscoroutinefunction(self.\+get\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a8c7b4d30f5beb8af74b805647babd0f5}{\+\_\+accept}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a7ef924aad88aeb475978d532c786377e}{\+\_\+reject}} (self, request, reason)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_aae95bde23eb97afc5b9c88a26eedae8f}{\+\_\+get\+\_\+secret}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a5f42ce4d8e5663caeaa947b159f7ae86}{\+\_\+set\+\_\+csrf\+\_\+cookie}} (self, request, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a88376bcc8f3450b8aa8525250800da96}{\+\_\+origin\+\_\+verified}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a386bc6b6f885761a1f60cc8ae62941e4}{\+\_\+check\+\_\+referer}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a96728acbdb78a49b30af0b2a83526583}{\+\_\+bad\+\_\+token\+\_\+message}} (self, reason, token\+\_\+source)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a42df5b5917b64c8c7496841732f80444}{\+\_\+check\+\_\+token}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Require a present and correct csrfmiddlewaretoken for POST requests that
+have a CSRF cookie, and set an outgoing CSRF cookie.
+
+This middleware should be used in conjunction with the {% csrf_token %}
+template tag.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a8c7b4d30f5beb8af74b805647babd0f5}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_accept@{\_accept}}
+\index{\_accept@{\_accept}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_accept()}{\_accept()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a8c7b4d30f5beb8af74b805647babd0f5} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+accept (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a96728acbdb78a49b30af0b2a83526583}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_bad\_token\_message@{\_bad\_token\_message}}
+\index{\_bad\_token\_message@{\_bad\_token\_message}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_bad\_token\_message()}{\_bad\_token\_message()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a96728acbdb78a49b30af0b2a83526583} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+bad\+\_\+token\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{reason}{, }\item[{}]{token\+\_\+source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a386bc6b6f885761a1f60cc8ae62941e4}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_check\_referer@{\_check\_referer}}
+\index{\_check\_referer@{\_check\_referer}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_check\_referer()}{\_check\_referer()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a386bc6b6f885761a1f60cc8ae62941e4} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+check\+\_\+referer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a42df5b5917b64c8c7496841732f80444}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_check\_token@{\_check\_token}}
+\index{\_check\_token@{\_check\_token}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_check\_token()}{\_check\_token()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a42df5b5917b64c8c7496841732f80444} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+check\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_aae95bde23eb97afc5b9c88a26eedae8f}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_get\_secret@{\_get\_secret}}
+\index{\_get\_secret@{\_get\_secret}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_get\_secret()}{\_get\_secret()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_aae95bde23eb97afc5b9c88a26eedae8f} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+get\+\_\+secret (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the CSRF secret originally associated with the request, or None
+if it didn't have one.
+
+If the CSRF_USE_SESSIONS setting is false, raises InvalidTokenFormat if
+the request's secret has invalid characters or an invalid length.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a88376bcc8f3450b8aa8525250800da96}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_origin\_verified@{\_origin\_verified}}
+\index{\_origin\_verified@{\_origin\_verified}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_origin\_verified()}{\_origin\_verified()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a88376bcc8f3450b8aa8525250800da96} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+origin\+\_\+verified (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a7ef924aad88aeb475978d532c786377e}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_reject@{\_reject}}
+\index{\_reject@{\_reject}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_reject()}{\_reject()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a7ef924aad88aeb475978d532c786377e} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+reject (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{reason}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1___ensure_csrf_cookie_a0bd7015011ad143b3d14e642f6c91f44}{django.\+views.\+decorators.\+csrf.\+\_\+\+Ensure\+Csrf\+Cookie}}, and \mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1___ensure_csrf_token_ad6e2cfac40237c10227349a229f3cdcc}{django.\+views.\+decorators.\+csrf.\+\_\+\+Ensure\+Csrf\+Token}}.
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a5f42ce4d8e5663caeaa947b159f7ae86}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!\_set\_csrf\_cookie@{\_set\_csrf\_cookie}}
+\index{\_set\_csrf\_cookie@{\_set\_csrf\_cookie}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_set\_csrf\_cookie()}{\_set\_csrf\_cookie()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a5f42ce4d8e5663caeaa947b159f7ae86} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+\_\+set\+\_\+csrf\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a907d146b39b00c78e6aa28e0ae9a9e9c}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!allowed\_origin\_subdomains@{allowed\_origin\_subdomains}}
+\index{allowed\_origin\_subdomains@{allowed\_origin\_subdomains}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{allowed\_origin\_subdomains()}{allowed\_origin\_subdomains()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a907d146b39b00c78e6aa28e0ae9a9e9c} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+allowed\+\_\+origin\+\_\+subdomains (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A mapping of allowed schemes to list of allowed netlocs, where all
+subdomains of the netloc are allowed.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_affdeb2be4ed79ed642d5ab0e51354121}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!allowed\_origins\_exact@{allowed\_origins\_exact}}
+\index{allowed\_origins\_exact@{allowed\_origins\_exact}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{allowed\_origins\_exact()}{allowed\_origins\_exact()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_affdeb2be4ed79ed642d5ab0e51354121} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+allowed\+\_\+origins\+\_\+exact (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_aec505eee529b3a994c93a91b378db144}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!csrf\_trusted\_origins\_hosts@{csrf\_trusted\_origins\_hosts}}
+\index{csrf\_trusted\_origins\_hosts@{csrf\_trusted\_origins\_hosts}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{csrf\_trusted\_origins\_hosts()}{csrf\_trusted\_origins\_hosts()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_aec505eee529b3a994c93a91b378db144} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+csrf\+\_\+trusted\+\_\+origins\+\_\+hosts (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a093f9959c6543fdec577c69b41fefcee}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_request()}{process\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a093f9959c6543fdec577c69b41fefcee} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+process\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a4f5197591f5523133e6f6de6eebc1cf5}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!process\_response@{process\_response}}
+\index{process\_response@{process\_response}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_response()}{process\_response()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a4f5197591f5523133e6f6de6eebc1cf5} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+process\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a9b25cdf2d6490558e21ecb99654df3e8}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!process\_view@{process\_view}}
+\index{process\_view@{process\_view}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_view()}{process\_view()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a9b25cdf2d6490558e21ecb99654df3e8} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+process\+\_\+view (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{callback}{, }\item[{}]{callback\+\_\+args}{, }\item[{}]{callback\+\_\+kwargs}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1___ensure_csrf_cookie_a5687dd3d9233a9e597d7b9b0f0d45c0c}{django.\+views.\+decorators.\+csrf.\+\_\+\+Ensure\+Csrf\+Cookie}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a1fe8508b4c8bf96ed757424703b466c0}\index{django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}!allowed\_origins\_exact@{allowed\_origins\_exact}}
+\index{allowed\_origins\_exact@{allowed\_origins\_exact}!django.middleware.csrf.CsrfViewMiddleware@{django.middleware.csrf.CsrfViewMiddleware}}
+\doxysubsubsection{\texorpdfstring{allowed\_origins\_exact}{allowed\_origins\_exact}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1csrf_1_1_csrf_view_middleware_a1fe8508b4c8bf96ed757424703b466c0} 
+django.\+middleware.\+csrf.\+Csrf\+View\+Middleware.\+allowed\+\_\+origins\+\_\+exact}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/middleware/\mbox{\hyperlink{middleware_2csrf_8py}{csrf.\+py}}\end{DoxyCompactItemize}

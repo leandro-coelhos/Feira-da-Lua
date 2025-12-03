@@ -1,0 +1,79 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+deprecation Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation}{}\label{namespacepip_1_1__internal_1_1utils_1_1deprecation}\index{pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1deprecation_1_1_pip_deprecation_warning}{Pip\+Deprecation\+Warning}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1deprecation_a3c9100bf36745a4849dfb00c4d51f232}{\+\_\+showwarning}} (Warning\texorpdfstring{$\vert$}{|}str message, type\mbox{[}Warning\mbox{]} category, str filename, int lineno, Text\+IO\texorpdfstring{$\vert$}{|}None file=None, str\texorpdfstring{$\vert$}{|}None line=None)
+\item 
+None \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1deprecation_a5471a21cc58203716a03506a3ff24833}{install\+\_\+warning\+\_\+logger}} ()
+\item 
+None \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1deprecation_a42eb4809c4564e7a75d4b0bdad7cea36}{deprecated}} (\texorpdfstring{$\ast$}{*}, str reason, str\texorpdfstring{$\vert$}{|}None replacement, str\texorpdfstring{$\vert$}{|}None gone\+\_\+in, str\texorpdfstring{$\vert$}{|}None feature\+\_\+flag=None, int\texorpdfstring{$\vert$}{|}None issue=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1deprecation_a3176d2d41041fdb856821e895c6aa460}{DEPRECATION\+\_\+\+MSG\+\_\+\+PREFIX}} = "{}DEPRECATION\+: "{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A module that implements tooling to enable easy warnings about deprecations.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation_a3c9100bf36745a4849dfb00c4d51f232}\index{pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}!\_showwarning@{\_showwarning}}
+\index{\_showwarning@{\_showwarning}!pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}}
+\doxysubsubsection{\texorpdfstring{\_showwarning()}{\_showwarning()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1deprecation_a3c9100bf36745a4849dfb00c4d51f232} 
+ None pip.\+\_\+internal.\+utils.\+deprecation.\+\_\+showwarning (\begin{DoxyParamCaption}\item[{Warning \texorpdfstring{$\vert$}{|} str}]{message}{, }\item[{type\mbox{[}Warning\mbox{]}}]{category}{, }\item[{str}]{filename}{, }\item[{int}]{lineno}{, }\item[{Text\+IO \texorpdfstring{$\vert$}{|} None }]{file}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{line}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation_a42eb4809c4564e7a75d4b0bdad7cea36}\index{pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}!deprecated@{deprecated}}
+\index{deprecated@{deprecated}!pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}}
+\doxysubsubsection{\texorpdfstring{deprecated()}{deprecated()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1deprecation_a42eb4809c4564e7a75d4b0bdad7cea36} 
+ None pip.\+\_\+internal.\+utils.\+deprecation.\+deprecated (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str}]{reason}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{replacement}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{gone\+\_\+in}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{feature\+\_\+flag}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{issue}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper to deprecate existing functionality.
+
+reason:
+    Textual reason shown to the user about why this functionality has
+    been deprecated. Should be a complete sentence.
+replacement:
+    Textual suggestion shown to the user about what alternative
+    functionality they can use.
+gone_in:
+    The version of pip does this functionality should get removed in.
+    Raises an error if pip's current version is greater than or equal to
+    this.
+feature_flag:
+    Command-line flag of the form --use-feature={feature_flag} for testing
+    upcoming functionality.
+issue:
+    Issue number on the tracker that would serve as a useful place for
+    users to find related discussion and provide feedback.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation_a5471a21cc58203716a03506a3ff24833}\index{pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}!install\_warning\_logger@{install\_warning\_logger}}
+\index{install\_warning\_logger@{install\_warning\_logger}!pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}}
+\doxysubsubsection{\texorpdfstring{install\_warning\_logger()}{install\_warning\_logger()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1deprecation_a5471a21cc58203716a03506a3ff24833} 
+ None pip.\+\_\+internal.\+utils.\+deprecation.\+install\+\_\+warning\+\_\+logger (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1deprecation_a3176d2d41041fdb856821e895c6aa460}\index{pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}!DEPRECATION\_MSG\_PREFIX@{DEPRECATION\_MSG\_PREFIX}}
+\index{DEPRECATION\_MSG\_PREFIX@{DEPRECATION\_MSG\_PREFIX}!pip.\_internal.utils.deprecation@{pip.\_internal.utils.deprecation}}
+\doxysubsubsection{\texorpdfstring{DEPRECATION\_MSG\_PREFIX}{DEPRECATION\_MSG\_PREFIX}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1deprecation_a3176d2d41041fdb856821e895c6aa460} 
+str pip.\+\_\+internal.\+utils.\+deprecation.\+DEPRECATION\+\_\+\+MSG\+\_\+\+PREFIX = "{}DEPRECATION\+: "{}}
+

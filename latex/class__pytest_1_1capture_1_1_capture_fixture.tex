@@ -1,0 +1,168 @@
+\doxysection{\+\_\+pytest.\+capture.\+Capture\+Fixture Class Reference}
+\hypertarget{class__pytest_1_1capture_1_1_capture_fixture}{}\label{class__pytest_1_1capture_1_1_capture_fixture}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+Inheritance diagram for \+\_\+pytest.\+capture.\+Capture\+Fixture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class__pytest_1_1capture_1_1_capture_fixture}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a4cdc6d1ca025512a8c58ddc069d76d10}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, type\mbox{[}\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base}{Capture\+Base}}\mbox{[}Any\+Str\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a1f7d9fe54d021281af05cac678c5ca8a}{captureclass}}, \mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}} \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_adfcaf66fb993d7b6f9eadc9bf7dbebad}{request}}, \texorpdfstring{$\ast$}{*}, dict\mbox{[}str, Any\mbox{]}\texorpdfstring{$\vert$}{|}None config=None, bool \+\_\+ispytest=False)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_ac018b3a02c2aff2047974ced57907cd0}{close}} (self)
+\item 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_result}{Capture\+Result}}\mbox{[}Any\+Str\mbox{]} \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_ac8a4cacb987e94dba9aa1fa778a2ba59}{readouterr}} (self)
+\item 
+Generator\mbox{[}None\mbox{]} \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a2019a14b122b6b8aaf5a39bd8ffbea2d}{disabled}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+type\mbox{[}\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base}{Capture\+Base}}\mbox{[}Any\+Str\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a1f7d9fe54d021281af05cac678c5ca8a}{captureclass}} = captureclass
+\item 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_adfcaf66fb993d7b6f9eadc9bf7dbebad}{request}} = request
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_af24955a9ae79b3e0988d7b45317bd190}{\+\_\+start}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_af7e17ef5bc60f2ad100ebac9df1cf009}{\+\_\+suspend}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_abc1d222d5983fb0b2a3f51cb38cb71c0}{\+\_\+resume}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_ac4e79c06e9f746ac45b86d1ff0e964a7}{\+\_\+is\+\_\+started}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a21aaa68cfbc58fdcb14b8be2f6e137f5}{\+\_\+config}} = config if config else \{\}
+\item 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_multi_capture}{Multi\+Capture}}\mbox{[}Any\+Str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_ab63f745ea35cd06369bc268c2bdd273b}{\+\_\+capture}} = None
+\item 
+Any\+Str \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a4a2981f15cbc6178fa07b80ca9f0b56f}{\+\_\+captured\+\_\+out}} = self.\+captureclass.\+EMPTY\+\_\+\+BUFFER
+\item 
+Any\+Str \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_fixture_a21129770eac62c1bbbe5f506931d998c}{\+\_\+captured\+\_\+err}} = self.\+captureclass.\+EMPTY\+\_\+\+BUFFER
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Object returned by the :fixture:`capsys`, :fixture:`capsysbinary`,
+:fixture:`capfd` and :fixture:`capfdbinary` fixtures.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a4cdc6d1ca025512a8c58ddc069d76d10}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_a4cdc6d1ca025512a8c58ddc069d76d10} 
+ None \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\mbox{[}\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base}{Capture\+Base}}\mbox{[}Any\+Str\mbox{]}\mbox{]}}]{captureclass}{, }\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}}}]{request}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{dict\mbox{[}str, Any\mbox{]} \texorpdfstring{$\vert$}{|} None }]{config}{ = {\ttfamily None}, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_ac4e79c06e9f746ac45b86d1ff0e964a7}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_is\_started@{\_is\_started}}
+\index{\_is\_started@{\_is\_started}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_is\_started()}{\_is\_started()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_ac4e79c06e9f746ac45b86d1ff0e964a7} 
+ bool \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+is\+\_\+started (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Whether actively capturing -- not disabled or closed.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_abc1d222d5983fb0b2a3f51cb38cb71c0}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_resume@{\_resume}}
+\index{\_resume@{\_resume}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_resume()}{\_resume()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_abc1d222d5983fb0b2a3f51cb38cb71c0} 
+ None \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+resume (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Resume this fixture's own capturing temporarily.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_af24955a9ae79b3e0988d7b45317bd190}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_start@{\_start}}
+\index{\_start@{\_start}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_start()}{\_start()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_af24955a9ae79b3e0988d7b45317bd190} 
+ None \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_af7e17ef5bc60f2ad100ebac9df1cf009}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_suspend@{\_suspend}}
+\index{\_suspend@{\_suspend}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_suspend()}{\_suspend()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_af7e17ef5bc60f2ad100ebac9df1cf009} 
+ None \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+suspend (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Suspend this fixture's own capturing temporarily.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_ac018b3a02c2aff2047974ced57907cd0}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!close@{close}}
+\index{close@{close}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_ac018b3a02c2aff2047974ced57907cd0} 
+ None \+\_\+pytest.\+capture.\+Capture\+Fixture.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a2019a14b122b6b8aaf5a39bd8ffbea2d}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!disabled@{disabled}}
+\index{disabled@{disabled}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{disabled()}{disabled()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_a2019a14b122b6b8aaf5a39bd8ffbea2d} 
+ Generator\mbox{[}None\mbox{]} \+\_\+pytest.\+capture.\+Capture\+Fixture.\+disabled (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Temporarily disable capturing while inside the ``with`` block.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_ac8a4cacb987e94dba9aa1fa778a2ba59}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!readouterr@{readouterr}}
+\index{readouterr@{readouterr}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{readouterr()}{readouterr()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_ac8a4cacb987e94dba9aa1fa778a2ba59} 
+ \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_result}{Capture\+Result}}\mbox{[}Any\+Str\mbox{]} \+\_\+pytest.\+capture.\+Capture\+Fixture.\+readouterr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read and return the captured output so far, resetting the internal
+buffer.
+
+:returns:
+    The captured content as a namedtuple with ``out`` and ``err``
+    string attributes.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_ab63f745ea35cd06369bc268c2bdd273b}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_capture@{\_capture}}
+\index{\_capture@{\_capture}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_capture}{\_capture}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_ab63f745ea35cd06369bc268c2bdd273b} 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_multi_capture}{Multi\+Capture}}\mbox{[}Any\+Str\mbox{]} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+capture = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a21129770eac62c1bbbe5f506931d998c}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_captured\_err@{\_captured\_err}}
+\index{\_captured\_err@{\_captured\_err}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_captured\_err}{\_captured\_err}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_a21129770eac62c1bbbe5f506931d998c} 
+Any\+Str \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+captured\+\_\+err = self.\+captureclass.\+EMPTY\+\_\+\+BUFFER\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a4a2981f15cbc6178fa07b80ca9f0b56f}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_captured\_out@{\_captured\_out}}
+\index{\_captured\_out@{\_captured\_out}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_captured\_out}{\_captured\_out}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_a4a2981f15cbc6178fa07b80ca9f0b56f} 
+Any\+Str \+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+captured\+\_\+out = self.\+captureclass.\+EMPTY\+\_\+\+BUFFER\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a21aaa68cfbc58fdcb14b8be2f6e137f5}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!\_config@{\_config}}
+\index{\_config@{\_config}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{\_config}{\_config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_a21aaa68cfbc58fdcb14b8be2f6e137f5} 
+\+\_\+pytest.\+capture.\+Capture\+Fixture.\+\_\+config = config if config else \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_a1f7d9fe54d021281af05cac678c5ca8a}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!captureclass@{captureclass}}
+\index{captureclass@{captureclass}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{captureclass}{captureclass}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_a1f7d9fe54d021281af05cac678c5ca8a} 
+type\mbox{[}\mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base}{Capture\+Base}}\mbox{[}Any\+Str\mbox{]}\mbox{]} \+\_\+pytest.\+capture.\+Capture\+Fixture.\+captureclass = captureclass}
+
+\Hypertarget{class__pytest_1_1capture_1_1_capture_fixture_adfcaf66fb993d7b6f9eadc9bf7dbebad}\index{\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}!request@{request}}
+\index{request@{request}!\_pytest.capture.CaptureFixture@{\_pytest.capture.CaptureFixture}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_capture_fixture_adfcaf66fb993d7b6f9eadc9bf7dbebad} 
+\+\_\+pytest.\+capture.\+Capture\+Fixture.\+request = request}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{capture_8py}{capture.\+py}}\end{DoxyCompactItemize}

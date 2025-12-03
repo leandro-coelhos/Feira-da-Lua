@@ -1,0 +1,161 @@
+\doxysection{\+\_\+pytest.\+capture.\+Sys\+Capture\+Base Class Reference}
+\hypertarget{class__pytest_1_1capture_1_1_sys_capture_base}{}\label{class__pytest_1_1capture_1_1_sys_capture_base}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+Inheritance diagram for \+\_\+pytest.\+capture.\+Sys\+Capture\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.489097cm]{class__pytest_1_1capture_1_1_sys_capture_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a5cf018132ca4c277281d54faa369c1c5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int fd, Text\+IO\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a234018c6cdf31c1690f397239d3b52b7}{tmpfile}}=None, \texorpdfstring{$\ast$}{*}, bool tee=False)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a5f1dc12610c551c226242079513238df}{repr}} (self, str class\+\_\+name)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_abfe2012f2a8841c51848da2d06ccb2d6}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a6b073e20650b42405958221a49a44f1b}{start}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a49491ca614c69dea26f252feec0cba16}{done}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a01d5b54828e5066fa32c241528daf760}{suspend}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_aa33d10910c9ed58c39dfeeb1305ea11f}{resume}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base}{\+\_\+pytest.\+capture.\+Capture\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_ac797fd7af7ac6823c823d9e9db586879}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int fd)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_ae3dae53d429b08ace07b28250697ea19}{writeorg}} (self, Any\+Str data)
+\item 
+Any\+Str \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_a8954aea12269b055e8ecbc00be4edbd1}{snap}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_aa054f3eb91aeeba61d56c8bca729a503}{name}} = name
+\item 
+\mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a234018c6cdf31c1690f397239d3b52b7}{tmpfile}} = tmpfile
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a293507aee8f3b635c10e6f40da524335}{\+\_\+assert\+\_\+state}} (self, str op, tuple\mbox{[}str,...\mbox{]} states)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+IO \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a3b89f57cd604d0b8b0a2f4699fcc4055}{\+\_\+old}} = getattr(sys, \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_aa054f3eb91aeeba61d56c8bca729a503}{name}})
+\item 
+str \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_a92a0de644366466df1e6154c4b97223e}{\+\_\+state}} = "{}initialized"{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a5cf018132ca4c277281d54faa369c1c5}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a5cf018132ca4c277281d54faa369c1c5} 
+ None \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{fd}{, }\item[{Text\+IO \texorpdfstring{$\vert$}{|} None }]{tmpfile}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{tee}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_abfe2012f2a8841c51848da2d06ccb2d6}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_abfe2012f2a8841c51848da2d06ccb2d6} 
+ str \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a293507aee8f3b635c10e6f40da524335}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!\_assert\_state@{\_assert\_state}}
+\index{\_assert\_state@{\_assert\_state}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{\_assert\_state()}{\_assert\_state()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a293507aee8f3b635c10e6f40da524335} 
+ None \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+\_\+assert\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{op}{, }\item[{tuple\mbox{[}str, ...\mbox{]}}]{states}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a49491ca614c69dea26f252feec0cba16}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!done@{done}}
+\index{done@{done}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a49491ca614c69dea26f252feec0cba16} 
+ None \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+done (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_a252cc9ae56771a7c80f5541e1700cdab}{\+\_\+pytest.\+capture.\+Capture\+Base}}.
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a5f1dc12610c551c226242079513238df}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!repr@{repr}}
+\index{repr@{repr}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{repr()}{repr()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a5f1dc12610c551c226242079513238df} 
+ str \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{class\+\_\+name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_aa33d10910c9ed58c39dfeeb1305ea11f}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!resume@{resume}}
+\index{resume@{resume}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_aa33d10910c9ed58c39dfeeb1305ea11f} 
+ None \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+resume (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_a1eb9e36b250649b2fa4a2002d559d289}{\+\_\+pytest.\+capture.\+Capture\+Base}}.
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a6b073e20650b42405958221a49a44f1b}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!start@{start}}
+\index{start@{start}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a6b073e20650b42405958221a49a44f1b} 
+ None \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_aa950255d21f396239be8f4f8ce14e8c9}{\+\_\+pytest.\+capture.\+Capture\+Base}}.
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a01d5b54828e5066fa32c241528daf760}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!suspend@{suspend}}
+\index{suspend@{suspend}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{suspend()}{suspend()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a01d5b54828e5066fa32c241528daf760} 
+ None \+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+suspend (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class__pytest_1_1capture_1_1_capture_base_a144d0c06bc5ec92f1f10d6f0bf4f9d46}{\+\_\+pytest.\+capture.\+Capture\+Base}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a3b89f57cd604d0b8b0a2f4699fcc4055}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!\_old@{\_old}}
+\index{\_old@{\_old}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{\_old}{\_old}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a3b89f57cd604d0b8b0a2f4699fcc4055} 
+\+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+\_\+old = getattr(sys, \mbox{\hyperlink{class__pytest_1_1capture_1_1_sys_capture_base_aa054f3eb91aeeba61d56c8bca729a503}{name}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a92a0de644366466df1e6154c4b97223e}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!\_state@{\_state}}
+\index{\_state@{\_state}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{\_state}{\_state}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a92a0de644366466df1e6154c4b97223e} 
+\+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+\_\+state = "{}initialized"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_aa054f3eb91aeeba61d56c8bca729a503}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!name@{name}}
+\index{name@{name}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_aa054f3eb91aeeba61d56c8bca729a503} 
+\+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+name = name}
+
+\Hypertarget{class__pytest_1_1capture_1_1_sys_capture_base_a234018c6cdf31c1690f397239d3b52b7}\index{\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}!tmpfile@{tmpfile}}
+\index{tmpfile@{tmpfile}!\_pytest.capture.SysCaptureBase@{\_pytest.capture.SysCaptureBase}}
+\doxysubsubsection{\texorpdfstring{tmpfile}{tmpfile}}
+{\footnotesize\ttfamily \label{class__pytest_1_1capture_1_1_sys_capture_base_a234018c6cdf31c1690f397239d3b52b7} 
+\+\_\+pytest.\+capture.\+Sys\+Capture\+Base.\+tmpfile = tmpfile}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{capture_8py}{capture.\+py}}\end{DoxyCompactItemize}

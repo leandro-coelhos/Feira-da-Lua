@@ -1,0 +1,96 @@
+\doxysection{pip.\+\_\+internal.\+network.\+download Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1network_1_1download}{}\label{namespacepip_1_1__internal_1_1network_1_1download}\index{pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1download_1_1___file_download}{\+\_\+\+File\+Download}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1download_1_1_downloader}{Downloader}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_a88b131570ef748a4e5a712bc0a823a4e}{\+\_\+get\+\_\+http\+\_\+response\+\_\+size}} (\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}} resp)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_aa10cf9c3e1d08d9e0adba4cd7aef4df9}{\+\_\+get\+\_\+http\+\_\+response\+\_\+etag\+\_\+or\+\_\+last\+\_\+modified}} (\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}} resp)
+\item 
+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_a22acbfbc6e47408746c40cc74f85b11a}{\+\_\+log\+\_\+download}} (\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}} resp, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link, Bar\+Type progress\+\_\+bar, int\texorpdfstring{$\vert$}{|}None total\+\_\+length, int\texorpdfstring{$\vert$}{|}None range\+\_\+start=0)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_a2cea24bcd49c1a167e8c467d04d40d86}{sanitize\+\_\+content\+\_\+filename}} (str filename)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_a86fd58558cc366a62a60fd8368675c6b}{parse\+\_\+content\+\_\+disposition}} (str content\+\_\+disposition, str default\+\_\+filename)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_ab698493861abf8f5e6e30ff4fd729615}{\+\_\+get\+\_\+http\+\_\+response\+\_\+filename}} (\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}} resp, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1download_a502f6c96b5e357b7f9e35d56085ea942}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Download files with progress indicators.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_aa10cf9c3e1d08d9e0adba4cd7aef4df9}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!\_get\_http\_response\_etag\_or\_last\_modified@{\_get\_http\_response\_etag\_or\_last\_modified}}
+\index{\_get\_http\_response\_etag\_or\_last\_modified@{\_get\_http\_response\_etag\_or\_last\_modified}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{\_get\_http\_response\_etag\_or\_last\_modified()}{\_get\_http\_response\_etag\_or\_last\_modified()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_aa10cf9c3e1d08d9e0adba4cd7aef4df9} 
+ str \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+network.\+download.\+\_\+get\+\_\+http\+\_\+response\+\_\+etag\+\_\+or\+\_\+last\+\_\+modified (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}}}]{resp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return either the ETag or Last-Modified header (or None if neither exists).
+The return value can be used in an If-Range header.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_ab698493861abf8f5e6e30ff4fd729615}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!\_get\_http\_response\_filename@{\_get\_http\_response\_filename}}
+\index{\_get\_http\_response\_filename@{\_get\_http\_response\_filename}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{\_get\_http\_response\_filename()}{\_get\_http\_response\_filename()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_ab698493861abf8f5e6e30ff4fd729615} 
+ str pip.\+\_\+internal.\+network.\+download.\+\_\+get\+\_\+http\+\_\+response\+\_\+filename (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}}}]{resp}{, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}}]{link}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get an ideal filename from the given HTTP response, falling back to
+the link filename if not provided.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_a88b131570ef748a4e5a712bc0a823a4e}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!\_get\_http\_response\_size@{\_get\_http\_response\_size}}
+\index{\_get\_http\_response\_size@{\_get\_http\_response\_size}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{\_get\_http\_response\_size()}{\_get\_http\_response\_size()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_a88b131570ef748a4e5a712bc0a823a4e} 
+ int \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+network.\+download.\+\_\+get\+\_\+http\+\_\+response\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}}}]{resp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_a22acbfbc6e47408746c40cc74f85b11a}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!\_log\_download@{\_log\_download}}
+\index{\_log\_download@{\_log\_download}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{\_log\_download()}{\_log\_download()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_a22acbfbc6e47408746c40cc74f85b11a} 
+ Iterable\mbox{[}bytes\mbox{]} pip.\+\_\+internal.\+network.\+download.\+\_\+log\+\_\+download (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1models_1_1_response}{Response}}}]{resp}{, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}}]{link}{, }\item[{Bar\+Type}]{progress\+\_\+bar}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{total\+\_\+length}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{range\+\_\+start}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_a86fd58558cc366a62a60fd8368675c6b}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!parse\_content\_disposition@{parse\_content\_disposition}}
+\index{parse\_content\_disposition@{parse\_content\_disposition}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{parse\_content\_disposition()}{parse\_content\_disposition()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_a86fd58558cc366a62a60fd8368675c6b} 
+ str pip.\+\_\+internal.\+network.\+download.\+parse\+\_\+content\+\_\+disposition (\begin{DoxyParamCaption}\item[{str}]{content\+\_\+disposition}{, }\item[{str}]{default\+\_\+filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the "filename" value from a Content-Disposition header, and
+return the default filename if the result is empty.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_a2cea24bcd49c1a167e8c467d04d40d86}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!sanitize\_content\_filename@{sanitize\_content\_filename}}
+\index{sanitize\_content\_filename@{sanitize\_content\_filename}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{sanitize\_content\_filename()}{sanitize\_content\_filename()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_a2cea24bcd49c1a167e8c467d04d40d86} 
+ str pip.\+\_\+internal.\+network.\+download.\+sanitize\+\_\+content\+\_\+filename (\begin{DoxyParamCaption}\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sanitize the "filename" value from a Content-Disposition header.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1network_1_1download_a502f6c96b5e357b7f9e35d56085ea942}\index{pip.\_internal.network.download@{pip.\_internal.network.download}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.network.download@{pip.\_internal.network.download}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1network_1_1download_a502f6c96b5e357b7f9e35d56085ea942} 
+pip.\+\_\+internal.\+network.\+download.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

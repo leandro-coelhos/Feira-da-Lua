@@ -1,0 +1,157 @@
+\doxysection{urllib3.\+connection Namespace Reference}
+\hypertarget{namespaceurllib3_1_1connection}{}\label{namespaceurllib3_1_1connection}\index{urllib3.connection@{urllib3.connection}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1connection_1_1___wrapped_and_verified_socket}{\+\_\+\+Wrapped\+And\+Verified\+Socket}}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1connection_1_1_base_s_s_l_error}{Base\+SSLError}}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1connection_1_1_dummy_connection}{Dummy\+Connection}}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{HTTPConnection}}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{HTTPSConnection}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1connection_1_1___wrapped_and_verified_socket}{\+\_\+\+Wrapped\+And\+Verified\+Socket}} \mbox{\hyperlink{namespaceurllib3_1_1connection_a6f36dd1064df360d188ef2b068e8dccd}{\+\_\+ssl\+\_\+wrap\+\_\+socket\+\_\+and\+\_\+match\+\_\+hostname}} (socket.\+socket sock, \texorpdfstring{$\ast$}{*}, None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}int cert\+\_\+reqs, None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}int ssl\+\_\+version, int\texorpdfstring{$\vert$}{|}None ssl\+\_\+minimum\+\_\+version, int\texorpdfstring{$\vert$}{|}None ssl\+\_\+maximum\+\_\+version, str\texorpdfstring{$\vert$}{|}None cert\+\_\+file, str\texorpdfstring{$\vert$}{|}None key\+\_\+file, str\texorpdfstring{$\vert$}{|}None key\+\_\+password, str\texorpdfstring{$\vert$}{|}None ca\+\_\+certs, str\texorpdfstring{$\vert$}{|}None ca\+\_\+cert\+\_\+dir, None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}bytes ca\+\_\+cert\+\_\+data, None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}typing.\+Literal\mbox{[}False\mbox{]} assert\+\_\+hostname, str\texorpdfstring{$\vert$}{|}None assert\+\_\+fingerprint, str\texorpdfstring{$\vert$}{|}None server\+\_\+hostname, ssl.\+SSLContext\texorpdfstring{$\vert$}{|}None ssl\+\_\+context, bool tls\+\_\+in\+\_\+tls=False)
+\item 
+None \mbox{\hyperlink{namespaceurllib3_1_1connection_a3bdd44d44d738e24351cfa8d48901081}{\+\_\+match\+\_\+hostname}} (\mbox{\hyperlink{classurllib3_1_1util_1_1ssl___1_1___t_y_p_e___p_e_e_r___c_e_r_t___r_e_t___d_i_c_t}{\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET\+\_\+\+DICT}}\texorpdfstring{$\vert$}{|}None cert, str asserted\+\_\+hostname, bool hostname\+\_\+checks\+\_\+common\+\_\+name=False)
+\item 
+\mbox{\hyperlink{classurllib3_1_1exceptions_1_1_proxy_error}{Proxy\+Error}} \mbox{\hyperlink{namespaceurllib3_1_1connection_a7576fccbbdf735473a403b4ee7981332}{\+\_\+wrap\+\_\+proxy\+\_\+error}} (Exception err, str\texorpdfstring{$\vert$}{|}None proxy\+\_\+scheme)
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1connection_ad4284a84a783e20d70d6a91d7ea9c8fc}{\+\_\+get\+\_\+default\+\_\+user\+\_\+agent}} ()
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1connection_ac17669b97da01f7bd786677ac7fcbe12}{\+\_\+url\+\_\+from\+\_\+connection}} (\mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{HTTPConnection}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{HTTPSConnection}} conn, str\texorpdfstring{$\vert$}{|}None path=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_a24df56ff6559af80ba44f7c32d971920}{Base\+SSLError}} = ssl.\+SSLError
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_ab714463a1adda171bf29a2d78eb552c2}{ssl}} = None
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_aefd220f86f2ca9170aecb3b7a6d0a4e7}{Connection\+Error}} = Connection\+Error
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_afd47037a4ea06c01f59661b4d7ff8037}{Broken\+Pipe\+Error}} = Broken\+Pipe\+Error
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_aed1e4dbc4bfbd35381824454c1b4664e}{log}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+dict \mbox{\hyperlink{namespaceurllib3_1_1connection_ac7c58106547bc5721e67be84e8d88a5b}{port\+\_\+by\+\_\+scheme}} = \{"{}http"{}\+: 80, "{}https"{}\+: 443\}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_a0d4f8e0ac03d437ec09f51802c685b6a}{RECENT\+\_\+\+DATE}} = datetime.\+date(2025, 1, 1)
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_a0c47ea7f7a34323c0983aedf4ad3e9a6}{\+\_\+\+CONTAINS\+\_\+\+CONTROL\+\_\+\+CHAR\+\_\+\+RE}} = re.\+compile(r"{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}-\/!\#\$\%\&\textquotesingle{}\texorpdfstring{$\ast$}{*}+.\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}0-\/9a-\/zA-\/Z\mbox{]}"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_a4dc6b0da8b6cd21438f08bae0dd2ee4d}{HTTPSConnection}} = \mbox{\hyperlink{classurllib3_1_1connection_1_1_dummy_connection}{Dummy\+Connection}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1connection_a491c6f84b91cb7be696c071e8fc60a3c}{Verified\+HTTPSConnection}} = \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{HTTPSConnection}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceurllib3_1_1connection_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceurllib3_1_1connection_ad4284a84a783e20d70d6a91d7ea9c8fc}\index{urllib3.connection@{urllib3.connection}!\_get\_default\_user\_agent@{\_get\_default\_user\_agent}}
+\index{\_get\_default\_user\_agent@{\_get\_default\_user\_agent}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{\_get\_default\_user\_agent()}{\_get\_default\_user\_agent()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_ad4284a84a783e20d70d6a91d7ea9c8fc} 
+ str urllib3.\+connection.\+\_\+get\+\_\+default\+\_\+user\+\_\+agent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1connection_a3bdd44d44d738e24351cfa8d48901081}\index{urllib3.connection@{urllib3.connection}!\_match\_hostname@{\_match\_hostname}}
+\index{\_match\_hostname@{\_match\_hostname}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{\_match\_hostname()}{\_match\_hostname()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a3bdd44d44d738e24351cfa8d48901081} 
+ None urllib3.\+connection.\+\_\+match\+\_\+hostname (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classurllib3_1_1util_1_1ssl___1_1___t_y_p_e___p_e_e_r___c_e_r_t___r_e_t___d_i_c_t}{\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET\+\_\+\+DICT}} \texorpdfstring{$\vert$}{|} None}]{cert}{, }\item[{str}]{asserted\+\_\+hostname}{, }\item[{bool }]{hostname\+\_\+checks\+\_\+common\+\_\+name}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1connection_a6f36dd1064df360d188ef2b068e8dccd}\index{urllib3.connection@{urllib3.connection}!\_ssl\_wrap\_socket\_and\_match\_hostname@{\_ssl\_wrap\_socket\_and\_match\_hostname}}
+\index{\_ssl\_wrap\_socket\_and\_match\_hostname@{\_ssl\_wrap\_socket\_and\_match\_hostname}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{\_ssl\_wrap\_socket\_and\_match\_hostname()}{\_ssl\_wrap\_socket\_and\_match\_hostname()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a6f36dd1064df360d188ef2b068e8dccd} 
+ \mbox{\hyperlink{classurllib3_1_1connection_1_1___wrapped_and_verified_socket}{\+\_\+\+Wrapped\+And\+Verified\+Socket}} urllib3.\+connection.\+\_\+ssl\+\_\+wrap\+\_\+socket\+\_\+and\+\_\+match\+\_\+hostname (\begin{DoxyParamCaption}\item[{socket.\+socket}]{sock}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{None \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} int}]{cert\+\_\+reqs}{, }\item[{None \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} int}]{ssl\+\_\+version}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{ssl\+\_\+minimum\+\_\+version}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{ssl\+\_\+maximum\+\_\+version}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{cert\+\_\+file}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{key\+\_\+file}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{key\+\_\+password}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{ca\+\_\+certs}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{ca\+\_\+cert\+\_\+dir}{, }\item[{None \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} bytes}]{ca\+\_\+cert\+\_\+data}{, }\item[{None \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} typing.\+Literal\mbox{[}False\mbox{]}}]{assert\+\_\+hostname}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{assert\+\_\+fingerprint}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{server\+\_\+hostname}{, }\item[{ssl.\+SSLContext \texorpdfstring{$\vert$}{|} None}]{ssl\+\_\+context}{, }\item[{bool }]{tls\+\_\+in\+\_\+tls}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Logic for constructing an SSLContext from all TLS parameters, passing
+that down into ssl_wrap_socket, and then doing certificate verification
+either via hostname or fingerprint. This function exists to guarantee
+that both proxies and targets have the same behavior when connecting via TLS.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1connection_ac17669b97da01f7bd786677ac7fcbe12}\index{urllib3.connection@{urllib3.connection}!\_url\_from\_connection@{\_url\_from\_connection}}
+\index{\_url\_from\_connection@{\_url\_from\_connection}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{\_url\_from\_connection()}{\_url\_from\_connection()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_ac17669b97da01f7bd786677ac7fcbe12} 
+ str urllib3.\+connection.\+\_\+url\+\_\+from\+\_\+connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{HTTPConnection}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{HTTPSConnection}}}]{conn}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns the URL from a given connection. This is mainly used for testing and logging.\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1connection_a7576fccbbdf735473a403b4ee7981332}\index{urllib3.connection@{urllib3.connection}!\_wrap\_proxy\_error@{\_wrap\_proxy\_error}}
+\index{\_wrap\_proxy\_error@{\_wrap\_proxy\_error}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{\_wrap\_proxy\_error()}{\_wrap\_proxy\_error()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a7576fccbbdf735473a403b4ee7981332} 
+ \mbox{\hyperlink{classurllib3_1_1exceptions_1_1_proxy_error}{Proxy\+Error}} urllib3.\+connection.\+\_\+wrap\+\_\+proxy\+\_\+error (\begin{DoxyParamCaption}\item[{Exception}]{err}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{proxy\+\_\+scheme}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespaceurllib3_1_1connection_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceurllib3_1_1connection_a0c47ea7f7a34323c0983aedf4ad3e9a6}\index{urllib3.connection@{urllib3.connection}!\_CONTAINS\_CONTROL\_CHAR\_RE@{\_CONTAINS\_CONTROL\_CHAR\_RE}}
+\index{\_CONTAINS\_CONTROL\_CHAR\_RE@{\_CONTAINS\_CONTROL\_CHAR\_RE}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{\_CONTAINS\_CONTROL\_CHAR\_RE}{\_CONTAINS\_CONTROL\_CHAR\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a0c47ea7f7a34323c0983aedf4ad3e9a6} 
+urllib3.\+connection.\+\_\+\+CONTAINS\+\_\+\+CONTROL\+\_\+\+CHAR\+\_\+\+RE = re.\+compile(r"{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}-\/!\#\$\%\&\textquotesingle{}\texorpdfstring{$\ast$}{*}+.\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}0-\/9a-\/zA-\/Z\mbox{]}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1connection_a24df56ff6559af80ba44f7c32d971920}\index{urllib3.connection@{urllib3.connection}!BaseSSLError@{BaseSSLError}}
+\index{BaseSSLError@{BaseSSLError}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{BaseSSLError}{BaseSSLError}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a24df56ff6559af80ba44f7c32d971920} 
+urllib3.\+connection.\+Base\+SSLError = ssl.\+SSLError}
+
+\Hypertarget{namespaceurllib3_1_1connection_afd47037a4ea06c01f59661b4d7ff8037}\index{urllib3.connection@{urllib3.connection}!BrokenPipeError@{BrokenPipeError}}
+\index{BrokenPipeError@{BrokenPipeError}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{BrokenPipeError}{BrokenPipeError}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_afd47037a4ea06c01f59661b4d7ff8037} 
+urllib3.\+connection.\+Broken\+Pipe\+Error = Broken\+Pipe\+Error}
+
+\Hypertarget{namespaceurllib3_1_1connection_aefd220f86f2ca9170aecb3b7a6d0a4e7}\index{urllib3.connection@{urllib3.connection}!ConnectionError@{ConnectionError}}
+\index{ConnectionError@{ConnectionError}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{ConnectionError}{ConnectionError}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_aefd220f86f2ca9170aecb3b7a6d0a4e7} 
+urllib3.\+connection.\+Connection\+Error = Connection\+Error}
+
+\Hypertarget{namespaceurllib3_1_1connection_a4dc6b0da8b6cd21438f08bae0dd2ee4d}\index{urllib3.connection@{urllib3.connection}!HTTPSConnection@{HTTPSConnection}}
+\index{HTTPSConnection@{HTTPSConnection}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{HTTPSConnection}{HTTPSConnection}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a4dc6b0da8b6cd21438f08bae0dd2ee4d} 
+urllib3.\+connection.\+HTTPSConnection = \mbox{\hyperlink{classurllib3_1_1connection_1_1_dummy_connection}{Dummy\+Connection}}}
+
+\Hypertarget{namespaceurllib3_1_1connection_aed1e4dbc4bfbd35381824454c1b4664e}\index{urllib3.connection@{urllib3.connection}!log@{log}}
+\index{log@{log}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_aed1e4dbc4bfbd35381824454c1b4664e} 
+urllib3.\+connection.\+log = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespaceurllib3_1_1connection_ac7c58106547bc5721e67be84e8d88a5b}\index{urllib3.connection@{urllib3.connection}!port\_by\_scheme@{port\_by\_scheme}}
+\index{port\_by\_scheme@{port\_by\_scheme}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{port\_by\_scheme}{port\_by\_scheme}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_ac7c58106547bc5721e67be84e8d88a5b} 
+dict urllib3.\+connection.\+port\+\_\+by\+\_\+scheme = \{"{}http"{}\+: 80, "{}https"{}\+: 443\}}
+
+\Hypertarget{namespaceurllib3_1_1connection_a0d4f8e0ac03d437ec09f51802c685b6a}\index{urllib3.connection@{urllib3.connection}!RECENT\_DATE@{RECENT\_DATE}}
+\index{RECENT\_DATE@{RECENT\_DATE}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{RECENT\_DATE}{RECENT\_DATE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a0d4f8e0ac03d437ec09f51802c685b6a} 
+urllib3.\+connection.\+RECENT\+\_\+\+DATE = datetime.\+date(2025, 1, 1)}
+
+\Hypertarget{namespaceurllib3_1_1connection_ab714463a1adda171bf29a2d78eb552c2}\index{urllib3.connection@{urllib3.connection}!ssl@{ssl}}
+\index{ssl@{ssl}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{ssl}{ssl}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_ab714463a1adda171bf29a2d78eb552c2} 
+urllib3.\+connection.\+ssl = None}
+
+\Hypertarget{namespaceurllib3_1_1connection_a491c6f84b91cb7be696c071e8fc60a3c}\index{urllib3.connection@{urllib3.connection}!VerifiedHTTPSConnection@{VerifiedHTTPSConnection}}
+\index{VerifiedHTTPSConnection@{VerifiedHTTPSConnection}!urllib3.connection@{urllib3.connection}}
+\doxysubsubsection{\texorpdfstring{VerifiedHTTPSConnection}{VerifiedHTTPSConnection}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1connection_a491c6f84b91cb7be696c071e8fc60a3c} 
+urllib3.\+connection.\+Verified\+HTTPSConnection = \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{HTTPSConnection}}}
+

@@ -1,0 +1,321 @@
+\doxysection{aiohttp.\+web\+\_\+log.\+Access\+Logger Class Reference}
+\hypertarget{classaiohttp_1_1web__log_1_1_access_logger}{}\label{classaiohttp_1_1web__log_1_1_access_logger}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+Inheritance diagram for aiohttp.\+web\+\_\+log.\+Access\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1web__log_1_1_access_logger}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a990bbe24a5d52b54c9a0116d32289aee}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, logging.\+Logger \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_aa6cc805a1d950b8ca9a3a73ef365ce95}{logger}}, str \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_a4ae5e6cd4d4ffcb3cef007ed04b369f3}{log\+\_\+format}}=\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{LOG\+\_\+\+FORMAT}})
+\item 
+Tuple\mbox{[}str, List\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__log_ad1c526df7fd288bd8c50e82e237a34d8}{Key\+Method}}\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_ae7a47766a1a6ca8082976adaad21c442}{compile\+\_\+format}} (self, str \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_a4ae5e6cd4d4ffcb3cef007ed04b369f3}{log\+\_\+format}})
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a775e3c75caeff55e878de5d6d669fd18}{enabled}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a9f9b2fe27cc4b7b3047a6914b8c1bb22}{log}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{aiohttp.\+abc.\+Abstract\+Access\+Logger}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_aec031f98c2cffdd3015cd3ae4a3a1a63}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, logging.\+Logger \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_aa6cc805a1d950b8ca9a3a73ef365ce95}{logger}}, str \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_a4ae5e6cd4d4ffcb3cef007ed04b369f3}{log\+\_\+format}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_aa893532b2df3df8c20e3f2a9735a555f}{LOG\+\_\+\+FORMAT\+\_\+\+MAP}}
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{LOG\+\_\+\+FORMAT}} = \textquotesingle{}\%a \%t "{}\%r"{} \%s \%b "{}\%\{Referer\}i"{} "{}\%\{User-\/Agent\}i"{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_af7b22c2dfb42b95afe57de2cf9ff0ce2}{FORMAT\+\_\+\+RE}} = re.\+compile(r"{}\%(\textbackslash{}\{(\mbox{[}A-\/Za-\/z0-\/9\textbackslash{}-\/\+\_\+\mbox{]}+)\textbackslash{}\}(\mbox{[}ioe\mbox{]})\texorpdfstring{$\vert$}{|}\mbox{[}at\+Prsb\+OD\mbox{]}\texorpdfstring{$\vert$}{|}Tf?)"{})
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_adb482eade8837198a10cec41cfee25a9}{CLEANUP\+\_\+\+RE}} = re.\+compile(r"{}(\%\mbox{[}\texorpdfstring{$^\wedge$}{\string^}s\mbox{]})"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Iterable\mbox{[}Tuple\mbox{[}str, Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}, float\mbox{]}, str\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_acd606f85479e3ad4145efce4519a4290}{\+\_\+format\+\_\+line}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a897276a8e3815bbb2d7eec7aeea17a8e}{\+\_\+format\+\_\+i}} (str key, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a30085a93713f44850e926f29303f17a3}{\+\_\+format\+\_\+o}} (str key, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a81c5b1773eca5aca4ac49f0477c1cd7d}{\+\_\+format\+\_\+a}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_aed263385b4d8a60a4c4c99c2509b5f12}{\+\_\+format\+\_\+t}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a4b38885a2fbde37fe6e7b27df5335338}{\+\_\+format\+\_\+P}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_aab021fbfd7929d01bed220b0c1f84bdd}{\+\_\+format\+\_\+r}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a2790212c967ff3eee90c1e07de82a922}{\+\_\+format\+\_\+s}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_ad4d35e199da4faca3a4bd88568eac065}{\+\_\+format\+\_\+b}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_ad886f674573bb13c689ef5d8590a56b1}{\+\_\+format\+\_\+T}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_af0048c94304c589507fc58f9c79e0dd7}{\+\_\+format\+\_\+\+Tf}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a70bb3ffd6785b2f02566f2f3700e8ac7}{\+\_\+format\+\_\+D}} (\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, float time)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a13a00dd238ad5f20e7fff440862553e1}{\+\_\+log\+\_\+format}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a2d1bb04dba190df2e379fa7e9ab0f355}{\+\_\+methods}} = \+\_\+compiled\+\_\+format
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_ae6624a7484d23190bc3d7b24603e6052}{\+\_\+\+FORMAT\+\_\+\+CACHE}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{aiohttp.\+abc.\+Abstract\+Access\+Logger}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_aa6cc805a1d950b8ca9a3a73ef365ce95}{logger}} = logger
+\item 
+\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_a4ae5e6cd4d4ffcb3cef007ed04b369f3}{log\+\_\+format}} = log\+\_\+format
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper object to log access.
+
+Usage:
+    log = logging.getLogger("spam")
+    log_format = "%a %{User-Agent}i"
+    access_logger = AccessLogger(log, log_format)
+    access_logger.log(request, response, time)
+
+Format:
+    %%  The percent sign
+    %a  Remote IP-address (IP-address of proxy if using reverse proxy)
+    %t  Time when the request was started to process
+    %P  The process ID of the child that serviced the request
+    %r  First line of request
+    %s  Response status code
+    %b  Size of response in bytes, including HTTP headers
+    %T  Time taken to serve the request, in seconds
+    %Tf Time taken to serve the request, in seconds with floating fraction
+        in .06f format
+    %D  Time taken to serve the request, in microseconds
+    %{FOO}i  request.headers['FOO']
+    %{FOO}o  response.headers['FOO']
+    %{FOO}e  os.environ['FOO']
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a990bbe24a5d52b54c9a0116d32289aee}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a990bbe24a5d52b54c9a0116d32289aee} 
+ None aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{logging.\+Logger}]{logger}{, }\item[{str }]{log\+\_\+format}{ = {\ttfamily \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{LOG\+\_\+\+FORMAT}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise the logger.
+
+logger is a logger object to be used for logging.
+log_format is a string with apache compatible log format description.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a81c5b1773eca5aca4ac49f0477c1cd7d}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_a@{\_format\_a}}
+\index{\_format\_a@{\_format\_a}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_a()}{\_format\_a()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a81c5b1773eca5aca4ac49f0477c1cd7d} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+a (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_ad4d35e199da4faca3a4bd88568eac065}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_b@{\_format\_b}}
+\index{\_format\_b@{\_format\_b}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_b()}{\_format\_b()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_ad4d35e199da4faca3a4bd88568eac065} 
+ int aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+b (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a70bb3ffd6785b2f02566f2f3700e8ac7}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_D@{\_format\_D}}
+\index{\_format\_D@{\_format\_D}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_D()}{\_format\_D()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a70bb3ffd6785b2f02566f2f3700e8ac7} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a897276a8e3815bbb2d7eec7aeea17a8e}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_i@{\_format\_i}}
+\index{\_format\_i@{\_format\_i}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_i()}{\_format\_i()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a897276a8e3815bbb2d7eec7aeea17a8e} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+i (\begin{DoxyParamCaption}\item[{str}]{key}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float     }]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_acd606f85479e3ad4145efce4519a4290}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_line@{\_format\_line}}
+\index{\_format\_line@{\_format\_line}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_line()}{\_format\_line()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_acd606f85479e3ad4145efce4519a4290} 
+ Iterable\mbox{[}Tuple\mbox{[}str, Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}, float\mbox{]}, str\mbox{]}\mbox{]}\mbox{]} aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float     }]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a30085a93713f44850e926f29303f17a3}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_o@{\_format\_o}}
+\index{\_format\_o@{\_format\_o}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_o()}{\_format\_o()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a30085a93713f44850e926f29303f17a3} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+o (\begin{DoxyParamCaption}\item[{str}]{key}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float     }]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a4b38885a2fbde37fe6e7b27df5335338}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_P@{\_format\_P}}
+\index{\_format\_P@{\_format\_P}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_P()}{\_format\_P()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a4b38885a2fbde37fe6e7b27df5335338} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+P (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_aab021fbfd7929d01bed220b0c1f84bdd}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_r@{\_format\_r}}
+\index{\_format\_r@{\_format\_r}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_r()}{\_format\_r()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_aab021fbfd7929d01bed220b0c1f84bdd} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+r (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a2790212c967ff3eee90c1e07de82a922}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_s@{\_format\_s}}
+\index{\_format\_s@{\_format\_s}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_s()}{\_format\_s()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a2790212c967ff3eee90c1e07de82a922} 
+ int aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+s (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_ad886f674573bb13c689ef5d8590a56b1}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_T@{\_format\_T}}
+\index{\_format\_T@{\_format\_T}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_T()}{\_format\_T()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_ad886f674573bb13c689ef5d8590a56b1} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_aed263385b4d8a60a4c4c99c2509b5f12}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_t@{\_format\_t}}
+\index{\_format\_t@{\_format\_t}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_t()}{\_format\_t()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_aed263385b4d8a60a4c4c99c2509b5f12} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+t (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_af0048c94304c589507fc58f9c79e0dd7}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_format\_Tf@{\_format\_Tf}}
+\index{\_format\_Tf@{\_format\_Tf}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_format\_Tf()}{\_format\_Tf()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_af0048c94304c589507fc58f9c79e0dd7} 
+ str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+format\+\_\+\+Tf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_ae7a47766a1a6ca8082976adaad21c442}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!compile\_format@{compile\_format}}
+\index{compile\_format@{compile\_format}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{compile\_format()}{compile\_format()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_ae7a47766a1a6ca8082976adaad21c442} 
+ Tuple\mbox{[}str, List\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__log_ad1c526df7fd288bd8c50e82e237a34d8}{Key\+Method}}\mbox{]}\mbox{]} aiohttp.\+web\+\_\+log.\+Access\+Logger.\+compile\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{log\+\_\+format}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Translate log_format into form usable by modulo formatting
+
+All known atoms will be replaced with %s
+Also methods for formatting of those atoms will be added to
+_methods in appropriate order
+
+For example we have log_format = "%a %t"
+This format will be translated to "%s %s"
+Also contents of _methods will be
+[self._format_a, self._format_t]
+These method will be called and results will be passed
+to translated string format.
+
+Each _format_* method receive 'args' which is list of arguments
+given to self.log
+
+Exceptions are _format_e, _format_i and _format_o methods which
+also receive key name (by functools.partial)
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a775e3c75caeff55e878de5d6d669fd18}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!enabled@{enabled}}
+\index{enabled@{enabled}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{enabled()}{enabled()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a775e3c75caeff55e878de5d6d669fd18} 
+ bool aiohttp.\+web\+\_\+log.\+Access\+Logger.\+enabled (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if logger is enabled.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_aaa074dca6c8b429cd5ed94d752ef66de}{aiohttp.\+abc.\+Abstract\+Access\+Logger}}.
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a9f9b2fe27cc4b7b3047a6914b8c1bb22}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!log@{log}}
+\index{log@{log}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a9f9b2fe27cc4b7b3047a6914b8c1bb22} 
+ None aiohttp.\+web\+\_\+log.\+Access\+Logger.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{float}]{time}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Emit log to logger.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger_a505425bc216310dad4e05d7813520281}{aiohttp.\+abc.\+Abstract\+Access\+Logger}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_ae6624a7484d23190bc3d7b24603e6052}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_FORMAT\_CACHE@{\_FORMAT\_CACHE}}
+\index{\_FORMAT\_CACHE@{\_FORMAT\_CACHE}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_FORMAT\_CACHE}{\_FORMAT\_CACHE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_ae6624a7484d23190bc3d7b24603e6052} 
+dict aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+\+FORMAT\+\_\+\+CACHE = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a13a00dd238ad5f20e7fff440862553e1}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_log\_format@{\_log\_format}}
+\index{\_log\_format@{\_log\_format}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_log\_format}{\_log\_format}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a13a00dd238ad5f20e7fff440862553e1} 
+aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+log\+\_\+format\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a2d1bb04dba190df2e379fa7e9ab0f355}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!\_methods@{\_methods}}
+\index{\_methods@{\_methods}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{\_methods}{\_methods}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a2d1bb04dba190df2e379fa7e9ab0f355} 
+aiohttp.\+web\+\_\+log.\+Access\+Logger.\+\_\+methods = \+\_\+compiled\+\_\+format\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_adb482eade8837198a10cec41cfee25a9}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!CLEANUP\_RE@{CLEANUP\_RE}}
+\index{CLEANUP\_RE@{CLEANUP\_RE}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{CLEANUP\_RE}{CLEANUP\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_adb482eade8837198a10cec41cfee25a9} 
+aiohttp.\+web\+\_\+log.\+Access\+Logger.\+CLEANUP\+\_\+\+RE = re.\+compile(r"{}(\%\mbox{[}\texorpdfstring{$^\wedge$}{\string^}s\mbox{]})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_af7b22c2dfb42b95afe57de2cf9ff0ce2}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!FORMAT\_RE@{FORMAT\_RE}}
+\index{FORMAT\_RE@{FORMAT\_RE}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{FORMAT\_RE}{FORMAT\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_af7b22c2dfb42b95afe57de2cf9ff0ce2} 
+aiohttp.\+web\+\_\+log.\+Access\+Logger.\+FORMAT\+\_\+\+RE = re.\+compile(r"{}\%(\textbackslash{}\{(\mbox{[}A-\/Za-\/z0-\/9\textbackslash{}-\/\+\_\+\mbox{]}+)\textbackslash{}\}(\mbox{[}ioe\mbox{]})\texorpdfstring{$\vert$}{|}\mbox{[}at\+Prsb\+OD\mbox{]}\texorpdfstring{$\vert$}{|}Tf?)"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!LOG\_FORMAT@{LOG\_FORMAT}}
+\index{LOG\_FORMAT@{LOG\_FORMAT}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{LOG\_FORMAT}{LOG\_FORMAT}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58} 
+str aiohttp.\+web\+\_\+log.\+Access\+Logger.\+LOG\+\_\+\+FORMAT = \textquotesingle{}\%a \%t "{}\%r"{} \%s \%b "{}\%\{Referer\}i"{} "{}\%\{User-\/Agent\}i"{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1web__log_1_1_access_logger_aa893532b2df3df8c20e3f2a9735a555f}\index{aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}!LOG\_FORMAT\_MAP@{LOG\_FORMAT\_MAP}}
+\index{LOG\_FORMAT\_MAP@{LOG\_FORMAT\_MAP}!aiohttp.web\_log.AccessLogger@{aiohttp.web\_log.AccessLogger}}
+\doxysubsubsection{\texorpdfstring{LOG\_FORMAT\_MAP}{LOG\_FORMAT\_MAP}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__log_1_1_access_logger_aa893532b2df3df8c20e3f2a9735a555f} 
+dict aiohttp.\+web\+\_\+log.\+Access\+Logger.\+LOG\+\_\+\+FORMAT\+\_\+\+MAP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}a"{}}:\ \textcolor{stringliteral}{"{}remote\_address"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}t"{}}:\ \textcolor{stringliteral}{"{}request\_start\_time"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}P"{}}:\ \textcolor{stringliteral}{"{}process\_id"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}r"{}}:\ \textcolor{stringliteral}{"{}first\_request\_line"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}s"{}}:\ \textcolor{stringliteral}{"{}response\_status"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}b"{}}:\ \textcolor{stringliteral}{"{}response\_size"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}T"{}}:\ \textcolor{stringliteral}{"{}request\_time"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Tf"{}}:\ \textcolor{stringliteral}{"{}request\_time\_frac"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}D"{}}:\ \textcolor{stringliteral}{"{}request\_time\_micro"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}i"{}}:\ \textcolor{stringliteral}{"{}request\_header"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}o"{}}:\ \textcolor{stringliteral}{"{}response\_header"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{web__log_8py}{web\+\_\+log.\+py}}\end{DoxyCompactItemize}

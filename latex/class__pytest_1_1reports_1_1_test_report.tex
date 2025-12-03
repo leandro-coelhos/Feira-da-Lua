@@ -1,0 +1,184 @@
+\doxysection{\+\_\+pytest.\+reports.\+Test\+Report Class Reference}
+\hypertarget{class__pytest_1_1reports_1_1_test_report}{}\label{class__pytest_1_1reports_1_1_test_report}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+Inheritance diagram for \+\_\+pytest.\+reports.\+Test\+Report\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class__pytest_1_1reports_1_1_test_report}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_abc3520a77cc67cf4e5d591e43cc7c2f8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_aaae3d9580b769192319bded2cd56a8cf}{nodeid}}, tuple\mbox{[}str, int\texorpdfstring{$\vert$}{|}None, str\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{location}}, Mapping\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_adf4e755e91f1569e203a7cea224583e4}{keywords}}, Literal\mbox{[}"{}passed"{}, "{}failed"{}, "{}skipped"{}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{outcome}}, None\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}}\mbox{[}Base\+Exception\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}str, int, str\mbox{]}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_terminal_repr}{Terminal\+Repr}} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{longrepr}}, Literal\mbox{[}"{}setup"{}, "{}call"{}, "{}teardown"{}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{when}}, Iterable\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{sections}}=(), float \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_acc8e3a00189d911dd855be6e3becb10a}{duration}}=0, float \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_adcd1c9427e15eadd4629269daa0568c2}{start}}=0, float \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_a0538618f601a2967bf99ef1a6c7cc95a}{stop}}=0, Iterable\mbox{[}tuple\mbox{[}str, object\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_aa73569c4ad9ee40b99d1b72fc62f22a8}{user\+\_\+properties}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}extra)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_a68f53bbc432bd5219c8bb17d17ebc275}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_a617fdfe77068ddd416f755cf601546ce}{from\+\_\+item\+\_\+and\+\_\+call}} (cls, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, \mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}None\mbox{]} call)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report}{\+\_\+pytest.\+reports.\+Base\+Report}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aa3b3c8e30784ff8c7c40ad1576a4e771}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+Any \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a19a7328ea392f895a972093543bc7b03}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str key)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_abaf8662ade1b66885f20565d1f827730}{toterminal}} (self, \mbox{\hyperlink{class__pytest_1_1__io_1_1terminalwriter_1_1_terminal_writer}{Terminal\+Writer}} out)
+\item 
+Iterator\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_af1ba03c9624985b23b2e993217234038}{get\+\_\+sections}} (self, str prefix)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_abfac6852b91059f33baf2012e9119c44}{longreprtext}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a891542d99954a3ef7f1502f739dd5e8b}{caplog}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ad7ff0763766c6f370c4e220c46c9f029}{capstdout}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aebc9e92d605e4bf6cfc7860dfb3ca801}{capstderr}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ac29f2271de6588060b74a45f2b309780}{passed}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ae0839242c7f864fc06c6c7ce66d1326a}{failed}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_af4157dd14eaac417f91390ae1d3b7cc8}{skipped}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ad52b95197c0cf26fac9d67a717bbd328}{fspath}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a0390ea0b517bf712a5b623dd9f01d1ff}{count\+\_\+towards\+\_\+summary}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ab38fe6637e88a52912eecf01ee5df8c3}{head\+\_\+line}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_aaae3d9580b769192319bded2cd56a8cf}{nodeid}} = nodeid
+\item 
+Mapping\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_adf4e755e91f1569e203a7cea224583e4}{keywords}} = keywords
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_aa73569c4ad9ee40b99d1b72fc62f22a8}{user\+\_\+properties}} = list(user\+\_\+properties or \mbox{[}$\,$\mbox{]})
+\item 
+float \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_acc8e3a00189d911dd855be6e3becb10a}{duration}} = duration
+\item 
+float \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_adcd1c9427e15eadd4629269daa0568c2}{start}} = start
+\item 
+float \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_a0538618f601a2967bf99ef1a6c7cc95a}{stop}} = stop
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report_ab06fd8863e01f50cb13d971f401eca76}{\+\_\+\+\_\+test\+\_\+\+\_\+}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report}{\+\_\+pytest.\+reports.\+Base\+Report}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a3a841ff5fae5dd702ca9e7ff25bb9c6f}{when}} \texorpdfstring{$\vert$}{|} None
+\item 
+tuple \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a8f57598b4734fd8de9afbc83169f277b}{location}} \mbox{[}str, int \texorpdfstring{$\vert$}{|} None, str\mbox{]} \texorpdfstring{$\vert$}{|} None
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a21ca84bac0592b89f501293214d7b20a}{longrepr}}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aa6ba799bf5d0882e65ab65f68421ee7d}{sections}} \mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]}
+\item 
+Literal \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a11c6f0d46f6e12499891007daa90f03f}{outcome}} \mbox{[}"{}passed"{}, "{}failed"{}, "{}skipped"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report}{\+\_\+pytest.\+reports.\+Base\+Report}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}str, Mapping\mbox{[}str, bool\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ae1604b9d46e68bb145c8fee1f234a5e0}{\+\_\+get\+\_\+verbose\+\_\+word\+\_\+with\+\_\+markup}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, Mapping\mbox{[}str, bool\mbox{]} default\+\_\+markup)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_abb10212ab9b32bda2b20db904de234a5}{\+\_\+to\+\_\+json}} (self)
+\item 
+Self \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aaa1be091b340f14801b6db5ab8591776}{\+\_\+from\+\_\+json}} (cls, dict\mbox{[}str, object\mbox{]} reportdict)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Basic test report object (also used for setup and teardown calls if
+they fail).
+
+Reports can contain arbitrary extra attributes.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_abc3520a77cc67cf4e5d591e43cc7c2f8}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_abc3520a77cc67cf4e5d591e43cc7c2f8} 
+ None \+\_\+pytest.\+reports.\+Test\+Report.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{nodeid}{, }\item[{tuple\mbox{[}str, int \texorpdfstring{$\vert$}{|} None, str\mbox{]}}]{location}{, }\item[{Mapping\mbox{[}str, Any\mbox{]}}]{keywords}{, }\item[{Literal\mbox{[}"{}passed"{}, "{}failed"{}, "{}skipped"{}\mbox{]}}]{outcome}{, }\item[{None         \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}}\mbox{[}Base\+Exception\mbox{]}         \texorpdfstring{$\vert$}{|} tuple\mbox{[}str, int, str\mbox{]}         \texorpdfstring{$\vert$}{|} str         \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_terminal_repr}{Terminal\+Repr}}}]{longrepr}{, }\item[{Literal\mbox{[}"{}setup"{}, "{}call"{}, "{}teardown"{}\mbox{]}}]{when}{, }\item[{Iterable\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} }]{sections}{ = {\ttfamily ()}, }\item[{float }]{duration}{ = {\ttfamily 0}, }\item[{float }]{start}{ = {\ttfamily 0}, }\item[{float }]{stop}{ = {\ttfamily 0}, }\item[{Iterable\mbox{[}tuple\mbox{[}str, object\mbox{]}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{user\+\_\+properties}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{extra}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_a68f53bbc432bd5219c8bb17d17ebc275}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_a68f53bbc432bd5219c8bb17d17ebc275} 
+ str \+\_\+pytest.\+reports.\+Test\+Report.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_a617fdfe77068ddd416f755cf601546ce}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!from\_item\_and\_call@{from\_item\_and\_call}}
+\index{from\_item\_and\_call@{from\_item\_and\_call}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{from\_item\_and\_call()}{from\_item\_and\_call()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_a617fdfe77068ddd416f755cf601546ce} 
+ \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} \+\_\+pytest.\+reports.\+Test\+Report.\+from\+\_\+item\+\_\+and\+\_\+call (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{\mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}None\mbox{]}}]{call}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and fill a TestReport with standard item and call info.
+
+:param item: The item.
+:param call: The call info.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_ab06fd8863e01f50cb13d971f401eca76}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!\_\_test\_\_@{\_\_test\_\_}}
+\index{\_\_test\_\_@{\_\_test\_\_}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{\_\_test\_\_}{\_\_test\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_ab06fd8863e01f50cb13d971f401eca76} 
+bool \+\_\+pytest.\+reports.\+Test\+Report.\+\_\+\+\_\+test\+\_\+\+\_\+ = False\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_acc8e3a00189d911dd855be6e3becb10a}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!duration@{duration}}
+\index{duration@{duration}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_acc8e3a00189d911dd855be6e3becb10a} 
+float \+\_\+pytest.\+reports.\+Test\+Report.\+duration = duration}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_adf4e755e91f1569e203a7cea224583e4}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!keywords@{keywords}}
+\index{keywords@{keywords}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{keywords}{keywords}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_adf4e755e91f1569e203a7cea224583e4} 
+Mapping\mbox{[}str, Any\mbox{]} \+\_\+pytest.\+reports.\+Test\+Report.\+keywords = keywords}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_aaae3d9580b769192319bded2cd56a8cf}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!nodeid@{nodeid}}
+\index{nodeid@{nodeid}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{nodeid}{nodeid}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_aaae3d9580b769192319bded2cd56a8cf} 
+\+\_\+pytest.\+reports.\+Test\+Report.\+nodeid = nodeid}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_adcd1c9427e15eadd4629269daa0568c2}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!start@{start}}
+\index{start@{start}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_adcd1c9427e15eadd4629269daa0568c2} 
+float \+\_\+pytest.\+reports.\+Test\+Report.\+start = start}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_a0538618f601a2967bf99ef1a6c7cc95a}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!stop@{stop}}
+\index{stop@{stop}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_a0538618f601a2967bf99ef1a6c7cc95a} 
+float \+\_\+pytest.\+reports.\+Test\+Report.\+stop = stop}
+
+\Hypertarget{class__pytest_1_1reports_1_1_test_report_aa73569c4ad9ee40b99d1b72fc62f22a8}\index{\_pytest.reports.TestReport@{\_pytest.reports.TestReport}!user\_properties@{user\_properties}}
+\index{user\_properties@{user\_properties}!\_pytest.reports.TestReport@{\_pytest.reports.TestReport}}
+\doxysubsubsection{\texorpdfstring{user\_properties}{user\_properties}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_test_report_aa73569c4ad9ee40b99d1b72fc62f22a8} 
+\+\_\+pytest.\+reports.\+Test\+Report.\+user\+\_\+properties = list(user\+\_\+properties or \mbox{[}$\,$\mbox{]})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{reports_8py}{reports.\+py}}\end{DoxyCompactItemize}

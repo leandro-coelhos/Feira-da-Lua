@@ -1,0 +1,611 @@
+\doxysection{aiohttp.\+web\+\_\+protocol.\+Request\+Handler Class Reference}
+\hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler}{}\label{classaiohttp_1_1web__protocol_1_1_request_handler}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+Inheritance diagram for aiohttp.\+web\+\_\+protocol.\+Request\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1web__protocol_1_1_request_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ab93d3072f93eebefaeeb35a4b5e8852e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Server"{} manager, \texorpdfstring{$\ast$}{*}, asyncio.\+Abstract\+Event\+Loop loop, float \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aaf87c87cab94b5d941125a0a98384032}{keepalive\+\_\+timeout}}=3630, bool tcp\+\_\+keepalive=True, Logger \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a5c39ae124dfeffb715bbd42752fa340b}{logger}}=server\+\_\+logger, Type\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{Abstract\+Access\+Logger}}\mbox{]} access\+\_\+log\+\_\+class=\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger}{Access\+Logger}}, Logger \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_abe8fb907c006144a10f627c8f97f84ed}{access\+\_\+log}}=\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a74bab64702b9d1702e3955ffe07b7264}{access\+\_\+logger}}, str access\+\_\+log\+\_\+format=\mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{Access\+Logger.\+LOG\+\_\+\+FORMAT}}, bool \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a74b033940c7eaebff6690510cd863678}{debug}}=False, int max\+\_\+line\+\_\+size=8190, int max\+\_\+headers=32768, int max\+\_\+field\+\_\+size=8190, float lingering\+\_\+time=10.\+0, int read\+\_\+bufsize=2 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16, bool auto\+\_\+decompress=True, float timeout\+\_\+ceil\+\_\+threshold=5)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a30e2b826a98f013e695ba276ac6e142e}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+Optional\mbox{[}"{}ssl.\+SSLContext"{}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a2e1d4a53322f07017bd21ec85d5fba84}{ssl\+\_\+context}} (self)
+\item 
+Optional\mbox{[}Union\mbox{[}str, Tuple\mbox{[}str, int, int, int\mbox{]}, Tuple\mbox{[}str, int\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a219e76ebb8b85e87a783ebb8fbebf6af}{peername}} (self)
+\item 
+float \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aaf87c87cab94b5d941125a0a98384032}{keepalive\+\_\+timeout}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a8315105b3922400c249899f9a38ffb67}{shutdown}} (self, Optional\mbox{[}float\mbox{]} timeout=15.\+0)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a413ecdc37db18580b4771de47e3ba664}{connection\+\_\+made}} (self, asyncio.\+Base\+Transport \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler}{transport}})
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a82a23103e2499e2fef1a4c3c539d6665}{connection\+\_\+lost}} (self, Optional\mbox{[}Base\+Exception\mbox{]} exc)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a28e74016e3a685e590bf3b36ae62f435}{set\+\_\+parser}} (self, Any parser)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aa5e16516727a1980ddc429994883d855}{eof\+\_\+received}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a2a2065c2a398912e2c8d82bd3f1ea0f5}{data\+\_\+received}} (self, bytes data)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a4966315ad0c35141d74139f049dc0b8b}{keep\+\_\+alive}} (self, bool val)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ae1a932c40e7aab4e23eda12ef6400602}{close}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a903a6683caa9635f6e85ddb8ac613f95}{force\+\_\+close}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aac447b4ea46d7b9e9c8d18c150c4932e}{log\+\_\+access}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} response, Optional\mbox{[}float\mbox{]} time)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a74732383bca0508ab35e2a7c09bda08c}{log\+\_\+debug}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_abeedbb89529c37f86fa00136f2cd93ff}{log\+\_\+exception}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_af10c38ef7351b3f5926719c936074e0b}{start}} (self)
+\item 
+Tuple\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}, bool\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ae2d0aed4ebeef86163f0ea7e98f2e39d}{finish\+\_\+response}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} resp, Optional\mbox{[}float\mbox{]} start\+\_\+time)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a2ab913210875f5ed3995b2cfacd8bbf3}{handle\+\_\+error}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, int status=500, Optional\mbox{[}Base\+Exception\mbox{]} exc=None, Optional\mbox{[}str\mbox{]} message=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a0b1c2085eaa97d825f5b9bb39fb16b07}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, asyncio.\+Abstract\+Event\+Loop loop)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a1fbabff2c747eb5ed36c0a2501e4df15}{connected}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a735c791be37c4d0113814c8a4498e9f3}{writing\+\_\+paused}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a3fc05a41da88c9b605cf4e039a547dd2}{pause\+\_\+writing}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_aaa2802b3afadfa78b5397100b99f494c}{resume\+\_\+writing}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_af7c387d82e75ebd0f6c16032c4eda3e0}{pause\+\_\+reading}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a2dc0db0b596979175887cab507067e63}{resume\+\_\+reading}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a5c39ae124dfeffb715bbd42752fa340b}{logger}} = logger
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a74b033940c7eaebff6690510cd863678}{debug}} = debug
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_abe8fb907c006144a10f627c8f97f84ed}{access\+\_\+log}} = access\+\_\+log
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{Abstract\+Access\+Logger}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a74bab64702b9d1702e3955ffe07b7264}{access\+\_\+logger}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}}}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}asyncio.\+Transport\mbox{]} \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a3e4eec451c8afb66ce52adcbdf274470}{transport}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a0b8bb317f066ae308223ab34bdcf19ca}{\+\_\+process\+\_\+keepalive}} (self)
+\item 
+Tuple\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}, bool\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ae236279adf6bafda26ff407d5dd8b3ff}{\+\_\+handle\+\_\+request}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}} request, Optional\mbox{[}float\mbox{]} start\+\_\+time, Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\mbox{]} request\+\_\+handler)
+\item 
+Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ace26fbd301eb63ff8a22690e242b3d50}{\+\_\+make\+\_\+error\+\_\+handler}} (self, \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1___err_info}{\+\_\+\+Err\+Info}} err\+\_\+info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a47d0b01edf9038775ba0ea99ce63f457}{\+\_\+drain\+\_\+helper}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_acb96b6ce9a769063db0ca7e34e543cb0}{\+\_\+request\+\_\+count}} = 0
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aa4f63f4dcdad2c8ab14d12ad1421f508}{\+\_\+keepalive}} = False
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_abac6a8b797d7cdcd4c157098d080505d}{\+\_\+current\+\_\+request}} = None
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__server_1_1_server}{Server}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ab775cacb43a2688634c0ffffa33c094a}{\+\_\+manager}} = manager
+\item 
+Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__protocol_ad81f5d5c7eaaac5cb214e01c6d31b3d2}{\+\_\+\+Request\+Handler}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a6c543f1771e9a86a7e3124111aca7b53}{\+\_\+request\+\_\+handler}} = manager.\+request\+\_\+handler
+\item 
+Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__protocol_a30459184b0c6a3a3025e5f60a816d24c}{\+\_\+\+Request\+Factory}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_af396ea4723634c7011ab82d1e976e785}{\+\_\+request\+\_\+factory}} = manager.\+request\+\_\+factory
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a2a1a7b4895b00c5b2d3548c5dc0f2bb1}{\+\_\+tcp\+\_\+keepalive}} = tcp\+\_\+keepalive
+\item 
+float \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_abf031114acdfd887492561ced9af6162}{\+\_\+next\+\_\+keepalive\+\_\+close\+\_\+time}} = 0.\+0
+\item 
+Optional\mbox{[}asyncio.\+Handle\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a7e7358863bce60007abc9fc1901a7c15}{\+\_\+keepalive\+\_\+handle}} = None
+\item 
+float \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a40ae536951c9a927c3872a078ee3e140}{\+\_\+keepalive\+\_\+timeout}} = \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aaf87c87cab94b5d941125a0a98384032}{keepalive\+\_\+timeout}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a4f885952b41a6e3457f5d51da2652e85}{\+\_\+lingering\+\_\+time}} = float(lingering\+\_\+time)
+\item 
+Deque\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__protocol_a73b28debef43784c56e4af6eca557eb7}{\+\_\+\+Msg\+Type}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a13842b253e3879c85281b38373c32dde}{\+\_\+messages}} = deque()
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ae4479c024cd2024eb028bac5a254ce6a}{\+\_\+message\+\_\+tail}} = b"{}"{}
+\item 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a988394494be996daed0a40f200c6a3eb}{\+\_\+waiter}} = None
+\item 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a9c09865976599f82a0f9ce2155b435e8}{\+\_\+handler\+\_\+waiter}} = None
+\item 
+Optional\mbox{[}asyncio.\+Task\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a3e82bc1ecf52ab37636ba70891745138}{\+\_\+task\+\_\+handler}} = None
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a2ce0752c56fc86159bb5ef7a1f7a9a0c}{\+\_\+upgrade}} = False
+\item 
+Any \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_ae1f5f700aa3816fd38a3494f44c6c6ea}{\+\_\+payload\+\_\+parser}} = None
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a06ed156956303e0537d33ec14de63634}{\+\_\+request\+\_\+parser}}
+\item 
+float \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a94680278596f007365d17cad5ce88983}{\+\_\+timeout\+\_\+ceil\+\_\+threshold}} = 5
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{Abstract\+Access\+Logger}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_abff42159a824bbada6d5de1a1678f082}{\+\_\+logging\+\_\+enabled}} = self.\+access\+\_\+logger.\+enabled
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_afb12182b052b6f9894cf7906a3eb375e}{\+\_\+close}} = False
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a28eb69c8dde5579eabc24890f3809e31}{\+\_\+force\+\_\+close}} = False
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aa62aee8d6fe01f5c997e3dd856967031}{\+\_\+request\+\_\+in\+\_\+progress}} = False
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a87807916f09078644ce2d8cf32e2cbf3}{\+\_\+cache}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}}}
+\begin{DoxyCompactItemize}
+\item 
+asyncio.\+Abstract\+Event\+Loop \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_ad155a37016158874d5d65bd6d01bedb5}{\+\_\+loop}} = loop
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a6ccce1aeda3bca1c6d19e53e9f21c16d}{\+\_\+paused}} = False
+\item 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_a3fe7789c0468a807c0ed5b8e872e8c90}{\+\_\+drain\+\_\+waiter}} = None
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_abdbb8ffba4d22e5a5dbc8f728f8b2009}{\+\_\+reading\+\_\+paused}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a1b6a5443b5aaa13f78250ab3a40624db}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}HTTP protocol implementation.
+
+RequestHandler handles incoming HTTP request. It reads request line,
+request headers and request payload and calls handle_request() method.
+By default it always returns with 404 response.
+
+RequestHandler handles errors in incoming request, like bad
+status line, bad headers or incomplete payload. If any error occurs,
+connection gets closed.
+
+keepalive_timeout -- number of seconds before closing
+                     keep-alive connection
+
+tcp_keepalive -- TCP keep-alive is on, default is on
+
+debug -- enable debug mode
+
+logger -- custom logger object
+
+access_log_class -- custom class for access_logger
+
+access_log -- custom logging object
+
+access_log_format -- access log format string
+
+loop -- Optional event loop
+
+max_line_size -- Optional maximum header line size
+
+max_field_size -- Optional maximum header field size
+
+max_headers -- Optional maximum header size
+
+timeout_ceil_threshold -- Optional value to specify
+                          threshold to ceil() timeout
+                          values
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ab93d3072f93eebefaeeb35a4b5e8852e}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ab93d3072f93eebefaeeb35a4b5e8852e} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Server"{}}]{manager}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{asyncio.\+Abstract\+Event\+Loop}]{loop}{, }\item[{float }]{keepalive\+\_\+timeout}{ = {\ttfamily 3630}, }\item[{bool }]{tcp\+\_\+keepalive}{ = {\ttfamily True}, }\item[{Logger }]{logger}{ = {\ttfamily server\+\_\+logger}, }\item[{Type\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{Abstract\+Access\+Logger}}\mbox{]} }]{access\+\_\+log\+\_\+class}{ = {\ttfamily \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger}{Access\+Logger}}}, }\item[{Logger }]{access\+\_\+log}{ = {\ttfamily \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_a74bab64702b9d1702e3955ffe07b7264}{access\+\_\+logger}}}, }\item[{str }]{access\+\_\+log\+\_\+format}{ = {\ttfamily \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{Access\+Logger.\+LOG\+\_\+\+FORMAT}}}, }\item[{bool }]{debug}{ = {\ttfamily False}, }\item[{int }]{max\+\_\+line\+\_\+size}{ = {\ttfamily 8190}, }\item[{int }]{max\+\_\+headers}{ = {\ttfamily 32768}, }\item[{int }]{max\+\_\+field\+\_\+size}{ = {\ttfamily 8190}, }\item[{float }]{lingering\+\_\+time}{ = {\ttfamily 10.0}, }\item[{int }]{read\+\_\+bufsize}{ = {\ttfamily 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16}, }\item[{bool }]{auto\+\_\+decompress}{ = {\ttfamily True}, }\item[{float }]{timeout\+\_\+ceil\+\_\+threshold}{ = {\ttfamily 5}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a30e2b826a98f013e695ba276ac6e142e}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a30e2b826a98f013e695ba276ac6e142e} 
+ str aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ae236279adf6bafda26ff407d5dd8b3ff}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_handle\_request@{\_handle\_request}}
+\index{\_handle\_request@{\_handle\_request}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_handle\_request()}{\_handle\_request()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ae236279adf6bafda26ff407d5dd8b3ff} 
+ Tuple\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}, bool\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+handle\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{Optional\mbox{[}float\mbox{]}}]{start\+\_\+time}{, }\item[{Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\mbox{]}}]{request\+\_\+handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ace26fbd301eb63ff8a22690e242b3d50}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_make\_error\_handler@{\_make\_error\_handler}}
+\index{\_make\_error\_handler@{\_make\_error\_handler}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_make\_error\_handler()}{\_make\_error\_handler()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ace26fbd301eb63ff8a22690e242b3d50} 
+ Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+make\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1___err_info}{\+\_\+\+Err\+Info}}     }]{err\+\_\+info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a0b8bb317f066ae308223ab34bdcf19ca}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_process\_keepalive@{\_process\_keepalive}}
+\index{\_process\_keepalive@{\_process\_keepalive}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_process\_keepalive()}{\_process\_keepalive()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a0b8bb317f066ae308223ab34bdcf19ca} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+process\+\_\+keepalive (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ae1a932c40e7aab4e23eda12ef6400602}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!close@{close}}
+\index{close@{close}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ae1a932c40e7aab4e23eda12ef6400602} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close connection.
+
+Stop accepting new pipelining messages and close
+connection when handlers done processing messages.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a82a23103e2499e2fef1a4c3c539d6665}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!connection\_lost@{connection\_lost}}
+\index{connection\_lost@{connection\_lost}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{connection\_lost()}{connection\_lost()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a82a23103e2499e2fef1a4c3c539d6665} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+connection\+\_\+lost (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Base\+Exception\mbox{]}}]{exc}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_ae2aaa4514dfcd1a0471f5f335f88a8f9}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}}.
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a413ecdc37db18580b4771de47e3ba664}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!connection\_made@{connection\_made}}
+\index{connection\_made@{connection\_made}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{connection\_made()}{connection\_made()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a413ecdc37db18580b4771de47e3ba664} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+connection\+\_\+made (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{asyncio.\+Base\+Transport}]{transport}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol_ad4e8039c9ccb4a465d529a52c2bfc536}{aiohttp.\+base\+\_\+protocol.\+Base\+Protocol}}.
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a2a2065c2a398912e2c8d82bd3f1ea0f5}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!data\_received@{data\_received}}
+\index{data\_received@{data\_received}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{data\_received()}{data\_received()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a2a2065c2a398912e2c8d82bd3f1ea0f5} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+data\+\_\+received (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aa5e16516727a1980ddc429994883d855}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!eof\_received@{eof\_received}}
+\index{eof\_received@{eof\_received}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{eof\_received()}{eof\_received()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_aa5e16516727a1980ddc429994883d855} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+eof\+\_\+received (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ae2d0aed4ebeef86163f0ea7e98f2e39d}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!finish\_response@{finish\_response}}
+\index{finish\_response@{finish\_response}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{finish\_response()}{finish\_response()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ae2d0aed4ebeef86163f0ea7e98f2e39d} 
+ Tuple\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}, bool\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+finish\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{resp}{, }\item[{Optional\mbox{[}float\mbox{]}     }]{start\+\_\+time}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepare the response and write_eof, then log access.
+
+This has to
+be called within the context of any exception so the access logger
+can get exception information. Returns True if the client disconnects
+prematurely.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a903a6683caa9635f6e85ddb8ac613f95}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!force\_close@{force\_close}}
+\index{force\_close@{force\_close}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{force\_close()}{force\_close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a903a6683caa9635f6e85ddb8ac613f95} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+force\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forcefully close connection.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a2ab913210875f5ed3995b2cfacd8bbf3}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!handle\_error@{handle\_error}}
+\index{handle\_error@{handle\_error}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{handle\_error()}{handle\_error()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a2ab913210875f5ed3995b2cfacd8bbf3} 
+ \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+handle\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{int }]{status}{ = {\ttfamily 500}, }\item[{Optional\mbox{[}Base\+Exception\mbox{]} }]{exc}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle errors.
+
+Returns HTTP response with specific status code. Logs additional
+information. It always closes current connection.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a4966315ad0c35141d74139f049dc0b8b}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!keep\_alive@{keep\_alive}}
+\index{keep\_alive@{keep\_alive}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{keep\_alive()}{keep\_alive()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a4966315ad0c35141d74139f049dc0b8b} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+keep\+\_\+alive (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{val}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set keep-alive connection mode.
+
+:param bool val: new state.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aaf87c87cab94b5d941125a0a98384032}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!keepalive\_timeout@{keepalive\_timeout}}
+\index{keepalive\_timeout@{keepalive\_timeout}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{keepalive\_timeout()}{keepalive\_timeout()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_aaf87c87cab94b5d941125a0a98384032} 
+ float aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+keepalive\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aac447b4ea46d7b9e9c8d18c150c4932e}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!log\_access@{log\_access}}
+\index{log\_access@{log\_access}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{log\_access()}{log\_access()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_aac447b4ea46d7b9e9c8d18c150c4932e} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+log\+\_\+access (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}}]{response}{, }\item[{Optional\mbox{[}float\mbox{]}     }]{time}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a74732383bca0508ab35e2a7c09bda08c}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!log\_debug@{log\_debug}}
+\index{log\_debug@{log\_debug}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{log\_debug()}{log\_debug()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a74732383bca0508ab35e2a7c09bda08c} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+log\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kw}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_abeedbb89529c37f86fa00136f2cd93ff}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!log\_exception@{log\_exception}}
+\index{log\_exception@{log\_exception}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{log\_exception()}{log\_exception()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_abeedbb89529c37f86fa00136f2cd93ff} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+log\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kw}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a219e76ebb8b85e87a783ebb8fbebf6af}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!peername@{peername}}
+\index{peername@{peername}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{peername()}{peername()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a219e76ebb8b85e87a783ebb8fbebf6af} 
+ Optional\mbox{[}Union\mbox{[}str, Tuple\mbox{[}str, int, int, int\mbox{]}, Tuple\mbox{[}str, int\mbox{]}\mbox{]}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+peername (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return peername if available.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a28e74016e3a685e590bf3b36ae62f435}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!set\_parser@{set\_parser}}
+\index{set\_parser@{set\_parser}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{set\_parser()}{set\_parser()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a28e74016e3a685e590bf3b36ae62f435} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+set\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{parser}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a8315105b3922400c249899f9a38ffb67}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a8315105b3922400c249899f9a38ffb67} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+shutdown (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}float\mbox{]} }]{timeout}{ = {\ttfamily 15.0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do worker process exit preparations.
+
+We need to clean up everything and stop accepting requests.
+It is especially important for keep-alive connections.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a2e1d4a53322f07017bd21ec85d5fba84}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!ssl\_context@{ssl\_context}}
+\index{ssl\_context@{ssl\_context}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{ssl\_context()}{ssl\_context()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a2e1d4a53322f07017bd21ec85d5fba84} 
+ Optional\mbox{[}"{}ssl.\+SSLContext"{}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+ssl\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return SSLContext if available.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_af10c38ef7351b3f5926719c936074e0b}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!start@{start}}
+\index{start@{start}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_af10c38ef7351b3f5926719c936074e0b} 
+ None aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process incoming request.
+
+It reads request line, request headers and request payload, then
+calls handle_request() method. Subclass has to override
+handle_request(). start() handles various exceptions in request
+or response handling. Connection is being closed always unless
+keep_alive(True) specified.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a1b6a5443b5aaa13f78250ab3a40624db}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a1b6a5443b5aaa13f78250ab3a40624db} 
+tuple aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a87807916f09078644ce2d8cf32e2cbf3}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a87807916f09078644ce2d8cf32e2cbf3} 
+dict aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+cache = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_afb12182b052b6f9894cf7906a3eb375e}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_close@{\_close}}
+\index{\_close@{\_close}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_close}{\_close}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_afb12182b052b6f9894cf7906a3eb375e} 
+bool aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+close = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_abac6a8b797d7cdcd4c157098d080505d}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_current\_request@{\_current\_request}}
+\index{\_current\_request@{\_current\_request}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_current\_request}{\_current\_request}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_abac6a8b797d7cdcd4c157098d080505d} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_base_request}{Base\+Request}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+current\+\_\+request = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a28eb69c8dde5579eabc24890f3809e31}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_force\_close@{\_force\_close}}
+\index{\_force\_close@{\_force\_close}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_force\_close}{\_force\_close}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a28eb69c8dde5579eabc24890f3809e31} 
+bool aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+force\+\_\+close = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a9c09865976599f82a0f9ce2155b435e8}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_handler\_waiter@{\_handler\_waiter}}
+\index{\_handler\_waiter@{\_handler\_waiter}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_handler\_waiter}{\_handler\_waiter}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a9c09865976599f82a0f9ce2155b435e8} 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+handler\+\_\+waiter = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aa4f63f4dcdad2c8ab14d12ad1421f508}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_keepalive@{\_keepalive}}
+\index{\_keepalive@{\_keepalive}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_keepalive}{\_keepalive}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_aa4f63f4dcdad2c8ab14d12ad1421f508} 
+bool aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+keepalive = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a7e7358863bce60007abc9fc1901a7c15}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_keepalive\_handle@{\_keepalive\_handle}}
+\index{\_keepalive\_handle@{\_keepalive\_handle}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_keepalive\_handle}{\_keepalive\_handle}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a7e7358863bce60007abc9fc1901a7c15} 
+Optional\mbox{[}asyncio.\+Handle\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+keepalive\+\_\+handle = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a40ae536951c9a927c3872a078ee3e140}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_keepalive\_timeout@{\_keepalive\_timeout}}
+\index{\_keepalive\_timeout@{\_keepalive\_timeout}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_keepalive\_timeout}{\_keepalive\_timeout}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a40ae536951c9a927c3872a078ee3e140} 
+float aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+keepalive\+\_\+timeout = \mbox{\hyperlink{classaiohttp_1_1web__protocol_1_1_request_handler_aaf87c87cab94b5d941125a0a98384032}{keepalive\+\_\+timeout}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a4f885952b41a6e3457f5d51da2652e85}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_lingering\_time@{\_lingering\_time}}
+\index{\_lingering\_time@{\_lingering\_time}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_lingering\_time}{\_lingering\_time}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a4f885952b41a6e3457f5d51da2652e85} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+lingering\+\_\+time = float(lingering\+\_\+time)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_abff42159a824bbada6d5de1a1678f082}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_logging\_enabled@{\_logging\_enabled}}
+\index{\_logging\_enabled@{\_logging\_enabled}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_logging\_enabled}{\_logging\_enabled}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_abff42159a824bbada6d5de1a1678f082} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{Abstract\+Access\+Logger}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+logging\+\_\+enabled = self.\+access\+\_\+logger.\+enabled\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ab775cacb43a2688634c0ffffa33c094a}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_manager@{\_manager}}
+\index{\_manager@{\_manager}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_manager}{\_manager}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ab775cacb43a2688634c0ffffa33c094a} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__server_1_1_server}{Server}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+manager = manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ae4479c024cd2024eb028bac5a254ce6a}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_message\_tail@{\_message\_tail}}
+\index{\_message\_tail@{\_message\_tail}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_message\_tail}{\_message\_tail}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ae4479c024cd2024eb028bac5a254ce6a} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+message\+\_\+tail = b"{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a13842b253e3879c85281b38373c32dde}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_messages@{\_messages}}
+\index{\_messages@{\_messages}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_messages}{\_messages}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a13842b253e3879c85281b38373c32dde} 
+Deque\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__protocol_a73b28debef43784c56e4af6eca557eb7}{\+\_\+\+Msg\+Type}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+messages = deque()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_abf031114acdfd887492561ced9af6162}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_next\_keepalive\_close\_time@{\_next\_keepalive\_close\_time}}
+\index{\_next\_keepalive\_close\_time@{\_next\_keepalive\_close\_time}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_next\_keepalive\_close\_time}{\_next\_keepalive\_close\_time}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_abf031114acdfd887492561ced9af6162} 
+float aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+next\+\_\+keepalive\+\_\+close\+\_\+time = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_ae1f5f700aa3816fd38a3494f44c6c6ea}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_payload\_parser@{\_payload\_parser}}
+\index{\_payload\_parser@{\_payload\_parser}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_payload\_parser}{\_payload\_parser}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_ae1f5f700aa3816fd38a3494f44c6c6ea} 
+Any aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+payload\+\_\+parser = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_acb96b6ce9a769063db0ca7e34e543cb0}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_request\_count@{\_request\_count}}
+\index{\_request\_count@{\_request\_count}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_request\_count}{\_request\_count}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_acb96b6ce9a769063db0ca7e34e543cb0} 
+int aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+request\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_af396ea4723634c7011ab82d1e976e785}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_request\_factory@{\_request\_factory}}
+\index{\_request\_factory@{\_request\_factory}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_request\_factory}{\_request\_factory}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_af396ea4723634c7011ab82d1e976e785} 
+Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__protocol_a30459184b0c6a3a3025e5f60a816d24c}{\+\_\+\+Request\+Factory}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+request\+\_\+factory = manager.\+request\+\_\+factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a6c543f1771e9a86a7e3124111aca7b53}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_request\_handler@{\_request\_handler}}
+\index{\_request\_handler@{\_request\_handler}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_request\_handler}{\_request\_handler}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a6c543f1771e9a86a7e3124111aca7b53} 
+Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__protocol_ad81f5d5c7eaaac5cb214e01c6d31b3d2}{\+\_\+\+Request\+Handler}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+request\+\_\+handler = manager.\+request\+\_\+handler\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_aa62aee8d6fe01f5c997e3dd856967031}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_request\_in\_progress@{\_request\_in\_progress}}
+\index{\_request\_in\_progress@{\_request\_in\_progress}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_request\_in\_progress}{\_request\_in\_progress}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_aa62aee8d6fe01f5c997e3dd856967031} 
+bool aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+request\+\_\+in\+\_\+progress = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a06ed156956303e0537d33ec14de63634}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_request\_parser@{\_request\_parser}}
+\index{\_request\_parser@{\_request\_parser}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_request\_parser}{\_request\_parser}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a06ed156956303e0537d33ec14de63634} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+request\+\_\+parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ HttpRequestParser(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ loop,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ read\_bufsize,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ max\_line\_size=max\_line\_size,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ max\_field\_size=max\_field\_size,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ max\_headers=max\_headers,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ payload\_exception=RequestPayloadError,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ auto\_decompress=auto\_decompress,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a3e82bc1ecf52ab37636ba70891745138}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_task\_handler@{\_task\_handler}}
+\index{\_task\_handler@{\_task\_handler}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_task\_handler}{\_task\_handler}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a3e82bc1ecf52ab37636ba70891745138} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+task\+\_\+handler = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a2a1a7b4895b00c5b2d3548c5dc0f2bb1}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_tcp\_keepalive@{\_tcp\_keepalive}}
+\index{\_tcp\_keepalive@{\_tcp\_keepalive}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_tcp\_keepalive}{\_tcp\_keepalive}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a2a1a7b4895b00c5b2d3548c5dc0f2bb1} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+tcp\+\_\+keepalive = tcp\+\_\+keepalive\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a94680278596f007365d17cad5ce88983}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_timeout\_ceil\_threshold@{\_timeout\_ceil\_threshold}}
+\index{\_timeout\_ceil\_threshold@{\_timeout\_ceil\_threshold}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_timeout\_ceil\_threshold}{\_timeout\_ceil\_threshold}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a94680278596f007365d17cad5ce88983} 
+float aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+timeout\+\_\+ceil\+\_\+threshold = 5\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a2ce0752c56fc86159bb5ef7a1f7a9a0c}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_upgrade@{\_upgrade}}
+\index{\_upgrade@{\_upgrade}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_upgrade}{\_upgrade}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a2ce0752c56fc86159bb5ef7a1f7a9a0c} 
+bool aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+upgrade = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a988394494be996daed0a40f200c6a3eb}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!\_waiter@{\_waiter}}
+\index{\_waiter@{\_waiter}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_waiter}{\_waiter}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a988394494be996daed0a40f200c6a3eb} 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+\_\+waiter = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_abe8fb907c006144a10f627c8f97f84ed}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!access\_log@{access\_log}}
+\index{access\_log@{access\_log}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{access\_log}{access\_log}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_abe8fb907c006144a10f627c8f97f84ed} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+access\+\_\+log = access\+\_\+log}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a74bab64702b9d1702e3955ffe07b7264}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!access\_logger@{access\_logger}}
+\index{access\_logger@{access\_logger}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{access\_logger}{access\_logger}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a74bab64702b9d1702e3955ffe07b7264} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_access_logger}{Abstract\+Access\+Logger}}\mbox{]} aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+access\+\_\+logger}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ access\_log\_class(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ access\_log,\ access\_log\_format}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a74b033940c7eaebff6690510cd863678}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!debug@{debug}}
+\index{debug@{debug}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a74b033940c7eaebff6690510cd863678} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+debug = debug}
+
+\Hypertarget{classaiohttp_1_1web__protocol_1_1_request_handler_a5c39ae124dfeffb715bbd42752fa340b}\index{aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}!logger@{logger}}
+\index{logger@{logger}!aiohttp.web\_protocol.RequestHandler@{aiohttp.web\_protocol.RequestHandler}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__protocol_1_1_request_handler_a5c39ae124dfeffb715bbd42752fa340b} 
+aiohttp.\+web\+\_\+protocol.\+Request\+Handler.\+logger = logger}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{web__protocol_8py}{web\+\_\+protocol.\+py}}\end{DoxyCompactItemize}

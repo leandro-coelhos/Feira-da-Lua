@@ -1,0 +1,128 @@
+\doxysection{django.\+db.\+utils.\+Connection\+Router Class Reference}
+\hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router}{}\label{classdjango_1_1db_1_1utils_1_1_connection_router}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_aa9bf933768db03c1d44b1e12b3644bac}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a0afa476d6675c3357ff32e0c2a351ae1}{routers}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_acddbbfc27aa31281f9c44e59978cdd57}{routers}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_ae1a37943fd0172f7657d324e17375877}{allow\+\_\+relation}} (self, obj1, obj2, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}hints)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a05dfcfc3342bd064f71d69e9abcae2fd}{allow\+\_\+migrate}} (self, db, app\+\_\+label, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}hints)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_affc0a7f7419e1ae0ad00101310abfc5f}{allow\+\_\+migrate\+\_\+model}} (self, db, model)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a69f35761a8c424226d73f72e6dc21103}{get\+\_\+migratable\+\_\+models}} (self, app\+\_\+config, db, include\+\_\+auto\+\_\+created=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a0afa476d6675c3357ff32e0c2a351ae1}{routers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_ae9c7f4a0d3baf6bfa8628d5f4e116c6c}{db\+\_\+for\+\_\+read}} = \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e}{\+\_\+router\+\_\+func}}("{}db\+\_\+for\+\_\+read"{})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a63cd19a6551ce3829f13d46daa189c62}{db\+\_\+for\+\_\+write}} = \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e}{\+\_\+router\+\_\+func}}("{}db\+\_\+for\+\_\+write"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e}{\+\_\+router\+\_\+func}} (action)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_ad02c42795fa34d375490d18b43df3637}{\+\_\+routers}} = \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a0afa476d6675c3357ff32e0c2a351ae1}{routers}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_aa9bf933768db03c1d44b1e12b3644bac}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_aa9bf933768db03c1d44b1e12b3644bac} 
+django.\+db.\+utils.\+Connection\+Router.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{routers}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If routers is not specified, default to settings.DATABASE_ROUTERS.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!\_router\_func@{\_router\_func}}
+\index{\_router\_func@{\_router\_func}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{\_router\_func()}{\_router\_func()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e} 
+django.\+db.\+utils.\+Connection\+Router.\+\_\+router\+\_\+func (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_a05dfcfc3342bd064f71d69e9abcae2fd}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!allow\_migrate@{allow\_migrate}}
+\index{allow\_migrate@{allow\_migrate}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{allow\_migrate()}{allow\_migrate()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_a05dfcfc3342bd064f71d69e9abcae2fd} 
+django.\+db.\+utils.\+Connection\+Router.\+allow\+\_\+migrate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{db}{, }\item[{}]{app\+\_\+label}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{hints}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_affc0a7f7419e1ae0ad00101310abfc5f}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!allow\_migrate\_model@{allow\_migrate\_model}}
+\index{allow\_migrate\_model@{allow\_migrate\_model}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{allow\_migrate\_model()}{allow\_migrate\_model()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_affc0a7f7419e1ae0ad00101310abfc5f} 
+django.\+db.\+utils.\+Connection\+Router.\+allow\+\_\+migrate\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{db}{, }\item[{}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_ae1a37943fd0172f7657d324e17375877}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!allow\_relation@{allow\_relation}}
+\index{allow\_relation@{allow\_relation}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{allow\_relation()}{allow\_relation()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_ae1a37943fd0172f7657d324e17375877} 
+django.\+db.\+utils.\+Connection\+Router.\+allow\+\_\+relation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{obj1}{, }\item[{}]{obj2}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{hints}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_a69f35761a8c424226d73f72e6dc21103}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!get\_migratable\_models@{get\_migratable\_models}}
+\index{get\_migratable\_models@{get\_migratable\_models}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{get\_migratable\_models()}{get\_migratable\_models()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_a69f35761a8c424226d73f72e6dc21103} 
+django.\+db.\+utils.\+Connection\+Router.\+get\+\_\+migratable\+\_\+models (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+config}{, }\item[{}]{db}{, }\item[{}]{include\+\_\+auto\+\_\+created}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return app models allowed to be migrated on provided db.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_acddbbfc27aa31281f9c44e59978cdd57}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!routers@{routers}}
+\index{routers@{routers}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{routers()}{routers()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_acddbbfc27aa31281f9c44e59978cdd57} 
+django.\+db.\+utils.\+Connection\+Router.\+routers (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_ad02c42795fa34d375490d18b43df3637}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!\_routers@{\_routers}}
+\index{\_routers@{\_routers}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{\_routers}{\_routers}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_ad02c42795fa34d375490d18b43df3637} 
+django.\+db.\+utils.\+Connection\+Router.\+\_\+routers = \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a0afa476d6675c3357ff32e0c2a351ae1}{routers}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_ae9c7f4a0d3baf6bfa8628d5f4e116c6c}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!db\_for\_read@{db\_for\_read}}
+\index{db\_for\_read@{db\_for\_read}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{db\_for\_read}{db\_for\_read}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_ae9c7f4a0d3baf6bfa8628d5f4e116c6c} 
+django.\+db.\+utils.\+Connection\+Router.\+db\+\_\+for\+\_\+read = \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e}{\+\_\+router\+\_\+func}}("{}db\+\_\+for\+\_\+read"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_a63cd19a6551ce3829f13d46daa189c62}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!db\_for\_write@{db\_for\_write}}
+\index{db\_for\_write@{db\_for\_write}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{db\_for\_write}{db\_for\_write}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_a63cd19a6551ce3829f13d46daa189c62} 
+django.\+db.\+utils.\+Connection\+Router.\+db\+\_\+for\+\_\+write = \mbox{\hyperlink{classdjango_1_1db_1_1utils_1_1_connection_router_a9b43271168c3e85517747d5eddf9212e}{\+\_\+router\+\_\+func}}("{}db\+\_\+for\+\_\+write"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1utils_1_1_connection_router_a0afa476d6675c3357ff32e0c2a351ae1}\index{django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}!routers@{routers}}
+\index{routers@{routers}!django.db.utils.ConnectionRouter@{django.db.utils.ConnectionRouter}}
+\doxysubsubsection{\texorpdfstring{routers}{routers}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1utils_1_1_connection_router_a0afa476d6675c3357ff32e0c2a351ae1} 
+django.\+db.\+utils.\+Connection\+Router.\+routers}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/\mbox{\hyperlink{django_2db_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

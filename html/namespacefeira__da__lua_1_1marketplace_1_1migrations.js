@@ -1,0 +1,9 @@
+var namespacefeira__da__lua_1_1marketplace_1_1migrations =
+[
+    [ "0001_initial", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10001__initial.html", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10001__initial" ],
+    [ "0002_initial", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10002__initial.html", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10002__initial" ],
+    [ "0003_alter_marketplace_marketer", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10003__alter__marketplace__marketer.html", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10003__alter__marketplace__marketer" ],
+    [ "0003_alter_marketplace_marketer_alter_products_marketer", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10003__alter__marketplace__marketer__alter__products__marketer.html", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10003__alter__marketplace__marketer__alter__products__marketer" ],
+    [ "0004_alter_products_marketer", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10004__alter__products__marketer.html", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10004__alter__products__marketer" ],
+    [ "0005_merge_20251202_1349", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10005__merge__20251202__1349.html", "namespacefeira__da__lua_1_1marketplace_1_1migrations_1_10005__merge__20251202__1349" ]
+];

@@ -1,0 +1,114 @@
+\doxysection{django.\+utils.\+functional.\+cached\+\_\+property Class Reference}
+\hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property}{}\label{classdjango_1_1utils_1_1functional_1_1cached__property}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_a7b6c0546c0f0af51734ce81363d4ce05}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}{func}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_ab866a97f8368a865de4d31ff0eb39dea}{\+\_\+\+\_\+set\+\_\+name\+\_\+\+\_\+}} (self, owner, \mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_a6bac09b7291b6beea1915b5eb48c4f01}{name}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_aea06f0393fa1ebeb0e878b1df50e0ea6}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, instance, cls=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_a75b373d231e93d8d06cffd2aa4edda32}{func}} (instance)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_ade7cdc45335c83df37a3f63a7135451a}{real\+\_\+func}} = \mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}{func}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}{func}} = self.\+real\+\_\+func
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_a6bac09b7291b6beea1915b5eb48c4f01}{name}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_a6fc5d1be60a6a8e526bab84fbe14ed2b}{\+\_\+\+\_\+doc\+\_\+\+\_\+}} = getattr(\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}{func}}, "{}\+\_\+\+\_\+doc\+\_\+\+\_\+"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Decorator that converts a method with a single self argument into a
+property cached on the instance.
+
+A cached property can be made out of an existing method:
+(e.g. ``url = cached_property(get_absolute_url)``).
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_a7b6c0546c0f0af51734ce81363d4ce05}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_a7b6c0546c0f0af51734ce81363d4ce05} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{func}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_aea06f0393fa1ebeb0e878b1df50e0ea6}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_aea06f0393fa1ebeb0e878b1df50e0ea6} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instance}{, }\item[{}]{cls}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the function and put the return value in instance.__dict__ so that
+subsequent attribute access on the instance returns the cached value
+instead of calling cached_property.__get__().
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_ab866a97f8368a865de4d31ff0eb39dea}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!\_\_set\_name\_\_@{\_\_set\_name\_\_}}
+\index{\_\_set\_name\_\_@{\_\_set\_name\_\_}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_name\_\_()}{\_\_set\_name\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_ab866a97f8368a865de4d31ff0eb39dea} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+\_\+\+\_\+set\+\_\+name\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{owner}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_a75b373d231e93d8d06cffd2aa4edda32}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!func@{func}}
+\index{func@{func}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{func()}{func()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_a75b373d231e93d8d06cffd2aa4edda32} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+func (\begin{DoxyParamCaption}\item[{}]{instance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_a6fc5d1be60a6a8e526bab84fbe14ed2b}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!\_\_doc\_\_@{\_\_doc\_\_}}
+\index{\_\_doc\_\_@{\_\_doc\_\_}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_doc\_\_}{\_\_doc\_\_}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_a6fc5d1be60a6a8e526bab84fbe14ed2b} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+\_\+\+\_\+doc\+\_\+\+\_\+ = getattr(\mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}{func}}, "{}\+\_\+\+\_\+doc\+\_\+\+\_\+"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!func@{func}}
+\index{func@{func}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+func = self.\+real\+\_\+func}
+
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_a6bac09b7291b6beea1915b5eb48c4f01}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!name@{name}}
+\index{name@{name}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_a6bac09b7291b6beea1915b5eb48c4f01} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+name = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1functional_1_1cached__property_ade7cdc45335c83df37a3f63a7135451a}\index{django.utils.functional.cached\_property@{django.utils.functional.cached\_property}!real\_func@{real\_func}}
+\index{real\_func@{real\_func}!django.utils.functional.cached\_property@{django.utils.functional.cached\_property}}
+\doxysubsubsection{\texorpdfstring{real\_func}{real\_func}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1functional_1_1cached__property_ade7cdc45335c83df37a3f63a7135451a} 
+django.\+utils.\+functional.\+cached\+\_\+property.\+real\+\_\+func = \mbox{\hyperlink{classdjango_1_1utils_1_1functional_1_1cached__property_af1afbc6793ff3fe53062d8b012774222}{func}}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/utils/\mbox{\hyperlink{django_2utils_2functional_8py}{functional.\+py}}\end{DoxyCompactItemize}

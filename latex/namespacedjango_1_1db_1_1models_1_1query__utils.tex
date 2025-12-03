@@ -1,0 +1,116 @@
+\doxysection{django.\+db.\+models.\+query\+\_\+utils Namespace Reference}
+\hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils}{}\label{namespacedjango_1_1db_1_1models_1_1query__utils}\index{django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1class__or__instance__method}{class\+\_\+or\+\_\+instance\+\_\+method}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_deferred_attribute}{Deferred\+Attribute}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation}{Filtered\+Relation}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_q}{Q}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_register_lookup_mixin}{Register\+Lookup\+Mixin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query__utils_a3ba7af7280bb892cf2c8c48877cd6734}{subclasses}} (cls)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query__utils_ad7afbbf30074d0e2ba43182d842f17ba}{select\+\_\+related\+\_\+descend}} (field, restricted, requested, select\+\_\+mask)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query__utils_a0e25b4245713777a432cd3cce833b973}{refs\+\_\+expression}} (lookup\+\_\+parts, annotations)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query__utils_aa3ec678bd0f1d7bf8a24e229782ca066}{check\+\_\+rel\+\_\+lookup\+\_\+compatibility}} (model, target\+\_\+opts, field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query__utils_ab9bf184a6a35de8c4e66297f39328e99}{logger}} = logging.\+get\+Logger("{}django.\+db.\+models"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query__utils_ab7eb447af337599dc4ef08ee57c6192c}{Path\+Info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Various data structures used in query construction.
+
+Factored out from django.db.models.query to avoid making the main module very
+large and/or so that they can be used by other modules without getting into
+circular import difficulties.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_aa3ec678bd0f1d7bf8a24e229782ca066}\index{django.db.models.query\_utils@{django.db.models.query\_utils}!check\_rel\_lookup\_compatibility@{check\_rel\_lookup\_compatibility}}
+\index{check\_rel\_lookup\_compatibility@{check\_rel\_lookup\_compatibility}!django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection{\texorpdfstring{check\_rel\_lookup\_compatibility()}{check\_rel\_lookup\_compatibility()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1query__utils_aa3ec678bd0f1d7bf8a24e229782ca066} 
+django.\+db.\+models.\+query\+\_\+utils.\+check\+\_\+rel\+\_\+lookup\+\_\+compatibility (\begin{DoxyParamCaption}\item[{}]{model}{, }\item[{}]{target\+\_\+opts}{, }\item[{}]{field}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check that self.model is compatible with target_opts. Compatibility
+is OK if:
+  1) model and opts match (where proxy inheritance is removed)
+  2) model is parent of opts' model or the other way around
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_a0e25b4245713777a432cd3cce833b973}\index{django.db.models.query\_utils@{django.db.models.query\_utils}!refs\_expression@{refs\_expression}}
+\index{refs\_expression@{refs\_expression}!django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection{\texorpdfstring{refs\_expression()}{refs\_expression()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1query__utils_a0e25b4245713777a432cd3cce833b973} 
+django.\+db.\+models.\+query\+\_\+utils.\+refs\+\_\+expression (\begin{DoxyParamCaption}\item[{}]{lookup\+\_\+parts}{, }\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the lookup_parts contains references to the given annotations set.
+Because the LOOKUP_SEP is contained in the default annotation names, check
+each prefix of the lookup_parts for a match.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_ad7afbbf30074d0e2ba43182d842f17ba}\index{django.db.models.query\_utils@{django.db.models.query\_utils}!select\_related\_descend@{select\_related\_descend}}
+\index{select\_related\_descend@{select\_related\_descend}!django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection{\texorpdfstring{select\_related\_descend()}{select\_related\_descend()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1query__utils_ad7afbbf30074d0e2ba43182d842f17ba} 
+django.\+db.\+models.\+query\+\_\+utils.\+select\+\_\+related\+\_\+descend (\begin{DoxyParamCaption}\item[{}]{field}{, }\item[{}]{restricted}{, }\item[{}]{requested}{, }\item[{}]{select\+\_\+mask}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether `field` should be used to descend deeper for
+`select_related()` purposes.
+
+Arguments:
+ * `field` - the field to be checked. Can be either a `Field` or
+   `ForeignObjectRel` instance.
+ * `restricted` - a boolean field, indicating if the field list has been
+   manually restricted using a select_related() clause.
+ * `requested` - the select_related() dictionary.
+ * `select_mask` - the dictionary of selected fields.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_a3ba7af7280bb892cf2c8c48877cd6734}\index{django.db.models.query\_utils@{django.db.models.query\_utils}!subclasses@{subclasses}}
+\index{subclasses@{subclasses}!django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection{\texorpdfstring{subclasses()}{subclasses()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1query__utils_a3ba7af7280bb892cf2c8c48877cd6734} 
+django.\+db.\+models.\+query\+\_\+utils.\+subclasses (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_ab9bf184a6a35de8c4e66297f39328e99}\index{django.db.models.query\_utils@{django.db.models.query\_utils}!logger@{logger}}
+\index{logger@{logger}!django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1query__utils_ab9bf184a6a35de8c4e66297f39328e99} 
+django.\+db.\+models.\+query\+\_\+utils.\+logger = logging.\+get\+Logger("{}django.\+db.\+models"{})}
+
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1query__utils_ab7eb447af337599dc4ef08ee57c6192c}\index{django.db.models.query\_utils@{django.db.models.query\_utils}!PathInfo@{PathInfo}}
+\index{PathInfo@{PathInfo}!django.db.models.query\_utils@{django.db.models.query\_utils}}
+\doxysubsubsection{\texorpdfstring{PathInfo}{PathInfo}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1query__utils_ab7eb447af337599dc4ef08ee57c6192c} 
+django.\+db.\+models.\+query\+\_\+utils.\+Path\+Info}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ namedtuple(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}PathInfo"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}from\_opts\ to\_opts\ target\_fields\ join\_field\ m2m\ direct\ filtered\_relation"{}},}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}

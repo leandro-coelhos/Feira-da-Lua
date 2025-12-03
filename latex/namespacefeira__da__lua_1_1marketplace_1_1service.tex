@@ -1,0 +1,255 @@
+\doxysection{feira\+\_\+da\+\_\+lua.\+marketplace.\+service Namespace Reference}
+\hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service}{}\label{namespacefeira__da__lua_1_1marketplace_1_1service}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}} \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a289abe9875592d299030913cbe0d8e41}{Create\+Market\+Place}} (str name, \mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}} marketer, str address, str coordinates)
+\item 
+\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_adb6587695f485a6bb3c5bb9bc072b34d}{Get\+Market\+Place\+By\+Id}} (int marketplace\+\_\+id)
+\item 
+list\mbox{[}\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}}\mbox{]} \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_adb460452d913072dcb2cac006df0b5f8}{Get\+All\+Market\+Places}} ()
+\item 
+\mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a73141b073e429c24567d52b49a43d215}{Update\+Market\+Place}} (int marketplace\+\_\+id, name=None, address=None, coordinates=None)
+\item 
+bool \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a62aa6a3bf82f67263ae6a4bf5d32c26b}{Delete\+Market\+Place}} (int marketplace\+\_\+id)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a6364629e2beef89e35586c7f7f705e54}{Search\+Market\+Places}} (str query=None)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_ab9973e6db9e67863f6bb1bd68565dc6d}{Search\+Products}} (str query=None)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a27671bb409ad0a5040ca965a992ed43e}{Filter\+Products\+By\+Price}} (list products=None, float min\+\_\+price=None, float max\+\_\+price=None)
+\item 
+float \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a9f3ec25d6e3eaa3d48e687dee75c7c8c}{Get\+Market\+Place\+Average\+Rating}} (\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}} marketplace)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a762b53165fb69eba220fd64186d07015}{Get\+Market\+Places\+With\+Ratings}} ()
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a326eba36d9c75eb339f14366e9a4ac6e}{Filter\+Market\+Places\+By\+Rating}} (float min\+\_\+rating=None)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a4bb7502dca3486383bc79715806cb125}{Filter\+Market\+Places\+By\+Address}} (str address\+\_\+query)
+\item 
+float \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a2a05d6b8cd6d25b1620d7b865469e227}{Calculate\+Distance}} (float lat1, float lon1, float lat2, float lon2)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a3c428775cd56b29becf5e7f4555c032d}{Filter\+Market\+Places\+By\+GPS}} (float user\+\_\+lat, float user\+\_\+lon, float max\+\_\+distance\+\_\+km=10)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a3a0ff6c12004493afd1e83cbe7115b4b}{Sort\+Market\+Places\+By\+Rating}} (list marketplaces\+\_\+data, bool descending=True)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a97d786b049ca52ae47b6a57f83b3e411}{Get\+All\+Products}} ()
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_ad54f202e49e1bd78e90f1b82c68549e1}{Get\+Products\+By\+Marketer}} (\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}} marketer)
+\item 
+list \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a5a7068ab53964b931e36532588fec649}{Get\+Market\+Places\+By\+Marketer}} (\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}} marketer)
+\item 
+\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_products}{Products}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_ad2907d852d5325eefa9fdc6af3106b7f}{Get\+Product\+By\+Id}} (int product\+\_\+id)
+\item 
+bool \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a85f9197a3ed165d24cd0b785ed7a5ac5}{Delete\+Product}} (int product\+\_\+id)
+\item 
+\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_products}{Products}} \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a2a534c066ed703801687335fed5f3a88}{Create\+Product}} (\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}} marketer, str name, float price, any photo)
+\item 
+\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_products}{Products}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacefeira__da__lua_1_1marketplace_1_1service_a02df0b8cc7acf41ccef50e3b5bb6e32e}{Update\+Product}} (int product\+\_\+id, name=None, price=None, photo=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a2a05d6b8cd6d25b1620d7b865469e227}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!CalculateDistance@{CalculateDistance}}
+\index{CalculateDistance@{CalculateDistance}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{CalculateDistance()}{CalculateDistance()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a2a05d6b8cd6d25b1620d7b865469e227} 
+ float feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Calculate\+Distance (\begin{DoxyParamCaption}\item[{float}]{lat1}{, }\item[{float}]{lon1}{, }\item[{float}]{lat2}{, }\item[{float}]{lon2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calcula a distancia entre dois pontos usando a formula de Haversine.
+Retorna a distancia em km.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a289abe9875592d299030913cbe0d8e41}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!CreateMarketPlace@{CreateMarketPlace}}
+\index{CreateMarketPlace@{CreateMarketPlace}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{CreateMarketPlace()}{CreateMarketPlace()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a289abe9875592d299030913cbe0d8e41} 
+ \mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}} feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Create\+Market\+Place (\begin{DoxyParamCaption}\item[{str}]{name}{, }\item[{\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}}}]{marketer}{, }\item[{str}]{address}{, }\item[{str}]{coordinates}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cria um novo marketplace.
+
+@param name: Nome do marketplace.
+@param marketer: Objeto Marketer associado ao marketplace.
+@param address: Endereço do marketplace.
+@param coordinates: Coordenadas do marketplace.
+
+@return O objeto MarketPlace criado.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a2a534c066ed703801687335fed5f3a88}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!CreateProduct@{CreateProduct}}
+\index{CreateProduct@{CreateProduct}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{CreateProduct()}{CreateProduct()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a2a534c066ed703801687335fed5f3a88} 
+ \mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_products}{Products}} feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Create\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}}}]{marketer}{, }\item[{str}]{name}{, }\item[{float}]{price}{, }\item[{any}]{photo}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cria um novo produto.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a62aa6a3bf82f67263ae6a4bf5d32c26b}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!DeleteMarketPlace@{DeleteMarketPlace}}
+\index{DeleteMarketPlace@{DeleteMarketPlace}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{DeleteMarketPlace()}{DeleteMarketPlace()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a62aa6a3bf82f67263ae6a4bf5d32c26b} 
+ bool feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Delete\+Market\+Place (\begin{DoxyParamCaption}\item[{int}]{marketplace\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deleta um marketplace pelo ID.
+
+@param marketplace_id: ID do marketplace a ser deletado.
+@return True se deletou com sucesso, False se não existir.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a85f9197a3ed165d24cd0b785ed7a5ac5}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!DeleteProduct@{DeleteProduct}}
+\index{DeleteProduct@{DeleteProduct}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{DeleteProduct()}{DeleteProduct()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a85f9197a3ed165d24cd0b785ed7a5ac5} 
+ bool feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Delete\+Product (\begin{DoxyParamCaption}\item[{int}]{product\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deleta um produto pelo ID.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a4bb7502dca3486383bc79715806cb125}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!FilterMarketPlacesByAddress@{FilterMarketPlacesByAddress}}
+\index{FilterMarketPlacesByAddress@{FilterMarketPlacesByAddress}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{FilterMarketPlacesByAddress()}{FilterMarketPlacesByAddress()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a4bb7502dca3486383bc79715806cb125} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Filter\+Market\+Places\+By\+Address (\begin{DoxyParamCaption}\item[{str}]{address\+\_\+query}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filtra marketplaces por endereco.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a3c428775cd56b29becf5e7f4555c032d}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!FilterMarketPlacesByGPS@{FilterMarketPlacesByGPS}}
+\index{FilterMarketPlacesByGPS@{FilterMarketPlacesByGPS}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{FilterMarketPlacesByGPS()}{FilterMarketPlacesByGPS()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a3c428775cd56b29becf5e7f4555c032d} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Filter\+Market\+Places\+By\+GPS (\begin{DoxyParamCaption}\item[{float}]{user\+\_\+lat}{, }\item[{float}]{user\+\_\+lon}{, }\item[{float }]{max\+\_\+distance\+\_\+km}{ = {\ttfamily 10}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filtra marketplaces por proximidade GPS.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a326eba36d9c75eb339f14366e9a4ac6e}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!FilterMarketPlacesByRating@{FilterMarketPlacesByRating}}
+\index{FilterMarketPlacesByRating@{FilterMarketPlacesByRating}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{FilterMarketPlacesByRating()}{FilterMarketPlacesByRating()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a326eba36d9c75eb339f14366e9a4ac6e} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Filter\+Market\+Places\+By\+Rating (\begin{DoxyParamCaption}\item[{float }]{min\+\_\+rating}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filtra marketplaces por nota media minima.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a27671bb409ad0a5040ca965a992ed43e}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!FilterProductsByPrice@{FilterProductsByPrice}}
+\index{FilterProductsByPrice@{FilterProductsByPrice}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{FilterProductsByPrice()}{FilterProductsByPrice()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a27671bb409ad0a5040ca965a992ed43e} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Filter\+Products\+By\+Price (\begin{DoxyParamCaption}\item[{list }]{products}{ = {\ttfamily None}, }\item[{float }]{min\+\_\+price}{ = {\ttfamily None}, }\item[{float }]{max\+\_\+price}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filtra produtos por faixa de preco.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_adb460452d913072dcb2cac006df0b5f8}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetAllMarketPlaces@{GetAllMarketPlaces}}
+\index{GetAllMarketPlaces@{GetAllMarketPlaces}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetAllMarketPlaces()}{GetAllMarketPlaces()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_adb460452d913072dcb2cac006df0b5f8} 
+ list\mbox{[}\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}}\mbox{]} feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+All\+Market\+Places (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retorna todos os marketplaces cadastrados.
+
+@return Uma lista contendo todos os objetos MarketPlace existentes.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a97d786b049ca52ae47b6a57f83b3e411}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetAllProducts@{GetAllProducts}}
+\index{GetAllProducts@{GetAllProducts}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetAllProducts()}{GetAllProducts()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a97d786b049ca52ae47b6a57f83b3e411} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+All\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retorna todos os produtos.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a9f3ec25d6e3eaa3d48e687dee75c7c8c}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetMarketPlaceAverageRating@{GetMarketPlaceAverageRating}}
+\index{GetMarketPlaceAverageRating@{GetMarketPlaceAverageRating}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetMarketPlaceAverageRating()}{GetMarketPlaceAverageRating()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a9f3ec25d6e3eaa3d48e687dee75c7c8c} 
+ float feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+Market\+Place\+Average\+Rating (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}}}]{marketplace}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calcula a nota media de um marketplace.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_adb6587695f485a6bb3c5bb9bc072b34d}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetMarketPlaceById@{GetMarketPlaceById}}
+\index{GetMarketPlaceById@{GetMarketPlaceById}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetMarketPlaceById()}{GetMarketPlaceById()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_adb6587695f485a6bb3c5bb9bc072b34d} 
+ \mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_market_place}{Market\+Place}} \texorpdfstring{$\vert$}{|} None feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+Market\+Place\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{marketplace\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obtém um marketplace pelo seu ID.
+
+@param marketplace_id: ID do marketplace a ser buscado.
+@return O objeto MarketPlace correspondente ao ID informado, 
+        ou None caso não exista.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a5a7068ab53964b931e36532588fec649}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetMarketPlacesByMarketer@{GetMarketPlacesByMarketer}}
+\index{GetMarketPlacesByMarketer@{GetMarketPlacesByMarketer}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetMarketPlacesByMarketer()}{GetMarketPlacesByMarketer()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a5a7068ab53964b931e36532588fec649} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+Market\+Places\+By\+Marketer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}}}]{marketer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retorna as feiras de um feirante especifico.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a762b53165fb69eba220fd64186d07015}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetMarketPlacesWithRatings@{GetMarketPlacesWithRatings}}
+\index{GetMarketPlacesWithRatings@{GetMarketPlacesWithRatings}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetMarketPlacesWithRatings()}{GetMarketPlacesWithRatings()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a762b53165fb69eba220fd64186d07015} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+Market\+Places\+With\+Ratings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retorna todos os marketplaces com suas notas medias.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_ad2907d852d5325eefa9fdc6af3106b7f}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetProductById@{GetProductById}}
+\index{GetProductById@{GetProductById}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetProductById()}{GetProductById()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_ad2907d852d5325eefa9fdc6af3106b7f} 
+ \mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_products}{Products}} \texorpdfstring{$\vert$}{|} None feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+Product\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{product\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obtém um produto pelo seu ID.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_ad54f202e49e1bd78e90f1b82c68549e1}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!GetProductsByMarketer@{GetProductsByMarketer}}
+\index{GetProductsByMarketer@{GetProductsByMarketer}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{GetProductsByMarketer()}{GetProductsByMarketer()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_ad54f202e49e1bd78e90f1b82c68549e1} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Get\+Products\+By\+Marketer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfeira__da__lua_1_1users_1_1models_1_1_marketer}{Marketer}}}]{marketer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retorna produtos de um feirante especifico.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a6364629e2beef89e35586c7f7f705e54}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!SearchMarketPlaces@{SearchMarketPlaces}}
+\index{SearchMarketPlaces@{SearchMarketPlaces}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{SearchMarketPlaces()}{SearchMarketPlaces()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a6364629e2beef89e35586c7f7f705e54} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Search\+Market\+Places (\begin{DoxyParamCaption}\item[{str }]{query}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Busca marketplaces por nome ou endereco.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_ab9973e6db9e67863f6bb1bd68565dc6d}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!SearchProducts@{SearchProducts}}
+\index{SearchProducts@{SearchProducts}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{SearchProducts()}{SearchProducts()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_ab9973e6db9e67863f6bb1bd68565dc6d} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Search\+Products (\begin{DoxyParamCaption}\item[{str }]{query}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Busca produtos por nome.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a3a0ff6c12004493afd1e83cbe7115b4b}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!SortMarketPlacesByRating@{SortMarketPlacesByRating}}
+\index{SortMarketPlacesByRating@{SortMarketPlacesByRating}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{SortMarketPlacesByRating()}{SortMarketPlacesByRating()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a3a0ff6c12004493afd1e83cbe7115b4b} 
+ list feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Sort\+Market\+Places\+By\+Rating (\begin{DoxyParamCaption}\item[{list}]{marketplaces\+\_\+data}{, }\item[{bool }]{descending}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ordena lista de marketplaces por nota media.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a73141b073e429c24567d52b49a43d215}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!UpdateMarketPlace@{UpdateMarketPlace}}
+\index{UpdateMarketPlace@{UpdateMarketPlace}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{UpdateMarketPlace()}{UpdateMarketPlace()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a73141b073e429c24567d52b49a43d215} 
+feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Update\+Market\+Place (\begin{DoxyParamCaption}\item[{int}]{marketplace\+\_\+id}{, }\item[{}]{name}{ = {\ttfamily None}, }\item[{}]{address}{ = {\ttfamily None}, }\item[{}]{coordinates}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Atualiza um marketplace existente.
+
+@param marketplace_id: ID do marketplace a ser atualizado.
+@param name: Novo nome (opcional).
+@param address: Novo endereço (opcional).
+@param coordinates: Novas coordenadas (opcional).
+
+@return O objeto atualizado, ou None caso não exista.
+\end{DoxyVerb}
+ \Hypertarget{namespacefeira__da__lua_1_1marketplace_1_1service_a02df0b8cc7acf41ccef50e3b5bb6e32e}\index{feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}!UpdateProduct@{UpdateProduct}}
+\index{UpdateProduct@{UpdateProduct}!feira\_da\_lua.marketplace.service@{feira\_da\_lua.marketplace.service}}
+\doxysubsubsection{\texorpdfstring{UpdateProduct()}{UpdateProduct()}}
+{\footnotesize\ttfamily \label{namespacefeira__da__lua_1_1marketplace_1_1service_a02df0b8cc7acf41ccef50e3b5bb6e32e} 
+ \mbox{\hyperlink{classfeira__da__lua_1_1marketplace_1_1models_1_1_products}{Products}} \texorpdfstring{$\vert$}{|} None feira\+\_\+da\+\_\+lua.\+marketplace.\+service.\+Update\+Product (\begin{DoxyParamCaption}\item[{int}]{product\+\_\+id}{, }\item[{}]{name}{ = {\ttfamily None}, }\item[{}]{price}{ = {\ttfamily None}, }\item[{}]{photo}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Atualiza um produto existente.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,153 @@
+\doxysection{aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case Class Reference}
+\hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case}{}\label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+Inheritance diagram for aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Application \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a18a5c0f0fe0177f8d11ade15828b2efd}{get\+\_\+application}} (self)
+\item 
+Application \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a2224a0224f2df90b44ada64374c0aaaa}{get\+\_\+app}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a0c6cc8054cc7df6fce88df5839f2f13d}{async\+Set\+Up}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a00d283e4793d489f9ab90a029f5c02b2}{set\+Up\+Async}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad0359ae1a29ef545351c71b68ea0fab1}{async\+Tear\+Down}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a4f500600a0b3d4239ce05c713590c81c}{tear\+Down\+Async}} (self)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a05604672f53362d34cb29257c56ad6bf}{get\+\_\+server}} (self, Application \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ab21cc2226be21e133c84c8e50559ec24}{app}})
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_client}{Test\+Client}}\mbox{[}Request, Application\mbox{]} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a5dbaec667d24210a107c45e890944a49}{get\+\_\+client}} (self, \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad49063643342b0aa337a4f8582bfdda1}{server}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a052c14a3782e5b603b1b2b8c4efb7db7}{loop}} = asyncio.\+get\+\_\+running\+\_\+loop()
+\item 
+Application \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ab21cc2226be21e133c84c8e50559ec24}{app}} = await self.\+get\+\_\+application()
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad49063643342b0aa337a4f8582bfdda1}{server}} = await self.\+get\+\_\+server(self.\+app)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_client}{Test\+Client}}\mbox{[}Request, Application\mbox{]} \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a81434ace22df0c87d40a0df9f5e40f70}{client}} = await self.\+get\+\_\+client(self.\+server)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A base class to allow for unittest web applications using aiohttp.
+
+Provides the following:
+
+* self.client (aiohttp.test_utils.TestClient): an aiohttp test client.
+* self.loop (asyncio.BaseEventLoop): the event loop in which the
+    application and server are running.
+* self.app (aiohttp.web.Application): the application returned by
+    self.get_application()
+
+Note that the TestClient's methods are asynchronous: you have to
+execute function on the test client using asynchronous methods.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a0c6cc8054cc7df6fce88df5839f2f13d}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!asyncSetUp@{asyncSetUp}}
+\index{asyncSetUp@{asyncSetUp}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{asyncSetUp()}{asyncSetUp()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a0c6cc8054cc7df6fce88df5839f2f13d} 
+ None aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+async\+Set\+Up (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad0359ae1a29ef545351c71b68ea0fab1}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!asyncTearDown@{asyncTearDown}}
+\index{asyncTearDown@{asyncTearDown}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{asyncTearDown()}{asyncTearDown()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad0359ae1a29ef545351c71b68ea0fab1} 
+ None aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+async\+Tear\+Down (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a2224a0224f2df90b44ada64374c0aaaa}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!get\_app@{get\_app}}
+\index{get\_app@{get\_app}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{get\_app()}{get\_app()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a2224a0224f2df90b44ada64374c0aaaa} 
+ Application aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+get\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obsolete method used to constructing web application.
+
+Use .get_application() coroutine instead.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a18a5c0f0fe0177f8d11ade15828b2efd}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!get\_application@{get\_application}}
+\index{get\_application@{get\_application}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{get\_application()}{get\_application()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a18a5c0f0fe0177f8d11ade15828b2efd} 
+ Application aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+get\+\_\+application (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get application.
+
+This method should be overridden
+to return the aiohttp.web.Application
+object to test.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a5dbaec667d24210a107c45e890944a49}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!get\_client@{get\_client}}
+\index{get\_client@{get\_client}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{get\_client()}{get\_client()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a5dbaec667d24210a107c45e890944a49} 
+ \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_client}{Test\+Client}}\mbox{[}Request, Application\mbox{]} aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+get\+\_\+client (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}}}]{server}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a TestClient instance.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a05604672f53362d34cb29257c56ad6bf}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!get\_server@{get\_server}}
+\index{get\_server@{get\_server}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{get\_server()}{get\_server()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a05604672f53362d34cb29257c56ad6bf} 
+ \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}} aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+get\+\_\+server (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Application}]{app}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a TestServer instance.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a00d283e4793d489f9ab90a029f5c02b2}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!setUpAsync@{setUpAsync}}
+\index{setUpAsync@{setUpAsync}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{setUpAsync()}{setUpAsync()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a00d283e4793d489f9ab90a029f5c02b2} 
+ None aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+set\+Up\+Async (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a4f500600a0b3d4239ce05c713590c81c}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!tearDownAsync@{tearDownAsync}}
+\index{tearDownAsync@{tearDownAsync}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{tearDownAsync()}{tearDownAsync()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a4f500600a0b3d4239ce05c713590c81c} 
+ None aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+tear\+Down\+Async (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ab21cc2226be21e133c84c8e50559ec24}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!app@{app}}
+\index{app@{app}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ab21cc2226be21e133c84c8e50559ec24} 
+Application aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+app = await self.\+get\+\_\+application()}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a81434ace22df0c87d40a0df9f5e40f70}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!client@{client}}
+\index{client@{client}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{client}{client}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a81434ace22df0c87d40a0df9f5e40f70} 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_client}{Test\+Client}}\mbox{[}Request, Application\mbox{]} aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+client = await self.\+get\+\_\+client(self.\+server)}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a052c14a3782e5b603b1b2b8c4efb7db7}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!loop@{loop}}
+\index{loop@{loop}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_a052c14a3782e5b603b1b2b8c4efb7db7} 
+aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+loop = asyncio.\+get\+\_\+running\+\_\+loop()}
+
+\Hypertarget{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad49063643342b0aa337a4f8582bfdda1}\index{aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}!server@{server}}
+\index{server@{server}!aiohttp.test\_utils.AioHTTPTestCase@{aiohttp.test\_utils.AioHTTPTestCase}}
+\doxysubsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case_ad49063643342b0aa337a4f8582bfdda1} 
+\mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{Test\+Server}} aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case.\+server = await self.\+get\+\_\+server(self.\+app)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{test__utils_8py}{test\+\_\+utils.\+py}}\end{DoxyCompactItemize}

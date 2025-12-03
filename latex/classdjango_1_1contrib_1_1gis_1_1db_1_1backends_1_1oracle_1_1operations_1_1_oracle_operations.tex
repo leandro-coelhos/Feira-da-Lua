@@ -1,0 +1,550 @@
+\doxysection{django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations}{}\label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+Inheritance diagram for django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.985816cm]{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a594f86488cb662903f62c691b868eb2a}{geo\+\_\+quote\+\_\+name}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_acfd6fc0c13c6a7c5db533d310195b10e}{name}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad95169a0126aa9550a70917bf09355a7}{convert\+\_\+extent}} (self, clob)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a3639f9c53ed66303b44f4ebe2e03ff20}{geo\+\_\+db\+\_\+type}} (self, f)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ac637e1f48087a30414ecee58d6ee9179}{get\+\_\+distance}} (self, f, value, lookup\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a79a5b53d3d3abee83275c7218f50660c}{get\+\_\+geom\+\_\+placeholder}} (self, f, value, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ab3e0a61c8968590d516ced81806cdb8f}{compiler}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ababa3727ddb598874b2cde266b2bbc2c}{spatial\+\_\+aggregate\+\_\+name}} (self, agg\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a873eb4e415b849836534c66b215bab58}{geometry\+\_\+columns}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad3cf8fb42a4a602bd06b6ff058be45c5}{spatial\+\_\+ref\+\_\+sys}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a0772d610a6437510b5e714b45c8d3e6d}{modify\+\_\+insert\+\_\+params}} (self, placeholder, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a28642a63961c76f15323d6ce8d9ded8e}{get\+\_\+geometry\+\_\+converter}} (self, expression)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a3ab083ed22f3f2473db10ac8e1b72a11}{get\+\_\+area\+\_\+att\+\_\+for\+\_\+field}} (self, field)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a24dc7873caa444d009dfb133b7827b5b}{select\+\_\+extent}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_abd9c2520da2e2464fb937fd8b4992796}{convert\+\_\+extent3d}} (self, box, srid)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_ac51fb0e763a513001ed5d1f5dbeb34bd}{check\+\_\+expression\+\_\+support}} (self, expression)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a36337d377ac4c4e7e22798b5a7e72838}{spatial\+\_\+function\+\_\+name}} (self, func\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a058e7d54c34ca41522427bc672b5106f}{get\+\_\+db\+\_\+converters}} (self, expression)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a1c3e214f2de7d6e422b6ab3e68f57f0d}{get\+\_\+distance\+\_\+att\+\_\+for\+\_\+field}} (self, field)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations}{django.\+db.\+backends.\+oracle.\+operations.\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ae3e865b2aadcc1a54603d25c198fe0ee}{cache\+\_\+key\+\_\+culling\+\_\+sql}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a7b44b66182530b685df52e3ab60c641b}{date\+\_\+extract\+\_\+sql}} (self, lookup\+\_\+type, sql, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ace8bc9065b54aa816e1815e1e3fe191e}{date\+\_\+trunc\+\_\+sql}} (self, lookup\+\_\+type, sql, params, tzname=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aa608831a034574cdb50d96f73d054a25}{datetime\+\_\+cast\+\_\+date\+\_\+sql}} (self, sql, params, tzname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aad2b8aa45794cb7d93e973dff7a96d61}{datetime\+\_\+cast\+\_\+time\+\_\+sql}} (self, sql, params, tzname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a6b1af7a09a2bddfbbcee7061199b2f45}{datetime\+\_\+extract\+\_\+sql}} (self, lookup\+\_\+type, sql, params, tzname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a83dbcc56bf1184112e8a7c2244918511}{datetime\+\_\+trunc\+\_\+sql}} (self, lookup\+\_\+type, sql, params, tzname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aa104f05e34303b84ffad09f372e1818c}{time\+\_\+extract\+\_\+sql}} (self, lookup\+\_\+type, sql, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_af3074c11857d5e92a2b5829700faff10}{time\+\_\+trunc\+\_\+sql}} (self, lookup\+\_\+type, sql, params, tzname=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ab17e24d0014dfbfeb3b3aea13bf41999}{get\+\_\+db\+\_\+converters}} (self, expression)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a890c49b96439d1be42b41f48599a410f}{convert\+\_\+textfield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ae6de48e71fb355e947832bc1d7e06d4b}{convert\+\_\+binaryfield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a0d5cdba8c5458e647d4b8732709339ba}{convert\+\_\+booleanfield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_af8be901a5889df03df92083bd6154dfd}{convert\+\_\+datetimefield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aa035a13ebf3e5dbb6b109fb58aaf60a0}{convert\+\_\+datefield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a241b24c2c3d93be22ff46a943502c9c8}{convert\+\_\+timefield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a0853fb95a3297d0dbd9b887f04bf49f4}{convert\+\_\+uuidfield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aac0d72e77e0faf02981b11fb0208ddcb}{deferrable\+\_\+sql}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad4b60c41aebc86b7eaa94cdecbbcde2c}{fetch\+\_\+returned\+\_\+insert\+\_\+columns}} (self, cursor, returning\+\_\+params)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad0458690147f30ac615833af0c159492}{no\+\_\+limit\+\_\+value}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a12ba42909310b6646f51fbf616e6bbb5}{limit\+\_\+offset\+\_\+sql}} (self, low\+\_\+mark, high\+\_\+mark)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aba895f8b88055408535c63fa9e913fe5}{last\+\_\+executed\+\_\+query}} (self, cursor, sql, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ab7c3d1622fc3d11e1708d7fe6e1fdb15}{last\+\_\+insert\+\_\+id}} (self, cursor, table\+\_\+name, pk\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aadf6e118596a17c1b156f691dad93ad0}{lookup\+\_\+cast}} (self, lookup\+\_\+type, internal\+\_\+type=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a9c33cff03f02c6ac3ae6d9fa934cf06d}{max\+\_\+in\+\_\+list\+\_\+size}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aa17742b77fb39d2fcb061eadb24120b7}{max\+\_\+name\+\_\+length}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ab800e3118cc57f2607d8d131b1cbed03}{pk\+\_\+default\+\_\+value}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_af9b1e6203e16ba9def5274c910d6bd95}{prep\+\_\+for\+\_\+iexact\+\_\+query}} (self, x)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad98024fcb57c3cf54bae945d148ce359}{process\+\_\+clob}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ac7551d250b0adf678e5d00e4d69cb021}{quote\+\_\+name}} (self, name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_afb6a5f41801aaa91754eac286e08e3fc}{regex\+\_\+lookup}} (self, lookup\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a75084b1e494099fc1ea1d5c1f8854907}{return\+\_\+insert\+\_\+columns}} (self, fields)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ab8dce95760401ff8265e41a3c17280e2}{sql\+\_\+flush}} (self, style, tables, \texorpdfstring{$\ast$}{*}, reset\+\_\+sequences=False, allow\+\_\+cascade=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ab0b3d5d7c686f6ad82c5df2bb4eb0452}{sequence\+\_\+reset\+\_\+by\+\_\+name\+\_\+sql}} (self, style, sequences)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aca5fe62f56740acc3ccf6374bfdfdc96}{sequence\+\_\+reset\+\_\+sql}} (self, style, model\+\_\+list)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a2a9765a5fc1c227ea4e61ff19fefc126}{start\+\_\+transaction\+\_\+sql}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aed2e84a87d892b8b0bb87474768c45b9}{tablespace\+\_\+sql}} (self, tablespace, inline=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad48502c2a39738fc207184a66bf1140f}{adapt\+\_\+datefield\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a2600da0bd92e19622f58eaed55100b17}{adapt\+\_\+datetimefield\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a2370ee38185df67f85b3802c3f5f34a1}{adapt\+\_\+timefield\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a92528960791a24673b9b80aa8ba47fc9}{combine\+\_\+expression}} (self, connector, sub\+\_\+expressions)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a02a623de9de4ed9054b01d80c4e57cea}{bulk\+\_\+insert\+\_\+sql}} (self, fields, placeholder\+\_\+rows)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a4d36d3c2e8d6acc3b5725a7e4cecc93a}{subtract\+\_\+temporals}} (self, internal\+\_\+type, lhs, rhs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a095746fee710175417c21f921280f596}{bulk\+\_\+batch\+\_\+size}} (self, fields, objs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ada569ef7ac74c0587af41c9cbfee3d93}{conditional\+\_\+expression\+\_\+supported\+\_\+in\+\_\+where\+\_\+clause}} (self, expression)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations}{django.\+db.\+backends.\+base.\+operations.\+Base\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a17488f509ab16e1b9184785c434c4192}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ab06077302d88292961506561fd00222d}{autoinc\+\_\+sql}} (self, table, column)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a2b90f179b8d60bc3357a733e2148ea6c}{format\+\_\+for\+\_\+duration\+\_\+arithmetic}} (self, sql)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3026d0f70d1e6fb369c135e156a51575}{unification\+\_\+cast\+\_\+sql}} (self, output\+\_\+field)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a6e5313cfd62f9f67580726bfd863db03}{distinct\+\_\+sql}} (self, fields, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a27c8cbbbb5edb0235e1663389fc7d495}{field\+\_\+cast\+\_\+sql}} (self, db\+\_\+type, internal\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a5ef438a84af3b85d1f6711ed0d9b61b2}{force\+\_\+group\+\_\+by}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a7ef61ed9088973df29eeed5243ca9bff}{force\+\_\+no\+\_\+ordering}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ae4d5253e41019509687c3825370bfc12}{for\+\_\+update\+\_\+sql}} (self, nowait=False, skip\+\_\+locked=False, of=(), no\+\_\+key=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a187b3254a40a60270ec2cda5da55f737}{prepare\+\_\+sql\+\_\+script}} (self, sql)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ab3e0a61c8968590d516ced81806cdb8f}{compiler}} (self, compiler\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ac5454ed2318054ef86030ac031a466fc}{savepoint\+\_\+create\+\_\+sql}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_aa7a15b417547810d8783a5095f723897}{savepoint\+\_\+commit\+\_\+sql}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_aeec147b86770bb2a6f04bead496880bd}{savepoint\+\_\+rollback\+\_\+sql}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a68a2cfe65b7edc969b952175ff1b6a22}{set\+\_\+time\+\_\+zone\+\_\+sql}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ae3ccc84ee849dd51559cbfa188eafbc1}{execute\+\_\+sql\+\_\+flush}} (self, sql\+\_\+list)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a4ff2ce72740fa102aa4b0722f038e447}{end\+\_\+transaction\+\_\+sql}} (self, success=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a8273d201bb4abd4bbd1873020c259f39}{prep\+\_\+for\+\_\+like\+\_\+query}} (self, x)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a4b2fb4f8f5d040c7dca3accb44b4ad64}{validate\+\_\+autopk\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a5b033db3fc17f7ed46033fe9fcf12d36}{adapt\+\_\+unknown\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a7e38d89fea2251d1c851350ef11bee68}{adapt\+\_\+integerfield\+\_\+value}} (self, value, internal\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_acb0155eb40d70bd8e63f10a7f6155ed9}{adapt\+\_\+decimalfield\+\_\+value}} (self, value, max\+\_\+digits=None, decimal\+\_\+places=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a5797c38c912c039acf0013009fba0b17}{adapt\+\_\+ipaddressfield\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ae0751f2cda7c44e8e4be92b4a47bc072}{adapt\+\_\+json\+\_\+value}} (self, value, encoder)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_acb38fa8f2b13199afb69f8c5bdabad9a}{year\+\_\+lookup\+\_\+bounds\+\_\+for\+\_\+date\+\_\+field}} (self, value, iso\+\_\+year=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a41aba7a646aa767ba4890437c4d4b2af}{year\+\_\+lookup\+\_\+bounds\+\_\+for\+\_\+datetime\+\_\+field}} (self, value, iso\+\_\+year=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a90b14c7cb23829101a0ffef32dcec7c2}{convert\+\_\+durationfield\+\_\+value}} (self, value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_abef726f683338cb287c51c32c183a0dc}{check\+\_\+expression\+\_\+support}} (self, expression)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a525a6ce98362e0d4acc7700a926bd3fd}{combine\+\_\+duration\+\_\+expression}} (self, connector, sub\+\_\+expressions)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a1bb0a6882c51208f1e24e34ea52d8607}{binary\+\_\+placeholder\+\_\+sql}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ad387c1bb01738365ca32cce8812b54f2}{integer\+\_\+field\+\_\+range}} (self, internal\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a8d49d2e1b202030cd81210dff783f0fc}{window\+\_\+frame\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_af84de1ddf0f949631a433889e638c615}{window\+\_\+frame\+\_\+rows\+\_\+start\+\_\+end}} (self, start=None, end=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a4f7c1c9875321ae9aa552b6a5513bca5}{window\+\_\+frame\+\_\+range\+\_\+start\+\_\+end}} (self, start=None, end=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_af50c7c5cbfce5aafb67850dd27708522}{explain\+\_\+query\+\_\+prefix}} (self, format=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_ad041171bf5619a5a3abe6c4c478be5cc}{insert\+\_\+statement}} (self, on\+\_\+conflict=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_adb48c127311b1f19c81734cb5daa8930}{on\+\_\+conflict\+\_\+suffix\+\_\+sql}} (self, fields, on\+\_\+conflict, update\+\_\+fields, unique\+\_\+fields)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a668e7cf0335bea0d048465c5d77de263}{prepare\+\_\+join\+\_\+on\+\_\+clause}} (self, lhs\+\_\+table, lhs\+\_\+field, rhs\+\_\+table, rhs\+\_\+field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_acfd6fc0c13c6a7c5db533d310195b10e}{name}} = "{}oracle"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a12b0209bd9d2d3cb1246f3d8aeb39383}{Adapter}} = \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1adapter_1_1_oracle_spatial_adapter}{Oracle\+Spatial\+Adapter}}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad9c8539509bcde248be823fda73cb1bf}{extent}} = "{}SDO\+\_\+\+AGGR\+\_\+\+MBR"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a017a1aa6fc683231e39bf6c481d460bb}{unionagg}} = "{}SDO\+\_\+\+AGGR\+\_\+\+UNION"{}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a61e18ebd2aa56e2c4ffae8b481362649}{gis\+\_\+operators}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a19cc480ec49c100d5d9e8b7ece8ccf78}{postgis}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_abd1ec31415776e447ef2f43b6a361d62}{spatialite}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a074ad24c2c0bece5e653c7905e80ce22}{mariadb}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a3afc3be0d0934495548f2818987b9eec}{mysql}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a7461b0deb9871bdf2cddd633eaf6d7c9}{oracle}} = False
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a67dd6ceeb8048b2e9b95d93a6f8b927b}{spatial\+\_\+version}} = None
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_aef4c472bc352f892f4b16b5dcd79b357}{select}} = "{}\%s"{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a1b58a432a7223dc631821bc96b8df095}{disallowed\+\_\+aggregates}} = ()
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_af86c8b10c0fde937b6994f334106afac}{geom\+\_\+func\+\_\+prefix}} = "{}"{}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a031dc5ad4bb91f5a54cdbe1238bb6c24}{function\+\_\+names}} = \{\}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a77d82c714a17604375b56974af7a2bef}{unsupported\+\_\+functions}}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a0968a104b9bdfb4eb3dbcf6171a2eaa4}{from\+\_\+text}} = False
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a6da22d5ee0bfbd031f380091872dedfc}{distance\+\_\+expr\+\_\+for\+\_\+lookup}} = staticmethod(\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1models_1_1functions_1_1_distance}{Distance}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations}{django.\+db.\+backends.\+base.\+operations.\+Base\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a8ad2451e9baa0a088f894526b7453e58}{compiler\+\_\+module}} = "{}django.\+db.\+models.\+sql.\+compiler"{}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_aab9dd17d8e2413f96e90868b77113d53}{integer\+\_\+field\+\_\+ranges}}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a8da35caa24ff718c0cc5a56479ac8742}{set\+\_\+operators}}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a29b55a7964d6f1e9d5a279cb0e9052ed}{cast\+\_\+data\+\_\+types}} = \{\}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a083f569354d771c878a379b0f1cdeabb}{cast\+\_\+char\+\_\+field\+\_\+without\+\_\+max\+\_\+length}} = None
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a71c6ccefa04bc1ea0579877c7339b6c4}{PRECEDING}} = "{}PRECEDING"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_aa24b4175dab3831ce91532bd18cfc442}{FOLLOWING}} = "{}FOLLOWING"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a11aa9d6fe8593c0a848059ff29566add}{UNBOUNDED\+\_\+\+PRECEDING}} = "{}UNBOUNDED "{} + PRECEDING
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_afb0ce50b7201a42feefe92347573d71f}{UNBOUNDED\+\_\+\+FOLLOWING}} = "{}UNBOUNDED "{} + FOLLOWING
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a68bd2a19713b605cb08d2ab96a7e5219}{CURRENT\+\_\+\+ROW}} = "{}CURRENT ROW"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a561ed9ace02f234744fc3f8803445208}{explain\+\_\+prefix}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations}{django.\+db.\+backends.\+oracle.\+operations.\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad8d60ff8316474a8cb4b1a511d5d717f}{convert\+\_\+empty\+\_\+string}} (value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_abee1ff54b90c1f5939890adf64ce1dce}{convert\+\_\+empty\+\_\+bytes}} (value, expression, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a8bd546318d100989e2477ced3ce3326d}{connection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations}{django.\+db.\+backends.\+oracle.\+operations.\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a49eef6215ed37c03656b3f114fd3733c}{convert\+\_\+textfield\+\_\+value}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a24d5fca85b554cfb66fb696461f51f69}{convert\+\_\+binaryfield\+\_\+value}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a8c1f688389ce502aa23f6bf5bbfc4e4b}{convert\+\_\+booleanfield\+\_\+value}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad939eb1889212731ef895417223258d6}{convert\+\_\+datetimefield\+\_\+value}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a3c64460475e18531ad799b8963f75778}{convert\+\_\+datefield\+\_\+value}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a28d220e7232789fba4cf5262d9984faa}{convert\+\_\+timefield\+\_\+value}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a225b9a0eb22d7a9b13c74350b12fb0ec}{convert\+\_\+uuidfield\+\_\+value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations}{django.\+db.\+backends.\+base.\+operations.\+Base\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a3f8a27447e62c447d94312eb9269f001}{connection}} = connection
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations}{django.\+db.\+backends.\+oracle.\+operations.\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aa6e700a692efc0597932646ca41f55ef}{\+\_\+prepare\+\_\+tzname\+\_\+delta}} (self, tzname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aeb1cd22e2e2ad5c8446de7454905a774}{\+\_\+convert\+\_\+sql\+\_\+to\+\_\+tz}} (self, sql, params, tzname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a5f0c86d36559dd2033a76fe795b3e0cd}{\+\_\+foreign\+\_\+key\+\_\+constraints}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_ad89acc44101ec0761ecf08100c8b101d}{\+\_\+get\+\_\+no\+\_\+autofield\+\_\+sequence\+\_\+name}} (self, table)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a2862f33c7077db6bb7c59edad3f67c28}{\+\_\+get\+\_\+sequence\+\_\+name}} (self, cursor, table, pk\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations}{django.\+db.\+backends.\+base.\+operations.\+Base\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a81bf56dc1e7532bc0cd065d7abeb1fee}{\+\_\+get\+\_\+limit\+\_\+offset\+\_\+params}} (self, low\+\_\+mark, high\+\_\+mark)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations}{django.\+db.\+backends.\+base.\+operations.\+Base\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a8ebbc046f1029704753e7009ab154f81}{\+\_\+cache}} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations}{django.\+db.\+backends.\+oracle.\+operations.\+Database\+Operations}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a30e343d421c62c8387bdd4e881f5e94d}{\+\_\+sequence\+\_\+reset\+\_\+sql}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_a53456647c4c0e7dd26260b3058055d4a}{\+\_\+extract\+\_\+format\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\mbox{[}A-\/Z\+\_\+\mbox{]}+"{})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1operations_1_1_database_operations_aaf9af27923b0f7f22e922c671f23c68a}{\+\_\+tzname\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\textbackslash{}w/\+:+-\/\mbox{]}+\$"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad95169a0126aa9550a70917bf09355a7}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!convert\_extent@{convert\_extent}}
+\index{convert\_extent@{convert\_extent}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{convert\_extent()}{convert\_extent()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad95169a0126aa9550a70917bf09355a7} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+convert\+\_\+extent (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{clob}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a290c1ef3c303bf605751834014418213}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a3639f9c53ed66303b44f4ebe2e03ff20}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!geo\_db\_type@{geo\_db\_type}}
+\index{geo\_db\_type@{geo\_db\_type}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{geo\_db\_type()}{geo\_db\_type()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a3639f9c53ed66303b44f4ebe2e03ff20} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+geo\+\_\+db\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the geometry database type for Oracle. Unlike other spatial
+backends, no stored procedure is necessary and it's the same for all
+geometry types.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_acd4a65e5b67a6a785c0068291f3c5dbf}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a594f86488cb662903f62c691b868eb2a}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!geo\_quote\_name@{geo\_quote\_name}}
+\index{geo\_quote\_name@{geo\_quote\_name}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{geo\_quote\_name()}{geo\_quote\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a594f86488cb662903f62c691b868eb2a} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+geo\+\_\+quote\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_abc9f85ed4bdf2a65e0846bcad4ca8dca}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a873eb4e415b849836534c66b215bab58}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!geometry\_columns@{geometry\_columns}}
+\index{geometry\_columns@{geometry\_columns}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{geometry\_columns()}{geometry\_columns()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a873eb4e415b849836534c66b215bab58} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+geometry\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a08b278871c01521d76beb24a4db36b50}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a3ab083ed22f3f2473db10ac8e1b72a11}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!get\_area\_att\_for\_field@{get\_area\_att\_for\_field}}
+\index{get\_area\_att\_for\_field@{get\_area\_att\_for\_field}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{get\_area\_att\_for\_field()}{get\_area\_att\_for\_field()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a3ab083ed22f3f2473db10ac8e1b72a11} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+get\+\_\+area\+\_\+att\+\_\+for\+\_\+field (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a2341201a11a08b89af3679ed4d690d3d}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ac637e1f48087a30414ecee58d6ee9179}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!get\_distance@{get\_distance}}
+\index{get\_distance@{get\_distance}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{get\_distance()}{get\_distance()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ac637e1f48087a30414ecee58d6ee9179} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+get\+\_\+distance (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{f}{, }\item[{}]{value}{, }\item[{}]{lookup\+\_\+type}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the distance parameters given the value and the lookup type.
+On Oracle, geometry columns with a geodetic coordinate system behave
+implicitly like a geography column, and thus meters will be used as
+the distance parameter on them.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a3d8b2badb7cf77ad863a5a4e8b98f608}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a79a5b53d3d3abee83275c7218f50660c}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!get\_geom\_placeholder@{get\_geom\_placeholder}}
+\index{get\_geom\_placeholder@{get\_geom\_placeholder}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{get\_geom\_placeholder()}{get\_geom\_placeholder()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a79a5b53d3d3abee83275c7218f50660c} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+get\+\_\+geom\+\_\+placeholder (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{f}{, }\item[{}]{value}{, }\item[{}]{compiler}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the placeholder for the given geometry field with the given
+value.  Depending on the spatial backend, the placeholder may contain a
+stored procedure call to the transformation function of the spatial
+backend.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a14cc02a2095279616cf7d9cec2ea44a8}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a28642a63961c76f15323d6ce8d9ded8e}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!get\_geometry\_converter@{get\_geometry\_converter}}
+\index{get\_geometry\_converter@{get\_geometry\_converter}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{get\_geometry\_converter()}{get\_geometry\_converter()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a28642a63961c76f15323d6ce8d9ded8e} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+get\+\_\+geometry\+\_\+converter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{expression}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_a2646df222449fd75c4b0deb98f5cd878}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a0772d610a6437510b5e714b45c8d3e6d}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!modify\_insert\_params@{modify\_insert\_params}}
+\index{modify\_insert\_params@{modify\_insert\_params}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{modify\_insert\_params()}{modify\_insert\_params()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a0772d610a6437510b5e714b45c8d3e6d} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+modify\+\_\+insert\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{placeholder}{, }\item[{}]{params}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Drop out insert parameters for NULL placeholder. Needed for Oracle Spatial
+backend due to #10888.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1operations_1_1_base_database_operations_a67af2cb1ad331b0c5e6f3fea18ddd50b}{django.\+db.\+backends.\+base.\+operations.\+Base\+Database\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ababa3727ddb598874b2cde266b2bbc2c}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!spatial\_aggregate\_name@{spatial\_aggregate\_name}}
+\index{spatial\_aggregate\_name@{spatial\_aggregate\_name}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{spatial\_aggregate\_name()}{spatial\_aggregate\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ababa3727ddb598874b2cde266b2bbc2c} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+spatial\+\_\+aggregate\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{agg\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the spatial aggregate SQL name.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_aefac384891c7524326c99bb8fad3414d}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad3cf8fb42a4a602bd06b6ff058be45c5}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!spatial\_ref\_sys@{spatial\_ref\_sys}}
+\index{spatial\_ref\_sys@{spatial\_ref\_sys}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{spatial\_ref\_sys()}{spatial\_ref\_sys()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad3cf8fb42a4a602bd06b6ff058be45c5} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+spatial\+\_\+ref\+\_\+sys (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1_base_spatial_operations_ad6bfa68f10f318f525f75dd2bcc7d169}{django.\+contrib.\+gis.\+db.\+backends.\+base.\+operations.\+Base\+Spatial\+Operations}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a12b0209bd9d2d3cb1246f3d8aeb39383}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{Adapter}{Adapter}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a12b0209bd9d2d3cb1246f3d8aeb39383} 
+django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+Adapter = \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1adapter_1_1_oracle_spatial_adapter}{Oracle\+Spatial\+Adapter}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad9c8539509bcde248be823fda73cb1bf}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!extent@{extent}}
+\index{extent@{extent}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{extent}{extent}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_ad9c8539509bcde248be823fda73cb1bf} 
+str django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+extent = "{}SDO\+\_\+\+AGGR\+\_\+\+MBR"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a61e18ebd2aa56e2c4ffae8b481362649}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!gis\_operators@{gis\_operators}}
+\index{gis\_operators@{gis\_operators}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{gis\_operators}{gis\_operators}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a61e18ebd2aa56e2c4ffae8b481362649} 
+dict django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+gis\+\_\+operators\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}contains"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_CONTAINS"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}coveredby"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_COVEREDBY"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}covers"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_COVERS"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}disjoint"{}}:\ SDODisjoint(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}intersects"{}}:\ SDOOperator(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ func=\textcolor{stringliteral}{"{}SDO\_OVERLAPBDYINTERSECT"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),\ \ \textcolor{comment}{\#\ TODO:\ Is\ this\ really\ the\ same\ as\ ST\_Intersects()?}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}equals"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_EQUAL"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}exact"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_EQUAL"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}overlaps"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_OVERLAPS"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}same\_as"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_EQUAL"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Oracle\ uses\ a\ different\ syntax,\ e.g.,\ 'mask=inside+touch'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}relate"{}}:\ SDORelate(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}touches"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_TOUCH"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}within"{}}:\ SDOOperator(func=\textcolor{stringliteral}{"{}SDO\_INSIDE"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dwithin"{}}:\ SDODWithin(),}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_acfd6fc0c13c6a7c5db533d310195b10e}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!name@{name}}
+\index{name@{name}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_acfd6fc0c13c6a7c5db533d310195b10e} 
+str django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+name = "{}oracle"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a017a1aa6fc683231e39bf6c481d460bb}\index{django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}!unionagg@{unionagg}}
+\index{unionagg@{unionagg}!django.contrib.gis.db.backends.oracle.operations.OracleOperations@{django.contrib.gis.db.backends.oracle.operations.OracleOperations}}
+\doxysubsubsection{\texorpdfstring{unionagg}{unionagg}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1_oracle_operations_a017a1aa6fc683231e39bf6c481d460bb} 
+str django.\+contrib.\+gis.\+db.\+backends.\+oracle.\+operations.\+Oracle\+Operations.\+unionagg = "{}SDO\+\_\+\+AGGR\+\_\+\+UNION"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/gis/db/backends/oracle/\mbox{\hyperlink{contrib_2gis_2db_2backends_2oracle_2operations_8py}{operations.\+py}}\end{DoxyCompactItemize}

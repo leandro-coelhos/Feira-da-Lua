@@ -1,0 +1,378 @@
+\doxysection{django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation Class Reference}
+\hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation}{}\label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+Inheritance diagram for django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad493ea937ac1ac690ea6ff96f0fa57b7}{set\+\_\+as\+\_\+test\+\_\+mirror}} (self, primary\+\_\+settings\+\_\+dict)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a773233dfb5e599cf7bdf567783a94a22}{test\+\_\+db\+\_\+signature}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a6417b9126ccf82f4dd835e5ea96f5ff3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a736b527d1b26dd7a703d206cc0b0ce76}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ac297ec931db5ec68c271ec0d91be7183}{log}} (self, msg)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_af6962208f3f5ffa10ab9acf501090181}{create\+\_\+test\+\_\+db}} (self, verbosity=1, autoclobber=False, serialize=True, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a67741180d348c6dc5152bf05a5d3dc83}{serialize\+\_\+db\+\_\+to\+\_\+string}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ac602061e7a3140b07fadbeabee45f34d}{deserialize\+\_\+db\+\_\+from\+\_\+string}} (self, data)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_aa792ff2a6725c1020027c189ff967316}{clone\+\_\+test\+\_\+db}} (self, suffix, verbosity=1, autoclobber=False, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a383e8257716c30cd04bbf648b4066909}{get\+\_\+test\+\_\+db\+\_\+clone\+\_\+settings}} (self, suffix)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a2c41c21dd95190d85b132c7666f9593d}{destroy\+\_\+test\+\_\+db}} (self, old\+\_\+database\+\_\+name=None, verbosity=1, keepdb=False, suffix=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a1941a574beff1443cc995235c5b55785}{mark\+\_\+expected\+\_\+failures\+\_\+and\+\_\+skips}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a721112b8a4e140457d74abf5794974ca}{sql\+\_\+table\+\_\+creation\+\_\+suffix}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ae88ac1d6e2ee913b393872f6a184e339}{setup\+\_\+worker\+\_\+connection}} (self, \+\_\+worker\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad7cae402546d74c622614639c9bb3912}{\+\_\+maindb\+\_\+connection}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_aea03f2099a0f6691226755c6b60c133f}{\+\_\+create\+\_\+test\+\_\+db}} (self, verbosity=1, autoclobber=False, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ade74b9bcd009e8659217c5aeaab2ea03}{\+\_\+switch\+\_\+to\+\_\+test\+\_\+user}} (self, parameters)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a1c37c804f0a89dbadda5bc9fd5b601af}{\+\_\+handle\+\_\+objects\+\_\+preventing\+\_\+db\+\_\+destruction}} (self, cursor, parameters, verbosity, autoclobber)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a08dd28500eb796fba820014d705845e1}{\+\_\+destroy\+\_\+test\+\_\+db}} (self, test\+\_\+database\+\_\+name, verbosity=1)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a66d037f8286d396a98cf6ad2a5b9f25f}{\+\_\+execute\+\_\+test\+\_\+db\+\_\+creation}} (self, cursor, parameters, verbosity, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a59ea754a7f0af2c6d24086c033e1a0dd}{\+\_\+create\+\_\+test\+\_\+user}} (self, cursor, parameters, verbosity, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a122c68cb1495e4c1a5c9c6a8f61ea46f}{\+\_\+execute\+\_\+test\+\_\+db\+\_\+destruction}} (self, cursor, parameters, verbosity)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ac5b566d811b2dcccb9c6c125486ec8b9}{\+\_\+destroy\+\_\+test\+\_\+user}} (self, cursor, parameters, verbosity)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a40f0a887cb7b18753bb057b12ede6de5}{\+\_\+execute\+\_\+statements}} (self, cursor, statements, parameters, verbosity, allow\+\_\+quiet\+\_\+fail=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a945322a68a026a875cb178605c89c0d0}{\+\_\+execute\+\_\+allow\+\_\+fail\+\_\+statements}} (self, cursor, statements, parameters, verbosity, acceptable\+\_\+ora\+\_\+err)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a5fb38946a7e0040a76f67c9f7b0eb58e}{\+\_\+get\+\_\+test\+\_\+db\+\_\+params}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a2e2e69553e2454cd7820a3ad7f4b3c5d}{\+\_\+test\+\_\+settings\+\_\+get}} (self, key, default=None, prefixed=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ae289984890bc50d521d6f5c2223e3014}{\+\_\+test\+\_\+database\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_add82a253ab748d249e788478d500808d}{\+\_\+test\+\_\+database\+\_\+create}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a29d9c5bee1762df13d4d12147c70bbd2}{\+\_\+test\+\_\+user\+\_\+create}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a7a390a30708d4cceb21fdabec2d24bd1}{\+\_\+test\+\_\+database\+\_\+user}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a62e8978877dc0d06530827f1ab3fede5}{\+\_\+test\+\_\+database\+\_\+passwd}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a45bd17cfbf970ad59f5bc764f6e16a81}{\+\_\+test\+\_\+database\+\_\+tblspace}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a03a79e347f664e314fdfb30ea8bd4c10}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_af0b636c5338496e2829ed293d497f0ec}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+datafile}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a33037e97d26f1b18467cde3338652718}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+datafile}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_adb9997a2e2551c63b91e02edc2c4f408}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+maxsize}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ae93d8c3376c47538f19f3135f492248d}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+maxsize}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad55b3f1ab2db68579d5def4f0a62e945}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+size}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_aa3cdb2b17356d1f563c5c5fe7c9b0bbd}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+size}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a5ea87bbc99a805b5b63eaeaca8ed8616}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+extsize}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a13ccad69bd3ee27dfd2b18007228e52d}{\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+extsize}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ac6930f9b3d63be6dee0a20099bab78d3}{\+\_\+test\+\_\+database\+\_\+oracle\+\_\+managed\+\_\+files}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a1e1da32aa588d528423304fe7f903850}{\+\_\+get\+\_\+test\+\_\+db\+\_\+name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a025fbe1c4101fe20237e3f9f1f19a24d}{\+\_\+nodb\+\_\+cursor}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a6d9c9b73884bb760ee58378580b522f0}{\+\_\+get\+\_\+database\+\_\+display\+\_\+str}} (self, verbosity, database\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a0a55967e6434723ddb9dda6232b6a3b8}{\+\_\+execute\+\_\+create\+\_\+test\+\_\+db}} (self, cursor, parameters, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a2305c2b9d5b83edb3e55456a3c5d30be}{\+\_\+clone\+\_\+test\+\_\+db}} (self, suffix, verbosity, keepdb=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a736b527d1b26dd7a703d206cc0b0ce76}{connection}} = connection
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_aea03f2099a0f6691226755c6b60c133f}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_create\_test\_db@{\_create\_test\_db}}
+\index{\_create\_test\_db@{\_create\_test\_db}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_create\_test\_db()}{\_create\_test\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_aea03f2099a0f6691226755c6b60c133f} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+create\+\_\+test\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{verbosity}{ = {\ttfamily 1}, }\item[{}]{autoclobber}{ = {\ttfamily False}, }\item[{}]{keepdb}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Internal implementation - create the test db tables.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a3782aff49b95503af2f0e518a10dc22d}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a59ea754a7f0af2c6d24086c033e1a0dd}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_create\_test\_user@{\_create\_test\_user}}
+\index{\_create\_test\_user@{\_create\_test\_user}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_create\_test\_user()}{\_create\_test\_user()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a59ea754a7f0af2c6d24086c033e1a0dd} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+create\+\_\+test\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{, }\item[{}]{keepdb}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a08dd28500eb796fba820014d705845e1}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_destroy\_test\_db@{\_destroy\_test\_db}}
+\index{\_destroy\_test\_db@{\_destroy\_test\_db}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_destroy\_test\_db()}{\_destroy\_test\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a08dd28500eb796fba820014d705845e1} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+destroy\+\_\+test\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{test\+\_\+database\+\_\+name}{, }\item[{}]{verbosity}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Destroy a test database, prompting the user for confirmation if the
+database already exists. Return the name of the test database created.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a02c0ddaddb0a7e0abc054d36a16766a2}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ac5b566d811b2dcccb9c6c125486ec8b9}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_destroy\_test\_user@{\_destroy\_test\_user}}
+\index{\_destroy\_test\_user@{\_destroy\_test\_user}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_destroy\_test\_user()}{\_destroy\_test\_user()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ac5b566d811b2dcccb9c6c125486ec8b9} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+destroy\+\_\+test\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a945322a68a026a875cb178605c89c0d0}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_execute\_allow\_fail\_statements@{\_execute\_allow\_fail\_statements}}
+\index{\_execute\_allow\_fail\_statements@{\_execute\_allow\_fail\_statements}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_execute\_allow\_fail\_statements()}{\_execute\_allow\_fail\_statements()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a945322a68a026a875cb178605c89c0d0} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+execute\+\_\+allow\+\_\+fail\+\_\+statements (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{statements}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{, }\item[{}]{acceptable\+\_\+ora\+\_\+err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Execute statements which are allowed to fail silently if the Oracle
+error code given by `acceptable_ora_err` is raised. Return True if the
+statements execute without an exception, or False otherwise.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a40f0a887cb7b18753bb057b12ede6de5}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_execute\_statements@{\_execute\_statements}}
+\index{\_execute\_statements@{\_execute\_statements}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_execute\_statements()}{\_execute\_statements()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a40f0a887cb7b18753bb057b12ede6de5} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+execute\+\_\+statements (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{statements}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{, }\item[{}]{allow\+\_\+quiet\+\_\+fail}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a66d037f8286d396a98cf6ad2a5b9f25f}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_execute\_test\_db\_creation@{\_execute\_test\_db\_creation}}
+\index{\_execute\_test\_db\_creation@{\_execute\_test\_db\_creation}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_execute\_test\_db\_creation()}{\_execute\_test\_db\_creation()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a66d037f8286d396a98cf6ad2a5b9f25f} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+execute\+\_\+test\+\_\+db\+\_\+creation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{, }\item[{}]{keepdb}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a122c68cb1495e4c1a5c9c6a8f61ea46f}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_execute\_test\_db\_destruction@{\_execute\_test\_db\_destruction}}
+\index{\_execute\_test\_db\_destruction@{\_execute\_test\_db\_destruction}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_execute\_test\_db\_destruction()}{\_execute\_test\_db\_destruction()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a122c68cb1495e4c1a5c9c6a8f61ea46f} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+execute\+\_\+test\+\_\+db\+\_\+destruction (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a1e1da32aa588d528423304fe7f903850}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_get\_test\_db\_name@{\_get\_test\_db\_name}}
+\index{\_get\_test\_db\_name@{\_get\_test\_db\_name}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_get\_test\_db\_name()}{\_get\_test\_db\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a1e1da32aa588d528423304fe7f903850} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+get\+\_\+test\+\_\+db\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the 'production' DB name to get the test DB creation machinery
+to work. This isn't a great deal in this case because DB names as
+handled by Django don't have real counterparts in Oracle.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ae4e091cb40770584fd99469a92fa8f5e}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a5fb38946a7e0040a76f67c9f7b0eb58e}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_get\_test\_db\_params@{\_get\_test\_db\_params}}
+\index{\_get\_test\_db\_params@{\_get\_test\_db\_params}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_get\_test\_db\_params()}{\_get\_test\_db\_params()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a5fb38946a7e0040a76f67c9f7b0eb58e} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+get\+\_\+test\+\_\+db\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a1c37c804f0a89dbadda5bc9fd5b601af}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_handle\_objects\_preventing\_db\_destruction@{\_handle\_objects\_preventing\_db\_destruction}}
+\index{\_handle\_objects\_preventing\_db\_destruction@{\_handle\_objects\_preventing\_db\_destruction}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_handle\_objects\_preventing\_db\_destruction()}{\_handle\_objects\_preventing\_db\_destruction()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a1c37c804f0a89dbadda5bc9fd5b601af} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+handle\+\_\+objects\+\_\+preventing\+\_\+db\+\_\+destruction (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{parameters}{, }\item[{}]{verbosity}{, }\item[{}]{autoclobber}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad7cae402546d74c622614639c9bb3912}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_maindb\_connection@{\_maindb\_connection}}
+\index{\_maindb\_connection@{\_maindb\_connection}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_maindb\_connection()}{\_maindb\_connection()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad7cae402546d74c622614639c9bb3912} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+maindb\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This is analogous to other backends' `_nodb_connection` property,
+which allows access to an "administrative" connection which can
+be used to manage the test databases.
+For Oracle, the only connection that can be used for that purpose
+is the main (non-test) connection.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ade74b9bcd009e8659217c5aeaab2ea03}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_switch\_to\_test\_user@{\_switch\_to\_test\_user}}
+\index{\_switch\_to\_test\_user@{\_switch\_to\_test\_user}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_switch\_to\_test\_user()}{\_switch\_to\_test\_user()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ade74b9bcd009e8659217c5aeaab2ea03} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+switch\+\_\+to\+\_\+test\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Switch to the user that's used for creating the test database.
+
+Oracle doesn't have the concept of separate databases under the same
+user, so a separate user is used; see _create_test_db(). The main user
+is also needed for cleanup when testing is completed, so save its
+credentials in the SAVED_USER/SAVED_PASSWORD key in the settings dict.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_add82a253ab748d249e788478d500808d}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_create@{\_test\_database\_create}}
+\index{\_test\_database\_create@{\_test\_database\_create}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_create()}{\_test\_database\_create()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_add82a253ab748d249e788478d500808d} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+create (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ae289984890bc50d521d6f5c2223e3014}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_name@{\_test\_database\_name}}
+\index{\_test\_database\_name@{\_test\_database\_name}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_name()}{\_test\_database\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ae289984890bc50d521d6f5c2223e3014} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ac6930f9b3d63be6dee0a20099bab78d3}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_oracle\_managed\_files@{\_test\_database\_oracle\_managed\_files}}
+\index{\_test\_database\_oracle\_managed\_files@{\_test\_database\_oracle\_managed\_files}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_oracle\_managed\_files()}{\_test\_database\_oracle\_managed\_files()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ac6930f9b3d63be6dee0a20099bab78d3} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+oracle\+\_\+managed\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a62e8978877dc0d06530827f1ab3fede5}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_passwd@{\_test\_database\_passwd}}
+\index{\_test\_database\_passwd@{\_test\_database\_passwd}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_passwd()}{\_test\_database\_passwd()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a62e8978877dc0d06530827f1ab3fede5} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+passwd (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a45bd17cfbf970ad59f5bc764f6e16a81}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace@{\_test\_database\_tblspace}}
+\index{\_test\_database\_tblspace@{\_test\_database\_tblspace}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace()}{\_test\_database\_tblspace()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a45bd17cfbf970ad59f5bc764f6e16a81} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_af0b636c5338496e2829ed293d497f0ec}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_datafile@{\_test\_database\_tblspace\_datafile}}
+\index{\_test\_database\_tblspace\_datafile@{\_test\_database\_tblspace\_datafile}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_datafile()}{\_test\_database\_tblspace\_datafile()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_af0b636c5338496e2829ed293d497f0ec} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+datafile (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a5ea87bbc99a805b5b63eaeaca8ed8616}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_extsize@{\_test\_database\_tblspace\_extsize}}
+\index{\_test\_database\_tblspace\_extsize@{\_test\_database\_tblspace\_extsize}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_extsize()}{\_test\_database\_tblspace\_extsize()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a5ea87bbc99a805b5b63eaeaca8ed8616} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+extsize (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_adb9997a2e2551c63b91e02edc2c4f408}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_maxsize@{\_test\_database\_tblspace\_maxsize}}
+\index{\_test\_database\_tblspace\_maxsize@{\_test\_database\_tblspace\_maxsize}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_maxsize()}{\_test\_database\_tblspace\_maxsize()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_adb9997a2e2551c63b91e02edc2c4f408} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+maxsize (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad55b3f1ab2db68579d5def4f0a62e945}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_size@{\_test\_database\_tblspace\_size}}
+\index{\_test\_database\_tblspace\_size@{\_test\_database\_tblspace\_size}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_size()}{\_test\_database\_tblspace\_size()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad55b3f1ab2db68579d5def4f0a62e945} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a03a79e347f664e314fdfb30ea8bd4c10}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_tmp@{\_test\_database\_tblspace\_tmp}}
+\index{\_test\_database\_tblspace\_tmp@{\_test\_database\_tblspace\_tmp}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_tmp()}{\_test\_database\_tblspace\_tmp()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a03a79e347f664e314fdfb30ea8bd4c10} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a33037e97d26f1b18467cde3338652718}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_tmp\_datafile@{\_test\_database\_tblspace\_tmp\_datafile}}
+\index{\_test\_database\_tblspace\_tmp\_datafile@{\_test\_database\_tblspace\_tmp\_datafile}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_tmp\_datafile()}{\_test\_database\_tblspace\_tmp\_datafile()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a33037e97d26f1b18467cde3338652718} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+datafile (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a13ccad69bd3ee27dfd2b18007228e52d}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_tmp\_extsize@{\_test\_database\_tblspace\_tmp\_extsize}}
+\index{\_test\_database\_tblspace\_tmp\_extsize@{\_test\_database\_tblspace\_tmp\_extsize}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_tmp\_extsize()}{\_test\_database\_tblspace\_tmp\_extsize()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a13ccad69bd3ee27dfd2b18007228e52d} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+extsize (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ae93d8c3376c47538f19f3135f492248d}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_tmp\_maxsize@{\_test\_database\_tblspace\_tmp\_maxsize}}
+\index{\_test\_database\_tblspace\_tmp\_maxsize@{\_test\_database\_tblspace\_tmp\_maxsize}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_tmp\_maxsize()}{\_test\_database\_tblspace\_tmp\_maxsize()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ae93d8c3376c47538f19f3135f492248d} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+maxsize (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_aa3cdb2b17356d1f563c5c5fe7c9b0bbd}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_tblspace\_tmp\_size@{\_test\_database\_tblspace\_tmp\_size}}
+\index{\_test\_database\_tblspace\_tmp\_size@{\_test\_database\_tblspace\_tmp\_size}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_tblspace\_tmp\_size()}{\_test\_database\_tblspace\_tmp\_size()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_aa3cdb2b17356d1f563c5c5fe7c9b0bbd} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+tblspace\+\_\+tmp\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a7a390a30708d4cceb21fdabec2d24bd1}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_database\_user@{\_test\_database\_user}}
+\index{\_test\_database\_user@{\_test\_database\_user}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_database\_user()}{\_test\_database\_user()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a7a390a30708d4cceb21fdabec2d24bd1} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+database\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a2e2e69553e2454cd7820a3ad7f4b3c5d}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_settings\_get@{\_test\_settings\_get}}
+\index{\_test\_settings\_get@{\_test\_settings\_get}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_settings\_get()}{\_test\_settings\_get()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a2e2e69553e2454cd7820a3ad7f4b3c5d} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+settings\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{default}{ = {\ttfamily None}, }\item[{}]{prefixed}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a value from the test settings dict, or a given default, or a
+prefixed entry from the main settings dict.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a29d9c5bee1762df13d4d12147c70bbd2}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!\_test\_user\_create@{\_test\_user\_create}}
+\index{\_test\_user\_create@{\_test\_user\_create}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_test\_user\_create()}{\_test\_user\_create()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a29d9c5bee1762df13d4d12147c70bbd2} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+\_\+test\+\_\+user\+\_\+create (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad493ea937ac1ac690ea6ff96f0fa57b7}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!set\_as\_test\_mirror@{set\_as\_test\_mirror}}
+\index{set\_as\_test\_mirror@{set\_as\_test\_mirror}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{set\_as\_test\_mirror()}{set\_as\_test\_mirror()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_ad493ea937ac1ac690ea6ff96f0fa57b7} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+set\+\_\+as\+\_\+test\+\_\+mirror (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{primary\+\_\+settings\+\_\+dict}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set this database up to be used in testing as a mirror of a primary
+database whose settings are given.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a2a8655bb3c35b6cc967498b12f3b7a03}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a773233dfb5e599cf7bdf567783a94a22}\index{django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}!test\_db\_signature@{test\_db\_signature}}
+\index{test\_db\_signature@{test\_db\_signature}!django.db.backends.oracle.creation.DatabaseCreation@{django.db.backends.oracle.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{test\_db\_signature()}{test\_db\_signature()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1creation_1_1_database_creation_a773233dfb5e599cf7bdf567783a94a22} 
+django.\+db.\+backends.\+oracle.\+creation.\+Database\+Creation.\+test\+\_\+db\+\_\+signature (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple with elements of self.connection.settings_dict (a
+DATABASES setting value) that uniquely identify a database
+accordingly to the RDBMS particularities.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a6051cab94a4803d74974cada53a87eab}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/backends/oracle/\mbox{\hyperlink{oracle_2creation_8py}{creation.\+py}}\end{DoxyCompactItemize}

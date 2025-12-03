@@ -220,8 +220,8 @@ def marketplace_detail(request, marketplace_id):
     if not marketplace:
         return render(request, '404.html', status=404)
     
-    from users.service import GetAvaliationsByMarketplace
-    from users.models import Favorite, Avaliation
+    from feira_da_lua.users.service import GetAvaliationsByMarketplace
+    from feira_da_lua.users.models import Favorite, Avaliation
     
     reviews = GetAvaliationsByMarketplace(marketplace)
     avg_rating = service.GetMarketPlaceAverageRating(marketplace)
@@ -277,8 +277,8 @@ def marketplace_detail(request, marketplace_id):
 
 
 def toggle_favorite(request, product_id):
-    from users.models import Favorite
-    from marketplace.models import Products
+    from feira_da_lua.users.models import Favorite
+    from feira_da_lua.marketplace.models import Products
     from django.http import JsonResponse
     
     if request.method != 'POST':
@@ -307,8 +307,8 @@ def toggle_favorite(request, product_id):
 
 def add_review(request, marketplace_id):
     from django.shortcuts import redirect
-    from users.service import CreateAvaliation, GetAvaliationsByMarketplace
-    from users.models import Avaliation
+    from feira_da_lua.users.service import CreateAvaliation, GetAvaliationsByMarketplace
+    from feira_da_lua.users.models import Avaliation
     
     if request.method != 'POST':
         return redirect('marketplace_detail', marketplace_id=marketplace_id)
@@ -344,7 +344,7 @@ def add_review(request, marketplace_id):
 
 def update_review(request, review_id):
     from django.shortcuts import redirect
-    from users.service import GetAvaliationById, UpdateAvaliation
+    from feira_da_lua.users.service import GetAvaliationById, UpdateAvaliation
     
     review = GetAvaliationById(review_id)
     if not review:
@@ -379,7 +379,7 @@ def update_review(request, review_id):
 
 def delete_review(request, review_id):
     from django.shortcuts import redirect
-    from users.service import GetAvaliationById, DeleteAvaliation
+    from feira_da_lua.users.service import GetAvaliationById, DeleteAvaliation
     
     review = GetAvaliationById(review_id)
     if not review:

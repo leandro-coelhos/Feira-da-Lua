@@ -1,0 +1,4 @@
+var classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_no_fast_delete_collector =
+[
+    [ "can_fast_delete", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_no_fast_delete_collector.html#a45246e216bd0e8f424c879547527a319", null ]
+];

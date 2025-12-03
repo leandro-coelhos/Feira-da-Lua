@@ -1,0 +1,5 @@
+var classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1introspection_1_1_my_s_q_l_introspection =
+[
+    [ "get_geometry_type", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1introspection_1_1_my_s_q_l_introspection.html#a6402c3514ad4e1a279dd8e6eb33f7051", null ],
+    [ "supports_spatial_index", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1introspection_1_1_my_s_q_l_introspection.html#a68ab4e2383084a78463288674125e53e", null ]
+];

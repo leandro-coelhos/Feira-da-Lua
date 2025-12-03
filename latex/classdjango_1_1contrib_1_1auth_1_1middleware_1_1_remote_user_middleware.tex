@@ -1,0 +1,186 @@
+\doxysection{django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware}{}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+Inheritance diagram for django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ab1f57ff574f1553351403a87ed0ece1d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_aa0e8d3f3e6488509a969f447b4992a72}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ada0a0df534bd1118ee170501dd38307a}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ad7385b4b09ccd4c4408262d30889eb14}{process\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_af28a4e5ae59b6390323e9d800d268ca2}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a4602f9f4ae42719016cf12e70f448312}{aprocess\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ae64af89d21ae2190801af50abc803acf}{clean\+\_\+username}} (self, username, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_aa0e8d3f3e6488509a969f447b4992a72}{get\+\_\+response}} = get\+\_\+response
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a36ea4a53a231262f6629dfdb1c81d135}{is\+\_\+async}} = iscoroutinefunction(\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_aa0e8d3f3e6488509a969f447b4992a72}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_af3d8bbc986138c6a8040ddca5fb8e424}{process\+\_\+request}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ac326296be61ed514edcf9832c2397243}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a780cb5d35a9ab1fa7c3275fb41a15c5d}{async\+\_\+capable}} = True
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a7b5625f352b0da25672b660010a147d3}{header}} = "{}REMOTE\+\_\+\+USER"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ab20842f0a2e8cb0148c8ff1add163ce9}{force\+\_\+logout\+\_\+if\+\_\+no\+\_\+header}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ac160234203fd9530c1ecc776f44b5832}{\+\_\+remove\+\_\+invalid\+\_\+user}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a8b22cf5fa36798a2126dd4679682989e}{\+\_\+aremove\+\_\+invalid\+\_\+user}} (self, request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Middleware for utilizing web-server-provided authentication.
+
+If request.user is not authenticated, then this middleware attempts to
+authenticate the username from the ``REMOTE_USER`` key in ``request.META``,
+an environment variable commonly set by the webserver.
+
+If authentication is successful, the user is automatically logged in to
+persist the user in the session.
+
+The ``request.META`` key is configurable and defaults to ``REMOTE_USER``.
+Subclass this class and change the ``header`` attribute if you need to
+use a different key from ``request.META``, for example a HTTP request
+header.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ab1f57ff574f1553351403a87ed0ece1d}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ab1f57ff574f1553351403a87ed0ece1d} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{get\+\_\+response}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_af28a4e5ae59b6390323e9d800d268ca2}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!\_\_acall\_\_@{\_\_acall\_\_}}
+\index{\_\_acall\_\_@{\_\_acall\_\_}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_acall\_\_()}{\_\_acall\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_af28a4e5ae59b6390323e9d800d268ca2} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+\_\+\+\_\+acall\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ada0a0df534bd1118ee170501dd38307a}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ada0a0df534bd1118ee170501dd38307a} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a8b22cf5fa36798a2126dd4679682989e}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!\_aremove\_invalid\_user@{\_aremove\_invalid\_user}}
+\index{\_aremove\_invalid\_user@{\_aremove\_invalid\_user}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_aremove\_invalid\_user()}{\_aremove\_invalid\_user()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a8b22cf5fa36798a2126dd4679682989e} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+\_\+aremove\+\_\+invalid\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Remove the current authenticated user in the request which is invalid
+but only if the user is authenticated via the RemoteUserBackend.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ac160234203fd9530c1ecc776f44b5832}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!\_remove\_invalid\_user@{\_remove\_invalid\_user}}
+\index{\_remove\_invalid\_user@{\_remove\_invalid\_user}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_remove\_invalid\_user()}{\_remove\_invalid\_user()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ac160234203fd9530c1ecc776f44b5832} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+\_\+remove\+\_\+invalid\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Remove the current authenticated user in the request which is invalid
+but only if the user is authenticated via the RemoteUserBackend.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a4602f9f4ae42719016cf12e70f448312}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!aprocess\_request@{aprocess\_request}}
+\index{aprocess\_request@{aprocess\_request}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{aprocess\_request()}{aprocess\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a4602f9f4ae42719016cf12e70f448312} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+aprocess\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ae64af89d21ae2190801af50abc803acf}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!clean\_username@{clean\_username}}
+\index{clean\_username@{clean\_username}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{clean\_username()}{clean\_username()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ae64af89d21ae2190801af50abc803acf} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+clean\+\_\+username (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{username}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allow the backend to clean the username, if the backend defines a
+clean_username method.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ad7385b4b09ccd4c4408262d30889eb14}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_request()}{process\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ad7385b4b09ccd4c4408262d30889eb14} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+process\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a780cb5d35a9ab1fa7c3275fb41a15c5d}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!async\_capable@{async\_capable}}
+\index{async\_capable@{async\_capable}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{async\_capable}{async\_capable}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a780cb5d35a9ab1fa7c3275fb41a15c5d} 
+bool django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+async\+\_\+capable = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ab20842f0a2e8cb0148c8ff1add163ce9}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!force\_logout\_if\_no\_header@{force\_logout\_if\_no\_header}}
+\index{force\_logout\_if\_no\_header@{force\_logout\_if\_no\_header}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{force\_logout\_if\_no\_header}{force\_logout\_if\_no\_header}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ab20842f0a2e8cb0148c8ff1add163ce9} 
+bool django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+force\+\_\+logout\+\_\+if\+\_\+no\+\_\+header = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_aa0e8d3f3e6488509a969f447b4992a72}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_response}{get\_response}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_aa0e8d3f3e6488509a969f447b4992a72} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+get\+\_\+response = get\+\_\+response}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a7b5625f352b0da25672b660010a147d3}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!header@{header}}
+\index{header@{header}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a7b5625f352b0da25672b660010a147d3} 
+str django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+header = "{}REMOTE\+\_\+\+USER"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a36ea4a53a231262f6629dfdb1c81d135}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!is\_async@{is\_async}}
+\index{is\_async@{is\_async}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_async}{is\_async}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_a36ea4a53a231262f6629dfdb1c81d135} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+is\+\_\+async = iscoroutinefunction(\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_aa0e8d3f3e6488509a969f447b4992a72}{get\+\_\+response}})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_af3d8bbc986138c6a8040ddca5fb8e424}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_request}{process\_request}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_af3d8bbc986138c6a8040ddca5fb8e424} 
+django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+process\+\_\+request}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ac326296be61ed514edcf9832c2397243}\index{django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}!sync\_capable@{sync\_capable}}
+\index{sync\_capable@{sync\_capable}!django.contrib.auth.middleware.RemoteUserMiddleware@{django.contrib.auth.middleware.RemoteUserMiddleware}}
+\doxysubsubsection{\texorpdfstring{sync\_capable}{sync\_capable}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1_remote_user_middleware_ac326296be61ed514edcf9832c2397243} 
+bool django.\+contrib.\+auth.\+middleware.\+Remote\+User\+Middleware.\+sync\+\_\+capable = True\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/auth/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2django_2contrib_2auth_2middleware_8py}{middleware.\+py}}\end{DoxyCompactItemize}

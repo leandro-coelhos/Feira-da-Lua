@@ -1,0 +1,42 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+SKECDSA Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}}, memoryview\mbox{]} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_a74d8915400b3c84d50b0dbd4ad67edeb}{load\+\_\+public}} (self, memoryview data)
+\item 
+typing.\+No\+Return \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_adae4a5c7139f35184be73d770652142c}{get\+\_\+public}} (self, memoryview data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The format of a sk-ecdsa-sha2-nistp256@openssh.com public key is:
+
+    string      "sk-ecdsa-sha2-nistp256@openssh.com"
+    string      curve name
+    ec_point    Q
+    string      application (user-specified, but typically "ssh:")
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_adae4a5c7139f35184be73d770652142c}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA}!get\_public@{get\_public}}
+\index{get\_public@{get\_public}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA}}
+\doxysubsubsection{\texorpdfstring{get\_public()}{get\_public()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_adae4a5c7139f35184be73d770652142c} 
+ typing.\+No\+Return cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+SKECDSA.\+get\+\_\+public (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{memoryview}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_a74d8915400b3c84d50b0dbd4ad67edeb}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA}!load\_public@{load\_public}}
+\index{load\_public@{load\_public}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatSKECDSA}}
+\doxysubsubsection{\texorpdfstring{load\_public()}{load\_public()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a_a74d8915400b3c84d50b0dbd4ad67edeb} 
+ tuple\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}}, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+SKECDSA.\+load\+\_\+public (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{memoryview     }]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make ECDSA public key from data.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/serialization/\mbox{\hyperlink{ssh_8py}{ssh.\+py}}\end{DoxyCompactItemize}

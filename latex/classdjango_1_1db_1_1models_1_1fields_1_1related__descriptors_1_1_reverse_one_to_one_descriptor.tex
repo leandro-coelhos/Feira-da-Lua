@@ -1,0 +1,141 @@
+\doxysection{django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor}{}\label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a1e73f948d5c763162b0ef067a961a900}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a9ccf8074e4aac5d03a30f0314b24e891}{related}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_ae381ce617eb18c7fa515edb76a7a6bad}{Related\+Object\+Does\+Not\+Exist}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_abd609996ca11dae880410997fb989bed}{is\+\_\+cached}} (self, \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1fields_1_1related__descriptors_a2d4f6982d2433fa20c5b1a44f4cd95c9}{instance}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a04bede0cb722d44ace129e00e85081a3}{get\+\_\+queryset}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}hints)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a5fec42b068cab3281971bfb0595b7172}{get\+\_\+prefetch\+\_\+queryset}} (self, instances, queryset=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a32881d523d9f0158510fcd0eaaa5e2a7}{get\+\_\+prefetch\+\_\+querysets}} (self, instances, querysets=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_ad62c522f9bb4b91174a3437b3f978f6b}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1fields_1_1related__descriptors_a2d4f6982d2433fa20c5b1a44f4cd95c9}{instance}}, cls=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a3bf8fe9b5688dc5b6dde52490e257cc8}{\+\_\+\+\_\+set\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1fields_1_1related__descriptors_a2d4f6982d2433fa20c5b1a44f4cd95c9}{instance}}, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a60b54d786784d0ce5e1da345d2aeed9a}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a9ccf8074e4aac5d03a30f0314b24e891}{related}} = related
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Accessor to the related object on the reverse side of a one-to-one
+relation.
+
+In the example::
+
+    class Restaurant(Model):
+        place = OneToOneField(Place, related_name='restaurant')
+
+``Place.restaurant`` is a ``ReverseOneToOneDescriptor`` instance.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a1e73f948d5c763162b0ef067a961a900}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a1e73f948d5c763162b0ef067a961a900} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{related}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_ad62c522f9bb4b91174a3437b3f978f6b}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_ad62c522f9bb4b91174a3437b3f978f6b} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instance}{, }\item[{}]{cls}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the related instance through the reverse relation.
+
+With the example above, when getting ``place.restaurant``:
+
+- ``self`` is the descriptor managing the ``restaurant`` attribute
+- ``instance`` is the ``place`` instance
+- ``cls`` is the ``Place`` class (unused)
+
+Keep in mind that ``Restaurant`` holds the foreign key to ``Place``.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a60b54d786784d0ce5e1da345d2aeed9a}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a60b54d786784d0ce5e1da345d2aeed9a} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a3bf8fe9b5688dc5b6dde52490e257cc8}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!\_\_set\_\_@{\_\_set\_\_}}
+\index{\_\_set\_\_@{\_\_set\_\_}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_\_()}{\_\_set\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a3bf8fe9b5688dc5b6dde52490e257cc8} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+\_\+\+\_\+set\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instance}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the related instance through the reverse relation.
+
+With the example above, when setting ``place.restaurant = restaurant``:
+
+- ``self`` is the descriptor managing the ``restaurant`` attribute
+- ``instance`` is the ``place`` instance
+- ``value`` is the ``restaurant`` instance on the right of the equal sign
+
+Keep in mind that ``Restaurant`` holds the foreign key to ``Place``.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a5fec42b068cab3281971bfb0595b7172}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!get\_prefetch\_queryset@{get\_prefetch\_queryset}}
+\index{get\_prefetch\_queryset@{get\_prefetch\_queryset}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{get\_prefetch\_queryset()}{get\_prefetch\_queryset()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a5fec42b068cab3281971bfb0595b7172} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+get\+\_\+prefetch\+\_\+queryset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instances}{, }\item[{}]{queryset}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a32881d523d9f0158510fcd0eaaa5e2a7}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!get\_prefetch\_querysets@{get\_prefetch\_querysets}}
+\index{get\_prefetch\_querysets@{get\_prefetch\_querysets}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{get\_prefetch\_querysets()}{get\_prefetch\_querysets()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a32881d523d9f0158510fcd0eaaa5e2a7} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+get\+\_\+prefetch\+\_\+querysets (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instances}{, }\item[{}]{querysets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a04bede0cb722d44ace129e00e85081a3}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!get\_queryset@{get\_queryset}}
+\index{get\_queryset@{get\_queryset}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{get\_queryset()}{get\_queryset()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a04bede0cb722d44ace129e00e85081a3} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+get\+\_\+queryset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{hints}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_abd609996ca11dae880410997fb989bed}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!is\_cached@{is\_cached}}
+\index{is\_cached@{is\_cached}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{is\_cached()}{is\_cached()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_abd609996ca11dae880410997fb989bed} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+is\+\_\+cached (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instance}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_ae381ce617eb18c7fa515edb76a7a6bad}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!RelatedObjectDoesNotExist@{RelatedObjectDoesNotExist}}
+\index{RelatedObjectDoesNotExist@{RelatedObjectDoesNotExist}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{RelatedObjectDoesNotExist()}{RelatedObjectDoesNotExist()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_ae381ce617eb18c7fa515edb76a7a6bad} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+Related\+Object\+Does\+Not\+Exist (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a9ccf8074e4aac5d03a30f0314b24e891}\index{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}!related@{related}}
+\index{related@{related}!django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor@{django.db.models.fields.related\_descriptors.ReverseOneToOneDescriptor}}
+\doxysubsubsection{\texorpdfstring{related}{related}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_one_to_one_descriptor_a9ccf8074e4aac5d03a30f0314b24e891} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+One\+To\+One\+Descriptor.\+related = related}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/fields/\mbox{\hyperlink{related__descriptors_8py}{related\+\_\+descriptors.\+py}}\end{DoxyCompactItemize}

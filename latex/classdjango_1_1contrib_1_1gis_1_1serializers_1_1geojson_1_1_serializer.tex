@@ -1,0 +1,136 @@
+\doxysection{django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer}{}\label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+Inheritance diagram for django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a21b7a5e71e94144d9e3c34246e124d63}{start\+\_\+serialization}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_ad85af58c44b468a102362bbde223f76a}{end\+\_\+serialization}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aeec688dfba5bd133e6cba325e304017b}{start\+\_\+object}} (self, obj)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a8f048d603bfbbea37916b9fb36dd2375}{get\+\_\+dump\+\_\+object}} (self, obj)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a334580813dfb43d4d0c5630fe5822742}{handle\+\_\+field}} (self, obj, field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a5477cd7c2b0c0364aa83f509ec5d6024}{geometry\+\_\+field}} = self.\+json\+\_\+kwargs.\+pop("{}geometry\+\_\+field"{}, None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a55b1880eaf88c4da50af98fc56fb1031}{id\+\_\+field}} = self.\+json\+\_\+kwargs.\+pop("{}id\+\_\+field"{}, None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aa4c30e4a38105448c427076a322e7328}{srid}} = self.\+json\+\_\+kwargs.\+pop("{}srid"{}, 4326)
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aee5409776ececb89c725137143c2ed3a}{selected\+\_\+fields}} = \mbox{[}\texorpdfstring{$\ast$}{*}self.\+selected\+\_\+fields, self.\+geometry\+\_\+field\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a217f9ca30baf472a722a9b184ea5fbb5}{\+\_\+init\+\_\+options}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_af9f7f7ec35691893be85d0b44310f172}{\+\_\+cts}} = \{\}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a408ff3448245227e48c50eaea2c71042}{\+\_\+geometry}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convert a queryset to GeoJSON, http://geojson.org/
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a217f9ca30baf472a722a9b184ea5fbb5}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!\_init\_options@{\_init\_options}}
+\index{\_init\_options@{\_init\_options}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{\_init\_options()}{\_init\_options()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a217f9ca30baf472a722a9b184ea5fbb5} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+\_\+init\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_ad85af58c44b468a102362bbde223f76a}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!end\_serialization@{end\_serialization}}
+\index{end\_serialization@{end\_serialization}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{end\_serialization()}{end\_serialization()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_ad85af58c44b468a102362bbde223f76a} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+end\+\_\+serialization (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a8f048d603bfbbea37916b9fb36dd2375}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!get\_dump\_object@{get\_dump\_object}}
+\index{get\_dump\_object@{get\_dump\_object}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{get\_dump\_object()}{get\_dump\_object()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a8f048d603bfbbea37916b9fb36dd2375} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+get\+\_\+dump\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a334580813dfb43d4d0c5630fe5822742}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!handle\_field@{handle\_field}}
+\index{handle\_field@{handle\_field}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{handle\_field()}{handle\_field()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a334580813dfb43d4d0c5630fe5822742} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+handle\+\_\+field (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{obj}{, }\item[{}]{field}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aeec688dfba5bd133e6cba325e304017b}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!start\_object@{start\_object}}
+\index{start\_object@{start\_object}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{start\_object()}{start\_object()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aeec688dfba5bd133e6cba325e304017b} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+start\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a21b7a5e71e94144d9e3c34246e124d63}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!start\_serialization@{start\_serialization}}
+\index{start\_serialization@{start\_serialization}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{start\_serialization()}{start\_serialization()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a21b7a5e71e94144d9e3c34246e124d63} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+start\+\_\+serialization (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_af9f7f7ec35691893be85d0b44310f172}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!\_cts@{\_cts}}
+\index{\_cts@{\_cts}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{\_cts}{\_cts}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_af9f7f7ec35691893be85d0b44310f172} 
+dict django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+\_\+cts = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a408ff3448245227e48c50eaea2c71042}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!\_geometry@{\_geometry}}
+\index{\_geometry@{\_geometry}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{\_geometry}{\_geometry}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a408ff3448245227e48c50eaea2c71042} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+\_\+geometry = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a5477cd7c2b0c0364aa83f509ec5d6024}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!geometry\_field@{geometry\_field}}
+\index{geometry\_field@{geometry\_field}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{geometry\_field}{geometry\_field}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a5477cd7c2b0c0364aa83f509ec5d6024} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+geometry\+\_\+field = self.\+json\+\_\+kwargs.\+pop("{}geometry\+\_\+field"{}, None)}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a55b1880eaf88c4da50af98fc56fb1031}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!id\_field@{id\_field}}
+\index{id\_field@{id\_field}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{id\_field}{id\_field}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_a55b1880eaf88c4da50af98fc56fb1031} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+id\+\_\+field = self.\+json\+\_\+kwargs.\+pop("{}id\+\_\+field"{}, None)}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aee5409776ececb89c725137143c2ed3a}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!selected\_fields@{selected\_fields}}
+\index{selected\_fields@{selected\_fields}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{selected\_fields}{selected\_fields}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aee5409776ececb89c725137143c2ed3a} 
+list django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+selected\+\_\+fields = \mbox{[}\texorpdfstring{$\ast$}{*}self.\+selected\+\_\+fields, self.\+geometry\+\_\+field\mbox{]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aa4c30e4a38105448c427076a322e7328}\index{django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}!srid@{srid}}
+\index{srid@{srid}!django.contrib.gis.serializers.geojson.Serializer@{django.contrib.gis.serializers.geojson.Serializer}}
+\doxysubsubsection{\texorpdfstring{srid}{srid}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1serializers_1_1geojson_1_1_serializer_aa4c30e4a38105448c427076a322e7328} 
+django.\+contrib.\+gis.\+serializers.\+geojson.\+Serializer.\+srid = self.\+json\+\_\+kwargs.\+pop("{}srid"{}, 4326)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/gis/serializers/\mbox{\hyperlink{geojson_8py}{geojson.\+py}}\end{DoxyCompactItemize}

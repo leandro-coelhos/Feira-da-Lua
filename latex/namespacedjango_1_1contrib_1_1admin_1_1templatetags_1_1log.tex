@@ -1,0 +1,55 @@
+\doxysection{django.\+contrib.\+admin.\+templatetags.\+log Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log}{}\label{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log}\index{django.contrib.admin.templatetags.log@{django.contrib.admin.templatetags.log}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1templatetags_1_1log_1_1_admin_log_node}{Admin\+Log\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_a05f731723b7934b1d263905deb45a283}{get\+\_\+admin\+\_\+log}} (parser, token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_a7b47c556d612787c7ab94bd2c0824886}{register}} = \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_library}{template.\+Library}}()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_a05f731723b7934b1d263905deb45a283}\index{django.contrib.admin.templatetags.log@{django.contrib.admin.templatetags.log}!get\_admin\_log@{get\_admin\_log}}
+\index{get\_admin\_log@{get\_admin\_log}!django.contrib.admin.templatetags.log@{django.contrib.admin.templatetags.log}}
+\doxysubsubsection{\texorpdfstring{get\_admin\_log()}{get\_admin\_log()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_a05f731723b7934b1d263905deb45a283} 
+django.\+contrib.\+admin.\+templatetags.\+log.\+get\+\_\+admin\+\_\+log (\begin{DoxyParamCaption}\item[{}]{parser}{, }\item[{}]{token}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Populate a template variable with the admin log for the given criteria.
+
+Usage::
+
+    {% get_admin_log [limit] as [varname] for_user [context_var_with_user_obj] %}
+
+Examples::
+
+    {% get_admin_log 10 as admin_log for_user 23 %}
+    {% get_admin_log 10 as admin_log for_user user %}
+    {% get_admin_log 10 as admin_log %}
+
+Note that ``context_var_containing_user_obj`` can be a hard-coded integer
+(user ID) or the name of a template context variable containing the user
+object whose ID you want.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_a7b47c556d612787c7ab94bd2c0824886}\index{django.contrib.admin.templatetags.log@{django.contrib.admin.templatetags.log}!register@{register}}
+\index{register@{register}!django.contrib.admin.templatetags.log@{django.contrib.admin.templatetags.log}}
+\doxysubsubsection{\texorpdfstring{register}{register}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admin_1_1templatetags_1_1log_a7b47c556d612787c7ab94bd2c0824886} 
+django.\+contrib.\+admin.\+templatetags.\+log.\+register = \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_library}{template.\+Library}}()}
+

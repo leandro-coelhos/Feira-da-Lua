@@ -1,0 +1,89 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+subprocess Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess}{}\label{namespacepip_1_1__internal_1_1utils_1_1subprocess}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_a544301884db1f159cf08fb092251358c}{make\+\_\+command}} (\texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1misc_1_1_hidden_text}{Hidden\+Text}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} args)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_ac0d40a154bbaa792f9470b7a608182b1}{format\+\_\+command\+\_\+args}} (list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} args)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_a5575a716aab459d08601898938cf13a6}{reveal\+\_\+command\+\_\+args}} (list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} args)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_ad7fe43070492b14a1cf2725f6a081ff1}{call\+\_\+subprocess}} (list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} cmd, bool show\+\_\+stdout=False, str\texorpdfstring{$\vert$}{|}None cwd=None, Literal\mbox{[}"{}raise"{}, "{}warn"{}, "{}ignore"{}\mbox{]} on\+\_\+returncode="{}raise"{}, Iterable\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None extra\+\_\+ok\+\_\+returncodes=None, Mapping\mbox{[}str, Any\mbox{]}\texorpdfstring{$\vert$}{|}None extra\+\_\+environ=None, Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None unset\+\_\+environ=None, \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_spinner_interface}{Spinner\+Interface}}\texorpdfstring{$\vert$}{|}None spinner=None, bool\texorpdfstring{$\vert$}{|}None log\+\_\+failed\+\_\+cmd=True, bool\texorpdfstring{$\vert$}{|}None stdout\+\_\+only=False, \texorpdfstring{$\ast$}{*}, str command\+\_\+desc)
+\item 
+Callable\mbox{[}..., None\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_af60d50765685f7f5c6b9c9eb80cb995d}{runner\+\_\+with\+\_\+spinner\+\_\+message}} (str message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} = list\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1misc_1_1_hidden_text}{Hidden\+Text}}\mbox{]}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_ad7fe43070492b14a1cf2725f6a081ff1}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}!call\_subprocess@{call\_subprocess}}
+\index{call\_subprocess@{call\_subprocess}!pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection{\texorpdfstring{call\_subprocess()}{call\_subprocess()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1subprocess_ad7fe43070492b14a1cf2725f6a081ff1} 
+ str pip.\+\_\+internal.\+utils.\+subprocess.\+call\+\_\+subprocess (\begin{DoxyParamCaption}\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}}}]{cmd}{, }\item[{bool }]{show\+\_\+stdout}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{cwd}{ = {\ttfamily None}, }\item[{Literal\mbox{[}"{}raise"{}, "{}warn"{}, "{}ignore"{}\mbox{]} }]{on\+\_\+returncode}{ = {\ttfamily "{}raise"{}}, }\item[{Iterable\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{extra\+\_\+ok\+\_\+returncodes}{ = {\ttfamily None}, }\item[{Mapping\mbox{[}str, Any\mbox{]} \texorpdfstring{$\vert$}{|} None }]{extra\+\_\+environ}{ = {\ttfamily None}, }\item[{Iterable\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{unset\+\_\+environ}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_spinner_interface}{Spinner\+Interface}} \texorpdfstring{$\vert$}{|} None }]{spinner}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{log\+\_\+failed\+\_\+cmd}{ = {\ttfamily True}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{stdout\+\_\+only}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str}]{command\+\_\+desc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+  show_stdout: if true, use INFO to log the subprocess's stderr and
+    stdout streams.  Otherwise, use DEBUG.  Defaults to False.
+  extra_ok_returncodes: an iterable of integer return codes that are
+    acceptable, in addition to 0. Defaults to None, which means [].
+  unset_environ: an iterable of environment variable names to unset
+    prior to calling subprocess.Popen().
+  log_failed_cmd: if false, failed commands are not logged, only raised.
+  stdout_only: if true, return only stdout, else return both. When true,
+    logging of both stdout and stderr occurs when the subprocess has
+    terminated, else logging occurs as subprocess output is produced.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_ac0d40a154bbaa792f9470b7a608182b1}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}!format\_command\_args@{format\_command\_args}}
+\index{format\_command\_args@{format\_command\_args}!pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection{\texorpdfstring{format\_command\_args()}{format\_command\_args()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1subprocess_ac0d40a154bbaa792f9470b7a608182b1} 
+ str pip.\+\_\+internal.\+utils.\+subprocess.\+format\+\_\+command\+\_\+args (\begin{DoxyParamCaption}\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format command arguments for display.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_a544301884db1f159cf08fb092251358c}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}!make\_command@{make\_command}}
+\index{make\_command@{make\_command}!pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection{\texorpdfstring{make\_command()}{make\_command()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1subprocess_a544301884db1f159cf08fb092251358c} 
+ \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}} pip.\+\_\+internal.\+utils.\+subprocess.\+make\+\_\+command (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1misc_1_1_hidden_text}{Hidden\+Text}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a CommandArgs object.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_a5575a716aab459d08601898938cf13a6}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}!reveal\_command\_args@{reveal\_command\_args}}
+\index{reveal\_command\_args@{reveal\_command\_args}!pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection{\texorpdfstring{reveal\_command\_args()}{reveal\_command\_args()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1subprocess_a5575a716aab459d08601898938cf13a6} 
+ list\mbox{[}str\mbox{]} pip.\+\_\+internal.\+utils.\+subprocess.\+reveal\+\_\+command\+\_\+args (\begin{DoxyParamCaption}\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}{Command\+Args}}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the arguments in their raw, unredacted form.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_af60d50765685f7f5c6b9c9eb80cb995d}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}!runner\_with\_spinner\_message@{runner\_with\_spinner\_message}}
+\index{runner\_with\_spinner\_message@{runner\_with\_spinner\_message}!pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection{\texorpdfstring{runner\_with\_spinner\_message()}{runner\_with\_spinner\_message()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1subprocess_af60d50765685f7f5c6b9c9eb80cb995d} 
+ Callable\mbox{[}..., None\mbox{]} pip.\+\_\+internal.\+utils.\+subprocess.\+runner\+\_\+with\+\_\+spinner\+\_\+message (\begin{DoxyParamCaption}\item[{str}]{message}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Provide a subprocess_runner that shows a spinner message.
+
+Intended for use with for BuildBackendHookCaller. Thus, the runner has
+an API that matches what's expected by BuildBackendHookCaller.subprocess_runner.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2}\index{pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}!CommandArgs@{CommandArgs}}
+\index{CommandArgs@{CommandArgs}!pip.\_internal.utils.subprocess@{pip.\_internal.utils.subprocess}}
+\doxysubsubsection{\texorpdfstring{CommandArgs}{CommandArgs}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1subprocess_aa5735a299d9c96782540b9e5d56361f2} 
+pip.\+\_\+internal.\+utils.\+subprocess.\+Command\+Args = list\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1misc_1_1_hidden_text}{Hidden\+Text}}\mbox{]}\mbox{]}}
+

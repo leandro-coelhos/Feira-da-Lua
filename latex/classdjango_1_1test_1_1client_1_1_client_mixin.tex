@@ -1,0 +1,222 @@
+\doxysection{django.\+test.\+client.\+Client\+Mixin Class Reference}
+\hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin}{}\label{classdjango_1_1test_1_1client_1_1_client_mixin}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+Inheritance diagram for django.\+test.\+client.\+Client\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1test_1_1client_1_1_client_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_afc7d592c00f76686def52d05a4725b32}{store\+\_\+exc\+\_\+info}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ac7ff03fe5d69cafe4e8e4cafd1eebec7}{check\+\_\+exception}} (self, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_af7f22841bb68fc37a4cccb6b8d92dc40}{session}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ae52065286dc3a27afec6ef9163967061}{asession}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a17d59342f49d81559aaedccb80b0bb6b}{login}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}credentials)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a45144121330fd24649bec2f13c931549}{alogin}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}credentials)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a1ade95f0758eb7e30804fa6258853b65}{force\+\_\+login}} (self, user, backend=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a43885dfe98aa27a35d1c19ef7004297f}{aforce\+\_\+login}} (self, user, backend=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ae0231f8e481a3ae74dc0bd22d569bd13}{logout}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a721de7654d4d1512cd0c90c39e55a41b}{alogout}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_aadb84021720fec9a73a7f46bb13ae2ea}{exc\+\_\+info}} = sys.\+exc\+\_\+info()
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_af9a9673889f77aea93114b0e8b371131}{raise\+\_\+request\+\_\+exception}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ad91f0fbbb3e4cf5afa019e0cf160326e}{session}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_af1987fd1e4666a2a9ac52d8beb787c05}{cookies}} = Simple\+Cookie()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ae92d136aad5ccf482b113d2306fe09c3}{\+\_\+get\+\_\+backend}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ae72c7a916ddbf8548feb3e8266fa772d}{\+\_\+login}} (self, user, backend=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_abf4d48abf360cb8bfa411b8cccc0da97}{\+\_\+alogin}} (self, user, backend=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a583cd42c67e50ccf454198537997aad7}{\+\_\+set\+\_\+login\+\_\+cookies}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_a077ff831c18894f9a9c34e5db73e8a86}{\+\_\+parse\+\_\+json}} (self, response, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}extra)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_abfb29194bf9aff75d5ea47002ac807dd}{\+\_\+follow\+\_\+redirect}} (self, response, \texorpdfstring{$\ast$}{*}, data="{}"{}, content\+\_\+type="{}"{}, headers=None, query\+\_\+params=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}extra)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client_mixin_ad7099532600f4531dd132d81939d61ad}{\+\_\+ensure\+\_\+redirects\+\_\+not\+\_\+cyclic}} (self, response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Mixin with common methods between Client and AsyncClient.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_abf4d48abf360cb8bfa411b8cccc0da97}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_alogin@{\_alogin}}
+\index{\_alogin@{\_alogin}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_alogin()}{\_alogin()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_abf4d48abf360cb8bfa411b8cccc0da97} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+alogin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{user}{, }\item[{}]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ad7099532600f4531dd132d81939d61ad}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_ensure\_redirects\_not\_cyclic@{\_ensure\_redirects\_not\_cyclic}}
+\index{\_ensure\_redirects\_not\_cyclic@{\_ensure\_redirects\_not\_cyclic}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_redirects\_not\_cyclic()}{\_ensure\_redirects\_not\_cyclic()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ad7099532600f4531dd132d81939d61ad} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+ensure\+\_\+redirects\+\_\+not\+\_\+cyclic (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Raise a RedirectCycleError if response contains too many redirects.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_abfb29194bf9aff75d5ea47002ac807dd}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_follow\_redirect@{\_follow\_redirect}}
+\index{\_follow\_redirect@{\_follow\_redirect}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_follow\_redirect()}{\_follow\_redirect()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_abfb29194bf9aff75d5ea47002ac807dd} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+follow\+\_\+redirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{data}{ = {\ttfamily "{}"{}}, }\item[{}]{content\+\_\+type}{ = {\ttfamily "{}"{}}, }\item[{}]{headers}{ = {\ttfamily None}, }\item[{}]{query\+\_\+params}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{extra}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Follow a single redirect contained in response using GET.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ae92d136aad5ccf482b113d2306fe09c3}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_get\_backend@{\_get\_backend}}
+\index{\_get\_backend@{\_get\_backend}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_backend()}{\_get\_backend()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ae92d136aad5ccf482b113d2306fe09c3} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+get\+\_\+backend (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ae72c7a916ddbf8548feb3e8266fa772d}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_login@{\_login}}
+\index{\_login@{\_login}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_login()}{\_login()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ae72c7a916ddbf8548feb3e8266fa772d} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+login (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{user}{, }\item[{}]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a077ff831c18894f9a9c34e5db73e8a86}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_parse\_json@{\_parse\_json}}
+\index{\_parse\_json@{\_parse\_json}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_parse\_json()}{\_parse\_json()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a077ff831c18894f9a9c34e5db73e8a86} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+parse\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{extra}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a583cd42c67e50ccf454198537997aad7}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!\_set\_login\_cookies@{\_set\_login\_cookies}}
+\index{\_set\_login\_cookies@{\_set\_login\_cookies}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{\_set\_login\_cookies()}{\_set\_login\_cookies()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a583cd42c67e50ccf454198537997aad7} 
+django.\+test.\+client.\+Client\+Mixin.\+\_\+set\+\_\+login\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a43885dfe98aa27a35d1c19ef7004297f}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!aforce\_login@{aforce\_login}}
+\index{aforce\_login@{aforce\_login}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{aforce\_login()}{aforce\_login()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a43885dfe98aa27a35d1c19ef7004297f} 
+django.\+test.\+client.\+Client\+Mixin.\+aforce\+\_\+login (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{user}{, }\item[{}]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a45144121330fd24649bec2f13c931549}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!alogin@{alogin}}
+\index{alogin@{alogin}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{alogin()}{alogin()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a45144121330fd24649bec2f13c931549} 
+django.\+test.\+client.\+Client\+Mixin.\+alogin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{credentials}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See login().\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a721de7654d4d1512cd0c90c39e55a41b}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!alogout@{alogout}}
+\index{alogout@{alogout}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{alogout()}{alogout()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a721de7654d4d1512cd0c90c39e55a41b} 
+django.\+test.\+client.\+Client\+Mixin.\+alogout (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See logout().\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ae52065286dc3a27afec6ef9163967061}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!asession@{asession}}
+\index{asession@{asession}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{asession()}{asession()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ae52065286dc3a27afec6ef9163967061} 
+django.\+test.\+client.\+Client\+Mixin.\+asession (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ac7ff03fe5d69cafe4e8e4cafd1eebec7}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!check\_exception@{check\_exception}}
+\index{check\_exception@{check\_exception}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{check\_exception()}{check\_exception()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ac7ff03fe5d69cafe4e8e4cafd1eebec7} 
+django.\+test.\+client.\+Client\+Mixin.\+check\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look for a signaled exception, clear the current context exception
+data, re-raise the signaled exception, and clear the signaled exception
+from the local cache.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a1ade95f0758eb7e30804fa6258853b65}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!force\_login@{force\_login}}
+\index{force\_login@{force\_login}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{force\_login()}{force\_login()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a1ade95f0758eb7e30804fa6258853b65} 
+django.\+test.\+client.\+Client\+Mixin.\+force\+\_\+login (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{user}{, }\item[{}]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_a17d59342f49d81559aaedccb80b0bb6b}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!login@{login}}
+\index{login@{login}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_a17d59342f49d81559aaedccb80b0bb6b} 
+django.\+test.\+client.\+Client\+Mixin.\+login (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{credentials}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the Factory to appear as if it has successfully logged into a site.
+
+Return True if login is possible or False if the provided credentials
+are incorrect.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ae0231f8e481a3ae74dc0bd22d569bd13}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!logout@{logout}}
+\index{logout@{logout}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ae0231f8e481a3ae74dc0bd22d569bd13} 
+django.\+test.\+client.\+Client\+Mixin.\+logout (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Log out the user by removing the cookies and session object.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_af7f22841bb68fc37a4cccb6b8d92dc40}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!session@{session}}
+\index{session@{session}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_af7f22841bb68fc37a4cccb6b8d92dc40} 
+django.\+test.\+client.\+Client\+Mixin.\+session (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the current session variables.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_afc7d592c00f76686def52d05a4725b32}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!store\_exc\_info@{store\_exc\_info}}
+\index{store\_exc\_info@{store\_exc\_info}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{store\_exc\_info()}{store\_exc\_info()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_afc7d592c00f76686def52d05a4725b32} 
+django.\+test.\+client.\+Client\+Mixin.\+store\+\_\+exc\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Store exceptions when they are generated by a view.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_af1987fd1e4666a2a9ac52d8beb787c05}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!cookies@{cookies}}
+\index{cookies@{cookies}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{cookies}{cookies}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_af1987fd1e4666a2a9ac52d8beb787c05} 
+django.\+test.\+client.\+Client\+Mixin.\+cookies = Simple\+Cookie()}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_aadb84021720fec9a73a7f46bb13ae2ea}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!exc\_info@{exc\_info}}
+\index{exc\_info@{exc\_info}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{exc\_info}{exc\_info}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_aadb84021720fec9a73a7f46bb13ae2ea} 
+django.\+test.\+client.\+Client\+Mixin.\+exc\+\_\+info = sys.\+exc\+\_\+info()}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_af9a9673889f77aea93114b0e8b371131}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!raise\_request\_exception@{raise\_request\_exception}}
+\index{raise\_request\_exception@{raise\_request\_exception}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{raise\_request\_exception}{raise\_request\_exception}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_af9a9673889f77aea93114b0e8b371131} 
+django.\+test.\+client.\+Client\+Mixin.\+raise\+\_\+request\+\_\+exception}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1_client_mixin_ad91f0fbbb3e4cf5afa019e0cf160326e}\index{django.test.client.ClientMixin@{django.test.client.ClientMixin}!session@{session}}
+\index{session@{session}!django.test.client.ClientMixin@{django.test.client.ClientMixin}}
+\doxysubsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1client_1_1_client_mixin_ad91f0fbbb3e4cf5afa019e0cf160326e} 
+django.\+test.\+client.\+Client\+Mixin.\+session}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/test/\mbox{\hyperlink{django_2test_2client_8py}{client.\+py}}\end{DoxyCompactItemize}

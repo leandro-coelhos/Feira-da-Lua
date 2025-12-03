@@ -1,0 +1,54 @@
+\doxysection{charset\+\_\+normalizer.\+md Namespace Reference}
+\hypertarget{namespacecharset__normalizer_1_1md}{}\label{namespacecharset__normalizer_1_1md}\index{charset\_normalizer.md@{charset\_normalizer.md}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_arabic_isolated_form_plugin}{Arabic\+Isolated\+Form\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_archaic_upper_lower_plugin}{Archaic\+Upper\+Lower\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_cjk_uncommon_plugin}{Cjk\+Uncommon\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin}{Mess\+Detector\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin}{Super\+Weird\+Word\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_duplicate_accent_plugin}{Suspicious\+Duplicate\+Accent\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_range}{Suspicious\+Range}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_accentuated_plugin}{Too\+Many\+Accentuated\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_symbol_or_punctuation_plugin}{Too\+Many\+Symbol\+Or\+Punctuation\+Plugin}}
+\item 
+class \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_unprintable_plugin}{Unprintable\+Plugin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacecharset__normalizer_1_1md_aa1cba4b1f2e462f2801a4bb56f26a3a1}{is\+\_\+suspiciously\+\_\+successive\+\_\+range}} (str\texorpdfstring{$\vert$}{|}None unicode\+\_\+range\+\_\+a, str\texorpdfstring{$\vert$}{|}None unicode\+\_\+range\+\_\+b)
+\item 
+float \mbox{\hyperlink{namespacecharset__normalizer_1_1md_a432f21f8ab7385c6d10befedf12f213b}{mess\+\_\+ratio}} (str decoded\+\_\+sequence, float maximum\+\_\+threshold=0.\+2, bool debug=False)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecharset__normalizer_1_1md_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecharset__normalizer_1_1md_aa1cba4b1f2e462f2801a4bb56f26a3a1}\index{charset\_normalizer.md@{charset\_normalizer.md}!is\_suspiciously\_successive\_range@{is\_suspiciously\_successive\_range}}
+\index{is\_suspiciously\_successive\_range@{is\_suspiciously\_successive\_range}!charset\_normalizer.md@{charset\_normalizer.md}}
+\doxysubsubsection{\texorpdfstring{is\_suspiciously\_successive\_range()}{is\_suspiciously\_successive\_range()}}
+{\footnotesize\ttfamily \label{namespacecharset__normalizer_1_1md_aa1cba4b1f2e462f2801a4bb56f26a3a1} 
+ bool charset\+\_\+normalizer.\+md.\+is\+\_\+suspiciously\+\_\+successive\+\_\+range (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None}]{unicode\+\_\+range\+\_\+a}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{unicode\+\_\+range\+\_\+b}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if two Unicode range seen next to each other can be considered as suspicious.
+\end{DoxyVerb}
+ \Hypertarget{namespacecharset__normalizer_1_1md_a432f21f8ab7385c6d10befedf12f213b}\index{charset\_normalizer.md@{charset\_normalizer.md}!mess\_ratio@{mess\_ratio}}
+\index{mess\_ratio@{mess\_ratio}!charset\_normalizer.md@{charset\_normalizer.md}}
+\doxysubsubsection{\texorpdfstring{mess\_ratio()}{mess\_ratio()}}
+{\footnotesize\ttfamily \label{namespacecharset__normalizer_1_1md_a432f21f8ab7385c6d10befedf12f213b} 
+ float charset\+\_\+normalizer.\+md.\+mess\+\_\+ratio (\begin{DoxyParamCaption}\item[{str}]{decoded\+\_\+sequence}{, }\item[{float }]{maximum\+\_\+threshold}{ = {\ttfamily 0.2}, }\item[{bool }]{debug}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute a mess ratio given a decoded bytes sequence. The maximum threshold does stop the computation earlier.
+\end{DoxyVerb}
+ 

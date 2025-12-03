@@ -100,7 +100,7 @@ def LogoutUser(request):
 
 
 def FavoritesPage(request):
-    from users.models import Favorite
+    from feira_da_lua.users.models import Favorite
     import base64
     
     user = request.user_obj

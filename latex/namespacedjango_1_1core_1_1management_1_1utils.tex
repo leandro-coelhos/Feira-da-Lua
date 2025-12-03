@@ -1,0 +1,123 @@
+\doxysection{django.\+core.\+management.\+utils Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1management_1_1utils}{}\label{namespacedjango_1_1core_1_1management_1_1utils}\index{django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a4766a805fd742c88731346062f41f2f9}{popen\+\_\+wrapper}} (args, stdout\+\_\+encoding="{}utf-\/8"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a1663e0537aa7f8907e5000a70a4a723d}{handle\+\_\+extensions}} (extensions)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_aa4e0ed6676669e47ca04881ccdce11d0}{find\+\_\+command}} (cmd, path=None, pathext=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a92a873ac613f63b4726b0a97a9be53aa}{get\+\_\+random\+\_\+secret\+\_\+key}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a9273eb1531a3278e0670b98c3d292c5b}{parse\+\_\+apps\+\_\+and\+\_\+model\+\_\+labels}} (labels)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_abfa12376cd0fb267661a3a15a371b4ab}{get\+\_\+command\+\_\+line\+\_\+option}} (argv, option)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a65ed0e9a91d20828bbf11761ba3e958e}{normalize\+\_\+path\+\_\+patterns}} (patterns)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a832c7461ddde608a16a1a6d2e2d1bf80}{is\+\_\+ignored\+\_\+path}} (path, ignore\+\_\+patterns)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a6f27fcb77e3c3e1d3dcd66eac49eef67}{find\+\_\+formatters}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils_a30268cb0b93066de3e480d2dca6b87d3}{run\+\_\+formatters}} (written\+\_\+files, black\+\_\+path=(sentinel \+:=object()), stderr=sys.\+stderr)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_aa4e0ed6676669e47ca04881ccdce11d0}\index{django.core.management.utils@{django.core.management.utils}!find\_command@{find\_command}}
+\index{find\_command@{find\_command}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{find\_command()}{find\_command()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_aa4e0ed6676669e47ca04881ccdce11d0} 
+django.\+core.\+management.\+utils.\+find\+\_\+command (\begin{DoxyParamCaption}\item[{}]{cmd}{, }\item[{}]{path}{ = {\ttfamily None}, }\item[{}]{pathext}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a6f27fcb77e3c3e1d3dcd66eac49eef67}\index{django.core.management.utils@{django.core.management.utils}!find\_formatters@{find\_formatters}}
+\index{find\_formatters@{find\_formatters}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{find\_formatters()}{find\_formatters()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a6f27fcb77e3c3e1d3dcd66eac49eef67} 
+django.\+core.\+management.\+utils.\+find\+\_\+formatters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_abfa12376cd0fb267661a3a15a371b4ab}\index{django.core.management.utils@{django.core.management.utils}!get\_command\_line\_option@{get\_command\_line\_option}}
+\index{get\_command\_line\_option@{get\_command\_line\_option}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{get\_command\_line\_option()}{get\_command\_line\_option()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_abfa12376cd0fb267661a3a15a371b4ab} 
+django.\+core.\+management.\+utils.\+get\+\_\+command\+\_\+line\+\_\+option (\begin{DoxyParamCaption}\item[{}]{argv}{, }\item[{}]{option}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of a command line option (which should include leading
+dashes, e.g. '--testrunner') from an argument list. Return None if the
+option wasn't passed or if the argument list couldn't be parsed.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a92a873ac613f63b4726b0a97a9be53aa}\index{django.core.management.utils@{django.core.management.utils}!get\_random\_secret\_key@{get\_random\_secret\_key}}
+\index{get\_random\_secret\_key@{get\_random\_secret\_key}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{get\_random\_secret\_key()}{get\_random\_secret\_key()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a92a873ac613f63b4726b0a97a9be53aa} 
+django.\+core.\+management.\+utils.\+get\+\_\+random\+\_\+secret\+\_\+key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a 50 character random string usable as a SECRET_KEY setting value.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a1663e0537aa7f8907e5000a70a4a723d}\index{django.core.management.utils@{django.core.management.utils}!handle\_extensions@{handle\_extensions}}
+\index{handle\_extensions@{handle\_extensions}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{handle\_extensions()}{handle\_extensions()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a1663e0537aa7f8907e5000a70a4a723d} 
+django.\+core.\+management.\+utils.\+handle\+\_\+extensions (\begin{DoxyParamCaption}\item[{}]{extensions}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Organize multiple extensions that are separated with commas or passed by
+using --extension/-e multiple times.
+
+For example: running 'django-admin makemessages -e js,txt -e xhtml -a'
+would result in an extension list: ['.js', '.txt', '.xhtml']
+
+>>> handle_extensions(['.html', 'html,js,py,py,py,.py', 'py,.py'])
+{'.html', '.js', '.py'}
+>>> handle_extensions(['.html, txt,.tpl'])
+{'.html', '.tpl', '.txt'}
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a832c7461ddde608a16a1a6d2e2d1bf80}\index{django.core.management.utils@{django.core.management.utils}!is\_ignored\_path@{is\_ignored\_path}}
+\index{is\_ignored\_path@{is\_ignored\_path}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{is\_ignored\_path()}{is\_ignored\_path()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a832c7461ddde608a16a1a6d2e2d1bf80} 
+django.\+core.\+management.\+utils.\+is\+\_\+ignored\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{ignore\+\_\+patterns}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the given path should be ignored or not based on matching
+one of the glob style `ignore_patterns`.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a65ed0e9a91d20828bbf11761ba3e958e}\index{django.core.management.utils@{django.core.management.utils}!normalize\_path\_patterns@{normalize\_path\_patterns}}
+\index{normalize\_path\_patterns@{normalize\_path\_patterns}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{normalize\_path\_patterns()}{normalize\_path\_patterns()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a65ed0e9a91d20828bbf11761ba3e958e} 
+django.\+core.\+management.\+utils.\+normalize\+\_\+path\+\_\+patterns (\begin{DoxyParamCaption}\item[{}]{patterns}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Normalize an iterable of glob style patterns based on OS.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a9273eb1531a3278e0670b98c3d292c5b}\index{django.core.management.utils@{django.core.management.utils}!parse\_apps\_and\_model\_labels@{parse\_apps\_and\_model\_labels}}
+\index{parse\_apps\_and\_model\_labels@{parse\_apps\_and\_model\_labels}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{parse\_apps\_and\_model\_labels()}{parse\_apps\_and\_model\_labels()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a9273eb1531a3278e0670b98c3d292c5b} 
+django.\+core.\+management.\+utils.\+parse\+\_\+apps\+\_\+and\+\_\+model\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{labels}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a list of "app_label.ModelName" or "app_label" strings into actual
+objects and return a two-element tuple:
+    (set of model classes, set of app_configs).
+Raise a CommandError if some specified models or apps don't exist.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a4766a805fd742c88731346062f41f2f9}\index{django.core.management.utils@{django.core.management.utils}!popen\_wrapper@{popen\_wrapper}}
+\index{popen\_wrapper@{popen\_wrapper}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{popen\_wrapper()}{popen\_wrapper()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a4766a805fd742c88731346062f41f2f9} 
+django.\+core.\+management.\+utils.\+popen\+\_\+wrapper (\begin{DoxyParamCaption}\item[{}]{args}{, }\item[{}]{stdout\+\_\+encoding}{ = {\ttfamily "{}utf-\/8"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Friendly wrapper around Popen.
+
+Return stdout output, stderr output, and OS status code.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1utils_a30268cb0b93066de3e480d2dca6b87d3}\index{django.core.management.utils@{django.core.management.utils}!run\_formatters@{run\_formatters}}
+\index{run\_formatters@{run\_formatters}!django.core.management.utils@{django.core.management.utils}}
+\doxysubsubsection{\texorpdfstring{run\_formatters()}{run\_formatters()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_1_1utils_a30268cb0b93066de3e480d2dca6b87d3} 
+django.\+core.\+management.\+utils.\+run\+\_\+formatters (\begin{DoxyParamCaption}\item[{}]{written\+\_\+files}{, }\item[{}]{black\+\_\+path}{ = {\ttfamily (sentinel~\+:=~object())}, }\item[{}]{stderr}{ = {\ttfamily sys.stderr}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the black formatter on the specified files.
+\end{DoxyVerb}
+ 

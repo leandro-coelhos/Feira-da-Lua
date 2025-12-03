@@ -1,0 +1,181 @@
+\doxysection{requests.\+cookies.\+Mock\+Request Class Reference}
+\hypertarget{classrequests_1_1cookies_1_1_mock_request}{}\label{classrequests_1_1cookies_1_1_mock_request}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a9d404702f1a99b33f6c5a40353a588c0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a144adefa4b29c0c2907bc072ebf4bee8}{get\+\_\+type}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a53c2ff3ee17bff3047d63470d4e82245}{get\+\_\+host}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a15b483d02774c0b525817c313155be49}{get\+\_\+origin\+\_\+req\+\_\+host}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a1835303032135437cde02bd51ab1cf1b}{get\+\_\+full\+\_\+url}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a7654e02093a7f010cb27515905218fa2}{is\+\_\+unverifiable}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a52236e7ea5e04c19fa95481d181c8efd}{has\+\_\+header}} (self, name)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_ad9d24a2a7820e6e30a59e9b9bf25f0a4}{get\+\_\+header}} (self, name, default=None)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a476665dc6dded1729d48888f7b2130cd}{add\+\_\+header}} (self, key, val)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a902b5e35c8b0587a11f624bca9aad169}{add\+\_\+unredirected\+\_\+header}} (self, name, value)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_af8026ad08ec45e6fa5bf0aae00c20873}{get\+\_\+new\+\_\+headers}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_ac2d1831a9be7da0378080f21248abfca}{unverifiable}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a5498e2c35e92b45c13f6147432ee1d9a}{origin\+\_\+req\+\_\+host}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_aeb0418b090c371feac305c1a24fe2dd0}{host}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a1e1c50da98a66ac95b0be6a492c4758e}{type}} = urlparse(self.\+\_\+r.\+url).scheme
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_aa6529302f4585961c563c8bfcbade210}{\+\_\+r}} = request
+\item 
+dict \mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_request_a75144983a450b6a4d028ed946654c9cb}{\+\_\+new\+\_\+headers}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a `requests.Request` to mimic a `urllib2.Request`.
+
+The code in `http.cookiejar.CookieJar` expects this interface in order to correctly
+manage cookie policies, i.e., determine whether a cookie can be set, given the
+domains of the request and the cookie.
+
+The original request object is read-only. The client is responsible for collecting
+the new headers via `get_new_headers()` and interpreting them appropriately. You
+probably want `get_cookie_header`, defined below.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a9d404702f1a99b33f6c5a40353a588c0}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a9d404702f1a99b33f6c5a40353a588c0} 
+requests.\+cookies.\+Mock\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a476665dc6dded1729d48888f7b2130cd}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!add\_header@{add\_header}}
+\index{add\_header@{add\_header}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{add\_header()}{add\_header()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a476665dc6dded1729d48888f7b2130cd} 
+requests.\+cookies.\+Mock\+Request.\+add\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{val}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}cookiejar has no legitimate use for this method; add it back if you find one.\end{DoxyVerb}
+ \Hypertarget{classrequests_1_1cookies_1_1_mock_request_a902b5e35c8b0587a11f624bca9aad169}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!add\_unredirected\_header@{add\_unredirected\_header}}
+\index{add\_unredirected\_header@{add\_unredirected\_header}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{add\_unredirected\_header()}{add\_unredirected\_header()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a902b5e35c8b0587a11f624bca9aad169} 
+requests.\+cookies.\+Mock\+Request.\+add\+\_\+unredirected\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a1835303032135437cde02bd51ab1cf1b}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!get\_full\_url@{get\_full\_url}}
+\index{get\_full\_url@{get\_full\_url}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{get\_full\_url()}{get\_full\_url()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a1835303032135437cde02bd51ab1cf1b} 
+requests.\+cookies.\+Mock\+Request.\+get\+\_\+full\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_ad9d24a2a7820e6e30a59e9b9bf25f0a4}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!get\_header@{get\_header}}
+\index{get\_header@{get\_header}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{get\_header()}{get\_header()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_ad9d24a2a7820e6e30a59e9b9bf25f0a4} 
+requests.\+cookies.\+Mock\+Request.\+get\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a53c2ff3ee17bff3047d63470d4e82245}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!get\_host@{get\_host}}
+\index{get\_host@{get\_host}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{get\_host()}{get\_host()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a53c2ff3ee17bff3047d63470d4e82245} 
+requests.\+cookies.\+Mock\+Request.\+get\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_af8026ad08ec45e6fa5bf0aae00c20873}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!get\_new\_headers@{get\_new\_headers}}
+\index{get\_new\_headers@{get\_new\_headers}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{get\_new\_headers()}{get\_new\_headers()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_af8026ad08ec45e6fa5bf0aae00c20873} 
+requests.\+cookies.\+Mock\+Request.\+get\+\_\+new\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a15b483d02774c0b525817c313155be49}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!get\_origin\_req\_host@{get\_origin\_req\_host}}
+\index{get\_origin\_req\_host@{get\_origin\_req\_host}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{get\_origin\_req\_host()}{get\_origin\_req\_host()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a15b483d02774c0b525817c313155be49} 
+requests.\+cookies.\+Mock\+Request.\+get\+\_\+origin\+\_\+req\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a144adefa4b29c0c2907bc072ebf4bee8}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a144adefa4b29c0c2907bc072ebf4bee8} 
+requests.\+cookies.\+Mock\+Request.\+get\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a52236e7ea5e04c19fa95481d181c8efd}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!has\_header@{has\_header}}
+\index{has\_header@{has\_header}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{has\_header()}{has\_header()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a52236e7ea5e04c19fa95481d181c8efd} 
+requests.\+cookies.\+Mock\+Request.\+has\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_aeb0418b090c371feac305c1a24fe2dd0}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!host@{host}}
+\index{host@{host}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{host()}{host()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_aeb0418b090c371feac305c1a24fe2dd0} 
+requests.\+cookies.\+Mock\+Request.\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a7654e02093a7f010cb27515905218fa2}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!is\_unverifiable@{is\_unverifiable}}
+\index{is\_unverifiable@{is\_unverifiable}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{is\_unverifiable()}{is\_unverifiable()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a7654e02093a7f010cb27515905218fa2} 
+requests.\+cookies.\+Mock\+Request.\+is\+\_\+unverifiable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a5498e2c35e92b45c13f6147432ee1d9a}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!origin\_req\_host@{origin\_req\_host}}
+\index{origin\_req\_host@{origin\_req\_host}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{origin\_req\_host()}{origin\_req\_host()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a5498e2c35e92b45c13f6147432ee1d9a} 
+requests.\+cookies.\+Mock\+Request.\+origin\+\_\+req\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_ac2d1831a9be7da0378080f21248abfca}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!unverifiable@{unverifiable}}
+\index{unverifiable@{unverifiable}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{unverifiable()}{unverifiable()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_ac2d1831a9be7da0378080f21248abfca} 
+requests.\+cookies.\+Mock\+Request.\+unverifiable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a75144983a450b6a4d028ed946654c9cb}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!\_new\_headers@{\_new\_headers}}
+\index{\_new\_headers@{\_new\_headers}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{\_new\_headers}{\_new\_headers}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a75144983a450b6a4d028ed946654c9cb} 
+dict requests.\+cookies.\+Mock\+Request.\+\_\+new\+\_\+headers = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_aa6529302f4585961c563c8bfcbade210}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!\_r@{\_r}}
+\index{\_r@{\_r}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{\_r}{\_r}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_aa6529302f4585961c563c8bfcbade210} 
+requests.\+cookies.\+Mock\+Request.\+\_\+r = request\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrequests_1_1cookies_1_1_mock_request_a1e1c50da98a66ac95b0be6a492c4758e}\index{requests.cookies.MockRequest@{requests.cookies.MockRequest}!type@{type}}
+\index{type@{type}!requests.cookies.MockRequest@{requests.cookies.MockRequest}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_request_a1e1c50da98a66ac95b0be6a492c4758e} 
+requests.\+cookies.\+Mock\+Request.\+type = urlparse(self.\+\_\+r.\+url).scheme}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/requests/\mbox{\hyperlink{requests_2cookies_8py}{cookies.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\doxysection{cryptography.\+x509.\+extensions.\+Name\+Constraints Class Reference}
+\hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints}{}\label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+Inheritance diagram for cryptography.\+x509.\+extensions.\+Name\+Constraints\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.906574cm]{classcryptography_1_1x509_1_1extensions_1_1_name_constraints}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a664768e6c5627be98e2b33b219135bb7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a49eec9938e1f85f1082115791c8784db}{permitted\+\_\+subtrees}}, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_ac1acaa6106e7354c7e2ae36f273eb6d2}{excluded\+\_\+subtrees}})
+\item 
+bool \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a7654fd9d2e9895dd938ff78c0be7646b}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+str \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_aca59bfd4e04dee6308e53c318a8258e1}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a4f581a26d55fea26a72330a266b8d81a}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a86073ec06a69823e2446a56f9b7ba6bc}{permitted\+\_\+subtrees}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_af0055768762ef2b282e1964cab02529c}{excluded\+\_\+subtrees}} (self)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a9fbdbd584236aa220399d290d46564b3}{public\+\_\+bytes}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_ac1acaa6106e7354c7e2ae36f273eb6d2}{excluded\+\_\+subtrees}} = other.\+excluded\+\_\+subtrees
+\item 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a49eec9938e1f85f1082115791c8784db}{permitted\+\_\+subtrees}} = other.\+permitted\+\_\+subtrees
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_af3a1a630219833afc7c495f12a812825}{\+\_\+validate\+\_\+tree}} (self, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} tree)
+\item 
+None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a3bca45e1606fb66d57c76deed8d01ee3}{\+\_\+validate\+\_\+ip\+\_\+name}} (self, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} tree)
+\item 
+None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a8c86ae28841e2755da4e7e5085bb4199}{\+\_\+validate\+\_\+dns\+\_\+name}} (self, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} tree)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a812e482c0824bcf128ef2e752ae93205}{\+\_\+permitted\+\_\+subtrees}} = \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a49eec9938e1f85f1082115791c8784db}{permitted\+\_\+subtrees}}
+\item 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a228bad8f28916c3dbfae9a40daa4f567}{\+\_\+excluded\+\_\+subtrees}} = \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_ac1acaa6106e7354c7e2ae36f273eb6d2}{excluded\+\_\+subtrees}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type}{cryptography.\+x509.\+extensions.\+Extension\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+typing \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type_adb6824c04444b266d0273587b17faec7}{oid}} .Class\+Var\mbox{[}Object\+Identifier\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a664768e6c5627be98e2b33b219135bb7}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a664768e6c5627be98e2b33b219135bb7} 
+ None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None}]{permitted\+\_\+subtrees}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None}]{excluded\+\_\+subtrees}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a7654fd9d2e9895dd938ff78c0be7646b}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a7654fd9d2e9895dd938ff78c0be7646b} 
+ bool cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a4f581a26d55fea26a72330a266b8d81a}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a4f581a26d55fea26a72330a266b8d81a} 
+ int cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_aca59bfd4e04dee6308e53c318a8258e1}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_aca59bfd4e04dee6308e53c318a8258e1} 
+ str cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a8c86ae28841e2755da4e7e5085bb4199}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_validate\_dns\_name@{\_validate\_dns\_name}}
+\index{\_validate\_dns\_name@{\_validate\_dns\_name}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_validate\_dns\_name()}{\_validate\_dns\_name()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a8c86ae28841e2755da4e7e5085bb4199} 
+ None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+validate\+\_\+dns\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}}]{tree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a3bca45e1606fb66d57c76deed8d01ee3}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_validate\_ip\_name@{\_validate\_ip\_name}}
+\index{\_validate\_ip\_name@{\_validate\_ip\_name}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_validate\_ip\_name()}{\_validate\_ip\_name()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a3bca45e1606fb66d57c76deed8d01ee3} 
+ None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+validate\+\_\+ip\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}}]{tree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_af3a1a630219833afc7c495f12a812825}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_validate\_tree@{\_validate\_tree}}
+\index{\_validate\_tree@{\_validate\_tree}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_validate\_tree()}{\_validate\_tree()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_af3a1a630219833afc7c495f12a812825} 
+ None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+validate\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]}}]{tree}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_af0055768762ef2b282e1964cab02529c}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!excluded\_subtrees@{excluded\_subtrees}}
+\index{excluded\_subtrees@{excluded\_subtrees}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{excluded\_subtrees()}{excluded\_subtrees()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_af0055768762ef2b282e1964cab02529c} 
+ list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+excluded\+\_\+subtrees (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a86073ec06a69823e2446a56f9b7ba6bc}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!permitted\_subtrees@{permitted\_subtrees}}
+\index{permitted\_subtrees@{permitted\_subtrees}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{permitted\_subtrees()}{permitted\_subtrees()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a86073ec06a69823e2446a56f9b7ba6bc} 
+ list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+permitted\+\_\+subtrees (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a9fbdbd584236aa220399d290d46564b3}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!public\_bytes@{public\_bytes}}
+\index{public\_bytes@{public\_bytes}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{public\_bytes()}{public\_bytes()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a9fbdbd584236aa220399d290d46564b3} 
+ bytes cryptography.\+x509.\+extensions.\+Name\+Constraints.\+public\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serializes the extension type to DER.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type_a42ffbe39176c44985f7029dc1054c2d1}{cryptography.\+x509.\+extensions.\+Extension\+Type}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a228bad8f28916c3dbfae9a40daa4f567}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_excluded\_subtrees@{\_excluded\_subtrees}}
+\index{\_excluded\_subtrees@{\_excluded\_subtrees}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_excluded\_subtrees}{\_excluded\_subtrees}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a228bad8f28916c3dbfae9a40daa4f567} 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+excluded\+\_\+subtrees = \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_ac1acaa6106e7354c7e2ae36f273eb6d2}{excluded\+\_\+subtrees}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a812e482c0824bcf128ef2e752ae93205}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!\_permitted\_subtrees@{\_permitted\_subtrees}}
+\index{\_permitted\_subtrees@{\_permitted\_subtrees}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{\_permitted\_subtrees}{\_permitted\_subtrees}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a812e482c0824bcf128ef2e752ae93205} 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+\_\+permitted\+\_\+subtrees = \mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a49eec9938e1f85f1082115791c8784db}{permitted\+\_\+subtrees}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_ac1acaa6106e7354c7e2ae36f273eb6d2}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!excluded\_subtrees@{excluded\_subtrees}}
+\index{excluded\_subtrees@{excluded\_subtrees}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{excluded\_subtrees}{excluded\_subtrees}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_ac1acaa6106e7354c7e2ae36f273eb6d2} 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+excluded\+\_\+subtrees = other.\+excluded\+\_\+subtrees}
+
+\Hypertarget{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a49eec9938e1f85f1082115791c8784db}\index{cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}!permitted\_subtrees@{permitted\_subtrees}}
+\index{permitted\_subtrees@{permitted\_subtrees}!cryptography.x509.extensions.NameConstraints@{cryptography.x509.extensions.NameConstraints}}
+\doxysubsubsection{\texorpdfstring{permitted\_subtrees}{permitted\_subtrees}}
+{\footnotesize\ttfamily \label{classcryptography_1_1x509_1_1extensions_1_1_name_constraints_a49eec9938e1f85f1082115791c8784db} 
+list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1general__name_1_1_general_name}{General\+Name}}\mbox{]} \texorpdfstring{$\vert$}{|} None cryptography.\+x509.\+extensions.\+Name\+Constraints.\+permitted\+\_\+subtrees = other.\+permitted\+\_\+subtrees}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/x509/\mbox{\hyperlink{extensions_8py}{extensions.\+py}}\end{DoxyCompactItemize}

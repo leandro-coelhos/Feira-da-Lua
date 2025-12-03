@@ -1,0 +1,1405 @@
+\doxysection{\+\_\+pytest.\+hookspec Namespace Reference}
+\hypertarget{namespace__pytest_1_1hookspec}{}\label{namespace__pytest_1_1hookspec}\index{\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ac624a9db5aee602f0261cc6691e53507}{pytest\+\_\+addhooks}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} pluginmanager)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a63adcb65ac630b130e8b341fc0b5a15a}{pytest\+\_\+plugin\+\_\+registered}} (\+\_\+\+Pluggy\+Plugin plugin, str plugin\+\_\+name, \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} manager)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a85db5d847be4fff3a96bdefd4b7b0ce8}{pytest\+\_\+addoption}} (\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}} parser, \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} pluginmanager)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_afcad71ab44fcc837fb674f75adc1a770}{pytest\+\_\+configure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a18dec8da13e9e2e0421716f0c069d7a9}{pytest\+\_\+cmdline\+\_\+parse}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} pluginmanager, list\mbox{[}str\mbox{]} args)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a7c98bfd2517b9fa9d1a0103ffa322ebb}{pytest\+\_\+load\+\_\+initial\+\_\+conftests}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} early\+\_\+config, \mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}} parser, list\mbox{[}str\mbox{]} args)
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_af9b13374a1028554166a8044eb69d96d}{pytest\+\_\+cmdline\+\_\+main}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+object\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_aef6d92e150cc0643ecef56ebdbfec577}{pytest\+\_\+collection}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a549fb786cab1e01223301ccaea97c413}{pytest\+\_\+collection\+\_\+modifyitems}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} items)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a8e42530b0a36f38b516af04ec972eada}{pytest\+\_\+collection\+\_\+finish}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session)
+\item 
+bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a7823763f29dbec7a323d187b86c6fa30}{pytest\+\_\+ignore\+\_\+collect}} (Path collection\+\_\+path, LEGACY\+\_\+\+PATH path, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a671cefc1cfa6dc7d235059b9447a63ce}{pytest\+\_\+collect\+\_\+directory}} (Path path, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} parent)
+\item 
+\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a2284eabae2d53afc5bb227ada2f2f535}{pytest\+\_\+collect\+\_\+file}} (Path file\+\_\+path, LEGACY\+\_\+\+PATH path, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} parent)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a149ffe0705a566c57ebc1b48343322b4}{pytest\+\_\+collectstart}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} collector)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ad514b63954fb8f1214926ba5258e8819}{pytest\+\_\+itemcollected}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a3ba7aa91586726c252b3d74707a5ffd8}{pytest\+\_\+collectreport}} (\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} report)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ab4b7b33586971a7c673be4669f90f6b5}{pytest\+\_\+deselected}} (Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} items)
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a1ad7d8047b55026a56f85e96da1b3e41}{pytest\+\_\+make\+\_\+collect\+\_\+report}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} collector)
+\item 
+Module\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a62609c1bde9d1dc04e9df13d0a94bb6c}{pytest\+\_\+pycollect\+\_\+makemodule}} (Path module\+\_\+path, LEGACY\+\_\+\+PATH path, parent)
+\item 
+None\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\texorpdfstring{$\vert$}{|}list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1hookspec_a641161667086c1ccc93860623c4ac3ba}{pytest\+\_\+pycollect\+\_\+makeitem}} (Module\texorpdfstring{$\vert$}{|}Class collector, str name, object obj)
+\item 
+object\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a97f76b4171e75c47f35f74ebe16eac2a}{pytest\+\_\+pyfunc\+\_\+call}} (Function pyfuncitem)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a497d9028338b6adc65339348df5e8b39}{pytest\+\_\+generate\+\_\+tests}} (Metafunc metafunc)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a7b92323c850fc682f6bf24df4d71bee0}{pytest\+\_\+make\+\_\+parametrize\+\_\+id}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, object val, str argname)
+\item 
+object\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a4446b0fbe8a17dc42d8654977ccd8d7b}{pytest\+\_\+runtestloop}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session)
+\item 
+object\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a7094496e06425ee7cabf4dc6ad2879ce}{pytest\+\_\+runtest\+\_\+protocol}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}None nextitem)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ac29cd6287c11ec757506cef960fe58dc}{pytest\+\_\+runtest\+\_\+logstart}} (str nodeid, tuple\mbox{[}str, int\texorpdfstring{$\vert$}{|}None, str\mbox{]} location)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_aeef666c2336bbc1917fb576d7ebabf7d}{pytest\+\_\+runtest\+\_\+logfinish}} (str nodeid, tuple\mbox{[}str, int\texorpdfstring{$\vert$}{|}None, str\mbox{]} location)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a40314705e67e40eedd61a56663feb7ec}{pytest\+\_\+runtest\+\_\+setup}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a5ccb23819a8fe21efbd955a2a50455cf}{pytest\+\_\+runtest\+\_\+call}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ad0a244b066e9cca5a3b692e101f04e49}{pytest\+\_\+runtest\+\_\+teardown}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}None nextitem)
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a5448b1e355fcfe136ffaecab9ad12679}{pytest\+\_\+runtest\+\_\+makereport}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, \mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}None\mbox{]} call)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ab72c81d340bc3eb98a14335b2e68aaf5}{pytest\+\_\+runtest\+\_\+logreport}} (\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} report)
+\item 
+dict\mbox{[}str, Any\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a44fb0941d011a94bc73aa21bd0fbf5fd}{pytest\+\_\+report\+\_\+to\+\_\+serializable}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} report)
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ab69e90bc4b9e7dcbfa2dce93324d1956}{pytest\+\_\+report\+\_\+from\+\_\+serializable}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, dict\mbox{[}str, Any\mbox{]} data)
+\item 
+object\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a554065d53f0ddfeba5ffbc5df085e23c}{pytest\+\_\+fixture\+\_\+setup}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_def}{Fixture\+Def}}\mbox{[}Any\mbox{]} fixturedef, \mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}} request)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_aa3788fa919721e2400daee40bd5b4b78}{pytest\+\_\+fixture\+\_\+post\+\_\+finalizer}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_def}{Fixture\+Def}}\mbox{[}Any\mbox{]} fixturedef, \mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}} request)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ab6b37573fc284031e723754f74901de7}{pytest\+\_\+sessionstart}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a0ee6ca7c859f458e90ed4dda2deaeeaa}{pytest\+\_\+sessionfinish}} (\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session, int\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} exitstatus)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a83f28ec6643d97f866db55bb64d95307}{pytest\+\_\+unconfigure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_adbd8ab47939bb64ee6d4db9557f20b80}{pytest\+\_\+assertrepr\+\_\+compare}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, str op, object left, object right)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a67c7f3f7710c4ab64dc85e19f6d1f630}{pytest\+\_\+assertion\+\_\+pass}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, int lineno, str orig, str expl)
+\item 
+str\texorpdfstring{$\vert$}{|}list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1hookspec_af57b22f99de8c0f7b2e522a74e2acf98}{pytest\+\_\+report\+\_\+header}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, Path start\+\_\+path, LEGACY\+\_\+\+PATH startdir)
+\item 
+str\texorpdfstring{$\vert$}{|}list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1hookspec_aa329311614e38fccad15bb320ce4b50e}{pytest\+\_\+report\+\_\+collectionfinish}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, Path start\+\_\+path, LEGACY\+\_\+\+PATH startdir, Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} items)
+\item 
+\mbox{\hyperlink{class__pytest_1_1terminal_1_1_test_short_log_report}{Test\+Short\+Log\+Report}}\texorpdfstring{$\vert$}{|}tuple\mbox{[}str, str, str\texorpdfstring{$\vert$}{|}tuple\mbox{[}str, Mapping\mbox{[}str, bool\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1hookspec_af7ca38f6959496212fd4a7b4cf888a50}{pytest\+\_\+report\+\_\+teststatus}} (\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} report, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_acdce262a1a3432359b4381b4b02313ff}{pytest\+\_\+terminal\+\_\+summary}} (\mbox{\hyperlink{class__pytest_1_1terminal_1_1_terminal_reporter}{Terminal\+Reporter}} terminalreporter, \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} exitstatus, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a7a9e64ec83bd7bf9b6d1854f7d3bc219}{pytest\+\_\+warning\+\_\+recorded}} (warnings.\+Warning\+Message warning\+\_\+message, Literal\mbox{[}"{}config"{}, "{}collect"{}, "{}runtest"{}\mbox{]} when, str nodeid, tuple\mbox{[}str, int, str\mbox{]}\texorpdfstring{$\vert$}{|}None location)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1hookspec_afac4f1b0069332b756e2ce9c4f53c0e4}{pytest\+\_\+markeval\+\_\+namespace}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a60672d0215630d1b722718fc040d5e53}{pytest\+\_\+internalerror}} (\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_repr}{Exception\+Repr}} excrepr, \mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}}\mbox{[}Base\+Exception\mbox{]} excinfo)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a8a319c2afcdf6294bb6360b80764da8e}{pytest\+\_\+keyboard\+\_\+interrupt}} (\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}}\mbox{[}Keyboard\+Interrupt\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1outcomes_1_1_exit}{Exit}}\mbox{]} excinfo)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_a90e9abe091298c535fb296e1f5021a93}{pytest\+\_\+exception\+\_\+interact}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} node, \mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}Any\mbox{]} call, \mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} report)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_aa748ad9e95eba521f9e32cb2ea41344d}{pytest\+\_\+enter\+\_\+pdb}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, pdb.\+Pdb pdb)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1hookspec_ae5827c706eacd40ca4f06dc8bdd96a46}{pytest\+\_\+leave\+\_\+pdb}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, pdb.\+Pdb pdb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1hookspec_ac24a2a2c5a77df1a69b5c1c103e5b056}{hookspec}} = \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hookspec_marker}{Hookspec\+Marker}}("{}pytest"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Hook specifications for pytest plugins which are invoked by pytest itself
+and by builtin plugins.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1hookspec_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1hookspec_ac624a9db5aee602f0261cc6691e53507}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_addhooks@{pytest\_addhooks}}
+\index{pytest\_addhooks@{pytest\_addhooks}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_addhooks()}{pytest\_addhooks()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ac624a9db5aee602f0261cc6691e53507} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+addhooks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{pluginmanager}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called at plugin registration time to allow adding new hooks via a call to
+:func:`pluginmanager.add_hookspecs(module_or_class, prefix) <pytest.PytestPluginManager.add_hookspecs>`.
+
+:param pluginmanager: The pytest plugin manager.
+
+.. note::
+    This hook is incompatible with hook wrappers.
+
+Use in conftest plugins
+=======================
+
+If a conftest plugin implements this hook, it will be called immediately
+when the conftest is registered.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a85db5d847be4fff3a96bdefd4b7b0ce8}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_addoption@{pytest\_addoption}}
+\index{pytest\_addoption@{pytest\_addoption}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a85db5d847be4fff3a96bdefd4b7b0ce8} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}}}]{parser}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{pluginmanager}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register argparse-style options and config-style config values,
+called once at the beginning of a test run.
+
+:param parser:
+    To add command line options, call
+    :py:func:`parser.addoption(...) <pytest.Parser.addoption>`.
+    To add config-file values call :py:func:`parser.addini(...)
+    <pytest.Parser.addini>`.
+
+:param pluginmanager:
+    The pytest plugin manager, which can be used to install :py:func:`~pytest.hookspec`'s
+    or :py:func:`~pytest.hookimpl`'s and allow one plugin to call another plugin's hooks
+    to change how command line options are added.
+
+Options can later be accessed through the
+:py:class:`config <pytest.Config>` object, respectively:
+
+- :py:func:`config.getoption(name) <pytest.Config.getoption>` to
+  retrieve the value of a command line option.
+
+- :py:func:`config.getini(name) <pytest.Config.getini>` to retrieve
+  a value read from a configuration file.
+
+The config object is passed around on many internal objects via the ``.config``
+attribute or can be retrieved as the ``pytestconfig`` fixture.
+
+.. note::
+    This hook is incompatible with hook wrappers.
+
+Use in conftest plugins
+=======================
+
+If a conftest plugin implements this hook, it will be called immediately
+when the conftest is registered.
+
+This hook is only called for :ref:`initial conftests <pluginorder>`.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a67c7f3f7710c4ab64dc85e19f6d1f630}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_assertion\_pass@{pytest\_assertion\_pass}}
+\index{pytest\_assertion\_pass@{pytest\_assertion\_pass}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_assertion\_pass()}{pytest\_assertion\_pass()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a67c7f3f7710c4ab64dc85e19f6d1f630} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+assertion\+\_\+pass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{int}]{lineno}{, }\item[{str}]{orig}{, }\item[{str}]{expl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called whenever an assertion passes.
+
+.. versionadded:: 5.0
+
+Use this hook to do some processing after a passing assertion.
+The original assertion information is available in the `orig` string
+and the pytest introspected assertion information is available in the
+`expl` string.
+
+This hook must be explicitly enabled by the :confval:`enable_assertion_pass_hook`
+configuration option:
+
+.. tab:: toml
+
+    .. code-block:: toml
+
+        [pytest]
+        enable_assertion_pass_hook = true
+
+.. tab:: ini
+
+    .. code-block:: ini
+
+        [pytest]
+        enable_assertion_pass_hook = true
+
+You need to **clean the .pyc** files in your project directory and interpreter libraries
+when enabling this option, as assertions will require to be re-written.
+
+:param item: pytest item object of current test.
+:param lineno: Line number of the assert statement.
+:param orig: String with the original assertion.
+:param expl: String with the assert explanation.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_adbd8ab47939bb64ee6d4db9557f20b80}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_assertrepr\_compare@{pytest\_assertrepr\_compare}}
+\index{pytest\_assertrepr\_compare@{pytest\_assertrepr\_compare}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_assertrepr\_compare()}{pytest\_assertrepr\_compare()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_adbd8ab47939bb64ee6d4db9557f20b80} 
+ list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+assertrepr\+\_\+compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{str}]{op}{, }\item[{object}]{left}{, }\item[{object }]{right}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return explanation for comparisons in failing assert expressions.
+
+Return None for no custom explanation, otherwise return a list
+of strings. The strings will be joined by newlines but any newlines
+*in* a string will be escaped. Note that all but the first line will
+be indented slightly, the intention is for the first line to be a summary.
+
+:param config: The pytest config object.
+:param op: The operator, e.g. `"=="`, `"!="`, `"not in"`.
+:param left: The left operand.
+:param right: The right operand.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_af9b13374a1028554166a8044eb69d96d}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_cmdline\_main@{pytest\_cmdline\_main}}
+\index{pytest\_cmdline\_main@{pytest\_cmdline\_main}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_cmdline\_main()}{pytest\_cmdline\_main()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_af9b13374a1028554166a8044eb69d96d} 
+ \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+cmdline\+\_\+main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called for performing the main command line action.
+
+The default implementation will invoke the configure hooks and
+:hook:`pytest_runtestloop`.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param config: The pytest config object.
+:returns: The exit code.
+
+Use in conftest plugins
+=======================
+
+This hook is only called for :ref:`initial conftests <pluginorder>`.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a18dec8da13e9e2e0421716f0c069d7a9}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_cmdline\_parse@{pytest\_cmdline\_parse}}
+\index{pytest\_cmdline\_parse@{pytest\_cmdline\_parse}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_cmdline\_parse()}{pytest\_cmdline\_parse()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a18dec8da13e9e2e0421716f0c069d7a9} 
+ \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+cmdline\+\_\+parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{pluginmanager}{, }\item[{list\mbox{[}str\mbox{]} }]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an initialized :class:`~pytest.Config`, parsing the specified args.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+.. note::
+    This hook is only called for plugin classes passed to the
+    ``plugins`` arg when using `pytest.main`_ to perform an in-process
+    test run.
+
+:param pluginmanager: The pytest plugin manager.
+:param args: List of arguments passed on the command line.
+:returns: A pytest config object.
+
+Use in conftest plugins
+=======================
+
+This hook is not called for conftest files.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a671cefc1cfa6dc7d235059b9447a63ce}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collect\_directory@{pytest\_collect\_directory}}
+\index{pytest\_collect\_directory@{pytest\_collect\_directory}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collect\_directory()}{pytest\_collect\_directory()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a671cefc1cfa6dc7d235059b9447a63ce} 
+ \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collect\+\_\+directory (\begin{DoxyParamCaption}\item[{Path}]{path}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}}]{parent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`~pytest.Collector` for the given directory, or None if
+not relevant.
+
+.. versionadded:: 8.0
+
+For best results, the returned collector should be a subclass of
+:class:`~pytest.Directory`, but this is not required.
+
+The new node needs to have the specified ``parent`` as a parent.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param path: The path to analyze.
+:type path: pathlib.Path
+
+See :ref:`custom directory collectors` for a simple example of use of this
+hook.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given collection path, only
+conftest files in parent directories of the collection path are consulted
+(if the path is a directory, its own conftest file is *not* consulted - a
+directory cannot collect itself!).
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a2284eabae2d53afc5bb227ada2f2f535}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collect\_file@{pytest\_collect\_file}}
+\index{pytest\_collect\_file@{pytest\_collect\_file}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collect\_file()}{pytest\_collect\_file()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a2284eabae2d53afc5bb227ada2f2f535} 
+ \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collect\+\_\+file (\begin{DoxyParamCaption}\item[{Path}]{file\+\_\+path}{, }\item[{LEGACY\+\_\+\+PATH}]{path}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} }]{parent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`~pytest.Collector` for the given path, or None if not relevant.
+
+For best results, the returned collector should be a subclass of
+:class:`~pytest.File`, but this is not required.
+
+The new node needs to have the specified ``parent`` as a parent.
+
+:param file_path: The path to analyze.
+:type file_path: pathlib.Path
+:param path: The path to collect (deprecated).
+
+.. versionchanged:: 7.0.0
+    The ``file_path`` parameter was added as a :class:`pathlib.Path`
+    equivalent of the ``path`` parameter. The ``path`` parameter
+    has been deprecated.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given file path, only
+conftest files in parent directories of the file path are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_aef6d92e150cc0643ecef56ebdbfec577}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collection@{pytest\_collection}}
+\index{pytest\_collection@{pytest\_collection}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collection()}{pytest\_collection()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_aef6d92e150cc0643ecef56ebdbfec577} 
+ object \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the collection phase for the given session.
+
+Stops at first non-None result, see :ref:`firstresult`.
+The return value is not used, but only stops further processing.
+
+The default collection phase is this (see individual hooks for full details):
+
+1. Starting from ``session`` as the initial collector:
+
+  1. ``pytest_collectstart(collector)``
+  2. ``report = pytest_make_collect_report(collector)``
+  3. ``pytest_exception_interact(collector, call, report)`` if an interactive exception occurred
+  4. For each collected node:
+
+    1. If an item, ``pytest_itemcollected(item)``
+    2. If a collector, recurse into it.
+
+  5. ``pytest_collectreport(report)``
+
+2. ``pytest_collection_modifyitems(session, config, items)``
+
+  1. ``pytest_deselected(items)`` for any deselected items (may be called multiple times)
+
+3. ``pytest_collection_finish(session)``
+4. Set ``session.items`` to the list of collected items
+5. Set ``session.testscollected`` to the number of collected items
+
+You can implement this hook to only perform some action before collection,
+for example the terminal plugin uses it to start displaying the collection
+counter (and returns `None`).
+
+:param session: The pytest session object.
+
+Use in conftest plugins
+=======================
+
+This hook is only called for :ref:`initial conftests <pluginorder>`.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a8e42530b0a36f38b516af04ec972eada}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collection\_finish@{pytest\_collection\_finish}}
+\index{pytest\_collection\_finish@{pytest\_collection\_finish}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collection\_finish()}{pytest\_collection\_finish()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a8e42530b0a36f38b516af04ec972eada} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collection\+\_\+finish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called after collection has been performed and modified.
+
+:param session: The pytest session object.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a549fb786cab1e01223301ccaea97c413}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collection\_modifyitems@{pytest\_collection\_modifyitems}}
+\index{pytest\_collection\_modifyitems@{pytest\_collection\_modifyitems}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collection\_modifyitems()}{pytest\_collection\_modifyitems()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a549fb786cab1e01223301ccaea97c413} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collection\+\_\+modifyitems (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} }]{items}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called after collection has been performed. May filter or re-order
+the items in-place.
+
+When items are deselected (filtered out from ``items``),
+the hook :hook:`pytest_deselected` must be called explicitly
+with the deselected items to properly notify other plugins,
+e.g. with ``config.hook.pytest_deselected(items=deselected_items)``.
+
+:param session: The pytest session object.
+:param config: The pytest config object.
+:param items: List of item objects.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a3ba7aa91586726c252b3d74707a5ffd8}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collectreport@{pytest\_collectreport}}
+\index{pytest\_collectreport@{pytest\_collectreport}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collectreport()}{pytest\_collectreport()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a3ba7aa91586726c252b3d74707a5ffd8} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collectreport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}}]{report}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Collector finished collecting.
+
+:param report:
+    The collect report.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given collector, only
+conftest files in the collector's directory and its parent directories are
+consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a149ffe0705a566c57ebc1b48343322b4}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_collectstart@{pytest\_collectstart}}
+\index{pytest\_collectstart@{pytest\_collectstart}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_collectstart()}{pytest\_collectstart()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a149ffe0705a566c57ebc1b48343322b4} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+collectstart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}}]{collector}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Collector starts collecting.
+
+:param collector:
+    The collector.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given collector, only
+conftest files in the collector's directory and its parent directories are
+consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_afcad71ab44fcc837fb674f75adc1a770}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_afcad71ab44fcc837fb674f75adc1a770} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allow plugins and conftest files to perform initial configuration.
+
+.. note::
+    This hook is incompatible with hook wrappers.
+
+:param config: The pytest config object.
+
+Use in conftest plugins
+=======================
+
+This hook is called for every :ref:`initial conftest <pluginorder>` file
+after command line options have been parsed. After that, the hook is called
+for other conftest files as they are registered.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ab4b7b33586971a7c673be4669f90f6b5}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_deselected@{pytest\_deselected}}
+\index{pytest\_deselected@{pytest\_deselected}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_deselected()}{pytest\_deselected()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ab4b7b33586971a7c673be4669f90f6b5} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+deselected (\begin{DoxyParamCaption}\item[{Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]}}]{items}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called for deselected test items, e.g. by keyword.
+
+Note that this hook has two integration aspects for plugins:
+
+- it can be *implemented* to be notified of deselected items
+- it must be *called* from :hook:`pytest_collection_modifyitems`
+  implementations when items are deselected (to properly notify other plugins).
+
+May be called multiple times.
+
+:param items:
+    The items.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_aa748ad9e95eba521f9e32cb2ea41344d}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_enter\_pdb@{pytest\_enter\_pdb}}
+\index{pytest\_enter\_pdb@{pytest\_enter\_pdb}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_enter\_pdb()}{pytest\_enter\_pdb()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_aa748ad9e95eba521f9e32cb2ea41344d} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+enter\+\_\+pdb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{pdb.\+Pdb}]{pdb}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called upon pdb.set_trace().
+
+Can be used by plugins to take special action just before the python
+debugger enters interactive mode.
+
+:param config: The pytest config object.
+:param pdb: The Pdb instance.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a90e9abe091298c535fb296e1f5021a93}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_exception\_interact@{pytest\_exception\_interact}}
+\index{pytest\_exception\_interact@{pytest\_exception\_interact}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_exception\_interact()}{pytest\_exception\_interact()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a90e9abe091298c535fb296e1f5021a93} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+exception\+\_\+interact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}}]{node}{, }\item[{\mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}Any\mbox{]}}]{call}{, }\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}}]{report}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when an exception was raised which can potentially be
+interactively handled.
+
+May be called during collection (see :hook:`pytest_make_collect_report`),
+in which case ``report`` is a :class:`~pytest.CollectReport`.
+
+May be called during runtest of an item (see :hook:`pytest_runtest_protocol`),
+in which case ``report`` is a :class:`~pytest.TestReport`.
+
+This hook is not called if the exception that was raised is an internal
+exception like ``skip.Exception``.
+
+:param node:
+    The item or collector.
+:param call:
+    The call information. Contains the exception.
+:param report:
+    The collection or test report.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given node, only conftest
+files in parent directories of the node are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_aa3788fa919721e2400daee40bd5b4b78}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_fixture\_post\_finalizer@{pytest\_fixture\_post\_finalizer}}
+\index{pytest\_fixture\_post\_finalizer@{pytest\_fixture\_post\_finalizer}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_fixture\_post\_finalizer()}{pytest\_fixture\_post\_finalizer()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_aa3788fa919721e2400daee40bd5b4b78} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+fixture\+\_\+post\+\_\+finalizer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_def}{Fixture\+Def}}\mbox{[}Any\mbox{]}}]{fixturedef}{, }\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}} }]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called after fixture teardown, but before the cache is cleared, so
+the fixture result ``fixturedef.cached_result`` is still available (not
+``None``).
+
+:param fixturedef:
+    The fixture definition object.
+:param request:
+    The fixture request object.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given fixture, only
+conftest files in the fixture scope's directory and its parent directories
+are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a554065d53f0ddfeba5ffbc5df085e23c}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_fixture\_setup@{pytest\_fixture\_setup}}
+\index{pytest\_fixture\_setup@{pytest\_fixture\_setup}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_fixture\_setup()}{pytest\_fixture\_setup()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a554065d53f0ddfeba5ffbc5df085e23c} 
+ object \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+fixture\+\_\+setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_def}{Fixture\+Def}}\mbox{[}Any\mbox{]}}]{fixturedef}{, }\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}} }]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform fixture setup execution.
+
+:param fixturedef:
+    The fixture definition object.
+:param request:
+    The fixture request object.
+:returns:
+    The return value of the call to the fixture function.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+.. note::
+    If the fixture function returns None, other implementations of
+    this hook function will continue to be called, according to the
+    behavior of the :ref:`firstresult` option.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given fixture, only
+conftest files in the fixture scope's directory and its parent directories
+are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a497d9028338b6adc65339348df5e8b39}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_generate\_tests@{pytest\_generate\_tests}}
+\index{pytest\_generate\_tests@{pytest\_generate\_tests}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_generate\_tests()}{pytest\_generate\_tests()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a497d9028338b6adc65339348df5e8b39} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+generate\+\_\+tests (\begin{DoxyParamCaption}\item[{Metafunc}]{metafunc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate (multiple) parametrized calls to a test function.
+
+:param metafunc:
+    The :class:`~pytest.Metafunc` helper for the test function.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given function definition,
+only conftest files in the functions's directory and its parent directories
+are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a7823763f29dbec7a323d187b86c6fa30}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_ignore\_collect@{pytest\_ignore\_collect}}
+\index{pytest\_ignore\_collect@{pytest\_ignore\_collect}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_ignore\_collect()}{pytest\_ignore\_collect()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a7823763f29dbec7a323d187b86c6fa30} 
+ bool \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+ignore\+\_\+collect (\begin{DoxyParamCaption}\item[{Path}]{collection\+\_\+path}{, }\item[{LEGACY\+\_\+\+PATH}]{path}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} }]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``True`` to ignore this path for collection.
+
+Return ``None`` to let other plugins ignore the path for collection.
+
+Returning ``False`` will forcefully *not* ignore this path for collection,
+without giving a chance for other plugins to ignore this path.
+
+This hook is consulted for all files and directories prior to calling
+more specific hooks.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param collection_path: The path to analyze.
+:type collection_path: pathlib.Path
+:param path: The path to analyze (deprecated).
+:param config: The pytest config object.
+
+.. versionchanged:: 7.0.0
+    The ``collection_path`` parameter was added as a :class:`pathlib.Path`
+    equivalent of the ``path`` parameter. The ``path`` parameter
+    has been deprecated.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given collection path, only
+conftest files in parent directories of the collection path are consulted
+(if the path is a directory, its own conftest file is *not* consulted - a
+directory cannot ignore itself!).
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a60672d0215630d1b722718fc040d5e53}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_internalerror@{pytest\_internalerror}}
+\index{pytest\_internalerror@{pytest\_internalerror}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_internalerror()}{pytest\_internalerror()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a60672d0215630d1b722718fc040d5e53} 
+ bool \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+internalerror (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_repr}{Exception\+Repr}}}]{excrepr}{, }\item[{\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}}\mbox{[}Base\+Exception\mbox{]}}]{excinfo}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called for internal errors.
+
+Return True to suppress the fallback handling of printing an
+INTERNALERROR message directly to sys.stderr.
+
+:param excrepr: The exception repr object.
+:param excinfo: The exception info.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ad514b63954fb8f1214926ba5258e8819}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_itemcollected@{pytest\_itemcollected}}
+\index{pytest\_itemcollected@{pytest\_itemcollected}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_itemcollected()}{pytest\_itemcollected()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ad514b63954fb8f1214926ba5258e8819} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+itemcollected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}We just collected a test item.
+
+:param item:
+    The item.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a8a319c2afcdf6294bb6360b80764da8e}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_keyboard\_interrupt@{pytest\_keyboard\_interrupt}}
+\index{pytest\_keyboard\_interrupt@{pytest\_keyboard\_interrupt}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_keyboard\_interrupt()}{pytest\_keyboard\_interrupt()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a8a319c2afcdf6294bb6360b80764da8e} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+keyboard\+\_\+interrupt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1__code_1_1code_1_1_exception_info}{Exception\+Info}}\mbox{[}Keyboard\+Interrupt \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_exit}{Exit}}\mbox{]}}]{excinfo}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called for keyboard interrupt.
+
+:param excinfo: The exception info.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ae5827c706eacd40ca4f06dc8bdd96a46}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_leave\_pdb@{pytest\_leave\_pdb}}
+\index{pytest\_leave\_pdb@{pytest\_leave\_pdb}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_leave\_pdb()}{pytest\_leave\_pdb()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ae5827c706eacd40ca4f06dc8bdd96a46} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+leave\+\_\+pdb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{pdb.\+Pdb}]{pdb}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when leaving pdb (e.g. with continue after pdb.set_trace()).
+
+Can be used by plugins to take special action just after the python
+debugger leaves interactive mode.
+
+:param config: The pytest config object.
+:param pdb: The Pdb instance.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a7c98bfd2517b9fa9d1a0103ffa322ebb}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_load\_initial\_conftests@{pytest\_load\_initial\_conftests}}
+\index{pytest\_load\_initial\_conftests@{pytest\_load\_initial\_conftests}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_load\_initial\_conftests()}{pytest\_load\_initial\_conftests()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a7c98bfd2517b9fa9d1a0103ffa322ebb} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+load\+\_\+initial\+\_\+conftests (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{early\+\_\+config}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}}}]{parser}{, }\item[{list\mbox{[}str\mbox{]} }]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called to implement the loading of :ref:`initial conftest files
+<pluginorder>` ahead of command line option parsing.
+
+:param early_config: The pytest config object.
+:param args: Arguments passed on the command line.
+:param parser: To add command line options.
+
+Use in conftest plugins
+=======================
+
+This hook is not called for conftest files.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a1ad7d8047b55026a56f85e96da1b3e41}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_make\_collect\_report@{pytest\_make\_collect\_report}}
+\index{pytest\_make\_collect\_report@{pytest\_make\_collect\_report}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_make\_collect\_report()}{pytest\_make\_collect\_report()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a1ad7d8047b55026a56f85e96da1b3e41} 
+ \mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+make\+\_\+collect\+\_\+report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}}]{collector}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform :func:`collector.collect() <pytest.Collector.collect>` and return
+a :class:`~pytest.CollectReport`.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param collector:
+    The collector.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given collector, only
+conftest files in the collector's directory and its parent directories are
+consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a7b92323c850fc682f6bf24df4d71bee0}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_make\_parametrize\_id@{pytest\_make\_parametrize\_id}}
+\index{pytest\_make\_parametrize\_id@{pytest\_make\_parametrize\_id}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_make\_parametrize\_id()}{pytest\_make\_parametrize\_id()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a7b92323c850fc682f6bf24df4d71bee0} 
+ str \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+make\+\_\+parametrize\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{object}]{val}{, }\item[{str}]{argname}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a user-friendly string representation of the given ``val``
+that will be used by @pytest.mark.parametrize calls, or None if the hook
+doesn't know about ``val``.
+
+The parameter name is available as ``argname``, if required.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param config: The pytest config object.
+:param val: The parametrized value.
+:param argname: The automatic parameter name produced by pytest.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_afac4f1b0069332b756e2ce9c4f53c0e4}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_markeval\_namespace@{pytest\_markeval\_namespace}}
+\index{pytest\_markeval\_namespace@{pytest\_markeval\_namespace}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_markeval\_namespace()}{pytest\_markeval\_namespace()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_afac4f1b0069332b756e2ce9c4f53c0e4} 
+ dict\mbox{[}str, Any\mbox{]} \+\_\+pytest.\+hookspec.\+pytest\+\_\+markeval\+\_\+namespace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when constructing the globals dictionary used for
+evaluating string conditions in xfail/skipif markers.
+
+This is useful when the condition for a marker requires
+objects that are expensive or impossible to obtain during
+collection time, which is required by normal boolean
+conditions.
+
+.. versionadded:: 6.2
+
+:param config: The pytest config object.
+:returns: A dictionary of additional globals to add.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in parent directories of the item are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a63adcb65ac630b130e8b341fc0b5a15a}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_plugin\_registered@{pytest\_plugin\_registered}}
+\index{pytest\_plugin\_registered@{pytest\_plugin\_registered}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_plugin\_registered()}{pytest\_plugin\_registered()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a63adcb65ac630b130e8b341fc0b5a15a} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+plugin\+\_\+registered (\begin{DoxyParamCaption}\item[{\+\_\+\+Pluggy\+Plugin}]{plugin}{, }\item[{str}]{plugin\+\_\+name}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{manager}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A new pytest plugin got registered.
+
+:param plugin: The plugin module or instance.
+:param plugin_name: The name by which the plugin is registered.
+:param manager: The pytest plugin manager.
+
+.. note::
+    This hook is incompatible with hook wrappers.
+
+Use in conftest plugins
+=======================
+
+If a conftest plugin implements this hook, it will be called immediately
+when the conftest is registered, once for each plugin registered thus far
+(including itself!), and for all plugins thereafter when they are
+registered.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a641161667086c1ccc93860623c4ac3ba}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_pycollect\_makeitem@{pytest\_pycollect\_makeitem}}
+\index{pytest\_pycollect\_makeitem@{pytest\_pycollect\_makeitem}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_pycollect\_makeitem()}{pytest\_pycollect\_makeitem()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a641161667086c1ccc93860623c4ac3ba} 
+ None \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} \texorpdfstring{$\vert$}{|} list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\mbox{]} \+\_\+pytest.\+hookspec.\+pytest\+\_\+pycollect\+\_\+makeitem (\begin{DoxyParamCaption}\item[{Module \texorpdfstring{$\vert$}{|} Class}]{collector}{, }\item[{str}]{name}{, }\item[{object }]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a custom item/collector for a Python object in a module, or None.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param collector:
+    The module/class collector.
+:param name:
+    The name of the object in the module/class.
+:param obj:
+    The object.
+:returns:
+    The created items/collectors.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given collector, only
+conftest files in the collector's directory and its parent directories
+are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a62609c1bde9d1dc04e9df13d0a94bb6c}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_pycollect\_makemodule@{pytest\_pycollect\_makemodule}}
+\index{pytest\_pycollect\_makemodule@{pytest\_pycollect\_makemodule}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_pycollect\_makemodule()}{pytest\_pycollect\_makemodule()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a62609c1bde9d1dc04e9df13d0a94bb6c} 
+ Module \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+pycollect\+\_\+makemodule (\begin{DoxyParamCaption}\item[{Path}]{module\+\_\+path}{, }\item[{LEGACY\+\_\+\+PATH}]{path}{, }\item[{}]{parent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a :class:`pytest.Module` collector or None for the given path.
+
+This hook will be called for each matching test module path.
+The :hook:`pytest_collect_file` hook needs to be used if you want to
+create test modules for files that do not match as a test module.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param module_path: The path of the module to collect.
+:type module_path: pathlib.Path
+:param path: The path of the module to collect (deprecated).
+
+.. versionchanged:: 7.0.0
+    The ``module_path`` parameter was added as a :class:`pathlib.Path`
+    equivalent of the ``path`` parameter.
+
+    The ``path`` parameter has been deprecated in favor of ``fspath``.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given parent collector,
+only conftest files in the collector's directory and its parent directories
+are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a97f76b4171e75c47f35f74ebe16eac2a}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_pyfunc\_call@{pytest\_pyfunc\_call}}
+\index{pytest\_pyfunc\_call@{pytest\_pyfunc\_call}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_pyfunc\_call()}{pytest\_pyfunc\_call()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a97f76b4171e75c47f35f74ebe16eac2a} 
+ object \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+pyfunc\+\_\+call (\begin{DoxyParamCaption}\item[{Function}]{pyfuncitem}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call underlying test function.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+:param pyfuncitem:
+    The function item.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only
+conftest files in the item's directory and its parent directories
+are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_aa329311614e38fccad15bb320ce4b50e}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_report\_collectionfinish@{pytest\_report\_collectionfinish}}
+\index{pytest\_report\_collectionfinish@{pytest\_report\_collectionfinish}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_collectionfinish()}{pytest\_report\_collectionfinish()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_aa329311614e38fccad15bb320ce4b50e} 
+ str \texorpdfstring{$\vert$}{|} list\mbox{[}str\mbox{]} \+\_\+pytest.\+hookspec.\+pytest\+\_\+report\+\_\+collectionfinish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{Path}]{start\+\_\+path}{, }\item[{LEGACY\+\_\+\+PATH}]{startdir}{, }\item[{Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]}}]{items}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string or list of strings to be displayed after collection
+has finished successfully.
+
+These strings will be displayed after the standard "collected X items" message.
+
+.. versionadded:: 3.2
+
+:param config: The pytest config object.
+:param start_path: The starting dir.
+:type start_path: pathlib.Path
+:param startdir: The starting dir (deprecated).
+:param items: List of pytest items that are going to be executed; this list should not be modified.
+
+.. note::
+
+    Lines returned by a plugin are displayed before those of plugins which
+    ran before it.
+    If you want to have your line(s) displayed first, use
+    :ref:`trylast=True <plugin-hookorder>`.
+
+.. versionchanged:: 7.0.0
+    The ``start_path`` parameter was added as a :class:`pathlib.Path`
+    equivalent of the ``startdir`` parameter. The ``startdir`` parameter
+    has been deprecated.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ab69e90bc4b9e7dcbfa2dce93324d1956}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_report\_from\_serializable@{pytest\_report\_from\_serializable}}
+\index{pytest\_report\_from\_serializable@{pytest\_report\_from\_serializable}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_from\_serializable()}{pytest\_report\_from\_serializable()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ab69e90bc4b9e7dcbfa2dce93324d1956} 
+ \mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+report\+\_\+from\+\_\+serializable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{dict\mbox{[}str, Any\mbox{]}}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Restore a report object previously serialized with
+:hook:`pytest_report_to_serializable`.
+
+:param config: The pytest config object.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. The exact details may depend
+on the plugin which calls the hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_af57b22f99de8c0f7b2e522a74e2acf98}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_report\_header@{pytest\_report\_header}}
+\index{pytest\_report\_header@{pytest\_report\_header}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_header()}{pytest\_report\_header()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_af57b22f99de8c0f7b2e522a74e2acf98} 
+ str \texorpdfstring{$\vert$}{|} list\mbox{[}str\mbox{]} \+\_\+pytest.\+hookspec.\+pytest\+\_\+report\+\_\+header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{Path}]{start\+\_\+path}{, }\item[{LEGACY\+\_\+\+PATH }]{startdir}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string or list of strings to be displayed as header info for terminal reporting.
+
+:param config: The pytest config object.
+:param start_path: The starting dir.
+:type start_path: pathlib.Path
+:param startdir: The starting dir (deprecated).
+
+.. note::
+
+    Lines returned by a plugin are displayed before those of plugins which
+    ran before it.
+    If you want to have your line(s) displayed first, use
+    :ref:`trylast=True <plugin-hookorder>`.
+
+.. versionchanged:: 7.0.0
+    The ``start_path`` parameter was added as a :class:`pathlib.Path`
+    equivalent of the ``startdir`` parameter. The ``startdir`` parameter
+    has been deprecated.
+
+Use in conftest plugins
+=======================
+
+This hook is only called for :ref:`initial conftests <pluginorder>`.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_af7ca38f6959496212fd4a7b4cf888a50}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_report\_teststatus@{pytest\_report\_teststatus}}
+\index{pytest\_report\_teststatus@{pytest\_report\_teststatus}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_teststatus()}{pytest\_report\_teststatus()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_af7ca38f6959496212fd4a7b4cf888a50} 
+ \mbox{\hyperlink{class__pytest_1_1terminal_1_1_test_short_log_report}{Test\+Short\+Log\+Report}} \texorpdfstring{$\vert$}{|} tuple\mbox{[}str, str, str \texorpdfstring{$\vert$}{|} tuple\mbox{[}str, Mapping\mbox{[}str, bool\mbox{]}\mbox{]}\mbox{]} \+\_\+pytest.\+hookspec.\+pytest\+\_\+report\+\_\+teststatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}}]{report}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} }]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return result-category, shortletter and verbose word for status
+reporting.
+
+The result-category is a category in which to count the result, for
+example "passed", "skipped", "error" or the empty string.
+
+The shortletter is shown as testing progresses, for example ".", "s",
+"E" or the empty string.
+
+The verbose word is shown as testing progresses in verbose mode, for
+example "PASSED", "SKIPPED", "ERROR" or the empty string.
+
+pytest may style these implicitly according to the report outcome.
+To provide explicit styling, return a tuple for the verbose word,
+for example ``"rerun", "R", ("RERUN", {"yellow": True})``.
+
+:param report: The report object whose status is to be returned.
+:param config: The pytest config object.
+:returns: The test status.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a44fb0941d011a94bc73aa21bd0fbf5fd}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_report\_to\_serializable@{pytest\_report\_to\_serializable}}
+\index{pytest\_report\_to\_serializable@{pytest\_report\_to\_serializable}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_to\_serializable()}{pytest\_report\_to\_serializable()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a44fb0941d011a94bc73aa21bd0fbf5fd} 
+ dict\mbox{[}str, Any\mbox{]} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+report\+\_\+to\+\_\+serializable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}}]{report}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serialize the given report object into a data structure suitable for
+sending over the wire, e.g. converted to JSON.
+
+:param config: The pytest config object.
+:param report: The report.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. The exact details may depend
+on the plugin which calls the hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a5ccb23819a8fe21efbd955a2a50455cf}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_call@{pytest\_runtest\_call}}
+\index{pytest\_runtest\_call@{pytest\_runtest\_call}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_call()}{pytest\_runtest\_call()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a5ccb23819a8fe21efbd955a2a50455cf} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called to run the test for test item (the call phase).
+
+The default implementation calls ``item.runtest()``.
+
+:param item:
+    The item.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_aeef666c2336bbc1917fb576d7ebabf7d}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_logfinish@{pytest\_runtest\_logfinish}}
+\index{pytest\_runtest\_logfinish@{pytest\_runtest\_logfinish}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_logfinish()}{pytest\_runtest\_logfinish()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_aeef666c2336bbc1917fb576d7ebabf7d} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+logfinish (\begin{DoxyParamCaption}\item[{str}]{nodeid}{, }\item[{tuple\mbox{[}str, int \texorpdfstring{$\vert$}{|} None, str\mbox{]} }]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called at the end of running the runtest protocol for a single item.
+
+See :hook:`pytest_runtest_protocol` for a description of the runtest protocol.
+
+:param nodeid: Full node ID of the item.
+:param location: A tuple of ``(filename, lineno, testname)``
+    where ``filename`` is a file path relative to ``config.rootpath``
+    and ``lineno`` is 0-based.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ab72c81d340bc3eb98a14335b2e68aaf5}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_logreport@{pytest\_runtest\_logreport}}
+\index{pytest\_runtest\_logreport@{pytest\_runtest\_logreport}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_logreport()}{pytest\_runtest\_logreport()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ab72c81d340bc3eb98a14335b2e68aaf5} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+logreport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}}]{report}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process the :class:`~pytest.TestReport` produced for each
+of the setup, call and teardown runtest phases of an item.
+
+See :hook:`pytest_runtest_protocol` for a description of the runtest protocol.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ac29cd6287c11ec757506cef960fe58dc}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_logstart@{pytest\_runtest\_logstart}}
+\index{pytest\_runtest\_logstart@{pytest\_runtest\_logstart}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_logstart()}{pytest\_runtest\_logstart()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ac29cd6287c11ec757506cef960fe58dc} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+logstart (\begin{DoxyParamCaption}\item[{str}]{nodeid}{, }\item[{tuple\mbox{[}str, int \texorpdfstring{$\vert$}{|} None, str\mbox{]}}]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called at the start of running the runtest protocol for a single item.
+
+See :hook:`pytest_runtest_protocol` for a description of the runtest protocol.
+
+:param nodeid: Full node ID of the item.
+:param location: A tuple of ``(filename, lineno, testname)``
+    where ``filename`` is a file path relative to ``config.rootpath``
+    and ``lineno`` is 0-based.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a5448b1e355fcfe136ffaecab9ad12679}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_makereport@{pytest\_runtest\_makereport}}
+\index{pytest\_runtest\_makereport@{pytest\_runtest\_makereport}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_makereport()}{pytest\_runtest\_makereport()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a5448b1e355fcfe136ffaecab9ad12679} 
+ \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+makereport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{\mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}None\mbox{]}}]{call}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called to create a :class:`~pytest.TestReport` for each of
+the setup, call and teardown runtest phases of a test item.
+
+See :hook:`pytest_runtest_protocol` for a description of the runtest protocol.
+
+:param item: The item.
+:param call: The :class:`~pytest.CallInfo` for the phase.
+
+Stops at first non-None result, see :ref:`firstresult`.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a7094496e06425ee7cabf4dc6ad2879ce}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_protocol@{pytest\_runtest\_protocol}}
+\index{pytest\_runtest\_protocol@{pytest\_runtest\_protocol}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_protocol()}{pytest\_runtest\_protocol()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a7094496e06425ee7cabf4dc6ad2879ce} 
+ object \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+protocol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} None}]{nextitem}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the runtest protocol for a single test item.
+
+The default runtest protocol is this (see individual hooks for full details):
+
+- ``pytest_runtest_logstart(nodeid, location)``
+
+- Setup phase:
+    - ``call = pytest_runtest_setup(item)`` (wrapped in ``CallInfo(when="setup")``)
+    - ``report = pytest_runtest_makereport(item, call)``
+    - ``pytest_runtest_logreport(report)``
+    - ``pytest_exception_interact(call, report)`` if an interactive exception occurred
+
+- Call phase, if the setup passed and the ``setuponly`` pytest option is not set:
+    - ``call = pytest_runtest_call(item)`` (wrapped in ``CallInfo(when="call")``)
+    - ``report = pytest_runtest_makereport(item, call)``
+    - ``pytest_runtest_logreport(report)``
+    - ``pytest_exception_interact(call, report)`` if an interactive exception occurred
+
+- Teardown phase:
+    - ``call = pytest_runtest_teardown(item, nextitem)`` (wrapped in ``CallInfo(when="teardown")``)
+    - ``report = pytest_runtest_makereport(item, call)``
+    - ``pytest_runtest_logreport(report)``
+    - ``pytest_exception_interact(call, report)`` if an interactive exception occurred
+
+- ``pytest_runtest_logfinish(nodeid, location)``
+
+:param item: Test item for which the runtest protocol is performed.
+:param nextitem: The scheduled-to-be-next test item (or None if this is the end my friend).
+
+Stops at first non-None result, see :ref:`firstresult`.
+The return value is not used, but only stops further processing.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a40314705e67e40eedd61a56663feb7ec}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_setup@{pytest\_runtest\_setup}}
+\index{pytest\_runtest\_setup@{pytest\_runtest\_setup}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_setup()}{pytest\_runtest\_setup()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a40314705e67e40eedd61a56663feb7ec} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called to perform the setup phase for a test item.
+
+The default implementation runs ``setup()`` on ``item`` and all of its
+parents (which haven't been setup yet). This includes obtaining the
+values of fixtures required by the item (which haven't been obtained
+yet).
+
+:param item:
+    The item.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ad0a244b066e9cca5a3b692e101f04e49}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtest\_teardown@{pytest\_runtest\_teardown}}
+\index{pytest\_runtest\_teardown@{pytest\_runtest\_teardown}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_teardown()}{pytest\_runtest\_teardown()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ad0a244b066e9cca5a3b692e101f04e49} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtest\+\_\+teardown (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} None}]{nextitem}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called to perform the teardown phase for a test item.
+
+The default implementation runs the finalizers and calls ``teardown()``
+on ``item`` and all of its parents (which need to be torn down). This
+includes running the teardown phase of fixtures required by the item (if
+they go out of scope).
+
+:param item:
+    The item.
+:param nextitem:
+    The scheduled-to-be-next test item (None if no further test item is
+    scheduled). This argument is used to perform exact teardowns, i.e.
+    calling just enough finalizers so that nextitem only needs to call
+    setup functions.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. For a given item, only conftest
+files in the item's directory and its parent directories are consulted.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a4446b0fbe8a17dc42d8654977ccd8d7b}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_runtestloop@{pytest\_runtestloop}}
+\index{pytest\_runtestloop@{pytest\_runtestloop}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtestloop()}{pytest\_runtestloop()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a4446b0fbe8a17dc42d8654977ccd8d7b} 
+ object \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+hookspec.\+pytest\+\_\+runtestloop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the main runtest loop (after collection finished).
+
+The default hook implementation performs the runtest protocol for all items
+collected in the session (``session.items``), unless the collection failed
+or the ``collectonly`` pytest option is set.
+
+If at any point :py:func:`pytest.exit` is called, the loop is
+terminated immediately.
+
+If at any point ``session.shouldfail`` or ``session.shouldstop`` are set, the
+loop is terminated after the runtest protocol for the current item is finished.
+
+:param session: The pytest session object.
+
+Stops at first non-None result, see :ref:`firstresult`.
+The return value is not used, but only stops further processing.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a0ee6ca7c859f458e90ed4dda2deaeeaa}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_sessionfinish@{pytest\_sessionfinish}}
+\index{pytest\_sessionfinish@{pytest\_sessionfinish}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_sessionfinish()}{pytest\_sessionfinish()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a0ee6ca7c859f458e90ed4dda2deaeeaa} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+sessionfinish (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{, }\item[{int \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}}]{exitstatus}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called after whole test run finished, right before returning the exit status to the system.
+
+:param session: The pytest session object.
+:param exitstatus: The status which pytest will return to the system.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_ab6b37573fc284031e723754f74901de7}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_sessionstart@{pytest\_sessionstart}}
+\index{pytest\_sessionstart@{pytest\_sessionstart}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_sessionstart()}{pytest\_sessionstart()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ab6b37573fc284031e723754f74901de7} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+sessionstart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called after the ``Session`` object has been created and before performing collection
+and entering the run test loop.
+
+:param session: The pytest session object.
+
+Use in conftest plugins
+=======================
+
+This hook is only called for :ref:`initial conftests <pluginorder>`.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_acdce262a1a3432359b4381b4b02313ff}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_terminal\_summary@{pytest\_terminal\_summary}}
+\index{pytest\_terminal\_summary@{pytest\_terminal\_summary}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_terminal\_summary()}{pytest\_terminal\_summary()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_acdce262a1a3432359b4381b4b02313ff} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+terminal\+\_\+summary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1terminal_1_1_terminal_reporter}{Terminal\+Reporter}}}]{terminalreporter}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}}]{exitstatus}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a section to terminal summary reporting.
+
+:param terminalreporter: The internal terminal reporter object.
+:param exitstatus: The exit status that will be reported back to the OS.
+:param config: The pytest config object.
+
+.. versionadded:: 4.2
+    The ``config`` parameter.
+
+Use in conftest plugins
+=======================
+
+Any conftest plugin can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a83f28ec6643d97f866db55bb64d95307}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_unconfigure@{pytest\_unconfigure}}
+\index{pytest\_unconfigure@{pytest\_unconfigure}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_unconfigure()}{pytest\_unconfigure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a83f28ec6643d97f866db55bb64d95307} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+unconfigure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before test process is exited.
+
+:param config: The pytest config object.
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1hookspec_a7a9e64ec83bd7bf9b6d1854f7d3bc219}\index{\_pytest.hookspec@{\_pytest.hookspec}!pytest\_warning\_recorded@{pytest\_warning\_recorded}}
+\index{pytest\_warning\_recorded@{pytest\_warning\_recorded}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{pytest\_warning\_recorded()}{pytest\_warning\_recorded()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_a7a9e64ec83bd7bf9b6d1854f7d3bc219} 
+ None \+\_\+pytest.\+hookspec.\+pytest\+\_\+warning\+\_\+recorded (\begin{DoxyParamCaption}\item[{warnings.\+Warning\+Message}]{warning\+\_\+message}{, }\item[{Literal\mbox{[}"{}config"{}, "{}collect"{}, "{}runtest"{}\mbox{]}}]{when}{, }\item[{str}]{nodeid}{, }\item[{tuple\mbox{[}str, int, str\mbox{]} \texorpdfstring{$\vert$}{|} None}]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process a warning captured by the internal pytest warnings plugin.
+
+:param warning_message:
+    The captured warning. This is the same object produced by :class:`warnings.catch_warnings`,
+    and contains the same attributes as the parameters of :py:func:`warnings.showwarning`.
+
+:param when:
+    Indicates when the warning was captured. Possible values:
+
+    * ``"config"``: during pytest configuration/initialization stage.
+    * ``"collect"``: during test collection.
+    * ``"runtest"``: during test execution.
+
+:param nodeid:
+    Full id of the item. Empty string for warnings that are not specific to
+    a particular node.
+
+:param location:
+    When available, holds information about the execution context of the captured
+    warning (filename, linenumber, function). ``function`` evaluates to <module>
+    when the execution context is at the module level.
+
+.. versionadded:: 6.0
+
+Use in conftest plugins
+=======================
+
+Any conftest file can implement this hook. If the warning is specific to a
+particular node, only conftest files in parent directories of the node are
+consulted.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1hookspec_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1hookspec_ac24a2a2c5a77df1a69b5c1c103e5b056}\index{\_pytest.hookspec@{\_pytest.hookspec}!hookspec@{hookspec}}
+\index{hookspec@{hookspec}!\_pytest.hookspec@{\_pytest.hookspec}}
+\doxysubsubsection{\texorpdfstring{hookspec}{hookspec}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1hookspec_ac24a2a2c5a77df1a69b5c1c103e5b056} 
+\+\_\+pytest.\+hookspec.\+hookspec = \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hookspec_marker}{Hookspec\+Marker}}("{}pytest"{})}
+

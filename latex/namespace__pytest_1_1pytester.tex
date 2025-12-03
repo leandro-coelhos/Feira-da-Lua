@@ -1,0 +1,179 @@
+\doxysection{\+\_\+pytest.\+pytester Namespace Reference}
+\hypertarget{namespace__pytest_1_1pytester}{}\label{namespace__pytest_1_1pytester}\index{\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_comp}{Line\+Comp}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_lsof_fd_leak_checker}{Lsof\+Fd\+Leak\+Checker}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytest_arg}{Pytest\+Arg}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester}{Pytester}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_modules_snapshot}{Sys\+Modules\+Snapshot}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_paths_snapshot}{Sys\+Paths\+Snapshot}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1pytester_a7b9620d261b2c9df20874f8baad9119a}{pytest\+\_\+addoption}} (\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}} parser)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1pytester_aa4a9859f4e121f5c8a14af67e7b30938}{pytest\+\_\+configure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytest_arg}{Pytest\+Arg}} \mbox{\hyperlink{namespace__pytest_1_1pytester_a513c34b57703131eab6ae16d7b6fbd5c}{\+\_\+pytest}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} request)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1pytester_a4deca3ad4f6eb0383310da4c6c9d7a85}{get\+\_\+public\+\_\+names}} (Iterable\mbox{[}str\mbox{]} values)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_comp}{Line\+Comp}} \mbox{\hyperlink{namespace__pytest_1_1pytester_a700e9727d14655e6322cb09f031208fd}{linecomp}} ()
+\item 
+type\mbox{[}\mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1pytester_aa989e7d1f194ea3cdedd3975535e239e}{Line\+Matcher\+\_\+fixture}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} request)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester}{Pytester}} \mbox{\hyperlink{namespace__pytest_1_1pytester_a5304734e1c1ad67d5369f93105c5d9a7}{pytester}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} request, \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory}{Temp\+Path\+Factory}} tmp\+\_\+path\+\_\+factory, \mbox{\hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch}{Monkey\+Patch}} monkeypatch)
+\item 
+Generator\mbox{[}None\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1pytester_a871baa9621ac4e44937d55e52a0ccdfd}{\+\_\+sys\+\_\+snapshot}} ()
+\item 
+Generator\mbox{[}\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1pytester_a13fc3c8ef26f088968aec845f04ef6f2}{\+\_\+config\+\_\+for\+\_\+test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespace__pytest_1_1pytester_afe6fbdb2ec4cae572ef1b46f3d9a5e3e}{pytest\+\_\+plugins}} = \mbox{[}"{}pytester\+\_\+assertions"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespace__pytest_1_1pytester_a69c958c6c5d66f0df3f8b6445f84328c}{IGNORE\+\_\+\+PAM}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1pytester_a864e2248bf4ec7709287d67dc5847708}{rex\+\_\+session\+\_\+duration}} = re.\+compile(r"{}\textbackslash{}d+\textbackslash{}.\textbackslash{}d\textbackslash{}ds"{})
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1pytester_ad3ffbf083aac60ebd8c3593a0b96895b}{rex\+\_\+outcome}} = re.\+compile(r"{}(\textbackslash{}d+) (\textbackslash{}w+)"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}(Disabled by default) support for testing pytest and pytest plugins.
+
+PYTEST_DONT_REWRITE
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1pytester_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1pytester_a13fc3c8ef26f088968aec845f04ef6f2}\index{\_pytest.pytester@{\_pytest.pytester}!\_config\_for\_test@{\_config\_for\_test}}
+\index{\_config\_for\_test@{\_config\_for\_test}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{\_config\_for\_test()}{\_config\_for\_test()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a13fc3c8ef26f088968aec845f04ef6f2} 
+ Generator\mbox{[}\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}\mbox{]} \+\_\+pytest.\+pytester.\+\_\+config\+\_\+for\+\_\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace__pytest_1_1pytester_a513c34b57703131eab6ae16d7b6fbd5c}\index{\_pytest.pytester@{\_pytest.pytester}!\_pytest@{\_pytest}}
+\index{\_pytest@{\_pytest}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{\_pytest()}{\_pytest()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a513c34b57703131eab6ae16d7b6fbd5c} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytest_arg}{Pytest\+Arg}} \+\_\+pytest.\+pytester.\+\_\+pytest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a helper which offers a gethookrecorder(hook) method which
+returns a HookRecorder instance which helps to make assertions about called
+hooks.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1pytester_a871baa9621ac4e44937d55e52a0ccdfd}\index{\_pytest.pytester@{\_pytest.pytester}!\_sys\_snapshot@{\_sys\_snapshot}}
+\index{\_sys\_snapshot@{\_sys\_snapshot}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{\_sys\_snapshot()}{\_sys\_snapshot()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a871baa9621ac4e44937d55e52a0ccdfd} 
+ Generator\mbox{[}None\mbox{]} \+\_\+pytest.\+pytester.\+\_\+sys\+\_\+snapshot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace__pytest_1_1pytester_a4deca3ad4f6eb0383310da4c6c9d7a85}\index{\_pytest.pytester@{\_pytest.pytester}!get\_public\_names@{get\_public\_names}}
+\index{get\_public\_names@{get\_public\_names}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{get\_public\_names()}{get\_public\_names()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a4deca3ad4f6eb0383310da4c6c9d7a85} 
+ list\mbox{[}str\mbox{]} \+\_\+pytest.\+pytester.\+get\+\_\+public\+\_\+names (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}str\mbox{]}}]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Only return names from iterator values without a leading underscore.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1pytester_a700e9727d14655e6322cb09f031208fd}\index{\_pytest.pytester@{\_pytest.pytester}!linecomp@{linecomp}}
+\index{linecomp@{linecomp}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{linecomp()}{linecomp()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a700e9727d14655e6322cb09f031208fd} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_comp}{Line\+Comp}} \+\_\+pytest.\+pytester.\+linecomp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class: `LineComp` instance for checking that an input linearly
+contains a sequence of strings.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1pytester_aa989e7d1f194ea3cdedd3975535e239e}\index{\_pytest.pytester@{\_pytest.pytester}!LineMatcher\_fixture@{LineMatcher\_fixture}}
+\index{LineMatcher\_fixture@{LineMatcher\_fixture}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{LineMatcher\_fixture()}{LineMatcher\_fixture()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_aa989e7d1f194ea3cdedd3975535e239e} 
+ type\mbox{[}\mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}\mbox{]} \+\_\+pytest.\+pytester.\+Line\+Matcher\+\_\+fixture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A reference to the :class: `LineMatcher`.
+
+This is instantiable with a list of lines (without their trailing newlines).
+This is useful for testing large texts, such as the output of commands.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1pytester_a7b9620d261b2c9df20874f8baad9119a}\index{\_pytest.pytester@{\_pytest.pytester}!pytest\_addoption@{pytest\_addoption}}
+\index{pytest\_addoption@{pytest\_addoption}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{pytest\_addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a7b9620d261b2c9df20874f8baad9119a} 
+ None \+\_\+pytest.\+pytester.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}}}]{parser}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1pytester_aa4a9859f4e121f5c8a14af67e7b30938}\index{\_pytest.pytester@{\_pytest.pytester}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_aa4a9859f4e121f5c8a14af67e7b30938} 
+ None \+\_\+pytest.\+pytester.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1pytester_a5304734e1c1ad67d5369f93105c5d9a7}\index{\_pytest.pytester@{\_pytest.pytester}!pytester@{pytester}}
+\index{pytester@{pytester}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{pytester()}{pytester()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a5304734e1c1ad67d5369f93105c5d9a7} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester}{Pytester}} \+\_\+pytest.\+pytester.\+pytester (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory}{Temp\+Path\+Factory}}}]{tmp\+\_\+path\+\_\+factory}{, }\item[{\mbox{\hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch}{Monkey\+Patch}} }]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Facilities to write tests/configuration files, execute pytest in isolation, and match
+against expected output, perfect for black-box testing of pytest plugins.
+
+It attempts to isolate the test run from external factors as much as possible, modifying
+the current working directory to ``path`` and environment variables during initialization.
+
+It is particularly useful for testing plugins. It is similar to the :fixture:`tmp_path`
+fixture but provides methods which aid in testing pytest itself.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1pytester_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1pytester_a69c958c6c5d66f0df3f8b6445f84328c}\index{\_pytest.pytester@{\_pytest.pytester}!IGNORE\_PAM@{IGNORE\_PAM}}
+\index{IGNORE\_PAM@{IGNORE\_PAM}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{IGNORE\_PAM}{IGNORE\_PAM}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a69c958c6c5d66f0df3f8b6445f84328c} 
+list \+\_\+pytest.\+pytester.\+IGNORE\+\_\+\+PAM}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [\ \ \textcolor{comment}{\#\ filenames\ added\ when\ obtaining\ details\ about\ the\ current\ user}}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}/var/lib/sss/mc/passwd"{}}}
+\DoxyCodeLine{00003\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1pytester_afe6fbdb2ec4cae572ef1b46f3d9a5e3e}\index{\_pytest.pytester@{\_pytest.pytester}!pytest\_plugins@{pytest\_plugins}}
+\index{pytest\_plugins@{pytest\_plugins}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{pytest\_plugins}{pytest\_plugins}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_afe6fbdb2ec4cae572ef1b46f3d9a5e3e} 
+list \+\_\+pytest.\+pytester.\+pytest\+\_\+plugins = \mbox{[}"{}pytester\+\_\+assertions"{}\mbox{]}}
+
+\Hypertarget{namespace__pytest_1_1pytester_ad3ffbf083aac60ebd8c3593a0b96895b}\index{\_pytest.pytester@{\_pytest.pytester}!rex\_outcome@{rex\_outcome}}
+\index{rex\_outcome@{rex\_outcome}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{rex\_outcome}{rex\_outcome}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_ad3ffbf083aac60ebd8c3593a0b96895b} 
+\+\_\+pytest.\+pytester.\+rex\+\_\+outcome = re.\+compile(r"{}(\textbackslash{}d+) (\textbackslash{}w+)"{})}
+
+\Hypertarget{namespace__pytest_1_1pytester_a864e2248bf4ec7709287d67dc5847708}\index{\_pytest.pytester@{\_pytest.pytester}!rex\_session\_duration@{rex\_session\_duration}}
+\index{rex\_session\_duration@{rex\_session\_duration}!\_pytest.pytester@{\_pytest.pytester}}
+\doxysubsubsection{\texorpdfstring{rex\_session\_duration}{rex\_session\_duration}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1pytester_a864e2248bf4ec7709287d67dc5847708} 
+\+\_\+pytest.\+pytester.\+rex\+\_\+session\+\_\+duration = re.\+compile(r"{}\textbackslash{}d+\textbackslash{}.\textbackslash{}d\textbackslash{}ds"{})}
+
