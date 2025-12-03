@@ -1,5 +1,5 @@
 from .models import MarketPlace, Products
-from users.models import Marketer, Avaliation
+from feira_da_lua.users.models import Marketer, Avaliation
 from django.db.models import Avg, Q
 import math
 

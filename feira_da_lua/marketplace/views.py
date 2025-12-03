@@ -2,9 +2,12 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from .forms import SearchForm, ProductFilterForm, MarketPlaceFilterForm, MarketPlaceForm, ProductForm
 from . import service
-from users.models import SearchHistory, Marketer
+from feira_da_lua.users.models import SearchHistory, Marketer
 import base64
 from decimal import Decimal, InvalidOperation
+import geoip2.database
+from django.conf import settings
+
 
 
 def create_fair(request):
@@ -400,6 +403,25 @@ def gps_location(request):
     """
     Página placeholder para implementação futura do GPS.
     """
+    reader = geoip2.database.Reader(str(settings.GEOIP_PATH / "GeoLite2-City.mmdb"))
+    x_forwarded_for = request.META.get("HTTP_X_FORWARDED_FOR")
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(",")[0].strip()
+    else:
+        ip = request.META.get("REMOTE_ADDR")
+
+    if ip == "127.0.0.1":
+        ip = "8.8.8.8" 
+
+    data = reader.city(ip)
+
+    try:
+        request.session['user_lat'] = data.location.latitude
+        request.session['user_lon'] = data.location.longitude
+
+
+    except Exception:
+        return redirect('home')
     return render(request, 'gps_location.html')
 
 

@@ -3,7 +3,7 @@ from django.contrib import messages
 from .forms import UserLoginForm, UserRegistrationForm, MarketerRegistrationForm
 from .service import GetUserByEmail, CreateUser, CreateMarketer
 from .models import User
-from marketplace.models import MarketPlace
+from feira_da_lua.marketplace.models import MarketPlace
 from .service import CreateAvaliation, DeleteAvaliation, UpdateAvaliation, GetAvaliationsByMarketplace, GetAvaliationById
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
@@ -30,6 +30,7 @@ def LoginUser(request):
                 request.session['user_id'] = user.id
                 return redirect('home')
             else:
+                print('Login falhou: usuario nao encontrado ou senha incorreta')
                 messages.error(request, 'Email ou senha incorretos.')
     return render(request, 'login.html', {'form': UserLoginForm()})
 

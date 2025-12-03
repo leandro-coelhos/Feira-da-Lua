@@ -39,7 +39,11 @@ def GetUserByEmail(email: str) -> User:
 
      @return O objeto User correspondente ao email fornecido.
      """
-     return User.objects.get(email=email)
+     try:
+          user = User.objects.get(email=email)
+          return user
+     except:
+          return None
 
 def UpdateUser(user_id: int, username: str = None, complete_name: str = None, password: str = None) -> User:
      """
