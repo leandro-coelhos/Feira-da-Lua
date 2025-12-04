@@ -1,0 +1,242 @@
+\doxysection{django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage}{}\label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+Inheritance diagram for django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa6aa39877653b56549181834d3fbaea5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a04788244049b0eebfa91073edcc27d13}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8e451347d277c31eea1950e478e1a2c5}{request}}, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a2d255b62fb6986db1482f63acdce702a}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a89c594a6d79beed25f3396208bd84400}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa0b6fbe6aacbe913194613f52754053d}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, item)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a451e61c13ceeb4ee464d5e4b84022c1f}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a6e7b6b257bc8af4bd1d58d53235679a2}{update}} (self, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aafc1151a94b34b80803c99d883ca268c}{add}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_af65cee7ee0cf34fe54e5ee0b9cae67ff}{level}}, message, extra\+\_\+tags="{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a7332a49df5630efc8522013ce42c9836}{signer}} = \mbox{\hyperlink{namespacedjango_1_1core_1_1signing_ad82ffacd7c64b705da776eb7ac005e25}{signing.\+get\+\_\+cookie\+\_\+signer}}(salt=self.\+key\+\_\+salt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8e451347d277c31eea1950e478e1a2c5}{request}} = request
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac99f868ab79e0e2236ff8f21fbaabf3b}{used}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a635627109c5cafd6f5c7d625d4239718}{added\+\_\+new}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_ad5be029bd0ea109e9ae4c2bd21500ba1}{cookie\+\_\+name}} = "{}messages"{}
+\item 
+int \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a26fdd02087892f332b210a865b7118d3}{max\+\_\+cookie\+\_\+size}} = 2048
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a1b4679da268fcb13cb9d964ad05f42ff}{not\+\_\+finished}} = "{}\+\_\+\+\_\+messagesnotfinished\+\_\+\+\_\+"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a0c468d9e984d300d6951af4ca6c1552a}{not\+\_\+finished\+\_\+json}} = json.\+dumps("{}\+\_\+\+\_\+messagesnotfinished\+\_\+\+\_\+"{})
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a6396662e4b06adee519eb96491891063}{key\+\_\+salt}} = "{}django.\+contrib.\+messages"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a39d084f6072109675c9ef06c047174e8}{\+\_\+get}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a21f63595fb66f1283e08c436ed9655ee}{\+\_\+update\+\_\+cookie}} (self, encoded\+\_\+data, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa0af435ad461f081d2fae1ec0043982e}{\+\_\+store}} (self, messages, response, remove\+\_\+oldest=True, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a4bd07a32cbed2f2d4b8be48c719d2a25}{\+\_\+encode\+\_\+parts}} (self, messages, encode\+\_\+empty=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a2e38c3d81abcdb87e8cec74cbd177bde}{\+\_\+encode}} (self, messages, encode\+\_\+empty=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a1fc553aa4b81b9844a8ab48cb7d5f59a}{\+\_\+decode}} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aae271e69706ef6bcb050affc180b81e1}{\+\_\+loaded\+\_\+messages}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8b041dcd1b43d70d14a307f76e870a1a}{\+\_\+prepare\+\_\+messages}} (self, messages)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2}{\+\_\+get\+\_\+level}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}} (self, value=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a4c71d855e8fca3dbd0fb120a49de9bf9}{\+\_\+queued\+\_\+messages}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac71a42a338bbe7f91e7a8f75b880adbb}{\+\_\+loaded\+\_\+messages}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a9e509c39ca4eaccb53c97dc4d7c34a07}{\+\_\+loaded\+\_\+data}} = messages or \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa49e6d3e95284612cae53ff0e50119ef}{\+\_\+level}} = getattr(settings, "{}MESSAGE\+\_\+\+LEVEL"{}, \mbox{\hyperlink{namespacedjango_1_1contrib_1_1messages_1_1constants_a154b11c36e7de45673e2dbf26c786f24}{constants.\+INFO}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_af65cee7ee0cf34fe54e5ee0b9cae67ff}{level}} = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2}{\+\_\+get\+\_\+level}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Store messages in a cookie.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa6aa39877653b56549181834d3fbaea5}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa6aa39877653b56549181834d3fbaea5} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a1fc553aa4b81b9844a8ab48cb7d5f59a}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_decode@{\_decode}}
+\index{\_decode@{\_decode}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_decode()}{\_decode()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a1fc553aa4b81b9844a8ab48cb7d5f59a} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Safely decode an encoded text stream back into a list of messages.
+
+If the encoded text stream contained an invalid hash or was in an
+invalid format, return None.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a2e38c3d81abcdb87e8cec74cbd177bde}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_encode@{\_encode}}
+\index{\_encode@{\_encode}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_encode()}{\_encode()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a2e38c3d81abcdb87e8cec74cbd177bde} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{messages}{, }\item[{}]{encode\+\_\+empty}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return an encoded version of the messages list which can be stored as
+plain text.
+
+Proxies MessagePartSerializer.dumps and _encoded_parts.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a4bd07a32cbed2f2d4b8be48c719d2a25}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_encode\_parts@{\_encode\_parts}}
+\index{\_encode\_parts@{\_encode\_parts}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_encode\_parts()}{\_encode\_parts()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a4bd07a32cbed2f2d4b8be48c719d2a25} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+encode\+\_\+parts (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{messages}{, }\item[{}]{encode\+\_\+empty}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return an encoded version of the serialized messages list which can be
+stored as plain text.
+
+Since the data will be retrieved from the client-side, the encoded data
+also contains a hash to ensure that the data was not tampered with.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a39d084f6072109675c9ef06c047174e8}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_get@{\_get}}
+\index{\_get@{\_get}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a39d084f6072109675c9ef06c047174e8} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Retrieve a list of messages from the messages cookie. If the
+not_finished sentinel value is found at the end of the message list,
+remove it and return a result indicating that not all messages were
+retrieved by this storage.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a3d2749021b22c9e5f32af8b23feae3f1}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa0af435ad461f081d2fae1ec0043982e}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_store@{\_store}}
+\index{\_store@{\_store}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_store()}{\_store()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa0af435ad461f081d2fae1ec0043982e} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+store (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{messages}{, }\item[{}]{response}{, }\item[{}]{remove\+\_\+oldest}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Store the messages to a cookie and return a list of any messages which
+could not be stored.
+
+If the encoded data is larger than ``max_cookie_size``, remove
+messages until the data fits (these are the messages which are
+returned), and add the not_finished sentinel value to indicate as much.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa5132a4a7ce775d6ecf062de7fe92296}{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a21f63595fb66f1283e08c436ed9655ee}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!\_update\_cookie@{\_update\_cookie}}
+\index{\_update\_cookie@{\_update\_cookie}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{\_update\_cookie()}{\_update\_cookie()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a21f63595fb66f1283e08c436ed9655ee} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+\_\+update\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{encoded\+\_\+data}{, }\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Either set the cookie with the encoded data if there is any data to
+store, or delete the cookie.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_ad5be029bd0ea109e9ae4c2bd21500ba1}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!cookie\_name@{cookie\_name}}
+\index{cookie\_name@{cookie\_name}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{cookie\_name}{cookie\_name}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_ad5be029bd0ea109e9ae4c2bd21500ba1} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+cookie\+\_\+name = "{}messages"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a6396662e4b06adee519eb96491891063}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!key\_salt@{key\_salt}}
+\index{key\_salt@{key\_salt}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{key\_salt}{key\_salt}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a6396662e4b06adee519eb96491891063} 
+str django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+key\+\_\+salt = "{}django.\+contrib.\+messages"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a26fdd02087892f332b210a865b7118d3}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!max\_cookie\_size@{max\_cookie\_size}}
+\index{max\_cookie\_size@{max\_cookie\_size}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{max\_cookie\_size}{max\_cookie\_size}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a26fdd02087892f332b210a865b7118d3} 
+int django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+max\+\_\+cookie\+\_\+size = 2048\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a1b4679da268fcb13cb9d964ad05f42ff}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!not\_finished@{not\_finished}}
+\index{not\_finished@{not\_finished}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{not\_finished}{not\_finished}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a1b4679da268fcb13cb9d964ad05f42ff} 
+str django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+not\+\_\+finished = "{}\+\_\+\+\_\+messagesnotfinished\+\_\+\+\_\+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a0c468d9e984d300d6951af4ca6c1552a}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!not\_finished\_json@{not\_finished\_json}}
+\index{not\_finished\_json@{not\_finished\_json}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{not\_finished\_json}{not\_finished\_json}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a0c468d9e984d300d6951af4ca6c1552a} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+not\+\_\+finished\+\_\+json = json.\+dumps("{}\+\_\+\+\_\+messagesnotfinished\+\_\+\+\_\+"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a7332a49df5630efc8522013ce42c9836}\index{django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}!signer@{signer}}
+\index{signer@{signer}!django.contrib.messages.storage.cookie.CookieStorage@{django.contrib.messages.storage.cookie.CookieStorage}}
+\doxysubsubsection{\texorpdfstring{signer}{signer}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a7332a49df5630efc8522013ce42c9836} 
+django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage.\+signer = \mbox{\hyperlink{namespacedjango_1_1core_1_1signing_ad82ffacd7c64b705da776eb7ac005e25}{signing.\+get\+\_\+cookie\+\_\+signer}}(salt=self.\+key\+\_\+salt)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/messages/storage/\mbox{\hyperlink{contrib_2messages_2storage_2cookie_8py}{cookie.\+py}}\end{DoxyCompactItemize}

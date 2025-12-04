@@ -1,0 +1,405 @@
+\doxysection{urllib3.\+util.\+url Namespace Reference}
+\hypertarget{namespaceurllib3_1_1util_1_1url}{}\label{namespaceurllib3_1_1util_1_1url}\index{urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1_url}{Url}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_af75d6b25a9e10095f7f7eef368dd774f}{\+\_\+encode\+\_\+invalid\+\_\+chars}} (str component, typing.\+Container\mbox{[}str\mbox{]} allowed\+\_\+chars)
+\item 
+None \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aeb14ed05ea6ef01fe7a014187bac940c}{\+\_\+encode\+\_\+invalid\+\_\+chars}} (None component, typing.\+Container\mbox{[}str\mbox{]} allowed\+\_\+chars)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ace4a68e3ab10ac53f9b58e277b52f60d}{\+\_\+encode\+\_\+invalid\+\_\+chars}} (str\texorpdfstring{$\vert$}{|}None component, typing.\+Container\mbox{[}str\mbox{]} allowed\+\_\+chars)
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a22f597beb43dee889e3afd7d916ee092}{\+\_\+remove\+\_\+path\+\_\+dot\+\_\+segments}} (str path)
+\item 
+None \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aea993a6ce411280fff0af0ea9dc8bc9f}{\+\_\+normalize\+\_\+host}} (None host, str\texorpdfstring{$\vert$}{|}None scheme)
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_abdc5dd868f2e6fc4e8d5ca582a8700d0}{\+\_\+normalize\+\_\+host}} (str host, str\texorpdfstring{$\vert$}{|}None scheme)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_add5ba05702505c61c4017f728dc108b1}{\+\_\+normalize\+\_\+host}} (str\texorpdfstring{$\vert$}{|}None host, str\texorpdfstring{$\vert$}{|}None scheme)
+\item 
+bytes \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ad9dc6b810f35f90bf868a1d2427ea77d}{\+\_\+idna\+\_\+encode}} (str name)
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a3c0380d4751efc8e91847b935e43a01e}{\+\_\+encode\+\_\+target}} (str target)
+\item 
+\mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1_url}{Url}} \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a87dbb50f98daaa85ffa2f7aeddaa5285}{parse\+\_\+url}} (str url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a9ee74bd365c5e978887647df4cebde0f}{\+\_\+\+NORMALIZABLE\+\_\+\+SCHEMES}} = ("{}http"{}, "{}https"{}, None)
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aabe45689c55a42329811e5874a453564}{\+\_\+\+PERCENT\+\_\+\+RE}} = re.\+compile(r"{}\%\mbox{[}a-\/fA-\/F0-\/9\mbox{]}\{2\}"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a173f182ee9ae3bb758433fcd26120355}{\+\_\+\+SCHEME\+\_\+\+RE}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(?\+:\mbox{[}a-\/zA-\/Z\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9+-\/\mbox{]}\texorpdfstring{$\ast$}{*}\+:\texorpdfstring{$\vert$}{|}/)"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a883c05a114a1ca179ac0abf28611384f}{\+\_\+\+URI\+\_\+\+RE}}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097}{\+\_\+\+IPV4\+\_\+\+PAT}} = r"{}(?\+:\mbox{[}0-\/9\mbox{]}\{1,3\}\textbackslash{}.)\{3\}\mbox{[}0-\/9\mbox{]}\{1,3\}"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08}{\+\_\+\+HEX\+\_\+\+PAT}} = "{}\mbox{[}0-\/9A-\/Fa-\/f\mbox{]}\{1,4\}"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac4264effc3bcf475cf0252c4ac6cad21}{\+\_\+\+LS32\+\_\+\+PAT}} = "{}(?\+:\{hex\}\+:\{hex\}\texorpdfstring{$\vert$}{|}\{ipv4\})"{}.format(hex=\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08}{\+\_\+\+HEX\+\_\+\+PAT}}, ipv4=\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097}{\+\_\+\+IPV4\+\_\+\+PAT}})
+\item 
+dict \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a697edc81c1c0194713d2eab474110407}{\+\_\+subs}} = \{"{}hex"{}\+: \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08}{\+\_\+\+HEX\+\_\+\+PAT}}, "{}ls32"{}\+: \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac4264effc3bcf475cf0252c4ac6cad21}{\+\_\+\+LS32\+\_\+\+PAT}}\}
+\item 
+list \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a54f8405276e3c641d2699be3e2657fd6}{\+\_\+variations}}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a46b37f5674102a1109a01663388a9f13}{\+\_\+\+UNRESERVED\+\_\+\+PAT}} = r"{}\+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.\+\_\+\textbackslash{}-\/\texorpdfstring{$\sim$}{\string~}"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aa99a1407e4588f21eda61db7d49bb17e}{\+\_\+\+IPV6\+\_\+\+PAT}} = "{}(?\+:"{} + "{}\texorpdfstring{$\vert$}{|}"{}.join(\mbox{[}x \% \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a697edc81c1c0194713d2eab474110407}{\+\_\+subs}} for x in \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a54f8405276e3c641d2699be3e2657fd6}{\+\_\+variations}}\mbox{]}) + "{})"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1900e2bbf1736063d195f5de25d7a6be}{\+\_\+\+ZONE\+\_\+\+ID\+\_\+\+PAT}} = "{}(?\+:\%25\texorpdfstring{$\vert$}{|}\%)(?\+:\mbox{[}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a46b37f5674102a1109a01663388a9f13}{\+\_\+\+UNRESERVED\+\_\+\+PAT}} + "{}\mbox{]}\texorpdfstring{$\vert$}{|}\%\mbox{[}a-\/fA-\/F0-\/9\mbox{]}\{2\})+"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25}{\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+PAT}} = r"{}\textbackslash{}\mbox{[}"{} + \+\_\+\+IPV6\+\_\+\+PAT + r"{}(?\+:"{} + \+\_\+\+ZONE\+\_\+\+ID\+\_\+\+PAT + r"{})?\textbackslash{}\mbox{]}"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a9c0214b2733946384c283735425b5f30}{\+\_\+\+REG\+\_\+\+NAME\+\_\+\+PAT}} = r"{}(?\+:\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{[}\textbackslash{}\mbox{]}\%\+:/?\#\mbox{]}\texorpdfstring{$\vert$}{|}\%\mbox{[}a-\/fA-\/F0-\/9\mbox{]}\{2\})\texorpdfstring{$\ast$}{*}"{}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ad8f85359c5495659c836ac3318f79ed0}{\+\_\+\+TARGET\+\_\+\+RE}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(/\mbox{[}\texorpdfstring{$^\wedge$}{\string^}?\#\mbox{]}\texorpdfstring{$\ast$}{*})(?\+:\textbackslash{}?(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\#\mbox{]}\texorpdfstring{$\ast$}{*}))?(?\+:\#.\texorpdfstring{$\ast$}{*})?\$"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a6bea34a8c18496b751d0d8108ca30038}{\+\_\+\+IPV4\+\_\+\+RE}} = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097}{\+\_\+\+IPV4\+\_\+\+PAT}} + "{}\$"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a36084e3f7ca35e039d9d9658165e0c11}{\+\_\+\+IPV6\+\_\+\+RE}} = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aa99a1407e4588f21eda61db7d49bb17e}{\+\_\+\+IPV6\+\_\+\+PAT}} + "{}\$"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_af4f429b265439b177ba2fa2305b5379d}{\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+RE}} = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25}{\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+PAT}} + "{}\$"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_adfef5d1a74503812df5e2a3877d868da}{\+\_\+\+BRACELESS\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+RE}} = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25}{\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+PAT}}\mbox{[}2\+:-\/2\mbox{]} + "{}\$"{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a9a5157af6adf1cc07c4b22d79b39aa4f}{\+\_\+\+ZONE\+\_\+\+ID\+\_\+\+RE}} = re.\+compile("{}("{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1900e2bbf1736063d195f5de25d7a6be}{\+\_\+\+ZONE\+\_\+\+ID\+\_\+\+PAT}} + r"{})\textbackslash{}\mbox{]}\$"{})
+\item 
+tuple \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a9c074644f22e561a615a2c8da321e20f}{\+\_\+\+HOST\+\_\+\+PORT\+\_\+\+PAT}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a07f5934eb1cfb16aee68e4549c9e92c0}{\+\_\+\+HOST\+\_\+\+PORT\+\_\+\+RE}} = re.\+compile(\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a9c074644f22e561a615a2c8da321e20f}{\+\_\+\+HOST\+\_\+\+PORT\+\_\+\+PAT}}, re.\+UNICODE \texorpdfstring{$\vert$}{|} re.\+DOTALL)
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_abd1fd9a897053b702722abf0b9c70f19}{\+\_\+\+UNRESERVED\+\_\+\+CHARS}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aadbb74e77aabd5513fec3ffd6f6bf09d}{\+\_\+\+SUB\+\_\+\+DELIM\+\_\+\+CHARS}} = set("{}!\$\&\textquotesingle{}()\texorpdfstring{$\ast$}{*}+,;="{})
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ae30e111208d47f91e0efba84712e4588}{\+\_\+\+USERINFO\+\_\+\+CHARS}} = \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_abd1fd9a897053b702722abf0b9c70f19}{\+\_\+\+UNRESERVED\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aadbb74e77aabd5513fec3ffd6f6bf09d}{\+\_\+\+SUB\+\_\+\+DELIM\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \{"{}\+:"{}\}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1c20063bca2e864a4b890e52075266a4}{\+\_\+\+PATH\+\_\+\+CHARS}} = \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ae30e111208d47f91e0efba84712e4588}{\+\_\+\+USERINFO\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \{"{}@"{}, "{}/"{}\}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a734826e9a78a6fb193715e1aa83eff05}{\+\_\+\+QUERY\+\_\+\+CHARS}} = \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1c20063bca2e864a4b890e52075266a4}{\+\_\+\+PATH\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \{"{}?"{}\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_aeb14ed05ea6ef01fe7a014187bac940c}\index{urllib3.util.url@{urllib3.util.url}!\_encode\_invalid\_chars@{\_encode\_invalid\_chars}}
+\index{\_encode\_invalid\_chars@{\_encode\_invalid\_chars}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_encode\_invalid\_chars()}{\_encode\_invalid\_chars()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_aeb14ed05ea6ef01fe7a014187bac940c} 
+ None urllib3.\+util.\+url.\+\_\+encode\+\_\+invalid\+\_\+chars (\begin{DoxyParamCaption}\item[{None}]{component}{, }\item[{typing.\+Container\mbox{[}str\mbox{]} }]{allowed\+\_\+chars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_af75d6b25a9e10095f7f7eef368dd774f}\index{urllib3.util.url@{urllib3.util.url}!\_encode\_invalid\_chars@{\_encode\_invalid\_chars}}
+\index{\_encode\_invalid\_chars@{\_encode\_invalid\_chars}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_encode\_invalid\_chars()}{\_encode\_invalid\_chars()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_af75d6b25a9e10095f7f7eef368dd774f} 
+ str urllib3.\+util.\+url.\+\_\+encode\+\_\+invalid\+\_\+chars (\begin{DoxyParamCaption}\item[{str}]{component}{, }\item[{typing.\+Container\mbox{[}str\mbox{]} }]{allowed\+\_\+chars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_ace4a68e3ab10ac53f9b58e277b52f60d}\index{urllib3.util.url@{urllib3.util.url}!\_encode\_invalid\_chars@{\_encode\_invalid\_chars}}
+\index{\_encode\_invalid\_chars@{\_encode\_invalid\_chars}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_encode\_invalid\_chars()}{\_encode\_invalid\_chars()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_ace4a68e3ab10ac53f9b58e277b52f60d} 
+ str \texorpdfstring{$\vert$}{|} None urllib3.\+util.\+url.\+\_\+encode\+\_\+invalid\+\_\+chars (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None}]{component}{, }\item[{typing.\+Container\mbox{[}str\mbox{]} }]{allowed\+\_\+chars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Percent-encodes a URI component without reapplying
+onto an already percent-encoded component.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1url_a3c0380d4751efc8e91847b935e43a01e}\index{urllib3.util.url@{urllib3.util.url}!\_encode\_target@{\_encode\_target}}
+\index{\_encode\_target@{\_encode\_target}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_encode\_target()}{\_encode\_target()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a3c0380d4751efc8e91847b935e43a01e} 
+ str urllib3.\+util.\+url.\+\_\+encode\+\_\+target (\begin{DoxyParamCaption}\item[{str}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Percent-encodes a request target so that there are no invalid characters
+
+Pre-condition for this function is that 'target' must start with '/'.
+If that is the case then _TARGET_RE will always produce a match.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1url_ad9dc6b810f35f90bf868a1d2427ea77d}\index{urllib3.util.url@{urllib3.util.url}!\_idna\_encode@{\_idna\_encode}}
+\index{\_idna\_encode@{\_idna\_encode}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_idna\_encode()}{\_idna\_encode()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_ad9dc6b810f35f90bf868a1d2427ea77d} 
+ bytes urllib3.\+util.\+url.\+\_\+idna\+\_\+encode (\begin{DoxyParamCaption}\item[{str}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_aea993a6ce411280fff0af0ea9dc8bc9f}\index{urllib3.util.url@{urllib3.util.url}!\_normalize\_host@{\_normalize\_host}}
+\index{\_normalize\_host@{\_normalize\_host}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_normalize\_host()}{\_normalize\_host()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_aea993a6ce411280fff0af0ea9dc8bc9f} 
+ None urllib3.\+util.\+url.\+\_\+normalize\+\_\+host (\begin{DoxyParamCaption}\item[{None}]{host}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{scheme}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_abdc5dd868f2e6fc4e8d5ca582a8700d0}\index{urllib3.util.url@{urllib3.util.url}!\_normalize\_host@{\_normalize\_host}}
+\index{\_normalize\_host@{\_normalize\_host}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_normalize\_host()}{\_normalize\_host()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_abdc5dd868f2e6fc4e8d5ca582a8700d0} 
+ str urllib3.\+util.\+url.\+\_\+normalize\+\_\+host (\begin{DoxyParamCaption}\item[{str}]{host}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{scheme}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_add5ba05702505c61c4017f728dc108b1}\index{urllib3.util.url@{urllib3.util.url}!\_normalize\_host@{\_normalize\_host}}
+\index{\_normalize\_host@{\_normalize\_host}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_normalize\_host()}{\_normalize\_host()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_add5ba05702505c61c4017f728dc108b1} 
+ str \texorpdfstring{$\vert$}{|} None urllib3.\+util.\+url.\+\_\+normalize\+\_\+host (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None}]{host}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{scheme}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a22f597beb43dee889e3afd7d916ee092}\index{urllib3.util.url@{urllib3.util.url}!\_remove\_path\_dot\_segments@{\_remove\_path\_dot\_segments}}
+\index{\_remove\_path\_dot\_segments@{\_remove\_path\_dot\_segments}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_remove\_path\_dot\_segments()}{\_remove\_path\_dot\_segments()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a22f597beb43dee889e3afd7d916ee092} 
+ str urllib3.\+util.\+url.\+\_\+remove\+\_\+path\+\_\+dot\+\_\+segments (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a87dbb50f98daaa85ffa2f7aeddaa5285}\index{urllib3.util.url@{urllib3.util.url}!parse\_url@{parse\_url}}
+\index{parse\_url@{parse\_url}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{parse\_url()}{parse\_url()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a87dbb50f98daaa85ffa2f7aeddaa5285} 
+ \mbox{\hyperlink{classurllib3_1_1util_1_1url_1_1_url}{Url}} urllib3.\+util.\+url.\+parse\+\_\+url (\begin{DoxyParamCaption}\item[{str}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a url, return a parsed :class:`.Url` namedtuple. Best-effort is
+performed to parse incomplete urls. Fields not provided will be None.
+This parser is RFC 3986 and RFC 6874 compliant.
+
+The parser logic and helper functions are based heavily on
+work done in the ``rfc3986`` module.
+
+:param str url: URL to parse into a :class:`.Url` namedtuple.
+
+Partly backwards-compatible with :mod:`urllib.parse`.
+
+Example:
+
+.. code-block:: python
+
+    import urllib3
+
+    print( urllib3.util.parse_url('http://google.com/mail/'))
+    # Url(scheme='http', host='google.com', port=None, path='/mail/', ...)
+
+    print( urllib3.util.parse_url('google.com:80'))
+    # Url(scheme=None, host='google.com', port=80, path=None, ...)
+
+    print( urllib3.util.parse_url('/foo?bar'))
+    # Url(scheme=None, host=None, port=None, path='/foo', query='bar', ...)
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_adfef5d1a74503812df5e2a3877d868da}\index{urllib3.util.url@{urllib3.util.url}!\_BRACELESS\_IPV6\_ADDRZ\_RE@{\_BRACELESS\_IPV6\_ADDRZ\_RE}}
+\index{\_BRACELESS\_IPV6\_ADDRZ\_RE@{\_BRACELESS\_IPV6\_ADDRZ\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_BRACELESS\_IPV6\_ADDRZ\_RE}{\_BRACELESS\_IPV6\_ADDRZ\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_adfef5d1a74503812df5e2a3877d868da} 
+urllib3.\+util.\+url.\+\_\+\+BRACELESS\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+RE = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25}{\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+PAT}}\mbox{[}2\+:-\/2\mbox{]} + "{}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08}\index{urllib3.util.url@{urllib3.util.url}!\_HEX\_PAT@{\_HEX\_PAT}}
+\index{\_HEX\_PAT@{\_HEX\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_HEX\_PAT}{\_HEX\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08} 
+str urllib3.\+util.\+url.\+\_\+\+HEX\+\_\+\+PAT = "{}\mbox{[}0-\/9A-\/Fa-\/f\mbox{]}\{1,4\}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a9c074644f22e561a615a2c8da321e20f}\index{urllib3.util.url@{urllib3.util.url}!\_HOST\_PORT\_PAT@{\_HOST\_PORT\_PAT}}
+\index{\_HOST\_PORT\_PAT@{\_HOST\_PORT\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_HOST\_PORT\_PAT}{\_HOST\_PORT\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a9c074644f22e561a615a2c8da321e20f} 
+tuple urllib3.\+util.\+url.\+\_\+\+HOST\+\_\+\+PORT\+\_\+\+PAT\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (\textcolor{stringliteral}{"{}\string^(\%s|\%s|\%s)(?::0*?(|0|[1-\/9][0-\/9]\{0,4\}))?\$"{}})\ \%\ (}
+\DoxyCodeLine{00002\ \ \ \ \ \_REG\_NAME\_PAT,}
+\DoxyCodeLine{00003\ \ \ \ \ \_IPV4\_PAT,}
+\DoxyCodeLine{00004\ \ \ \ \ \_IPV6\_ADDRZ\_PAT,}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a07f5934eb1cfb16aee68e4549c9e92c0}\index{urllib3.util.url@{urllib3.util.url}!\_HOST\_PORT\_RE@{\_HOST\_PORT\_RE}}
+\index{\_HOST\_PORT\_RE@{\_HOST\_PORT\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_HOST\_PORT\_RE}{\_HOST\_PORT\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a07f5934eb1cfb16aee68e4549c9e92c0} 
+urllib3.\+util.\+url.\+\_\+\+HOST\+\_\+\+PORT\+\_\+\+RE = re.\+compile(\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a9c074644f22e561a615a2c8da321e20f}{\+\_\+\+HOST\+\_\+\+PORT\+\_\+\+PAT}}, re.\+UNICODE \texorpdfstring{$\vert$}{|} re.\+DOTALL)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097}\index{urllib3.util.url@{urllib3.util.url}!\_IPV4\_PAT@{\_IPV4\_PAT}}
+\index{\_IPV4\_PAT@{\_IPV4\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_IPV4\_PAT}{\_IPV4\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097} 
+str urllib3.\+util.\+url.\+\_\+\+IPV4\+\_\+\+PAT = r"{}(?\+:\mbox{[}0-\/9\mbox{]}\{1,3\}\textbackslash{}.)\{3\}\mbox{[}0-\/9\mbox{]}\{1,3\}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a6bea34a8c18496b751d0d8108ca30038}\index{urllib3.util.url@{urllib3.util.url}!\_IPV4\_RE@{\_IPV4\_RE}}
+\index{\_IPV4\_RE@{\_IPV4\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_IPV4\_RE}{\_IPV4\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a6bea34a8c18496b751d0d8108ca30038} 
+urllib3.\+util.\+url.\+\_\+\+IPV4\+\_\+\+RE = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097}{\+\_\+\+IPV4\+\_\+\+PAT}} + "{}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25}\index{urllib3.util.url@{urllib3.util.url}!\_IPV6\_ADDRZ\_PAT@{\_IPV6\_ADDRZ\_PAT}}
+\index{\_IPV6\_ADDRZ\_PAT@{\_IPV6\_ADDRZ\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_IPV6\_ADDRZ\_PAT}{\_IPV6\_ADDRZ\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25} 
+str urllib3.\+util.\+url.\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+PAT = r"{}\textbackslash{}\mbox{[}"{} + \+\_\+\+IPV6\+\_\+\+PAT + r"{}(?\+:"{} + \+\_\+\+ZONE\+\_\+\+ID\+\_\+\+PAT + r"{})?\textbackslash{}\mbox{]}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_af4f429b265439b177ba2fa2305b5379d}\index{urllib3.util.url@{urllib3.util.url}!\_IPV6\_ADDRZ\_RE@{\_IPV6\_ADDRZ\_RE}}
+\index{\_IPV6\_ADDRZ\_RE@{\_IPV6\_ADDRZ\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_IPV6\_ADDRZ\_RE}{\_IPV6\_ADDRZ\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_af4f429b265439b177ba2fa2305b5379d} 
+urllib3.\+util.\+url.\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+RE = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac51397df9fc079921d04d2b5da85ab25}{\+\_\+\+IPV6\+\_\+\+ADDRZ\+\_\+\+PAT}} + "{}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_aa99a1407e4588f21eda61db7d49bb17e}\index{urllib3.util.url@{urllib3.util.url}!\_IPV6\_PAT@{\_IPV6\_PAT}}
+\index{\_IPV6\_PAT@{\_IPV6\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_IPV6\_PAT}{\_IPV6\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_aa99a1407e4588f21eda61db7d49bb17e} 
+str urllib3.\+util.\+url.\+\_\+\+IPV6\+\_\+\+PAT = "{}(?\+:"{} + "{}\texorpdfstring{$\vert$}{|}"{}.join(\mbox{[}x \% \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a697edc81c1c0194713d2eab474110407}{\+\_\+subs}} for x in \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a54f8405276e3c641d2699be3e2657fd6}{\+\_\+variations}}\mbox{]}) + "{})"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a36084e3f7ca35e039d9d9658165e0c11}\index{urllib3.util.url@{urllib3.util.url}!\_IPV6\_RE@{\_IPV6\_RE}}
+\index{\_IPV6\_RE@{\_IPV6\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_IPV6\_RE}{\_IPV6\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a36084e3f7ca35e039d9d9658165e0c11} 
+urllib3.\+util.\+url.\+\_\+\+IPV6\+\_\+\+RE = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aa99a1407e4588f21eda61db7d49bb17e}{\+\_\+\+IPV6\+\_\+\+PAT}} + "{}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_ac4264effc3bcf475cf0252c4ac6cad21}\index{urllib3.util.url@{urllib3.util.url}!\_LS32\_PAT@{\_LS32\_PAT}}
+\index{\_LS32\_PAT@{\_LS32\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_LS32\_PAT}{\_LS32\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_ac4264effc3bcf475cf0252c4ac6cad21} 
+str urllib3.\+util.\+url.\+\_\+\+LS32\+\_\+\+PAT = "{}(?\+:\{hex\}\+:\{hex\}\texorpdfstring{$\vert$}{|}\{ipv4\})"{}.format(hex=\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08}{\+\_\+\+HEX\+\_\+\+PAT}}, ipv4=\mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1daf958dffe433a6577886d80ecad097}{\+\_\+\+IPV4\+\_\+\+PAT}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a9ee74bd365c5e978887647df4cebde0f}\index{urllib3.util.url@{urllib3.util.url}!\_NORMALIZABLE\_SCHEMES@{\_NORMALIZABLE\_SCHEMES}}
+\index{\_NORMALIZABLE\_SCHEMES@{\_NORMALIZABLE\_SCHEMES}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_NORMALIZABLE\_SCHEMES}{\_NORMALIZABLE\_SCHEMES}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a9ee74bd365c5e978887647df4cebde0f} 
+tuple urllib3.\+util.\+url.\+\_\+\+NORMALIZABLE\+\_\+\+SCHEMES = ("{}http"{}, "{}https"{}, None)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a1c20063bca2e864a4b890e52075266a4}\index{urllib3.util.url@{urllib3.util.url}!\_PATH\_CHARS@{\_PATH\_CHARS}}
+\index{\_PATH\_CHARS@{\_PATH\_CHARS}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_PATH\_CHARS}{\_PATH\_CHARS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a1c20063bca2e864a4b890e52075266a4} 
+urllib3.\+util.\+url.\+\_\+\+PATH\+\_\+\+CHARS = \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ae30e111208d47f91e0efba84712e4588}{\+\_\+\+USERINFO\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \{"{}@"{}, "{}/"{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_aabe45689c55a42329811e5874a453564}\index{urllib3.util.url@{urllib3.util.url}!\_PERCENT\_RE@{\_PERCENT\_RE}}
+\index{\_PERCENT\_RE@{\_PERCENT\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_PERCENT\_RE}{\_PERCENT\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_aabe45689c55a42329811e5874a453564} 
+urllib3.\+util.\+url.\+\_\+\+PERCENT\+\_\+\+RE = re.\+compile(r"{}\%\mbox{[}a-\/fA-\/F0-\/9\mbox{]}\{2\}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a734826e9a78a6fb193715e1aa83eff05}\index{urllib3.util.url@{urllib3.util.url}!\_QUERY\_CHARS@{\_QUERY\_CHARS}}
+\index{\_QUERY\_CHARS@{\_QUERY\_CHARS}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_QUERY\_CHARS}{\_QUERY\_CHARS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a734826e9a78a6fb193715e1aa83eff05} 
+urllib3.\+util.\+url.\+\_\+\+QUERY\+\_\+\+CHARS = \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1c20063bca2e864a4b890e52075266a4}{\+\_\+\+PATH\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \{"{}?"{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a9c0214b2733946384c283735425b5f30}\index{urllib3.util.url@{urllib3.util.url}!\_REG\_NAME\_PAT@{\_REG\_NAME\_PAT}}
+\index{\_REG\_NAME\_PAT@{\_REG\_NAME\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_REG\_NAME\_PAT}{\_REG\_NAME\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a9c0214b2733946384c283735425b5f30} 
+str urllib3.\+util.\+url.\+\_\+\+REG\+\_\+\+NAME\+\_\+\+PAT = r"{}(?\+:\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{[}\textbackslash{}\mbox{]}\%\+:/?\#\mbox{]}\texorpdfstring{$\vert$}{|}\%\mbox{[}a-\/fA-\/F0-\/9\mbox{]}\{2\})\texorpdfstring{$\ast$}{*}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a173f182ee9ae3bb758433fcd26120355}\index{urllib3.util.url@{urllib3.util.url}!\_SCHEME\_RE@{\_SCHEME\_RE}}
+\index{\_SCHEME\_RE@{\_SCHEME\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_SCHEME\_RE}{\_SCHEME\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a173f182ee9ae3bb758433fcd26120355} 
+urllib3.\+util.\+url.\+\_\+\+SCHEME\+\_\+\+RE = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(?\+:\mbox{[}a-\/zA-\/Z\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9+-\/\mbox{]}\texorpdfstring{$\ast$}{*}\+:\texorpdfstring{$\vert$}{|}/)"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_aadbb74e77aabd5513fec3ffd6f6bf09d}\index{urllib3.util.url@{urllib3.util.url}!\_SUB\_DELIM\_CHARS@{\_SUB\_DELIM\_CHARS}}
+\index{\_SUB\_DELIM\_CHARS@{\_SUB\_DELIM\_CHARS}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_SUB\_DELIM\_CHARS}{\_SUB\_DELIM\_CHARS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_aadbb74e77aabd5513fec3ffd6f6bf09d} 
+urllib3.\+util.\+url.\+\_\+\+SUB\+\_\+\+DELIM\+\_\+\+CHARS = set("{}!\$\&\textquotesingle{}()\texorpdfstring{$\ast$}{*}+,;="{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a697edc81c1c0194713d2eab474110407}\index{urllib3.util.url@{urllib3.util.url}!\_subs@{\_subs}}
+\index{\_subs@{\_subs}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_subs}{\_subs}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a697edc81c1c0194713d2eab474110407} 
+dict urllib3.\+util.\+url.\+\_\+subs = \{"{}hex"{}\+: \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a98820fbc6aae0c6a5e8b9297e9f33f08}{\+\_\+\+HEX\+\_\+\+PAT}}, "{}ls32"{}\+: \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_ac4264effc3bcf475cf0252c4ac6cad21}{\+\_\+\+LS32\+\_\+\+PAT}}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_ad8f85359c5495659c836ac3318f79ed0}\index{urllib3.util.url@{urllib3.util.url}!\_TARGET\_RE@{\_TARGET\_RE}}
+\index{\_TARGET\_RE@{\_TARGET\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_TARGET\_RE}{\_TARGET\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_ad8f85359c5495659c836ac3318f79ed0} 
+urllib3.\+util.\+url.\+\_\+\+TARGET\+\_\+\+RE = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(/\mbox{[}\texorpdfstring{$^\wedge$}{\string^}?\#\mbox{]}\texorpdfstring{$\ast$}{*})(?\+:\textbackslash{}?(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\#\mbox{]}\texorpdfstring{$\ast$}{*}))?(?\+:\#.\texorpdfstring{$\ast$}{*})?\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_abd1fd9a897053b702722abf0b9c70f19}\index{urllib3.util.url@{urllib3.util.url}!\_UNRESERVED\_CHARS@{\_UNRESERVED\_CHARS}}
+\index{\_UNRESERVED\_CHARS@{\_UNRESERVED\_CHARS}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_UNRESERVED\_CHARS}{\_UNRESERVED\_CHARS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_abd1fd9a897053b702722abf0b9c70f19} 
+urllib3.\+util.\+url.\+\_\+\+UNRESERVED\+\_\+\+CHARS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ set(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.\_-\/\string~"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a46b37f5674102a1109a01663388a9f13}\index{urllib3.util.url@{urllib3.util.url}!\_UNRESERVED\_PAT@{\_UNRESERVED\_PAT}}
+\index{\_UNRESERVED\_PAT@{\_UNRESERVED\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_UNRESERVED\_PAT}{\_UNRESERVED\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a46b37f5674102a1109a01663388a9f13} 
+str urllib3.\+util.\+url.\+\_\+\+UNRESERVED\+\_\+\+PAT = r"{}\+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.\+\_\+\textbackslash{}-\/\texorpdfstring{$\sim$}{\string~}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a883c05a114a1ca179ac0abf28611384f}\index{urllib3.util.url@{urllib3.util.url}!\_URI\_RE@{\_URI\_RE}}
+\index{\_URI\_RE@{\_URI\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_URI\_RE}{\_URI\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a883c05a114a1ca179ac0abf28611384f} 
+urllib3.\+util.\+url.\+\_\+\+URI\+\_\+\+RE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r"{}\string^(?:([a-\/zA-\/Z][a-\/zA-\/Z0-\/9+.-\/]*):)?"{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{r"{}(?://([\string^\(\backslash\)\(\backslash\)/?\#]*))?"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{r"{}([\string^?\#]*)"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{r"{}(?:\(\backslash\)?([\string^\#]*))?"{}}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{r"{}(?:\#(.*))?\$"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ re.UNICODE\ |\ re.DOTALL,}
+\DoxyCodeLine{00008\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_ae30e111208d47f91e0efba84712e4588}\index{urllib3.util.url@{urllib3.util.url}!\_USERINFO\_CHARS@{\_USERINFO\_CHARS}}
+\index{\_USERINFO\_CHARS@{\_USERINFO\_CHARS}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_USERINFO\_CHARS}{\_USERINFO\_CHARS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_ae30e111208d47f91e0efba84712e4588} 
+urllib3.\+util.\+url.\+\_\+\+USERINFO\+\_\+\+CHARS = \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_abd1fd9a897053b702722abf0b9c70f19}{\+\_\+\+UNRESERVED\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_aadbb74e77aabd5513fec3ffd6f6bf09d}{\+\_\+\+SUB\+\_\+\+DELIM\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} \{"{}\+:"{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a54f8405276e3c641d2699be3e2657fd6}\index{urllib3.util.url@{urllib3.util.url}!\_variations@{\_variations}}
+\index{\_variations@{\_variations}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_variations}{\_variations}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a54f8405276e3c641d2699be3e2657fd6} 
+list urllib3.\+util.\+url.\+\_\+variations\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 6(\ h16\ "{}:"{}\ )\ ls32}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}(?:\%(hex)s:)\{6\}\%(ls32)s"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}::"{}\ 5(\ h16\ "{}:"{}\ )\ ls32}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}::(?:\%(hex)s:)\{5\}\%(ls32)s"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{comment}{\#\ [\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ h16\ ]\ "{}::"{}\ 4(\ h16\ "{}:"{}\ )\ ls32}}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}(?:\%(hex)s)?::(?:\%(hex)s:)\{4\}\%(ls32)s"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{\#\ [\ *1(\ h16\ "{}:"{}\ )\ h16\ ]\ "{}::"{}\ 3(\ h16\ "{}:"{}\ )\ ls32}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}(?:(?:\%(hex)s:)?\%(hex)s)?::(?:\%(hex)s:)\{3\}\%(ls32)s"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{\#\ [\ *2(\ h16\ "{}:"{}\ )\ h16\ ]\ "{}::"{}\ 2(\ h16\ "{}:"{}\ )\ ls32}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}(?:(?:\%(hex)s:)\{0,2\}\%(hex)s)?::(?:\%(hex)s:)\{2\}\%(ls32)s"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{\#\ [\ *3(\ h16\ "{}:"{}\ )\ h16\ ]\ "{}::"{}\ \ \ \ h16\ "{}:"{}\ \ \ ls32}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}(?:(?:\%(hex)s:)\{0,3\}\%(hex)s)?::\%(hex)s:\%(ls32)s"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{\#\ [\ *4(\ h16\ "{}:"{}\ )\ h16\ ]\ "{}::"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ ls32}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}(?:(?:\%(hex)s:)\{0,4\}\%(hex)s)?::\%(ls32)s"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{\#\ [\ *5(\ h16\ "{}:"{}\ )\ h16\ ]\ "{}::"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ h16}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}(?:(?:\%(hex)s:)\{0,5\}\%(hex)s)?::\%(hex)s"{}},}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{\#\ [\ *6(\ h16\ "{}:"{}\ )\ h16\ ]\ "{}::"{}}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{stringliteral}{"{}(?:(?:\%(hex)s:)\{0,6\}\%(hex)s)?::"{}},}
+\DoxyCodeLine{00020\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a1900e2bbf1736063d195f5de25d7a6be}\index{urllib3.util.url@{urllib3.util.url}!\_ZONE\_ID\_PAT@{\_ZONE\_ID\_PAT}}
+\index{\_ZONE\_ID\_PAT@{\_ZONE\_ID\_PAT}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_ZONE\_ID\_PAT}{\_ZONE\_ID\_PAT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a1900e2bbf1736063d195f5de25d7a6be} 
+str urllib3.\+util.\+url.\+\_\+\+ZONE\+\_\+\+ID\+\_\+\+PAT = "{}(?\+:\%25\texorpdfstring{$\vert$}{|}\%)(?\+:\mbox{[}"{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a46b37f5674102a1109a01663388a9f13}{\+\_\+\+UNRESERVED\+\_\+\+PAT}} + "{}\mbox{]}\texorpdfstring{$\vert$}{|}\%\mbox{[}a-\/fA-\/F0-\/9\mbox{]}\{2\})+"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1url_a9a5157af6adf1cc07c4b22d79b39aa4f}\index{urllib3.util.url@{urllib3.util.url}!\_ZONE\_ID\_RE@{\_ZONE\_ID\_RE}}
+\index{\_ZONE\_ID\_RE@{\_ZONE\_ID\_RE}!urllib3.util.url@{urllib3.util.url}}
+\doxysubsubsection{\texorpdfstring{\_ZONE\_ID\_RE}{\_ZONE\_ID\_RE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1url_a9a5157af6adf1cc07c4b22d79b39aa4f} 
+urllib3.\+util.\+url.\+\_\+\+ZONE\+\_\+\+ID\+\_\+\+RE = re.\+compile("{}("{} + \mbox{\hyperlink{namespaceurllib3_1_1util_1_1url_a1900e2bbf1736063d195f5de25d7a6be}{\+\_\+\+ZONE\+\_\+\+ID\+\_\+\+PAT}} + r"{})\textbackslash{}\mbox{]}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+

@@ -1,0 +1,108 @@
+\doxysection{django.\+urls.\+resolvers Namespace Reference}
+\hypertarget{namespacedjango_1_1urls_1_1resolvers}{}\label{namespacedjango_1_1urls_1_1resolvers}\index{django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_check_u_r_l_mixin}{Check\+URLMixin}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_locale_prefix_pattern}{Locale\+Prefix\+Pattern}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_locale_regex_descriptor}{Locale\+Regex\+Descriptor}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_locale_regex_route_descriptor}{Locale\+Regex\+Route\+Descriptor}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_regex_pattern}{Regex\+Pattern}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_resolver_match}{Resolver\+Match}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_route_pattern}{Route\+Pattern}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_u_r_l_pattern}{URLPattern}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1urls_1_1resolvers_1_1_u_r_l_resolver}{URLResolver}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1urls_1_1resolvers_ad85dfa8c696e289f51b944e829ef703c}{get\+\_\+resolver}} (urlconf=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1urls_1_1resolvers_a52e5f8d38c94d27c2a6a81a0a4bc1598}{\+\_\+get\+\_\+cached\+\_\+resolver}} (urlconf=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1urls_1_1resolvers_afc84db731e64adf93b7fa61321b05890}{get\+\_\+ns\+\_\+resolver}} (ns\+\_\+pattern, resolver, converters)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1urls_1_1resolvers_a1533d1fdbb7b685b789345ebfe927df7}{\+\_\+route\+\_\+to\+\_\+regex}} (route, is\+\_\+endpoint)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1urls_1_1resolvers_a6163faaa8285a04c701f24245b80ef26}{\+\_\+\+PATH\+\_\+\+PARAMETER\+\_\+\+COMPONENT\+\_\+\+RE}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1urls_1_1resolvers_a201c75ebb3c7fd45c4db29873d2e5316}{whitespace\+\_\+set}} = frozenset(string.\+whitespace)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module converts requested URLs to callback view functions.
+
+URLResolver is the main class here. Its resolve() method takes a URL (as
+a string) and returns a ResolverMatch object which provides access to all
+attributes of the resolved URL match.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_a52e5f8d38c94d27c2a6a81a0a4bc1598}\index{django.urls.resolvers@{django.urls.resolvers}!\_get\_cached\_resolver@{\_get\_cached\_resolver}}
+\index{\_get\_cached\_resolver@{\_get\_cached\_resolver}!django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection{\texorpdfstring{\_get\_cached\_resolver()}{\_get\_cached\_resolver()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1urls_1_1resolvers_a52e5f8d38c94d27c2a6a81a0a4bc1598} 
+django.\+urls.\+resolvers.\+\_\+get\+\_\+cached\+\_\+resolver (\begin{DoxyParamCaption}\item[{}]{urlconf}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_a1533d1fdbb7b685b789345ebfe927df7}\index{django.urls.resolvers@{django.urls.resolvers}!\_route\_to\_regex@{\_route\_to\_regex}}
+\index{\_route\_to\_regex@{\_route\_to\_regex}!django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection{\texorpdfstring{\_route\_to\_regex()}{\_route\_to\_regex()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1urls_1_1resolvers_a1533d1fdbb7b685b789345ebfe927df7} 
+django.\+urls.\+resolvers.\+\_\+route\+\_\+to\+\_\+regex (\begin{DoxyParamCaption}\item[{}]{route}{, }\item[{}]{is\+\_\+endpoint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert a path pattern into a regular expression. Return the regular
+expression and a dictionary mapping the capture names to the converters.
+For example, 'foo/<int:pk>' returns '^foo\\/(?P<pk>[0-9]+)'
+and {'pk': <django.urls.converters.IntConverter>}.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1urls_1_1resolvers_afc84db731e64adf93b7fa61321b05890}\index{django.urls.resolvers@{django.urls.resolvers}!get\_ns\_resolver@{get\_ns\_resolver}}
+\index{get\_ns\_resolver@{get\_ns\_resolver}!django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection{\texorpdfstring{get\_ns\_resolver()}{get\_ns\_resolver()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1urls_1_1resolvers_afc84db731e64adf93b7fa61321b05890} 
+django.\+urls.\+resolvers.\+get\+\_\+ns\+\_\+resolver (\begin{DoxyParamCaption}\item[{}]{ns\+\_\+pattern}{, }\item[{}]{resolver}{, }\item[{}]{converters}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_ad85dfa8c696e289f51b944e829ef703c}\index{django.urls.resolvers@{django.urls.resolvers}!get\_resolver@{get\_resolver}}
+\index{get\_resolver@{get\_resolver}!django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection{\texorpdfstring{get\_resolver()}{get\_resolver()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1urls_1_1resolvers_ad85dfa8c696e289f51b944e829ef703c} 
+django.\+urls.\+resolvers.\+get\+\_\+resolver (\begin{DoxyParamCaption}\item[{}]{urlconf}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_a6163faaa8285a04c701f24245b80ef26}\index{django.urls.resolvers@{django.urls.resolvers}!\_PATH\_PARAMETER\_COMPONENT\_RE@{\_PATH\_PARAMETER\_COMPONENT\_RE}}
+\index{\_PATH\_PARAMETER\_COMPONENT\_RE@{\_PATH\_PARAMETER\_COMPONENT\_RE}!django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection{\texorpdfstring{\_PATH\_PARAMETER\_COMPONENT\_RE}{\_PATH\_PARAMETER\_COMPONENT\_RE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1urls_1_1resolvers_a6163faaa8285a04c701f24245b80ef26} 
+django.\+urls.\+resolvers.\+\_\+\+PATH\+\_\+\+PARAMETER\+\_\+\+COMPONENT\+\_\+\+RE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r"{}<(?:(?P<converter>[\string^>:]+):)?(?P<parameter>[\string^>]+)>"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1urls_1_1resolvers_a201c75ebb3c7fd45c4db29873d2e5316}\index{django.urls.resolvers@{django.urls.resolvers}!whitespace\_set@{whitespace\_set}}
+\index{whitespace\_set@{whitespace\_set}!django.urls.resolvers@{django.urls.resolvers}}
+\doxysubsubsection{\texorpdfstring{whitespace\_set}{whitespace\_set}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1urls_1_1resolvers_a201c75ebb3c7fd45c4db29873d2e5316} 
+django.\+urls.\+resolvers.\+whitespace\+\_\+set = frozenset(string.\+whitespace)}
+

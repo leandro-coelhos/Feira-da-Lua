@@ -1,0 +1,519 @@
+\doxysection{aiohttp.\+streams.\+Stream\+Reader Class Reference}
+\hypertarget{classaiohttp_1_1streams_1_1_stream_reader}{}\label{classaiohttp_1_1streams_1_1_stream_reader}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+Inheritance diagram for aiohttp.\+streams.\+Stream\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1streams_1_1_stream_reader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a81c87f2b19120d7917e766d91d6a0b60}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{Base\+Protocol}} protocol, int limit, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context}{Base\+Timer\+Context}}\mbox{]} timer=None, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_aa29b63f7a074d640ef26ccef90b2e410}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+Tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a6f5a41a5df3aca0eedf014b8b9fc43c1}{get\+\_\+read\+\_\+buffer\+\_\+limits}} (self)
+\item 
+Optional\mbox{[}Base\+Exception\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a51e3088aa9bfcf3facb9d9cfcab926bd}{exception}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a9e320f5d575a48f56f9f17ec5969d591}{set\+\_\+exception}} (self, Base\+Exception exc, Base\+Exception exc\+\_\+cause=\+\_\+\+EXC\+\_\+\+SENTINEL)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a86a812a90842bcd76273c94901ad7a05}{on\+\_\+eof}} (self, Callable\mbox{[}\mbox{[}$\,$\mbox{]}, None\mbox{]} callback)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a32318edb7b4aa256eb87ce56f414b644}{feed\+\_\+eof}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a7a34c1bc01e05ee9ac4ec2c113b03451}{is\+\_\+eof}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_adb7ea99828986546f8f912bfc87ecedb}{at\+\_\+eof}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ab7df2c51a553b9c97265c4148c9210f5}{wait\+\_\+eof}} (self)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a00551b7f2d3d1309168ff29bf54fd4d1}{total\+\_\+raw\+\_\+bytes}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a8f5a4a6180c57606ab1a3874494cf03a}{unread\+\_\+data}} (self, bytes data)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a8e4a497592e6accd860d216a3a1afbb1}{feed\+\_\+data}} (self, bytes data, int size=0)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a9df1fbd7b94c8b054130adbe99fb827e}{begin\+\_\+http\+\_\+chunk\+\_\+receiving}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ab9bfa2d0bc702f9197d227edfe379404}{end\+\_\+http\+\_\+chunk\+\_\+receiving}} (self)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a0d4a5f67d512f975f1c050f7cc0ad8a6}{readline}} (self)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a7666f7b3505222adee120c345dddf06b}{readuntil}} (self, bytes separator=b"{}\textbackslash{}n"{})
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a9dbd961e9be2a3953b3f2d0ab880fe15}{read}} (self, int n=-\/1)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a3d47309b5c869575d450fe9302850ede}{readany}} (self)
+\item 
+Tuple\mbox{[}bytes, bool\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a5e24b5ab813197a11e014116f60392a7}{readchunk}} (self)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a3b7af72b2068a798e0ebb548369054ea}{readexactly}} (self, int n)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a0c48f7b314ac5d8e15bbfd32a3e6835c}{read\+\_\+nowait}} (self, int n=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin}{aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_iterator}{Async\+Stream\+Iterator}}\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a144b269192ee73df1ef834f738f9c404}{\+\_\+\+\_\+aiter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_iterator}{Async\+Stream\+Iterator}}\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a893b3ad2d60bacb1e9778c9f1c53607a}{iter\+\_\+chunked}} (self, int n)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_iterator}{Async\+Stream\+Iterator}}\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a1d4e2549164f785c72dd6d05201322b0}{iter\+\_\+any}} (self)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_chunk_tuple_async_stream_iterator}{Chunk\+Tuple\+Async\+Stream\+Iterator}} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a706b924d335e3eeed372abab795808f0}{iter\+\_\+chunks}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a549ccf4f29828ba7f4a7f4573180c8bb}{total\+\_\+bytes}} = 0
+\item 
+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a14e408d080b3a2cf8aa2a2f21539ed75}{total\+\_\+compressed\+\_\+bytes}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ad55523b519378ec0b5981d1948597afd}{\+\_\+wait}} (self, str func\+\_\+name)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a0d553801e1e034e26b420a242a1ce91f}{\+\_\+read\+\_\+nowait\+\_\+chunk}} (self, int n)
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ae9f9e2264fb38fa2981b3f512481f471}{\+\_\+read\+\_\+nowait}} (self, int n)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a1f27882938801a4f5916309958b1eba4}{\+\_\+protocol}} = protocol
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a603178cf3fc2d75c52bbdf5cbaa31185}{\+\_\+low\+\_\+water}} = limit
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_aacfe39d4773c2d4885eaa3b32b8cc5cd}{\+\_\+high\+\_\+water}} = limit \texorpdfstring{$\ast$}{*} 2
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_accab8dd246354cc56654b3adc746bb96}{\+\_\+loop}} = loop
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ade2991d9626c55627a3d982bbdeded32}{\+\_\+size}} = 0
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ad17edbf161107d2dfd778d8006441ac6}{\+\_\+cursor}} = 0
+\item 
+Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_aad2e029de0842cb5c0ab6225b8862920}{\+\_\+http\+\_\+chunk\+\_\+splits}} = None
+\item 
+Deque\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_af84630645e23bf20815ec17da996f193}{\+\_\+buffer}} = collections.\+deque()
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a1d414752cbad3ff16b02fbb8a468aa5a}{\+\_\+buffer\+\_\+offset}} = 0
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a42a3e8274ce486945ca668fa407ca3c4}{\+\_\+eof}} = False
+\item 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_aa507c8af23ad5ab29de38c217f6e49ec}{\+\_\+waiter}} = None
+\item 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a5e5622c42f08bc7d4216b849145d581c}{\+\_\+eof\+\_\+waiter}} = None
+\item 
+Optional\mbox{[}Base\+Exception\mbox{]} \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_ac7907ed1065bd844e50de03617e7be4a}{\+\_\+exception}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a01614066db4ad5a46c0a110b27eddb4c}{\+\_\+timer}} = \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_noop}{Timer\+Noop}}() if timer is None else timer
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a211ea921b0f151198af83eda91cf86d0}{\+\_\+eof\+\_\+callbacks}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a0dae7776e340581bde44000301859198}{\+\_\+eof\+\_\+counter}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader_a7775f623887a1789a2bd162542d80e9b}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An enhancement of asyncio.StreamReader.
+
+Supports asynchronous iteration by line, chunk or as available::
+
+    async for line in reader:
+        ...
+    async for chunk in reader.iter_chunked(1024):
+        ...
+    async for slice in reader.iter_any():
+        ...
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a81c87f2b19120d7917e766d91d6a0b60}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a81c87f2b19120d7917e766d91d6a0b60} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{Base\+Protocol}}}]{protocol}{, }\item[{int}]{limit}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context}{Base\+Timer\+Context}}\mbox{]} }]{timer}{ = {\ttfamily None}, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_aa29b63f7a074d640ef26ccef90b2e410}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_aa29b63f7a074d640ef26ccef90b2e410} 
+ str aiohttp.\+streams.\+Stream\+Reader.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ae9f9e2264fb38fa2981b3f512481f471}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_read\_nowait@{\_read\_nowait}}
+\index{\_read\_nowait@{\_read\_nowait}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_nowait()}{\_read\_nowait()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ae9f9e2264fb38fa2981b3f512481f471} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+\_\+read\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Read not more than n bytes, or whole buffer if n == -1\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a0d553801e1e034e26b420a242a1ce91f}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_read\_nowait\_chunk@{\_read\_nowait\_chunk}}
+\index{\_read\_nowait\_chunk@{\_read\_nowait\_chunk}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_nowait\_chunk()}{\_read\_nowait\_chunk()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a0d553801e1e034e26b420a242a1ce91f} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+\_\+read\+\_\+nowait\+\_\+chunk (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ad55523b519378ec0b5981d1948597afd}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_wait@{\_wait}}
+\index{\_wait@{\_wait}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_wait()}{\_wait()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ad55523b519378ec0b5981d1948597afd} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+\_\+wait (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{func\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_adb7ea99828986546f8f912bfc87ecedb}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!at\_eof@{at\_eof}}
+\index{at\_eof@{at\_eof}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{at\_eof()}{at\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_adb7ea99828986546f8f912bfc87ecedb} 
+ bool aiohttp.\+streams.\+Stream\+Reader.\+at\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the buffer is empty and 'feed_eof' was called.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a20713cf70ea20f613751ab49a6fc8dd7}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a9df1fbd7b94c8b054130adbe99fb827e}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!begin\_http\_chunk\_receiving@{begin\_http\_chunk\_receiving}}
+\index{begin\_http\_chunk\_receiving@{begin\_http\_chunk\_receiving}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{begin\_http\_chunk\_receiving()}{begin\_http\_chunk\_receiving()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a9df1fbd7b94c8b054130adbe99fb827e} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+begin\+\_\+http\+\_\+chunk\+\_\+receiving (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ab9bfa2d0bc702f9197d227edfe379404}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!end\_http\_chunk\_receiving@{end\_http\_chunk\_receiving}}
+\index{end\_http\_chunk\_receiving@{end\_http\_chunk\_receiving}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{end\_http\_chunk\_receiving()}{end\_http\_chunk\_receiving()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ab9bfa2d0bc702f9197d227edfe379404} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+end\+\_\+http\+\_\+chunk\+\_\+receiving (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a51e3088aa9bfcf3facb9d9cfcab926bd}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!exception@{exception}}
+\index{exception@{exception}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{exception()}{exception()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a51e3088aa9bfcf3facb9d9cfcab926bd} 
+ Optional\mbox{[}Base\+Exception\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+exception (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_adb3df5e6981af6631005921a59d98e39}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a8e4a497592e6accd860d216a3a1afbb1}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!feed\_data@{feed\_data}}
+\index{feed\_data@{feed\_data}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{feed\_data()}{feed\_data()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a8e4a497592e6accd860d216a3a1afbb1} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+feed\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{int }]{size}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a184c1c1152805a4a4d263583482e5160}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a32318edb7b4aa256eb87ce56f414b644}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!feed\_eof@{feed\_eof}}
+\index{feed\_eof@{feed\_eof}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{feed\_eof()}{feed\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a32318edb7b4aa256eb87ce56f414b644} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+feed\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a5760830aa967628239fee5185306d413}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a6f5a41a5df3aca0eedf014b8b9fc43c1}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!get\_read\_buffer\_limits@{get\_read\_buffer\_limits}}
+\index{get\_read\_buffer\_limits@{get\_read\_buffer\_limits}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{get\_read\_buffer\_limits()}{get\_read\_buffer\_limits()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a6f5a41a5df3aca0eedf014b8b9fc43c1} 
+ Tuple\mbox{[}int, int\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+get\+\_\+read\+\_\+buffer\+\_\+limits (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a7a34c1bc01e05ee9ac4ec2c113b03451}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!is\_eof@{is\_eof}}
+\index{is\_eof@{is\_eof}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{is\_eof()}{is\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a7a34c1bc01e05ee9ac4ec2c113b03451} 
+ bool aiohttp.\+streams.\+Stream\+Reader.\+is\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if  'feed_eof' was called.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a5040d02faf9bc5ca2b286968bd11d968}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a86a812a90842bcd76273c94901ad7a05}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!on\_eof@{on\_eof}}
+\index{on\_eof@{on\_eof}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{on\_eof()}{on\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a86a812a90842bcd76273c94901ad7a05} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+on\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Callable\mbox{[}\mbox{[}$\,$\mbox{]}, None\mbox{]}}]{callback}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a8050b402b2ce6dfd48f59e19dbf224f1}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a9dbd961e9be2a3953b3f2d0ab880fe15}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!read@{read}}
+\index{read@{read}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a9dbd961e9be2a3953b3f2d0ab880fe15} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{n}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_adafb995eeb6be66e554993a49bb5e031}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a0c48f7b314ac5d8e15bbfd32a3e6835c}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!read\_nowait@{read\_nowait}}
+\index{read\_nowait@{read\_nowait}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{read\_nowait()}{read\_nowait()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a0c48f7b314ac5d8e15bbfd32a3e6835c} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+read\+\_\+nowait (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{n}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a40a20b8a40fe604ff355c42271a230c4}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a3d47309b5c869575d450fe9302850ede}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!readany@{readany}}
+\index{readany@{readany}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{readany()}{readany()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a3d47309b5c869575d450fe9302850ede} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+readany (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a87e2f55c82917485e79fe2430a7a3813}{aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a75fe5329104ebeda8afd24fc8a329fbf}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a5e24b5ab813197a11e014116f60392a7}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!readchunk@{readchunk}}
+\index{readchunk@{readchunk}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{readchunk()}{readchunk()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a5e24b5ab813197a11e014116f60392a7} 
+ Tuple\mbox{[}bytes, bool\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+readchunk (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a tuple of (data, end_of_http_chunk).
+
+When chunked transfer
+encoding is used, end_of_http_chunk is a boolean indicating if the end
+of the data corresponds to the end of a HTTP chunk , otherwise it is
+always False.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a6fd623fce3d6aab0582003c6b5fe6f89}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a3b7af72b2068a798e0ebb548369054ea}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!readexactly@{readexactly}}
+\index{readexactly@{readexactly}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{readexactly()}{readexactly()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a3b7af72b2068a798e0ebb548369054ea} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+readexactly (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a21af375f1f7d3994a2042fc0317edabd}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a0d4a5f67d512f975f1c050f7cc0ad8a6}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!readline@{readline}}
+\index{readline@{readline}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a0d4a5f67d512f975f1c050f7cc0ad8a6} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+readline (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1streams_1_1_async_stream_reader_mixin_a41b84e8ec32a9751b70e3c90bec87b5c}{aiohttp.\+streams.\+Async\+Stream\+Reader\+Mixin}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a009e87a6ae19f43ff993a8fea2b63bc8}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a7666f7b3505222adee120c345dddf06b}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!readuntil@{readuntil}}
+\index{readuntil@{readuntil}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{readuntil()}{readuntil()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a7666f7b3505222adee120c345dddf06b} 
+ bytes aiohttp.\+streams.\+Stream\+Reader.\+readuntil (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes }]{separator}{ = {\ttfamily b"{}\textbackslash{}n"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a9e320f5d575a48f56f9f17ec5969d591}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!set\_exception@{set\_exception}}
+\index{set\_exception@{set\_exception}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{set\_exception()}{set\_exception()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a9e320f5d575a48f56f9f17ec5969d591} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+set\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception}]{exc}{, }\item[{Base\+Exception }]{exc\+\_\+cause}{ = {\ttfamily \+\_\+EXC\+\_\+SENTINEL}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler_ad325ace72a27c9df74a6de15d6ee76dc}{aiohttp.\+client\+\_\+proto.\+Response\+Handler}}, and \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_a4407f2aad66ffab4b7409aae5b6db7bf}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a00551b7f2d3d1309168ff29bf54fd4d1}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!total\_raw\_bytes@{total\_raw\_bytes}}
+\index{total\_raw\_bytes@{total\_raw\_bytes}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{total\_raw\_bytes()}{total\_raw\_bytes()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a00551b7f2d3d1309168ff29bf54fd4d1} 
+ int aiohttp.\+streams.\+Stream\+Reader.\+total\+\_\+raw\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a8f5a4a6180c57606ab1a3874494cf03a}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!unread\_data@{unread\_data}}
+\index{unread\_data@{unread\_data}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{unread\_data()}{unread\_data()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a8f5a4a6180c57606ab1a3874494cf03a} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+unread\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}rollback reading some data from stream, inserting it to buffer head.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ab7df2c51a553b9c97265c4148c9210f5}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!wait\_eof@{wait\_eof}}
+\index{wait\_eof@{wait\_eof}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{wait\_eof()}{wait\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ab7df2c51a553b9c97265c4148c9210f5} 
+ None aiohttp.\+streams.\+Stream\+Reader.\+wait\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1streams_1_1_empty_stream_reader_aea2a28320e8a8600b7db83515b88bc52}{aiohttp.\+streams.\+Empty\+Stream\+Reader}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a7775f623887a1789a2bd162542d80e9b}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a7775f623887a1789a2bd162542d80e9b} 
+tuple aiohttp.\+streams.\+Stream\+Reader.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_protocol"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_low\_water"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_high\_water"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_loop"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_size"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_cursor"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_http\_chunk\_splits"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_buffer"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_buffer\_offset"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_eof"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_waiter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_eof\_waiter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_exception"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_timer"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_eof\_callbacks"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_eof\_counter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}total\_bytes"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}total\_compressed\_bytes"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_af84630645e23bf20815ec17da996f193}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_buffer@{\_buffer}}
+\index{\_buffer@{\_buffer}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_buffer}{\_buffer}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_af84630645e23bf20815ec17da996f193} 
+Deque\mbox{[}bytes\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+\_\+buffer = collections.\+deque()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a1d414752cbad3ff16b02fbb8a468aa5a}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_buffer\_offset@{\_buffer\_offset}}
+\index{\_buffer\_offset@{\_buffer\_offset}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_buffer\_offset}{\_buffer\_offset}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a1d414752cbad3ff16b02fbb8a468aa5a} 
+int aiohttp.\+streams.\+Stream\+Reader.\+\_\+buffer\+\_\+offset = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ad17edbf161107d2dfd778d8006441ac6}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_cursor@{\_cursor}}
+\index{\_cursor@{\_cursor}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_cursor}{\_cursor}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ad17edbf161107d2dfd778d8006441ac6} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+cursor = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a42a3e8274ce486945ca668fa407ca3c4}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_eof@{\_eof}}
+\index{\_eof@{\_eof}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_eof}{\_eof}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a42a3e8274ce486945ca668fa407ca3c4} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+eof = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a211ea921b0f151198af83eda91cf86d0}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_eof\_callbacks@{\_eof\_callbacks}}
+\index{\_eof\_callbacks@{\_eof\_callbacks}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_eof\_callbacks}{\_eof\_callbacks}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a211ea921b0f151198af83eda91cf86d0} 
+list aiohttp.\+streams.\+Stream\+Reader.\+\_\+eof\+\_\+callbacks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a0dae7776e340581bde44000301859198}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_eof\_counter@{\_eof\_counter}}
+\index{\_eof\_counter@{\_eof\_counter}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_eof\_counter}{\_eof\_counter}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a0dae7776e340581bde44000301859198} 
+int aiohttp.\+streams.\+Stream\+Reader.\+\_\+eof\+\_\+counter = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a5e5622c42f08bc7d4216b849145d581c}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_eof\_waiter@{\_eof\_waiter}}
+\index{\_eof\_waiter@{\_eof\_waiter}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_eof\_waiter}{\_eof\_waiter}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a5e5622c42f08bc7d4216b849145d581c} 
+Optional\mbox{[}asyncio.\+Future\mbox{[}None\mbox{]}\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+\_\+eof\+\_\+waiter = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ac7907ed1065bd844e50de03617e7be4a}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_exception@{\_exception}}
+\index{\_exception@{\_exception}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_exception}{\_exception}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ac7907ed1065bd844e50de03617e7be4a} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+exception = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_aacfe39d4773c2d4885eaa3b32b8cc5cd}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_high\_water@{\_high\_water}}
+\index{\_high\_water@{\_high\_water}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_high\_water}{\_high\_water}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_aacfe39d4773c2d4885eaa3b32b8cc5cd} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+high\+\_\+water = limit \texorpdfstring{$\ast$}{*} 2\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_aad2e029de0842cb5c0ab6225b8862920}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_http\_chunk\_splits@{\_http\_chunk\_splits}}
+\index{\_http\_chunk\_splits@{\_http\_chunk\_splits}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_http\_chunk\_splits}{\_http\_chunk\_splits}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_aad2e029de0842cb5c0ab6225b8862920} 
+Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+\_\+http\+\_\+chunk\+\_\+splits = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_accab8dd246354cc56654b3adc746bb96}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_accab8dd246354cc56654b3adc746bb96} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+loop = loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a603178cf3fc2d75c52bbdf5cbaa31185}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_low\_water@{\_low\_water}}
+\index{\_low\_water@{\_low\_water}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_low\_water}{\_low\_water}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a603178cf3fc2d75c52bbdf5cbaa31185} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+low\+\_\+water = limit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a1f27882938801a4f5916309958b1eba4}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_protocol@{\_protocol}}
+\index{\_protocol@{\_protocol}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_protocol}{\_protocol}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a1f27882938801a4f5916309958b1eba4} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+protocol = protocol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_ade2991d9626c55627a3d982bbdeded32}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_size@{\_size}}
+\index{\_size@{\_size}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_ade2991d9626c55627a3d982bbdeded32} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+size = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a01614066db4ad5a46c0a110b27eddb4c}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a01614066db4ad5a46c0a110b27eddb4c} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+timer = \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_noop}{Timer\+Noop}}() if timer is None else timer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_aa507c8af23ad5ab29de38c217f6e49ec}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!\_waiter@{\_waiter}}
+\index{\_waiter@{\_waiter}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{\_waiter}{\_waiter}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_aa507c8af23ad5ab29de38c217f6e49ec} 
+aiohttp.\+streams.\+Stream\+Reader.\+\_\+waiter = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a549ccf4f29828ba7f4a7f4573180c8bb}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!total\_bytes@{total\_bytes}}
+\index{total\_bytes@{total\_bytes}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{total\_bytes}{total\_bytes}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a549ccf4f29828ba7f4a7f4573180c8bb} 
+aiohttp.\+streams.\+Stream\+Reader.\+total\+\_\+bytes = 0}
+
+\Hypertarget{classaiohttp_1_1streams_1_1_stream_reader_a14e408d080b3a2cf8aa2a2f21539ed75}\index{aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}!total\_compressed\_bytes@{total\_compressed\_bytes}}
+\index{total\_compressed\_bytes@{total\_compressed\_bytes}!aiohttp.streams.StreamReader@{aiohttp.streams.StreamReader}}
+\doxysubsubsection{\texorpdfstring{total\_compressed\_bytes}{total\_compressed\_bytes}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1streams_1_1_stream_reader_a14e408d080b3a2cf8aa2a2f21539ed75} 
+Optional\mbox{[}int\mbox{]} aiohttp.\+streams.\+Stream\+Reader.\+total\+\_\+compressed\+\_\+bytes = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{streams_8py}{streams.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\doxysection{\+\_\+pytest.\+outcomes.\+\_\+\+XFail Class Reference}
+\hypertarget{class__pytest_1_1outcomes_1_1___x_fail}{}\label{class__pytest_1_1outcomes_1_1___x_fail}\index{\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+No\+Return \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail_ab6d69e6fc8869bf896b591139cdca39f}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, str reason="{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Class\+Var \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail_a1bcd440e2e8c8a2348bd2b5e5ac00e55}{Exception}} = \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_x_failed}{XFailed}}
+\item 
+\mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail}{\+\_\+\+XFail}} \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail_ab95446a4ff0fc181e0f645184930d6cd}{xfail}} = \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail}{\+\_\+\+XFail}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Imperatively xfail an executing test or setup function with the given reason.
+
+This function should be called only during testing (setup, call or teardown).
+
+No other code is executed after using ``xfail()`` (it is implemented
+internally by raising an exception).
+
+:param reason:
+    The message to show the user as reason for the xfail.
+
+.. note::
+    It is better to use the :ref:`pytest.mark.xfail ref` marker when
+    possible to declare a test to be xfailed under certain conditions
+    like known bugs or missing features.
+
+:raises pytest.xfail.Exception:
+    The exception that is raised.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1outcomes_1_1___x_fail_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1outcomes_1_1___x_fail_ab6d69e6fc8869bf896b591139cdca39f}\index{\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1outcomes_1_1___x_fail_ab6d69e6fc8869bf896b591139cdca39f} 
+ No\+Return \+\_\+pytest.\+outcomes.\+\_\+\+XFail.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{reason}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1outcomes_1_1___x_fail_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1outcomes_1_1___x_fail_a1bcd440e2e8c8a2348bd2b5e5ac00e55}\index{\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}!Exception@{Exception}}
+\index{Exception@{Exception}!\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}}
+\doxysubsubsection{\texorpdfstring{Exception}{Exception}}
+{\footnotesize\ttfamily \label{class__pytest_1_1outcomes_1_1___x_fail_a1bcd440e2e8c8a2348bd2b5e5ac00e55} 
+Class\+Var \+\_\+pytest.\+outcomes.\+\_\+\+XFail.\+Exception = \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_x_failed}{XFailed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1outcomes_1_1___x_fail_ab95446a4ff0fc181e0f645184930d6cd}\index{\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}!xfail@{xfail}}
+\index{xfail@{xfail}!\_pytest.outcomes.\_XFail@{\_pytest.outcomes.\_XFail}}
+\doxysubsubsection{\texorpdfstring{xfail}{xfail}}
+{\footnotesize\ttfamily \label{class__pytest_1_1outcomes_1_1___x_fail_ab95446a4ff0fc181e0f645184930d6cd} 
+\mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail}{\+\_\+\+XFail}} \+\_\+pytest.\+outcomes.\+\_\+\+XFail.\+xfail = \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail}{\+\_\+\+XFail}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{outcomes_8py}{outcomes.\+py}}\end{DoxyCompactItemize}

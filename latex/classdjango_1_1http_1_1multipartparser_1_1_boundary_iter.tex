@@ -1,0 +1,114 @@
+\doxysection{django.\+http.\+multipartparser.\+Boundary\+Iter Class Reference}
+\hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter}{}\label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a4814e5a4b4edea4fad2f61284d058a72}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, stream, boundary)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a7d70e2073c1a6a31d102fb8aa1545286}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ac6ccf0b1b2d7d6d05f12e2b01b0f0c94}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a80896bd49ee338421be3c27c65386549}{\+\_\+find\+\_\+boundary}} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ae8cca19455e5fc07fa25f5b884895f99}{\+\_\+stream}} = stream
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a7e72030f9f19fea0f68b56429293ccee}{\+\_\+boundary}} = boundary
+\item 
+bool \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a467131320e82a5b6077c3fff04f9ffa4}{\+\_\+done}} = False
+\item 
+int \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ab80cd6b4963ae621bf7d15628e2e8688}{\+\_\+rollback}} = len(boundary) + 6
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Producer that is sensitive to boundaries.
+
+Will happily yield bytes until a boundary is found. Will yield the bytes
+before the boundary, throw away the boundary bytes themselves, and push the
+post-boundary bytes back on the stream.
+
+The future calls to next() after locating the boundary will raise a
+StopIteration exception.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a4814e5a4b4edea4fad2f61284d058a72}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a4814e5a4b4edea4fad2f61284d058a72} 
+django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stream}{, }\item[{}]{boundary}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a7d70e2073c1a6a31d102fb8aa1545286}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a7d70e2073c1a6a31d102fb8aa1545286} 
+django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ac6ccf0b1b2d7d6d05f12e2b01b0f0c94}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ac6ccf0b1b2d7d6d05f12e2b01b0f0c94} 
+django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a80896bd49ee338421be3c27c65386549}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_find\_boundary@{\_find\_boundary}}
+\index{\_find\_boundary@{\_find\_boundary}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_find\_boundary()}{\_find\_boundary()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a80896bd49ee338421be3c27c65386549} 
+django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+find\+\_\+boundary (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find a multipart boundary in data.
+
+Should no boundary exist in the data, return None. Otherwise, return
+a tuple containing the indices of the following:
+ * the end of current encapsulation
+ * the start of the next encapsulation
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a7e72030f9f19fea0f68b56429293ccee}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_boundary@{\_boundary}}
+\index{\_boundary@{\_boundary}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_boundary}{\_boundary}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a7e72030f9f19fea0f68b56429293ccee} 
+django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+boundary = boundary\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a467131320e82a5b6077c3fff04f9ffa4}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_done@{\_done}}
+\index{\_done@{\_done}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_done}{\_done}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_a467131320e82a5b6077c3fff04f9ffa4} 
+bool django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+done = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ab80cd6b4963ae621bf7d15628e2e8688}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_rollback@{\_rollback}}
+\index{\_rollback@{\_rollback}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_rollback}{\_rollback}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ab80cd6b4963ae621bf7d15628e2e8688} 
+int django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+rollback = len(boundary) + 6\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ae8cca19455e5fc07fa25f5b884895f99}\index{django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!django.http.multipartparser.BoundaryIter@{django.http.multipartparser.BoundaryIter}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_boundary_iter_ae8cca19455e5fc07fa25f5b884895f99} 
+django.\+http.\+multipartparser.\+Boundary\+Iter.\+\_\+stream = stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/http/\mbox{\hyperlink{multipartparser_8py}{multipartparser.\+py}}\end{DoxyCompactItemize}

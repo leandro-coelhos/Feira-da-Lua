@@ -1,0 +1,102 @@
+\doxysection{aiohttp.\+payload.\+Payload\+Registry Class Reference}
+\hypertarget{classaiohttp_1_1payload_1_1_payload_registry}{}\label{classaiohttp_1_1payload_1_1_payload_registry}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_a498366b593b42a51a63813a5ad4e2cf6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+"{}Payload"{} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_ac734adcdf8b1b9714d4ba0174b6edb60}{get}} (self, Any data, \texorpdfstring{$\ast$}{*}Any args, "{}Type\mbox{[}chain\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1payload_a4d5571d4998f2f1a14248f5683a2d367}{\+\_\+\+Payload\+Registry\+Item}}\mbox{]}\mbox{]}"{} \+\_\+\+CHAIN=chain, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_a99961432b00c5a78c45c0688cdc6ae60}{register}} (self, \mbox{\hyperlink{namespaceaiohttp_1_1payload_aa03848c5775af86e6f4b00b90a699528}{Payload\+Type}} factory, Any type, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classaiohttp_1_1payload_1_1_order}{Order}} \mbox{\hyperlink{namespaceaiohttp_1_1payload_a0e481169b45d7b468717dd82dd2b3712}{order}}=\mbox{\hyperlink{classaiohttp_1_1payload_1_1_order_aad298404b1ee39d18502cd67cfebd1dd}{Order.\+normal}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_ac9e65944d8b05eaf3d4f088da938ea73}{\+\_\+first}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_ac6013affb0584927546440ef3a33a89c}{\+\_\+normal}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_a8b8ec849d948ab3a00ebc99fab41baa3}{\+\_\+last}} = \mbox{[}$\,$\mbox{]}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_a85ea52e45aba51fab0168f68b173b2e6}{\+\_\+normal\+\_\+lookup}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_registry_a7004ec15f169ab772fa4ffd3d8395cb9}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+first"{}, "{}\+\_\+normal"{}, "{}\+\_\+last"{}, "{}\+\_\+normal\+\_\+lookup"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Payload registry.
+
+note: we need zope.interface for more efficient adapter search
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_a498366b593b42a51a63813a5ad4e2cf6}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_a498366b593b42a51a63813a5ad4e2cf6} 
+ None aiohttp.\+payload.\+Payload\+Registry.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_ac734adcdf8b1b9714d4ba0174b6edb60}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!get@{get}}
+\index{get@{get}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_ac734adcdf8b1b9714d4ba0174b6edb60} 
+ "{}Payload"{} aiohttp.\+payload.\+Payload\+Registry.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{data}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{"{}Type\mbox{[}chain\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1payload_a4d5571d4998f2f1a14248f5683a2d367}{\+\_\+\+Payload\+Registry\+Item}}\mbox{]}\mbox{]}"{} }]{\+\_\+\+CHAIN}{ = {\ttfamily chain}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_a99961432b00c5a78c45c0688cdc6ae60}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!register@{register}}
+\index{register@{register}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_a99961432b00c5a78c45c0688cdc6ae60} 
+ None aiohttp.\+payload.\+Payload\+Registry.\+register (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespaceaiohttp_1_1payload_aa03848c5775af86e6f4b00b90a699528}{Payload\+Type}}}]{factory}{, }\item[{Any}]{type}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1payload_1_1_order}{Order}} }]{order}{ = {\ttfamily \mbox{\hyperlink{classaiohttp_1_1payload_1_1_order_aad298404b1ee39d18502cd67cfebd1dd}{Order.\+normal}}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_a7004ec15f169ab772fa4ffd3d8395cb9}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_a7004ec15f169ab772fa4ffd3d8395cb9} 
+tuple aiohttp.\+payload.\+Payload\+Registry.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+first"{}, "{}\+\_\+normal"{}, "{}\+\_\+last"{}, "{}\+\_\+normal\+\_\+lookup"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_ac9e65944d8b05eaf3d4f088da938ea73}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!\_first@{\_first}}
+\index{\_first@{\_first}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{\_first}{\_first}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_ac9e65944d8b05eaf3d4f088da938ea73} 
+list aiohttp.\+payload.\+Payload\+Registry.\+\_\+first = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_a8b8ec849d948ab3a00ebc99fab41baa3}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!\_last@{\_last}}
+\index{\_last@{\_last}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{\_last}{\_last}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_a8b8ec849d948ab3a00ebc99fab41baa3} 
+aiohttp.\+payload.\+Payload\+Registry.\+\_\+last = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_ac6013affb0584927546440ef3a33a89c}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!\_normal@{\_normal}}
+\index{\_normal@{\_normal}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{\_normal}{\_normal}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_ac6013affb0584927546440ef3a33a89c} 
+aiohttp.\+payload.\+Payload\+Registry.\+\_\+normal = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1payload_1_1_payload_registry_a85ea52e45aba51fab0168f68b173b2e6}\index{aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}!\_normal\_lookup@{\_normal\_lookup}}
+\index{\_normal\_lookup@{\_normal\_lookup}!aiohttp.payload.PayloadRegistry@{aiohttp.payload.PayloadRegistry}}
+\doxysubsubsection{\texorpdfstring{\_normal\_lookup}{\_normal\_lookup}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_payload_registry_a85ea52e45aba51fab0168f68b173b2e6} 
+dict aiohttp.\+payload.\+Payload\+Registry.\+\_\+normal\+\_\+lookup = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{payload_8py}{payload.\+py}}\end{DoxyCompactItemize}

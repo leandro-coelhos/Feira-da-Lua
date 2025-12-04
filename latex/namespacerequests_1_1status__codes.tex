@@ -1,0 +1,63 @@
+\doxysection{requests.\+status\+\_\+codes Namespace Reference}
+\hypertarget{namespacerequests_1_1status__codes}{}\label{namespacerequests_1_1status__codes}\index{requests.status\_codes@{requests.status\_codes}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerequests_1_1status__codes_a047dee7e3ef4d9736ad47c988cedb549}{\+\_\+init}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacerequests_1_1status__codes_a27fe612a4308008d7a73417bf20bddb6}{\+\_\+codes}}
+\item 
+\mbox{\hyperlink{namespacerequests_1_1status__codes_a5b15629ad30a78b2e23b5efe17cee8a9}{codes}} = \mbox{\hyperlink{classrequests_1_1structures_1_1_lookup_dict}{Lookup\+Dict}}(name="{}status\+\_\+codes"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The ``codes`` object defines a mapping from common names for HTTP statuses
+to their numerical codes, accessible either as attributes or as dictionary
+items.
+
+Example::
+
+    >>> import requests
+    >>> requests.codes['temporary_redirect']
+    307
+    >>> requests.codes.teapot
+    418
+    >>> requests.codes['\o/']
+    200
+
+Some codes have multiple names, and both upper- and lower-case versions of
+the names are allowed. For example, ``codes.ok``, ``codes.OK``, and
+``codes.okay`` all correspond to the HTTP status code 200.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacerequests_1_1status__codes_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacerequests_1_1status__codes_a047dee7e3ef4d9736ad47c988cedb549}\index{requests.status\_codes@{requests.status\_codes}!\_init@{\_init}}
+\index{\_init@{\_init}!requests.status\_codes@{requests.status\_codes}}
+\doxysubsubsection{\texorpdfstring{\_init()}{\_init()}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1status__codes_a047dee7e3ef4d9736ad47c988cedb549} 
+requests.\+status\+\_\+codes.\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacerequests_1_1status__codes_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacerequests_1_1status__codes_a27fe612a4308008d7a73417bf20bddb6}\index{requests.status\_codes@{requests.status\_codes}!\_codes@{\_codes}}
+\index{\_codes@{\_codes}!requests.status\_codes@{requests.status\_codes}}
+\doxysubsubsection{\texorpdfstring{\_codes}{\_codes}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1status__codes_a27fe612a4308008d7a73417bf20bddb6} 
+dict requests.\+status\+\_\+codes.\+\_\+codes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1status__codes_a5b15629ad30a78b2e23b5efe17cee8a9}\index{requests.status\_codes@{requests.status\_codes}!codes@{codes}}
+\index{codes@{codes}!requests.status\_codes@{requests.status\_codes}}
+\doxysubsubsection{\texorpdfstring{codes}{codes}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1status__codes_a5b15629ad30a78b2e23b5efe17cee8a9} 
+requests.\+status\+\_\+codes.\+codes = \mbox{\hyperlink{classrequests_1_1structures_1_1_lookup_dict}{Lookup\+Dict}}(name="{}status\+\_\+codes"{})}
+

@@ -1,0 +1,152 @@
+\doxysection{django.\+core.\+validators.\+URLValidator Class Reference}
+\hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator}{}\label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+Inheritance diagram for django.\+core.\+validators.\+URLValidator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1validators_1_1_u_r_l_validator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a8773aeca8ceed96ff832921cd4752c5e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_adf255602cdee054e79dd8a122d300ea6}{schemes}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_aed00ff72fd14908f52b3ba962f347e0d}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator}{django.\+core.\+validators.\+Regex\+Validator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_ad231bde76c876582cc0e7cf981921690}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_ab6e7bf725f9af2e56896b5c538518522}{regex}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a7dd6d025819876ae604be989b22fc991}{message}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a84750d7dc2dcbd7b11b658517620555e}{code}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a14b0a4b312712ff84c6d0f0d03d8878a}{inverse\+\_\+match}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_acbe47b610b3e34144951ac50968f2b5b}{flags}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a30d4eea6f9d0ab73781123cc26244775}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a18919d09fcbe332a2b693ad5a178a974}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a97953c6a29c98eac9d2cd82290a40122}{ipv4\+\_\+re}}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ae2de4c0c4c28cb2ba0e74c036355faf7}{ipv6\+\_\+re}} = r"{}\textbackslash{}\mbox{[}\mbox{[}0-\/9a-\/f\+:.\mbox{]}+\textbackslash{}\mbox{]}"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_acf109d521c9e40b8b52d96bd0971b7b8}{hostname\+\_\+re}} = Domain\+Name\+Validator.\+hostname\+\_\+re
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ac003dd5ec8a819af8909603124ba2e56}{domain\+\_\+re}} = Domain\+Name\+Validator.\+domain\+\_\+re
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a2187a17778112dfd04d41a8f104bc796}{tld\+\_\+re}} = Domain\+Name\+Validator.\+tld\+\_\+re
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_aaf82df442f7f8f839d93d81df505b252}{host\+\_\+re}} = "{}("{} + \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_acf109d521c9e40b8b52d96bd0971b7b8}{hostname\+\_\+re}} + \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ac003dd5ec8a819af8909603124ba2e56}{domain\+\_\+re}} + \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a2187a17778112dfd04d41a8f104bc796}{tld\+\_\+re}} + "{}\texorpdfstring{$\vert$}{|}localhost)"{}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_adf255602cdee054e79dd8a122d300ea6}{schemes}} = \mbox{[}"{}http"{}, "{}https"{}, "{}ftp"{}, "{}ftps"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a6a953eef5092611598cacfdf88772651}{unsafe\+\_\+chars}} = frozenset("{}\textbackslash{}t\textbackslash{}r\textbackslash{}n"{})
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a6424dd7829c5a1d5f1ee1dbb1796ec9f}{max\+\_\+length}} = MAX\+\_\+\+URL\+\_\+\+LENGTH
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator}{django.\+core.\+validators.\+Regex\+Validator}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_ab6e7bf725f9af2e56896b5c538518522}{regex}} = "{}"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a7dd6d025819876ae604be989b22fc991}{message}} = \+\_\+("{}Enter a valid value."{})
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a84750d7dc2dcbd7b11b658517620555e}{code}} = "{}invalid"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_a14b0a4b312712ff84c6d0f0d03d8878a}{inverse\+\_\+match}} = False
+\item 
+int \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator_acbe47b610b3e34144951ac50968f2b5b}{flags}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a8773aeca8ceed96ff832921cd4752c5e}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a8773aeca8ceed96ff832921cd4752c5e} 
+django.\+core.\+validators.\+URLValidator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{schemes}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_aed00ff72fd14908f52b3ba962f347e0d}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_aed00ff72fd14908f52b3ba962f347e0d} 
+django.\+core.\+validators.\+URLValidator.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ac003dd5ec8a819af8909603124ba2e56}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!domain\_re@{domain\_re}}
+\index{domain\_re@{domain\_re}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{domain\_re}{domain\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ac003dd5ec8a819af8909603124ba2e56} 
+django.\+core.\+validators.\+URLValidator.\+domain\+\_\+re = Domain\+Name\+Validator.\+domain\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_aaf82df442f7f8f839d93d81df505b252}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!host\_re@{host\_re}}
+\index{host\_re@{host\_re}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{host\_re}{host\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_aaf82df442f7f8f839d93d81df505b252} 
+str django.\+core.\+validators.\+URLValidator.\+host\+\_\+re = "{}("{} + \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_acf109d521c9e40b8b52d96bd0971b7b8}{hostname\+\_\+re}} + \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ac003dd5ec8a819af8909603124ba2e56}{domain\+\_\+re}} + \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a2187a17778112dfd04d41a8f104bc796}{tld\+\_\+re}} + "{}\texorpdfstring{$\vert$}{|}localhost)"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_acf109d521c9e40b8b52d96bd0971b7b8}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!hostname\_re@{hostname\_re}}
+\index{hostname\_re@{hostname\_re}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{hostname\_re}{hostname\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_acf109d521c9e40b8b52d96bd0971b7b8} 
+django.\+core.\+validators.\+URLValidator.\+hostname\+\_\+re = Domain\+Name\+Validator.\+hostname\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a97953c6a29c98eac9d2cd82290a40122}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!ipv4\_re@{ipv4\_re}}
+\index{ipv4\_re@{ipv4\_re}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{ipv4\_re}{ipv4\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a97953c6a29c98eac9d2cd82290a40122} 
+tuple django.\+core.\+validators.\+URLValidator.\+ipv4\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?:0|25[0-\/5]|2[0-\/4][0-\/9]|1[0-\/9]?[0-\/9]?|[1-\/9][0-\/9]?)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?:\(\backslash\).(?:0|25[0-\/5]|2[0-\/4][0-\/9]|1[0-\/9]?[0-\/9]?|[1-\/9][0-\/9]?))\{3\}"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ae2de4c0c4c28cb2ba0e74c036355faf7}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!ipv6\_re@{ipv6\_re}}
+\index{ipv6\_re@{ipv6\_re}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{ipv6\_re}{ipv6\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_ae2de4c0c4c28cb2ba0e74c036355faf7} 
+str django.\+core.\+validators.\+URLValidator.\+ipv6\+\_\+re = r"{}\textbackslash{}\mbox{[}\mbox{[}0-\/9a-\/f\+:.\mbox{]}+\textbackslash{}\mbox{]}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a6424dd7829c5a1d5f1ee1dbb1796ec9f}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!max\_length@{max\_length}}
+\index{max\_length@{max\_length}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{max\_length}{max\_length}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a6424dd7829c5a1d5f1ee1dbb1796ec9f} 
+django.\+core.\+validators.\+URLValidator.\+max\+\_\+length = MAX\+\_\+\+URL\+\_\+\+LENGTH\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_adf255602cdee054e79dd8a122d300ea6}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!schemes@{schemes}}
+\index{schemes@{schemes}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{schemes}{schemes}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_adf255602cdee054e79dd8a122d300ea6} 
+list django.\+core.\+validators.\+URLValidator.\+schemes = \mbox{[}"{}http"{}, "{}https"{}, "{}ftp"{}, "{}ftps"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a2187a17778112dfd04d41a8f104bc796}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!tld\_re@{tld\_re}}
+\index{tld\_re@{tld\_re}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{tld\_re}{tld\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a2187a17778112dfd04d41a8f104bc796} 
+django.\+core.\+validators.\+URLValidator.\+tld\+\_\+re = Domain\+Name\+Validator.\+tld\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a6a953eef5092611598cacfdf88772651}\index{django.core.validators.URLValidator@{django.core.validators.URLValidator}!unsafe\_chars@{unsafe\_chars}}
+\index{unsafe\_chars@{unsafe\_chars}!django.core.validators.URLValidator@{django.core.validators.URLValidator}}
+\doxysubsubsection{\texorpdfstring{unsafe\_chars}{unsafe\_chars}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_u_r_l_validator_a6a953eef5092611598cacfdf88772651} 
+django.\+core.\+validators.\+URLValidator.\+unsafe\+\_\+chars = frozenset("{}\textbackslash{}t\textbackslash{}r\textbackslash{}n"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/\mbox{\hyperlink{django_2core_2validators_8py}{validators.\+py}}\end{DoxyCompactItemize}

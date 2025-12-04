@@ -1,0 +1,350 @@
+\doxysection{pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context}{}\label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+Inheritance diagram for pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a530861514f31eabaa3f513557d6e66de}{\+\_\+\+\_\+class\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a67fbac8593c8d68b5bb4a76038b592fa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_af49c9d9ea065ddecdeeb84fd2c1a1176}{protocol}}=None)
+\item 
+ssl.\+SSLSocket \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8b0f266212c30e70a4ba430664934af8}{wrap\+\_\+socket}} (self, socket.\+socket sock, bool server\+\_\+side=False, bool do\+\_\+handshake\+\_\+on\+\_\+connect=True, bool suppress\+\_\+ragged\+\_\+eofs=True, str\texorpdfstring{$\vert$}{|}None server\+\_\+hostname=None, ssl.\+SSLSession\texorpdfstring{$\vert$}{|}None session=None)
+\item 
+ssl.\+SSLObject \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a180c192834b93d6a445132495f446b8d}{wrap\+\_\+bio}} (self, ssl.\+Memory\+BIO incoming, ssl.\+Memory\+BIO outgoing, bool server\+\_\+side=False, str\texorpdfstring{$\vert$}{|}None server\+\_\+hostname=None, ssl.\+SSLSession\texorpdfstring{$\vert$}{|}None session=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a13f161c6c7ad421e6cbe3c0ef95f32a8}{load\+\_\+verify\+\_\+locations}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}None cafile=None, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}None capath=None, typing.\+Union\mbox{[}str, "{}Buffer"{}, None\mbox{]} cadata=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa1dcf95b4b4ba8294a11be40104b6dd7}{load\+\_\+cert\+\_\+chain}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1truststore_1_1__api_a2774dff7c1a537b64e43caae76522226}{\+\_\+\+Str\+Or\+Bytes\+Path}} certfile, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1truststore_1_1__api_a2774dff7c1a537b64e43caae76522226}{\+\_\+\+Str\+Or\+Bytes\+Path}}\texorpdfstring{$\vert$}{|}None keyfile=None, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1truststore_1_1__api_a5cc64b0dac6d9106ff39439c3e67d911}{\+\_\+\+Password\+Type}}\texorpdfstring{$\vert$}{|}None password=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3b6685dbaf566ac44f38d90b8f4f1776}{load\+\_\+default\+\_\+certs}} (self, ssl.\+Purpose purpose=ssl.\+Purpose.\+SERVER\+\_\+\+AUTH)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a24fa1d9c3b41e4784014bce77a6f944a}{set\+\_\+alpn\+\_\+protocols}} (self, typing.\+Iterable\mbox{[}str\mbox{]} alpn\+\_\+protocols)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_ae7fad270ec5a97ce607d652599c17cb6}{set\+\_\+npn\+\_\+protocols}} (self, typing.\+Iterable\mbox{[}str\mbox{]} npn\+\_\+protocols)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_abf2168c562ab8ec5016ef294e8a83aa5}{set\+\_\+ciphers}} (self, str \+\_\+\+\_\+cipherlist)
+\item 
+typing.\+Any \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3e165598236b811999076e565f6464f5}{get\+\_\+ciphers}} (self)
+\item 
+dict\mbox{[}str, int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a14e4947de5dc29b344ccf075a346f530}{session\+\_\+stats}} (self)
+\item 
+dict\mbox{[}str, int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa488e18d499533028c12e4406cc12c13}{cert\+\_\+store\+\_\+stats}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a4d820b1280c54484bf2b138c39cb10dc}{set\+\_\+default\+\_\+verify\+\_\+paths}} (self)
+\item 
+list\mbox{[}typing.\+Any\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aed4c7abbbd84477e449d032a70e4be64}{get\+\_\+ca\+\_\+certs}} (self, typing.\+Literal\mbox{[}False\mbox{]} binary\+\_\+form=...)
+\item 
+list\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a04596c77b6affecb956ab902fce4ce67}{get\+\_\+ca\+\_\+certs}} (self, typing.\+Literal\mbox{[}True\mbox{]} binary\+\_\+form=...)
+\item 
+typing.\+Any \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a9964a355b4f1c1399ae8dbffdde061cc}{get\+\_\+ca\+\_\+certs}} (self, bool binary\+\_\+form=...)
+\item 
+list\mbox{[}typing.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a036bdfcb68136e98f1f0fd9d55cb1a67}{get\+\_\+ca\+\_\+certs}} (self, bool binary\+\_\+form=False)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a1b7858a657afeb53752d00efac10584b}{check\+\_\+hostname}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_ab03365c94bf0203cb25715b4be836a35}{check\+\_\+hostname}} (self, bool value)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a11b143c127c84c18ea6fcfdd3dc74710}{hostname\+\_\+checks\+\_\+common\+\_\+name}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a6a7d9093b943b45733a1b134d93c9353}{hostname\+\_\+checks\+\_\+common\+\_\+name}} (self, bool value)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3234bf0e030d1b60e15469a19e30c82e}{keylog\+\_\+filename}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa07eb51bd3a4d976548ea50d1f6fb06a}{keylog\+\_\+filename}} (self, str value)
+\item 
+ssl.\+TLSVersion \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a242efca3d93ecc442bd7eb2f9b1fdd75}{maximum\+\_\+version}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_adbeab021be33e57b2c11dd03e8283a90}{maximum\+\_\+version}} (self, ssl.\+TLSVersion value)
+\item 
+ssl.\+TLSVersion \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8e5be1611ea439d24a0dd2d8bc268607}{minimum\+\_\+version}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa64e15df4b0de2c28e11ed61bd9a0159}{minimum\+\_\+version}} (self, ssl.\+TLSVersion value)
+\item 
+ssl.\+Options \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a6755b8a82c0de77273744b73a826678d}{options}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a90bd5b81f087b6628b2f681ce6cffcd6}{options}} (self, ssl.\+Options value)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a2952545faa6bec35b8aebd9438969c2f}{post\+\_\+handshake\+\_\+auth}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa255c5ef82ba5cd1e1a7f79c5ffe8c6e}{post\+\_\+handshake\+\_\+auth}} (self, bool value)
+\item 
+ssl.\+\_\+\+SSLMethod \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_af49c9d9ea065ddecdeeb84fd2c1a1176}{protocol}} (self)
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8455bcf3c5f8e7cc2f0d4ab455b72256}{security\+\_\+level}} (self)
+\item 
+ssl.\+Verify\+Flags \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a72bba86d513db0fc6697d938970911a8}{verify\+\_\+flags}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa444be911ebfc871d9bd478565234c1d}{verify\+\_\+flags}} (self, ssl.\+Verify\+Flags value)
+\item 
+ssl.\+Verify\+Mode \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aae09d282fb998f16597974e222045210}{verify\+\_\+mode}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a67bf93eb45cc7e64d23933ef3feb0324}{verify\+\_\+mode}} (self, ssl.\+Verify\+Mode value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_afb6a18dabdeb12d64c246b5f695b307f}{\+\_\+ctx}} = \+\_\+original\+\_\+\+SSLContext(\mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_af49c9d9ea065ddecdeeb84fd2c1a1176}{protocol}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}SSLContext API that uses system certificates on all platforms\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a67fbac8593c8d68b5bb4a76038b592fa}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a67fbac8593c8d68b5bb4a76038b592fa} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{protocol}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a530861514f31eabaa3f513557d6e66de}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!\_\_class\_\_@{\_\_class\_\_}}
+\index{\_\_class\_\_@{\_\_class\_\_}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{\_\_class\_\_()}{\_\_class\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a530861514f31eabaa3f513557d6e66de} 
+ type pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+\_\+\+\_\+class\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa488e18d499533028c12e4406cc12c13}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!cert\_store\_stats@{cert\_store\_stats}}
+\index{cert\_store\_stats@{cert\_store\_stats}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{cert\_store\_stats()}{cert\_store\_stats()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa488e18d499533028c12e4406cc12c13} 
+ dict\mbox{[}str, int\mbox{]} pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+cert\+\_\+store\+\_\+stats (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a1b7858a657afeb53752d00efac10584b}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!check\_hostname@{check\_hostname}}
+\index{check\_hostname@{check\_hostname}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{check\_hostname()}{check\_hostname()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a1b7858a657afeb53752d00efac10584b} 
+ bool pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+check\+\_\+hostname (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_ab03365c94bf0203cb25715b4be836a35}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!check\_hostname@{check\_hostname}}
+\index{check\_hostname@{check\_hostname}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{check\_hostname()}{check\_hostname()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_ab03365c94bf0203cb25715b4be836a35} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+check\+\_\+hostname (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a9964a355b4f1c1399ae8dbffdde061cc}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!get\_ca\_certs@{get\_ca\_certs}}
+\index{get\_ca\_certs@{get\_ca\_certs}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{get\_ca\_certs()}{get\_ca\_certs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a9964a355b4f1c1399ae8dbffdde061cc} 
+ typing.\+Any pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+get\+\_\+ca\+\_\+certs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{binary\+\_\+form}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a036bdfcb68136e98f1f0fd9d55cb1a67}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!get\_ca\_certs@{get\_ca\_certs}}
+\index{get\_ca\_certs@{get\_ca\_certs}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{get\_ca\_certs()}{get\_ca\_certs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a036bdfcb68136e98f1f0fd9d55cb1a67} 
+ list\mbox{[}typing.\+Any\mbox{]} \texorpdfstring{$\vert$}{|} list\mbox{[}bytes\mbox{]} pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+get\+\_\+ca\+\_\+certs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{binary\+\_\+form}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aed4c7abbbd84477e449d032a70e4be64}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!get\_ca\_certs@{get\_ca\_certs}}
+\index{get\_ca\_certs@{get\_ca\_certs}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{get\_ca\_certs()}{get\_ca\_certs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aed4c7abbbd84477e449d032a70e4be64} 
+ list\mbox{[}typing.\+Any\mbox{]} pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+get\+\_\+ca\+\_\+certs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{typing.\+Literal\mbox{[}False\mbox{]} }]{binary\+\_\+form}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a04596c77b6affecb956ab902fce4ce67}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!get\_ca\_certs@{get\_ca\_certs}}
+\index{get\_ca\_certs@{get\_ca\_certs}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{get\_ca\_certs()}{get\_ca\_certs()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a04596c77b6affecb956ab902fce4ce67} 
+ list\mbox{[}bytes\mbox{]} pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+get\+\_\+ca\+\_\+certs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{typing.\+Literal\mbox{[}True\mbox{]} }]{binary\+\_\+form}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3e165598236b811999076e565f6464f5}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!get\_ciphers@{get\_ciphers}}
+\index{get\_ciphers@{get\_ciphers}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{get\_ciphers()}{get\_ciphers()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3e165598236b811999076e565f6464f5} 
+ typing.\+Any pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+get\+\_\+ciphers (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a11b143c127c84c18ea6fcfdd3dc74710}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!hostname\_checks\_common\_name@{hostname\_checks\_common\_name}}
+\index{hostname\_checks\_common\_name@{hostname\_checks\_common\_name}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{hostname\_checks\_common\_name()}{hostname\_checks\_common\_name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a11b143c127c84c18ea6fcfdd3dc74710} 
+ bool pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+hostname\+\_\+checks\+\_\+common\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a6a7d9093b943b45733a1b134d93c9353}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!hostname\_checks\_common\_name@{hostname\_checks\_common\_name}}
+\index{hostname\_checks\_common\_name@{hostname\_checks\_common\_name}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{hostname\_checks\_common\_name()}{hostname\_checks\_common\_name()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a6a7d9093b943b45733a1b134d93c9353} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+hostname\+\_\+checks\+\_\+common\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3234bf0e030d1b60e15469a19e30c82e}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!keylog\_filename@{keylog\_filename}}
+\index{keylog\_filename@{keylog\_filename}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{keylog\_filename()}{keylog\_filename()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3234bf0e030d1b60e15469a19e30c82e} 
+ str pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+keylog\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa07eb51bd3a4d976548ea50d1f6fb06a}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!keylog\_filename@{keylog\_filename}}
+\index{keylog\_filename@{keylog\_filename}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{keylog\_filename()}{keylog\_filename()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa07eb51bd3a4d976548ea50d1f6fb06a} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+keylog\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa1dcf95b4b4ba8294a11be40104b6dd7}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!load\_cert\_chain@{load\_cert\_chain}}
+\index{load\_cert\_chain@{load\_cert\_chain}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{load\_cert\_chain()}{load\_cert\_chain()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa1dcf95b4b4ba8294a11be40104b6dd7} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+load\+\_\+cert\+\_\+chain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1truststore_1_1__api_a2774dff7c1a537b64e43caae76522226}{\+\_\+\+Str\+Or\+Bytes\+Path}}}]{certfile}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1truststore_1_1__api_a2774dff7c1a537b64e43caae76522226}{\+\_\+\+Str\+Or\+Bytes\+Path}} \texorpdfstring{$\vert$}{|} None }]{keyfile}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1truststore_1_1__api_a5cc64b0dac6d9106ff39439c3e67d911}{\+\_\+\+Password\+Type}} \texorpdfstring{$\vert$}{|} None }]{password}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3b6685dbaf566ac44f38d90b8f4f1776}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!load\_default\_certs@{load\_default\_certs}}
+\index{load\_default\_certs@{load\_default\_certs}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{load\_default\_certs()}{load\_default\_certs()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a3b6685dbaf566ac44f38d90b8f4f1776} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+load\+\_\+default\+\_\+certs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+Purpose }]{purpose}{ = {\ttfamily ssl.Purpose.SERVER\+\_\+AUTH}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a13f161c6c7ad421e6cbe3c0ef95f32a8}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!load\_verify\_locations@{load\_verify\_locations}}
+\index{load\_verify\_locations@{load\_verify\_locations}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{load\_verify\_locations()}{load\_verify\_locations()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a13f161c6c7ad421e6cbe3c0ef95f32a8} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+load\+\_\+verify\+\_\+locations (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}bytes\mbox{]} \texorpdfstring{$\vert$}{|} None }]{cafile}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}bytes\mbox{]} \texorpdfstring{$\vert$}{|} None }]{capath}{ = {\ttfamily None}, }\item[{typing.\+Union\mbox{[}str, "{}Buffer"{}, None\mbox{]} }]{cadata}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a242efca3d93ecc442bd7eb2f9b1fdd75}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!maximum\_version@{maximum\_version}}
+\index{maximum\_version@{maximum\_version}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{maximum\_version()}{maximum\_version()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a242efca3d93ecc442bd7eb2f9b1fdd75} 
+ ssl.\+TLSVersion pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+maximum\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_adbeab021be33e57b2c11dd03e8283a90}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!maximum\_version@{maximum\_version}}
+\index{maximum\_version@{maximum\_version}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{maximum\_version()}{maximum\_version()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_adbeab021be33e57b2c11dd03e8283a90} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+maximum\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+TLSVersion}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8e5be1611ea439d24a0dd2d8bc268607}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!minimum\_version@{minimum\_version}}
+\index{minimum\_version@{minimum\_version}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{minimum\_version()}{minimum\_version()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8e5be1611ea439d24a0dd2d8bc268607} 
+ ssl.\+TLSVersion pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+minimum\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa64e15df4b0de2c28e11ed61bd9a0159}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!minimum\_version@{minimum\_version}}
+\index{minimum\_version@{minimum\_version}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{minimum\_version()}{minimum\_version()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa64e15df4b0de2c28e11ed61bd9a0159} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+minimum\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+TLSVersion}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a6755b8a82c0de77273744b73a826678d}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!options@{options}}
+\index{options@{options}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a6755b8a82c0de77273744b73a826678d} 
+ ssl.\+Options pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+options (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a90bd5b81f087b6628b2f681ce6cffcd6}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!options@{options}}
+\index{options@{options}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a90bd5b81f087b6628b2f681ce6cffcd6} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+options (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+Options}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a2952545faa6bec35b8aebd9438969c2f}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!post\_handshake\_auth@{post\_handshake\_auth}}
+\index{post\_handshake\_auth@{post\_handshake\_auth}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{post\_handshake\_auth()}{post\_handshake\_auth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a2952545faa6bec35b8aebd9438969c2f} 
+ bool pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+post\+\_\+handshake\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa255c5ef82ba5cd1e1a7f79c5ffe8c6e}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!post\_handshake\_auth@{post\_handshake\_auth}}
+\index{post\_handshake\_auth@{post\_handshake\_auth}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{post\_handshake\_auth()}{post\_handshake\_auth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa255c5ef82ba5cd1e1a7f79c5ffe8c6e} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+post\+\_\+handshake\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_af49c9d9ea065ddecdeeb84fd2c1a1176}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!protocol@{protocol}}
+\index{protocol@{protocol}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_af49c9d9ea065ddecdeeb84fd2c1a1176} 
+ ssl.\+\_\+\+SSLMethod pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+protocol (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8455bcf3c5f8e7cc2f0d4ab455b72256}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!security\_level@{security\_level}}
+\index{security\_level@{security\_level}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{security\_level()}{security\_level()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8455bcf3c5f8e7cc2f0d4ab455b72256} 
+ int pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+security\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a14e4947de5dc29b344ccf075a346f530}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!session\_stats@{session\_stats}}
+\index{session\_stats@{session\_stats}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{session\_stats()}{session\_stats()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a14e4947de5dc29b344ccf075a346f530} 
+ dict\mbox{[}str, int\mbox{]} pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+session\+\_\+stats (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a24fa1d9c3b41e4784014bce77a6f944a}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!set\_alpn\_protocols@{set\_alpn\_protocols}}
+\index{set\_alpn\_protocols@{set\_alpn\_protocols}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{set\_alpn\_protocols()}{set\_alpn\_protocols()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a24fa1d9c3b41e4784014bce77a6f944a} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+set\+\_\+alpn\+\_\+protocols (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{typing.\+Iterable\mbox{[}str\mbox{]}}]{alpn\+\_\+protocols}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_abf2168c562ab8ec5016ef294e8a83aa5}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!set\_ciphers@{set\_ciphers}}
+\index{set\_ciphers@{set\_ciphers}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{set\_ciphers()}{set\_ciphers()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_abf2168c562ab8ec5016ef294e8a83aa5} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+set\+\_\+ciphers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{\+\_\+\+\_\+cipherlist}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a4d820b1280c54484bf2b138c39cb10dc}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!set\_default\_verify\_paths@{set\_default\_verify\_paths}}
+\index{set\_default\_verify\_paths@{set\_default\_verify\_paths}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{set\_default\_verify\_paths()}{set\_default\_verify\_paths()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a4d820b1280c54484bf2b138c39cb10dc} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+set\+\_\+default\+\_\+verify\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_ae7fad270ec5a97ce607d652599c17cb6}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!set\_npn\_protocols@{set\_npn\_protocols}}
+\index{set\_npn\_protocols@{set\_npn\_protocols}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{set\_npn\_protocols()}{set\_npn\_protocols()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_ae7fad270ec5a97ce607d652599c17cb6} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+set\+\_\+npn\+\_\+protocols (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{typing.\+Iterable\mbox{[}str\mbox{]}}]{npn\+\_\+protocols}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a72bba86d513db0fc6697d938970911a8}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!verify\_flags@{verify\_flags}}
+\index{verify\_flags@{verify\_flags}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{verify\_flags()}{verify\_flags()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a72bba86d513db0fc6697d938970911a8} 
+ ssl.\+Verify\+Flags pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+verify\+\_\+flags (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa444be911ebfc871d9bd478565234c1d}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!verify\_flags@{verify\_flags}}
+\index{verify\_flags@{verify\_flags}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{verify\_flags()}{verify\_flags()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aa444be911ebfc871d9bd478565234c1d} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+verify\+\_\+flags (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+Verify\+Flags}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aae09d282fb998f16597974e222045210}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!verify\_mode@{verify\_mode}}
+\index{verify\_mode@{verify\_mode}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{verify\_mode()}{verify\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_aae09d282fb998f16597974e222045210} 
+ ssl.\+Verify\+Mode pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+verify\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a67bf93eb45cc7e64d23933ef3feb0324}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!verify\_mode@{verify\_mode}}
+\index{verify\_mode@{verify\_mode}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{verify\_mode()}{verify\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a67bf93eb45cc7e64d23933ef3feb0324} 
+ None pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+verify\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+Verify\+Mode}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a180c192834b93d6a445132495f446b8d}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!wrap\_bio@{wrap\_bio}}
+\index{wrap\_bio@{wrap\_bio}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{wrap\_bio()}{wrap\_bio()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a180c192834b93d6a445132495f446b8d} 
+ ssl.\+SSLObject pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+wrap\+\_\+bio (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ssl.\+Memory\+BIO}]{incoming}{, }\item[{ssl.\+Memory\+BIO}]{outgoing}{, }\item[{bool }]{server\+\_\+side}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{server\+\_\+hostname}{ = {\ttfamily None}, }\item[{ssl.\+SSLSession \texorpdfstring{$\vert$}{|} None }]{session}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8b0f266212c30e70a4ba430664934af8}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!wrap\_socket@{wrap\_socket}}
+\index{wrap\_socket@{wrap\_socket}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{wrap\_socket()}{wrap\_socket()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_a8b0f266212c30e70a4ba430664934af8} 
+ ssl.\+SSLSocket pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+wrap\+\_\+socket (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{socket.\+socket}]{sock}{, }\item[{bool }]{server\+\_\+side}{ = {\ttfamily False}, }\item[{bool }]{do\+\_\+handshake\+\_\+on\+\_\+connect}{ = {\ttfamily True}, }\item[{bool }]{suppress\+\_\+ragged\+\_\+eofs}{ = {\ttfamily True}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{server\+\_\+hostname}{ = {\ttfamily None}, }\item[{ssl.\+SSLSession \texorpdfstring{$\vert$}{|} None }]{session}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_afb6a18dabdeb12d64c246b5f695b307f}\index{pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}!\_ctx@{\_ctx}}
+\index{\_ctx@{\_ctx}!pip.\_vendor.truststore.\_api.SSLContext@{pip.\_vendor.truststore.\_api.SSLContext}}
+\doxysubsubsection{\texorpdfstring{\_ctx}{\_ctx}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_afb6a18dabdeb12d64c246b5f695b307f} 
+pip.\+\_\+vendor.\+truststore.\+\_\+api.\+SSLContext.\+\_\+ctx = \+\_\+original\+\_\+\+SSLContext(\mbox{\hyperlink{classpip_1_1__vendor_1_1truststore_1_1__api_1_1_s_s_l_context_af49c9d9ea065ddecdeeb84fd2c1a1176}{protocol}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/truststore/\mbox{\hyperlink{__api_8py}{\+\_\+api.\+py}}\end{DoxyCompactItemize}

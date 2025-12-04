@@ -1,0 +1,386 @@
+\doxysection{aiohttp.\+cookiejar.\+Cookie\+Jar Class Reference}
+\hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar}{}\label{classaiohttp_1_1cookiejar_1_1_cookie_jar}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+Inheritance diagram for aiohttp.\+cookiejar.\+Cookie\+Jar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1cookiejar_1_1_cookie_jar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a89af2ea34437eb19f44a1633e3fd089b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, bool unsafe=False, bool \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a3713ba51475f1ce5b56b1cbf328a9801}{quote\+\_\+cookie}}=True, Union\mbox{[}Str\+Or\+URL, List\mbox{[}Str\+Or\+URL\mbox{]}, None\mbox{]} treat\+\_\+as\+\_\+secure\+\_\+origin=None, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a3713ba51475f1ce5b56b1cbf328a9801}{quote\+\_\+cookie}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a4e2d9ba7c0172aaf89a78a9b1707dbdc}{save}} (self, Path\+Like file\+\_\+path)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a4e4398efbaa21ff2cc56ee973529a596}{load}} (self, Path\+Like file\+\_\+path)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ab081cd06bb11e54b91964801fc180e63}{clear}} (self, Optional\mbox{[}Clear\+Cookie\+Predicate\mbox{]} predicate=None)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a2b8099a6c7b7e57a01fc760287e4c4c4}{clear\+\_\+domain}} (self, str domain)
+\item 
+"{}Iterator\mbox{[}Morsel\mbox{[}str\mbox{]}\mbox{]}"{} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5d429623988a2606766869213393090b}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a05a40b7f1a224916811b74fb4b5deafc}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a376f114946c42c9e5f158b3062478e0b}{update\+\_\+cookies}} (self, Loose\+Cookies cookies, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} response\+\_\+url=\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}())
+\item 
+"{}Base\+Cookie\mbox{[}str\mbox{]}"{} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a73f9a8ada727e64ec5df882fe80f0769}{filter\+\_\+cookies}} (self, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} request\+\_\+url=\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}())
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a3ffec625f39d952d96022cf86ccc0e61}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a1b3c8a246f9f9c2031d344ed8e7d72e9}{update\+\_\+cookies\+\_\+from\+\_\+headers}} (self, Sequence\mbox{[}str\mbox{]} headers, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} response\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a20ae9b1a9572c659b5f79524bf15c718}{DATE\+\_\+\+TOKENS\+\_\+\+RE}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ac1960c3b64ae978a0f000ad4680ee736}{DATE\+\_\+\+HMS\+\_\+\+TIME\+\_\+\+RE}} = re.\+compile(r"{}(\textbackslash{}d\{1,2\})\+:(\textbackslash{}d\{1,2\})\+:(\textbackslash{}d\{1,2\})"{})
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a08527aa57bcefe667dcc64b24f7dc83f}{DATE\+\_\+\+DAY\+\_\+\+OF\+\_\+\+MONTH\+\_\+\+RE}} = re.\+compile(r"{}(\textbackslash{}d\{1,2\})"{})
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_aa6516632e247dac08a6b1f5e7c1cfc44}{DATE\+\_\+\+MONTH\+\_\+\+RE}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5c9a0dae20fcdccefc12755bf7542228}{DATE\+\_\+\+YEAR\+\_\+\+RE}} = re.\+compile(r"{}(\textbackslash{}d\{2,4\})"{})
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a83bd03e9578074789e3038346d9de72b}{MAX\+\_\+\+TIME}}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a6670e41809a277f4b07aa5cf3273cf34}{MAX\+\_\+\+TIME}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}31 -\/ 1
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5d3159bd346fcd9101c5f01d4fa68d43}{SUB\+\_\+\+MAX\+\_\+\+TIME}} = \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a83bd03e9578074789e3038346d9de72b}{MAX\+\_\+\+TIME}} -\/ 1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_aa37843f3f320e2eaf85bbe62cebb2778}{\+\_\+do\+\_\+expiration}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad525c3daf36d41f3a407050a273afb40}{\+\_\+delete\+\_\+cookies}} (self, List\mbox{[}Tuple\mbox{[}str, str, str\mbox{]}\mbox{]} to\+\_\+del)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_aea226fad6b5b4d7cb05bcd762dcea594}{\+\_\+expire\+\_\+cookie}} (self, float when, str domain, str path, str name)
+\item 
+Morsel\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a304a7278a38bd34fac2dbacf52bfb691}{\+\_\+build\+\_\+morsel}} (self, Morsel\mbox{[}str\mbox{]} cookie)
+\item 
+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a93c8258fd279d9bc5f306cc325db9ef4}{\+\_\+parse\+\_\+date}} (cls, str date\+\_\+str)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a68f26558accf54504fb12043fdc18e94}{\+\_\+is\+\_\+domain\+\_\+match}} (str domain, str hostname)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Default\+Dict\mbox{[}Tuple\mbox{[}str, str\mbox{]}, Simple\+Cookie\mbox{]} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a1e5e4acc72167f22646634dcdf0c1020}{\+\_\+cookies}}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a0c27a37fdfa2b59131e00d01d8a20e80}{\+\_\+morsel\+\_\+cache}}
+\item 
+Set\mbox{[}Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a9ad1b35653a483067ba36022abc13d79}{\+\_\+host\+\_\+only\+\_\+cookies}} = set()
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a8a5bffacafa448ae8cdcd50ec45bd2ed}{\+\_\+unsafe}} = unsafe
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ace9b53f8c0145d5a4704432ec1df1e5a}{\+\_\+quote\+\_\+cookie}} = \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a3713ba51475f1ce5b56b1cbf328a9801}{quote\+\_\+cookie}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad1940687a499b875be12552a8e32d59f}{\+\_\+treat\+\_\+as\+\_\+secure\+\_\+origin}} = treat\+\_\+as\+\_\+secure\+\_\+origin
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad68f00e34bfc962d5a7a590296bb0953}{\+\_\+expire\+\_\+heap}} = \mbox{[}$\,$\mbox{]}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad377645cc0605a011e5afbb14c758789}{\+\_\+expirations}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a107dcb24c2e6c255ab8a10c2b4511c6a}{\+\_\+loop}} = loop or asyncio.\+get\+\_\+running\+\_\+loop()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements cookie storage adhering to RFC 6265.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a89af2ea34437eb19f44a1633e3fd089b}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a89af2ea34437eb19f44a1633e3fd089b} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{unsafe}{ = {\ttfamily False}, }\item[{bool }]{quote\+\_\+cookie}{ = {\ttfamily True}, }\item[{Union\mbox{[}Str\+Or\+URL, List\mbox{[}Str\+Or\+URL\mbox{]}, None\mbox{]} }]{treat\+\_\+as\+\_\+secure\+\_\+origin}{ = {\ttfamily None}, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5d429623988a2606766869213393090b}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5d429623988a2606766869213393090b} 
+ "{}Iterator\mbox{[}Morsel\mbox{[}str\mbox{]}\mbox{]}"{} aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a05a40b7f1a224916811b74fb4b5deafc}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a05a40b7f1a224916811b74fb4b5deafc} 
+ int aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return number of cookies.
+
+This function does not iterate self to avoid unnecessary expiration
+checks.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a304a7278a38bd34fac2dbacf52bfb691}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_build\_morsel@{\_build\_morsel}}
+\index{\_build\_morsel@{\_build\_morsel}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_build\_morsel()}{\_build\_morsel()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a304a7278a38bd34fac2dbacf52bfb691} 
+ Morsel\mbox{[}str\mbox{]} aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+build\+\_\+morsel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Morsel\mbox{[}str\mbox{]}}]{cookie}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Build a morsel for sending, respecting quote_cookie setting.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad525c3daf36d41f3a407050a273afb40}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_delete\_cookies@{\_delete\_cookies}}
+\index{\_delete\_cookies@{\_delete\_cookies}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_delete\_cookies()}{\_delete\_cookies()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad525c3daf36d41f3a407050a273afb40} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+delete\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tuple\mbox{[}str, str, str\mbox{]}\mbox{]}}]{to\+\_\+del}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_aa37843f3f320e2eaf85bbe62cebb2778}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_do\_expiration@{\_do\_expiration}}
+\index{\_do\_expiration@{\_do\_expiration}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_do\_expiration()}{\_do\_expiration()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_aa37843f3f320e2eaf85bbe62cebb2778} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+do\+\_\+expiration (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Remove expired cookies.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_aea226fad6b5b4d7cb05bcd762dcea594}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_expire\_cookie@{\_expire\_cookie}}
+\index{\_expire\_cookie@{\_expire\_cookie}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_expire\_cookie()}{\_expire\_cookie()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_aea226fad6b5b4d7cb05bcd762dcea594} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+expire\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{when}{, }\item[{str}]{domain}{, }\item[{str}]{path}{, }\item[{str}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a68f26558accf54504fb12043fdc18e94}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_is\_domain\_match@{\_is\_domain\_match}}
+\index{\_is\_domain\_match@{\_is\_domain\_match}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_is\_domain\_match()}{\_is\_domain\_match()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a68f26558accf54504fb12043fdc18e94} 
+ bool aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+is\+\_\+domain\+\_\+match (\begin{DoxyParamCaption}\item[{str}]{domain}{, }\item[{str}]{hostname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implements domain matching adhering to RFC 6265.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a93c8258fd279d9bc5f306cc325db9ef4}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_parse\_date@{\_parse\_date}}
+\index{\_parse\_date@{\_parse\_date}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_parse\_date()}{\_parse\_date()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a93c8258fd279d9bc5f306cc325db9ef4} 
+ Optional\mbox{[}int\mbox{]} aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+parse\+\_\+date (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{date\+\_\+str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implements date string parsing adhering to RFC 6265.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ab081cd06bb11e54b91964801fc180e63}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!clear@{clear}}
+\index{clear@{clear}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ab081cd06bb11e54b91964801fc180e63} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Clear\+Cookie\+Predicate\mbox{]} }]{predicate}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear all cookies if no predicate is passed.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a29f3fa0c12e3e6d340e573ac8762eed1}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a2b8099a6c7b7e57a01fc760287e4c4c4}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!clear\_domain@{clear\_domain}}
+\index{clear\_domain@{clear\_domain}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{clear\_domain()}{clear\_domain()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a2b8099a6c7b7e57a01fc760287e4c4c4} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+clear\+\_\+domain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{domain}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear all cookies for domain and all subdomains.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_aa28fb148c31551106efd60af87bd9cda}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a73f9a8ada727e64ec5df882fe80f0769}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!filter\_cookies@{filter\_cookies}}
+\index{filter\_cookies@{filter\_cookies}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{filter\_cookies()}{filter\_cookies()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a73f9a8ada727e64ec5df882fe80f0769} 
+ "{}Base\+Cookie\mbox{[}str\mbox{]}"{} aiohttp.\+cookiejar.\+Cookie\+Jar.\+filter\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} }]{request\+\_\+url}{ = {\ttfamily \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns this jar's cookies filtered by their attributes.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a2c3578edfd18a04ac3c50819e574f45c}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a4e4398efbaa21ff2cc56ee973529a596}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!load@{load}}
+\index{load@{load}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a4e4398efbaa21ff2cc56ee973529a596} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+load (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Path\+Like}]{file\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a3713ba51475f1ce5b56b1cbf328a9801}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!quote\_cookie@{quote\_cookie}}
+\index{quote\_cookie@{quote\_cookie}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{quote\_cookie()}{quote\_cookie()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a3713ba51475f1ce5b56b1cbf328a9801} 
+ bool aiohttp.\+cookiejar.\+Cookie\+Jar.\+quote\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if cookies should be quoted.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_ac931f684b0bbda9af3647e8129cfd6b4}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a4e2d9ba7c0172aaf89a78a9b1707dbdc}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!save@{save}}
+\index{save@{save}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a4e2d9ba7c0172aaf89a78a9b1707dbdc} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Path\+Like}]{file\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a376f114946c42c9e5f158b3062478e0b}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!update\_cookies@{update\_cookies}}
+\index{update\_cookies@{update\_cookies}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{update\_cookies()}{update\_cookies()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a376f114946c42c9e5f158b3062478e0b} 
+ None aiohttp.\+cookiejar.\+Cookie\+Jar.\+update\+\_\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Loose\+Cookies}]{cookies}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} }]{response\+\_\+url}{ = {\ttfamily \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update cookies.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_cookie_jar_a0f2a5ab762363b4c63c51de5f583594f}{aiohttp.\+abc.\+Abstract\+Cookie\+Jar}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a1e5e4acc72167f22646634dcdf0c1020}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_cookies@{\_cookies}}
+\index{\_cookies@{\_cookies}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_cookies}{\_cookies}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a1e5e4acc72167f22646634dcdf0c1020} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+cookies\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ defaultdict(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ SimpleCookie}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad377645cc0605a011e5afbb14c758789}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_expirations@{\_expirations}}
+\index{\_expirations@{\_expirations}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_expirations}{\_expirations}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad377645cc0605a011e5afbb14c758789} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+expirations = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad68f00e34bfc962d5a7a590296bb0953}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_expire\_heap@{\_expire\_heap}}
+\index{\_expire\_heap@{\_expire\_heap}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_expire\_heap}{\_expire\_heap}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad68f00e34bfc962d5a7a590296bb0953} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+expire\+\_\+heap = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a9ad1b35653a483067ba36022abc13d79}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_host\_only\_cookies@{\_host\_only\_cookies}}
+\index{\_host\_only\_cookies@{\_host\_only\_cookies}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_host\_only\_cookies}{\_host\_only\_cookies}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a9ad1b35653a483067ba36022abc13d79} 
+Set\mbox{[}Tuple\mbox{[}str, str\mbox{]}\mbox{]} aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+host\+\_\+only\+\_\+cookies = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a0c27a37fdfa2b59131e00d01d8a20e80}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_morsel\_cache@{\_morsel\_cache}}
+\index{\_morsel\_cache@{\_morsel\_cache}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_morsel\_cache}{\_morsel\_cache}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a0c27a37fdfa2b59131e00d01d8a20e80} 
+tuple aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+morsel\+\_\+cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ defaultdict(dict)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ace9b53f8c0145d5a4704432ec1df1e5a}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_quote\_cookie@{\_quote\_cookie}}
+\index{\_quote\_cookie@{\_quote\_cookie}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_quote\_cookie}{\_quote\_cookie}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ace9b53f8c0145d5a4704432ec1df1e5a} 
+bool aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+quote\+\_\+cookie = \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a3713ba51475f1ce5b56b1cbf328a9801}{quote\+\_\+cookie}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad1940687a499b875be12552a8e32d59f}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_treat\_as\_secure\_origin@{\_treat\_as\_secure\_origin}}
+\index{\_treat\_as\_secure\_origin@{\_treat\_as\_secure\_origin}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_treat\_as\_secure\_origin}{\_treat\_as\_secure\_origin}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ad1940687a499b875be12552a8e32d59f} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+treat\+\_\+as\+\_\+secure\+\_\+origin = treat\+\_\+as\+\_\+secure\+\_\+origin\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a8a5bffacafa448ae8cdcd50ec45bd2ed}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!\_unsafe@{\_unsafe}}
+\index{\_unsafe@{\_unsafe}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{\_unsafe}{\_unsafe}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a8a5bffacafa448ae8cdcd50ec45bd2ed} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+\_\+unsafe = unsafe\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a08527aa57bcefe667dcc64b24f7dc83f}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!DATE\_DAY\_OF\_MONTH\_RE@{DATE\_DAY\_OF\_MONTH\_RE}}
+\index{DATE\_DAY\_OF\_MONTH\_RE@{DATE\_DAY\_OF\_MONTH\_RE}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{DATE\_DAY\_OF\_MONTH\_RE}{DATE\_DAY\_OF\_MONTH\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a08527aa57bcefe667dcc64b24f7dc83f} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+DATE\+\_\+\+DAY\+\_\+\+OF\+\_\+\+MONTH\+\_\+\+RE = re.\+compile(r"{}(\textbackslash{}d\{1,2\})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_ac1960c3b64ae978a0f000ad4680ee736}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!DATE\_HMS\_TIME\_RE@{DATE\_HMS\_TIME\_RE}}
+\index{DATE\_HMS\_TIME\_RE@{DATE\_HMS\_TIME\_RE}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{DATE\_HMS\_TIME\_RE}{DATE\_HMS\_TIME\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_ac1960c3b64ae978a0f000ad4680ee736} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+DATE\+\_\+\+HMS\+\_\+\+TIME\+\_\+\+RE = re.\+compile(r"{}(\textbackslash{}d\{1,2\})\+:(\textbackslash{}d\{1,2\})\+:(\textbackslash{}d\{1,2\})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_aa6516632e247dac08a6b1f5e7c1cfc44}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!DATE\_MONTH\_RE@{DATE\_MONTH\_RE}}
+\index{DATE\_MONTH\_RE@{DATE\_MONTH\_RE}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{DATE\_MONTH\_RE}{DATE\_MONTH\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_aa6516632e247dac08a6b1f5e7c1cfc44} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+DATE\+\_\+\+MONTH\+\_\+\+RE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}(jan)|(feb)|(mar)|(apr)|(may)|(jun)|(jul)|(aug)|(sep)|(oct)|(nov)|(dec)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ re.I,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a20ae9b1a9572c659b5f79524bf15c718}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!DATE\_TOKENS\_RE@{DATE\_TOKENS\_RE}}
+\index{DATE\_TOKENS\_RE@{DATE\_TOKENS\_RE}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{DATE\_TOKENS\_RE}{DATE\_TOKENS\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a20ae9b1a9572c659b5f79524bf15c718} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+DATE\+\_\+\+TOKENS\+\_\+\+RE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}[\(\backslash\)x09\(\backslash\)x20-\/\(\backslash\)x2F\(\backslash\)x3B-\/\(\backslash\)x40\(\backslash\)x5B-\/\(\backslash\)x60\(\backslash\)x7B-\/\(\backslash\)x7E]*"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?P<token>[\(\backslash\)x00-\/\(\backslash\)x08\(\backslash\)x0A-\/\(\backslash\)x1F\(\backslash\)d:a-\/zA-\/Z\(\backslash\)x7F-\/\(\backslash\)xFF]+)"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5c9a0dae20fcdccefc12755bf7542228}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!DATE\_YEAR\_RE@{DATE\_YEAR\_RE}}
+\index{DATE\_YEAR\_RE@{DATE\_YEAR\_RE}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{DATE\_YEAR\_RE}{DATE\_YEAR\_RE}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5c9a0dae20fcdccefc12755bf7542228} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+DATE\+\_\+\+YEAR\+\_\+\+RE = re.\+compile(r"{}(\textbackslash{}d\{2,4\})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a83bd03e9578074789e3038346d9de72b}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!MAX\_TIME@{MAX\_TIME}}
+\index{MAX\_TIME@{MAX\_TIME}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{MAX\_TIME}{MAX\_TIME}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a83bd03e9578074789e3038346d9de72b} 
+aiohttp.\+cookiejar.\+Cookie\+Jar.\+MAX\+\_\+\+TIME\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ int(datetime.datetime.max.replace(tzinfo=datetime.timezone.utc).timestamp())\ -\/\ 1}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a6670e41809a277f4b07aa5cf3273cf34}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!MAX\_TIME@{MAX\_TIME}}
+\index{MAX\_TIME@{MAX\_TIME}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{MAX\_TIME}{MAX\_TIME}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a6670e41809a277f4b07aa5cf3273cf34} 
+int aiohttp.\+cookiejar.\+Cookie\+Jar.\+MAX\+\_\+\+TIME = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}31 -\/ 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5d3159bd346fcd9101c5f01d4fa68d43}\index{aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}!SUB\_MAX\_TIME@{SUB\_MAX\_TIME}}
+\index{SUB\_MAX\_TIME@{SUB\_MAX\_TIME}!aiohttp.cookiejar.CookieJar@{aiohttp.cookiejar.CookieJar}}
+\doxysubsubsection{\texorpdfstring{SUB\_MAX\_TIME}{SUB\_MAX\_TIME}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1cookiejar_1_1_cookie_jar_a5d3159bd346fcd9101c5f01d4fa68d43} 
+tuple aiohttp.\+cookiejar.\+Cookie\+Jar.\+SUB\+\_\+\+MAX\+\_\+\+TIME = \mbox{\hyperlink{classaiohttp_1_1cookiejar_1_1_cookie_jar_a83bd03e9578074789e3038346d9de72b}{MAX\+\_\+\+TIME}} -\/ 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{cookiejar_8py}{cookiejar.\+py}}\end{DoxyCompactItemize}

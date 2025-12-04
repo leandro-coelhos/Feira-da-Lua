@@ -1,0 +1,154 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_af941ee26593ddb65570fab0e519ff62e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Callable prf, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1_mode}{Mode}} mode, int length, int rlen, int\texorpdfstring{$\vert$}{|}None llen, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1_counter_location}{Counter\+Location}} location, int\texorpdfstring{$\vert$}{|}None break\+\_\+location, bytes\texorpdfstring{$\vert$}{|}None label, bytes\texorpdfstring{$\vert$}{|}None context, bytes\texorpdfstring{$\vert$}{|}None fixed)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ac4f71bf222caa7dea3d59aba8e3d7e71}{derive}} (self, \mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} key\+\_\+material, int prf\+\_\+output\+\_\+size)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ae29dbef94394d2d3989c6a58e3390a30}{\+\_\+generate\+\_\+fixed\+\_\+input}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a9e6440f1d67ada58acdb122b6bb7aebe}{\+\_\+valid\+\_\+byte\+\_\+length}} (int value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a2d5e7f9e3f33e9a9c1548f85861aaa7c}{\+\_\+prf}} = prf
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a6de6f02fe53360d29087b00e23c20690}{\+\_\+mode}} = mode
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a1e49a6cd3d2402751cf5817ab9f3008b}{\+\_\+length}} = length
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a3d8cb3eff7426abbb4ebce586c454120}{\+\_\+rlen}} = rlen
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a2a6cce41d19368c0107e21c4ba751238}{\+\_\+llen}} = llen
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ae6d5976ad649942630ff0ee7ae083e0a}{\+\_\+location}} = location
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_aa1203d85099699a3ff4ba026a9c7af0a}{\+\_\+break\+\_\+location}} = break\+\_\+location
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_accbd8e56711137fbc2a7aa10ca110f20}{\+\_\+label}} = label
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a7d55a015f13ca98bad14a6dced6c007b}{\+\_\+context}} = context
+\item 
+bool \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ab9c5395eb4d7b969a0a908e3c7fcbee3}{\+\_\+used}} = False
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_aae64a4f4ff934633e421f17af2fc224c}{\+\_\+fixed\+\_\+data}} = fixed
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_af941ee26593ddb65570fab0e519ff62e}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_af941ee26593ddb65570fab0e519ff62e} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Callable}]{prf}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1_mode}{Mode}}}]{mode}{, }\item[{int}]{length}{, }\item[{int}]{rlen}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{llen}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1_counter_location}{Counter\+Location}}}]{location}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{break\+\_\+location}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None}]{label}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None}]{context}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None}]{fixed}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ae29dbef94394d2d3989c6a58e3390a30}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_generate\_fixed\_input@{\_generate\_fixed\_input}}
+\index{\_generate\_fixed\_input@{\_generate\_fixed\_input}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_generate\_fixed\_input()}{\_generate\_fixed\_input()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ae29dbef94394d2d3989c6a58e3390a30} 
+ bytes cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+generate\+\_\+fixed\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a9e6440f1d67ada58acdb122b6bb7aebe}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_valid\_byte\_length@{\_valid\_byte\_length}}
+\index{\_valid\_byte\_length@{\_valid\_byte\_length}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_valid\_byte\_length()}{\_valid\_byte\_length()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a9e6440f1d67ada58acdb122b6bb7aebe} 
+ bool cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+valid\+\_\+byte\+\_\+length (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ac4f71bf222caa7dea3d59aba8e3d7e71}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!derive@{derive}}
+\index{derive@{derive}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{derive()}{derive()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ac4f71bf222caa7dea3d59aba8e3d7e71} 
+ bytes cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+derive (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{key\+\_\+material}{, }\item[{int     }]{prf\+\_\+output\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_aa1203d85099699a3ff4ba026a9c7af0a}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_break\_location@{\_break\_location}}
+\index{\_break\_location@{\_break\_location}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_break\_location}{\_break\_location}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_aa1203d85099699a3ff4ba026a9c7af0a} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+break\+\_\+location = break\+\_\+location\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a7d55a015f13ca98bad14a6dced6c007b}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_context@{\_context}}
+\index{\_context@{\_context}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a7d55a015f13ca98bad14a6dced6c007b} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+context = context\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_aae64a4f4ff934633e421f17af2fc224c}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_fixed\_data@{\_fixed\_data}}
+\index{\_fixed\_data@{\_fixed\_data}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_fixed\_data}{\_fixed\_data}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_aae64a4f4ff934633e421f17af2fc224c} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+fixed\+\_\+data = fixed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_accbd8e56711137fbc2a7aa10ca110f20}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_label@{\_label}}
+\index{\_label@{\_label}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_label}{\_label}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_accbd8e56711137fbc2a7aa10ca110f20} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+label = label\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a1e49a6cd3d2402751cf5817ab9f3008b}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_length@{\_length}}
+\index{\_length@{\_length}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_length}{\_length}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a1e49a6cd3d2402751cf5817ab9f3008b} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+length = length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a2a6cce41d19368c0107e21c4ba751238}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_llen@{\_llen}}
+\index{\_llen@{\_llen}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_llen}{\_llen}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a2a6cce41d19368c0107e21c4ba751238} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+llen = llen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ae6d5976ad649942630ff0ee7ae083e0a}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_location@{\_location}}
+\index{\_location@{\_location}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_location}{\_location}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ae6d5976ad649942630ff0ee7ae083e0a} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+location = location\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a6de6f02fe53360d29087b00e23c20690}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_mode@{\_mode}}
+\index{\_mode@{\_mode}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_mode}{\_mode}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a6de6f02fe53360d29087b00e23c20690} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+mode = mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a2d5e7f9e3f33e9a9c1548f85861aaa7c}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_prf@{\_prf}}
+\index{\_prf@{\_prf}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_prf}{\_prf}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a2d5e7f9e3f33e9a9c1548f85861aaa7c} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+prf = prf\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a3d8cb3eff7426abbb4ebce586c454120}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_rlen@{\_rlen}}
+\index{\_rlen@{\_rlen}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_rlen}{\_rlen}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_a3d8cb3eff7426abbb4ebce586c454120} 
+cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+rlen = rlen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ab9c5395eb4d7b969a0a908e3c7fcbee3}\index{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}!\_used@{\_used}}
+\index{\_used@{\_used}!cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver@{cryptography.hazmat.primitives.kdf.kbkdf.\_KBKDFDeriver}}
+\doxysubsubsection{\texorpdfstring{\_used}{\_used}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1kdf_1_1kbkdf_1_1___k_b_k_d_f_deriver_ab9c5395eb4d7b969a0a908e3c7fcbee3} 
+bool cryptography.\+hazmat.\+primitives.\+kdf.\+kbkdf.\+\_\+\+KBKDFDeriver.\+\_\+used = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/kdf/\mbox{\hyperlink{kbkdf_8py}{kbkdf.\+py}}\end{DoxyCompactItemize}

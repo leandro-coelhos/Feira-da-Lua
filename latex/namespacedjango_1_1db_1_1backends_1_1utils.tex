@@ -1,0 +1,144 @@
+\doxysection{django.\+db.\+backends.\+utils Namespace Reference}
+\hypertarget{namespacedjango_1_1db_1_1backends_1_1utils}{}\label{namespacedjango_1_1db_1_1backends_1_1utils}\index{django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_debug_wrapper}{Cursor\+Debug\+Wrapper}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper}{Cursor\+Wrapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_a3b15e9d49b52134465be8bbef0cc1ac0}{debug\+\_\+transaction}} (\mbox{\hyperlink{namespacedjango_1_1db_ae7b00a677e3c99c34670870d343c0341}{connection}}, sql)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_a1855319fd528accf25c7b0a994f4dc26}{split\+\_\+tzname\+\_\+delta}} (tzname)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_a3907906a879364fa1b8f848bca4f6902}{typecast\+\_\+date}} (s)
+\begin{DoxyCompactList}\small\item\em Converters from database (string) to Python \#. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_a8fb56026843e7a3b8a0df17b1ddaaadb}{typecast\+\_\+time}} (s)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_aac1515dd4de306bae945e4d664a6dc81}{typecast\+\_\+timestamp}} (s)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_ac9db7d89c743b1ec6978ef9dd059847b}{split\+\_\+identifier}} (identifier)
+\begin{DoxyCompactList}\small\item\em Converters from Python to database (string) \#. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_ab3a353e469456663fefb0c6551e25f2c}{truncate\+\_\+name}} (identifier, length=None, hash\+\_\+len=4)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_aedee921c36d255ed3045a165447f9108}{names\+\_\+digest}} (\texorpdfstring{$\ast$}{*}args, length)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_abd00e102cb5feccd39e2281b6e348005}{format\+\_\+number}} (value, max\+\_\+digits, decimal\+\_\+places)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_acfc64f3a1300b3db4d34a172c1d1dd88}{strip\+\_\+quotes}} (table\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1utils_a3218113204d9def1f194f2062a74d94c}{logger}} = logging.\+get\+Logger("{}django.\+db.\+backends"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_a3b15e9d49b52134465be8bbef0cc1ac0}\index{django.db.backends.utils@{django.db.backends.utils}!debug\_transaction@{debug\_transaction}}
+\index{debug\_transaction@{debug\_transaction}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{debug\_transaction()}{debug\_transaction()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_a3b15e9d49b52134465be8bbef0cc1ac0} 
+django.\+db.\+backends.\+utils.\+debug\+\_\+transaction (\begin{DoxyParamCaption}\item[{}]{connection}{, }\item[{}]{sql}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_abd00e102cb5feccd39e2281b6e348005}\index{django.db.backends.utils@{django.db.backends.utils}!format\_number@{format\_number}}
+\index{format\_number@{format\_number}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{format\_number()}{format\_number()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_abd00e102cb5feccd39e2281b6e348005} 
+django.\+db.\+backends.\+utils.\+format\+\_\+number (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{max\+\_\+digits}{, }\item[{}]{decimal\+\_\+places}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format a number into a string with the requisite number of digits and
+decimal places.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_aedee921c36d255ed3045a165447f9108}\index{django.db.backends.utils@{django.db.backends.utils}!names\_digest@{names\_digest}}
+\index{names\_digest@{names\_digest}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{names\_digest()}{names\_digest()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_aedee921c36d255ed3045a165447f9108} 
+django.\+db.\+backends.\+utils.\+names\+\_\+digest (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a 32-bit digest of a set of arguments that can be used to shorten
+identifying names.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_ac9db7d89c743b1ec6978ef9dd059847b}\index{django.db.backends.utils@{django.db.backends.utils}!split\_identifier@{split\_identifier}}
+\index{split\_identifier@{split\_identifier}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{split\_identifier()}{split\_identifier()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_ac9db7d89c743b1ec6978ef9dd059847b} 
+django.\+db.\+backends.\+utils.\+split\+\_\+identifier (\begin{DoxyParamCaption}\item[{}]{identifier}{}\end{DoxyParamCaption})}
+
+
+
+Converters from Python to database (string) \#. 
+
+\begin{DoxyVerb}Split an SQL identifier into a two element tuple of (namespace, name).
+
+The identifier could be a table, column, or sequence name might be prefixed
+by a namespace.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_a1855319fd528accf25c7b0a994f4dc26}\index{django.db.backends.utils@{django.db.backends.utils}!split\_tzname\_delta@{split\_tzname\_delta}}
+\index{split\_tzname\_delta@{split\_tzname\_delta}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{split\_tzname\_delta()}{split\_tzname\_delta()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_a1855319fd528accf25c7b0a994f4dc26} 
+django.\+db.\+backends.\+utils.\+split\+\_\+tzname\+\_\+delta (\begin{DoxyParamCaption}\item[{}]{tzname}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split a time zone name into a 3-tuple of (name, sign, offset).
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_acfc64f3a1300b3db4d34a172c1d1dd88}\index{django.db.backends.utils@{django.db.backends.utils}!strip\_quotes@{strip\_quotes}}
+\index{strip\_quotes@{strip\_quotes}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{strip\_quotes()}{strip\_quotes()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_acfc64f3a1300b3db4d34a172c1d1dd88} 
+django.\+db.\+backends.\+utils.\+strip\+\_\+quotes (\begin{DoxyParamCaption}\item[{}]{table\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Strip quotes off of quoted table names to make them safe for use in index
+names, sequence names, etc. For example '"USER"."TABLE"' (an Oracle naming
+scheme) becomes 'USER"."TABLE'.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_ab3a353e469456663fefb0c6551e25f2c}\index{django.db.backends.utils@{django.db.backends.utils}!truncate\_name@{truncate\_name}}
+\index{truncate\_name@{truncate\_name}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{truncate\_name()}{truncate\_name()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_ab3a353e469456663fefb0c6551e25f2c} 
+django.\+db.\+backends.\+utils.\+truncate\+\_\+name (\begin{DoxyParamCaption}\item[{}]{identifier}{, }\item[{}]{length}{ = {\ttfamily None}, }\item[{}]{hash\+\_\+len}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shorten an SQL identifier to a repeatable mangled version with the given
+length.
+
+If a quote stripped name contains a namespace, e.g. USERNAME"."TABLE,
+truncate the table portion only.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_a3907906a879364fa1b8f848bca4f6902}\index{django.db.backends.utils@{django.db.backends.utils}!typecast\_date@{typecast\_date}}
+\index{typecast\_date@{typecast\_date}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{typecast\_date()}{typecast\_date()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_a3907906a879364fa1b8f848bca4f6902} 
+django.\+db.\+backends.\+utils.\+typecast\+\_\+date (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Converters from database (string) to Python \#. 
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_a8fb56026843e7a3b8a0df17b1ddaaadb}\index{django.db.backends.utils@{django.db.backends.utils}!typecast\_time@{typecast\_time}}
+\index{typecast\_time@{typecast\_time}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{typecast\_time()}{typecast\_time()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_a8fb56026843e7a3b8a0df17b1ddaaadb} 
+django.\+db.\+backends.\+utils.\+typecast\+\_\+time (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_aac1515dd4de306bae945e4d664a6dc81}\index{django.db.backends.utils@{django.db.backends.utils}!typecast\_timestamp@{typecast\_timestamp}}
+\index{typecast\_timestamp@{typecast\_timestamp}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{typecast\_timestamp()}{typecast\_timestamp()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_aac1515dd4de306bae945e4d664a6dc81} 
+django.\+db.\+backends.\+utils.\+typecast\+\_\+timestamp (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1utils_a3218113204d9def1f194f2062a74d94c}\index{django.db.backends.utils@{django.db.backends.utils}!logger@{logger}}
+\index{logger@{logger}!django.db.backends.utils@{django.db.backends.utils}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1utils_a3218113204d9def1f194f2062a74d94c} 
+django.\+db.\+backends.\+utils.\+logger = logging.\+get\+Logger("{}django.\+db.\+backends"{})}
+

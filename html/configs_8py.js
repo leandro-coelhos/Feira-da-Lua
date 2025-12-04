@@ -1,0 +1,27 @@
+var configs_8py =
+[
+    [ "pygments.lexers.configs.IniLexer", "classpygments_1_1lexers_1_1configs_1_1_ini_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_ini_lexer" ],
+    [ "pygments.lexers.configs.DesktopLexer", "classpygments_1_1lexers_1_1configs_1_1_desktop_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_desktop_lexer" ],
+    [ "pygments.lexers.configs.SystemdLexer", "classpygments_1_1lexers_1_1configs_1_1_systemd_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_systemd_lexer" ],
+    [ "pygments.lexers.configs.RegeditLexer", "classpygments_1_1lexers_1_1configs_1_1_regedit_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_regedit_lexer" ],
+    [ "pygments.lexers.configs.PropertiesLexer", "classpygments_1_1lexers_1_1configs_1_1_properties_lexer.html", null ],
+    [ "pygments.lexers.configs.KconfigLexer", "classpygments_1_1lexers_1_1configs_1_1_kconfig_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_kconfig_lexer" ],
+    [ "pygments.lexers.configs.Cfengine3Lexer", "classpygments_1_1lexers_1_1configs_1_1_cfengine3_lexer.html", null ],
+    [ "pygments.lexers.configs.ApacheConfLexer", "classpygments_1_1lexers_1_1configs_1_1_apache_conf_lexer.html", null ],
+    [ "pygments.lexers.configs.SquidConfLexer", "classpygments_1_1lexers_1_1configs_1_1_squid_conf_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_squid_conf_lexer" ],
+    [ "pygments.lexers.configs.NginxConfLexer", "classpygments_1_1lexers_1_1configs_1_1_nginx_conf_lexer.html", null ],
+    [ "pygments.lexers.configs.LighttpdConfLexer", "classpygments_1_1lexers_1_1configs_1_1_lighttpd_conf_lexer.html", null ],
+    [ "pygments.lexers.configs.DockerLexer", "classpygments_1_1lexers_1_1configs_1_1_docker_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_docker_lexer" ],
+    [ "pygments.lexers.configs.TerraformLexer", "classpygments_1_1lexers_1_1configs_1_1_terraform_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_terraform_lexer" ],
+    [ "pygments.lexers.configs.TermcapLexer", "classpygments_1_1lexers_1_1configs_1_1_termcap_lexer.html", null ],
+    [ "pygments.lexers.configs.TerminfoLexer", "classpygments_1_1lexers_1_1configs_1_1_terminfo_lexer.html", null ],
+    [ "pygments.lexers.configs.PkgConfigLexer", "classpygments_1_1lexers_1_1configs_1_1_pkg_config_lexer.html", null ],
+    [ "pygments.lexers.configs.PacmanConfLexer", "classpygments_1_1lexers_1_1configs_1_1_pacman_conf_lexer.html", null ],
+    [ "pygments.lexers.configs.AugeasLexer", "classpygments_1_1lexers_1_1configs_1_1_augeas_lexer.html", null ],
+    [ "pygments.lexers.configs.TOMLLexer", "classpygments_1_1lexers_1_1configs_1_1_t_o_m_l_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_t_o_m_l_lexer" ],
+    [ "pygments.lexers.configs.NestedTextLexer", "classpygments_1_1lexers_1_1configs_1_1_nested_text_lexer.html", null ],
+    [ "pygments.lexers.configs.SingularityLexer", "classpygments_1_1lexers_1_1configs_1_1_singularity_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_singularity_lexer" ],
+    [ "pygments.lexers.configs.UnixConfigLexer", "classpygments_1_1lexers_1_1configs_1_1_unix_config_lexer.html", null ],
+    [ "pygments.lexers.configs._rx_indent", "namespacepygments_1_1lexers_1_1configs.html#a68e6a2ba99eec249181d8e02725bb93f", null ],
+    [ "pygments.lexers.configs.__all__", "namespacepygments_1_1lexers_1_1configs.html#ad1bd65fd60e43aeda05bb0530485db7c", null ]
+];

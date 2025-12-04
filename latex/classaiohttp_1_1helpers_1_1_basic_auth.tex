@@ -1,0 +1,76 @@
+\doxysection{aiohttp.\+helpers.\+Basic\+Auth Class Reference}
+\hypertarget{classaiohttp_1_1helpers_1_1_basic_auth}{}\label{classaiohttp_1_1helpers_1_1_basic_auth}\index{aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}}
+Inheritance diagram for aiohttp.\+helpers.\+Basic\+Auth\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classaiohttp_1_1helpers_1_1_basic_auth}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+"{}Basic\+Auth"{} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a8706f39354f2daae841038624d1022f5}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, str login, str password="{}"{}, str \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a9d9817aeb4f925a2e6f26d5de15f4325}{encoding}}="{}latin1"{})
+\item 
+"{}Basic\+Auth"{} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a2cfe34261e10d3bf4bef37f4343c9801}{decode}} (cls, str auth\+\_\+header, str \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a9d9817aeb4f925a2e6f26d5de15f4325}{encoding}}="{}latin1"{})
+\item 
+Optional\mbox{[}"{}Basic\+Auth"{}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a488889e9ee6b5fa72bb21d1ea351b01f}{from\+\_\+url}} (cls, \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url, \texorpdfstring{$\ast$}{*}, str \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a9d9817aeb4f925a2e6f26d5de15f4325}{encoding}}="{}latin1"{})
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a7343b7b0cd160acd9b127394f6ab476f}{encode}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth_a9d9817aeb4f925a2e6f26d5de15f4325}{encoding}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Http basic authentication helper.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_a8706f39354f2daae841038624d1022f5}\index{aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_basic_auth_a8706f39354f2daae841038624d1022f5} 
+ "{}Basic\+Auth"{} aiohttp.\+helpers.\+Basic\+Auth.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{login}{, }\item[{str }]{password}{ = {\ttfamily "{}"{}}, }\item[{str }]{encoding}{ = {\ttfamily "{}latin1"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_a2cfe34261e10d3bf4bef37f4343c9801}\index{aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}!decode@{decode}}
+\index{decode@{decode}!aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_basic_auth_a2cfe34261e10d3bf4bef37f4343c9801} 
+ "{}Basic\+Auth"{} aiohttp.\+helpers.\+Basic\+Auth.\+decode (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{auth\+\_\+header}{, }\item[{str }]{encoding}{ = {\ttfamily "{}latin1"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a BasicAuth object from an Authorization HTTP header.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_a7343b7b0cd160acd9b127394f6ab476f}\index{aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}!encode@{encode}}
+\index{encode@{encode}!aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_basic_auth_a7343b7b0cd160acd9b127394f6ab476f} 
+ str aiohttp.\+helpers.\+Basic\+Auth.\+encode (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode credentials.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_a488889e9ee6b5fa72bb21d1ea351b01f}\index{aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}!from\_url@{from\_url}}
+\index{from\_url@{from\_url}!aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}}
+\doxysubsubsection{\texorpdfstring{from\_url()}{from\_url()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_basic_auth_a488889e9ee6b5fa72bb21d1ea351b01f} 
+ Optional\mbox{[}"{}Basic\+Auth"{}\mbox{]} aiohttp.\+helpers.\+Basic\+Auth.\+from\+\_\+url (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}}]{url}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{encoding}{ = {\ttfamily "{}latin1"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create BasicAuth from url.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_basic_auth_a9d9817aeb4f925a2e6f26d5de15f4325}\index{aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}!encoding@{encoding}}
+\index{encoding@{encoding}!aiohttp.helpers.BasicAuth@{aiohttp.helpers.BasicAuth}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_basic_auth_a9d9817aeb4f925a2e6f26d5de15f4325} 
+aiohttp.\+helpers.\+Basic\+Auth.\+encoding}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{aiohttp_2helpers_8py}{helpers.\+py}}\end{DoxyCompactItemize}

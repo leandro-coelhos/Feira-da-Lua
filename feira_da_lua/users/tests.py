@@ -3,7 +3,7 @@ from .service import CreateUser, GetUserById, GetUserByEmail, UpdateUser, Delete
 from .service import CreateMarketer, GetMarketerById, GetMarketerByEmail, UpdateMarketer, DeleteMarketer
 from .service import CreateAvaliation, GetAvaliationById, GetAvaliationsByUser, GetAvaliationsByMarketplace
 from .service import UpdateAvaliation, DeleteAvaliation
-from marketplace.models import MarketPlace
+from feira_da_lua.marketplace.models import MarketPlace
 
 # Service tests
 

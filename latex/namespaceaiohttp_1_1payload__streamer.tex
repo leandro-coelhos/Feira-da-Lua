@@ -1,0 +1,53 @@
+\doxysection{aiohttp.\+payload\+\_\+streamer Namespace Reference}
+\hypertarget{namespaceaiohttp_1_1payload__streamer}{}\label{namespaceaiohttp_1_1payload__streamer}\index{aiohttp.payload\_streamer@{aiohttp.payload\_streamer}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1payload__streamer_1_1__stream__wrapper}{\+\_\+stream\+\_\+wrapper}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1payload__streamer_1_1streamer}{streamer}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1payload__streamer_1_1_stream_payload}{Stream\+Payload}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1payload__streamer_1_1_stream_wrapper_payload}{Stream\+Wrapper\+Payload}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1payload__streamer_a909566e8b8b7bd870806c1507709a0b3}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = ("{}streamer"{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Payload implementation for coroutines as data provider.
+
+As a simple case, you can upload data from file::
+
+   @aiohttp.streamer
+   async def file_sender(writer, file_name=None):
+      with open(file_name, 'rb') as f:
+          chunk = f.read(2**16)
+          while chunk:
+              await writer.write(chunk)
+
+              chunk = f.read(2**16)
+
+Then you can use `file_sender` like this:
+
+    async with session.post('http://httpbin.org/post',
+                            data=file_sender(file_name='huge_file')) as resp:
+        print(await resp.text())
+
+..note:: Coroutine must accept `writer` as first argument
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceaiohttp_1_1payload__streamer_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceaiohttp_1_1payload__streamer_a909566e8b8b7bd870806c1507709a0b3}\index{aiohttp.payload\_streamer@{aiohttp.payload\_streamer}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!aiohttp.payload\_streamer@{aiohttp.payload\_streamer}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1payload__streamer_a909566e8b8b7bd870806c1507709a0b3} 
+tuple aiohttp.\+payload\+\_\+streamer.\+\_\+\+\_\+all\+\_\+\+\_\+ = ("{}streamer"{},)\hspace{0.3cm}{\ttfamily [private]}}
+

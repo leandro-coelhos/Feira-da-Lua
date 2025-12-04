@@ -1,0 +1,143 @@
+\doxysection{\+\_\+pytest.\+stepwise.\+Stepwise\+Plugin Class Reference}
+\hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin}{}\label{class__pytest_1_1stepwise_1_1_stepwise_plugin}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a0ff259ce05bd416e9d9609aef0e8f6a0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ad74aba1f7f596dae95a91c60fc5356ba}{config}})
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a63c60deb4234277c560e7994501a3e7b}{pytest\+\_\+sessionstart}} (self, \mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ab5491d20895c67370b69d0e7b5c99e33}{session}})
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a4739a0424dcf00c0827a36602b49472d}{pytest\+\_\+collection\+\_\+modifyitems}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ad74aba1f7f596dae95a91c60fc5356ba}{config}}, list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]} items)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a01b35f45e9792ffc52b9dfbad8601c70}{pytest\+\_\+runtest\+\_\+logreport}} (self, \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} report)
+\item 
+list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ac607748ba679dd241566d6190d886b1d}{pytest\+\_\+report\+\_\+collectionfinish}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a40127a5f4f8baa5afd2e901b6f8415ad}{pytest\+\_\+sessionfinish}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ad74aba1f7f596dae95a91c60fc5356ba}{config}} = config
+\item 
+\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ab5491d20895c67370b69d0e7b5c99e33}{session}} = None
+\item 
+list \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_aeb0425ae1e194952e905ee83cd56288c}{report\+\_\+status}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_aacedf16349e33ae34988256e9c46ba0a}{cache}} = config.\+cache
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a2f17df99ac6b77ef37a937b7ed37f9f4}{skip}} = config.\+getoption("{}stepwise\+\_\+skip"{})
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a81c0e422ee59e1b8f94ab427eed549ac}{reset}} = config.\+getoption("{}stepwise\+\_\+reset"{})
+\item 
+\mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_cache_info}{Stepwise\+Cache\+Info}} \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_a07e8923b10adf3d533edf4ecca9116db}{cached\+\_\+info}} = self.\+\_\+load\+\_\+cached\+\_\+info()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_cache_info}{Stepwise\+Cache\+Info}} \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_plugin_ae9263cbe0a68aa30b0068abed981e1b3}{\+\_\+load\+\_\+cached\+\_\+info}} (self)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a0ff259ce05bd416e9d9609aef0e8f6a0}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a0ff259ce05bd416e9d9609aef0e8f6a0} 
+ None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_ae9263cbe0a68aa30b0068abed981e1b3}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!\_load\_cached\_info@{\_load\_cached\_info}}
+\index{\_load\_cached\_info@{\_load\_cached\_info}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{\_load\_cached\_info()}{\_load\_cached\_info()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_ae9263cbe0a68aa30b0068abed981e1b3} 
+ \mbox{\hyperlink{class__pytest_1_1stepwise_1_1_stepwise_cache_info}{Stepwise\+Cache\+Info}} \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+\_\+load\+\_\+cached\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a4739a0424dcf00c0827a36602b49472d}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!pytest\_collection\_modifyitems@{pytest\_collection\_modifyitems}}
+\index{pytest\_collection\_modifyitems@{pytest\_collection\_modifyitems}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_collection\_modifyitems()}{pytest\_collection\_modifyitems()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a4739a0424dcf00c0827a36602b49472d} 
+ None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+pytest\+\_\+collection\+\_\+modifyitems (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]}     }]{items}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_ac607748ba679dd241566d6190d886b1d}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!pytest\_report\_collectionfinish@{pytest\_report\_collectionfinish}}
+\index{pytest\_report\_collectionfinish@{pytest\_report\_collectionfinish}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_collectionfinish()}{pytest\_report\_collectionfinish()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_ac607748ba679dd241566d6190d886b1d} 
+ list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+pytest\+\_\+report\+\_\+collectionfinish (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a01b35f45e9792ffc52b9dfbad8601c70}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!pytest\_runtest\_logreport@{pytest\_runtest\_logreport}}
+\index{pytest\_runtest\_logreport@{pytest\_runtest\_logreport}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_logreport()}{pytest\_runtest\_logreport()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a01b35f45e9792ffc52b9dfbad8601c70} 
+ None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+pytest\+\_\+runtest\+\_\+logreport (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}}]{report}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a40127a5f4f8baa5afd2e901b6f8415ad}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!pytest\_sessionfinish@{pytest\_sessionfinish}}
+\index{pytest\_sessionfinish@{pytest\_sessionfinish}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_sessionfinish()}{pytest\_sessionfinish()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a40127a5f4f8baa5afd2e901b6f8415ad} 
+ None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+pytest\+\_\+sessionfinish (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a63c60deb4234277c560e7994501a3e7b}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!pytest\_sessionstart@{pytest\_sessionstart}}
+\index{pytest\_sessionstart@{pytest\_sessionstart}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_sessionstart()}{pytest\_sessionstart()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a63c60deb4234277c560e7994501a3e7b} 
+ None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+pytest\+\_\+sessionstart (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_aacedf16349e33ae34988256e9c46ba0a}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!cache@{cache}}
+\index{cache@{cache}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{cache}{cache}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_aacedf16349e33ae34988256e9c46ba0a} 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+cache = config.\+cache}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a07e8923b10adf3d533edf4ecca9116db}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!cached\_info@{cached\_info}}
+\index{cached\_info@{cached\_info}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{cached\_info}{cached\_info}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a07e8923b10adf3d533edf4ecca9116db} 
+\+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+cached\+\_\+info = self.\+\_\+load\+\_\+cached\+\_\+info()}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_ad74aba1f7f596dae95a91c60fc5356ba}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!config@{config}}
+\index{config@{config}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_ad74aba1f7f596dae95a91c60fc5356ba} 
+\+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+config = config}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_aeb0425ae1e194952e905ee83cd56288c}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!report\_status@{report\_status}}
+\index{report\_status@{report\_status}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{report\_status}{report\_status}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_aeb0425ae1e194952e905ee83cd56288c} 
+list \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+report\+\_\+status = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a81c0e422ee59e1b8f94ab427eed549ac}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!reset@{reset}}
+\index{reset@{reset}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{reset}{reset}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a81c0e422ee59e1b8f94ab427eed549ac} 
+bool \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+reset = config.\+getoption("{}stepwise\+\_\+reset"{})}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_ab5491d20895c67370b69d0e7b5c99e33}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!session@{session}}
+\index{session@{session}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_ab5491d20895c67370b69d0e7b5c99e33} 
+\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+session = None}
+
+\Hypertarget{class__pytest_1_1stepwise_1_1_stepwise_plugin_a2f17df99ac6b77ef37a937b7ed37f9f4}\index{\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}!skip@{skip}}
+\index{skip@{skip}!\_pytest.stepwise.StepwisePlugin@{\_pytest.stepwise.StepwisePlugin}}
+\doxysubsubsection{\texorpdfstring{skip}{skip}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stepwise_1_1_stepwise_plugin_a2f17df99ac6b77ef37a937b7ed37f9f4} 
+bool \+\_\+pytest.\+stepwise.\+Stepwise\+Plugin.\+skip = config.\+getoption("{}stepwise\+\_\+skip"{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{stepwise_8py}{stepwise.\+py}}\end{DoxyCompactItemize}

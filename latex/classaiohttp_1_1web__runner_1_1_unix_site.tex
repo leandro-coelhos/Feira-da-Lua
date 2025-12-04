@@ -1,0 +1,103 @@
+\doxysection{aiohttp.\+web\+\_\+runner.\+Unix\+Site Class Reference}
+\hypertarget{classaiohttp_1_1web__runner_1_1_unix_site}{}\label{classaiohttp_1_1web__runner_1_1_unix_site}\index{aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}}
+Inheritance diagram for aiohttp.\+web\+\_\+runner.\+Unix\+Site\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1web__runner_1_1_unix_site}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_unix_site_aa3819f41364939bf941cb52a05299cf1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Base\+Runner"{} runner, Path\+Like path, \texorpdfstring{$\ast$}{*}, float shutdown\+\_\+timeout=60.\+0, Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__runner_add39f387e9eda58b9eefef99ec16b4e2}{SSLContext}}\mbox{]} ssl\+\_\+context=None, int backlog=128)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_unix_site_a93790d9f3ae830453b9c52d544ccede0}{name}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_unix_site_a65f60c8c52d8b5ea00e96d81d465af30}{start}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site}{aiohttp.\+web\+\_\+runner.\+Base\+Site}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_acba7e70d7b31eae4951c426231ab75c3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Base\+Runner"{} runner, \texorpdfstring{$\ast$}{*}, float shutdown\+\_\+timeout=60.\+0, Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__runner_add39f387e9eda58b9eefef99ec16b4e2}{SSLContext}}\mbox{]} ssl\+\_\+context=None, int backlog=128)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_a316fd2acea50f637718da3734dd7a42a}{stop}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_unix_site_a47104b65f058d797ba544d6164a815c3}{\+\_\+path}} = path
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site}{aiohttp.\+web\+\_\+runner.\+Base\+Site}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_a7e9772e98cdc93cbee941e0f893db6d0}{\+\_\+runner}} = runner
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_af39f8fa15e06427b12e0cd72d405a3a4}{\+\_\+ssl\+\_\+context}} = ssl\+\_\+context
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_a5f78cdc604498ab13a781e9f8813001d}{\+\_\+backlog}} = backlog
+\item 
+Optional\mbox{[}asyncio.\+Abstract\+Server\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_af0c2309249d9ce56e7bbfb450c3d8ac1}{\+\_\+server}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_unix_site_a5ed5821845f01c96e240b9c3546298bd}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+path"{},)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_aa3819f41364939bf941cb52a05299cf1}\index{aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__runner_1_1_unix_site_aa3819f41364939bf941cb52a05299cf1} 
+ None aiohttp.\+web\+\_\+runner.\+Unix\+Site.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Base\+Runner"{}}]{runner}{, }\item[{Path\+Like}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{float }]{shutdown\+\_\+timeout}{ = {\ttfamily 60.0}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__runner_add39f387e9eda58b9eefef99ec16b4e2}{SSLContext}}\mbox{]} }]{ssl\+\_\+context}{ = {\ttfamily None}, }\item[{int }]{backlog}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_a93790d9f3ae830453b9c52d544ccede0}\index{aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}!name@{name}}
+\index{name@{name}!aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__runner_1_1_unix_site_a93790d9f3ae830453b9c52d544ccede0} 
+ str aiohttp.\+web\+\_\+runner.\+Unix\+Site.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_a36975f4fae4f46d512574cf82ebb67a2}{aiohttp.\+web\+\_\+runner.\+Base\+Site}}.
+
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_a65f60c8c52d8b5ea00e96d81d465af30}\index{aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}!start@{start}}
+\index{start@{start}!aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__runner_1_1_unix_site_a65f60c8c52d8b5ea00e96d81d465af30} 
+ None aiohttp.\+web\+\_\+runner.\+Unix\+Site.\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__runner_1_1_base_site_a97b1e675e63683c5aed071af8beb4781}{aiohttp.\+web\+\_\+runner.\+Base\+Site}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_a5ed5821845f01c96e240b9c3546298bd}\index{aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__runner_1_1_unix_site_a5ed5821845f01c96e240b9c3546298bd} 
+tuple aiohttp.\+web\+\_\+runner.\+Unix\+Site.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+path"{},)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1web__runner_1_1_unix_site_a47104b65f058d797ba544d6164a815c3}\index{aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}!\_path@{\_path}}
+\index{\_path@{\_path}!aiohttp.web\_runner.UnixSite@{aiohttp.web\_runner.UnixSite}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__runner_1_1_unix_site_a47104b65f058d797ba544d6164a815c3} 
+aiohttp.\+web\+\_\+runner.\+Unix\+Site.\+\_\+path = path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{web__runner_8py}{web\+\_\+runner.\+py}}\end{DoxyCompactItemize}

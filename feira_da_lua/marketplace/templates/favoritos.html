@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Favoritos - Feira da Lua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <style>
+    .favorites-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    .page-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .favorites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .favorite-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #d9d9d9;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .favorite-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .favorite-image {
+      width: 100%;
+      height: 180px;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .favorite-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .favorite-image.no-image img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      opacity: 0.5;
+    }
+    .favorite-info {
+      padding: 20px;
+    }
+    .favorite-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .favorite-price {
+      font-size: 22px;
+      font-weight: 700;
+      color: #38952c;
+      margin-bottom: 10px;
+    }
+    .favorite-seller {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .remove-btn {
+      background-color: #fff;
+      color: #c62828;
+      border: 1px solid #c62828;
+      border-radius: 100px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+    }
+    .remove-btn:hover {
+      background-color: #c62828;
+      color: #fff;
+    }
+    .empty-favorites {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      border: 1px solid #d9d9d9;
+    }
+    .empty-favorites img {
+      width: 80px;
+      opacity: 0.5;
+      margin-bottom: 20px;
+    }
+    .empty-favorites h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .empty-favorites p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+    .empty-favorites a {
+      display: inline-block;
+      background-color: #38952c;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .empty-favorites a:hover {
+      background-color: #186e0d;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <header class="home-header">
+      <div class="header-content">
+        <a href="{% url 'home' %}" class="logo-link">
+          <img src="{% static 'img/Logo.svg' %}" alt="Feira da Lua" class="header-logo">
+          <span class="logo-text">Feira da Lua</span>
+        </a>
+        <nav class="header-nav">
+          <a href="{% url 'favorites' %}" class="nav-link nav-link-active">
+            <img src="{% static 'img/star_filled.svg' %}" alt="" style="width: 18px; vertical-align: middle;">
+            Favoritos
+          </a>
+          <span class="nav-user">{{ user.complete_name }}</span>
+          <a href="{% url 'logout' %}" class="btn btn-secundario btn-nav">Sair</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <div class="favorites-container">
+        <h1 class="page-title">
+          <img src="{% static 'img/star_filled.svg' %}" alt="" style="width: 36px;">
+          Meus Favoritos
+        </h1>
+        
+        {% if favorites %}
+        <div class="favorites-grid">
+          {% for item in favorites %}
+          <div class="favorite-card" id="favorite-{{ item.product.id }}">
+            {% if item.photo_base64 %}
+            <div class="favorite-image">
+              <img src="data:image/jpeg;base64,{{ item.photo_base64 }}" alt="{{ item.product.name }}">
+            </div>
+            {% else %}
+            <div class="favorite-image no-image">
+              <img src="{% static 'img/Shopping cart.svg' %}" alt="Sem imagem">
+            </div>
+            {% endif %}
+            <div class="favorite-info">
+              <h3 class="favorite-name">{{ item.product.name }}</h3>
+              <p class="favorite-price">R$ {{ item.product.price }}</p>
+              {% if item.product.marketer %}
+              <p class="favorite-seller">Vendido por {{ item.product.marketer.user.complete_name }}</p>
+              {% endif %}
+              <button class="remove-btn" onclick="removeFavorite({{ item.product.id }})">
+                Remover dos favoritos
+              </button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-favorites">
+          <img src="{% static 'img/star.svg' %}" alt="">
+          <h3>Voce ainda nao tem favoritos</h3>
+          <p>Explore as feiras e adicione produtos aos seus favoritos</p>
+          <a href="{% url 'home' %}">Explorar Feiras</a>
+        </div>
+        {% endif %}
+      </div>
+    </main>
+
+    <footer class="home-footer">
+      <p>Feira da Lua - Conectando feirantes e clientes</p>
+    </footer>
+  </div>
+
+  <script>
+    function removeFavorite(productId) {
+      fetch('/favorito/' + productId + '/', {
+        method: 'POST',
+        headers: {
+          'X-CSRFToken': '{{ csrf_token }}',
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (!data.is_favorite) {
+          var card = document.getElementById('favorite-' + productId);
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.8)';
+          setTimeout(function() {
+            card.remove();
+            if (document.querySelectorAll('.favorite-card').length === 0) {
+              location.reload();
+            }
+          }, 300);
+        }
+      })
+      .catch(error => console.error('Erro:', error));
+    }
+  </script>
+</body>
+</html>

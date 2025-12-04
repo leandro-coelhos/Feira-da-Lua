@@ -1,0 +1,25 @@
+var namespacepip_1_1__vendor_1_1packaging =
+[
+    [ "_elffile", "namespacepip_1_1__vendor_1_1packaging_1_1__elffile.html", "namespacepip_1_1__vendor_1_1packaging_1_1__elffile" ],
+    [ "_manylinux", "namespacepip_1_1__vendor_1_1packaging_1_1__manylinux.html", "namespacepip_1_1__vendor_1_1packaging_1_1__manylinux" ],
+    [ "_musllinux", "namespacepip_1_1__vendor_1_1packaging_1_1__musllinux.html", "namespacepip_1_1__vendor_1_1packaging_1_1__musllinux" ],
+    [ "_parser", "namespacepip_1_1__vendor_1_1packaging_1_1__parser.html", "namespacepip_1_1__vendor_1_1packaging_1_1__parser" ],
+    [ "_structures", "namespacepip_1_1__vendor_1_1packaging_1_1__structures.html", "namespacepip_1_1__vendor_1_1packaging_1_1__structures" ],
+    [ "_tokenizer", "namespacepip_1_1__vendor_1_1packaging_1_1__tokenizer.html", "namespacepip_1_1__vendor_1_1packaging_1_1__tokenizer" ],
+    [ "licenses", "namespacepip_1_1__vendor_1_1packaging_1_1licenses.html", "namespacepip_1_1__vendor_1_1packaging_1_1licenses" ],
+    [ "markers", "namespacepip_1_1__vendor_1_1packaging_1_1markers.html", "namespacepip_1_1__vendor_1_1packaging_1_1markers" ],
+    [ "metadata", "namespacepip_1_1__vendor_1_1packaging_1_1metadata.html", "namespacepip_1_1__vendor_1_1packaging_1_1metadata" ],
+    [ "requirements", "namespacepip_1_1__vendor_1_1packaging_1_1requirements.html", "namespacepip_1_1__vendor_1_1packaging_1_1requirements" ],
+    [ "specifiers", "namespacepip_1_1__vendor_1_1packaging_1_1specifiers.html", "namespacepip_1_1__vendor_1_1packaging_1_1specifiers" ],
+    [ "tags", "namespacepip_1_1__vendor_1_1packaging_1_1tags.html", "namespacepip_1_1__vendor_1_1packaging_1_1tags" ],
+    [ "utils", "namespacepip_1_1__vendor_1_1packaging_1_1utils.html", "namespacepip_1_1__vendor_1_1packaging_1_1utils" ],
+    [ "version", "namespacepip_1_1__vendor_1_1packaging_1_1version.html", "namespacepip_1_1__vendor_1_1packaging_1_1version" ],
+    [ "__author__", "namespacepip_1_1__vendor_1_1packaging.html#a0a7921e99631aa40d726a3334c7bd162", null ],
+    [ "__copyright__", "namespacepip_1_1__vendor_1_1packaging.html#a67605a6638192ea0ba8fe571020ab019", null ],
+    [ "__email__", "namespacepip_1_1__vendor_1_1packaging.html#a0ef50c0f0ce175680862f70d42288f6e", null ],
+    [ "__license__", "namespacepip_1_1__vendor_1_1packaging.html#a72467a31a8e199385b30af0c071209ac", null ],
+    [ "__summary__", "namespacepip_1_1__vendor_1_1packaging.html#ae15b1cd33ad2969ced3eb2ebd99aa62f", null ],
+    [ "__title__", "namespacepip_1_1__vendor_1_1packaging.html#ad8a346c22312ba6551be6899b8a5dd91", null ],
+    [ "__uri__", "namespacepip_1_1__vendor_1_1packaging.html#a7a68e9f0f6ac9629e0a6895073d1da5e", null ],
+    [ "__version__", "namespacepip_1_1__vendor_1_1packaging.html#a791971c171c9600dc6731e4a7ac06f97", null ]
+];

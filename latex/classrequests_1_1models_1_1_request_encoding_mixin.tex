@@ -1,0 +1,63 @@
+\doxysection{requests.\+models.\+Request\+Encoding\+Mixin Class Reference}
+\hypertarget{classrequests_1_1models_1_1_request_encoding_mixin}{}\label{classrequests_1_1models_1_1_request_encoding_mixin}\index{requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}}
+Inheritance diagram for requests.\+models.\+Request\+Encoding\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrequests_1_1models_1_1_request_encoding_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_encoding_mixin_a96fb3b04a17a4b2a376ba53e234c3b84}{path\+\_\+url}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_encoding_mixin_afca248308549014e139cca2a3e9b9768}{\+\_\+encode\+\_\+params}} (data)
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_encoding_mixin_abed03cab5a657c2005f20e3be84c5351}{\+\_\+encode\+\_\+files}} (files, data)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classrequests_1_1models_1_1_request_encoding_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrequests_1_1models_1_1_request_encoding_mixin_abed03cab5a657c2005f20e3be84c5351}\index{requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}!\_encode\_files@{\_encode\_files}}
+\index{\_encode\_files@{\_encode\_files}!requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}}
+\doxysubsubsection{\texorpdfstring{\_encode\_files()}{\_encode\_files()}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_encoding_mixin_abed03cab5a657c2005f20e3be84c5351} 
+requests.\+models.\+Request\+Encoding\+Mixin.\+\_\+encode\+\_\+files (\begin{DoxyParamCaption}\item[{}]{files}{, }\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Build the body for a multipart/form-data request.
+
+Will successfully encode files when passed as a dict or a list of
+tuples. Order is retained if data is a list of tuples but arbitrary
+if parameters are supplied as a dict.
+The tuples may be 2-tuples (filename, fileobj), 3-tuples (filename, fileobj, contentype)
+or 4-tuples (filename, fileobj, contentype, custom_headers).
+\end{DoxyVerb}
+ \Hypertarget{classrequests_1_1models_1_1_request_encoding_mixin_afca248308549014e139cca2a3e9b9768}\index{requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}!\_encode\_params@{\_encode\_params}}
+\index{\_encode\_params@{\_encode\_params}!requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}}
+\doxysubsubsection{\texorpdfstring{\_encode\_params()}{\_encode\_params()}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_encoding_mixin_afca248308549014e139cca2a3e9b9768} 
+requests.\+models.\+Request\+Encoding\+Mixin.\+\_\+encode\+\_\+params (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Encode parameters in a piece of data.
+
+Will successfully encode parameters when passed as a dict or a list of
+2-tuples. Order is retained if data is a list of 2-tuples but arbitrary
+if parameters are supplied as a dict.
+\end{DoxyVerb}
+ \Hypertarget{classrequests_1_1models_1_1_request_encoding_mixin_a96fb3b04a17a4b2a376ba53e234c3b84}\index{requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}!path\_url@{path\_url}}
+\index{path\_url@{path\_url}!requests.models.RequestEncodingMixin@{requests.models.RequestEncodingMixin}}
+\doxysubsubsection{\texorpdfstring{path\_url()}{path\_url()}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_encoding_mixin_a96fb3b04a17a4b2a376ba53e234c3b84} 
+requests.\+models.\+Request\+Encoding\+Mixin.\+path\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build the path URL to use.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/requests/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2requests_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

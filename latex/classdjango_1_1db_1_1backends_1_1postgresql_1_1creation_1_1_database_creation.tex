@@ -1,0 +1,146 @@
+\doxysection{django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation Class Reference}
+\hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation}{}\label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+Inheritance diagram for django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_aa38c6a38ca570ecd91c87dde1f0c2406}{sql\+\_\+table\+\_\+creation\+\_\+suffix}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a6417b9126ccf82f4dd835e5ea96f5ff3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a736b527d1b26dd7a703d206cc0b0ce76}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ac297ec931db5ec68c271ec0d91be7183}{log}} (self, msg)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_af6962208f3f5ffa10ab9acf501090181}{create\+\_\+test\+\_\+db}} (self, verbosity=1, autoclobber=False, serialize=True, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a2a8655bb3c35b6cc967498b12f3b7a03}{set\+\_\+as\+\_\+test\+\_\+mirror}} (self, primary\+\_\+settings\+\_\+dict)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a67741180d348c6dc5152bf05a5d3dc83}{serialize\+\_\+db\+\_\+to\+\_\+string}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ac602061e7a3140b07fadbeabee45f34d}{deserialize\+\_\+db\+\_\+from\+\_\+string}} (self, data)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_aa792ff2a6725c1020027c189ff967316}{clone\+\_\+test\+\_\+db}} (self, suffix, verbosity=1, autoclobber=False, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a383e8257716c30cd04bbf648b4066909}{get\+\_\+test\+\_\+db\+\_\+clone\+\_\+settings}} (self, suffix)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a2c41c21dd95190d85b132c7666f9593d}{destroy\+\_\+test\+\_\+db}} (self, old\+\_\+database\+\_\+name=None, verbosity=1, keepdb=False, suffix=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a1941a574beff1443cc995235c5b55785}{mark\+\_\+expected\+\_\+failures\+\_\+and\+\_\+skips}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a6051cab94a4803d74974cada53a87eab}{test\+\_\+db\+\_\+signature}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ae88ac1d6e2ee913b393872f6a184e339}{setup\+\_\+worker\+\_\+connection}} (self, \+\_\+worker\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a5592c3b96b3769fc7e631a65ad9d0aa3}{\+\_\+quote\+\_\+name}} (self, name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a226be8cbee88e42a00e901757879e27c}{\+\_\+get\+\_\+database\+\_\+create\+\_\+suffix}} (self, encoding=None, template=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a230375e8780733c0b0fa3c083d4da850}{\+\_\+database\+\_\+exists}} (self, cursor, database\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a8c9e9502a3370ff7f46e7982b1ace1ec}{\+\_\+execute\+\_\+create\+\_\+test\+\_\+db}} (self, cursor, parameters, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_ab57e8a2ba94a8a4888fd435036b4c322}{\+\_\+clone\+\_\+test\+\_\+db}} (self, suffix, verbosity, keepdb=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_ac53b60df51381baddfcec7edb7a460b2}{\+\_\+destroy\+\_\+test\+\_\+db}} (self, test\+\_\+database\+\_\+name, verbosity)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a025fbe1c4101fe20237e3f9f1f19a24d}{\+\_\+nodb\+\_\+cursor}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a6d9c9b73884bb760ee58378580b522f0}{\+\_\+get\+\_\+database\+\_\+display\+\_\+str}} (self, verbosity, database\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_ae4e091cb40770584fd99469a92fa8f5e}{\+\_\+get\+\_\+test\+\_\+db\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a3782aff49b95503af2f0e518a10dc22d}{\+\_\+create\+\_\+test\+\_\+db}} (self, verbosity, autoclobber, keepdb=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a736b527d1b26dd7a703d206cc0b0ce76}{connection}} = connection
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_ab57e8a2ba94a8a4888fd435036b4c322}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!\_clone\_test\_db@{\_clone\_test\_db}}
+\index{\_clone\_test\_db@{\_clone\_test\_db}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_clone\_test\_db()}{\_clone\_test\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_ab57e8a2ba94a8a4888fd435036b4c322} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+\_\+clone\+\_\+test\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{suffix}{, }\item[{}]{verbosity}{, }\item[{}]{keepdb}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Internal implementation - duplicate the test db tables.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a2305c2b9d5b83edb3e55456a3c5d30be}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a230375e8780733c0b0fa3c083d4da850}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!\_database\_exists@{\_database\_exists}}
+\index{\_database\_exists@{\_database\_exists}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_database\_exists()}{\_database\_exists()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a230375e8780733c0b0fa3c083d4da850} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+\_\+database\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{database\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_ac53b60df51381baddfcec7edb7a460b2}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!\_destroy\_test\_db@{\_destroy\_test\_db}}
+\index{\_destroy\_test\_db@{\_destroy\_test\_db}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_destroy\_test\_db()}{\_destroy\_test\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_ac53b60df51381baddfcec7edb7a460b2} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+\_\+destroy\+\_\+test\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{test\+\_\+database\+\_\+name}{, }\item[{}]{verbosity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Internal implementation - remove the test db tables.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a02c0ddaddb0a7e0abc054d36a16766a2}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a8c9e9502a3370ff7f46e7982b1ace1ec}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!\_execute\_create\_test\_db@{\_execute\_create\_test\_db}}
+\index{\_execute\_create\_test\_db@{\_execute\_create\_test\_db}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_execute\_create\_test\_db()}{\_execute\_create\_test\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a8c9e9502a3370ff7f46e7982b1ace1ec} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+\_\+execute\+\_\+create\+\_\+test\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{parameters}{, }\item[{}]{keepdb}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a0a55967e6434723ddb9dda6232b6a3b8}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a226be8cbee88e42a00e901757879e27c}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!\_get\_database\_create\_suffix@{\_get\_database\_create\_suffix}}
+\index{\_get\_database\_create\_suffix@{\_get\_database\_create\_suffix}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_get\_database\_create\_suffix()}{\_get\_database\_create\_suffix()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a226be8cbee88e42a00e901757879e27c} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+\_\+get\+\_\+database\+\_\+create\+\_\+suffix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{encoding}{ = {\ttfamily None}, }\item[{}]{template}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a5592c3b96b3769fc7e631a65ad9d0aa3}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!\_quote\_name@{\_quote\_name}}
+\index{\_quote\_name@{\_quote\_name}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{\_quote\_name()}{\_quote\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_a5592c3b96b3769fc7e631a65ad9d0aa3} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+\_\+quote\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_aa38c6a38ca570ecd91c87dde1f0c2406}\index{django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}!sql\_table\_creation\_suffix@{sql\_table\_creation\_suffix}}
+\index{sql\_table\_creation\_suffix@{sql\_table\_creation\_suffix}!django.db.backends.postgresql.creation.DatabaseCreation@{django.db.backends.postgresql.creation.DatabaseCreation}}
+\doxysubsubsection{\texorpdfstring{sql\_table\_creation\_suffix()}{sql\_table\_creation\_suffix()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1postgresql_1_1creation_1_1_database_creation_aa38c6a38ca570ecd91c87dde1f0c2406} 
+django.\+db.\+backends.\+postgresql.\+creation.\+Database\+Creation.\+sql\+\_\+table\+\_\+creation\+\_\+suffix (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}SQL to append to the end of the test table creation statements.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1creation_1_1_base_database_creation_a721112b8a4e140457d74abf5794974ca}{django.\+db.\+backends.\+base.\+creation.\+Base\+Database\+Creation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/backends/postgresql/\mbox{\hyperlink{postgresql_2creation_8py}{creation.\+py}}\end{DoxyCompactItemize}

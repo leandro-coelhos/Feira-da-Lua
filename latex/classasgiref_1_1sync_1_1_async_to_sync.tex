@@ -1,0 +1,168 @@
+\doxysection{asgiref.\+sync.\+Async\+To\+Sync Class Reference}
+\hypertarget{classasgiref_1_1sync_1_1_async_to_sync}{}\label{classasgiref_1_1sync_1_1_async_to_sync}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+Inheritance diagram for asgiref.\+sync.\+Async\+To\+Sync\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classasgiref_1_1sync_1_1_async_to_sync}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_ae4b0f88c46d1948b37ec89bf1fd04f69}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Union\mbox{[}Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a0404a452e96e7a4db698356339aab766}{\+\_\+P}}, Coroutine\mbox{[}Any, Any, \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}\mbox{]}, Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a0404a452e96e7a4db698356339aab766}{\+\_\+P}}, Awaitable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}\mbox{]},\mbox{]} \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_accca392a7ce4301b09c738f00a0c5ca8}{awaitable}}, bool \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_aeb0082475495865bbbf3ef7ef0b4d648}{force\+\_\+new\+\_\+loop}}=False)
+\item 
+\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}} \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_ae3d04d50ed7c2ad36569a75463eac3b8}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\+\_\+\+P.\+args args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+\_\+\+P.\+kwargs kwargs)
+\item 
+Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a0404a452e96e7a4db698356339aab766}{\+\_\+P}}, \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]} \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_a23e9ef7a73da98dad9e3f4e65846969b}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, Any parent, Any objtype)
+\item 
+None \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_a753db56c97303559d6e9204b1e254f45}{main\+\_\+wrap}} (self, "{}Future\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}"{} call\+\_\+result, "{}Opt\+Exc\+Info"{} exc\+\_\+info, "{}Optional\mbox{[}List\mbox{[}asyncio.\+Task\mbox{[}Any\mbox{]}\mbox{]}\mbox{]}"{} task\+\_\+context, List\mbox{[}contextvars.\+Context\mbox{]} context, Union\mbox{[}Coroutine\mbox{[}Any, Any, \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}\mbox{]} \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_accca392a7ce4301b09c738f00a0c5ca8}{awaitable}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_accca392a7ce4301b09c738f00a0c5ca8}{awaitable}} = awaitable
+\item 
+\mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_aeb0082475495865bbbf3ef7ef0b4d648}{force\+\_\+new\+\_\+loop}} = force\+\_\+new\+\_\+loop
+\item 
+\mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_a8129323e9e0b3c08b4c88a0ba814bf83}{main\+\_\+event\+\_\+loop}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_ae49fb54c004f187e6771190bc802dfa1}{executors}} = \mbox{\hyperlink{classasgiref_1_1local_1_1_local}{Local}}()
+\item 
+dict \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_a6042541a219ef709afaebfb7abd6d8ea}{loop\+\_\+thread\+\_\+executors}} = \{\}
+\item 
+tuple \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_abef0ea683c1bd094533826fc70dd7386}{async\+\_\+single\+\_\+thread\+\_\+context}}
+\item 
+tuple \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_a39f2dfa5ed680ea34a69444fabf5e4e0}{context\+\_\+to\+\_\+thread\+\_\+executor}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync_a91617bc51a15ec87a4ea0e9b0349956f}{\+\_\+\+\_\+self\+\_\+\+\_\+}} = self.\+awaitable.\+\_\+\+\_\+self\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Utility class which turns an awaitable that only works on the thread with
+the event loop into a synchronous callable that works in a subthread.
+
+If the call stack contains an async loop, the code runs there.
+Otherwise, the code runs in a new loop in a new thread.
+
+Either way, this thread then pauses and waits to run any thread_sensitive
+code called from further down the call stack using SyncToAsync, before
+finally exiting once the async task returns.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_ae4b0f88c46d1948b37ec89bf1fd04f69}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_ae4b0f88c46d1948b37ec89bf1fd04f69} 
+asgiref.\+sync.\+Async\+To\+Sync.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}             Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a0404a452e96e7a4db698356339aab766}{\+\_\+P}}, Coroutine\mbox{[}Any, Any, \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}\mbox{]},             Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a0404a452e96e7a4db698356339aab766}{\+\_\+P}}, Awaitable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}\mbox{]},         \mbox{]}}]{awaitable}{, }\item[{bool }]{force\+\_\+new\+\_\+loop}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_ae3d04d50ed7c2ad36569a75463eac3b8}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_ae3d04d50ed7c2ad36569a75463eac3b8} 
+ \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}} asgiref.\+sync.\+Async\+To\+Sync.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\+\_\+\+P.\+args}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+\_\+\+P.\+kwargs}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_a23e9ef7a73da98dad9e3f4e65846969b}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_a23e9ef7a73da98dad9e3f4e65846969b} 
+ Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a0404a452e96e7a4db698356339aab766}{\+\_\+P}}, \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]} asgiref.\+sync.\+Async\+To\+Sync.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{parent}{, }\item[{Any}]{objtype}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Include self for methods
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_a753db56c97303559d6e9204b1e254f45}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!main\_wrap@{main\_wrap}}
+\index{main\_wrap@{main\_wrap}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{main\_wrap()}{main\_wrap()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_a753db56c97303559d6e9204b1e254f45} 
+ None asgiref.\+sync.\+Async\+To\+Sync.\+main\+\_\+wrap (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Future\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}"{}}]{call\+\_\+result}{, }\item[{"{}Opt\+Exc\+Info"{}}]{exc\+\_\+info}{, }\item[{"{}Optional\mbox{[}List\mbox{[}asyncio.\+Task\mbox{[}Any\mbox{]}\mbox{]}\mbox{]}"{}}]{task\+\_\+context}{, }\item[{List\mbox{[}contextvars.\+Context\mbox{]}}]{context}{, }\item[{Union\mbox{[}Coroutine\mbox{[}Any, Any, \mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1sync_a29f5273cd231052a2c43460abc9aaf6f}{\+\_\+R}}\mbox{]}\mbox{]}}]{awaitable}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wraps the awaitable with something that puts the result into the
+result/exception future.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_a91617bc51a15ec87a4ea0e9b0349956f}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!\_\_self\_\_@{\_\_self\_\_}}
+\index{\_\_self\_\_@{\_\_self\_\_}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{\_\_self\_\_}{\_\_self\_\_}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_a91617bc51a15ec87a4ea0e9b0349956f} 
+asgiref.\+sync.\+Async\+To\+Sync.\+\_\+\+\_\+self\+\_\+\+\_\+ = self.\+awaitable.\+\_\+\+\_\+self\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_abef0ea683c1bd094533826fc70dd7386}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!async\_single\_thread\_context@{async\_single\_thread\_context}}
+\index{async\_single\_thread\_context@{async\_single\_thread\_context}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{async\_single\_thread\_context}{async\_single\_thread\_context}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_abef0ea683c1bd094533826fc70dd7386} 
+tuple asgiref.\+sync.\+Async\+To\+Sync.\+async\+\_\+single\+\_\+thread\+\_\+context\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ contextvars.ContextVar(\textcolor{stringliteral}{"{}async\_single\_thread\_context"{}})}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_accca392a7ce4301b09c738f00a0c5ca8}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!awaitable@{awaitable}}
+\index{awaitable@{awaitable}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{awaitable}{awaitable}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_accca392a7ce4301b09c738f00a0c5ca8} 
+asgiref.\+sync.\+Async\+To\+Sync.\+awaitable = awaitable}
+
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_a39f2dfa5ed680ea34a69444fabf5e4e0}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!context\_to\_thread\_executor@{context\_to\_thread\_executor}}
+\index{context\_to\_thread\_executor@{context\_to\_thread\_executor}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{context\_to\_thread\_executor}{context\_to\_thread\_executor}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_a39f2dfa5ed680ea34a69444fabf5e4e0} 
+tuple asgiref.\+sync.\+Async\+To\+Sync.\+context\+\_\+to\+\_\+thread\+\_\+executor\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ weakref.WeakKeyDictionary()}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_ae49fb54c004f187e6771190bc802dfa1}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!executors@{executors}}
+\index{executors@{executors}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{executors}{executors}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_ae49fb54c004f187e6771190bc802dfa1} 
+str asgiref.\+sync.\+Async\+To\+Sync.\+executors = \mbox{\hyperlink{classasgiref_1_1local_1_1_local}{Local}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_aeb0082475495865bbbf3ef7ef0b4d648}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!force\_new\_loop@{force\_new\_loop}}
+\index{force\_new\_loop@{force\_new\_loop}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{force\_new\_loop}{force\_new\_loop}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_aeb0082475495865bbbf3ef7ef0b4d648} 
+asgiref.\+sync.\+Async\+To\+Sync.\+force\+\_\+new\+\_\+loop = force\+\_\+new\+\_\+loop}
+
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_a6042541a219ef709afaebfb7abd6d8ea}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!loop\_thread\_executors@{loop\_thread\_executors}}
+\index{loop\_thread\_executors@{loop\_thread\_executors}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{loop\_thread\_executors}{loop\_thread\_executors}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_a6042541a219ef709afaebfb7abd6d8ea} 
+dict asgiref.\+sync.\+Async\+To\+Sync.\+loop\+\_\+thread\+\_\+executors = \{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classasgiref_1_1sync_1_1_async_to_sync_a8129323e9e0b3c08b4c88a0ba814bf83}\index{asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}!main\_event\_loop@{main\_event\_loop}}
+\index{main\_event\_loop@{main\_event\_loop}!asgiref.sync.AsyncToSync@{asgiref.sync.AsyncToSync}}
+\doxysubsubsection{\texorpdfstring{main\_event\_loop}{main\_event\_loop}}
+{\footnotesize\ttfamily \label{classasgiref_1_1sync_1_1_async_to_sync_a8129323e9e0b3c08b4c88a0ba814bf83} 
+asgiref.\+sync.\+Async\+To\+Sync.\+main\+\_\+event\+\_\+loop = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/asgiref/\mbox{\hyperlink{sync_8py}{sync.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\doxysection{\+\_\+pytest.\+pytester.\+Run\+Result Class Reference}
+\hypertarget{class__pytest_1_1pytester_1_1_run_result}{}\label{class__pytest_1_1pytester_1_1_run_result}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_abc0b91299a3e2012da718d3d8bc3a0b4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a70220ed26b5923c310a3890166db9a98}{ret}}, list\mbox{[}str\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a2e6164847b6fdb5b23ba3391ea31f0f7}{outlines}}, list\mbox{[}str\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_aabc3f6bcd1f0c4809061f0de9840c1eb}{errlines}}, float \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_ac334624471e7295467dcde967dbefe39}{duration}})
+\item 
+str \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a9affccb842f6a23223a5b4ff1f6c42f1}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+dict\mbox{[}str, int\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a6303c4ae3d8915be12c74ec4f9341cea}{parseoutcomes}} (self)
+\item 
+dict\mbox{[}str, int\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a4d63c9bcde302aba7eb0200ce9525f59}{parse\+\_\+summary\+\_\+nouns}} (cls, lines)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a19c521fc38fe571a8be562f4986db765}{assert\+\_\+outcomes}} (self, int passed=0, int skipped=0, int failed=0, int errors=0, int xpassed=0, int xfailed=0, int\texorpdfstring{$\vert$}{|}None warnings=None, int\texorpdfstring{$\vert$}{|}None deselected=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a70220ed26b5923c310a3890166db9a98}{ret}} = \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}(ret)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a2e6164847b6fdb5b23ba3391ea31f0f7}{outlines}} = outlines
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_aabc3f6bcd1f0c4809061f0de9840c1eb}{errlines}} = errlines
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a69baf54cd2d4e660130bbc796cbc1fab}{stdout}} = \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}(\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a2e6164847b6fdb5b23ba3391ea31f0f7}{outlines}})
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a4a1fab543d69031c4357efed94bff19c}{stderr}} = \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}(\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_aabc3f6bcd1f0c4809061f0de9840c1eb}{errlines}})
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_ac334624471e7295467dcde967dbefe39}{duration}} = duration
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The result of running a command from :class:`~pytest.Pytester`.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_abc0b91299a3e2012da718d3d8bc3a0b4}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_abc0b91299a3e2012da718d3d8bc3a0b4} 
+ None \+\_\+pytest.\+pytester.\+Run\+Result.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}}]{ret}{, }\item[{list\mbox{[}str\mbox{]}}]{outlines}{, }\item[{list\mbox{[}str\mbox{]}}]{errlines}{, }\item[{float}]{duration}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_a9affccb842f6a23223a5b4ff1f6c42f1}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a9affccb842f6a23223a5b4ff1f6c42f1} 
+ str \+\_\+pytest.\+pytester.\+Run\+Result.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_a19c521fc38fe571a8be562f4986db765}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!assert\_outcomes@{assert\_outcomes}}
+\index{assert\_outcomes@{assert\_outcomes}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{assert\_outcomes()}{assert\_outcomes()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a19c521fc38fe571a8be562f4986db765} 
+ None \+\_\+pytest.\+pytester.\+Run\+Result.\+assert\+\_\+outcomes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{passed}{ = {\ttfamily 0}, }\item[{int }]{skipped}{ = {\ttfamily 0}, }\item[{int }]{failed}{ = {\ttfamily 0}, }\item[{int }]{errors}{ = {\ttfamily 0}, }\item[{int }]{xpassed}{ = {\ttfamily 0}, }\item[{int }]{xfailed}{ = {\ttfamily 0}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{warnings}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{deselected}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Assert that the specified outcomes appear with the respective
+numbers (0 means it didn't occur) in the text output from a test run.
+
+``warnings`` and ``deselected`` are only checked if not None.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_run_result_a4d63c9bcde302aba7eb0200ce9525f59}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!parse\_summary\_nouns@{parse\_summary\_nouns}}
+\index{parse\_summary\_nouns@{parse\_summary\_nouns}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{parse\_summary\_nouns()}{parse\_summary\_nouns()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a4d63c9bcde302aba7eb0200ce9525f59} 
+ dict\mbox{[}str, int\mbox{]} \+\_\+pytest.\+pytester.\+Run\+Result.\+parse\+\_\+summary\+\_\+nouns (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{lines}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract the nouns from a pytest terminal summary line.
+
+It always returns the plural noun for consistency::
+
+    ======= 1 failed, 1 passed, 1 warning, 1 error in 0.13s ====
+
+Will return ``{"failed": 1, "passed": 1, "warnings": 1, "errors": 1}``.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_run_result_a6303c4ae3d8915be12c74ec4f9341cea}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!parseoutcomes@{parseoutcomes}}
+\index{parseoutcomes@{parseoutcomes}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{parseoutcomes()}{parseoutcomes()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a6303c4ae3d8915be12c74ec4f9341cea} 
+ dict\mbox{[}str, int\mbox{]} \+\_\+pytest.\+pytester.\+Run\+Result.\+parseoutcomes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dictionary of outcome noun -> count from parsing the terminal
+output that the test process produced.
+
+The returned nouns will always be in plural form::
+
+    ======= 1 failed, 1 passed, 1 warning, 1 error in 0.13s ====
+
+Will return ``{"failed": 1, "passed": 1, "warnings": 1, "errors": 1}``.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_ac334624471e7295467dcde967dbefe39}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!duration@{duration}}
+\index{duration@{duration}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_ac334624471e7295467dcde967dbefe39} 
+\+\_\+pytest.\+pytester.\+Run\+Result.\+duration = duration}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_aabc3f6bcd1f0c4809061f0de9840c1eb}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!errlines@{errlines}}
+\index{errlines@{errlines}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{errlines}{errlines}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_aabc3f6bcd1f0c4809061f0de9840c1eb} 
+\+\_\+pytest.\+pytester.\+Run\+Result.\+errlines = errlines}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_a2e6164847b6fdb5b23ba3391ea31f0f7}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!outlines@{outlines}}
+\index{outlines@{outlines}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{outlines}{outlines}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a2e6164847b6fdb5b23ba3391ea31f0f7} 
+\+\_\+pytest.\+pytester.\+Run\+Result.\+outlines = outlines}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_a70220ed26b5923c310a3890166db9a98}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!ret@{ret}}
+\index{ret@{ret}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a70220ed26b5923c310a3890166db9a98} 
+int \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} \+\_\+pytest.\+pytester.\+Run\+Result.\+ret = \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}(ret)}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_a4a1fab543d69031c4357efed94bff19c}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!stderr@{stderr}}
+\index{stderr@{stderr}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{stderr}{stderr}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a4a1fab543d69031c4357efed94bff19c} 
+\+\_\+pytest.\+pytester.\+Run\+Result.\+stderr = \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}(\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_aabc3f6bcd1f0c4809061f0de9840c1eb}{errlines}})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_run_result_a69baf54cd2d4e660130bbc796cbc1fab}\index{\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}!stdout@{stdout}}
+\index{stdout@{stdout}!\_pytest.pytester.RunResult@{\_pytest.pytester.RunResult}}
+\doxysubsubsection{\texorpdfstring{stdout}{stdout}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_run_result_a69baf54cd2d4e660130bbc796cbc1fab} 
+\+\_\+pytest.\+pytester.\+Run\+Result.\+stdout = \mbox{\hyperlink{class__pytest_1_1pytester_1_1_line_matcher}{Line\+Matcher}}(\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result_a2e6164847b6fdb5b23ba3391ea31f0f7}{outlines}})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{pytester_8py}{pytester.\+py}}\end{DoxyCompactItemize}

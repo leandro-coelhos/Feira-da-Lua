@@ -1,0 +1,112 @@
+\doxysection{django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware Class Reference}
+\hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware}{}\label{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware}\index{django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}}
+Inheritance diagram for django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ab6c425d2b6a60b798339b556485de62e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_a4e853e10eda127ebe6043b762d2b9be9}{cache}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ab386661385110857e24ad5f8472bb1eb}{process\+\_\+request}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_aaf54b2fdf26105f3e2efd0673a403b46}{key\+\_\+prefix}} = settings.\+CACHE\+\_\+\+MIDDLEWARE\+\_\+\+KEY\+\_\+\+PREFIX
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ad741e8f6db49e0dfe23ceaf4e4504a87}{cache\+\_\+alias}} = settings.\+CACHE\+\_\+\+MIDDLEWARE\+\_\+\+ALIAS
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}} = get\+\_\+response
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}} = iscoroutinefunction(self.\+get\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1_middleware_mixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Request-phase cache middleware that fetches a page from the cache.
+
+Must be used as part of the two-part update/fetch cache middleware.
+FetchFromCacheMiddleware must be the last piece of middleware in MIDDLEWARE
+so that it'll get called last during the request phase.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ab6c425d2b6a60b798339b556485de62e}\index{django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ab6c425d2b6a60b798339b556485de62e} 
+django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{get\+\_\+response}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_a4e853e10eda127ebe6043b762d2b9be9}\index{django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}!cache@{cache}}
+\index{cache@{cache}!django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}}
+\doxysubsubsection{\texorpdfstring{cache()}{cache()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_a4e853e10eda127ebe6043b762d2b9be9} 
+django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware.\+cache (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ab386661385110857e24ad5f8472bb1eb}\index{django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_request()}{process\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ab386661385110857e24ad5f8472bb1eb} 
+django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware.\+process\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether the page is already cached and return the cached
+version if available.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ad741e8f6db49e0dfe23ceaf4e4504a87}\index{django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}!cache\_alias@{cache\_alias}}
+\index{cache\_alias@{cache\_alias}!django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}}
+\doxysubsubsection{\texorpdfstring{cache\_alias}{cache\_alias}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_ad741e8f6db49e0dfe23ceaf4e4504a87} 
+django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware.\+cache\+\_\+alias = settings.\+CACHE\+\_\+\+MIDDLEWARE\+\_\+\+ALIAS}
+
+\Hypertarget{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_aaf54b2fdf26105f3e2efd0673a403b46}\index{django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}!key\_prefix@{key\_prefix}}
+\index{key\_prefix@{key\_prefix}!django.middleware.cache.FetchFromCacheMiddleware@{django.middleware.cache.FetchFromCacheMiddleware}}
+\doxysubsubsection{\texorpdfstring{key\_prefix}{key\_prefix}}
+{\footnotesize\ttfamily \label{classdjango_1_1middleware_1_1cache_1_1_fetch_from_cache_middleware_aaf54b2fdf26105f3e2efd0673a403b46} 
+django.\+middleware.\+cache.\+Fetch\+From\+Cache\+Middleware.\+key\+\_\+prefix = settings.\+CACHE\+\_\+\+MIDDLEWARE\+\_\+\+KEY\+\_\+\+PREFIX}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/middleware/\mbox{\hyperlink{django_2middleware_2cache_8py}{cache.\+py}}\end{DoxyCompactItemize}

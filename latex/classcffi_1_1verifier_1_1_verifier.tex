@@ -1,0 +1,242 @@
+\doxysection{cffi.\+verifier.\+Verifier Class Reference}
+\hypertarget{classcffi_1_1verifier_1_1_verifier}{}\label{classcffi_1_1verifier_1_1_verifier}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+Inheritance diagram for cffi.\+verifier.\+Verifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcffi_1_1verifier_1_1_verifier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a98129b7c6acf5c2b3dcceb8e7988aa58}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a18f61d4a47bcdb0d13320d1c71ee08f4}{ffi}}, \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a6e9ad54ffca1ba57316530de4255e9f5}{preamble}}, \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a72551aa431d53eae43707b32bf8f8878}{tmpdir}}=None, modulename=None, \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_abc0993d504920aed2ce6acfd52f08453}{ext\+\_\+package}}=None, tag=\textquotesingle{}\textquotesingle{}, force\+\_\+generic\+\_\+engine=False, source\+\_\+extension=\textquotesingle{}.c\textquotesingle{}, \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_aae324eeed37fbb5ca9914779f6578df1}{flags}}=None, relative\+\_\+to=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a51b4d199d684f490fc630d9332cc27f6}{kwds}})
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_acfc2cae2263ee74388a5b862ae5cf874}{write\+\_\+source}} (self, file=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a3ab2b13f2f24bb6871b9111923f1a138}{compile\+\_\+module}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a3f4cc3b50c42913dd0d22dc233524f28}{load\+\_\+library}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a16bf645476a21883a1dd15847720c4f6}{get\+\_\+module\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_af447ee2fbeadedce4b28f517cfb048da}{get\+\_\+extension}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_affc5aff0937578a0de961102eabd0c10}{generates\+\_\+python\+\_\+module}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_ae39e321ae2ce02043979e8a95a67fb81}{make\+\_\+relative\+\_\+to}} (self, \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a51b4d199d684f490fc630d9332cc27f6}{kwds}}, relative\+\_\+to)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a18f61d4a47bcdb0d13320d1c71ee08f4}{ffi}} = ffi
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a6e9ad54ffca1ba57316530de4255e9f5}{preamble}} = preamble
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_aae324eeed37fbb5ca9914779f6578df1}{flags}} = flags
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a51b4d199d684f490fc630d9332cc27f6}{kwds}} = self.\+make\+\_\+relative\+\_\+to(kwds, relative\+\_\+to)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a72551aa431d53eae43707b32bf8f8878}{tmpdir}} = tmpdir or \mbox{\hyperlink{namespacecffi_1_1verifier_a60648349e109287c026baf0c48a8c1aa}{\+\_\+caller\+\_\+dir\+\_\+pycache}}()
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_ad8cdae4bba0e11826492c221bbb2245e}{sourcefilename}} = os.\+path.\+join(self.\+tmpdir, modulename + source\+\_\+extension)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a9478baa9d1d6f4b9fbb9cb63070ec7e4}{modulefilename}} = os.\+path.\+join(self.\+tmpdir, modulename + suffix)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_abc0993d504920aed2ce6acfd52f08453}{ext\+\_\+package}} = ext\+\_\+package
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a39fa84e0d7f74e88dafcf2cad0c5cd39}{\+\_\+locate\+\_\+module}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_aaf83e04142623e7ccf2460965006aed5}{\+\_\+write\+\_\+source\+\_\+to}} (self, file)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a1aa61152a52d10127b522cceb0efb670}{\+\_\+write\+\_\+source}} (self, file=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_ae0d07806ff6796d142c1c6d28a035fdd}{\+\_\+compile\+\_\+module}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a9de40d4d3231a07d492a907359b11949}{\+\_\+load\+\_\+library}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a4993df1ceba885457e5cfcf8551f851d}{\+\_\+vengine}} = vengine\+\_\+class(self)
+\item 
+bool \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_aa02e88dbf2421add2fa3bb5430047645}{\+\_\+has\+\_\+source}} = False
+\item 
+bool \mbox{\hyperlink{classcffi_1_1verifier_1_1_verifier_a0391697f4eacd494c5348f4cd7ce7eca}{\+\_\+has\+\_\+module}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a98129b7c6acf5c2b3dcceb8e7988aa58}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a98129b7c6acf5c2b3dcceb8e7988aa58} 
+cffi.\+verifier.\+Verifier.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ffi}{, }\item[{}]{preamble}{, }\item[{}]{tmpdir}{ = {\ttfamily None}, }\item[{}]{modulename}{ = {\ttfamily None}, }\item[{}]{ext\+\_\+package}{ = {\ttfamily None}, }\item[{}]{tag}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{force\+\_\+generic\+\_\+engine}{ = {\ttfamily False}, }\item[{}]{source\+\_\+extension}{ = {\ttfamily \textquotesingle{}.c\textquotesingle{}}, }\item[{}]{flags}{ = {\ttfamily None}, }\item[{}]{relative\+\_\+to}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_ae0d07806ff6796d142c1c6d28a035fdd}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_compile\_module@{\_compile\_module}}
+\index{\_compile\_module@{\_compile\_module}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_compile\_module()}{\_compile\_module()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_ae0d07806ff6796d142c1c6d28a035fdd} 
+cffi.\+verifier.\+Verifier.\+\_\+compile\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a9de40d4d3231a07d492a907359b11949}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_load\_library@{\_load\_library}}
+\index{\_load\_library@{\_load\_library}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_load\_library()}{\_load\_library()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a9de40d4d3231a07d492a907359b11949} 
+cffi.\+verifier.\+Verifier.\+\_\+load\+\_\+library (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a39fa84e0d7f74e88dafcf2cad0c5cd39}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_locate\_module@{\_locate\_module}}
+\index{\_locate\_module@{\_locate\_module}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_locate\_module()}{\_locate\_module()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a39fa84e0d7f74e88dafcf2cad0c5cd39} 
+cffi.\+verifier.\+Verifier.\+\_\+locate\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a1aa61152a52d10127b522cceb0efb670}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_write\_source@{\_write\_source}}
+\index{\_write\_source@{\_write\_source}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_write\_source()}{\_write\_source()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a1aa61152a52d10127b522cceb0efb670} 
+cffi.\+verifier.\+Verifier.\+\_\+write\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_aaf83e04142623e7ccf2460965006aed5}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_write\_source\_to@{\_write\_source\_to}}
+\index{\_write\_source\_to@{\_write\_source\_to}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_write\_source\_to()}{\_write\_source\_to()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_aaf83e04142623e7ccf2460965006aed5} 
+cffi.\+verifier.\+Verifier.\+\_\+write\+\_\+source\+\_\+to (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a3ab2b13f2f24bb6871b9111923f1a138}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!compile\_module@{compile\_module}}
+\index{compile\_module@{compile\_module}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{compile\_module()}{compile\_module()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a3ab2b13f2f24bb6871b9111923f1a138} 
+cffi.\+verifier.\+Verifier.\+compile\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write the C source code (if not done already) and compile it.
+This produces a dynamic link library in 'self.modulefilename'.\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1verifier_1_1_verifier_affc5aff0937578a0de961102eabd0c10}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!generates\_python\_module@{generates\_python\_module}}
+\index{generates\_python\_module@{generates\_python\_module}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{generates\_python\_module()}{generates\_python\_module()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_affc5aff0937578a0de961102eabd0c10} 
+cffi.\+verifier.\+Verifier.\+generates\+\_\+python\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_af447ee2fbeadedce4b28f517cfb048da}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!get\_extension@{get\_extension}}
+\index{get\_extension@{get\_extension}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{get\_extension()}{get\_extension()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_af447ee2fbeadedce4b28f517cfb048da} 
+cffi.\+verifier.\+Verifier.\+get\+\_\+extension (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a16bf645476a21883a1dd15847720c4f6}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!get\_module\_name@{get\_module\_name}}
+\index{get\_module\_name@{get\_module\_name}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{get\_module\_name()}{get\_module\_name()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a16bf645476a21883a1dd15847720c4f6} 
+cffi.\+verifier.\+Verifier.\+get\+\_\+module\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a3f4cc3b50c42913dd0d22dc233524f28}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!load\_library@{load\_library}}
+\index{load\_library@{load\_library}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{load\_library()}{load\_library()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a3f4cc3b50c42913dd0d22dc233524f28} 
+cffi.\+verifier.\+Verifier.\+load\+\_\+library (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a C module from this Verifier instance.
+Returns an instance of a FFILibrary class that behaves like the
+objects returned by ffi.dlopen(), but that delegates all
+operations to the C module.  If necessary, the C code is written
+and compiled first.
+\end{DoxyVerb}
+ \Hypertarget{classcffi_1_1verifier_1_1_verifier_ae39e321ae2ce02043979e8a95a67fb81}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!make\_relative\_to@{make\_relative\_to}}
+\index{make\_relative\_to@{make\_relative\_to}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{make\_relative\_to()}{make\_relative\_to()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_ae39e321ae2ce02043979e8a95a67fb81} 
+cffi.\+verifier.\+Verifier.\+make\+\_\+relative\+\_\+to (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kwds}{, }\item[{}]{relative\+\_\+to}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_acfc2cae2263ee74388a5b862ae5cf874}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!write\_source@{write\_source}}
+\index{write\_source@{write\_source}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{write\_source()}{write\_source()}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_acfc2cae2263ee74388a5b862ae5cf874} 
+cffi.\+verifier.\+Verifier.\+write\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write the C source code.  It is produced in 'self.sourcefilename',
+which can be tweaked beforehand.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a0391697f4eacd494c5348f4cd7ce7eca}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_has\_module@{\_has\_module}}
+\index{\_has\_module@{\_has\_module}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_has\_module}{\_has\_module}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a0391697f4eacd494c5348f4cd7ce7eca} 
+bool cffi.\+verifier.\+Verifier.\+\_\+has\+\_\+module = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_aa02e88dbf2421add2fa3bb5430047645}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_has\_source@{\_has\_source}}
+\index{\_has\_source@{\_has\_source}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_has\_source}{\_has\_source}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_aa02e88dbf2421add2fa3bb5430047645} 
+bool cffi.\+verifier.\+Verifier.\+\_\+has\+\_\+source = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a4993df1ceba885457e5cfcf8551f851d}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!\_vengine@{\_vengine}}
+\index{\_vengine@{\_vengine}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{\_vengine}{\_vengine}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a4993df1ceba885457e5cfcf8551f851d} 
+cffi.\+verifier.\+Verifier.\+\_\+vengine = vengine\+\_\+class(self)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_abc0993d504920aed2ce6acfd52f08453}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!ext\_package@{ext\_package}}
+\index{ext\_package@{ext\_package}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{ext\_package}{ext\_package}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_abc0993d504920aed2ce6acfd52f08453} 
+cffi.\+verifier.\+Verifier.\+ext\+\_\+package = ext\+\_\+package}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a18f61d4a47bcdb0d13320d1c71ee08f4}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!ffi@{ffi}}
+\index{ffi@{ffi}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{ffi}{ffi}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a18f61d4a47bcdb0d13320d1c71ee08f4} 
+cffi.\+verifier.\+Verifier.\+ffi = ffi}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_aae324eeed37fbb5ca9914779f6578df1}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!flags@{flags}}
+\index{flags@{flags}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_aae324eeed37fbb5ca9914779f6578df1} 
+cffi.\+verifier.\+Verifier.\+flags = flags}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a51b4d199d684f490fc630d9332cc27f6}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!kwds@{kwds}}
+\index{kwds@{kwds}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{kwds}{kwds}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a51b4d199d684f490fc630d9332cc27f6} 
+cffi.\+verifier.\+Verifier.\+kwds = self.\+make\+\_\+relative\+\_\+to(kwds, relative\+\_\+to)}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a9478baa9d1d6f4b9fbb9cb63070ec7e4}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!modulefilename@{modulefilename}}
+\index{modulefilename@{modulefilename}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{modulefilename}{modulefilename}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a9478baa9d1d6f4b9fbb9cb63070ec7e4} 
+cffi.\+verifier.\+Verifier.\+modulefilename = os.\+path.\+join(self.\+tmpdir, modulename + suffix)}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a6e9ad54ffca1ba57316530de4255e9f5}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!preamble@{preamble}}
+\index{preamble@{preamble}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{preamble}{preamble}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a6e9ad54ffca1ba57316530de4255e9f5} 
+cffi.\+verifier.\+Verifier.\+preamble = preamble}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_ad8cdae4bba0e11826492c221bbb2245e}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!sourcefilename@{sourcefilename}}
+\index{sourcefilename@{sourcefilename}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{sourcefilename}{sourcefilename}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_ad8cdae4bba0e11826492c221bbb2245e} 
+cffi.\+verifier.\+Verifier.\+sourcefilename = os.\+path.\+join(self.\+tmpdir, modulename + source\+\_\+extension)}
+
+\Hypertarget{classcffi_1_1verifier_1_1_verifier_a72551aa431d53eae43707b32bf8f8878}\index{cffi.verifier.Verifier@{cffi.verifier.Verifier}!tmpdir@{tmpdir}}
+\index{tmpdir@{tmpdir}!cffi.verifier.Verifier@{cffi.verifier.Verifier}}
+\doxysubsubsection{\texorpdfstring{tmpdir}{tmpdir}}
+{\footnotesize\ttfamily \label{classcffi_1_1verifier_1_1_verifier_a72551aa431d53eae43707b32bf8f8878} 
+cffi.\+verifier.\+Verifier.\+tmpdir = tmpdir or \mbox{\hyperlink{namespacecffi_1_1verifier_a60648349e109287c026baf0c48a8c1aa}{\+\_\+caller\+\_\+dir\+\_\+pycache}}()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cffi/\mbox{\hyperlink{verifier_8py}{verifier.\+py}}\end{DoxyCompactItemize}

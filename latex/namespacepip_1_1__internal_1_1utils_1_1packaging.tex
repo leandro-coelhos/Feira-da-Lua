@@ -1,0 +1,53 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+packaging Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1packaging}{}\label{namespacepip_1_1__internal_1_1utils_1_1packaging}\index{pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1packaging_ab666404907dcaeb5f00a7f946e24f480}{check\+\_\+requires\+\_\+python}} (str\texorpdfstring{$\vert$}{|}None requires\+\_\+python, tuple\mbox{[}int,...\mbox{]} version\+\_\+info)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}{Requirement}} \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1packaging_adba45bb028f0faacaa4d929a87e59206}{get\+\_\+requirement}} (str req\+\_\+string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1packaging_aeeaf45933f76591f1a386645f06bff17}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1packaging_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1packaging_ab666404907dcaeb5f00a7f946e24f480}\index{pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}!check\_requires\_python@{check\_requires\_python}}
+\index{check\_requires\_python@{check\_requires\_python}!pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}}
+\doxysubsubsection{\texorpdfstring{check\_requires\_python()}{check\_requires\_python()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1packaging_ab666404907dcaeb5f00a7f946e24f480} 
+ bool pip.\+\_\+internal.\+utils.\+packaging.\+check\+\_\+requires\+\_\+python (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None}]{requires\+\_\+python}{, }\item[{tuple\mbox{[}int, ...\mbox{]} }]{version\+\_\+info}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the given Python version matches a "Requires-Python" specifier.
+
+:param version_info: A 3-tuple of ints representing a Python
+    major-minor-micro version to check (e.g. `sys.version_info[:3]`).
+
+:return: `True` if the given Python version satisfies the requirement.
+    Otherwise, return `False`.
+
+:raises InvalidSpecifier: If `requires_python` has an invalid format.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1packaging_adba45bb028f0faacaa4d929a87e59206}\index{pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}!get\_requirement@{get\_requirement}}
+\index{get\_requirement@{get\_requirement}!pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}}
+\doxysubsubsection{\texorpdfstring{get\_requirement()}{get\_requirement()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1packaging_adba45bb028f0faacaa4d929a87e59206} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}{Requirement}} pip.\+\_\+internal.\+utils.\+packaging.\+get\+\_\+requirement (\begin{DoxyParamCaption}\item[{str}]{req\+\_\+string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a packaging.Requirement object with caching\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1packaging_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1packaging_aeeaf45933f76591f1a386645f06bff17}\index{pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.utils.packaging@{pip.\_internal.utils.packaging}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1packaging_aeeaf45933f76591f1a386645f06bff17} 
+pip.\+\_\+internal.\+utils.\+packaging.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

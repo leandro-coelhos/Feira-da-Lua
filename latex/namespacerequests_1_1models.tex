@@ -1,0 +1,74 @@
+\doxysection{requests.\+models Namespace Reference}
+\hypertarget{namespacerequests_1_1models}{}\label{namespacerequests_1_1models}\index{requests.models@{requests.models}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrequests_1_1models_1_1_prepared_request}{Prepared\+Request}}
+\item 
+class \mbox{\hyperlink{classrequests_1_1models_1_1_request}{Request}}
+\item 
+class \mbox{\hyperlink{classrequests_1_1models_1_1_request_encoding_mixin}{Request\+Encoding\+Mixin}}
+\item 
+class \mbox{\hyperlink{classrequests_1_1models_1_1_request_hooks_mixin}{Request\+Hooks\+Mixin}}
+\item 
+class \mbox{\hyperlink{classrequests_1_1models_1_1_response}{Response}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacerequests_1_1models_a22991db7f9279ed50a1a986fb1041491}{REDIRECT\+\_\+\+STATI}}
+\item 
+int \mbox{\hyperlink{namespacerequests_1_1models_a4d2a16c9b59a96e1ff1e7ffb4f6ce060}{DEFAULT\+\_\+\+REDIRECT\+\_\+\+LIMIT}} = 30
+\item 
+int \mbox{\hyperlink{namespacerequests_1_1models_a7ece9ec59253286b21cfdfe40c6c9dfd}{CONTENT\+\_\+\+CHUNK\+\_\+\+SIZE}} = 10 \texorpdfstring{$\ast$}{*} 1024
+\item 
+int \mbox{\hyperlink{namespacerequests_1_1models_a0b823f7b9ba296e1a710320833ac3f73}{ITER\+\_\+\+CHUNK\+\_\+\+SIZE}} = 512
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}requests.models
+~~~~~~~~~~~~~~~
+
+This module contains the primary objects that power Requests.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacerequests_1_1models_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacerequests_1_1models_a7ece9ec59253286b21cfdfe40c6c9dfd}\index{requests.models@{requests.models}!CONTENT\_CHUNK\_SIZE@{CONTENT\_CHUNK\_SIZE}}
+\index{CONTENT\_CHUNK\_SIZE@{CONTENT\_CHUNK\_SIZE}!requests.models@{requests.models}}
+\doxysubsubsection{\texorpdfstring{CONTENT\_CHUNK\_SIZE}{CONTENT\_CHUNK\_SIZE}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1models_a7ece9ec59253286b21cfdfe40c6c9dfd} 
+int requests.\+models.\+CONTENT\+\_\+\+CHUNK\+\_\+\+SIZE = 10 \texorpdfstring{$\ast$}{*} 1024}
+
+\Hypertarget{namespacerequests_1_1models_a4d2a16c9b59a96e1ff1e7ffb4f6ce060}\index{requests.models@{requests.models}!DEFAULT\_REDIRECT\_LIMIT@{DEFAULT\_REDIRECT\_LIMIT}}
+\index{DEFAULT\_REDIRECT\_LIMIT@{DEFAULT\_REDIRECT\_LIMIT}!requests.models@{requests.models}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_REDIRECT\_LIMIT}{DEFAULT\_REDIRECT\_LIMIT}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1models_a4d2a16c9b59a96e1ff1e7ffb4f6ce060} 
+int requests.\+models.\+DEFAULT\+\_\+\+REDIRECT\+\_\+\+LIMIT = 30}
+
+\Hypertarget{namespacerequests_1_1models_a0b823f7b9ba296e1a710320833ac3f73}\index{requests.models@{requests.models}!ITER\_CHUNK\_SIZE@{ITER\_CHUNK\_SIZE}}
+\index{ITER\_CHUNK\_SIZE@{ITER\_CHUNK\_SIZE}!requests.models@{requests.models}}
+\doxysubsubsection{\texorpdfstring{ITER\_CHUNK\_SIZE}{ITER\_CHUNK\_SIZE}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1models_a0b823f7b9ba296e1a710320833ac3f73} 
+int requests.\+models.\+ITER\+\_\+\+CHUNK\+\_\+\+SIZE = 512}
+
+\Hypertarget{namespacerequests_1_1models_a22991db7f9279ed50a1a986fb1041491}\index{requests.models@{requests.models}!REDIRECT\_STATI@{REDIRECT\_STATI}}
+\index{REDIRECT\_STATI@{REDIRECT\_STATI}!requests.models@{requests.models}}
+\doxysubsubsection{\texorpdfstring{REDIRECT\_STATI}{REDIRECT\_STATI}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1models_a22991db7f9279ed50a1a986fb1041491} 
+tuple requests.\+models.\+REDIRECT\+\_\+\+STATI}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ codes.moved,\ \ \textcolor{comment}{\#\ 301}}
+\DoxyCodeLine{00003\ \ \ \ \ codes.found,\ \ \textcolor{comment}{\#\ 302}}
+\DoxyCodeLine{00004\ \ \ \ \ codes.other,\ \ \textcolor{comment}{\#\ 303}}
+\DoxyCodeLine{00005\ \ \ \ \ codes.temporary\_redirect,\ \ \textcolor{comment}{\#\ 307}}
+\DoxyCodeLine{00006\ \ \ \ \ codes.permanent\_redirect,\ \ \textcolor{comment}{\#\ 308}}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}

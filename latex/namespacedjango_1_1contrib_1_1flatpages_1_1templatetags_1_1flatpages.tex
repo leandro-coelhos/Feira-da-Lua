@@ -1,0 +1,63 @@
+\doxysection{django.\+contrib.\+flatpages.\+templatetags.\+flatpages Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages}{}\label{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages}\index{django.contrib.flatpages.templatetags.flatpages@{django.contrib.flatpages.templatetags.flatpages}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_1_1_flatpage_node}{Flatpage\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_a560d3246a92f0c7766ca7e4f60c0e89d}{get\+\_\+flatpages}} (parser, token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_aabfb9082bd3455f4cac900668142a335}{register}} = \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_library}{template.\+Library}}()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_a560d3246a92f0c7766ca7e4f60c0e89d}\index{django.contrib.flatpages.templatetags.flatpages@{django.contrib.flatpages.templatetags.flatpages}!get\_flatpages@{get\_flatpages}}
+\index{get\_flatpages@{get\_flatpages}!django.contrib.flatpages.templatetags.flatpages@{django.contrib.flatpages.templatetags.flatpages}}
+\doxysubsubsection{\texorpdfstring{get\_flatpages()}{get\_flatpages()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_a560d3246a92f0c7766ca7e4f60c0e89d} 
+django.\+contrib.\+flatpages.\+templatetags.\+flatpages.\+get\+\_\+flatpages (\begin{DoxyParamCaption}\item[{}]{parser}{, }\item[{}]{token}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve all flatpage objects available for the current site and
+visible to the specific user (or visible to all users if no user is
+specified). Populate the template context with them in a variable
+whose name is defined by the ``as`` clause.
+
+An optional ``for`` clause controls the user whose permissions are used in
+determining which flatpages are visible.
+
+An optional argument, ``starts_with``, limits the returned flatpages to
+those beginning with a particular base URL. This argument can be a variable
+or a string, as it resolves from the template context.
+
+Syntax::
+
+    {% get_flatpages ['url_starts_with'] [for user] as context_name %}
+
+Example usage::
+
+    {% get_flatpages as flatpages %}
+    {% get_flatpages for someuser as flatpages %}
+    {% get_flatpages '/about/' as about_pages %}
+    {% get_flatpages prefix as about_pages %}
+    {% get_flatpages '/about/' for someuser as about_pages %}
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_aabfb9082bd3455f4cac900668142a335}\index{django.contrib.flatpages.templatetags.flatpages@{django.contrib.flatpages.templatetags.flatpages}!register@{register}}
+\index{register@{register}!django.contrib.flatpages.templatetags.flatpages@{django.contrib.flatpages.templatetags.flatpages}}
+\doxysubsubsection{\texorpdfstring{register}{register}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1flatpages_1_1templatetags_1_1flatpages_aabfb9082bd3455f4cac900668142a335} 
+django.\+contrib.\+flatpages.\+templatetags.\+flatpages.\+register = \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_library}{template.\+Library}}()}
+

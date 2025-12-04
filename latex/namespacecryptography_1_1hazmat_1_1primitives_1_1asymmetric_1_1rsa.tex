@@ -1,0 +1,148 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa Namespace Reference}
+\hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa}{}\label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_private_key}{RSAPrivate\+Key}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_public_key}{RSAPublic\+Key}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_private_key}{RSAPrivate\+Key}} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_ac23a7be100fb4ef8a5a73bb1b1d1df5b}{generate\+\_\+private\+\_\+key}} (int public\+\_\+exponent, int key\+\_\+size, typing.\+Any backend=None)
+\item 
+None \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a438598ca63335654364c5365fee64026}{\+\_\+verify\+\_\+rsa\+\_\+parameters}} (int public\+\_\+exponent, int key\+\_\+size)
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a118b1d02ce55aabc30aa4145c16bca15}{\+\_\+modinv}} (int e, int m)
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a2ee1d8c099fb6d3cd48a2eb90a352fd2}{rsa\+\_\+crt\+\_\+iqmp}} (int p, int q)
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a32245d4e88b6710f0c742a8d89361950}{rsa\+\_\+crt\+\_\+dmp1}} (int private\+\_\+exponent, int p)
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_ae494251b2f6340e82f7128ef001ecb85}{rsa\+\_\+crt\+\_\+dmq1}} (int private\+\_\+exponent, int q)
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aced8b94b14e1048d4c473e780d6dae7a}{rsa\+\_\+recover\+\_\+private\+\_\+exponent}} (int e, int p, int q)
+\item 
+tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_acc285e158884e2eaddb2e9b8a66a95f3}{rsa\+\_\+recover\+\_\+prime\+\_\+factors}} (int n, int e, int d)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aaff88044aadf1db7b3e84ce30163410d}{RSAPrivate\+Key\+With\+Serialization}} = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_private_key}{RSAPrivate\+Key}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a61ecdbc0ec0a626470e4410bac82879c}{RSAPublic\+Key\+With\+Serialization}} = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_public_key}{RSAPublic\+Key}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aab8bdd19992860b2e2c16c69b1740d8a}{RSAPrivate\+Numbers}} = rust\+\_\+openssl.\+rsa.\+RSAPrivate\+Numbers
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a442f0ceb04ca47496beb35ddc29558d4}{RSAPublic\+Numbers}} = rust\+\_\+openssl.\+rsa.\+RSAPublic\+Numbers
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a5f95d54e24f0365a3491cf79ef7d948d}{\+\_\+\+MAX\+\_\+\+RECOVERY\+\_\+\+ATTEMPTS}} = 500
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a118b1d02ce55aabc30aa4145c16bca15}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!\_modinv@{\_modinv}}
+\index{\_modinv@{\_modinv}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{\_modinv()}{\_modinv()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a118b1d02ce55aabc30aa4145c16bca15} 
+ int cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+\_\+modinv (\begin{DoxyParamCaption}\item[{int}]{e}{, }\item[{int}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Modular Multiplicative Inverse. Returns x such that: (x*e) mod m == 1
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a438598ca63335654364c5365fee64026}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!\_verify\_rsa\_parameters@{\_verify\_rsa\_parameters}}
+\index{\_verify\_rsa\_parameters@{\_verify\_rsa\_parameters}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{\_verify\_rsa\_parameters()}{\_verify\_rsa\_parameters()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a438598ca63335654364c5365fee64026} 
+ None cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+\_\+verify\+\_\+rsa\+\_\+parameters (\begin{DoxyParamCaption}\item[{int}]{public\+\_\+exponent}{, }\item[{int}]{key\+\_\+size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_ac23a7be100fb4ef8a5a73bb1b1d1df5b}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!generate\_private\_key@{generate\_private\_key}}
+\index{generate\_private\_key@{generate\_private\_key}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{generate\_private\_key()}{generate\_private\_key()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_ac23a7be100fb4ef8a5a73bb1b1d1df5b} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_private_key}{RSAPrivate\+Key}} cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+generate\+\_\+private\+\_\+key (\begin{DoxyParamCaption}\item[{int}]{public\+\_\+exponent}{, }\item[{int}]{key\+\_\+size}{, }\item[{typing.\+Any }]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a32245d4e88b6710f0c742a8d89361950}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!rsa\_crt\_dmp1@{rsa\_crt\_dmp1}}
+\index{rsa\_crt\_dmp1@{rsa\_crt\_dmp1}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{rsa\_crt\_dmp1()}{rsa\_crt\_dmp1()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a32245d4e88b6710f0c742a8d89361950} 
+ int cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+rsa\+\_\+crt\+\_\+dmp1 (\begin{DoxyParamCaption}\item[{int}]{private\+\_\+exponent}{, }\item[{int}]{p}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the CRT private_exponent % (p - 1) value from the RSA
+private_exponent (d) and p.
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_ae494251b2f6340e82f7128ef001ecb85}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!rsa\_crt\_dmq1@{rsa\_crt\_dmq1}}
+\index{rsa\_crt\_dmq1@{rsa\_crt\_dmq1}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{rsa\_crt\_dmq1()}{rsa\_crt\_dmq1()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_ae494251b2f6340e82f7128ef001ecb85} 
+ int cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+rsa\+\_\+crt\+\_\+dmq1 (\begin{DoxyParamCaption}\item[{int}]{private\+\_\+exponent}{, }\item[{int}]{q}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the CRT private_exponent % (q - 1) value from the RSA
+private_exponent (d) and q.
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a2ee1d8c099fb6d3cd48a2eb90a352fd2}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!rsa\_crt\_iqmp@{rsa\_crt\_iqmp}}
+\index{rsa\_crt\_iqmp@{rsa\_crt\_iqmp}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{rsa\_crt\_iqmp()}{rsa\_crt\_iqmp()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a2ee1d8c099fb6d3cd48a2eb90a352fd2} 
+ int cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+rsa\+\_\+crt\+\_\+iqmp (\begin{DoxyParamCaption}\item[{int}]{p}{, }\item[{int}]{q}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the CRT (q ** -1) % p value from RSA primes p and q.
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_acc285e158884e2eaddb2e9b8a66a95f3}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!rsa\_recover\_prime\_factors@{rsa\_recover\_prime\_factors}}
+\index{rsa\_recover\_prime\_factors@{rsa\_recover\_prime\_factors}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{rsa\_recover\_prime\_factors()}{rsa\_recover\_prime\_factors()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_acc285e158884e2eaddb2e9b8a66a95f3} 
+ tuple\mbox{[}int, int\mbox{]} cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+rsa\+\_\+recover\+\_\+prime\+\_\+factors (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{int}]{e}{, }\item[{int}]{d}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute factors p and q from the private exponent d. We assume that n has
+no more than two factors. This function is adapted from code in PyCrypto.
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aced8b94b14e1048d4c473e780d6dae7a}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!rsa\_recover\_private\_exponent@{rsa\_recover\_private\_exponent}}
+\index{rsa\_recover\_private\_exponent@{rsa\_recover\_private\_exponent}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{rsa\_recover\_private\_exponent()}{rsa\_recover\_private\_exponent()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aced8b94b14e1048d4c473e780d6dae7a} 
+ int cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+rsa\+\_\+recover\+\_\+private\+\_\+exponent (\begin{DoxyParamCaption}\item[{int}]{e}{, }\item[{int}]{p}{, }\item[{int}]{q}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the RSA private_exponent (d) given the public exponent (e)
+and the RSA primes p and q.
+
+This uses the Carmichael totient function to generate the
+smallest possible working value of the private exponent.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a5f95d54e24f0365a3491cf79ef7d948d}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!\_MAX\_RECOVERY\_ATTEMPTS@{\_MAX\_RECOVERY\_ATTEMPTS}}
+\index{\_MAX\_RECOVERY\_ATTEMPTS@{\_MAX\_RECOVERY\_ATTEMPTS}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{\_MAX\_RECOVERY\_ATTEMPTS}{\_MAX\_RECOVERY\_ATTEMPTS}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a5f95d54e24f0365a3491cf79ef7d948d} 
+int cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+\_\+\+MAX\+\_\+\+RECOVERY\+\_\+\+ATTEMPTS = 500\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aaff88044aadf1db7b3e84ce30163410d}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!RSAPrivateKeyWithSerialization@{RSAPrivateKeyWithSerialization}}
+\index{RSAPrivateKeyWithSerialization@{RSAPrivateKeyWithSerialization}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{RSAPrivateKeyWithSerialization}{RSAPrivateKeyWithSerialization}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aaff88044aadf1db7b3e84ce30163410d} 
+cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+RSAPrivate\+Key\+With\+Serialization = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_private_key}{RSAPrivate\+Key}}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aab8bdd19992860b2e2c16c69b1740d8a}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!RSAPrivateNumbers@{RSAPrivateNumbers}}
+\index{RSAPrivateNumbers@{RSAPrivateNumbers}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{RSAPrivateNumbers}{RSAPrivateNumbers}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_aab8bdd19992860b2e2c16c69b1740d8a} 
+cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+RSAPrivate\+Numbers = rust\+\_\+openssl.\+rsa.\+RSAPrivate\+Numbers}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a61ecdbc0ec0a626470e4410bac82879c}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!RSAPublicKeyWithSerialization@{RSAPublicKeyWithSerialization}}
+\index{RSAPublicKeyWithSerialization@{RSAPublicKeyWithSerialization}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{RSAPublicKeyWithSerialization}{RSAPublicKeyWithSerialization}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a61ecdbc0ec0a626470e4410bac82879c} 
+cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+RSAPublic\+Key\+With\+Serialization = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_1_1_r_s_a_public_key}{RSAPublic\+Key}}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a442f0ceb04ca47496beb35ddc29558d4}\index{cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}!RSAPublicNumbers@{RSAPublicNumbers}}
+\index{RSAPublicNumbers@{RSAPublicNumbers}!cryptography.hazmat.primitives.asymmetric.rsa@{cryptography.hazmat.primitives.asymmetric.rsa}}
+\doxysubsubsection{\texorpdfstring{RSAPublicNumbers}{RSAPublicNumbers}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1rsa_a442f0ceb04ca47496beb35ddc29558d4} 
+cryptography.\+hazmat.\+primitives.\+asymmetric.\+rsa.\+RSAPublic\+Numbers = rust\+\_\+openssl.\+rsa.\+RSAPublic\+Numbers}
+

@@ -1,0 +1,202 @@
+\doxysection{asgiref.\+server.\+Stateless\+Server Class Reference}
+\hypertarget{classasgiref_1_1server_1_1_stateless_server}{}\label{classasgiref_1_1server_1_1_stateless_server}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a987acf81951362f10dea29e7a779a005}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a68e7a45110662dd0a7e18566faa1386c}{application}}, \mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_ae43278e077eb598e93a9af47ac937e55}{max\+\_\+applications}}=1000)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a60ad300a082526eea5c1b2df64c4e793}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Mainloop and handling. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a0809a1e0f68d2a6e780b41be9ad7d650}{arun}} (self)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a35cf023938b43f40945fa4c4072ffbc1}{handle}} (self)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a2fd6c0b8f7f5d812d844b215fbab3dc9}{application\+\_\+send}} (self, scope, message)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_ab3527de5a5cee8c0cee5810542cf2735}{get\+\_\+or\+\_\+create\+\_\+application\+\_\+instance}} (self, scope\+\_\+id, scope)
+\begin{DoxyCompactList}\small\item\em Application instance management. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a0767cb68e1de116205ea2b1f43d70f0f}{delete\+\_\+oldest\+\_\+application\+\_\+instance}} (self)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a09f75080636a97cc1065277baaf88e10}{delete\+\_\+application\+\_\+instance}} (self, scope\+\_\+id)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a57920a6ee82f8c0c2a32a7764dbab114}{application\+\_\+checker}} (self)
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a944742225c38a3471e1fc6463ad62b28}{application\+\_\+exception}} (self, exception, application\+\_\+details)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a68e7a45110662dd0a7e18566faa1386c}{application}} = application
+\item 
+\mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_ae43278e077eb598e93a9af47ac937e55}{max\+\_\+applications}} = max\+\_\+applications
+\item 
+dict \mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a67a3133cd324bef2191aa2b8679eaf71}{application\+\_\+instances}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classasgiref_1_1server_1_1_stateless_server_a29d1e7253f5c5b0199e231ccf23f7e7d}{application\+\_\+checker\+\_\+interval}} = 0.\+1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base server class that handles basic concepts like application instance
+creation/pooling, exception handling, and similar, for stateless protocols
+(i.e. ones without actual incoming connections to the process)
+
+Your code should override the handle() method, doing whatever it needs to,
+and calling get_or_create_application_instance with a unique `scope_id`
+and `scope` for the scope it wants to get.
+
+If an application instance is found with the same `scope_id`, you are
+given its input queue, otherwise one is made for you with the scope provided
+and you are given that fresh new input queue. Either way, you should do
+something like:
+
+input_queue = self.get_or_create_application_instance(
+    "user-123456",
+    {"type": "testprotocol", "user_id": "123456", "username": "andrew"},
+)
+input_queue.put_nowait(message)
+
+If you try and create an application instance and there are already
+`max_application` instances, the oldest/least recently used one will be
+reclaimed and shut down to make space.
+
+Application coroutines that error will be found periodically (every 100ms
+by default) and have their exceptions printed to the console. Override
+application_exception() if you want to do more when this happens.
+
+If you override run(), make sure you handle things like launching the
+application checker.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_a987acf81951362f10dea29e7a779a005}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a987acf81951362f10dea29e7a779a005} 
+asgiref.\+server.\+Stateless\+Server.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{application}{, }\item[{}]{max\+\_\+applications}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_a57920a6ee82f8c0c2a32a7764dbab114}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!application\_checker@{application\_checker}}
+\index{application\_checker@{application\_checker}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{application\_checker()}{application\_checker()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a57920a6ee82f8c0c2a32a7764dbab114} 
+asgiref.\+server.\+Stateless\+Server.\+application\+\_\+checker (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Goes through the set of current application instance Futures and cleans up
+any that are done/prints exceptions for any that errored.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_a944742225c38a3471e1fc6463ad62b28}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!application\_exception@{application\_exception}}
+\index{application\_exception@{application\_exception}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{application\_exception()}{application\_exception()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a944742225c38a3471e1fc6463ad62b28} 
+asgiref.\+server.\+Stateless\+Server.\+application\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exception}{, }\item[{}]{application\+\_\+details}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called whenever an application coroutine has an exception.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_a2fd6c0b8f7f5d812d844b215fbab3dc9}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!application\_send@{application\_send}}
+\index{application\_send@{application\_send}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{application\_send()}{application\_send()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a2fd6c0b8f7f5d812d844b215fbab3dc9} 
+asgiref.\+server.\+Stateless\+Server.\+application\+\_\+send (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope}{, }\item[{}]{message}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Receives outbound sends from applications and handles them.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_a0809a1e0f68d2a6e780b41be9ad7d650}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!arun@{arun}}
+\index{arun@{arun}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{arun()}{arun()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a0809a1e0f68d2a6e780b41be9ad7d650} 
+asgiref.\+server.\+Stateless\+Server.\+arun (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the asyncio event loop with our handler loop.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_a09f75080636a97cc1065277baaf88e10}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!delete\_application\_instance@{delete\_application\_instance}}
+\index{delete\_application\_instance@{delete\_application\_instance}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{delete\_application\_instance()}{delete\_application\_instance()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a09f75080636a97cc1065277baaf88e10} 
+asgiref.\+server.\+Stateless\+Server.\+delete\+\_\+application\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes an application instance (makes sure its task is stopped,
+then removes it from the current set)
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_a0767cb68e1de116205ea2b1f43d70f0f}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!delete\_oldest\_application\_instance@{delete\_oldest\_application\_instance}}
+\index{delete\_oldest\_application\_instance@{delete\_oldest\_application\_instance}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{delete\_oldest\_application\_instance()}{delete\_oldest\_application\_instance()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a0767cb68e1de116205ea2b1f43d70f0f} 
+asgiref.\+server.\+Stateless\+Server.\+delete\+\_\+oldest\+\_\+application\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds and deletes the oldest application instance
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_ab3527de5a5cee8c0cee5810542cf2735}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!get\_or\_create\_application\_instance@{get\_or\_create\_application\_instance}}
+\index{get\_or\_create\_application\_instance@{get\_or\_create\_application\_instance}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{get\_or\_create\_application\_instance()}{get\_or\_create\_application\_instance()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_ab3527de5a5cee8c0cee5810542cf2735} 
+asgiref.\+server.\+Stateless\+Server.\+get\+\_\+or\+\_\+create\+\_\+application\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope\+\_\+id}{, }\item[{}]{scope}{}\end{DoxyParamCaption})}
+
+
+
+Application instance management. 
+
+\begin{DoxyVerb}Creates an application instance and returns its queue.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1server_1_1_stateless_server_a35cf023938b43f40945fa4c4072ffbc1}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!handle@{handle}}
+\index{handle@{handle}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a35cf023938b43f40945fa4c4072ffbc1} 
+asgiref.\+server.\+Stateless\+Server.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_a60ad300a082526eea5c1b2df64c4e793}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!run@{run}}
+\index{run@{run}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a60ad300a082526eea5c1b2df64c4e793} 
+asgiref.\+server.\+Stateless\+Server.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Mainloop and handling. 
+
+\begin{DoxyVerb}Runs the asyncio event loop with our handler loop.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_a68e7a45110662dd0a7e18566faa1386c}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!application@{application}}
+\index{application@{application}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{application}{application}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a68e7a45110662dd0a7e18566faa1386c} 
+asgiref.\+server.\+Stateless\+Server.\+application = application}
+
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_a29d1e7253f5c5b0199e231ccf23f7e7d}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!application\_checker\_interval@{application\_checker\_interval}}
+\index{application\_checker\_interval@{application\_checker\_interval}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{application\_checker\_interval}{application\_checker\_interval}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a29d1e7253f5c5b0199e231ccf23f7e7d} 
+asgiref.\+server.\+Stateless\+Server.\+application\+\_\+checker\+\_\+interval = 0.\+1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_a67a3133cd324bef2191aa2b8679eaf71}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!application\_instances@{application\_instances}}
+\index{application\_instances@{application\_instances}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{application\_instances}{application\_instances}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_a67a3133cd324bef2191aa2b8679eaf71} 
+asgiref.\+server.\+Stateless\+Server.\+application\+\_\+instances = \{\}}
+
+\Hypertarget{classasgiref_1_1server_1_1_stateless_server_ae43278e077eb598e93a9af47ac937e55}\index{asgiref.server.StatelessServer@{asgiref.server.StatelessServer}!max\_applications@{max\_applications}}
+\index{max\_applications@{max\_applications}!asgiref.server.StatelessServer@{asgiref.server.StatelessServer}}
+\doxysubsubsection{\texorpdfstring{max\_applications}{max\_applications}}
+{\footnotesize\ttfamily \label{classasgiref_1_1server_1_1_stateless_server_ae43278e077eb598e93a9af47ac937e55} 
+asgiref.\+server.\+Stateless\+Server.\+max\+\_\+applications = max\+\_\+applications}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/asgiref/\mbox{\hyperlink{server_8py}{server.\+py}}\end{DoxyCompactItemize}

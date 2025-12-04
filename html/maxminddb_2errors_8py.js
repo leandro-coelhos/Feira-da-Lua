@@ -1,0 +1,4 @@
+var maxminddb_2errors_8py =
+[
+    [ "maxminddb.errors.InvalidDatabaseError", "classmaxminddb_1_1errors_1_1_invalid_database_error.html", null ]
+];

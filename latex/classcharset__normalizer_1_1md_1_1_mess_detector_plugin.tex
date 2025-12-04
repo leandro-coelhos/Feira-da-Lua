@@ -1,0 +1,85 @@
+\doxysection{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin Class Reference}
+\hypertarget{classcharset__normalizer_1_1md_1_1_mess_detector_plugin}{}\label{classcharset__normalizer_1_1md_1_1_mess_detector_plugin}\index{charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}}
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.734807cm]{classcharset__normalizer_1_1md_1_1_mess_detector_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a82ba1b462302d9374e38614cd8a918b9}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{ratio}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base abstract class used for mess detection plugins.
+All detectors MUST extend and implement given methods.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}\index{charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb} 
+ bool charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin.\+eligible (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{character}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_arabic_isolated_form_plugin_a2829edfe6f874340a74e04b48e3133bb}{charset\+\_\+normalizer.\+md.\+Arabic\+Isolated\+Form\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_archaic_upper_lower_plugin_a773dcc4019d8243bb4042b4620736373}{charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_cjk_uncommon_plugin_a7991b38c0515a277df4c746f32066e4c}{charset\+\_\+normalizer.\+md.\+Cjk\+Uncommon\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ab33e20d3128fd17930a97838134ffe24}{charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_duplicate_accent_plugin_a3f979de0e5d220d5a7f4f9d46c9d8c6e}{charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_range_ac301c7d86ea3ca7e5522c41a9daba2b7}{charset\+\_\+normalizer.\+md.\+Suspicious\+Range}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_accentuated_plugin_a667242174d3a7666ba36bbedd4e1ab9c}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Accentuated\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_symbol_or_punctuation_plugin_ac45a29f17d96c44dea5195f6a3f6d9ae}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Symbol\+Or\+Punctuation\+Plugin}}, and \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_unprintable_plugin_af2bfe940b4aa5f7cb5ac7c47d292086c}{charset\+\_\+normalizer.\+md.\+Unprintable\+Plugin}}.
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}\index{charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a1d7b6ef49fad244c8841e7dacf4a1bdb} 
+ None charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin.\+feed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{character}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_arabic_isolated_form_plugin_ae0c2c64fa4fdfaae459ff6d777b815aa}{charset\+\_\+normalizer.\+md.\+Arabic\+Isolated\+Form\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_archaic_upper_lower_plugin_a86c97de5c4917e9333d9bca4b46de6eb}{charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_cjk_uncommon_plugin_ac999f988c84989e089407db7ff5e15ad}{charset\+\_\+normalizer.\+md.\+Cjk\+Uncommon\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ad619d1ea25d7dca135e92a1393555961}{charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_duplicate_accent_plugin_a6a076ed0d9cc5fec925a6ae98da8382f}{charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_range_a9c1c585038768d30949c547ff4dcfca2}{charset\+\_\+normalizer.\+md.\+Suspicious\+Range}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_accentuated_plugin_a1cc832685da21c3691ab502fe932c26e}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Accentuated\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_symbol_or_punctuation_plugin_a402501c13b6bb02e0cc3ef414eab72ab}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Symbol\+Or\+Punctuation\+Plugin}}, and \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_unprintable_plugin_ae7b4e7f6d4bd593a8bbf51ffde13a107}{charset\+\_\+normalizer.\+md.\+Unprintable\+Plugin}}.
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_ac8f7c272b946d769ca5d6c478b6dd8a1}\index{charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_ac8f7c272b946d769ca5d6c478b6dd8a1} 
+ float charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin.\+ratio (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_arabic_isolated_form_plugin_a27229d7e325983d28daa554f8fe05c2c}{charset\+\_\+normalizer.\+md.\+Arabic\+Isolated\+Form\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_archaic_upper_lower_plugin_a211c33473a5bc1fbd6a82bd04b2fe768}{charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_cjk_uncommon_plugin_a2862c25c00a2e7f3fb0f503676530ac4}{charset\+\_\+normalizer.\+md.\+Cjk\+Uncommon\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4d8594604ece7ee400b21b6ba15c993a}{charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_duplicate_accent_plugin_ab94e4beb1808c59ce2d3b0818f4dee1c}{charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_range_a55d804593d063a23641bd34aa2e2dd08}{charset\+\_\+normalizer.\+md.\+Suspicious\+Range}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_accentuated_plugin_a1eb520c1b189ec2c2a09f61387ae4cee}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Accentuated\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_symbol_or_punctuation_plugin_aa59e11c665f1b44bccbc8e882dd81382}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Symbol\+Or\+Punctuation\+Plugin}}, and \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_unprintable_plugin_a9a206ff868d74fa62ceab4b50ba7190d}{charset\+\_\+normalizer.\+md.\+Unprintable\+Plugin}}.
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a82ba1b462302d9374e38614cd8a918b9}\index{charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.MessDetectorPlugin@{charset\_normalizer.md.MessDetectorPlugin}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a82ba1b462302d9374e38614cd8a918b9} 
+ None charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_arabic_isolated_form_plugin_a0232a439d082ce272edef5e462c0fe14}{charset\+\_\+normalizer.\+md.\+Arabic\+Isolated\+Form\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_archaic_upper_lower_plugin_ad77981ef6b55707fc26a6fc5bfd7915f}{charset\+\_\+normalizer.\+md.\+Archaic\+Upper\+Lower\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_cjk_uncommon_plugin_a45b6b2d5d756b7900c8e0265acfbac31}{charset\+\_\+normalizer.\+md.\+Cjk\+Uncommon\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a3d18dd2c6738673bbaa40a33c47effea}{charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_duplicate_accent_plugin_ab25e5983fd601c7c0caa98ac3e9ba4f0}{charset\+\_\+normalizer.\+md.\+Suspicious\+Duplicate\+Accent\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_suspicious_range_a0e47543e8476c45abb95fcca095db239}{charset\+\_\+normalizer.\+md.\+Suspicious\+Range}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_accentuated_plugin_a54f3af218d634c49810f4a50ab06d1ba}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Accentuated\+Plugin}}, \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_too_many_symbol_or_punctuation_plugin_a79a34e873f6756c18c4d18d31ceed77d}{charset\+\_\+normalizer.\+md.\+Too\+Many\+Symbol\+Or\+Punctuation\+Plugin}}, and \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_unprintable_plugin_a7199ced83f17206ce23e0f92b914c1f4}{charset\+\_\+normalizer.\+md.\+Unprintable\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/charset\+\_\+normalizer/\mbox{\hyperlink{md_8py}{md.\+py}}\end{DoxyCompactItemize}

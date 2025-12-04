@@ -1,0 +1,119 @@
+\doxysection{django.\+views.\+debug Namespace Reference}
+\hypertarget{namespacedjango_1_1views_1_1debug}{}\label{namespacedjango_1_1views_1_1debug}\index{django.views.debug@{django.views.debug}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1views_1_1debug_1_1_callable_setting_wrapper}{Callable\+Setting\+Wrapper}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1views_1_1debug_1_1_exception_cycle_warning}{Exception\+Cycle\+Warning}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1views_1_1debug_1_1_exception_reporter}{Exception\+Reporter}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1views_1_1debug_1_1_safe_exception_reporter_filter}{Safe\+Exception\+Reporter\+Filter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_a504fbf3016b2469509728c586a2f7590}{builtin\+\_\+template\+\_\+path}} (name)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_aca8215f3d0c847c8c7a7086d5352566c}{technical\+\_\+500\+\_\+response}} (request, exc\+\_\+type, exc\+\_\+value, tb, status\+\_\+code=500)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_a87a6e3ee31f9964049cfd55f8dc7c1ea}{get\+\_\+default\+\_\+exception\+\_\+reporter\+\_\+filter}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_a6ece6514b8d1cbaa6d77c7e65dff3795}{get\+\_\+exception\+\_\+reporter\+\_\+filter}} (request)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_a22506bc9f2de698742aa1ae4039f4460}{get\+\_\+exception\+\_\+reporter\+\_\+class}} (request)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_a7c2228c4385dcf3c63461fa42b850939}{get\+\_\+caller}} (request)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_aac5bfc6b6af5968d13eec298ba5b91b1}{technical\+\_\+404\+\_\+response}} (request, exception)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_a2ea25ba9fca9e91ffc849e86067ae836}{default\+\_\+urlconf}} (request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1debug_ae2e80de061ea7cda7bd66ef40fd11a58}{DEBUG\+\_\+\+ENGINE}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1views_1_1debug_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1views_1_1debug_a504fbf3016b2469509728c586a2f7590}\index{django.views.debug@{django.views.debug}!builtin\_template\_path@{builtin\_template\_path}}
+\index{builtin\_template\_path@{builtin\_template\_path}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{builtin\_template\_path()}{builtin\_template\_path()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_a504fbf3016b2469509728c586a2f7590} 
+django.\+views.\+debug.\+builtin\+\_\+template\+\_\+path (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a path to a builtin template.
+
+Avoid calling this function at the module level or in a class-definition
+because __file__ may not exist, e.g. in frozen environments.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1views_1_1debug_a2ea25ba9fca9e91ffc849e86067ae836}\index{django.views.debug@{django.views.debug}!default\_urlconf@{default\_urlconf}}
+\index{default\_urlconf@{default\_urlconf}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{default\_urlconf()}{default\_urlconf()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_a2ea25ba9fca9e91ffc849e86067ae836} 
+django.\+views.\+debug.\+default\+\_\+urlconf (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an empty URLconf 404 error response.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1views_1_1debug_a7c2228c4385dcf3c63461fa42b850939}\index{django.views.debug@{django.views.debug}!get\_caller@{get\_caller}}
+\index{get\_caller@{get\_caller}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{get\_caller()}{get\_caller()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_a7c2228c4385dcf3c63461fa42b850939} 
+django.\+views.\+debug.\+get\+\_\+caller (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1debug_a87a6e3ee31f9964049cfd55f8dc7c1ea}\index{django.views.debug@{django.views.debug}!get\_default\_exception\_reporter\_filter@{get\_default\_exception\_reporter\_filter}}
+\index{get\_default\_exception\_reporter\_filter@{get\_default\_exception\_reporter\_filter}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{get\_default\_exception\_reporter\_filter()}{get\_default\_exception\_reporter\_filter()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_a87a6e3ee31f9964049cfd55f8dc7c1ea} 
+django.\+views.\+debug.\+get\+\_\+default\+\_\+exception\+\_\+reporter\+\_\+filter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1debug_a22506bc9f2de698742aa1ae4039f4460}\index{django.views.debug@{django.views.debug}!get\_exception\_reporter\_class@{get\_exception\_reporter\_class}}
+\index{get\_exception\_reporter\_class@{get\_exception\_reporter\_class}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{get\_exception\_reporter\_class()}{get\_exception\_reporter\_class()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_a22506bc9f2de698742aa1ae4039f4460} 
+django.\+views.\+debug.\+get\+\_\+exception\+\_\+reporter\+\_\+class (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1debug_a6ece6514b8d1cbaa6d77c7e65dff3795}\index{django.views.debug@{django.views.debug}!get\_exception\_reporter\_filter@{get\_exception\_reporter\_filter}}
+\index{get\_exception\_reporter\_filter@{get\_exception\_reporter\_filter}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{get\_exception\_reporter\_filter()}{get\_exception\_reporter\_filter()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_a6ece6514b8d1cbaa6d77c7e65dff3795} 
+django.\+views.\+debug.\+get\+\_\+exception\+\_\+reporter\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1debug_aac5bfc6b6af5968d13eec298ba5b91b1}\index{django.views.debug@{django.views.debug}!technical\_404\_response@{technical\_404\_response}}
+\index{technical\_404\_response@{technical\_404\_response}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{technical\_404\_response()}{technical\_404\_response()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_aac5bfc6b6af5968d13eec298ba5b91b1} 
+django.\+views.\+debug.\+technical\+\_\+404\+\_\+response (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{exception}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a technical 404 error response. `exception` is the Http404.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1views_1_1debug_aca8215f3d0c847c8c7a7086d5352566c}\index{django.views.debug@{django.views.debug}!technical\_500\_response@{technical\_500\_response}}
+\index{technical\_500\_response@{technical\_500\_response}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{technical\_500\_response()}{technical\_500\_response()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_aca8215f3d0c847c8c7a7086d5352566c} 
+django.\+views.\+debug.\+technical\+\_\+500\+\_\+response (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{exc\+\_\+type}{, }\item[{}]{exc\+\_\+value}{, }\item[{}]{tb}{, }\item[{}]{status\+\_\+code}{ = {\ttfamily 500}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a technical server error response. The last three arguments are
+the values returned from sys.exc_info() and friends.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1views_1_1debug_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1views_1_1debug_ae2e80de061ea7cda7bd66ef40fd11a58}\index{django.views.debug@{django.views.debug}!DEBUG\_ENGINE@{DEBUG\_ENGINE}}
+\index{DEBUG\_ENGINE@{DEBUG\_ENGINE}!django.views.debug@{django.views.debug}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_ENGINE}{DEBUG\_ENGINE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1debug_ae2e80de061ea7cda7bd66ef40fd11a58} 
+django.\+views.\+debug.\+DEBUG\+\_\+\+ENGINE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Engine(}
+\DoxyCodeLine{00002\ \ \ \ \ debug=\textcolor{keyword}{True},}
+\DoxyCodeLine{00003\ \ \ \ \ libraries=\{\textcolor{stringliteral}{"{}i18n"{}}:\ \textcolor{stringliteral}{"{}django.templatetags.i18n"{}}\},}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}

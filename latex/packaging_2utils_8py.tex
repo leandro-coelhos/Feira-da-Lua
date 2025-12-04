@@ -1,0 +1,48 @@
+\doxysection{feira\+\_\+venv/\+Lib/site-\/packages/packaging/utils.py File Reference}
+\hypertarget{packaging_2utils_8py}{}\label{packaging_2utils_8py}\index{feira\_venv/Lib/site-\/packages/packaging/utils.py@{feira\_venv/Lib/site-\/packages/packaging/utils.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpackaging_1_1utils_1_1_invalid_name}{packaging.\+utils.\+Invalid\+Name}}
+\item 
+class \mbox{\hyperlink{classpackaging_1_1utils_1_1_invalid_wheel_filename}{packaging.\+utils.\+Invalid\+Wheel\+Filename}}
+\item 
+class \mbox{\hyperlink{classpackaging_1_1utils_1_1_invalid_sdist_filename}{packaging.\+utils.\+Invalid\+Sdist\+Filename}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepackaging}{packaging}}
+\item 
+namespace \mbox{\hyperlink{namespacepackaging_1_1utils}{packaging.\+utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_a96dafe26178c5fc754160889d812fae4}{Normalized\+Name}} \mbox{\hyperlink{namespacepackaging_1_1utils_a4fe0608530221884678363a233361372}{packaging.\+utils.\+canonicalize\+\_\+name}} (str name, \texorpdfstring{$\ast$}{*}, bool validate=False)
+\item 
+bool \mbox{\hyperlink{namespacepackaging_1_1utils_a58feaba6ded5768c130f14d012c634ff}{packaging.\+utils.\+is\+\_\+normalized\+\_\+name}} (str name)
+\item 
+str \mbox{\hyperlink{namespacepackaging_1_1utils_a244e7d3da7bff4a377a97928c4613e6f}{packaging.\+utils.\+canonicalize\+\_\+version}} (\mbox{\hyperlink{classpackaging_1_1version_1_1_version}{Version}}\texorpdfstring{$\vert$}{|}str version, \texorpdfstring{$\ast$}{*}, bool strip\+\_\+trailing\+\_\+zero=True)
+\item 
+str \mbox{\hyperlink{namespacepackaging_1_1utils_af5155c7bb7e255de9a422c3ae8feb38a}{packaging.\+utils.\+\_\+}} (str version, \texorpdfstring{$\ast$}{*}, bool strip\+\_\+trailing\+\_\+zero=True)
+\item 
+tuple\mbox{[}\mbox{\hyperlink{namespacepackaging_1_1utils_a96dafe26178c5fc754160889d812fae4}{Normalized\+Name}}, \mbox{\hyperlink{classpackaging_1_1version_1_1_version}{Version}}, \mbox{\hyperlink{namespacepackaging_1_1utils_af17c6979ca2395aa312f64b475ce2195}{Build\+Tag}}, frozenset\mbox{[}\mbox{\hyperlink{classpackaging_1_1tags_1_1_tag}{Tag}}\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepackaging_1_1utils_af2f36f779e2937dd75384597670941c4}{packaging.\+utils.\+parse\+\_\+wheel\+\_\+filename}} (str filename)
+\item 
+tuple\mbox{[}\mbox{\hyperlink{namespacepackaging_1_1utils_a96dafe26178c5fc754160889d812fae4}{Normalized\+Name}}, \mbox{\hyperlink{classpackaging_1_1version_1_1_version}{Version}}\mbox{]} \mbox{\hyperlink{namespacepackaging_1_1utils_a176592eb1526df45ed768f3fe7d44d9b}{packaging.\+utils.\+parse\+\_\+sdist\+\_\+filename}} (str filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_af17c6979ca2395aa312f64b475ce2195}{packaging.\+utils.\+Build\+Tag}} = Union\mbox{[}Tuple\mbox{[}()\mbox{]}, Tuple\mbox{[}int, str\mbox{]}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_a96dafe26178c5fc754160889d812fae4}{packaging.\+utils.\+Normalized\+Name}} = New\+Type("{}Normalized\+Name"{}, str)
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_a8b92a6cb51f5eafe01a165672cc57596}{packaging.\+utils.\+\_\+validate\+\_\+regex}}
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_a94ae1e81bd65a2a9265b4c69bc79de4c}{packaging.\+utils.\+\_\+canonicalize\+\_\+regex}} = re.\+compile(r"{}\mbox{[}-\/\+\_\+.\mbox{]}+"{})
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_a65b6ecdf3f0afd466472adead4b9b893}{packaging.\+utils.\+\_\+normalized\+\_\+regex}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(\mbox{[}a-\/z0-\/9\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}a-\/z0-\/9\mbox{]}(\mbox{[}a-\/z0-\/9-\/\mbox{]}(?!-\/-\/))\texorpdfstring{$\ast$}{*}\mbox{[}a-\/z0-\/9\mbox{]})\$"{})
+\item 
+\mbox{\hyperlink{namespacepackaging_1_1utils_a6e764721f326d7716fb832a2d9fc0cc1}{packaging.\+utils.\+\_\+build\+\_\+tag\+\_\+regex}} = re.\+compile(r"{}(\textbackslash{}d+)(.\texorpdfstring{$\ast$}{*})"{})
+\end{DoxyCompactItemize}

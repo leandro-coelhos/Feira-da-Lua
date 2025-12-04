@@ -1,0 +1,62 @@
+\doxysection{feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/test\+\_\+utils.py File Reference}
+\hypertarget{test__utils_8py}{}\label{test__utils_8py}\index{feira\_venv/Lib/site-\/packages/aiohttp/test\_utils.py@{feira\_venv/Lib/site-\/packages/aiohttp/test\_utils.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_base_test_server}{aiohttp.\+test\+\_\+utils.\+Base\+Test\+Server}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_server}{aiohttp.\+test\+\_\+utils.\+Test\+Server}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_raw_test_server}{aiohttp.\+test\+\_\+utils.\+Raw\+Test\+Server}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_test_client}{aiohttp.\+test\+\_\+utils.\+Test\+Client}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1test__utils_1_1_aio_h_t_t_p_test_case}{aiohttp.\+test\+\_\+utils.\+Aio\+HTTPTest\+Case}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceaiohttp}{aiohttp}}
+\item 
+namespace \mbox{\hyperlink{namespaceaiohttp_1_1test__utils}{aiohttp.\+test\+\_\+utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+socket.\+socket \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_aaafeb88c99c2165929a187484a31eacc}{aiohttp.\+test\+\_\+utils.\+get\+\_\+unused\+\_\+port\+\_\+socket}} (str host, socket.\+Address\+Family family=socket.\+AF\+\_\+\+INET)
+\item 
+socket.\+socket \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a49965ea9adfe6fc4ea16ad760e4e6b30}{aiohttp.\+test\+\_\+utils.\+get\+\_\+port\+\_\+socket}} (str host, int port, socket.\+Address\+Family family)
+\item 
+int \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a02422a737903a13ed1e8255da103ea66}{aiohttp.\+test\+\_\+utils.\+unused\+\_\+port}} ()
+\item 
+Any \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_abc94a5f3e41a7b8d0592d8b04401fdaf}{aiohttp.\+test\+\_\+utils.\+unittest\+\_\+run\+\_\+loop}} (Any func, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Iterator\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a5a33ad712317c38df1adf7f68d23420b}{aiohttp.\+test\+\_\+utils.\+loop\+\_\+context}} (\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a9557287ae591446257563e28c0972ea8}{\+\_\+\+LOOP\+\_\+\+FACTORY}} loop\+\_\+factory=asyncio.\+new\+\_\+event\+\_\+loop, bool fast=False)
+\item 
+asyncio.\+Abstract\+Event\+Loop \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a68b9dfa2ef0e12cdbe8eb437bb50f0a6}{aiohttp.\+test\+\_\+utils.\+setup\+\_\+test\+\_\+loop}} (\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a9557287ae591446257563e28c0972ea8}{\+\_\+\+LOOP\+\_\+\+FACTORY}} loop\+\_\+factory=asyncio.\+new\+\_\+event\+\_\+loop)
+\item 
+None \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a11925f6724972f6d03f52468c4b62305}{aiohttp.\+test\+\_\+utils.\+teardown\+\_\+test\+\_\+loop}} (asyncio.\+Abstract\+Event\+Loop loop, bool fast=False)
+\item 
+mock.\+Magic\+Mock \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_af876e6ad49b75139bac567fe161913da}{aiohttp.\+test\+\_\+utils.\+\_\+create\+\_\+app\+\_\+mock}} ()
+\item 
+mock.\+Mock \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a9ff814eb911cde298ce05184fc5f45d2}{aiohttp.\+test\+\_\+utils.\+\_\+create\+\_\+transport}} (Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a8b94daaebb67312e5cd3bab93c16b523}{SSLContext}}\mbox{]} sslcontext=None)
+\item 
+Request \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_aaeecd79c13e1e8b10d7748cbb24d47e4}{aiohttp.\+test\+\_\+utils.\+make\+\_\+mocked\+\_\+request}} (str method, str path, Any headers=None, \texorpdfstring{$\ast$}{*}, Any match\+\_\+info=sentinel, \mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}} version=\mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}}(1, 1), bool closing=False, Any app=None, Any writer=sentinel, Any protocol=sentinel, Any transport=sentinel, \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{Stream\+Reader}} payload=EMPTY\+\_\+\+PAYLOAD, Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a8b94daaebb67312e5cd3bab93c16b523}{SSLContext}}\mbox{]} sslcontext=None, int client\+\_\+max\+\_\+size=1024 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}2, Any loop=...)
+\item 
+Any \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_ad75f3073a12df717d87d0154ed25b052}{aiohttp.\+test\+\_\+utils.\+make\+\_\+mocked\+\_\+coro}} (Any return\+\_\+value=sentinel, Any raise\+\_\+exception=sentinel)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a8b94daaebb67312e5cd3bab93c16b523}{aiohttp.\+test\+\_\+utils.\+SSLContext}} = None
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_ad1f23ab519344e61f35585e11f719cc2}{aiohttp.\+test\+\_\+utils.\+Self}} = Any
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_aeed8e8432c0e45f1d881704f7b13c186}{aiohttp.\+test\+\_\+utils.\+\_\+\+Application\+None}} = Type\+Var("{}\+\_\+\+Application\+None"{}, Application, None)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a7dac106b42e581fab1f6b205f9ab77d5}{aiohttp.\+test\+\_\+utils.\+\_\+\+Request}} = Type\+Var("{}\+\_\+\+Request"{}, bound=Base\+Request)
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1test__utils_aa2154740880bfd59782e1b7dcca237d4}{aiohttp.\+test\+\_\+utils.\+REUSE\+\_\+\+ADDRESS}} = "{}cygwin"{}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1test__utils_a9557287ae591446257563e28c0972ea8}{aiohttp.\+test\+\_\+utils.\+\_\+\+LOOP\+\_\+\+FACTORY}} = Callable\mbox{[}\mbox{[}$\,$\mbox{]}, asyncio.\+Abstract\+Event\+Loop\mbox{]}
+\end{DoxyCompactItemize}

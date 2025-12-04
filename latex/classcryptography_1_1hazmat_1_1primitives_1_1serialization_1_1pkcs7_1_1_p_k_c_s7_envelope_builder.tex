@@ -1,0 +1,92 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_af094d58699d017012a58c74eab3a4ff4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae5d971b4c4f60a4887fbdb3e4db5ac11}{\+\_\+data}}=None, list\mbox{[}x509.\+Certificate\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a40bad9d62375241f353df3f888c64ec6}{\+\_\+recipients}}=None, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab156abe63a4e515a6591ca77cc187d20}{Content\+Encryption\+Algorithm}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae0cec7a5217680cf3098def0509444b0}{\+\_\+content\+\_\+encryption\+\_\+algorithm}}=None)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{PKCS7\+Envelope\+Builder}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a06b1d7a5ed81fe2fb1fa7e3b09c39933}{set\+\_\+data}} (self, bytes data)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{PKCS7\+Envelope\+Builder}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a0661bb5097f97a42c90c427d3d9a31c6}{add\+\_\+recipient}} (self, x509.\+Certificate certificate)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{PKCS7\+Envelope\+Builder}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a12b923a3e5ed3ca79de668c507481768}{set\+\_\+content\+\_\+encryption\+\_\+algorithm}} (self, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab156abe63a4e515a6591ca77cc187d20}{Content\+Encryption\+Algorithm}} content\+\_\+encryption\+\_\+algorithm)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_af9ee4281b4b0f28b149c2b846e654932}{encrypt}} (self, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__serialization_1_1_encoding}{serialization.\+Encoding}} encoding, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_options}{PKCS7\+Options}}\mbox{]} options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae5d971b4c4f60a4887fbdb3e4db5ac11}{\+\_\+data}} = \+\_\+data
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a40bad9d62375241f353df3f888c64ec6}{\+\_\+recipients}} = \+\_\+recipients if \+\_\+recipients is not None else \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae0cec7a5217680cf3098def0509444b0}{\+\_\+content\+\_\+encryption\+\_\+algorithm}} = \+\_\+content\+\_\+encryption\+\_\+algorithm
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_af094d58699d017012a58c74eab3a4ff4}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_af094d58699d017012a58c74eab3a4ff4} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None }]{\+\_\+data}{ = {\ttfamily None}, }\item[{list\mbox{[}x509.\+Certificate\mbox{]} \texorpdfstring{$\vert$}{|} None }]{\+\_\+recipients}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab156abe63a4e515a6591ca77cc187d20}{Content\+Encryption\+Algorithm}}         \texorpdfstring{$\vert$}{|} None }]{\+\_\+content\+\_\+encryption\+\_\+algorithm}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a0661bb5097f97a42c90c427d3d9a31c6}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!add\_recipient@{add\_recipient}}
+\index{add\_recipient@{add\_recipient}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{add\_recipient()}{add\_recipient()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a0661bb5097f97a42c90c427d3d9a31c6} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{PKCS7\+Envelope\+Builder}} cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+add\+\_\+recipient (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{x509.\+Certificate}]{certificate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_af9ee4281b4b0f28b149c2b846e654932}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_af9ee4281b4b0f28b149c2b846e654932} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+encrypt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__serialization_1_1_encoding}{serialization.\+Encoding}}}]{encoding}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_options}{PKCS7\+Options}}\mbox{]}}]{options}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a12b923a3e5ed3ca79de668c507481768}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!set\_content\_encryption\_algorithm@{set\_content\_encryption\_algorithm}}
+\index{set\_content\_encryption\_algorithm@{set\_content\_encryption\_algorithm}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{set\_content\_encryption\_algorithm()}{set\_content\_encryption\_algorithm()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a12b923a3e5ed3ca79de668c507481768} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{PKCS7\+Envelope\+Builder}} cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+set\+\_\+content\+\_\+encryption\+\_\+algorithm (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab156abe63a4e515a6591ca77cc187d20}{Content\+Encryption\+Algorithm}}     }]{content\+\_\+encryption\+\_\+algorithm}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a06b1d7a5ed81fe2fb1fa7e3b09c39933}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{set\_data()}{set\_data()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a06b1d7a5ed81fe2fb1fa7e3b09c39933} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder}{PKCS7\+Envelope\+Builder}} cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+set\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae0cec7a5217680cf3098def0509444b0}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!\_content\_encryption\_algorithm@{\_content\_encryption\_algorithm}}
+\index{\_content\_encryption\_algorithm@{\_content\_encryption\_algorithm}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{\_content\_encryption\_algorithm}{\_content\_encryption\_algorithm}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae0cec7a5217680cf3098def0509444b0} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+\_\+content\+\_\+encryption\+\_\+algorithm = \+\_\+content\+\_\+encryption\+\_\+algorithm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae5d971b4c4f60a4887fbdb3e4db5ac11}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!\_data@{\_data}}
+\index{\_data@{\_data}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_ae5d971b4c4f60a4887fbdb3e4db5ac11} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+\_\+data = \+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a40bad9d62375241f353df3f888c64ec6}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}!\_recipients@{\_recipients}}
+\index{\_recipients@{\_recipients}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7EnvelopeBuilder}}
+\doxysubsubsection{\texorpdfstring{\_recipients}{\_recipients}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_envelope_builder_a40bad9d62375241f353df3f888c64ec6} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Envelope\+Builder.\+\_\+recipients = \+\_\+recipients if \+\_\+recipients is not None else \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/serialization/\mbox{\hyperlink{pkcs7_8py}{pkcs7.\+py}}\end{DoxyCompactItemize}

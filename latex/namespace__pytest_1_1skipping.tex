@@ -1,0 +1,119 @@
+\doxysection{\+\_\+pytest.\+skipping Namespace Reference}
+\hypertarget{namespace__pytest_1_1skipping}{}\label{namespace__pytest_1_1skipping}\index{\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1skipping_1_1_skip}{Skip}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1skipping_1_1_xfail}{Xfail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1skipping_ae251a95be08c587a9b7500329d41d372}{pytest\+\_\+addoption}} (\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}} parser)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1skipping_a00737baba00bc009405571de8909f54b}{pytest\+\_\+configure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+tuple\mbox{[}bool, str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1skipping_aa472c43777c9e2943ce9d2bb0d0da9df}{evaluate\+\_\+condition}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, \mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark}{Mark}} mark, object condition)
+\item 
+\mbox{\hyperlink{class__pytest_1_1skipping_1_1_skip}{Skip}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1skipping_a51ca206de13ff4acaf6c414f9fa467da}{evaluate\+\_\+skip\+\_\+marks}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+\mbox{\hyperlink{class__pytest_1_1skipping_1_1_xfail}{Xfail}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1skipping_a45ba12611558194258227c4acb7da6b7}{evaluate\+\_\+xfail\+\_\+marks}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1skipping_aa185ea56386a9e084dfddb4d169e353c}{pytest\+\_\+runtest\+\_\+setup}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+Generator\mbox{[}None\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1skipping_a1b357280c34f29db0ef1bbe59a01f8e1}{pytest\+\_\+runtest\+\_\+call}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+Generator\mbox{[}None, \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}, \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1skipping_a6dc6718146ed8f83257ae49666068009}{pytest\+\_\+runtest\+\_\+makereport}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item, \mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}None\mbox{]} call)
+\item 
+tuple\mbox{[}str, str, str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1skipping_a34b593ae6e0b09e7f49346e58c0c331f}{pytest\+\_\+report\+\_\+teststatus}} (\mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report}{Base\+Report}} report)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1skipping_aee301352af283532bf7c4eb34ab4fb72}{xfailed\+\_\+key}} = \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{class__pytest_1_1skipping_1_1_xfail}{Xfail}} \texorpdfstring{$\vert$}{|} None\mbox{]}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Support for skip/xfail functions and markers.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1skipping_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1skipping_aa472c43777c9e2943ce9d2bb0d0da9df}\index{\_pytest.skipping@{\_pytest.skipping}!evaluate\_condition@{evaluate\_condition}}
+\index{evaluate\_condition@{evaluate\_condition}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{evaluate\_condition()}{evaluate\_condition()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_aa472c43777c9e2943ce9d2bb0d0da9df} 
+ tuple\mbox{[}bool, str\mbox{]} \+\_\+pytest.\+skipping.\+evaluate\+\_\+condition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{\mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark}{Mark}}}]{mark}{, }\item[{object}]{condition}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Evaluate a single skipif/xfail condition.
+
+If an old-style string condition is given, it is eval()'d, otherwise the
+condition is bool()'d. If this fails, an appropriately formatted pytest.fail
+is raised.
+
+Returns (result, reason). The reason is only relevant if the result is True.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1skipping_a51ca206de13ff4acaf6c414f9fa467da}\index{\_pytest.skipping@{\_pytest.skipping}!evaluate\_skip\_marks@{evaluate\_skip\_marks}}
+\index{evaluate\_skip\_marks@{evaluate\_skip\_marks}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{evaluate\_skip\_marks()}{evaluate\_skip\_marks()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_a51ca206de13ff4acaf6c414f9fa467da} 
+ \mbox{\hyperlink{class__pytest_1_1skipping_1_1_skip}{Skip}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+skipping.\+evaluate\+\_\+skip\+\_\+marks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Evaluate skip and skipif marks on item, returning Skip if triggered.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1skipping_a45ba12611558194258227c4acb7da6b7}\index{\_pytest.skipping@{\_pytest.skipping}!evaluate\_xfail\_marks@{evaluate\_xfail\_marks}}
+\index{evaluate\_xfail\_marks@{evaluate\_xfail\_marks}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{evaluate\_xfail\_marks()}{evaluate\_xfail\_marks()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_a45ba12611558194258227c4acb7da6b7} 
+ \mbox{\hyperlink{class__pytest_1_1skipping_1_1_xfail}{Xfail}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+skipping.\+evaluate\+\_\+xfail\+\_\+marks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Evaluate xfail marks on item, returning Xfail if triggered.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1skipping_ae251a95be08c587a9b7500329d41d372}\index{\_pytest.skipping@{\_pytest.skipping}!pytest\_addoption@{pytest\_addoption}}
+\index{pytest\_addoption@{pytest\_addoption}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{pytest\_addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_ae251a95be08c587a9b7500329d41d372} 
+ None \+\_\+pytest.\+skipping.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}}}]{parser}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1skipping_a00737baba00bc009405571de8909f54b}\index{\_pytest.skipping@{\_pytest.skipping}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_a00737baba00bc009405571de8909f54b} 
+ None \+\_\+pytest.\+skipping.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1skipping_a34b593ae6e0b09e7f49346e58c0c331f}\index{\_pytest.skipping@{\_pytest.skipping}!pytest\_report\_teststatus@{pytest\_report\_teststatus}}
+\index{pytest\_report\_teststatus@{pytest\_report\_teststatus}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_teststatus()}{pytest\_report\_teststatus()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_a34b593ae6e0b09e7f49346e58c0c331f} 
+ tuple\mbox{[}str, str, str\mbox{]} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+skipping.\+pytest\+\_\+report\+\_\+teststatus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report}{Base\+Report}}}]{report}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1skipping_a1b357280c34f29db0ef1bbe59a01f8e1}\index{\_pytest.skipping@{\_pytest.skipping}!pytest\_runtest\_call@{pytest\_runtest\_call}}
+\index{pytest\_runtest\_call@{pytest\_runtest\_call}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_call()}{pytest\_runtest\_call()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_a1b357280c34f29db0ef1bbe59a01f8e1} 
+ Generator\mbox{[}None\mbox{]} \+\_\+pytest.\+skipping.\+pytest\+\_\+runtest\+\_\+call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1skipping_a6dc6718146ed8f83257ae49666068009}\index{\_pytest.skipping@{\_pytest.skipping}!pytest\_runtest\_makereport@{pytest\_runtest\_makereport}}
+\index{pytest\_runtest\_makereport@{pytest\_runtest\_makereport}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_makereport()}{pytest\_runtest\_makereport()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_a6dc6718146ed8f83257ae49666068009} 
+ Generator\mbox{[}None, \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}, \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+skipping.\+pytest\+\_\+runtest\+\_\+makereport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{, }\item[{\mbox{\hyperlink{class__pytest_1_1runner_1_1_call_info}{Call\+Info}}\mbox{[}None\mbox{]} }]{call}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1skipping_aa185ea56386a9e084dfddb4d169e353c}\index{\_pytest.skipping@{\_pytest.skipping}!pytest\_runtest\_setup@{pytest\_runtest\_setup}}
+\index{pytest\_runtest\_setup@{pytest\_runtest\_setup}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{pytest\_runtest\_setup()}{pytest\_runtest\_setup()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_aa185ea56386a9e084dfddb4d169e353c} 
+ None \+\_\+pytest.\+skipping.\+pytest\+\_\+runtest\+\_\+setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1skipping_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1skipping_aee301352af283532bf7c4eb34ab4fb72}\index{\_pytest.skipping@{\_pytest.skipping}!xfailed\_key@{xfailed\_key}}
+\index{xfailed\_key@{xfailed\_key}!\_pytest.skipping@{\_pytest.skipping}}
+\doxysubsubsection{\texorpdfstring{xfailed\_key}{xfailed\_key}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1skipping_aee301352af283532bf7c4eb34ab4fb72} 
+\+\_\+pytest.\+skipping.\+xfailed\+\_\+key = \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{class__pytest_1_1skipping_1_1_xfail}{Xfail}} \texorpdfstring{$\vert$}{|} None\mbox{]}()}
+

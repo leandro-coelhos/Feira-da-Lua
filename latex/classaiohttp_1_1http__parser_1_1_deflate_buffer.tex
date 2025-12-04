@@ -1,0 +1,123 @@
+\doxysection{aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer Class Reference}
+\hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer}{}\label{classaiohttp_1_1http__parser_1_1_deflate_buffer}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_afe8b1e8d75d78ad019e234f73a0f7bff}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{Stream\+Reader}} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a86a501a6b2b59a2d2f768bf950702d56}{out}}, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a9a56398228c0783c5f28cbee7eaea3ea}{encoding}})
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a0f48b4eba9ecd2bab554ef4c58eb7de0}{set\+\_\+exception}} (self, Base\+Exception exc, Base\+Exception exc\+\_\+cause=\+\_\+\+EXC\+\_\+\+SENTINEL)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a8e1c73ca3fe0cf602952e5fea42b05f6}{feed\+\_\+data}} (self, bytes chunk, int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_ad7dbaed8169a426ee1d8574eb9e393db}{size}})
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_aae96575bd7f237afd9199ecb35b54d4c}{feed\+\_\+eof}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a92c13ec0ed76bee6f5fc81abf0c5cf61}{begin\+\_\+http\+\_\+chunk\+\_\+receiving}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a0e23613fd9e31868ddb7bc948d05f2d5}{end\+\_\+http\+\_\+chunk\+\_\+receiving}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a86a501a6b2b59a2d2f768bf950702d56}{out}} = out
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_ad7dbaed8169a426ee1d8574eb9e393db}{size}} = 0
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a9a56398228c0783c5f28cbee7eaea3ea}{encoding}} = encoding
+\item 
+Union\mbox{[}\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_brotli_decompressor}{Brotli\+Decompressor}}, \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}{ZLib\+Decompressor}}, \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_s_t_d_decompressor}{ZSTDDecompressor}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_aac3998d64d3548262d8cd2f4d4ebf80e}{decompressor}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer_a787e7f07e9a61682899ee73756dac449}{\+\_\+started\+\_\+decoding}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}DeflateStream decompress stream and feed data into specified stream.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_afe8b1e8d75d78ad019e234f73a0f7bff}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_afe8b1e8d75d78ad019e234f73a0f7bff} 
+ None aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{Stream\+Reader}}}]{out}{, }\item[{Optional\mbox{[}str\mbox{]}}]{encoding}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a92c13ec0ed76bee6f5fc81abf0c5cf61}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!begin\_http\_chunk\_receiving@{begin\_http\_chunk\_receiving}}
+\index{begin\_http\_chunk\_receiving@{begin\_http\_chunk\_receiving}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{begin\_http\_chunk\_receiving()}{begin\_http\_chunk\_receiving()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a92c13ec0ed76bee6f5fc81abf0c5cf61} 
+ None aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+begin\+\_\+http\+\_\+chunk\+\_\+receiving (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a0e23613fd9e31868ddb7bc948d05f2d5}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!end\_http\_chunk\_receiving@{end\_http\_chunk\_receiving}}
+\index{end\_http\_chunk\_receiving@{end\_http\_chunk\_receiving}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{end\_http\_chunk\_receiving()}{end\_http\_chunk\_receiving()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a0e23613fd9e31868ddb7bc948d05f2d5} 
+ None aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+end\+\_\+http\+\_\+chunk\+\_\+receiving (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a8e1c73ca3fe0cf602952e5fea42b05f6}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!feed\_data@{feed\_data}}
+\index{feed\_data@{feed\_data}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{feed\_data()}{feed\_data()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a8e1c73ca3fe0cf602952e5fea42b05f6} 
+ None aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+feed\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{chunk}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_aae96575bd7f237afd9199ecb35b54d4c}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!feed\_eof@{feed\_eof}}
+\index{feed\_eof@{feed\_eof}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{feed\_eof()}{feed\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_aae96575bd7f237afd9199ecb35b54d4c} 
+ None aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+feed\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a0f48b4eba9ecd2bab554ef4c58eb7de0}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!set\_exception@{set\_exception}}
+\index{set\_exception@{set\_exception}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{set\_exception()}{set\_exception()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a0f48b4eba9ecd2bab554ef4c58eb7de0} 
+ None aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+set\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception}]{exc}{, }\item[{Base\+Exception }]{exc\+\_\+cause}{ = {\ttfamily \+\_\+EXC\+\_\+SENTINEL}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a787e7f07e9a61682899ee73756dac449}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!\_started\_decoding@{\_started\_decoding}}
+\index{\_started\_decoding@{\_started\_decoding}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{\_started\_decoding}{\_started\_decoding}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a787e7f07e9a61682899ee73756dac449} 
+bool aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+\_\+started\+\_\+decoding = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_aac3998d64d3548262d8cd2f4d4ebf80e}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!decompressor@{decompressor}}
+\index{decompressor@{decompressor}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{decompressor}{decompressor}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_aac3998d64d3548262d8cd2f4d4ebf80e} 
+Union\mbox{[}\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_brotli_decompressor}{Brotli\+Decompressor}}, \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}{ZLib\+Decompressor}}, \mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_s_t_d_decompressor}{ZSTDDecompressor}}\mbox{]} aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+decompressor}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a9a56398228c0783c5f28cbee7eaea3ea}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!encoding@{encoding}}
+\index{encoding@{encoding}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a9a56398228c0783c5f28cbee7eaea3ea} 
+str aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+encoding = encoding}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_a86a501a6b2b59a2d2f768bf950702d56}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!out@{out}}
+\index{out@{out}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_a86a501a6b2b59a2d2f768bf950702d56} 
+aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+out = out}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_deflate_buffer_ad7dbaed8169a426ee1d8574eb9e393db}\index{aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}!size@{size}}
+\index{size@{size}!aiohttp.http\_parser.DeflateBuffer@{aiohttp.http\_parser.DeflateBuffer}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_deflate_buffer_ad7dbaed8169a426ee1d8574eb9e393db} 
+int aiohttp.\+http\+\_\+parser.\+Deflate\+Buffer.\+size = 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{http__parser_8py}{http\+\_\+parser.\+py}}\end{DoxyCompactItemize}

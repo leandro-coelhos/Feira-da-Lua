@@ -1,0 +1,146 @@
+\doxysection{maxminddb.\+file.\+File\+Buffer Class Reference}
+\hypertarget{classmaxminddb_1_1file_1_1_file_buffer}{}\label{classmaxminddb_1_1file_1_1_file_buffer}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a226312f21f0c57624d8bfde197c652de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str database)
+\item 
+int \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_adae32a576ab5ae3dc34e464b5573f4e7}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+bytes \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a3fe5f5a4084bdc4c9d876df2a15141f2}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, slice index)
+\item 
+bytes\texorpdfstring{$\vert$}{|}int \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a68d9f13274dfc9d27bb8477ba502133b}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, slice\texorpdfstring{$\vert$}{|}int index)
+\item 
+int \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_abcbc30b94f591daa2ef582a6ddadcef0}{rfind}} (self, bytes needle, int start)
+\item 
+int \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a6fa35a448883b24338ab99df76230c03}{size}} (self)
+\item 
+None \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_ad08b696e953eea812c1266ddca7a54cb}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a4487a5deba679ca3a016e8767c3b231e}{\+\_\+read}} (self, int buffersize, int offset)
+\item 
+bytes \mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a4487a5deba679ca3a016e8767c3b231e}{\+\_\+read}} (self, int buffersize, int offset)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a5efd66dae836c45712cb40a4c2f87f12}{\+\_\+handle}} = open(database, "{}rb"{})
+\item 
+\mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a225ce39102a382aae137e63346a0c11c}{\+\_\+size}} = os.\+fstat(self.\+\_\+handle.\+fileno()).st\+\_\+size
+\item 
+\mbox{\hyperlink{classmaxminddb_1_1file_1_1_file_buffer_a8ae9d93cca90b272cc8fe9681c4e71af}{\+\_\+lock}} = Lock()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A slice-able file reader.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a226312f21f0c57624d8bfde197c652de}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a226312f21f0c57624d8bfde197c652de} 
+ None maxminddb.\+file.\+File\+Buffer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{database}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create FileBuffer.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_adae32a576ab5ae3dc34e464b5573f4e7}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_adae32a576ab5ae3dc34e464b5573f4e7} 
+ int maxminddb.\+file.\+File\+Buffer.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a3fe5f5a4084bdc4c9d876df2a15141f2}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a3fe5f5a4084bdc4c9d876df2a15141f2} 
+ bytes maxminddb.\+file.\+File\+Buffer.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{slice}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a68d9f13274dfc9d27bb8477ba502133b}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a68d9f13274dfc9d27bb8477ba502133b} 
+ bytes \texorpdfstring{$\vert$}{|} int maxminddb.\+file.\+File\+Buffer.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{slice \texorpdfstring{$\vert$}{|} int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get item by index.\end{DoxyVerb}
+ \Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a4487a5deba679ca3a016e8767c3b231e}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_read@{\_read}}
+\index{\_read@{\_read}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_read()}{\_read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a4487a5deba679ca3a016e8767c3b231e} 
+ bytes maxminddb.\+file.\+File\+Buffer.\+\_\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{buffersize}{, }\item[{int}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Read that uses pread.\end{DoxyVerb}
+ \Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a4487a5deba679ca3a016e8767c3b231e}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_read@{\_read}}
+\index{\_read@{\_read}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_read()}{\_read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a4487a5deba679ca3a016e8767c3b231e} 
+ bytes maxminddb.\+file.\+File\+Buffer.\+\_\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{buffersize}{, }\item[{int}]{offset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Read with a lock.
+
+This lock is necessary as after a fork, the different processes
+will share the same file table entry, even if we dup the fd, and
+as such the same offsets. There does not appear to be a way to
+duplicate the file table entry and we cannot re-open based on the
+original path as that file may have replaced with another or
+unlinked.
+\end{DoxyVerb}
+ \Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_ad08b696e953eea812c1266ddca7a54cb}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!close@{close}}
+\index{close@{close}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_ad08b696e953eea812c1266ddca7a54cb} 
+ None maxminddb.\+file.\+File\+Buffer.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close file.\end{DoxyVerb}
+ \Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_abcbc30b94f591daa2ef582a6ddadcef0}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!rfind@{rfind}}
+\index{rfind@{rfind}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{rfind()}{rfind()}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_abcbc30b94f591daa2ef582a6ddadcef0} 
+ int maxminddb.\+file.\+File\+Buffer.\+rfind (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{needle}{, }\item[{int}]{start}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reverse find needle from start.\end{DoxyVerb}
+ \Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a6fa35a448883b24338ab99df76230c03}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!size@{size}}
+\index{size@{size}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a6fa35a448883b24338ab99df76230c03} 
+ int maxminddb.\+file.\+File\+Buffer.\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Size of file.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a5efd66dae836c45712cb40a4c2f87f12}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_handle@{\_handle}}
+\index{\_handle@{\_handle}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_handle}{\_handle}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a5efd66dae836c45712cb40a4c2f87f12} 
+maxminddb.\+file.\+File\+Buffer.\+\_\+handle = open(database, "{}rb"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a8ae9d93cca90b272cc8fe9681c4e71af}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_lock@{\_lock}}
+\index{\_lock@{\_lock}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_lock}{\_lock}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a8ae9d93cca90b272cc8fe9681c4e71af} 
+maxminddb.\+file.\+File\+Buffer.\+\_\+lock = Lock()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classmaxminddb_1_1file_1_1_file_buffer_a225ce39102a382aae137e63346a0c11c}\index{maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}!\_size@{\_size}}
+\index{\_size@{\_size}!maxminddb.file.FileBuffer@{maxminddb.file.FileBuffer}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily \label{classmaxminddb_1_1file_1_1_file_buffer_a225ce39102a382aae137e63346a0c11c} 
+maxminddb.\+file.\+File\+Buffer.\+\_\+size = os.\+fstat(self.\+\_\+handle.\+fileno()).st\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/maxminddb/\mbox{\hyperlink{maxminddb_2file_8py}{file.\+py}}\end{DoxyCompactItemize}

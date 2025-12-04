@@ -1,0 +1,172 @@
+\doxysection{requests.\+models.\+Request Class Reference}
+\hypertarget{classrequests_1_1models_1_1_request}{}\label{classrequests_1_1models_1_1_request}\index{requests.models.Request@{requests.models.Request}}
+Inheritance diagram for requests.\+models.\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrequests_1_1models_1_1_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a405fa2a089e598f7955c0f918cc55f40}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrequests_1_1models_1_1_request_a58dcb1e04e76ca07348e5a1b9760585b}{method}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_a51c21560dbbc15cea697694bddf1ecb7}{url}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_a15243bc92057de2adb70a54676d495ff}{headers}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_ad556a5cdec9594100cb5c7b15e891df0}{files}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_af6568261226eae38546aa680834a7be7}{data}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_aeec1a12dfe137f68c7e5be1846ae3d21}{params}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_a7c16791b1ebd491b139546de1352acd4}{auth}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_a2ca1846850163d9fad97137bbb292350}{cookies}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request}{hooks}}=None, \mbox{\hyperlink{classrequests_1_1models_1_1_request_a3d43f04d76fc871e8cabd26378026062}{json}}=None)
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a72e1a988b9a8f614dd188ecae68f78b9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_ac3287223cceedd13052f5ec5199f8694}{prepare}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classrequests_1_1models_1_1_request_hooks_mixin}{requests.\+models.\+Request\+Hooks\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_hooks_mixin_abf4f93e71e9e7665eae6d2ed6e27f4a9}{register\+\_\+hook}} (self, event, hook)
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_hooks_mixin_a6e14421dfad92dc903ce668cb01719d9}{deregister\+\_\+hook}} (self, event, hook)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a58dcb1e04e76ca07348e5a1b9760585b}{method}} = method
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a51c21560dbbc15cea697694bddf1ecb7}{url}} = url
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a15243bc92057de2adb70a54676d495ff}{headers}} = headers
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_ad556a5cdec9594100cb5c7b15e891df0}{files}} = files
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_af6568261226eae38546aa680834a7be7}{data}} = data
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a3d43f04d76fc871e8cabd26378026062}{json}} = json
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_aeec1a12dfe137f68c7e5be1846ae3d21}{params}} = params
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a7c16791b1ebd491b139546de1352acd4}{auth}} = auth
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_a2ca1846850163d9fad97137bbb292350}{cookies}} = cookies
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classrequests_1_1models_1_1_request_hooks_mixin}{requests.\+models.\+Request\+Hooks\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1models_1_1_request_hooks_mixin_aa21068450c1e90c3e06aa9a7dee13b3a}{hooks}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A user-created :class:`Request <Request>` object.
+
+Used to prepare a :class:`PreparedRequest <PreparedRequest>`, which is sent to the server.
+
+:param method: HTTP method to use.
+:param url: URL to send.
+:param headers: dictionary of headers to send.
+:param files: dictionary of {filename: fileobject} files to multipart upload.
+:param data: the body to attach to the request. If a dictionary or
+    list of tuples ``[(key, value)]`` is provided, form-encoding will
+    take place.
+:param json: json for the body to attach to the request (if files or data is not specified).
+:param params: URL parameters to append to the URL. If a dictionary or
+    list of tuples ``[(key, value)]`` is provided, form-encoding will
+    take place.
+:param auth: Auth handler or (user, pass) tuple.
+:param cookies: dictionary or CookieJar of cookies to attach to this request.
+:param hooks: dictionary of callback hooks, for internal usage.
+
+Usage::
+
+  >>> import requests
+  >>> req = requests.Request('GET', 'https://httpbin.org/get')
+  >>> req.prepare()
+  <PreparedRequest [GET]>
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classrequests_1_1models_1_1_request_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrequests_1_1models_1_1_request_a405fa2a089e598f7955c0f918cc55f40}\index{requests.models.Request@{requests.models.Request}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a405fa2a089e598f7955c0f918cc55f40} 
+requests.\+models.\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{method}{ = {\ttfamily None}, }\item[{}]{url}{ = {\ttfamily None}, }\item[{}]{headers}{ = {\ttfamily None}, }\item[{}]{files}{ = {\ttfamily None}, }\item[{}]{data}{ = {\ttfamily None}, }\item[{}]{params}{ = {\ttfamily None}, }\item[{}]{auth}{ = {\ttfamily None}, }\item[{}]{cookies}{ = {\ttfamily None}, }\item[{}]{hooks}{ = {\ttfamily None}, }\item[{}]{json}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classrequests_1_1models_1_1_request_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrequests_1_1models_1_1_request_a72e1a988b9a8f614dd188ecae68f78b9}\index{requests.models.Request@{requests.models.Request}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a72e1a988b9a8f614dd188ecae68f78b9} 
+requests.\+models.\+Request.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classrequests_1_1models_1_1_request_ac3287223cceedd13052f5ec5199f8694}\index{requests.models.Request@{requests.models.Request}!prepare@{prepare}}
+\index{prepare@{prepare}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_ac3287223cceedd13052f5ec5199f8694} 
+requests.\+models.\+Request.\+prepare (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a :class:`PreparedRequest <PreparedRequest>` for transmission and returns it.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classrequests_1_1models_1_1_request_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrequests_1_1models_1_1_request_a7c16791b1ebd491b139546de1352acd4}\index{requests.models.Request@{requests.models.Request}!auth@{auth}}
+\index{auth@{auth}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{auth}{auth}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a7c16791b1ebd491b139546de1352acd4} 
+requests.\+models.\+Request.\+auth = auth}
+
+\Hypertarget{classrequests_1_1models_1_1_request_a2ca1846850163d9fad97137bbb292350}\index{requests.models.Request@{requests.models.Request}!cookies@{cookies}}
+\index{cookies@{cookies}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{cookies}{cookies}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a2ca1846850163d9fad97137bbb292350} 
+requests.\+models.\+Request.\+cookies = cookies}
+
+\Hypertarget{classrequests_1_1models_1_1_request_af6568261226eae38546aa680834a7be7}\index{requests.models.Request@{requests.models.Request}!data@{data}}
+\index{data@{data}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_af6568261226eae38546aa680834a7be7} 
+requests.\+models.\+Request.\+data = data}
+
+\Hypertarget{classrequests_1_1models_1_1_request_ad556a5cdec9594100cb5c7b15e891df0}\index{requests.models.Request@{requests.models.Request}!files@{files}}
+\index{files@{files}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_ad556a5cdec9594100cb5c7b15e891df0} 
+requests.\+models.\+Request.\+files = files}
+
+\Hypertarget{classrequests_1_1models_1_1_request_a15243bc92057de2adb70a54676d495ff}\index{requests.models.Request@{requests.models.Request}!headers@{headers}}
+\index{headers@{headers}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a15243bc92057de2adb70a54676d495ff} 
+requests.\+models.\+Request.\+headers = headers}
+
+\Hypertarget{classrequests_1_1models_1_1_request_a3d43f04d76fc871e8cabd26378026062}\index{requests.models.Request@{requests.models.Request}!json@{json}}
+\index{json@{json}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a3d43f04d76fc871e8cabd26378026062} 
+requests.\+models.\+Request.\+json = json}
+
+\Hypertarget{classrequests_1_1models_1_1_request_a58dcb1e04e76ca07348e5a1b9760585b}\index{requests.models.Request@{requests.models.Request}!method@{method}}
+\index{method@{method}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a58dcb1e04e76ca07348e5a1b9760585b} 
+requests.\+models.\+Request.\+method = method}
+
+\Hypertarget{classrequests_1_1models_1_1_request_aeec1a12dfe137f68c7e5be1846ae3d21}\index{requests.models.Request@{requests.models.Request}!params@{params}}
+\index{params@{params}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_aeec1a12dfe137f68c7e5be1846ae3d21} 
+requests.\+models.\+Request.\+params = params}
+
+\Hypertarget{classrequests_1_1models_1_1_request_a51c21560dbbc15cea697694bddf1ecb7}\index{requests.models.Request@{requests.models.Request}!url@{url}}
+\index{url@{url}!requests.models.Request@{requests.models.Request}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{classrequests_1_1models_1_1_request_a51c21560dbbc15cea697694bddf1ecb7} 
+requests.\+models.\+Request.\+url = url}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/requests/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2requests_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

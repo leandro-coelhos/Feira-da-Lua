@@ -1,0 +1,101 @@
+\doxysection{django.\+template.\+base.\+Token Class Reference}
+\hypertarget{classdjango_1_1template_1_1base_1_1_token}{}\label{classdjango_1_1template_1_1base_1_1_token}\index{django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a2f0db60f264b99e382bd15a503cbb901}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a0ae2eb41426bf02daf5577f161e340d9}{token\+\_\+type}}, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a2f320489ccff72934da0d61dcf0495ee}{contents}}, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a7a7913878650f01257dd95795032bc5e}{position}}=None, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a1f8db853d8f4ee56ce2db319ed13b55b}{lineno}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a7f0b50c7a5cb78defb6f307048153295}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_ab23560ac0f8bed7646d9ba9b4feda468}{split\+\_\+contents}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a0ae2eb41426bf02daf5577f161e340d9}{token\+\_\+type}} = token\+\_\+type
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a2f320489ccff72934da0d61dcf0495ee}{contents}} = contents
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a1f8db853d8f4ee56ce2db319ed13b55b}{lineno}} = lineno
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_token_a7a7913878650f01257dd95795032bc5e}{position}} = position
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_a2f0db60f264b99e382bd15a503cbb901}\index{django.template.base.Token@{django.template.base.Token}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_a2f0db60f264b99e382bd15a503cbb901} 
+django.\+template.\+base.\+Token.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token\+\_\+type}{, }\item[{}]{contents}{, }\item[{}]{position}{ = {\ttfamily None}, }\item[{}]{lineno}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A token representing a string from the template.
+
+token_type
+    A TokenType, either .TEXT, .VAR, .BLOCK, or .COMMENT.
+
+contents
+    The token source string.
+
+position
+    An optional tuple containing the start and end index of the token
+    in the template source. This is used for traceback information
+    when debug is on.
+
+lineno
+    The line number the token appears on in the template source.
+    This is used for traceback information and gettext files.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_a7f0b50c7a5cb78defb6f307048153295}\index{django.template.base.Token@{django.template.base.Token}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_a7f0b50c7a5cb78defb6f307048153295} 
+django.\+template.\+base.\+Token.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_ab23560ac0f8bed7646d9ba9b4feda468}\index{django.template.base.Token@{django.template.base.Token}!split\_contents@{split\_contents}}
+\index{split\_contents@{split\_contents}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{split\_contents()}{split\_contents()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_ab23560ac0f8bed7646d9ba9b4feda468} 
+django.\+template.\+base.\+Token.\+split\+\_\+contents (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_a2f320489ccff72934da0d61dcf0495ee}\index{django.template.base.Token@{django.template.base.Token}!contents@{contents}}
+\index{contents@{contents}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{contents}{contents}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_a2f320489ccff72934da0d61dcf0495ee} 
+django.\+template.\+base.\+Token.\+contents = contents}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_a1f8db853d8f4ee56ce2db319ed13b55b}\index{django.template.base.Token@{django.template.base.Token}!lineno@{lineno}}
+\index{lineno@{lineno}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{lineno}{lineno}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_a1f8db853d8f4ee56ce2db319ed13b55b} 
+django.\+template.\+base.\+Token.\+lineno = lineno}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_a7a7913878650f01257dd95795032bc5e}\index{django.template.base.Token@{django.template.base.Token}!position@{position}}
+\index{position@{position}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_a7a7913878650f01257dd95795032bc5e} 
+django.\+template.\+base.\+Token.\+position = position}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_token_a0ae2eb41426bf02daf5577f161e340d9}\index{django.template.base.Token@{django.template.base.Token}!token\_type@{token\_type}}
+\index{token\_type@{token\_type}!django.template.base.Token@{django.template.base.Token}}
+\doxysubsubsection{\texorpdfstring{token\_type}{token\_type}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_token_a0ae2eb41426bf02daf5577f161e340d9} 
+django.\+template.\+base.\+Token.\+token\+\_\+type = token\+\_\+type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/template/\mbox{\hyperlink{django_2template_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

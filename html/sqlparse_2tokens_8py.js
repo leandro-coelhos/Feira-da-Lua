@@ -1,0 +1,26 @@
+var sqlparse_2tokens_8py =
+[
+    [ "sqlparse.tokens._TokenType", "classsqlparse_1_1tokens_1_1___token_type.html", "classsqlparse_1_1tokens_1_1___token_type" ],
+    [ "sqlparse.tokens.Assignment", "namespacesqlparse_1_1tokens.html#aa601e77e8d61fed9a6174dc41a6202b5", null ],
+    [ "sqlparse.tokens.Command", "namespacesqlparse_1_1tokens.html#aa8e7ca47c03ce55cdebee49d8ff5a47d", null ],
+    [ "sqlparse.tokens.Comment", "namespacesqlparse_1_1tokens.html#a992479d3df34721745a6847305b39a1f", null ],
+    [ "sqlparse.tokens.Comparison", "namespacesqlparse_1_1tokens.html#a3ab95436272eab03baa02a381171e546", null ],
+    [ "sqlparse.tokens.CTE", "namespacesqlparse_1_1tokens.html#a4d7f9e1a70ba45ff2bd46804215dd634", null ],
+    [ "sqlparse.tokens.DDL", "namespacesqlparse_1_1tokens.html#ac5c38738d6b4c96a9070cbc41e10fdf0", null ],
+    [ "sqlparse.tokens.DML", "namespacesqlparse_1_1tokens.html#a0aaef72273a780e335ed0893a7eed558", null ],
+    [ "sqlparse.tokens.Error", "namespacesqlparse_1_1tokens.html#a99267d1391410de1568c06999f4b1c11", null ],
+    [ "sqlparse.tokens.Generic", "namespacesqlparse_1_1tokens.html#a750113b9ac75ad8a31e8fd440978dd5a", null ],
+    [ "sqlparse.tokens.Keyword", "namespacesqlparse_1_1tokens.html#a326b2e6ce1a51c83fb43effafb4422fd", null ],
+    [ "sqlparse.tokens.Literal", "namespacesqlparse_1_1tokens.html#a7891da42267168b9487a4b076ccc42da", null ],
+    [ "sqlparse.tokens.Name", "namespacesqlparse_1_1tokens.html#a70aec22f122c87377514b3f53913646f", null ],
+    [ "sqlparse.tokens.Newline", "namespacesqlparse_1_1tokens.html#a39b66d841175cdfc69a4c5d4dc59c544", null ],
+    [ "sqlparse.tokens.Number", "namespacesqlparse_1_1tokens.html#a9ddd158d8d42e985a2885c6c9da03b22", null ],
+    [ "sqlparse.tokens.Operator", "namespacesqlparse_1_1tokens.html#ab7e14c027bcc646cc09a9351730610b8", null ],
+    [ "sqlparse.tokens.Other", "namespacesqlparse_1_1tokens.html#a1ef5536da916b110e71d74ef4bf8070a", null ],
+    [ "sqlparse.tokens.Punctuation", "namespacesqlparse_1_1tokens.html#ac3eb109cb0b945c5e305e86a66fbe9d0", null ],
+    [ "sqlparse.tokens.String", "namespacesqlparse_1_1tokens.html#a77958fabbaea16c0de5d9371881f9c70", null ],
+    [ "sqlparse.tokens.Text", "namespacesqlparse_1_1tokens.html#a455341262316116fc42b3b2984c75895", null ],
+    [ "sqlparse.tokens.Token", "namespacesqlparse_1_1tokens.html#a05e855ffdf2168629f351a54a7e0c220", null ],
+    [ "sqlparse.tokens.Whitespace", "namespacesqlparse_1_1tokens.html#a4e2f3c60e16a664218cc948c7df74920", null ],
+    [ "sqlparse.tokens.Wildcard", "namespacesqlparse_1_1tokens.html#a423a2e548d5060dfd49f887228e27c6c", null ]
+];

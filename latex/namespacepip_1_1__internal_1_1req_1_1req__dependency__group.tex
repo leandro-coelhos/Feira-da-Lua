@@ -1,0 +1,54 @@
+\doxysection{pip.\+\_\+internal.\+req.\+req\+\_\+dependency\+\_\+group Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1req_1_1req__dependency__group}{}\label{namespacepip_1_1__internal_1_1req_1_1req__dependency__group}\index{pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a529d03a4289fa04e31dde9837a811975}{parse\+\_\+dependency\+\_\+groups}} (list\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} groups)
+\item 
+Iterator\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a326588ee785244c7ae300efb59b04a46}{\+\_\+resolve\+\_\+all\+\_\+groups}} (dict\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1dependency__groups_1_1__implementation_1_1_dependency_group_resolver}{Dependency\+Group\+Resolver}}\mbox{]} resolvers, list\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} groups)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_ad91817a10a12e2b9ab292946b2d3f34a}{\+\_\+build\+\_\+resolvers}} (Iterable\mbox{[}str\mbox{]} paths)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a8bcc8ba2e586d0585a21d37baf2942d4}{\+\_\+load\+\_\+pyproject}} (str path)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_ad91817a10a12e2b9ab292946b2d3f34a}\index{pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}!\_build\_resolvers@{\_build\_resolvers}}
+\index{\_build\_resolvers@{\_build\_resolvers}!pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}}
+\doxysubsubsection{\texorpdfstring{\_build\_resolvers()}{\_build\_resolvers()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_ad91817a10a12e2b9ab292946b2d3f34a} 
+ dict\mbox{[}str, Any\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+dependency\+\_\+group.\+\_\+build\+\_\+resolvers (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}str\mbox{]}}]{paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a8bcc8ba2e586d0585a21d37baf2942d4}\index{pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}!\_load\_pyproject@{\_load\_pyproject}}
+\index{\_load\_pyproject@{\_load\_pyproject}!pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}}
+\doxysubsubsection{\texorpdfstring{\_load\_pyproject()}{\_load\_pyproject()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a8bcc8ba2e586d0585a21d37baf2942d4} 
+ dict\mbox{[}str, Any\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+dependency\+\_\+group.\+\_\+load\+\_\+pyproject (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This helper loads a pyproject.toml as TOML.
+
+It raises an InstallationError if the operation fails.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a326588ee785244c7ae300efb59b04a46}\index{pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}!\_resolve\_all\_groups@{\_resolve\_all\_groups}}
+\index{\_resolve\_all\_groups@{\_resolve\_all\_groups}!pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}}
+\doxysubsubsection{\texorpdfstring{\_resolve\_all\_groups()}{\_resolve\_all\_groups()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a326588ee785244c7ae300efb59b04a46} 
+ Iterator\mbox{[}str\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+dependency\+\_\+group.\+\_\+resolve\+\_\+all\+\_\+groups (\begin{DoxyParamCaption}\item[{dict\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1dependency__groups_1_1__implementation_1_1_dependency_group_resolver}{Dependency\+Group\+Resolver}}\mbox{]}}]{resolvers}{, }\item[{list\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} }]{groups}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Run all resolution, converting any error from `DependencyGroupResolver` into
+an InstallationError.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a529d03a4289fa04e31dde9837a811975}\index{pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}!parse\_dependency\_groups@{parse\_dependency\_groups}}
+\index{parse\_dependency\_groups@{parse\_dependency\_groups}!pip.\_internal.req.req\_dependency\_group@{pip.\_internal.req.req\_dependency\_group}}
+\doxysubsubsection{\texorpdfstring{parse\_dependency\_groups()}{parse\_dependency\_groups()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_1_1req__dependency__group_a529d03a4289fa04e31dde9837a811975} 
+ list\mbox{[}str\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+dependency\+\_\+group.\+parse\+\_\+dependency\+\_\+groups (\begin{DoxyParamCaption}\item[{list\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]}}]{groups}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse dependency groups data as provided via the CLI, in a `[path:]group` syntax.
+
+Raises InstallationErrors if anything goes wrong.
+\end{DoxyVerb}
+ 

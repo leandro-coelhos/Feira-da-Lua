@@ -1,0 +1,172 @@
+\doxysection{django.\+core.\+management.\+commands.\+inspectdb.\+Command Class Reference}
+\hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command}{}\label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+Inheritance diagram for django.\+core.\+management.\+commands.\+inspectdb.\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a549ee7e9a1f86263e308d49dab69ae46}{add\+\_\+arguments}} (self, parser)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a668a81e8e42d3dafc2d6e00ac61e1dab}{handle}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a343634b7c9e2d141b10356b2189976ca}{handle\+\_\+inspection}} (self, options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a66436044fd666266211bc8a86eec7c14}{normalize\+\_\+col\+\_\+name}} (self, col\+\_\+name, used\+\_\+column\+\_\+names, is\+\_\+relation)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a24b1b7aeab3be01f844d3ce058d67272}{normalize\+\_\+table\+\_\+name}} (self, table\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_ada253ff2a9076d9760e7a568a6fad9ea}{get\+\_\+field\+\_\+type}} (self, connection, table\+\_\+name, row)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_af9c319ec8be7ce3af93bb482ea4f81f0}{get\+\_\+meta}} (self, table\+\_\+name, constraints, column\+\_\+to\+\_\+field\+\_\+name, is\+\_\+view, is\+\_\+partition, comment)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9695953f0be8c6f8c6d1ef34d7ea5d49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}}=None, no\+\_\+color=False, force\+\_\+color=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad1a0ff17727df93596c37baec5368461}{get\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae878e488f18d67acf1037a7e2db5b478}{create\+\_\+parser}} (self, prog\+\_\+name, subcommand, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae1a4dc5642d9d1f21301d519f3221e84}{add\+\_\+base\+\_\+argument}} (self, parser, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9f81b6c52db3a2b0a123ca7bdd0ee819}{print\+\_\+help}} (self, prog\+\_\+name, subcommand)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a6c1cc5fc9ec35d268e45ebaadd2ac4a7}{run\+\_\+from\+\_\+argv}} (self, argv)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5621c1fb51be6a2deff6777d90c25ee0}{execute}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ab2ff3d25e971a2ba69819666c6f064b2}{get\+\_\+check\+\_\+kwargs}} (self, options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ff1b562b3f6e68600b828fce3cf09b6}{check}} (self, app\+\_\+configs=None, tags=None, display\+\_\+num\+\_\+errors=False, include\+\_\+deployment\+\_\+checks=False, fail\+\_\+level=checks.\+ERROR, databases=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a163d7c2584c28d8775107140aa16237b}{check\+\_\+migrations}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a55e2c4b3b9922a81a26d9e71bd0585a6}{db\+\_\+module}} = "{}django.\+db"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5251899eaa230e9dc39d6f13bfb7738b}{help}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_afa4724a6b9eaa88dc153bcf618638984}{output\+\_\+transaction}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_af863dc49e813257bcc3f5ab2adbe1133}{requires\+\_\+migrations\+\_\+checks}} = False
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aba2da6354253ce03349947d947e49993}{requires\+\_\+system\+\_\+checks}} = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a792d54d83b488928d57a8c6d06651b93}{base\+\_\+stealth\+\_\+options}} = ("{}stderr"{}, "{}stdout"{})
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ae78baa0f34d38dada61deb73b45650}{stealth\+\_\+options}} = ()
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a26536fa90d5c93dbc2e0d3218d1ae1dc}{suppressed\+\_\+base\+\_\+arguments}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stdout or sys.\+stdout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stderr or sys.\+stderr)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad6d1595308e72c47dffa375715cbad81}{style}} = no\+\_\+style()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ac73d933ceec032782fbcbec37d6c8ebb}{\+\_\+called\+\_\+from\+\_\+command\+\_\+line}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a549ee7e9a1f86263e308d49dab69ae46}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!add\_arguments@{add\_arguments}}
+\index{add\_arguments@{add\_arguments}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{add\_arguments()}{add\_arguments()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a549ee7e9a1f86263e308d49dab69ae46} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+add\+\_\+arguments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parser}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Entry point for subclassed commands to add custom arguments.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a00539c5da3157007e2485338da279887}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_ada253ff2a9076d9760e7a568a6fad9ea}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!get\_field\_type@{get\_field\_type}}
+\index{get\_field\_type@{get\_field\_type}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{get\_field\_type()}{get\_field\_type()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_ada253ff2a9076d9760e7a568a6fad9ea} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+get\+\_\+field\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{connection}{, }\item[{}]{table\+\_\+name}{, }\item[{}]{row}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given the database connection, the table name, and the cursor row
+description, this routine will return the given field type name, as
+well as any additional keyword parameters and notes for the field.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_af9c319ec8be7ce3af93bb482ea4f81f0}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!get\_meta@{get\_meta}}
+\index{get\_meta@{get\_meta}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{get\_meta()}{get\_meta()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_af9c319ec8be7ce3af93bb482ea4f81f0} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+get\+\_\+meta (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{table\+\_\+name}{, }\item[{}]{constraints}{, }\item[{}]{column\+\_\+to\+\_\+field\+\_\+name}{, }\item[{}]{is\+\_\+view}{, }\item[{}]{is\+\_\+partition}{, }\item[{}]{comment}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a sequence comprising the lines of code necessary
+to construct the inner Meta class for the model corresponding
+to the given database table name.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a668a81e8e42d3dafc2d6e00ac61e1dab}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!handle@{handle}}
+\index{handle@{handle}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a668a81e8e42d3dafc2d6e00ac61e1dab} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual logic of the command. Subclasses must implement
+this method.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a52656ddf33d25f682f484c5d505a811d}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a343634b7c9e2d141b10356b2189976ca}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!handle\_inspection@{handle\_inspection}}
+\index{handle\_inspection@{handle\_inspection}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{handle\_inspection()}{handle\_inspection()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a343634b7c9e2d141b10356b2189976ca} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+handle\+\_\+inspection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a66436044fd666266211bc8a86eec7c14}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!normalize\_col\_name@{normalize\_col\_name}}
+\index{normalize\_col\_name@{normalize\_col\_name}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{normalize\_col\_name()}{normalize\_col\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a66436044fd666266211bc8a86eec7c14} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+normalize\+\_\+col\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{col\+\_\+name}{, }\item[{}]{used\+\_\+column\+\_\+names}{, }\item[{}]{is\+\_\+relation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Modify the column name to make it Python-compatible as a field name
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a24b1b7aeab3be01f844d3ce058d67272}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!normalize\_table\_name@{normalize\_table\_name}}
+\index{normalize\_table\_name@{normalize\_table\_name}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{normalize\_table\_name()}{normalize\_table\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a24b1b7aeab3be01f844d3ce058d67272} 
+django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+normalize\+\_\+table\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{table\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Translate the table name to a Python-compatible model name.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a55e2c4b3b9922a81a26d9e71bd0585a6}\index{django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}!db\_module@{db\_module}}
+\index{db\_module@{db\_module}!django.core.management.commands.inspectdb.Command@{django.core.management.commands.inspectdb.Command}}
+\doxysubsubsection{\texorpdfstring{db\_module}{db\_module}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1inspectdb_1_1_command_a55e2c4b3b9922a81a26d9e71bd0585a6} 
+str django.\+core.\+management.\+commands.\+inspectdb.\+Command.\+db\+\_\+module = "{}django.\+db"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/management/commands/\mbox{\hyperlink{core_2management_2commands_2inspectdb_8py}{inspectdb.\+py}}\end{DoxyCompactItemize}

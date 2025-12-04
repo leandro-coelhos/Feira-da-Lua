@@ -1,0 +1,139 @@
+\doxysection{django.\+db.\+migrations.\+writer.\+Migration\+Writer Class Reference}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer}{}\label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab91ac338a578086ee6ef0a22b4666f31}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab064933a84f363c79f62c1be52c2498e}{migration}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a421563a19e8a43f543ff47b563be10e6}{include\+\_\+header}}=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a4cf831cf0ce1f20f21c7e5ce5ec60980}{as\+\_\+string}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a179d9b3c2eb29e76400a9a1f1c8b90de}{basedir}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ae24480c1739a3664d744483f682558f6}{filename}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a45469d67e8f80996c982470d36136184}{path}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a8f7aefda8daf7a233b85eb5484ad5c18}{serialize}} (cls, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_acc16f743a4dfda659980f42b3e75ab55}{register\+\_\+serializer}} (cls, type\+\_\+, serializer)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a91ffca542c07306bcd67d824fdbf41ad}{unregister\+\_\+serializer}} (cls, type\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab064933a84f363c79f62c1be52c2498e}{migration}} = migration
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a421563a19e8a43f543ff47b563be10e6}{include\+\_\+header}} = include\+\_\+header
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a233087e0e01507faaf3150c48edcbae7}{needs\+\_\+manual\+\_\+porting}} = False
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_af06432cfb6567ce2003dd4b71e43873b}{basedir}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a62ea266e91f885697a272a0a6b098357}{filename}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Take a Migration instance and is able to produce the contents
+of the migration file from it.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab91ac338a578086ee6ef0a22b4666f31}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab91ac338a578086ee6ef0a22b4666f31} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{migration}{, }\item[{}]{include\+\_\+header}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a4cf831cf0ce1f20f21c7e5ce5ec60980}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!as\_string@{as\_string}}
+\index{as\_string@{as\_string}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{as\_string()}{as\_string()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a4cf831cf0ce1f20f21c7e5ce5ec60980} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+as\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string of the file contents.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a179d9b3c2eb29e76400a9a1f1c8b90de}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!basedir@{basedir}}
+\index{basedir@{basedir}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{basedir()}{basedir()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a179d9b3c2eb29e76400a9a1f1c8b90de} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+basedir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ae24480c1739a3664d744483f682558f6}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!filename@{filename}}
+\index{filename@{filename}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ae24480c1739a3664d744483f682558f6} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+filename (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a45469d67e8f80996c982470d36136184}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!path@{path}}
+\index{path@{path}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a45469d67e8f80996c982470d36136184} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_acc16f743a4dfda659980f42b3e75ab55}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!register\_serializer@{register\_serializer}}
+\index{register\_serializer@{register\_serializer}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{register\_serializer()}{register\_serializer()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_acc16f743a4dfda659980f42b3e75ab55} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+register\+\_\+serializer (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{type\+\_\+}{, }\item[{}]{serializer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a8f7aefda8daf7a233b85eb5484ad5c18}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!serialize@{serialize}}
+\index{serialize@{serialize}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a8f7aefda8daf7a233b85eb5484ad5c18} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+serialize (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a91ffca542c07306bcd67d824fdbf41ad}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!unregister\_serializer@{unregister\_serializer}}
+\index{unregister\_serializer@{unregister\_serializer}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{unregister\_serializer()}{unregister\_serializer()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a91ffca542c07306bcd67d824fdbf41ad} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+unregister\+\_\+serializer (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{type\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_af06432cfb6567ce2003dd4b71e43873b}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!basedir@{basedir}}
+\index{basedir@{basedir}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{basedir}{basedir}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_af06432cfb6567ce2003dd4b71e43873b} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+basedir}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a62ea266e91f885697a272a0a6b098357}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!filename@{filename}}
+\index{filename@{filename}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a62ea266e91f885697a272a0a6b098357} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+filename}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a421563a19e8a43f543ff47b563be10e6}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!include\_header@{include\_header}}
+\index{include\_header@{include\_header}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{include\_header}{include\_header}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a421563a19e8a43f543ff47b563be10e6} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+include\+\_\+header = include\+\_\+header}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab064933a84f363c79f62c1be52c2498e}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!migration@{migration}}
+\index{migration@{migration}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{migration}{migration}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_ab064933a84f363c79f62c1be52c2498e} 
+django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+migration = migration}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a233087e0e01507faaf3150c48edcbae7}\index{django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}!needs\_manual\_porting@{needs\_manual\_porting}}
+\index{needs\_manual\_porting@{needs\_manual\_porting}!django.db.migrations.writer.MigrationWriter@{django.db.migrations.writer.MigrationWriter}}
+\doxysubsubsection{\texorpdfstring{needs\_manual\_porting}{needs\_manual\_porting}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1writer_1_1_migration_writer_a233087e0e01507faaf3150c48edcbae7} 
+bool django.\+db.\+migrations.\+writer.\+Migration\+Writer.\+needs\+\_\+manual\+\_\+porting = False}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/migrations/\mbox{\hyperlink{django_2db_2migrations_2writer_8py}{writer.\+py}}\end{DoxyCompactItemize}

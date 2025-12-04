@@ -1,0 +1,99 @@
+\doxysection{django.\+contrib.\+gis.\+gdal Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal}{}\label{namespacedjango_1_1contrib_1_1gis_1_1gdal}\index{django.contrib.gis.gdal@{django.contrib.gis.gdal}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1base}{base}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1datasource}{datasource}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1driver}{driver}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1envelope}{envelope}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1error}{error}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1feature}{feature}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1field}{field}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1geometries}{geometries}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1geomtype}{geomtype}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1layer}{layer}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1libgdal}{libgdal}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes}{prototypes}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1raster}{raster}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1srs}{srs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_ae1f829403abe2421f3a1242f456f4afa}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module houses ctypes interfaces for GDAL objects.  The following GDAL
+objects are supported:
+
+CoordTransform: Used for coordinate transformations from one spatial
+ reference system to another.
+
+Driver: Wraps an OGR data source driver.
+
+DataSource: Wrapper for the OGR data source object, supports
+ OGR-supported data sources.
+
+Envelope: A ctypes structure for bounding boxes (GDAL library
+ not required).
+
+OGRGeometry: Object for accessing OGR Geometry functionality.
+
+OGRGeomType: A class for representing the different OGR Geometry
+ types (GDAL library not required).
+
+SpatialReference: Represents OSR Spatial Reference objects.
+
+The GDAL library will be imported from the system path using the default
+library name for the current OS. The default library path may be overridden
+by setting `GDAL_LIBRARY_PATH` in your settings with the path to the GDAL C
+library on your system.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_ae1f829403abe2421f3a1242f456f4afa}\index{django.contrib.gis.gdal@{django.contrib.gis.gdal}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!django.contrib.gis.gdal@{django.contrib.gis.gdal}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_ae1f829403abe2421f3a1242f456f4afa} 
+tuple django.\+contrib.\+gis.\+gdal.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}AxisOrder"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}Driver"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}DataSource"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}CoordTransform"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}Envelope"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}GDALException"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}GDALRaster"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}GDAL\_VERSION"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}OGRGeometry"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}OGRGeomType"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}SpatialReference"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}SRSException"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}check\_err"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}gdal\_version"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}gdal\_full\_version"{}},}
+\DoxyCodeLine{00017\ )}
+
+\end{DoxyCode}

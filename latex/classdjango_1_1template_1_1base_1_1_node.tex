@@ -1,0 +1,95 @@
+\doxysection{django.\+template.\+base.\+Node Class Reference}
+\hypertarget{classdjango_1_1template_1_1base_1_1_node}{}\label{classdjango_1_1template_1_1base_1_1_node}\index{django.template.base.Node@{django.template.base.Node}}
+Inheritance diagram for django.\+template.\+base.\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classdjango_1_1template_1_1base_1_1_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_node_a2113a3a2c813981b87a3972c6df5217c}{render}} (self, context)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_node_a5c2dbc7394376383eac59a236958ddbd}{render\+\_\+annotated}} (self, context)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_node_ad047385992790779d19817208a300e91}{get\+\_\+nodes\+\_\+by\+\_\+type}} (self, nodetype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_node_aeae5b30d9e76a9a86cfd6712f5695713}{must\+\_\+be\+\_\+first}} = False
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_node_a7c1769cc69bd628c551c8a034c312ab0}{child\+\_\+nodelists}} = ("{}nodelist"{},)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_node_a6297c5f0de1519bd322c72217e2348cd}{token}} = None
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_ad047385992790779d19817208a300e91}\index{django.template.base.Node@{django.template.base.Node}!get\_nodes\_by\_type@{get\_nodes\_by\_type}}
+\index{get\_nodes\_by\_type@{get\_nodes\_by\_type}!django.template.base.Node@{django.template.base.Node}}
+\doxysubsubsection{\texorpdfstring{get\_nodes\_by\_type()}{get\_nodes\_by\_type()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_node_ad047385992790779d19817208a300e91} 
+django.\+template.\+base.\+Node.\+get\+\_\+nodes\+\_\+by\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nodetype}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of all nodes (within this node and its nodelist)
+of the given type
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1base_1_1_node_a2113a3a2c813981b87a3972c6df5217c}\index{django.template.base.Node@{django.template.base.Node}!render@{render}}
+\index{render@{render}!django.template.base.Node@{django.template.base.Node}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_node_a2113a3a2c813981b87a3972c6df5217c} 
+django.\+template.\+base.\+Node.\+render (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the node rendered as a string.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1templatetags_1_1base_1_1_inclusion_admin_node_a5c909e3c155bf5e7736cc82df0006cda}{django.\+contrib.\+admin.\+templatetags.\+base.\+Inclusion\+Admin\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_text_node_aec8e5edcddfbf3deee609f8dc547c657}{django.\+template.\+base.\+Text\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_variable_node_adbe2dca265eb15c4cca62d52cdba276d}{django.\+template.\+base.\+Variable\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_auto_escape_control_node_a43432396cc1428e02b1d1b823e5c696c}{django.\+template.\+defaulttags.\+Auto\+Escape\+Control\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_comment_node_a445298d90bae3586040d9bb23b79c6e6}{django.\+template.\+defaulttags.\+Comment\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_csrf_token_node_a204a3abd490af5c068a59954f4122eb8}{django.\+template.\+defaulttags.\+Csrf\+Token\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_cycle_node_a5adf70c956480b072cde30962d65b3ba}{django.\+template.\+defaulttags.\+Cycle\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_debug_node_af97c5d95c2464ccd5eb2ba1413f78117}{django.\+template.\+defaulttags.\+Debug\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_filter_node_af256865d8dfef80060b19b344491e26f}{django.\+template.\+defaulttags.\+Filter\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_first_of_node_a59af2f769a3c9457fe7ace6959437f8f}{django.\+template.\+defaulttags.\+First\+Of\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_for_node_abff4ba40c07fe75160c111bf4903f96c}{django.\+template.\+defaulttags.\+For\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_if_changed_node_a37391b567554f4e85c817e34f59bd8b6}{django.\+template.\+defaulttags.\+If\+Changed\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_if_node_a088eb007307535bafd93ec08f82c04da}{django.\+template.\+defaulttags.\+If\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_load_node_ae25069b31564a1f816c19fe80483ee5a}{django.\+template.\+defaulttags.\+Load\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_lorem_node_aa9ac6e64f495fe6a2d53e7e7e7a30bf5}{django.\+template.\+defaulttags.\+Lorem\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_now_node_a0943425473a897f84236f5a790e1c11b}{django.\+template.\+defaulttags.\+Now\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_regroup_node_a0cbd4ca19f16f0d5cf7593def334a12f}{django.\+template.\+defaulttags.\+Regroup\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_reset_cycle_node_ab092ee03071c930109576881ed934516}{django.\+template.\+defaulttags.\+Reset\+Cycle\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_spaceless_node_a5da28a9bfe4e5d0e78c6442d688a0cbb}{django.\+template.\+defaulttags.\+Spaceless\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_template_tag_node_ab94241ee1f0e3047e93c401cb4d254f2}{django.\+template.\+defaulttags.\+Template\+Tag\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_u_r_l_node_a2192b0692c8b96df85da4ee6beb38fe9}{django.\+template.\+defaulttags.\+URLNode}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_verbatim_node_afbf77795501170ad7df33f34dc0037cc}{django.\+template.\+defaulttags.\+Verbatim\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_width_ratio_node_a8c3854e42cfb4836da911e888e1048e7}{django.\+template.\+defaulttags.\+Width\+Ratio\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1defaulttags_1_1_with_node_ab08b1170e52dca399d63728688ae9801}{django.\+template.\+defaulttags.\+With\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_inclusion_node_a174d626410c648cc77c205d071bda24a}{django.\+template.\+library.\+Inclusion\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_simple_node_a92c3791562915be6b2cf7ac51e25860c}{django.\+template.\+library.\+Simple\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1loader__tags_1_1_block_node_a5d9c85d4856d4bfb6b680876f2832aaf}{django.\+template.\+loader\+\_\+tags.\+Block\+Node}}, \mbox{\hyperlink{classdjango_1_1template_1_1loader__tags_1_1_extends_node_a5810537fc4f642bc9eb12621f4d28d0f}{django.\+template.\+loader\+\_\+tags.\+Extends\+Node}}, and \mbox{\hyperlink{classdjango_1_1template_1_1loader__tags_1_1_include_node_a96f408a35ab5cfb699738265676f1f94}{django.\+template.\+loader\+\_\+tags.\+Include\+Node}}.
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_a5c2dbc7394376383eac59a236958ddbd}\index{django.template.base.Node@{django.template.base.Node}!render\_annotated@{render\_annotated}}
+\index{render\_annotated@{render\_annotated}!django.template.base.Node@{django.template.base.Node}}
+\doxysubsubsection{\texorpdfstring{render\_annotated()}{render\_annotated()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_node_a5c2dbc7394376383eac59a236958ddbd} 
+django.\+template.\+base.\+Node.\+render\+\_\+annotated (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render the node. If debug is True and an exception occurs during
+rendering, the exception is annotated with contextual line information
+where it occurred in the template. For internal usage this method is
+preferred over using the render method directly.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_text_node_a5b6f0a1fe4ac01f260c1386b2e428964}{django.\+template.\+base.\+Text\+Node}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_a7c1769cc69bd628c551c8a034c312ab0}\index{django.template.base.Node@{django.template.base.Node}!child\_nodelists@{child\_nodelists}}
+\index{child\_nodelists@{child\_nodelists}!django.template.base.Node@{django.template.base.Node}}
+\doxysubsubsection{\texorpdfstring{child\_nodelists}{child\_nodelists}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_node_a7c1769cc69bd628c551c8a034c312ab0} 
+tuple django.\+template.\+base.\+Node.\+child\+\_\+nodelists = ("{}nodelist"{},)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_aeae5b30d9e76a9a86cfd6712f5695713}\index{django.template.base.Node@{django.template.base.Node}!must\_be\_first@{must\_be\_first}}
+\index{must\_be\_first@{must\_be\_first}!django.template.base.Node@{django.template.base.Node}}
+\doxysubsubsection{\texorpdfstring{must\_be\_first}{must\_be\_first}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_node_aeae5b30d9e76a9a86cfd6712f5695713} 
+bool django.\+template.\+base.\+Node.\+must\+\_\+be\+\_\+first = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_node_a6297c5f0de1519bd322c72217e2348cd}\index{django.template.base.Node@{django.template.base.Node}!token@{token}}
+\index{token@{token}!django.template.base.Node@{django.template.base.Node}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_node_a6297c5f0de1519bd322c72217e2348cd} 
+django.\+template.\+base.\+Node.\+token = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/template/\mbox{\hyperlink{django_2template_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

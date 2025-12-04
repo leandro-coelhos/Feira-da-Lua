@@ -1,29 +1,129 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import UserLoginForm
-from .service import GetUserByEmail
-from marketplace.models import MarketPlace
+from django.contrib import messages
+from .forms import UserLoginForm, UserRegistrationForm, MarketerRegistrationForm
+from .service import GetUserByEmail, CreateUser, CreateMarketer
+from .models import User
+from feira_da_lua.marketplace.models import MarketPlace
 from .service import CreateAvaliation, DeleteAvaliation, UpdateAvaliation, GetAvaliationsByMarketplace, GetAvaliationById
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 
+def IndexPage(request):
+    return redirect('home')
+
+def RegistroPage(request):
+    return render(request, 'registro.html')
+
 def LoginUser(request):
+    if request.session.get('user_id'):
+        return redirect('home')
+    
     if request.method == 'POST':
         formulario = UserLoginForm(request.POST)
         if formulario.is_valid():
             email = formulario.cleaned_data['email']
-            password = formulario.cleaned_data['senha']
+            password = formulario.cleaned_data['password']
 
             user = GetUserByEmail(email)
             if user and user.password == password:
-                return redirect('profile', user_id=user.id)
-    return render(request, 'users/login.html', {'form': UserLoginForm()})
+                request.session['user_id'] = user.id
+                return redirect('home')
+            else:
+                print('Login falhou: usuario nao encontrado ou senha incorreta')
+                messages.error(request, 'Email ou senha incorretos.')
+    return render(request, 'login.html', {'form': UserLoginForm()})
 
-def RegisterUser(View):
-    pass
+def RegisterUser(request):
+    if request.method == 'POST':
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            username = form.cleaned_data['username']
+            complete_name = form.cleaned_data['complete_name']
+            password = form.cleaned_data['password']
 
-def LogoutUser(View):
-    pass
+            if User.objects.filter(email=email).exists():
+                messages.error(request, 'Este email ja esta em uso.')
+                return render(request, 'cadastro_cliente.html', {'form': form})
+
+            if User.objects.filter(username=username).exists():
+                messages.error(request, 'Este nome de usuario ja esta em uso.')
+                return render(request, 'cadastro_cliente.html', {'form': form})
+
+            user = CreateUser(email=email, username=username, password=password, complete_name=complete_name)
+            messages.success(request, 'Conta criada com sucesso! Faca login.')
+            return redirect('login')
+        else:
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f'{error}')
+    else:
+        form = UserRegistrationForm()
+
+    return render(request, 'cadastro_cliente.html', {'form': form})
+
+def RegisterMarketer(request):
+    if request.method == 'POST':
+        form = MarketerRegistrationForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            username = form.cleaned_data['username']
+            complete_name = form.cleaned_data['complete_name']
+            password = form.cleaned_data['password']
+            cellphone = form.cleaned_data['cellphone']
+
+            if User.objects.filter(email=email).exists():
+                messages.error(request, 'Este email ja esta em uso.')
+                return render(request, 'cadastro_feirante.html', {'form': form})
+
+            if User.objects.filter(username=username).exists():
+                messages.error(request, 'Este nome de usuario ja esta em uso.')
+                return render(request, 'cadastro_feirante.html', {'form': form})
+
+            marketer = CreateMarketer(email=email, username=username, password=password, complete_name=complete_name, cellphone=cellphone)
+            messages.success(request, 'Conta de feirante criada com sucesso! Faca login.')
+            return redirect('login')
+        else:
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f'{error}')
+    else:
+        form = MarketerRegistrationForm()
+
+    return render(request, 'cadastro_feirante.html', {'form': form})
+
+def LogoutUser(request):
+    if 'user_id' in request.session:
+        del request.session['user_id']
+    return redirect('login')
+
+
+def FavoritesPage(request):
+    from feira_da_lua.users.models import Favorite
+    import base64
+    
+    user = request.user_obj
+    favorites = Favorite.objects.filter(user=user).select_related('product', 'product__marketer', 'product__marketer__user')
+    
+    favorites_with_photos = []
+    for fav in favorites:
+        photo_base64 = None
+        if fav.product.photo:
+            try:
+                if isinstance(fav.product.photo, bytes):
+                    photo_base64 = base64.b64encode(fav.product.photo).decode('utf-8')
+                elif hasattr(fav.product.photo, 'tobytes'):
+                    photo_base64 = base64.b64encode(fav.product.photo.tobytes()).decode('utf-8')
+            except Exception:
+                pass
+        favorites_with_photos.append({
+            'favorite': fav,
+            'product': fav.product,
+            'photo_base64': photo_base64
+        })
+    
+    return render(request, 'favoritos.html', {'favorites': favorites_with_photos, 'user': user})
 
 def ProfileUser(View):
     pass

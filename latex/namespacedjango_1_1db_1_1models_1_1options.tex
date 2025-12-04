@@ -1,0 +1,115 @@
+\doxysection{django.\+db.\+models.\+options Namespace Reference}
+\hypertarget{namespacedjango_1_1db_1_1models_1_1options}{}\label{namespacedjango_1_1db_1_1models_1_1options}\index{django.db.models.options@{django.db.models.options}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1options_1_1_options}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1options_a7c5e948b92b90ad3e33351ec6ff1ea1e}{normalize\+\_\+together}} (option\+\_\+together)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1options_ad6e15002f494024f2232d7e3eeb05100}{make\+\_\+immutable\+\_\+fields\+\_\+list}} (name, data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1options_a89d936501fb388bfa31b9b91edc56bdb}{PROXY\+\_\+\+PARENTS}} = object()
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1options_a43442ead46fe4373192a9199350caf31}{EMPTY\+\_\+\+RELATION\+\_\+\+TREE}} = ()
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1options_a56e3971e11f2b72d0211e02039892f3c}{IMMUTABLE\+\_\+\+WARNING}}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1options_ad6bfadd1fee453ece901d9c214854c6a}{DEFAULT\+\_\+\+NAMES}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_ad6e15002f494024f2232d7e3eeb05100}\index{django.db.models.options@{django.db.models.options}!make\_immutable\_fields\_list@{make\_immutable\_fields\_list}}
+\index{make\_immutable\_fields\_list@{make\_immutable\_fields\_list}!django.db.models.options@{django.db.models.options}}
+\doxysubsubsection{\texorpdfstring{make\_immutable\_fields\_list()}{make\_immutable\_fields\_list()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1options_ad6e15002f494024f2232d7e3eeb05100} 
+django.\+db.\+models.\+options.\+make\+\_\+immutable\+\_\+fields\+\_\+list (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_a7c5e948b92b90ad3e33351ec6ff1ea1e}\index{django.db.models.options@{django.db.models.options}!normalize\_together@{normalize\_together}}
+\index{normalize\_together@{normalize\_together}!django.db.models.options@{django.db.models.options}}
+\doxysubsubsection{\texorpdfstring{normalize\_together()}{normalize\_together()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1options_a7c5e948b92b90ad3e33351ec6ff1ea1e} 
+django.\+db.\+models.\+options.\+normalize\+\_\+together (\begin{DoxyParamCaption}\item[{}]{option\+\_\+together}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}option_together can be either a tuple of tuples, or a single
+tuple of two strings. Normalize it to a tuple of tuples, so that
+calling code can uniformly expect that.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_ad6bfadd1fee453ece901d9c214854c6a}\index{django.db.models.options@{django.db.models.options}!DEFAULT\_NAMES@{DEFAULT\_NAMES}}
+\index{DEFAULT\_NAMES@{DEFAULT\_NAMES}!django.db.models.options@{django.db.models.options}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_NAMES}{DEFAULT\_NAMES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1options_ad6bfadd1fee453ece901d9c214854c6a} 
+tuple django.\+db.\+models.\+options.\+DEFAULT\+\_\+\+NAMES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}verbose\_name"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}verbose\_name\_plural"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}db\_table"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}db\_table\_comment"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}ordering"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}unique\_together"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}permissions"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}get\_latest\_by"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}order\_with\_respect\_to"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}app\_label"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}db\_tablespace"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}abstract"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}managed"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}proxy"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}swappable"{}},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}auto\_created"{}},}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{"{}apps"{}},}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{stringliteral}{"{}default\_permissions"{}},}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{stringliteral}{"{}select\_on\_save"{}},}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{stringliteral}{"{}default\_related\_name"{}},}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{stringliteral}{"{}required\_db\_features"{}},}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{stringliteral}{"{}required\_db\_vendor"{}},}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{stringliteral}{"{}base\_manager\_name"{}},}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{stringliteral}{"{}default\_manager\_name"{}},}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{stringliteral}{"{}indexes"{}},}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{stringliteral}{"{}constraints"{}},}
+\DoxyCodeLine{00028\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_a43442ead46fe4373192a9199350caf31}\index{django.db.models.options@{django.db.models.options}!EMPTY\_RELATION\_TREE@{EMPTY\_RELATION\_TREE}}
+\index{EMPTY\_RELATION\_TREE@{EMPTY\_RELATION\_TREE}!django.db.models.options@{django.db.models.options}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_RELATION\_TREE}{EMPTY\_RELATION\_TREE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1options_a43442ead46fe4373192a9199350caf31} 
+tuple django.\+db.\+models.\+options.\+EMPTY\+\_\+\+RELATION\+\_\+\+TREE = ()}
+
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_a56e3971e11f2b72d0211e02039892f3c}\index{django.db.models.options@{django.db.models.options}!IMMUTABLE\_WARNING@{IMMUTABLE\_WARNING}}
+\index{IMMUTABLE\_WARNING@{IMMUTABLE\_WARNING}!django.db.models.options@{django.db.models.options}}
+\doxysubsubsection{\texorpdfstring{IMMUTABLE\_WARNING}{IMMUTABLE\_WARNING}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1options_a56e3971e11f2b72d0211e02039892f3c} 
+tuple django.\+db.\+models.\+options.\+IMMUTABLE\+\_\+\+WARNING}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}The\ return\ type\ of\ '\%s'\ should\ never\ be\ mutated.\ If\ you\ want\ to\ manipulate\ this\ "{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}list\ for\ your\ own\ use,\ make\ a\ copy\ first."{}}}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1db_1_1models_1_1options_a89d936501fb388bfa31b9b91edc56bdb}\index{django.db.models.options@{django.db.models.options}!PROXY\_PARENTS@{PROXY\_PARENTS}}
+\index{PROXY\_PARENTS@{PROXY\_PARENTS}!django.db.models.options@{django.db.models.options}}
+\doxysubsubsection{\texorpdfstring{PROXY\_PARENTS}{PROXY\_PARENTS}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1models_1_1options_a89d936501fb388bfa31b9b91edc56bdb} 
+django.\+db.\+models.\+options.\+PROXY\+\_\+\+PARENTS = object()}
+

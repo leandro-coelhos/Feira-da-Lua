@@ -1,0 +1,470 @@
+\doxysection{pytest\+\_\+django.\+fixtures Namespace Reference}
+\hypertarget{namespacepytest__django_1_1fixtures}{}\label{namespacepytest__django_1_1fixtures}\index{pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_assert_num_queries}{Django\+Assert\+Num\+Queries}}
+\item 
+class \mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_capture_on_commit_callbacks}{Django\+Capture\+On\+Commit\+Callbacks}}
+\item 
+class \mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_settings_wrapper}{Settings\+Wrapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab56623e3d219cf0532309aaf6bc263f3}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+tox\+\_\+suffix}} ()
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a013dc50abdfc75cbd307707a21858d1f}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+xdist\+\_\+suffix}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request)
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_aa7e79307ee356deecb19cf40b201be73}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+parallel\+\_\+suffix}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab56623e3d219cf0532309aaf6bc263f3}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+tox\+\_\+suffix}}, None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a013dc50abdfc75cbd307707a21858d1f}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+xdist\+\_\+suffix}})
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a882666ff565a08170fc30fc532c0de89}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_aa7e79307ee356deecb19cf40b201be73}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+parallel\+\_\+suffix}})
+\item 
+bool \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab6770858e92aa95ccd1cfec4f04ac6d9}{django\+\_\+db\+\_\+use\+\_\+migrations}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request)
+\item 
+bool \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a45db03b127133e3da7f2c56f2b1f98c1}{django\+\_\+db\+\_\+keepdb}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request)
+\item 
+bool \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a086e60a1ba6984fa804534d01f07c197}{django\+\_\+db\+\_\+createdb}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request)
+\item 
+tuple\mbox{[}Iterable\mbox{[}str\mbox{]}, bool\mbox{]} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a697c84f116803f845929f50ac584183c}{\+\_\+get\+\_\+databases\+\_\+for\+\_\+test}} (\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{pytest.\+Item}} test)
+\item 
+tuple\mbox{[}Abstract\+Set\mbox{[}str\mbox{]}, Abstract\+Set\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_aabbd8067c47800de5464c9bd9dce5222}{\+\_\+get\+\_\+databases\+\_\+for\+\_\+setup}} (Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{pytest.\+Item}}\mbox{]} items)
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab2d4e1573665d64de019d4b4579f402c}{django\+\_\+db\+\_\+setup}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request, None django\+\_\+test\+\_\+environment, \mbox{\hyperlink{classpytest__django_1_1plugin_1_1_django_db_blocker}{Django\+Db\+Blocker}} django\+\_\+db\+\_\+blocker, bool \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab6770858e92aa95ccd1cfec4f04ac6d9}{django\+\_\+db\+\_\+use\+\_\+migrations}}, bool \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a45db03b127133e3da7f2c56f2b1f98c1}{django\+\_\+db\+\_\+keepdb}}, bool \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a086e60a1ba6984fa804534d01f07c197}{django\+\_\+db\+\_\+createdb}}, None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a882666ff565a08170fc30fc532c0de89}{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings}})
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f}{\+\_\+django\+\_\+db\+\_\+helper}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request, None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab2d4e1573665d64de019d4b4579f402c}{django\+\_\+db\+\_\+setup}}, \mbox{\hyperlink{classpytest__django_1_1plugin_1_1_django_db_blocker}{Django\+Db\+Blocker}} django\+\_\+db\+\_\+blocker)
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e}{\+\_\+\+Django\+Db}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a7938365b2b442d8f3e990f3691d9ec74}{\+\_\+django\+\_\+db\+\_\+signature}} (bool transaction=False, bool reset\+\_\+sequences=False, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106}{\+\_\+\+Django\+Db\+Databases}} databases=None, bool serialized\+\_\+rollback=False, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1}{\+\_\+\+Django\+Db\+Available\+Apps}} available\+\_\+apps=None)
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e}{\+\_\+\+Django\+Db}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ab2cea35c71ea04a71e77073b02ce518e}{validate\+\_\+django\+\_\+db}} (\mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark}{pytest.\+Mark}} marker)
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a9659d7598e35afd860085d5b909d9fe0}{\+\_\+disable\+\_\+migrations}} ()
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a22caf766b482ff24cbc623421dc7dc00}{\+\_\+set\+\_\+suffix\+\_\+to\+\_\+test\+\_\+databases}} (str suffix)
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7}{db}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f}{\+\_\+django\+\_\+db\+\_\+helper}})
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5fc7da6e58702cd47fcf27b5ad4ee7ff}{transactional\+\_\+db}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f}{\+\_\+django\+\_\+db\+\_\+helper}})
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a280033a5ea00cb8fea59f3af527c4c13}{django\+\_\+db\+\_\+reset\+\_\+sequences}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f}{\+\_\+django\+\_\+db\+\_\+helper}}, None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5fc7da6e58702cd47fcf27b5ad4ee7ff}{transactional\+\_\+db}})
+\item 
+None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_af47a1004527dcd07e67ce108a783dddd}{django\+\_\+db\+\_\+serialized\+\_\+rollback}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f}{\+\_\+django\+\_\+db\+\_\+helper}}, None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7}{db}})
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client}{django.\+test.\+Client}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a331bf6154c95eeaebb5781fc1e719040}{client}} ()
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_async_client}{django.\+test.\+Async\+Client}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_afe898f9bf7dc7cac9df1dde223bc3aab}{async\+\_\+client}} ()
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a15468b40a1bd8f07d5fbd228d1c20192}{django\+\_\+user\+\_\+model}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7}{db}})
+\item 
+str \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a40615b0174862b5b0cbcb45ba11d25d0}{django\+\_\+username\+\_\+field}} (\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a15468b40a1bd8f07d5fbd228d1c20192}{django\+\_\+user\+\_\+model}})
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a3e60a2732d6b8094166525f1d4bd4f83}{admin\+\_\+user}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7}{db}}, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a15468b40a1bd8f07d5fbd228d1c20192}{django\+\_\+user\+\_\+model}}, str \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a40615b0174862b5b0cbcb45ba11d25d0}{django\+\_\+username\+\_\+field}})
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client}{django.\+test.\+Client}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a4a0c89f042b3882e634fc0af489c5515}{admin\+\_\+client}} (None \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7}{db}}, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a3e60a2732d6b8094166525f1d4bd4f83}{admin\+\_\+user}})
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_request_factory}{django.\+test.\+Request\+Factory}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a609595f5a0d25c559b68f06bc98ac21a}{rf}} ()
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_async_request_factory}{django.\+test.\+Async\+Request\+Factory}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a0e839dde405dd542f1ebefafe6044f87}{async\+\_\+rf}} ()
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a97dce56175918f6073b884b30886ce77}{settings}} ()
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a531318c2f0479bf68faab861ad62e733}{live\+\_\+server}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request)
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a520d8fcd119f6e14b5402ebbe5be1471}{\+\_\+live\+\_\+server\+\_\+helper}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}} request)
+\item 
+Generator\mbox{[}\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1_capture_queries_context}{django.\+test.\+utils.\+Capture\+Queries\+Context}}, None, None\mbox{]} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ac23446ae4169668a1d46877f2229fad1}{\+\_\+assert\+\_\+num\+\_\+queries}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{pytest.\+Config}} config, int num, bool exact=True, Any\texorpdfstring{$\vert$}{|}None connection=None, str\texorpdfstring{$\vert$}{|}None info=None, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None using=None)
+\item 
+\mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_assert_num_queries}{Django\+Assert\+Num\+Queries}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_ad27f4850f71bba73ab2751e4dcecaa29}{django\+\_\+assert\+\_\+num\+\_\+queries}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{pytest.\+Config}} pytestconfig)
+\item 
+\mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_assert_num_queries}{Django\+Assert\+Num\+Queries}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_aaad5beaf9941f49472f6357ee8cf54fc}{django\+\_\+assert\+\_\+max\+\_\+num\+\_\+queries}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{pytest.\+Config}} pytestconfig)
+\item 
+\mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_capture_on_commit_callbacks}{Django\+Capture\+On\+Commit\+Callbacks}} \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5d1bdc97656b5ff2ba282a29c59de3fe}{django\+\_\+capture\+\_\+on\+\_\+commit\+\_\+callbacks}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106}{\+\_\+\+Django\+Db\+Databases}} = Optional\mbox{[}Union\mbox{[}Literal\mbox{[}"{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}\mbox{]}, Iterable\mbox{[}str\mbox{]}\mbox{]}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1}{\+\_\+\+Django\+Db\+Available\+Apps}} = Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e}{\+\_\+\+Django\+Db}} = Tuple\mbox{[}bool, bool, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106}{\+\_\+\+Django\+Db\+Databases}}, bool, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1}{\+\_\+\+Django\+Db\+Available\+Apps}}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a2987e743fefade7c6a177b7e9232fb9a}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}All pytest-django fixtures\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepytest__django_1_1fixtures_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepytest__django_1_1fixtures_ac23446ae4169668a1d46877f2229fad1}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_assert\_num\_queries@{\_assert\_num\_queries}}
+\index{\_assert\_num\_queries@{\_assert\_num\_queries}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_assert\_num\_queries()}{\_assert\_num\_queries()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_ac23446ae4169668a1d46877f2229fad1} 
+ Generator\mbox{[}\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1_capture_queries_context}{django.\+test.\+utils.\+Capture\+Queries\+Context}}, None, None\mbox{]} pytest\+\_\+django.\+fixtures.\+\_\+assert\+\_\+num\+\_\+queries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{pytest.\+Config}}}]{config}{, }\item[{int}]{num}{, }\item[{bool }]{exact}{ = {\ttfamily True}, }\item[{Any \texorpdfstring{$\vert$}{|} None }]{connection}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{info}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{using}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a9659d7598e35afd860085d5b909d9fe0}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_disable\_migrations@{\_disable\_migrations}}
+\index{\_disable\_migrations@{\_disable\_migrations}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_disable\_migrations()}{\_disable\_migrations()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a9659d7598e35afd860085d5b909d9fe0} 
+ None pytest\+\_\+django.\+fixtures.\+\_\+disable\+\_\+migrations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_django\_db\_helper@{\_django\_db\_helper}}
+\index{\_django\_db\_helper@{\_django\_db\_helper}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_django\_db\_helper()}{\_django\_db\_helper()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a120bb3674f430f46ef0f5ec38b46594f} 
+ Generator\mbox{[}None, None, None\mbox{]} pytest\+\_\+django.\+fixtures.\+\_\+django\+\_\+db\+\_\+helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{, }\item[{None}]{django\+\_\+db\+\_\+setup}{, }\item[{\mbox{\hyperlink{classpytest__django_1_1plugin_1_1_django_db_blocker}{Django\+Db\+Blocker}}}]{django\+\_\+db\+\_\+blocker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a7938365b2b442d8f3e990f3691d9ec74}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_django\_db\_signature@{\_django\_db\_signature}}
+\index{\_django\_db\_signature@{\_django\_db\_signature}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_django\_db\_signature()}{\_django\_db\_signature()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a7938365b2b442d8f3e990f3691d9ec74} 
+ \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e}{\+\_\+\+Django\+Db}} pytest\+\_\+django.\+fixtures.\+\_\+django\+\_\+db\+\_\+signature (\begin{DoxyParamCaption}\item[{bool }]{transaction}{ = {\ttfamily False}, }\item[{bool }]{reset\+\_\+sequences}{ = {\ttfamily False}, }\item[{\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106}{\+\_\+\+Django\+Db\+Databases}} }]{databases}{ = {\ttfamily None}, }\item[{bool }]{serialized\+\_\+rollback}{ = {\ttfamily False}, }\item[{\mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1}{\+\_\+\+Django\+Db\+Available\+Apps}} }]{available\+\_\+apps}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}The signature of the django_db marker. Used by validate_django_db.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_aabbd8067c47800de5464c9bd9dce5222}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_get\_databases\_for\_setup@{\_get\_databases\_for\_setup}}
+\index{\_get\_databases\_for\_setup@{\_get\_databases\_for\_setup}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_get\_databases\_for\_setup()}{\_get\_databases\_for\_setup()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_aabbd8067c47800de5464c9bd9dce5222} 
+ tuple\mbox{[}Abstract\+Set\mbox{[}str\mbox{]}, Abstract\+Set\mbox{[}str\mbox{]}\mbox{]} pytest\+\_\+django.\+fixtures.\+\_\+get\+\_\+databases\+\_\+for\+\_\+setup (\begin{DoxyParamCaption}\item[{Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{pytest.\+Item}}\mbox{]}}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the database aliases that need to be setup, and the subset that needs
+to be serialized.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a697c84f116803f845929f50ac584183c}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_get\_databases\_for\_test@{\_get\_databases\_for\_test}}
+\index{\_get\_databases\_for\_test@{\_get\_databases\_for\_test}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_get\_databases\_for\_test()}{\_get\_databases\_for\_test()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a697c84f116803f845929f50ac584183c} 
+ tuple\mbox{[}Iterable\mbox{[}str\mbox{]}, bool\mbox{]} pytest\+\_\+django.\+fixtures.\+\_\+get\+\_\+databases\+\_\+for\+\_\+test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{pytest.\+Item}}}]{test}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the database aliases that need to be setup for a test, and whether
+they need to be serialized.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a520d8fcd119f6e14b5402ebbe5be1471}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_live\_server\_helper@{\_live\_server\_helper}}
+\index{\_live\_server\_helper@{\_live\_server\_helper}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_live\_server\_helper()}{\_live\_server\_helper()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a520d8fcd119f6e14b5402ebbe5be1471} 
+ Generator\mbox{[}None, None, None\mbox{]} pytest\+\_\+django.\+fixtures.\+\_\+live\+\_\+server\+\_\+helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper to make live_server work, internal to pytest-django.
+
+This helper will dynamically request the transactional_db fixture
+for a test which uses the live_server fixture.  This allows the
+server and test to access the database without having to mark
+this explicitly which is handy since it is usually required and
+matches the Django behaviour.
+
+The separate helper is required since live_server can not request
+transactional_db directly since it is session scoped instead of
+function-scoped.
+
+It will also override settings only for the duration of the test.
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a22caf766b482ff24cbc623421dc7dc00}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_set\_suffix\_to\_test\_databases@{\_set\_suffix\_to\_test\_databases}}
+\index{\_set\_suffix\_to\_test\_databases@{\_set\_suffix\_to\_test\_databases}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_set\_suffix\_to\_test\_databases()}{\_set\_suffix\_to\_test\_databases()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a22caf766b482ff24cbc623421dc7dc00} 
+ None pytest\+\_\+django.\+fixtures.\+\_\+set\+\_\+suffix\+\_\+to\+\_\+test\+\_\+databases (\begin{DoxyParamCaption}\item[{str}]{suffix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a4a0c89f042b3882e634fc0af489c5515}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!admin\_client@{admin\_client}}
+\index{admin\_client@{admin\_client}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{admin\_client()}{admin\_client()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a4a0c89f042b3882e634fc0af489c5515} 
+ \mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client}{django.\+test.\+Client}} pytest\+\_\+django.\+fixtures.\+admin\+\_\+client (\begin{DoxyParamCaption}\item[{None}]{db}{, }\item[{}]{admin\+\_\+user}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A Django test client logged in as an admin user.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a3e60a2732d6b8094166525f1d4bd4f83}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!admin\_user@{admin\_user}}
+\index{admin\_user@{admin\_user}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{admin\_user()}{admin\_user()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a3e60a2732d6b8094166525f1d4bd4f83} 
+pytest\+\_\+django.\+fixtures.\+admin\+\_\+user (\begin{DoxyParamCaption}\item[{None}]{db}{, }\item[{}]{django\+\_\+user\+\_\+model}{, }\item[{str}]{django\+\_\+username\+\_\+field}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A Django admin user.
+
+This uses an existing user with username "admin", or creates a new one with
+password "password".
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_afe898f9bf7dc7cac9df1dde223bc3aab}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!async\_client@{async\_client}}
+\index{async\_client@{async\_client}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{async\_client()}{async\_client()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_afe898f9bf7dc7cac9df1dde223bc3aab} 
+ \mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_async_client}{django.\+test.\+Async\+Client}} pytest\+\_\+django.\+fixtures.\+async\+\_\+client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A Django test async client instance.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a0e839dde405dd542f1ebefafe6044f87}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!async\_rf@{async\_rf}}
+\index{async\_rf@{async\_rf}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{async\_rf()}{async\_rf()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a0e839dde405dd542f1ebefafe6044f87} 
+ \mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_async_request_factory}{django.\+test.\+Async\+Request\+Factory}} pytest\+\_\+django.\+fixtures.\+async\+\_\+rf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}AsyncRequestFactory instance\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a331bf6154c95eeaebb5781fc1e719040}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!client@{client}}
+\index{client@{client}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{client()}{client()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a331bf6154c95eeaebb5781fc1e719040} 
+ \mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_client}{django.\+test.\+Client}} pytest\+\_\+django.\+fixtures.\+client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A Django test client instance.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!db@{db}}
+\index{db@{db}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{db()}{db()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a13c088359ce69e55a44577cec06a9fc7} 
+ None pytest\+\_\+django.\+fixtures.\+db (\begin{DoxyParamCaption}\item[{None}]{\+\_\+django\+\_\+db\+\_\+helper}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Require a django test database.
+
+This database will be setup with the default fixtures and will have
+the transaction management disabled. At the end of the test the outer
+transaction that wraps the test itself will be rolled back to undo any
+changes to the database (in case the backend supports transactions).
+This is more limited than the ``transactional_db`` fixture but
+faster.
+
+If both ``db`` and ``transactional_db`` are requested,
+``transactional_db`` takes precedence.
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_aaad5beaf9941f49472f6357ee8cf54fc}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_assert\_max\_num\_queries@{django\_assert\_max\_num\_queries}}
+\index{django\_assert\_max\_num\_queries@{django\_assert\_max\_num\_queries}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_assert\_max\_num\_queries()}{django\_assert\_max\_num\_queries()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_aaad5beaf9941f49472f6357ee8cf54fc} 
+ \mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_assert_num_queries}{Django\+Assert\+Num\+Queries}} pytest\+\_\+django.\+fixtures.\+django\+\_\+assert\+\_\+max\+\_\+num\+\_\+queries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{pytest.\+Config}}}]{pytestconfig}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allows to check for an expected maximum number of DB queries.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_ad27f4850f71bba73ab2751e4dcecaa29}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_assert\_num\_queries@{django\_assert\_num\_queries}}
+\index{django\_assert\_num\_queries@{django\_assert\_num\_queries}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_assert\_num\_queries()}{django\_assert\_num\_queries()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_ad27f4850f71bba73ab2751e4dcecaa29} 
+ \mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_assert_num_queries}{Django\+Assert\+Num\+Queries}} pytest\+\_\+django.\+fixtures.\+django\+\_\+assert\+\_\+num\+\_\+queries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{pytest.\+Config}}}]{pytestconfig}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allows to check for an expected number of DB queries.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a5d1bdc97656b5ff2ba282a29c59de3fe}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_capture\_on\_commit\_callbacks@{django\_capture\_on\_commit\_callbacks}}
+\index{django\_capture\_on\_commit\_callbacks@{django\_capture\_on\_commit\_callbacks}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_capture\_on\_commit\_callbacks()}{django\_capture\_on\_commit\_callbacks()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a5d1bdc97656b5ff2ba282a29c59de3fe} 
+ \mbox{\hyperlink{classpytest__django_1_1fixtures_1_1_django_capture_on_commit_callbacks}{Django\+Capture\+On\+Commit\+Callbacks}} pytest\+\_\+django.\+fixtures.\+django\+\_\+capture\+\_\+on\+\_\+commit\+\_\+callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Captures transaction.on_commit() callbacks for the given database connection.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a086e60a1ba6984fa804534d01f07c197}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_createdb@{django\_db\_createdb}}
+\index{django\_db\_createdb@{django\_db\_createdb}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_createdb()}{django\_db\_createdb()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a086e60a1ba6984fa804534d01f07c197} 
+ bool pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+createdb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the database is to be re-created before running any tests.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a45db03b127133e3da7f2c56f2b1f98c1}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_keepdb@{django\_db\_keepdb}}
+\index{django\_db\_keepdb@{django\_db\_keepdb}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_keepdb()}{django\_db\_keepdb()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a45db03b127133e3da7f2c56f2b1f98c1} 
+ bool pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+keepdb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether to re-use an existing database and to keep it after the test run.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a882666ff565a08170fc30fc532c0de89}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_modify\_db\_settings@{django\_db\_modify\_db\_settings}}
+\index{django\_db\_modify\_db\_settings@{django\_db\_modify\_db\_settings}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_modify\_db\_settings()}{django\_db\_modify\_db\_settings()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a882666ff565a08170fc30fc532c0de89} 
+ None pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings (\begin{DoxyParamCaption}\item[{None}]{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+parallel\+\_\+suffix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Modify db settings just before the databases are configured.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_aa7e79307ee356deecb19cf40b201be73}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_modify\_db\_settings\_parallel\_suffix@{django\_db\_modify\_db\_settings\_parallel\_suffix}}
+\index{django\_db\_modify\_db\_settings\_parallel\_suffix@{django\_db\_modify\_db\_settings\_parallel\_suffix}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_modify\_db\_settings\_parallel\_suffix()}{django\_db\_modify\_db\_settings\_parallel\_suffix()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_aa7e79307ee356deecb19cf40b201be73} 
+ None pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+parallel\+\_\+suffix (\begin{DoxyParamCaption}\item[{None}]{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+tox\+\_\+suffix}{, }\item[{None}]{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+xdist\+\_\+suffix}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_ab56623e3d219cf0532309aaf6bc263f3}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_modify\_db\_settings\_tox\_suffix@{django\_db\_modify\_db\_settings\_tox\_suffix}}
+\index{django\_db\_modify\_db\_settings\_tox\_suffix@{django\_db\_modify\_db\_settings\_tox\_suffix}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_modify\_db\_settings\_tox\_suffix()}{django\_db\_modify\_db\_settings\_tox\_suffix()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_ab56623e3d219cf0532309aaf6bc263f3} 
+ None pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+tox\+\_\+suffix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a013dc50abdfc75cbd307707a21858d1f}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_modify\_db\_settings\_xdist\_suffix@{django\_db\_modify\_db\_settings\_xdist\_suffix}}
+\index{django\_db\_modify\_db\_settings\_xdist\_suffix@{django\_db\_modify\_db\_settings\_xdist\_suffix}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_modify\_db\_settings\_xdist\_suffix()}{django\_db\_modify\_db\_settings\_xdist\_suffix()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a013dc50abdfc75cbd307707a21858d1f} 
+ None pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings\+\_\+xdist\+\_\+suffix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a280033a5ea00cb8fea59f3af527c4c13}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_reset\_sequences@{django\_db\_reset\_sequences}}
+\index{django\_db\_reset\_sequences@{django\_db\_reset\_sequences}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_reset\_sequences()}{django\_db\_reset\_sequences()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a280033a5ea00cb8fea59f3af527c4c13} 
+ None pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+reset\+\_\+sequences (\begin{DoxyParamCaption}\item[{None}]{\+\_\+django\+\_\+db\+\_\+helper}{, }\item[{None}]{transactional\+\_\+db}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Require a transactional test database with sequence reset support.
+
+This requests the ``transactional_db`` fixture, and additionally
+enforces a reset of all auto increment sequences.  If the enquiring
+test relies on such values (e.g. ids as primary keys), you should
+request this resource to ensure they are consistent across tests.
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_af47a1004527dcd07e67ce108a783dddd}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_serialized\_rollback@{django\_db\_serialized\_rollback}}
+\index{django\_db\_serialized\_rollback@{django\_db\_serialized\_rollback}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_serialized\_rollback()}{django\_db\_serialized\_rollback()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_af47a1004527dcd07e67ce108a783dddd} 
+ None pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+serialized\+\_\+rollback (\begin{DoxyParamCaption}\item[{None}]{\+\_\+django\+\_\+db\+\_\+helper}{, }\item[{None}]{db}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Require a test database with serialized rollbacks.
+
+This requests the ``db`` fixture, and additionally performs rollback
+emulation - serializes the database contents during setup and restores
+it during teardown.
+
+This fixture may be useful for transactional tests, so is usually combined
+with ``transactional_db``, but can also be useful on databases which do not
+support transactions.
+
+Note that this will slow down that test suite by approximately 3x.
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_ab2d4e1573665d64de019d4b4579f402c}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_setup@{django\_db\_setup}}
+\index{django\_db\_setup@{django\_db\_setup}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_setup()}{django\_db\_setup()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_ab2d4e1573665d64de019d4b4579f402c} 
+ Generator\mbox{[}None, None, None\mbox{]} pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{, }\item[{None}]{django\+\_\+test\+\_\+environment}{, }\item[{\mbox{\hyperlink{classpytest__django_1_1plugin_1_1_django_db_blocker}{Django\+Db\+Blocker}}}]{django\+\_\+db\+\_\+blocker}{, }\item[{bool}]{django\+\_\+db\+\_\+use\+\_\+migrations}{, }\item[{bool}]{django\+\_\+db\+\_\+keepdb}{, }\item[{bool}]{django\+\_\+db\+\_\+createdb}{, }\item[{None}]{django\+\_\+db\+\_\+modify\+\_\+db\+\_\+settings}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Top level fixture to ensure test databases are available\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_ab6770858e92aa95ccd1cfec4f04ac6d9}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_db\_use\_migrations@{django\_db\_use\_migrations}}
+\index{django\_db\_use\_migrations@{django\_db\_use\_migrations}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_db\_use\_migrations()}{django\_db\_use\_migrations()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_ab6770858e92aa95ccd1cfec4f04ac6d9} 
+ bool pytest\+\_\+django.\+fixtures.\+django\+\_\+db\+\_\+use\+\_\+migrations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether to use migrations to create the test databases.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a15468b40a1bd8f07d5fbd228d1c20192}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_user\_model@{django\_user\_model}}
+\index{django\_user\_model@{django\_user\_model}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_user\_model()}{django\_user\_model()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a15468b40a1bd8f07d5fbd228d1c20192} 
+pytest\+\_\+django.\+fixtures.\+django\+\_\+user\+\_\+model (\begin{DoxyParamCaption}\item[{None}]{db}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The class of Django's user model.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a40615b0174862b5b0cbcb45ba11d25d0}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!django\_username\_field@{django\_username\_field}}
+\index{django\_username\_field@{django\_username\_field}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{django\_username\_field()}{django\_username\_field()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a40615b0174862b5b0cbcb45ba11d25d0} 
+ str pytest\+\_\+django.\+fixtures.\+django\+\_\+username\+\_\+field (\begin{DoxyParamCaption}\item[{}]{django\+\_\+user\+\_\+model}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The fieldname for the username used with Django's user model.\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a531318c2f0479bf68faab861ad62e733}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!live\_server@{live\_server}}
+\index{live\_server@{live\_server}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{live\_server()}{live\_server()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a531318c2f0479bf68faab861ad62e733} 
+pytest\+\_\+django.\+fixtures.\+live\+\_\+server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{pytest.\+Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a live Django server in the background during tests
+
+The address the server is started from is taken from the
+--liveserver command line option or if this is not provided from
+the DJANGO_LIVE_TEST_SERVER_ADDRESS environment variable.  If
+neither is provided ``localhost`` is used.  See the Django
+documentation for its full syntax.
+
+NOTE: If the live server needs database access to handle a request
+      your test will have to request database access.  Furthermore
+      when the tests want to see data added by the live-server (or
+      the other way around) transactional database access will be
+      needed as data inside a transaction is not shared between
+      the live server and test code.
+
+      Static assets will be automatically served when
+      ``django.contrib.staticfiles`` is available in INSTALLED_APPS.
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a609595f5a0d25c559b68f06bc98ac21a}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!rf@{rf}}
+\index{rf@{rf}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{rf()}{rf()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a609595f5a0d25c559b68f06bc98ac21a} 
+ \mbox{\hyperlink{classdjango_1_1test_1_1client_1_1_request_factory}{django.\+test.\+Request\+Factory}} pytest\+\_\+django.\+fixtures.\+rf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}RequestFactory instance\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a97dce56175918f6073b884b30886ce77}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!settings@{settings}}
+\index{settings@{settings}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{settings()}{settings()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a97dce56175918f6073b884b30886ce77} 
+pytest\+\_\+django.\+fixtures.\+settings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A Django settings object which restores changes after the testrun\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_a5fc7da6e58702cd47fcf27b5ad4ee7ff}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!transactional\_db@{transactional\_db}}
+\index{transactional\_db@{transactional\_db}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{transactional\_db()}{transactional\_db()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a5fc7da6e58702cd47fcf27b5ad4ee7ff} 
+ None pytest\+\_\+django.\+fixtures.\+transactional\+\_\+db (\begin{DoxyParamCaption}\item[{None}]{\+\_\+django\+\_\+db\+\_\+helper}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Require a django test database with transaction support.
+
+This will re-initialise the django database for each test and is
+thus slower than the normal ``db`` fixture.
+
+If you want to use the database with transactions you must request
+this resource.
+
+If both ``db`` and ``transactional_db`` are requested,
+``transactional_db`` takes precedence.
+\end{DoxyVerb}
+ \Hypertarget{namespacepytest__django_1_1fixtures_ab2cea35c71ea04a71e77073b02ce518e}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!validate\_django\_db@{validate\_django\_db}}
+\index{validate\_django\_db@{validate\_django\_db}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{validate\_django\_db()}{validate\_django\_db()}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_ab2cea35c71ea04a71e77073b02ce518e} 
+ \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e}{\+\_\+\+Django\+Db}} pytest\+\_\+django.\+fixtures.\+validate\+\_\+django\+\_\+db (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark}{pytest.\+Mark}}}]{marker}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Validate the django_db marker.
+
+It checks the signature and creates the ``transaction``,
+``reset_sequences``, ``databases``, ``serialized_rollback`` and
+``available_apps`` attributes on the marker which will have the correct
+values.
+
+Sequence reset, serialized_rollback, and available_apps are only allowed
+when combined with transaction.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepytest__django_1_1fixtures_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepytest__django_1_1fixtures_a2987e743fefade7c6a177b7e9232fb9a}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a2987e743fefade7c6a177b7e9232fb9a} 
+list pytest\+\_\+django.\+fixtures.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}\_live\_server\_helper"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}admin\_client"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}admin\_user"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}async\_client"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}async\_rf"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}client"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}db"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}django\_assert\_max\_num\_queries"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}django\_assert\_num\_queries"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}django\_capture\_on\_commit\_callbacks"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}django\_db\_reset\_sequences"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}django\_db\_serialized\_rollback"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}django\_db\_setup"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}django\_user\_model"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}django\_username\_field"{}},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}live\_server"{}},}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{"{}rf"{}},}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{stringliteral}{"{}settings"{}},}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{stringliteral}{"{}transactional\_db"{}},}
+\DoxyCodeLine{00021\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_DjangoDb@{\_DjangoDb}}
+\index{\_DjangoDb@{\_DjangoDb}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_DjangoDb}{\_DjangoDb}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a77e6a031aabdc58301abeed4535e5a8e} 
+pytest\+\_\+django.\+fixtures.\+\_\+\+Django\+Db = Tuple\mbox{[}bool, bool, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106}{\+\_\+\+Django\+Db\+Databases}}, bool, \mbox{\hyperlink{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1}{\+\_\+\+Django\+Db\+Available\+Apps}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_DjangoDbAvailableApps@{\_DjangoDbAvailableApps}}
+\index{\_DjangoDbAvailableApps@{\_DjangoDbAvailableApps}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_DjangoDbAvailableApps}{\_DjangoDbAvailableApps}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a5a06888d0a13e1cc0b88cda8c7df71d1} 
+pytest\+\_\+django.\+fixtures.\+\_\+\+Django\+Db\+Available\+Apps = Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106}\index{pytest\_django.fixtures@{pytest\_django.fixtures}!\_DjangoDbDatabases@{\_DjangoDbDatabases}}
+\index{\_DjangoDbDatabases@{\_DjangoDbDatabases}!pytest\_django.fixtures@{pytest\_django.fixtures}}
+\doxysubsubsection{\texorpdfstring{\_DjangoDbDatabases}{\_DjangoDbDatabases}}
+{\footnotesize\ttfamily \label{namespacepytest__django_1_1fixtures_a8c6e2fc8c3ac17a6378877d466bbf106} 
+pytest\+\_\+django.\+fixtures.\+\_\+\+Django\+Db\+Databases = Optional\mbox{[}Union\mbox{[}Literal\mbox{[}"{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}\mbox{]}, Iterable\mbox{[}str\mbox{]}\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+

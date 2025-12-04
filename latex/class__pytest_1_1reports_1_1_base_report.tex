@@ -1,0 +1,294 @@
+\doxysection{\+\_\+pytest.\+reports.\+Base\+Report Class Reference}
+\hypertarget{class__pytest_1_1reports_1_1_base_report}{}\label{class__pytest_1_1reports_1_1_base_report}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+Inheritance diagram for \+\_\+pytest.\+reports.\+Base\+Report\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class__pytest_1_1reports_1_1_base_report}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aa3b3c8e30784ff8c7c40ad1576a4e771}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+Any \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a19a7328ea392f895a972093543bc7b03}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str key)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_abaf8662ade1b66885f20565d1f827730}{toterminal}} (self, \mbox{\hyperlink{class__pytest_1_1__io_1_1terminalwriter_1_1_terminal_writer}{Terminal\+Writer}} out)
+\item 
+Iterator\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_af1ba03c9624985b23b2e993217234038}{get\+\_\+sections}} (self, str prefix)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_abfac6852b91059f33baf2012e9119c44}{longreprtext}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a891542d99954a3ef7f1502f739dd5e8b}{caplog}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ad7ff0763766c6f370c4e220c46c9f029}{capstdout}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aebc9e92d605e4bf6cfc7860dfb3ca801}{capstderr}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ac29f2271de6588060b74a45f2b309780}{passed}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ae0839242c7f864fc06c6c7ce66d1326a}{failed}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_af4157dd14eaac417f91390ae1d3b7cc8}{skipped}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ad52b95197c0cf26fac9d67a717bbd328}{fspath}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a0390ea0b517bf712a5b623dd9f01d1ff}{count\+\_\+towards\+\_\+summary}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ab38fe6637e88a52912eecf01ee5df8c3}{head\+\_\+line}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a3a841ff5fae5dd702ca9e7ff25bb9c6f}{when}} \texorpdfstring{$\vert$}{|} None
+\item 
+tuple \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a8f57598b4734fd8de9afbc83169f277b}{location}} \mbox{[}str, int \texorpdfstring{$\vert$}{|} None, str\mbox{]} \texorpdfstring{$\vert$}{|} None
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a21ca84bac0592b89f501293214d7b20a}{longrepr}}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aa6ba799bf5d0882e65ab65f68421ee7d}{sections}} \mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]}
+\item 
+Literal \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_a11c6f0d46f6e12499891007daa90f03f}{outcome}} \mbox{[}"{}passed"{}, "{}failed"{}, "{}skipped"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}str, Mapping\mbox{[}str, bool\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_ae1604b9d46e68bb145c8fee1f234a5e0}{\+\_\+get\+\_\+verbose\+\_\+word\+\_\+with\+\_\+markup}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, Mapping\mbox{[}str, bool\mbox{]} default\+\_\+markup)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_abb10212ab9b32bda2b20db904de234a5}{\+\_\+to\+\_\+json}} (self)
+\item 
+Self \mbox{\hyperlink{class__pytest_1_1reports_1_1_base_report_aaa1be091b340f14801b6db5ab8591776}{\+\_\+from\+\_\+json}} (cls, dict\mbox{[}str, object\mbox{]} reportdict)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_aa3b3c8e30784ff8c7c40ad1576a4e771}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_aa3b3c8e30784ff8c7c40ad1576a4e771} 
+ None \+\_\+pytest.\+reports.\+Base\+Report.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kw}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_a19a7328ea392f895a972093543bc7b03}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a19a7328ea392f895a972093543bc7b03} 
+ Any \+\_\+pytest.\+reports.\+Base\+Report.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_aaa1be091b340f14801b6db5ab8591776}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!\_from\_json@{\_from\_json}}
+\index{\_from\_json@{\_from\_json}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{\_from\_json()}{\_from\_json()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_aaa1be091b340f14801b6db5ab8591776} 
+ Self \+\_\+pytest.\+reports.\+Base\+Report.\+\_\+from\+\_\+json (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{dict\mbox{[}str, object\mbox{]}}]{reportdict}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create either a TestReport or CollectReport, depending on the calling class.
+
+It is the callers responsibility to know which class to pass here.
+
+This was originally the serialize_report() function from xdist (ca03269).
+
+Experimental method.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtest_report_abc5148ae9833ff5e91a364621226960f}{\+\_\+pytest.\+subtests.\+Subtest\+Report}}.
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_ae1604b9d46e68bb145c8fee1f234a5e0}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!\_get\_verbose\_word\_with\_markup@{\_get\_verbose\_word\_with\_markup}}
+\index{\_get\_verbose\_word\_with\_markup@{\_get\_verbose\_word\_with\_markup}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{\_get\_verbose\_word\_with\_markup()}{\_get\_verbose\_word\_with\_markup()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_ae1604b9d46e68bb145c8fee1f234a5e0} 
+ tuple\mbox{[}str, Mapping\mbox{[}str, bool\mbox{]}\mbox{]} \+\_\+pytest.\+reports.\+Base\+Report.\+\_\+get\+\_\+verbose\+\_\+word\+\_\+with\+\_\+markup (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{Mapping\mbox{[}str, bool\mbox{]}     }]{default\+\_\+markup}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_abb10212ab9b32bda2b20db904de234a5}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!\_to\_json@{\_to\_json}}
+\index{\_to\_json@{\_to\_json}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{\_to\_json()}{\_to\_json()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_abb10212ab9b32bda2b20db904de234a5} 
+ dict\mbox{[}str, Any\mbox{]} \+\_\+pytest.\+reports.\+Base\+Report.\+\_\+to\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the contents of this report as a dict of builtin entries,
+suitable for serialization.
+
+This was originally the serialize_report() function from xdist (ca03269).
+
+Experimental method.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtest_report_a9db05f25eb7d87d6ee17094096ab51cc}{\+\_\+pytest.\+subtests.\+Subtest\+Report}}.
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_a891542d99954a3ef7f1502f739dd5e8b}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!caplog@{caplog}}
+\index{caplog@{caplog}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{caplog()}{caplog()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a891542d99954a3ef7f1502f739dd5e8b} 
+ str \+\_\+pytest.\+reports.\+Base\+Report.\+caplog (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return captured log lines, if log capturing is enabled.
+
+.. versionadded:: 3.5
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_aebc9e92d605e4bf6cfc7860dfb3ca801}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!capstderr@{capstderr}}
+\index{capstderr@{capstderr}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{capstderr()}{capstderr()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_aebc9e92d605e4bf6cfc7860dfb3ca801} 
+ str \+\_\+pytest.\+reports.\+Base\+Report.\+capstderr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return captured text from stderr, if capturing is enabled.
+
+.. versionadded:: 3.0
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_ad7ff0763766c6f370c4e220c46c9f029}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!capstdout@{capstdout}}
+\index{capstdout@{capstdout}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{capstdout()}{capstdout()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_ad7ff0763766c6f370c4e220c46c9f029} 
+ str \+\_\+pytest.\+reports.\+Base\+Report.\+capstdout (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return captured text from stdout, if capturing is enabled.
+
+.. versionadded:: 3.0
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_a0390ea0b517bf712a5b623dd9f01d1ff}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!count\_towards\_summary@{count\_towards\_summary}}
+\index{count\_towards\_summary@{count\_towards\_summary}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{count\_towards\_summary()}{count\_towards\_summary()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a0390ea0b517bf712a5b623dd9f01d1ff} 
+ bool \+\_\+pytest.\+reports.\+Base\+Report.\+count\+\_\+towards\+\_\+summary (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}**Experimental** Whether this report should be counted towards the
+totals shown at the end of the test session: "1 passed, 1 failure, etc".
+
+.. note::
+
+    This function is considered **experimental**, so beware that it is subject to changes
+    even in patch releases.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_ae0839242c7f864fc06c6c7ce66d1326a}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!failed@{failed}}
+\index{failed@{failed}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_ae0839242c7f864fc06c6c7ce66d1326a} 
+ bool \+\_\+pytest.\+reports.\+Base\+Report.\+failed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether the outcome is failed.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_ad52b95197c0cf26fac9d67a717bbd328}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!fspath@{fspath}}
+\index{fspath@{fspath}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{fspath()}{fspath()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_ad52b95197c0cf26fac9d67a717bbd328} 
+ str \+\_\+pytest.\+reports.\+Base\+Report.\+fspath (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The path portion of the reported node, as a string.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_af1ba03c9624985b23b2e993217234038}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!get\_sections@{get\_sections}}
+\index{get\_sections@{get\_sections}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{get\_sections()}{get\_sections()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_af1ba03c9624985b23b2e993217234038} 
+ Iterator\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} \+\_\+pytest.\+reports.\+Base\+Report.\+get\+\_\+sections (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{prefix}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_ab38fe6637e88a52912eecf01ee5df8c3}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!head\_line@{head\_line}}
+\index{head\_line@{head\_line}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{head\_line()}{head\_line()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_ab38fe6637e88a52912eecf01ee5df8c3} 
+ str \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+reports.\+Base\+Report.\+head\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}**Experimental** The head line shown with longrepr output for this
+report, more commonly during traceback representation during
+failures::
+
+    ________ Test.foo ________
+
+
+In the example above, the head_line is "Test.foo".
+
+.. note::
+
+    This function is considered **experimental**, so beware that it is subject to changes
+    even in patch releases.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtest_report_ae77809ba1134407d53d4bb8d792f6c3c}{\+\_\+pytest.\+subtests.\+Subtest\+Report}}.
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_abfac6852b91059f33baf2012e9119c44}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!longreprtext@{longreprtext}}
+\index{longreprtext@{longreprtext}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{longreprtext()}{longreprtext()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_abfac6852b91059f33baf2012e9119c44} 
+ str \+\_\+pytest.\+reports.\+Base\+Report.\+longreprtext (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read-only property that returns the full string representation of
+``longrepr``.
+
+.. versionadded:: 3.0
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_ac29f2271de6588060b74a45f2b309780}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!passed@{passed}}
+\index{passed@{passed}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{passed()}{passed()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_ac29f2271de6588060b74a45f2b309780} 
+ bool \+\_\+pytest.\+reports.\+Base\+Report.\+passed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether the outcome is passed.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_af4157dd14eaac417f91390ae1d3b7cc8}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!skipped@{skipped}}
+\index{skipped@{skipped}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{skipped()}{skipped()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_af4157dd14eaac417f91390ae1d3b7cc8} 
+ bool \+\_\+pytest.\+reports.\+Base\+Report.\+skipped (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether the outcome is skipped.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1reports_1_1_base_report_abaf8662ade1b66885f20565d1f827730}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!toterminal@{toterminal}}
+\index{toterminal@{toterminal}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{toterminal()}{toterminal()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_abaf8662ade1b66885f20565d1f827730} 
+ None \+\_\+pytest.\+reports.\+Base\+Report.\+toterminal (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1__io_1_1terminalwriter_1_1_terminal_writer}{Terminal\+Writer}}}]{out}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_a8f57598b4734fd8de9afbc83169f277b}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!location@{location}}
+\index{location@{location}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a8f57598b4734fd8de9afbc83169f277b} 
+tuple \+\_\+pytest.\+reports.\+Base\+Report.\+location \mbox{[}str, int \texorpdfstring{$\vert$}{|} None, str\mbox{]} \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report_a3df6c3a6598c22fd46d30789b1a43393}{\+\_\+pytest.\+reports.\+Collect\+Report}}.
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_a21ca84bac0592b89f501293214d7b20a}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!longrepr@{longrepr}}
+\index{longrepr@{longrepr}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{longrepr}{longrepr}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a21ca84bac0592b89f501293214d7b20a} 
+\+\_\+pytest.\+reports.\+Base\+Report.\+longrepr\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{:\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None}\ |\ ExceptionInfo[BaseException]\ |\ tuple[str,\ int,\ str]\ |\ str\ |\ TerminalRepr}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_a11c6f0d46f6e12499891007daa90f03f}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!outcome@{outcome}}
+\index{outcome@{outcome}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{outcome}{outcome}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a11c6f0d46f6e12499891007daa90f03f} 
+Literal \+\_\+pytest.\+reports.\+Base\+Report.\+outcome \mbox{[}"{}passed"{}, "{}failed"{}, "{}skipped"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_aa6ba799bf5d0882e65ab65f68421ee7d}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!sections@{sections}}
+\index{sections@{sections}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{sections}{sections}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_aa6ba799bf5d0882e65ab65f68421ee7d} 
+list \+\_\+pytest.\+reports.\+Base\+Report.\+sections \mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1reports_1_1_base_report_a3a841ff5fae5dd702ca9e7ff25bb9c6f}\index{\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}!when@{when}}
+\index{when@{when}!\_pytest.reports.BaseReport@{\_pytest.reports.BaseReport}}
+\doxysubsubsection{\texorpdfstring{when}{when}}
+{\footnotesize\ttfamily \label{class__pytest_1_1reports_1_1_base_report_a3a841ff5fae5dd702ca9e7ff25bb9c6f} 
+str \+\_\+pytest.\+reports.\+Base\+Report.\+when \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{reports_8py}{reports.\+py}}\end{DoxyCompactItemize}

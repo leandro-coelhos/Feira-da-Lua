@@ -1,0 +1,262 @@
+\doxysection{pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command Class Reference}
+\hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command}{}\label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a0f77d59024b9b1ef961c52f13d212f24}{add\+\_\+options}} (self)
+\item 
+dict\mbox{[}str, Callable\mbox{[}\mbox{[}Values, list\mbox{[}str\mbox{]}\mbox{]}, None\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ad0b1027778717f2f314cf48129cc9a0c}{handler\+\_\+map}} (self)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ac3a5f132443ce79af741a8de40eb3629}{run}} (self, Values options, list\mbox{[}str\mbox{]} args)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_aab40a29ba84dd5d7b9afb4fca1756318}{get\+\_\+cache\+\_\+dir}} (self, Values options, list\mbox{[}str\mbox{]} args)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_adf519a6c0651285bff3da5709406589b}{get\+\_\+cache\+\_\+info}} (self, Values options, list\mbox{[}str\mbox{]} args)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ac8eaf8d2f624ec784f2bed7c20328cdd}{list\+\_\+cache\+\_\+items}} (self, Values options, list\mbox{[}str\mbox{]} args)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a0df881853ad281b3deb67c8ccb8d52e7}{format\+\_\+for\+\_\+human}} (self, list\mbox{[}str\mbox{]} files)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_aa8e60ef17a34a439a7714f0ec35bccb9}{format\+\_\+for\+\_\+abspath}} (self, list\mbox{[}str\mbox{]} files)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ae4266994e38f97a1af51f62a52620b90}{remove\+\_\+cache\+\_\+items}} (self, Values options, list\mbox{[}str\mbox{]} args)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a94a5932abe88bc42a9b887fd5188526c}{purge\+\_\+cache}} (self, Values options, list\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ad624d48456438789ebbf9a14ba4baffc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a0da6dc821b6ea82a287734d22bf13b36}{name}}, str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a48a6dcdddf38765713fec5d08731bef3}{summary}}, bool isolated=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a715e0edc6d7dbc3dd2f694340c9caf58}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, Values options)
+\item 
+tuple\mbox{[}Values, list\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ab90220cc02c9a410aca320a8c8667582}{parse\+\_\+args}} (self, list\mbox{[}str\mbox{]} args)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ab175f9622842edf5dfd5db48877ba813}{main}} (self, list\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_ac66381e0cf691286a57b0a13471236f7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_abe6c9895db2e49d99513111f76a43fdd}{main\+\_\+context}} (self)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1command__context_a7525ef54d8c7ac0f264b88324ebf22f1}{\+\_\+T}} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_a1a4327ab36cea3f5d59ceceecb6fed23}{enter\+\_\+context}} (self, Abstract\+Context\+Manager\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1command__context_a7525ef54d8c7ac0f264b88324ebf22f1}{\+\_\+T}}\mbox{]} context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_af06da7955408f317786e4ded72af133c}{get\+\_\+cache\+\_\+dir}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a9237ef7b4df90181265988e8ebaff257}{get\+\_\+cache\+\_\+info}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a50afdbbab08556bf669349838afb97ce}{list\+\_\+cache\+\_\+items}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a613a000da3ef4725a207fc101e52a904}{remove\+\_\+cache\+\_\+items}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a68f3bd9eed21b611a4695c23fba76238}{purge\+\_\+cache}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a0da6dc821b6ea82a287734d22bf13b36}{name}} = name
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a48a6dcdddf38765713fec5d08731bef3}{summary}} = summary
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_af55279eb904d389000b26fec0cdfb165}{parser}}
+\item 
+Temp\+Dir\+Registry\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a9640c841c3aff3368dba64ae62c93789}{tempdir\+\_\+registry}} = None
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ac92a9689689c17dc866ddeeb2a276ef1}{cmd\+\_\+opts}} = optparse.\+Option\+Group(self.\+parser, optgroup\+\_\+name)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ae0cee0c3cc3e808996a9da51e2a79301}{verbosity}} = options.\+verbose -\/ options.\+quiet
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a5523806388de9bb7b802ed785c0ccc4e}{\+\_\+cache\+\_\+dir}} (self, Values options, str subdir)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a7bf7eab77491bdc90848871464f7bf01}{\+\_\+find\+\_\+http\+\_\+files}} (self, Values options)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a3e38f6c131e7b89d3bcc09967f83c067}{\+\_\+find\+\_\+wheels}} (self, Values options, str pattern)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ad7b231913924176f7b5e1b8796e030cd}{\+\_\+run\+\_\+wrapper}} (self, int level\+\_\+number, Values options, list\mbox{[}str\mbox{]} args)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a464424184ff8650a37fa430deb0a6dd0}{\+\_\+main}} (self, list\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_afc8b0f72180d16e251dd8de756a1a627}{usage}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ae9f9614fc10bb893754c2193e526fd54}{ignore\+\_\+require\+\_\+venv}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_ab05c95b49616f41aeae8f61ec92bce65}{\+\_\+in\+\_\+main\+\_\+context}} = False
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_a3b442734053208d198898396956eef77}{\+\_\+main\+\_\+context}} = Exit\+Stack()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Inspect and manage pip's wheel cache.
+
+Subcommands:
+
+- dir: Show the cache directory.
+- info: Show information about the cache.
+- list: List filenames of packages stored in the cache.
+- remove: Remove one or more package from the cache.
+- purge: Remove all items from the cache.
+
+``<pattern>`` can be a glob expression or a package name.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a5523806388de9bb7b802ed785c0ccc4e}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!\_cache\_dir@{\_cache\_dir}}
+\index{\_cache\_dir@{\_cache\_dir}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{\_cache\_dir()}{\_cache\_dir()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a5523806388de9bb7b802ed785c0ccc4e} 
+ str pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+\_\+cache\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{str}]{subdir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a7bf7eab77491bdc90848871464f7bf01}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!\_find\_http\_files@{\_find\_http\_files}}
+\index{\_find\_http\_files@{\_find\_http\_files}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{\_find\_http\_files()}{\_find\_http\_files()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a7bf7eab77491bdc90848871464f7bf01} 
+ list\mbox{[}str\mbox{]} pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+\_\+find\+\_\+http\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a3e38f6c131e7b89d3bcc09967f83c067}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!\_find\_wheels@{\_find\_wheels}}
+\index{\_find\_wheels@{\_find\_wheels}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{\_find\_wheels()}{\_find\_wheels()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a3e38f6c131e7b89d3bcc09967f83c067} 
+ list\mbox{[}str\mbox{]} pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+\_\+find\+\_\+wheels (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{str}]{pattern}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a0f77d59024b9b1ef961c52f13d212f24}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!add\_options@{add\_options}}
+\index{add\_options@{add\_options}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{add\_options()}{add\_options()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a0f77d59024b9b1ef961c52f13d212f24} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+add\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ad74cf63053e59d30953e9429750d41b3}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_aa8e60ef17a34a439a7714f0ec35bccb9}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!format\_for\_abspath@{format\_for\_abspath}}
+\index{format\_for\_abspath@{format\_for\_abspath}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{format\_for\_abspath()}{format\_for\_abspath()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_aa8e60ef17a34a439a7714f0ec35bccb9} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+format\+\_\+for\+\_\+abspath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\mbox{[}str\mbox{]}}]{files}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a0df881853ad281b3deb67c8ccb8d52e7}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!format\_for\_human@{format\_for\_human}}
+\index{format\_for\_human@{format\_for\_human}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{format\_for\_human()}{format\_for\_human()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a0df881853ad281b3deb67c8ccb8d52e7} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+format\+\_\+for\+\_\+human (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\mbox{[}str\mbox{]}}]{files}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_aab40a29ba84dd5d7b9afb4fca1756318}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!get\_cache\_dir@{get\_cache\_dir}}
+\index{get\_cache\_dir@{get\_cache\_dir}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{get\_cache\_dir()}{get\_cache\_dir()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_aab40a29ba84dd5d7b9afb4fca1756318} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+get\+\_\+cache\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_adf519a6c0651285bff3da5709406589b}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!get\_cache\_info@{get\_cache\_info}}
+\index{get\_cache\_info@{get\_cache\_info}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{get\_cache\_info()}{get\_cache\_info()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_adf519a6c0651285bff3da5709406589b} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+get\+\_\+cache\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ad0b1027778717f2f314cf48129cc9a0c}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!handler\_map@{handler\_map}}
+\index{handler\_map@{handler\_map}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{handler\_map()}{handler\_map()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ad0b1027778717f2f314cf48129cc9a0c} 
+ dict\mbox{[}str, Callable\mbox{[}\mbox{[}Values, list\mbox{[}str\mbox{]}\mbox{]}, None\mbox{]}\mbox{]} pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+handler\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}map of names to handler actions for commands with sub-actions
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_af318461485c4491f94bd6104a94fab0e}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ac8eaf8d2f624ec784f2bed7c20328cdd}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!list\_cache\_items@{list\_cache\_items}}
+\index{list\_cache\_items@{list\_cache\_items}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{list\_cache\_items()}{list\_cache\_items()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ac8eaf8d2f624ec784f2bed7c20328cdd} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+list\+\_\+cache\+\_\+items (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a94a5932abe88bc42a9b887fd5188526c}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!purge\_cache@{purge\_cache}}
+\index{purge\_cache@{purge\_cache}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{purge\_cache()}{purge\_cache()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a94a5932abe88bc42a9b887fd5188526c} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+purge\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ae4266994e38f97a1af51f62a52620b90}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!remove\_cache\_items@{remove\_cache\_items}}
+\index{remove\_cache\_items@{remove\_cache\_items}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{remove\_cache\_items()}{remove\_cache\_items()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ae4266994e38f97a1af51f62a52620b90} 
+ None pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+remove\+\_\+cache\+\_\+items (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ac3a5f132443ce79af741a8de40eb3629}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_ac3a5f132443ce79af741a8de40eb3629} 
+ int pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a7b1940862f02085bff91991734daf8ea}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_af06da7955408f317786e4ded72af133c}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!get\_cache\_dir@{get\_cache\_dir}}
+\index{get\_cache\_dir@{get\_cache\_dir}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{get\_cache\_dir}{get\_cache\_dir}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_af06da7955408f317786e4ded72af133c} 
+pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+get\+\_\+cache\+\_\+dir}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a9237ef7b4df90181265988e8ebaff257}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!get\_cache\_info@{get\_cache\_info}}
+\index{get\_cache\_info@{get\_cache\_info}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{get\_cache\_info}{get\_cache\_info}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a9237ef7b4df90181265988e8ebaff257} 
+pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+get\+\_\+cache\+\_\+info}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a50afdbbab08556bf669349838afb97ce}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!list\_cache\_items@{list\_cache\_items}}
+\index{list\_cache\_items@{list\_cache\_items}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{list\_cache\_items}{list\_cache\_items}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a50afdbbab08556bf669349838afb97ce} 
+pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+list\+\_\+cache\+\_\+items}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a68f3bd9eed21b611a4695c23fba76238}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!purge\_cache@{purge\_cache}}
+\index{purge\_cache@{purge\_cache}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{purge\_cache}{purge\_cache}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a68f3bd9eed21b611a4695c23fba76238} 
+pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+purge\+\_\+cache}
+
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a613a000da3ef4725a207fc101e52a904}\index{pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}!remove\_cache\_items@{remove\_cache\_items}}
+\index{remove\_cache\_items@{remove\_cache\_items}!pip.\_internal.commands.cache.CacheCommand@{pip.\_internal.commands.cache.CacheCommand}}
+\doxysubsubsection{\texorpdfstring{remove\_cache\_items}{remove\_cache\_items}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1cache_1_1_cache_command_a613a000da3ef4725a207fc101e52a904} 
+pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command.\+remove\+\_\+cache\+\_\+items}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+internal/commands/\mbox{\hyperlink{pip_2__internal_2commands_2cache_8py}{cache.\+py}}\end{DoxyCompactItemize}

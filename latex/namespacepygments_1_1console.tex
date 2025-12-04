@@ -1,0 +1,112 @@
+\doxysection{pygments.\+console Namespace Reference}
+\hypertarget{namespacepygments_1_1console}{}\label{namespacepygments_1_1console}\index{pygments.console@{pygments.console}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepygments_1_1console_a50069354a7527ceb17b98345c087685f}{reset\+\_\+color}} ()
+\item 
+\mbox{\hyperlink{namespacepygments_1_1console_a3f8a9051c7188cfdf596bff57db6a70b}{colorize}} (color\+\_\+key, text)
+\item 
+\mbox{\hyperlink{namespacepygments_1_1console_a26d5d91eeffb6829b7fb5ce4b3147cee}{ansiformat}} (attr, text)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacepygments_1_1console_a5a3d2a2cd364293798a2c7dde4d429ed}{esc}} = "{}\textbackslash{}x1b\mbox{[}"{}
+\item 
+dict \mbox{\hyperlink{namespacepygments_1_1console_af84c8d94bfe23d1924f1239f8ead38f1}{codes}} = \{\}
+\item 
+list \mbox{\hyperlink{namespacepygments_1_1console_aa8771aedddbbe4038365d8e9a4e8a1cc}{dark\+\_\+colors}}
+\item 
+list \mbox{\hyperlink{namespacepygments_1_1console_aca641172c2426a6612770760d2683432}{light\+\_\+colors}}
+\item 
+int \mbox{\hyperlink{namespacepygments_1_1console_a41cb669d901309e633e88e7a932acbd6}{x}} = 30
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.console
+    ~~~~~~~~~~~~~~~~
+
+    Format colored console output.
+
+    :copyright: Copyright 2006-2025 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepygments_1_1console_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepygments_1_1console_a26d5d91eeffb6829b7fb5ce4b3147cee}\index{pygments.console@{pygments.console}!ansiformat@{ansiformat}}
+\index{ansiformat@{ansiformat}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{ansiformat()}{ansiformat()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_a26d5d91eeffb6829b7fb5ce4b3147cee} 
+pygments.\+console.\+ansiformat (\begin{DoxyParamCaption}\item[{}]{attr}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format ``text`` with a color and/or some attributes::
+
+    color       normal color
+    *color*     bold color
+    _color_     underlined color
+    +color+     blinking color
+\end{DoxyVerb}
+ \Hypertarget{namespacepygments_1_1console_a3f8a9051c7188cfdf596bff57db6a70b}\index{pygments.console@{pygments.console}!colorize@{colorize}}
+\index{colorize@{colorize}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{colorize()}{colorize()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_a3f8a9051c7188cfdf596bff57db6a70b} 
+pygments.\+console.\+colorize (\begin{DoxyParamCaption}\item[{}]{color\+\_\+key}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepygments_1_1console_a50069354a7527ceb17b98345c087685f}\index{pygments.console@{pygments.console}!reset\_color@{reset\_color}}
+\index{reset\_color@{reset\_color}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{reset\_color()}{reset\_color()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_a50069354a7527ceb17b98345c087685f} 
+pygments.\+console.\+reset\+\_\+color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacepygments_1_1console_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepygments_1_1console_af84c8d94bfe23d1924f1239f8ead38f1}\index{pygments.console@{pygments.console}!codes@{codes}}
+\index{codes@{codes}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{codes}{codes}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_af84c8d94bfe23d1924f1239f8ead38f1} 
+dict pygments.\+console.\+codes = \{\}}
+
+\Hypertarget{namespacepygments_1_1console_aa8771aedddbbe4038365d8e9a4e8a1cc}\index{pygments.console@{pygments.console}!dark\_colors@{dark\_colors}}
+\index{dark\_colors@{dark\_colors}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{dark\_colors}{dark\_colors}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_aa8771aedddbbe4038365d8e9a4e8a1cc} 
+list pygments.\+console.\+dark\+\_\+colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [\textcolor{stringliteral}{"{}black"{}},\ \textcolor{stringliteral}{"{}red"{}},\ \textcolor{stringliteral}{"{}green"{}},\ \textcolor{stringliteral}{"{}yellow"{}},\ \textcolor{stringliteral}{"{}blue"{}},}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}magenta"{}},\ \textcolor{stringliteral}{"{}cyan"{}},\ \textcolor{stringliteral}{"{}gray"{}}]}
+
+\end{DoxyCode}
+\Hypertarget{namespacepygments_1_1console_a5a3d2a2cd364293798a2c7dde4d429ed}\index{pygments.console@{pygments.console}!esc@{esc}}
+\index{esc@{esc}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{esc}{esc}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_a5a3d2a2cd364293798a2c7dde4d429ed} 
+str pygments.\+console.\+esc = "{}\textbackslash{}x1b\mbox{[}"{}}
+
+\Hypertarget{namespacepygments_1_1console_aca641172c2426a6612770760d2683432}\index{pygments.console@{pygments.console}!light\_colors@{light\_colors}}
+\index{light\_colors@{light\_colors}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{light\_colors}{light\_colors}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_aca641172c2426a6612770760d2683432} 
+list pygments.\+console.\+light\+\_\+colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [\textcolor{stringliteral}{"{}brightblack"{}},\ \textcolor{stringliteral}{"{}brightred"{}},\ \textcolor{stringliteral}{"{}brightgreen"{}},\ \textcolor{stringliteral}{"{}brightyellow"{}},\ \textcolor{stringliteral}{"{}brightblue"{}},}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}brightmagenta"{}},\ \textcolor{stringliteral}{"{}brightcyan"{}},\ \textcolor{stringliteral}{"{}white"{}}]}
+
+\end{DoxyCode}
+\Hypertarget{namespacepygments_1_1console_a41cb669d901309e633e88e7a932acbd6}\index{pygments.console@{pygments.console}!x@{x}}
+\index{x@{x}!pygments.console@{pygments.console}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1console_a41cb669d901309e633e88e7a932acbd6} 
+int pygments.\+console.\+x = 30}
+

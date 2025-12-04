@@ -1,0 +1,1074 @@
+\doxysection{yarl.\+\_\+url.\+URL Class Reference}
+\hypertarget{classyarl_1_1__url_1_1_u_r_l}{}\label{classyarl_1_1__url_1_1_u_r_l}\index{yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a4cdc9124b89f271e8f4b932d0cff1cd6}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, Union\mbox{[}str, Split\+Result, "{}URL"{}, \mbox{\hyperlink{classyarl_1_1__url_1_1_undefined_type}{Undefined\+Type}}\mbox{]} val=\mbox{\hyperlink{namespaceyarl_1_1__url_a51da37cdc394cdeef212a4c02ae5a0f2}{UNDEFINED}}, \texorpdfstring{$\ast$}{*}, bool encoded=False, Union\mbox{[}bool, None\mbox{]} strict=None)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9ce496daec0031585780841e305afb3c}{build}} (cls, \texorpdfstring{$\ast$}{*}, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac98582021de63a3d146b28aac0e9b48f}{scheme}}="{}"{}, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1858fa0cd059b75f3ef8b0982a9b0df8}{authority}}="{}"{}, Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a4f909f09375e23420e4a4a552ad94331}{user}}=None, Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a39b20eb8dd2fc1336dfa2497c4a1e9e6}{password}}=None, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2a28769c60643e238bf3a876eaba08b6}{host}}="{}"{}, Union\mbox{[}int, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a770a1ab864648ca21583c19e30537695}{port}}=None, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea}{path}}="{}"{}, Union\mbox{[}Query, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}{query}}=None, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aff315b9546a551ba1c8a9e5f43c1ea98}{query\+\_\+string}}="{}"{}, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}}="{}"{}, bool encoded=False)
+\item 
+No\+Return \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a8f1a70b2e8ae6ceb848c984092a31a55}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a48ca77e2a326b9a5545b1c9672e00b5f}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a31283c94d35258be09e90d83c718d2b2}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+bytes \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2f27c1c9d197174196a07d49a789f0db}{\+\_\+\+\_\+bytes\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2e768d101d23e059c8dfaa9386339f32}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+int \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa9d6905fd255b04f1993b3a79c000a69}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a552378aa4eacace0ba9d4d295ad753da}{\+\_\+\+\_\+le\+\_\+\+\_\+}} (self, object other)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ad6f78537dbaa6cc5cc03e5291ae14a65}{\+\_\+\+\_\+lt\+\_\+\+\_\+}} (self, object other)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a75346f8994ba560819b669df7d4611a8}{\+\_\+\+\_\+ge\+\_\+\+\_\+}} (self, object other)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a98eb3aeb0e1cba01c591f59474186ee0}{\+\_\+\+\_\+gt\+\_\+\+\_\+}} (self, object other)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a93670e6e69a8ef6624681425efa692bd}{\+\_\+\+\_\+truediv\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ad2b6aa8e0b6876a0afb5924de5a64aeb}{name}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2b9e2ab9e3a84e86fc532bd873b62030}{\+\_\+\+\_\+mod\+\_\+\+\_\+}} (self, Query \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}{query}})
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a53849d8863e5dac7da77264e80dd17ac}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+tuple\mbox{[}Split\+Result\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ae5e22142e2dff7a7b48f501eaeb4e9de}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a4b9aa8bfef7a3f1341b7b1a117a203f5}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, Union\mbox{[}tuple\mbox{[}Split\+URLType\mbox{]}, tuple\mbox{[}None, \mbox{\hyperlink{classyarl_1_1__url_1_1___internal_u_r_l_cache}{\+\_\+\+Internal\+URLCache}}\mbox{]}\mbox{]} state)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a8a5d4968d388a5e2e9e74aba39f7a71b}{is\+\_\+absolute}} (self)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a55eee1dd05b039e3d3f6244fcd6b9a05}{is\+\_\+default\+\_\+port}} (self)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a4a7c746f2542b418d04b7192f2ddbe6d}{origin}} (self)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9198445a0a22594123062782de566c6a}{relative}} (self)
+\item 
+bool \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac13fb0cd9f2e175d8b07a8299ecfca2e}{absolute}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac98582021de63a3d146b28aac0e9b48f}{scheme}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a471d4ac4a4452d847ac2386f275faa8e}{raw\+\_\+authority}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1858fa0cd059b75f3ef8b0982a9b0df8}{authority}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a22c6b7cf9f7657d4eed3ad3b90f3a705}{raw\+\_\+user}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_afbac247e6c355059a1c67c33b0bf0c79}{user}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ab63173aa861c3fc3099f03a3aa7e04d3}{raw\+\_\+password}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a43eb4512fd3f1b37fa21efe7e5075a83}{password}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9eb80a5cafdf787a33123e5d69e7056c}{raw\+\_\+host}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9de570cb83d6d559c52a1cc6b54b9e2f}{host}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a3569bb87bf65989ae6b4027940b041c5}{host\+\_\+subcomponent}} (self)
+\item 
+Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a74a2533bd5d1c61b1d28a4ae7af6b4cc}{host\+\_\+port\+\_\+subcomponent}} (self)
+\item 
+Union\mbox{[}int, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a7ca305560583703fe5406d1f334cbee9}{port}} (self)
+\item 
+Union\mbox{[}int, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a333389b9a9c4df4c7a788e5e5111f5cf}{explicit\+\_\+port}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac55b6c88087806d259b798f2a137ed0f}{raw\+\_\+path}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea}{path}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a050d15821ba2631efcc220900aec5cb3}{path\+\_\+safe}} (self)
+\item 
+"{}Multi\+Dict\+Proxy\mbox{[}str\mbox{]}"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}{query}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a343bb4306e746b32c2f37aef30d08cef}{raw\+\_\+query\+\_\+string}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aff315b9546a551ba1c8a9e5f43c1ea98}{query\+\_\+string}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a41d515e887d68b9862a06a07c606826e}{path\+\_\+qs}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a7b76610c3cd13aed129967549dd6b38f}{raw\+\_\+path\+\_\+qs}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a67c8dbce70423fc441df0e55ae8a6b3b}{raw\+\_\+fragment}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}} (self)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9f7660936f65db51eccb3bf6c128e8b9}{raw\+\_\+parts}} (self)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a3f8c908fe3ca8f82f1cc0d348ec0d412}{parts}} (self)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a629e53d3fe65edd13eec3956cf4a2062}{parent}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a12e7fe7fedd8efe089e0100755ae5c1e}{raw\+\_\+name}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ad2b6aa8e0b6876a0afb5924de5a64aeb}{name}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aee2b476047e023ce9616293f9e04a525}{raw\+\_\+suffix}} (self)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2826225ee1d48f440c16436a12d00dda}{suffix}} (self)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a3982b49cb1fa2ea075b6e0c270b6610b}{raw\+\_\+suffixes}} (self)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a0c64588ecd780f4443a8c1e9a20f7e95}{suffixes}} (self)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a184f081810057191da7929c9c0bd938f}{with\+\_\+scheme}} (self, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac98582021de63a3d146b28aac0e9b48f}{scheme}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1603bbcbe6ebbecf26e1867077ce1517}{with\+\_\+user}} (self, Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a4f909f09375e23420e4a4a552ad94331}{user}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a8443ee0a23a986c8ed5660d7e268e747}{with\+\_\+password}} (self, Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a39b20eb8dd2fc1336dfa2497c4a1e9e6}{password}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a3a533f4f043879e51e760f865b1647a6}{with\+\_\+host}} (self, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2a28769c60643e238bf3a876eaba08b6}{host}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a7a02c441582f562a7edd9323948a0007}{with\+\_\+port}} (self, Union\mbox{[}int, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a770a1ab864648ca21583c19e30537695}{port}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a33840afa08b2e39c5853c075eb923d8a}{with\+\_\+path}} (self, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea}{path}}, \texorpdfstring{$\ast$}{*}, bool encoded=False, bool keep\+\_\+query=False, bool keep\+\_\+fragment=False)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a54667743942fd7733e3fdf116b61a052}{with\+\_\+query}} (self, Query \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}{query}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a7736c389e00723614ba571a6bf87b4e6}{with\+\_\+query}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Query\+Variable kwargs)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ab97fab72ae221508a310be5077452d28}{with\+\_\+query}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a08424497f9455686cd7a45710a096591}{extend\+\_\+query}} (self, Query \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}{query}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a98f8d94e1af0efcc3b6cfa6b4495ed66}{extend\+\_\+query}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Query\+Variable kwargs)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aac78cca935091992f3ee4ad7fa421820}{extend\+\_\+query}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_adccf79a9c87fb50a2169e5d5c42a046b}{update\+\_\+query}} (self, Query \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}{query}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_acbb4db49fef6b4dc76f79553cf7856d0}{update\+\_\+query}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Query\+Variable kwargs)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aed50d440db302a6358ecf72237260f0a}{update\+\_\+query}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a12eb70c5da00ef35d8938b949b858f7a}{without\+\_\+query\+\_\+params}} (self, \texorpdfstring{$\ast$}{*}str query\+\_\+params)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a7b6660271e063233cceb227d1513030d}{with\+\_\+fragment}} (self, Union\mbox{[}str, None\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}})
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac6f81dd7ff0d05ff70736867c6752f18}{with\+\_\+name}} (self, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ad2b6aa8e0b6876a0afb5924de5a64aeb}{name}}, \texorpdfstring{$\ast$}{*}, bool keep\+\_\+query=False, bool keep\+\_\+fragment=False)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a86bb7e717b5fff382976bdad4396bb9f}{with\+\_\+suffix}} (self, str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2826225ee1d48f440c16436a12d00dda}{suffix}}, \texorpdfstring{$\ast$}{*}, bool keep\+\_\+query=False, bool keep\+\_\+fragment=False)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a0ebfea9c9aa9579df5da50d3141bf087}{join}} (self, "{}URL"{} url)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa814ed81a8bccff1f2477135ac8f35b5}{joinpath}} (self, \texorpdfstring{$\ast$}{*}str other, bool encoded=False)
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9699637974cfd7db2a3f4feeb1e520d4}{human\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a4f909f09375e23420e4a4a552ad94331}{user}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a39b20eb8dd2fc1336dfa2497c4a1e9e6}{password}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a2a28769c60643e238bf3a876eaba08b6}{host}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a770a1ab864648ca21583c19e30537695}{port}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a22f3345080e56a2f587b97caa2bcae17}{raw\+\_\+parts}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a161d60be7017f0a347a7c69c7bbf8f50}{raw\+\_\+name}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a79ddd0e96c4ec104073fbdd12751ef0d}{raw\+\_\+suffix}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a7b1ef8426534add3410d57141d4c14af}{raw\+\_\+suffixes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ae074ae91568374a9b3a7ce591337ede1}{\+\_\+cache\+\_\+netloc}} (self)
+\item 
+Split\+URLType \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a518a9e50ed27907a40db3a44527d08a9}{\+\_\+val}} (self)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a423d82c523b75afa8e7c54dc170b09f9}{\+\_\+origin}} (self)
+\item 
+list\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a26d806c5304ad6e8c12802b4aebb7e07}{\+\_\+parsed\+\_\+query}} (self)
+\item 
+"{}URL"{} \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a0972bc09a5aafad0971ed9a9de9555b4}{\+\_\+make\+\_\+child}} (self, "{}Sequence\mbox{[}str\mbox{]}"{} paths, bool encoded=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a94568c966a12d2619bfc884a64b658e5}{\+\_\+scheme}} = "{}"{}
+\item 
+dict \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a355998ff4367981a9e26d9410dc65260}{\+\_\+cache}} = \{\}
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a33c92ded7255612466678d27a6c89817}{\+\_\+netloc}} = "{}"{}
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a74eab59944f456d5d51b26a9d52227ba}{\+\_\+path}} = \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea}{path}}
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_af8c726c53133fa76ba268c26bdff8f55}{\+\_\+query}} = \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aff315b9546a551ba1c8a9e5f43c1ea98}{query\+\_\+string}}
+\item 
+str \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ab11d8ac538ca38bd075e2919c4179cbc}{\+\_\+fragment}} = FRAGMENT\+\_\+\+QUOTER(\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}}) if \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}} else \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a9d5f34d3c91f3baa4bcd29f5a8b20084}{\+\_\+val}}
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aa4f6f68e17d025666ba630b550a39533}{\+\_\+parsed\+\_\+query}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_ac25799b4f1edede2c2b320835fee0007}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+cache"{}, "{}\+\_\+scheme"{}, "{}\+\_\+netloc"{}, "{}\+\_\+path"{}, "{}\+\_\+query"{}, "{}\+\_\+fragment"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a53849d8863e5dac7da77264e80dd17ac}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a53849d8863e5dac7da77264e80dd17ac} 
+ bool yarl.\+\_\+url.\+URL.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a2f27c1c9d197174196a07d49a789f0db}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_bytes\_\_@{\_\_bytes\_\_}}
+\index{\_\_bytes\_\_@{\_\_bytes\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_bytes\_\_()}{\_\_bytes\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a2f27c1c9d197174196a07d49a789f0db} 
+ bytes yarl.\+\_\+url.\+URL.\+\_\+\+\_\+bytes\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a2e768d101d23e059c8dfaa9386339f32}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a2e768d101d23e059c8dfaa9386339f32} 
+ bool yarl.\+\_\+url.\+URL.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a75346f8994ba560819b669df7d4611a8}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_ge\_\_@{\_\_ge\_\_}}
+\index{\_\_ge\_\_@{\_\_ge\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_ge\_\_()}{\_\_ge\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a75346f8994ba560819b669df7d4611a8} 
+ bool yarl.\+\_\+url.\+URL.\+\_\+\+\_\+ge\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ae5e22142e2dff7a7b48f501eaeb4e9de}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ae5e22142e2dff7a7b48f501eaeb4e9de} 
+ tuple\mbox{[}Split\+Result\mbox{]} yarl.\+\_\+url.\+URL.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a98eb3aeb0e1cba01c591f59474186ee0}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_gt\_\_@{\_\_gt\_\_}}
+\index{\_\_gt\_\_@{\_\_gt\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_gt\_\_()}{\_\_gt\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a98eb3aeb0e1cba01c591f59474186ee0} 
+ bool yarl.\+\_\+url.\+URL.\+\_\+\+\_\+gt\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_aa9d6905fd255b04f1993b3a79c000a69}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aa9d6905fd255b04f1993b3a79c000a69} 
+ int yarl.\+\_\+url.\+URL.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a8f1a70b2e8ae6ceb848c984092a31a55}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a8f1a70b2e8ae6ceb848c984092a31a55} 
+ No\+Return yarl.\+\_\+url.\+URL.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a552378aa4eacace0ba9d4d295ad753da}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_le\_\_@{\_\_le\_\_}}
+\index{\_\_le\_\_@{\_\_le\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_le\_\_()}{\_\_le\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a552378aa4eacace0ba9d4d295ad753da} 
+ bool yarl.\+\_\+url.\+URL.\+\_\+\+\_\+le\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ad6f78537dbaa6cc5cc03e5291ae14a65}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_lt\_\_@{\_\_lt\_\_}}
+\index{\_\_lt\_\_@{\_\_lt\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_lt\_\_()}{\_\_lt\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ad6f78537dbaa6cc5cc03e5291ae14a65} 
+ bool yarl.\+\_\+url.\+URL.\+\_\+\+\_\+lt\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a2b9e2ab9e3a84e86fc532bd873b62030}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_mod\_\_@{\_\_mod\_\_}}
+\index{\_\_mod\_\_@{\_\_mod\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_mod\_\_()}{\_\_mod\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a2b9e2ab9e3a84e86fc532bd873b62030} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+\_\+\+\_\+mod\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Query}]{query}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a4cdc9124b89f271e8f4b932d0cff1cd6}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a4cdc9124b89f271e8f4b932d0cff1cd6} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Union\mbox{[}str, Split\+Result, "{}URL"{}, \mbox{\hyperlink{classyarl_1_1__url_1_1_undefined_type}{Undefined\+Type}}\mbox{]} }]{val}{ = {\ttfamily \mbox{\hyperlink{namespaceyarl_1_1__url_a51da37cdc394cdeef212a4c02ae5a0f2}{UNDEFINED}}}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{encoded}{ = {\ttfamily False}, }\item[{Union\mbox{[}bool, None\mbox{]} }]{strict}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a31283c94d35258be09e90d83c718d2b2}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a31283c94d35258be09e90d83c718d2b2} 
+ str yarl.\+\_\+url.\+URL.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a4b9aa8bfef7a3f1341b7b1a117a203f5}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a4b9aa8bfef7a3f1341b7b1a117a203f5} 
+ None yarl.\+\_\+url.\+URL.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}tuple\mbox{[}Split\+URLType\mbox{]}, tuple\mbox{[}None, \mbox{\hyperlink{classyarl_1_1__url_1_1___internal_u_r_l_cache}{\+\_\+\+Internal\+URLCache}}\mbox{]}\mbox{]}     }]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a48ca77e2a326b9a5545b1c9672e00b5f}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a48ca77e2a326b9a5545b1c9672e00b5f} 
+ str yarl.\+\_\+url.\+URL.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a93670e6e69a8ef6624681425efa692bd}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_truediv\_\_@{\_\_truediv\_\_}}
+\index{\_\_truediv\_\_@{\_\_truediv\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_truediv\_\_()}{\_\_truediv\_\_()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a93670e6e69a8ef6624681425efa692bd} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+\_\+\+\_\+truediv\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ae074ae91568374a9b3a7ce591337ede1}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_cache\_netloc@{\_cache\_netloc}}
+\index{\_cache\_netloc@{\_cache\_netloc}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_cache\_netloc()}{\_cache\_netloc()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ae074ae91568374a9b3a7ce591337ede1} 
+ None yarl.\+\_\+url.\+URL.\+\_\+cache\+\_\+netloc (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Cache the netloc parts of the URL.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a0972bc09a5aafad0971ed9a9de9555b4}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_make\_child@{\_make\_child}}
+\index{\_make\_child@{\_make\_child}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_make\_child()}{\_make\_child()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a0972bc09a5aafad0971ed9a9de9555b4} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+\_\+make\+\_\+child (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Sequence\mbox{[}str\mbox{]}"{}}]{paths}{, }\item[{bool }]{encoded}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}add paths to self._path, accounting for absolute vs relative paths,
+keep existing, but do not create new, empty segments
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a423d82c523b75afa8e7c54dc170b09f9}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_origin@{\_origin}}
+\index{\_origin@{\_origin}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_origin()}{\_origin()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a423d82c523b75afa8e7c54dc170b09f9} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+\_\+origin (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return an URL with scheme, host and port parts only.
+
+user, password, path, query and fragment are removed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a26d806c5304ad6e8c12802b4aebb7e07}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_parsed\_query@{\_parsed\_query}}
+\index{\_parsed\_query@{\_parsed\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_parsed\_query()}{\_parsed\_query()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a26d806c5304ad6e8c12802b4aebb7e07} 
+ list\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} yarl.\+\_\+url.\+URL.\+\_\+parsed\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse query part of URL.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a518a9e50ed27907a40db3a44527d08a9}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_val@{\_val}}
+\index{\_val@{\_val}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_val()}{\_val()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a518a9e50ed27907a40db3a44527d08a9} 
+ Split\+URLType yarl.\+\_\+url.\+URL.\+\_\+val (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ac13fb0cd9f2e175d8b07a8299ecfca2e}\index{yarl.\_url.URL@{yarl.\_url.URL}!absolute@{absolute}}
+\index{absolute@{absolute}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{absolute()}{absolute()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ac13fb0cd9f2e175d8b07a8299ecfca2e} 
+ bool yarl.\+\_\+url.\+URL.\+absolute (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A check for absolute URLs.
+
+Return True for absolute ones (having scheme or starting
+with //), False otherwise.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a1858fa0cd059b75f3ef8b0982a9b0df8}\index{yarl.\_url.URL@{yarl.\_url.URL}!authority@{authority}}
+\index{authority@{authority}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{authority()}{authority()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a1858fa0cd059b75f3ef8b0982a9b0df8} 
+ str yarl.\+\_\+url.\+URL.\+authority (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded authority part of URL.
+
+Empty string for relative URLs.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9ce496daec0031585780841e305afb3c}\index{yarl.\_url.URL@{yarl.\_url.URL}!build@{build}}
+\index{build@{build}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9ce496daec0031585780841e305afb3c} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+build (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{scheme}{ = {\ttfamily "{}"{}}, }\item[{str }]{authority}{ = {\ttfamily "{}"{}}, }\item[{Union\mbox{[}str, None\mbox{]} }]{user}{ = {\ttfamily None}, }\item[{Union\mbox{[}str, None\mbox{]} }]{password}{ = {\ttfamily None}, }\item[{str }]{host}{ = {\ttfamily "{}"{}}, }\item[{Union\mbox{[}int, None\mbox{]} }]{port}{ = {\ttfamily None}, }\item[{str }]{path}{ = {\ttfamily "{}"{}}, }\item[{Union\mbox{[}Query, None\mbox{]} }]{query}{ = {\ttfamily None}, }\item[{str }]{query\+\_\+string}{ = {\ttfamily "{}"{}}, }\item[{str }]{fragment}{ = {\ttfamily "{}"{}}, }\item[{bool }]{encoded}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates and returns a new URL\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a333389b9a9c4df4c7a788e5e5111f5cf}\index{yarl.\_url.URL@{yarl.\_url.URL}!explicit\_port@{explicit\_port}}
+\index{explicit\_port@{explicit\_port}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{explicit\_port()}{explicit\_port()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a333389b9a9c4df4c7a788e5e5111f5cf} 
+ Union\mbox{[}int, None\mbox{]} yarl.\+\_\+url.\+URL.\+explicit\+\_\+port (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Port part of URL, without scheme-based fallback.
+
+None for relative URLs or URLs without explicit port.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a98f8d94e1af0efcc3b6cfa6b4495ed66}\index{yarl.\_url.URL@{yarl.\_url.URL}!extend\_query@{extend\_query}}
+\index{extend\_query@{extend\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{extend\_query()}{extend\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a98f8d94e1af0efcc3b6cfa6b4495ed66} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+extend\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Query\+Variable}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_aac78cca935091992f3ee4ad7fa421820}\index{yarl.\_url.URL@{yarl.\_url.URL}!extend\_query@{extend\_query}}
+\index{extend\_query@{extend\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{extend\_query()}{extend\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aac78cca935091992f3ee4ad7fa421820} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+extend\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with query part combined with the existing.
+
+This method will not remove existing query parameters.
+
+Example:
+>>> url = URL('http://example.com/?a=1&b=2')
+>>> url.extend_query(a=3, c=4)
+URL('http://example.com/?a=1&b=2&a=3&c=4')
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a08424497f9455686cd7a45710a096591}\index{yarl.\_url.URL@{yarl.\_url.URL}!extend\_query@{extend\_query}}
+\index{extend\_query@{extend\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{extend\_query()}{extend\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a08424497f9455686cd7a45710a096591} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+extend\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Query}]{query}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}\index{yarl.\_url.URL@{yarl.\_url.URL}!fragment@{fragment}}
+\index{fragment@{fragment}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{fragment()}{fragment()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67} 
+ str yarl.\+\_\+url.\+URL.\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded fragment part of URL.
+
+Empty string if fragment is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9de570cb83d6d559c52a1cc6b54b9e2f}\index{yarl.\_url.URL@{yarl.\_url.URL}!host@{host}}
+\index{host@{host}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{host()}{host()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9de570cb83d6d559c52a1cc6b54b9e2f} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded host part of URL.
+
+None for relative URLs.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a74a2533bd5d1c61b1d28a4ae7af6b4cc}\index{yarl.\_url.URL@{yarl.\_url.URL}!host\_port\_subcomponent@{host\_port\_subcomponent}}
+\index{host\_port\_subcomponent@{host\_port\_subcomponent}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{host\_port\_subcomponent()}{host\_port\_subcomponent()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a74a2533bd5d1c61b1d28a4ae7af6b4cc} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+host\+\_\+port\+\_\+subcomponent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the host and port subcomponent part of URL.
+
+Trailing dots are removed from the host part.
+
+This value is suitable for use in the Host header of an HTTP request.
+
+None for relative URLs.
+
+https://datatracker.ietf.org/doc/html/rfc3986#section-3.2.2
+`IP-literal = "[" ( IPv6address / IPvFuture  ) "]"`
+https://datatracker.ietf.org/doc/html/rfc3986#section-3.2.3
+port        = *DIGIT
+
+Examples:
+- `http://example.com:8080` -> `example.com:8080`
+- `http://example.com:80` -> `example.com`
+- `http://example.com.:80` -> `example.com`
+- `https://127.0.0.1:8443` -> `127.0.0.1:8443`
+- `https://[::1]:8443` -> `[::1]:8443`
+- `http://[::1]` -> `[::1]`
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a3569bb87bf65989ae6b4027940b041c5}\index{yarl.\_url.URL@{yarl.\_url.URL}!host\_subcomponent@{host\_subcomponent}}
+\index{host\_subcomponent@{host\_subcomponent}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{host\_subcomponent()}{host\_subcomponent()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a3569bb87bf65989ae6b4027940b041c5} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+host\+\_\+subcomponent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the host subcomponent part of URL.
+
+None for relative URLs.
+
+https://datatracker.ietf.org/doc/html/rfc3986#section-3.2.2
+
+`IP-literal = "[" ( IPv6address / IPvFuture  ) "]"`
+
+Examples:
+- `http://example.com:8080` -> `example.com`
+- `http://example.com:80` -> `example.com`
+- `https://127.0.0.1:8443` -> `127.0.0.1`
+- `https://[::1]:8443` -> `[::1]`
+- `http://[::1]` -> `[::1]`
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9699637974cfd7db2a3f4feeb1e520d4}\index{yarl.\_url.URL@{yarl.\_url.URL}!human\_repr@{human\_repr}}
+\index{human\_repr@{human\_repr}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{human\_repr()}{human\_repr()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9699637974cfd7db2a3f4feeb1e520d4} 
+ str yarl.\+\_\+url.\+URL.\+human\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return decoded human readable string for URL representation.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a8a5d4968d388a5e2e9e74aba39f7a71b}\index{yarl.\_url.URL@{yarl.\_url.URL}!is\_absolute@{is\_absolute}}
+\index{is\_absolute@{is\_absolute}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{is\_absolute()}{is\_absolute()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a8a5d4968d388a5e2e9e74aba39f7a71b} 
+ bool yarl.\+\_\+url.\+URL.\+is\+\_\+absolute (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A check for absolute URLs.
+
+Return True for absolute ones (having scheme or starting
+with //), False otherwise.
+
+Is is preferred to call the .absolute property instead
+as it is cached.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a55eee1dd05b039e3d3f6244fcd6b9a05}\index{yarl.\_url.URL@{yarl.\_url.URL}!is\_default\_port@{is\_default\_port}}
+\index{is\_default\_port@{is\_default\_port}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{is\_default\_port()}{is\_default\_port()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a55eee1dd05b039e3d3f6244fcd6b9a05} 
+ bool yarl.\+\_\+url.\+URL.\+is\+\_\+default\+\_\+port (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A check for default port.
+
+Return True if port is default for specified scheme,
+e.g. 'http://python.org' or 'http://python.org:80', False
+otherwise.
+
+Return False for relative URLs.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a0ebfea9c9aa9579df5da50d3141bf087}\index{yarl.\_url.URL@{yarl.\_url.URL}!join@{join}}
+\index{join@{join}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a0ebfea9c9aa9579df5da50d3141bf087} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+join (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}URL"{}}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Join URLs
+
+Construct a full (“absolute”) URL by combining a “base URL”
+(self) with another URL (url).
+
+Informally, this uses components of the base URL, in
+particular the addressing scheme, the network location and
+(part of) the path, to provide missing components in the
+relative URL.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_aa814ed81a8bccff1f2477135ac8f35b5}\index{yarl.\_url.URL@{yarl.\_url.URL}!joinpath@{joinpath}}
+\index{joinpath@{joinpath}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{joinpath()}{joinpath()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aa814ed81a8bccff1f2477135ac8f35b5} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+joinpath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{other}{, }\item[{bool }]{encoded}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with the elements in other appended to the path.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_ad2b6aa8e0b6876a0afb5924de5a64aeb}\index{yarl.\_url.URL@{yarl.\_url.URL}!name@{name}}
+\index{name@{name}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ad2b6aa8e0b6876a0afb5924de5a64aeb} 
+ str yarl.\+\_\+url.\+URL.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The last part of parts.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a4a7c746f2542b418d04b7192f2ddbe6d}\index{yarl.\_url.URL@{yarl.\_url.URL}!origin@{origin}}
+\index{origin@{origin}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{origin()}{origin()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a4a7c746f2542b418d04b7192f2ddbe6d} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+origin (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an URL with scheme, host and port parts only.
+
+user, password, path, query and fragment are removed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a629e53d3fe65edd13eec3956cf4a2062}\index{yarl.\_url.URL@{yarl.\_url.URL}!parent@{parent}}
+\index{parent@{parent}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a629e53d3fe65edd13eec3956cf4a2062} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+parent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A new URL with last part of path removed and cleaned up query and
+fragment.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a3f8c908fe3ca8f82f1cc0d348ec0d412}\index{yarl.\_url.URL@{yarl.\_url.URL}!parts@{parts}}
+\index{parts@{parts}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{parts()}{parts()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a3f8c908fe3ca8f82f1cc0d348ec0d412} 
+ tuple\mbox{[}str, ...\mbox{]} yarl.\+\_\+url.\+URL.\+parts (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A tuple containing decoded *path* parts.
+
+('/',) for absolute URLs if *path* is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a43eb4512fd3f1b37fa21efe7e5075a83}\index{yarl.\_url.URL@{yarl.\_url.URL}!password@{password}}
+\index{password@{password}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{password()}{password()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a43eb4512fd3f1b37fa21efe7e5075a83} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+password (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded password part of URL.
+
+None if password is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea}\index{yarl.\_url.URL@{yarl.\_url.URL}!path@{path}}
+\index{path@{path}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea} 
+ str yarl.\+\_\+url.\+URL.\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded path of URL.
+
+/ for absolute URLs without path part.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a41d515e887d68b9862a06a07c606826e}\index{yarl.\_url.URL@{yarl.\_url.URL}!path\_qs@{path\_qs}}
+\index{path\_qs@{path\_qs}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{path\_qs()}{path\_qs()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a41d515e887d68b9862a06a07c606826e} 
+ str yarl.\+\_\+url.\+URL.\+path\+\_\+qs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded path of URL with query.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a050d15821ba2631efcc220900aec5cb3}\index{yarl.\_url.URL@{yarl.\_url.URL}!path\_safe@{path\_safe}}
+\index{path\_safe@{path\_safe}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{path\_safe()}{path\_safe()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a050d15821ba2631efcc220900aec5cb3} 
+ str yarl.\+\_\+url.\+URL.\+path\+\_\+safe (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded path of URL.
+
+/ for absolute URLs without path part.
+
+/ (%2F) and % (%25) are not decoded
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a7ca305560583703fe5406d1f334cbee9}\index{yarl.\_url.URL@{yarl.\_url.URL}!port@{port}}
+\index{port@{port}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{port()}{port()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a7ca305560583703fe5406d1f334cbee9} 
+ Union\mbox{[}int, None\mbox{]} yarl.\+\_\+url.\+URL.\+port (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Port part of URL, with scheme-based fallback.
+
+None for relative URLs or URLs without explicit port and
+scheme without default port substitution.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c}\index{yarl.\_url.URL@{yarl.\_url.URL}!query@{query}}
+\index{query@{query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aa3fe401d7b8a248517713a96c4f8d17c} 
+ "{}Multi\+Dict\+Proxy\mbox{[}str\mbox{]}"{} yarl.\+\_\+url.\+URL.\+query (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A MultiDictProxy representing parsed query parameters in decoded
+representation.
+
+Empty value if URL has no query part.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_aff315b9546a551ba1c8a9e5f43c1ea98}\index{yarl.\_url.URL@{yarl.\_url.URL}!query\_string@{query\_string}}
+\index{query\_string@{query\_string}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{query\_string()}{query\_string()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aff315b9546a551ba1c8a9e5f43c1ea98} 
+ str yarl.\+\_\+url.\+URL.\+query\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded query part of URL.
+
+Empty string if query is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a471d4ac4a4452d847ac2386f275faa8e}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_authority@{raw\_authority}}
+\index{raw\_authority@{raw\_authority}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_authority()}{raw\_authority()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a471d4ac4a4452d847ac2386f275faa8e} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+authority (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded authority part of URL.
+
+Empty string for relative URLs.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a67c8dbce70423fc441df0e55ae8a6b3b}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_fragment@{raw\_fragment}}
+\index{raw\_fragment@{raw\_fragment}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_fragment()}{raw\_fragment()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a67c8dbce70423fc441df0e55ae8a6b3b} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded fragment part of URL.
+
+Empty string if fragment is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9eb80a5cafdf787a33123e5d69e7056c}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_host@{raw\_host}}
+\index{raw\_host@{raw\_host}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_host()}{raw\_host()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9eb80a5cafdf787a33123e5d69e7056c} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+raw\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded host part of URL.
+
+None for relative URLs.
+
+When working with IPv6 addresses, use the `host_subcomponent` property instead
+as it will return the host subcomponent with brackets.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a12e7fe7fedd8efe089e0100755ae5c1e}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_name@{raw\_name}}
+\index{raw\_name@{raw\_name}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_name()}{raw\_name()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a12e7fe7fedd8efe089e0100755ae5c1e} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The last part of raw_parts.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9f7660936f65db51eccb3bf6c128e8b9}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_parts@{raw\_parts}}
+\index{raw\_parts@{raw\_parts}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_parts()}{raw\_parts()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9f7660936f65db51eccb3bf6c128e8b9} 
+ tuple\mbox{[}str, ...\mbox{]} yarl.\+\_\+url.\+URL.\+raw\+\_\+parts (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A tuple containing encoded *path* parts.
+
+('/',) for absolute URLs if *path* is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_ab63173aa861c3fc3099f03a3aa7e04d3}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_password@{raw\_password}}
+\index{raw\_password@{raw\_password}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_password()}{raw\_password()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ab63173aa861c3fc3099f03a3aa7e04d3} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+raw\+\_\+password (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded password part of URL.
+
+None if password is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_ac55b6c88087806d259b798f2a137ed0f}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_path@{raw\_path}}
+\index{raw\_path@{raw\_path}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_path()}{raw\_path()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ac55b6c88087806d259b798f2a137ed0f} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded path of URL.
+
+/ for absolute URLs without path part.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a7b76610c3cd13aed129967549dd6b38f}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_path\_qs@{raw\_path\_qs}}
+\index{raw\_path\_qs@{raw\_path\_qs}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_path\_qs()}{raw\_path\_qs()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a7b76610c3cd13aed129967549dd6b38f} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+path\+\_\+qs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded path of URL with query.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a343bb4306e746b32c2f37aef30d08cef}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_query\_string@{raw\_query\_string}}
+\index{raw\_query\_string@{raw\_query\_string}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_query\_string()}{raw\_query\_string()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a343bb4306e746b32c2f37aef30d08cef} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+query\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded query part of URL.
+
+Empty string if query is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_aee2b476047e023ce9616293f9e04a525}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_suffix@{raw\_suffix}}
+\index{raw\_suffix@{raw\_suffix}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_suffix()}{raw\_suffix()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aee2b476047e023ce9616293f9e04a525} 
+ str yarl.\+\_\+url.\+URL.\+raw\+\_\+suffix (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a3982b49cb1fa2ea075b6e0c270b6610b}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_suffixes@{raw\_suffixes}}
+\index{raw\_suffixes@{raw\_suffixes}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_suffixes()}{raw\_suffixes()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a3982b49cb1fa2ea075b6e0c270b6610b} 
+ tuple\mbox{[}str, ...\mbox{]} yarl.\+\_\+url.\+URL.\+raw\+\_\+suffixes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a22c6b7cf9f7657d4eed3ad3b90f3a705}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_user@{raw\_user}}
+\index{raw\_user@{raw\_user}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_user()}{raw\_user()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a22c6b7cf9f7657d4eed3ad3b90f3a705} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+raw\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encoded user part of URL.
+
+None if user is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9198445a0a22594123062782de566c6a}\index{yarl.\_url.URL@{yarl.\_url.URL}!relative@{relative}}
+\index{relative@{relative}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{relative()}{relative()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9198445a0a22594123062782de566c6a} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+relative (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a relative part of the URL.
+
+scheme, user, password, host and port are removed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_ac98582021de63a3d146b28aac0e9b48f}\index{yarl.\_url.URL@{yarl.\_url.URL}!scheme@{scheme}}
+\index{scheme@{scheme}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{scheme()}{scheme()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ac98582021de63a3d146b28aac0e9b48f} 
+ str yarl.\+\_\+url.\+URL.\+scheme (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Scheme for absolute URLs.
+
+Empty string for relative URLs or URLs starting with //
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a2826225ee1d48f440c16436a12d00dda}\index{yarl.\_url.URL@{yarl.\_url.URL}!suffix@{suffix}}
+\index{suffix@{suffix}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{suffix()}{suffix()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a2826225ee1d48f440c16436a12d00dda} 
+ str yarl.\+\_\+url.\+URL.\+suffix (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a0c64588ecd780f4443a8c1e9a20f7e95}\index{yarl.\_url.URL@{yarl.\_url.URL}!suffixes@{suffixes}}
+\index{suffixes@{suffixes}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{suffixes()}{suffixes()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a0c64588ecd780f4443a8c1e9a20f7e95} 
+ tuple\mbox{[}str, ...\mbox{]} yarl.\+\_\+url.\+URL.\+suffixes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_acbb4db49fef6b4dc76f79553cf7856d0}\index{yarl.\_url.URL@{yarl.\_url.URL}!update\_query@{update\_query}}
+\index{update\_query@{update\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{update\_query()}{update\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_acbb4db49fef6b4dc76f79553cf7856d0} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+update\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Query\+Variable}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_aed50d440db302a6358ecf72237260f0a}\index{yarl.\_url.URL@{yarl.\_url.URL}!update\_query@{update\_query}}
+\index{update\_query@{update\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{update\_query()}{update\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aed50d440db302a6358ecf72237260f0a} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+update\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with query part updated.
+
+This method will overwrite existing query parameters.
+
+Example:
+>>> url = URL('http://example.com/?a=1&b=2')
+>>> url.update_query(a=3, c=4)
+URL('http://example.com/?a=3&b=2&c=4')
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_adccf79a9c87fb50a2169e5d5c42a046b}\index{yarl.\_url.URL@{yarl.\_url.URL}!update\_query@{update\_query}}
+\index{update\_query@{update\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{update\_query()}{update\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_adccf79a9c87fb50a2169e5d5c42a046b} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+update\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Query}]{query}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_afbac247e6c355059a1c67c33b0bf0c79}\index{yarl.\_url.URL@{yarl.\_url.URL}!user@{user}}
+\index{user@{user}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{user()}{user()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_afbac247e6c355059a1c67c33b0bf0c79} 
+ Union\mbox{[}str, None\mbox{]} yarl.\+\_\+url.\+URL.\+user (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decoded user part of URL.
+
+None if user is missing.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a7b6660271e063233cceb227d1513030d}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_fragment@{with\_fragment}}
+\index{with\_fragment@{with\_fragment}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_fragment()}{with\_fragment()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a7b6660271e063233cceb227d1513030d} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}str, None\mbox{]}}]{fragment}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with fragment replaced.
+
+Autoencode fragment if needed.
+
+Clear fragment to default if None is passed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a3a533f4f043879e51e760f865b1647a6}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_host@{with\_host}}
+\index{with\_host@{with\_host}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_host()}{with\_host()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a3a533f4f043879e51e760f865b1647a6} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with host replaced.
+
+Autoencode host if needed.
+
+Changing host for relative URLs is not allowed, use .join()
+instead.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_ac6f81dd7ff0d05ff70736867c6752f18}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_name@{with\_name}}
+\index{with\_name@{with\_name}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_name()}{with\_name()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ac6f81dd7ff0d05ff70736867c6752f18} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{keep\+\_\+query}{ = {\ttfamily False}, }\item[{bool }]{keep\+\_\+fragment}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with name (last part of path) replaced.
+
+Query and fragment parts are cleaned up.
+
+Name is encoded if needed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a8443ee0a23a986c8ed5660d7e268e747}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_password@{with\_password}}
+\index{with\_password@{with\_password}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_password()}{with\_password()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a8443ee0a23a986c8ed5660d7e268e747} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+password (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}str, None\mbox{]}}]{password}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with password replaced.
+
+Autoencode password if needed.
+
+Clear password if argument is None.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a33840afa08b2e39c5853c075eb923d8a}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_path@{with\_path}}
+\index{with\_path@{with\_path}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_path()}{with\_path()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a33840afa08b2e39c5853c075eb923d8a} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{encoded}{ = {\ttfamily False}, }\item[{bool }]{keep\+\_\+query}{ = {\ttfamily False}, }\item[{bool }]{keep\+\_\+fragment}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with path replaced.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a7a02c441582f562a7edd9323948a0007}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_port@{with\_port}}
+\index{with\_port@{with\_port}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_port()}{with\_port()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a7a02c441582f562a7edd9323948a0007} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+port (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}int, None\mbox{]}}]{port}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with port replaced.
+
+Clear port to default if None is passed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a7736c389e00723614ba571a6bf87b4e6}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_query@{with\_query}}
+\index{with\_query@{with\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_query()}{with\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a7736c389e00723614ba571a6bf87b4e6} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Query\+Variable}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ab97fab72ae221508a310be5077452d28}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_query@{with\_query}}
+\index{with\_query@{with\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_query()}{with\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ab97fab72ae221508a310be5077452d28} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with query part replaced.
+
+Accepts any Mapping (e.g. dict, multidict.MultiDict instances)
+or str, autoencode the argument if needed.
+
+A sequence of (key, value) pairs is supported as well.
+
+It also can take an arbitrary number of keyword arguments.
+
+Clear query if None is passed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a54667743942fd7733e3fdf116b61a052}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_query@{with\_query}}
+\index{with\_query@{with\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_query()}{with\_query()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a54667743942fd7733e3fdf116b61a052} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Query}]{query}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a184f081810057191da7929c9c0bd938f}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_scheme@{with\_scheme}}
+\index{with\_scheme@{with\_scheme}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_scheme()}{with\_scheme()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a184f081810057191da7929c9c0bd938f} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+scheme (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{scheme}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with scheme replaced.\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a86bb7e717b5fff382976bdad4396bb9f}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_suffix@{with\_suffix}}
+\index{with\_suffix@{with\_suffix}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_suffix()}{with\_suffix()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a86bb7e717b5fff382976bdad4396bb9f} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+suffix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{suffix}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{keep\+\_\+query}{ = {\ttfamily False}, }\item[{bool }]{keep\+\_\+fragment}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with suffix (file extension of name) replaced.
+
+Query and fragment parts are cleaned up.
+
+suffix is encoded if needed.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a1603bbcbe6ebbecf26e1867077ce1517}\index{yarl.\_url.URL@{yarl.\_url.URL}!with\_user@{with\_user}}
+\index{with\_user@{with\_user}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{with\_user()}{with\_user()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a1603bbcbe6ebbecf26e1867077ce1517} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+with\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}str, None\mbox{]}}]{user}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new URL with user replaced.
+
+Autoencode user if needed.
+
+Clear user/password if user is None.
+\end{DoxyVerb}
+ \Hypertarget{classyarl_1_1__url_1_1_u_r_l_a12eb70c5da00ef35d8938b949b858f7a}\index{yarl.\_url.URL@{yarl.\_url.URL}!without\_query\_params@{without\_query\_params}}
+\index{without\_query\_params@{without\_query\_params}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{without\_query\_params()}{without\_query\_params()}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a12eb70c5da00ef35d8938b949b858f7a} 
+ "{}URL"{} yarl.\+\_\+url.\+URL.\+without\+\_\+query\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{query\+\_\+params}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove some keys from query part and return new URL.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ac25799b4f1edede2c2b320835fee0007}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ac25799b4f1edede2c2b320835fee0007} 
+tuple yarl.\+\_\+url.\+URL.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+cache"{}, "{}\+\_\+scheme"{}, "{}\+\_\+netloc"{}, "{}\+\_\+path"{}, "{}\+\_\+query"{}, "{}\+\_\+fragment"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a355998ff4367981a9e26d9410dc65260}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a355998ff4367981a9e26d9410dc65260} 
+dict yarl.\+\_\+url.\+URL.\+\_\+cache = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_ab11d8ac538ca38bd075e2919c4179cbc}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_fragment@{\_fragment}}
+\index{\_fragment@{\_fragment}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_fragment}{\_fragment}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_ab11d8ac538ca38bd075e2919c4179cbc} 
+yarl.\+\_\+url.\+URL.\+\_\+fragment = FRAGMENT\+\_\+\+QUOTER(\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}}) if \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}} else \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a387d2d3e271064801f87d72383071d67}{fragment}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a33c92ded7255612466678d27a6c89817}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_netloc@{\_netloc}}
+\index{\_netloc@{\_netloc}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_netloc}{\_netloc}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a33c92ded7255612466678d27a6c89817} 
+yarl.\+\_\+url.\+URL.\+\_\+netloc = "{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_aa4f6f68e17d025666ba630b550a39533}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_parsed\_query@{\_parsed\_query}}
+\index{\_parsed\_query@{\_parsed\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_parsed\_query}{\_parsed\_query}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_aa4f6f68e17d025666ba630b550a39533} 
+yarl.\+\_\+url.\+URL.\+\_\+parsed\+\_\+query\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a74eab59944f456d5d51b26a9d52227ba}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_path@{\_path}}
+\index{\_path@{\_path}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a74eab59944f456d5d51b26a9d52227ba} 
+yarl.\+\_\+url.\+URL.\+\_\+path = \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_a1ee47d6bb00dc02204804d77dfa04bea}{path}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_af8c726c53133fa76ba268c26bdff8f55}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_query@{\_query}}
+\index{\_query@{\_query}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_query}{\_query}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_af8c726c53133fa76ba268c26bdff8f55} 
+yarl.\+\_\+url.\+URL.\+\_\+query = \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l_aff315b9546a551ba1c8a9e5f43c1ea98}{query\+\_\+string}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a94568c966a12d2619bfc884a64b658e5}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_scheme@{\_scheme}}
+\index{\_scheme@{\_scheme}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_scheme}{\_scheme}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a94568c966a12d2619bfc884a64b658e5} 
+yarl.\+\_\+url.\+URL.\+\_\+scheme = "{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a9d5f34d3c91f3baa4bcd29f5a8b20084}\index{yarl.\_url.URL@{yarl.\_url.URL}!\_val@{\_val}}
+\index{\_val@{\_val}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{\_val}{\_val}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a9d5f34d3c91f3baa4bcd29f5a8b20084} 
+yarl.\+\_\+url.\+URL.\+\_\+val\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a2a28769c60643e238bf3a876eaba08b6}\index{yarl.\_url.URL@{yarl.\_url.URL}!host@{host}}
+\index{host@{host}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a2a28769c60643e238bf3a876eaba08b6} 
+yarl.\+\_\+url.\+URL.\+host}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a39b20eb8dd2fc1336dfa2497c4a1e9e6}\index{yarl.\_url.URL@{yarl.\_url.URL}!password@{password}}
+\index{password@{password}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a39b20eb8dd2fc1336dfa2497c4a1e9e6} 
+yarl.\+\_\+url.\+URL.\+password}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a770a1ab864648ca21583c19e30537695}\index{yarl.\_url.URL@{yarl.\_url.URL}!port@{port}}
+\index{port@{port}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a770a1ab864648ca21583c19e30537695} 
+yarl.\+\_\+url.\+URL.\+port}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a161d60be7017f0a347a7c69c7bbf8f50}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_name@{raw\_name}}
+\index{raw\_name@{raw\_name}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_name}{raw\_name}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a161d60be7017f0a347a7c69c7bbf8f50} 
+yarl.\+\_\+url.\+URL.\+raw\+\_\+name}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a22f3345080e56a2f587b97caa2bcae17}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_parts@{raw\_parts}}
+\index{raw\_parts@{raw\_parts}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_parts}{raw\_parts}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a22f3345080e56a2f587b97caa2bcae17} 
+yarl.\+\_\+url.\+URL.\+raw\+\_\+parts}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a79ddd0e96c4ec104073fbdd12751ef0d}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_suffix@{raw\_suffix}}
+\index{raw\_suffix@{raw\_suffix}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_suffix}{raw\_suffix}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a79ddd0e96c4ec104073fbdd12751ef0d} 
+yarl.\+\_\+url.\+URL.\+raw\+\_\+suffix}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a7b1ef8426534add3410d57141d4c14af}\index{yarl.\_url.URL@{yarl.\_url.URL}!raw\_suffixes@{raw\_suffixes}}
+\index{raw\_suffixes@{raw\_suffixes}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{raw\_suffixes}{raw\_suffixes}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a7b1ef8426534add3410d57141d4c14af} 
+yarl.\+\_\+url.\+URL.\+raw\+\_\+suffixes}
+
+\Hypertarget{classyarl_1_1__url_1_1_u_r_l_a4f909f09375e23420e4a4a552ad94331}\index{yarl.\_url.URL@{yarl.\_url.URL}!user@{user}}
+\index{user@{user}!yarl.\_url.URL@{yarl.\_url.URL}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily \label{classyarl_1_1__url_1_1_u_r_l_a4f909f09375e23420e4a4a552ad94331} 
+yarl.\+\_\+url.\+URL.\+user}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/yarl/\mbox{\hyperlink{__url_8py}{\+\_\+url.\+py}}\end{DoxyCompactItemize}

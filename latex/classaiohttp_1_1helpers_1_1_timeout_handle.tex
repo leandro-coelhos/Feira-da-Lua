@@ -1,0 +1,134 @@
+\doxysection{aiohttp.\+helpers.\+Timeout\+Handle Class Reference}
+\hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle}{}\label{classaiohttp_1_1helpers_1_1_timeout_handle}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a50c0523c8ab345f56eac86acb739fe7f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, asyncio.\+Abstract\+Event\+Loop loop, Optional\mbox{[}float\mbox{]} timeout, float ceil\+\_\+threshold=5)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_ae01061cfebff5d0081ce59aa454e008a}{register}} (self, Callable\mbox{[}..., None\mbox{]} callback, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a632496fe3170c0d322062d04266a04e9}{close}} (self)
+\item 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a3de61463c32de7aa8af8698a54ca5711}{start}} (self)
+\item 
+"{}Base\+Timer\+Context"{} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_af17053063d3516d6184081d8f226a468}{timer}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a48f07d7f354ed0c6db7b6f92b421fdb4}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_aa046eb1dbafd01f21df452274c0ec24a}{\+\_\+timeout}} = timeout
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a08c393457cc3966654f1e28aa7729a8d}{\+\_\+loop}} = loop
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_aebdf09678f1c9f4f85b4db1a83874495}{\+\_\+ceil\+\_\+threshold}} = ceil\+\_\+threshold
+\item 
+List\mbox{[} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a0cdec1cc1a6c370b7136a0beab2f5833}{\+\_\+callbacks}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_aba4b2e46aeeeaf4d47e025cd4e3796e6}{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle_a468351a5f07dc8ddcd5a906ecee0bfd3}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+timeout"{}, "{}\+\_\+loop"{}, "{}\+\_\+ceil\+\_\+threshold"{}, "{}\+\_\+callbacks"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Timeout handle\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a50c0523c8ab345f56eac86acb739fe7f}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a50c0523c8ab345f56eac86acb739fe7f} 
+ None aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{asyncio.\+Abstract\+Event\+Loop}]{loop}{, }\item[{Optional\mbox{[}float\mbox{]}}]{timeout}{, }\item[{float }]{ceil\+\_\+threshold}{ = {\ttfamily 5}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a48f07d7f354ed0c6db7b6f92b421fdb4}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a48f07d7f354ed0c6db7b6f92b421fdb4} 
+ None aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a632496fe3170c0d322062d04266a04e9}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!close@{close}}
+\index{close@{close}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a632496fe3170c0d322062d04266a04e9} 
+ None aiohttp.\+helpers.\+Timeout\+Handle.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_ae01061cfebff5d0081ce59aa454e008a}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!register@{register}}
+\index{register@{register}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_ae01061cfebff5d0081ce59aa454e008a} 
+ None aiohttp.\+helpers.\+Timeout\+Handle.\+register (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Callable\mbox{[}..., None\mbox{]}}]{callback}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a3de61463c32de7aa8af8698a54ca5711}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!start@{start}}
+\index{start@{start}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a3de61463c32de7aa8af8698a54ca5711} 
+ Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} aiohttp.\+helpers.\+Timeout\+Handle.\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_af17053063d3516d6184081d8f226a468}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!timer@{timer}}
+\index{timer@{timer}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{timer()}{timer()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_af17053063d3516d6184081d8f226a468} 
+ "{}Base\+Timer\+Context"{} aiohttp.\+helpers.\+Timeout\+Handle.\+timer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_aba4b2e46aeeeaf4d47e025cd4e3796e6}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_}{\_\_call\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_aba4b2e46aeeeaf4d47e025cd4e3796e6} 
+aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+\+\_\+call\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a468351a5f07dc8ddcd5a906ecee0bfd3}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a468351a5f07dc8ddcd5a906ecee0bfd3} 
+tuple aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+timeout"{}, "{}\+\_\+loop"{}, "{}\+\_\+ceil\+\_\+threshold"{}, "{}\+\_\+callbacks"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a0cdec1cc1a6c370b7136a0beab2f5833}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_callbacks@{\_callbacks}}
+\index{\_callbacks@{\_callbacks}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_callbacks}{\_callbacks}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a0cdec1cc1a6c370b7136a0beab2f5833} 
+List\mbox{[} aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+callbacks\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_aebdf09678f1c9f4f85b4db1a83874495}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_ceil\_threshold@{\_ceil\_threshold}}
+\index{\_ceil\_threshold@{\_ceil\_threshold}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_ceil\_threshold}{\_ceil\_threshold}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_aebdf09678f1c9f4f85b4db1a83874495} 
+aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+ceil\+\_\+threshold = ceil\+\_\+threshold\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_a08c393457cc3966654f1e28aa7729a8d}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_a08c393457cc3966654f1e28aa7729a8d} 
+aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+loop = loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timeout_handle_aa046eb1dbafd01f21df452274c0ec24a}\index{aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}!\_timeout@{\_timeout}}
+\index{\_timeout@{\_timeout}!aiohttp.helpers.TimeoutHandle@{aiohttp.helpers.TimeoutHandle}}
+\doxysubsubsection{\texorpdfstring{\_timeout}{\_timeout}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timeout_handle_aa046eb1dbafd01f21df452274c0ec24a} 
+aiohttp.\+helpers.\+Timeout\+Handle.\+\_\+timeout = timeout\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{aiohttp_2helpers_8py}{helpers.\+py}}\end{DoxyCompactItemize}

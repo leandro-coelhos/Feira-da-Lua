@@ -1,0 +1,166 @@
+\doxysection{aiohttp.\+payload.\+Bytes\+Payload Class Reference}
+\hypertarget{classaiohttp_1_1payload_1_1_bytes_payload}{}\label{classaiohttp_1_1payload_1_1_bytes_payload}\index{aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}}
+Inheritance diagram for aiohttp.\+payload.\+Bytes\+Payload\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classaiohttp_1_1payload_1_1_bytes_payload}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_bytes_payload_abf44d47c400c0352b79e8d176f082eb5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Union\mbox{[}bytes, bytearray, memoryview\mbox{]} value, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1payload_1_1_bytes_payload_af1e114c94f5b674a2c29f8a7e36b4329}{decode}} (self, str \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a2cabc51e50d180270bf62ed4c45a3023}{encoding}}="{}utf-\/8"{}, str errors="{}strict"{})
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1payload_1_1_bytes_payload_af25dde2dd0991ddf2b44ec1c9f5d0899}{as\+\_\+bytes}} (self, str \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a2cabc51e50d180270bf62ed4c45a3023}{encoding}}="{}utf-\/8"{}, str errors="{}strict"{})
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_bytes_payload_a225ba00c980da2a06b7f92189df85ab7}{write}} (self, \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_stream_writer}{Abstract\+Stream\+Writer}} writer)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_bytes_payload_a3e0ce22fd53f79542cf9e6c6c1d4c9ac}{write\+\_\+with\+\_\+length}} (self, \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_stream_writer}{Abstract\+Stream\+Writer}} writer, Optional\mbox{[}int\mbox{]} content\+\_\+length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload}{aiohttp.\+payload.\+Payload}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a8e6a434f1028c52fcf48ebda2c0e6acf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Any value, Optional\mbox{[}Union\mbox{[}\+\_\+\+CIMulti\+Dict, Dict\mbox{[}str, str\mbox{]}, Iterable\mbox{[}Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_acaa9de80447b938a2989b7bab0e15d15}{headers}}=None, Union\mbox{[}str, None, \+\_\+\+SENTINEL\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ae9f787026f4d8ccf5b21670b2a4fa8f5}{content\+\_\+type}}=sentinel, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ad8be6e16c6fc2e3f1d5c9e6103017118}{filename}}=None, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a2cabc51e50d180270bf62ed4c45a3023}{encoding}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ac436d1943b6f58561e00425a5323f33c}{size}} (self)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ad8be6e16c6fc2e3f1d5c9e6103017118}{filename}} (self)
+\item 
+\+\_\+\+CIMulti\+Dict \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_acaa9de80447b938a2989b7bab0e15d15}{headers}} (self)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a2cabc51e50d180270bf62ed4c45a3023}{encoding}} (self)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ae9f787026f4d8ccf5b21670b2a4fa8f5}{content\+\_\+type}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ae89335ee45824b55b4028418c8d20cce}{consumed}} (self)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a3824e3cbd78aa297723b27dd0cd9b6e2}{autoclose}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a913e7560fa10e02fb8cb228e3b75aac6}{set\+\_\+content\+\_\+disposition}} (self, str disptype, bool quote\+\_\+fields=True, str \+\_\+charset="{}utf-\/8"{}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any params)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a6d09e61989d2f65959ef125891c6690d}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload}{aiohttp.\+payload.\+Payload}}}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_acd829642fd20511f3572decbdc2dcb99}{\+\_\+binary\+\_\+headers}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a1d93b927764ac4f0a3b8744fa50e0a52}{\+\_\+close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload}{aiohttp.\+payload.\+Payload}}}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a8296f3d0e2dfad2823b07a2f8cd85cec}{\+\_\+encoding}} = \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a2cabc51e50d180270bf62ed4c45a3023}{encoding}}
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a83a9347b9e441b01c2468592804636c1}{\+\_\+filename}} = \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ad8be6e16c6fc2e3f1d5c9e6103017118}{filename}}
+\item 
+\+\_\+\+CIMulti\+Dict \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_aa18c85cb9ce29d65405c3d5286a4cc76}{\+\_\+headers}} = \mbox{\hyperlink{classmultidict_1_1__multidict__py_1_1_c_i_multi_dict}{CIMulti\+Dict}}()
+\item 
+\mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a5d0401f1873e5a373ac2a9265b4da9f2}{\+\_\+value}} = value
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload}{aiohttp.\+payload.\+Payload}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_afb20860b4b8e00566eb91f2288a13672}{\+\_\+default\+\_\+content\+\_\+type}} = "{}application/octet-\/stream"{}
+\item 
+Optional \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a05057c9e85f4ac7f7f59140b34616eb0}{\+\_\+size}} = None
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a7957c855ef54f807a66c2f50ad067015}{\+\_\+consumed}} = False
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a6c3c928ec7d1f3976881e63b524591f5}{\+\_\+autoclose}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_abf44d47c400c0352b79e8d176f082eb5}\index{aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_bytes_payload_abf44d47c400c0352b79e8d176f082eb5} 
+ None aiohttp.\+payload.\+Bytes\+Payload.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}bytes, bytearray, memoryview\mbox{]}}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_af25dde2dd0991ddf2b44ec1c9f5d0899}\index{aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}!as\_bytes@{as\_bytes}}
+\index{as\_bytes@{as\_bytes}!aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}}
+\doxysubsubsection{\texorpdfstring{as\_bytes()}{as\_bytes()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_bytes_payload_af25dde2dd0991ddf2b44ec1c9f5d0899} 
+ bytes aiohttp.\+payload.\+Bytes\+Payload.\+as\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return bytes representation of the value.
+
+This method returns the raw bytes content of the payload.
+It is equivalent to accessing the _value attribute directly.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a9245e33b5da2f729fe4f924d0260b7b6}{aiohttp.\+payload.\+Payload}}.
+
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_af1e114c94f5b674a2c29f8a7e36b4329}\index{aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}!decode@{decode}}
+\index{decode@{decode}!aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_bytes_payload_af1e114c94f5b674a2c29f8a7e36b4329} 
+ str aiohttp.\+payload.\+Bytes\+Payload.\+decode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return string representation of the value.
+
+This is named decode() to allow compatibility with bytes objects.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_ac3aeabaf2dc6f876c4ad79353703b094}{aiohttp.\+payload.\+Payload}}.
+
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_a225ba00c980da2a06b7f92189df85ab7}\index{aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}!write@{write}}
+\index{write@{write}!aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_bytes_payload_a225ba00c980da2a06b7f92189df85ab7} 
+ None aiohttp.\+payload.\+Bytes\+Payload.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_stream_writer}{Abstract\+Stream\+Writer}}}]{writer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write the entire bytes payload to the writer stream.
+
+Args:
+    writer: An AbstractStreamWriter instance that handles the actual writing
+
+This method writes the entire bytes content without any length constraint.
+
+Note:
+    For new implementations that need length control, use write_with_length().
+    This method is maintained for backwards compatibility and is equivalent
+    to write_with_length(writer, None).
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_a698261dce3688c02ae2779bdaf7f55c4}{aiohttp.\+payload.\+Payload}}.
+
+\Hypertarget{classaiohttp_1_1payload_1_1_bytes_payload_a3e0ce22fd53f79542cf9e6c6c1d4c9ac}\index{aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}!write\_with\_length@{write\_with\_length}}
+\index{write\_with\_length@{write\_with\_length}!aiohttp.payload.BytesPayload@{aiohttp.payload.BytesPayload}}
+\doxysubsubsection{\texorpdfstring{write\_with\_length()}{write\_with\_length()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1payload_1_1_bytes_payload_a3e0ce22fd53f79542cf9e6c6c1d4c9ac} 
+ None aiohttp.\+payload.\+Bytes\+Payload.\+write\+\_\+with\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_stream_writer}{Abstract\+Stream\+Writer}}}]{writer}{, }\item[{Optional\mbox{[}int\mbox{]}     }]{content\+\_\+length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write bytes payload with a specific content length constraint.
+
+Args:
+    writer: An AbstractStreamWriter instance that handles the actual writing
+    content_length: Maximum number of bytes to write (None for unlimited)
+
+This method writes either the entire byte sequence or a slice of it
+up to the specified content_length. For BytesPayload, this operation
+is performed efficiently using array slicing.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1payload_1_1_payload_af149c08ae0ead8645b7b52a0ffb5b390}{aiohttp.\+payload.\+Payload}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{payload_8py}{payload.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\doxysection{\+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr Class Reference}
+\hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr}{}\label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+Inheritance diagram for \+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_afec7b90e034e10e3dbef6b76dcbf62cd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}{maxsize}}, bool \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a5918ae33c36775a03aac5b42859a2ef0}{use\+\_\+ascii}}=False)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a9a13c924994a4faf69a5da98bff3111c}{repr}} (self, object x)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a74f59200629013ad03d024557fa92fb9}{repr\+\_\+instance}} (self, object x, int level)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_af6873b9dd5361a5226fd29ebb3505017}{maxstring}} = \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}{maxsize}} if \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}{maxsize}} is not None else 1\+\_\+000\+\_\+000\+\_\+000
+\item 
+\mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}{maxsize}} = maxsize
+\item 
+\mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a5918ae33c36775a03aac5b42859a2ef0}{use\+\_\+ascii}} = use\+\_\+ascii
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}repr.Repr that limits the resulting size of repr() and includes
+information on exceptions raised during the call.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_afec7b90e034e10e3dbef6b76dcbf62cd}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_afec7b90e034e10e3dbef6b76dcbf62cd} 
+ None \+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{maxsize}{, }\item[{bool }]{use\+\_\+ascii}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param maxsize:
+    If not None, will truncate the resulting repr to that specific size, using ellipsis
+    somewhere in the middle to hide the extra text.
+    If None, will not impose any size limits on the returning repr.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a9a13c924994a4faf69a5da98bff3111c}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}!repr@{repr}}
+\index{repr@{repr}!\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+\doxysubsubsection{\texorpdfstring{repr()}{repr()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a9a13c924994a4faf69a5da98bff3111c} 
+ str \+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr.\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a74f59200629013ad03d024557fa92fb9}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}!repr\_instance@{repr\_instance}}
+\index{repr\_instance@{repr\_instance}!\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+\doxysubsubsection{\texorpdfstring{repr\_instance()}{repr\_instance()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a74f59200629013ad03d024557fa92fb9} 
+ str \+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr.\+repr\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{x}{, }\item[{int}]{level}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}!maxsize@{maxsize}}
+\index{maxsize@{maxsize}!\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+\doxysubsubsection{\texorpdfstring{maxsize}{maxsize}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66} 
+\+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr.\+maxsize = maxsize}
+
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_af6873b9dd5361a5226fd29ebb3505017}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}!maxstring@{maxstring}}
+\index{maxstring@{maxstring}!\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+\doxysubsubsection{\texorpdfstring{maxstring}{maxstring}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_af6873b9dd5361a5226fd29ebb3505017} 
+int \+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr.\+maxstring = \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}{maxsize}} if \mbox{\hyperlink{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a7c9c927029c2b983d622c6aa3c622a66}{maxsize}} is not None else 1\+\_\+000\+\_\+000\+\_\+000}
+
+\Hypertarget{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a5918ae33c36775a03aac5b42859a2ef0}\index{\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}!use\_ascii@{use\_ascii}}
+\index{use\_ascii@{use\_ascii}!\_pytest.\_io.saferepr.SafeRepr@{\_pytest.\_io.saferepr.SafeRepr}}
+\doxysubsubsection{\texorpdfstring{use\_ascii}{use\_ascii}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__io_1_1saferepr_1_1_safe_repr_a5918ae33c36775a03aac5b42859a2ef0} 
+\+\_\+pytest.\+\_\+io.\+saferepr.\+Safe\+Repr.\+use\+\_\+ascii = use\+\_\+ascii}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\+\_\+io/\mbox{\hyperlink{saferepr_8py}{saferepr.\+py}}\end{DoxyCompactItemize}

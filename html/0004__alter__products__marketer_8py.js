@@ -1,0 +1,4 @@
+var 0004__alter__products__marketer_8py =
+[
+    [ "feira_da_lua.marketplace.migrations.0004_alter_products_marketer.Migration", "classfeira__da__lua_1_1marketplace_1_1migrations_1_10004__alter__products__marketer_1_1_migration.html", null ]
+];

@@ -1,0 +1,219 @@
+\doxysection{aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader Class Reference}
+\hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader}{}\label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_acd3e6e077a1f65fba3875cfa47342b28}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_data_queue}{Web\+Socket\+Data\+Queue}} \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a8748081383476e0d85d5ebb04984e494}{queue}}, int max\+\_\+msg\+\_\+size, bool compress=True)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aa2053a781943841617f3b59fa15e5acb}{feed\+\_\+eof}} (self)
+\item 
+Tuple\mbox{[}bool, bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_afcefaa4d60ee2712c51ebe57ce4dd0cf}{feed\+\_\+data}} (self, Union\mbox{[}bytes, bytearray, memoryview\mbox{]} data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a8748081383476e0d85d5ebb04984e494}{queue}} = queue
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_abb9397e4a4615c23bc40f5614a0646c1}{\+\_\+handle\+\_\+frame}} (self, bool fin, Union\mbox{[}int, \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_a35e7b48943945b659ccd83b2e96fd9ef}{cython\+\_\+int}}\mbox{]} opcode, Union\mbox{[}bytes, bytearray\mbox{]} payload, Union\mbox{[}int, \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_a35e7b48943945b659ccd83b2e96fd9ef}{cython\+\_\+int}}\mbox{]} compressed)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ac621ea5104c29b314a2d87e9e4971d8b}{\+\_\+feed\+\_\+data}} (self, bytes data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a1f9a6b43535588254cf6ec25de180332}{\+\_\+max\+\_\+msg\+\_\+size}} = max\+\_\+msg\+\_\+size
+\item 
+Optional\mbox{[}Exception\mbox{]} \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a806612eddd24e4b2549800c0160ae5f9}{\+\_\+exc}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_abb635e6f8409fc17b414a20c7338dda9}{\+\_\+partial}} = bytearray()
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ad78b8546023f60c0513a4cb053b8a950}{\+\_\+state}} = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_a748c77ad30c6d178cd31849ec0899cbb}{READ\+\_\+\+HEADER}}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_addc989bb35a755a688145e2b648e69ab}{\+\_\+opcode}} = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_ae8697fd08a2b4449c831bcbeefd080fa}{OP\+\_\+\+CODE\+\_\+\+NOT\+\_\+\+SET}}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aeea126ea440d3b21e727ef85f0b95b27}{\+\_\+frame\+\_\+fin}} = False
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a7c61d4bbe7bae7ece53356d074e4eb80}{\+\_\+frame\+\_\+opcode}} = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_ae8697fd08a2b4449c831bcbeefd080fa}{OP\+\_\+\+CODE\+\_\+\+NOT\+\_\+\+SET}}
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a199718ffd85c7625267bcbd39dac710c}{\+\_\+payload\+\_\+fragments}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a593160b20f94094021498d1612fa80db}{\+\_\+frame\+\_\+payload\+\_\+len}} = 0
+\item 
+bytes \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aed6e7794ded040bed318fdbc3bcbeb65}{\+\_\+tail}} = b"{}"{}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a3011c8fe256082200f9e2ce340724ec4}{\+\_\+has\+\_\+mask}} = False
+\item 
+Optional\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a095503799d6209e64b6bea1b919c5057}{\+\_\+frame\+\_\+mask}} = None
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ab5ba6481073fed0b13248e4b5e13a01d}{\+\_\+payload\+\_\+bytes\+\_\+to\+\_\+read}} = 0
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a143aa53bf4de5837c220b7f310e1c953}{\+\_\+payload\+\_\+len\+\_\+flag}} = 0
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a9045eb3e29c7bbf15064b0fc0b2d10e7}{\+\_\+compressed}} = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_ab5b240b1f091c5d0ef8ac9686b8a93f9}{COMPRESSED\+\_\+\+NOT\+\_\+\+SET}}
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}{ZLib\+Decompressor}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_acf6c155f1f8652fdeba32083a101d9a7}{\+\_\+decompressobj}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a3b9d7328dcb865bcfac2566267e18b33}{\+\_\+compress}} = compress
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_acd3e6e077a1f65fba3875cfa47342b28}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_acd3e6e077a1f65fba3875cfa47342b28} 
+ None aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_data_queue}{Web\+Socket\+Data\+Queue}}}]{queue}{, }\item[{int}]{max\+\_\+msg\+\_\+size}{, }\item[{bool }]{compress}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ac621ea5104c29b314a2d87e9e4971d8b}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_feed\_data@{\_feed\_data}}
+\index{\_feed\_data@{\_feed\_data}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_feed\_data()}{\_feed\_data()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ac621ea5104c29b314a2d87e9e4971d8b} 
+ None aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+feed\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the next frame from the socket.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_abb9397e4a4615c23bc40f5614a0646c1}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_handle\_frame@{\_handle\_frame}}
+\index{\_handle\_frame@{\_handle\_frame}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_handle\_frame()}{\_handle\_frame()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_abb9397e4a4615c23bc40f5614a0646c1} 
+ None aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+handle\+\_\+frame (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{fin}{, }\item[{Union\mbox{[}int, \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_a35e7b48943945b659ccd83b2e96fd9ef}{cython\+\_\+int}}\mbox{]}}]{opcode}{, }\item[{Union\mbox{[}bytes, bytearray\mbox{]}}]{payload}{, }\item[{Union\mbox{[}int, \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_a35e7b48943945b659ccd83b2e96fd9ef}{cython\+\_\+int}}\mbox{]}}]{compressed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_afcefaa4d60ee2712c51ebe57ce4dd0cf}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!feed\_data@{feed\_data}}
+\index{feed\_data@{feed\_data}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{feed\_data()}{feed\_data()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_afcefaa4d60ee2712c51ebe57ce4dd0cf} 
+ Tuple\mbox{[}bool, bytes\mbox{]} aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+feed\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}bytes, bytearray, memoryview\mbox{]}     }]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aa2053a781943841617f3b59fa15e5acb}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!feed\_eof@{feed\_eof}}
+\index{feed\_eof@{feed\_eof}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{feed\_eof()}{feed\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aa2053a781943841617f3b59fa15e5acb} 
+ None aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+feed\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a3b9d7328dcb865bcfac2566267e18b33}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_compress@{\_compress}}
+\index{\_compress@{\_compress}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_compress}{\_compress}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a3b9d7328dcb865bcfac2566267e18b33} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+compress = compress\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a9045eb3e29c7bbf15064b0fc0b2d10e7}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_compressed@{\_compressed}}
+\index{\_compressed@{\_compressed}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_compressed}{\_compressed}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a9045eb3e29c7bbf15064b0fc0b2d10e7} 
+int aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+compressed = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_ab5b240b1f091c5d0ef8ac9686b8a93f9}{COMPRESSED\+\_\+\+NOT\+\_\+\+SET}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_acf6c155f1f8652fdeba32083a101d9a7}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_decompressobj@{\_decompressobj}}
+\index{\_decompressobj@{\_decompressobj}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_decompressobj}{\_decompressobj}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_acf6c155f1f8652fdeba32083a101d9a7} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1compression__utils_1_1_z_lib_decompressor}{ZLib\+Decompressor}}\mbox{]} aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+decompressobj = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a806612eddd24e4b2549800c0160ae5f9}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_exc@{\_exc}}
+\index{\_exc@{\_exc}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_exc}{\_exc}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a806612eddd24e4b2549800c0160ae5f9} 
+Optional\mbox{[}Exception\mbox{]} aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+exc = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aeea126ea440d3b21e727ef85f0b95b27}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_frame\_fin@{\_frame\_fin}}
+\index{\_frame\_fin@{\_frame\_fin}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_frame\_fin}{\_frame\_fin}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aeea126ea440d3b21e727ef85f0b95b27} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+frame\+\_\+fin = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a095503799d6209e64b6bea1b919c5057}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_frame\_mask@{\_frame\_mask}}
+\index{\_frame\_mask@{\_frame\_mask}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_frame\_mask}{\_frame\_mask}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a095503799d6209e64b6bea1b919c5057} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+frame\+\_\+mask = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a7c61d4bbe7bae7ece53356d074e4eb80}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_frame\_opcode@{\_frame\_opcode}}
+\index{\_frame\_opcode@{\_frame\_opcode}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_frame\_opcode}{\_frame\_opcode}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a7c61d4bbe7bae7ece53356d074e4eb80} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+frame\+\_\+opcode = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_ae8697fd08a2b4449c831bcbeefd080fa}{OP\+\_\+\+CODE\+\_\+\+NOT\+\_\+\+SET}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a593160b20f94094021498d1612fa80db}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_frame\_payload\_len@{\_frame\_payload\_len}}
+\index{\_frame\_payload\_len@{\_frame\_payload\_len}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_frame\_payload\_len}{\_frame\_payload\_len}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a593160b20f94094021498d1612fa80db} 
+int aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+frame\+\_\+payload\+\_\+len = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a3011c8fe256082200f9e2ce340724ec4}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_has\_mask@{\_has\_mask}}
+\index{\_has\_mask@{\_has\_mask}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_has\_mask}{\_has\_mask}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a3011c8fe256082200f9e2ce340724ec4} 
+bool aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+has\+\_\+mask = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a1f9a6b43535588254cf6ec25de180332}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_max\_msg\_size@{\_max\_msg\_size}}
+\index{\_max\_msg\_size@{\_max\_msg\_size}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_max\_msg\_size}{\_max\_msg\_size}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a1f9a6b43535588254cf6ec25de180332} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+max\+\_\+msg\+\_\+size = max\+\_\+msg\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_addc989bb35a755a688145e2b648e69ab}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_opcode@{\_opcode}}
+\index{\_opcode@{\_opcode}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_opcode}{\_opcode}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_addc989bb35a755a688145e2b648e69ab} 
+int aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+opcode = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_ae8697fd08a2b4449c831bcbeefd080fa}{OP\+\_\+\+CODE\+\_\+\+NOT\+\_\+\+SET}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_abb635e6f8409fc17b414a20c7338dda9}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_partial@{\_partial}}
+\index{\_partial@{\_partial}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_partial}{\_partial}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_abb635e6f8409fc17b414a20c7338dda9} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+partial = bytearray()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ab5ba6481073fed0b13248e4b5e13a01d}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_payload\_bytes\_to\_read@{\_payload\_bytes\_to\_read}}
+\index{\_payload\_bytes\_to\_read@{\_payload\_bytes\_to\_read}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_payload\_bytes\_to\_read}{\_payload\_bytes\_to\_read}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ab5ba6481073fed0b13248e4b5e13a01d} 
+int aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+payload\+\_\+bytes\+\_\+to\+\_\+read = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a199718ffd85c7625267bcbd39dac710c}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_payload\_fragments@{\_payload\_fragments}}
+\index{\_payload\_fragments@{\_payload\_fragments}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_payload\_fragments}{\_payload\_fragments}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a199718ffd85c7625267bcbd39dac710c} 
+list aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+payload\+\_\+fragments = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a143aa53bf4de5837c220b7f310e1c953}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_payload\_len\_flag@{\_payload\_len\_flag}}
+\index{\_payload\_len\_flag@{\_payload\_len\_flag}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_payload\_len\_flag}{\_payload\_len\_flag}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a143aa53bf4de5837c220b7f310e1c953} 
+int aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+payload\+\_\+len\+\_\+flag = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ad78b8546023f60c0513a4cb053b8a950}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_state@{\_state}}
+\index{\_state@{\_state}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_state}{\_state}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_ad78b8546023f60c0513a4cb053b8a950} 
+bool aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+state = \mbox{\hyperlink{namespaceaiohttp_1_1__websocket_1_1reader__c_a748c77ad30c6d178cd31849ec0899cbb}{READ\+\_\+\+HEADER}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aed6e7794ded040bed318fdbc3bcbeb65}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!\_tail@{\_tail}}
+\index{\_tail@{\_tail}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{\_tail}{\_tail}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_aed6e7794ded040bed318fdbc3bcbeb65} 
+bytes aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+\_\+tail = b"{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a8748081383476e0d85d5ebb04984e494}\index{aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}!queue@{queue}}
+\index{queue@{queue}!aiohttp.\_websocket.reader\_c.WebSocketReader@{aiohttp.\_websocket.reader\_c.WebSocketReader}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader_a8748081383476e0d85d5ebb04984e494} 
+aiohttp.\+\_\+websocket.\+reader\+\_\+c.\+Web\+Socket\+Reader.\+queue = queue}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\+\_\+websocket/\mbox{\hyperlink{reader__c_8py}{reader\+\_\+c.\+py}}\end{DoxyCompactItemize}

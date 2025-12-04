@@ -1,0 +1,90 @@
+\doxysection{django.\+core.\+servers.\+basehttp Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp}{}\label{namespacedjango_1_1core_1_1servers_1_1basehttp}\index{django.core.servers.basehttp@{django.core.servers.basehttp}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_server_handler}{Server\+Handler}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_threaded_w_s_g_i_server}{Threaded\+WSGIServer}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_w_s_g_i_server}{WSGIServer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1servers_1_1basehttp_a60a0b4333b91f72f8c755bab3ad03afe}{get\+\_\+internal\+\_\+wsgi\+\_\+application}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1servers_1_1basehttp_a7e32dc7e77685adea0f2280aadc0e6b9}{is\+\_\+broken\+\_\+pipe\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1servers_1_1basehttp_a0fb1ceff7d8bd99f7ece89575d18fb90}{run}} (addr, port, wsgi\+\_\+handler, ipv6=False, threading=False, on\+\_\+bind=None, server\+\_\+cls=\mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_w_s_g_i_server}{WSGIServer}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1core_1_1servers_1_1basehttp_a6c33144d0e2553d8e88a18156d5ce7c0}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = ("{}WSGIServer"{}, "{}WSGIRequest\+Handler"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1servers_1_1basehttp_a20476061a514988f6eb58d3751e6de98}{logger}} = logging.\+get\+Logger("{}django.\+server"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}HTTP server that implements the Python WSGI protocol (PEP 333, rev 1.21).
+
+Based on wsgiref.simple_server which is part of the standard library since 2.5.
+
+This is a simple server for use in testing or debugging Django apps. It hasn't
+been reviewed for security issues. DON'T USE IT FOR PRODUCTION USE!
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_a60a0b4333b91f72f8c755bab3ad03afe}\index{django.core.servers.basehttp@{django.core.servers.basehttp}!get\_internal\_wsgi\_application@{get\_internal\_wsgi\_application}}
+\index{get\_internal\_wsgi\_application@{get\_internal\_wsgi\_application}!django.core.servers.basehttp@{django.core.servers.basehttp}}
+\doxysubsubsection{\texorpdfstring{get\_internal\_wsgi\_application()}{get\_internal\_wsgi\_application()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1servers_1_1basehttp_a60a0b4333b91f72f8c755bab3ad03afe} 
+django.\+core.\+servers.\+basehttp.\+get\+\_\+internal\+\_\+wsgi\+\_\+application (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load and return the WSGI application as configured by the user in
+``settings.WSGI_APPLICATION``. With the default ``startproject`` layout,
+this will be the ``application`` object in ``projectname/wsgi.py``.
+
+This function, and the ``WSGI_APPLICATION`` setting itself, are only useful
+for Django's internal server (runserver); external WSGI servers should just
+be configured to point to the correct application object directly.
+
+If settings.WSGI_APPLICATION is not set (is ``None``), return
+whatever ``django.core.wsgi.get_wsgi_application`` returns.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_a7e32dc7e77685adea0f2280aadc0e6b9}\index{django.core.servers.basehttp@{django.core.servers.basehttp}!is\_broken\_pipe\_error@{is\_broken\_pipe\_error}}
+\index{is\_broken\_pipe\_error@{is\_broken\_pipe\_error}!django.core.servers.basehttp@{django.core.servers.basehttp}}
+\doxysubsubsection{\texorpdfstring{is\_broken\_pipe\_error()}{is\_broken\_pipe\_error()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1servers_1_1basehttp_a7e32dc7e77685adea0f2280aadc0e6b9} 
+django.\+core.\+servers.\+basehttp.\+is\+\_\+broken\+\_\+pipe\+\_\+error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_a0fb1ceff7d8bd99f7ece89575d18fb90}\index{django.core.servers.basehttp@{django.core.servers.basehttp}!run@{run}}
+\index{run@{run}!django.core.servers.basehttp@{django.core.servers.basehttp}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1servers_1_1basehttp_a0fb1ceff7d8bd99f7ece89575d18fb90} 
+django.\+core.\+servers.\+basehttp.\+run (\begin{DoxyParamCaption}\item[{}]{addr}{, }\item[{}]{port}{, }\item[{}]{wsgi\+\_\+handler}{, }\item[{}]{ipv6}{ = {\ttfamily False}, }\item[{}]{threading}{ = {\ttfamily False}, }\item[{}]{on\+\_\+bind}{ = {\ttfamily None}, }\item[{}]{server\+\_\+cls}{ = {\ttfamily \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_w_s_g_i_server}{WSGIServer}}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_a6c33144d0e2553d8e88a18156d5ce7c0}\index{django.core.servers.basehttp@{django.core.servers.basehttp}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!django.core.servers.basehttp@{django.core.servers.basehttp}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1servers_1_1basehttp_a6c33144d0e2553d8e88a18156d5ce7c0} 
+tuple django.\+core.\+servers.\+basehttp.\+\_\+\+\_\+all\+\_\+\+\_\+ = ("{}WSGIServer"{}, "{}WSGIRequest\+Handler"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacedjango_1_1core_1_1servers_1_1basehttp_a20476061a514988f6eb58d3751e6de98}\index{django.core.servers.basehttp@{django.core.servers.basehttp}!logger@{logger}}
+\index{logger@{logger}!django.core.servers.basehttp@{django.core.servers.basehttp}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1servers_1_1basehttp_a20476061a514988f6eb58d3751e6de98} 
+django.\+core.\+servers.\+basehttp.\+logger = logging.\+get\+Logger("{}django.\+server"{})}
+

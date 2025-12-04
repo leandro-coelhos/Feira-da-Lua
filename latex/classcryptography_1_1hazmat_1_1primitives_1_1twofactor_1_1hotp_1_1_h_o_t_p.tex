@@ -1,0 +1,95 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a4c23e8d66fb792854df7f090eb4cc61f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Buffer key, int length, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_aee421d4bbae4536b57fa43c3810291fc}{HOTPHash\+Types}} algorithm, typing.\+Any backend=None, bool enforce\+\_\+key\+\_\+length=True)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a164fe18436c299654efb8fe7dd9c2fa1}{generate}} (self, int counter)
+\item 
+None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_ab33d70f700208e600be6743a7441aba2}{verify}} (self, bytes hotp, int counter)
+\item 
+str \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a4a37a93a458f6e8a932b1d4ef1fe41af}{get\+\_\+provisioning\+\_\+uri}} (self, str account\+\_\+name, int counter, str\texorpdfstring{$\vert$}{|}None issuer)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a0106f36732b743cfec1735ba5d3e8085}{\+\_\+dynamic\+\_\+truncate}} (self, int counter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_ac3183bb960b77f0a28381e931f098bc2}{\+\_\+key}} = key
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a06982fb862e932c331dc468a3782a485}{\+\_\+length}} = length
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a855fd0e998fcee88e9ab50e0e9596c6c}{\+\_\+algorithm}} = algorithm
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a4c23e8d66fb792854df7f090eb4cc61f}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a4c23e8d66fb792854df7f090eb4cc61f} 
+ None cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Buffer}]{key}{, }\item[{int}]{length}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_aee421d4bbae4536b57fa43c3810291fc}{HOTPHash\+Types}}}]{algorithm}{, }\item[{typing.\+Any }]{backend}{ = {\ttfamily None}, }\item[{bool }]{enforce\+\_\+key\+\_\+length}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a0106f36732b743cfec1735ba5d3e8085}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!\_dynamic\_truncate@{\_dynamic\_truncate}}
+\index{\_dynamic\_truncate@{\_dynamic\_truncate}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{\_dynamic\_truncate()}{\_dynamic\_truncate()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a0106f36732b743cfec1735ba5d3e8085} 
+ int cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+\_\+dynamic\+\_\+truncate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{counter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a164fe18436c299654efb8fe7dd9c2fa1}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!generate@{generate}}
+\index{generate@{generate}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a164fe18436c299654efb8fe7dd9c2fa1} 
+ bytes cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+generate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{counter}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a4a37a93a458f6e8a932b1d4ef1fe41af}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!get\_provisioning\_uri@{get\_provisioning\_uri}}
+\index{get\_provisioning\_uri@{get\_provisioning\_uri}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{get\_provisioning\_uri()}{get\_provisioning\_uri()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a4a37a93a458f6e8a932b1d4ef1fe41af} 
+ str cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+get\+\_\+provisioning\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{account\+\_\+name}{, }\item[{int}]{counter}{, }\item[{str \texorpdfstring{$\vert$}{|} None     }]{issuer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_ab33d70f700208e600be6743a7441aba2}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!verify@{verify}}
+\index{verify@{verify}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_ab33d70f700208e600be6743a7441aba2} 
+ None cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+verify (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{hotp}{, }\item[{int}]{counter}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a855fd0e998fcee88e9ab50e0e9596c6c}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!\_algorithm@{\_algorithm}}
+\index{\_algorithm@{\_algorithm}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{\_algorithm}{\_algorithm}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a855fd0e998fcee88e9ab50e0e9596c6c} 
+cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+\_\+algorithm = algorithm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_ac3183bb960b77f0a28381e931f098bc2}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!\_key@{\_key}}
+\index{\_key@{\_key}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{\_key}{\_key}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_ac3183bb960b77f0a28381e931f098bc2} 
+cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+\_\+key = key\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a06982fb862e932c331dc468a3782a485}\index{cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}!\_length@{\_length}}
+\index{\_length@{\_length}!cryptography.hazmat.primitives.twofactor.hotp.HOTP@{cryptography.hazmat.primitives.twofactor.hotp.HOTP}}
+\doxysubsubsection{\texorpdfstring{\_length}{\_length}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1twofactor_1_1hotp_1_1_h_o_t_p_a06982fb862e932c331dc468a3782a485} 
+cryptography.\+hazmat.\+primitives.\+twofactor.\+hotp.\+HOTP.\+\_\+length = length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/twofactor/\mbox{\hyperlink{hotp_8py}{hotp.\+py}}\end{DoxyCompactItemize}

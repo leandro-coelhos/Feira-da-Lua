@@ -1,0 +1,232 @@
+\doxysection{django.\+utils.\+autoreload Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1autoreload}{}\label{namespacedjango_1_1utils_1_1autoreload}\index{django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader}{Base\+Reloader}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_stat_reloader}{Stat\+Reloader}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader}{Watchman\+Reloader}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_unavailable}{Watchman\+Unavailable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a96b283761037ccaa23d84b4376c0e5c2}{is\+\_\+django\+\_\+module}} (module)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a346176b451d9b4f8c34b7b5552744727}{is\+\_\+django\+\_\+path}} (path)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_abd0980bc571dff81d41e24f3d273b9d9}{check\+\_\+errors}} (fn)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a50063668e7b4f63b289faf234b695d7d}{raise\+\_\+last\+\_\+exception}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_acc54d70140dfdba3457a90b87dc78d35}{ensure\+\_\+echo\+\_\+on}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_ad902df69f1900bcffbe7057eadb5eb03}{iter\+\_\+all\+\_\+python\+\_\+module\+\_\+files}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_ab38522d5a301aa7dd7d691ad2919c329}{iter\+\_\+modules\+\_\+and\+\_\+files}} (modules, extra\+\_\+files)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a6d5cf42e98268f9a63c1cda00670f871}{common\+\_\+roots}} (paths)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a1bd48f2f7b63c67aebd3efb6bbe0defb}{sys\+\_\+path\+\_\+directories}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_af4cad586b4dce3940b1fdf0dd560c5f8}{get\+\_\+child\+\_\+arguments}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a61d6daf4ca0533d1313f1e06d4318beb}{trigger\+\_\+reload}} (filename)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_ab4b0c123eb64d3aedaf9d7caeb917b1e}{restart\+\_\+with\+\_\+reloader}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_ac3bf12c542f30747aeb7b63823aee899}{get\+\_\+reloader}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_afa3223f8072efb878a81b53d7214e67b}{start\+\_\+django}} (reloader, main\+\_\+func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a062feba3649c3aa1314a79dd7197233f}{run\+\_\+with\+\_\+reloader}} (main\+\_\+func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a4a8daf99e21fb0b4f1008f935ba5f001}{autoreload\+\_\+started}} = \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{Signal}}()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a027eee7f1bd7459003c3d99fc10f1ad9}{file\+\_\+changed}} = \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{Signal}}()
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_abb967e00e374e4c3f30e845b699ca197}{DJANGO\+\_\+\+AUTORELOAD\+\_\+\+ENV}} = "{}RUN\+\_\+\+MAIN"{}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a9680c92f70c174e1b7023b83370f8d35}{logger}} = logging.\+get\+Logger("{}django.\+utils.\+autoreload"{})
+\item 
+list \mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a7fab5fea83266e9eaa7256433eca1421}{\+\_\+error\+\_\+files}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_adf5a88d8f9e2ec9d55b1b8111be1307d}{\+\_\+exception}} = None
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_afb59a45456f7a9c5b8f2c13be25c2034}{termios}} = None
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1autoreload_a52786da35d89453ec912486c6ddce76f}{pywatchman}} = None
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_abd0980bc571dff81d41e24f3d273b9d9}\index{django.utils.autoreload@{django.utils.autoreload}!check\_errors@{check\_errors}}
+\index{check\_errors@{check\_errors}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{check\_errors()}{check\_errors()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_abd0980bc571dff81d41e24f3d273b9d9} 
+django.\+utils.\+autoreload.\+check\+\_\+errors (\begin{DoxyParamCaption}\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a6d5cf42e98268f9a63c1cda00670f871}\index{django.utils.autoreload@{django.utils.autoreload}!common\_roots@{common\_roots}}
+\index{common\_roots@{common\_roots}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{common\_roots()}{common\_roots()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a6d5cf42e98268f9a63c1cda00670f871} 
+django.\+utils.\+autoreload.\+common\+\_\+roots (\begin{DoxyParamCaption}\item[{}]{paths}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple of common roots that are shared between the given paths.
+File system watchers operate on directories and aren't cheap to create.
+Try to find the minimum set of directories to watch that encompass all of
+the files that need to be watched.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_acc54d70140dfdba3457a90b87dc78d35}\index{django.utils.autoreload@{django.utils.autoreload}!ensure\_echo\_on@{ensure\_echo\_on}}
+\index{ensure\_echo\_on@{ensure\_echo\_on}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{ensure\_echo\_on()}{ensure\_echo\_on()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_acc54d70140dfdba3457a90b87dc78d35} 
+django.\+utils.\+autoreload.\+ensure\+\_\+echo\+\_\+on (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure that echo mode is enabled. Some tools such as PDB disable
+it which causes usability issues after reload.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_af4cad586b4dce3940b1fdf0dd560c5f8}\index{django.utils.autoreload@{django.utils.autoreload}!get\_child\_arguments@{get\_child\_arguments}}
+\index{get\_child\_arguments@{get\_child\_arguments}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{get\_child\_arguments()}{get\_child\_arguments()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_af4cad586b4dce3940b1fdf0dd560c5f8} 
+django.\+utils.\+autoreload.\+get\+\_\+child\+\_\+arguments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the executable. This contains a workaround for Windows if the
+executable is reported to not have the .exe extension which can cause bugs
+on reloading.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_ac3bf12c542f30747aeb7b63823aee899}\index{django.utils.autoreload@{django.utils.autoreload}!get\_reloader@{get\_reloader}}
+\index{get\_reloader@{get\_reloader}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{get\_reloader()}{get\_reloader()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_ac3bf12c542f30747aeb7b63823aee899} 
+django.\+utils.\+autoreload.\+get\+\_\+reloader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the most suitable reloader for this environment.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_a96b283761037ccaa23d84b4376c0e5c2}\index{django.utils.autoreload@{django.utils.autoreload}!is\_django\_module@{is\_django\_module}}
+\index{is\_django\_module@{is\_django\_module}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{is\_django\_module()}{is\_django\_module()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a96b283761037ccaa23d84b4376c0e5c2} 
+django.\+utils.\+autoreload.\+is\+\_\+django\+\_\+module (\begin{DoxyParamCaption}\item[{}]{module}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the given module is nested under Django.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_a346176b451d9b4f8c34b7b5552744727}\index{django.utils.autoreload@{django.utils.autoreload}!is\_django\_path@{is\_django\_path}}
+\index{is\_django\_path@{is\_django\_path}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{is\_django\_path()}{is\_django\_path()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a346176b451d9b4f8c34b7b5552744727} 
+django.\+utils.\+autoreload.\+is\+\_\+django\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the given file path is nested under Django.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_ad902df69f1900bcffbe7057eadb5eb03}\index{django.utils.autoreload@{django.utils.autoreload}!iter\_all\_python\_module\_files@{iter\_all\_python\_module\_files}}
+\index{iter\_all\_python\_module\_files@{iter\_all\_python\_module\_files}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{iter\_all\_python\_module\_files()}{iter\_all\_python\_module\_files()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_ad902df69f1900bcffbe7057eadb5eb03} 
+django.\+utils.\+autoreload.\+iter\+\_\+all\+\_\+python\+\_\+module\+\_\+files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_ab38522d5a301aa7dd7d691ad2919c329}\index{django.utils.autoreload@{django.utils.autoreload}!iter\_modules\_and\_files@{iter\_modules\_and\_files}}
+\index{iter\_modules\_and\_files@{iter\_modules\_and\_files}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{iter\_modules\_and\_files()}{iter\_modules\_and\_files()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_ab38522d5a301aa7dd7d691ad2919c329} 
+django.\+utils.\+autoreload.\+iter\+\_\+modules\+\_\+and\+\_\+files (\begin{DoxyParamCaption}\item[{}]{modules}{, }\item[{}]{extra\+\_\+files}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate through all modules needed to be watched.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_a50063668e7b4f63b289faf234b695d7d}\index{django.utils.autoreload@{django.utils.autoreload}!raise\_last\_exception@{raise\_last\_exception}}
+\index{raise\_last\_exception@{raise\_last\_exception}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{raise\_last\_exception()}{raise\_last\_exception()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a50063668e7b4f63b289faf234b695d7d} 
+django.\+utils.\+autoreload.\+raise\+\_\+last\+\_\+exception (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_ab4b0c123eb64d3aedaf9d7caeb917b1e}\index{django.utils.autoreload@{django.utils.autoreload}!restart\_with\_reloader@{restart\_with\_reloader}}
+\index{restart\_with\_reloader@{restart\_with\_reloader}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{restart\_with\_reloader()}{restart\_with\_reloader()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_ab4b0c123eb64d3aedaf9d7caeb917b1e} 
+django.\+utils.\+autoreload.\+restart\+\_\+with\+\_\+reloader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a062feba3649c3aa1314a79dd7197233f}\index{django.utils.autoreload@{django.utils.autoreload}!run\_with\_reloader@{run\_with\_reloader}}
+\index{run\_with\_reloader@{run\_with\_reloader}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{run\_with\_reloader()}{run\_with\_reloader()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a062feba3649c3aa1314a79dd7197233f} 
+django.\+utils.\+autoreload.\+run\+\_\+with\+\_\+reloader (\begin{DoxyParamCaption}\item[{}]{main\+\_\+func}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_afa3223f8072efb878a81b53d7214e67b}\index{django.utils.autoreload@{django.utils.autoreload}!start\_django@{start\_django}}
+\index{start\_django@{start\_django}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{start\_django()}{start\_django()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_afa3223f8072efb878a81b53d7214e67b} 
+django.\+utils.\+autoreload.\+start\+\_\+django (\begin{DoxyParamCaption}\item[{}]{reloader}{, }\item[{}]{main\+\_\+func}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a1bd48f2f7b63c67aebd3efb6bbe0defb}\index{django.utils.autoreload@{django.utils.autoreload}!sys\_path\_directories@{sys\_path\_directories}}
+\index{sys\_path\_directories@{sys\_path\_directories}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{sys\_path\_directories()}{sys\_path\_directories()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a1bd48f2f7b63c67aebd3efb6bbe0defb} 
+django.\+utils.\+autoreload.\+sys\+\_\+path\+\_\+directories (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield absolute directories from sys.path, ignoring entries that don't
+exist.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1autoreload_a61d6daf4ca0533d1313f1e06d4318beb}\index{django.utils.autoreload@{django.utils.autoreload}!trigger\_reload@{trigger\_reload}}
+\index{trigger\_reload@{trigger\_reload}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{trigger\_reload()}{trigger\_reload()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a61d6daf4ca0533d1313f1e06d4318beb} 
+django.\+utils.\+autoreload.\+trigger\+\_\+reload (\begin{DoxyParamCaption}\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a7fab5fea83266e9eaa7256433eca1421}\index{django.utils.autoreload@{django.utils.autoreload}!\_error\_files@{\_error\_files}}
+\index{\_error\_files@{\_error\_files}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{\_error\_files}{\_error\_files}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a7fab5fea83266e9eaa7256433eca1421} 
+list django.\+utils.\+autoreload.\+\_\+error\+\_\+files = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_adf5a88d8f9e2ec9d55b1b8111be1307d}\index{django.utils.autoreload@{django.utils.autoreload}!\_exception@{\_exception}}
+\index{\_exception@{\_exception}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{\_exception}{\_exception}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_adf5a88d8f9e2ec9d55b1b8111be1307d} 
+django.\+utils.\+autoreload.\+\_\+exception = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a4a8daf99e21fb0b4f1008f935ba5f001}\index{django.utils.autoreload@{django.utils.autoreload}!autoreload\_started@{autoreload\_started}}
+\index{autoreload\_started@{autoreload\_started}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{autoreload\_started}{autoreload\_started}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a4a8daf99e21fb0b4f1008f935ba5f001} 
+django.\+utils.\+autoreload.\+autoreload\+\_\+started = \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{Signal}}()}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_abb967e00e374e4c3f30e845b699ca197}\index{django.utils.autoreload@{django.utils.autoreload}!DJANGO\_AUTORELOAD\_ENV@{DJANGO\_AUTORELOAD\_ENV}}
+\index{DJANGO\_AUTORELOAD\_ENV@{DJANGO\_AUTORELOAD\_ENV}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{DJANGO\_AUTORELOAD\_ENV}{DJANGO\_AUTORELOAD\_ENV}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_abb967e00e374e4c3f30e845b699ca197} 
+str django.\+utils.\+autoreload.\+DJANGO\+\_\+\+AUTORELOAD\+\_\+\+ENV = "{}RUN\+\_\+\+MAIN"{}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a027eee7f1bd7459003c3d99fc10f1ad9}\index{django.utils.autoreload@{django.utils.autoreload}!file\_changed@{file\_changed}}
+\index{file\_changed@{file\_changed}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{file\_changed}{file\_changed}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a027eee7f1bd7459003c3d99fc10f1ad9} 
+django.\+utils.\+autoreload.\+file\+\_\+changed = \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{Signal}}()}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a9680c92f70c174e1b7023b83370f8d35}\index{django.utils.autoreload@{django.utils.autoreload}!logger@{logger}}
+\index{logger@{logger}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a9680c92f70c174e1b7023b83370f8d35} 
+django.\+utils.\+autoreload.\+logger = logging.\+get\+Logger("{}django.\+utils.\+autoreload"{})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_a52786da35d89453ec912486c6ddce76f}\index{django.utils.autoreload@{django.utils.autoreload}!pywatchman@{pywatchman}}
+\index{pywatchman@{pywatchman}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{pywatchman}{pywatchman}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_a52786da35d89453ec912486c6ddce76f} 
+django.\+utils.\+autoreload.\+pywatchman = None}
+
+\Hypertarget{namespacedjango_1_1utils_1_1autoreload_afb59a45456f7a9c5b8f2c13be25c2034}\index{django.utils.autoreload@{django.utils.autoreload}!termios@{termios}}
+\index{termios@{termios}!django.utils.autoreload@{django.utils.autoreload}}
+\doxysubsubsection{\texorpdfstring{termios}{termios}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1autoreload_afb59a45456f7a9c5b8f2c13be25c2034} 
+django.\+utils.\+autoreload.\+termios = None}
+

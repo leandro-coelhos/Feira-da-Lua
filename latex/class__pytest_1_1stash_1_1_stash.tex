@@ -1,0 +1,168 @@
+\doxysection{\+\_\+pytest.\+stash.\+Stash Class Reference}
+\hypertarget{class__pytest_1_1stash_1_1_stash}{}\label{class__pytest_1_1stash_1_1_stash}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_adf0b12c57d16c237faba7e72f81c922a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_a3e0952c0bfcff848c0efb96b12627463}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]} key, \mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} value)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_a6a23eb28531e5e4d8b48f041d96e54bd}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]} key)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespace__pytest_1_1stash_afcf6e97e50a0943856e4774fc952cc7b}{D}} \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_a7fec5e28d31d41b05838c98ac277c8c5}{get}} (self, \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]} key, \mbox{\hyperlink{namespace__pytest_1_1stash_afcf6e97e50a0943856e4774fc952cc7b}{D}} default)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_ae6f9becdd9cc8a6470facfbdab3c266c}{setdefault}} (self, \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]} key, \mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} default)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_afa6d69b129e22ce7d67765a376050528}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]} key)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_aafb4add2b74aee2aa559a4cf66c68bc5}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]} key)
+\item 
+int \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_a9764f88681e4ca358e8e9efa140db520}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_ad8ed549dd8e2d480e086a6215b0e5fd9}{\+\_\+storage}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_adf6df8925ef116a2db6863abe5bf560d}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+storage"{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}``Stash`` is a type-safe heterogeneous mutable mapping that
+allows keys and value types to be defined separately from
+where it (the ``Stash``) is created.
+
+Usually you will be given an object which has a ``Stash``, for example
+:class:`~pytest.Config` or a :class:`~_pytest.nodes.Node`:
+
+.. code-block:: python
+
+    stash: Stash = some_object.stash
+
+If a module or plugin wants to store data in this ``Stash``, it creates
+:class:`StashKey`\s for its keys (at the module level):
+
+.. code-block:: python
+
+    # At the top-level of the module
+    some_str_key = StashKey[str]()
+    some_bool_key = StashKey[bool]()
+
+To store information:
+
+.. code-block:: python
+
+    # Value type must match the key.
+    stash[some_str_key] = "value"
+    stash[some_bool_key] = True
+
+To retrieve the information:
+
+.. code-block:: python
+
+    # The static type of some_str is str.
+    some_str = stash[some_str_key]
+    # The static type of some_bool is bool.
+    some_bool = stash[some_bool_key]
+
+.. versionadded:: 7.0
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1stash_1_1_stash_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1stash_1_1_stash_adf0b12c57d16c237faba7e72f81c922a}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_adf0b12c57d16c237faba7e72f81c922a} 
+ None \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1stash_1_1_stash_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1stash_1_1_stash_aafb4add2b74aee2aa559a4cf66c68bc5}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_aafb4add2b74aee2aa559a4cf66c68bc5} 
+ bool \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]}}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether key was set.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1stash_1_1_stash_afa6d69b129e22ce7d67765a376050528}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_afa6d69b129e22ce7d67765a376050528} 
+ None \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]}}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete the value for key.
+
+Raises ``KeyError`` if the key wasn't set before.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1stash_1_1_stash_a6a23eb28531e5e4d8b48f041d96e54bd}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_a6a23eb28531e5e4d8b48f041d96e54bd} 
+ \mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]}}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the value for key.
+
+Raises ``KeyError`` if the key wasn't set before.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1stash_1_1_stash_a9764f88681e4ca358e8e9efa140db520}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_a9764f88681e4ca358e8e9efa140db520} 
+ int \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return how many items exist in the stash.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1stash_1_1_stash_a3e0952c0bfcff848c0efb96b12627463}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_a3e0952c0bfcff848c0efb96b12627463} 
+ None \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]}}]{key}{, }\item[{\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set a value for key.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1stash_1_1_stash_a7fec5e28d31d41b05838c98ac277c8c5}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!get@{get}}
+\index{get@{get}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_a7fec5e28d31d41b05838c98ac277c8c5} 
+ \mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespace__pytest_1_1stash_afcf6e97e50a0943856e4774fc952cc7b}{D}} \+\_\+pytest.\+stash.\+Stash.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]}}]{key}{, }\item[{\mbox{\hyperlink{namespace__pytest_1_1stash_afcf6e97e50a0943856e4774fc952cc7b}{D}}}]{default}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the value for key, or return default if the key wasn't set
+before.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1stash_1_1_stash_ae6f9becdd9cc8a6470facfbdab3c266c}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{setdefault()}{setdefault()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_ae6f9becdd9cc8a6470facfbdab3c266c} 
+ \mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}} \+\_\+pytest.\+stash.\+Stash.\+setdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1stash_1_1_stash_key}{Stash\+Key}}\mbox{[}\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}\mbox{]}}]{key}{, }\item[{\mbox{\hyperlink{namespace__pytest_1_1stash_aff7185cc24485f2efb53a816a60d3b4c}{T}}}]{default}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of key if already set, otherwise set the value
+of key to default and return default.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1stash_1_1_stash_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1stash_1_1_stash_adf6df8925ef116a2db6863abe5bf560d}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_adf6df8925ef116a2db6863abe5bf560d} 
+tuple \+\_\+pytest.\+stash.\+Stash.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+storage"{},)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1stash_1_1_stash_ad8ed549dd8e2d480e086a6215b0e5fd9}\index{\_pytest.stash.Stash@{\_pytest.stash.Stash}!\_storage@{\_storage}}
+\index{\_storage@{\_storage}!\_pytest.stash.Stash@{\_pytest.stash.Stash}}
+\doxysubsubsection{\texorpdfstring{\_storage}{\_storage}}
+{\footnotesize\ttfamily \label{class__pytest_1_1stash_1_1_stash_ad8ed549dd8e2d480e086a6215b0e5fd9} 
+\+\_\+pytest.\+stash.\+Stash.\+\_\+storage = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{stash_8py}{stash.\+py}}\end{DoxyCompactItemize}

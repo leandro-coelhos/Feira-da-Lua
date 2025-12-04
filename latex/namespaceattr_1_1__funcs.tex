@@ -1,0 +1,276 @@
+\doxysection{attr.\+\_\+funcs Namespace Reference}
+\hypertarget{namespaceattr_1_1__funcs}{}\label{namespaceattr_1_1__funcs}\index{attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_a9ea4558a56652f9f52210b5b304cdb69}{asdict}} (inst, recurse=True, filter=None, dict\+\_\+factory=dict, retain\+\_\+collection\+\_\+types=False, value\+\_\+serializer=None)
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_ae751cfcf1cd40edc983e226c2442b142}{\+\_\+asdict\+\_\+anything}} (val, is\+\_\+key, filter, dict\+\_\+factory, retain\+\_\+collection\+\_\+types, value\+\_\+serializer)
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_aa56e821cedf493375f974ff06750158f}{astuple}} (inst, recurse=True, filter=None, tuple\+\_\+factory=tuple, retain\+\_\+collection\+\_\+types=False)
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_acb41daebc62d8bfd9197c816a81b1cce}{has}} (cls)
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_af582f4beeebbbc97570a5768fa894483}{assoc}} (inst, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}changes)
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_aa25d35711ece45152c950373bb03e9cb}{resolve\+\_\+types}} (cls, globalns=None, localns=None, attribs=None, include\+\_\+extras=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_a1a32def4c99e841ddec97fc1cfc1246d}{\+\_\+\+ATOMIC\+\_\+\+TYPES}}
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_ac6a492efb7e26ca6a5892be6270b0fa8}{\+\_\+\+\_\+attrs\+\_\+attrs\+\_\+\+\_\+}} = generic\+\_\+attrs
+\item 
+\mbox{\hyperlink{namespaceattr_1_1__funcs_aaf7ced476ccc42749cee85a9db9122ea}{\+\_\+\+\_\+attrs\+\_\+types\+\_\+resolved\+\_\+\+\_\+}} = cls
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceattr_1_1__funcs_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceattr_1_1__funcs_ae751cfcf1cd40edc983e226c2442b142}\index{attr.\_funcs@{attr.\_funcs}!\_asdict\_anything@{\_asdict\_anything}}
+\index{\_asdict\_anything@{\_asdict\_anything}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{\_asdict\_anything()}{\_asdict\_anything()}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_ae751cfcf1cd40edc983e226c2442b142} 
+attr.\+\_\+funcs.\+\_\+asdict\+\_\+anything (\begin{DoxyParamCaption}\item[{}]{val}{, }\item[{}]{is\+\_\+key}{, }\item[{}]{filter}{, }\item[{}]{dict\+\_\+factory}{, }\item[{}]{retain\+\_\+collection\+\_\+types}{, }\item[{}]{value\+\_\+serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}``asdict`` only works on attrs instances, this works on anything.
+\end{DoxyVerb}
+ \Hypertarget{namespaceattr_1_1__funcs_a9ea4558a56652f9f52210b5b304cdb69}\index{attr.\_funcs@{attr.\_funcs}!asdict@{asdict}}
+\index{asdict@{asdict}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{asdict()}{asdict()}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_a9ea4558a56652f9f52210b5b304cdb69} 
+attr.\+\_\+funcs.\+asdict (\begin{DoxyParamCaption}\item[{}]{inst}{, }\item[{}]{recurse}{ = {\ttfamily True}, }\item[{}]{filter}{ = {\ttfamily None}, }\item[{}]{dict\+\_\+factory}{ = {\ttfamily dict}, }\item[{}]{retain\+\_\+collection\+\_\+types}{ = {\ttfamily False}, }\item[{}]{value\+\_\+serializer}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the *attrs* attribute values of *inst* as a dict.
+
+Optionally recurse into other *attrs*-decorated classes.
+
+Args:
+    inst: Instance of an *attrs*-decorated class.
+
+    recurse (bool): Recurse into classes that are also *attrs*-decorated.
+
+    filter (~typing.Callable):
+        A callable whose return code determines whether an attribute or
+        element is included (`True`) or dropped (`False`).  Is called with
+        the `attrs.Attribute` as the first argument and the value as the
+        second argument.
+
+    dict_factory (~typing.Callable):
+        A callable to produce dictionaries from.  For example, to produce
+        ordered dictionaries instead of normal Python dictionaries, pass in
+        ``collections.OrderedDict``.
+
+    retain_collection_types (bool):
+        Do not convert to `list` when encountering an attribute whose type
+        is `tuple` or `set`.  Only meaningful if *recurse* is `True`.
+
+    value_serializer (typing.Callable | None):
+        A hook that is called for every attribute or dict key/value.  It
+        receives the current instance, field and value and must return the
+        (updated) value.  The hook is run *after* the optional *filter* has
+        been applied.
+
+Returns:
+    Return type of *dict_factory*.
+
+Raises:
+    attrs.exceptions.NotAnAttrsClassError:
+        If *cls* is not an *attrs* class.
+
+..  versionadded:: 16.0.0 *dict_factory*
+..  versionadded:: 16.1.0 *retain_collection_types*
+..  versionadded:: 20.3.0 *value_serializer*
+..  versionadded:: 21.3.0
+    If a dict has a collection for a key, it is serialized as a tuple.
+\end{DoxyVerb}
+ \Hypertarget{namespaceattr_1_1__funcs_af582f4beeebbbc97570a5768fa894483}\index{attr.\_funcs@{attr.\_funcs}!assoc@{assoc}}
+\index{assoc@{assoc}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{assoc()}{assoc()}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_af582f4beeebbbc97570a5768fa894483} 
+attr.\+\_\+funcs.\+assoc (\begin{DoxyParamCaption}\item[{}]{inst}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{changes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy *inst* and apply *changes*.
+
+This is different from `evolve` that applies the changes to the arguments
+that create the new instance.
+
+`evolve`'s behavior is preferable, but there are `edge cases`_ where it
+doesn't work. Therefore `assoc` is deprecated, but will not be removed.
+
+.. _`edge cases`: https://github.com/python-attrs/attrs/issues/251
+
+Args:
+    inst: Instance of a class with *attrs* attributes.
+
+    changes: Keyword changes in the new copy.
+
+Returns:
+    A copy of inst with *changes* incorporated.
+
+Raises:
+    attrs.exceptions.AttrsAttributeNotFoundError:
+        If *attr_name* couldn't be found on *cls*.
+
+    attrs.exceptions.NotAnAttrsClassError:
+        If *cls* is not an *attrs* class.
+
+..  deprecated:: 17.1.0
+    Use `attrs.evolve` instead if you can. This function will not be
+    removed du to the slightly different approach compared to
+    `attrs.evolve`, though.
+\end{DoxyVerb}
+ \Hypertarget{namespaceattr_1_1__funcs_aa56e821cedf493375f974ff06750158f}\index{attr.\_funcs@{attr.\_funcs}!astuple@{astuple}}
+\index{astuple@{astuple}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{astuple()}{astuple()}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_aa56e821cedf493375f974ff06750158f} 
+attr.\+\_\+funcs.\+astuple (\begin{DoxyParamCaption}\item[{}]{inst}{, }\item[{}]{recurse}{ = {\ttfamily True}, }\item[{}]{filter}{ = {\ttfamily None}, }\item[{}]{tuple\+\_\+factory}{ = {\ttfamily tuple}, }\item[{}]{retain\+\_\+collection\+\_\+types}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the *attrs* attribute values of *inst* as a tuple.
+
+Optionally recurse into other *attrs*-decorated classes.
+
+Args:
+    inst: Instance of an *attrs*-decorated class.
+
+    recurse (bool):
+        Recurse into classes that are also *attrs*-decorated.
+
+    filter (~typing.Callable):
+        A callable whose return code determines whether an attribute or
+        element is included (`True`) or dropped (`False`).  Is called with
+        the `attrs.Attribute` as the first argument and the value as the
+        second argument.
+
+    tuple_factory (~typing.Callable):
+        A callable to produce tuples from. For example, to produce lists
+        instead of tuples.
+
+    retain_collection_types (bool):
+        Do not convert to `list` or `dict` when encountering an attribute
+        which type is `tuple`, `dict` or `set`. Only meaningful if
+        *recurse* is `True`.
+
+Returns:
+    Return type of *tuple_factory*
+
+Raises:
+    attrs.exceptions.NotAnAttrsClassError:
+        If *cls* is not an *attrs* class.
+
+..  versionadded:: 16.2.0
+\end{DoxyVerb}
+ \Hypertarget{namespaceattr_1_1__funcs_acb41daebc62d8bfd9197c816a81b1cce}\index{attr.\_funcs@{attr.\_funcs}!has@{has}}
+\index{has@{has}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_acb41daebc62d8bfd9197c816a81b1cce} 
+attr.\+\_\+funcs.\+has (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether *cls* is a class with *attrs* attributes.
+
+Args:
+    cls (type): Class to introspect.
+
+Raises:
+    TypeError: If *cls* is not a class.
+
+Returns:
+    bool:
+\end{DoxyVerb}
+ \Hypertarget{namespaceattr_1_1__funcs_aa25d35711ece45152c950373bb03e9cb}\index{attr.\_funcs@{attr.\_funcs}!resolve\_types@{resolve\_types}}
+\index{resolve\_types@{resolve\_types}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{resolve\_types()}{resolve\_types()}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_aa25d35711ece45152c950373bb03e9cb} 
+attr.\+\_\+funcs.\+resolve\+\_\+types (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{globalns}{ = {\ttfamily None}, }\item[{}]{localns}{ = {\ttfamily None}, }\item[{}]{attribs}{ = {\ttfamily None}, }\item[{}]{include\+\_\+extras}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve any strings and forward annotations in type annotations.
+
+This is only required if you need concrete types in :class:`Attribute`'s
+*type* field. In other words, you don't need to resolve your types if you
+only use them for static type checking.
+
+With no arguments, names will be looked up in the module in which the class
+was created. If this is not what you want, for example, if the name only
+exists inside a method, you may pass *globalns* or *localns* to specify
+other dictionaries in which to look up these names. See the docs of
+`typing.get_type_hints` for more details.
+
+Args:
+    cls (type): Class to resolve.
+
+    globalns (dict | None): Dictionary containing global variables.
+
+    localns (dict | None): Dictionary containing local variables.
+
+    attribs (list | None):
+        List of attribs for the given class. This is necessary when calling
+        from inside a ``field_transformer`` since *cls* is not an *attrs*
+        class yet.
+
+    include_extras (bool):
+        Resolve more accurately, if possible. Pass ``include_extras`` to
+        ``typing.get_hints``, if supported by the typing module. On
+        supported Python versions (3.9+), this resolves the types more
+        accurately.
+
+Raises:
+    TypeError: If *cls* is not a class.
+
+    attrs.exceptions.NotAnAttrsClassError:
+        If *cls* is not an *attrs* class and you didn't pass any attribs.
+
+    NameError: If types cannot be resolved because of missing variables.
+
+Returns:
+    *cls* so you can use this function also as a class decorator. Please
+    note that you have to apply it **after** `attrs.define`. That means the
+    decorator has to come in the line **before** `attrs.define`.
+
+..  versionadded:: 20.1.0
+..  versionadded:: 21.1.0 *attribs*
+..  versionadded:: 23.1.0 *include_extras*
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceattr_1_1__funcs_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceattr_1_1__funcs_ac6a492efb7e26ca6a5892be6270b0fa8}\index{attr.\_funcs@{attr.\_funcs}!\_\_attrs\_attrs\_\_@{\_\_attrs\_attrs\_\_}}
+\index{\_\_attrs\_attrs\_\_@{\_\_attrs\_attrs\_\_}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{\_\_attrs\_attrs\_\_}{\_\_attrs\_attrs\_\_}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_ac6a492efb7e26ca6a5892be6270b0fa8} 
+attr.\+\_\+funcs.\+\_\+\+\_\+attrs\+\_\+attrs\+\_\+\+\_\+ = generic\+\_\+attrs\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceattr_1_1__funcs_aaf7ced476ccc42749cee85a9db9122ea}\index{attr.\_funcs@{attr.\_funcs}!\_\_attrs\_types\_resolved\_\_@{\_\_attrs\_types\_resolved\_\_}}
+\index{\_\_attrs\_types\_resolved\_\_@{\_\_attrs\_types\_resolved\_\_}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{\_\_attrs\_types\_resolved\_\_}{\_\_attrs\_types\_resolved\_\_}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_aaf7ced476ccc42749cee85a9db9122ea} 
+attr.\+\_\+funcs.\+\_\+\+\_\+attrs\+\_\+types\+\_\+resolved\+\_\+\+\_\+ = cls\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceattr_1_1__funcs_a1a32def4c99e841ddec97fc1cfc1246d}\index{attr.\_funcs@{attr.\_funcs}!\_ATOMIC\_TYPES@{\_ATOMIC\_TYPES}}
+\index{\_ATOMIC\_TYPES@{\_ATOMIC\_TYPES}!attr.\_funcs@{attr.\_funcs}}
+\doxysubsubsection{\texorpdfstring{\_ATOMIC\_TYPES}{\_ATOMIC\_TYPES}}
+{\footnotesize\ttfamily \label{namespaceattr_1_1__funcs_a1a32def4c99e841ddec97fc1cfc1246d} 
+attr.\+\_\+funcs.\+\_\+\+ATOMIC\+\_\+\+TYPES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ frozenset(}
+\DoxyCodeLine{00002\ \ \ \ \ \{}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ type(\textcolor{keywordtype}{None}),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ bool,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ int,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ float,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ str,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ complex,}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ bytes,}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ type(...),}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ type,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ range,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ property,}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ )}
+
+\end{DoxyCode}

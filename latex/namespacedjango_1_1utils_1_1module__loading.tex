@@ -1,0 +1,68 @@
+\doxysection{django.\+utils.\+module\+\_\+loading Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1module__loading}{}\label{namespacedjango_1_1utils_1_1module__loading}\index{django.utils.module\_loading@{django.utils.module\_loading}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1module__loading_a3c2b6dd360f0634f7c2f902ea129df9d}{cached\+\_\+import}} (module\+\_\+path, class\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1module__loading_a5732554dfb4d45bf0f2135bb2eab6bbc}{import\+\_\+string}} (dotted\+\_\+path)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1module__loading_a7c88302402e2d4684992f17e0b90cc5c}{autodiscover\+\_\+modules}} (\texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1module__loading_aebfdc75a8709b7dcfb3c89402c359640}{module\+\_\+has\+\_\+submodule}} (package, module\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1module__loading_a07d74cfe4fd7bf764c3d0a5eb8a41f0e}{module\+\_\+dir}} (module)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1module__loading_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1module__loading_a7c88302402e2d4684992f17e0b90cc5c}\index{django.utils.module\_loading@{django.utils.module\_loading}!autodiscover\_modules@{autodiscover\_modules}}
+\index{autodiscover\_modules@{autodiscover\_modules}!django.utils.module\_loading@{django.utils.module\_loading}}
+\doxysubsubsection{\texorpdfstring{autodiscover\_modules()}{autodiscover\_modules()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1module__loading_a7c88302402e2d4684992f17e0b90cc5c} 
+django.\+utils.\+module\+\_\+loading.\+autodiscover\+\_\+modules (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Auto-discover INSTALLED_APPS modules and fail silently when
+not present. This forces an import on them to register any admin bits they
+may want.
+
+You may provide a register_to keyword parameter as a way to access a
+registry. This register_to object must have a _registry instance variable
+to access it.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1module__loading_a3c2b6dd360f0634f7c2f902ea129df9d}\index{django.utils.module\_loading@{django.utils.module\_loading}!cached\_import@{cached\_import}}
+\index{cached\_import@{cached\_import}!django.utils.module\_loading@{django.utils.module\_loading}}
+\doxysubsubsection{\texorpdfstring{cached\_import()}{cached\_import()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1module__loading_a3c2b6dd360f0634f7c2f902ea129df9d} 
+django.\+utils.\+module\+\_\+loading.\+cached\+\_\+import (\begin{DoxyParamCaption}\item[{}]{module\+\_\+path}{, }\item[{}]{class\+\_\+name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1module__loading_a5732554dfb4d45bf0f2135bb2eab6bbc}\index{django.utils.module\_loading@{django.utils.module\_loading}!import\_string@{import\_string}}
+\index{import\_string@{import\_string}!django.utils.module\_loading@{django.utils.module\_loading}}
+\doxysubsubsection{\texorpdfstring{import\_string()}{import\_string()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1module__loading_a5732554dfb4d45bf0f2135bb2eab6bbc} 
+django.\+utils.\+module\+\_\+loading.\+import\+\_\+string (\begin{DoxyParamCaption}\item[{}]{dotted\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Import a dotted module path and return the attribute/class designated by the
+last name in the path. Raise ImportError if the import failed.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1module__loading_a07d74cfe4fd7bf764c3d0a5eb8a41f0e}\index{django.utils.module\_loading@{django.utils.module\_loading}!module\_dir@{module\_dir}}
+\index{module\_dir@{module\_dir}!django.utils.module\_loading@{django.utils.module\_loading}}
+\doxysubsubsection{\texorpdfstring{module\_dir()}{module\_dir()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1module__loading_a07d74cfe4fd7bf764c3d0a5eb8a41f0e} 
+django.\+utils.\+module\+\_\+loading.\+module\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{module}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find the name of the directory that contains a module, if possible.
+
+Raise ValueError otherwise, e.g. for namespace packages that are split
+over several directories.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1module__loading_aebfdc75a8709b7dcfb3c89402c359640}\index{django.utils.module\_loading@{django.utils.module\_loading}!module\_has\_submodule@{module\_has\_submodule}}
+\index{module\_has\_submodule@{module\_has\_submodule}!django.utils.module\_loading@{django.utils.module\_loading}}
+\doxysubsubsection{\texorpdfstring{module\_has\_submodule()}{module\_has\_submodule()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1module__loading_aebfdc75a8709b7dcfb3c89402c359640} 
+django.\+utils.\+module\+\_\+loading.\+module\+\_\+has\+\_\+submodule (\begin{DoxyParamCaption}\item[{}]{package}{, }\item[{}]{module\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See if 'module' is in 'package'.\end{DoxyVerb}
+ 

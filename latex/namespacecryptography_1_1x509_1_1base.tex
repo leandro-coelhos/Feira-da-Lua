@@ -1,0 +1,190 @@
+\doxysection{cryptography.\+x509.\+base Namespace Reference}
+\hypertarget{namespacecryptography_1_1x509_1_1base}{}\label{namespacecryptography_1_1x509_1_1base}\index{cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1___raw_revoked_certificate}{\+\_\+\+Raw\+Revoked\+Certificate}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_attribute}{Attribute}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_attribute_not_found}{Attribute\+Not\+Found}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_attributes}{Attributes}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_certificate_builder}{Certificate\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_certificate_revocation_list_builder}{Certificate\+Revocation\+List\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_certificate_signing_request_builder}{Certificate\+Signing\+Request\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_invalid_version}{Invalid\+Version}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_revoked_certificate}{Revoked\+Certificate}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_revoked_certificate_builder}{Revoked\+Certificate\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1base_1_1_version}{Version}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_ae23a8d36e5d93ee8d6f0a4476e082136}{\+\_\+reject\+\_\+duplicate\+\_\+extension}} (\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension}{Extension}}\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type}{Extension\+Type}}\mbox{]} extension, list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension}{Extension}}\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type}{Extension\+Type}}\mbox{]}\mbox{]} extensions)
+\item 
+None \mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a991c0837e4a94d2cb85792cd27fce82a}{\+\_\+reject\+\_\+duplicate\+\_\+attribute}} (Object\+Identifier oid, list\mbox{[}tuple\mbox{[}Object\+Identifier, bytes, int\texorpdfstring{$\vert$}{|}None\mbox{]}\mbox{]} attributes)
+\item 
+datetime.\+datetime \mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_aef2eda29017560f7772318f0cd190c68}{\+\_\+convert\+\_\+to\+\_\+naive\+\_\+utc\+\_\+time}} (datetime.\+datetime time)
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a422c2b64cd3e3471a73a4fabc11a9c24}{random\+\_\+serial\+\_\+number}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a741f08c1c768b360de078c8da8603369}{\+\_\+\+EARLIEST\+\_\+\+UTC\+\_\+\+TIME}} = datetime.\+datetime(1950, 1, 1)
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_ae1833cd13e45b004a86c10f221e60629}{\+\_\+\+Allowed\+Hash\+Types}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a248257372d5a2aad0b8aef2a14c99911}{Certificate}} = rust\+\_\+x509.\+Certificate
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_ac6e8a1659051bffb266bc5b94ab7e57e}{Certificate\+Revocation\+List}} = rust\+\_\+x509.\+Certificate\+Revocation\+List
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a133366280fb4cc31e1f295300ecac978}{Certificate\+Signing\+Request}} = rust\+\_\+x509.\+Certificate\+Signing\+Request
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_ab5cd0f7f2252a07c9a45872b835aa557}{load\+\_\+pem\+\_\+x509\+\_\+certificate}} = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+certificate
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a3da071f717355d2e556b70f982ea3db6}{load\+\_\+der\+\_\+x509\+\_\+certificate}} = rust\+\_\+x509.\+load\+\_\+der\+\_\+x509\+\_\+certificate
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_ac2a7a48b178d122a64398a969e1b42e2}{load\+\_\+pem\+\_\+x509\+\_\+certificates}} = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+certificates
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_adb59115ce5c8c2e4454e6d72e82eb123}{load\+\_\+pem\+\_\+x509\+\_\+csr}} = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+csr
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_ab56d3e5c5fae466fd42c9edce7868ab2}{load\+\_\+der\+\_\+x509\+\_\+csr}} = rust\+\_\+x509.\+load\+\_\+der\+\_\+x509\+\_\+csr
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_a0f7fd8ec7ac9ed3ec5fcd9f8a7a8c951}{load\+\_\+pem\+\_\+x509\+\_\+crl}} = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+crl
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1base_af60d011f0abbaaf3dd2ad09c32135eea}{load\+\_\+der\+\_\+x509\+\_\+crl}} = rust\+\_\+x509.\+load\+\_\+der\+\_\+x509\+\_\+crl
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecryptography_1_1x509_1_1base_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecryptography_1_1x509_1_1base_aef2eda29017560f7772318f0cd190c68}\index{cryptography.x509.base@{cryptography.x509.base}!\_convert\_to\_naive\_utc\_time@{\_convert\_to\_naive\_utc\_time}}
+\index{\_convert\_to\_naive\_utc\_time@{\_convert\_to\_naive\_utc\_time}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{\_convert\_to\_naive\_utc\_time()}{\_convert\_to\_naive\_utc\_time()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_aef2eda29017560f7772318f0cd190c68} 
+ datetime.\+datetime cryptography.\+x509.\+base.\+\_\+convert\+\_\+to\+\_\+naive\+\_\+utc\+\_\+time (\begin{DoxyParamCaption}\item[{datetime.\+datetime}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Normalizes a datetime to a naive datetime in UTC.
+
+time -- datetime to normalize. Assumed to be in UTC if not timezone
+        aware.
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1x509_1_1base_a991c0837e4a94d2cb85792cd27fce82a}\index{cryptography.x509.base@{cryptography.x509.base}!\_reject\_duplicate\_attribute@{\_reject\_duplicate\_attribute}}
+\index{\_reject\_duplicate\_attribute@{\_reject\_duplicate\_attribute}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{\_reject\_duplicate\_attribute()}{\_reject\_duplicate\_attribute()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a991c0837e4a94d2cb85792cd27fce82a} 
+ None cryptography.\+x509.\+base.\+\_\+reject\+\_\+duplicate\+\_\+attribute (\begin{DoxyParamCaption}\item[{Object\+Identifier}]{oid}{, }\item[{list\mbox{[}tuple\mbox{[}Object\+Identifier, bytes, int \texorpdfstring{$\vert$}{|} None\mbox{]}\mbox{]}}]{attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_ae23a8d36e5d93ee8d6f0a4476e082136}\index{cryptography.x509.base@{cryptography.x509.base}!\_reject\_duplicate\_extension@{\_reject\_duplicate\_extension}}
+\index{\_reject\_duplicate\_extension@{\_reject\_duplicate\_extension}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{\_reject\_duplicate\_extension()}{\_reject\_duplicate\_extension()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_ae23a8d36e5d93ee8d6f0a4476e082136} 
+ None cryptography.\+x509.\+base.\+\_\+reject\+\_\+duplicate\+\_\+extension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension}{Extension}}\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type}{Extension\+Type}}\mbox{]}}]{extension}{, }\item[{list\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension}{Extension}}\mbox{[}\mbox{\hyperlink{classcryptography_1_1x509_1_1extensions_1_1_extension_type}{Extension\+Type}}\mbox{]}\mbox{]}}]{extensions}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_a422c2b64cd3e3471a73a4fabc11a9c24}\index{cryptography.x509.base@{cryptography.x509.base}!random\_serial\_number@{random\_serial\_number}}
+\index{random\_serial\_number@{random\_serial\_number}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{random\_serial\_number()}{random\_serial\_number()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a422c2b64cd3e3471a73a4fabc11a9c24} 
+ int cryptography.\+x509.\+base.\+random\+\_\+serial\+\_\+number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacecryptography_1_1x509_1_1base_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecryptography_1_1x509_1_1base_ae1833cd13e45b004a86c10f221e60629}\index{cryptography.x509.base@{cryptography.x509.base}!\_AllowedHashTypes@{\_AllowedHashTypes}}
+\index{\_AllowedHashTypes@{\_AllowedHashTypes}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{\_AllowedHashTypes}{\_AllowedHashTypes}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_ae1833cd13e45b004a86c10f221e60629} 
+cryptography.\+x509.\+base.\+\_\+\+Allowed\+Hash\+Types\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Union[}
+\DoxyCodeLine{00002\ \ \ \ \ hashes.SHA224,}
+\DoxyCodeLine{00003\ \ \ \ \ hashes.SHA256,}
+\DoxyCodeLine{00004\ \ \ \ \ hashes.SHA384,}
+\DoxyCodeLine{00005\ \ \ \ \ hashes.SHA512,}
+\DoxyCodeLine{00006\ \ \ \ \ hashes.SHA3\_224,}
+\DoxyCodeLine{00007\ \ \ \ \ hashes.SHA3\_256,}
+\DoxyCodeLine{00008\ \ \ \ \ hashes.SHA3\_384,}
+\DoxyCodeLine{00009\ \ \ \ \ hashes.SHA3\_512,}
+\DoxyCodeLine{00010\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1x509_1_1base_a741f08c1c768b360de078c8da8603369}\index{cryptography.x509.base@{cryptography.x509.base}!\_EARLIEST\_UTC\_TIME@{\_EARLIEST\_UTC\_TIME}}
+\index{\_EARLIEST\_UTC\_TIME@{\_EARLIEST\_UTC\_TIME}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{\_EARLIEST\_UTC\_TIME}{\_EARLIEST\_UTC\_TIME}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a741f08c1c768b360de078c8da8603369} 
+cryptography.\+x509.\+base.\+\_\+\+EARLIEST\+\_\+\+UTC\+\_\+\+TIME = datetime.\+datetime(1950, 1, 1)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_a248257372d5a2aad0b8aef2a14c99911}\index{cryptography.x509.base@{cryptography.x509.base}!Certificate@{Certificate}}
+\index{Certificate@{Certificate}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{Certificate}{Certificate}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a248257372d5a2aad0b8aef2a14c99911} 
+cryptography.\+x509.\+base.\+Certificate = rust\+\_\+x509.\+Certificate}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_ac6e8a1659051bffb266bc5b94ab7e57e}\index{cryptography.x509.base@{cryptography.x509.base}!CertificateRevocationList@{CertificateRevocationList}}
+\index{CertificateRevocationList@{CertificateRevocationList}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{CertificateRevocationList}{CertificateRevocationList}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_ac6e8a1659051bffb266bc5b94ab7e57e} 
+cryptography.\+x509.\+base.\+Certificate\+Revocation\+List = rust\+\_\+x509.\+Certificate\+Revocation\+List}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_a133366280fb4cc31e1f295300ecac978}\index{cryptography.x509.base@{cryptography.x509.base}!CertificateSigningRequest@{CertificateSigningRequest}}
+\index{CertificateSigningRequest@{CertificateSigningRequest}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{CertificateSigningRequest}{CertificateSigningRequest}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a133366280fb4cc31e1f295300ecac978} 
+cryptography.\+x509.\+base.\+Certificate\+Signing\+Request = rust\+\_\+x509.\+Certificate\+Signing\+Request}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_a3da071f717355d2e556b70f982ea3db6}\index{cryptography.x509.base@{cryptography.x509.base}!load\_der\_x509\_certificate@{load\_der\_x509\_certificate}}
+\index{load\_der\_x509\_certificate@{load\_der\_x509\_certificate}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_der\_x509\_certificate}{load\_der\_x509\_certificate}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a3da071f717355d2e556b70f982ea3db6} 
+cryptography.\+x509.\+base.\+load\+\_\+der\+\_\+x509\+\_\+certificate = rust\+\_\+x509.\+load\+\_\+der\+\_\+x509\+\_\+certificate}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_af60d011f0abbaaf3dd2ad09c32135eea}\index{cryptography.x509.base@{cryptography.x509.base}!load\_der\_x509\_crl@{load\_der\_x509\_crl}}
+\index{load\_der\_x509\_crl@{load\_der\_x509\_crl}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_der\_x509\_crl}{load\_der\_x509\_crl}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_af60d011f0abbaaf3dd2ad09c32135eea} 
+cryptography.\+x509.\+base.\+load\+\_\+der\+\_\+x509\+\_\+crl = rust\+\_\+x509.\+load\+\_\+der\+\_\+x509\+\_\+crl}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_ab56d3e5c5fae466fd42c9edce7868ab2}\index{cryptography.x509.base@{cryptography.x509.base}!load\_der\_x509\_csr@{load\_der\_x509\_csr}}
+\index{load\_der\_x509\_csr@{load\_der\_x509\_csr}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_der\_x509\_csr}{load\_der\_x509\_csr}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_ab56d3e5c5fae466fd42c9edce7868ab2} 
+cryptography.\+x509.\+base.\+load\+\_\+der\+\_\+x509\+\_\+csr = rust\+\_\+x509.\+load\+\_\+der\+\_\+x509\+\_\+csr}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_ab5cd0f7f2252a07c9a45872b835aa557}\index{cryptography.x509.base@{cryptography.x509.base}!load\_pem\_x509\_certificate@{load\_pem\_x509\_certificate}}
+\index{load\_pem\_x509\_certificate@{load\_pem\_x509\_certificate}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_pem\_x509\_certificate}{load\_pem\_x509\_certificate}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_ab5cd0f7f2252a07c9a45872b835aa557} 
+cryptography.\+x509.\+base.\+load\+\_\+pem\+\_\+x509\+\_\+certificate = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+certificate}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_ac2a7a48b178d122a64398a969e1b42e2}\index{cryptography.x509.base@{cryptography.x509.base}!load\_pem\_x509\_certificates@{load\_pem\_x509\_certificates}}
+\index{load\_pem\_x509\_certificates@{load\_pem\_x509\_certificates}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_pem\_x509\_certificates}{load\_pem\_x509\_certificates}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_ac2a7a48b178d122a64398a969e1b42e2} 
+cryptography.\+x509.\+base.\+load\+\_\+pem\+\_\+x509\+\_\+certificates = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+certificates}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_a0f7fd8ec7ac9ed3ec5fcd9f8a7a8c951}\index{cryptography.x509.base@{cryptography.x509.base}!load\_pem\_x509\_crl@{load\_pem\_x509\_crl}}
+\index{load\_pem\_x509\_crl@{load\_pem\_x509\_crl}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_pem\_x509\_crl}{load\_pem\_x509\_crl}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_a0f7fd8ec7ac9ed3ec5fcd9f8a7a8c951} 
+cryptography.\+x509.\+base.\+load\+\_\+pem\+\_\+x509\+\_\+crl = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+crl}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1base_adb59115ce5c8c2e4454e6d72e82eb123}\index{cryptography.x509.base@{cryptography.x509.base}!load\_pem\_x509\_csr@{load\_pem\_x509\_csr}}
+\index{load\_pem\_x509\_csr@{load\_pem\_x509\_csr}!cryptography.x509.base@{cryptography.x509.base}}
+\doxysubsubsection{\texorpdfstring{load\_pem\_x509\_csr}{load\_pem\_x509\_csr}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1base_adb59115ce5c8c2e4454e6d72e82eb123} 
+cryptography.\+x509.\+base.\+load\+\_\+pem\+\_\+x509\+\_\+csr = rust\+\_\+x509.\+load\+\_\+pem\+\_\+x509\+\_\+csr}
+

@@ -1,0 +1,210 @@
+\doxysection{colorama.\+winterm.\+Win\+Term Class Reference}
+\hypertarget{classcolorama_1_1winterm_1_1_win_term}{}\label{classcolorama_1_1winterm_1_1_win_term}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+Inheritance diagram for colorama.\+winterm.\+Win\+Term\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcolorama_1_1winterm_1_1_win_term}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a17285d908f6531edad71cf65c6eb70d1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a36d1e8fb4290468498a142b1689db493}{get\+\_\+attrs}} (self)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_ab37deadeb9a6a88fc2aecd988bbe9895}{set\+\_\+attrs}} (self, value)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a3b02943f152c5e63db370429ebf2b520}{reset\+\_\+all}} (self, on\+\_\+stderr=None)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a98a73a957ef473bf65efc7028b364dcf}{fore}} (self, fore=None, light=False, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a41e0fb535da3a16f269ec6cbc26df489}{back}} (self, back=None, light=False, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a506343ed97737721f4046d5e741a8b2c}{style}} (self, style=None, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_af6dff6de729a3ee36986b1eaa71c6511}{set\+\_\+console}} (self, attrs=None, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_ae4edfe2b4476bff79b9a7ae197bbfff8}{get\+\_\+position}} (self, handle)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a281768fb0b39366442a377dd534671aa}{set\+\_\+cursor\+\_\+position}} (self, position=None, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a0cab68d782cf1bf582db868616b52764}{cursor\+\_\+adjust}} (self, x, y, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a9fa8614026529d748c9ddaf87b226e88}{erase\+\_\+screen}} (self, mode=0, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a305ed7d80afebd025aaec1aafa152f6a}{erase\+\_\+line}} (self, mode=0, on\+\_\+stderr=False)
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a6e95b70696a6efdb84011f7ab52d7d84}{set\+\_\+title}} (self, title)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a7238ca0989852c9eefe11e177e644496}{\+\_\+default}} = \mbox{\hyperlink{namespacecolorama_1_1win32_afed2f6b6590c924ce9895127eaca78e5}{win32.\+Get\+Console\+Screen\+Buffer\+Info}}(\mbox{\hyperlink{namespacecolorama_1_1win32_ade71dfead057adf0f70d464b6d6c479a}{win32.\+STDOUT}}).w\+Attributes
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a805c47b27205b39e6a97d9de56cd6a4e}{\+\_\+default\+\_\+fore}} = self.\+\_\+fore
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a5cf91708a69c2020ce76e0f7b3aa7341}{\+\_\+default\+\_\+back}} = self.\+\_\+back
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a98f0b6bee3d65c4924ba25d152be8462}{\+\_\+default\+\_\+style}} = self.\+\_\+style
+\item 
+int \mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_ad16022ba579b2cc899fcc4babc8a723e}{\+\_\+light}} = 0
+\item 
+int \mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a0cafa405fbb04ae1d0dd3100b8e4ea48}{\+\_\+fore}} = value \& 7
+\item 
+tuple \mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a2498ca38748702e33be7a845489a5221}{\+\_\+back}} = (value $>$$>$ 4) \& 7
+\item 
+\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_term_a7d0dbd8538092cfef91cc329cea0bc74}{\+\_\+style}} = value \& (\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_style_a896ca00c11e3fc4d6fb3b46d61d1885e}{Win\+Style.\+BRIGHT}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_style_a05f0c63cd4d01d69d02f79454248beff}{Win\+Style.\+BRIGHT\+\_\+\+BACKGROUND}})
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a17285d908f6531edad71cf65c6eb70d1}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a17285d908f6531edad71cf65c6eb70d1} 
+colorama.\+winterm.\+Win\+Term.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a41e0fb535da3a16f269ec6cbc26df489}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!back@{back}}
+\index{back@{back}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a41e0fb535da3a16f269ec6cbc26df489} 
+colorama.\+winterm.\+Win\+Term.\+back (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{back}{ = {\ttfamily None}, }\item[{}]{light}{ = {\ttfamily False}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a0cab68d782cf1bf582db868616b52764}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!cursor\_adjust@{cursor\_adjust}}
+\index{cursor\_adjust@{cursor\_adjust}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{cursor\_adjust()}{cursor\_adjust()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a0cab68d782cf1bf582db868616b52764} 
+colorama.\+winterm.\+Win\+Term.\+cursor\+\_\+adjust (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a305ed7d80afebd025aaec1aafa152f6a}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!erase\_line@{erase\_line}}
+\index{erase\_line@{erase\_line}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{erase\_line()}{erase\_line()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a305ed7d80afebd025aaec1aafa152f6a} 
+colorama.\+winterm.\+Win\+Term.\+erase\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mode}{ = {\ttfamily 0}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a9fa8614026529d748c9ddaf87b226e88}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!erase\_screen@{erase\_screen}}
+\index{erase\_screen@{erase\_screen}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{erase\_screen()}{erase\_screen()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a9fa8614026529d748c9ddaf87b226e88} 
+colorama.\+winterm.\+Win\+Term.\+erase\+\_\+screen (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mode}{ = {\ttfamily 0}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a98a73a957ef473bf65efc7028b364dcf}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!fore@{fore}}
+\index{fore@{fore}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{fore()}{fore()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a98a73a957ef473bf65efc7028b364dcf} 
+colorama.\+winterm.\+Win\+Term.\+fore (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fore}{ = {\ttfamily None}, }\item[{}]{light}{ = {\ttfamily False}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a36d1e8fb4290468498a142b1689db493}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!get\_attrs@{get\_attrs}}
+\index{get\_attrs@{get\_attrs}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{get\_attrs()}{get\_attrs()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a36d1e8fb4290468498a142b1689db493} 
+colorama.\+winterm.\+Win\+Term.\+get\+\_\+attrs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_ae4edfe2b4476bff79b9a7ae197bbfff8}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_ae4edfe2b4476bff79b9a7ae197bbfff8} 
+colorama.\+winterm.\+Win\+Term.\+get\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{handle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a3b02943f152c5e63db370429ebf2b520}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!reset\_all@{reset\_all}}
+\index{reset\_all@{reset\_all}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{reset\_all()}{reset\_all()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a3b02943f152c5e63db370429ebf2b520} 
+colorama.\+winterm.\+Win\+Term.\+reset\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_ab37deadeb9a6a88fc2aecd988bbe9895}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!set\_attrs@{set\_attrs}}
+\index{set\_attrs@{set\_attrs}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{set\_attrs()}{set\_attrs()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_ab37deadeb9a6a88fc2aecd988bbe9895} 
+colorama.\+winterm.\+Win\+Term.\+set\+\_\+attrs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_af6dff6de729a3ee36986b1eaa71c6511}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!set\_console@{set\_console}}
+\index{set\_console@{set\_console}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{set\_console()}{set\_console()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_af6dff6de729a3ee36986b1eaa71c6511} 
+colorama.\+winterm.\+Win\+Term.\+set\+\_\+console (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attrs}{ = {\ttfamily None}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a281768fb0b39366442a377dd534671aa}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!set\_cursor\_position@{set\_cursor\_position}}
+\index{set\_cursor\_position@{set\_cursor\_position}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{set\_cursor\_position()}{set\_cursor\_position()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a281768fb0b39366442a377dd534671aa} 
+colorama.\+winterm.\+Win\+Term.\+set\+\_\+cursor\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{position}{ = {\ttfamily None}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a6e95b70696a6efdb84011f7ab52d7d84}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!set\_title@{set\_title}}
+\index{set\_title@{set\_title}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{set\_title()}{set\_title()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a6e95b70696a6efdb84011f7ab52d7d84} 
+colorama.\+winterm.\+Win\+Term.\+set\+\_\+title (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{title}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a506343ed97737721f4046d5e741a8b2c}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!style@{style}}
+\index{style@{style}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{style()}{style()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a506343ed97737721f4046d5e741a8b2c} 
+colorama.\+winterm.\+Win\+Term.\+style (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{style}{ = {\ttfamily None}, }\item[{}]{on\+\_\+stderr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a2498ca38748702e33be7a845489a5221}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_back@{\_back}}
+\index{\_back@{\_back}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_back}{\_back}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a2498ca38748702e33be7a845489a5221} 
+tuple colorama.\+winterm.\+Win\+Term.\+\_\+back = (value $>$$>$ 4) \& 7\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a7238ca0989852c9eefe11e177e644496}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_default@{\_default}}
+\index{\_default@{\_default}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_default}{\_default}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a7238ca0989852c9eefe11e177e644496} 
+colorama.\+winterm.\+Win\+Term.\+\_\+default = \mbox{\hyperlink{namespacecolorama_1_1win32_afed2f6b6590c924ce9895127eaca78e5}{win32.\+Get\+Console\+Screen\+Buffer\+Info}}(\mbox{\hyperlink{namespacecolorama_1_1win32_ade71dfead057adf0f70d464b6d6c479a}{win32.\+STDOUT}}).w\+Attributes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a5cf91708a69c2020ce76e0f7b3aa7341}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_default\_back@{\_default\_back}}
+\index{\_default\_back@{\_default\_back}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_default\_back}{\_default\_back}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a5cf91708a69c2020ce76e0f7b3aa7341} 
+colorama.\+winterm.\+Win\+Term.\+\_\+default\+\_\+back = self.\+\_\+back\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a805c47b27205b39e6a97d9de56cd6a4e}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_default\_fore@{\_default\_fore}}
+\index{\_default\_fore@{\_default\_fore}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_default\_fore}{\_default\_fore}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a805c47b27205b39e6a97d9de56cd6a4e} 
+colorama.\+winterm.\+Win\+Term.\+\_\+default\+\_\+fore = self.\+\_\+fore\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a98f0b6bee3d65c4924ba25d152be8462}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_default\_style@{\_default\_style}}
+\index{\_default\_style@{\_default\_style}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_default\_style}{\_default\_style}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a98f0b6bee3d65c4924ba25d152be8462} 
+colorama.\+winterm.\+Win\+Term.\+\_\+default\+\_\+style = self.\+\_\+style\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a0cafa405fbb04ae1d0dd3100b8e4ea48}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_fore@{\_fore}}
+\index{\_fore@{\_fore}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_fore}{\_fore}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a0cafa405fbb04ae1d0dd3100b8e4ea48} 
+int colorama.\+winterm.\+Win\+Term.\+\_\+fore = value \& 7\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_ad16022ba579b2cc899fcc4babc8a723e}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_light@{\_light}}
+\index{\_light@{\_light}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_light}{\_light}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_ad16022ba579b2cc899fcc4babc8a723e} 
+colorama.\+winterm.\+Win\+Term.\+\_\+light = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcolorama_1_1winterm_1_1_win_term_a7d0dbd8538092cfef91cc329cea0bc74}\index{colorama.winterm.WinTerm@{colorama.winterm.WinTerm}!\_style@{\_style}}
+\index{\_style@{\_style}!colorama.winterm.WinTerm@{colorama.winterm.WinTerm}}
+\doxysubsubsection{\texorpdfstring{\_style}{\_style}}
+{\footnotesize\ttfamily \label{classcolorama_1_1winterm_1_1_win_term_a7d0dbd8538092cfef91cc329cea0bc74} 
+colorama.\+winterm.\+Win\+Term.\+\_\+style = value \& (\mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_style_a896ca00c11e3fc4d6fb3b46d61d1885e}{Win\+Style.\+BRIGHT}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcolorama_1_1winterm_1_1_win_style_a05f0c63cd4d01d69d02f79454248beff}{Win\+Style.\+BRIGHT\+\_\+\+BACKGROUND}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/colorama/\mbox{\hyperlink{winterm_8py}{winterm.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\doxysection{django.\+utils.\+\_\+os Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1__os}{}\label{namespacedjango_1_1utils_1_1__os}\index{django.utils.\_os@{django.utils.\_os}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1__os_ad82168f7bac871f5d5cc53b9087e1e61}{safe\+\_\+join}} (base, \texorpdfstring{$\ast$}{*}paths)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1__os_aa0347ba8f164dfd1dff421ad47e3f753}{symlinks\+\_\+supported}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1__os_a4223a4ce9b2397d874d5fd53cc5c9021}{to\+\_\+path}} (value)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1__os_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1__os_ad82168f7bac871f5d5cc53b9087e1e61}\index{django.utils.\_os@{django.utils.\_os}!safe\_join@{safe\_join}}
+\index{safe\_join@{safe\_join}!django.utils.\_os@{django.utils.\_os}}
+\doxysubsubsection{\texorpdfstring{safe\_join()}{safe\_join()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1__os_ad82168f7bac871f5d5cc53b9087e1e61} 
+django.\+utils.\+\_\+os.\+safe\+\_\+join (\begin{DoxyParamCaption}\item[{}]{base}{, }\item[{\texorpdfstring{$\ast$}{*}}]{paths}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Join one or more path components to the base path component intelligently.
+Return a normalized, absolute version of the final path.
+
+Raise SuspiciousFileOperation if the final path isn't located inside of the
+base path component.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1__os_aa0347ba8f164dfd1dff421ad47e3f753}\index{django.utils.\_os@{django.utils.\_os}!symlinks\_supported@{symlinks\_supported}}
+\index{symlinks\_supported@{symlinks\_supported}!django.utils.\_os@{django.utils.\_os}}
+\doxysubsubsection{\texorpdfstring{symlinks\_supported()}{symlinks\_supported()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1__os_aa0347ba8f164dfd1dff421ad47e3f753} 
+django.\+utils.\+\_\+os.\+symlinks\+\_\+supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether or not creating symlinks are supported in the host platform
+and/or if they are allowed to be created (e.g. on Windows it requires admin
+permissions).
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1__os_a4223a4ce9b2397d874d5fd53cc5c9021}\index{django.utils.\_os@{django.utils.\_os}!to\_path@{to\_path}}
+\index{to\_path@{to\_path}!django.utils.\_os@{django.utils.\_os}}
+\doxysubsubsection{\texorpdfstring{to\_path()}{to\_path()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1__os_a4223a4ce9b2397d874d5fd53cc5c9021} 
+django.\+utils.\+\_\+os.\+to\+\_\+path (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert value to a pathlib.Path instance, if not already a Path.\end{DoxyVerb}
+ 

@@ -1,0 +1,92 @@
+\doxysection{cryptography.\+fernet.\+Multi\+Fernet Class Reference}
+\hypertarget{classcryptography_1_1fernet_1_1_multi_fernet}{}\label{classcryptography_1_1fernet_1_1_multi_fernet}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_a4d48719765bfdcaecd0393609c420de7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1fernet_1_1_fernet}{Fernet}}\mbox{]} fernets)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_a251a999b4ea80d423773c7d3ddfe8f98}{encrypt}} (self, bytes msg)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_a159cd6b1afbfe2b30c43d88e92b7f2c6}{encrypt\+\_\+at\+\_\+time}} (self, bytes msg, int current\+\_\+time)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_a001f846b7695794518e2e3641dad5b47}{rotate}} (self, bytes\texorpdfstring{$\vert$}{|}str msg)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_a6d27787954a7864cdcbd9bac9c3f5f7b}{decrypt}} (self, bytes\texorpdfstring{$\vert$}{|}str msg, int\texorpdfstring{$\vert$}{|}None ttl=None)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_af7abf62e84c299d48ca3df669b00cabd}{decrypt\+\_\+at\+\_\+time}} (self, bytes\texorpdfstring{$\vert$}{|}str msg, int ttl, int current\+\_\+time)
+\item 
+int \mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_ae7f72e306b22b57be33451ca54f38d34}{extract\+\_\+timestamp}} (self, bytes\texorpdfstring{$\vert$}{|}str msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1fernet_1_1_multi_fernet_a7a5ca055469e8a43e3f88b9af27f8622}{\+\_\+fernets}} = fernets
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_a4d48719765bfdcaecd0393609c420de7}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_a4d48719765bfdcaecd0393609c420de7} 
+cryptography.\+fernet.\+Multi\+Fernet.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1fernet_1_1_fernet}{Fernet}}\mbox{]}}]{fernets}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_a6d27787954a7864cdcbd9bac9c3f5f7b}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_a6d27787954a7864cdcbd9bac9c3f5f7b} 
+ bytes cryptography.\+fernet.\+Multi\+Fernet.\+decrypt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} str}]{msg}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{ttl}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_af7abf62e84c299d48ca3df669b00cabd}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!decrypt\_at\_time@{decrypt\_at\_time}}
+\index{decrypt\_at\_time@{decrypt\_at\_time}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{decrypt\_at\_time()}{decrypt\_at\_time()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_af7abf62e84c299d48ca3df669b00cabd} 
+ bytes cryptography.\+fernet.\+Multi\+Fernet.\+decrypt\+\_\+at\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} str}]{msg}{, }\item[{int}]{ttl}{, }\item[{int     }]{current\+\_\+time}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_a251a999b4ea80d423773c7d3ddfe8f98}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_a251a999b4ea80d423773c7d3ddfe8f98} 
+ bytes cryptography.\+fernet.\+Multi\+Fernet.\+encrypt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{msg}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_a159cd6b1afbfe2b30c43d88e92b7f2c6}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!encrypt\_at\_time@{encrypt\_at\_time}}
+\index{encrypt\_at\_time@{encrypt\_at\_time}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{encrypt\_at\_time()}{encrypt\_at\_time()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_a159cd6b1afbfe2b30c43d88e92b7f2c6} 
+ bytes cryptography.\+fernet.\+Multi\+Fernet.\+encrypt\+\_\+at\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{msg}{, }\item[{int}]{current\+\_\+time}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_ae7f72e306b22b57be33451ca54f38d34}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!extract\_timestamp@{extract\_timestamp}}
+\index{extract\_timestamp@{extract\_timestamp}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{extract\_timestamp()}{extract\_timestamp()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_ae7f72e306b22b57be33451ca54f38d34} 
+ int cryptography.\+fernet.\+Multi\+Fernet.\+extract\+\_\+timestamp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} str}]{msg}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_a001f846b7695794518e2e3641dad5b47}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!rotate@{rotate}}
+\index{rotate@{rotate}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_a001f846b7695794518e2e3641dad5b47} 
+ bytes cryptography.\+fernet.\+Multi\+Fernet.\+rotate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} str}]{msg}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1fernet_1_1_multi_fernet_a7a5ca055469e8a43e3f88b9af27f8622}\index{cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}!\_fernets@{\_fernets}}
+\index{\_fernets@{\_fernets}!cryptography.fernet.MultiFernet@{cryptography.fernet.MultiFernet}}
+\doxysubsubsection{\texorpdfstring{\_fernets}{\_fernets}}
+{\footnotesize\ttfamily \label{classcryptography_1_1fernet_1_1_multi_fernet_a7a5ca055469e8a43e3f88b9af27f8622} 
+cryptography.\+fernet.\+Multi\+Fernet.\+\_\+fernets = fernets\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/\mbox{\hyperlink{fernet_8py}{fernet.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\doxysection{django.\+contrib.\+gis.\+geometry Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geometry}{}\label{namespacedjango_1_1contrib_1_1gis_1_1geometry}\index{django.contrib.gis.geometry@{django.contrib.gis.geometry}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1geometry_a4d92d29f7fd2d0c8e0125425469579fe}{hex\+\_\+regex}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}0-\/9A-\/F\mbox{]}+\$"{}, re.\+I)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1geometry_aaa4464da38b1dfaf9291323100394799}{wkt\+\_\+regex}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1geometry_acf8e5333c04de8968276e93a701e4cf8}{json\+\_\+regex}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(\textbackslash{}s+)?\textbackslash{}\{.\texorpdfstring{$\ast$}{*}\}(\textbackslash{}s+)?\$"{}, re.\+DOTALL)
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geometry_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geometry_a4d92d29f7fd2d0c8e0125425469579fe}\index{django.contrib.gis.geometry@{django.contrib.gis.geometry}!hex\_regex@{hex\_regex}}
+\index{hex\_regex@{hex\_regex}!django.contrib.gis.geometry@{django.contrib.gis.geometry}}
+\doxysubsubsection{\texorpdfstring{hex\_regex}{hex\_regex}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1geometry_a4d92d29f7fd2d0c8e0125425469579fe} 
+django.\+contrib.\+gis.\+geometry.\+hex\+\_\+regex = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}0-\/9A-\/F\mbox{]}+\$"{}, re.\+I)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geometry_acf8e5333c04de8968276e93a701e4cf8}\index{django.contrib.gis.geometry@{django.contrib.gis.geometry}!json\_regex@{json\_regex}}
+\index{json\_regex@{json\_regex}!django.contrib.gis.geometry@{django.contrib.gis.geometry}}
+\doxysubsubsection{\texorpdfstring{json\_regex}{json\_regex}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1geometry_acf8e5333c04de8968276e93a701e4cf8} 
+django.\+contrib.\+gis.\+geometry.\+json\+\_\+regex = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}(\textbackslash{}s+)?\textbackslash{}\{.\texorpdfstring{$\ast$}{*}\}(\textbackslash{}s+)?\$"{}, re.\+DOTALL)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geometry_aaa4464da38b1dfaf9291323100394799}\index{django.contrib.gis.geometry@{django.contrib.gis.geometry}!wkt\_regex@{wkt\_regex}}
+\index{wkt\_regex@{wkt\_regex}!django.contrib.gis.geometry@{django.contrib.gis.geometry}}
+\doxysubsubsection{\texorpdfstring{wkt\_regex}{wkt\_regex}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1geometry_aaa4464da38b1dfaf9291323100394799} 
+django.\+contrib.\+gis.\+geometry.\+wkt\+\_\+regex}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r"{}\string^(SRID=(?P<srid>\(\backslash\)-\/?[0-\/9]+);)?"{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{r"{}(?P<wkt>"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{r"{}(?P<type>POINT|LINESTRING|LINEARRING|POLYGON|MULTIPOINT|"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{r"{}MULTILINESTRING|MULTIPOLYGON|GEOMETRYCOLLECTION|CIRCULARSTRING|COMPOUNDCURVE|"{}}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{r"{}CURVEPOLYGON|MULTICURVE|MULTISURFACE|CURVE|SURFACE|POLYHEDRALSURFACE|TIN|"{}}}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{r"{}TRIANGLE)"{}}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{r"{}[ACEGIMLONPSRUTYZ0-\/9,.+()\ -\/]+)\$"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ re.I,}
+\DoxyCodeLine{00010\ )}
+
+\end{DoxyCode}

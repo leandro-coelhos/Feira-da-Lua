@@ -1,0 +1,177 @@
+\doxysection{pygments.\+lexer Namespace Reference}
+\hypertarget{namespacepygments_1_1lexer}{}\label{namespacepygments_1_1lexer}\index{pygments.lexer@{pygments.lexer}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1__inherit}{\+\_\+inherit}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1___pseudo_match}{\+\_\+\+Pseudo\+Match}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1___this}{\+\_\+\+This}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1combined}{combined}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1default}{default}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_delegating_lexer}{Delegating\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_extended_regex_lexer}{Extended\+Regex\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1include}{include}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer}{Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_context}{Lexer\+Context}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_meta}{Lexer\+Meta}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_profiling_regex_lexer}{Profiling\+Regex\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_profiling_regex_lexer_meta}{Profiling\+Regex\+Lexer\+Meta}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer}{Regex\+Lexer}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta}{Regex\+Lexer\+Meta}}
+\item 
+class \mbox{\hyperlink{classpygments_1_1lexer_1_1words}{words}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_a96748489f34f4dc670a4900be30ab182}{bygroups}} (\texorpdfstring{$\ast$}{*}args)
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_a14883da5137dfa2b06fa9bc2bbb1103e}{using}} (\+\_\+other, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_a90ee404c73b21b1bbbda8a4bbe82cee8}{do\+\_\+insertions}} (insertions, tokens)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacepygments_1_1lexer_a1fe5451bdd89bb675a122d7ee6a12b34}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_aa77bdf239556bc288fb5e279a6066ee4}{line\+\_\+re}} = re.\+compile(\textquotesingle{}.\texorpdfstring{$\ast$}{*}?\textbackslash{}n\textquotesingle{})
+\item 
+list \mbox{\hyperlink{namespacepygments_1_1lexer_a3a52c476761ec85d94967110a1e24346}{\+\_\+encoding\+\_\+map}}
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_a0fb3f145e5a92481a31e82b89f10c496}{\+\_\+default\+\_\+analyse}} = staticmethod(lambda x\+: 0.\+0)
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_acc527ed512eae3b08db14208898acd2b}{inherit}} = \mbox{\hyperlink{classpygments_1_1lexer_1_1__inherit}{\+\_\+inherit}}()
+\item 
+\mbox{\hyperlink{namespacepygments_1_1lexer_aada5742d294a3310e592f2a4ab21f696}{this}} = \mbox{\hyperlink{classpygments_1_1lexer_1_1___this}{\+\_\+\+This}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.lexer
+    ~~~~~~~~~~~~~~
+
+    Base lexer classes.
+
+    :copyright: Copyright 2006-2025 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepygments_1_1lexer_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepygments_1_1lexer_a96748489f34f4dc670a4900be30ab182}\index{pygments.lexer@{pygments.lexer}!bygroups@{bygroups}}
+\index{bygroups@{bygroups}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{bygroups()}{bygroups()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_a96748489f34f4dc670a4900be30ab182} 
+pygments.\+lexer.\+bygroups (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback that yields multiple actions for each group in the match.
+\end{DoxyVerb}
+ \Hypertarget{namespacepygments_1_1lexer_a90ee404c73b21b1bbbda8a4bbe82cee8}\index{pygments.lexer@{pygments.lexer}!do\_insertions@{do\_insertions}}
+\index{do\_insertions@{do\_insertions}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{do\_insertions()}{do\_insertions()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_a90ee404c73b21b1bbbda8a4bbe82cee8} 
+pygments.\+lexer.\+do\+\_\+insertions (\begin{DoxyParamCaption}\item[{}]{insertions}{, }\item[{}]{tokens}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper for lexers which must combine the results of several
+sublexers.
+
+``insertions`` is a list of ``(index, itokens)`` pairs.
+Each ``itokens`` iterable should be inserted at position
+``index`` into the token stream given by the ``tokens``
+argument.
+
+The result is a combined token stream.
+
+TODO: clean up the code here.
+\end{DoxyVerb}
+ \Hypertarget{namespacepygments_1_1lexer_a14883da5137dfa2b06fa9bc2bbb1103e}\index{pygments.lexer@{pygments.lexer}!using@{using}}
+\index{using@{using}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{using()}{using()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_a14883da5137dfa2b06fa9bc2bbb1103e} 
+pygments.\+lexer.\+using (\begin{DoxyParamCaption}\item[{}]{\+\_\+other}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback that processes the match with a different lexer.
+
+The keyword arguments are forwarded to the lexer, except `state` which
+is handled separately.
+
+`state` specifies the state that the new lexer will start in, and can
+be an enumerable such as ('root', 'inline', 'string') or a simple
+string which is assumed to be on top of the root state.
+
+Note: For that to work, `_other` must not be an `ExtendedRegexLexer`.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepygments_1_1lexer_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepygments_1_1lexer_a1fe5451bdd89bb675a122d7ee6a12b34}\index{pygments.lexer@{pygments.lexer}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_a1fe5451bdd89bb675a122d7ee6a12b34} 
+list pygments.\+lexer.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [\textcolor{stringliteral}{'Lexer'},\ \textcolor{stringliteral}{'RegexLexer'},\ \textcolor{stringliteral}{'ExtendedRegexLexer'},\ \textcolor{stringliteral}{'DelegatingLexer'},}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'LexerContext'},\ \textcolor{stringliteral}{'include'},\ \textcolor{stringliteral}{'inherit'},\ \textcolor{stringliteral}{'bygroups'},\ \textcolor{stringliteral}{'using'},\ \textcolor{stringliteral}{'this'},}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'default'},\ \textcolor{stringliteral}{'words'},\ \textcolor{stringliteral}{'line\_re'}]}
+
+\end{DoxyCode}
+\Hypertarget{namespacepygments_1_1lexer_a0fb3f145e5a92481a31e82b89f10c496}\index{pygments.lexer@{pygments.lexer}!\_default\_analyse@{\_default\_analyse}}
+\index{\_default\_analyse@{\_default\_analyse}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{\_default\_analyse}{\_default\_analyse}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_a0fb3f145e5a92481a31e82b89f10c496} 
+pygments.\+lexer.\+\_\+default\+\_\+analyse = staticmethod(lambda x\+: 0.\+0)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepygments_1_1lexer_a3a52c476761ec85d94967110a1e24346}\index{pygments.lexer@{pygments.lexer}!\_encoding\_map@{\_encoding\_map}}
+\index{\_encoding\_map@{\_encoding\_map}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{\_encoding\_map}{\_encoding\_map}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_a3a52c476761ec85d94967110a1e24346} 
+list pygments.\+lexer.\+\_\+encoding\+\_\+map\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [(b\textcolor{stringliteral}{'\(\backslash\)xef\(\backslash\)xbb\(\backslash\)xbf'},\ \textcolor{stringliteral}{'utf-\/8'}),}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (b\textcolor{stringliteral}{'\(\backslash\)xff\(\backslash\)xfe\(\backslash\)0\(\backslash\)0'},\ \textcolor{stringliteral}{'utf-\/32'}),}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (b\textcolor{stringliteral}{'\(\backslash\)0\(\backslash\)0\(\backslash\)xfe\(\backslash\)xff'},\ \textcolor{stringliteral}{'utf-\/32be'}),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (b\textcolor{stringliteral}{'\(\backslash\)xff\(\backslash\)xfe'},\ \textcolor{stringliteral}{'utf-\/16'}),}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (b\textcolor{stringliteral}{'\(\backslash\)xfe\(\backslash\)xff'},\ \textcolor{stringliteral}{'utf-\/16be'})]}
+
+\end{DoxyCode}
+\Hypertarget{namespacepygments_1_1lexer_acc527ed512eae3b08db14208898acd2b}\index{pygments.lexer@{pygments.lexer}!inherit@{inherit}}
+\index{inherit@{inherit}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{inherit}{inherit}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_acc527ed512eae3b08db14208898acd2b} 
+pygments.\+lexer.\+inherit = \mbox{\hyperlink{classpygments_1_1lexer_1_1__inherit}{\+\_\+inherit}}()}
+
+\Hypertarget{namespacepygments_1_1lexer_aa77bdf239556bc288fb5e279a6066ee4}\index{pygments.lexer@{pygments.lexer}!line\_re@{line\_re}}
+\index{line\_re@{line\_re}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{line\_re}{line\_re}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_aa77bdf239556bc288fb5e279a6066ee4} 
+pygments.\+lexer.\+line\+\_\+re = re.\+compile(\textquotesingle{}.\texorpdfstring{$\ast$}{*}?\textbackslash{}n\textquotesingle{})}
+
+\Hypertarget{namespacepygments_1_1lexer_aada5742d294a3310e592f2a4ab21f696}\index{pygments.lexer@{pygments.lexer}!this@{this}}
+\index{this@{this}!pygments.lexer@{pygments.lexer}}
+\doxysubsubsection{\texorpdfstring{this}{this}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1lexer_aada5742d294a3310e592f2a4ab21f696} 
+pygments.\+lexer.\+this = \mbox{\hyperlink{classpygments_1_1lexer_1_1___this}{\+\_\+\+This}}()}
+

@@ -1,0 +1,115 @@
+\doxysection{django.\+utils.\+log.\+Admin\+Email\+Handler Class Reference}
+\hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler}{}\label{classdjango_1_1utils_1_1log_1_1_admin_email_handler}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+Inheritance diagram for django.\+utils.\+log.\+Admin\+Email\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1utils_1_1log_1_1_admin_email_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_afa26c20b715ccf4fdf1879db5e96e224}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a046c64fa46e1050c86ce5e430bb1d525}{include\+\_\+html}}=False, \mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a55ba801ff8adfc1c4338a399b252acd3}{email\+\_\+backend}}=None, \mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a7b1e2b4d8c7511765b959e796f8b7b9b}{reporter\+\_\+class}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a11349fead71eaec84d4aff34a8deb666}{emit}} (self, record)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a0e638d67e4b208c2b06946f7348d8df6}{send\+\_\+mail}} (self, subject, message, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a545b5f7ec55a857fe1ca7836814a0760}{connection}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a89dd67cd1be57ca9e3207a87e84b29c9}{format\+\_\+subject}} (self, subject)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a046c64fa46e1050c86ce5e430bb1d525}{include\+\_\+html}} = include\+\_\+html
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a55ba801ff8adfc1c4338a399b252acd3}{email\+\_\+backend}} = email\+\_\+backend
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a7b1e2b4d8c7511765b959e796f8b7b9b}{reporter\+\_\+class}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An exception log handler that emails log entries to site admins.
+
+If the request is passed as the first argument to the log record,
+request data will be provided in the email report.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_afa26c20b715ccf4fdf1879db5e96e224}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_afa26c20b715ccf4fdf1879db5e96e224} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{include\+\_\+html}{ = {\ttfamily False}, }\item[{}]{email\+\_\+backend}{ = {\ttfamily None}, }\item[{}]{reporter\+\_\+class}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a545b5f7ec55a857fe1ca7836814a0760}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!connection@{connection}}
+\index{connection@{connection}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a545b5f7ec55a857fe1ca7836814a0760} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+connection (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a11349fead71eaec84d4aff34a8deb666}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!emit@{emit}}
+\index{emit@{emit}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{emit()}{emit()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a11349fead71eaec84d4aff34a8deb666} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+emit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{record}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a89dd67cd1be57ca9e3207a87e84b29c9}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!format\_subject@{format\_subject}}
+\index{format\_subject@{format\_subject}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{format\_subject()}{format\_subject()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a89dd67cd1be57ca9e3207a87e84b29c9} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+format\+\_\+subject (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{subject}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Escape CR and LF characters.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a0e638d67e4b208c2b06946f7348d8df6}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!send\_mail@{send\_mail}}
+\index{send\_mail@{send\_mail}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{send\_mail()}{send\_mail()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a0e638d67e4b208c2b06946f7348d8df6} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+send\+\_\+mail (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{subject}{, }\item[{}]{message}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a55ba801ff8adfc1c4338a399b252acd3}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!email\_backend@{email\_backend}}
+\index{email\_backend@{email\_backend}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{email\_backend}{email\_backend}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a55ba801ff8adfc1c4338a399b252acd3} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+email\+\_\+backend = email\+\_\+backend}
+
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a046c64fa46e1050c86ce5e430bb1d525}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!include\_html@{include\_html}}
+\index{include\_html@{include\_html}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{include\_html}{include\_html}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a046c64fa46e1050c86ce5e430bb1d525} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+include\+\_\+html = include\+\_\+html}
+
+\Hypertarget{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a7b1e2b4d8c7511765b959e796f8b7b9b}\index{django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}!reporter\_class@{reporter\_class}}
+\index{reporter\_class@{reporter\_class}!django.utils.log.AdminEmailHandler@{django.utils.log.AdminEmailHandler}}
+\doxysubsubsection{\texorpdfstring{reporter\_class}{reporter\_class}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1log_1_1_admin_email_handler_a7b1e2b4d8c7511765b959e796f8b7b9b} 
+django.\+utils.\+log.\+Admin\+Email\+Handler.\+reporter\+\_\+class}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ import\_string(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ reporter\_class\ \textcolor{keywordflow}{or}\ settings.DEFAULT\_EXCEPTION\_REPORTER}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/utils/\mbox{\hyperlink{django_2utils_2log_8py}{log.\+py}}\end{DoxyCompactItemize}

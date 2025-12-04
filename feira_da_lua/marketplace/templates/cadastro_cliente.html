@@ -1,47 +1,71 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="cadastro-cliente">
-      <div class="bg-cadastro-cliente"></div>
-      <div class="text-wrapper-cadastro-cliente">Criar Conta</div>
-      <div class="campo-senha-cadastro-cliente">
-        <input class="rectangle-cadastro-cliente" placeholder="****"></input>
-        <div class="div-cadastro-cliente">Senha</div>
-        <div class="eye-cadastro-cliente"><img class="icon-cadastro-cliente" src="img/Eye.svg" /></div>
-      </div>
-      <div class="campo-e-mail-cadastro-cliente">
-        <input class="rectangle-cadastro-cliente" placeholder="exemplo@gmail.com"></input>
-        <div class="div-cadastro-cliente">E-mail</div>
-      </div>
-      <div class="campo-nome-usurio-cadastro-cliente">
-        <input class="rectangle-cadastro-cliente" placeholder="Fulano_1234"></input>
-        <div class="div-cadastro-cliente">Nome de Usuário</div>
-      </div>
-      <div class="campo-nome-cadastro-cliente">
-        <input class="rectangle-cadastro-cliente" placeholder="Fulano de Tal"></input>
-        <div class="div-cadastro-cliente">Nome</div>
-      </div>
-      <div class="boto-cadastrar-cadastro-cliente">
-        <button class="rectangle-2-cadastro-cliente">
-          <div class="text-wrapper-3-cadastro-cliente">Cadastrar</div>
-        </button>
-      </div>
-      <div class="boto-cliente-cadastro-cliente">
-        <button class="rectangle-3-cadastro-cliente">
-          <div class="text-wrapper-4-cadastro-cliente">Cliente</div>
-        </button>
-      </div>
-      <div class="boto-cliente-2-cadastro-cliente">
-        <button class="rectangle-4-cadastro-cliente">
-          <div class="text-wrapper-5-cadastro-cliente">Feirante</div>
-        </button>
-      </div>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Cliente - Feira da Lua</title>
+  <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="titulo">Cadastro Cliente</h1>
+
+      {% if messages %}
+        {% for message in messages %}
+          <div class="{% if message.tags == 'error' %}mensagem-erro{% else %}mensagem-sucesso{% endif %}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      <form method="post" action="{% url 'register_user' %}">
+        {% csrf_token %}
+        
+        {% for field in form %}
+        <div class="form-group">
+          <label class="form-label">{{ field.label }}</label>
+          {% if field.name == 'password' %}
+          <div class="password-container">
+            {{ field }}
+            <img src="{% static 'img/Eye.svg' %}" alt="Mostrar senha" class="password-toggle" onclick="togglePassword()">
+          </div>
+          {% else %}
+            {{ field }}
+          {% endif %}
+          {% if field.errors %}
+            {% for error in field.errors %}
+              <div class="mensagem-erro">{{ error }}</div>
+            {% endfor %}
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        <div class="btn-row">
+          <span class="btn btn-primario">Cliente</span>
+          <a href="{% url 'register_marketer' %}" class="btn btn-secundario">Feirante</a>
+        </div>
+
+        <button type="submit" class="btn btn-primario" style="margin-top: 15px;">Cadastrar</button>
+      </form>
+
+      <p class="texto-inferior">
+        Ja tem uma conta? <a href="{% url 'login' %}" class="link">Entrar</a>
+      </p>
     </div>
-  </body>
+  </div>
+
+  <script>
+    function togglePassword() {
+      var field = document.getElementById('password-field');
+      if (field.type === 'password') {
+        field.type = 'text';
+      } else {
+        field.type = 'password';
+      }
+    }
+  </script>
+</body>
 </html>

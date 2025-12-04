@@ -1,0 +1,724 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ marketplace.name }} - Feira da Lua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <style>
+    .marketplace-header {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      border: 1px solid #d9d9d9;
+    }
+    .marketplace-header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .marketplace-header-info {
+      flex: 1;
+      min-width: 300px;
+    }
+    .marketplace-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .marketplace-address-detail {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .marketplace-rating-detail {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+    .rating-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: #38952c;
+      margin-right: 10px;
+    }
+    .contact-box {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 15px;
+      min-width: 250px;
+    }
+    .contact-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-phone {
+      font-size: 18px;
+      font-weight: 500;
+      color: #38952c;
+    }
+    .contact-name {
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .section-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      border: 1px solid #d9d9d9;
+    }
+    .section-title-detail {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .products-grid-detail {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product-card-detail {
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid #ebebeb;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card-detail:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .product-image-detail {
+      width: 100%;
+      height: 150px;
+      background-color: #ebebeb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-image-detail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-image-detail.no-image img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      opacity: 0.5;
+    }
+    .product-info-detail {
+      padding: 15px;
+    }
+    .product-name-detail {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .product-price-detail {
+      font-size: 18px;
+      font-weight: 700;
+      color: #38952c;
+      margin-bottom: 10px;
+    }
+    .favorite-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 15px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      transition: all 0.2s;
+      border: 1px solid #d9d9d9;
+      background-color: #fff;
+    }
+    .favorite-btn:hover {
+      background-color: #f4f4f4;
+    }
+    .favorite-btn.active {
+      background-color: #38952c;
+      color: #fff;
+      border-color: #38952c;
+    }
+    .favorite-btn img {
+      width: 18px;
+      height: 18px;
+    }
+    .reviews-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .review-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #ebebeb;
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .review-author {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .review-rating {
+      display: flex;
+      gap: 3px;
+    }
+    .review-comment {
+      color: #555;
+      line-height: 1.6;
+    }
+    .empty-section {
+      text-align: center;
+      padding: 40px;
+      color: #888;
+    }
+    .empty-section img {
+      width: 60px;
+      opacity: 0.5;
+      margin-bottom: 15px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #38952c;
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .review-form-container {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      border: 1px solid #ebebeb;
+    }
+    .review-form-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .rating-select {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .rating-star {
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    .rating-star:hover {
+      transform: scale(1.1);
+    }
+    .rating-star.selected {
+      filter: none;
+    }
+    .rating-star.unselected {
+      opacity: 0.4;
+    }
+    .review-textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #d9d9d9;
+      border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      resize: vertical;
+      min-height: 100px;
+      margin-bottom: 15px;
+    }
+    .review-textarea:focus {
+      outline: none;
+      border-color: #38952c;
+    }
+    .review-submit-btn {
+      background-color: #38952c;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 100px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .review-submit-btn:hover {
+      background-color: #186e0d;
+    }
+    .review-submit-btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    .review-success {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .review-error {
+      background-color: #ffebee;
+      color: #c62828;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .user-review-badge {
+      background-color: #38952c;
+      color: #fff;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-left: 10px;
+    }
+    .review-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .review-action-btn {
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #d9d9d9;
+      background-color: #fff;
+      transition: all 0.2s;
+    }
+    .review-action-btn:hover {
+      background-color: #f4f4f4;
+    }
+    .review-action-btn.edit-btn {
+      color: #38952c;
+      border-color: #38952c;
+    }
+    .review-action-btn.edit-btn:hover {
+      background-color: #38952c;
+      color: #fff;
+    }
+    .review-action-btn.delete-btn {
+      color: #c62828;
+      border-color: #c62828;
+    }
+    .review-action-btn.delete-btn:hover {
+      background-color: #c62828;
+      color: #fff;
+    }
+    .edit-form-container {
+      display: none;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+      border: 1px solid #38952c;
+    }
+    .edit-form-container.active {
+      display: block;
+    }
+    .cancel-edit-btn {
+      background-color: #f4f4f4;
+      color: #666;
+      border: 1px solid #d9d9d9;
+      padding: 10px 25px;
+      border-radius: 100px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .cancel-edit-btn:hover {
+      background-color: #e0e0e0;
+    }
+    .delete-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .delete-modal.active {
+      display: flex;
+    }
+    .delete-modal-content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      text-align: center;
+    }
+    .delete-modal-content h3 {
+      margin-bottom: 15px;
+    }
+    .delete-modal-content p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+    .delete-modal-actions {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <header class="home-header">
+      <div class="header-content">
+        <a href="{% url 'home' %}" class="logo-link">
+          <img src="{% static 'img/Logo.svg' %}" alt="Feira da Lua" class="header-logo">
+          <span class="logo-text">Feira da Lua</span>
+        </a>
+        <nav class="header-nav">
+          <a href="{% url 'favorites' %}" class="nav-link">
+            <img src="{% static 'img/star_filled.svg' %}" alt="" style="width: 18px; vertical-align: middle;">
+            Favoritos
+          </a>
+          <span class="nav-user">{{ request.user_obj.complete_name }}</span>
+          <a href="{% url 'logout' %}" class="btn btn-secundario btn-nav">Sair</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="home-main" style="padding-top: 30px;">
+      <a href="{% url 'home' %}" class="back-link">
+        <span>&larr;</span> Voltar para busca
+      </a>
+
+      <div class="marketplace-header">
+        <div class="marketplace-header-content">
+          <div class="marketplace-header-info">
+            <h1 class="marketplace-title">{{ marketplace.name }}</h1>
+            <div class="marketplace-address-detail">
+              <img src="{% static 'img/Map pin.svg' %}" alt="" style="width: 20px;">
+              {{ marketplace.address }}
+            </div>
+            <div class="marketplace-rating-detail">
+              <span class="rating-number">{{ average_rating }}</span>
+              {% for i in "12345" %}
+                {% if forloop.counter <= average_rating %}
+                <img src="{% static 'img/star_filled.svg' %}" alt="" style="width: 24px;">
+                {% else %}
+                <img src="{% static 'img/star.svg' %}" alt="" style="width: 24px;">
+                {% endif %}
+              {% endfor %}
+              <span style="color: #888; margin-left: 10px;">({{ reviews_count }} avaliacoes)</span>
+            </div>
+          </div>
+          
+          {% if marketplace.marketer %}
+          <div class="contact-box">
+            <div class="contact-title">Contato do Feirante</div>
+            <div class="contact-info">
+              <img src="{% static 'img/User.svg' %}" alt="" style="width: 24px;">
+              <div>
+                <div class="contact-phone">{{ marketplace.marketer.cellphone }}</div>
+                <div class="contact-name">{{ marketplace.marketer.user.complete_name }}</div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="section-container">
+        <h2 class="section-title-detail">
+          <img src="{% static 'img/Shopping cart.svg' %}" alt="" style="width: 28px;">
+          Produtos ({{ products|length }})
+        </h2>
+        
+        {% if products %}
+        <div class="products-grid-detail">
+          {% for item in products %}
+          <div class="product-card-detail">
+            {% if item.photo_base64 %}
+            <div class="product-image-detail">
+              <img src="data:image/jpeg;base64,{{ item.photo_base64 }}" alt="{{ item.product.name }}">
+            </div>
+            {% else %}
+            <div class="product-image-detail no-image">
+              <img src="{% static 'img/Shopping cart.svg' %}" alt="Sem imagem">
+            </div>
+            {% endif %}
+            <div class="product-info-detail">
+              <h3 class="product-name-detail">{{ item.product.name }}</h3>
+              <p class="product-price-detail">R$ {{ item.product.price }}</p>
+              <button class="favorite-btn {% if item.is_favorite %}active{% endif %}" 
+                      data-product-id="{{ item.product.id }}"
+                      onclick="toggleFavorite(this, {{ item.product.id }})">
+                <img src="{% static 'img/star_filled.svg' %}" alt="">
+                <span>{% if item.is_favorite %}Favoritado{% else %}Favoritar{% endif %}</span>
+              </button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-section">
+          <img src="{% static 'img/Shopping cart.svg' %}" alt="">
+          <p>Nenhum produto cadastrado ainda</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="section-container">
+        <h2 class="section-title-detail">
+          <img src="{% static 'img/star_filled.svg' %}" alt="" style="width: 28px;">
+          Avaliacoes ({{ reviews_count }})
+        </h2>
+        
+        {% if review_message %}
+        <div class="review-success">{{ review_message }}</div>
+        {% endif %}
+        
+        {% if review_error %}
+        <div class="review-error">{{ review_error }}</div>
+        {% endif %}
+        
+        {% if not user_already_reviewed %}
+        <div class="review-form-container">
+          <h3 class="review-form-title">Deixe sua avaliacao</h3>
+          <form method="POST" action="{% url 'add_review' marketplace.id %}" id="reviewForm">
+            {% csrf_token %}
+            <div style="margin-bottom: 15px;">
+              <label style="display: block; margin-bottom: 8px; font-weight: 500;">Sua nota:</label>
+              <div class="rating-select" id="ratingSelect">
+                {% for i in "12345" %}
+                <img src="{% static 'img/star.svg' %}" 
+                     alt="{{ i }} estrela" 
+                     class="rating-star unselected" 
+                     data-value="{{ i }}"
+                     onclick="selectRating({{ i }})">
+                {% endfor %}
+              </div>
+              <input type="hidden" name="grade" id="gradeInput" value="" required>
+            </div>
+            <div>
+              <label style="display: block; margin-bottom: 8px; font-weight: 500;">Seu comentario:</label>
+              <textarea name="comment" class="review-textarea" placeholder="Conte como foi sua experiencia nesta feira..." required></textarea>
+            </div>
+            <button type="submit" class="review-submit-btn" id="submitBtn" disabled>Enviar Avaliacao</button>
+          </form>
+        </div>
+        {% else %}
+        <div class="review-form-container" style="background-color: #e8f5e9;">
+          <p style="margin: 0; color: #2e7d32;">Voce ja avaliou esta feira. Obrigado!</p>
+        </div>
+        {% endif %}
+        
+        {% if reviews %}
+        <div class="reviews-list">
+          {% for review in reviews %}
+          <div class="review-card" id="review-{{ review.id }}">
+            <div class="review-header">
+              <span class="review-author">
+                {{ review.user.complete_name }}
+                {% if request.user_obj and review.user.id == request.user_obj.id %}
+                <span class="user-review-badge">Sua avaliacao</span>
+                {% endif %}
+              </span>
+              <div class="review-rating">
+                {% for i in "12345" %}
+                  {% if forloop.counter <= review.grade %}
+                  <img src="{% static 'img/star_filled.svg' %}" alt="" style="width: 18px;">
+                  {% else %}
+                  <img src="{% static 'img/star.svg' %}" alt="" style="width: 18px;">
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+            <p class="review-comment" id="review-comment-{{ review.id }}">{{ review.comment }}</p>
+            
+            {% if request.user_obj and review.user.id == request.user_obj.id %}
+            <div class="review-actions" id="review-actions-{{ review.id }}">
+              <button type="button" class="review-action-btn edit-btn" onclick="showEditForm({{ review.id }}, {{ review.grade }})">
+                Editar
+              </button>
+              <button type="button" class="review-action-btn delete-btn" onclick="showDeleteModal({{ review.id }})">
+                Apagar
+              </button>
+            </div>
+            
+            <div class="edit-form-container" id="edit-form-{{ review.id }}">
+              <form method="POST" action="{% url 'update_review' review.id %}">
+                {% csrf_token %}
+                <div style="margin-bottom: 15px;">
+                  <label style="display: block; margin-bottom: 8px; font-weight: 500;">Sua nota:</label>
+                  <div class="rating-select" id="editRatingSelect-{{ review.id }}">
+                    {% for i in "12345" %}
+                    <img src="{% static 'img/star.svg' %}" 
+                         alt="{{ i }} estrela" 
+                         class="rating-star" 
+                         data-value="{{ i }}"
+                         id="edit-star-{{ review.id }}-{{ i }}"
+                         onclick="selectEditRating({{ review.id }}, {{ i }})">
+                    {% endfor %}
+                  </div>
+                  <input type="hidden" name="grade" id="editGradeInput-{{ review.id }}" value="{{ review.grade }}">
+                </div>
+                <div>
+                  <label style="display: block; margin-bottom: 8px; font-weight: 500;">Seu comentario:</label>
+                  <textarea name="comment" class="review-textarea" required>{{ review.comment }}</textarea>
+                </div>
+                <button type="submit" class="review-submit-btn">Salvar Alteracoes</button>
+                <button type="button" class="cancel-edit-btn" onclick="hideEditForm({{ review.id }})">Cancelar</button>
+              </form>
+            </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-section">
+          <img src="{% static 'img/star.svg' %}" alt="">
+          <p>Nenhuma avaliacao ainda. Seja o primeiro a avaliar!</p>
+        </div>
+        {% endif %}
+        
+        <div class="delete-modal" id="deleteModal">
+          <div class="delete-modal-content">
+            <h3>Apagar avaliacao?</h3>
+            <p>Tem certeza que deseja apagar sua avaliacao? Esta acao nao pode ser desfeita.</p>
+            <div class="delete-modal-actions">
+              <button type="button" class="cancel-edit-btn" onclick="hideDeleteModal()">Cancelar</button>
+              <form method="POST" id="deleteForm" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit" class="review-action-btn delete-btn" style="padding: 12px 25px;">Apagar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="home-footer">
+      <p>Feira da Lua - Conectando feirantes e clientes</p>
+    </footer>
+  </div>
+
+  <script>
+    var selectedRating = 0;
+    
+    function selectRating(value) {
+      selectedRating = value;
+      document.getElementById('gradeInput').value = value;
+      document.getElementById('submitBtn').disabled = false;
+      
+      var stars = document.querySelectorAll('#ratingSelect .rating-star');
+      stars.forEach(function(star, index) {
+        if (index < value) {
+          star.src = "{% static 'img/star_filled.svg' %}";
+          star.classList.remove('unselected');
+          star.classList.add('selected');
+        } else {
+          star.src = "{% static 'img/star.svg' %}";
+          star.classList.remove('selected');
+          star.classList.add('unselected');
+        }
+      });
+    }
+    
+    function selectEditRating(reviewId, value) {
+      document.getElementById('editGradeInput-' + reviewId).value = value;
+      
+      for (var i = 1; i <= 5; i++) {
+        var star = document.getElementById('edit-star-' + reviewId + '-' + i);
+        if (i <= value) {
+          star.src = "{% static 'img/star_filled.svg' %}";
+        } else {
+          star.src = "{% static 'img/star.svg' %}";
+        }
+      }
+    }
+    
+    function showEditForm(reviewId, currentGrade) {
+      document.getElementById('edit-form-' + reviewId).classList.add('active');
+      document.getElementById('review-actions-' + reviewId).style.display = 'none';
+      selectEditRating(reviewId, currentGrade);
+    }
+    
+    function hideEditForm(reviewId) {
+      document.getElementById('edit-form-' + reviewId).classList.remove('active');
+      document.getElementById('review-actions-' + reviewId).style.display = 'flex';
+    }
+    
+    function showDeleteModal(reviewId) {
+      document.getElementById('deleteForm').action = '/avaliacao/' + reviewId + '/apagar/';
+      document.getElementById('deleteModal').classList.add('active');
+    }
+    
+    function hideDeleteModal() {
+      document.getElementById('deleteModal').classList.remove('active');
+    }
+    
+    document.getElementById('deleteModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        hideDeleteModal();
+      }
+    });
+    
+    function toggleFavorite(button, productId) {
+      fetch('/favorito/' + productId + '/', {
+        method: 'POST',
+        headers: {
+          'X-CSRFToken': '{{ csrf_token }}',
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.is_favorite) {
+          button.classList.add('active');
+          button.querySelector('span').textContent = 'Favoritado';
+        } else {
+          button.classList.remove('active');
+          button.querySelector('span').textContent = 'Favoritar';
+        }
+      })
+      .catch(error => console.error('Erro:', error));
+    }
+  </script>
+</body>
+</html>

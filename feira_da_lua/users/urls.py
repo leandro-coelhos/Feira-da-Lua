@@ -2,9 +2,13 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-     path("login/", LoginUser, name="login_user"),
+     path("index/", IndexPage, name="index"),
+     path("login/", LoginUser, name="login"),
+     path("registro/", RegistroPage, name="registro"),
      path("register/", RegisterUser, name="register_user"),
-     path("logout/", LogoutUser, name="logout_user"),
+     path("register/feirante/", RegisterMarketer, name="register_marketer"),
+     path("logout/", LogoutUser, name="logout"),
+     path("favoritos/", FavoritesPage, name="favorites"),
      path("profile/", ProfileUser, name="profile_user"),
      path("user/delete/", DeleteUser, name="delete_user"),
      path("user/update/", UpdateUser, name="update_user"),

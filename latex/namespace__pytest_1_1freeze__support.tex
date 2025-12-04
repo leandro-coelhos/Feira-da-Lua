@@ -1,0 +1,41 @@
+\doxysection{\+\_\+pytest.\+freeze\+\_\+support Namespace Reference}
+\hypertarget{namespace__pytest_1_1freeze__support}{}\label{namespace__pytest_1_1freeze__support}\index{\_pytest.freeze\_support@{\_pytest.freeze\_support}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1freeze__support_aa1cc2a66e9c485da570265c9812528c1}{freeze\+\_\+includes}} ()
+\item 
+Iterator\mbox{[}str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1freeze__support_a763334508b57a4dbc9bb97383ad002d8}{\+\_\+iter\+\_\+all\+\_\+modules}} (str\texorpdfstring{$\vert$}{|}types.\+Module\+Type package, str prefix="{}"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provides a function to report all internal modules for using freezing
+tools.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1freeze__support_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1freeze__support_a763334508b57a4dbc9bb97383ad002d8}\index{\_pytest.freeze\_support@{\_pytest.freeze\_support}!\_iter\_all\_modules@{\_iter\_all\_modules}}
+\index{\_iter\_all\_modules@{\_iter\_all\_modules}!\_pytest.freeze\_support@{\_pytest.freeze\_support}}
+\doxysubsubsection{\texorpdfstring{\_iter\_all\_modules()}{\_iter\_all\_modules()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1freeze__support_a763334508b57a4dbc9bb97383ad002d8} 
+ Iterator\mbox{[}str\mbox{]} \+\_\+pytest.\+freeze\+\_\+support.\+\_\+iter\+\_\+all\+\_\+modules (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} types.\+Module\+Type}]{package}{, }\item[{str }]{prefix}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Iterate over the names of all modules that can be found in the given
+package, recursively.
+
+    >>> import _pytest
+    >>> list(_iter_all_modules(_pytest))
+    ['_pytest._argcomplete', '_pytest._code.code', ...]
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1freeze__support_aa1cc2a66e9c485da570265c9812528c1}\index{\_pytest.freeze\_support@{\_pytest.freeze\_support}!freeze\_includes@{freeze\_includes}}
+\index{freeze\_includes@{freeze\_includes}!\_pytest.freeze\_support@{\_pytest.freeze\_support}}
+\doxysubsubsection{\texorpdfstring{freeze\_includes()}{freeze\_includes()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1freeze__support_aa1cc2a66e9c485da570265c9812528c1} 
+ list\mbox{[}str\mbox{]} \+\_\+pytest.\+freeze\+\_\+support.\+freeze\+\_\+includes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of module names used by pytest that should be
+included by cx_freeze.\end{DoxyVerb}
+ 
