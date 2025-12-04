@@ -1,4 +1,0 @@
-var classpip_1_1__vendor_1_1rich_1_1__win32__console_1_1_c_o_n_s_o_l_e___s_c_r_e_e_n___b_u_f_f_e_r___i_n_f_o =
-[
-    [ "_fields_", "classpip_1_1__vendor_1_1rich_1_1__win32__console_1_1_c_o_n_s_o_l_e___s_c_r_e_e_n___b_u_f_f_e_r___i_n_f_o.html#a7fb6cbd5d117abe98be42c677dbc220f", null ]
-];

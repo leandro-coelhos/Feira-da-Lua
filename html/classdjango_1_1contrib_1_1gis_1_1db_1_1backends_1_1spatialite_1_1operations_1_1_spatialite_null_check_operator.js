@@ -1,4 +1,0 @@
-var classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1_spatialite_null_check_operator =
-[
-    [ "as_sql", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1_spatialite_null_check_operator.html#a7de00b7a9cbecd0297b8bcb830a030e5", null ]
-];

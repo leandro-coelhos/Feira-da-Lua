@@ -1,5 +1,0 @@
-var contrib_2gis_2db_2backends_2spatialite_2introspection_8py =
-[
-    [ "django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1_geo_flexible_field_lookup_dict.html", null ],
-    [ "django.contrib.gis.db.backends.spatialite.introspection.SpatiaLiteIntrospection", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1_spatia_lite_introspection.html", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1_spatia_lite_introspection" ]
-];

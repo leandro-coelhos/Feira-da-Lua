@@ -1,4 +1,0 @@
-var classpip_1_1__vendor_1_1urllib3_1_1packages_1_1backports_1_1weakref__finalize_1_1weakref__finalize_1_1___info =
-[
-    [ "__slots__", "classpip_1_1__vendor_1_1urllib3_1_1packages_1_1backports_1_1weakref__finalize_1_1weakref__finalize_1_1___info.html#a5a98639ce0be5b71ce81eb2de130c876", null ]
-];
