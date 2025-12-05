@@ -1,4 +1,0 @@
-var contrib_2gis_2db_2backends_2oracle_2introspection_8py =
-[
-    [ "django.contrib.gis.db.backends.oracle.introspection.OracleIntrospection", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_oracle_introspection.html", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_oracle_introspection" ]
-];

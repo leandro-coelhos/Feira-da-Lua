@@ -1,5 +1,0 @@
-var namespacepygments_1_1lexers_1_1qlik =
-[
-    [ "QlikLexer", "classpygments_1_1lexers_1_1qlik_1_1_qlik_lexer.html", null ],
-    [ "__all__", "namespacepygments_1_1lexers_1_1qlik.html#a31ceac0082fe473e01125a5ee3187afb", null ]
-];

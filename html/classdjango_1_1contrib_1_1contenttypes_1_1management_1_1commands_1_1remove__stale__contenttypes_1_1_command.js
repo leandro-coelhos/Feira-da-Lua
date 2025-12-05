@@ -1,5 +1,0 @@
-var classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command =
-[
-    [ "add_arguments", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command.html#acc60e60f927ff5d218c23c16910d8e67", null ],
-    [ "handle", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command.html#a4877da71ed28ae791e138ba2fbf1dffe", null ]
-];

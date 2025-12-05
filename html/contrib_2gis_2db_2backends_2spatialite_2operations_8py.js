@@ -1,5 +1,0 @@
-var contrib_2gis_2db_2backends_2spatialite_2operations_8py =
-[
-    [ "django.contrib.gis.db.backends.spatialite.operations.SpatialiteNullCheckOperator", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1_spatialite_null_check_operator.html", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1_spatialite_null_check_operator" ],
-    [ "django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1_spatia_lite_operations.html", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1_spatia_lite_operations" ]
-];

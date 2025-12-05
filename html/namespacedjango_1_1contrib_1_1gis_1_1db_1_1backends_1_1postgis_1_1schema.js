@@ -1,4 +1,0 @@
-var namespacedjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1schema =
-[
-    [ "PostGISSchemaEditor", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1schema_1_1_post_g_i_s_schema_editor.html", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1schema_1_1_post_g_i_s_schema_editor" ]
-];

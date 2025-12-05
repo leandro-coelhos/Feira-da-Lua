@@ -1,4 +1,0 @@
-var classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1__securetransport_1_1bindings_1_1_c_f_const =
-[
-    [ "kCFStringEncodingUTF8", "classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1__securetransport_1_1bindings_1_1_c_f_const.html#a0bd3090d175133eaac7e6eaf1f5bb24a", null ]
-];
