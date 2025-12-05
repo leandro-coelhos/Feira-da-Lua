@@ -1,0 +1,257 @@
+\doxysection{django.\+utils.\+autoreload.\+Watchman\+Reloader Class Reference}
+\hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader}{}\label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+Inheritance diagram for django.\+utils.\+autoreload.\+Watchman\+Reloader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a9bb70f0f29c542e9715be4005924f2ed}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a6684dd5abaaa79b892242d19b7822bf3}{client}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_aab57884c5f2bd2d176e5bec0d9c1e607}{watched\+\_\+roots}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a44cc512c784a69e15c4423e83a8857db}{watched\+\_\+files}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_ab53cfd10bdf2abe6edb288142b958092}{update\+\_\+watches}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a396863e4416c8f97d82258bf87a2c898}{request\+\_\+processed}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_acaf1c9c4fc09ee8bb399347572a08154}{tick}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a5051e02a8e4aba49d0872956c4f01f59}{stop}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a37dcc8c8d465bd2630cb0bb6bca182b8}{check\+\_\+server\+\_\+status}} (self, inner\+\_\+ex=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a59205d1e53f0ed2b01a39c4ef193deca}{check\+\_\+availability}} (cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader}{django.\+utils.\+autoreload.\+Base\+Reloader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a4e7397e0bc085c53bb55e4c6296d34cc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a1e7a969168fb4168d41d822b0a8c585c}{watch\+\_\+dir}} (self, path, glob)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a44cc512c784a69e15c4423e83a8857db}{watched\+\_\+files}} (self, include\+\_\+globs=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a1c8d3de2da68ebcd2adbf287bce7af26}{wait\+\_\+for\+\_\+apps\+\_\+ready}} (self, app\+\_\+reg, django\+\_\+main\+\_\+thread)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a8f41bae7838778077d1462c25ddd2048}{run}} (self, django\+\_\+main\+\_\+thread)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_adf37478a8396b4fa7298f2bd03f738cf}{run\+\_\+loop}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_aef33ab5c778efc9e30a84a4f4c177421}{notify\+\_\+file\+\_\+changed}} (self, path)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a796cb852dcc0ef0aa4b0b295796d630b}{should\+\_\+stop}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a8072f3d7cda5ed3a836469cb3ba5844d}{roots}} = defaultdict(set)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a697e92f206624529b09814836051486c}{processed\+\_\+request}} = threading.\+Event()
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a7d5f4e28f3b7669264d8f31d898df502}{client\+\_\+timeout}} = int(os.\+environ.\+get("{}DJANGO\+\_\+\+WATCHMAN\+\_\+\+TIMEOUT"{}, 5))
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a7aa504ca9064e744e9284532e8575acd}{request\+\_\+processed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader}{django.\+utils.\+autoreload.\+Base\+Reloader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a3bb7b758461e9946320341d1a48642bb}{extra\+\_\+files}} = set()
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a51910e347e441dac473c5d6d9450804b}{directory\+\_\+globs}} = defaultdict(set)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a9299f3939780d448ae18453eda209b48}{should\+\_\+stop}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a13aee86c5ee6c44becb2d3365cbbeea1}{\+\_\+watch\+\_\+root}} (self, root)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_abe91dc221ff05f95376b625a1013f437}{\+\_\+get\+\_\+clock}} (self, root)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_afe6f9c7dc3f6e93ffb8210db4d4f4ec3}{\+\_\+subscribe}} (self, directory, name, expression)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_ac420dcb3aa43b49db09c821ae601e00e}{\+\_\+subscribe\+\_\+dir}} (self, directory, filenames)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a21318c8e58589b776b8f82ec4693882a}{\+\_\+watch\+\_\+glob}} (self, directory, patterns)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a49dd725cc6618284cf44790da45282d9}{\+\_\+update\+\_\+watches}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a695404c8cbe395b1b227b02c2b215294}{\+\_\+check\+\_\+subscription}} (self, sub)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader}{django.\+utils.\+autoreload.\+Base\+Reloader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a15d1f1210a798dea3e035592900bed69}{\+\_\+stop\+\_\+condition}} = threading.\+Event()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a9bb70f0f29c542e9715be4005924f2ed}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a9bb70f0f29c542e9715be4005924f2ed} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a695404c8cbe395b1b227b02c2b215294}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_check\_subscription@{\_check\_subscription}}
+\index{\_check\_subscription@{\_check\_subscription}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_check\_subscription()}{\_check\_subscription()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a695404c8cbe395b1b227b02c2b215294} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+check\+\_\+subscription (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sub}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_abe91dc221ff05f95376b625a1013f437}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_get\_clock@{\_get\_clock}}
+\index{\_get\_clock@{\_get\_clock}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_get\_clock()}{\_get\_clock()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_abe91dc221ff05f95376b625a1013f437} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+get\+\_\+clock (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{root}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_afe6f9c7dc3f6e93ffb8210db4d4f4ec3}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_subscribe@{\_subscribe}}
+\index{\_subscribe@{\_subscribe}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_subscribe()}{\_subscribe()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_afe6f9c7dc3f6e93ffb8210db4d4f4ec3} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+subscribe (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{directory}{, }\item[{}]{name}{, }\item[{}]{expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_ac420dcb3aa43b49db09c821ae601e00e}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_subscribe\_dir@{\_subscribe\_dir}}
+\index{\_subscribe\_dir@{\_subscribe\_dir}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_subscribe\_dir()}{\_subscribe\_dir()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_ac420dcb3aa43b49db09c821ae601e00e} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+subscribe\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{directory}{, }\item[{}]{filenames}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a49dd725cc6618284cf44790da45282d9}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_update\_watches@{\_update\_watches}}
+\index{\_update\_watches@{\_update\_watches}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_update\_watches()}{\_update\_watches()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a49dd725cc6618284cf44790da45282d9} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+update\+\_\+watches (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a21318c8e58589b776b8f82ec4693882a}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_watch\_glob@{\_watch\_glob}}
+\index{\_watch\_glob@{\_watch\_glob}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_watch\_glob()}{\_watch\_glob()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a21318c8e58589b776b8f82ec4693882a} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+watch\+\_\+glob (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{directory}{, }\item[{}]{patterns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Watch a directory with a specific glob. If the directory doesn't yet
+exist, attempt to watch the parent directory and amend the patterns to
+include this. It's important this method isn't called more than one per
+directory when updating all subscriptions. Subsequent calls will
+overwrite the named subscription, so it must include all possible glob
+expressions.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a13aee86c5ee6c44becb2d3365cbbeea1}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!\_watch\_root@{\_watch\_root}}
+\index{\_watch\_root@{\_watch\_root}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{\_watch\_root()}{\_watch\_root()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a13aee86c5ee6c44becb2d3365cbbeea1} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+\_\+watch\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{root}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a59205d1e53f0ed2b01a39c4ef193deca}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!check\_availability@{check\_availability}}
+\index{check\_availability@{check\_availability}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{check\_availability()}{check\_availability()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a59205d1e53f0ed2b01a39c4ef193deca} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+check\+\_\+availability (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_aa0fdb5ff8e98e7d1216d21702e63639f}{django.\+utils.\+autoreload.\+Base\+Reloader}}.
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a37dcc8c8d465bd2630cb0bb6bca182b8}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!check\_server\_status@{check\_server\_status}}
+\index{check\_server\_status@{check\_server\_status}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{check\_server\_status()}{check\_server\_status()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a37dcc8c8d465bd2630cb0bb6bca182b8} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+check\+\_\+server\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{inner\+\_\+ex}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the server is available.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a6684dd5abaaa79b892242d19b7822bf3}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!client@{client}}
+\index{client@{client}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{client()}{client()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a6684dd5abaaa79b892242d19b7822bf3} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+client (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a396863e4416c8f97d82258bf87a2c898}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!request\_processed@{request\_processed}}
+\index{request\_processed@{request\_processed}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{request\_processed()}{request\_processed()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a396863e4416c8f97d82258bf87a2c898} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+request\+\_\+processed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a5051e02a8e4aba49d0872956c4f01f59}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!stop@{stop}}
+\index{stop@{stop}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a5051e02a8e4aba49d0872956c4f01f59} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+stop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_ac73bcf6fa32e3ef394bb7d34b02a8cc1}{django.\+utils.\+autoreload.\+Base\+Reloader}}.
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_acaf1c9c4fc09ee8bb399347572a08154}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!tick@{tick}}
+\index{tick@{tick}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_acaf1c9c4fc09ee8bb399347572a08154} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+tick (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This generator is called in a loop from run_loop. It's important that
+the method takes care of pausing or otherwise waiting for a period of
+time. This split between run_loop() and tick() is to improve the
+testability of the reloader implementations by decoupling the work they
+do from the loop.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1_base_reloader_a192ec4b665a916412b10c050d597701a}{django.\+utils.\+autoreload.\+Base\+Reloader}}.
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_ab53cfd10bdf2abe6edb288142b958092}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!update\_watches@{update\_watches}}
+\index{update\_watches@{update\_watches}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{update\_watches()}{update\_watches()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_ab53cfd10bdf2abe6edb288142b958092} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+update\+\_\+watches (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_aab57884c5f2bd2d176e5bec0d9c1e607}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!watched\_roots@{watched\_roots}}
+\index{watched\_roots@{watched\_roots}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{watched\_roots()}{watched\_roots()}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_aab57884c5f2bd2d176e5bec0d9c1e607} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+watched\+\_\+roots (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{watched\+\_\+files}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a7d5f4e28f3b7669264d8f31d898df502}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!client\_timeout@{client\_timeout}}
+\index{client\_timeout@{client\_timeout}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{client\_timeout}{client\_timeout}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a7d5f4e28f3b7669264d8f31d898df502} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+client\+\_\+timeout = int(os.\+environ.\+get("{}DJANGO\+\_\+\+WATCHMAN\+\_\+\+TIMEOUT"{}, 5))}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a697e92f206624529b09814836051486c}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!processed\_request@{processed\_request}}
+\index{processed\_request@{processed\_request}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{processed\_request}{processed\_request}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a697e92f206624529b09814836051486c} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+processed\+\_\+request = threading.\+Event()}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a7aa504ca9064e744e9284532e8575acd}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!request\_processed@{request\_processed}}
+\index{request\_processed@{request\_processed}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{request\_processed}{request\_processed}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a7aa504ca9064e744e9284532e8575acd} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+request\+\_\+processed}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a8072f3d7cda5ed3a836469cb3ba5844d}\index{django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}!roots@{roots}}
+\index{roots@{roots}!django.utils.autoreload.WatchmanReloader@{django.utils.autoreload.WatchmanReloader}}
+\doxysubsubsection{\texorpdfstring{roots}{roots}}
+{\footnotesize\ttfamily \label{classdjango_1_1utils_1_1autoreload_1_1_watchman_reloader_a8072f3d7cda5ed3a836469cb3ba5844d} 
+django.\+utils.\+autoreload.\+Watchman\+Reloader.\+roots = defaultdict(set)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/utils/\mbox{\hyperlink{utils_2autoreload_8py}{autoreload.\+py}}\end{DoxyCompactItemize}

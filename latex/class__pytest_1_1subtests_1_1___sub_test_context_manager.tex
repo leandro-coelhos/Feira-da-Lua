@@ -1,0 +1,153 @@
+\doxysection{\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager Class Reference}
+\hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager}{}\label{class__pytest_1_1subtests_1_1___sub_test_context_manager}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a64e3caa03fb402812a73cbb6d45bf4b1}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_aebb8d3e769bf725a3ed488a46f82ba2d}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\mbox{[}Base\+Exception\mbox{]}\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+val, Traceback\+Type\texorpdfstring{$\vert$}{|}None exc\+\_\+tb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_ae253a4680396df4e861448baf2bbf37d}{config}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pluggy \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_acdcf4069fe8239a6f67e54bc0a45163f}{ihook}} .Hook\+Relay
+\item 
+str \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a10e5d97be411c694c84f987a3b7cafcc}{msg}} \texorpdfstring{$\vert$}{|} None
+\item 
+dict \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_aa9541d3339a86ac976803bba94c4f5fe}{kwargs}} \mbox{[}str, Any\mbox{]}
+\item 
+Callable \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_ac0ccc5345204de6f40301d3d76a5fdd5}{suspend\+\_\+capture\+\_\+ctx}} \mbox{[}\mbox{[}$\,$\mbox{]}, Abstract\+Context\+Manager\mbox{[}None\mbox{]}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a483e45d932f1c09c638f2f4b9e9bfa1c}{\+\_\+start}} = time.\+time()
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a29bdb362d21310832b33705fafc36f41}{\+\_\+precise\+\_\+start}} = time.\+perf\+\_\+counter()
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a363aa68d35218927e062edd0f0dc3dea}{\+\_\+exc\+\_\+info}} = None
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_ad3afc18891ee9c1feee3f63908e563f9}{\+\_\+exit\+\_\+stack}} = Exit\+Stack()
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a64c66808f95eeb9226eef4019b1d0bfa}{\+\_\+captured\+\_\+output}}
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager_a63b3fe6a0c3aab8318ef7451743c9200}{\+\_\+captured\+\_\+logs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Context manager for subtests, capturing exceptions raised inside the subtest scope and handling
+them through the pytest machinery.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a64e3caa03fb402812a73cbb6d45bf4b1}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a64e3caa03fb402812a73cbb6d45bf4b1} 
+ None \+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_aebb8d3e769bf725a3ed488a46f82ba2d}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_aebb8d3e769bf725a3ed488a46f82ba2d} 
+ bool \+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\mbox{[}Base\+Exception\mbox{]} \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+val}{, }\item[{Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+tb}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a63b3fe6a0c3aab8318ef7451743c9200}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_captured\_logs@{\_captured\_logs}}
+\index{\_captured\_logs@{\_captured\_logs}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_captured\_logs}{\_captured\_logs}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a63b3fe6a0c3aab8318ef7451743c9200} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+captured\+\_\+logs\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.\_exit\_stack.enter\_context(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ capturing\_logs(self.request)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a64c66808f95eeb9226eef4019b1d0bfa}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_captured\_output@{\_captured\_output}}
+\index{\_captured\_output@{\_captured\_output}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_captured\_output}{\_captured\_output}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a64c66808f95eeb9226eef4019b1d0bfa} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+captured\+\_\+output\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.\_exit\_stack.enter\_context(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ capturing\_output(self.request)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a363aa68d35218927e062edd0f0dc3dea}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_exc\_info@{\_exc\_info}}
+\index{\_exc\_info@{\_exc\_info}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_exc\_info}{\_exc\_info}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a363aa68d35218927e062edd0f0dc3dea} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+exc\+\_\+info = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_ad3afc18891ee9c1feee3f63908e563f9}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_exit\_stack@{\_exit\_stack}}
+\index{\_exit\_stack@{\_exit\_stack}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_exit\_stack}{\_exit\_stack}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_ad3afc18891ee9c1feee3f63908e563f9} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+exit\+\_\+stack = Exit\+Stack()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a29bdb362d21310832b33705fafc36f41}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_precise\_start@{\_precise\_start}}
+\index{\_precise\_start@{\_precise\_start}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_precise\_start}{\_precise\_start}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a29bdb362d21310832b33705fafc36f41} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+precise\+\_\+start = time.\+perf\+\_\+counter()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a483e45d932f1c09c638f2f4b9e9bfa1c}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!\_start@{\_start}}
+\index{\_start@{\_start}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{\_start}{\_start}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a483e45d932f1c09c638f2f4b9e9bfa1c} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+\_\+start = time.\+time()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_ae253a4680396df4e861448baf2bbf37d}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!config@{config}}
+\index{config@{config}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_ae253a4680396df4e861448baf2bbf37d} 
+\+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+config}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_acdcf4069fe8239a6f67e54bc0a45163f}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!ihook@{ihook}}
+\index{ihook@{ihook}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{ihook}{ihook}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_acdcf4069fe8239a6f67e54bc0a45163f} 
+pluggy \+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+ihook .Hook\+Relay\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_aa9541d3339a86ac976803bba94c4f5fe}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!kwargs@{kwargs}}
+\index{kwargs@{kwargs}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{kwargs}{kwargs}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_aa9541d3339a86ac976803bba94c4f5fe} 
+dict \+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+kwargs \mbox{[}str, Any\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_a10e5d97be411c694c84f987a3b7cafcc}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!msg@{msg}}
+\index{msg@{msg}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_a10e5d97be411c694c84f987a3b7cafcc} 
+str \+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+msg \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1___sub_test_context_manager_ac0ccc5345204de6f40301d3d76a5fdd5}\index{\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}!suspend\_capture\_ctx@{suspend\_capture\_ctx}}
+\index{suspend\_capture\_ctx@{suspend\_capture\_ctx}!\_pytest.subtests.\_SubTestContextManager@{\_pytest.subtests.\_SubTestContextManager}}
+\doxysubsubsection{\texorpdfstring{suspend\_capture\_ctx}{suspend\_capture\_ctx}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1___sub_test_context_manager_ac0ccc5345204de6f40301d3d76a5fdd5} 
+Callable \+\_\+pytest.\+subtests.\+\_\+\+Sub\+Test\+Context\+Manager.\+suspend\+\_\+capture\+\_\+ctx \mbox{[}\mbox{[}$\,$\mbox{]}, Abstract\+Context\+Manager\mbox{[}None\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{subtests_8py}{subtests.\+py}}\end{DoxyCompactItemize}

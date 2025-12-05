@@ -1,0 +1,509 @@
+\doxysection{django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds}{}\label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_abc506a8eeff96dc3242760f94bf586c7}{c\+\_\+int\+\_\+p}} = POINTER(c\+\_\+int)
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a92b451cccc542ef31445d3074c1d18bb}{GDAL\+\_\+\+OF\+\_\+\+READONLY}} = 0x00
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a93ea797e11173e23042099ff5f04c411}{GDAL\+\_\+\+OF\+\_\+\+UPDATE}} = 0x01
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ac1294201731cb6306a827d2cb33ea0ff}{GDAL\+\_\+\+OF\+\_\+\+ALL}} = 0x00
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6f9aadf53ca90a6f722b5b1eb867bb39}{GDAL\+\_\+\+OF\+\_\+\+RASTER}} = 0x02
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a4a577ec992cc11d22e3d80be39a8e565}{GDAL\+\_\+\+OF\+\_\+\+VECTOR}} = 0x04
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a01b31a6263a90d2d8e3526a2bf4919c6}{register\+\_\+all}} = void\+\_\+output(lgdal.\+GDALAll\+Register, \mbox{[}$\,$\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ae3cb57e524e54cf30c2a85a56b0f0655}{cleanup\+\_\+all}} = void\+\_\+output(lgdal.\+GDALDestroy\+Driver\+Manager, \mbox{[}$\,$\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_aead1ea812eb2e3acbc73a9cd6976d4d5}{get\+\_\+driver}} = voidptr\+\_\+output(lgdal.\+GDALGet\+Driver, \mbox{[}c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a9a76e47dc1f23d0348a8f63eeff8172b}{get\+\_\+driver\+\_\+by\+\_\+name}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a88114d6fd7217b37698c2e4afecf534f}{get\+\_\+driver\+\_\+count}} = int\+\_\+output(lgdal.\+GDALGet\+Driver\+Count, \mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a1a543636d4cba8186c9b2b33c8e787fc}{get\+\_\+driver\+\_\+description}} = const\+\_\+string\+\_\+output(lgdal.\+GDALGet\+Description, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a85dd68aec525185e8d44325f6a8bee56}{open\+\_\+ds}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ace2ad24b15d4cf8127c4051e65b9bd5f}{destroy\+\_\+ds}} = void\+\_\+output(lgdal.\+GDALClose, \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ab333ea76c842b4d5389f2ed9a86da4d7}{get\+\_\+ds\+\_\+name}} = const\+\_\+string\+\_\+output(lgdal.\+GDALGet\+Description, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ace4535a03e81aa101980dded19dd090e}{get\+\_\+dataset\+\_\+driver}} = voidptr\+\_\+output(lgdal.\+GDALGet\+Dataset\+Driver, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a5d952dc995681e53fcc0eb4f5e4ca5a1}{get\+\_\+layer}} = voidptr\+\_\+output(lgdal.\+GDALDataset\+Get\+Layer, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_aeddff12df203024d30e842550e0d7e35}{get\+\_\+layer\+\_\+by\+\_\+name}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8f0c4b418ef7510c0092eb784c30e388}{get\+\_\+layer\+\_\+count}} = int\+\_\+output(lgdal.\+GDALDataset\+Get\+Layer\+Count, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ae245aad3630a508466cd2c93f982e53e}{get\+\_\+extent}} = void\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Extent, \mbox{[}c\+\_\+void\+\_\+p, POINTER(\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_o_g_r_envelope}{OGREnvelope}}), c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8a0b169ed9b5122e16586a50197d7928}{get\+\_\+feature}} = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Feature, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+long\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_abe41bd79f3c83aa2a33107379c75e757}{get\+\_\+feature\+\_\+count}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Feature\+Count, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af694a075edfcbd4a74687dadaf843be8}{get\+\_\+layer\+\_\+defn}} = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Layer\+Defn, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_adb2d688ee2072e110c8508f30cfb7e9b}{get\+\_\+layer\+\_\+srs}} = srs\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Spatial\+Ref, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8de4668abd7a7a552c225243351efc04}{get\+\_\+next\+\_\+feature}} = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Next\+Feature, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a1271a77811bcb74d78f9fdf99bbef93d}{reset\+\_\+reading}} = void\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Reset\+Reading, \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a7c4ef8aed2fb3477f6ba096ccda69d45}{test\+\_\+capability}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Test\+Capability, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+char\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a45a64d7038fbc52068843a86f012565f}{get\+\_\+spatial\+\_\+filter}} = geom\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Spatial\+Filter, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad24121f3590c7de33175132adb5b9985}{set\+\_\+spatial\+\_\+filter}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a15d045e87a29801169a1f1ca69aadd3d}{set\+\_\+spatial\+\_\+filter\+\_\+rect}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a72611f19b4fb686c509ec8a0a9968c0f}{get\+\_\+fd\+\_\+geom\+\_\+type}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Geom\+Type, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ab3df348f322f446ffebd4eff723a4db9}{get\+\_\+fd\+\_\+name}} = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Name, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af7d64bbd64207ecf1520144b0701a175}{get\+\_\+feat\+\_\+name}} = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Name, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6e1a5363cdfb718b6462c81f6328c067}{get\+\_\+field\+\_\+count}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Field\+Count, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a89c700d2ce974182c57b5e02f42d5165}{get\+\_\+field\+\_\+defn}} = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Field\+Defn, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8bfbb7ad4520b7187ca048bf49a985c1}{clone\+\_\+feature}} = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Clone, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_acf607cabcae8e0b9cbfef1947d43213c}{destroy\+\_\+feature}} = void\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Destroy, \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a476aa119e6e8bb0db7a3654537b85725}{feature\+\_\+equal}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Equal, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af1fbab3885f3af4d7b54ee84bc714c65}{get\+\_\+feat\+\_\+geom\+\_\+ref}} = geom\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Geometry\+Ref, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a488b32f9466e945d2c1da9d663e9e811}{get\+\_\+feat\+\_\+field\+\_\+count}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+Count, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_affd968a91c3485b56130e9d550663bfb}{get\+\_\+feat\+\_\+field\+\_\+defn}} = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+Defn\+Ref, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad1a6de2ce3ead3ed945ba6d88d2221cc}{get\+\_\+fid}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+FID, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a698efdc8ea7ff430074f52b5503654e8}{get\+\_\+field\+\_\+as\+\_\+datetime}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a2e0b5fe25455d116a50eaf893b636190}{get\+\_\+field\+\_\+as\+\_\+double}} = double\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+As\+Double, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a28ca34dc21bfac6f992c2b6e936c484b}{get\+\_\+field\+\_\+as\+\_\+integer}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+As\+Integer, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a3d9d8045f460b013282075d0d3b73919}{get\+\_\+field\+\_\+as\+\_\+integer64}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8b7600a6a3d9b962bf5a618c002d3f17}{is\+\_\+field\+\_\+set}} = bool\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Is\+Field\+Set\+And\+Not\+Null, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad549336fb7fc19fed61da2ed3a501f23}{get\+\_\+field\+\_\+as\+\_\+string}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a5efde1ab5d1c5724306a72d5bf96bade}{get\+\_\+field\+\_\+index}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+Index, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+char\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a0a5289827a2e437cb2c1f08226b5ee7d}{get\+\_\+field\+\_\+name}} = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Name\+Ref, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6e3fe0d26a08ffa8a16235e189ee1ce8}{get\+\_\+field\+\_\+precision}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Precision, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a7a1fd65ab51ecf7b3e13f02e25679b62}{get\+\_\+field\+\_\+type}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Type, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a3fa077367f8dfad89f310c5b2cb33ed0}{get\+\_\+field\+\_\+type\+\_\+name}} = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+Get\+Field\+Type\+Name, \mbox{[}c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a14583e29638c6e58b60931f06a1493f0}{get\+\_\+field\+\_\+width}} = int\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Width, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module houses the ctypes function prototypes for OGR DataSource
+related data structures. OGR_Dr_*, OGR_DS_*, OGR_L_*, OGR_F_*,
+OGR_Fld_* routines are relevant here.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_abc506a8eeff96dc3242760f94bf586c7}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!c\_int\_p@{c\_int\_p}}
+\index{c\_int\_p@{c\_int\_p}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{c\_int\_p}{c\_int\_p}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_abc506a8eeff96dc3242760f94bf586c7} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+c\+\_\+int\+\_\+p = POINTER(c\+\_\+int)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ae3cb57e524e54cf30c2a85a56b0f0655}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!cleanup\_all@{cleanup\_all}}
+\index{cleanup\_all@{cleanup\_all}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{cleanup\_all}{cleanup\_all}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ae3cb57e524e54cf30c2a85a56b0f0655} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+cleanup\+\_\+all = void\+\_\+output(lgdal.\+GDALDestroy\+Driver\+Manager, \mbox{[}$\,$\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8bfbb7ad4520b7187ca048bf49a985c1}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!clone\_feature@{clone\_feature}}
+\index{clone\_feature@{clone\_feature}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{clone\_feature}{clone\_feature}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8bfbb7ad4520b7187ca048bf49a985c1} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+clone\+\_\+feature = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Clone, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ace2ad24b15d4cf8127c4051e65b9bd5f}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!destroy\_ds@{destroy\_ds}}
+\index{destroy\_ds@{destroy\_ds}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{destroy\_ds}{destroy\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ace2ad24b15d4cf8127c4051e65b9bd5f} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+destroy\+\_\+ds = void\+\_\+output(lgdal.\+GDALClose, \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_acf607cabcae8e0b9cbfef1947d43213c}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!destroy\_feature@{destroy\_feature}}
+\index{destroy\_feature@{destroy\_feature}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{destroy\_feature}{destroy\_feature}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_acf607cabcae8e0b9cbfef1947d43213c} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+destroy\+\_\+feature = void\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Destroy, \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a476aa119e6e8bb0db7a3654537b85725}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!feature\_equal@{feature\_equal}}
+\index{feature\_equal@{feature\_equal}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{feature\_equal}{feature\_equal}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a476aa119e6e8bb0db7a3654537b85725} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+feature\+\_\+equal = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Equal, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ac1294201731cb6306a827d2cb33ea0ff}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!GDAL\_OF\_ALL@{GDAL\_OF\_ALL}}
+\index{GDAL\_OF\_ALL@{GDAL\_OF\_ALL}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{GDAL\_OF\_ALL}{GDAL\_OF\_ALL}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ac1294201731cb6306a827d2cb33ea0ff} 
+int django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+GDAL\+\_\+\+OF\+\_\+\+ALL = 0x00}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6f9aadf53ca90a6f722b5b1eb867bb39}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!GDAL\_OF\_RASTER@{GDAL\_OF\_RASTER}}
+\index{GDAL\_OF\_RASTER@{GDAL\_OF\_RASTER}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{GDAL\_OF\_RASTER}{GDAL\_OF\_RASTER}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6f9aadf53ca90a6f722b5b1eb867bb39} 
+int django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+GDAL\+\_\+\+OF\+\_\+\+RASTER = 0x02}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a92b451cccc542ef31445d3074c1d18bb}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!GDAL\_OF\_READONLY@{GDAL\_OF\_READONLY}}
+\index{GDAL\_OF\_READONLY@{GDAL\_OF\_READONLY}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{GDAL\_OF\_READONLY}{GDAL\_OF\_READONLY}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a92b451cccc542ef31445d3074c1d18bb} 
+int django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+GDAL\+\_\+\+OF\+\_\+\+READONLY = 0x00}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a93ea797e11173e23042099ff5f04c411}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!GDAL\_OF\_UPDATE@{GDAL\_OF\_UPDATE}}
+\index{GDAL\_OF\_UPDATE@{GDAL\_OF\_UPDATE}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{GDAL\_OF\_UPDATE}{GDAL\_OF\_UPDATE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a93ea797e11173e23042099ff5f04c411} 
+int django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+GDAL\+\_\+\+OF\+\_\+\+UPDATE = 0x01}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a4a577ec992cc11d22e3d80be39a8e565}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!GDAL\_OF\_VECTOR@{GDAL\_OF\_VECTOR}}
+\index{GDAL\_OF\_VECTOR@{GDAL\_OF\_VECTOR}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{GDAL\_OF\_VECTOR}{GDAL\_OF\_VECTOR}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a4a577ec992cc11d22e3d80be39a8e565} 
+int django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+GDAL\+\_\+\+OF\+\_\+\+VECTOR = 0x04}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ace4535a03e81aa101980dded19dd090e}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_dataset\_driver@{get\_dataset\_driver}}
+\index{get\_dataset\_driver@{get\_dataset\_driver}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_dataset\_driver}{get\_dataset\_driver}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ace4535a03e81aa101980dded19dd090e} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+dataset\+\_\+driver = voidptr\+\_\+output(lgdal.\+GDALGet\+Dataset\+Driver, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_aead1ea812eb2e3acbc73a9cd6976d4d5}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_driver@{get\_driver}}
+\index{get\_driver@{get\_driver}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_driver}{get\_driver}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_aead1ea812eb2e3acbc73a9cd6976d4d5} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+driver = voidptr\+\_\+output(lgdal.\+GDALGet\+Driver, \mbox{[}c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a9a76e47dc1f23d0348a8f63eeff8172b}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_driver\_by\_name@{get\_driver\_by\_name}}
+\index{get\_driver\_by\_name@{get\_driver\_by\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_driver\_by\_name}{get\_driver\_by\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a9a76e47dc1f23d0348a8f63eeff8172b} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+driver\+\_\+by\+\_\+name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.GDALGetDriverByName,\ [c\_char\_p],\ errcheck=\textcolor{keyword}{False}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a88114d6fd7217b37698c2e4afecf534f}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_driver\_count@{get\_driver\_count}}
+\index{get\_driver\_count@{get\_driver\_count}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_driver\_count}{get\_driver\_count}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a88114d6fd7217b37698c2e4afecf534f} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+driver\+\_\+count = int\+\_\+output(lgdal.\+GDALGet\+Driver\+Count, \mbox{[}$\,$\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a1a543636d4cba8186c9b2b33c8e787fc}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_driver\_description@{get\_driver\_description}}
+\index{get\_driver\_description@{get\_driver\_description}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_driver\_description}{get\_driver\_description}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a1a543636d4cba8186c9b2b33c8e787fc} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+driver\+\_\+description = const\+\_\+string\+\_\+output(lgdal.\+GDALGet\+Description, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ab333ea76c842b4d5389f2ed9a86da4d7}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_ds\_name@{get\_ds\_name}}
+\index{get\_ds\_name@{get\_ds\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_name}{get\_ds\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ab333ea76c842b4d5389f2ed9a86da4d7} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+ds\+\_\+name = const\+\_\+string\+\_\+output(lgdal.\+GDALGet\+Description, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ae245aad3630a508466cd2c93f982e53e}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_extent@{get\_extent}}
+\index{get\_extent@{get\_extent}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_extent}{get\_extent}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ae245aad3630a508466cd2c93f982e53e} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+extent = void\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Extent, \mbox{[}c\+\_\+void\+\_\+p, POINTER(\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_o_g_r_envelope}{OGREnvelope}}), c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a72611f19b4fb686c509ec8a0a9968c0f}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_fd\_geom\_type@{get\_fd\_geom\_type}}
+\index{get\_fd\_geom\_type@{get\_fd\_geom\_type}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_fd\_geom\_type}{get\_fd\_geom\_type}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a72611f19b4fb686c509ec8a0a9968c0f} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+fd\+\_\+geom\+\_\+type = int\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Geom\+Type, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ab3df348f322f446ffebd4eff723a4db9}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_fd\_name@{get\_fd\_name}}
+\index{get\_fd\_name@{get\_fd\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_fd\_name}{get\_fd\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ab3df348f322f446ffebd4eff723a4db9} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+fd\+\_\+name = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Name, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a488b32f9466e945d2c1da9d663e9e811}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_feat\_field\_count@{get\_feat\_field\_count}}
+\index{get\_feat\_field\_count@{get\_feat\_field\_count}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_feat\_field\_count}{get\_feat\_field\_count}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a488b32f9466e945d2c1da9d663e9e811} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+feat\+\_\+field\+\_\+count = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+Count, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_affd968a91c3485b56130e9d550663bfb}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_feat\_field\_defn@{get\_feat\_field\_defn}}
+\index{get\_feat\_field\_defn@{get\_feat\_field\_defn}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_feat\_field\_defn}{get\_feat\_field\_defn}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_affd968a91c3485b56130e9d550663bfb} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+feat\+\_\+field\+\_\+defn = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+Defn\+Ref, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af1fbab3885f3af4d7b54ee84bc714c65}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_feat\_geom\_ref@{get\_feat\_geom\_ref}}
+\index{get\_feat\_geom\_ref@{get\_feat\_geom\_ref}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_feat\_geom\_ref}{get\_feat\_geom\_ref}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af1fbab3885f3af4d7b54ee84bc714c65} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+feat\+\_\+geom\+\_\+ref = geom\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Geometry\+Ref, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af7d64bbd64207ecf1520144b0701a175}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_feat\_name@{get\_feat\_name}}
+\index{get\_feat\_name@{get\_feat\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_feat\_name}{get\_feat\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af7d64bbd64207ecf1520144b0701a175} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+feat\+\_\+name = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Name, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8a0b169ed9b5122e16586a50197d7928}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_feature@{get\_feature}}
+\index{get\_feature@{get\_feature}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_feature}{get\_feature}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8a0b169ed9b5122e16586a50197d7928} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+feature = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Feature, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+long\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_abe41bd79f3c83aa2a33107379c75e757}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_feature\_count@{get\_feature\_count}}
+\index{get\_feature\_count@{get\_feature\_count}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_feature\_count}{get\_feature\_count}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_abe41bd79f3c83aa2a33107379c75e757} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+feature\+\_\+count = int\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Feature\+Count, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad1a6de2ce3ead3ed945ba6d88d2221cc}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_fid@{get\_fid}}
+\index{get\_fid@{get\_fid}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_fid}{get\_fid}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad1a6de2ce3ead3ed945ba6d88d2221cc} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+fid = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+FID, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a698efdc8ea7ff430074f52b5503654e8}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_as\_datetime@{get\_field\_as\_datetime}}
+\index{get\_field\_as\_datetime@{get\_field\_as\_datetime}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_as\_datetime}{get\_field\_as\_datetime}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a698efdc8ea7ff430074f52b5503654e8} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+as\+\_\+datetime}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ int\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.OGR\_F\_GetFieldAsDateTime,}
+\DoxyCodeLine{00003\ \ \ \ \ [c\_void\_p,\ c\_int,\ c\_int\_p,\ c\_int\_p,\ c\_int\_p,\ c\_int\_p,\ c\_int\_p,\ c\_int\_p],}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a2e0b5fe25455d116a50eaf893b636190}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_as\_double@{get\_field\_as\_double}}
+\index{get\_field\_as\_double@{get\_field\_as\_double}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_as\_double}{get\_field\_as\_double}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a2e0b5fe25455d116a50eaf893b636190} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+as\+\_\+double = double\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+As\+Double, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a28ca34dc21bfac6f992c2b6e936c484b}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_as\_integer@{get\_field\_as\_integer}}
+\index{get\_field\_as\_integer@{get\_field\_as\_integer}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_as\_integer}{get\_field\_as\_integer}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a28ca34dc21bfac6f992c2b6e936c484b} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+as\+\_\+integer = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+As\+Integer, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a3d9d8045f460b013282075d0d3b73919}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_as\_integer64@{get\_field\_as\_integer64}}
+\index{get\_field\_as\_integer64@{get\_field\_as\_integer64}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_as\_integer64}{get\_field\_as\_integer64}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a3d9d8045f460b013282075d0d3b73919} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+as\+\_\+integer64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ int64\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.OGR\_F\_GetFieldAsInteger64,\ [c\_void\_p,\ c\_int]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad549336fb7fc19fed61da2ed3a501f23}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_as\_string@{get\_field\_as\_string}}
+\index{get\_field\_as\_string@{get\_field\_as\_string}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_as\_string}{get\_field\_as\_string}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad549336fb7fc19fed61da2ed3a501f23} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+as\+\_\+string}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ const\_string\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.OGR\_F\_GetFieldAsString,\ [c\_void\_p,\ c\_int]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6e1a5363cdfb718b6462c81f6328c067}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_count@{get\_field\_count}}
+\index{get\_field\_count@{get\_field\_count}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_count}{get\_field\_count}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6e1a5363cdfb718b6462c81f6328c067} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+count = int\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Field\+Count, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a89c700d2ce974182c57b5e02f42d5165}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_defn@{get\_field\_defn}}
+\index{get\_field\_defn@{get\_field\_defn}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_defn}{get\_field\_defn}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a89c700d2ce974182c57b5e02f42d5165} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+defn = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+FD\+\_\+\+Get\+Field\+Defn, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a5efde1ab5d1c5724306a72d5bf96bade}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_index@{get\_field\_index}}
+\index{get\_field\_index@{get\_field\_index}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_index}{get\_field\_index}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a5efde1ab5d1c5724306a72d5bf96bade} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+index = int\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Get\+Field\+Index, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+char\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a0a5289827a2e437cb2c1f08226b5ee7d}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_name@{get\_field\_name}}
+\index{get\_field\_name@{get\_field\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_name}{get\_field\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a0a5289827a2e437cb2c1f08226b5ee7d} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+name = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Name\+Ref, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6e3fe0d26a08ffa8a16235e189ee1ce8}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_precision@{get\_field\_precision}}
+\index{get\_field\_precision@{get\_field\_precision}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_precision}{get\_field\_precision}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a6e3fe0d26a08ffa8a16235e189ee1ce8} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+precision = int\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Precision, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a7a1fd65ab51ecf7b3e13f02e25679b62}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_type@{get\_field\_type}}
+\index{get\_field\_type@{get\_field\_type}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_type}{get\_field\_type}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a7a1fd65ab51ecf7b3e13f02e25679b62} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+type = int\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Type, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a3fa077367f8dfad89f310c5b2cb33ed0}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_type\_name@{get\_field\_type\_name}}
+\index{get\_field\_type\_name@{get\_field\_type\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_type\_name}{get\_field\_type\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a3fa077367f8dfad89f310c5b2cb33ed0} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+type\+\_\+name = const\+\_\+string\+\_\+output(lgdal.\+OGR\+\_\+\+Get\+Field\+Type\+Name, \mbox{[}c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a14583e29638c6e58b60931f06a1493f0}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_field\_width@{get\_field\_width}}
+\index{get\_field\_width@{get\_field\_width}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_field\_width}{get\_field\_width}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a14583e29638c6e58b60931f06a1493f0} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+field\+\_\+width = int\+\_\+output(lgdal.\+OGR\+\_\+\+Fld\+\_\+\+Get\+Width, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a5d952dc995681e53fcc0eb4f5e4ca5a1}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_layer@{get\_layer}}
+\index{get\_layer@{get\_layer}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_layer}{get\_layer}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a5d952dc995681e53fcc0eb4f5e4ca5a1} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+layer = voidptr\+\_\+output(lgdal.\+GDALDataset\+Get\+Layer, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_aeddff12df203024d30e842550e0d7e35}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_layer\_by\_name@{get\_layer\_by\_name}}
+\index{get\_layer\_by\_name@{get\_layer\_by\_name}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_layer\_by\_name}{get\_layer\_by\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_aeddff12df203024d30e842550e0d7e35} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+layer\+\_\+by\+\_\+name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.GDALDatasetGetLayerByName,\ [c\_void\_p,\ c\_char\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8f0c4b418ef7510c0092eb784c30e388}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_layer\_count@{get\_layer\_count}}
+\index{get\_layer\_count@{get\_layer\_count}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_layer\_count}{get\_layer\_count}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8f0c4b418ef7510c0092eb784c30e388} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+layer\+\_\+count = int\+\_\+output(lgdal.\+GDALDataset\+Get\+Layer\+Count, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af694a075edfcbd4a74687dadaf843be8}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_layer\_defn@{get\_layer\_defn}}
+\index{get\_layer\_defn@{get\_layer\_defn}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_layer\_defn}{get\_layer\_defn}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_af694a075edfcbd4a74687dadaf843be8} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+layer\+\_\+defn = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Layer\+Defn, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_adb2d688ee2072e110c8508f30cfb7e9b}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_layer\_srs@{get\_layer\_srs}}
+\index{get\_layer\_srs@{get\_layer\_srs}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_layer\_srs}{get\_layer\_srs}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_adb2d688ee2072e110c8508f30cfb7e9b} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+layer\+\_\+srs = srs\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Spatial\+Ref, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8de4668abd7a7a552c225243351efc04}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_next\_feature@{get\_next\_feature}}
+\index{get\_next\_feature@{get\_next\_feature}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_next\_feature}{get\_next\_feature}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8de4668abd7a7a552c225243351efc04} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+next\+\_\+feature = voidptr\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Next\+Feature, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a45a64d7038fbc52068843a86f012565f}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!get\_spatial\_filter@{get\_spatial\_filter}}
+\index{get\_spatial\_filter@{get\_spatial\_filter}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{get\_spatial\_filter}{get\_spatial\_filter}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a45a64d7038fbc52068843a86f012565f} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+get\+\_\+spatial\+\_\+filter = geom\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Get\+Spatial\+Filter, \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8b7600a6a3d9b962bf5a618c002d3f17}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!is\_field\_set@{is\_field\_set}}
+\index{is\_field\_set@{is\_field\_set}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{is\_field\_set}{is\_field\_set}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a8b7600a6a3d9b962bf5a618c002d3f17} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+is\+\_\+field\+\_\+set = bool\+\_\+output(lgdal.\+OGR\+\_\+\+F\+\_\+\+Is\+Field\+Set\+And\+Not\+Null, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a85dd68aec525185e8d44325f6a8bee56}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!open\_ds@{open\_ds}}
+\index{open\_ds@{open\_ds}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{open\_ds}{open\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a85dd68aec525185e8d44325f6a8bee56} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+open\+\_\+ds}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.GDALOpenEx,}
+\DoxyCodeLine{00003\ \ \ \ \ [c\_char\_p,\ c\_uint,\ POINTER(c\_char\_p),\ POINTER(c\_char\_p),\ POINTER(c\_char\_p)],}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a01b31a6263a90d2d8e3526a2bf4919c6}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!register\_all@{register\_all}}
+\index{register\_all@{register\_all}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{register\_all}{register\_all}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a01b31a6263a90d2d8e3526a2bf4919c6} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+register\+\_\+all = void\+\_\+output(lgdal.\+GDALAll\+Register, \mbox{[}$\,$\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a1271a77811bcb74d78f9fdf99bbef93d}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!reset\_reading@{reset\_reading}}
+\index{reset\_reading@{reset\_reading}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{reset\_reading}{reset\_reading}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a1271a77811bcb74d78f9fdf99bbef93d} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+reset\+\_\+reading = void\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Reset\+Reading, \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad24121f3590c7de33175132adb5b9985}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!set\_spatial\_filter@{set\_spatial\_filter}}
+\index{set\_spatial\_filter@{set\_spatial\_filter}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{set\_spatial\_filter}{set\_spatial\_filter}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_ad24121f3590c7de33175132adb5b9985} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+set\+\_\+spatial\+\_\+filter}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.OGR\_L\_SetSpatialFilter,\ [c\_void\_p,\ c\_void\_p],\ errcheck=\textcolor{keyword}{False}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a15d045e87a29801169a1f1ca69aadd3d}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!set\_spatial\_filter\_rect@{set\_spatial\_filter\_rect}}
+\index{set\_spatial\_filter\_rect@{set\_spatial\_filter\_rect}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{set\_spatial\_filter\_rect}{set\_spatial\_filter\_rect}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a15d045e87a29801169a1f1ca69aadd3d} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+set\+\_\+spatial\+\_\+filter\+\_\+rect}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ lgdal.OGR\_L\_SetSpatialFilterRect,}
+\DoxyCodeLine{00003\ \ \ \ \ [c\_void\_p,\ c\_double,\ c\_double,\ c\_double,\ c\_double],}
+\DoxyCodeLine{00004\ \ \ \ \ errcheck=\textcolor{keyword}{False},}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a7c4ef8aed2fb3477f6ba096ccda69d45}\index{django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}!test\_capability@{test\_capability}}
+\index{test\_capability@{test\_capability}!django.contrib.gis.gdal.prototypes.ds@{django.contrib.gis.gdal.prototypes.ds}}
+\doxysubsubsection{\texorpdfstring{test\_capability}{test\_capability}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1ds_a7c4ef8aed2fb3477f6ba096ccda69d45} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+ds.\+test\+\_\+capability = int\+\_\+output(lgdal.\+OGR\+\_\+\+L\+\_\+\+Test\+Capability, \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+char\+\_\+p\mbox{]})}
+

@@ -1,0 +1,57 @@
+\doxysection{django.\+template.\+loader Namespace Reference}
+\hypertarget{namespacedjango_1_1template_1_1loader}{}\label{namespacedjango_1_1template_1_1loader}\index{django.template.loader@{django.template.loader}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1loader_a2ae91f38900e6282e2b95c251492bbb1}{get\+\_\+template}} (template\+\_\+name, using=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1loader_a4939a0d40c7d5598a8adeb6339ceec73}{select\+\_\+template}} (template\+\_\+name\+\_\+list, using=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1loader_abbaadc8e761c07a2c226c86b94d380bf}{render\+\_\+to\+\_\+string}} (template\+\_\+name, context=None, request=None, using=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1loader_a1ae9c7f8f306aa8e0bd752fb5f086c67}{\+\_\+engine\+\_\+list}} (using=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1template_1_1loader_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1template_1_1loader_a1ae9c7f8f306aa8e0bd752fb5f086c67}\index{django.template.loader@{django.template.loader}!\_engine\_list@{\_engine\_list}}
+\index{\_engine\_list@{\_engine\_list}!django.template.loader@{django.template.loader}}
+\doxysubsubsection{\texorpdfstring{\_engine\_list()}{\_engine\_list()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1loader_a1ae9c7f8f306aa8e0bd752fb5f086c67} 
+django.\+template.\+loader.\+\_\+engine\+\_\+list (\begin{DoxyParamCaption}\item[{}]{using}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1template_1_1loader_a2ae91f38900e6282e2b95c251492bbb1}\index{django.template.loader@{django.template.loader}!get\_template@{get\_template}}
+\index{get\_template@{get\_template}!django.template.loader@{django.template.loader}}
+\doxysubsubsection{\texorpdfstring{get\_template()}{get\_template()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1loader_a2ae91f38900e6282e2b95c251492bbb1} 
+django.\+template.\+loader.\+get\+\_\+template (\begin{DoxyParamCaption}\item[{}]{template\+\_\+name}{, }\item[{}]{using}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load and return a template for the given name.
+
+Raise TemplateDoesNotExist if no such template exists.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1template_1_1loader_abbaadc8e761c07a2c226c86b94d380bf}\index{django.template.loader@{django.template.loader}!render\_to\_string@{render\_to\_string}}
+\index{render\_to\_string@{render\_to\_string}!django.template.loader@{django.template.loader}}
+\doxysubsubsection{\texorpdfstring{render\_to\_string()}{render\_to\_string()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1loader_abbaadc8e761c07a2c226c86b94d380bf} 
+django.\+template.\+loader.\+render\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{}]{template\+\_\+name}{, }\item[{}]{context}{ = {\ttfamily None}, }\item[{}]{request}{ = {\ttfamily None}, }\item[{}]{using}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load a template and render it with a context. Return a string.
+
+template_name may be a string or a list of strings.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1template_1_1loader_a4939a0d40c7d5598a8adeb6339ceec73}\index{django.template.loader@{django.template.loader}!select\_template@{select\_template}}
+\index{select\_template@{select\_template}!django.template.loader@{django.template.loader}}
+\doxysubsubsection{\texorpdfstring{select\_template()}{select\_template()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1loader_a4939a0d40c7d5598a8adeb6339ceec73} 
+django.\+template.\+loader.\+select\+\_\+template (\begin{DoxyParamCaption}\item[{}]{template\+\_\+name\+\_\+list}{, }\item[{}]{using}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load and return a template for one of the given names.
+
+Try names in order and return the first template found.
+
+Raise TemplateDoesNotExist if no such template exists.
+\end{DoxyVerb}
+ 

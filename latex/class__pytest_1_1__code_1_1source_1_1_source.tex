@@ -1,0 +1,174 @@
+\doxysection{\+\_\+pytest.\+\_\+code.\+source.\+Source Class Reference}
+\hypertarget{class__pytest_1_1__code_1_1source_1_1_source}{}\label{class__pytest_1_1__code_1_1source_1_1_source}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a28e106aaa90d8b263d9e35781a9a49b6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, object obj=None)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_ab4e5fbc7a938e8d3edd943f761b6a656}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_abb422eb2361781d67b33783d44acacd6}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int key)
+\item 
+\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a32ca9e063cc31391fc9e4543b0fc03d7}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, slice key)
+\item 
+str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_ad9f951890e5aa1a3a61aaa227399258e}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int\texorpdfstring{$\vert$}{|}slice key)
+\item 
+Iterator\mbox{[}str\mbox{]} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a9b49e3a87930c56ca9486c530aa34e05}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a42a3e202d6512fcee883ee503cbcd82f}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_aa525e733890257a82bfc6382b07d28ec}{strip}} (self)
+\item 
+\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_abc99a323638809562ba4dbf97cab6bd1}{indent}} (self, str indent="{} "{} \texorpdfstring{$\ast$}{*}4)
+\item 
+\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_afde95d2be3ebe066a1e54d930c281ade}{getstatement}} (self, int lineno)
+\item 
+tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a9b3b0d93f5563c4135e5968d64fc94e3}{getstatementrange}} (self, int lineno)
+\item 
+\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a88746c6f6ddc088c03a95a4d62143756}{deindent}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_ab12f5921354a700e5c48fba887009965}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a9d6acf9f5070717049230392557db66a}{lines}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_a895067176846e841837da14e39dc342a}{raw\+\_\+lines}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source_ae172413c7fc7c579b392da3dab253174}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An immutable object holding a source code fragment.
+
+When using Source(...), the source lines are deindented.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a28e106aaa90d8b263d9e35781a9a49b6}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a28e106aaa90d8b263d9e35781a9a49b6} 
+ None \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object }]{obj}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_ab4e5fbc7a938e8d3edd943f761b6a656}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_ab4e5fbc7a938e8d3edd943f761b6a656} 
+ bool \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_abb422eb2361781d67b33783d44acacd6}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_abb422eb2361781d67b33783d44acacd6} 
+ str \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_ad9f951890e5aa1a3a61aaa227399258e}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_ad9f951890e5aa1a3a61aaa227399258e} 
+ str \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} slice}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a32ca9e063cc31391fc9e4543b0fc03d7}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a32ca9e063cc31391fc9e4543b0fc03d7} 
+ \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{slice}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a9b49e3a87930c56ca9486c530aa34e05}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a9b49e3a87930c56ca9486c530aa34e05} 
+ Iterator\mbox{[}str\mbox{]} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a42a3e202d6512fcee883ee503cbcd82f}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a42a3e202d6512fcee883ee503cbcd82f} 
+ int \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_ab12f5921354a700e5c48fba887009965}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_ab12f5921354a700e5c48fba887009965} 
+ str \+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a88746c6f6ddc088c03a95a4d62143756}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!deindent@{deindent}}
+\index{deindent@{deindent}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{deindent()}{deindent()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a88746c6f6ddc088c03a95a4d62143756} 
+ \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+deindent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new Source object deindented.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_afde95d2be3ebe066a1e54d930c281ade}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!getstatement@{getstatement}}
+\index{getstatement@{getstatement}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{getstatement()}{getstatement()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_afde95d2be3ebe066a1e54d930c281ade} 
+ \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+getstatement (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{lineno}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return Source statement which contains the given linenumber
+(counted from 0).\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a9b3b0d93f5563c4135e5968d64fc94e3}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!getstatementrange@{getstatementrange}}
+\index{getstatementrange@{getstatementrange}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{getstatementrange()}{getstatementrange()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a9b3b0d93f5563c4135e5968d64fc94e3} 
+ tuple\mbox{[}int, int\mbox{]} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+getstatementrange (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{lineno}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return (start, end) tuple which spans the minimal statement region
+which containing the given lineno.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_abc99a323638809562ba4dbf97cab6bd1}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!indent@{indent}}
+\index{indent@{indent}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{indent()}{indent()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_abc99a323638809562ba4dbf97cab6bd1} 
+ \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+indent (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{indent}{ = {\ttfamily "{}~"{}~\texorpdfstring{$\ast$}{*}~4}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a copy of the source object with all lines indented by the
+given indent-string.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_aa525e733890257a82bfc6382b07d28ec}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!strip@{strip}}
+\index{strip@{strip}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{strip()}{strip()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_aa525e733890257a82bfc6382b07d28ec} 
+ \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \+\_\+pytest.\+\_\+code.\+source.\+Source.\+strip (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return new Source object with trailing and leading blank lines removed.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_ae172413c7fc7c579b392da3dab253174}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_}{\_\_hash\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_ae172413c7fc7c579b392da3dab253174} 
+\+\_\+pytest.\+\_\+code.\+source.\+Source.\+\_\+\+\_\+hash\+\_\+\+\_\+ = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a9d6acf9f5070717049230392557db66a}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!lines@{lines}}
+\index{lines@{lines}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a9d6acf9f5070717049230392557db66a} 
+\+\_\+pytest.\+\_\+code.\+source.\+Source.\+lines = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class__pytest_1_1__code_1_1source_1_1_source_a895067176846e841837da14e39dc342a}\index{\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}!raw\_lines@{raw\_lines}}
+\index{raw\_lines@{raw\_lines}!\_pytest.\_code.source.Source@{\_pytest.\_code.source.Source}}
+\doxysubsubsection{\texorpdfstring{raw\_lines}{raw\_lines}}
+{\footnotesize\ttfamily \label{class__pytest_1_1__code_1_1source_1_1_source_a895067176846e841837da14e39dc342a} 
+list \+\_\+pytest.\+\_\+code.\+source.\+Source.\+raw\+\_\+lines = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\+\_\+code/\mbox{\hyperlink{__pytest_2__code_2source_8py}{source.\+py}}\end{DoxyCompactItemize}

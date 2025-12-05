@@ -1,0 +1,182 @@
+\doxysection{django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State Class Reference}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state}{}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+Inheritance diagram for django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_abb857f9c0948709083af370520c65697}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a92b954c6ce00bedd98b1c83185389388}{database\+\_\+operations}}=None, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a40049e49d4163d3f748ea1f9f8190abb}{state\+\_\+operations}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a87b4caac9f552a62c27420a00515a533}{deconstruct}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a6b82502b65e89ff7f2840a9f48fbf572}{state\+\_\+forwards}} (self, app\+\_\+label, state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a1459975dd87428399c3af694c2b20649}{database\+\_\+forwards}} (self, app\+\_\+label, schema\+\_\+editor, from\+\_\+state, to\+\_\+state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a22f2f8f93398d9b54a5f90b20ebe8d09}{database\+\_\+backwards}} (self, app\+\_\+label, schema\+\_\+editor, from\+\_\+state, to\+\_\+state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a7cbb551b5c69a2ee357f5d951503f09e}{describe}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a0e75a153578c0aa184cef917cbc50cdf}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a4ce9082f85e6bf28b1e968470a333f4a}{formatted\+\_\+description}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a380e32b8eb8c0e61bab998746a0a7910}{migration\+\_\+name\+\_\+fragment}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a5396b814a7639a8ee3368d3312979d8e}{references\+\_\+model}} (self, name, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_aed3a6bc67e958f889fd3553ca2c6d19a}{references\+\_\+field}} (self, model\+\_\+name, name, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_ae9ccd8dda6ac5380e583c6c53ed66445}{allow\+\_\+migrate\+\_\+model}} (self, connection\+\_\+alias, model)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_ae3b7e3a7ba01cef6a928878476347231}{reduce}} (self, operation, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_ab835a78e8583a6fd71f5e5ba9b5403e4}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a92b954c6ce00bedd98b1c83185389388}{database\+\_\+operations}} = database\+\_\+operations or \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a40049e49d4163d3f748ea1f9f8190abb}{state\+\_\+operations}} = state\+\_\+operations or \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_ab4f74d8a379cefdb3ac5a26072517869}{reversible}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a7f1390e35429f9b3d6c9f1571fe562e9}{reduces\+\_\+to\+\_\+sql}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a4e983956ee508f5c19674a20a2bb2500}{atomic}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a46d9b82039c84b5c0031914e70498082}{elidable}} = False
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a278729637550e4f4e403a3554ef16292}{serialization\+\_\+expand\+\_\+args}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a278ba5cdf0f89e99193f05f823a141f0}{category}} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_ad9ff164e630ee6d56c9dab906471c813}{\+\_\+constructor\+\_\+args}} = (args, kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Take two lists of operations - ones that will be used for the database,
+and ones that will be used for the state change. This allows operations
+that don't support state change to have it applied, or have operations
+that affect the state or not the database, or so on.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_abb857f9c0948709083af370520c65697}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_abb857f9c0948709083af370520c65697} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{database\+\_\+operations}{ = {\ttfamily None}, }\item[{}]{state\+\_\+operations}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a22f2f8f93398d9b54a5f90b20ebe8d09}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!database\_backwards@{database\_backwards}}
+\index{database\_backwards@{database\_backwards}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{database\_backwards()}{database\_backwards()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a22f2f8f93398d9b54a5f90b20ebe8d09} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+database\+\_\+backwards (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+label}{, }\item[{}]{schema\+\_\+editor}{, }\item[{}]{from\+\_\+state}{, }\item[{}]{to\+\_\+state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the mutation on the database schema in the reverse
+direction - e.g. if this were CreateModel, it would in fact
+drop the model's table.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_aa4a0bdd6d640b1a39bdf7bbb5a04b877}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a1459975dd87428399c3af694c2b20649}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!database\_forwards@{database\_forwards}}
+\index{database\_forwards@{database\_forwards}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{database\_forwards()}{database\_forwards()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a1459975dd87428399c3af694c2b20649} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+database\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+label}{, }\item[{}]{schema\+\_\+editor}{, }\item[{}]{from\+\_\+state}{, }\item[{}]{to\+\_\+state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the mutation on the database schema in the normal
+(forwards) direction.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a8bf567418dd297ce8046c221cb7da5dc}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a87b4caac9f552a62c27420a00515a533}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!deconstruct@{deconstruct}}
+\index{deconstruct@{deconstruct}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{deconstruct()}{deconstruct()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a87b4caac9f552a62c27420a00515a533} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+deconstruct (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a 3-tuple of class import path (or just name if it lives
+under django.db.migrations), positional arguments, and keyword
+arguments.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a7a97aba5207d742bdaa2e7562714a062}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a7cbb551b5c69a2ee357f5d951503f09e}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!describe@{describe}}
+\index{describe@{describe}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{describe()}{describe()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a7cbb551b5c69a2ee357f5d951503f09e} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+describe (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Output a brief summary of what the action does.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a5c8477a9c9a49746db7edf2e3eb56210}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a6b82502b65e89ff7f2840a9f48fbf572}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!state\_forwards@{state\_forwards}}
+\index{state\_forwards@{state\_forwards}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{state\_forwards()}{state\_forwards()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a6b82502b65e89ff7f2840a9f48fbf572} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+state\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+label}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take the state from the previous migration, and mutate it
+so that it matches what this migration would perform.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1_operation_a7cfbfb963b7c74653191ffb9afa52ff8}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a92b954c6ce00bedd98b1c83185389388}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!database\_operations@{database\_operations}}
+\index{database\_operations@{database\_operations}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{database\_operations}{database\_operations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a92b954c6ce00bedd98b1c83185389388} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+database\+\_\+operations = database\+\_\+operations or \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a40049e49d4163d3f748ea1f9f8190abb}\index{django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}!state\_operations@{state\_operations}}
+\index{state\_operations@{state\_operations}!django.db.migrations.operations.special.SeparateDatabaseAndState@{django.db.migrations.operations.special.SeparateDatabaseAndState}}
+\doxysubsubsection{\texorpdfstring{state\_operations}{state\_operations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1_separate_database_and_state_a40049e49d4163d3f748ea1f9f8190abb} 
+django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State.\+state\+\_\+operations = state\+\_\+operations or \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/migrations/operations/\mbox{\hyperlink{django_2db_2migrations_2operations_2special_8py}{special.\+py}}\end{DoxyCompactItemize}

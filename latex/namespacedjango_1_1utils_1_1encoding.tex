@@ -1,0 +1,243 @@
+\doxysection{django.\+utils.\+encoding Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1encoding}{}\label{namespacedjango_1_1utils_1_1encoding}\index{django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1encoding_1_1_django_unicode_decode_error}{Django\+Unicode\+Decode\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a2cc3c76c8d8ca079d8d285674fcf95db}{smart\+\_\+str}} (s, encoding="{}utf-\/8"{}, strings\+\_\+only=False, errors="{}strict"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_ae52ba78a61c0e9a1518510bbafb876e0}{is\+\_\+protected\+\_\+type}} (obj)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a65a54f2e7a88b1b3b196c37101cd9daa}{force\+\_\+str}} (s, encoding="{}utf-\/8"{}, strings\+\_\+only=False, errors="{}strict"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a8fac6ee23d0570ece6a31b125c207539}{smart\+\_\+bytes}} (s, encoding="{}utf-\/8"{}, strings\+\_\+only=False, errors="{}strict"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a3ce3bad8966db0c07b5491cd10943b1a}{force\+\_\+bytes}} (s, encoding="{}utf-\/8"{}, strings\+\_\+only=False, errors="{}strict"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_aadfad1e90edc4df6b2db41436f3850cb}{iri\+\_\+to\+\_\+uri}} (iri)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a33aa8dc178eebdae83176d2a3fc1fc74}{uri\+\_\+to\+\_\+iri}} (uri)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_af45262809a03c8f433e6829ee5e5b049}{escape\+\_\+uri\+\_\+path}} (path)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_ac232bce2189ab4d9d3bfb0b1196b3f16}{punycode}} (domain)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a9b1151f2dfaa553cce28e9c144f3faf2}{repercent\+\_\+broken\+\_\+unicode}} (path)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_af056d2e24ec78e0f72df25b80e7f3618}{filepath\+\_\+to\+\_\+uri}} (path)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a5b66505d125d2ab7ff28dee751677c1c}{get\+\_\+system\+\_\+encoding}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_acd51904145e4a40abfcf8249b5a190dd}{\+\_\+\+PROTECTED\+\_\+\+TYPES}}
+\item 
+list \mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_ab010fb350e964c7eee76aa2acee7a27e}{\+\_\+ascii\+\_\+ranges}} = \mbox{[}\mbox{[}45, 46, 95, 126\mbox{]}, range(65, 91), range(97, 123)\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a4f1cd56ec621da35fc05c22c7b98522a}{\+\_\+hextobyte}}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_aa61a796910746aa6f8a74e94f104ff8a}{\+\_\+hexdig}} = "{}0123456789ABCDEFabcdef"{}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a9230ef8ff7acf90cfeca1938aae4f920}{DEFAULT\+\_\+\+LOCALE\+\_\+\+ENCODING}} = \mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a5b66505d125d2ab7ff28dee751677c1c}{get\+\_\+system\+\_\+encoding}}()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_af45262809a03c8f433e6829ee5e5b049}\index{django.utils.encoding@{django.utils.encoding}!escape\_uri\_path@{escape\_uri\_path}}
+\index{escape\_uri\_path@{escape\_uri\_path}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{escape\_uri\_path()}{escape\_uri\_path()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_af45262809a03c8f433e6829ee5e5b049} 
+django.\+utils.\+encoding.\+escape\+\_\+uri\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Escape the unsafe characters from the path portion of a Uniform Resource
+Identifier (URI).
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_af056d2e24ec78e0f72df25b80e7f3618}\index{django.utils.encoding@{django.utils.encoding}!filepath\_to\_uri@{filepath\_to\_uri}}
+\index{filepath\_to\_uri@{filepath\_to\_uri}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{filepath\_to\_uri()}{filepath\_to\_uri()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_af056d2e24ec78e0f72df25b80e7f3618} 
+django.\+utils.\+encoding.\+filepath\+\_\+to\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a file system path to a URI portion that is suitable for
+inclusion in a URL.
+
+Encode certain chars that would normally be recognized as special chars
+for URIs. Do not encode the ' character, as it is a valid character
+within URIs. See the encodeURIComponent() JavaScript function for details.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a3ce3bad8966db0c07b5491cd10943b1a}\index{django.utils.encoding@{django.utils.encoding}!force\_bytes@{force\_bytes}}
+\index{force\_bytes@{force\_bytes}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{force\_bytes()}{force\_bytes()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a3ce3bad8966db0c07b5491cd10943b1a} 
+django.\+utils.\+encoding.\+force\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{}]{strings\+\_\+only}{ = {\ttfamily False}, }\item[{}]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Similar to smart_bytes, except that lazy instances are resolved to
+strings, rather than kept as lazy objects.
+
+If strings_only is True, don't convert (some) non-string-like objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a65a54f2e7a88b1b3b196c37101cd9daa}\index{django.utils.encoding@{django.utils.encoding}!force\_str@{force\_str}}
+\index{force\_str@{force\_str}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{force\_str()}{force\_str()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a65a54f2e7a88b1b3b196c37101cd9daa} 
+django.\+utils.\+encoding.\+force\+\_\+str (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{}]{strings\+\_\+only}{ = {\ttfamily False}, }\item[{}]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Similar to smart_str(), except that lazy instances are resolved to
+strings, rather than kept as lazy objects.
+
+If strings_only is True, don't convert (some) non-string-like objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a5b66505d125d2ab7ff28dee751677c1c}\index{django.utils.encoding@{django.utils.encoding}!get\_system\_encoding@{get\_system\_encoding}}
+\index{get\_system\_encoding@{get\_system\_encoding}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{get\_system\_encoding()}{get\_system\_encoding()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a5b66505d125d2ab7ff28dee751677c1c} 
+django.\+utils.\+encoding.\+get\+\_\+system\+\_\+encoding (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The encoding for the character type functions. Fallback to 'ascii' if the
+#encoding is unsupported by Python or could not be determined. See tickets
+#10335 and #5846.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_aadfad1e90edc4df6b2db41436f3850cb}\index{django.utils.encoding@{django.utils.encoding}!iri\_to\_uri@{iri\_to\_uri}}
+\index{iri\_to\_uri@{iri\_to\_uri}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{iri\_to\_uri()}{iri\_to\_uri()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_aadfad1e90edc4df6b2db41436f3850cb} 
+django.\+utils.\+encoding.\+iri\+\_\+to\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{iri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert an Internationalized Resource Identifier (IRI) portion to a URI
+portion that is suitable for inclusion in a URL.
+
+This is the algorithm from RFC 3987 Section 3.1, slightly simplified since
+the input is assumed to be a string rather than an arbitrary byte stream.
+
+Take an IRI (string or UTF-8 bytes, e.g. '/I ♥ Django/' or
+b'/I \xe2\x99\xa5 Django/') and return a string containing the encoded
+result with ASCII chars only (e.g. '/I%20%E2%99%A5%20Django/').
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_ae52ba78a61c0e9a1518510bbafb876e0}\index{django.utils.encoding@{django.utils.encoding}!is\_protected\_type@{is\_protected\_type}}
+\index{is\_protected\_type@{is\_protected\_type}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{is\_protected\_type()}{is\_protected\_type()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_ae52ba78a61c0e9a1518510bbafb876e0} 
+django.\+utils.\+encoding.\+is\+\_\+protected\+\_\+type (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if the object instance is of a protected type.
+
+Objects of protected types are preserved as-is when passed to
+force_str(strings_only=True).
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_ac232bce2189ab4d9d3bfb0b1196b3f16}\index{django.utils.encoding@{django.utils.encoding}!punycode@{punycode}}
+\index{punycode@{punycode}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{punycode()}{punycode()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_ac232bce2189ab4d9d3bfb0b1196b3f16} 
+django.\+utils.\+encoding.\+punycode (\begin{DoxyParamCaption}\item[{}]{domain}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the Punycode of the given domain if it's non-ASCII.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a9b1151f2dfaa553cce28e9c144f3faf2}\index{django.utils.encoding@{django.utils.encoding}!repercent\_broken\_unicode@{repercent\_broken\_unicode}}
+\index{repercent\_broken\_unicode@{repercent\_broken\_unicode}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{repercent\_broken\_unicode()}{repercent\_broken\_unicode()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a9b1151f2dfaa553cce28e9c144f3faf2} 
+django.\+utils.\+encoding.\+repercent\+\_\+broken\+\_\+unicode (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}As per RFC 3987 Section 3.2, step three of converting a URI into an IRI,
+repercent-encode any octet produced that is not part of a strictly legal
+UTF-8 octet sequence.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a8fac6ee23d0570ece6a31b125c207539}\index{django.utils.encoding@{django.utils.encoding}!smart\_bytes@{smart\_bytes}}
+\index{smart\_bytes@{smart\_bytes}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{smart\_bytes()}{smart\_bytes()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a8fac6ee23d0570ece6a31b125c207539} 
+django.\+utils.\+encoding.\+smart\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{}]{strings\+\_\+only}{ = {\ttfamily False}, }\item[{}]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a bytestring version of 's', encoded as specified in 'encoding'.
+
+If strings_only is True, don't convert (some) non-string-like objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a2cc3c76c8d8ca079d8d285674fcf95db}\index{django.utils.encoding@{django.utils.encoding}!smart\_str@{smart\_str}}
+\index{smart\_str@{smart\_str}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{smart\_str()}{smart\_str()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a2cc3c76c8d8ca079d8d285674fcf95db} 
+django.\+utils.\+encoding.\+smart\+\_\+str (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{}]{strings\+\_\+only}{ = {\ttfamily False}, }\item[{}]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representing 's'. Treat bytestrings using the 'encoding'
+codec.
+
+If strings_only is True, don't convert (some) non-string-like objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1encoding_a33aa8dc178eebdae83176d2a3fc1fc74}\index{django.utils.encoding@{django.utils.encoding}!uri\_to\_iri@{uri\_to\_iri}}
+\index{uri\_to\_iri@{uri\_to\_iri}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{uri\_to\_iri()}{uri\_to\_iri()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a33aa8dc178eebdae83176d2a3fc1fc74} 
+django.\+utils.\+encoding.\+uri\+\_\+to\+\_\+iri (\begin{DoxyParamCaption}\item[{}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a Uniform Resource Identifier(URI) into an Internationalized
+Resource Identifier(IRI).
+
+This is the algorithm from RFC 3987 Section 3.2, excluding step 4.
+
+Take an URI in ASCII bytes (e.g. '/I%20%E2%99%A5%20Django/') and return
+a string containing the encoded result (e.g. '/I%20♥%20Django/').
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_ab010fb350e964c7eee76aa2acee7a27e}\index{django.utils.encoding@{django.utils.encoding}!\_ascii\_ranges@{\_ascii\_ranges}}
+\index{\_ascii\_ranges@{\_ascii\_ranges}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{\_ascii\_ranges}{\_ascii\_ranges}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_ab010fb350e964c7eee76aa2acee7a27e} 
+list django.\+utils.\+encoding.\+\_\+ascii\+\_\+ranges = \mbox{[}\mbox{[}45, 46, 95, 126\mbox{]}, range(65, 91), range(97, 123)\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_aa61a796910746aa6f8a74e94f104ff8a}\index{django.utils.encoding@{django.utils.encoding}!\_hexdig@{\_hexdig}}
+\index{\_hexdig@{\_hexdig}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{\_hexdig}{\_hexdig}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_aa61a796910746aa6f8a74e94f104ff8a} 
+str django.\+utils.\+encoding.\+\_\+hexdig = "{}0123456789ABCDEFabcdef"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_a4f1cd56ec621da35fc05c22c7b98522a}\index{django.utils.encoding@{django.utils.encoding}!\_hextobyte@{\_hextobyte}}
+\index{\_hextobyte@{\_hextobyte}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{\_hextobyte}{\_hextobyte}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a4f1cd56ec621da35fc05c22c7b98522a} 
+dict django.\+utils.\+encoding.\+\_\+hextobyte\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ (fmt\ \%\ char).encode():\ bytes((char,))}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{keywordflow}{for}\ ascii\_range\ \textcolor{keywordflow}{in}\ \_ascii\_ranges}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keywordflow}{for}\ char\ \textcolor{keywordflow}{in}\ ascii\_range}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordflow}{for}\ fmt\ \textcolor{keywordflow}{in}\ [\textcolor{stringliteral}{"{}\%02x"{}},\ \textcolor{stringliteral}{"{}\%02X"{}}]}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_acd51904145e4a40abfcf8249b5a190dd}\index{django.utils.encoding@{django.utils.encoding}!\_PROTECTED\_TYPES@{\_PROTECTED\_TYPES}}
+\index{\_PROTECTED\_TYPES@{\_PROTECTED\_TYPES}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{\_PROTECTED\_TYPES}{\_PROTECTED\_TYPES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_acd51904145e4a40abfcf8249b5a190dd} 
+tuple django.\+utils.\+encoding.\+\_\+\+PROTECTED\+\_\+\+TYPES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ NoneType,}
+\DoxyCodeLine{00003\ \ \ \ \ int,}
+\DoxyCodeLine{00004\ \ \ \ \ float,}
+\DoxyCodeLine{00005\ \ \ \ \ Decimal,}
+\DoxyCodeLine{00006\ \ \ \ \ datetime.datetime,}
+\DoxyCodeLine{00007\ \ \ \ \ datetime.date,}
+\DoxyCodeLine{00008\ \ \ \ \ datetime.time,}
+\DoxyCodeLine{00009\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1utils_1_1encoding_a9230ef8ff7acf90cfeca1938aae4f920}\index{django.utils.encoding@{django.utils.encoding}!DEFAULT\_LOCALE\_ENCODING@{DEFAULT\_LOCALE\_ENCODING}}
+\index{DEFAULT\_LOCALE\_ENCODING@{DEFAULT\_LOCALE\_ENCODING}!django.utils.encoding@{django.utils.encoding}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_LOCALE\_ENCODING}{DEFAULT\_LOCALE\_ENCODING}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1encoding_a9230ef8ff7acf90cfeca1938aae4f920} 
+django.\+utils.\+encoding.\+DEFAULT\+\_\+\+LOCALE\+\_\+\+ENCODING = \mbox{\hyperlink{namespacedjango_1_1utils_1_1encoding_a5b66505d125d2ab7ff28dee751677c1c}{get\+\_\+system\+\_\+encoding}}()}
+

@@ -1,0 +1,198 @@
+\doxysection{aiohttp.\+http\+\_\+parser Namespace Reference}
+\hypertarget{namespaceaiohttp_1_1http__parser}{}\label{namespaceaiohttp_1_1http__parser}\index{aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_chunk_state}{Chunk\+State}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_deflate_buffer}{Deflate\+Buffer}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_headers_parser}{Headers\+Parser}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser}{Http\+Parser}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser}{Http\+Payload\+Parser}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_response_parser}{Http\+Response\+Parser}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_parse_state}{Parse\+State}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a410f0b1a6b8fa539173f43e1da0136a9}{\+\_\+is\+\_\+supported\+\_\+upgrade}} (\mbox{\hyperlink{classmultidict_1_1__multidict__py_1_1_c_i_multi_dict_proxy}{CIMulti\+Dict\+Proxy}}\mbox{[}str\mbox{]} headers)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a85511f99cddb707cdd31dd9e1437cd83}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a806dbc168d14a54d815fef854a2dc9ee}{\+\_\+\+SEP}} = Literal\mbox{[}b"{}\textbackslash{}r\textbackslash{}n"{}, b"{}\textbackslash{}n"{}\mbox{]}
+\item 
+Final \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a04fea42935978f74f495015b8d05d1a8}{ASCIISET}} = set(string.\+printable)
+\item 
+Final \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ac9ecd95c294f3773dc22e8637c3e1244}{\+\_\+\+TCHAR\+\_\+\+SPECIALS}} = re.\+escape("{}!\#\$\%\&\textquotesingle{}\texorpdfstring{$\ast$}{*}+-\/.\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}"{})
+\item 
+Final \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a1fec43584ed2f92fafb09b7fc248d5a0}{TOKENRE}} = re.\+compile(f"{}\mbox{[}0-\/9A-\/Za-\/z\{\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ac9ecd95c294f3773dc22e8637c3e1244}{\+\_\+\+TCHAR\+\_\+\+SPECIALS}}\}\mbox{]}+"{})
+\item 
+Final \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a18b61eb43af9e2afb41e952477a6f94a}{VERSRE}} = re.\+compile(r"{}\+HTTP/(\textbackslash{}d)\textbackslash{}.(\textbackslash{}d)"{}, re.\+ASCII)
+\item 
+Final \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a7152d693d1751b22224a3752eeb00c3a}{DIGITS}} = re.\+compile(r"{}\textbackslash{}d+"{}, re.\+ASCII)
+\item 
+Final \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a9abe98bac263bc272383721f2ea0e1ba}{HEXDIGITS}} = re.\+compile(rb"{}\mbox{[}0-\/9a-\/fA-\/F\mbox{]}+"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ad74b4f939a8d62bcf0ee4b476b4d96ac}{\+\_\+\+MsgT}} = Type\+Var("{}\+\_\+\+Msg\+T"{}, \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}, \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ab2d73f2ef1bcf7615fc933016ba7c63b}{Http\+Request\+Parser\+Py}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a2b89ea624cadc6361f7183067560a909}{Http\+Response\+Parser\+Py}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_response_parser}{Http\+Response\+Parser}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_aceeb7becd192bc314ffb5275726a611d}{Raw\+Request\+Message\+Py}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a2383bb15d297b953d96e4dba2801c1e0}{Raw\+Response\+Message\+Py}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ae1f20b234bba6348c2e48404548d20a6}{Http\+Request\+ParserC}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_af158422507c5a9570b474fd4ece7d9c9}{Http\+Response\+ParserC}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_response_parser}{Http\+Response\+Parser}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a7f562f3a7257700351e9b4ff57753a0e}{Raw\+Request\+MessageC}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ab93f5698e1ece0a0fa957ea89ed37556}{Raw\+Response\+MessageC}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceaiohttp_1_1http__parser_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceaiohttp_1_1http__parser_a410f0b1a6b8fa539173f43e1da0136a9}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!\_is\_supported\_upgrade@{\_is\_supported\_upgrade}}
+\index{\_is\_supported\_upgrade@{\_is\_supported\_upgrade}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{\_is\_supported\_upgrade()}{\_is\_supported\_upgrade()}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a410f0b1a6b8fa539173f43e1da0136a9} 
+ bool aiohttp.\+http\+\_\+parser.\+\_\+is\+\_\+supported\+\_\+upgrade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmultidict_1_1__multidict__py_1_1_c_i_multi_dict_proxy}{CIMulti\+Dict\+Proxy}}\mbox{[}str\mbox{]}}]{headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the upgrade header is supported.\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceaiohttp_1_1http__parser_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceaiohttp_1_1http__parser_a85511f99cddb707cdd31dd9e1437cd83}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a85511f99cddb707cdd31dd9e1437cd83} 
+tuple aiohttp.\+http\+\_\+parser.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}HeadersParser"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}HttpParser"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}HttpRequestParser"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}HttpResponseParser"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}RawRequestMessage"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}RawResponseMessage"{}},}
+\DoxyCodeLine{00008\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespaceaiohttp_1_1http__parser_ad74b4f939a8d62bcf0ee4b476b4d96ac}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!\_MsgT@{\_MsgT}}
+\index{\_MsgT@{\_MsgT}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{\_MsgT}{\_MsgT}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_ad74b4f939a8d62bcf0ee4b476b4d96ac} 
+aiohttp.\+http\+\_\+parser.\+\_\+\+MsgT = Type\+Var("{}\+\_\+\+Msg\+T"{}, \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}, \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a806dbc168d14a54d815fef854a2dc9ee}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!\_SEP@{\_SEP}}
+\index{\_SEP@{\_SEP}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{\_SEP}{\_SEP}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a806dbc168d14a54d815fef854a2dc9ee} 
+aiohttp.\+http\+\_\+parser.\+\_\+\+SEP = Literal\mbox{[}b"{}\textbackslash{}r\textbackslash{}n"{}, b"{}\textbackslash{}n"{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_ac9ecd95c294f3773dc22e8637c3e1244}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!\_TCHAR\_SPECIALS@{\_TCHAR\_SPECIALS}}
+\index{\_TCHAR\_SPECIALS@{\_TCHAR\_SPECIALS}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{\_TCHAR\_SPECIALS}{\_TCHAR\_SPECIALS}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_ac9ecd95c294f3773dc22e8637c3e1244} 
+Final aiohttp.\+http\+\_\+parser.\+\_\+\+TCHAR\+\_\+\+SPECIALS = re.\+escape("{}!\#\$\%\&\textquotesingle{}\texorpdfstring{$\ast$}{*}+-\/.\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a04fea42935978f74f495015b8d05d1a8}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!ASCIISET@{ASCIISET}}
+\index{ASCIISET@{ASCIISET}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{ASCIISET}{ASCIISET}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a04fea42935978f74f495015b8d05d1a8} 
+Final aiohttp.\+http\+\_\+parser.\+ASCIISET = set(string.\+printable)}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a7152d693d1751b22224a3752eeb00c3a}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!DIGITS@{DIGITS}}
+\index{DIGITS@{DIGITS}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{DIGITS}{DIGITS}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a7152d693d1751b22224a3752eeb00c3a} 
+Final aiohttp.\+http\+\_\+parser.\+DIGITS = re.\+compile(r"{}\textbackslash{}d+"{}, re.\+ASCII)}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a9abe98bac263bc272383721f2ea0e1ba}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!HEXDIGITS@{HEXDIGITS}}
+\index{HEXDIGITS@{HEXDIGITS}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{HEXDIGITS}{HEXDIGITS}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a9abe98bac263bc272383721f2ea0e1ba} 
+Final aiohttp.\+http\+\_\+parser.\+HEXDIGITS = re.\+compile(rb"{}\mbox{[}0-\/9a-\/fA-\/F\mbox{]}+"{})}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_ae1f20b234bba6348c2e48404548d20a6}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!HttpRequestParserC@{HttpRequestParserC}}
+\index{HttpRequestParserC@{HttpRequestParserC}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{HttpRequestParserC}{HttpRequestParserC}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_ae1f20b234bba6348c2e48404548d20a6} 
+aiohttp.\+http\+\_\+parser.\+Http\+Request\+ParserC = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_ab2d73f2ef1bcf7615fc933016ba7c63b}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!HttpRequestParserPy@{HttpRequestParserPy}}
+\index{HttpRequestParserPy@{HttpRequestParserPy}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{HttpRequestParserPy}{HttpRequestParserPy}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_ab2d73f2ef1bcf7615fc933016ba7c63b} 
+aiohttp.\+http\+\_\+parser.\+Http\+Request\+Parser\+Py = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser}{Http\+Request\+Parser}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_af158422507c5a9570b474fd4ece7d9c9}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!HttpResponseParserC@{HttpResponseParserC}}
+\index{HttpResponseParserC@{HttpResponseParserC}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{HttpResponseParserC}{HttpResponseParserC}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_af158422507c5a9570b474fd4ece7d9c9} 
+aiohttp.\+http\+\_\+parser.\+Http\+Response\+ParserC = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_response_parser}{Http\+Response\+Parser}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a2b89ea624cadc6361f7183067560a909}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!HttpResponseParserPy@{HttpResponseParserPy}}
+\index{HttpResponseParserPy@{HttpResponseParserPy}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{HttpResponseParserPy}{HttpResponseParserPy}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a2b89ea624cadc6361f7183067560a909} 
+aiohttp.\+http\+\_\+parser.\+Http\+Response\+Parser\+Py = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_response_parser}{Http\+Response\+Parser}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a7f562f3a7257700351e9b4ff57753a0e}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!RawRequestMessageC@{RawRequestMessageC}}
+\index{RawRequestMessageC@{RawRequestMessageC}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{RawRequestMessageC}{RawRequestMessageC}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a7f562f3a7257700351e9b4ff57753a0e} 
+aiohttp.\+http\+\_\+parser.\+Raw\+Request\+MessageC = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_aceeb7becd192bc314ffb5275726a611d}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!RawRequestMessagePy@{RawRequestMessagePy}}
+\index{RawRequestMessagePy@{RawRequestMessagePy}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{RawRequestMessagePy}{RawRequestMessagePy}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_aceeb7becd192bc314ffb5275726a611d} 
+aiohttp.\+http\+\_\+parser.\+Raw\+Request\+Message\+Py = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_ab93f5698e1ece0a0fa957ea89ed37556}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!RawResponseMessageC@{RawResponseMessageC}}
+\index{RawResponseMessageC@{RawResponseMessageC}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{RawResponseMessageC}{RawResponseMessageC}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_ab93f5698e1ece0a0fa957ea89ed37556} 
+aiohttp.\+http\+\_\+parser.\+Raw\+Response\+MessageC = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a2383bb15d297b953d96e4dba2801c1e0}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!RawResponseMessagePy@{RawResponseMessagePy}}
+\index{RawResponseMessagePy@{RawResponseMessagePy}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{RawResponseMessagePy}{RawResponseMessagePy}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a2383bb15d297b953d96e4dba2801c1e0} 
+aiohttp.\+http\+\_\+parser.\+Raw\+Response\+Message\+Py = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_response_message}{Raw\+Response\+Message}}}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a1fec43584ed2f92fafb09b7fc248d5a0}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!TOKENRE@{TOKENRE}}
+\index{TOKENRE@{TOKENRE}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{TOKENRE}{TOKENRE}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a1fec43584ed2f92fafb09b7fc248d5a0} 
+Final aiohttp.\+http\+\_\+parser.\+TOKENRE = re.\+compile(f"{}\mbox{[}0-\/9A-\/Za-\/z\{\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ac9ecd95c294f3773dc22e8637c3e1244}{\+\_\+\+TCHAR\+\_\+\+SPECIALS}}\}\mbox{]}+"{})}
+
+\Hypertarget{namespaceaiohttp_1_1http__parser_a18b61eb43af9e2afb41e952477a6f94a}\index{aiohttp.http\_parser@{aiohttp.http\_parser}!VERSRE@{VERSRE}}
+\index{VERSRE@{VERSRE}!aiohttp.http\_parser@{aiohttp.http\_parser}}
+\doxysubsubsection{\texorpdfstring{VERSRE}{VERSRE}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1http__parser_a18b61eb43af9e2afb41e952477a6f94a} 
+Final aiohttp.\+http\+\_\+parser.\+VERSRE = re.\+compile(r"{}\+HTTP/(\textbackslash{}d)\textbackslash{}.(\textbackslash{}d)"{}, re.\+ASCII)}
+

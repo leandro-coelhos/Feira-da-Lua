@@ -1,0 +1,804 @@
+\doxysection{cffi.\+recompiler.\+Recompiler Class Reference}
+\hypertarget{classcffi_1_1recompiler_1_1_recompiler}{}\label{classcffi_1_1recompiler_1_1_recompiler}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a8258d1878094cf780b1dbc23081692f0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a355ea9a3740e661e386e8ffeb6c728c7}{ffi}}, \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac065283c66317e3b4e2fc56c133f46ed}{module\+\_\+name}}, \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ab19f5abc5e964a8692c4914fb1f96dc3}{target\+\_\+is\+\_\+python}}=False)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a86c0c08b1a00dbe0ab384895b34b7804}{needs\+\_\+version}} (self, ver)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a13d49f897225b3e6ce2681a54b1e8a22}{collect\+\_\+type\+\_\+table}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ae8582ec82a95edb8b6eb7f9ab5cbdf17}{collect\+\_\+step\+\_\+tables}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a313e0ac285fb72589a9ab2ed9e534769}{write\+\_\+source\+\_\+to\+\_\+f}} (self, f, preamble)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a976d19322414599e0e3aedcf9802ef2a}{write\+\_\+c\+\_\+source\+\_\+to\+\_\+f}} (self, f, preamble)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a3c2197e848fd8ebea6436b577b6d54e1}{write\+\_\+py\+\_\+source\+\_\+to\+\_\+f}} (self, f)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a355ea9a3740e661e386e8ffeb6c728c7}{ffi}} = ffi
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac065283c66317e3b4e2fc56c133f46ed}{module\+\_\+name}} = module\+\_\+name
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ab19f5abc5e964a8692c4914fb1f96dc3}{target\+\_\+is\+\_\+python}} = target\+\_\+is\+\_\+python
+\item 
+list \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a79946ccf76cf16f316ba295a19de2a83}{cffi\+\_\+types}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a42c1d24f240591a5515824666b921aa6}{ALL\+\_\+\+STEPS}} = \mbox{[}"{}global"{}, "{}field"{}, "{}struct\+\_\+union"{}, "{}enum"{}, "{}typename"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a133331923f4cb6cb4366ece9648bf3e8}{\+\_\+enum\+\_\+fields}} (self, tp)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ab0fe6db11bff1b11a69a43dfe46a8aa0}{\+\_\+do\+\_\+collect\+\_\+type}} (self, tp)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ae4e669f8babd9baee8c7af743c834452}{\+\_\+generate}} (self, step\+\_\+name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a4bc51658c589b1d81508d620854349dc}{\+\_\+prnt}} (self, what=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a19ae8fdefdf74dcfbdcb38c9e6fc9cd1}{\+\_\+rel\+\_\+readlines}} (self, filename)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a60421129a0e6e63076330858e0aa0bc0}{\+\_\+to\+\_\+py}} (self, x)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a656d1d7684c473d72d3f242318409986}{\+\_\+gettypenum}} (self, type)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_af1e4724831edf45f304a17f2a8b3c745}{\+\_\+convert\+\_\+funcarg\+\_\+to\+\_\+c}} (self, tp, fromvar, tovar, errcode)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a71d40ef3278d16a91c9cb2c60eed84a0}{\+\_\+extra\+\_\+local\+\_\+variables}} (self, tp, localvars, freelines)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a3ca515876b6f3928f7703e4d08fc0b64}{\+\_\+convert\+\_\+funcarg\+\_\+to\+\_\+c\+\_\+ptr\+\_\+or\+\_\+array}} (self, tp, fromvar, tovar, errcode)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_af15a143c4bf1753fb2e129e602fa1f40}{\+\_\+convert\+\_\+expr\+\_\+from\+\_\+c}} (self, tp, var, context)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a5cd8e3a9c7754b2e6cbb243bb2e42e93}{\+\_\+typedef\+\_\+type}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_afa8752113cc244a54d896397db30428e}{\+\_\+generate\+\_\+cpy\+\_\+typedef\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a27e0365983db8b76fb18c418781af90a}{\+\_\+generate\+\_\+cpy\+\_\+typedef\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a3c0beedd3b861842e3e813251c9cafba}{\+\_\+typedef\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a223b5acbe9187d7fd9afc1bac58596d4}{\+\_\+generate\+\_\+cpy\+\_\+typedef\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_abe824c2321e7ce9dab236429cce1e60d}{\+\_\+generate\+\_\+cpy\+\_\+function\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a4cca4bf382ed85f6d448484fad7f0570}{\+\_\+generate\+\_\+cpy\+\_\+function\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac1843d60bf946c5d65c26d674e8134c0}{\+\_\+generate\+\_\+cpy\+\_\+function\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a61abb719b9f9bf347daf5a8aead5cc6d}{\+\_\+field\+\_\+type}} (self, tp\+\_\+struct, field\+\_\+name, tp\+\_\+field)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_af1d9873af37a4f094fa54ff6a309d8be}{\+\_\+struct\+\_\+collecttype}} (self, tp)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ad0ea113c12db39b931ca1f481d09eb89}{\+\_\+struct\+\_\+decl}} (self, tp, cname, approxname)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a32657e9dd7038f9d47a642b3df38440d}{\+\_\+struct\+\_\+ctx}} (self, tp, cname, approxname, named\+\_\+ptr=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a4ade9bc64925bf5bd847113a00b2b85d}{\+\_\+check\+\_\+not\+\_\+opaque}} (self, tp, location)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a05e20f3a87a5c5fb02b685da0eee7abd}{\+\_\+add\+\_\+missing\+\_\+struct\+\_\+unions}} (self)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_acfc4ab1edc8fdfe7451bd64c545071fe}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a997bcca953b933fca49da541d2f04c7f}{\+\_\+struct\+\_\+names}} (self, tp)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac57b91e11c40c2e9687b4e5d5c1c9ec0}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a7113969a1144b52d6ade14b0f88d4ee8}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ad3e8d6044dd13a383ba0d5f4eb766ecf}{\+\_\+generate\+\_\+cpy\+\_\+anonymous\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a43bbfe3ccfca3aab431bd6c2e4a700b5}{\+\_\+generate\+\_\+cpy\+\_\+anonymous\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a16308b5a4603058e7d57203f8e5e4244}{\+\_\+generate\+\_\+cpy\+\_\+anonymous\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac5918c6e9d10e056611e05ac34e26cba}{\+\_\+generate\+\_\+cpy\+\_\+const}} (self, is\+\_\+int, name, tp=None, category=\textquotesingle{}const \textquotesingle{}, check\+\_\+value=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a06d8f08390092e3d02b36e98e34c9cbf}{\+\_\+generate\+\_\+cpy\+\_\+constant\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a40ea7ab06c18ad51973815d6d31b612b}{\+\_\+generate\+\_\+cpy\+\_\+constant\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a1b38c5549d146864215e4256b469eebf}{\+\_\+generate\+\_\+cpy\+\_\+constant\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ad2f5d79727ad3abc5a4c7aea79397b46}{\+\_\+generate\+\_\+cpy\+\_\+enum\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a22636f7469797360fa642f0284a92773}{\+\_\+generate\+\_\+cpy\+\_\+enum\+\_\+decl}} (self, tp, name=None)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a952c591af30014f7ec544bc41281631f}{\+\_\+enum\+\_\+ctx}} (self, tp, cname)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac25734f365a31c81cede19783edb72ec}{\+\_\+generate\+\_\+cpy\+\_\+enum\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a0930b52bbc019b00c3ea5c18382ab49c}{\+\_\+generate\+\_\+cpy\+\_\+macro\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a77327b9b762b4be573abe02203c80ce6}{\+\_\+generate\+\_\+cpy\+\_\+macro\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a5c2af0c2c1c3a43cecc6fc0f49a2965a}{\+\_\+generate\+\_\+cpy\+\_\+macro\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a1c01e69cba8fcce75d9d6dc6cc68171d}{\+\_\+global\+\_\+type}} (self, tp, global\+\_\+name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a07d155a04a60ec4557dd435b70d642fb}{\+\_\+generate\+\_\+cpy\+\_\+variable\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac4621975d74bccbcc55ab6a5b8b61c61}{\+\_\+generate\+\_\+cpy\+\_\+variable\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_aabae7add76da880c4789192d0721226e}{\+\_\+generate\+\_\+cpy\+\_\+variable\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a29ed0e6fe8eb0c1d93a1992cdb2177c1}{\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+collecttype}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a78b86ae1f15bf1f7d0b8346b1920e3d4}{\+\_\+extern\+\_\+python\+\_\+decl}} (self, tp, name, tag\+\_\+and\+\_\+space)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a805a7482cca82fe2b97a4434c26d8fb7}{\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_aa01b45831ab1f8264a48a07d6476050e}{\+\_\+generate\+\_\+cpy\+\_\+dllexport\+\_\+python\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_abf69d2835f119c28f5c2f135f087834b}{\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+plus\+\_\+c\+\_\+decl}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a0526212f52e5508c019a4a8a8704e929}{\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+ctx}} (self, tp, name)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a92dad19cad9146741b9c6e9d0baeaf26}{\+\_\+print\+\_\+string\+\_\+literal\+\_\+in\+\_\+array}} (self, s)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_aa1514cbf37f0ec8e7a29902fe1ff8e64}{\+\_\+emit\+\_\+bytecode\+\_\+\+Void\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_aaa17f91bd81b94eef5810d4b0ab57e41}{\+\_\+emit\+\_\+bytecode\+\_\+\+Primitive\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a8f7a863d294bf8c53987fd39ddfbc3c9}{\+\_\+emit\+\_\+bytecode\+\_\+\+Unknown\+Integer\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a7190abafe054db14545d74212085836e}{\+\_\+emit\+\_\+bytecode\+\_\+\+Unknown\+Float\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ae55b7582c48c336688bbe2297f6a4fa2}{\+\_\+emit\+\_\+bytecode\+\_\+\+Raw\+Function\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9}{\+\_\+emit\+\_\+bytecode\+\_\+\+Pointer\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_af86cdc3bdcf06f844a47b970aaf7f3b7}{\+\_\+emit\+\_\+bytecode\+\_\+\+Function\+Ptr\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a6787d99cf1afef39d5258497e0e55d61}{\+\_\+emit\+\_\+bytecode\+\_\+\+Array\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_acda2c0639ed87e5454ab77bd39a4fc93}{\+\_\+emit\+\_\+bytecode\+\_\+\+Struct\+Type}} (self, tp, index)
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a2e62bb1305686d0d0ad55f936e37f138}{\+\_\+emit\+\_\+bytecode\+\_\+\+Enum\+Type}} (self, tp, index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a42198968c8fb58d36c6e77a35a3fe753}{\+\_\+version}} = \mbox{\hyperlink{namespacecffi_1_1recompiler_aecae1ba1e5079fe9a3b93f2823944b7e}{VERSION\+\_\+\+BASE}}
+\item 
+dict \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a17099bd1a86405b78d7df9cc37cc1258}{\+\_\+typesdict}} = \{\}
+\item 
+dict \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_affaa60850e138bf3b23ae5a495479021}{\+\_\+struct\+\_\+unions}} = \{\}
+\item 
+dict \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a25195145f9c1c5ce421c5a9ce3d4874a}{\+\_\+enums}} = \{\}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a39510c20c95294a026ee29a4c44b4102}{\+\_\+current\+\_\+quals}} = quals
+\item 
+dict \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a7be7ca388d71bc7155a8714797b09279}{\+\_\+lsts}} = \{\}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a8548400d97705433329f9750419ed296}{\+\_\+seen\+\_\+struct\+\_\+unions}} = set()
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a653c895a5b0430e730b50979a0d17867}{\+\_\+f}} = f
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a4526a2fd2b8762d49db7b2fc4b64bbb1}{\+\_\+seen\+\_\+constants}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a86065e92e413047747c72c1dfe536fa2}{\+\_\+num\+\_\+externpy}} = 0
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a059e04391a89a01be5bf57e127b52526}{\+\_\+generate\+\_\+cpy\+\_\+union\+\_\+collecttype}} = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_acfc4ab1edc8fdfe7451bd64c545071fe}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+collecttype}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_aaf8f8c23e4b2f88682c3da744947c4e4}{\+\_\+generate\+\_\+cpy\+\_\+union\+\_\+decl}} = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac57b91e11c40c2e9687b4e5d5c1c9ec0}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+decl}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ae114d86e5539339a23df9427b0e80088}{\+\_\+generate\+\_\+cpy\+\_\+union\+\_\+ctx}} = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a7113969a1144b52d6ade14b0f88d4ee8}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+ctx}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ad53cd54fa9aa2b6af25f82f7d9f9c6b4}{\+\_\+generate\+\_\+cpy\+\_\+dllexport\+\_\+python\+\_\+collecttype}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a0e358a67bb913d2e975b2121ef2825a2}{\+\_\+generate\+\_\+cpy\+\_\+dllexport\+\_\+python\+\_\+ctx}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_abadf0778a42a44c142bc13142739fcb3}{\+\_\+emit\+\_\+bytecode\+\_\+\+Const\+Pointer\+Type}} = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9}{\+\_\+emit\+\_\+bytecode\+\_\+\+Pointer\+Type}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a88be5c5fb8b80930246518b61aaef4da}{\+\_\+emit\+\_\+bytecode\+\_\+\+Named\+Pointer\+Type}} = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9}{\+\_\+emit\+\_\+bytecode\+\_\+\+Pointer\+Type}}
+\item 
+\mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a78ff3709ffb2d7ab76a6c383afe34d6b}{\+\_\+emit\+\_\+bytecode\+\_\+\+Union\+Type}} = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_acda2c0639ed87e5454ab77bd39a4fc93}{\+\_\+emit\+\_\+bytecode\+\_\+\+Struct\+Type}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a8258d1878094cf780b1dbc23081692f0}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a8258d1878094cf780b1dbc23081692f0} 
+cffi.\+recompiler.\+Recompiler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ffi}{, }\item[{}]{module\+\_\+name}{, }\item[{}]{target\+\_\+is\+\_\+python}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a05e20f3a87a5c5fb02b685da0eee7abd}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_add\_missing\_struct\_unions@{\_add\_missing\_struct\_unions}}
+\index{\_add\_missing\_struct\_unions@{\_add\_missing\_struct\_unions}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_add\_missing\_struct\_unions()}{\_add\_missing\_struct\_unions()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a05e20f3a87a5c5fb02b685da0eee7abd} 
+cffi.\+recompiler.\+Recompiler.\+\_\+add\+\_\+missing\+\_\+struct\+\_\+unions (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a4ade9bc64925bf5bd847113a00b2b85d}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_check\_not\_opaque@{\_check\_not\_opaque}}
+\index{\_check\_not\_opaque@{\_check\_not\_opaque}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_check\_not\_opaque()}{\_check\_not\_opaque()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a4ade9bc64925bf5bd847113a00b2b85d} 
+cffi.\+recompiler.\+Recompiler.\+\_\+check\+\_\+not\+\_\+opaque (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{location}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_af15a143c4bf1753fb2e129e602fa1f40}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_convert\_expr\_from\_c@{\_convert\_expr\_from\_c}}
+\index{\_convert\_expr\_from\_c@{\_convert\_expr\_from\_c}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_convert\_expr\_from\_c()}{\_convert\_expr\_from\_c()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_af15a143c4bf1753fb2e129e602fa1f40} 
+cffi.\+recompiler.\+Recompiler.\+\_\+convert\+\_\+expr\+\_\+from\+\_\+c (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{var}{, }\item[{}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_af1e4724831edf45f304a17f2a8b3c745}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_convert\_funcarg\_to\_c@{\_convert\_funcarg\_to\_c}}
+\index{\_convert\_funcarg\_to\_c@{\_convert\_funcarg\_to\_c}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_convert\_funcarg\_to\_c()}{\_convert\_funcarg\_to\_c()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_af1e4724831edf45f304a17f2a8b3c745} 
+cffi.\+recompiler.\+Recompiler.\+\_\+convert\+\_\+funcarg\+\_\+to\+\_\+c (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{fromvar}{, }\item[{}]{tovar}{, }\item[{}]{errcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a3ca515876b6f3928f7703e4d08fc0b64}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_convert\_funcarg\_to\_c\_ptr\_or\_array@{\_convert\_funcarg\_to\_c\_ptr\_or\_array}}
+\index{\_convert\_funcarg\_to\_c\_ptr\_or\_array@{\_convert\_funcarg\_to\_c\_ptr\_or\_array}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_convert\_funcarg\_to\_c\_ptr\_or\_array()}{\_convert\_funcarg\_to\_c\_ptr\_or\_array()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a3ca515876b6f3928f7703e4d08fc0b64} 
+cffi.\+recompiler.\+Recompiler.\+\_\+convert\+\_\+funcarg\+\_\+to\+\_\+c\+\_\+ptr\+\_\+or\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{fromvar}{, }\item[{}]{tovar}{, }\item[{}]{errcode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ab0fe6db11bff1b11a69a43dfe46a8aa0}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_do\_collect\_type@{\_do\_collect\_type}}
+\index{\_do\_collect\_type@{\_do\_collect\_type}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_do\_collect\_type()}{\_do\_collect\_type()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ab0fe6db11bff1b11a69a43dfe46a8aa0} 
+cffi.\+recompiler.\+Recompiler.\+\_\+do\+\_\+collect\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a6787d99cf1afef39d5258497e0e55d61}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_ArrayType@{\_emit\_bytecode\_ArrayType}}
+\index{\_emit\_bytecode\_ArrayType@{\_emit\_bytecode\_ArrayType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_ArrayType()}{\_emit\_bytecode\_ArrayType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a6787d99cf1afef39d5258497e0e55d61} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Array\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a2e62bb1305686d0d0ad55f936e37f138}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_EnumType@{\_emit\_bytecode\_EnumType}}
+\index{\_emit\_bytecode\_EnumType@{\_emit\_bytecode\_EnumType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_EnumType()}{\_emit\_bytecode\_EnumType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a2e62bb1305686d0d0ad55f936e37f138} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Enum\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_af86cdc3bdcf06f844a47b970aaf7f3b7}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_FunctionPtrType@{\_emit\_bytecode\_FunctionPtrType}}
+\index{\_emit\_bytecode\_FunctionPtrType@{\_emit\_bytecode\_FunctionPtrType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_FunctionPtrType()}{\_emit\_bytecode\_FunctionPtrType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_af86cdc3bdcf06f844a47b970aaf7f3b7} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Function\+Ptr\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_PointerType@{\_emit\_bytecode\_PointerType}}
+\index{\_emit\_bytecode\_PointerType@{\_emit\_bytecode\_PointerType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_PointerType()}{\_emit\_bytecode\_PointerType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Pointer\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_aaa17f91bd81b94eef5810d4b0ab57e41}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_PrimitiveType@{\_emit\_bytecode\_PrimitiveType}}
+\index{\_emit\_bytecode\_PrimitiveType@{\_emit\_bytecode\_PrimitiveType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_PrimitiveType()}{\_emit\_bytecode\_PrimitiveType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_aaa17f91bd81b94eef5810d4b0ab57e41} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Primitive\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ae55b7582c48c336688bbe2297f6a4fa2}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_RawFunctionType@{\_emit\_bytecode\_RawFunctionType}}
+\index{\_emit\_bytecode\_RawFunctionType@{\_emit\_bytecode\_RawFunctionType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_RawFunctionType()}{\_emit\_bytecode\_RawFunctionType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ae55b7582c48c336688bbe2297f6a4fa2} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Raw\+Function\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_acda2c0639ed87e5454ab77bd39a4fc93}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_StructType@{\_emit\_bytecode\_StructType}}
+\index{\_emit\_bytecode\_StructType@{\_emit\_bytecode\_StructType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_StructType()}{\_emit\_bytecode\_StructType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_acda2c0639ed87e5454ab77bd39a4fc93} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Struct\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a7190abafe054db14545d74212085836e}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_UnknownFloatType@{\_emit\_bytecode\_UnknownFloatType}}
+\index{\_emit\_bytecode\_UnknownFloatType@{\_emit\_bytecode\_UnknownFloatType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_UnknownFloatType()}{\_emit\_bytecode\_UnknownFloatType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a7190abafe054db14545d74212085836e} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Unknown\+Float\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a8f7a863d294bf8c53987fd39ddfbc3c9}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_UnknownIntegerType@{\_emit\_bytecode\_UnknownIntegerType}}
+\index{\_emit\_bytecode\_UnknownIntegerType@{\_emit\_bytecode\_UnknownIntegerType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_UnknownIntegerType()}{\_emit\_bytecode\_UnknownIntegerType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a8f7a863d294bf8c53987fd39ddfbc3c9} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Unknown\+Integer\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_aa1514cbf37f0ec8e7a29902fe1ff8e64}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_VoidType@{\_emit\_bytecode\_VoidType}}
+\index{\_emit\_bytecode\_VoidType@{\_emit\_bytecode\_VoidType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_VoidType()}{\_emit\_bytecode\_VoidType()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_aa1514cbf37f0ec8e7a29902fe1ff8e64} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Void\+Type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a952c591af30014f7ec544bc41281631f}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_enum\_ctx@{\_enum\_ctx}}
+\index{\_enum\_ctx@{\_enum\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_enum\_ctx()}{\_enum\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a952c591af30014f7ec544bc41281631f} 
+cffi.\+recompiler.\+Recompiler.\+\_\+enum\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{cname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a133331923f4cb6cb4366ece9648bf3e8}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_enum\_fields@{\_enum\_fields}}
+\index{\_enum\_fields@{\_enum\_fields}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_enum\_fields()}{\_enum\_fields()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a133331923f4cb6cb4366ece9648bf3e8} 
+cffi.\+recompiler.\+Recompiler.\+\_\+enum\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a78b86ae1f15bf1f7d0b8346b1920e3d4}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_extern\_python\_decl@{\_extern\_python\_decl}}
+\index{\_extern\_python\_decl@{\_extern\_python\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_extern\_python\_decl()}{\_extern\_python\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a78b86ae1f15bf1f7d0b8346b1920e3d4} 
+cffi.\+recompiler.\+Recompiler.\+\_\+extern\+\_\+python\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{, }\item[{}]{tag\+\_\+and\+\_\+space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a71d40ef3278d16a91c9cb2c60eed84a0}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_extra\_local\_variables@{\_extra\_local\_variables}}
+\index{\_extra\_local\_variables@{\_extra\_local\_variables}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_extra\_local\_variables()}{\_extra\_local\_variables()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a71d40ef3278d16a91c9cb2c60eed84a0} 
+cffi.\+recompiler.\+Recompiler.\+\_\+extra\+\_\+local\+\_\+variables (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{localvars}{, }\item[{}]{freelines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a61abb719b9f9bf347daf5a8aead5cc6d}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_field\_type@{\_field\_type}}
+\index{\_field\_type@{\_field\_type}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_field\_type()}{\_field\_type()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a61abb719b9f9bf347daf5a8aead5cc6d} 
+cffi.\+recompiler.\+Recompiler.\+\_\+field\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp\+\_\+struct}{, }\item[{}]{field\+\_\+name}{, }\item[{}]{tp\+\_\+field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ae4e669f8babd9baee8c7af743c834452}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate@{\_generate}}
+\index{\_generate@{\_generate}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate()}{\_generate()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ae4e669f8babd9baee8c7af743c834452} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{step\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ad3e8d6044dd13a383ba0d5f4eb766ecf}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_anonymous\_collecttype@{\_generate\_cpy\_anonymous\_collecttype}}
+\index{\_generate\_cpy\_anonymous\_collecttype@{\_generate\_cpy\_anonymous\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_anonymous\_collecttype()}{\_generate\_cpy\_anonymous\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ad3e8d6044dd13a383ba0d5f4eb766ecf} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+anonymous\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a16308b5a4603058e7d57203f8e5e4244}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_anonymous\_ctx@{\_generate\_cpy\_anonymous\_ctx}}
+\index{\_generate\_cpy\_anonymous\_ctx@{\_generate\_cpy\_anonymous\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_anonymous\_ctx()}{\_generate\_cpy\_anonymous\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a16308b5a4603058e7d57203f8e5e4244} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+anonymous\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a43bbfe3ccfca3aab431bd6c2e4a700b5}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_anonymous\_decl@{\_generate\_cpy\_anonymous\_decl}}
+\index{\_generate\_cpy\_anonymous\_decl@{\_generate\_cpy\_anonymous\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_anonymous\_decl()}{\_generate\_cpy\_anonymous\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a43bbfe3ccfca3aab431bd6c2e4a700b5} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+anonymous\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ac5918c6e9d10e056611e05ac34e26cba}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_const@{\_generate\_cpy\_const}}
+\index{\_generate\_cpy\_const@{\_generate\_cpy\_const}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_const()}{\_generate\_cpy\_const()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ac5918c6e9d10e056611e05ac34e26cba} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{is\+\_\+int}{, }\item[{}]{name}{, }\item[{}]{tp}{ = {\ttfamily None}, }\item[{}]{category}{ = {\ttfamily \textquotesingle{}const\textquotesingle{}}, }\item[{}]{check\+\_\+value}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a06d8f08390092e3d02b36e98e34c9cbf}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_constant\_collecttype@{\_generate\_cpy\_constant\_collecttype}}
+\index{\_generate\_cpy\_constant\_collecttype@{\_generate\_cpy\_constant\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_constant\_collecttype()}{\_generate\_cpy\_constant\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a06d8f08390092e3d02b36e98e34c9cbf} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+constant\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a1b38c5549d146864215e4256b469eebf}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_constant\_ctx@{\_generate\_cpy\_constant\_ctx}}
+\index{\_generate\_cpy\_constant\_ctx@{\_generate\_cpy\_constant\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_constant\_ctx()}{\_generate\_cpy\_constant\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a1b38c5549d146864215e4256b469eebf} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+constant\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a40ea7ab06c18ad51973815d6d31b612b}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_constant\_decl@{\_generate\_cpy\_constant\_decl}}
+\index{\_generate\_cpy\_constant\_decl@{\_generate\_cpy\_constant\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_constant\_decl()}{\_generate\_cpy\_constant\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a40ea7ab06c18ad51973815d6d31b612b} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+constant\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_aa01b45831ab1f8264a48a07d6476050e}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_dllexport\_python\_decl@{\_generate\_cpy\_dllexport\_python\_decl}}
+\index{\_generate\_cpy\_dllexport\_python\_decl@{\_generate\_cpy\_dllexport\_python\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_dllexport\_python\_decl()}{\_generate\_cpy\_dllexport\_python\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_aa01b45831ab1f8264a48a07d6476050e} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+dllexport\+\_\+python\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ad2f5d79727ad3abc5a4c7aea79397b46}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_enum\_collecttype@{\_generate\_cpy\_enum\_collecttype}}
+\index{\_generate\_cpy\_enum\_collecttype@{\_generate\_cpy\_enum\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_enum\_collecttype()}{\_generate\_cpy\_enum\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ad2f5d79727ad3abc5a4c7aea79397b46} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+enum\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ac25734f365a31c81cede19783edb72ec}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_enum\_ctx@{\_generate\_cpy\_enum\_ctx}}
+\index{\_generate\_cpy\_enum\_ctx@{\_generate\_cpy\_enum\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_enum\_ctx()}{\_generate\_cpy\_enum\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ac25734f365a31c81cede19783edb72ec} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+enum\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a22636f7469797360fa642f0284a92773}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_enum\_decl@{\_generate\_cpy\_enum\_decl}}
+\index{\_generate\_cpy\_enum\_decl@{\_generate\_cpy\_enum\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_enum\_decl()}{\_generate\_cpy\_enum\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a22636f7469797360fa642f0284a92773} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+enum\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a29ed0e6fe8eb0c1d93a1992cdb2177c1}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_extern\_python\_collecttype@{\_generate\_cpy\_extern\_python\_collecttype}}
+\index{\_generate\_cpy\_extern\_python\_collecttype@{\_generate\_cpy\_extern\_python\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_extern\_python\_collecttype()}{\_generate\_cpy\_extern\_python\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a29ed0e6fe8eb0c1d93a1992cdb2177c1} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a0526212f52e5508c019a4a8a8704e929}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_extern\_python\_ctx@{\_generate\_cpy\_extern\_python\_ctx}}
+\index{\_generate\_cpy\_extern\_python\_ctx@{\_generate\_cpy\_extern\_python\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_extern\_python\_ctx()}{\_generate\_cpy\_extern\_python\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a0526212f52e5508c019a4a8a8704e929} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a805a7482cca82fe2b97a4434c26d8fb7}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_extern\_python\_decl@{\_generate\_cpy\_extern\_python\_decl}}
+\index{\_generate\_cpy\_extern\_python\_decl@{\_generate\_cpy\_extern\_python\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_extern\_python\_decl()}{\_generate\_cpy\_extern\_python\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a805a7482cca82fe2b97a4434c26d8fb7} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_abf69d2835f119c28f5c2f135f087834b}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_extern\_python\_plus\_c\_decl@{\_generate\_cpy\_extern\_python\_plus\_c\_decl}}
+\index{\_generate\_cpy\_extern\_python\_plus\_c\_decl@{\_generate\_cpy\_extern\_python\_plus\_c\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_extern\_python\_plus\_c\_decl()}{\_generate\_cpy\_extern\_python\_plus\_c\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_abf69d2835f119c28f5c2f135f087834b} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+extern\+\_\+python\+\_\+plus\+\_\+c\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_abe824c2321e7ce9dab236429cce1e60d}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_function\_collecttype@{\_generate\_cpy\_function\_collecttype}}
+\index{\_generate\_cpy\_function\_collecttype@{\_generate\_cpy\_function\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_function\_collecttype()}{\_generate\_cpy\_function\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_abe824c2321e7ce9dab236429cce1e60d} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+function\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ac1843d60bf946c5d65c26d674e8134c0}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_function\_ctx@{\_generate\_cpy\_function\_ctx}}
+\index{\_generate\_cpy\_function\_ctx@{\_generate\_cpy\_function\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_function\_ctx()}{\_generate\_cpy\_function\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ac1843d60bf946c5d65c26d674e8134c0} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+function\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a4cca4bf382ed85f6d448484fad7f0570}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_function\_decl@{\_generate\_cpy\_function\_decl}}
+\index{\_generate\_cpy\_function\_decl@{\_generate\_cpy\_function\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_function\_decl()}{\_generate\_cpy\_function\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a4cca4bf382ed85f6d448484fad7f0570} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+function\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a0930b52bbc019b00c3ea5c18382ab49c}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_macro\_collecttype@{\_generate\_cpy\_macro\_collecttype}}
+\index{\_generate\_cpy\_macro\_collecttype@{\_generate\_cpy\_macro\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_macro\_collecttype()}{\_generate\_cpy\_macro\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a0930b52bbc019b00c3ea5c18382ab49c} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+macro\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a5c2af0c2c1c3a43cecc6fc0f49a2965a}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_macro\_ctx@{\_generate\_cpy\_macro\_ctx}}
+\index{\_generate\_cpy\_macro\_ctx@{\_generate\_cpy\_macro\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_macro\_ctx()}{\_generate\_cpy\_macro\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a5c2af0c2c1c3a43cecc6fc0f49a2965a} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+macro\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a77327b9b762b4be573abe02203c80ce6}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_macro\_decl@{\_generate\_cpy\_macro\_decl}}
+\index{\_generate\_cpy\_macro\_decl@{\_generate\_cpy\_macro\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_macro\_decl()}{\_generate\_cpy\_macro\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a77327b9b762b4be573abe02203c80ce6} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+macro\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_acfc4ab1edc8fdfe7451bd64c545071fe}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_struct\_collecttype@{\_generate\_cpy\_struct\_collecttype}}
+\index{\_generate\_cpy\_struct\_collecttype@{\_generate\_cpy\_struct\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_struct\_collecttype()}{\_generate\_cpy\_struct\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_acfc4ab1edc8fdfe7451bd64c545071fe} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a7113969a1144b52d6ade14b0f88d4ee8}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_struct\_ctx@{\_generate\_cpy\_struct\_ctx}}
+\index{\_generate\_cpy\_struct\_ctx@{\_generate\_cpy\_struct\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_struct\_ctx()}{\_generate\_cpy\_struct\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a7113969a1144b52d6ade14b0f88d4ee8} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ac57b91e11c40c2e9687b4e5d5c1c9ec0}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_struct\_decl@{\_generate\_cpy\_struct\_decl}}
+\index{\_generate\_cpy\_struct\_decl@{\_generate\_cpy\_struct\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_struct\_decl()}{\_generate\_cpy\_struct\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ac57b91e11c40c2e9687b4e5d5c1c9ec0} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_afa8752113cc244a54d896397db30428e}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_typedef\_collecttype@{\_generate\_cpy\_typedef\_collecttype}}
+\index{\_generate\_cpy\_typedef\_collecttype@{\_generate\_cpy\_typedef\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_typedef\_collecttype()}{\_generate\_cpy\_typedef\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_afa8752113cc244a54d896397db30428e} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+typedef\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a223b5acbe9187d7fd9afc1bac58596d4}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_typedef\_ctx@{\_generate\_cpy\_typedef\_ctx}}
+\index{\_generate\_cpy\_typedef\_ctx@{\_generate\_cpy\_typedef\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_typedef\_ctx()}{\_generate\_cpy\_typedef\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a223b5acbe9187d7fd9afc1bac58596d4} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+typedef\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a27e0365983db8b76fb18c418781af90a}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_typedef\_decl@{\_generate\_cpy\_typedef\_decl}}
+\index{\_generate\_cpy\_typedef\_decl@{\_generate\_cpy\_typedef\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_typedef\_decl()}{\_generate\_cpy\_typedef\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a27e0365983db8b76fb18c418781af90a} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+typedef\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a07d155a04a60ec4557dd435b70d642fb}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_variable\_collecttype@{\_generate\_cpy\_variable\_collecttype}}
+\index{\_generate\_cpy\_variable\_collecttype@{\_generate\_cpy\_variable\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_variable\_collecttype()}{\_generate\_cpy\_variable\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a07d155a04a60ec4557dd435b70d642fb} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+variable\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_aabae7add76da880c4789192d0721226e}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_variable\_ctx@{\_generate\_cpy\_variable\_ctx}}
+\index{\_generate\_cpy\_variable\_ctx@{\_generate\_cpy\_variable\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_variable\_ctx()}{\_generate\_cpy\_variable\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_aabae7add76da880c4789192d0721226e} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+variable\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ac4621975d74bccbcc55ab6a5b8b61c61}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_variable\_decl@{\_generate\_cpy\_variable\_decl}}
+\index{\_generate\_cpy\_variable\_decl@{\_generate\_cpy\_variable\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_variable\_decl()}{\_generate\_cpy\_variable\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ac4621975d74bccbcc55ab6a5b8b61c61} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+variable\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a656d1d7684c473d72d3f242318409986}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_gettypenum@{\_gettypenum}}
+\index{\_gettypenum@{\_gettypenum}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_gettypenum()}{\_gettypenum()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a656d1d7684c473d72d3f242318409986} 
+cffi.\+recompiler.\+Recompiler.\+\_\+gettypenum (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a1c01e69cba8fcce75d9d6dc6cc68171d}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_global\_type@{\_global\_type}}
+\index{\_global\_type@{\_global\_type}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_global\_type()}{\_global\_type()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a1c01e69cba8fcce75d9d6dc6cc68171d} 
+cffi.\+recompiler.\+Recompiler.\+\_\+global\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{global\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a92dad19cad9146741b9c6e9d0baeaf26}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_print\_string\_literal\_in\_array@{\_print\_string\_literal\_in\_array}}
+\index{\_print\_string\_literal\_in\_array@{\_print\_string\_literal\_in\_array}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_print\_string\_literal\_in\_array()}{\_print\_string\_literal\_in\_array()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a92dad19cad9146741b9c6e9d0baeaf26} 
+cffi.\+recompiler.\+Recompiler.\+\_\+print\+\_\+string\+\_\+literal\+\_\+in\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a4bc51658c589b1d81508d620854349dc}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_prnt@{\_prnt}}
+\index{\_prnt@{\_prnt}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_prnt()}{\_prnt()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a4bc51658c589b1d81508d620854349dc} 
+cffi.\+recompiler.\+Recompiler.\+\_\+prnt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{what}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a19ae8fdefdf74dcfbdcb38c9e6fc9cd1}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_rel\_readlines@{\_rel\_readlines}}
+\index{\_rel\_readlines@{\_rel\_readlines}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_rel\_readlines()}{\_rel\_readlines()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a19ae8fdefdf74dcfbdcb38c9e6fc9cd1} 
+cffi.\+recompiler.\+Recompiler.\+\_\+rel\+\_\+readlines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_af1d9873af37a4f094fa54ff6a309d8be}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_struct\_collecttype@{\_struct\_collecttype}}
+\index{\_struct\_collecttype@{\_struct\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_struct\_collecttype()}{\_struct\_collecttype()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_af1d9873af37a4f094fa54ff6a309d8be} 
+cffi.\+recompiler.\+Recompiler.\+\_\+struct\+\_\+collecttype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a32657e9dd7038f9d47a642b3df38440d}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_struct\_ctx@{\_struct\_ctx}}
+\index{\_struct\_ctx@{\_struct\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_struct\_ctx()}{\_struct\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a32657e9dd7038f9d47a642b3df38440d} 
+cffi.\+recompiler.\+Recompiler.\+\_\+struct\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{cname}{, }\item[{}]{approxname}{, }\item[{}]{named\+\_\+ptr}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ad0ea113c12db39b931ca1f481d09eb89}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_struct\_decl@{\_struct\_decl}}
+\index{\_struct\_decl@{\_struct\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_struct\_decl()}{\_struct\_decl()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ad0ea113c12db39b931ca1f481d09eb89} 
+cffi.\+recompiler.\+Recompiler.\+\_\+struct\+\_\+decl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{cname}{, }\item[{}]{approxname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a997bcca953b933fca49da541d2f04c7f}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_struct\_names@{\_struct\_names}}
+\index{\_struct\_names@{\_struct\_names}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_struct\_names()}{\_struct\_names()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a997bcca953b933fca49da541d2f04c7f} 
+cffi.\+recompiler.\+Recompiler.\+\_\+struct\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a60421129a0e6e63076330858e0aa0bc0}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_to\_py@{\_to\_py}}
+\index{\_to\_py@{\_to\_py}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_to\_py()}{\_to\_py()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a60421129a0e6e63076330858e0aa0bc0} 
+cffi.\+recompiler.\+Recompiler.\+\_\+to\+\_\+py (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a3c0beedd3b861842e3e813251c9cafba}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_typedef\_ctx@{\_typedef\_ctx}}
+\index{\_typedef\_ctx@{\_typedef\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_typedef\_ctx()}{\_typedef\_ctx()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a3c0beedd3b861842e3e813251c9cafba} 
+cffi.\+recompiler.\+Recompiler.\+\_\+typedef\+\_\+ctx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a5cd8e3a9c7754b2e6cbb243bb2e42e93}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_typedef\_type@{\_typedef\_type}}
+\index{\_typedef\_type@{\_typedef\_type}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_typedef\_type()}{\_typedef\_type()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a5cd8e3a9c7754b2e6cbb243bb2e42e93} 
+cffi.\+recompiler.\+Recompiler.\+\_\+typedef\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tp}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ae8582ec82a95edb8b6eb7f9ab5cbdf17}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!collect\_step\_tables@{collect\_step\_tables}}
+\index{collect\_step\_tables@{collect\_step\_tables}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{collect\_step\_tables()}{collect\_step\_tables()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ae8582ec82a95edb8b6eb7f9ab5cbdf17} 
+cffi.\+recompiler.\+Recompiler.\+collect\+\_\+step\+\_\+tables (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a13d49f897225b3e6ce2681a54b1e8a22}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!collect\_type\_table@{collect\_type\_table}}
+\index{collect\_type\_table@{collect\_type\_table}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{collect\_type\_table()}{collect\_type\_table()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a13d49f897225b3e6ce2681a54b1e8a22} 
+cffi.\+recompiler.\+Recompiler.\+collect\+\_\+type\+\_\+table (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a86c0c08b1a00dbe0ab384895b34b7804}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!needs\_version@{needs\_version}}
+\index{needs\_version@{needs\_version}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{needs\_version()}{needs\_version()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a86c0c08b1a00dbe0ab384895b34b7804} 
+cffi.\+recompiler.\+Recompiler.\+needs\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ver}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a976d19322414599e0e3aedcf9802ef2a}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!write\_c\_source\_to\_f@{write\_c\_source\_to\_f}}
+\index{write\_c\_source\_to\_f@{write\_c\_source\_to\_f}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{write\_c\_source\_to\_f()}{write\_c\_source\_to\_f()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a976d19322414599e0e3aedcf9802ef2a} 
+cffi.\+recompiler.\+Recompiler.\+write\+\_\+c\+\_\+source\+\_\+to\+\_\+f (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{f}{, }\item[{}]{preamble}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a3c2197e848fd8ebea6436b577b6d54e1}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!write\_py\_source\_to\_f@{write\_py\_source\_to\_f}}
+\index{write\_py\_source\_to\_f@{write\_py\_source\_to\_f}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{write\_py\_source\_to\_f()}{write\_py\_source\_to\_f()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a3c2197e848fd8ebea6436b577b6d54e1} 
+cffi.\+recompiler.\+Recompiler.\+write\+\_\+py\+\_\+source\+\_\+to\+\_\+f (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{f}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a313e0ac285fb72589a9ab2ed9e534769}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!write\_source\_to\_f@{write\_source\_to\_f}}
+\index{write\_source\_to\_f@{write\_source\_to\_f}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{write\_source\_to\_f()}{write\_source\_to\_f()}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a313e0ac285fb72589a9ab2ed9e534769} 
+cffi.\+recompiler.\+Recompiler.\+write\+\_\+source\+\_\+to\+\_\+f (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{f}{, }\item[{}]{preamble}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a39510c20c95294a026ee29a4c44b4102}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_current\_quals@{\_current\_quals}}
+\index{\_current\_quals@{\_current\_quals}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_current\_quals}{\_current\_quals}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a39510c20c95294a026ee29a4c44b4102} 
+cffi.\+recompiler.\+Recompiler.\+\_\+current\+\_\+quals = quals\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_abadf0778a42a44c142bc13142739fcb3}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_ConstPointerType@{\_emit\_bytecode\_ConstPointerType}}
+\index{\_emit\_bytecode\_ConstPointerType@{\_emit\_bytecode\_ConstPointerType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_ConstPointerType}{\_emit\_bytecode\_ConstPointerType}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_abadf0778a42a44c142bc13142739fcb3} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Const\+Pointer\+Type = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9}{\+\_\+emit\+\_\+bytecode\+\_\+\+Pointer\+Type}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a88be5c5fb8b80930246518b61aaef4da}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_NamedPointerType@{\_emit\_bytecode\_NamedPointerType}}
+\index{\_emit\_bytecode\_NamedPointerType@{\_emit\_bytecode\_NamedPointerType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_NamedPointerType}{\_emit\_bytecode\_NamedPointerType}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a88be5c5fb8b80930246518b61aaef4da} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Named\+Pointer\+Type = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_afea98c4b1e3b7e59509187812840bac9}{\+\_\+emit\+\_\+bytecode\+\_\+\+Pointer\+Type}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a78ff3709ffb2d7ab76a6c383afe34d6b}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_emit\_bytecode\_UnionType@{\_emit\_bytecode\_UnionType}}
+\index{\_emit\_bytecode\_UnionType@{\_emit\_bytecode\_UnionType}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_emit\_bytecode\_UnionType}{\_emit\_bytecode\_UnionType}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a78ff3709ffb2d7ab76a6c383afe34d6b} 
+cffi.\+recompiler.\+Recompiler.\+\_\+emit\+\_\+bytecode\+\_\+\+Union\+Type = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_acda2c0639ed87e5454ab77bd39a4fc93}{\+\_\+emit\+\_\+bytecode\+\_\+\+Struct\+Type}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a25195145f9c1c5ce421c5a9ce3d4874a}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_enums@{\_enums}}
+\index{\_enums@{\_enums}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_enums}{\_enums}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a25195145f9c1c5ce421c5a9ce3d4874a} 
+cffi.\+recompiler.\+Recompiler.\+\_\+enums = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a653c895a5b0430e730b50979a0d17867}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_f@{\_f}}
+\index{\_f@{\_f}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_f}{\_f}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a653c895a5b0430e730b50979a0d17867} 
+cffi.\+recompiler.\+Recompiler.\+\_\+f = f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ad53cd54fa9aa2b6af25f82f7d9f9c6b4}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_dllexport\_python\_collecttype@{\_generate\_cpy\_dllexport\_python\_collecttype}}
+\index{\_generate\_cpy\_dllexport\_python\_collecttype@{\_generate\_cpy\_dllexport\_python\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_dllexport\_python\_collecttype}{\_generate\_cpy\_dllexport\_python\_collecttype}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ad53cd54fa9aa2b6af25f82f7d9f9c6b4} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+dllexport\+\_\+python\+\_\+collecttype\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \_generate\_cpy\_extern\_python\_collecttype}
+
+\end{DoxyCode}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a0e358a67bb913d2e975b2121ef2825a2}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_dllexport\_python\_ctx@{\_generate\_cpy\_dllexport\_python\_ctx}}
+\index{\_generate\_cpy\_dllexport\_python\_ctx@{\_generate\_cpy\_dllexport\_python\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_dllexport\_python\_ctx}{\_generate\_cpy\_dllexport\_python\_ctx}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a0e358a67bb913d2e975b2121ef2825a2} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+dllexport\+\_\+python\+\_\+ctx\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \_generate\_cpy\_extern\_python\_ctx}
+
+\end{DoxyCode}
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a059e04391a89a01be5bf57e127b52526}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_union\_collecttype@{\_generate\_cpy\_union\_collecttype}}
+\index{\_generate\_cpy\_union\_collecttype@{\_generate\_cpy\_union\_collecttype}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_union\_collecttype}{\_generate\_cpy\_union\_collecttype}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a059e04391a89a01be5bf57e127b52526} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+union\+\_\+collecttype = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_acfc4ab1edc8fdfe7451bd64c545071fe}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+collecttype}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ae114d86e5539339a23df9427b0e80088}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_union\_ctx@{\_generate\_cpy\_union\_ctx}}
+\index{\_generate\_cpy\_union\_ctx@{\_generate\_cpy\_union\_ctx}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_union\_ctx}{\_generate\_cpy\_union\_ctx}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ae114d86e5539339a23df9427b0e80088} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+union\+\_\+ctx = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_a7113969a1144b52d6ade14b0f88d4ee8}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+ctx}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_aaf8f8c23e4b2f88682c3da744947c4e4}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_generate\_cpy\_union\_decl@{\_generate\_cpy\_union\_decl}}
+\index{\_generate\_cpy\_union\_decl@{\_generate\_cpy\_union\_decl}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cpy\_union\_decl}{\_generate\_cpy\_union\_decl}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_aaf8f8c23e4b2f88682c3da744947c4e4} 
+cffi.\+recompiler.\+Recompiler.\+\_\+generate\+\_\+cpy\+\_\+union\+\_\+decl = \mbox{\hyperlink{classcffi_1_1recompiler_1_1_recompiler_ac57b91e11c40c2e9687b4e5d5c1c9ec0}{\+\_\+generate\+\_\+cpy\+\_\+struct\+\_\+decl}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a7be7ca388d71bc7155a8714797b09279}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_lsts@{\_lsts}}
+\index{\_lsts@{\_lsts}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_lsts}{\_lsts}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a7be7ca388d71bc7155a8714797b09279} 
+dict cffi.\+recompiler.\+Recompiler.\+\_\+lsts = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a86065e92e413047747c72c1dfe536fa2}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_num\_externpy@{\_num\_externpy}}
+\index{\_num\_externpy@{\_num\_externpy}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_num\_externpy}{\_num\_externpy}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a86065e92e413047747c72c1dfe536fa2} 
+int cffi.\+recompiler.\+Recompiler.\+\_\+num\+\_\+externpy = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a4526a2fd2b8762d49db7b2fc4b64bbb1}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_seen\_constants@{\_seen\_constants}}
+\index{\_seen\_constants@{\_seen\_constants}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_seen\_constants}{\_seen\_constants}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a4526a2fd2b8762d49db7b2fc4b64bbb1} 
+cffi.\+recompiler.\+Recompiler.\+\_\+seen\+\_\+constants = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a8548400d97705433329f9750419ed296}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_seen\_struct\_unions@{\_seen\_struct\_unions}}
+\index{\_seen\_struct\_unions@{\_seen\_struct\_unions}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_seen\_struct\_unions}{\_seen\_struct\_unions}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a8548400d97705433329f9750419ed296} 
+cffi.\+recompiler.\+Recompiler.\+\_\+seen\+\_\+struct\+\_\+unions = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_affaa60850e138bf3b23ae5a495479021}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_struct\_unions@{\_struct\_unions}}
+\index{\_struct\_unions@{\_struct\_unions}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_struct\_unions}{\_struct\_unions}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_affaa60850e138bf3b23ae5a495479021} 
+cffi.\+recompiler.\+Recompiler.\+\_\+struct\+\_\+unions = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a17099bd1a86405b78d7df9cc37cc1258}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_typesdict@{\_typesdict}}
+\index{\_typesdict@{\_typesdict}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_typesdict}{\_typesdict}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a17099bd1a86405b78d7df9cc37cc1258} 
+dict cffi.\+recompiler.\+Recompiler.\+\_\+typesdict = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a42198968c8fb58d36c6e77a35a3fe753}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!\_version@{\_version}}
+\index{\_version@{\_version}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{\_version}{\_version}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a42198968c8fb58d36c6e77a35a3fe753} 
+cffi.\+recompiler.\+Recompiler.\+\_\+version = \mbox{\hyperlink{namespacecffi_1_1recompiler_aecae1ba1e5079fe9a3b93f2823944b7e}{VERSION\+\_\+\+BASE}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a42c1d24f240591a5515824666b921aa6}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!ALL\_STEPS@{ALL\_STEPS}}
+\index{ALL\_STEPS@{ALL\_STEPS}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{ALL\_STEPS}{ALL\_STEPS}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a42c1d24f240591a5515824666b921aa6} 
+list cffi.\+recompiler.\+Recompiler.\+ALL\+\_\+\+STEPS = \mbox{[}"{}global"{}, "{}field"{}, "{}struct\+\_\+union"{}, "{}enum"{}, "{}typename"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a79946ccf76cf16f316ba295a19de2a83}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!cffi\_types@{cffi\_types}}
+\index{cffi\_types@{cffi\_types}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{cffi\_types}{cffi\_types}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a79946ccf76cf16f316ba295a19de2a83} 
+cffi.\+recompiler.\+Recompiler.\+cffi\+\_\+types = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_a355ea9a3740e661e386e8ffeb6c728c7}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!ffi@{ffi}}
+\index{ffi@{ffi}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{ffi}{ffi}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_a355ea9a3740e661e386e8ffeb6c728c7} 
+cffi.\+recompiler.\+Recompiler.\+ffi = ffi}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ac065283c66317e3b4e2fc56c133f46ed}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!module\_name@{module\_name}}
+\index{module\_name@{module\_name}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{module\_name}{module\_name}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ac065283c66317e3b4e2fc56c133f46ed} 
+cffi.\+recompiler.\+Recompiler.\+module\+\_\+name = module\+\_\+name}
+
+\Hypertarget{classcffi_1_1recompiler_1_1_recompiler_ab19f5abc5e964a8692c4914fb1f96dc3}\index{cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}!target\_is\_python@{target\_is\_python}}
+\index{target\_is\_python@{target\_is\_python}!cffi.recompiler.Recompiler@{cffi.recompiler.Recompiler}}
+\doxysubsubsection{\texorpdfstring{target\_is\_python}{target\_is\_python}}
+{\footnotesize\ttfamily \label{classcffi_1_1recompiler_1_1_recompiler_ab19f5abc5e964a8692c4914fb1f96dc3} 
+cffi.\+recompiler.\+Recompiler.\+target\+\_\+is\+\_\+python = target\+\_\+is\+\_\+python}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cffi/\mbox{\hyperlink{recompiler_8py}{recompiler.\+py}}\end{DoxyCompactItemize}

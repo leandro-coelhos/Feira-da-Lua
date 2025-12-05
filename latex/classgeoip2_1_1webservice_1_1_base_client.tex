@@ -1,0 +1,159 @@
+\doxysection{geoip2.\+webservice.\+Base\+Client Class Reference}
+\hypertarget{classgeoip2_1_1webservice_1_1_base_client}{}\label{classgeoip2_1_1webservice_1_1_base_client}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+Inheritance diagram for geoip2.\+webservice.\+Base\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgeoip2_1_1webservice_1_1_base_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_a006d6709c352ee006c4b8a6cdc8295ca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int account\+\_\+id, str license\+\_\+key, str host, Sequence\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None locales, float timeout)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_ac3a2b0c848cfbefb3aaf2c7a8f87d894}{\+\_\+uri}} (self, str path, IPAddress ip\+\_\+address)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1errors_1_1_geo_i_p2_error}{Geo\+IP2\+Error}} \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_a9b4547b6083e18342e988799edc1418a}{\+\_\+exception\+\_\+for\+\_\+error}} (self, int status, str content\+\_\+type, str body, str uri)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1errors_1_1_geo_i_p2_error}{Geo\+IP2\+Error}} \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_a4bf610becbf582dc743b1d294e2d9466}{\+\_\+exception\+\_\+for\+\_\+4xx\+\_\+status}} (self, int status, str content\+\_\+type, str body, str uri)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_adf86eac50367677084b7ebf2e15a870b}{\+\_\+handle\+\_\+success}} (str body, str uri)
+\item 
+( \mbox{\hyperlink{classgeoip2_1_1errors_1_1_authentication_error}{Authentication\+Error}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1errors_1_1_address_not_found_error}{Address\+Not\+Found\+Error}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1errors_1_1_permission_required_error}{Permission\+Required\+Error}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1errors_1_1_out_of_queries_error}{Out\+Of\+Queries\+Error}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classgeoip2_1_1errors_1_1_invalid_request_error}{Invalid\+Request\+Error}}) \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_aafbfc9ef02b79bfc69a8be145162e85e}{\+\_\+exception\+\_\+for\+\_\+web\+\_\+service\+\_\+error}} (str message, str code, int status, str uri)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error}{HTTPError}} \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_afc8cce93b499654ae8f7ac06ca5374dd}{\+\_\+exception\+\_\+for\+\_\+5xx\+\_\+status}} (int status, str uri, str\texorpdfstring{$\vert$}{|}None body)
+\item 
+\mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error}{HTTPError}} \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_aea87f3b10c1e0f47022c8779746419c6}{\+\_\+exception\+\_\+for\+\_\+non\+\_\+200\+\_\+status}} (int status, str uri, str\texorpdfstring{$\vert$}{|}None body)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_ac1f9c89753ff23544586160fcb52f4af}{\+\_\+account\+\_\+id}}
+\item 
+\mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_ad17f0068802f76fdcebf0c0b4ea79fb3}{\+\_\+license\+\_\+key}} = license\+\_\+key
+\item 
+str \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_a41ed5f366778539acdc51a6b2d2485e9}{\+\_\+base\+\_\+uri}} = f"{}https\+://\{host\}/geoip/v2.\+1"{}
+\item 
+\mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_a37f099be8861539216976e90b466670c}{\+\_\+timeout}} = timeout
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Sequence \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client_af03602963a71891752d55179d9f35e2d}{\+\_\+locales}} \mbox{[}str\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for AsyncClient and Client.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_a006d6709c352ee006c4b8a6cdc8295ca}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_a006d6709c352ee006c4b8a6cdc8295ca} 
+ None geoip2.\+webservice.\+Base\+Client.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{account\+\_\+id}{, }\item[{str}]{license\+\_\+key}{, }\item[{str}]{host}{, }\item[{Sequence\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None}]{locales}{, }\item[{float}]{timeout}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a Client.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_a4bf610becbf582dc743b1d294e2d9466}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_exception\_for\_4xx\_status@{\_exception\_for\_4xx\_status}}
+\index{\_exception\_for\_4xx\_status@{\_exception\_for\_4xx\_status}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_exception\_for\_4xx\_status()}{\_exception\_for\_4xx\_status()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_a4bf610becbf582dc743b1d294e2d9466} 
+ \mbox{\hyperlink{classgeoip2_1_1errors_1_1_geo_i_p2_error}{Geo\+IP2\+Error}} geoip2.\+webservice.\+Base\+Client.\+\_\+exception\+\_\+for\+\_\+4xx\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{status}{, }\item[{str}]{content\+\_\+type}{, }\item[{str}]{body}{, }\item[{str}]{uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_afc8cce93b499654ae8f7ac06ca5374dd}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_exception\_for\_5xx\_status@{\_exception\_for\_5xx\_status}}
+\index{\_exception\_for\_5xx\_status@{\_exception\_for\_5xx\_status}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_exception\_for\_5xx\_status()}{\_exception\_for\_5xx\_status()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_afc8cce93b499654ae8f7ac06ca5374dd} 
+ \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error}{HTTPError}} geoip2.\+webservice.\+Base\+Client.\+\_\+exception\+\_\+for\+\_\+5xx\+\_\+status (\begin{DoxyParamCaption}\item[{int}]{status}{, }\item[{str}]{uri}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{body}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_a9b4547b6083e18342e988799edc1418a}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_exception\_for\_error@{\_exception\_for\_error}}
+\index{\_exception\_for\_error@{\_exception\_for\_error}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_exception\_for\_error()}{\_exception\_for\_error()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_a9b4547b6083e18342e988799edc1418a} 
+ \mbox{\hyperlink{classgeoip2_1_1errors_1_1_geo_i_p2_error}{Geo\+IP2\+Error}} geoip2.\+webservice.\+Base\+Client.\+\_\+exception\+\_\+for\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{status}{, }\item[{str}]{content\+\_\+type}{, }\item[{str}]{body}{, }\item[{str}]{uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_aea87f3b10c1e0f47022c8779746419c6}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_exception\_for\_non\_200\_status@{\_exception\_for\_non\_200\_status}}
+\index{\_exception\_for\_non\_200\_status@{\_exception\_for\_non\_200\_status}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_exception\_for\_non\_200\_status()}{\_exception\_for\_non\_200\_status()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_aea87f3b10c1e0f47022c8779746419c6} 
+ \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error}{HTTPError}} geoip2.\+webservice.\+Base\+Client.\+\_\+exception\+\_\+for\+\_\+non\+\_\+200\+\_\+status (\begin{DoxyParamCaption}\item[{int}]{status}{, }\item[{str}]{uri}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{body}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_aafbfc9ef02b79bfc69a8be145162e85e}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_exception\_for\_web\_service\_error@{\_exception\_for\_web\_service\_error}}
+\index{\_exception\_for\_web\_service\_error@{\_exception\_for\_web\_service\_error}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_exception\_for\_web\_service\_error()}{\_exception\_for\_web\_service\_error()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_aafbfc9ef02b79bfc69a8be145162e85e} 
+ (         \mbox{\hyperlink{classgeoip2_1_1errors_1_1_authentication_error}{Authentication\+Error}}         \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1errors_1_1_address_not_found_error}{Address\+Not\+Found\+Error}}         \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1errors_1_1_permission_required_error}{Permission\+Required\+Error}}         \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1errors_1_1_out_of_queries_error}{Out\+Of\+Queries\+Error}}         \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classgeoip2_1_1errors_1_1_invalid_request_error}{Invalid\+Request\+Error}}     ) geoip2.\+webservice.\+Base\+Client.\+\_\+exception\+\_\+for\+\_\+web\+\_\+service\+\_\+error (\begin{DoxyParamCaption}\item[{str}]{message}{, }\item[{str}]{code}{, }\item[{int}]{status}{, }\item[{str}]{uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_adf86eac50367677084b7ebf2e15a870b}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_handle\_success@{\_handle\_success}}
+\index{\_handle\_success@{\_handle\_success}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_handle\_success()}{\_handle\_success()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_adf86eac50367677084b7ebf2e15a870b} 
+ dict geoip2.\+webservice.\+Base\+Client.\+\_\+handle\+\_\+success (\begin{DoxyParamCaption}\item[{str}]{body}{, }\item[{str}]{uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_ac3a2b0c848cfbefb3aaf2c7a8f87d894}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_uri@{\_uri}}
+\index{\_uri@{\_uri}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_uri()}{\_uri()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_ac3a2b0c848cfbefb3aaf2c7a8f87d894} 
+ str geoip2.\+webservice.\+Base\+Client.\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{IPAddress}]{ip\+\_\+address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_ac1f9c89753ff23544586160fcb52f4af}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_account\_id@{\_account\_id}}
+\index{\_account\_id@{\_account\_id}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_account\_id}{\_account\_id}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_ac1f9c89753ff23544586160fcb52f4af} 
+tuple geoip2.\+webservice.\+Base\+Client.\+\_\+account\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ account\_id\ \textcolor{keywordflow}{if}\ isinstance(account\_id,\ bytes)\ \textcolor{keywordflow}{else}\ str(account\_id)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_a41ed5f366778539acdc51a6b2d2485e9}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_base\_uri@{\_base\_uri}}
+\index{\_base\_uri@{\_base\_uri}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_base\_uri}{\_base\_uri}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_a41ed5f366778539acdc51a6b2d2485e9} 
+geoip2.\+webservice.\+Base\+Client.\+\_\+base\+\_\+uri = f"{}https\+://\{host\}/geoip/v2.\+1"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_ad17f0068802f76fdcebf0c0b4ea79fb3}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_license\_key@{\_license\_key}}
+\index{\_license\_key@{\_license\_key}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_license\_key}{\_license\_key}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_ad17f0068802f76fdcebf0c0b4ea79fb3} 
+geoip2.\+webservice.\+Base\+Client.\+\_\+license\+\_\+key = license\+\_\+key\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_af03602963a71891752d55179d9f35e2d}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_locales@{\_locales}}
+\index{\_locales@{\_locales}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_locales}{\_locales}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_af03602963a71891752d55179d9f35e2d} 
+Sequence geoip2.\+webservice.\+Base\+Client.\+\_\+locales \mbox{[}str\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classgeoip2_1_1webservice_1_1_base_client_a37f099be8861539216976e90b466670c}\index{geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}!\_timeout@{\_timeout}}
+\index{\_timeout@{\_timeout}!geoip2.webservice.BaseClient@{geoip2.webservice.BaseClient}}
+\doxysubsubsection{\texorpdfstring{\_timeout}{\_timeout}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1webservice_1_1_base_client_a37f099be8861539216976e90b466670c} 
+geoip2.\+webservice.\+Base\+Client.\+\_\+timeout = timeout\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/geoip2/\mbox{\hyperlink{webservice_8py}{webservice.\+py}}\end{DoxyCompactItemize}

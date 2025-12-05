@@ -1,0 +1,68 @@
+\doxysection{feira\+\_\+venv/\+Lib/site-\/packages/idna/core.py File Reference}
+\hypertarget{idna_2core_8py}{}\label{idna_2core_8py}\index{feira\_venv/Lib/site-\/packages/idna/core.py@{feira\_venv/Lib/site-\/packages/idna/core.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_i_d_n_a_error}{idna.\+core.\+IDNAError}}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_i_d_n_a_bidi_error}{idna.\+core.\+IDNABidi\+Error}}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_invalid_codepoint}{idna.\+core.\+Invalid\+Codepoint}}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_invalid_codepoint_context}{idna.\+core.\+Invalid\+Codepoint\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceidna}{idna}}
+\item 
+namespace \mbox{\hyperlink{namespaceidna_1_1core}{idna.\+core}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceidna_1_1core_a05915bce0ec435d72957c20dfaba9938}{idna.\+core.\+\_\+combining\+\_\+class}} (int cp)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_aa1187983fcf0ec94a34148fad0e98f92}{idna.\+core.\+\_\+is\+\_\+script}} (str cp, str script)
+\item 
+bytes \mbox{\hyperlink{namespaceidna_1_1core_a470e05247369e9821aa94ad99ee51eed}{idna.\+core.\+\_\+punycode}} (str s)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_aa868fd5d940b6f9c95ed7203b505ff45}{idna.\+core.\+\_\+unot}} (int s)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_ae477ff3cb924813d2e192457c18a612e}{idna.\+core.\+valid\+\_\+label\+\_\+length}} (Union\mbox{[}bytes, str\mbox{]} label)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a1ed46fc907538e236368225bc8fefeff}{idna.\+core.\+valid\+\_\+string\+\_\+length}} (Union\mbox{[}bytes, str\mbox{]} label, bool trailing\+\_\+dot)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a21ab79641194313f059c72a072d9c793}{idna.\+core.\+check\+\_\+bidi}} (str label, bool check\+\_\+ltr=False)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a252834e1840e1acbc11aff382cebade6}{idna.\+core.\+check\+\_\+initial\+\_\+combiner}} (str label)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_ab51e8b986a4c1ca7d7587d235a901017}{idna.\+core.\+check\+\_\+hyphen\+\_\+ok}} (str label)
+\item 
+None \mbox{\hyperlink{namespaceidna_1_1core_abe386a27ffe987939d2e85c3c473dd70}{idna.\+core.\+check\+\_\+nfc}} (str label)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a62925fce719083d073230550f193cbb0}{idna.\+core.\+valid\+\_\+contextj}} (str label, int pos)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_ae6625a1a17f4d6bd3ddaa6e57d0aa4a7}{idna.\+core.\+valid\+\_\+contexto}} (str label, int pos, bool exception=False)
+\item 
+None \mbox{\hyperlink{namespaceidna_1_1core_a0e2ed8146dfe391d90d9547006414af2}{idna.\+core.\+check\+\_\+label}} (Union\mbox{[}str, bytes, bytearray\mbox{]} label)
+\item 
+bytes \mbox{\hyperlink{namespaceidna_1_1core_ae7083b70c72c1b7d6c259fe866f5c3cf}{idna.\+core.\+alabel}} (str label)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_a27a7946c0a83dfd9970adf21456999aa}{idna.\+core.\+ulabel}} (Union\mbox{[}str, bytes, bytearray\mbox{]} label)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_af0bb4dfa31cc276b9da528c7ce63bd5c}{idna.\+core.\+uts46\+\_\+remap}} (str domain, bool std3\+\_\+rules=True, bool transitional=False)
+\item 
+bytes \mbox{\hyperlink{namespaceidna_1_1core_a2f735dbc4c5b5235d69d3eece324a6a3}{idna.\+core.\+encode}} (Union\mbox{[}str, bytes, bytearray\mbox{]} s, bool strict=False, bool uts46=False, bool std3\+\_\+rules=False, bool transitional=False)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_a0989c4efda27998698dc13e4c2993fca}{idna.\+core.\+decode}} (Union\mbox{[}str, bytes, bytearray\mbox{]} s, bool strict=False, bool uts46=False, bool std3\+\_\+rules=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceidna_1_1core_a57aad8eec1170b60e299d09a76397e36}{idna.\+core.\+\_\+virama\+\_\+combining\+\_\+class}} = 9
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_a7a65bc0a7fc00c36039d16c5586dfdfd}{idna.\+core.\+\_\+alabel\+\_\+prefix}} = b"{}xn-\/-\/"{}
+\item 
+\mbox{\hyperlink{namespaceidna_1_1core_a00765efcf0b7ac21f70164da6bff294c}{idna.\+core.\+\_\+unicode\+\_\+dots\+\_\+re}} = re.\+compile("{}\mbox{[}\textbackslash{}u002e\textbackslash{}u3002\textbackslash{}uff0e\textbackslash{}uff61\mbox{]}"{})
+\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\doxysection{django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any Namespace Reference}
+\hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any}{}\label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_1_1_base_tz_loader}{Base\+Tz\+Loader}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_1_1_django_range_dumper}{Django\+Range\+Dumper}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_1_1_isolation_level}{Isolation\+Level}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_1_1_jsonb}{Jsonb}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a4be1f2390df4ec68cee36a689678cf42}{mogrify}} (sql, params, \mbox{\hyperlink{namespacedjango_1_1db_ae7b00a677e3c99c34670870d343c0341}{connection}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a6c882f9297127d3d597353b2be2448f1}{register\+\_\+tzloader}} (tz, context)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ad88ebed6721ba0778a884f1e7714f95f}{get\+\_\+adapters\+\_\+template}} (use\+\_\+tz, timezone)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a6666ae9a3f1a90c771e07f9c3a70a8bb}{\+\_\+quote}} (value, \mbox{\hyperlink{namespacedjango_1_1db_ae7b00a677e3c99c34670870d343c0341}{connection}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ad2ad55f4652cafb29b589e650777388e}{Inet}} = ipaddress.\+ip\+\_\+address
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a3f734849066e801ab2d009d69a66a6cd}{Date\+Range}} = Range
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ae36700d23f6c40f8a0c1a2e1a6e2cfa1}{RANGE\+\_\+\+TYPES}} = (Range,)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_aee219992c2d282b1661ff194fc1a95a1}{TSRANGE\+\_\+\+OID}} = types\mbox{[}"{}tsrange"{}\mbox{]}.oid
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a066388ad0718d19a0b0e2364a1502f0c}{TSTZRANGE\+\_\+\+OID}} = types\mbox{[}"{}tstzrange"{}\mbox{]}.oid
+\item 
+bool \mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a70c2afc5329749f0c680b89f6f4b7159}{is\+\_\+psycopg3}} = True
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a5cd0134d966ac93da473afc01b393d48}{quote}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a6666ae9a3f1a90c771e07f9c3a70a8bb}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!\_quote@{\_quote}}
+\index{\_quote@{\_quote}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{\_quote()}{\_quote()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a6666ae9a3f1a90c771e07f9c3a70a8bb} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+\_\+quote (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{connection}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ad88ebed6721ba0778a884f1e7714f95f}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!get\_adapters\_template@{get\_adapters\_template}}
+\index{get\_adapters\_template@{get\_adapters\_template}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{get\_adapters\_template()}{get\_adapters\_template()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ad88ebed6721ba0778a884f1e7714f95f} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+get\+\_\+adapters\+\_\+template (\begin{DoxyParamCaption}\item[{}]{use\+\_\+tz}{, }\item[{}]{timezone}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a4be1f2390df4ec68cee36a689678cf42}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!mogrify@{mogrify}}
+\index{mogrify@{mogrify}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{mogrify()}{mogrify()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a4be1f2390df4ec68cee36a689678cf42} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+mogrify (\begin{DoxyParamCaption}\item[{}]{sql}{, }\item[{}]{params}{, }\item[{}]{connection}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a6c882f9297127d3d597353b2be2448f1}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!register\_tzloader@{register\_tzloader}}
+\index{register\_tzloader@{register\_tzloader}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{register\_tzloader()}{register\_tzloader()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a6c882f9297127d3d597353b2be2448f1} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+register\+\_\+tzloader (\begin{DoxyParamCaption}\item[{}]{tz}{, }\item[{}]{context}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a3f734849066e801ab2d009d69a66a6cd}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!DateRange@{DateRange}}
+\index{DateRange@{DateRange}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{DateRange}{DateRange}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a3f734849066e801ab2d009d69a66a6cd} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+Date\+Range = Range}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ad2ad55f4652cafb29b589e650777388e}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!Inet@{Inet}}
+\index{Inet@{Inet}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{Inet}{Inet}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ad2ad55f4652cafb29b589e650777388e} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+Inet = ipaddress.\+ip\+\_\+address}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a70c2afc5329749f0c680b89f6f4b7159}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!is\_psycopg3@{is\_psycopg3}}
+\index{is\_psycopg3@{is\_psycopg3}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{is\_psycopg3}{is\_psycopg3}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a70c2afc5329749f0c680b89f6f4b7159} 
+bool django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+is\+\_\+psycopg3 = True}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a5cd0134d966ac93da473afc01b393d48}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!quote@{quote}}
+\index{quote@{quote}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{quote}{quote}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a5cd0134d966ac93da473afc01b393d48} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+quote}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ae36700d23f6c40f8a0c1a2e1a6e2cfa1}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!RANGE\_TYPES@{RANGE\_TYPES}}
+\index{RANGE\_TYPES@{RANGE\_TYPES}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{RANGE\_TYPES}{RANGE\_TYPES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_ae36700d23f6c40f8a0c1a2e1a6e2cfa1} 
+tuple django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+RANGE\+\_\+\+TYPES = (Range,)}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_aee219992c2d282b1661ff194fc1a95a1}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!TSRANGE\_OID@{TSRANGE\_OID}}
+\index{TSRANGE\_OID@{TSRANGE\_OID}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{TSRANGE\_OID}{TSRANGE\_OID}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_aee219992c2d282b1661ff194fc1a95a1} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+TSRANGE\+\_\+\+OID = types\mbox{[}"{}tsrange"{}\mbox{]}.oid}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a066388ad0718d19a0b0e2364a1502f0c}\index{django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}!TSTZRANGE\_OID@{TSTZRANGE\_OID}}
+\index{TSTZRANGE\_OID@{TSTZRANGE\_OID}!django.db.backends.postgresql.psycopg\_any@{django.db.backends.postgresql.psycopg\_any}}
+\doxysubsubsection{\texorpdfstring{TSTZRANGE\_OID}{TSTZRANGE\_OID}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1postgresql_1_1psycopg__any_a066388ad0718d19a0b0e2364a1502f0c} 
+django.\+db.\+backends.\+postgresql.\+psycopg\+\_\+any.\+TSTZRANGE\+\_\+\+OID = types\mbox{[}"{}tstzrange"{}\mbox{]}.oid}
+

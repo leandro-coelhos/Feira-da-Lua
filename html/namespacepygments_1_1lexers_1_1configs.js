@@ -1,0 +1,27 @@
+var namespacepygments_1_1lexers_1_1configs =
+[
+    [ "ApacheConfLexer", "classpygments_1_1lexers_1_1configs_1_1_apache_conf_lexer.html", null ],
+    [ "AugeasLexer", "classpygments_1_1lexers_1_1configs_1_1_augeas_lexer.html", null ],
+    [ "Cfengine3Lexer", "classpygments_1_1lexers_1_1configs_1_1_cfengine3_lexer.html", null ],
+    [ "DesktopLexer", "classpygments_1_1lexers_1_1configs_1_1_desktop_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_desktop_lexer" ],
+    [ "DockerLexer", "classpygments_1_1lexers_1_1configs_1_1_docker_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_docker_lexer" ],
+    [ "IniLexer", "classpygments_1_1lexers_1_1configs_1_1_ini_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_ini_lexer" ],
+    [ "KconfigLexer", "classpygments_1_1lexers_1_1configs_1_1_kconfig_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_kconfig_lexer" ],
+    [ "LighttpdConfLexer", "classpygments_1_1lexers_1_1configs_1_1_lighttpd_conf_lexer.html", null ],
+    [ "NestedTextLexer", "classpygments_1_1lexers_1_1configs_1_1_nested_text_lexer.html", null ],
+    [ "NginxConfLexer", "classpygments_1_1lexers_1_1configs_1_1_nginx_conf_lexer.html", null ],
+    [ "PacmanConfLexer", "classpygments_1_1lexers_1_1configs_1_1_pacman_conf_lexer.html", null ],
+    [ "PkgConfigLexer", "classpygments_1_1lexers_1_1configs_1_1_pkg_config_lexer.html", null ],
+    [ "PropertiesLexer", "classpygments_1_1lexers_1_1configs_1_1_properties_lexer.html", null ],
+    [ "RegeditLexer", "classpygments_1_1lexers_1_1configs_1_1_regedit_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_regedit_lexer" ],
+    [ "SingularityLexer", "classpygments_1_1lexers_1_1configs_1_1_singularity_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_singularity_lexer" ],
+    [ "SquidConfLexer", "classpygments_1_1lexers_1_1configs_1_1_squid_conf_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_squid_conf_lexer" ],
+    [ "SystemdLexer", "classpygments_1_1lexers_1_1configs_1_1_systemd_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_systemd_lexer" ],
+    [ "TermcapLexer", "classpygments_1_1lexers_1_1configs_1_1_termcap_lexer.html", null ],
+    [ "TerminfoLexer", "classpygments_1_1lexers_1_1configs_1_1_terminfo_lexer.html", null ],
+    [ "TerraformLexer", "classpygments_1_1lexers_1_1configs_1_1_terraform_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_terraform_lexer" ],
+    [ "TOMLLexer", "classpygments_1_1lexers_1_1configs_1_1_t_o_m_l_lexer.html", "classpygments_1_1lexers_1_1configs_1_1_t_o_m_l_lexer" ],
+    [ "UnixConfigLexer", "classpygments_1_1lexers_1_1configs_1_1_unix_config_lexer.html", null ],
+    [ "_rx_indent", "namespacepygments_1_1lexers_1_1configs.html#a68e6a2ba99eec249181d8e02725bb93f", null ],
+    [ "__all__", "namespacepygments_1_1lexers_1_1configs.html#ad1bd65fd60e43aeda05bb0530485db7c", null ]
+];

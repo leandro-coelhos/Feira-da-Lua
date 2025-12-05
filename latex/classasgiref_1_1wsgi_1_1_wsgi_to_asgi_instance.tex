@@ -1,0 +1,145 @@
+\doxysection{asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance Class Reference}
+\hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance}{}\label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a96eee49ff4815698bb404b99965d37f4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a1894d0063160eb980beec510856ffab7}{wsgi\+\_\+application}})
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_aa249c914e1c49dc8dd1819f2822321a7}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0d288e4bdffbf472184ec3c400c64f7e}{scope}}, receive, send)
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a7292a16a234d21398c3ced5d3fbbd329}{build\+\_\+environ}} (self, \mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0d288e4bdffbf472184ec3c400c64f7e}{scope}}, body)
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0c647c8966b8cf96c3874e0ff9348f3f}{start\+\_\+response}} (self, status, response\+\_\+headers, exc\+\_\+info=None)
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a7f714529cfcc2d82661768b3a5386771}{run\+\_\+wsgi\+\_\+app}} (self, body)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a1894d0063160eb980beec510856ffab7}{wsgi\+\_\+application}} = wsgi\+\_\+application
+\item 
+bool \mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_abbf7bcda9d65ccac102fa9962148588c}{response\+\_\+started}} = False
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a00e0ef2686bff82d89a45b1d8dad27ba}{response\+\_\+content\+\_\+length}} = None
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0d288e4bdffbf472184ec3c400c64f7e}{scope}} = scope
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a9a71241990622bd5db9f2962d5ac34fd}{sync\+\_\+send}} = \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync}{Async\+To\+Sync}}(send)
+\item 
+dict \mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_ae6c70407740a9b750b35add525f535d3}{response\+\_\+start}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a5853b7de31f882f6688a29a2caea3917}{start\+\_\+response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Per-socket instance of a wrapped WSGI application
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a96eee49ff4815698bb404b99965d37f4}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a96eee49ff4815698bb404b99965d37f4} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{wsgi\+\_\+application}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_aa249c914e1c49dc8dd1819f2822321a7}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_aa249c914e1c49dc8dd1819f2822321a7} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope}{, }\item[{}]{receive}{, }\item[{}]{send}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a7292a16a234d21398c3ced5d3fbbd329}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!build\_environ@{build\_environ}}
+\index{build\_environ@{build\_environ}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{build\_environ()}{build\_environ()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a7292a16a234d21398c3ced5d3fbbd329} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+build\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope}{, }\item[{}]{body}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Builds a scope and request body into a WSGI environ object.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a7f714529cfcc2d82661768b3a5386771}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!run\_wsgi\_app@{run\_wsgi\_app}}
+\index{run\_wsgi\_app@{run\_wsgi\_app}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{run\_wsgi\_app()}{run\_wsgi\_app()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a7f714529cfcc2d82661768b3a5386771} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+run\+\_\+wsgi\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{body}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called in a subthread to run the WSGI app. We encapsulate like
+this so that the start_response callable is called in the same thread.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0c647c8966b8cf96c3874e0ff9348f3f}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!start\_response@{start\_response}}
+\index{start\_response@{start\_response}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{start\_response()}{start\_response()}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0c647c8966b8cf96c3874e0ff9348f3f} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+start\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{status}{, }\item[{}]{response\+\_\+headers}{, }\item[{}]{exc\+\_\+info}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}WSGI start_response callable.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a00e0ef2686bff82d89a45b1d8dad27ba}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!response\_content\_length@{response\_content\_length}}
+\index{response\_content\_length@{response\_content\_length}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{response\_content\_length}{response\_content\_length}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a00e0ef2686bff82d89a45b1d8dad27ba} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+response\+\_\+content\+\_\+length = None}
+
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_ae6c70407740a9b750b35add525f535d3}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!response\_start@{response\_start}}
+\index{response\_start@{response\_start}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{response\_start}{response\_start}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_ae6c70407740a9b750b35add525f535d3} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+response\+\_\+start}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}type"{}}:\ \textcolor{stringliteral}{"{}http.response.start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}status"{}}:\ status\_code,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}headers"{}}:\ headers,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_abbf7bcda9d65ccac102fa9962148588c}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!response\_started@{response\_started}}
+\index{response\_started@{response\_started}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{response\_started}{response\_started}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_abbf7bcda9d65ccac102fa9962148588c} 
+bool asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+response\+\_\+started = False}
+
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0d288e4bdffbf472184ec3c400c64f7e}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!scope@{scope}}
+\index{scope@{scope}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a0d288e4bdffbf472184ec3c400c64f7e} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+scope = scope}
+
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a5853b7de31f882f6688a29a2caea3917}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!start\_response@{start\_response}}
+\index{start\_response@{start\_response}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{start\_response}{start\_response}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a5853b7de31f882f6688a29a2caea3917} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+start\+\_\+response}
+
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a9a71241990622bd5db9f2962d5ac34fd}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!sync\_send@{sync\_send}}
+\index{sync\_send@{sync\_send}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{sync\_send}{sync\_send}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a9a71241990622bd5db9f2962d5ac34fd} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+sync\+\_\+send = \mbox{\hyperlink{classasgiref_1_1sync_1_1_async_to_sync}{Async\+To\+Sync}}(send)}
+
+\Hypertarget{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a1894d0063160eb980beec510856ffab7}\index{asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}!wsgi\_application@{wsgi\_application}}
+\index{wsgi\_application@{wsgi\_application}!asgiref.wsgi.WsgiToAsgiInstance@{asgiref.wsgi.WsgiToAsgiInstance}}
+\doxysubsubsection{\texorpdfstring{wsgi\_application}{wsgi\_application}}
+{\footnotesize\ttfamily \label{classasgiref_1_1wsgi_1_1_wsgi_to_asgi_instance_a1894d0063160eb980beec510856ffab7} 
+asgiref.\+wsgi.\+Wsgi\+To\+Asgi\+Instance.\+wsgi\+\_\+application = wsgi\+\_\+application}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/asgiref/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2asgiref_2wsgi_8py}{wsgi.\+py}}\end{DoxyCompactItemize}

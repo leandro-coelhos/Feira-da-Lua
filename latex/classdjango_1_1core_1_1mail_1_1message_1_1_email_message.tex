@@ -1,0 +1,285 @@
+\doxysection{django.\+core.\+mail.\+message.\+Email\+Message Class Reference}
+\hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message}{}\label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+Inheritance diagram for django.\+core.\+mail.\+message.\+Email\+Message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1mail_1_1message_1_1_email_message}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_acbdbbbc6fb87c29f29b2ce3beae01a42}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aff41f6a5648ca6ef40d71041857897f6}{subject}}="{}"{}, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5a2f7e1b81d617ef00b2bc24d535d1b8}{body}}="{}"{}, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a49885872d7578d7ffce4e0d8f4f4c56e}{from\+\_\+email}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa33df21e1a85826154c96a5a9ebc88aa}{to}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a311ea427a448cdd87ee6b1b4c509bb16}{bcc}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa7659e3c03df5f619acd7b7f54e7f582}{connection}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a76e3c67918a6bf28865b1338f7fe7a80}{attachments}}=None, headers=None, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aaf3d78dd7c55603c4b8247f0e35876c7}{cc}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab8cd7e0456f6137c1c6faa405e2f8aca}{reply\+\_\+to}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ace67e473adc53ec8e5f5e1fa4d4ae185}{get\+\_\+connection}} (self, fail\+\_\+silently=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_abb0f7b60b3f05b0d374e0d91fc1aa42e}{message}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ae93d54c3267a8b2a4a58cb2b92884c50}{recipients}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a18fd6d168e6aa27742a4057b4ab9b439}{send}} (self, fail\+\_\+silently=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ae67ef1c1924537184de971a85e1c4064}{attach}} (self, filename=None, content=None, mimetype=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5d8bc0b17a644ec0962b689aec6274f2}{attach\+\_\+file}} (self, path, mimetype=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa33df21e1a85826154c96a5a9ebc88aa}{to}} = list(to)
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aaf3d78dd7c55603c4b8247f0e35876c7}{cc}} = list(cc)
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a311ea427a448cdd87ee6b1b4c509bb16}{bcc}} = list(bcc)
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab8cd7e0456f6137c1c6faa405e2f8aca}{reply\+\_\+to}} = list(reply\+\_\+to)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a49885872d7578d7ffce4e0d8f4f4c56e}{from\+\_\+email}} = from\+\_\+email or settings.\+DEFAULT\+\_\+\+FROM\+\_\+\+EMAIL
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aff41f6a5648ca6ef40d71041857897f6}{subject}} = subject
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5a2f7e1b81d617ef00b2bc24d535d1b8}{body}} = body or "{}"{}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a76e3c67918a6bf28865b1338f7fe7a80}{attachments}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a32219e3fec30549daefc84bdbbdc8da1}{extra\+\_\+headers}} = headers or \{\}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa7659e3c03df5f619acd7b7f54e7f582}{connection}} = connection
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a55877b272bca1aa984a15581325c8f55}{content\+\_\+subtype}} = "{}plain"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a75771c0381a8c471fa737e262a84b985}{mixed\+\_\+subtype}} = "{}mixed"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_acc860ff305a2d340d8b47174cd1a6f9f}{encoding}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a31c0fbc391763bdd9a5275f8a9188383}{\+\_\+create\+\_\+message}} (self, msg)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a6d35a6766f3c50c9ccbb975a1f9a7f37}{\+\_\+create\+\_\+attachments}} (self, msg)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_afa35e0e5465f876d51ac5868a8d76986}{\+\_\+create\+\_\+mime\+\_\+attachment}} (self, content, mimetype)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab0d57692b3697455bf9b449cee27f77e}{\+\_\+create\+\_\+attachment}} (self, filename, content, mimetype=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa0e4f6534ae27f4b10b09b55a046a236}{\+\_\+set\+\_\+list\+\_\+header\+\_\+if\+\_\+not\+\_\+empty}} (self, msg, header, values)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A container for email information.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_acbdbbbc6fb87c29f29b2ce3beae01a42}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_acbdbbbc6fb87c29f29b2ce3beae01a42} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{subject}{ = {\ttfamily "{}"{}}, }\item[{}]{body}{ = {\ttfamily "{}"{}}, }\item[{}]{from\+\_\+email}{ = {\ttfamily None}, }\item[{}]{to}{ = {\ttfamily None}, }\item[{}]{bcc}{ = {\ttfamily None}, }\item[{}]{connection}{ = {\ttfamily None}, }\item[{}]{attachments}{ = {\ttfamily None}, }\item[{}]{headers}{ = {\ttfamily None}, }\item[{}]{cc}{ = {\ttfamily None}, }\item[{}]{reply\+\_\+to}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize a single email message (which can be sent to multiple
+recipients).
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab0d57692b3697455bf9b449cee27f77e}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!\_create\_attachment@{\_create\_attachment}}
+\index{\_create\_attachment@{\_create\_attachment}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{\_create\_attachment()}{\_create\_attachment()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab0d57692b3697455bf9b449cee27f77e} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+\_\+create\+\_\+attachment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{, }\item[{}]{content}{, }\item[{}]{mimetype}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert the filename, content, mimetype triple into a MIME attachment
+object.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a6d35a6766f3c50c9ccbb975a1f9a7f37}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!\_create\_attachments@{\_create\_attachments}}
+\index{\_create\_attachments@{\_create\_attachments}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{\_create\_attachments()}{\_create\_attachments()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a6d35a6766f3c50c9ccbb975a1f9a7f37} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+\_\+create\+\_\+attachments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a31c0fbc391763bdd9a5275f8a9188383}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!\_create\_message@{\_create\_message}}
+\index{\_create\_message@{\_create\_message}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{\_create\_message()}{\_create\_message()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a31c0fbc391763bdd9a5275f8a9188383} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+\_\+create\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1_email_multi_alternatives_aca1d6cc9e7b907373cbd4e5c9bd635e2}{django.\+core.\+mail.\+message.\+Email\+Multi\+Alternatives}}.
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_afa35e0e5465f876d51ac5868a8d76986}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!\_create\_mime\_attachment@{\_create\_mime\_attachment}}
+\index{\_create\_mime\_attachment@{\_create\_mime\_attachment}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{\_create\_mime\_attachment()}{\_create\_mime\_attachment()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_afa35e0e5465f876d51ac5868a8d76986} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+\_\+create\+\_\+mime\+\_\+attachment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{content}{, }\item[{}]{mimetype}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert the content, mimetype pair into a MIME attachment object.
+
+If the mimetype is message/rfc822, content may be an
+email.Message or EmailMessage object, as well as a str.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa0e4f6534ae27f4b10b09b55a046a236}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!\_set\_list\_header\_if\_not\_empty@{\_set\_list\_header\_if\_not\_empty}}
+\index{\_set\_list\_header\_if\_not\_empty@{\_set\_list\_header\_if\_not\_empty}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{\_set\_list\_header\_if\_not\_empty()}{\_set\_list\_header\_if\_not\_empty()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa0e4f6534ae27f4b10b09b55a046a236} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+\_\+set\+\_\+list\+\_\+header\+\_\+if\+\_\+not\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{, }\item[{}]{header}{, }\item[{}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Set msg's header, either from self.extra_headers, if present, or from
+the values argument if not empty.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ae67ef1c1924537184de971a85e1c4064}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!attach@{attach}}
+\index{attach@{attach}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ae67ef1c1924537184de971a85e1c4064} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+attach (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{ = {\ttfamily None}, }\item[{}]{content}{ = {\ttfamily None}, }\item[{}]{mimetype}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attach a file with the given filename and content. The filename can
+be omitted and the mimetype is guessed, if not provided.
+
+If the first parameter is a MIMEBase subclass, insert it directly
+into the resulting message attachments.
+
+For a text/* mimetype (guessed or specified), when a bytes object is
+specified as content, decode it as UTF-8. If that fails, set the
+mimetype to DEFAULT_ATTACHMENT_MIME_TYPE and don't decode the content.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5d8bc0b17a644ec0962b689aec6274f2}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!attach\_file@{attach\_file}}
+\index{attach\_file@{attach\_file}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{attach\_file()}{attach\_file()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5d8bc0b17a644ec0962b689aec6274f2} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+attach\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{, }\item[{}]{mimetype}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attach a file from the filesystem.
+
+Set the mimetype to DEFAULT_ATTACHMENT_MIME_TYPE if it isn't specified
+and cannot be guessed.
+
+For a text/* mimetype (guessed or specified), decode the file's content
+as UTF-8. If that fails, set the mimetype to
+DEFAULT_ATTACHMENT_MIME_TYPE and don't decode the content.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ace67e473adc53ec8e5f5e1fa4d4ae185}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!get\_connection@{get\_connection}}
+\index{get\_connection@{get\_connection}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{get\_connection()}{get\_connection()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ace67e473adc53ec8e5f5e1fa4d4ae185} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+get\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_abb0f7b60b3f05b0d374e0d91fc1aa42e}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!message@{message}}
+\index{message@{message}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_abb0f7b60b3f05b0d374e0d91fc1aa42e} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+message (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ae93d54c3267a8b2a4a58cb2b92884c50}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!recipients@{recipients}}
+\index{recipients@{recipients}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{recipients()}{recipients()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ae93d54c3267a8b2a4a58cb2b92884c50} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+recipients (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of all recipients of the email (includes direct
+addressees as well as Cc and Bcc entries).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a18fd6d168e6aa27742a4057b4ab9b439}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!send@{send}}
+\index{send@{send}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a18fd6d168e6aa27742a4057b4ab9b439} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+send (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send the email message.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a76e3c67918a6bf28865b1338f7fe7a80}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!attachments@{attachments}}
+\index{attachments@{attachments}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{attachments}{attachments}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a76e3c67918a6bf28865b1338f7fe7a80} 
+list django.\+core.\+mail.\+message.\+Email\+Message.\+attachments = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a311ea427a448cdd87ee6b1b4c509bb16}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!bcc@{bcc}}
+\index{bcc@{bcc}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{bcc}{bcc}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a311ea427a448cdd87ee6b1b4c509bb16} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+bcc = list(bcc)}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5a2f7e1b81d617ef00b2bc24d535d1b8}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!body@{body}}
+\index{body@{body}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a5a2f7e1b81d617ef00b2bc24d535d1b8} 
+str django.\+core.\+mail.\+message.\+Email\+Message.\+body = body or "{}"{}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aaf3d78dd7c55603c4b8247f0e35876c7}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!cc@{cc}}
+\index{cc@{cc}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{cc}{cc}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aaf3d78dd7c55603c4b8247f0e35876c7} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+cc = list(cc)}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa7659e3c03df5f619acd7b7f54e7f582}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!connection@{connection}}
+\index{connection@{connection}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa7659e3c03df5f619acd7b7f54e7f582} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+connection = connection}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a55877b272bca1aa984a15581325c8f55}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!content\_subtype@{content\_subtype}}
+\index{content\_subtype@{content\_subtype}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{content\_subtype}{content\_subtype}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a55877b272bca1aa984a15581325c8f55} 
+str django.\+core.\+mail.\+message.\+Email\+Message.\+content\+\_\+subtype = "{}plain"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_acc860ff305a2d340d8b47174cd1a6f9f}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!encoding@{encoding}}
+\index{encoding@{encoding}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_acc860ff305a2d340d8b47174cd1a6f9f} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+encoding = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a32219e3fec30549daefc84bdbbdc8da1}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!extra\_headers@{extra\_headers}}
+\index{extra\_headers@{extra\_headers}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{extra\_headers}{extra\_headers}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a32219e3fec30549daefc84bdbbdc8da1} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+extra\+\_\+headers = headers or \{\}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a49885872d7578d7ffce4e0d8f4f4c56e}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!from\_email@{from\_email}}
+\index{from\_email@{from\_email}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{from\_email}{from\_email}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a49885872d7578d7ffce4e0d8f4f4c56e} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+from\+\_\+email = from\+\_\+email or settings.\+DEFAULT\+\_\+\+FROM\+\_\+\+EMAIL}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a75771c0381a8c471fa737e262a84b985}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!mixed\_subtype@{mixed\_subtype}}
+\index{mixed\_subtype@{mixed\_subtype}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{mixed\_subtype}{mixed\_subtype}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_a75771c0381a8c471fa737e262a84b985} 
+str django.\+core.\+mail.\+message.\+Email\+Message.\+mixed\+\_\+subtype = "{}mixed"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab8cd7e0456f6137c1c6faa405e2f8aca}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!reply\_to@{reply\_to}}
+\index{reply\_to@{reply\_to}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{reply\_to}{reply\_to}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_ab8cd7e0456f6137c1c6faa405e2f8aca} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+reply\+\_\+to = list(reply\+\_\+to)}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aff41f6a5648ca6ef40d71041857897f6}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!subject@{subject}}
+\index{subject@{subject}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{subject}{subject}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aff41f6a5648ca6ef40d71041857897f6} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+subject = subject}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa33df21e1a85826154c96a5a9ebc88aa}\index{django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}!to@{to}}
+\index{to@{to}!django.core.mail.message.EmailMessage@{django.core.mail.message.EmailMessage}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1message_1_1_email_message_aa33df21e1a85826154c96a5a9ebc88aa} 
+django.\+core.\+mail.\+message.\+Email\+Message.\+to = list(to)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/mail/\mbox{\hyperlink{message_8py}{message.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\doxysection{cryptography.\+x509.\+name Namespace Reference}
+\hypertarget{namespacecryptography_1_1x509_1_1name}{}\label{namespacecryptography_1_1x509_1_1name}\index{cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1___a_s_n1_type}{\+\_\+\+ASN1\+Type}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1___r_f_c4514_name_parser}{\+\_\+\+RFC4514\+Name\+Parser}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1_name}{Name}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1_name_attribute}{Name\+Attribute}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1_relative_distinguished_name}{Relative\+Distinguished\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_a1c44d162cc8652f446bd5e195b610845}{\+\_\+escape\+\_\+dn\+\_\+value}} (str\texorpdfstring{$\vert$}{|}bytes val)
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_a7b04a2c130974fe48deeee48d9033b3b}{\+\_\+unescape\+\_\+dn\+\_\+value}} (str val)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_a2f549d71bf641ad2188133c64ab1d8fc}{\+\_\+\+ASN1\+\_\+\+TYPE\+\_\+\+TO\+\_\+\+ENUM}} = \{i.\+value\+: i for i in \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1___a_s_n1_type}{\+\_\+\+ASN1\+Type}}\}
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_ae47354a41d8844d3c89352db53a44836}{\+\_\+\+NAMEOID\+\_\+\+DEFAULT\+\_\+\+TYPE}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_a87cd8c188682cd56d7fbdceed436cdcb}{\+\_\+\+Oid\+Name\+Map}} = typing.\+Mapping\mbox{[}Object\+Identifier, str\mbox{]}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_ac1dc8efbcc8146f25756ddb9d1e7c7ef}{\+\_\+\+Name\+Oid\+Map}} = typing.\+Mapping\mbox{[}str, Object\+Identifier\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_a6c8ff5cb126387b6666a20873fd71543}{\+\_\+\+NAMEOID\+\_\+\+TO\+\_\+\+NAME}}
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_af61a0390580a06c16f95a9e6767e842e}{\+\_\+\+NAME\+\_\+\+TO\+\_\+\+NAMEOID}} = \{v\+: k for k, v in \+\_\+\+NAMEOID\+\_\+\+TO\+\_\+\+NAME.\+items()\}
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_adb278e58b96141a5ace764890a9d2434}{\+\_\+\+NAMEOID\+\_\+\+LENGTH\+\_\+\+LIMIT}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1name_a6cf9c098bdb6c41acd65b9838d629e8d}{Name\+Attribute\+Value\+Type}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_a1c44d162cc8652f446bd5e195b610845}\index{cryptography.x509.name@{cryptography.x509.name}!\_escape\_dn\_value@{\_escape\_dn\_value}}
+\index{\_escape\_dn\_value@{\_escape\_dn\_value}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_escape\_dn\_value()}{\_escape\_dn\_value()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_a1c44d162cc8652f446bd5e195b610845} 
+ str cryptography.\+x509.\+name.\+\_\+escape\+\_\+dn\+\_\+value (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} bytes}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Escape special characters in RFC4514 Distinguished Name value.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1x509_1_1name_a7b04a2c130974fe48deeee48d9033b3b}\index{cryptography.x509.name@{cryptography.x509.name}!\_unescape\_dn\_value@{\_unescape\_dn\_value}}
+\index{\_unescape\_dn\_value@{\_unescape\_dn\_value}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_unescape\_dn\_value()}{\_unescape\_dn\_value()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_a7b04a2c130974fe48deeee48d9033b3b} 
+ str cryptography.\+x509.\+name.\+\_\+unescape\+\_\+dn\+\_\+value (\begin{DoxyParamCaption}\item[{str}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_a2f549d71bf641ad2188133c64ab1d8fc}\index{cryptography.x509.name@{cryptography.x509.name}!\_ASN1\_TYPE\_TO\_ENUM@{\_ASN1\_TYPE\_TO\_ENUM}}
+\index{\_ASN1\_TYPE\_TO\_ENUM@{\_ASN1\_TYPE\_TO\_ENUM}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_ASN1\_TYPE\_TO\_ENUM}{\_ASN1\_TYPE\_TO\_ENUM}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_a2f549d71bf641ad2188133c64ab1d8fc} 
+dict cryptography.\+x509.\+name.\+\_\+\+ASN1\+\_\+\+TYPE\+\_\+\+TO\+\_\+\+ENUM = \{i.\+value\+: i for i in \mbox{\hyperlink{classcryptography_1_1x509_1_1name_1_1___a_s_n1_type}{\+\_\+\+ASN1\+Type}}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1name_af61a0390580a06c16f95a9e6767e842e}\index{cryptography.x509.name@{cryptography.x509.name}!\_NAME\_TO\_NAMEOID@{\_NAME\_TO\_NAMEOID}}
+\index{\_NAME\_TO\_NAMEOID@{\_NAME\_TO\_NAMEOID}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_NAME\_TO\_NAMEOID}{\_NAME\_TO\_NAMEOID}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_af61a0390580a06c16f95a9e6767e842e} 
+dict cryptography.\+x509.\+name.\+\_\+\+NAME\+\_\+\+TO\+\_\+\+NAMEOID = \{v\+: k for k, v in \+\_\+\+NAMEOID\+\_\+\+TO\+\_\+\+NAME.\+items()\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1name_ae47354a41d8844d3c89352db53a44836}\index{cryptography.x509.name@{cryptography.x509.name}!\_NAMEOID\_DEFAULT\_TYPE@{\_NAMEOID\_DEFAULT\_TYPE}}
+\index{\_NAMEOID\_DEFAULT\_TYPE@{\_NAMEOID\_DEFAULT\_TYPE}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_NAMEOID\_DEFAULT\_TYPE}{\_NAMEOID\_DEFAULT\_TYPE}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_ae47354a41d8844d3c89352db53a44836} 
+dict cryptography.\+x509.\+name.\+\_\+\+NAMEOID\+\_\+\+DEFAULT\+\_\+\+TYPE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ NameOID.COUNTRY\_NAME:\ \_ASN1Type.PrintableString,}
+\DoxyCodeLine{00003\ \ \ \ \ NameOID.JURISDICTION\_COUNTRY\_NAME:\ \_ASN1Type.PrintableString,}
+\DoxyCodeLine{00004\ \ \ \ \ NameOID.SERIAL\_NUMBER:\ \_ASN1Type.PrintableString,}
+\DoxyCodeLine{00005\ \ \ \ \ NameOID.DN\_QUALIFIER:\ \_ASN1Type.PrintableString,}
+\DoxyCodeLine{00006\ \ \ \ \ NameOID.EMAIL\_ADDRESS:\ \_ASN1Type.IA5String,}
+\DoxyCodeLine{00007\ \ \ \ \ NameOID.DOMAIN\_COMPONENT:\ \_ASN1Type.IA5String,}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_adb278e58b96141a5ace764890a9d2434}\index{cryptography.x509.name@{cryptography.x509.name}!\_NAMEOID\_LENGTH\_LIMIT@{\_NAMEOID\_LENGTH\_LIMIT}}
+\index{\_NAMEOID\_LENGTH\_LIMIT@{\_NAMEOID\_LENGTH\_LIMIT}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_NAMEOID\_LENGTH\_LIMIT}{\_NAMEOID\_LENGTH\_LIMIT}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_adb278e58b96141a5ace764890a9d2434} 
+dict cryptography.\+x509.\+name.\+\_\+\+NAMEOID\+\_\+\+LENGTH\+\_\+\+LIMIT\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ NameOID.COUNTRY\_NAME:\ (2,\ 2),}
+\DoxyCodeLine{00003\ \ \ \ \ NameOID.JURISDICTION\_COUNTRY\_NAME:\ (2,\ 2),}
+\DoxyCodeLine{00004\ \ \ \ \ NameOID.COMMON\_NAME:\ (1,\ 64),}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_a6c8ff5cb126387b6666a20873fd71543}\index{cryptography.x509.name@{cryptography.x509.name}!\_NAMEOID\_TO\_NAME@{\_NAMEOID\_TO\_NAME}}
+\index{\_NAMEOID\_TO\_NAME@{\_NAMEOID\_TO\_NAME}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_NAMEOID\_TO\_NAME}{\_NAMEOID\_TO\_NAME}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_a6c8ff5cb126387b6666a20873fd71543} 
+dict cryptography.\+x509.\+name.\+\_\+\+NAMEOID\+\_\+\+TO\+\_\+\+NAME\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ NameOID.COMMON\_NAME:\ \textcolor{stringliteral}{"{}CN"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ NameOID.LOCALITY\_NAME:\ \textcolor{stringliteral}{"{}L"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ NameOID.STATE\_OR\_PROVINCE\_NAME:\ \textcolor{stringliteral}{"{}ST"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ NameOID.ORGANIZATION\_NAME:\ \textcolor{stringliteral}{"{}O"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ NameOID.ORGANIZATIONAL\_UNIT\_NAME:\ \textcolor{stringliteral}{"{}OU"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ NameOID.COUNTRY\_NAME:\ \textcolor{stringliteral}{"{}C"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ NameOID.STREET\_ADDRESS:\ \textcolor{stringliteral}{"{}STREET"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ NameOID.DOMAIN\_COMPONENT:\ \textcolor{stringliteral}{"{}DC"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ NameOID.USER\_ID:\ \textcolor{stringliteral}{"{}UID"{}},}
+\DoxyCodeLine{00011\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1x509_1_1name_ac1dc8efbcc8146f25756ddb9d1e7c7ef}\index{cryptography.x509.name@{cryptography.x509.name}!\_NameOidMap@{\_NameOidMap}}
+\index{\_NameOidMap@{\_NameOidMap}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_NameOidMap}{\_NameOidMap}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_ac1dc8efbcc8146f25756ddb9d1e7c7ef} 
+cryptography.\+x509.\+name.\+\_\+\+Name\+Oid\+Map = typing.\+Mapping\mbox{[}str, Object\+Identifier\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1name_a87cd8c188682cd56d7fbdceed436cdcb}\index{cryptography.x509.name@{cryptography.x509.name}!\_OidNameMap@{\_OidNameMap}}
+\index{\_OidNameMap@{\_OidNameMap}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{\_OidNameMap}{\_OidNameMap}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_a87cd8c188682cd56d7fbdceed436cdcb} 
+cryptography.\+x509.\+name.\+\_\+\+Oid\+Name\+Map = typing.\+Mapping\mbox{[}Object\+Identifier, str\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1name_a6cf9c098bdb6c41acd65b9838d629e8d}\index{cryptography.x509.name@{cryptography.x509.name}!NameAttributeValueType@{NameAttributeValueType}}
+\index{NameAttributeValueType@{NameAttributeValueType}!cryptography.x509.name@{cryptography.x509.name}}
+\doxysubsubsection{\texorpdfstring{NameAttributeValueType}{NameAttributeValueType}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1name_a6cf9c098bdb6c41acd65b9838d629e8d} 
+cryptography.\+x509.\+name.\+Name\+Attribute\+Value\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.TypeVar(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}NameAttributeValueType"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ typing.Union[str,\ bytes],}
+\DoxyCodeLine{00004\ \ \ \ \ str,}
+\DoxyCodeLine{00005\ \ \ \ \ bytes,}
+\DoxyCodeLine{00006\ \ \ \ \ covariant=\textcolor{keyword}{True},}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}

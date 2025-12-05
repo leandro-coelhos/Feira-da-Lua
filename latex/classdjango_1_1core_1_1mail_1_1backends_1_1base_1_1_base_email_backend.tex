@@ -1,0 +1,135 @@
+\doxysection{django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend Class Reference}
+\hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend}{}\label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+Inheritance diagram for django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.891720cm]{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af3eae2096efdbbd468fa3f93c719d0aa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_aed62fae2d1ccc565117024d210325ec4}{fail\+\_\+silently}}=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af6f1cc1a0a6e09c1461109c5dab1557b}{open}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_a358a8107d966c2d82d9eb9d18565784e}{close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af1c997dc1d6e184c7a19683cf9a3a2a6}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_ab6610ac0ed4aba1a8172e85b59065503}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, traceback)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_ab6805cbe788e57bebf252376a9d18f6a}{send\+\_\+messages}} (self, email\+\_\+messages)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_aed62fae2d1ccc565117024d210325ec4}{fail\+\_\+silently}} = fail\+\_\+silently
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for email backend implementations.
+
+Subclasses must at least overwrite send_messages().
+
+open() and close() can be called indirectly by using a backend object as a
+context manager:
+
+   with backend as connection:
+       # do something with connection
+       pass
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af3eae2096efdbbd468fa3f93c719d0aa}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af3eae2096efdbbd468fa3f93c719d0aa} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af1c997dc1d6e184c7a19683cf9a3a2a6}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af1c997dc1d6e184c7a19683cf9a3a2a6} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_ab6610ac0ed4aba1a8172e85b59065503}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_ab6610ac0ed4aba1a8172e85b59065503} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exc\+\_\+type}{, }\item[{}]{exc\+\_\+value}{, }\item[{}]{traceback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_a358a8107d966c2d82d9eb9d18565784e}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!close@{close}}
+\index{close@{close}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_a358a8107d966c2d82d9eb9d18565784e} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close a network connection.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1smtp_1_1_email_backend_a6ac7253539c4f1102986c6df417fb050}{django.\+core.\+mail.\+backends.\+smtp.\+Email\+Backend}}.
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af6f1cc1a0a6e09c1461109c5dab1557b}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!open@{open}}
+\index{open@{open}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_af6f1cc1a0a6e09c1461109c5dab1557b} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+open (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open a network connection.
+
+This method can be overwritten by backend implementations to
+open a network connection.
+
+It's up to the backend implementation to track the status of
+a network connection if it's needed by the backend.
+
+This method can be called by applications to force a single
+network connection to be used when sending mails. See the
+send_messages() method of the SMTP backend for a reference
+implementation.
+
+The default implementation does nothing.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1smtp_1_1_email_backend_a739b3a346c87c0fd9854f988b8a4dd3a}{django.\+core.\+mail.\+backends.\+smtp.\+Email\+Backend}}.
+
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_ab6805cbe788e57bebf252376a9d18f6a}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!send\_messages@{send\_messages}}
+\index{send\_messages@{send\_messages}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{send\_messages()}{send\_messages()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_ab6805cbe788e57bebf252376a9d18f6a} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+send\+\_\+messages (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{email\+\_\+messages}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send one or more EmailMessage objects and return the number of email
+messages sent.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1console_1_1_email_backend_ae3c7f922df87a228638e98cbb97a3deb}{django.\+core.\+mail.\+backends.\+console.\+Email\+Backend}}, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1dummy_1_1_email_backend_a2acae66e32013fb10891eb13beeda10c}{django.\+core.\+mail.\+backends.\+dummy.\+Email\+Backend}}, \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1locmem_1_1_email_backend_a9f3915703bc60f5d516891eba22b1656}{django.\+core.\+mail.\+backends.\+locmem.\+Email\+Backend}}, and \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1backends_1_1smtp_1_1_email_backend_a0d829964e867581b24047266e5c3dca6}{django.\+core.\+mail.\+backends.\+smtp.\+Email\+Backend}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_aed62fae2d1ccc565117024d210325ec4}\index{django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}!fail\_silently@{fail\_silently}}
+\index{fail\_silently@{fail\_silently}!django.core.mail.backends.base.BaseEmailBackend@{django.core.mail.backends.base.BaseEmailBackend}}
+\doxysubsubsection{\texorpdfstring{fail\_silently}{fail\_silently}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1mail_1_1backends_1_1base_1_1_base_email_backend_aed62fae2d1ccc565117024d210325ec4} 
+django.\+core.\+mail.\+backends.\+base.\+Base\+Email\+Backend.\+fail\+\_\+silently = fail\+\_\+silently}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/mail/backends/\mbox{\hyperlink{django_2core_2mail_2backends_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

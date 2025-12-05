@@ -1,0 +1,117 @@
+\doxysection{requests.\+\_\+internal\+\_\+utils Namespace Reference}
+\hypertarget{namespacerequests_1_1__internal__utils}{}\label{namespacerequests_1_1__internal__utils}\index{requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerequests_1_1__internal__utils_a084269e554ec2aa24de702662e7a06d7}{to\+\_\+native\+\_\+string}} (string, encoding="{}ascii"{})
+\item 
+\mbox{\hyperlink{namespacerequests_1_1__internal__utils_ad18e58a2987c68bf5080d472186e0a77}{unicode\+\_\+is\+\_\+ascii}} (u\+\_\+string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerequests_1_1__internal__utils_acb30e0dfb1d820a5b5aadec233050c23}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+BYTE}} = re.\+compile(rb"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}s\mbox{]}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$"{})
+\item 
+\mbox{\hyperlink{namespacerequests_1_1__internal__utils_abae9b062ca0ad4dcd5a1b39974c77ba5}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+STR}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}s\mbox{]}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$"{})
+\item 
+\mbox{\hyperlink{namespacerequests_1_1__internal__utils_a51ba87b98b4725892325d14f1eba8b17}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+BYTE}} = re.\+compile(rb"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$\texorpdfstring{$\vert$}{|}\texorpdfstring{$^\wedge$}{\string^}\$"{})
+\item 
+\mbox{\hyperlink{namespacerequests_1_1__internal__utils_ae41727f089b8a311f114d78dab9acb23}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+STR}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$\texorpdfstring{$\vert$}{|}\texorpdfstring{$^\wedge$}{\string^}\$"{})
+\item 
+tuple \mbox{\hyperlink{namespacerequests_1_1__internal__utils_a7407d2551488a129e6a06452f7fe901a}{\+\_\+\+HEADER\+\_\+\+VALIDATORS\+\_\+\+STR}} = (\mbox{\hyperlink{namespacerequests_1_1__internal__utils_abae9b062ca0ad4dcd5a1b39974c77ba5}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+STR}}, \mbox{\hyperlink{namespacerequests_1_1__internal__utils_ae41727f089b8a311f114d78dab9acb23}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+STR}})
+\item 
+tuple \mbox{\hyperlink{namespacerequests_1_1__internal__utils_a972a3a7442ed91e9bbce0d0a7ec9293b}{\+\_\+\+HEADER\+\_\+\+VALIDATORS\+\_\+\+BYTE}} = (\mbox{\hyperlink{namespacerequests_1_1__internal__utils_acb30e0dfb1d820a5b5aadec233050c23}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+BYTE}}, \mbox{\hyperlink{namespacerequests_1_1__internal__utils_a51ba87b98b4725892325d14f1eba8b17}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+BYTE}})
+\item 
+dict \mbox{\hyperlink{namespacerequests_1_1__internal__utils_a73c5943a8d3efced40f855b47f997102}{HEADER\+\_\+\+VALIDATORS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}requests._internal_utils
+~~~~~~~~~~~~~~
+
+Provides utility functions that are consumed internally by Requests
+which depend on extremely few external helpers (such as compat)
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacerequests_1_1__internal__utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacerequests_1_1__internal__utils_a084269e554ec2aa24de702662e7a06d7}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!to\_native\_string@{to\_native\_string}}
+\index{to\_native\_string@{to\_native\_string}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{to\_native\_string()}{to\_native\_string()}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_a084269e554ec2aa24de702662e7a06d7} 
+requests.\+\_\+internal\+\_\+utils.\+to\+\_\+native\+\_\+string (\begin{DoxyParamCaption}\item[{}]{string}{, }\item[{}]{encoding}{ = {\ttfamily "{}ascii"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a string object, regardless of type, returns a representation of
+that string in the native string type, encoding and decoding where
+necessary. This assumes ASCII unless told otherwise.
+\end{DoxyVerb}
+ \Hypertarget{namespacerequests_1_1__internal__utils_ad18e58a2987c68bf5080d472186e0a77}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!unicode\_is\_ascii@{unicode\_is\_ascii}}
+\index{unicode\_is\_ascii@{unicode\_is\_ascii}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{unicode\_is\_ascii()}{unicode\_is\_ascii()}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_ad18e58a2987c68bf5080d472186e0a77} 
+requests.\+\_\+internal\+\_\+utils.\+unicode\+\_\+is\+\_\+ascii (\begin{DoxyParamCaption}\item[{}]{u\+\_\+string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if unicode string only contains ASCII characters.
+
+:param str u_string: unicode string to check. Must be unicode
+    and not Python 2 `str`.
+:rtype: bool
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacerequests_1_1__internal__utils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacerequests_1_1__internal__utils_a972a3a7442ed91e9bbce0d0a7ec9293b}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!\_HEADER\_VALIDATORS\_BYTE@{\_HEADER\_VALIDATORS\_BYTE}}
+\index{\_HEADER\_VALIDATORS\_BYTE@{\_HEADER\_VALIDATORS\_BYTE}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{\_HEADER\_VALIDATORS\_BYTE}{\_HEADER\_VALIDATORS\_BYTE}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_a972a3a7442ed91e9bbce0d0a7ec9293b} 
+tuple requests.\+\_\+internal\+\_\+utils.\+\_\+\+HEADER\+\_\+\+VALIDATORS\+\_\+\+BYTE = (\mbox{\hyperlink{namespacerequests_1_1__internal__utils_acb30e0dfb1d820a5b5aadec233050c23}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+BYTE}}, \mbox{\hyperlink{namespacerequests_1_1__internal__utils_a51ba87b98b4725892325d14f1eba8b17}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+BYTE}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1__internal__utils_a7407d2551488a129e6a06452f7fe901a}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!\_HEADER\_VALIDATORS\_STR@{\_HEADER\_VALIDATORS\_STR}}
+\index{\_HEADER\_VALIDATORS\_STR@{\_HEADER\_VALIDATORS\_STR}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{\_HEADER\_VALIDATORS\_STR}{\_HEADER\_VALIDATORS\_STR}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_a7407d2551488a129e6a06452f7fe901a} 
+tuple requests.\+\_\+internal\+\_\+utils.\+\_\+\+HEADER\+\_\+\+VALIDATORS\+\_\+\+STR = (\mbox{\hyperlink{namespacerequests_1_1__internal__utils_abae9b062ca0ad4dcd5a1b39974c77ba5}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+STR}}, \mbox{\hyperlink{namespacerequests_1_1__internal__utils_ae41727f089b8a311f114d78dab9acb23}{\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+STR}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1__internal__utils_acb30e0dfb1d820a5b5aadec233050c23}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!\_VALID\_HEADER\_NAME\_RE\_BYTE@{\_VALID\_HEADER\_NAME\_RE\_BYTE}}
+\index{\_VALID\_HEADER\_NAME\_RE\_BYTE@{\_VALID\_HEADER\_NAME\_RE\_BYTE}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{\_VALID\_HEADER\_NAME\_RE\_BYTE}{\_VALID\_HEADER\_NAME\_RE\_BYTE}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_acb30e0dfb1d820a5b5aadec233050c23} 
+requests.\+\_\+internal\+\_\+utils.\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+BYTE = re.\+compile(rb"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}s\mbox{]}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1__internal__utils_abae9b062ca0ad4dcd5a1b39974c77ba5}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!\_VALID\_HEADER\_NAME\_RE\_STR@{\_VALID\_HEADER\_NAME\_RE\_STR}}
+\index{\_VALID\_HEADER\_NAME\_RE\_STR@{\_VALID\_HEADER\_NAME\_RE\_STR}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{\_VALID\_HEADER\_NAME\_RE\_STR}{\_VALID\_HEADER\_NAME\_RE\_STR}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_abae9b062ca0ad4dcd5a1b39974c77ba5} 
+requests.\+\_\+internal\+\_\+utils.\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+NAME\+\_\+\+RE\+\_\+\+STR = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}s\mbox{]}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\+:\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1__internal__utils_a51ba87b98b4725892325d14f1eba8b17}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!\_VALID\_HEADER\_VALUE\_RE\_BYTE@{\_VALID\_HEADER\_VALUE\_RE\_BYTE}}
+\index{\_VALID\_HEADER\_VALUE\_RE\_BYTE@{\_VALID\_HEADER\_VALUE\_RE\_BYTE}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{\_VALID\_HEADER\_VALUE\_RE\_BYTE}{\_VALID\_HEADER\_VALUE\_RE\_BYTE}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_a51ba87b98b4725892325d14f1eba8b17} 
+requests.\+\_\+internal\+\_\+utils.\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+BYTE = re.\+compile(rb"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$\texorpdfstring{$\vert$}{|}\texorpdfstring{$^\wedge$}{\string^}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1__internal__utils_ae41727f089b8a311f114d78dab9acb23}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!\_VALID\_HEADER\_VALUE\_RE\_STR@{\_VALID\_HEADER\_VALUE\_RE\_STR}}
+\index{\_VALID\_HEADER\_VALUE\_RE\_STR@{\_VALID\_HEADER\_VALUE\_RE\_STR}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{\_VALID\_HEADER\_VALUE\_RE\_STR}{\_VALID\_HEADER\_VALUE\_RE\_STR}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_ae41727f089b8a311f114d78dab9acb23} 
+requests.\+\_\+internal\+\_\+utils.\+\_\+\+VALID\+\_\+\+HEADER\+\_\+\+VALUE\+\_\+\+RE\+\_\+\+STR = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}S\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}r\textbackslash{}n\mbox{]}\texorpdfstring{$\ast$}{*}\$\texorpdfstring{$\vert$}{|}\texorpdfstring{$^\wedge$}{\string^}\$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerequests_1_1__internal__utils_a73c5943a8d3efced40f855b47f997102}\index{requests.\_internal\_utils@{requests.\_internal\_utils}!HEADER\_VALIDATORS@{HEADER\_VALIDATORS}}
+\index{HEADER\_VALIDATORS@{HEADER\_VALIDATORS}!requests.\_internal\_utils@{requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{HEADER\_VALIDATORS}{HEADER\_VALIDATORS}}
+{\footnotesize\ttfamily \label{namespacerequests_1_1__internal__utils_a73c5943a8d3efced40f855b47f997102} 
+dict requests.\+\_\+internal\+\_\+utils.\+HEADER\+\_\+\+VALIDATORS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ bytes:\ \_HEADER\_VALIDATORS\_BYTE,}
+\DoxyCodeLine{00003\ \ \ \ \ str:\ \_HEADER\_VALIDATORS\_STR,}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,77 @@
+\doxysection{geoip2.\+errors.\+HTTPError Class Reference}
+\hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error}{}\label{classgeoip2_1_1errors_1_1_h_t_t_p_error}\index{geoip2.errors.HTTPError@{geoip2.errors.HTTPError}}
+Inheritance diagram for geoip2.\+errors.\+HTTPError\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classgeoip2_1_1errors_1_1_h_t_t_p_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a3cc24401c9003855e35112604ad6e668}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a47cde4e53f23c28be619ea0e164d6aa8}{http\+\_\+status}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a0ba1a6728f06e7db0e911a03f49d84e9}{uri}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a8e9978b6b9318788694884304bdab13c}{decoded\+\_\+content}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a47cde4e53f23c28be619ea0e164d6aa8}{http\+\_\+status}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a0ba1a6728f06e7db0e911a03f49d84e9}{uri}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \mbox{\hyperlink{classgeoip2_1_1errors_1_1_h_t_t_p_error_a8e9978b6b9318788694884304bdab13c}{decoded\+\_\+content}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}There was an error when making your HTTP request.
+
+This class represents an HTTP transport error. It extends
+:py:exc:`GeoIP2Error` and adds attributes of its own.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error_a3cc24401c9003855e35112604ad6e668}\index{geoip2.errors.HTTPError@{geoip2.errors.HTTPError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!geoip2.errors.HTTPError@{geoip2.errors.HTTPError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1errors_1_1_h_t_t_p_error_a3cc24401c9003855e35112604ad6e668} 
+ None geoip2.\+errors.\+HTTPError.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{http\+\_\+status}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{uri}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{decoded\+\_\+content}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize self.
+
+Arguments:
+    message: A descriptive message for the error.
+    http_status: The HTTP status code associated with the error, if any.
+    uri: The URI that was being accessed when the error occurred.
+    decoded_content: The decoded HTTP response body, if available.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error_a8e9978b6b9318788694884304bdab13c}\index{geoip2.errors.HTTPError@{geoip2.errors.HTTPError}!decoded\_content@{decoded\_content}}
+\index{decoded\_content@{decoded\_content}!geoip2.errors.HTTPError@{geoip2.errors.HTTPError}}
+\doxysubsubsection{\texorpdfstring{decoded\_content}{decoded\_content}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1errors_1_1_h_t_t_p_error_a8e9978b6b9318788694884304bdab13c} 
+str geoip2.\+errors.\+HTTPError.\+decoded\+\_\+content \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error_a47cde4e53f23c28be619ea0e164d6aa8}\index{geoip2.errors.HTTPError@{geoip2.errors.HTTPError}!http\_status@{http\_status}}
+\index{http\_status@{http\_status}!geoip2.errors.HTTPError@{geoip2.errors.HTTPError}}
+\doxysubsubsection{\texorpdfstring{http\_status}{http\_status}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1errors_1_1_h_t_t_p_error_a47cde4e53f23c28be619ea0e164d6aa8} 
+int geoip2.\+errors.\+HTTPError.\+http\+\_\+status \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1errors_1_1_h_t_t_p_error_a0ba1a6728f06e7db0e911a03f49d84e9}\index{geoip2.errors.HTTPError@{geoip2.errors.HTTPError}!uri@{uri}}
+\index{uri@{uri}!geoip2.errors.HTTPError@{geoip2.errors.HTTPError}}
+\doxysubsubsection{\texorpdfstring{uri}{uri}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1errors_1_1_h_t_t_p_error_a0ba1a6728f06e7db0e911a03f49d84e9} 
+str geoip2.\+errors.\+HTTPError.\+uri \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/geoip2/\mbox{\hyperlink{geoip2_2errors_8py}{errors.\+py}}\end{DoxyCompactItemize}

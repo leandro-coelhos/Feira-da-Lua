@@ -1,0 +1,92 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_af60582ea3acc4f026279779263bae7d7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}\texorpdfstring{$\vert$}{|}None data=None, list\mbox{[}tuple\mbox{[}x509.\+Certificate, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_a1383eba3d2f7273919475a22b3abd566}{PKCS7\+Private\+Key\+Types}}, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab4968b8d3ce6a6e7b119770fe8b7edb2}{PKCS7\+Hash\+Types}}, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_s_s}{padding.\+PSS}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_k_c_s1v15}{padding.\+PKCS1v15}}\texorpdfstring{$\vert$}{|}None,\mbox{]}\mbox{]} signers=\mbox{[}$\,$\mbox{]}, list\mbox{[}x509.\+Certificate\mbox{]} additional\+\_\+certs=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{PKCS7\+Signature\+Builder}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a5777a522a1b88c03817acba14863893f}{set\+\_\+data}} (self, \mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{PKCS7\+Signature\+Builder}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a1501f7fa65c552440a501ecbf67fffa8}{add\+\_\+signer}} (self, x509.\+Certificate certificate, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_a1383eba3d2f7273919475a22b3abd566}{PKCS7\+Private\+Key\+Types}} private\+\_\+key, \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab4968b8d3ce6a6e7b119770fe8b7edb2}{PKCS7\+Hash\+Types}} hash\+\_\+algorithm, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_s_s}{padding.\+PSS}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_k_c_s1v15}{padding.\+PKCS1v15}}\texorpdfstring{$\vert$}{|}None rsa\+\_\+padding=None)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{PKCS7\+Signature\+Builder}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_aac1e000f5ab91d0f21c5dccebdc0b761}{add\+\_\+certificate}} (self, x509.\+Certificate certificate)
+\item 
+bytes \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_af8431c62e6c1b4874231901e405cd37f}{sign}} (self, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__serialization_1_1_encoding}{serialization.\+Encoding}} encoding, Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_options}{PKCS7\+Options}}\mbox{]} options, typing.\+Any backend=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a4773967462c28f793924a81b89788614}{\+\_\+data}} = data
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_ae9a0d69116c75273672aea9f3d6fa0d9}{\+\_\+signers}} = signers
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a37ca7c0264150b489be2e366a4f4f241}{\+\_\+additional\+\_\+certs}} = additional\+\_\+certs
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_af60582ea3acc4f026279779263bae7d7}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_af60582ea3acc4f026279779263bae7d7} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} \texorpdfstring{$\vert$}{|} None }]{data}{ = {\ttfamily None}, }\item[{list\mbox{[}             tuple\mbox{[}                 x509.\+Certificate,                 \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_a1383eba3d2f7273919475a22b3abd566}{PKCS7\+Private\+Key\+Types}},                 \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab4968b8d3ce6a6e7b119770fe8b7edb2}{PKCS7\+Hash\+Types}},                 \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_s_s}{padding.\+PSS}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_k_c_s1v15}{padding.\+PKCS1v15}} \texorpdfstring{$\vert$}{|} None,             \mbox{]}         \mbox{]} }]{signers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{list\mbox{[}x509.\+Certificate\mbox{]} }]{additional\+\_\+certs}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_aac1e000f5ab91d0f21c5dccebdc0b761}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!add\_certificate@{add\_certificate}}
+\index{add\_certificate@{add\_certificate}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{add\_certificate()}{add\_certificate()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_aac1e000f5ab91d0f21c5dccebdc0b761} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{PKCS7\+Signature\+Builder}} cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+add\+\_\+certificate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{x509.\+Certificate     }]{certificate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a1501f7fa65c552440a501ecbf67fffa8}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!add\_signer@{add\_signer}}
+\index{add\_signer@{add\_signer}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{add\_signer()}{add\_signer()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a1501f7fa65c552440a501ecbf67fffa8} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{PKCS7\+Signature\+Builder}} cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+add\+\_\+signer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{x509.\+Certificate}]{certificate}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_a1383eba3d2f7273919475a22b3abd566}{PKCS7\+Private\+Key\+Types}}}]{private\+\_\+key}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_ab4968b8d3ce6a6e7b119770fe8b7edb2}{PKCS7\+Hash\+Types}}}]{hash\+\_\+algorithm}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_s_s}{padding.\+PSS}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1padding_1_1_p_k_c_s1v15}{padding.\+PKCS1v15}} \texorpdfstring{$\vert$}{|} None }]{rsa\+\_\+padding}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a5777a522a1b88c03817acba14863893f}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{set\_data()}{set\_data()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a5777a522a1b88c03817acba14863893f} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder}{PKCS7\+Signature\+Builder}} cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+set\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_af8431c62e6c1b4874231901e405cd37f}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!sign@{sign}}
+\index{sign@{sign}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_af8431c62e6c1b4874231901e405cd37f} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+sign (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__serialization_1_1_encoding}{serialization.\+Encoding}}}]{encoding}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_options}{PKCS7\+Options}}\mbox{]}}]{options}{, }\item[{typing.\+Any }]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a37ca7c0264150b489be2e366a4f4f241}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!\_additional\_certs@{\_additional\_certs}}
+\index{\_additional\_certs@{\_additional\_certs}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{\_additional\_certs}{\_additional\_certs}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a37ca7c0264150b489be2e366a4f4f241} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+\_\+additional\+\_\+certs = additional\+\_\+certs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a4773967462c28f793924a81b89788614}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!\_data@{\_data}}
+\index{\_data@{\_data}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_a4773967462c28f793924a81b89788614} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+\_\+data = data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_ae9a0d69116c75273672aea9f3d6fa0d9}\index{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}!\_signers@{\_signers}}
+\index{\_signers@{\_signers}!cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder@{cryptography.hazmat.primitives.serialization.pkcs7.PKCS7SignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{\_signers}{\_signers}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1pkcs7_1_1_p_k_c_s7_signature_builder_ae9a0d69116c75273672aea9f3d6fa0d9} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+pkcs7.\+PKCS7\+Signature\+Builder.\+\_\+signers = signers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/serialization/\mbox{\hyperlink{pkcs7_8py}{pkcs7.\+py}}\end{DoxyCompactItemize}

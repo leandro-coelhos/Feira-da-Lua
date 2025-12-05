@@ -1,0 +1,60 @@
+\doxysection{pip.\+\_\+internal.\+operations.\+freeze Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze}{}\label{namespacepip_1_1__internal_1_1operations_1_1freeze}\index{pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1freeze_1_1___editable_info}{\+\_\+\+Editable\+Info}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1freeze_1_1_frozen_requirement}{Frozen\+Requirement}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Generator\mbox{[}str, None, None\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1freeze_aeea933b813af6209ce1c70a089cd5db6}{freeze}} (list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None requirement=None, bool local\+\_\+only=False, bool user\+\_\+only=False, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None paths=None, bool isolated=False, bool exclude\+\_\+editable=False, Container\mbox{[}str\mbox{]} skip=())
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1freeze_a6459dcd45b9829542dc6546fd7af1a03}{\+\_\+format\+\_\+as\+\_\+name\+\_\+version}} (\mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} dist)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1freeze_1_1___editable_info}{\+\_\+\+Editable\+Info}} \mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1freeze_a214f67a14ef70a58fb181ff0c8cb8b3b}{\+\_\+get\+\_\+editable\+\_\+info}} (\mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} dist)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1freeze_a9af16aabecbcae08546946f45c00e541}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze_a6459dcd45b9829542dc6546fd7af1a03}\index{pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}!\_format\_as\_name\_version@{\_format\_as\_name\_version}}
+\index{\_format\_as\_name\_version@{\_format\_as\_name\_version}!pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}}
+\doxysubsubsection{\texorpdfstring{\_format\_as\_name\_version()}{\_format\_as\_name\_version()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1freeze_a6459dcd45b9829542dc6546fd7af1a03} 
+ str pip.\+\_\+internal.\+operations.\+freeze.\+\_\+format\+\_\+as\+\_\+name\+\_\+version (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}}}]{dist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze_a214f67a14ef70a58fb181ff0c8cb8b3b}\index{pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}!\_get\_editable\_info@{\_get\_editable\_info}}
+\index{\_get\_editable\_info@{\_get\_editable\_info}!pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}}
+\doxysubsubsection{\texorpdfstring{\_get\_editable\_info()}{\_get\_editable\_info()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1freeze_a214f67a14ef70a58fb181ff0c8cb8b3b} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1freeze_1_1___editable_info}{\+\_\+\+Editable\+Info}} pip.\+\_\+internal.\+operations.\+freeze.\+\_\+get\+\_\+editable\+\_\+info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}}}]{dist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Compute and return values (req, comments) for use in
+FrozenRequirement.from_dist().
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze_aeea933b813af6209ce1c70a089cd5db6}\index{pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}!freeze@{freeze}}
+\index{freeze@{freeze}!pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}}
+\doxysubsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1freeze_aeea933b813af6209ce1c70a089cd5db6} 
+ Generator\mbox{[}str, None, None\mbox{]} pip.\+\_\+internal.\+operations.\+freeze.\+freeze (\begin{DoxyParamCaption}\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{requirement}{ = {\ttfamily None}, }\item[{bool }]{local\+\_\+only}{ = {\ttfamily False}, }\item[{bool }]{user\+\_\+only}{ = {\ttfamily False}, }\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{paths}{ = {\ttfamily None}, }\item[{bool }]{isolated}{ = {\ttfamily False}, }\item[{bool }]{exclude\+\_\+editable}{ = {\ttfamily False}, }\item[{Container\mbox{[}str\mbox{]} }]{skip}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1freeze_a9af16aabecbcae08546946f45c00e541}\index{pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.operations.freeze@{pip.\_internal.operations.freeze}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1freeze_a9af16aabecbcae08546946f45c00e541} 
+pip.\+\_\+internal.\+operations.\+freeze.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

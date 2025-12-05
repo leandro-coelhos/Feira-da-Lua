@@ -1,0 +1,68 @@
+\doxysection{django.\+contrib.\+gis.\+geoip2 Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geoip2}{}\label{namespacedjango_1_1contrib_1_1gis_1_1geoip2}\index{django.contrib.gis.geoip2@{django.contrib.gis.geoip2}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1geoip2_1_1_geo_i_p2}{Geo\+IP2}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1geoip2_1_1_geo_i_p2_exception}{Geo\+IP2\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a8b2dd1f96f9322749b5b884ceee669d2}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}HAS\+\_\+\+GEOIP2"{}\mbox{]}
+\item 
+bool \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a259fb3ecdcfe12b4ca51064c7d166814}{HAS\+\_\+\+GEOIP2}} = False
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a8d3cd49a9c03cb0a2a89d77b58754658}{SUPPORTED\+\_\+\+DATABASE\+\_\+\+TYPES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module houses the GeoIP2 object, a wrapper for the MaxMind GeoIP2(R)
+Python API (https://geoip2.readthedocs.io/). This is an alternative to the
+Python GeoIP2 interface provided by MaxMind.
+
+GeoIP(R) is a registered trademark of MaxMind, Inc.
+
+For IP-based geolocation, this module requires the GeoLite2 Country and City
+datasets, in binary format (CSV will not work!). The datasets may be
+downloaded from MaxMind at https://dev.maxmind.com/geoip/geoip2/geolite2/.
+Grab GeoLite2-Country.mmdb.gz and GeoLite2-City.mmdb.gz, and unzip them in the
+directory corresponding to settings.GEOIP_PATH.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geoip2_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a8b2dd1f96f9322749b5b884ceee669d2}\index{django.contrib.gis.geoip2@{django.contrib.gis.geoip2}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!django.contrib.gis.geoip2@{django.contrib.gis.geoip2}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a8b2dd1f96f9322749b5b884ceee669d2} 
+list django.\+contrib.\+gis.\+geoip2.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}HAS\+\_\+\+GEOIP2"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a259fb3ecdcfe12b4ca51064c7d166814}\index{django.contrib.gis.geoip2@{django.contrib.gis.geoip2}!HAS\_GEOIP2@{HAS\_GEOIP2}}
+\index{HAS\_GEOIP2@{HAS\_GEOIP2}!django.contrib.gis.geoip2@{django.contrib.gis.geoip2}}
+\doxysubsubsection{\texorpdfstring{HAS\_GEOIP2}{HAS\_GEOIP2}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a259fb3ecdcfe12b4ca51064c7d166814} 
+bool django.\+contrib.\+gis.\+geoip2.\+HAS\+\_\+\+GEOIP2 = False}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a8d3cd49a9c03cb0a2a89d77b58754658}\index{django.contrib.gis.geoip2@{django.contrib.gis.geoip2}!SUPPORTED\_DATABASE\_TYPES@{SUPPORTED\_DATABASE\_TYPES}}
+\index{SUPPORTED\_DATABASE\_TYPES@{SUPPORTED\_DATABASE\_TYPES}!django.contrib.gis.geoip2@{django.contrib.gis.geoip2}}
+\doxysubsubsection{\texorpdfstring{SUPPORTED\_DATABASE\_TYPES}{SUPPORTED\_DATABASE\_TYPES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1geoip2_a8d3cd49a9c03cb0a2a89d77b58754658} 
+dict django.\+contrib.\+gis.\+geoip2.\+SUPPORTED\+\_\+\+DATABASE\+\_\+\+TYPES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}DBIP-\/City-\/Lite"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}DBIP-\/Country-\/Lite"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}GeoIP2-\/City"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}GeoIP2-\/Country"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}GeoLite2-\/City"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}GeoLite2-\/Country"{}},}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}

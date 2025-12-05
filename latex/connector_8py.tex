@@ -1,0 +1,64 @@
+\doxysection{feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/connector.py File Reference}
+\hypertarget{connector_8py}{}\label{connector_8py}\index{feira\_venv/Lib/site-\/packages/aiohttp/connector.py@{feira\_venv/Lib/site-\/packages/aiohttp/connector.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1___deprecation_waiter}{aiohttp.\+connector.\+\_\+\+Deprecation\+Waiter}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1_connection}{aiohttp.\+connector.\+Connection}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1___connect_tunnel_connection}{aiohttp.\+connector.\+\_\+\+Connect\+Tunnel\+Connection}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1___transport_placeholder}{aiohttp.\+connector.\+\_\+\+Transport\+Placeholder}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector}{aiohttp.\+connector.\+Base\+Connector}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table}{aiohttp.\+connector.\+\_\+\+DNSCache\+Table}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1_t_c_p_connector}{aiohttp.\+connector.\+TCPConnector}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1_unix_connector}{aiohttp.\+connector.\+Unix\+Connector}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1connector_1_1_named_pipe_connector}{aiohttp.\+connector.\+Named\+Pipe\+Connector}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceaiohttp}{aiohttp}}
+\item 
+namespace \mbox{\hyperlink{namespaceaiohttp_1_1connector}{aiohttp.\+connector}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespaceaiohttp_1_1connector_affd9d2d29a91003c77046a980b873dfe}{aiohttp.\+connector.\+\_\+wait\+\_\+for\+\_\+close}} (List\mbox{[}Awaitable\mbox{[}object\mbox{]}\mbox{]} waiters)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_ac28cf44a96d8fc8cf033394f2cbc1434}{SSLContext}} \mbox{\hyperlink{namespaceaiohttp_1_1connector_a78232ceafaef367f2fa59079fd2e72ad}{aiohttp.\+connector.\+\_\+make\+\_\+ssl\+\_\+context}} (bool verified)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_a1e072833b7118acfa3f0e7e584ca8e78}{aiohttp.\+connector.\+Buffer}} = Union\mbox{[}bytes, bytearray, "{}memoryview\mbox{[}int\mbox{]}"{}, "{}memoryview\mbox{[}bytes\mbox{]}"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_ac28cf44a96d8fc8cf033394f2cbc1434}{aiohttp.\+connector.\+SSLContext}} = ssl.\+SSLContext
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_a3dc645f44b7bc9eaebb2a39ec23c728a}{aiohttp.\+connector.\+ssl}} = None
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_ac0ca200abb663fd5aab9a1426dc3a168}{aiohttp.\+connector.\+EMPTY\+\_\+\+SCHEMA\+\_\+\+SET}} = frozenset(\{"{}"{}\})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_aa0713834a13443857eb76ce74f049e5f}{aiohttp.\+connector.\+HTTP\+\_\+\+SCHEMA\+\_\+\+SET}} = frozenset(\{"{}http"{}, "{}https"{}\})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_a3e410c1c47cb0f20618b2d8c64889dbd}{aiohttp.\+connector.\+WS\+\_\+\+SCHEMA\+\_\+\+SET}} = frozenset(\{"{}ws"{}, "{}wss"{}\})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_a8df75ed9c97af9d6f22dcb3568022ffd}{aiohttp.\+connector.\+HTTP\+\_\+\+AND\+\_\+\+EMPTY\+\_\+\+SCHEMA\+\_\+\+SET}} = \mbox{\hyperlink{namespaceaiohttp_1_1connector_aa0713834a13443857eb76ce74f049e5f}{HTTP\+\_\+\+SCHEMA\+\_\+\+SET}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespaceaiohttp_1_1connector_ac0ca200abb663fd5aab9a1426dc3a168}{EMPTY\+\_\+\+SCHEMA\+\_\+\+SET}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_a2320a90429b028c9e1b7d50c949a939f}{aiohttp.\+connector.\+HIGH\+\_\+\+LEVEL\+\_\+\+SCHEMA\+\_\+\+SET}} = \mbox{\hyperlink{namespaceaiohttp_1_1connector_a8df75ed9c97af9d6f22dcb3568022ffd}{HTTP\+\_\+\+AND\+\_\+\+EMPTY\+\_\+\+SCHEMA\+\_\+\+SET}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespaceaiohttp_1_1connector_a3e410c1c47cb0f20618b2d8c64889dbd}{WS\+\_\+\+SCHEMA\+\_\+\+SET}}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1connector_a4515d76df9a92b95729a18a081bffa62}{aiohttp.\+connector.\+NEEDS\+\_\+\+CLEANUP\+\_\+\+CLOSED}}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1connector_a6c8d637f010fc6d34afb39c9cdf211bb}{aiohttp.\+connector.\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_ac28cf44a96d8fc8cf033394f2cbc1434}{SSLContext}} \mbox{\hyperlink{namespaceaiohttp_1_1connector_a058c784f3187b684c6507bf1b5c625a5}{aiohttp.\+connector.\+\_\+\+SSL\+\_\+\+CONTEXT\+\_\+\+VERIFIED}} = \mbox{\hyperlink{namespaceaiohttp_1_1connector_a78232ceafaef367f2fa59079fd2e72ad}{\+\_\+make\+\_\+ssl\+\_\+context}}(True)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1connector_ac28cf44a96d8fc8cf033394f2cbc1434}{SSLContext}} \mbox{\hyperlink{namespaceaiohttp_1_1connector_a4f9130f6e5f6d993fde9dc5ddad789f9}{aiohttp.\+connector.\+\_\+\+SSL\+\_\+\+CONTEXT\+\_\+\+UNVERIFIED}} = \mbox{\hyperlink{namespaceaiohttp_1_1connector_a78232ceafaef367f2fa59079fd2e72ad}{\+\_\+make\+\_\+ssl\+\_\+context}}(False)
+\end{DoxyCompactItemize}

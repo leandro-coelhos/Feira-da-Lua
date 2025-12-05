@@ -1,0 +1,98 @@
+\doxysection{urllib3.\+filepost Namespace Reference}
+\hypertarget{namespaceurllib3_1_1filepost}{}\label{namespaceurllib3_1_1filepost}\index{urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_1_1filepost_a4fb12a4dffcdabb3bbd01f664c319fe1}{choose\+\_\+boundary}} ()
+\item 
+typing.\+Iterable\mbox{[}\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field}{Request\+Field}}\mbox{]} \mbox{\hyperlink{namespaceurllib3_1_1filepost_a52a5b13f167cbdeed89db67badefec85}{iter\+\_\+field\+\_\+objects}} (\mbox{\hyperlink{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be}{\+\_\+\+TYPE\+\_\+\+FIELDS}} fields)
+\item 
+tuple\mbox{[}bytes, str\mbox{]} \mbox{\hyperlink{namespaceurllib3_1_1filepost_ae33e99141e6817d9ae53e439cc3ba1a4}{encode\+\_\+multipart\+\_\+formdata}} (\mbox{\hyperlink{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be}{\+\_\+\+TYPE\+\_\+\+FIELDS}} fields, str\texorpdfstring{$\vert$}{|}None boundary=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1filepost_a6fa9e3e560e45425637f4f3bf5ed61e0}{writer}} = codecs.\+lookup("{}utf-\/8"{})\mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1filepost_aab3f347e95e539075bdffb1cc199fcc2}{\+\_\+\+TYPE\+\_\+\+FIELDS\+\_\+\+SEQUENCE}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be}{\+\_\+\+TYPE\+\_\+\+FIELDS}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceurllib3_1_1filepost_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceurllib3_1_1filepost_a4fb12a4dffcdabb3bbd01f664c319fe1}\index{urllib3.filepost@{urllib3.filepost}!choose\_boundary@{choose\_boundary}}
+\index{choose\_boundary@{choose\_boundary}!urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{choose\_boundary()}{choose\_boundary()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1filepost_a4fb12a4dffcdabb3bbd01f664c319fe1} 
+ str urllib3.\+filepost.\+choose\+\_\+boundary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Our embarrassingly-simple replacement for mimetools.choose_boundary.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1filepost_ae33e99141e6817d9ae53e439cc3ba1a4}\index{urllib3.filepost@{urllib3.filepost}!encode\_multipart\_formdata@{encode\_multipart\_formdata}}
+\index{encode\_multipart\_formdata@{encode\_multipart\_formdata}!urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{encode\_multipart\_formdata()}{encode\_multipart\_formdata()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1filepost_ae33e99141e6817d9ae53e439cc3ba1a4} 
+ tuple\mbox{[}bytes, str\mbox{]} urllib3.\+filepost.\+encode\+\_\+multipart\+\_\+formdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be}{\+\_\+\+TYPE\+\_\+\+FIELDS}}}]{fields}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{boundary}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode a dictionary of ``fields`` using the multipart/form-data MIME format.
+
+:param fields:
+    Dictionary of fields or list of (key, :class:`~urllib3.fields.RequestField`).
+    Values are processed by :func:`urllib3.fields.RequestField.from_tuples`.
+
+:param boundary:
+    If not specified, then a random boundary will be generated using
+    :func:`urllib3.filepost.choose_boundary`.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1filepost_a52a5b13f167cbdeed89db67badefec85}\index{urllib3.filepost@{urllib3.filepost}!iter\_field\_objects@{iter\_field\_objects}}
+\index{iter\_field\_objects@{iter\_field\_objects}!urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{iter\_field\_objects()}{iter\_field\_objects()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1filepost_a52a5b13f167cbdeed89db67badefec85} 
+ typing.\+Iterable\mbox{[}\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field}{Request\+Field}}\mbox{]} urllib3.\+filepost.\+iter\+\_\+field\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be}{\+\_\+\+TYPE\+\_\+\+FIELDS}}}]{fields}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over fields.
+
+Supports list of (k, v) tuples and dicts, and lists of
+:class:`~urllib3.fields.RequestField`.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceurllib3_1_1filepost_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be}\index{urllib3.filepost@{urllib3.filepost}!\_TYPE\_FIELDS@{\_TYPE\_FIELDS}}
+\index{\_TYPE\_FIELDS@{\_TYPE\_FIELDS}!urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{\_TYPE\_FIELDS}{\_TYPE\_FIELDS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1filepost_a83313364d7b78ea16a93ca17bd7f94be} 
+urllib3.\+filepost.\+\_\+\+TYPE\+\_\+\+FIELDS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Union[}
+\DoxyCodeLine{00002\ \ \ \ \ \_TYPE\_FIELDS\_SEQUENCE,}
+\DoxyCodeLine{00003\ \ \ \ \ typing.Mapping[str,\ \_TYPE\_FIELD\_VALUE\_TUPLE],}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1filepost_aab3f347e95e539075bdffb1cc199fcc2}\index{urllib3.filepost@{urllib3.filepost}!\_TYPE\_FIELDS\_SEQUENCE@{\_TYPE\_FIELDS\_SEQUENCE}}
+\index{\_TYPE\_FIELDS\_SEQUENCE@{\_TYPE\_FIELDS\_SEQUENCE}!urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{\_TYPE\_FIELDS\_SEQUENCE}{\_TYPE\_FIELDS\_SEQUENCE}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1filepost_aab3f347e95e539075bdffb1cc199fcc2} 
+urllib3.\+filepost.\+\_\+\+TYPE\+\_\+\+FIELDS\+\_\+\+SEQUENCE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Sequence[}
+\DoxyCodeLine{00002\ \ \ \ \ typing.Union[tuple[str,\ \_TYPE\_FIELD\_VALUE\_TUPLE],\ RequestField]}
+\DoxyCodeLine{00003\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1filepost_a6fa9e3e560e45425637f4f3bf5ed61e0}\index{urllib3.filepost@{urllib3.filepost}!writer@{writer}}
+\index{writer@{writer}!urllib3.filepost@{urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{writer}{writer}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1filepost_a6fa9e3e560e45425637f4f3bf5ed61e0} 
+urllib3.\+filepost.\+writer = codecs.\+lookup("{}utf-\/8"{})\mbox{[}3\mbox{]}}
+

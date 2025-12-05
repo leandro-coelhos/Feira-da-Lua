@@ -1,0 +1,179 @@
+\doxysection{pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner}{}\label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ac165d9d34cb8c0b388ca0930e5995bf2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a4cb8fca49fae236740256c8e759a43f5}{name}}, "{}Renderable\+Type"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ab03882d3189f5839ca43232d41c80497}{text}}="{}"{}, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}"{}Style\+Type"{}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ae9591c0472e7880d420c9cc437e1cfce}{style}}=None, float \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a5491732cc49e315fe0d1beefb2774528}{speed}}=1.\+0)
+\item 
+"{}Render\+Result"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a6883d8dced19ac48d4dfc74f776357fd}{\+\_\+\+\_\+rich\+\_\+console\+\_\+\+\_\+}} (self, "{}Console"{} console, "{}Console\+Options"{} options)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1measure_1_1_measurement}{Measurement}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a89745682c823c44a31bae8e8d07869f5}{\+\_\+\+\_\+rich\+\_\+measure\+\_\+\+\_\+}} (self, "{}Console"{} console, "{}Console\+Options"{} options)
+\item 
+"{}Renderable\+Type"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_abf8159ee5046fdfc4accdabf744eeb52}{render}} (self, float time)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a1bdff2fd55f56cc46b28b5ac3e69051d}{update}} (self, \texorpdfstring{$\ast$}{*}, "{}Renderable\+Type"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ab03882d3189f5839ca43232d41c80497}{text}}="{}"{}, Optional\mbox{[}"{}Style\+Type"{}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ae9591c0472e7880d420c9cc437e1cfce}{style}}=None, Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a5491732cc49e315fe0d1beefb2774528}{speed}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ab03882d3189f5839ca43232d41c80497}{text}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a4cb8fca49fae236740256c8e759a43f5}{name}} = name
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ad3b289873253cc263990b928bbd19774}{frames}} = cast(List\mbox{[}str\mbox{]}, spinner\mbox{[}"{}frames"{}\mbox{]})\mbox{[}\+:\mbox{]}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a64b8ad0ad687e148772cc0812c29753e}{interval}} = cast(float, spinner\mbox{[}"{}interval"{}\mbox{]})
+\item 
+Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a6cd589cc6589032da9cd42927069ea23}{start\+\_\+time}} = None
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ae9591c0472e7880d420c9cc437e1cfce}{style}} = style
+\item 
+float \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a5491732cc49e315fe0d1beefb2774528}{speed}} = speed
+\item 
+float \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a30da8bb987be52032e5163f23796821c}{frame\+\_\+no\+\_\+offset}} = 0.\+0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a2f16c0b9fdf3b40823e5ad51cb485b23}{\+\_\+update\+\_\+speed}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A spinner animation.
+
+Args:
+    name (str): Name of spinner (run python -m rich.spinner).
+    text (RenderableType, optional): A renderable to display at the right of the spinner (str or Text typically). Defaults to "".
+    style (StyleType, optional): Style for spinner animation. Defaults to None.
+    speed (float, optional): Speed factor for animation. Defaults to 1.0.
+
+Raises:
+    KeyError: If name isn't one of the supported spinner animations.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ac165d9d34cb8c0b388ca0930e5995bf2}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ac165d9d34cb8c0b388ca0930e5995bf2} 
+ None pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{"{}Renderable\+Type"{} }]{text}{ = {\ttfamily "{}"{}}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}"{}Style\+Type"{}\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{float }]{speed}{ = {\ttfamily 1.0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a6883d8dced19ac48d4dfc74f776357fd}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!\_\_rich\_console\_\_@{\_\_rich\_console\_\_}}
+\index{\_\_rich\_console\_\_@{\_\_rich\_console\_\_}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{\_\_rich\_console\_\_()}{\_\_rich\_console\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a6883d8dced19ac48d4dfc74f776357fd} 
+ "{}Render\+Result"{} pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+\_\+\+\_\+rich\+\_\+console\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Console"{}}]{console}{, }\item[{"{}Console\+Options"{}     }]{options}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a89745682c823c44a31bae8e8d07869f5}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!\_\_rich\_measure\_\_@{\_\_rich\_measure\_\_}}
+\index{\_\_rich\_measure\_\_@{\_\_rich\_measure\_\_}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{\_\_rich\_measure\_\_()}{\_\_rich\_measure\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a89745682c823c44a31bae8e8d07869f5} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1measure_1_1_measurement}{Measurement}} pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+\_\+\+\_\+rich\+\_\+measure\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Console"{}}]{console}{, }\item[{"{}Console\+Options"{}     }]{options}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_abf8159ee5046fdfc4accdabf744eeb52}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!render@{render}}
+\index{render@{render}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_abf8159ee5046fdfc4accdabf744eeb52} 
+ "{}Renderable\+Type"{} pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+render (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{time}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render the spinner for a given time.
+
+Args:
+    time (float): Time in seconds.
+
+Returns:
+    RenderableType: A renderable containing animation frame.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a1bdff2fd55f56cc46b28b5ac3e69051d}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!update@{update}}
+\index{update@{update}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a1bdff2fd55f56cc46b28b5ac3e69051d} 
+ None pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{"{}Renderable\+Type"{} }]{text}{ = {\ttfamily "{}"{}}, }\item[{Optional\mbox{[}"{}Style\+Type"{}\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{Optional\mbox{[}float\mbox{]} }]{speed}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates attributes of a spinner after it has been started.
+
+Args:
+    text (RenderableType, optional): A renderable to display at the right of the spinner (str or Text typically). Defaults to "".
+    style (StyleType, optional): Style for spinner animation. Defaults to None.
+    speed (float, optional): Speed factor for animation. Defaults to None.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a2f16c0b9fdf3b40823e5ad51cb485b23}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!\_update\_speed@{\_update\_speed}}
+\index{\_update\_speed@{\_update\_speed}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{\_update\_speed}{\_update\_speed}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a2f16c0b9fdf3b40823e5ad51cb485b23} 
+float pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+\_\+update\+\_\+speed = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a30da8bb987be52032e5163f23796821c}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!frame\_no\_offset@{frame\_no\_offset}}
+\index{frame\_no\_offset@{frame\_no\_offset}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{frame\_no\_offset}{frame\_no\_offset}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a30da8bb987be52032e5163f23796821c} 
+float pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+frame\+\_\+no\+\_\+offset = 0.\+0}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ad3b289873253cc263990b928bbd19774}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!frames@{frames}}
+\index{frames@{frames}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{frames}{frames}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ad3b289873253cc263990b928bbd19774} 
+pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+frames = cast(List\mbox{[}str\mbox{]}, spinner\mbox{[}"{}frames"{}\mbox{]})\mbox{[}\+:\mbox{]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a64b8ad0ad687e148772cc0812c29753e}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!interval@{interval}}
+\index{interval@{interval}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{interval}{interval}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a64b8ad0ad687e148772cc0812c29753e} 
+pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+interval = cast(float, spinner\mbox{[}"{}interval"{}\mbox{]})}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a4cb8fca49fae236740256c8e759a43f5}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!name@{name}}
+\index{name@{name}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a4cb8fca49fae236740256c8e759a43f5} 
+pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+name = name}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a5491732cc49e315fe0d1beefb2774528}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!speed@{speed}}
+\index{speed@{speed}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a5491732cc49e315fe0d1beefb2774528} 
+float pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+speed = speed}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a6cd589cc6589032da9cd42927069ea23}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!start\_time@{start\_time}}
+\index{start\_time@{start\_time}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{start\_time}{start\_time}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_a6cd589cc6589032da9cd42927069ea23} 
+Optional\mbox{[}float\mbox{]} pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+start\+\_\+time = None}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ae9591c0472e7880d420c9cc437e1cfce}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!style@{style}}
+\index{style@{style}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ae9591c0472e7880d420c9cc437e1cfce} 
+pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+style = style}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ab03882d3189f5839ca43232d41c80497}\index{pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}!text@{text}}
+\index{text@{text}!pip.\_vendor.rich.spinner.Spinner@{pip.\_vendor.rich.spinner.Spinner}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1spinner_1_1_spinner_ab03882d3189f5839ca43232d41c80497} 
+pip.\+\_\+vendor.\+rich.\+spinner.\+Spinner.\+text}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Text.from\_markup(text)\ \textcolor{keywordflow}{if}\ isinstance(text,\ str)\ \textcolor{keywordflow}{else}\ text}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/rich/\mbox{\hyperlink{spinner_8py}{spinner.\+py}}\end{DoxyCompactItemize}

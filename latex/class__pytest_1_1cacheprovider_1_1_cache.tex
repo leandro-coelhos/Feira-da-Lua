@@ -1,0 +1,208 @@
+\doxysection{\+\_\+pytest.\+cacheprovider.\+Cache Class Reference}
+\hypertarget{class__pytest_1_1cacheprovider_1_1_cache}{}\label{class__pytest_1_1cacheprovider_1_1_cache}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_ad9b01a9d9f61a824d398b6e1ab6c2e5b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Path cachedir, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a3dccbb9d2d1a8286d319d4747401081a}{for\+\_\+config}} (cls, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a8517e252c5f11ccce0d5986473242628}{clear\+\_\+cache}} (cls, Path cachedir, bool \+\_\+ispytest=False)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a59056dfff8733ba939dfd3caf3bb00da}{warn}} (self, str fmt, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}object args)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a45347eda6917f5d6dfdaf9193fcb26bd}{mkdir}} (self, str name)
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a752b42a7c4034371bcd23244b1862148}{get}} (self, str key, default)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a4eb62533f65d7495fe5afb7a3f9bd540}{set}} (self, str key, object value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_adfce7af56c8f9c097883d35ad8e05ccc}{cache\+\_\+dir\+\_\+from\+\_\+config}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a31eb305d7d729d8b0bcfced31b966b3d}{\+\_\+mkdir}} (self, Path path)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_aca5b00596e035a1b2ac1f388cd4a4a29}{\+\_\+getvaluepath}} (self, str key)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a6cfb695b2f81b48094d5d7c93ff60f74}{\+\_\+ensure\+\_\+cache\+\_\+dir\+\_\+and\+\_\+supporting\+\_\+files}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_aceaa9b0181e28297470d4ba0ad1d54ed}{\+\_\+cachedir}} = dataclasses.\+field(repr=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_aaca9c9aac9484330533ac3e7845d2c73}{\+\_\+config}} = dataclasses.\+field(repr=False)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_a95aa872d6c39a21b6b2db25b055601f1}{\+\_\+\+CACHE\+\_\+\+PREFIX\+\_\+\+DIRS}} = "{}d"{}
+\item 
+str \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache_ae3a680de2d439ac5c317717b9062a7f6}{\+\_\+\+CACHE\+\_\+\+PREFIX\+\_\+\+VALUES}} = "{}v"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Instance of the `cache` fixture.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_ad9b01a9d9f61a824d398b6e1ab6c2e5b}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_ad9b01a9d9f61a824d398b6e1ab6c2e5b} 
+ None \+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Path}]{cachedir}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a6cfb695b2f81b48094d5d7c93ff60f74}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_ensure\_cache\_dir\_and\_supporting\_files@{\_ensure\_cache\_dir\_and\_supporting\_files}}
+\index{\_ensure\_cache\_dir\_and\_supporting\_files@{\_ensure\_cache\_dir\_and\_supporting\_files}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_cache\_dir\_and\_supporting\_files()}{\_ensure\_cache\_dir\_and\_supporting\_files()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a6cfb695b2f81b48094d5d7c93ff60f74} 
+ None \+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+ensure\+\_\+cache\+\_\+dir\+\_\+and\+\_\+supporting\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create the cache dir and its supporting files.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_aca5b00596e035a1b2ac1f388cd4a4a29}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_getvaluepath@{\_getvaluepath}}
+\index{\_getvaluepath@{\_getvaluepath}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_getvaluepath()}{\_getvaluepath()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_aca5b00596e035a1b2ac1f388cd4a4a29} 
+ Path \+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+getvaluepath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a31eb305d7d729d8b0bcfced31b966b3d}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_mkdir@{\_mkdir}}
+\index{\_mkdir@{\_mkdir}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_mkdir()}{\_mkdir()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a31eb305d7d729d8b0bcfced31b966b3d} 
+ None \+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+mkdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Path}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_adfce7af56c8f9c097883d35ad8e05ccc}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!cache\_dir\_from\_config@{cache\_dir\_from\_config}}
+\index{cache\_dir\_from\_config@{cache\_dir\_from\_config}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{cache\_dir\_from\_config()}{cache\_dir\_from\_config()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_adfce7af56c8f9c097883d35ad8e05ccc} 
+ Path \+\_\+pytest.\+cacheprovider.\+Cache.\+cache\+\_\+dir\+\_\+from\+\_\+config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get the path to the cache directory for a Config.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a8517e252c5f11ccce0d5986473242628}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!clear\_cache@{clear\_cache}}
+\index{clear\_cache@{clear\_cache}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{clear\_cache()}{clear\_cache()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a8517e252c5f11ccce0d5986473242628} 
+ None \+\_\+pytest.\+cacheprovider.\+Cache.\+clear\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Path}]{cachedir}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear the sub-directories used to hold cached directories and values.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a3dccbb9d2d1a8286d319d4747401081a}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!for\_config@{for\_config}}
+\index{for\_config@{for\_config}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{for\_config()}{for\_config()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a3dccbb9d2d1a8286d319d4747401081a} 
+ \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} \+\_\+pytest.\+cacheprovider.\+Cache.\+for\+\_\+config (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the Cache instance for a Config.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a752b42a7c4034371bcd23244b1862148}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!get@{get}}
+\index{get@{get}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a752b42a7c4034371bcd23244b1862148} 
+\+\_\+pytest.\+cacheprovider.\+Cache.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{}]{default}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the cached value for the given key.
+
+If no value was yet cached or the value cannot be read, the specified
+default is returned.
+
+:param key:
+    Must be a ``/`` separated value. Usually the first
+    name is the name of your plugin or your application.
+:param default:
+    The value to return in case of a cache-miss or invalid cache value.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a45347eda6917f5d6dfdaf9193fcb26bd}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{mkdir()}{mkdir()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a45347eda6917f5d6dfdaf9193fcb26bd} 
+ Path \+\_\+pytest.\+cacheprovider.\+Cache.\+mkdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a directory path object with the given name.
+
+If the directory does not yet exist, it will be created. You can use
+it to manage files to e.g. store/retrieve database dumps across test
+sessions.
+
+.. versionadded:: 7.0
+
+:param name:
+    Must be a string not containing a ``/`` separator.
+    Make sure the name contains your plugin or application
+    identifiers to prevent clashes with other cache users.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a4eb62533f65d7495fe5afb7a3f9bd540}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!set@{set}}
+\index{set@{set}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a4eb62533f65d7495fe5afb7a3f9bd540} 
+ None \+\_\+pytest.\+cacheprovider.\+Cache.\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{object}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save value for the given key.
+
+:param key:
+    Must be a ``/`` separated value. Usually the first
+    name is the name of your plugin or your application.
+:param value:
+    Must be of any combination of basic python types,
+    including nested types like lists of dictionaries.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a59056dfff8733ba939dfd3caf3bb00da}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!warn@{warn}}
+\index{warn@{warn}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a59056dfff8733ba939dfd3caf3bb00da} 
+ None \+\_\+pytest.\+cacheprovider.\+Cache.\+warn (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{fmt}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}object}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Issue a cache warning.
+
+:meta private:
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_a95aa872d6c39a21b6b2db25b055601f1}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_CACHE\_PREFIX\_DIRS@{\_CACHE\_PREFIX\_DIRS}}
+\index{\_CACHE\_PREFIX\_DIRS@{\_CACHE\_PREFIX\_DIRS}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_CACHE\_PREFIX\_DIRS}{\_CACHE\_PREFIX\_DIRS}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_a95aa872d6c39a21b6b2db25b055601f1} 
+\+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+\+CACHE\+\_\+\+PREFIX\+\_\+\+DIRS = "{}d"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_ae3a680de2d439ac5c317717b9062a7f6}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_CACHE\_PREFIX\_VALUES@{\_CACHE\_PREFIX\_VALUES}}
+\index{\_CACHE\_PREFIX\_VALUES@{\_CACHE\_PREFIX\_VALUES}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_CACHE\_PREFIX\_VALUES}{\_CACHE\_PREFIX\_VALUES}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_ae3a680de2d439ac5c317717b9062a7f6} 
+\+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+\+CACHE\+\_\+\+PREFIX\+\_\+\+VALUES = "{}v"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_aceaa9b0181e28297470d4ba0ad1d54ed}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_cachedir@{\_cachedir}}
+\index{\_cachedir@{\_cachedir}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_cachedir}{\_cachedir}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_aceaa9b0181e28297470d4ba0ad1d54ed} 
+\+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+cachedir = dataclasses.\+field(repr=False)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_cache_aaca9c9aac9484330533ac3e7845d2c73}\index{\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}!\_config@{\_config}}
+\index{\_config@{\_config}!\_pytest.cacheprovider.Cache@{\_pytest.cacheprovider.Cache}}
+\doxysubsubsection{\texorpdfstring{\_config}{\_config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_cache_aaca9c9aac9484330533ac3e7845d2c73} 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \+\_\+pytest.\+cacheprovider.\+Cache.\+\_\+config = dataclasses.\+field(repr=False)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{cacheprovider_8py}{cacheprovider.\+py}}\end{DoxyCompactItemize}

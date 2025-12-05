@@ -1,0 +1,43 @@
+\doxysection{asgiref.\+compatibility Namespace Reference}
+\hypertarget{namespaceasgiref_1_1compatibility}{}\label{namespaceasgiref_1_1compatibility}\index{asgiref.compatibility@{asgiref.compatibility}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceasgiref_1_1compatibility_a0c48f6530ec233899198b9011ed83501}{is\+\_\+double\+\_\+callable}} (application)
+\item 
+\mbox{\hyperlink{namespaceasgiref_1_1compatibility_a8c36c6c8a80c52a1d499ac52c66bd670}{double\+\_\+to\+\_\+single\+\_\+callable}} (application)
+\item 
+\mbox{\hyperlink{namespaceasgiref_1_1compatibility_a73e2834f69a527db9a22ff2833a27779}{guarantee\+\_\+single\+\_\+callable}} (application)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceasgiref_1_1compatibility_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceasgiref_1_1compatibility_a8c36c6c8a80c52a1d499ac52c66bd670}\index{asgiref.compatibility@{asgiref.compatibility}!double\_to\_single\_callable@{double\_to\_single\_callable}}
+\index{double\_to\_single\_callable@{double\_to\_single\_callable}!asgiref.compatibility@{asgiref.compatibility}}
+\doxysubsubsection{\texorpdfstring{double\_to\_single\_callable()}{double\_to\_single\_callable()}}
+{\footnotesize\ttfamily \label{namespaceasgiref_1_1compatibility_a8c36c6c8a80c52a1d499ac52c66bd670} 
+asgiref.\+compatibility.\+double\+\_\+to\+\_\+single\+\_\+callable (\begin{DoxyParamCaption}\item[{}]{application}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transforms a double-callable ASGI application into a single-callable one.
+\end{DoxyVerb}
+ \Hypertarget{namespaceasgiref_1_1compatibility_a73e2834f69a527db9a22ff2833a27779}\index{asgiref.compatibility@{asgiref.compatibility}!guarantee\_single\_callable@{guarantee\_single\_callable}}
+\index{guarantee\_single\_callable@{guarantee\_single\_callable}!asgiref.compatibility@{asgiref.compatibility}}
+\doxysubsubsection{\texorpdfstring{guarantee\_single\_callable()}{guarantee\_single\_callable()}}
+{\footnotesize\ttfamily \label{namespaceasgiref_1_1compatibility_a73e2834f69a527db9a22ff2833a27779} 
+asgiref.\+compatibility.\+guarantee\+\_\+single\+\_\+callable (\begin{DoxyParamCaption}\item[{}]{application}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes either a single- or double-callable application and always returns it
+in single-callable style. Use this to add backwards compatibility for ASGI
+2.0 applications to your server/test harness/etc.
+\end{DoxyVerb}
+ \Hypertarget{namespaceasgiref_1_1compatibility_a0c48f6530ec233899198b9011ed83501}\index{asgiref.compatibility@{asgiref.compatibility}!is\_double\_callable@{is\_double\_callable}}
+\index{is\_double\_callable@{is\_double\_callable}!asgiref.compatibility@{asgiref.compatibility}}
+\doxysubsubsection{\texorpdfstring{is\_double\_callable()}{is\_double\_callable()}}
+{\footnotesize\ttfamily \label{namespaceasgiref_1_1compatibility_a0c48f6530ec233899198b9011ed83501} 
+asgiref.\+compatibility.\+is\+\_\+double\+\_\+callable (\begin{DoxyParamCaption}\item[{}]{application}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tests to see if an application is a legacy-style (double-callable) application.
+\end{DoxyVerb}
+ 

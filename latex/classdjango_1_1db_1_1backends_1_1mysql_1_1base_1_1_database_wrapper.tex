@@ -1,0 +1,628 @@
+\doxysection{django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper Class Reference}
+\hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper}{}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+Inheritance diagram for django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4c04c6fc0d3f8dc10ef068ded4e8a00d}{data\+\_\+types}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a79d4b1c7476eac18782f0981d79cf03f}{get\+\_\+database\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a674671c49746d390cbdbc037864b60bc}{get\+\_\+connection\+\_\+params}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4ae5b997726df6730416fc8ee0642b0b}{get\+\_\+new\+\_\+connection}} (self, conn\+\_\+params)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a37793782ec878a26847fac03c5f8fe38}{init\+\_\+connection\+\_\+state}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0ff5c552844653c9008b2c1c843cb949}{create\+\_\+cursor}} (self, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ab8bdfdaae722428701eb41cea3ad10f8}{disable\+\_\+constraint\+\_\+checking}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_abf5a74d6964a3db30bea5cfed0e2eea7}{enable\+\_\+constraint\+\_\+checking}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a61493a0c1ecdc7a36311d954dace679d}{check\+\_\+constraints}} (self, table\+\_\+names=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a43083f263db56bcbc4611e2dd9c77463}{is\+\_\+usable}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a1496d571c1fb01470d94a188fec8c506}{display\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0bef2d7bd445b255898914d7cc41ac4e}{data\+\_\+type\+\_\+check\+\_\+constraints}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a5d826f93a3e24bcab559100c20d1f2a8}{mysql\+\_\+server\+\_\+data}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a5c4281e5046dbb11523be515ef287893}{mysql\+\_\+server\+\_\+info}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ad56b38d13cecb0ff81ef58750186df3c}{mysql\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a8594765c54cf23fa1bdbb6b75b63491d}{mysql\+\_\+is\+\_\+mariadb}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0db2865ee40274d8c20ff89942330698}{sql\+\_\+mode}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a3315e939952748db6b67c3c067cdf3b8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a413cffe92c13dce1ca6da7de9c36fbba}{settings\+\_\+dict}}, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a41b41f8d147807a8ffd05e50f27da7c9}{alias}}=DEFAULT\+\_\+\+DB\+\_\+\+ALIAS)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a5b94377f62180b69aaf1d54c9ab42c06}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ad9c4d1d4bf13dea5bd12b05300e64d66}{ensure\+\_\+timezone}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a7a936afe6422dca268aedad623f7d964}{timezone}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a9822a573ff4d3c576b91615db004f77f}{timezone\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a0165c493a22f3bfeac38859ef17366ce}{queries\+\_\+logged}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a1434a1ea96ee1b40ec0730daab8a58e7}{queries}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a267caf7b087a5bfdeaf9a18b7837025d}{check\+\_\+database\+\_\+version\+\_\+supported}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a7b64171260c3bf790ed1f563fe48ec35}{connect}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ade36d19d6439f7f781151786f4365cf5}{check\+\_\+settings}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a92c7bfe2efb05b06bb23cc7de201dbb5}{ensure\+\_\+connection}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a36460fef236d97a41d6ed05f035509f8}{cursor}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a27411d5fdc6c7490a11324a33c83df2d}{commit}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a0b1436b5fb1063926158ecf80bce9680}{rollback}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a01214a9b91408274fbc34cb062baf2bc}{close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aa6f4a30ed7b20aba58e40da60c340634}{savepoint}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af48b460b2053811b541f5668ce51719e}{savepoint\+\_\+rollback}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ab4764c220571616734c9723cf9320850}{savepoint\+\_\+commit}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_afe8de9f544f829a77b584734b14c2fe3}{clean\+\_\+savepoints}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a14ba5f293351b1dddd42f0d5dea1b1bb}{get\+\_\+autocommit}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ab1e9f32c123e4ccc36e4e7ae370d4fc2}{set\+\_\+autocommit}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af0666e8d036101236827620d1944d80c}{autocommit}}, force\+\_\+begin\+\_\+transaction\+\_\+with\+\_\+broken\+\_\+autocommit=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a33abe8fac81192151df63cb067b197ff}{get\+\_\+rollback}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a785bec3749bdc80f156996055dbd908a}{set\+\_\+rollback}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a0b1436b5fb1063926158ecf80bce9680}{rollback}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a8308d8c66eed60383d5d7fb8f4f3d1c1}{validate\+\_\+no\+\_\+atomic\+\_\+block}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a699de1ad88f45315e29afcf86683c06e}{validate\+\_\+no\+\_\+broken\+\_\+transaction}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a4f0643ccd5fad9115087ceb052e2003c}{constraint\+\_\+checks\+\_\+disabled}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a3f4d11734d2da94781f00468b6bd3981}{close\+\_\+if\+\_\+health\+\_\+check\+\_\+failed}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a599dfc5a8da20da69ffa5a94869dad01}{close\+\_\+if\+\_\+unusable\+\_\+or\+\_\+obsolete}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aea99c566a1e4d3d2d379bbf61f0c0d2c}{allow\+\_\+thread\+\_\+sharing}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a99079deb3ce8e822bb0167283238ad5c}{inc\+\_\+thread\+\_\+sharing}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a366b0474905184ce39b80059c6d38833}{dec\+\_\+thread\+\_\+sharing}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_adea4e3380c08118490c13a61f2d3f89a}{validate\+\_\+thread\+\_\+sharing}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a19e93cf2d60b6cdc18eaf2d4c66f6e42}{prepare\+\_\+database}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a050bf6b64d53029621c20b8f56b13596}{wrap\+\_\+database\+\_\+errors}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a6161e7e44631d0a0fb031329b2fea05f}{chunked\+\_\+cursor}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a66361f6e185e1987e3e1c8a3295c398d}{make\+\_\+debug\+\_\+cursor}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a36460fef236d97a41d6ed05f035509f8}{cursor}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a33a508e03aedd85903bc78695b5dc737}{make\+\_\+cursor}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a36460fef236d97a41d6ed05f035509f8}{cursor}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a605fd92d7af39b1b987426a269121b0c}{temporary\+\_\+connection}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aa367eccb4f07494975e7e5ad3bf11195}{schema\+\_\+editor}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a71140995d9181566c100dde9f06fa8fc}{on\+\_\+commit}} (self, func, robust=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a30980b48ffb0fdd1a4f8b02d00cd80e8}{run\+\_\+and\+\_\+clear\+\_\+commit\+\_\+hooks}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a039544211382f475c5925e16e11cc797}{execute\+\_\+wrapper}} (self, wrapper)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a655ed3d049ec9c35530e8819d28fdc62}{copy}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a41b41f8d147807a8ffd05e50f27da7c9}{alias}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a6e96ad8196a98c43f0d3cc03862b6946}{isolation\+\_\+level}} = isolation\+\_\+level
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a0361e6b4d512d77d4ba3fbfaddb4de2e}{connection}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a413cffe92c13dce1ca6da7de9c36fbba}{settings\+\_\+dict}} = settings\+\_\+dict
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a41b41f8d147807a8ffd05e50f27da7c9}{alias}} = alias
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aab639e6c3506b8b83b305cace9a93533}{queries\+\_\+log}} = deque(maxlen=self.\+queries\+\_\+limit)
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_adf5d9c53f85477db89e7e95773d96d33}{force\+\_\+debug\+\_\+cursor}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af0666e8d036101236827620d1944d80c}{autocommit}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a09d8332924006699f82215be7544135f}{in\+\_\+atomic\+\_\+block}} = False
+\item 
+int \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aece69400525d17ddd7f3cc2cc473abb9}{savepoint\+\_\+state}} = 0
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_adf97bee2673e24845392593176a7d53e}{savepoint\+\_\+ids}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_acb0b20c79eabfe40ce717b24d157507c}{atomic\+\_\+blocks}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a94579ebcffdcfa0e08e04ffad6957904}{commit\+\_\+on\+\_\+exit}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a906b9cc55c0eb7d8e8a362ad5cde4002}{needs\+\_\+rollback}} = False
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a8bb4d23072936c9e9cda54b875fef928}{rollback\+\_\+exc}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aa99dce5623c4003737e3b4717649ebf1}{close\+\_\+at}} = None
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a5c8c6724b52fdddaab01d2e58360f27c}{closed\+\_\+in\+\_\+transaction}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aadaa65cc435ff302d7c7f15740cc8b76}{errors\+\_\+occurred}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a6655b1f6c12a9d713c70c833031f9c05}{health\+\_\+check\+\_\+enabled}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ade831ba5e1b28d7f36f1732213ae5965}{health\+\_\+check\+\_\+done}} = False
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a4607e43008029a6f45ba1341bec80e8f}{run\+\_\+on\+\_\+commit}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_adb81f6cb6c295adcb6b2083b4f771eee}{run\+\_\+commit\+\_\+hooks\+\_\+on\+\_\+set\+\_\+autocommit\+\_\+on}} = False
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a06eee69985225e5ca86801a58499c9bc}{execute\+\_\+wrappers}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ae0307846bc12182ba5afd1afb1347722}{client}} = self.\+client\+\_\+class(self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aa127d04f97a9634e1a219a779a65f561}{creation}} = self.\+creation\+\_\+class(self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a1dc075153e2657aa8c46c67f377aa0a4}{features}} = self.\+features\+\_\+class(self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a9f07c3680a30c4b0fa85943ef97fef63}{introspection}} = self.\+introspection\+\_\+class(self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a76c8ac92af569c8c31a55ebf689b856d}{validation}} = self.\+validation\+\_\+class(self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_afc9e378abbca4dc10209a4fe33fa6be8}{wrap\+\_\+database\+\_\+errors}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a62a3c7ea8b64787ce03bc0c039cf1855}{queries\+\_\+logged}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ad5b3e3bbcb6bf0eb44e61cfaabded933}{operators}}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a67c5d082b71a734aa3d5f28ee908296d}{pattern\+\_\+esc}} = r"{}\+REPLACE(REPLACE(REPLACE(\{\}, \textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{}, \textquotesingle{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textquotesingle{}), \textquotesingle{}\%\%\textquotesingle{}, \textquotesingle{}\textbackslash{}\%\%\textquotesingle{}), \textquotesingle{}\+\_\+\textquotesingle{}, \textquotesingle{}\textbackslash{}\+\_\+\textquotesingle{})"{}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a2b8ff593242051fe4f5f4235abe4847c}{pattern\+\_\+ops}}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a212ca33a4d8bc0eacc52949e3924c89e}{isolation\+\_\+levels}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a74e0041d5f65e5916a513c4a931a96b9}{Database}} = Database
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ad211f9587f943dffd86ec759fa8e228e}{data\+\_\+types\+\_\+suffix}} = \{\}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af8dc879cdb72396497dd6d62e5c42a94}{ops}} = None
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aa5692022fb8a853c14aa65c6ba710de1}{vendor}} = "{}unknown"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aabc20c95acb9986a935eedd4d26ecf55}{Schema\+Editor\+Class}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a222e359235029f98269f8480e3dbee4a}{client\+\_\+class}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ab1eea609ff390561458f3d08d8a6d4dc}{creation\+\_\+class}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a19b76d4277774a3e41560d55aace56e5}{features\+\_\+class}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a2e62c6ba692455960124e40b0359909a}{introspection\+\_\+class}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a316f0eab4ab74d1771c1a34d6685d002}{ops\+\_\+class}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a90f8f99a973c3866177a27383b4c0a39}{validation\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1validation_1_1_base_database_validation}{Base\+Database\+Validation}}
+\item 
+int \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a482b9281902eaee6b41aac25276d5167}{queries\+\_\+limit}} = 9000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a59ef801d8bbbfbf6e74858ce2d71f7f8}{\+\_\+rollback}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a773b2d24a04948dd523ee5704b5ed17a}{\+\_\+set\+\_\+autocommit}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af0666e8d036101236827620d1944d80c}{autocommit}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af8f50dc5cd42b79109d8a262398e6c1c}{\+\_\+prepare\+\_\+cursor}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a36460fef236d97a41d6ed05f035509f8}{cursor}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a4ab6e7f33d17ad7228f40516ace60c5f}{\+\_\+cursor}} (self, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a3f21e7667d1787e9921b0f97694b5920}{\+\_\+commit}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a069b8e1694fb63fce4840aead0e1f63d}{\+\_\+close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ad20a0b45a8cbc79cddd01a3ce45643b7}{\+\_\+savepoint}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aefe364c769196b7fd2f85d0e26b22f0d}{\+\_\+savepoint\+\_\+rollback}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a84f283ac61686e16f5011f6256615698}{\+\_\+savepoint\+\_\+commit}} (self, sid)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af5e9f43abb235e035c6b4ab96ace4126}{\+\_\+savepoint\+\_\+allowed}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a974ead54aa1258d94634ad6596225231}{\+\_\+nodb\+\_\+cursor}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4a908baa5e36653cc92671f4b95389d5}{\+\_\+data\+\_\+types}}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a235c4a447da45a15d324e577e5a7b285}{\+\_\+limited\+\_\+data\+\_\+types}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a082af7106e4c7c17b2b64509fb3c0598}{\+\_\+thread\+\_\+sharing\+\_\+lock}} = threading.\+Lock()
+\item 
+int \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aaedcaee8ef2cd9b7c2b993eb8014d632}{\+\_\+thread\+\_\+sharing\+\_\+count}} = 0
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_aee66c57d43d472ed06b7c66dc277e8df}{\+\_\+thread\+\_\+ident}} = \+\_\+thread.\+get\+\_\+ident()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a59ef801d8bbbfbf6e74858ce2d71f7f8}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!\_rollback@{\_rollback}}
+\index{\_rollback@{\_rollback}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_rollback()}{\_rollback()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a59ef801d8bbbfbf6e74858ce2d71f7f8} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+\_\+rollback (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a53ebab8ea5c3038508dd1b03704729a3}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a773b2d24a04948dd523ee5704b5ed17a}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!\_set\_autocommit@{\_set\_autocommit}}
+\index{\_set\_autocommit@{\_set\_autocommit}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_set\_autocommit()}{\_set\_autocommit()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a773b2d24a04948dd523ee5704b5ed17a} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+\_\+set\+\_\+autocommit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{autocommit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Backend-specific implementation to enable or disable autocommit.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a686692fdf47368e67c1c4ec30967fa72}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a61493a0c1ecdc7a36311d954dace679d}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!check\_constraints@{check\_constraints}}
+\index{check\_constraints@{check\_constraints}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{check\_constraints()}{check\_constraints()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a61493a0c1ecdc7a36311d954dace679d} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+check\+\_\+constraints (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{table\+\_\+names}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check each table name in `table_names` for rows with invalid foreign
+key references. This method is intended to be used in conjunction with
+`disable_constraint_checking()` and `enable_constraint_checking()`, to
+determine if rows with invalid references were entered while constraint
+checks were off.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_afaad10e430d16081330766cf3d821a68}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0ff5c552844653c9008b2c1c843cb949}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!create\_cursor@{create\_cursor}}
+\index{create\_cursor@{create\_cursor}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{create\_cursor()}{create\_cursor()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0ff5c552844653c9008b2c1c843cb949} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+create\+\_\+cursor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a cursor. Assume that a connection is established.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ad5770c39dbfca2cff60c756f9da65e7e}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0bef2d7bd445b255898914d7cc41ac4e}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!data\_type\_check\_constraints@{data\_type\_check\_constraints}}
+\index{data\_type\_check\_constraints@{data\_type\_check\_constraints}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{data\_type\_check\_constraints()}{data\_type\_check\_constraints()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0bef2d7bd445b255898914d7cc41ac4e} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+data\+\_\+type\+\_\+check\+\_\+constraints (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_af026145b62678837e5e050565a6512f5}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4c04c6fc0d3f8dc10ef068ded4e8a00d}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!data\_types@{data\_types}}
+\index{data\_types@{data\_types}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{data\_types()}{data\_types()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4c04c6fc0d3f8dc10ef068ded4e8a00d} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+data\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a4d04a3936a00ee40340f47b1c2b57add}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ab8bdfdaae722428701eb41cea3ad10f8}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!disable\_constraint\_checking@{disable\_constraint\_checking}}
+\index{disable\_constraint\_checking@{disable\_constraint\_checking}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{disable\_constraint\_checking()}{disable\_constraint\_checking()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ab8bdfdaae722428701eb41cea3ad10f8} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+disable\+\_\+constraint\+\_\+checking (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disable foreign key checks, primarily for use in adding rows with
+forward references. Always return True to indicate constraint checks
+need to be re-enabled.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ac801a2ee627d3f439d2c57fc18b837eb}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a1496d571c1fb01470d94a188fec8c506}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!display\_name@{display\_name}}
+\index{display\_name@{display\_name}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{display\_name()}{display\_name()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a1496d571c1fb01470d94a188fec8c506} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+display\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a4d787744143d9d940a20996dc0b2c694}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_abf5a74d6964a3db30bea5cfed0e2eea7}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!enable\_constraint\_checking@{enable\_constraint\_checking}}
+\index{enable\_constraint\_checking@{enable\_constraint\_checking}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{enable\_constraint\_checking()}{enable\_constraint\_checking()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_abf5a74d6964a3db30bea5cfed0e2eea7} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+enable\+\_\+constraint\+\_\+checking (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Re-enable foreign key checks after they have been disabled.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_ac070ff00d158bdd73f706378c0881e91}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a674671c49746d390cbdbc037864b60bc}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!get\_connection\_params@{get\_connection\_params}}
+\index{get\_connection\_params@{get\_connection\_params}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{get\_connection\_params()}{get\_connection\_params()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a674671c49746d390cbdbc037864b60bc} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+get\+\_\+connection\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict of parameters suitable for get_new_connection.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a2bf47c4de591ae4ce72e01f54ef903c3}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a79d4b1c7476eac18782f0981d79cf03f}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!get\_database\_version@{get\_database\_version}}
+\index{get\_database\_version@{get\_database\_version}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{get\_database\_version()}{get\_database\_version()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a79d4b1c7476eac18782f0981d79cf03f} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+get\+\_\+database\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple of the database's version.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a854dc847e67927310b30857ae81a192a}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4ae5b997726df6730416fc8ee0642b0b}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!get\_new\_connection@{get\_new\_connection}}
+\index{get\_new\_connection@{get\_new\_connection}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{get\_new\_connection()}{get\_new\_connection()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4ae5b997726df6730416fc8ee0642b0b} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+get\+\_\+new\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{conn\+\_\+params}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open a connection to the database.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a2a042ce172ee87ee1891c70cd73b2ceb}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a37793782ec878a26847fac03c5f8fe38}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!init\_connection\_state@{init\_connection\_state}}
+\index{init\_connection\_state@{init\_connection\_state}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{init\_connection\_state()}{init\_connection\_state()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a37793782ec878a26847fac03c5f8fe38} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+init\+\_\+connection\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the database connection settings.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a0543e30695d4e60ad91be5456fcc7606}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a43083f263db56bcbc4611e2dd9c77463}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!is\_usable@{is\_usable}}
+\index{is\_usable@{is\_usable}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{is\_usable()}{is\_usable()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a43083f263db56bcbc4611e2dd9c77463} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+is\+\_\+usable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test if the database connection is usable.
+
+This method may assume that self.connection is not None.
+
+Actual implementations should take care not to raise exceptions
+as that may prevent Django from recycling unusable connections.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1base_1_1_base_database_wrapper_a2df267dedba0b62b2790ed9cad06af85}{django.\+db.\+backends.\+base.\+base.\+Base\+Database\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a8594765c54cf23fa1bdbb6b75b63491d}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!mysql\_is\_mariadb@{mysql\_is\_mariadb}}
+\index{mysql\_is\_mariadb@{mysql\_is\_mariadb}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{mysql\_is\_mariadb()}{mysql\_is\_mariadb()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a8594765c54cf23fa1bdbb6b75b63491d} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+mysql\+\_\+is\+\_\+mariadb (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a5d826f93a3e24bcab559100c20d1f2a8}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!mysql\_server\_data@{mysql\_server\_data}}
+\index{mysql\_server\_data@{mysql\_server\_data}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{mysql\_server\_data()}{mysql\_server\_data()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a5d826f93a3e24bcab559100c20d1f2a8} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+mysql\+\_\+server\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a5c4281e5046dbb11523be515ef287893}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!mysql\_server\_info@{mysql\_server\_info}}
+\index{mysql\_server\_info@{mysql\_server\_info}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{mysql\_server\_info()}{mysql\_server\_info()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a5c4281e5046dbb11523be515ef287893} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+mysql\+\_\+server\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ad56b38d13cecb0ff81ef58750186df3c}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!mysql\_version@{mysql\_version}}
+\index{mysql\_version@{mysql\_version}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{mysql\_version()}{mysql\_version()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ad56b38d13cecb0ff81ef58750186df3c} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+mysql\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0db2865ee40274d8c20ff89942330698}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!sql\_mode@{sql\_mode}}
+\index{sql\_mode@{sql\_mode}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{sql\_mode()}{sql\_mode()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a0db2865ee40274d8c20ff89942330698} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+sql\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4a908baa5e36653cc92671f4b95389d5}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!\_data\_types@{\_data\_types}}
+\index{\_data\_types@{\_data\_types}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_data\_types}{\_data\_types}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a4a908baa5e36653cc92671f4b95389d5} 
+dict django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+\_\+data\+\_\+types\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}AutoField"{}}:\ \textcolor{stringliteral}{"{}integer\ AUTO\_INCREMENT"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BigAutoField"{}}:\ \textcolor{stringliteral}{"{}bigint\ AUTO\_INCREMENT"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BinaryField"{}}:\ \textcolor{stringliteral}{"{}longblob"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BooleanField"{}}:\ \textcolor{stringliteral}{"{}bool"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}CharField"{}}:\ \textcolor{stringliteral}{"{}varchar(\%(max\_length)s)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}DateField"{}}:\ \textcolor{stringliteral}{"{}date"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}DateTimeField"{}}:\ \textcolor{stringliteral}{"{}datetime(6)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}DecimalField"{}}:\ \textcolor{stringliteral}{"{}numeric(\%(max\_digits)s,\ \%(decimal\_places)s)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}DurationField"{}}:\ \textcolor{stringliteral}{"{}bigint"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}FileField"{}}:\ \textcolor{stringliteral}{"{}varchar(\%(max\_length)s)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}FilePathField"{}}:\ \textcolor{stringliteral}{"{}varchar(\%(max\_length)s)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}FloatField"{}}:\ \textcolor{stringliteral}{"{}double\ precision"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}IntegerField"{}}:\ \textcolor{stringliteral}{"{}integer"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BigIntegerField"{}}:\ \textcolor{stringliteral}{"{}bigint"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}IPAddressField"{}}:\ \textcolor{stringliteral}{"{}char(15)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}GenericIPAddressField"{}}:\ \textcolor{stringliteral}{"{}char(39)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}JSONField"{}}:\ \textcolor{stringliteral}{"{}json"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}OneToOneField"{}}:\ \textcolor{stringliteral}{"{}integer"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}PositiveBigIntegerField"{}}:\ \textcolor{stringliteral}{"{}bigint\ UNSIGNED"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}PositiveIntegerField"{}}:\ \textcolor{stringliteral}{"{}integer\ UNSIGNED"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}PositiveSmallIntegerField"{}}:\ \textcolor{stringliteral}{"{}smallint\ UNSIGNED"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}SlugField"{}}:\ \textcolor{stringliteral}{"{}varchar(\%(max\_length)s)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}SmallAutoField"{}}:\ \textcolor{stringliteral}{"{}smallint\ AUTO\_INCREMENT"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}SmallIntegerField"{}}:\ \textcolor{stringliteral}{"{}smallint"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}TextField"{}}:\ \textcolor{stringliteral}{"{}longtext"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}TimeField"{}}:\ \textcolor{stringliteral}{"{}time(6)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}UUIDField"{}}:\ \textcolor{stringliteral}{"{}char(32)"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a235c4a447da45a15d324e577e5a7b285}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!\_limited\_data\_types@{\_limited\_data\_types}}
+\index{\_limited\_data\_types@{\_limited\_data\_types}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_limited\_data\_types}{\_limited\_data\_types}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a235c4a447da45a15d324e577e5a7b285} 
+tuple django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+\_\+limited\+\_\+data\+\_\+types\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}tinyblob"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}blob"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}mediumblob"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}longblob"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}tinytext"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}text"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}mediumtext"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}longtext"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}json"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a74e0041d5f65e5916a513c4a931a96b9}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!Database@{Database}}
+\index{Database@{Database}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{Database}{Database}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a74e0041d5f65e5916a513c4a931a96b9} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+Database = Database\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a6e96ad8196a98c43f0d3cc03862b6946}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!isolation\_level@{isolation\_level}}
+\index{isolation\_level@{isolation\_level}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{isolation\_level}{isolation\_level}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a6e96ad8196a98c43f0d3cc03862b6946} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+isolation\+\_\+level = isolation\+\_\+level}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a212ca33a4d8bc0eacc52949e3924c89e}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!isolation\_levels@{isolation\_levels}}
+\index{isolation\_levels@{isolation\_levels}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{isolation\_levels}{isolation\_levels}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a212ca33a4d8bc0eacc52949e3924c89e} 
+django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+isolation\+\_\+levels\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}read\ uncommitted"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}read\ committed"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}repeatable\ read"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}serializable"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ad5b3e3bbcb6bf0eb44e61cfaabded933}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!operators@{operators}}
+\index{operators@{operators}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_ad5b3e3bbcb6bf0eb44e61cfaabded933} 
+dict django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+operators\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}exact"{}}:\ \textcolor{stringliteral}{"{}=\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}iexact"{}}:\ \textcolor{stringliteral}{"{}LIKE\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}contains"{}}:\ \textcolor{stringliteral}{"{}LIKE\ BINARY\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}icontains"{}}:\ \textcolor{stringliteral}{"{}LIKE\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}gt"{}}:\ \textcolor{stringliteral}{"{}>\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}gte"{}}:\ \textcolor{stringliteral}{"{}>=\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}lt"{}}:\ \textcolor{stringliteral}{"{}<\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}lte"{}}:\ \textcolor{stringliteral}{"{}<=\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}startswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ BINARY\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}endswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ BINARY\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}istartswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}iendswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ \%s"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a67c5d082b71a734aa3d5f28ee908296d}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!pattern\_esc@{pattern\_esc}}
+\index{pattern\_esc@{pattern\_esc}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{pattern\_esc}{pattern\_esc}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a67c5d082b71a734aa3d5f28ee908296d} 
+str django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+pattern\+\_\+esc = r"{}\+REPLACE(REPLACE(REPLACE(\{\}, \textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{}, \textquotesingle{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textquotesingle{}), \textquotesingle{}\%\%\textquotesingle{}, \textquotesingle{}\textbackslash{}\%\%\textquotesingle{}), \textquotesingle{}\+\_\+\textquotesingle{}, \textquotesingle{}\textbackslash{}\+\_\+\textquotesingle{})"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a2b8ff593242051fe4f5f4235abe4847c}\index{django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}!pattern\_ops@{pattern\_ops}}
+\index{pattern\_ops@{pattern\_ops}!django.db.backends.mysql.base.DatabaseWrapper@{django.db.backends.mysql.base.DatabaseWrapper}}
+\doxysubsubsection{\texorpdfstring{pattern\_ops}{pattern\_ops}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1_database_wrapper_a2b8ff593242051fe4f5f4235abe4847c} 
+dict django.\+db.\+backends.\+mysql.\+base.\+Database\+Wrapper.\+pattern\+\_\+ops\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}contains"{}}:\ \textcolor{stringliteral}{"{}LIKE\ BINARY\ CONCAT('\%\%',\ \{\},\ '\%\%')"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}icontains"{}}:\ \textcolor{stringliteral}{"{}LIKE\ CONCAT('\%\%',\ \{\},\ '\%\%')"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}startswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ BINARY\ CONCAT(\{\},\ '\%\%')"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}istartswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ CONCAT(\{\},\ '\%\%')"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}endswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ BINARY\ CONCAT('\%\%',\ \{\})"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}iendswith"{}}:\ \textcolor{stringliteral}{"{}LIKE\ CONCAT('\%\%',\ \{\})"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/backends/mysql/\mbox{\hyperlink{django_2db_2backends_2mysql_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

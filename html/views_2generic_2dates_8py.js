@@ -1,0 +1,26 @@
+var views_2generic_2dates_8py =
+[
+    [ "django.views.generic.dates.YearMixin", "classdjango_1_1views_1_1generic_1_1dates_1_1_year_mixin.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_year_mixin" ],
+    [ "django.views.generic.dates.MonthMixin", "classdjango_1_1views_1_1generic_1_1dates_1_1_month_mixin.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_month_mixin" ],
+    [ "django.views.generic.dates.DayMixin", "classdjango_1_1views_1_1generic_1_1dates_1_1_day_mixin.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_day_mixin" ],
+    [ "django.views.generic.dates.WeekMixin", "classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin" ],
+    [ "django.views.generic.dates.DateMixin", "classdjango_1_1views_1_1generic_1_1dates_1_1_date_mixin.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_date_mixin" ],
+    [ "django.views.generic.dates.BaseDateListView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_date_list_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_date_list_view" ],
+    [ "django.views.generic.dates.BaseArchiveIndexView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_archive_index_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_archive_index_view" ],
+    [ "django.views.generic.dates.ArchiveIndexView", "classdjango_1_1views_1_1generic_1_1dates_1_1_archive_index_view.html", null ],
+    [ "django.views.generic.dates.BaseYearArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_year_archive_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_year_archive_view" ],
+    [ "django.views.generic.dates.YearArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_year_archive_view.html", null ],
+    [ "django.views.generic.dates.BaseMonthArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_month_archive_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_month_archive_view" ],
+    [ "django.views.generic.dates.MonthArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_month_archive_view.html", null ],
+    [ "django.views.generic.dates.BaseWeekArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_week_archive_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_week_archive_view" ],
+    [ "django.views.generic.dates.WeekArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_week_archive_view.html", null ],
+    [ "django.views.generic.dates.BaseDayArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_day_archive_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_day_archive_view" ],
+    [ "django.views.generic.dates.DayArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_day_archive_view.html", null ],
+    [ "django.views.generic.dates.BaseTodayArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_today_archive_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_today_archive_view" ],
+    [ "django.views.generic.dates.TodayArchiveView", "classdjango_1_1views_1_1generic_1_1dates_1_1_today_archive_view.html", null ],
+    [ "django.views.generic.dates.BaseDateDetailView", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_date_detail_view.html", "classdjango_1_1views_1_1generic_1_1dates_1_1_base_date_detail_view" ],
+    [ "django.views.generic.dates.DateDetailView", "classdjango_1_1views_1_1generic_1_1dates_1_1_date_detail_view.html", null ],
+    [ "django.views.generic.dates._date_from_string", "namespacedjango_1_1views_1_1generic_1_1dates.html#a0f782cacbbe0293a4a4a092343b5ac5f", null ],
+    [ "django.views.generic.dates._get_next_prev", "namespacedjango_1_1views_1_1generic_1_1dates.html#a671109893c8430929bb9947d98fb0ace", null ],
+    [ "django.views.generic.dates.timezone_today", "namespacedjango_1_1views_1_1generic_1_1dates.html#a83cae13f1c0dc4762426e0b8196cb8c1", null ]
+];

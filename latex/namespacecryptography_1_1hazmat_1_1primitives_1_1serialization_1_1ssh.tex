@@ -1,0 +1,535 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+serialization.\+ssh Namespace Reference}
+\hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh}{}\label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___frag_list}{\+\_\+\+Frag\+List}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_cipher}{\+\_\+\+SSHCipher}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_d_s_a}{\+\_\+\+SSHFormat\+DSA}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a}{\+\_\+\+SSHFormat\+ECDSA}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_ed25519}{\+\_\+\+SSHFormat\+Ed25519}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_r_s_a}{\+\_\+\+SSHFormat\+RSA}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_e_c_d_s_a}{\+\_\+\+SSHFormat\+SKECDSA}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_s_k_ed25519}{\+\_\+\+SSHFormat\+SKEd25519}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate}{SSHCertificate}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate_builder}{SSHCertificate\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate_type}{SSHCertificate\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2006a495651e286681114c123b197e6c}{\+\_\+bcrypt\+\_\+kdf}} (bytes password, bytes salt, int desired\+\_\+key\+\_\+bytes, int rounds, bool ignore\+\_\+few\+\_\+rounds=False)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ada65497b2b2cfcd68e7c96534c1ebb42}{\+\_\+get\+\_\+ssh\+\_\+key\+\_\+type}} (\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} key)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac597991a4c39151fc619a9c9fa30982d}{\+\_\+ecdsa\+\_\+key\+\_\+type}} (\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}} public\+\_\+key)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a010d55ebff88cc26aa1f75362f0f429d}{\+\_\+ssh\+\_\+pem\+\_\+encode}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data, bytes prefix=\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201}{\+\_\+\+SK\+\_\+\+START}}+b"{}\textbackslash{}n"{}, bytes suffix=\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2382ff1ec61169765d1ef4e91ca3f991}{\+\_\+\+SK\+\_\+\+END}}+b"{}\textbackslash{}n"{})
+\item 
+None \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a0dd0bcd5577c0cb517aa6232e791813f}{\+\_\+check\+\_\+block\+\_\+size}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data, int block\+\_\+len)
+\item 
+None \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a94d12cab03b05441053277c9b46220c4}{\+\_\+check\+\_\+empty}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1base_1_1_cipher}{Cipher}}\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_c_b_c}{modes.\+CBC}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_c_t_r}{modes.\+CTR}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m}{modes.\+GCM}}\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa431f25852a65bc1a17fe4f014ab383b}{\+\_\+init\+\_\+cipher}} (bytes ciphername, bytes\texorpdfstring{$\vert$}{|}None password, bytes salt, int rounds)
+\item 
+tuple\mbox{[}int, memoryview\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a26956049368d12cbf63d91e78ff06b3a}{\+\_\+get\+\_\+u32}} (memoryview data)
+\item 
+tuple\mbox{[}int, memoryview\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2ca4d644fc0353c0449756a6061f9d1a}{\+\_\+get\+\_\+u64}} (memoryview data)
+\item 
+tuple\mbox{[}memoryview, memoryview\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_acea83e2934286b096c62ad49a31af97d}{\+\_\+get\+\_\+sshstr}} (memoryview data)
+\item 
+tuple\mbox{[}int, memoryview\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a11d287d0241d4b00655b76e43f01052f}{\+\_\+get\+\_\+mpint}} (memoryview data)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ad7963eb5fe0c825a31ec39e500ea08e6}{\+\_\+to\+\_\+mpint}} (int val)
+\item 
+tuple\mbox{[}memoryview, memoryview\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a30b6310a9f794688955cdc03bf763841}{load\+\_\+application}} (data)
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a3a12262c437721513f54a123fb23c7f5}{\+\_\+lookup\+\_\+kformat}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} key\+\_\+type)
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2b6d837163985c670b791b3222342f0a}{load\+\_\+ssh\+\_\+private\+\_\+key}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data, bytes\texorpdfstring{$\vert$}{|}None password, typing.\+Any backend=None, \texorpdfstring{$\ast$}{*}, bool unsafe\+\_\+skip\+\_\+rsa\+\_\+key\+\_\+validation=False)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a6b08d4b7de79ea8986207e584460993f}{\+\_\+serialize\+\_\+ssh\+\_\+private\+\_\+key}} (\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}} private\+\_\+key, bytes password, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__serialization_1_1_key_serialization_encryption}{Key\+Serialization\+Encryption}} encryption\+\_\+algorithm)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_hash_algorithm}{hashes.\+Hash\+Algorithm}} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac0a9107478de229e2cca6359851ef616}{\+\_\+get\+\_\+ec\+\_\+hash\+\_\+alg}} (\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve}{ec.\+Elliptic\+Curve}} curve)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate}{SSHCertificate}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a482eab4d17db9ada6578dcb2735b9774}{\+\_\+load\+\_\+ssh\+\_\+public\+\_\+identity}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data, \+\_\+legacy\+\_\+dsa\+\_\+allowed=False)
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate}{SSHCertificate}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a3a7682b9b9a9e1247a363aa3a8924a67}{load\+\_\+ssh\+\_\+public\+\_\+identity}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data)
+\item 
+dict\mbox{[}bytes, bytes\mbox{]} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a951bf530a622b8d6fa4e4695350e6455}{\+\_\+parse\+\_\+exts\+\_\+opts}} (memoryview exts\+\_\+opts)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa6deffb9d59e668584229dcf87f30d7d}{ssh\+\_\+key\+\_\+fingerprint}} (\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} key, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_m_d5}{hashes.\+MD5}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_s_h_a256}{hashes.\+SHA256}} hash\+\_\+algorithm)
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a02859e0a2db0b336ab2daa833139e093}{load\+\_\+ssh\+\_\+public\+\_\+key}} (\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} data, typing.\+Any backend=None)
+\item 
+bytes \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a9351d914cfaf9afe836abd4b3e0cdf51}{serialize\+\_\+ssh\+\_\+public\+\_\+key}} (\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} public\+\_\+key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a5ae0997e73d48106e6f6157b3e4eb044}{\+\_\+bcrypt\+\_\+supported}} = True
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a5b4839535e79c0511628d428ccae7988}{\+\_\+\+SSH\+\_\+\+ED25519}} = b"{}ssh-\/ed25519"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a629b5b04cec9a4b4006608242182a519}{\+\_\+\+SSH\+\_\+\+RSA}} = b"{}ssh-\/rsa"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a6111674c6d2dff7764ce41e8c4518323}{\+\_\+\+SSH\+\_\+\+DSA}} = b"{}ssh-\/dss"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_af29e8f1a76e177c05010bc0750d89a0f}{\+\_\+\+ECDSA\+\_\+\+NISTP256}} = b"{}ecdsa-\/sha2-\/nistp256"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a7c99b7628c9d1d562356b470c7a0529e}{\+\_\+\+ECDSA\+\_\+\+NISTP384}} = b"{}ecdsa-\/sha2-\/nistp384"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ab47570b54f27e807ae65ef913673bd6c}{\+\_\+\+ECDSA\+\_\+\+NISTP521}} = b"{}ecdsa-\/sha2-\/nistp521"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_abc96c7d9c28607e35a2374e083f715d2}{\+\_\+\+CERT\+\_\+\+SUFFIX}} = b"{}-\/cert-\/v01@openssh.\+com"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a972fd08ca58d71437addf8350050113a}{\+\_\+\+SK\+\_\+\+SSH\+\_\+\+ED25519}} = b"{}sk-\/ssh-\/ed25519@openssh.\+com"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ad7b86c5c81f6cf7749bfccedcf8e13f1}{\+\_\+\+SK\+\_\+\+SSH\+\_\+\+ECDSA\+\_\+\+NISTP256}} = b"{}sk-\/ecdsa-\/sha2-\/nistp256@openssh.\+com"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a4f6ca2fdd72449b3046b094c226803cf}{\+\_\+\+SSH\+\_\+\+RSA\+\_\+\+SHA256}} = b"{}rsa-\/sha2-\/256"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a365f5d306bc6f85b16120bd03dd7bf7d}{\+\_\+\+SSH\+\_\+\+RSA\+\_\+\+SHA512}} = b"{}rsa-\/sha2-\/512"{}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a073d2c7c10259d7df3a38502e724e4fa}{\+\_\+\+SSH\+\_\+\+PUBKEY\+\_\+\+RC}} = re.\+compile(rb"{}\textbackslash{}A(\textbackslash{}S+)\mbox{[} \textbackslash{}t\mbox{]}+(\textbackslash{}S+)"{})
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ab1bbdcae85ee6608950b5f59cce945c3}{\+\_\+\+SK\+\_\+\+MAGIC}} = b"{}openssh-\/key-\/v1\textbackslash{}0"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201}{\+\_\+\+SK\+\_\+\+START}} = b"{}-\/-\/-\/-\/-\/BEGIN OPENSSH PRIVATE KEY-\/-\/-\/-\/-\/"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2382ff1ec61169765d1ef4e91ca3f991}{\+\_\+\+SK\+\_\+\+END}} = b"{}-\/-\/-\/-\/-\/END OPENSSH PRIVATE KEY-\/-\/-\/-\/-\/"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a0a2304df6edaf6437deb1584889e720c}{\+\_\+\+BCRYPT}} = b"{}bcrypt"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a79ccc53f6fce84b116c70579cfbc771b}{\+\_\+\+NONE}} = b"{}none"{}
+\item 
+str \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac4bab85c9decfe029eb86278f633c92c}{\+\_\+\+DEFAULT\+\_\+\+CIPHER}} = b"{}aes256-\/ctr"{}
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a7cc4089de0a3a66ffc1e66a193204663}{\+\_\+\+DEFAULT\+\_\+\+ROUNDS}} = 16
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a64ffe5ddddee19dd65385fe81add4ae7}{\+\_\+\+PEM\+\_\+\+RC}} = re.\+compile(\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201}{\+\_\+\+SK\+\_\+\+START}} + b"{}(.\texorpdfstring{$\ast$}{*}?)"{} + \+\_\+\+SK\+\_\+\+END, re.\+DOTALL)
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a1622203984684a6ac388265ac1c9d5f4}{\+\_\+\+PADDING}} = memoryview(bytearray(range(1, 1 + 16)))
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_afb57d2b493a1f513d6aaff06353524dd}{\+\_\+\+ECDSA\+\_\+\+KEY\+\_\+\+TYPE}}
+\item 
+dict \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa2972e1bfa63dd006acc029e2d1253cd}{\+\_\+\+KEY\+\_\+\+FORMATS}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a34a5eced98bb7e8e2afbdbbf56025d8c}{SSHCert\+Public\+Key\+Types}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_abd313c601e7c747fc64e069278900382}{SSHCert\+Private\+Key\+Types}}
+\item 
+int \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a85fd88f755630f6b31668542902c8671}{\+\_\+\+SSHKEY\+\_\+\+CERT\+\_\+\+MAX\+\_\+\+PRINCIPALS}} = 256
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2006a495651e286681114c123b197e6c}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_bcrypt\_kdf@{\_bcrypt\_kdf}}
+\index{\_bcrypt\_kdf@{\_bcrypt\_kdf}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_bcrypt\_kdf()}{\_bcrypt\_kdf()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2006a495651e286681114c123b197e6c} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+bcrypt\+\_\+kdf (\begin{DoxyParamCaption}\item[{bytes}]{password}{, }\item[{bytes}]{salt}{, }\item[{int}]{desired\+\_\+key\+\_\+bytes}{, }\item[{int}]{rounds}{, }\item[{bool }]{ignore\+\_\+few\+\_\+rounds}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a0dd0bcd5577c0cb517aa6232e791813f}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_check\_block\_size@{\_check\_block\_size}}
+\index{\_check\_block\_size@{\_check\_block\_size}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_check\_block\_size()}{\_check\_block\_size()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a0dd0bcd5577c0cb517aa6232e791813f} 
+ None cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+check\+\_\+block\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{, }\item[{int}]{block\+\_\+len}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Require data to be full blocks\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a94d12cab03b05441053277c9b46220c4}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_check\_empty@{\_check\_empty}}
+\index{\_check\_empty@{\_check\_empty}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_check\_empty()}{\_check\_empty()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a94d12cab03b05441053277c9b46220c4} 
+ None cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+check\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}All data should have been parsed.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac597991a4c39151fc619a9c9fa30982d}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_ecdsa\_key\_type@{\_ecdsa\_key\_type}}
+\index{\_ecdsa\_key\_type@{\_ecdsa\_key\_type}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_ecdsa\_key\_type()}{\_ecdsa\_key\_type()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac597991a4c39151fc619a9c9fa30982d} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+ecdsa\+\_\+key\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}}}]{public\+\_\+key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return SSH key_type and curve_name for private key.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac0a9107478de229e2cca6359851ef616}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_get\_ec\_hash\_alg@{\_get\_ec\_hash\_alg}}
+\index{\_get\_ec\_hash\_alg@{\_get\_ec\_hash\_alg}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_get\_ec\_hash\_alg()}{\_get\_ec\_hash\_alg()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac0a9107478de229e2cca6359851ef616} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_hash_algorithm}{hashes.\+Hash\+Algorithm}} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+get\+\_\+ec\+\_\+hash\+\_\+alg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve}{ec.\+Elliptic\+Curve}}}]{curve}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a11d287d0241d4b00655b76e43f01052f}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_get\_mpint@{\_get\_mpint}}
+\index{\_get\_mpint@{\_get\_mpint}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_get\_mpint()}{\_get\_mpint()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a11d287d0241d4b00655b76e43f01052f} 
+ tuple\mbox{[}int, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+get\+\_\+mpint (\begin{DoxyParamCaption}\item[{memoryview}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Big integer.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ada65497b2b2cfcd68e7c96534c1ebb42}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_get\_ssh\_key\_type@{\_get\_ssh\_key\_type}}
+\index{\_get\_ssh\_key\_type@{\_get\_ssh\_key\_type}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_get\_ssh\_key\_type()}{\_get\_ssh\_key\_type()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ada65497b2b2cfcd68e7c96534c1ebb42} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+get\+\_\+ssh\+\_\+key\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}}}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_acea83e2934286b096c62ad49a31af97d}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_get\_sshstr@{\_get\_sshstr}}
+\index{\_get\_sshstr@{\_get\_sshstr}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_get\_sshstr()}{\_get\_sshstr()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_acea83e2934286b096c62ad49a31af97d} 
+ tuple\mbox{[}memoryview, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+get\+\_\+sshstr (\begin{DoxyParamCaption}\item[{memoryview}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Bytes with u32 length prefix\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a26956049368d12cbf63d91e78ff06b3a}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_get\_u32@{\_get\_u32}}
+\index{\_get\_u32@{\_get\_u32}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_get\_u32()}{\_get\_u32()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a26956049368d12cbf63d91e78ff06b3a} 
+ tuple\mbox{[}int, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+get\+\_\+u32 (\begin{DoxyParamCaption}\item[{memoryview}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Uint32\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2ca4d644fc0353c0449756a6061f9d1a}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_get\_u64@{\_get\_u64}}
+\index{\_get\_u64@{\_get\_u64}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_get\_u64()}{\_get\_u64()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2ca4d644fc0353c0449756a6061f9d1a} 
+ tuple\mbox{[}int, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+get\+\_\+u64 (\begin{DoxyParamCaption}\item[{memoryview}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Uint64\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa431f25852a65bc1a17fe4f014ab383b}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_init\_cipher@{\_init\_cipher}}
+\index{\_init\_cipher@{\_init\_cipher}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_init\_cipher()}{\_init\_cipher()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa431f25852a65bc1a17fe4f014ab383b} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1base_1_1_cipher}{Cipher}}\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_c_b_c}{modes.\+CBC}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_c_t_r}{modes.\+CTR}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m}{modes.\+GCM}}\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+init\+\_\+cipher (\begin{DoxyParamCaption}\item[{bytes}]{ciphername}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None}]{password}{, }\item[{bytes}]{salt}{, }\item[{int}]{rounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Generate key + iv and return cipher.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a482eab4d17db9ada6578dcb2735b9774}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_load\_ssh\_public\_identity@{\_load\_ssh\_public\_identity}}
+\index{\_load\_ssh\_public\_identity@{\_load\_ssh\_public\_identity}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_load\_ssh\_public\_identity()}{\_load\_ssh\_public\_identity()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a482eab4d17db9ada6578dcb2735b9774} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate}{SSHCertificate}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+load\+\_\+ssh\+\_\+public\+\_\+identity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{, }\item[{}]{\+\_\+legacy\+\_\+dsa\+\_\+allowed}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a3a12262c437721513f54a123fb23c7f5}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_lookup\_kformat@{\_lookup\_kformat}}
+\index{\_lookup\_kformat@{\_lookup\_kformat}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_lookup\_kformat()}{\_lookup\_kformat()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a3a12262c437721513f54a123fb23c7f5} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+lookup\+\_\+kformat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{key\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return valid format or throw error\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a951bf530a622b8d6fa4e4695350e6455}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_parse\_exts\_opts@{\_parse\_exts\_opts}}
+\index{\_parse\_exts\_opts@{\_parse\_exts\_opts}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_parse\_exts\_opts()}{\_parse\_exts\_opts()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a951bf530a622b8d6fa4e4695350e6455} 
+ dict\mbox{[}bytes, bytes\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+parse\+\_\+exts\+\_\+opts (\begin{DoxyParamCaption}\item[{memoryview}]{exts\+\_\+opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a6b08d4b7de79ea8986207e584460993f}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_serialize\_ssh\_private\_key@{\_serialize\_ssh\_private\_key}}
+\index{\_serialize\_ssh\_private\_key@{\_serialize\_ssh\_private\_key}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_serialize\_ssh\_private\_key()}{\_serialize\_ssh\_private\_key()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a6b08d4b7de79ea8986207e584460993f} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+serialize\+\_\+ssh\+\_\+private\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}}}]{private\+\_\+key}{, }\item[{bytes}]{password}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__serialization_1_1_key_serialization_encryption}{Key\+Serialization\+Encryption}}}]{encryption\+\_\+algorithm}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Serialize private key with OpenSSH custom encoding.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a010d55ebff88cc26aa1f75362f0f429d}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_ssh\_pem\_encode@{\_ssh\_pem\_encode}}
+\index{\_ssh\_pem\_encode@{\_ssh\_pem\_encode}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_ssh\_pem\_encode()}{\_ssh\_pem\_encode()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a010d55ebff88cc26aa1f75362f0f429d} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+ssh\+\_\+pem\+\_\+encode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{, }\item[{bytes }]{prefix}{ = {\ttfamily \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201}{\+\_\+\+SK\+\_\+\+START}}~+~b"{}\textbackslash{}n"{}}, }\item[{bytes }]{suffix}{ = {\ttfamily \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2382ff1ec61169765d1ef4e91ca3f991}{\+\_\+\+SK\+\_\+\+END}}~+~b"{}\textbackslash{}n"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ad7963eb5fe0c825a31ec39e500ea08e6}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_to\_mpint@{\_to\_mpint}}
+\index{\_to\_mpint@{\_to\_mpint}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_to\_mpint()}{\_to\_mpint()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ad7963eb5fe0c825a31ec39e500ea08e6} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+to\+\_\+mpint (\begin{DoxyParamCaption}\item[{int}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Storage format for signed bigint.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a30b6310a9f794688955cdc03bf763841}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!load\_application@{load\_application}}
+\index{load\_application@{load\_application}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{load\_application()}{load\_application()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a30b6310a9f794688955cdc03bf763841} 
+ tuple\mbox{[}memoryview, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+load\+\_\+application (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}U2F application strings
+\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2b6d837163985c670b791b3222342f0a}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!load\_ssh\_private\_key@{load\_ssh\_private\_key}}
+\index{load\_ssh\_private\_key@{load\_ssh\_private\_key}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{load\_ssh\_private\_key()}{load\_ssh\_private\_key()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2b6d837163985c670b791b3222342f0a} 
+ \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}{SSHPrivate\+Key\+Types}} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+load\+\_\+ssh\+\_\+private\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None}]{password}{, }\item[{typing.\+Any }]{backend}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{unsafe\+\_\+skip\+\_\+rsa\+\_\+key\+\_\+validation}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load private key from OpenSSH custom encoding.\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a3a7682b9b9a9e1247a363aa3a8924a67}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!load\_ssh\_public\_identity@{load\_ssh\_public\_identity}}
+\index{load\_ssh\_public\_identity@{load\_ssh\_public\_identity}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{load\_ssh\_public\_identity()}{load\_ssh\_public\_identity()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a3a7682b9b9a9e1247a363aa3a8924a67} 
+ \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1_s_s_h_certificate}{SSHCertificate}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+load\+\_\+ssh\+\_\+public\+\_\+identity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a02859e0a2db0b336ab2daa833139e093}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!load\_ssh\_public\_key@{load\_ssh\_public\_key}}
+\index{load\_ssh\_public\_key@{load\_ssh\_public\_key}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{load\_ssh\_public\_key()}{load\_ssh\_public\_key()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a02859e0a2db0b336ab2daa833139e093} 
+ \mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+load\+\_\+ssh\+\_\+public\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{data}{, }\item[{typing.\+Any }]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a9351d914cfaf9afe836abd4b3e0cdf51}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!serialize\_ssh\_public\_key@{serialize\_ssh\_public\_key}}
+\index{serialize\_ssh\_public\_key@{serialize\_ssh\_public\_key}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{serialize\_ssh\_public\_key()}{serialize\_ssh\_public\_key()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a9351d914cfaf9afe836abd4b3e0cdf51} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+serialize\+\_\+ssh\+\_\+public\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}}}]{public\+\_\+key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}One-line public key format for OpenSSH\end{DoxyVerb}
+ \Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa6deffb9d59e668584229dcf87f30d7d}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!ssh\_key\_fingerprint@{ssh\_key\_fingerprint}}
+\index{ssh\_key\_fingerprint@{ssh\_key\_fingerprint}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{ssh\_key\_fingerprint()}{ssh\_key\_fingerprint()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa6deffb9d59e668584229dcf87f30d7d} 
+ bytes cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+ssh\+\_\+key\+\_\+fingerprint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}{SSHPublic\+Key\+Types}}}]{key}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_m_d5}{hashes.\+MD5}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_s_h_a256}{hashes.\+SHA256}}}]{hash\+\_\+algorithm}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a0a2304df6edaf6437deb1584889e720c}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_BCRYPT@{\_BCRYPT}}
+\index{\_BCRYPT@{\_BCRYPT}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_BCRYPT}{\_BCRYPT}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a0a2304df6edaf6437deb1584889e720c} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+BCRYPT = b"{}bcrypt"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a5ae0997e73d48106e6f6157b3e4eb044}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_bcrypt\_supported@{\_bcrypt\_supported}}
+\index{\_bcrypt\_supported@{\_bcrypt\_supported}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_bcrypt\_supported}{\_bcrypt\_supported}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a5ae0997e73d48106e6f6157b3e4eb044} 
+bool cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+bcrypt\+\_\+supported = True\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_abc96c7d9c28607e35a2374e083f715d2}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_CERT\_SUFFIX@{\_CERT\_SUFFIX}}
+\index{\_CERT\_SUFFIX@{\_CERT\_SUFFIX}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_CERT\_SUFFIX}{\_CERT\_SUFFIX}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_abc96c7d9c28607e35a2374e083f715d2} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+CERT\+\_\+\+SUFFIX = b"{}-\/cert-\/v01@openssh.\+com"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac4bab85c9decfe029eb86278f633c92c}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_DEFAULT\_CIPHER@{\_DEFAULT\_CIPHER}}
+\index{\_DEFAULT\_CIPHER@{\_DEFAULT\_CIPHER}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_DEFAULT\_CIPHER}{\_DEFAULT\_CIPHER}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ac4bab85c9decfe029eb86278f633c92c} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+DEFAULT\+\_\+\+CIPHER = b"{}aes256-\/ctr"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a7cc4089de0a3a66ffc1e66a193204663}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_DEFAULT\_ROUNDS@{\_DEFAULT\_ROUNDS}}
+\index{\_DEFAULT\_ROUNDS@{\_DEFAULT\_ROUNDS}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_DEFAULT\_ROUNDS}{\_DEFAULT\_ROUNDS}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a7cc4089de0a3a66ffc1e66a193204663} 
+int cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+DEFAULT\+\_\+\+ROUNDS = 16\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_afb57d2b493a1f513d6aaff06353524dd}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_ECDSA\_KEY\_TYPE@{\_ECDSA\_KEY\_TYPE}}
+\index{\_ECDSA\_KEY\_TYPE@{\_ECDSA\_KEY\_TYPE}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_ECDSA\_KEY\_TYPE}{\_ECDSA\_KEY\_TYPE}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_afb57d2b493a1f513d6aaff06353524dd} 
+dict cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+ECDSA\+\_\+\+KEY\+\_\+\+TYPE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}secp256r1"{}}:\ \_ECDSA\_NISTP256,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}secp384r1"{}}:\ \_ECDSA\_NISTP384,}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}secp521r1"{}}:\ \_ECDSA\_NISTP521,}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_af29e8f1a76e177c05010bc0750d89a0f}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_ECDSA\_NISTP256@{\_ECDSA\_NISTP256}}
+\index{\_ECDSA\_NISTP256@{\_ECDSA\_NISTP256}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_ECDSA\_NISTP256}{\_ECDSA\_NISTP256}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_af29e8f1a76e177c05010bc0750d89a0f} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+ECDSA\+\_\+\+NISTP256 = b"{}ecdsa-\/sha2-\/nistp256"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a7c99b7628c9d1d562356b470c7a0529e}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_ECDSA\_NISTP384@{\_ECDSA\_NISTP384}}
+\index{\_ECDSA\_NISTP384@{\_ECDSA\_NISTP384}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_ECDSA\_NISTP384}{\_ECDSA\_NISTP384}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a7c99b7628c9d1d562356b470c7a0529e} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+ECDSA\+\_\+\+NISTP384 = b"{}ecdsa-\/sha2-\/nistp384"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ab47570b54f27e807ae65ef913673bd6c}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_ECDSA\_NISTP521@{\_ECDSA\_NISTP521}}
+\index{\_ECDSA\_NISTP521@{\_ECDSA\_NISTP521}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_ECDSA\_NISTP521}{\_ECDSA\_NISTP521}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ab47570b54f27e807ae65ef913673bd6c} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+ECDSA\+\_\+\+NISTP521 = b"{}ecdsa-\/sha2-\/nistp521"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa2972e1bfa63dd006acc029e2d1253cd}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_KEY\_FORMATS@{\_KEY\_FORMATS}}
+\index{\_KEY\_FORMATS@{\_KEY\_FORMATS}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_KEY\_FORMATS}{\_KEY\_FORMATS}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_aa2972e1bfa63dd006acc029e2d1253cd} 
+dict cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+KEY\+\_\+\+FORMATS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \_SSH\_RSA:\ \_SSHFormatRSA(),}
+\DoxyCodeLine{00003\ \ \ \ \ \_SSH\_DSA:\ \_SSHFormatDSA(),}
+\DoxyCodeLine{00004\ \ \ \ \ \_SSH\_ED25519:\ \_SSHFormatEd25519(),}
+\DoxyCodeLine{00005\ \ \ \ \ \_ECDSA\_NISTP256:\ \_SSHFormatECDSA(b\textcolor{stringliteral}{"{}nistp256"{}},\ ec.SECP256R1()),}
+\DoxyCodeLine{00006\ \ \ \ \ \_ECDSA\_NISTP384:\ \_SSHFormatECDSA(b\textcolor{stringliteral}{"{}nistp384"{}},\ ec.SECP384R1()),}
+\DoxyCodeLine{00007\ \ \ \ \ \_ECDSA\_NISTP521:\ \_SSHFormatECDSA(b\textcolor{stringliteral}{"{}nistp521"{}},\ ec.SECP521R1()),}
+\DoxyCodeLine{00008\ \ \ \ \ \_SK\_SSH\_ED25519:\ \_SSHFormatSKEd25519(),}
+\DoxyCodeLine{00009\ \ \ \ \ \_SK\_SSH\_ECDSA\_NISTP256:\ \_SSHFormatSKECDSA(),}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a79ccc53f6fce84b116c70579cfbc771b}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_NONE@{\_NONE}}
+\index{\_NONE@{\_NONE}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_NONE}{\_NONE}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a79ccc53f6fce84b116c70579cfbc771b} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+NONE = b"{}none"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a1622203984684a6ac388265ac1c9d5f4}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_PADDING@{\_PADDING}}
+\index{\_PADDING@{\_PADDING}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_PADDING}{\_PADDING}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a1622203984684a6ac388265ac1c9d5f4} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+PADDING = memoryview(bytearray(range(1, 1 + 16)))\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a64ffe5ddddee19dd65385fe81add4ae7}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_PEM\_RC@{\_PEM\_RC}}
+\index{\_PEM\_RC@{\_PEM\_RC}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_PEM\_RC}{\_PEM\_RC}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a64ffe5ddddee19dd65385fe81add4ae7} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+PEM\+\_\+\+RC = re.\+compile(\mbox{\hyperlink{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201}{\+\_\+\+SK\+\_\+\+START}} + b"{}(.\texorpdfstring{$\ast$}{*}?)"{} + \+\_\+\+SK\+\_\+\+END, re.\+DOTALL)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2382ff1ec61169765d1ef4e91ca3f991}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SK\_END@{\_SK\_END}}
+\index{\_SK\_END@{\_SK\_END}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SK\_END}{\_SK\_END}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a2382ff1ec61169765d1ef4e91ca3f991} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SK\+\_\+\+END = b"{}-\/-\/-\/-\/-\/END OPENSSH PRIVATE KEY-\/-\/-\/-\/-\/"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ab1bbdcae85ee6608950b5f59cce945c3}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SK\_MAGIC@{\_SK\_MAGIC}}
+\index{\_SK\_MAGIC@{\_SK\_MAGIC}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SK\_MAGIC}{\_SK\_MAGIC}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ab1bbdcae85ee6608950b5f59cce945c3} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SK\+\_\+\+MAGIC = b"{}openssh-\/key-\/v1\textbackslash{}0"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ad7b86c5c81f6cf7749bfccedcf8e13f1}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SK\_SSH\_ECDSA\_NISTP256@{\_SK\_SSH\_ECDSA\_NISTP256}}
+\index{\_SK\_SSH\_ECDSA\_NISTP256@{\_SK\_SSH\_ECDSA\_NISTP256}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SK\_SSH\_ECDSA\_NISTP256}{\_SK\_SSH\_ECDSA\_NISTP256}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ad7b86c5c81f6cf7749bfccedcf8e13f1} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SK\+\_\+\+SSH\+\_\+\+ECDSA\+\_\+\+NISTP256 = b"{}sk-\/ecdsa-\/sha2-\/nistp256@openssh.\+com"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a972fd08ca58d71437addf8350050113a}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SK\_SSH\_ED25519@{\_SK\_SSH\_ED25519}}
+\index{\_SK\_SSH\_ED25519@{\_SK\_SSH\_ED25519}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SK\_SSH\_ED25519}{\_SK\_SSH\_ED25519}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a972fd08ca58d71437addf8350050113a} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SK\+\_\+\+SSH\+\_\+\+ED25519 = b"{}sk-\/ssh-\/ed25519@openssh.\+com"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SK\_START@{\_SK\_START}}
+\index{\_SK\_START@{\_SK\_START}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SK\_START}{\_SK\_START}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a8b216cb8a0afcccc2106cd93b725a201} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SK\+\_\+\+START = b"{}-\/-\/-\/-\/-\/BEGIN OPENSSH PRIVATE KEY-\/-\/-\/-\/-\/"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a6111674c6d2dff7764ce41e8c4518323}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSH\_DSA@{\_SSH\_DSA}}
+\index{\_SSH\_DSA@{\_SSH\_DSA}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSH\_DSA}{\_SSH\_DSA}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a6111674c6d2dff7764ce41e8c4518323} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSH\+\_\+\+DSA = b"{}ssh-\/dss"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a5b4839535e79c0511628d428ccae7988}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSH\_ED25519@{\_SSH\_ED25519}}
+\index{\_SSH\_ED25519@{\_SSH\_ED25519}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSH\_ED25519}{\_SSH\_ED25519}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a5b4839535e79c0511628d428ccae7988} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSH\+\_\+\+ED25519 = b"{}ssh-\/ed25519"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a073d2c7c10259d7df3a38502e724e4fa}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSH\_PUBKEY\_RC@{\_SSH\_PUBKEY\_RC}}
+\index{\_SSH\_PUBKEY\_RC@{\_SSH\_PUBKEY\_RC}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSH\_PUBKEY\_RC}{\_SSH\_PUBKEY\_RC}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a073d2c7c10259d7df3a38502e724e4fa} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSH\+\_\+\+PUBKEY\+\_\+\+RC = re.\+compile(rb"{}\textbackslash{}A(\textbackslash{}S+)\mbox{[} \textbackslash{}t\mbox{]}+(\textbackslash{}S+)"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a629b5b04cec9a4b4006608242182a519}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSH\_RSA@{\_SSH\_RSA}}
+\index{\_SSH\_RSA@{\_SSH\_RSA}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSH\_RSA}{\_SSH\_RSA}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a629b5b04cec9a4b4006608242182a519} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSH\+\_\+\+RSA = b"{}ssh-\/rsa"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a4f6ca2fdd72449b3046b094c226803cf}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSH\_RSA\_SHA256@{\_SSH\_RSA\_SHA256}}
+\index{\_SSH\_RSA\_SHA256@{\_SSH\_RSA\_SHA256}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSH\_RSA\_SHA256}{\_SSH\_RSA\_SHA256}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a4f6ca2fdd72449b3046b094c226803cf} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSH\+\_\+\+RSA\+\_\+\+SHA256 = b"{}rsa-\/sha2-\/256"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a365f5d306bc6f85b16120bd03dd7bf7d}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSH\_RSA\_SHA512@{\_SSH\_RSA\_SHA512}}
+\index{\_SSH\_RSA\_SHA512@{\_SSH\_RSA\_SHA512}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSH\_RSA\_SHA512}{\_SSH\_RSA\_SHA512}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a365f5d306bc6f85b16120bd03dd7bf7d} 
+str cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSH\+\_\+\+RSA\+\_\+\+SHA512 = b"{}rsa-\/sha2-\/512"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a85fd88f755630f6b31668542902c8671}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!\_SSHKEY\_CERT\_MAX\_PRINCIPALS@{\_SSHKEY\_CERT\_MAX\_PRINCIPALS}}
+\index{\_SSHKEY\_CERT\_MAX\_PRINCIPALS@{\_SSHKEY\_CERT\_MAX\_PRINCIPALS}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{\_SSHKEY\_CERT\_MAX\_PRINCIPALS}{\_SSHKEY\_CERT\_MAX\_PRINCIPALS}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a85fd88f755630f6b31668542902c8671} 
+int cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHKEY\+\_\+\+CERT\+\_\+\+MAX\+\_\+\+PRINCIPALS = 256\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_abd313c601e7c747fc64e069278900382}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!SSHCertPrivateKeyTypes@{SSHCertPrivateKeyTypes}}
+\index{SSHCertPrivateKeyTypes@{SSHCertPrivateKeyTypes}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{SSHCertPrivateKeyTypes}{SSHCertPrivateKeyTypes}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_abd313c601e7c747fc64e069278900382} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+SSHCert\+Private\+Key\+Types}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Union[}
+\DoxyCodeLine{00002\ \ \ \ \ ec.EllipticCurvePrivateKey,}
+\DoxyCodeLine{00003\ \ \ \ \ rsa.RSAPrivateKey,}
+\DoxyCodeLine{00004\ \ \ \ \ ed25519.Ed25519PrivateKey,}
+\DoxyCodeLine{00005\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a34a5eced98bb7e8e2afbdbbf56025d8c}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!SSHCertPublicKeyTypes@{SSHCertPublicKeyTypes}}
+\index{SSHCertPublicKeyTypes@{SSHCertPublicKeyTypes}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{SSHCertPublicKeyTypes}{SSHCertPublicKeyTypes}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a34a5eced98bb7e8e2afbdbbf56025d8c} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+SSHCert\+Public\+Key\+Types}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Union[}
+\DoxyCodeLine{00002\ \ \ \ \ ec.EllipticCurvePublicKey,}
+\DoxyCodeLine{00003\ \ \ \ \ rsa.RSAPublicKey,}
+\DoxyCodeLine{00004\ \ \ \ \ ed25519.Ed25519PublicKey,}
+\DoxyCodeLine{00005\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!SSHPrivateKeyTypes@{SSHPrivateKeyTypes}}
+\index{SSHPrivateKeyTypes@{SSHPrivateKeyTypes}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{SSHPrivateKeyTypes}{SSHPrivateKeyTypes}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_a58aaf0b771e68ff3f3a52a11916f0bfe} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+SSHPrivate\+Key\+Types}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Union[}
+\DoxyCodeLine{00002\ \ \ \ \ ec.EllipticCurvePrivateKey,}
+\DoxyCodeLine{00003\ \ \ \ \ rsa.RSAPrivateKey,}
+\DoxyCodeLine{00004\ \ \ \ \ dsa.DSAPrivateKey,}
+\DoxyCodeLine{00005\ \ \ \ \ ed25519.Ed25519PrivateKey,}
+\DoxyCodeLine{00006\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c}\index{cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}!SSHPublicKeyTypes@{SSHPublicKeyTypes}}
+\index{SSHPublicKeyTypes@{SSHPublicKeyTypes}!cryptography.hazmat.primitives.serialization.ssh@{cryptography.hazmat.primitives.serialization.ssh}}
+\doxysubsubsection{\texorpdfstring{SSHPublicKeyTypes}{SSHPublicKeyTypes}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_ae6c8e3da3c36577ef9e7cd74ccaffd8c} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+SSHPublic\+Key\+Types}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ typing.Union[}
+\DoxyCodeLine{00002\ \ \ \ \ ec.EllipticCurvePublicKey,}
+\DoxyCodeLine{00003\ \ \ \ \ rsa.RSAPublicKey,}
+\DoxyCodeLine{00004\ \ \ \ \ dsa.DSAPublicKey,}
+\DoxyCodeLine{00005\ \ \ \ \ ed25519.Ed25519PublicKey,}
+\DoxyCodeLine{00006\ ]}
+
+\end{DoxyCode}

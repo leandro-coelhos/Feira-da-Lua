@@ -1,0 +1,190 @@
+\doxysection{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base Class Reference}
+\hypertarget{class__pytest_1_1python__api_1_1_approx_base}{}\label{class__pytest_1_1python__api_1_1_approx_base}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+Inheritance diagram for \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.680000cm]{class__pytest_1_1python__api_1_1_approx_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a696cbab56cb392ba04ff4de4fd350bb5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_aac0bb006394d73366dc72f44e61c11fd}{expected}}, \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a11749ff983de0e5feb70a30cc2aa8476}{rel}}=None, \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a6862bbae94147a9837f7d15e0e84d8ee}{abs}}=None, bool \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a27c3ed180412800f50f6ea5ed5991b0a}{nan\+\_\+ok}}=False)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_abf12f13c1a82d770fd935154cb47e21b}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a38c9d72d469f992fa2d02758f8394657}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, actual)
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a6b9639601fda69140633e40c2bee4703}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a8c836d96795daa8fbe278106b01a2731}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, actual)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_aac0bb006394d73366dc72f44e61c11fd}{expected}} = expected
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a6862bbae94147a9837f7d15e0e84d8ee}{abs}} = abs
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a11749ff983de0e5feb70a30cc2aa8476}{rel}} = rel
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a27c3ed180412800f50f6ea5ed5991b0a}{nan\+\_\+ok}} = nan\+\_\+ok
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a40700b61c0b0a44db60b4e9402ae6a6b}{\+\_\+repr\+\_\+compare}} (self, Any other\+\_\+side)
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_scalar}{Approx\+Scalar}} \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a50c9d360a99bde083716b7967b84e9e2}{\+\_\+approx\+\_\+scalar}} (self, x)
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a72ebc76ab16eaec656930bb2b2ca648d}{\+\_\+yield\+\_\+comparisons}} (self, actual)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a92108388ba3920c6d8780a2b8753ce43}{\+\_\+check\+\_\+type}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a444b34b985f874cb6a0e1ab00f9cb2ce}{\+\_\+\+\_\+array\+\_\+ufunc\+\_\+\+\_\+}} = None
+\item 
+int \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_a836ab223318aa030ef9152ef753c9315}{\+\_\+\+\_\+array\+\_\+priority\+\_\+\+\_\+}} = 100
+\item 
+\mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_base_ab6a5027a9a57b94d21cc2a8bd1655899}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provide shared utilities for making approximate comparisons between
+numbers or sequences of numbers.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a696cbab56cb392ba04ff4de4fd350bb5}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a696cbab56cb392ba04ff4de4fd350bb5} 
+ None \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{expected}{, }\item[{}]{rel}{ = {\ttfamily None}, }\item[{}]{abs}{ = {\ttfamily None}, }\item[{bool }]{nan\+\_\+ok}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a6b9639601fda69140633e40c2bee4703}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a6b9639601fda69140633e40c2bee4703} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a38c9d72d469f992fa2d02758f8394657}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a38c9d72d469f992fa2d02758f8394657} 
+ bool \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a8c836d96795daa8fbe278106b01a2731}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_ne\_\_@{\_\_ne\_\_}}
+\index{\_\_ne\_\_@{\_\_ne\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_ne\_\_()}{\_\_ne\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a8c836d96795daa8fbe278106b01a2731} 
+ bool \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+ne\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_abf12f13c1a82d770fd935154cb47e21b}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_abf12f13c1a82d770fd935154cb47e21b} 
+ str \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a50c9d360a99bde083716b7967b84e9e2}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_approx\_scalar@{\_approx\_scalar}}
+\index{\_approx\_scalar@{\_approx\_scalar}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_approx\_scalar()}{\_approx\_scalar()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a50c9d360a99bde083716b7967b84e9e2} 
+ \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_scalar}{Approx\+Scalar}} \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+approx\+\_\+scalar (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a92108388ba3920c6d8780a2b8753ce43}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_check\_type@{\_check\_type}}
+\index{\_check\_type@{\_check\_type}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_check\_type()}{\_check\_type()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a92108388ba3920c6d8780a2b8753ce43} 
+ None \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+check\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Raise a TypeError if the expected value is not a valid type.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_mapping_a6eb9ce49f6306aea93a5fc548c8d2b98}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Mapping}}, and \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_sequence_like_a0972fc8a1d2e8a80933bb7d38885f562}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Sequence\+Like}}.
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a40700b61c0b0a44db60b4e9402ae6a6b}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_repr\_compare@{\_repr\_compare}}
+\index{\_repr\_compare@{\_repr\_compare}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_repr\_compare()}{\_repr\_compare()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a40700b61c0b0a44db60b4e9402ae6a6b} 
+ list\mbox{[}str\mbox{]} \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+repr\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{other\+\_\+side}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_mapping_abd119068656bbdd6185d473d110cc9a7}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Mapping}}, \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_numpy_a5861979e0e7cde62bca444bbaec481e7}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Numpy}}, and \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_sequence_like_a55c0741b1ea8f7ef040a399165d0dc6a}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Sequence\+Like}}.
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a72ebc76ab16eaec656930bb2b2ca648d}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_yield\_comparisons@{\_yield\_comparisons}}
+\index{\_yield\_comparisons@{\_yield\_comparisons}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_yield\_comparisons()}{\_yield\_comparisons()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a72ebc76ab16eaec656930bb2b2ca648d} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+yield\+\_\+comparisons (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{actual}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Yield all the pairs of numbers to be compared.
+
+This is used to implement the `__eq__` method.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_mapping_ad73b69021bb309771ed6cddb0604ff01}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Mapping}}, \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_numpy_a88edaa9e746b04243db42dcb891dab9c}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Numpy}}, and \mbox{\hyperlink{class__pytest_1_1python__api_1_1_approx_sequence_like_a4ae5386c2f8505b97d6bbef7448b703e}{\+\_\+pytest.\+python\+\_\+api.\+Approx\+Sequence\+Like}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a836ab223318aa030ef9152ef753c9315}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_array\_priority\_\_@{\_\_array\_priority\_\_}}
+\index{\_\_array\_priority\_\_@{\_\_array\_priority\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_array\_priority\_\_}{\_\_array\_priority\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a836ab223318aa030ef9152ef753c9315} 
+int \+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+array\+\_\+priority\+\_\+\+\_\+ = 100\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a444b34b985f874cb6a0e1ab00f9cb2ce}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_array\_ufunc\_\_@{\_\_array\_ufunc\_\_}}
+\index{\_\_array\_ufunc\_\_@{\_\_array\_ufunc\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_array\_ufunc\_\_}{\_\_array\_ufunc\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a444b34b985f874cb6a0e1ab00f9cb2ce} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+array\+\_\+ufunc\+\_\+\+\_\+ = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_ab6a5027a9a57b94d21cc2a8bd1655899}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_}{\_\_hash\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_ab6a5027a9a57b94d21cc2a8bd1655899} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+\_\+\+\_\+hash\+\_\+\+\_\+ = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a6862bbae94147a9837f7d15e0e84d8ee}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!abs@{abs}}
+\index{abs@{abs}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{abs}{abs}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a6862bbae94147a9837f7d15e0e84d8ee} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+abs = abs}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_aac0bb006394d73366dc72f44e61c11fd}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!expected@{expected}}
+\index{expected@{expected}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{expected}{expected}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_aac0bb006394d73366dc72f44e61c11fd} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+expected = expected}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a27c3ed180412800f50f6ea5ed5991b0a}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!nan\_ok@{nan\_ok}}
+\index{nan\_ok@{nan\_ok}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{nan\_ok}{nan\_ok}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a27c3ed180412800f50f6ea5ed5991b0a} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+nan\+\_\+ok = nan\+\_\+ok}
+
+\Hypertarget{class__pytest_1_1python__api_1_1_approx_base_a11749ff983de0e5feb70a30cc2aa8476}\index{\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}!rel@{rel}}
+\index{rel@{rel}!\_pytest.python\_api.ApproxBase@{\_pytest.python\_api.ApproxBase}}
+\doxysubsubsection{\texorpdfstring{rel}{rel}}
+{\footnotesize\ttfamily \label{class__pytest_1_1python__api_1_1_approx_base_a11749ff983de0e5feb70a30cc2aa8476} 
+\+\_\+pytest.\+python\+\_\+api.\+Approx\+Base.\+rel = rel}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{python__api_8py}{python\+\_\+api.\+py}}\end{DoxyCompactItemize}

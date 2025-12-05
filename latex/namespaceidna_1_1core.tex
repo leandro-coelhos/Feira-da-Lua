@@ -1,0 +1,198 @@
+\doxysection{idna.\+core Namespace Reference}
+\hypertarget{namespaceidna_1_1core}{}\label{namespaceidna_1_1core}\index{idna.core@{idna.core}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_i_d_n_a_bidi_error}{IDNABidi\+Error}}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_i_d_n_a_error}{IDNAError}}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_invalid_codepoint}{Invalid\+Codepoint}}
+\item 
+class \mbox{\hyperlink{classidna_1_1core_1_1_invalid_codepoint_context}{Invalid\+Codepoint\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceidna_1_1core_a05915bce0ec435d72957c20dfaba9938}{\+\_\+combining\+\_\+class}} (int cp)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_aa1187983fcf0ec94a34148fad0e98f92}{\+\_\+is\+\_\+script}} (str cp, str script)
+\item 
+bytes \mbox{\hyperlink{namespaceidna_1_1core_a470e05247369e9821aa94ad99ee51eed}{\+\_\+punycode}} (str s)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_aa868fd5d940b6f9c95ed7203b505ff45}{\+\_\+unot}} (int s)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_ae477ff3cb924813d2e192457c18a612e}{valid\+\_\+label\+\_\+length}} (Union\mbox{[}bytes, str\mbox{]} label)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a1ed46fc907538e236368225bc8fefeff}{valid\+\_\+string\+\_\+length}} (Union\mbox{[}bytes, str\mbox{]} label, bool trailing\+\_\+dot)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a21ab79641194313f059c72a072d9c793}{check\+\_\+bidi}} (str label, bool check\+\_\+ltr=False)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a252834e1840e1acbc11aff382cebade6}{check\+\_\+initial\+\_\+combiner}} (str label)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_ab51e8b986a4c1ca7d7587d235a901017}{check\+\_\+hyphen\+\_\+ok}} (str label)
+\item 
+None \mbox{\hyperlink{namespaceidna_1_1core_abe386a27ffe987939d2e85c3c473dd70}{check\+\_\+nfc}} (str label)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_a62925fce719083d073230550f193cbb0}{valid\+\_\+contextj}} (str label, int pos)
+\item 
+bool \mbox{\hyperlink{namespaceidna_1_1core_ae6625a1a17f4d6bd3ddaa6e57d0aa4a7}{valid\+\_\+contexto}} (str label, int pos, bool exception=False)
+\item 
+None \mbox{\hyperlink{namespaceidna_1_1core_a0e2ed8146dfe391d90d9547006414af2}{check\+\_\+label}} (Union\mbox{[}str, bytes, bytearray\mbox{]} label)
+\item 
+bytes \mbox{\hyperlink{namespaceidna_1_1core_ae7083b70c72c1b7d6c259fe866f5c3cf}{alabel}} (str label)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_a27a7946c0a83dfd9970adf21456999aa}{ulabel}} (Union\mbox{[}str, bytes, bytearray\mbox{]} label)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_af0bb4dfa31cc276b9da528c7ce63bd5c}{uts46\+\_\+remap}} (str domain, bool std3\+\_\+rules=True, bool transitional=False)
+\item 
+bytes \mbox{\hyperlink{namespaceidna_1_1core_a2f735dbc4c5b5235d69d3eece324a6a3}{encode}} (Union\mbox{[}str, bytes, bytearray\mbox{]} s, bool strict=False, bool uts46=False, bool std3\+\_\+rules=False, bool transitional=False)
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_a0989c4efda27998698dc13e4c2993fca}{decode}} (Union\mbox{[}str, bytes, bytearray\mbox{]} s, bool strict=False, bool uts46=False, bool std3\+\_\+rules=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceidna_1_1core_a57aad8eec1170b60e299d09a76397e36}{\+\_\+virama\+\_\+combining\+\_\+class}} = 9
+\item 
+str \mbox{\hyperlink{namespaceidna_1_1core_a7a65bc0a7fc00c36039d16c5586dfdfd}{\+\_\+alabel\+\_\+prefix}} = b"{}xn-\/-\/"{}
+\item 
+\mbox{\hyperlink{namespaceidna_1_1core_a00765efcf0b7ac21f70164da6bff294c}{\+\_\+unicode\+\_\+dots\+\_\+re}} = re.\+compile("{}\mbox{[}\textbackslash{}u002e\textbackslash{}u3002\textbackslash{}uff0e\textbackslash{}uff61\mbox{]}"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceidna_1_1core_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceidna_1_1core_a05915bce0ec435d72957c20dfaba9938}\index{idna.core@{idna.core}!\_combining\_class@{\_combining\_class}}
+\index{\_combining\_class@{\_combining\_class}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_combining\_class()}{\_combining\_class()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a05915bce0ec435d72957c20dfaba9938} 
+ int idna.\+core.\+\_\+combining\+\_\+class (\begin{DoxyParamCaption}\item[{int}]{cp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceidna_1_1core_aa1187983fcf0ec94a34148fad0e98f92}\index{idna.core@{idna.core}!\_is\_script@{\_is\_script}}
+\index{\_is\_script@{\_is\_script}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_is\_script()}{\_is\_script()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_aa1187983fcf0ec94a34148fad0e98f92} 
+ bool idna.\+core.\+\_\+is\+\_\+script (\begin{DoxyParamCaption}\item[{str}]{cp}{, }\item[{str}]{script}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceidna_1_1core_a470e05247369e9821aa94ad99ee51eed}\index{idna.core@{idna.core}!\_punycode@{\_punycode}}
+\index{\_punycode@{\_punycode}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_punycode()}{\_punycode()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a470e05247369e9821aa94ad99ee51eed} 
+ bytes idna.\+core.\+\_\+punycode (\begin{DoxyParamCaption}\item[{str}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceidna_1_1core_aa868fd5d940b6f9c95ed7203b505ff45}\index{idna.core@{idna.core}!\_unot@{\_unot}}
+\index{\_unot@{\_unot}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_unot()}{\_unot()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_aa868fd5d940b6f9c95ed7203b505ff45} 
+ str idna.\+core.\+\_\+unot (\begin{DoxyParamCaption}\item[{int}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceidna_1_1core_ae7083b70c72c1b7d6c259fe866f5c3cf}\index{idna.core@{idna.core}!alabel@{alabel}}
+\index{alabel@{alabel}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{alabel()}{alabel()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_ae7083b70c72c1b7d6c259fe866f5c3cf} 
+ bytes idna.\+core.\+alabel (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a21ab79641194313f059c72a072d9c793}\index{idna.core@{idna.core}!check\_bidi@{check\_bidi}}
+\index{check\_bidi@{check\_bidi}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_bidi()}{check\_bidi()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a21ab79641194313f059c72a072d9c793} 
+ bool idna.\+core.\+check\+\_\+bidi (\begin{DoxyParamCaption}\item[{str}]{label}{, }\item[{bool }]{check\+\_\+ltr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_ab51e8b986a4c1ca7d7587d235a901017}\index{idna.core@{idna.core}!check\_hyphen\_ok@{check\_hyphen\_ok}}
+\index{check\_hyphen\_ok@{check\_hyphen\_ok}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_hyphen\_ok()}{check\_hyphen\_ok()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_ab51e8b986a4c1ca7d7587d235a901017} 
+ bool idna.\+core.\+check\+\_\+hyphen\+\_\+ok (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a252834e1840e1acbc11aff382cebade6}\index{idna.core@{idna.core}!check\_initial\_combiner@{check\_initial\_combiner}}
+\index{check\_initial\_combiner@{check\_initial\_combiner}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_initial\_combiner()}{check\_initial\_combiner()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a252834e1840e1acbc11aff382cebade6} 
+ bool idna.\+core.\+check\+\_\+initial\+\_\+combiner (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a0e2ed8146dfe391d90d9547006414af2}\index{idna.core@{idna.core}!check\_label@{check\_label}}
+\index{check\_label@{check\_label}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_label()}{check\_label()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a0e2ed8146dfe391d90d9547006414af2} 
+ None idna.\+core.\+check\+\_\+label (\begin{DoxyParamCaption}\item[{Union\mbox{[}str, bytes, bytearray\mbox{]}}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_abe386a27ffe987939d2e85c3c473dd70}\index{idna.core@{idna.core}!check\_nfc@{check\_nfc}}
+\index{check\_nfc@{check\_nfc}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_nfc()}{check\_nfc()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_abe386a27ffe987939d2e85c3c473dd70} 
+ None idna.\+core.\+check\+\_\+nfc (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a0989c4efda27998698dc13e4c2993fca}\index{idna.core@{idna.core}!decode@{decode}}
+\index{decode@{decode}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a0989c4efda27998698dc13e4c2993fca} 
+ str idna.\+core.\+decode (\begin{DoxyParamCaption}\item[{Union\mbox{[}str, bytes, bytearray\mbox{]}}]{s}{, }\item[{bool }]{strict}{ = {\ttfamily False}, }\item[{bool }]{uts46}{ = {\ttfamily False}, }\item[{bool }]{std3\+\_\+rules}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a2f735dbc4c5b5235d69d3eece324a6a3}\index{idna.core@{idna.core}!encode@{encode}}
+\index{encode@{encode}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a2f735dbc4c5b5235d69d3eece324a6a3} 
+ bytes idna.\+core.\+encode (\begin{DoxyParamCaption}\item[{Union\mbox{[}str, bytes, bytearray\mbox{]}}]{s}{, }\item[{bool }]{strict}{ = {\ttfamily False}, }\item[{bool }]{uts46}{ = {\ttfamily False}, }\item[{bool }]{std3\+\_\+rules}{ = {\ttfamily False}, }\item[{bool }]{transitional}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a27a7946c0a83dfd9970adf21456999aa}\index{idna.core@{idna.core}!ulabel@{ulabel}}
+\index{ulabel@{ulabel}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{ulabel()}{ulabel()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a27a7946c0a83dfd9970adf21456999aa} 
+ str idna.\+core.\+ulabel (\begin{DoxyParamCaption}\item[{Union\mbox{[}str, bytes, bytearray\mbox{]}}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_af0bb4dfa31cc276b9da528c7ce63bd5c}\index{idna.core@{idna.core}!uts46\_remap@{uts46\_remap}}
+\index{uts46\_remap@{uts46\_remap}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{uts46\_remap()}{uts46\_remap()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_af0bb4dfa31cc276b9da528c7ce63bd5c} 
+ str idna.\+core.\+uts46\+\_\+remap (\begin{DoxyParamCaption}\item[{str}]{domain}{, }\item[{bool }]{std3\+\_\+rules}{ = {\ttfamily True}, }\item[{bool }]{transitional}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Re-map the characters in the string according to UTS46 processing.\end{DoxyVerb}
+ \Hypertarget{namespaceidna_1_1core_a62925fce719083d073230550f193cbb0}\index{idna.core@{idna.core}!valid\_contextj@{valid\_contextj}}
+\index{valid\_contextj@{valid\_contextj}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_contextj()}{valid\_contextj()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a62925fce719083d073230550f193cbb0} 
+ bool idna.\+core.\+valid\+\_\+contextj (\begin{DoxyParamCaption}\item[{str}]{label}{, }\item[{int}]{pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_ae6625a1a17f4d6bd3ddaa6e57d0aa4a7}\index{idna.core@{idna.core}!valid\_contexto@{valid\_contexto}}
+\index{valid\_contexto@{valid\_contexto}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_contexto()}{valid\_contexto()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_ae6625a1a17f4d6bd3ddaa6e57d0aa4a7} 
+ bool idna.\+core.\+valid\+\_\+contexto (\begin{DoxyParamCaption}\item[{str}]{label}{, }\item[{int}]{pos}{, }\item[{bool }]{exception}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_ae477ff3cb924813d2e192457c18a612e}\index{idna.core@{idna.core}!valid\_label\_length@{valid\_label\_length}}
+\index{valid\_label\_length@{valid\_label\_length}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_label\_length()}{valid\_label\_length()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_ae477ff3cb924813d2e192457c18a612e} 
+ bool idna.\+core.\+valid\+\_\+label\+\_\+length (\begin{DoxyParamCaption}\item[{Union\mbox{[}bytes, str\mbox{]}}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceidna_1_1core_a1ed46fc907538e236368225bc8fefeff}\index{idna.core@{idna.core}!valid\_string\_length@{valid\_string\_length}}
+\index{valid\_string\_length@{valid\_string\_length}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_string\_length()}{valid\_string\_length()}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a1ed46fc907538e236368225bc8fefeff} 
+ bool idna.\+core.\+valid\+\_\+string\+\_\+length (\begin{DoxyParamCaption}\item[{Union\mbox{[}bytes, str\mbox{]}}]{label}{, }\item[{bool}]{trailing\+\_\+dot}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespaceidna_1_1core_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceidna_1_1core_a7a65bc0a7fc00c36039d16c5586dfdfd}\index{idna.core@{idna.core}!\_alabel\_prefix@{\_alabel\_prefix}}
+\index{\_alabel\_prefix@{\_alabel\_prefix}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_alabel\_prefix}{\_alabel\_prefix}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a7a65bc0a7fc00c36039d16c5586dfdfd} 
+str idna.\+core.\+\_\+alabel\+\_\+prefix = b"{}xn-\/-\/"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceidna_1_1core_a00765efcf0b7ac21f70164da6bff294c}\index{idna.core@{idna.core}!\_unicode\_dots\_re@{\_unicode\_dots\_re}}
+\index{\_unicode\_dots\_re@{\_unicode\_dots\_re}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_unicode\_dots\_re}{\_unicode\_dots\_re}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a00765efcf0b7ac21f70164da6bff294c} 
+idna.\+core.\+\_\+unicode\+\_\+dots\+\_\+re = re.\+compile("{}\mbox{[}\textbackslash{}u002e\textbackslash{}u3002\textbackslash{}uff0e\textbackslash{}uff61\mbox{]}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceidna_1_1core_a57aad8eec1170b60e299d09a76397e36}\index{idna.core@{idna.core}!\_virama\_combining\_class@{\_virama\_combining\_class}}
+\index{\_virama\_combining\_class@{\_virama\_combining\_class}!idna.core@{idna.core}}
+\doxysubsubsection{\texorpdfstring{\_virama\_combining\_class}{\_virama\_combining\_class}}
+{\footnotesize\ttfamily \label{namespaceidna_1_1core_a57aad8eec1170b60e299d09a76397e36} 
+int idna.\+core.\+\_\+virama\+\_\+combining\+\_\+class = 9\hspace{0.3cm}{\ttfamily [protected]}}
+

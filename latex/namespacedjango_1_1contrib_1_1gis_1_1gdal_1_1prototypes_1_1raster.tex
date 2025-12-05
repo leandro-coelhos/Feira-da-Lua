@@ -1,0 +1,564 @@
+\doxysection{django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster}{}\label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}} = partial(void\+\_\+output, cpl=True)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}} = partial(const\+\_\+string\+\_\+output, cpl=True)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac04a4e359b93f2567bb713349a92f99c}{double\+\_\+output}} = partial(double\+\_\+output, cpl=True)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a56b8eb8f5a5f06900caae226ce868522}{create\+\_\+ds}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a42fde856f73d2986950f0a9978dc33c7}{open\+\_\+ds}} = voidptr\+\_\+output(std\+\_\+call("{}GDALOpen"{}), \mbox{[}c\+\_\+char\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa022b3b982cf56028780c25b6c5c0c72}{close\+\_\+ds}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}GDALClose"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a9668fff64e41319af82d690b7a6fc9c6}{flush\+\_\+ds}} = int\+\_\+output(std\+\_\+call("{}GDALFlush\+Cache"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a60fd79678a010c1ad5fb130f26216800}{copy\+\_\+ds}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_abc261cb57daae36a4e41eba9be3e682f}{add\+\_\+band\+\_\+ds}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}GDALAdd\+Band"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aac020de10039a4ee4e5c30f54780c1b4}{get\+\_\+ds\+\_\+description}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}}(std\+\_\+call("{}GDALGet\+Description"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa8b6effeda342d927a6c930ecfcfa508}{get\+\_\+ds\+\_\+driver}} = voidptr\+\_\+output(std\+\_\+call("{}GDALGet\+Dataset\+Driver"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac6d3a342b315917c69196f08050951d7}{get\+\_\+ds\+\_\+info}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}}(std\+\_\+call("{}GDALInfo"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a3e5e1a7334f2d34fc1629383e60f4c9d}{get\+\_\+ds\+\_\+xsize}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+XSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa44a10f021c6cb084aa5c39d901422c0}{get\+\_\+ds\+\_\+ysize}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+YSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a1a9605808c7196e27737166d3806a2ad}{get\+\_\+ds\+\_\+raster\+\_\+count}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Count"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ab73acb266ea9b0537de1c622373c887e}{get\+\_\+ds\+\_\+raster\+\_\+band}} = voidptr\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Band"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac59a7efdd1cf27a3a42489199b8596f6}{get\+\_\+ds\+\_\+projection\+\_\+ref}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a7485c71ac2cc56465493cd020ad67d06}{set\+\_\+ds\+\_\+projection\+\_\+ref}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}GDALSet\+Projection"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+char\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aeb4ba0e6bacd6edb05d19ece24412a0b}{get\+\_\+ds\+\_\+geotransform}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a678deb23dd7af502d3b9af7a2d75ff22}{set\+\_\+ds\+\_\+geotransform}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a8ee6cc40fa744caef23665227a797afc}{get\+\_\+ds\+\_\+metadata}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0c0a4890a1cabfefd42280bed16dfc25}{set\+\_\+ds\+\_\+metadata}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a76279492c2fe1f30e569115e865f922e}{get\+\_\+ds\+\_\+metadata\+\_\+domain\+\_\+list}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a47bd3bd0c29e48e5b93c942807a10933}{get\+\_\+ds\+\_\+metadata\+\_\+item}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aecc6e766707616bc8f06c5032aa5ca6c}{set\+\_\+ds\+\_\+metadata\+\_\+item}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_acbe910599f66f11900786b919d7769be}{free\+\_\+dsl}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}CSLDestroy"{}), \mbox{[}POINTER(c\+\_\+char\+\_\+p)\mbox{]}, errcheck=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_af7113d7e6e31f8d6c2b20aa920be5c60}{band\+\_\+io}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a5f0673fd44a186e2e82f20ce2df78c5d}{get\+\_\+band\+\_\+xsize}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Band\+XSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0eb57c892c38a8db40f4bd2944a92966}{get\+\_\+band\+\_\+ysize}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Band\+YSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a5446af413ab1b4662709f829e206b97a}{get\+\_\+band\+\_\+index}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Band\+Number"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a701c489225f6aeb5a1177706db3a5dd7}{get\+\_\+band\+\_\+description}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}}(std\+\_\+call("{}GDALGet\+Description"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0ffe4ff7cc81c1fcdd83b7859c7a37e9}{get\+\_\+band\+\_\+ds}} = voidptr\+\_\+output(std\+\_\+call("{}GDALGet\+Band\+Dataset"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a49befc6e352aecc0332605d19df98c0a}{get\+\_\+band\+\_\+datatype}} = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Data\+Type"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aab01e28207e21576763a186121098790}{get\+\_\+band\+\_\+color\+\_\+interp}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a7e46df544986237b505a499fb50d5308}{get\+\_\+band\+\_\+nodata\+\_\+value}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a955a3849c294b8507933a23fb8435111}{set\+\_\+band\+\_\+nodata\+\_\+value}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aee87050a5e781795cd792bc79ba86de2}{delete\+\_\+band\+\_\+nodata\+\_\+value}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa0fbe61ebbd12c66a4dd58f143facb9c}{get\+\_\+band\+\_\+statistics}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a01947389559f894b46b20aff35ee970e}{compute\+\_\+band\+\_\+statistics}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_adbadc962a9bac44c5e5fd602151e6bbd}{reproject\+\_\+image}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a9a3706ae9456f8003c294dcf0f8842cc}{auto\+\_\+create\+\_\+warped\+\_\+vrt}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a332027504e3b618af65f4f14ed4a486a}{create\+\_\+vsi\+\_\+file\+\_\+from\+\_\+mem\+\_\+buffer}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a69469256a0be31b32329e69b5fd09358}{get\+\_\+mem\+\_\+buffer\+\_\+from\+\_\+vsi\+\_\+file}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a309c3653d70666c1b20074f7543000ea}{unlink\+\_\+vsi\+\_\+file}} = int\+\_\+output(std\+\_\+call("{}VSIUnlink"{}), \mbox{[}c\+\_\+char\+\_\+p\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module houses the ctypes function prototypes for GDAL DataSource (raster)
+related data structures.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_abc261cb57daae36a4e41eba9be3e682f}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!add\_band\_ds@{add\_band\_ds}}
+\index{add\_band\_ds@{add\_band\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{add\_band\_ds}{add\_band\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_abc261cb57daae36a4e41eba9be3e682f} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+add\+\_\+band\+\_\+ds = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}GDALAdd\+Band"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a9a3706ae9456f8003c294dcf0f8842cc}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!auto\_create\_warped\_vrt@{auto\_create\_warped\_vrt}}
+\index{auto\_create\_warped\_vrt@{auto\_create\_warped\_vrt}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{auto\_create\_warped\_vrt}{auto\_create\_warped\_vrt}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a9a3706ae9456f8003c294dcf0f8842cc} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+auto\+\_\+create\+\_\+warped\+\_\+vrt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALAutoCreateWarpedVRT"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ [c\_void\_p,\ c\_char\_p,\ c\_char\_p,\ c\_int,\ c\_double,\ c\_void\_p],}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_af7113d7e6e31f8d6c2b20aa920be5c60}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!band\_io@{band\_io}}
+\index{band\_io@{band\_io}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{band\_io}{band\_io}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_af7113d7e6e31f8d6c2b20aa920be5c60} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+band\+\_\+io}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALRasterIO"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ [}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00016\ \ \ \ \ ],}
+\DoxyCodeLine{00017\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa022b3b982cf56028780c25b6c5c0c72}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!close\_ds@{close\_ds}}
+\index{close\_ds@{close\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{close\_ds}{close\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa022b3b982cf56028780c25b6c5c0c72} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+close\+\_\+ds = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}GDALClose"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a01947389559f894b46b20aff35ee970e}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!compute\_band\_statistics@{compute\_band\_statistics}}
+\index{compute\_band\_statistics@{compute\_band\_statistics}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{compute\_band\_statistics}{compute\_band\_statistics}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a01947389559f894b46b20aff35ee970e} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+compute\+\_\+band\+\_\+statistics}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALComputeRasterStatistics"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ [}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00012\ \ \ \ \ ],}
+\DoxyCodeLine{00013\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!const\_string\_output@{const\_string\_output}}
+\index{const\_string\_output@{const\_string\_output}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{const\_string\_output}{const\_string\_output}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+const\+\_\+string\+\_\+output = partial(const\+\_\+string\+\_\+output, cpl=True)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a60fd79678a010c1ad5fb130f26216800}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!copy\_ds@{copy\_ds}}
+\index{copy\_ds@{copy\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{copy\_ds}{copy\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a60fd79678a010c1ad5fb130f26216800} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+copy\+\_\+ds}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALCreateCopy"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ [c\_void\_p,\ c\_char\_p,\ c\_void\_p,\ c\_int,\ POINTER(c\_char\_p),\ c\_void\_p,\ c\_void\_p],}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a56b8eb8f5a5f06900caae226ce868522}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!create\_ds@{create\_ds}}
+\index{create\_ds@{create\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{create\_ds}{create\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a56b8eb8f5a5f06900caae226ce868522} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+create\+\_\+ds}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALCreate"{}}),\ [c\_void\_p,\ c\_char\_p,\ c\_int,\ c\_int,\ c\_int,\ c\_int,\ c\_void\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a332027504e3b618af65f4f14ed4a486a}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!create\_vsi\_file\_from\_mem\_buffer@{create\_vsi\_file\_from\_mem\_buffer}}
+\index{create\_vsi\_file\_from\_mem\_buffer@{create\_vsi\_file\_from\_mem\_buffer}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{create\_vsi\_file\_from\_mem\_buffer}{create\_vsi\_file\_from\_mem\_buffer}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a332027504e3b618af65f4f14ed4a486a} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+create\+\_\+vsi\+\_\+file\+\_\+from\+\_\+mem\+\_\+buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}VSIFileFromMemBuffer"{}}),\ [c\_char\_p,\ c\_void\_p,\ c\_int,\ c\_int]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aee87050a5e781795cd792bc79ba86de2}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!delete\_band\_nodata\_value@{delete\_band\_nodata\_value}}
+\index{delete\_band\_nodata\_value@{delete\_band\_nodata\_value}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{delete\_band\_nodata\_value}{delete\_band\_nodata\_value}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aee87050a5e781795cd792bc79ba86de2} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+delete\+\_\+band\+\_\+nodata\+\_\+value}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALDeleteRasterNoDataValue"{}}),\ [c\_void\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac04a4e359b93f2567bb713349a92f99c}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!double\_output@{double\_output}}
+\index{double\_output@{double\_output}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{double\_output}{double\_output}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac04a4e359b93f2567bb713349a92f99c} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+double\+\_\+output = partial(double\+\_\+output, cpl=True)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a9668fff64e41319af82d690b7a6fc9c6}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!flush\_ds@{flush\_ds}}
+\index{flush\_ds@{flush\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{flush\_ds}{flush\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a9668fff64e41319af82d690b7a6fc9c6} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+flush\+\_\+ds = int\+\_\+output(std\+\_\+call("{}GDALFlush\+Cache"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_acbe910599f66f11900786b919d7769be}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!free\_dsl@{free\_dsl}}
+\index{free\_dsl@{free\_dsl}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{free\_dsl}{free\_dsl}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_acbe910599f66f11900786b919d7769be} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+free\+\_\+dsl = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}CSLDestroy"{}), \mbox{[}POINTER(c\+\_\+char\+\_\+p)\mbox{]}, errcheck=False)}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aab01e28207e21576763a186121098790}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_color\_interp@{get\_band\_color\_interp}}
+\index{get\_band\_color\_interp@{get\_band\_color\_interp}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_color\_interp}{get\_band\_color\_interp}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aab01e28207e21576763a186121098790} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+color\+\_\+interp}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ int\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetRasterColorInterpretation"{}}),\ [c\_void\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a49befc6e352aecc0332605d19df98c0a}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_datatype@{get\_band\_datatype}}
+\index{get\_band\_datatype@{get\_band\_datatype}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_datatype}{get\_band\_datatype}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a49befc6e352aecc0332605d19df98c0a} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+datatype = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Data\+Type"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a701c489225f6aeb5a1177706db3a5dd7}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_description@{get\_band\_description}}
+\index{get\_band\_description@{get\_band\_description}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_description}{get\_band\_description}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a701c489225f6aeb5a1177706db3a5dd7} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+description = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}}(std\+\_\+call("{}GDALGet\+Description"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0ffe4ff7cc81c1fcdd83b7859c7a37e9}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_ds@{get\_band\_ds}}
+\index{get\_band\_ds@{get\_band\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_ds}{get\_band\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0ffe4ff7cc81c1fcdd83b7859c7a37e9} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+ds = voidptr\+\_\+output(std\+\_\+call("{}GDALGet\+Band\+Dataset"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a5446af413ab1b4662709f829e206b97a}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_index@{get\_band\_index}}
+\index{get\_band\_index@{get\_band\_index}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_index}{get\_band\_index}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a5446af413ab1b4662709f829e206b97a} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+index = int\+\_\+output(std\+\_\+call("{}GDALGet\+Band\+Number"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a7e46df544986237b505a499fb50d5308}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_nodata\_value@{get\_band\_nodata\_value}}
+\index{get\_band\_nodata\_value@{get\_band\_nodata\_value}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_nodata\_value}{get\_band\_nodata\_value}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a7e46df544986237b505a499fb50d5308} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+nodata\+\_\+value}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ double\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetRasterNoDataValue"{}}),\ [c\_void\_p,\ POINTER(c\_int)]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa0fbe61ebbd12c66a4dd58f143facb9c}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_statistics@{get\_band\_statistics}}
+\index{get\_band\_statistics@{get\_band\_statistics}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_statistics}{get\_band\_statistics}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa0fbe61ebbd12c66a4dd58f143facb9c} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+statistics}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetRasterStatistics"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ [}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ POINTER(c\_double),}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00013\ \ \ \ \ ],}
+\DoxyCodeLine{00014\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a5f0673fd44a186e2e82f20ce2df78c5d}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_xsize@{get\_band\_xsize}}
+\index{get\_band\_xsize@{get\_band\_xsize}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_xsize}{get\_band\_xsize}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a5f0673fd44a186e2e82f20ce2df78c5d} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+xsize = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Band\+XSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0eb57c892c38a8db40f4bd2944a92966}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_band\_ysize@{get\_band\_ysize}}
+\index{get\_band\_ysize@{get\_band\_ysize}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_band\_ysize}{get\_band\_ysize}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0eb57c892c38a8db40f4bd2944a92966} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+band\+\_\+ysize = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Band\+YSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aac020de10039a4ee4e5c30f54780c1b4}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_description@{get\_ds\_description}}
+\index{get\_ds\_description@{get\_ds\_description}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_description}{get\_ds\_description}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aac020de10039a4ee4e5c30f54780c1b4} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+description = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}}(std\+\_\+call("{}GDALGet\+Description"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa8b6effeda342d927a6c930ecfcfa508}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_driver@{get\_ds\_driver}}
+\index{get\_ds\_driver@{get\_ds\_driver}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_driver}{get\_ds\_driver}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa8b6effeda342d927a6c930ecfcfa508} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+driver = voidptr\+\_\+output(std\+\_\+call("{}GDALGet\+Dataset\+Driver"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aeb4ba0e6bacd6edb05d19ece24412a0b}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_geotransform@{get\_ds\_geotransform}}
+\index{get\_ds\_geotransform@{get\_ds\_geotransform}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_geotransform}{get\_ds\_geotransform}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aeb4ba0e6bacd6edb05d19ece24412a0b} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+geotransform}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetGeoTransform"{}}),\ [c\_void\_p,\ POINTER(c\_double\ *\ 6)],\ errcheck=\textcolor{keyword}{False}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac6d3a342b315917c69196f08050951d7}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_info@{get\_ds\_info}}
+\index{get\_ds\_info@{get\_ds\_info}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_info}{get\_ds\_info}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac6d3a342b315917c69196f08050951d7} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+info = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a40b727c7b4144e60ebff2dbe6e9ff6ff}{const\+\_\+string\+\_\+output}}(std\+\_\+call("{}GDALInfo"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a8ee6cc40fa744caef23665227a797afc}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_metadata@{get\_ds\_metadata}}
+\index{get\_ds\_metadata@{get\_ds\_metadata}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_metadata}{get\_ds\_metadata}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a8ee6cc40fa744caef23665227a797afc} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+metadata}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ chararray\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetMetadata"{}}),\ [c\_void\_p,\ c\_char\_p],\ errcheck=\textcolor{keyword}{False}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a76279492c2fe1f30e569115e865f922e}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_metadata\_domain\_list@{get\_ds\_metadata\_domain\_list}}
+\index{get\_ds\_metadata\_domain\_list@{get\_ds\_metadata\_domain\_list}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_metadata\_domain\_list}{get\_ds\_metadata\_domain\_list}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a76279492c2fe1f30e569115e865f922e} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+metadata\+\_\+domain\+\_\+list}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ chararray\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetMetadataDomainList"{}}),\ [c\_void\_p],\ errcheck=\textcolor{keyword}{False}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a47bd3bd0c29e48e5b93c942807a10933}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_metadata\_item@{get\_ds\_metadata\_item}}
+\index{get\_ds\_metadata\_item@{get\_ds\_metadata\_item}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_metadata\_item}{get\_ds\_metadata\_item}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a47bd3bd0c29e48e5b93c942807a10933} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+metadata\+\_\+item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ const\_string\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetMetadataItem"{}}),\ [c\_void\_p,\ c\_char\_p,\ c\_char\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac59a7efdd1cf27a3a42489199b8596f6}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_projection\_ref@{get\_ds\_projection\_ref}}
+\index{get\_ds\_projection\_ref@{get\_ds\_projection\_ref}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_projection\_ref}{get\_ds\_projection\_ref}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ac59a7efdd1cf27a3a42489199b8596f6} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+projection\+\_\+ref}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ const\_string\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALGetProjectionRef"{}}),\ [c\_void\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ab73acb266ea9b0537de1c622373c887e}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_raster\_band@{get\_ds\_raster\_band}}
+\index{get\_ds\_raster\_band@{get\_ds\_raster\_band}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_raster\_band}{get\_ds\_raster\_band}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_ab73acb266ea9b0537de1c622373c887e} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+raster\+\_\+band = voidptr\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Band"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a1a9605808c7196e27737166d3806a2ad}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_raster\_count@{get\_ds\_raster\_count}}
+\index{get\_ds\_raster\_count@{get\_ds\_raster\_count}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_raster\_count}{get\_ds\_raster\_count}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a1a9605808c7196e27737166d3806a2ad} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+raster\+\_\+count = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+Count"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a3e5e1a7334f2d34fc1629383e60f4c9d}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_xsize@{get\_ds\_xsize}}
+\index{get\_ds\_xsize@{get\_ds\_xsize}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_xsize}{get\_ds\_xsize}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a3e5e1a7334f2d34fc1629383e60f4c9d} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+xsize = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+XSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa44a10f021c6cb084aa5c39d901422c0}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_ds\_ysize@{get\_ds\_ysize}}
+\index{get\_ds\_ysize@{get\_ds\_ysize}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_ds\_ysize}{get\_ds\_ysize}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aa44a10f021c6cb084aa5c39d901422c0} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+ds\+\_\+ysize = int\+\_\+output(std\+\_\+call("{}GDALGet\+Raster\+YSize"{}), \mbox{[}c\+\_\+void\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a69469256a0be31b32329e69b5fd09358}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!get\_mem\_buffer\_from\_vsi\_file@{get\_mem\_buffer\_from\_vsi\_file}}
+\index{get\_mem\_buffer\_from\_vsi\_file@{get\_mem\_buffer\_from\_vsi\_file}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{get\_mem\_buffer\_from\_vsi\_file}{get\_mem\_buffer\_from\_vsi\_file}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a69469256a0be31b32329e69b5fd09358} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+get\+\_\+mem\+\_\+buffer\+\_\+from\+\_\+vsi\+\_\+file}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ voidptr\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}VSIGetMemFileBuffer"{}}),\ [c\_char\_p,\ POINTER(c\_int),\ c\_bool]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a42fde856f73d2986950f0a9978dc33c7}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!open\_ds@{open\_ds}}
+\index{open\_ds@{open\_ds}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{open\_ds}{open\_ds}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a42fde856f73d2986950f0a9978dc33c7} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+open\+\_\+ds = voidptr\+\_\+output(std\+\_\+call("{}GDALOpen"{}), \mbox{[}c\+\_\+char\+\_\+p, c\+\_\+int\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_adbadc962a9bac44c5e5fd602151e6bbd}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!reproject\_image@{reproject\_image}}
+\index{reproject\_image@{reproject\_image}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{reproject\_image}{reproject\_image}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_adbadc962a9bac44c5e5fd602151e6bbd} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+reproject\+\_\+image}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALReprojectImage"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ [}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ c\_char\_p,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ c\_char\_p,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ c\_int,}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ c\_double,}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ c\_double,}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ c\_void\_p,}
+\DoxyCodeLine{00014\ \ \ \ \ ],}
+\DoxyCodeLine{00015\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a955a3849c294b8507933a23fb8435111}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!set\_band\_nodata\_value@{set\_band\_nodata\_value}}
+\index{set\_band\_nodata\_value@{set\_band\_nodata\_value}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{set\_band\_nodata\_value}{set\_band\_nodata\_value}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a955a3849c294b8507933a23fb8435111} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+set\+\_\+band\+\_\+nodata\+\_\+value}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALSetRasterNoDataValue"{}}),\ [c\_void\_p,\ c\_double]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a678deb23dd7af502d3b9af7a2d75ff22}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!set\_ds\_geotransform@{set\_ds\_geotransform}}
+\index{set\_ds\_geotransform@{set\_ds\_geotransform}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{set\_ds\_geotransform}{set\_ds\_geotransform}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a678deb23dd7af502d3b9af7a2d75ff22} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+set\+\_\+ds\+\_\+geotransform}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALSetGeoTransform"{}}),\ [c\_void\_p,\ POINTER(c\_double\ *\ 6)]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0c0a4890a1cabfefd42280bed16dfc25}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!set\_ds\_metadata@{set\_ds\_metadata}}
+\index{set\_ds\_metadata@{set\_ds\_metadata}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{set\_ds\_metadata}{set\_ds\_metadata}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a0c0a4890a1cabfefd42280bed16dfc25} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+set\+\_\+ds\+\_\+metadata}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ void\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALSetMetadata"{}}),\ [c\_void\_p,\ POINTER(c\_char\_p),\ c\_char\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aecc6e766707616bc8f06c5032aa5ca6c}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!set\_ds\_metadata\_item@{set\_ds\_metadata\_item}}
+\index{set\_ds\_metadata\_item@{set\_ds\_metadata\_item}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{set\_ds\_metadata\_item}{set\_ds\_metadata\_item}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_aecc6e766707616bc8f06c5032aa5ca6c} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+set\+\_\+ds\+\_\+metadata\+\_\+item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ const\_string\_output(}
+\DoxyCodeLine{00002\ \ \ \ \ std\_call(\textcolor{stringliteral}{"{}GDALSetMetadataItem"{}}),\ [c\_void\_p,\ c\_char\_p,\ c\_char\_p,\ c\_char\_p]}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a7485c71ac2cc56465493cd020ad67d06}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!set\_ds\_projection\_ref@{set\_ds\_projection\_ref}}
+\index{set\_ds\_projection\_ref@{set\_ds\_projection\_ref}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{set\_ds\_projection\_ref}{set\_ds\_projection\_ref}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a7485c71ac2cc56465493cd020ad67d06} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+set\+\_\+ds\+\_\+projection\+\_\+ref = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}{void\+\_\+output}}(std\+\_\+call("{}GDALSet\+Projection"{}), \mbox{[}c\+\_\+void\+\_\+p, c\+\_\+char\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a309c3653d70666c1b20074f7543000ea}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!unlink\_vsi\_file@{unlink\_vsi\_file}}
+\index{unlink\_vsi\_file@{unlink\_vsi\_file}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{unlink\_vsi\_file}{unlink\_vsi\_file}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a309c3653d70666c1b20074f7543000ea} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+unlink\+\_\+vsi\+\_\+file = int\+\_\+output(std\+\_\+call("{}VSIUnlink"{}), \mbox{[}c\+\_\+char\+\_\+p\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb}\index{django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}!void\_output@{void\_output}}
+\index{void\_output@{void\_output}!django.contrib.gis.gdal.prototypes.raster@{django.contrib.gis.gdal.prototypes.raster}}
+\doxysubsubsection{\texorpdfstring{void\_output}{void\_output}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1gis_1_1gdal_1_1prototypes_1_1raster_a12b065ac9e90860d8b785c8c4911f1bb} 
+django.\+contrib.\+gis.\+gdal.\+prototypes.\+raster.\+void\+\_\+output = partial(void\+\_\+output, cpl=True)}
+

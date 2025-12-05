@@ -1,0 +1,105 @@
+\doxysection{yarl.\+\_\+quoting\+\_\+py Namespace Reference}
+\hypertarget{namespaceyarl_1_1__quoting__py}{}\label{namespaceyarl_1_1__quoting__py}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classyarl_1_1__quoting__py_1_1___quoter}{\+\_\+\+Quoter}}
+\item 
+class \mbox{\hyperlink{classyarl_1_1__quoting__py_1_1___unquoter}{\+\_\+\+Unquoter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceyarl_1_1__quoting__py_aace29b2f7451ff9c485cecb7b80820bf}{BASCII\+\_\+\+LOWERCASE}} = ascii\+\_\+lowercase.\+encode("{}ascii"{})
+\item 
+dict \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a1e24905050a6312dbba2a4003d3ac468}{BPCT\+\_\+\+ALLOWED}} = \{f"{}\%\{i\+:02X\}"{}.encode("{}ascii"{}) for i in range(256)\}
+\item 
+str \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_ab125d314d1dc272b2f7df3260b1ecc6d}{GEN\+\_\+\+DELIMS}} = "{}\+:/?\#\mbox{[}$\,$\mbox{]}@"{}
+\item 
+str \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8}{SUB\+\_\+\+DELIMS\+\_\+\+WITHOUT\+\_\+\+QS}} = "{}!\$\textquotesingle{}()\texorpdfstring{$\ast$}{*},"{}
+\item 
+str \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a122627fbe5ce4938dc4f9bd0e30ee07b}{SUB\+\_\+\+DELIMS}} = \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8}{SUB\+\_\+\+DELIMS\+\_\+\+WITHOUT\+\_\+\+QS}} + "{}+\&=;"{}
+\item 
+str \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_abcd9cb474a947362f561bbbe54782514}{RESERVED}} = \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_ab125d314d1dc272b2f7df3260b1ecc6d}{GEN\+\_\+\+DELIMS}} + \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a122627fbe5ce4938dc4f9bd0e30ee07b}{SUB\+\_\+\+DELIMS}}
+\item 
+str \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_adf892371c0477ffbbe3419ec4517d4e0}{UNRESERVED}} = ascii\+\_\+letters + digits + "{}-\/.\+\_\+\texorpdfstring{$\sim$}{\string~}"{}
+\item 
+str \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a87d8aefab5278a75771262d4b563f7f1}{ALLOWED}} = \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_adf892371c0477ffbbe3419ec4517d4e0}{UNRESERVED}} + \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8}{SUB\+\_\+\+DELIMS\+\_\+\+WITHOUT\+\_\+\+QS}}
+\item 
+\mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a4fc0796f8ae4cd548eb43c7b281842ce}{\+\_\+\+IS\+\_\+\+HEX}} = re.\+compile(b"{}\mbox{[}A-\/Z0-\/9\mbox{]}\mbox{[}A-\/Z0-\/9\mbox{]}"{})
+\item 
+\mbox{\hyperlink{namespaceyarl_1_1__quoting__py_ac8da425a8c57d53c87a989c66c12b072}{\+\_\+\+IS\+\_\+\+HEX\+\_\+\+STR}} = re.\+compile("{}\mbox{[}A-\/Fa-\/f0-\/9\mbox{]}\mbox{[}A-\/Fa-\/f0-\/9\mbox{]}"{})
+\item 
+\mbox{\hyperlink{namespaceyarl_1_1__quoting__py_afd329b8c5aaf221b02866870d849f275}{utf8\+\_\+decoder}} = codecs.\+getincrementaldecoder("{}utf-\/8"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{namespaceyarl_1_1__quoting__py_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceyarl_1_1__quoting__py_a4fc0796f8ae4cd548eb43c7b281842ce}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!\_IS\_HEX@{\_IS\_HEX}}
+\index{\_IS\_HEX@{\_IS\_HEX}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{\_IS\_HEX}{\_IS\_HEX}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_a4fc0796f8ae4cd548eb43c7b281842ce} 
+yarl.\+\_\+quoting\+\_\+py.\+\_\+\+IS\+\_\+\+HEX = re.\+compile(b"{}\mbox{[}A-\/Z0-\/9\mbox{]}\mbox{[}A-\/Z0-\/9\mbox{]}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_ac8da425a8c57d53c87a989c66c12b072}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!\_IS\_HEX\_STR@{\_IS\_HEX\_STR}}
+\index{\_IS\_HEX\_STR@{\_IS\_HEX\_STR}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{\_IS\_HEX\_STR}{\_IS\_HEX\_STR}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_ac8da425a8c57d53c87a989c66c12b072} 
+yarl.\+\_\+quoting\+\_\+py.\+\_\+\+IS\+\_\+\+HEX\+\_\+\+STR = re.\+compile("{}\mbox{[}A-\/Fa-\/f0-\/9\mbox{]}\mbox{[}A-\/Fa-\/f0-\/9\mbox{]}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_a87d8aefab5278a75771262d4b563f7f1}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!ALLOWED@{ALLOWED}}
+\index{ALLOWED@{ALLOWED}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{ALLOWED}{ALLOWED}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_a87d8aefab5278a75771262d4b563f7f1} 
+str yarl.\+\_\+quoting\+\_\+py.\+ALLOWED = \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_adf892371c0477ffbbe3419ec4517d4e0}{UNRESERVED}} + \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8}{SUB\+\_\+\+DELIMS\+\_\+\+WITHOUT\+\_\+\+QS}}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_aace29b2f7451ff9c485cecb7b80820bf}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!BASCII\_LOWERCASE@{BASCII\_LOWERCASE}}
+\index{BASCII\_LOWERCASE@{BASCII\_LOWERCASE}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{BASCII\_LOWERCASE}{BASCII\_LOWERCASE}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_aace29b2f7451ff9c485cecb7b80820bf} 
+yarl.\+\_\+quoting\+\_\+py.\+BASCII\+\_\+\+LOWERCASE = ascii\+\_\+lowercase.\+encode("{}ascii"{})}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_a1e24905050a6312dbba2a4003d3ac468}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!BPCT\_ALLOWED@{BPCT\_ALLOWED}}
+\index{BPCT\_ALLOWED@{BPCT\_ALLOWED}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{BPCT\_ALLOWED}{BPCT\_ALLOWED}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_a1e24905050a6312dbba2a4003d3ac468} 
+dict yarl.\+\_\+quoting\+\_\+py.\+BPCT\+\_\+\+ALLOWED = \{f"{}\%\{i\+:02X\}"{}.encode("{}ascii"{}) for i in range(256)\}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_ab125d314d1dc272b2f7df3260b1ecc6d}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!GEN\_DELIMS@{GEN\_DELIMS}}
+\index{GEN\_DELIMS@{GEN\_DELIMS}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{GEN\_DELIMS}{GEN\_DELIMS}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_ab125d314d1dc272b2f7df3260b1ecc6d} 
+str yarl.\+\_\+quoting\+\_\+py.\+GEN\+\_\+\+DELIMS = "{}\+:/?\#\mbox{[}$\,$\mbox{]}@"{}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_abcd9cb474a947362f561bbbe54782514}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!RESERVED@{RESERVED}}
+\index{RESERVED@{RESERVED}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{RESERVED}{RESERVED}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_abcd9cb474a947362f561bbbe54782514} 
+str yarl.\+\_\+quoting\+\_\+py.\+RESERVED = \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_ab125d314d1dc272b2f7df3260b1ecc6d}{GEN\+\_\+\+DELIMS}} + \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a122627fbe5ce4938dc4f9bd0e30ee07b}{SUB\+\_\+\+DELIMS}}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_a122627fbe5ce4938dc4f9bd0e30ee07b}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!SUB\_DELIMS@{SUB\_DELIMS}}
+\index{SUB\_DELIMS@{SUB\_DELIMS}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{SUB\_DELIMS}{SUB\_DELIMS}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_a122627fbe5ce4938dc4f9bd0e30ee07b} 
+str yarl.\+\_\+quoting\+\_\+py.\+SUB\+\_\+\+DELIMS = \mbox{\hyperlink{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8}{SUB\+\_\+\+DELIMS\+\_\+\+WITHOUT\+\_\+\+QS}} + "{}+\&=;"{}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!SUB\_DELIMS\_WITHOUT\_QS@{SUB\_DELIMS\_WITHOUT\_QS}}
+\index{SUB\_DELIMS\_WITHOUT\_QS@{SUB\_DELIMS\_WITHOUT\_QS}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{SUB\_DELIMS\_WITHOUT\_QS}{SUB\_DELIMS\_WITHOUT\_QS}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_a6f9ff40a2e4c154e212e5282678ee6a8} 
+str yarl.\+\_\+quoting\+\_\+py.\+SUB\+\_\+\+DELIMS\+\_\+\+WITHOUT\+\_\+\+QS = "{}!\$\textquotesingle{}()\texorpdfstring{$\ast$}{*},"{}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_adf892371c0477ffbbe3419ec4517d4e0}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!UNRESERVED@{UNRESERVED}}
+\index{UNRESERVED@{UNRESERVED}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{UNRESERVED}{UNRESERVED}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_adf892371c0477ffbbe3419ec4517d4e0} 
+str yarl.\+\_\+quoting\+\_\+py.\+UNRESERVED = ascii\+\_\+letters + digits + "{}-\/.\+\_\+\texorpdfstring{$\sim$}{\string~}"{}}
+
+\Hypertarget{namespaceyarl_1_1__quoting__py_afd329b8c5aaf221b02866870d849f275}\index{yarl.\_quoting\_py@{yarl.\_quoting\_py}!utf8\_decoder@{utf8\_decoder}}
+\index{utf8\_decoder@{utf8\_decoder}!yarl.\_quoting\_py@{yarl.\_quoting\_py}}
+\doxysubsubsection{\texorpdfstring{utf8\_decoder}{utf8\_decoder}}
+{\footnotesize\ttfamily \label{namespaceyarl_1_1__quoting__py_afd329b8c5aaf221b02866870d849f275} 
+yarl.\+\_\+quoting\+\_\+py.\+utf8\+\_\+decoder = codecs.\+getincrementaldecoder("{}utf-\/8"{})}
+

@@ -1,0 +1,113 @@
+\doxysection{django.\+core.\+management Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1management}{}\label{namespacedjango_1_1core_1_1management}\index{django.core.management@{django.core.management}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1base}{base}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1color}{color}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands}{commands}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1sql}{sql}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1templates}{templates}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1_management_utility}{Management\+Utility}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_ad2b982c18c6c9b96924afe15a8b2e597}{find\+\_\+commands}} (management\+\_\+dir)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_a814d3c47f9ef95ce8722685af918fff1}{load\+\_\+command\+\_\+class}} (app\+\_\+name, name)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_aff7a4578c6fd2cdcd81a237795f5c77b}{get\+\_\+commands}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_a4baae834f788d5080a59b2c4ebc21778}{call\+\_\+command}} (command\+\_\+name, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_a0a654bec14797cbd6c40faefe6206c51}{execute\+\_\+from\+\_\+command\+\_\+line}} (argv=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1management_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1management_a4baae834f788d5080a59b2c4ebc21778}\index{django.core.management@{django.core.management}!call\_command@{call\_command}}
+\index{call\_command@{call\_command}!django.core.management@{django.core.management}}
+\doxysubsubsection{\texorpdfstring{call\_command()}{call\_command()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_a4baae834f788d5080a59b2c4ebc21778} 
+django.\+core.\+management.\+call\+\_\+command (\begin{DoxyParamCaption}\item[{}]{command\+\_\+name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the given command, with the given options and args/kwargs.
+
+This is the primary API you should use for calling specific commands.
+
+`command_name` may be a string or a command object. Using a string is
+preferred unless the command object is required for further processing or
+testing.
+
+Some examples:
+    call_command('migrate')
+    call_command('shell', plain=True)
+    call_command('sqlmigrate', 'myapp')
+
+    from django.core.management.commands import flush
+    cmd = flush.Command()
+    call_command(cmd, verbosity=0, interactive=False)
+    # Do something with cmd ...
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_a0a654bec14797cbd6c40faefe6206c51}\index{django.core.management@{django.core.management}!execute\_from\_command\_line@{execute\_from\_command\_line}}
+\index{execute\_from\_command\_line@{execute\_from\_command\_line}!django.core.management@{django.core.management}}
+\doxysubsubsection{\texorpdfstring{execute\_from\_command\_line()}{execute\_from\_command\_line()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_a0a654bec14797cbd6c40faefe6206c51} 
+django.\+core.\+management.\+execute\+\_\+from\+\_\+command\+\_\+line (\begin{DoxyParamCaption}\item[{}]{argv}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a ManagementUtility.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_ad2b982c18c6c9b96924afe15a8b2e597}\index{django.core.management@{django.core.management}!find\_commands@{find\_commands}}
+\index{find\_commands@{find\_commands}!django.core.management@{django.core.management}}
+\doxysubsubsection{\texorpdfstring{find\_commands()}{find\_commands()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_ad2b982c18c6c9b96924afe15a8b2e597} 
+django.\+core.\+management.\+find\+\_\+commands (\begin{DoxyParamCaption}\item[{}]{management\+\_\+dir}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a path to a management directory, return a list of all the command
+names that are available.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_aff7a4578c6fd2cdcd81a237795f5c77b}\index{django.core.management@{django.core.management}!get\_commands@{get\_commands}}
+\index{get\_commands@{get\_commands}!django.core.management@{django.core.management}}
+\doxysubsubsection{\texorpdfstring{get\_commands()}{get\_commands()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_aff7a4578c6fd2cdcd81a237795f5c77b} 
+django.\+core.\+management.\+get\+\_\+commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dictionary mapping command names to their callback applications.
+
+Look for a management.commands package in django.core, and in each
+installed application -- if a commands package exists, register all
+commands in that package.
+
+Core commands are always included. If a settings module has been
+specified, also include user-defined commands.
+
+The dictionary is in the format {command_name: app_name}. Key-value
+pairs from this dictionary can then be used in calls to
+load_command_class(app_name, command_name)
+
+The dictionary is cached on the first call and reused on subsequent
+calls.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_a814d3c47f9ef95ce8722685af918fff1}\index{django.core.management@{django.core.management}!load\_command\_class@{load\_command\_class}}
+\index{load\_command\_class@{load\_command\_class}!django.core.management@{django.core.management}}
+\doxysubsubsection{\texorpdfstring{load\_command\_class()}{load\_command\_class()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1management_a814d3c47f9ef95ce8722685af918fff1} 
+django.\+core.\+management.\+load\+\_\+command\+\_\+class (\begin{DoxyParamCaption}\item[{}]{app\+\_\+name}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a command name and an application name, return the Command
+class instance. Allow all errors raised by the import process
+(ImportError, AttributeError) to propagate.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,177 @@
+\doxysection{django.\+db.\+backends.\+utils.\+Cursor\+Wrapper Class Reference}
+\hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper}{}\label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+Inheritance diagram for django.\+db.\+backends.\+utils.\+Cursor\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a1afb285cafcab2f659d8a9a1cb7f79f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a28677fb8b183c0ac709f943a5ace5800}{cursor}}, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a19229bd949ca8335cac2c53a7d0f8e94}{db}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a6acaaa696c45889fa2c675e03cbb7a68}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, attr)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ae9eba89bec4f98ba29cf92670ef4bd59}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a78010b7cefa8ad4486d42b1ab6cbf393}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a02f5176bb3b2e598d12ac8fdf26f3496}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type, value, traceback)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a0cc728536b776be4c32a3abdc275f393}{callproc}} (self, procname, params=None, kparams=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a7d0bc9b6584c9fee961505e1d460547c}{execute}} (self, sql, params=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a4f4a190ffb0a69b662202fcb68243282}{executemany}} (self, sql, param\+\_\+list)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a28677fb8b183c0ac709f943a5ace5800}{cursor}} = cursor
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a19229bd949ca8335cac2c53a7d0f8e94}{db}} = db
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a6d3d6bedc78b153671ff0d38d822e7fb}{WRAP\+\_\+\+ERROR\+\_\+\+ATTRS}} = frozenset(\mbox{[}"{}fetchone"{}, "{}fetchmany"{}, "{}fetchall"{}, "{}nextset"{}\mbox{]})
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ad90243f2539fd8e33e42e4d14c985899}{APPS\+\_\+\+NOT\+\_\+\+READY\+\_\+\+WARNING\+\_\+\+MSG}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_af370e8d10c501e5f5237b4b763ff2706}{\+\_\+execute\+\_\+with\+\_\+wrappers}} (self, sql, params, many, executor)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a4bce340a1bf575432f30977501cf758e}{\+\_\+execute}} (self, sql, params, \texorpdfstring{$\ast$}{*}ignored\+\_\+wrapper\+\_\+args)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ad2f0cf3db485ef5192509faf59f6705b}{\+\_\+executemany}} (self, sql, param\+\_\+list, \texorpdfstring{$\ast$}{*}ignored\+\_\+wrapper\+\_\+args)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a1afb285cafcab2f659d8a9a1cb7f79f2}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a1afb285cafcab2f659d8a9a1cb7f79f2} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{db}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a78010b7cefa8ad4486d42b1ab6cbf393}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a78010b7cefa8ad4486d42b1ab6cbf393} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a02f5176bb3b2e598d12ac8fdf26f3496}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a02f5176bb3b2e598d12ac8fdf26f3496} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{type}{, }\item[{}]{value}{, }\item[{}]{traceback}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a6acaaa696c45889fa2c675e03cbb7a68}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a6acaaa696c45889fa2c675e03cbb7a68} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ae9eba89bec4f98ba29cf92670ef4bd59}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ae9eba89bec4f98ba29cf92670ef4bd59} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a4bce340a1bf575432f30977501cf758e}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_execute@{\_execute}}
+\index{\_execute@{\_execute}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_execute()}{\_execute()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a4bce340a1bf575432f30977501cf758e} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+execute (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sql}{, }\item[{}]{params}{, }\item[{\texorpdfstring{$\ast$}{*}}]{ignored\+\_\+wrapper\+\_\+args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_af370e8d10c501e5f5237b4b763ff2706}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_execute\_with\_wrappers@{\_execute\_with\_wrappers}}
+\index{\_execute\_with\_wrappers@{\_execute\_with\_wrappers}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_execute\_with\_wrappers()}{\_execute\_with\_wrappers()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_af370e8d10c501e5f5237b4b763ff2706} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+execute\+\_\+with\+\_\+wrappers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sql}{, }\item[{}]{params}{, }\item[{}]{many}{, }\item[{}]{executor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ad2f0cf3db485ef5192509faf59f6705b}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!\_executemany@{\_executemany}}
+\index{\_executemany@{\_executemany}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_executemany()}{\_executemany()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ad2f0cf3db485ef5192509faf59f6705b} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+\_\+executemany (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sql}{, }\item[{}]{param\+\_\+list}{, }\item[{\texorpdfstring{$\ast$}{*}}]{ignored\+\_\+wrapper\+\_\+args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a0cc728536b776be4c32a3abdc275f393}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!callproc@{callproc}}
+\index{callproc@{callproc}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{callproc()}{callproc()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a0cc728536b776be4c32a3abdc275f393} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+callproc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{procname}{, }\item[{}]{params}{ = {\ttfamily None}, }\item[{}]{kparams}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a7d0bc9b6584c9fee961505e1d460547c}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!execute@{execute}}
+\index{execute@{execute}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a7d0bc9b6584c9fee961505e1d460547c} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+execute (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sql}{, }\item[{}]{params}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_debug_wrapper_af0443013785fceb3f05b38198a71ca3f}{django.\+db.\+backends.\+utils.\+Cursor\+Debug\+Wrapper}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a4f4a190ffb0a69b662202fcb68243282}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!executemany@{executemany}}
+\index{executemany@{executemany}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{executemany()}{executemany()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a4f4a190ffb0a69b662202fcb68243282} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+executemany (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sql}{, }\item[{}]{param\+\_\+list}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_debug_wrapper_a55d6f229584f83b72780974d83957cd4}{django.\+db.\+backends.\+utils.\+Cursor\+Debug\+Wrapper}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ad90243f2539fd8e33e42e4d14c985899}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!APPS\_NOT\_READY\_WARNING\_MSG@{APPS\_NOT\_READY\_WARNING\_MSG}}
+\index{APPS\_NOT\_READY\_WARNING\_MSG@{APPS\_NOT\_READY\_WARNING\_MSG}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{APPS\_NOT\_READY\_WARNING\_MSG}{APPS\_NOT\_READY\_WARNING\_MSG}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_ad90243f2539fd8e33e42e4d14c985899} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+APPS\+\_\+\+NOT\+\_\+\+READY\+\_\+\+WARNING\+\_\+\+MSG\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Accessing\ the\ database\ during\ app\ initialization\ is\ discouraged.\ To\ fix\ this\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}warning,\ avoid\ executing\ queries\ in\ AppConfig.ready()\ or\ when\ your\ app\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}modules\ are\ imported."{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a28677fb8b183c0ac709f943a5ace5800}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!cursor@{cursor}}
+\index{cursor@{cursor}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a28677fb8b183c0ac709f943a5ace5800} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+cursor = cursor}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a19229bd949ca8335cac2c53a7d0f8e94}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!db@{db}}
+\index{db@{db}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a19229bd949ca8335cac2c53a7d0f8e94} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+db = db}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a6d3d6bedc78b153671ff0d38d822e7fb}\index{django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}!WRAP\_ERROR\_ATTRS@{WRAP\_ERROR\_ATTRS}}
+\index{WRAP\_ERROR\_ATTRS@{WRAP\_ERROR\_ATTRS}!django.db.backends.utils.CursorWrapper@{django.db.backends.utils.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{WRAP\_ERROR\_ATTRS}{WRAP\_ERROR\_ATTRS}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1utils_1_1_cursor_wrapper_a6d3d6bedc78b153671ff0d38d822e7fb} 
+django.\+db.\+backends.\+utils.\+Cursor\+Wrapper.\+WRAP\+\_\+\+ERROR\+\_\+\+ATTRS = frozenset(\mbox{[}"{}fetchone"{}, "{}fetchmany"{}, "{}fetchall"{}, "{}nextset"{}\mbox{]})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/backends/\mbox{\hyperlink{django_2db_2backends_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

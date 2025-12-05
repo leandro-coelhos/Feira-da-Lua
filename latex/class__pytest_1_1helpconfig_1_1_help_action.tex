@@ -1,0 +1,80 @@
+\doxysection{\+\_\+pytest.\+helpconfig.\+Help\+Action Class Reference}
+\hypertarget{class__pytest_1_1helpconfig_1_1_help_action}{}\label{class__pytest_1_1helpconfig_1_1_help_action}\index{\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}}
+Inheritance diagram for \+\_\+pytest.\+helpconfig.\+Help\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class__pytest_1_1helpconfig_1_1_help_action}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1helpconfig_1_1_help_action_a26115815032897efdf7e8b3792d7df96}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Sequence\mbox{[}str\mbox{]} option\+\_\+strings, str \mbox{\hyperlink{class__pytest_1_1helpconfig_1_1_help_action_ae768b67fc7d30084dada3e52712aa481}{dest}}, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None help=None)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1helpconfig_1_1_help_action_ac38be6eca9c000f7308c605cda98d561}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, argparse.\+Argument\+Parser parser, argparse.\+Namespace namespace, str\texorpdfstring{$\vert$}{|}Sequence\mbox{[}Any\mbox{]}\texorpdfstring{$\vert$}{|}None values, str\texorpdfstring{$\vert$}{|}None option\+\_\+string=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1helpconfig_1_1_help_action_ae768b67fc7d30084dada3e52712aa481}{dest}}
+\item 
+\mbox{\hyperlink{class__pytest_1_1helpconfig_1_1_help_action_a7da32404ce50e1c9d7374f40fa729553}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An argparse Action that will raise a PrintHelp exception in order to skip
+the rest of the argument parsing when --help is passed.
+
+This prevents argparse from raising UsageError when `--help` is used along
+with missing required arguments when any are defined, for example by
+``pytest_addoption``. This is similar to the way that the builtin argparse
+--help option is implemented by raising SystemExit.
+
+To opt in to this behavior, the parse caller must set
+`namespace._raise_print_help = True`. Otherwise it just sets the option.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_a26115815032897efdf7e8b3792d7df96}\index{\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1helpconfig_1_1_help_action_a26115815032897efdf7e8b3792d7df96} 
+ None \+\_\+pytest.\+helpconfig.\+Help\+Action.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}str\mbox{]}}]{option\+\_\+strings}{, }\item[{str}]{dest}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{help}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_ac38be6eca9c000f7308c605cda98d561}\index{\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1helpconfig_1_1_help_action_ac38be6eca9c000f7308c605cda98d561} 
+ None \+\_\+pytest.\+helpconfig.\+Help\+Action.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{argparse.\+Argument\+Parser}]{parser}{, }\item[{argparse.\+Namespace}]{namespace}{, }\item[{str \texorpdfstring{$\vert$}{|} Sequence\mbox{[}Any\mbox{]} \texorpdfstring{$\vert$}{|} None}]{values}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{option\+\_\+string}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_a7da32404ce50e1c9d7374f40fa729553}\index{\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}!const@{const}}
+\index{const@{const}!\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{class__pytest_1_1helpconfig_1_1_help_action_a7da32404ce50e1c9d7374f40fa729553} 
+\+\_\+pytest.\+helpconfig.\+Help\+Action.\+const}
+
+\Hypertarget{class__pytest_1_1helpconfig_1_1_help_action_ae768b67fc7d30084dada3e52712aa481}\index{\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}!dest@{dest}}
+\index{dest@{dest}!\_pytest.helpconfig.HelpAction@{\_pytest.helpconfig.HelpAction}}
+\doxysubsubsection{\texorpdfstring{dest}{dest}}
+{\footnotesize\ttfamily \label{class__pytest_1_1helpconfig_1_1_help_action_ae768b67fc7d30084dada3e52712aa481} 
+\+\_\+pytest.\+helpconfig.\+Help\+Action.\+dest}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{helpconfig_8py}{helpconfig.\+py}}\end{DoxyCompactItemize}

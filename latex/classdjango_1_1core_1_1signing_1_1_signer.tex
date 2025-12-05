@@ -1,0 +1,155 @@
+\doxysection{django.\+core.\+signing.\+Signer Class Reference}
+\hypertarget{classdjango_1_1core_1_1signing_1_1_signer}{}\label{classdjango_1_1core_1_1signing_1_1_signer}\index{django.core.signing.Signer@{django.core.signing.Signer}}
+Inheritance diagram for django.\+core.\+signing.\+Signer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1signing_1_1_signer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a449e2e3d6a0af772d186f83511587796}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a8e7d8581e149d41e06974ad7b454df3c}{key}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_ae6a28eff0496131dbd51497b89b8473f}{sep}}="{}\+:"{}, \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a199ebc381463929b406a12ce6eb50d56}{salt}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a326ffcc23269834ad7e8ab1056ce0d9f}{algorithm}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a5d746af1766d97f56e01598f484d3884}{fallback\+\_\+keys}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a7f07d25e055e1c12121ac821012efb46}{signature}} (self, value, \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a8e7d8581e149d41e06974ad7b454df3c}{key}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a20ed6a5363cf3b02855d218c7abd9508}{sign}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a4c99e64342ad60871525e10b8d9041eb}{unsign}} (self, signed\+\_\+value)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a99fb2eef79ae0134ead7038441516476}{sign\+\_\+object}} (self, obj, serializer=\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_j_s_o_n_serializer}{JSONSerializer}}, compress=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a921ff8b1f1ca551a939b596b64efbd8c}{unsign\+\_\+object}} (self, signed\+\_\+obj, serializer=\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_j_s_o_n_serializer}{JSONSerializer}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a8e7d8581e149d41e06974ad7b454df3c}{key}} = key or settings.\+SECRET\+\_\+\+KEY
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a5d746af1766d97f56e01598f484d3884}{fallback\+\_\+keys}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_ae6a28eff0496131dbd51497b89b8473f}{sep}} = sep
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a199ebc381463929b406a12ce6eb50d56}{salt}}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_signer_a326ffcc23269834ad7e8ab1056ce0d9f}{algorithm}} = algorithm or "{}sha256"{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a449e2e3d6a0af772d186f83511587796}\index{django.core.signing.Signer@{django.core.signing.Signer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a449e2e3d6a0af772d186f83511587796} 
+django.\+core.\+signing.\+Signer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{key}{ = {\ttfamily None}, }\item[{}]{sep}{ = {\ttfamily "{}\+:"{}}, }\item[{}]{salt}{ = {\ttfamily None}, }\item[{}]{algorithm}{ = {\ttfamily None}, }\item[{}]{fallback\+\_\+keys}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a20ed6a5363cf3b02855d218c7abd9508}\index{django.core.signing.Signer@{django.core.signing.Signer}!sign@{sign}}
+\index{sign@{sign}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a20ed6a5363cf3b02855d218c7abd9508} 
+django.\+core.\+signing.\+Signer.\+sign (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_timestamp_signer_a5ce05c9325850397a0be68002f19652d}{django.\+core.\+signing.\+Timestamp\+Signer}}.
+
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a99fb2eef79ae0134ead7038441516476}\index{django.core.signing.Signer@{django.core.signing.Signer}!sign\_object@{sign\_object}}
+\index{sign\_object@{sign\_object}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{sign\_object()}{sign\_object()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a99fb2eef79ae0134ead7038441516476} 
+django.\+core.\+signing.\+Signer.\+sign\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{obj}{, }\item[{}]{serializer}{ = {\ttfamily \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_j_s_o_n_serializer}{JSONSerializer}}}, }\item[{}]{compress}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return URL-safe, hmac signed base64 compressed JSON string.
+
+If compress is True (not the default), check if compressing using zlib
+can save some space. Prepend a '.' to signify compression. This is
+included in the signature, to protect against zip bombs.
+
+The serializer is expected to return a bytestring.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a7f07d25e055e1c12121ac821012efb46}\index{django.core.signing.Signer@{django.core.signing.Signer}!signature@{signature}}
+\index{signature@{signature}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a7f07d25e055e1c12121ac821012efb46} 
+django.\+core.\+signing.\+Signer.\+signature (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{, }\item[{}]{key}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a4c99e64342ad60871525e10b8d9041eb}\index{django.core.signing.Signer@{django.core.signing.Signer}!unsign@{unsign}}
+\index{unsign@{unsign}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{unsign()}{unsign()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a4c99e64342ad60871525e10b8d9041eb} 
+django.\+core.\+signing.\+Signer.\+unsign (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{signed\+\_\+value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_timestamp_signer_a4f105034dd44ec8abbcdfda73b363c7f}{django.\+core.\+signing.\+Timestamp\+Signer}}.
+
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a921ff8b1f1ca551a939b596b64efbd8c}\index{django.core.signing.Signer@{django.core.signing.Signer}!unsign\_object@{unsign\_object}}
+\index{unsign\_object@{unsign\_object}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{unsign\_object()}{unsign\_object()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a921ff8b1f1ca551a939b596b64efbd8c} 
+django.\+core.\+signing.\+Signer.\+unsign\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{signed\+\_\+obj}{, }\item[{}]{serializer}{ = {\ttfamily \mbox{\hyperlink{classdjango_1_1core_1_1signing_1_1_j_s_o_n_serializer}{JSONSerializer}}}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a326ffcc23269834ad7e8ab1056ce0d9f}\index{django.core.signing.Signer@{django.core.signing.Signer}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{algorithm}{algorithm}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a326ffcc23269834ad7e8ab1056ce0d9f} 
+str django.\+core.\+signing.\+Signer.\+algorithm = algorithm or "{}sha256"{}}
+
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a5d746af1766d97f56e01598f484d3884}\index{django.core.signing.Signer@{django.core.signing.Signer}!fallback\_keys@{fallback\_keys}}
+\index{fallback\_keys@{fallback\_keys}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{fallback\_keys}{fallback\_keys}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a5d746af1766d97f56e01598f484d3884} 
+tuple django.\+core.\+signing.\+Signer.\+fallback\+\_\+keys}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ fallback\_keys}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ fallback\_keys\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ settings.SECRET\_KEY\_FALLBACKS}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a8e7d8581e149d41e06974ad7b454df3c}\index{django.core.signing.Signer@{django.core.signing.Signer}!key@{key}}
+\index{key@{key}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a8e7d8581e149d41e06974ad7b454df3c} 
+django.\+core.\+signing.\+Signer.\+key = key or settings.\+SECRET\+\_\+\+KEY}
+
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_a199ebc381463929b406a12ce6eb50d56}\index{django.core.signing.Signer@{django.core.signing.Signer}!salt@{salt}}
+\index{salt@{salt}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{salt}{salt}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_a199ebc381463929b406a12ce6eb50d56} 
+str django.\+core.\+signing.\+Signer.\+salt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ salt\ \textcolor{keywordflow}{or}\ \textcolor{stringliteral}{"{}\%s.\%s"{}}\ \%\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.\_\_class\_\_.\_\_module\_\_,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.\_\_class\_\_.\_\_name\_\_,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1core_1_1signing_1_1_signer_ae6a28eff0496131dbd51497b89b8473f}\index{django.core.signing.Signer@{django.core.signing.Signer}!sep@{sep}}
+\index{sep@{sep}!django.core.signing.Signer@{django.core.signing.Signer}}
+\doxysubsubsection{\texorpdfstring{sep}{sep}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1signing_1_1_signer_ae6a28eff0496131dbd51497b89b8473f} 
+django.\+core.\+signing.\+Signer.\+sep = sep}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/\mbox{\hyperlink{signing_8py}{signing.\+py}}\end{DoxyCompactItemize}

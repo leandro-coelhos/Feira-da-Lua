@@ -1,0 +1,107 @@
+\doxysection{aiohttp.\+resolver.\+Async\+Resolver Class Reference}
+\hypertarget{classaiohttp_1_1resolver_1_1_async_resolver}{}\label{classaiohttp_1_1resolver_1_1_async_resolver}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+Inheritance diagram for aiohttp.\+resolver.\+Async\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1resolver_1_1_async_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_a4a4bf55c00e58e86281353b5cab25d94}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+List\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_resolve_result}{Resolve\+Result}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_ace41b30dec878416b4a9320477850dd8}{resolve}} (self, str host, int port=0, socket.\+Address\+Family family=socket.\+AF\+\_\+\+INET)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_a11185bcc0b8b16d702da56692d12d8fc}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_a51a01b70b9c7419318b0deb7d8fde5b9}{\+\_\+resolve\+\_\+with\+\_\+query}} (self, str host, int port=0, int family=socket.\+AF\+\_\+\+INET)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_a74b7d2075affa3ef1089a835a8fcd5a7}{\+\_\+loop}} = loop or asyncio.\+get\+\_\+running\+\_\+loop()
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager}{\+\_\+\+DNSResolver\+Manager}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_add64dba5c2fee9ecbab539cd4db11135}{\+\_\+manager}} = None
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager}{\+\_\+\+DNSResolver\+Manager}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1resolver_1_1_async_resolver_a2857160595039c853b413ecd55ccd5c4}{\+\_\+resolver}} = aiodns.\+DNSResolver(\texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Use the `aiodns` package to make asynchronous DNS lookups\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_a4a4bf55c00e58e86281353b5cab25d94}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_a4a4bf55c00e58e86281353b5cab25d94} 
+ None aiohttp.\+resolver.\+Async\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_a51a01b70b9c7419318b0deb7d8fde5b9}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!\_resolve\_with\_query@{\_resolve\_with\_query}}
+\index{\_resolve\_with\_query@{\_resolve\_with\_query}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{\_resolve\_with\_query()}{\_resolve\_with\_query()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_a51a01b70b9c7419318b0deb7d8fde5b9} 
+ List\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} aiohttp.\+resolver.\+Async\+Resolver.\+\_\+resolve\+\_\+with\+\_\+query (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int }]{port}{ = {\ttfamily 0}, }\item[{int }]{family}{ = {\ttfamily socket.AF\+\_\+INET}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_a11185bcc0b8b16d702da56692d12d8fc}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!close@{close}}
+\index{close@{close}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_a11185bcc0b8b16d702da56692d12d8fc} 
+ None aiohttp.\+resolver.\+Async\+Resolver.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release resolver\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_resolver_a64053e1ce887ffa09aa515ab7c896a14}{aiohttp.\+abc.\+Abstract\+Resolver}}.
+
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_ace41b30dec878416b4a9320477850dd8}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_ace41b30dec878416b4a9320477850dd8} 
+ List\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_resolve_result}{Resolve\+Result}}\mbox{]} aiohttp.\+resolver.\+Async\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int }]{port}{ = {\ttfamily 0}, }\item[{socket.\+Address\+Family }]{family}{ = {\ttfamily socket.AF\+\_\+INET}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return IP address for given hostname\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_resolver_aa11e565eb19f0eaeec7ec2d9d359b7ec}{aiohttp.\+abc.\+Abstract\+Resolver}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_a74b7d2075affa3ef1089a835a8fcd5a7}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_a74b7d2075affa3ef1089a835a8fcd5a7} 
+aiohttp.\+resolver.\+Async\+Resolver.\+\_\+loop = loop or asyncio.\+get\+\_\+running\+\_\+loop()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_add64dba5c2fee9ecbab539cd4db11135}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!\_manager@{\_manager}}
+\index{\_manager@{\_manager}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{\_manager}{\_manager}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_add64dba5c2fee9ecbab539cd4db11135} 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1resolver_1_1___d_n_s_resolver_manager}{\+\_\+\+DNSResolver\+Manager}}\mbox{]} aiohttp.\+resolver.\+Async\+Resolver.\+\_\+manager = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1resolver_1_1_async_resolver_a2857160595039c853b413ecd55ccd5c4}\index{aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}!\_resolver@{\_resolver}}
+\index{\_resolver@{\_resolver}!aiohttp.resolver.AsyncResolver@{aiohttp.resolver.AsyncResolver}}
+\doxysubsubsection{\texorpdfstring{\_resolver}{\_resolver}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1resolver_1_1_async_resolver_a2857160595039c853b413ecd55ccd5c4} 
+aiohttp.\+resolver.\+Async\+Resolver.\+\_\+resolver = aiodns.\+DNSResolver(\texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{aiohttp_2resolver_8py}{resolver.\+py}}\end{DoxyCompactItemize}

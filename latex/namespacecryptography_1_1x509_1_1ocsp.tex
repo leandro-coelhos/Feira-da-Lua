@@ -1,0 +1,100 @@
+\doxysection{cryptography.\+x509.\+ocsp Namespace Reference}
+\hypertarget{namespacecryptography_1_1x509_1_1ocsp}{}\label{namespacecryptography_1_1x509_1_1ocsp}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1ocsp_1_1___single_response}{\+\_\+\+Single\+Response}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1ocsp_1_1_o_c_s_p_cert_status}{OCSPCert\+Status}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1ocsp_1_1_o_c_s_p_request_builder}{OCSPRequest\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1ocsp_1_1_o_c_s_p_responder_encoding}{OCSPResponder\+Encoding}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1ocsp_1_1_o_c_s_p_response_builder}{OCSPResponse\+Builder}}
+\item 
+class \mbox{\hyperlink{classcryptography_1_1x509_1_1ocsp_1_1_o_c_s_p_response_status}{OCSPResponse\+Status}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_a88e632dbba816919d7c3ab82ba9c175c}{\+\_\+verify\+\_\+algorithm}} (\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_hash_algorithm}{hashes.\+Hash\+Algorithm}} algorithm)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_a5b9c9b3f6e7c488029fc1bbc4c3e2cd3}{\+\_\+\+ALLOWED\+\_\+\+HASHES}}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_ae52052310d46cbb177098e164c29988a}{OCSPRequest}} = ocsp.\+OCSPRequest
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_ab9fa67fb3781b8808943952dd6fb5806}{OCSPResponse}} = ocsp.\+OCSPResponse
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_a544f3e9998737168fa44d806f2f2ff94}{OCSPSingle\+Response}} = ocsp.\+OCSPSingle\+Response
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_a92c4aecbc6bb135e262de6d5beb40c8f}{load\+\_\+der\+\_\+ocsp\+\_\+request}} = ocsp.\+load\+\_\+der\+\_\+ocsp\+\_\+request
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1x509_1_1ocsp_a795c768b957e36acf0c94d7524359e3c}{load\+\_\+der\+\_\+ocsp\+\_\+response}} = ocsp.\+load\+\_\+der\+\_\+ocsp\+\_\+response
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_a88e632dbba816919d7c3ab82ba9c175c}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!\_verify\_algorithm@{\_verify\_algorithm}}
+\index{\_verify\_algorithm@{\_verify\_algorithm}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{\_verify\_algorithm()}{\_verify\_algorithm()}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_a88e632dbba816919d7c3ab82ba9c175c} 
+ None cryptography.\+x509.\+ocsp.\+\_\+verify\+\_\+algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1hashes_1_1_hash_algorithm}{hashes.\+Hash\+Algorithm}}}]{algorithm}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_a5b9c9b3f6e7c488029fc1bbc4c3e2cd3}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!\_ALLOWED\_HASHES@{\_ALLOWED\_HASHES}}
+\index{\_ALLOWED\_HASHES@{\_ALLOWED\_HASHES}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{\_ALLOWED\_HASHES}{\_ALLOWED\_HASHES}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_a5b9c9b3f6e7c488029fc1bbc4c3e2cd3} 
+tuple cryptography.\+x509.\+ocsp.\+\_\+\+ALLOWED\+\_\+\+HASHES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ hashes.SHA1,}
+\DoxyCodeLine{00003\ \ \ \ \ hashes.SHA224,}
+\DoxyCodeLine{00004\ \ \ \ \ hashes.SHA256,}
+\DoxyCodeLine{00005\ \ \ \ \ hashes.SHA384,}
+\DoxyCodeLine{00006\ \ \ \ \ hashes.SHA512,}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_a92c4aecbc6bb135e262de6d5beb40c8f}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!load\_der\_ocsp\_request@{load\_der\_ocsp\_request}}
+\index{load\_der\_ocsp\_request@{load\_der\_ocsp\_request}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{load\_der\_ocsp\_request}{load\_der\_ocsp\_request}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_a92c4aecbc6bb135e262de6d5beb40c8f} 
+cryptography.\+x509.\+ocsp.\+load\+\_\+der\+\_\+ocsp\+\_\+request = ocsp.\+load\+\_\+der\+\_\+ocsp\+\_\+request}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_a795c768b957e36acf0c94d7524359e3c}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!load\_der\_ocsp\_response@{load\_der\_ocsp\_response}}
+\index{load\_der\_ocsp\_response@{load\_der\_ocsp\_response}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{load\_der\_ocsp\_response}{load\_der\_ocsp\_response}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_a795c768b957e36acf0c94d7524359e3c} 
+cryptography.\+x509.\+ocsp.\+load\+\_\+der\+\_\+ocsp\+\_\+response = ocsp.\+load\+\_\+der\+\_\+ocsp\+\_\+response}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_ae52052310d46cbb177098e164c29988a}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!OCSPRequest@{OCSPRequest}}
+\index{OCSPRequest@{OCSPRequest}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{OCSPRequest}{OCSPRequest}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_ae52052310d46cbb177098e164c29988a} 
+cryptography.\+x509.\+ocsp.\+OCSPRequest = ocsp.\+OCSPRequest}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_ab9fa67fb3781b8808943952dd6fb5806}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!OCSPResponse@{OCSPResponse}}
+\index{OCSPResponse@{OCSPResponse}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{OCSPResponse}{OCSPResponse}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_ab9fa67fb3781b8808943952dd6fb5806} 
+cryptography.\+x509.\+ocsp.\+OCSPResponse = ocsp.\+OCSPResponse}
+
+\Hypertarget{namespacecryptography_1_1x509_1_1ocsp_a544f3e9998737168fa44d806f2f2ff94}\index{cryptography.x509.ocsp@{cryptography.x509.ocsp}!OCSPSingleResponse@{OCSPSingleResponse}}
+\index{OCSPSingleResponse@{OCSPSingleResponse}!cryptography.x509.ocsp@{cryptography.x509.ocsp}}
+\doxysubsubsection{\texorpdfstring{OCSPSingleResponse}{OCSPSingleResponse}}
+{\footnotesize\ttfamily \label{namespacecryptography_1_1x509_1_1ocsp_a544f3e9998737168fa44d806f2f2ff94} 
+cryptography.\+x509.\+ocsp.\+OCSPSingle\+Response = ocsp.\+OCSPSingle\+Response}
+

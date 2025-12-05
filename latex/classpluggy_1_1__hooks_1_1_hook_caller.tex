@@ -1,0 +1,246 @@
+\doxysection{pluggy.\+\_\+hooks.\+Hook\+Caller Class Reference}
+\hypertarget{classpluggy_1_1__hooks_1_1_hook_caller}{}\label{classpluggy_1_1__hooks_1_1_hook_caller}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+Inheritance diagram for pluggy.\+\_\+hooks.\+Hook\+Caller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpluggy_1_1__hooks_1_1_hook_caller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a867052122dea2afbf4d550686f27e52f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a5e3c13318ea1bf053fd5faf2364e3143}{name}}, \mbox{\hyperlink{namespacepluggy_1_1__hooks_ab206d522ee4ddd8c7cfe334e7f98b371}{\+\_\+\+Hook\+Exec}} hook\+\_\+execute, \mbox{\hyperlink{namespacepluggy_1_1__hooks_a77a535c139a509196450346c34c91265}{\+\_\+\+Namespace}}\texorpdfstring{$\vert$}{|}None specmodule\+\_\+or\+\_\+class=None, \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hookspec_opts}{Hookspec\+Opts}}\texorpdfstring{$\vert$}{|}None spec\+\_\+opts=None)
+\item 
+bool \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_aaebb624b3efae6528a74266490a40ffd}{has\+\_\+spec}} (self)
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_ab0de3b9e49951adaae294ddc35dbef73}{set\+\_\+specification}} (self, \mbox{\hyperlink{namespacepluggy_1_1__hooks_a77a535c139a509196450346c34c91265}{\+\_\+\+Namespace}} specmodule\+\_\+or\+\_\+class, \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hookspec_opts}{Hookspec\+Opts}} spec\+\_\+opts)
+\item 
+bool \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_aef7e4aec63942074d0c00f167aacfb57}{is\+\_\+historic}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_impl}{Hook\+Impl}}\mbox{]} \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a697f0cc1e9aec429655e02610d029835}{get\+\_\+hookimpls}} (self)
+\item 
+str \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_aed1fc29552ea8fd4560bb08faf0fe429}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+Any \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a2cc8cfb2fdc15522045486b1a7e37dc3}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}object kwargs)
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a30296115536f19e6821622f6b211821a}{call\+\_\+historic}} (self, Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]}\texorpdfstring{$\vert$}{|}None result\+\_\+callback=None, Mapping\mbox{[}str, object\mbox{]}\texorpdfstring{$\vert$}{|}None kwargs=None)
+\item 
+Any \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a0af32832c83ebd08ace7d2d4c6420d39}{call\+\_\+extra}} (self, Sequence\mbox{[}Callable\mbox{[}..., object\mbox{]}\mbox{]} methods, Mapping\mbox{[}str, object\mbox{]} kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Final \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a5e3c13318ea1bf053fd5faf2364e3143}{name}} = name
+\item 
+\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_spec}{Hook\+Spec}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_ae21a010b88e697b451278fd44253952e}{spec}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a13e575197bf2df716a12f9159d9e8227}{\+\_\+remove\+\_\+plugin}} (self, \mbox{\hyperlink{namespacepluggy_1_1__hooks_affe436e0498d528158942b8af0f3b4b3}{\+\_\+\+Plugin}} plugin)
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a1f1503b790a99bcdc59bfa9680205208}{\+\_\+add\+\_\+hookimpl}} (self, \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_impl}{Hook\+Impl}} hookimpl)
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a03b08ce95429dca347bf44a7405b15e9}{\+\_\+verify\+\_\+all\+\_\+args\+\_\+are\+\_\+provided}} (self, Mapping\mbox{[}str, object\mbox{]} kwargs)
+\item 
+None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_af46219729a34703dcff4946a1535e5f5}{\+\_\+maybe\+\_\+apply\+\_\+history}} (self, \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_impl}{Hook\+Impl}} method)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Final \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a04a226cddb2bbafcc6e842684835575e}{\+\_\+hookexec}} = hook\+\_\+execute
+\item 
+list \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a680b231adf72fa6b1dbc9d2e2ffdc6f7}{\+\_\+hookimpls}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacepluggy_1_1__hooks_aac4beb59dc05a3eb4d747ef59bd94250}{\+\_\+\+Call\+History}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a1f0a1eb79865899b05649cfbd638fb61}{\+\_\+call\+\_\+history}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_caller_a9e028560c6201dab5c5fd9bf8664e1d3}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A caller of all registered implementations of a hook specification.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a867052122dea2afbf4d550686f27e52f}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a867052122dea2afbf4d550686f27e52f} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\mbox{\hyperlink{namespacepluggy_1_1__hooks_ab206d522ee4ddd8c7cfe334e7f98b371}{\+\_\+\+Hook\+Exec}}}]{hook\+\_\+execute}{, }\item[{\mbox{\hyperlink{namespacepluggy_1_1__hooks_a77a535c139a509196450346c34c91265}{\+\_\+\+Namespace}} \texorpdfstring{$\vert$}{|} None }]{specmodule\+\_\+or\+\_\+class}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hookspec_opts}{Hookspec\+Opts}} \texorpdfstring{$\vert$}{|} None }]{spec\+\_\+opts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a2cc8cfb2fdc15522045486b1a7e37dc3}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a2cc8cfb2fdc15522045486b1a7e37dc3} 
+ Any pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}object}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the hook.
+
+Only accepts keyword arguments, which should match the hook
+specification.
+
+Returns the result(s) of calling all registered plugins, see
+:ref:`calling`.
+\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_aed1fc29552ea8fd4560bb08faf0fe429}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_aed1fc29552ea8fd4560bb08faf0fe429} 
+ str pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a1f1503b790a99bcdc59bfa9680205208}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_add\_hookimpl@{\_add\_hookimpl}}
+\index{\_add\_hookimpl@{\_add\_hookimpl}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_add\_hookimpl()}{\_add\_hookimpl()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a1f1503b790a99bcdc59bfa9680205208} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+add\+\_\+hookimpl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_impl}{Hook\+Impl}}}]{hookimpl}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Add an implementation to the callback chain.\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_af46219729a34703dcff4946a1535e5f5}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_maybe\_apply\_history@{\_maybe\_apply\_history}}
+\index{\_maybe\_apply\_history@{\_maybe\_apply\_history}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_maybe\_apply\_history()}{\_maybe\_apply\_history()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_af46219729a34703dcff4946a1535e5f5} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+maybe\+\_\+apply\+\_\+history (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_impl}{Hook\+Impl}}}]{method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Apply call history to a new hookimpl if it is marked as historic.\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a13e575197bf2df716a12f9159d9e8227}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_remove\_plugin@{\_remove\_plugin}}
+\index{\_remove\_plugin@{\_remove\_plugin}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_remove\_plugin()}{\_remove\_plugin()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a13e575197bf2df716a12f9159d9e8227} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+remove\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepluggy_1_1__hooks_affe436e0498d528158942b8af0f3b4b3}{\+\_\+\+Plugin}}}]{plugin}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a03b08ce95429dca347bf44a7405b15e9}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_verify\_all\_args\_are\_provided@{\_verify\_all\_args\_are\_provided}}
+\index{\_verify\_all\_args\_are\_provided@{\_verify\_all\_args\_are\_provided}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_verify\_all\_args\_are\_provided()}{\_verify\_all\_args\_are\_provided()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a03b08ce95429dca347bf44a7405b15e9} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+verify\+\_\+all\+\_\+args\+\_\+are\+\_\+provided (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Mapping\mbox{[}str, object\mbox{]}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a0af32832c83ebd08ace7d2d4c6420d39}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!call\_extra@{call\_extra}}
+\index{call\_extra@{call\_extra}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{call\_extra()}{call\_extra()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a0af32832c83ebd08ace7d2d4c6420d39} 
+ Any pluggy.\+\_\+hooks.\+Hook\+Caller.\+call\+\_\+extra (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}Callable\mbox{[}..., object\mbox{]}\mbox{]}}]{methods}{, }\item[{Mapping\mbox{[}str, object\mbox{]}     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the hook with some additional temporarily participating
+methods using the specified ``kwargs`` as call parameters, see
+:ref:`call_extra`.\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a30296115536f19e6821622f6b211821a}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!call\_historic@{call\_historic}}
+\index{call\_historic@{call\_historic}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{call\_historic()}{call\_historic()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a30296115536f19e6821622f6b211821a} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+call\+\_\+historic (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \texorpdfstring{$\vert$}{|} None }]{result\+\_\+callback}{ = {\ttfamily None}, }\item[{Mapping\mbox{[}str, object\mbox{]} \texorpdfstring{$\vert$}{|} None }]{kwargs}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the hook with given ``kwargs`` for all registered plugins and
+for all plugins which will be registered afterwards, see
+:ref:`historic`.
+
+:param result_callback:
+    If provided, will be called for each non-``None`` result obtained
+    from a hook implementation.
+\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a697f0cc1e9aec429655e02610d029835}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!get\_hookimpls@{get\_hookimpls}}
+\index{get\_hookimpls@{get\_hookimpls}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{get\_hookimpls()}{get\_hookimpls()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a697f0cc1e9aec429655e02610d029835} 
+ list\mbox{[}\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_impl}{Hook\+Impl}}\mbox{]} pluggy.\+\_\+hooks.\+Hook\+Caller.\+get\+\_\+hookimpls (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get all registered hook implementations for this hook.\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_aaebb624b3efae6528a74266490a40ffd}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!has\_spec@{has\_spec}}
+\index{has\_spec@{has\_spec}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{has\_spec()}{has\_spec()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_aaebb624b3efae6528a74266490a40ffd} 
+ bool pluggy.\+\_\+hooks.\+Hook\+Caller.\+has\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_aef7e4aec63942074d0c00f167aacfb57}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!is\_historic@{is\_historic}}
+\index{is\_historic@{is\_historic}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{is\_historic()}{is\_historic()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_aef7e4aec63942074d0c00f167aacfb57} 
+ bool pluggy.\+\_\+hooks.\+Hook\+Caller.\+is\+\_\+historic (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether this caller is :ref:`historic <historic>`.\end{DoxyVerb}
+ \Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_ab0de3b9e49951adaae294ddc35dbef73}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!set\_specification@{set\_specification}}
+\index{set\_specification@{set\_specification}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{set\_specification()}{set\_specification()}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_ab0de3b9e49951adaae294ddc35dbef73} 
+ None pluggy.\+\_\+hooks.\+Hook\+Caller.\+set\+\_\+specification (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepluggy_1_1__hooks_a77a535c139a509196450346c34c91265}{\+\_\+\+Namespace}}}]{specmodule\+\_\+or\+\_\+class}{, }\item[{\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hookspec_opts}{Hookspec\+Opts}}}]{spec\+\_\+opts}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a9e028560c6201dab5c5fd9bf8664e1d3}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a9e028560c6201dab5c5fd9bf8664e1d3} 
+tuple pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}spec"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_hookexec"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_hookimpls"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_call\_history"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a1f0a1eb79865899b05649cfbd638fb61}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_call\_history@{\_call\_history}}
+\index{\_call\_history@{\_call\_history}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_call\_history}{\_call\_history}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a1f0a1eb79865899b05649cfbd638fb61} 
+\mbox{\hyperlink{namespacepluggy_1_1__hooks_aac4beb59dc05a3eb4d747ef59bd94250}{\+\_\+\+Call\+History}} \texorpdfstring{$\vert$}{|} None pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+call\+\_\+history = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpluggy_1_1__hooks_1_1___subset_hook_caller_a9195c6a9c5771bd5e076a6bddb9b20dd}{pluggy.\+\_\+hooks.\+\_\+\+Subset\+Hook\+Caller}}.
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a04a226cddb2bbafcc6e842684835575e}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_hookexec@{\_hookexec}}
+\index{\_hookexec@{\_hookexec}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_hookexec}{\_hookexec}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a04a226cddb2bbafcc6e842684835575e} 
+Final pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+hookexec = hook\+\_\+execute\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a680b231adf72fa6b1dbc9d2e2ffdc6f7}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!\_hookimpls@{\_hookimpls}}
+\index{\_hookimpls@{\_hookimpls}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{\_hookimpls}{\_hookimpls}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a680b231adf72fa6b1dbc9d2e2ffdc6f7} 
+pluggy.\+\_\+hooks.\+Hook\+Caller.\+\_\+hookimpls = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpluggy_1_1__hooks_1_1___subset_hook_caller_a397c948fd7c503134aaf4eb1dad07085}{pluggy.\+\_\+hooks.\+\_\+\+Subset\+Hook\+Caller}}.
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_a5e3c13318ea1bf053fd5faf2364e3143}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!name@{name}}
+\index{name@{name}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_a5e3c13318ea1bf053fd5faf2364e3143} 
+pluggy.\+\_\+hooks.\+Hook\+Caller.\+name = name}
+
+\Hypertarget{classpluggy_1_1__hooks_1_1_hook_caller_ae21a010b88e697b451278fd44253952e}\index{pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}!spec@{spec}}
+\index{spec@{spec}!pluggy.\_hooks.HookCaller@{pluggy.\_hooks.HookCaller}}
+\doxysubsubsection{\texorpdfstring{spec}{spec}}
+{\footnotesize\ttfamily \label{classpluggy_1_1__hooks_1_1_hook_caller_ae21a010b88e697b451278fd44253952e} 
+\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_spec}{Hook\+Spec}} \texorpdfstring{$\vert$}{|} None pluggy.\+\_\+hooks.\+Hook\+Caller.\+spec = None}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpluggy_1_1__hooks_1_1___subset_hook_caller_ab4f250ab0096f9c4c5fceaed622f5328}{pluggy.\+\_\+hooks.\+\_\+\+Subset\+Hook\+Caller}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pluggy/\mbox{\hyperlink{__hooks_8py}{\+\_\+hooks.\+py}}\end{DoxyCompactItemize}

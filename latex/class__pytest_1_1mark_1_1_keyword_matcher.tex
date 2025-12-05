@@ -1,0 +1,73 @@
+\doxysection{\+\_\+pytest.\+mark.\+Keyword\+Matcher Class Reference}
+\hypertarget{class__pytest_1_1mark_1_1_keyword_matcher}{}\label{class__pytest_1_1mark_1_1_keyword_matcher}\index{\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1mark_1_1_keyword_matcher}{Keyword\+Matcher}} \mbox{\hyperlink{class__pytest_1_1mark_1_1_keyword_matcher_a2c4a30337735291db9cc29cb31534754}{from\+\_\+item}} (cls, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} item)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1mark_1_1_keyword_matcher_a0756260e6cf36a51db43932cb49c5f8b}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, str subname, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}None kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Abstract\+Set \mbox{\hyperlink{class__pytest_1_1mark_1_1_keyword_matcher_abd46c7634355a003c8aa46a5da613978}{\+\_\+names}} \mbox{[}str\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{class__pytest_1_1mark_1_1_keyword_matcher_a7caafd79437b60575a5531867a0b8fcf}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+names"{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A matcher for keywords.
+
+Given a list of names, matches any substring of one of these names. The
+string inclusion check is case-insensitive.
+
+Will match on the name of colitem, including the names of its parents.
+Only matches names of items which are either a :class:`Class` or a
+:class:`Function`.
+
+Additionally, matches on names in the 'extra_keyword_matches' set of
+any item, as well as names directly assigned to test functions.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1mark_1_1_keyword_matcher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1mark_1_1_keyword_matcher_a0756260e6cf36a51db43932cb49c5f8b}\index{\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1_keyword_matcher_a0756260e6cf36a51db43932cb49c5f8b} 
+ bool \+\_\+pytest.\+mark.\+Keyword\+Matcher.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{subname}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} bool \texorpdfstring{$\vert$}{|} None}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1mark_1_1_keyword_matcher_a2c4a30337735291db9cc29cb31534754}\index{\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}!from\_item@{from\_item}}
+\index{from\_item@{from\_item}!\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}}
+\doxysubsubsection{\texorpdfstring{from\_item()}{from\_item()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1_keyword_matcher_a2c4a30337735291db9cc29cb31534754} 
+ \mbox{\hyperlink{class__pytest_1_1mark_1_1_keyword_matcher}{Keyword\+Matcher}} \+\_\+pytest.\+mark.\+Keyword\+Matcher.\+from\+\_\+item (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1mark_1_1_keyword_matcher_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1mark_1_1_keyword_matcher_a7caafd79437b60575a5531867a0b8fcf}\index{\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1_keyword_matcher_a7caafd79437b60575a5531867a0b8fcf} 
+tuple \+\_\+pytest.\+mark.\+Keyword\+Matcher.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+names"{},)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1mark_1_1_keyword_matcher_abd46c7634355a003c8aa46a5da613978}\index{\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}!\_names@{\_names}}
+\index{\_names@{\_names}!\_pytest.mark.KeywordMatcher@{\_pytest.mark.KeywordMatcher}}
+\doxysubsubsection{\texorpdfstring{\_names}{\_names}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1_keyword_matcher_abd46c7634355a003c8aa46a5da613978} 
+\+\_\+pytest.\+mark.\+Keyword\+Matcher.\+\_\+names \mbox{[}str\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/mark/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2__pytest_2mark_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

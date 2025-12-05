@@ -1,0 +1,126 @@
+\doxysection{pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source Class Reference}
+\hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source}{}\label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+Inheritance diagram for pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a84c4593aff125617d40953cea368c314}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1sources_acd21780bb093d0986d8cad8c2aa19ca1}{Candidates\+From\+Page}} candidates\+\_\+from\+\_\+page, str path, str project\+\_\+name)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a95f9a09dc1a189a167f4f2bff15a8902}{link}} (self)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1sources_a1b1f5d620c539472b38006b0749aa0c2}{Found\+Candidates}} \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_aeef8f758f4fdceba7769919f27f64ea7}{page\+\_\+candidates}} (self)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1sources_a39ba0822c7a6490947cf4a90b65c0159}{Found\+Links}} \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_aece9da68ba99d883973bfc4f3f1fd3ad}{file\+\_\+links}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_ad56d90de37f3c24df8de24e3c4b3f97f}{\+\_\+candidates\+\_\+from\+\_\+page}} = candidates\+\_\+from\+\_\+page
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_ad5adb5be947e10f8ab76c133402e3e38}{\+\_\+project\+\_\+name}} = canonicalize\+\_\+name(project\+\_\+name)
+\item 
+dict \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a4a9fb072bc1c0e50ddf079f1c0b92bb6}{\+\_\+path\+\_\+to\+\_\+urls}} = self.\+\_\+paths\+\_\+to\+\_\+urls\mbox{[}path\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a0c7c8b42e0323728c0908fab5a5f8380}{\+\_\+paths\+\_\+to\+\_\+urls}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Link source specified by ``--find-links=<path-to-dir>``.
+
+This looks the content of the directory, and returns:
+
+* ``page_candidates``: Links listed on each HTML file in the directory.
+* ``file_candidates``: Archives in the directory.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a84c4593aff125617d40953cea368c314}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a84c4593aff125617d40953cea368c314} 
+ None pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1sources_acd21780bb093d0986d8cad8c2aa19ca1}{Candidates\+From\+Page}}}]{candidates\+\_\+from\+\_\+page}{, }\item[{str}]{path}{, }\item[{str}]{project\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_aece9da68ba99d883973bfc4f3f1fd3ad}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!file\_links@{file\_links}}
+\index{file\_links@{file\_links}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{file\_links()}{file\_links()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_aece9da68ba99d883973bfc4f3f1fd3ad} 
+ \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1sources_a39ba0822c7a6490947cf4a90b65c0159}{Found\+Links}} pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+file\+\_\+links (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Links found by specifying archives directly.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1_link_source_a5cb07057595bc2cb48c20cbcf6f9a909}{pip.\+\_\+internal.\+index.\+sources.\+Link\+Source}}.
+
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a95f9a09dc1a189a167f4f2bff15a8902}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!link@{link}}
+\index{link@{link}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a95f9a09dc1a189a167f4f2bff15a8902} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+link (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the underlying link, if there's one.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1_link_source_a8256fb9246032d2d995b470901743c5d}{pip.\+\_\+internal.\+index.\+sources.\+Link\+Source}}.
+
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_aeef8f758f4fdceba7769919f27f64ea7}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!page\_candidates@{page\_candidates}}
+\index{page\_candidates@{page\_candidates}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{page\_candidates()}{page\_candidates()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_aeef8f758f4fdceba7769919f27f64ea7} 
+ \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1sources_a1b1f5d620c539472b38006b0749aa0c2}{Found\+Candidates}} pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+page\+\_\+candidates (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Candidates found by parsing an archive listing HTML file.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1sources_1_1_link_source_a7b6338a8376e7b2955ef9966a169ae5f}{pip.\+\_\+internal.\+index.\+sources.\+Link\+Source}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_ad56d90de37f3c24df8de24e3c4b3f97f}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!\_candidates\_from\_page@{\_candidates\_from\_page}}
+\index{\_candidates\_from\_page@{\_candidates\_from\_page}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{\_candidates\_from\_page}{\_candidates\_from\_page}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_ad56d90de37f3c24df8de24e3c4b3f97f} 
+pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+\_\+candidates\+\_\+from\+\_\+page = candidates\+\_\+from\+\_\+page\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a4a9fb072bc1c0e50ddf079f1c0b92bb6}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!\_path\_to\_urls@{\_path\_to\_urls}}
+\index{\_path\_to\_urls@{\_path\_to\_urls}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{\_path\_to\_urls}{\_path\_to\_urls}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a4a9fb072bc1c0e50ddf079f1c0b92bb6} 
+dict pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+\_\+path\+\_\+to\+\_\+urls = self.\+\_\+paths\+\_\+to\+\_\+urls\mbox{[}path\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a0c7c8b42e0323728c0908fab5a5f8380}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!\_paths\_to\_urls@{\_paths\_to\_urls}}
+\index{\_paths\_to\_urls@{\_paths\_to\_urls}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{\_paths\_to\_urls}{\_paths\_to\_urls}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_a0c7c8b42e0323728c0908fab5a5f8380} 
+dict pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+\_\+paths\+\_\+to\+\_\+urls = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_ad5adb5be947e10f8ab76c133402e3e38}\index{pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}!\_project\_name@{\_project\_name}}
+\index{\_project\_name@{\_project\_name}!pip.\_internal.index.sources.\_FlatDirectorySource@{pip.\_internal.index.sources.\_FlatDirectorySource}}
+\doxysubsubsection{\texorpdfstring{\_project\_name}{\_project\_name}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1index_1_1sources_1_1___flat_directory_source_ad5adb5be947e10f8ab76c133402e3e38} 
+pip.\+\_\+internal.\+index.\+sources.\+\_\+\+Flat\+Directory\+Source.\+\_\+project\+\_\+name = canonicalize\+\_\+name(project\+\_\+name)\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+internal/index/\mbox{\hyperlink{sources_8py}{sources.\+py}}\end{DoxyCompactItemize}

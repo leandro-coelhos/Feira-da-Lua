@@ -1,0 +1,56 @@
+\doxysection{urllib3.\+util.\+response Namespace Reference}
+\hypertarget{namespaceurllib3_1_1util_1_1response}{}\label{namespaceurllib3_1_1util_1_1response}\index{urllib3.util.response@{urllib3.util.response}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1response_acb101d0d64f2548a45acf9ff2160fdd8}{is\+\_\+fp\+\_\+closed}} (object obj)
+\item 
+None \mbox{\hyperlink{namespaceurllib3_1_1util_1_1response_ad470bcb7ad18daa7698f5e097cb33939}{assert\+\_\+header\+\_\+parsing}} (httplib.\+HTTPMessage headers)
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1response_a2a33986ff853236cf518487b7269d981}{is\+\_\+response\+\_\+to\+\_\+head}} (httplib.\+HTTPResponse response)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceurllib3_1_1util_1_1response_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceurllib3_1_1util_1_1response_ad470bcb7ad18daa7698f5e097cb33939}\index{urllib3.util.response@{urllib3.util.response}!assert\_header\_parsing@{assert\_header\_parsing}}
+\index{assert\_header\_parsing@{assert\_header\_parsing}!urllib3.util.response@{urllib3.util.response}}
+\doxysubsubsection{\texorpdfstring{assert\_header\_parsing()}{assert\_header\_parsing()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1response_ad470bcb7ad18daa7698f5e097cb33939} 
+ None urllib3.\+util.\+response.\+assert\+\_\+header\+\_\+parsing (\begin{DoxyParamCaption}\item[{httplib.\+HTTPMessage}]{headers}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Asserts whether all headers have been successfully parsed.
+Extracts encountered errors from the result of parsing headers.
+
+Only works on Python 3.
+
+:param http.client.HTTPMessage headers: Headers to verify.
+
+:raises urllib3.exceptions.HeaderParsingError:
+    If parsing errors are found.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1response_acb101d0d64f2548a45acf9ff2160fdd8}\index{urllib3.util.response@{urllib3.util.response}!is\_fp\_closed@{is\_fp\_closed}}
+\index{is\_fp\_closed@{is\_fp\_closed}!urllib3.util.response@{urllib3.util.response}}
+\doxysubsubsection{\texorpdfstring{is\_fp\_closed()}{is\_fp\_closed()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1response_acb101d0d64f2548a45acf9ff2160fdd8} 
+ bool urllib3.\+util.\+response.\+is\+\_\+fp\+\_\+closed (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks whether a given file-like object is closed.
+
+:param obj:
+    The file-like object to check.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1response_a2a33986ff853236cf518487b7269d981}\index{urllib3.util.response@{urllib3.util.response}!is\_response\_to\_head@{is\_response\_to\_head}}
+\index{is\_response\_to\_head@{is\_response\_to\_head}!urllib3.util.response@{urllib3.util.response}}
+\doxysubsubsection{\texorpdfstring{is\_response\_to\_head()}{is\_response\_to\_head()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1response_a2a33986ff853236cf518487b7269d981} 
+ bool urllib3.\+util.\+response.\+is\+\_\+response\+\_\+to\+\_\+head (\begin{DoxyParamCaption}\item[{httplib.\+HTTPResponse}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks whether the request of a response has been a HEAD-request.
+
+:param http.client.HTTPResponse response:
+    Response to check if the originating request
+    used 'HEAD' as a method.
+\end{DoxyVerb}
+ 

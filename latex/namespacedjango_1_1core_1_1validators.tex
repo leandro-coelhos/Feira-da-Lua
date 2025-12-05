@@ -1,0 +1,241 @@
+\doxysection{django.\+core.\+validators Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1validators}{}\label{namespacedjango_1_1core_1_1validators}\index{django.core.validators@{django.core.validators}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_base_validator}{Base\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_decimal_validator}{Decimal\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_domain_name_validator}{Domain\+Name\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator}{Email\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_file_extension_validator}{File\+Extension\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_max_length_validator}{Max\+Length\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_max_value_validator}{Max\+Value\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_min_length_validator}{Min\+Length\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_min_value_validator}{Min\+Value\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_prohibit_null_characters_validator}{Prohibit\+Null\+Characters\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_regex_validator}{Regex\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_step_value_validator}{Step\+Value\+Validator}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_u_r_l_validator}{URLValidator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a46116f30550c34604bdb5a1d253dade9}{validate\+\_\+integer}} (value)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a6339ef161c1a4f497482af29e8d4865c}{validate\+\_\+ipv4\+\_\+address}} (value)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a3b617a665dd80a3cfc8839ef50d7baef}{validate\+\_\+ipv6\+\_\+address}} (value)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a8277bd5d41f8de5986eec8180e7aa6f7}{validate\+\_\+ipv46\+\_\+address}} (value)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_aa9f370fa144e93fd1d6084221d671cdc}{ip\+\_\+address\+\_\+validators}} (protocol, unpack\+\_\+ipv4)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a1c51b7e3978b409cdce75c40eabcde77}{int\+\_\+list\+\_\+validator}} (sep="{},"{}, message=None, code="{}invalid"{}, allow\+\_\+negative=False)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_ab1529038bbe37ba71d8b8df925eb20af}{get\+\_\+available\+\_\+image\+\_\+extensions}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_ae2d4b5a814931b4567db9b06eb5f2b80}{validate\+\_\+image\+\_\+file\+\_\+extension}} (value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a2742ca7e18095bf3a431d18b32ee66b1}{EMPTY\+\_\+\+VALUES}} = (None, "{}"{}, \mbox{[}$\,$\mbox{]}, (), \{\})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_afb6d850d4a8d393450faac425c180e03}{validate\+\_\+domain\+\_\+name}} = \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_domain_name_validator}{Domain\+Name\+Validator}}()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a2cad40bdcac850cbb1a64416358012f1}{integer\+\_\+validator}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a92935ed437d9565b02684c9d508e6069}{validate\+\_\+email}} = \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator}{Email\+Validator}}()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a653f89fda2c6c55221d5f7a45cb7085f}{slug\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}-\/a-\/zA-\/Z0-\/9\+\_\+\mbox{]}+\textbackslash{}Z"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_abdab5184a7a23bc6d8389144ee72689a}{validate\+\_\+slug}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a13e0e5119dfcad954bb8bb555cd00971}{slug\+\_\+unicode\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}-\/\textbackslash{}w\mbox{]}+\textbackslash{}Z"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a49279ac934977ebf3f2949accc4d6e2b}{validate\+\_\+unicode\+\_\+slug}}
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1core_1_1validators_a07813c17b5f2fb89df98ce348ac58f02}{ip\+\_\+address\+\_\+validator\+\_\+map}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1validators_afd97abaa0a18e9128a043cd3c28905c3}{validate\+\_\+comma\+\_\+separated\+\_\+integer\+\_\+list}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1validators_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1validators_ab1529038bbe37ba71d8b8df925eb20af}\index{django.core.validators@{django.core.validators}!get\_available\_image\_extensions@{get\_available\_image\_extensions}}
+\index{get\_available\_image\_extensions@{get\_available\_image\_extensions}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{get\_available\_image\_extensions()}{get\_available\_image\_extensions()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_ab1529038bbe37ba71d8b8df925eb20af} 
+django.\+core.\+validators.\+get\+\_\+available\+\_\+image\+\_\+extensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a1c51b7e3978b409cdce75c40eabcde77}\index{django.core.validators@{django.core.validators}!int\_list\_validator@{int\_list\_validator}}
+\index{int\_list\_validator@{int\_list\_validator}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{int\_list\_validator()}{int\_list\_validator()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a1c51b7e3978b409cdce75c40eabcde77} 
+django.\+core.\+validators.\+int\+\_\+list\+\_\+validator (\begin{DoxyParamCaption}\item[{}]{sep}{ = {\ttfamily "{},"{}}, }\item[{}]{message}{ = {\ttfamily None}, }\item[{}]{code}{ = {\ttfamily "{}invalid"{}}, }\item[{}]{allow\+\_\+negative}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_aa9f370fa144e93fd1d6084221d671cdc}\index{django.core.validators@{django.core.validators}!ip\_address\_validators@{ip\_address\_validators}}
+\index{ip\_address\_validators@{ip\_address\_validators}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{ip\_address\_validators()}{ip\_address\_validators()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_aa9f370fa144e93fd1d6084221d671cdc} 
+django.\+core.\+validators.\+ip\+\_\+address\+\_\+validators (\begin{DoxyParamCaption}\item[{}]{protocol}{, }\item[{}]{unpack\+\_\+ipv4}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Depending on the given parameters, return the appropriate validators for
+the GenericIPAddressField.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1validators_ae2d4b5a814931b4567db9b06eb5f2b80}\index{django.core.validators@{django.core.validators}!validate\_image\_file\_extension@{validate\_image\_file\_extension}}
+\index{validate\_image\_file\_extension@{validate\_image\_file\_extension}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_image\_file\_extension()}{validate\_image\_file\_extension()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_ae2d4b5a814931b4567db9b06eb5f2b80} 
+django.\+core.\+validators.\+validate\+\_\+image\+\_\+file\+\_\+extension (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a46116f30550c34604bdb5a1d253dade9}\index{django.core.validators@{django.core.validators}!validate\_integer@{validate\_integer}}
+\index{validate\_integer@{validate\_integer}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_integer()}{validate\_integer()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a46116f30550c34604bdb5a1d253dade9} 
+django.\+core.\+validators.\+validate\+\_\+integer (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a8277bd5d41f8de5986eec8180e7aa6f7}\index{django.core.validators@{django.core.validators}!validate\_ipv46\_address@{validate\_ipv46\_address}}
+\index{validate\_ipv46\_address@{validate\_ipv46\_address}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_ipv46\_address()}{validate\_ipv46\_address()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a8277bd5d41f8de5986eec8180e7aa6f7} 
+django.\+core.\+validators.\+validate\+\_\+ipv46\+\_\+address (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a6339ef161c1a4f497482af29e8d4865c}\index{django.core.validators@{django.core.validators}!validate\_ipv4\_address@{validate\_ipv4\_address}}
+\index{validate\_ipv4\_address@{validate\_ipv4\_address}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_ipv4\_address()}{validate\_ipv4\_address()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a6339ef161c1a4f497482af29e8d4865c} 
+django.\+core.\+validators.\+validate\+\_\+ipv4\+\_\+address (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a3b617a665dd80a3cfc8839ef50d7baef}\index{django.core.validators@{django.core.validators}!validate\_ipv6\_address@{validate\_ipv6\_address}}
+\index{validate\_ipv6\_address@{validate\_ipv6\_address}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_ipv6\_address()}{validate\_ipv6\_address()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a3b617a665dd80a3cfc8839ef50d7baef} 
+django.\+core.\+validators.\+validate\+\_\+ipv6\+\_\+address (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1core_1_1validators_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1validators_a2742ca7e18095bf3a431d18b32ee66b1}\index{django.core.validators@{django.core.validators}!EMPTY\_VALUES@{EMPTY\_VALUES}}
+\index{EMPTY\_VALUES@{EMPTY\_VALUES}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_VALUES}{EMPTY\_VALUES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a2742ca7e18095bf3a431d18b32ee66b1} 
+tuple django.\+core.\+validators.\+EMPTY\+\_\+\+VALUES = (None, "{}"{}, \mbox{[}$\,$\mbox{]}, (), \{\})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a2cad40bdcac850cbb1a64416358012f1}\index{django.core.validators@{django.core.validators}!integer\_validator@{integer\_validator}}
+\index{integer\_validator@{integer\_validator}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{integer\_validator}{integer\_validator}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a2cad40bdcac850cbb1a64416358012f1} 
+django.\+core.\+validators.\+integer\+\_\+validator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ RegexValidator(}
+\DoxyCodeLine{00002\ \ \ \ \ \_lazy\_re\_compile(\textcolor{stringliteral}{r"{}\string^-\/?\(\backslash\)d+\(\backslash\)Z"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ message=\_(\textcolor{stringliteral}{"{}Enter\ a\ valid\ integer."{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ code=\textcolor{stringliteral}{"{}invalid"{}},}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1validators_a07813c17b5f2fb89df98ce348ac58f02}\index{django.core.validators@{django.core.validators}!ip\_address\_validator\_map@{ip\_address\_validator\_map}}
+\index{ip\_address\_validator\_map@{ip\_address\_validator\_map}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{ip\_address\_validator\_map}{ip\_address\_validator\_map}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a07813c17b5f2fb89df98ce348ac58f02} 
+dict django.\+core.\+validators.\+ip\+\_\+address\+\_\+validator\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}both"{}}:\ [validate\_ipv46\_address],}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}ipv4"{}}:\ [validate\_ipv4\_address],}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}ipv6"{}}:\ [validate\_ipv6\_address],}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1validators_a653f89fda2c6c55221d5f7a45cb7085f}\index{django.core.validators@{django.core.validators}!slug\_re@{slug\_re}}
+\index{slug\_re@{slug\_re}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{slug\_re}{slug\_re}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a653f89fda2c6c55221d5f7a45cb7085f} 
+django.\+core.\+validators.\+slug\+\_\+re = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}-\/a-\/zA-\/Z0-\/9\+\_\+\mbox{]}+\textbackslash{}Z"{})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a13e0e5119dfcad954bb8bb555cd00971}\index{django.core.validators@{django.core.validators}!slug\_unicode\_re@{slug\_unicode\_re}}
+\index{slug\_unicode\_re@{slug\_unicode\_re}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{slug\_unicode\_re}{slug\_unicode\_re}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a13e0e5119dfcad954bb8bb555cd00971} 
+django.\+core.\+validators.\+slug\+\_\+unicode\+\_\+re = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}-\/\textbackslash{}w\mbox{]}+\textbackslash{}Z"{})}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_afd97abaa0a18e9128a043cd3c28905c3}\index{django.core.validators@{django.core.validators}!validate\_comma\_separated\_integer\_list@{validate\_comma\_separated\_integer\_list}}
+\index{validate\_comma\_separated\_integer\_list@{validate\_comma\_separated\_integer\_list}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_comma\_separated\_integer\_list}{validate\_comma\_separated\_integer\_list}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_afd97abaa0a18e9128a043cd3c28905c3} 
+django.\+core.\+validators.\+validate\+\_\+comma\+\_\+separated\+\_\+integer\+\_\+list}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ int\_list\_validator(}
+\DoxyCodeLine{00002\ \ \ \ \ message=\_(\textcolor{stringliteral}{"{}Enter\ only\ digits\ separated\ by\ commas."{}}),}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1validators_afb6d850d4a8d393450faac425c180e03}\index{django.core.validators@{django.core.validators}!validate\_domain\_name@{validate\_domain\_name}}
+\index{validate\_domain\_name@{validate\_domain\_name}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_domain\_name}{validate\_domain\_name}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_afb6d850d4a8d393450faac425c180e03} 
+django.\+core.\+validators.\+validate\+\_\+domain\+\_\+name = \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_domain_name_validator}{Domain\+Name\+Validator}}()}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_a92935ed437d9565b02684c9d508e6069}\index{django.core.validators@{django.core.validators}!validate\_email@{validate\_email}}
+\index{validate\_email@{validate\_email}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_email}{validate\_email}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a92935ed437d9565b02684c9d508e6069} 
+django.\+core.\+validators.\+validate\+\_\+email = \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator}{Email\+Validator}}()}
+
+\Hypertarget{namespacedjango_1_1core_1_1validators_abdab5184a7a23bc6d8389144ee72689a}\index{django.core.validators@{django.core.validators}!validate\_slug@{validate\_slug}}
+\index{validate\_slug@{validate\_slug}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_slug}{validate\_slug}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_abdab5184a7a23bc6d8389144ee72689a} 
+django.\+core.\+validators.\+validate\+\_\+slug}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ RegexValidator(}
+\DoxyCodeLine{00002\ \ \ \ \ slug\_re,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{comment}{\#\ Translators:\ "{}letters"{}\ means\ latin\ letters:\ a-\/z\ and\ A-\/Z.}}
+\DoxyCodeLine{00004\ \ \ \ \ \_(\textcolor{stringliteral}{"{}Enter\ a\ valid\ “slug”\ consisting\ of\ letters,\ numbers,\ underscores\ or\ hyphens."{}}),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}invalid"{}},}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1validators_a49279ac934977ebf3f2949accc4d6e2b}\index{django.core.validators@{django.core.validators}!validate\_unicode\_slug@{validate\_unicode\_slug}}
+\index{validate\_unicode\_slug@{validate\_unicode\_slug}!django.core.validators@{django.core.validators}}
+\doxysubsubsection{\texorpdfstring{validate\_unicode\_slug}{validate\_unicode\_slug}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1validators_a49279ac934977ebf3f2949accc4d6e2b} 
+django.\+core.\+validators.\+validate\+\_\+unicode\+\_\+slug}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ RegexValidator(}
+\DoxyCodeLine{00002\ \ \ \ \ slug\_unicode\_re,}
+\DoxyCodeLine{00003\ \ \ \ \ \_(}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Enter\ a\ valid\ “slug”\ consisting\ of\ Unicode\ letters,\ numbers,\ underscores,\ or\ "{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hyphens."{}}}
+\DoxyCodeLine{00006\ \ \ \ \ ),}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}invalid"{}},}
+\DoxyCodeLine{00008\ )}
+
+\end{DoxyCode}

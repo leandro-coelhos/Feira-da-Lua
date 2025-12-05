@@ -1,0 +1,174 @@
+\doxysection{attr.\+\_\+make.\+Attribute Class Reference}
+\hypertarget{classattr_1_1__make_1_1_attribute}{}\label{classattr_1_1__make_1_1_attribute}\index{attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_a95871450cdcf1514b5053c6860c3e3b4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, default, validator, repr, cmp, hash, init, inherited, metadata=None, type=None, converter=None, kw\+\_\+only=False, eq=None, eq\+\_\+key=None, order=None, order\+\_\+key=None, on\+\_\+setattr=None, alias=None)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_a2b136e52bcbaeaa24dda6b0e6ff3c2d5}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, name, value)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_ae228ebbf2aedd3537437430478710e3f}{from\+\_\+counting\+\_\+attr}} (cls, str name, \mbox{\hyperlink{classattr_1_1__make_1_1___counting_attr}{\+\_\+\+Counting\+Attr}} ca, bool kw\+\_\+only, type=None)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_aa08dc17fe70f2d78861b65f5791cacd0}{evolve}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}changes)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_afd137021102ac0acda4ffb332e790e0c}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_acb4fdbae2e039a6b83811727ca3a3c21}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_attribute_aef10ada8d4bd847c54de3dc3656bf02f}{\+\_\+setattrs}} (self, name\+\_\+values\+\_\+pairs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classattr_1_1__make_1_1_attribute_a9c1ecaf8dd247540ab71093c42716f00}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*Read-only* representation of an attribute.
+
+.. warning::
+
+   You should never instantiate this class yourself.
+
+The class has *all* arguments of `attr.ib` (except for ``factory`` which is
+only syntactic sugar for ``default=Factory(...)`` plus the following:
+
+- ``name`` (`str`): The name of the attribute.
+- ``alias`` (`str`): The __init__ parameter name of the attribute, after
+  any explicit overrides and default private-attribute-name handling.
+- ``inherited`` (`bool`): Whether or not that attribute has been inherited
+  from a base class.
+- ``eq_key`` and ``order_key`` (`typing.Callable` or `None`): The
+  callables that are used for comparing and ordering objects by this
+  attribute, respectively. These are set by passing a callable to
+  `attr.ib`'s ``eq``, ``order``, or ``cmp`` arguments. See also
+  :ref:`comparison customization <custom-comparison>`.
+
+Instances of this class are frequently used for introspection purposes
+like:
+
+- `fields` returns a tuple of them.
+- Validators get them passed as the first argument.
+- The :ref:`field transformer <transform-fields>` hook receives a list of
+  them.
+- The ``alias`` property exposes the __init__ parameter name of the field,
+  with any overrides and default private-attribute handling applied.
+
+
+.. versionadded:: 20.1.0 *inherited*
+.. versionadded:: 20.1.0 *on_setattr*
+.. versionchanged:: 20.2.0 *inherited* is not taken into account for
+    equality checks and hashing anymore.
+.. versionadded:: 21.1.0 *eq_key* and *order_key*
+.. versionadded:: 22.2.0 *alias*
+
+For the full version history of the fields, see `attr.ib`.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classattr_1_1__make_1_1_attribute_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classattr_1_1__make_1_1_attribute_a95871450cdcf1514b5053c6860c3e3b4}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_a95871450cdcf1514b5053c6860c3e3b4} 
+attr.\+\_\+make.\+Attribute.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{default}{, }\item[{}]{validator}{, }\item[{}]{repr}{, }\item[{}]{cmp}{, }\item[{}]{hash}{, }\item[{}]{init}{, }\item[{}]{inherited}{, }\item[{}]{metadata}{ = {\ttfamily None}, }\item[{}]{type}{ = {\ttfamily None}, }\item[{}]{converter}{ = {\ttfamily None}, }\item[{}]{kw\+\_\+only}{ = {\ttfamily False}, }\item[{}]{eq}{ = {\ttfamily None}, }\item[{}]{eq\+\_\+key}{ = {\ttfamily None}, }\item[{}]{order}{ = {\ttfamily None}, }\item[{}]{order\+\_\+key}{ = {\ttfamily None}, }\item[{}]{on\+\_\+setattr}{ = {\ttfamily None}, }\item[{}]{alias}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classattr_1_1__make_1_1_attribute_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classattr_1_1__make_1_1_attribute_afd137021102ac0acda4ffb332e790e0c}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_afd137021102ac0acda4ffb332e790e0c} 
+attr.\+\_\+make.\+Attribute.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play nice with pickle.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_attribute_a2b136e52bcbaeaa24dda6b0e6ff3c2d5}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!\_\_setattr\_\_@{\_\_setattr\_\_}}
+\index{\_\_setattr\_\_@{\_\_setattr\_\_}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{\_\_setattr\_\_()}{\_\_setattr\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_a2b136e52bcbaeaa24dda6b0e6ff3c2d5} 
+attr.\+\_\+make.\+Attribute.\+\_\+\+\_\+setattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classattr_1_1__make_1_1_attribute_acb4fdbae2e039a6b83811727ca3a3c21}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_acb4fdbae2e039a6b83811727ca3a3c21} 
+attr.\+\_\+make.\+Attribute.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play nice with pickle.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_attribute_aef10ada8d4bd847c54de3dc3656bf02f}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!\_setattrs@{\_setattrs}}
+\index{\_setattrs@{\_setattrs}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{\_setattrs()}{\_setattrs()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_aef10ada8d4bd847c54de3dc3656bf02f} 
+attr.\+\_\+make.\+Attribute.\+\_\+setattrs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name\+\_\+values\+\_\+pairs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classattr_1_1__make_1_1_attribute_aa08dc17fe70f2d78861b65f5791cacd0}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!evolve@{evolve}}
+\index{evolve@{evolve}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{evolve()}{evolve()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_aa08dc17fe70f2d78861b65f5791cacd0} 
+attr.\+\_\+make.\+Attribute.\+evolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{changes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy *self* and apply *changes*.
+
+This works similarly to `attrs.evolve` but that function does not work
+with :class:`attrs.Attribute`.
+
+It is mainly meant to be used for `transform-fields`.
+
+.. versionadded:: 20.3.0
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_attribute_ae228ebbf2aedd3537437430478710e3f}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!from\_counting\_attr@{from\_counting\_attr}}
+\index{from\_counting\_attr@{from\_counting\_attr}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{from\_counting\_attr()}{from\_counting\_attr()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_ae228ebbf2aedd3537437430478710e3f} 
+attr.\+\_\+make.\+Attribute.\+from\+\_\+counting\+\_\+attr (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{name}{, }\item[{\mbox{\hyperlink{classattr_1_1__make_1_1___counting_attr}{\+\_\+\+Counting\+Attr}}}]{ca}{, }\item[{bool}]{kw\+\_\+only}{, }\item[{}]{type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classattr_1_1__make_1_1_attribute_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classattr_1_1__make_1_1_attribute_a9c1ecaf8dd247540ab71093c42716f00}\index{attr.\_make.Attribute@{attr.\_make.Attribute}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!attr.\_make.Attribute@{attr.\_make.Attribute}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_attribute_a9c1ecaf8dd247540ab71093c42716f00} 
+attr.\+\_\+make.\+Attribute.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\ \ \textcolor{comment}{\#\ noqa:\ RUF023}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}name"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}default"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}validator"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}repr"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}eq"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}eq\_key"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}order"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}order\_key"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hash"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}init"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}metadata"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}type"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}converter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}kw\_only"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}inherited"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}on\_setattr"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}alias"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/attr/\mbox{\hyperlink{__make_8py}{\+\_\+make.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\doxysection{django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection Class Reference}
+\hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection}{}\label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+Inheritance diagram for django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ac64a703801d918286557d46df9619323}{get\+\_\+field\+\_\+type}} (self, data\+\_\+type, description)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a3f491bb60532f63b4f2ded4029be028c}{get\+\_\+table\+\_\+list}} (self, cursor)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ad429d2f3e336f1c165917b6831a9f400}{get\+\_\+table\+\_\+description}} (self, cursor, table\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_abe85a8ddea48c091b202994926ad0dba}{identifier\+\_\+converter}} (self, name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a63bb21ef595278ce43c63f42bd7b1991}{get\+\_\+sequences}} (self, cursor, table\+\_\+name, table\+\_\+fields=())
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a6def07a326d239fae609374a677926b5}{get\+\_\+relations}} (self, cursor, table\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ada7bc9fee406f8910453e635271df67a}{get\+\_\+primary\+\_\+key\+\_\+columns}} (self, cursor, table\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a1540771f037e379e614ea68efc73858a}{get\+\_\+constraints}} (self, cursor, table\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a0a0b5322d2fbfde8a548cc9d545d2a66}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a71a3e72f179933894784e4593b6e4744}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a20c83566e152fd9cab852635c799f0c5}{table\+\_\+names}} (self, cursor=None, include\+\_\+views=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_ac475886839a2b9bdad4219a3064aab9e}{get\+\_\+migratable\+\_\+models}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a4e6933d7c00c046f28d6f306ad2b112f}{django\+\_\+table\+\_\+names}} (self, only\+\_\+existing=False, include\+\_\+views=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a0505370473eb797309872d0e3962ae2c}{installed\+\_\+models}} (self, tables)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a082149e6b1bf2ffda8ce8a541bc386c0}{sequence\+\_\+list}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_af291fe20ae2db23b47f8426d13d591ed}{get\+\_\+primary\+\_\+key\+\_\+column}} (self, cursor, table\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a5c0144323251687c410701092e651595}{cache\+\_\+bust\+\_\+counter}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a6844303f0466da84cddb35c91e5344d8}{data\+\_\+types\+\_\+reverse}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a71a3e72f179933894784e4593b6e4744}{connection}} = connection
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a1540771f037e379e614ea68efc73858a}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_constraints@{get\_constraints}}
+\index{get\_constraints@{get\_constraints}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_constraints()}{get\_constraints()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a1540771f037e379e614ea68efc73858a} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+constraints (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{table\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve any constraints or keys (unique, pk, fk, check, index) across
+one or more columns.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_aadd54f338ec1f729a9133fe6ad500e3a}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ac64a703801d918286557d46df9619323}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_field\_type@{get\_field\_type}}
+\index{get\_field\_type@{get\_field\_type}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_field\_type()}{get\_field\_type()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ac64a703801d918286557d46df9619323} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+field\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data\+\_\+type}{, }\item[{}]{description}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hook for a database backend to use the cursor description to
+match a Django field type to a database column.
+
+For Oracle, the column data_type on its own is insufficient to
+distinguish between a FloatField and IntegerField, for example.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_aaf081a78a573a4d64b91fd61f179c464}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ada7bc9fee406f8910453e635271df67a}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_primary\_key\_columns@{get\_primary\_key\_columns}}
+\index{get\_primary\_key\_columns@{get\_primary\_key\_columns}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_primary\_key\_columns()}{get\_primary\_key\_columns()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ada7bc9fee406f8910453e635271df67a} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+primary\+\_\+key\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{table\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of primary key columns for the given table.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a73c7324f1a12dbe61b5618caa90219c6}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a6def07a326d239fae609374a677926b5}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_relations@{get\_relations}}
+\index{get\_relations@{get\_relations}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_relations()}{get\_relations()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a6def07a326d239fae609374a677926b5} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+relations (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{table\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dictionary of {field_name: (field_name_other_table, other_table)}
+representing all foreign keys in the given table.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a7a61121010d6381242d6cd61b8443f6b}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a63bb21ef595278ce43c63f42bd7b1991}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_sequences@{get\_sequences}}
+\index{get\_sequences@{get\_sequences}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_sequences()}{get\_sequences()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a63bb21ef595278ce43c63f42bd7b1991} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+sequences (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{table\+\_\+name}{, }\item[{}]{table\+\_\+fields}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of introspected sequences for table_name. Each sequence
+is a dict: {'table': <table_name>, 'column': <column_name>}. An optional
+'name' key can be added if the backend supports named sequences.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_afd0865ea75505d322eed2d723f25f5ce}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ad429d2f3e336f1c165917b6831a9f400}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_table\_description@{get\_table\_description}}
+\index{get\_table\_description@{get\_table\_description}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_table\_description()}{get\_table\_description()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_ad429d2f3e336f1c165917b6831a9f400} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+table\+\_\+description (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{, }\item[{}]{table\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a description of the table with the DB-API cursor.description
+interface.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_ab7dfd26e5e81cb11ea3b47c91edfd33e}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a3f491bb60532f63b4f2ded4029be028c}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!get\_table\_list@{get\_table\_list}}
+\index{get\_table\_list@{get\_table\_list}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{get\_table\_list()}{get\_table\_list()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a3f491bb60532f63b4f2ded4029be028c} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+get\+\_\+table\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cursor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of table and view names in the current database.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_abed3c2e2d7e2fbdb3eb621225bb21136}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_abe85a8ddea48c091b202994926ad0dba}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!identifier\_converter@{identifier\_converter}}
+\index{identifier\_converter@{identifier\_converter}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{identifier\_converter()}{identifier\_converter()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_abe85a8ddea48c091b202994926ad0dba} 
+django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+identifier\+\_\+converter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Identifier comparison is case insensitive under Oracle.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1base_1_1introspection_1_1_base_database_introspection_a54626588eccae64131d5b2dbc5c8bfdd}{django.\+db.\+backends.\+base.\+introspection.\+Base\+Database\+Introspection}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a5c0144323251687c410701092e651595}\index{django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}!cache\_bust\_counter@{cache\_bust\_counter}}
+\index{cache\_bust\_counter@{cache\_bust\_counter}!django.db.backends.oracle.introspection.DatabaseIntrospection@{django.db.backends.oracle.introspection.DatabaseIntrospection}}
+\doxysubsubsection{\texorpdfstring{cache\_bust\_counter}{cache\_bust\_counter}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1backends_1_1oracle_1_1introspection_1_1_database_introspection_a5c0144323251687c410701092e651595} 
+int django.\+db.\+backends.\+oracle.\+introspection.\+Database\+Introspection.\+cache\+\_\+bust\+\_\+counter = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/backends/oracle/\mbox{\hyperlink{db_2backends_2oracle_2introspection_8py}{introspection.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,260 @@
+\doxysection{django.\+core.\+management.\+commands.\+makemigrations.\+Command Class Reference}
+\hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command}{}\label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+Inheritance diagram for django.\+core.\+management.\+commands.\+makemigrations.\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6e6748fa88271de8e2dd0193aa31d940}{add\+\_\+arguments}} (self, parser)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ad6cb5d402888250fc170034fdee93f6d}{log\+\_\+output}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a0409d121552878a7416460dba8274880}{log}} (self, msg)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ab5e944d112a1c969d97ff2625e4f2f4d}{handle}} (self, \texorpdfstring{$\ast$}{*}app\+\_\+labels, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6a1392ee715a2b4e09e8d49f97ef5a8b}{write\+\_\+to\+\_\+last\+\_\+migration\+\_\+files}} (self, changes)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_aeac8f47f9b4868d53a5d3b314fc9473b}{write\+\_\+migration\+\_\+files}} (self, changes, update\+\_\+previous\+\_\+migration\+\_\+paths=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_af964b9239ce981991c926a073a957363}{handle\+\_\+merge}} (self, loader, conflicts)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9695953f0be8c6f8c6d1ef34d7ea5d49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}}=None, no\+\_\+color=False, force\+\_\+color=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad1a0ff17727df93596c37baec5368461}{get\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae878e488f18d67acf1037a7e2db5b478}{create\+\_\+parser}} (self, prog\+\_\+name, subcommand, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae1a4dc5642d9d1f21301d519f3221e84}{add\+\_\+base\+\_\+argument}} (self, parser, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9f81b6c52db3a2b0a123ca7bdd0ee819}{print\+\_\+help}} (self, prog\+\_\+name, subcommand)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a6c1cc5fc9ec35d268e45ebaadd2ac4a7}{run\+\_\+from\+\_\+argv}} (self, argv)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5621c1fb51be6a2deff6777d90c25ee0}{execute}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ab2ff3d25e971a2ba69819666c6f064b2}{get\+\_\+check\+\_\+kwargs}} (self, options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ff1b562b3f6e68600b828fce3cf09b6}{check}} (self, app\+\_\+configs=None, tags=None, display\+\_\+num\+\_\+errors=False, include\+\_\+deployment\+\_\+checks=False, fail\+\_\+level=checks.\+ERROR, databases=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a163d7c2584c28d8775107140aa16237b}{check\+\_\+migrations}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a65009d38cc33f46dbeb07617cc4737e6}{get\+\_\+relative\+\_\+path}} (path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a46b28316254355da21568b80e1e587a6}{written\+\_\+files}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a4953ea03e511461d1d2262c50500eb32}{verbosity}} = options\mbox{[}"{}verbosity"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a89e1b0682e6222f4e7fa4ae5ca0b40ab}{interactive}} = options\mbox{[}"{}interactive"{}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a63f9d61e49d7e2ebce8260a2da44e0de}{dry\+\_\+run}} = options\mbox{[}"{}dry\+\_\+run"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a985fe2c9784b99965cd4fd2c23914d5a}{merge}} = options\mbox{[}"{}merge"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a843d98af888d634a07cf24c0bd2be04f}{empty}} = options\mbox{[}"{}empty"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ad47cf8c6d11d5abe3f568e05f15df0c1}{migration\+\_\+name}} = options\mbox{[}"{}name"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ada18ba2146c79bbe16e9b2f51d16c76e}{include\+\_\+header}} = options\mbox{[}"{}include\+\_\+header"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6a7454cdae92294d99643e79d5d08cd7}{scriptable}} = options\mbox{[}"{}scriptable"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a2d384a587d455d4d82ac5b1f345c883d}{update}} = options\mbox{[}"{}update"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stdout or sys.\+stdout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stderr or sys.\+stderr)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad6d1595308e72c47dffa375715cbad81}{style}} = no\+\_\+style()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a63bf1c3f396920b8fad1e0edb3e6120e}{autodetector}} = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1autodetector_1_1_migration_autodetector}{Migration\+Autodetector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5251899eaa230e9dc39d6f13bfb7738b}{help}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_afa4724a6b9eaa88dc153bcf618638984}{output\+\_\+transaction}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_af863dc49e813257bcc3f5ab2adbe1133}{requires\+\_\+migrations\+\_\+checks}} = False
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aba2da6354253ce03349947d947e49993}{requires\+\_\+system\+\_\+checks}} = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a792d54d83b488928d57a8c6d06651b93}{base\+\_\+stealth\+\_\+options}} = ("{}stderr"{}, "{}stdout"{})
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ae78baa0f34d38dada61deb73b45650}{stealth\+\_\+options}} = ()
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a26536fa90d5c93dbc2e0d3218d1ae1dc}{suppressed\+\_\+base\+\_\+arguments}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ac73d933ceec032782fbcbec37d6c8ebb}{\+\_\+called\+\_\+from\+\_\+command\+\_\+line}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6e6748fa88271de8e2dd0193aa31d940}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!add\_arguments@{add\_arguments}}
+\index{add\_arguments@{add\_arguments}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{add\_arguments()}{add\_arguments()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6e6748fa88271de8e2dd0193aa31d940} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+add\+\_\+arguments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parser}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Entry point for subclassed commands to add custom arguments.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a00539c5da3157007e2485338da279887}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a65009d38cc33f46dbeb07617cc4737e6}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!get\_relative\_path@{get\_relative\_path}}
+\index{get\_relative\_path@{get\_relative\_path}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{get\_relative\_path()}{get\_relative\_path()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a65009d38cc33f46dbeb07617cc4737e6} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+get\+\_\+relative\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ab5e944d112a1c969d97ff2625e4f2f4d}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!handle@{handle}}
+\index{handle@{handle}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ab5e944d112a1c969d97ff2625e4f2f4d} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual logic of the command. Subclasses must implement
+this method.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a52656ddf33d25f682f484c5d505a811d}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_af964b9239ce981991c926a073a957363}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!handle\_merge@{handle\_merge}}
+\index{handle\_merge@{handle\_merge}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{handle\_merge()}{handle\_merge()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_af964b9239ce981991c926a073a957363} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+handle\+\_\+merge (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{loader}{, }\item[{}]{conflicts}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles merging together conflicted migrations interactively,
+if it's safe; otherwise, advises on how to fix it.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a0409d121552878a7416460dba8274880}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!log@{log}}
+\index{log@{log}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a0409d121552878a7416460dba8274880} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ad6cb5d402888250fc170034fdee93f6d}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!log\_output@{log\_output}}
+\index{log\_output@{log\_output}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{log\_output()}{log\_output()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ad6cb5d402888250fc170034fdee93f6d} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+log\+\_\+output (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_aeac8f47f9b4868d53a5d3b314fc9473b}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!write\_migration\_files@{write\_migration\_files}}
+\index{write\_migration\_files@{write\_migration\_files}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{write\_migration\_files()}{write\_migration\_files()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_aeac8f47f9b4868d53a5d3b314fc9473b} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+write\+\_\+migration\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{changes}{, }\item[{}]{update\+\_\+previous\+\_\+migration\+\_\+paths}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take a changes dict and write them out as migration files.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6a1392ee715a2b4e09e8d49f97ef5a8b}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!write\_to\_last\_migration\_files@{write\_to\_last\_migration\_files}}
+\index{write\_to\_last\_migration\_files@{write\_to\_last\_migration\_files}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{write\_to\_last\_migration\_files()}{write\_to\_last\_migration\_files()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6a1392ee715a2b4e09e8d49f97ef5a8b} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+write\+\_\+to\+\_\+last\+\_\+migration\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{changes}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a63bf1c3f396920b8fad1e0edb3e6120e}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!autodetector@{autodetector}}
+\index{autodetector@{autodetector}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{autodetector}{autodetector}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a63bf1c3f396920b8fad1e0edb3e6120e} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+autodetector = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1autodetector_1_1_migration_autodetector}{Migration\+Autodetector}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a63f9d61e49d7e2ebce8260a2da44e0de}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!dry\_run@{dry\_run}}
+\index{dry\_run@{dry\_run}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{dry\_run}{dry\_run}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a63f9d61e49d7e2ebce8260a2da44e0de} 
+bool django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+dry\+\_\+run = options\mbox{[}"{}dry\+\_\+run"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a843d98af888d634a07cf24c0bd2be04f}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!empty@{empty}}
+\index{empty@{empty}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{empty}{empty}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a843d98af888d634a07cf24c0bd2be04f} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+empty = options\mbox{[}"{}empty"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ada18ba2146c79bbe16e9b2f51d16c76e}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!include\_header@{include\_header}}
+\index{include\_header@{include\_header}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{include\_header}{include\_header}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ada18ba2146c79bbe16e9b2f51d16c76e} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+include\+\_\+header = options\mbox{[}"{}include\+\_\+header"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a89e1b0682e6222f4e7fa4ae5ca0b40ab}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!interactive@{interactive}}
+\index{interactive@{interactive}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{interactive}{interactive}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a89e1b0682e6222f4e7fa4ae5ca0b40ab} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+interactive = options\mbox{[}"{}interactive"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a985fe2c9784b99965cd4fd2c23914d5a}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!merge@{merge}}
+\index{merge@{merge}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{merge}{merge}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a985fe2c9784b99965cd4fd2c23914d5a} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+merge = options\mbox{[}"{}merge"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ad47cf8c6d11d5abe3f568e05f15df0c1}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!migration\_name@{migration\_name}}
+\index{migration\_name@{migration\_name}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{migration\_name}{migration\_name}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_ad47cf8c6d11d5abe3f568e05f15df0c1} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+migration\+\_\+name = options\mbox{[}"{}name"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6a7454cdae92294d99643e79d5d08cd7}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!scriptable@{scriptable}}
+\index{scriptable@{scriptable}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{scriptable}{scriptable}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a6a7454cdae92294d99643e79d5d08cd7} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+scriptable = options\mbox{[}"{}scriptable"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a2d384a587d455d4d82ac5b1f345c883d}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!update@{update}}
+\index{update@{update}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{update}{update}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a2d384a587d455d4d82ac5b1f345c883d} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+update = options\mbox{[}"{}update"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a4953ea03e511461d1d2262c50500eb32}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!verbosity@{verbosity}}
+\index{verbosity@{verbosity}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{verbosity}{verbosity}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a4953ea03e511461d1d2262c50500eb32} 
+int django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+verbosity = options\mbox{[}"{}verbosity"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a46b28316254355da21568b80e1e587a6}\index{django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}!written\_files@{written\_files}}
+\index{written\_files@{written\_files}!django.core.management.commands.makemigrations.Command@{django.core.management.commands.makemigrations.Command}}
+\doxysubsubsection{\texorpdfstring{written\_files}{written\_files}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemigrations_1_1_command_a46b28316254355da21568b80e1e587a6} 
+django.\+core.\+management.\+commands.\+makemigrations.\+Command.\+written\+\_\+files = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/management/commands/\mbox{\hyperlink{makemigrations_8py}{makemigrations.\+py}}\end{DoxyCompactItemize}

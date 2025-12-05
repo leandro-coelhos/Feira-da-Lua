@@ -1,0 +1,32 @@
+\doxysection{django.\+contrib.\+admin.\+actions Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1admin_1_1actions}{}\label{namespacedjango_1_1contrib_1_1admin_1_1actions}\index{django.contrib.admin.actions@{django.contrib.admin.actions}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1actions_ae093dd8104e2070771cd6740f02477a8}{delete\+\_\+selected}} (modeladmin, request, queryset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Built-in, globally-available admin actions.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1actions_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1admin_1_1actions_ae093dd8104e2070771cd6740f02477a8}\index{django.contrib.admin.actions@{django.contrib.admin.actions}!delete\_selected@{delete\_selected}}
+\index{delete\_selected@{delete\_selected}!django.contrib.admin.actions@{django.contrib.admin.actions}}
+\doxysubsubsection{\texorpdfstring{delete\_selected()}{delete\_selected()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1admin_1_1actions_ae093dd8104e2070771cd6740f02477a8} 
+django.\+contrib.\+admin.\+actions.\+delete\+\_\+selected (\begin{DoxyParamCaption}\item[{}]{modeladmin}{, }\item[{}]{request}{, }\item[{}]{queryset}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Default action which deletes the selected objects.
+
+This action first displays a confirmation page which shows all the
+deletable objects, or, if the user has no permission one of the related
+childs (foreignkeys), a "permission denied" message.
+
+Next, it deletes all selected objects and redirects back to the change list.
+\end{DoxyVerb}
+ 

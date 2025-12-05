@@ -1,0 +1,5 @@
+var classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1_spatia_lite_introspection =
+[
+    [ "get_constraints", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1_spatia_lite_introspection.html#a27b058c14ab53ad9bb4131761b80ab24", null ],
+    [ "get_geometry_type", "classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1_spatia_lite_introspection.html#a8445a724e1e973a78788bdb9e77a288d", null ]
+];

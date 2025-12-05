@@ -1,0 +1,102 @@
+\doxysection{attr.\+\_\+make.\+Factory Class Reference}
+\hypertarget{classattr_1_1__make_1_1_factory}{}\label{classattr_1_1__make_1_1_factory}\index{attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a7aa729f3c6d539189c2dbd98b883da8a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e}{factory}}, \mbox{\hyperlink{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251}{takes\+\_\+self}}=False)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a7c1d165185c6dc628f1316cae6710691}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a4edf08c9f97d5b594120e18e34552e71}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e}{factory}} = factory
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251}{takes\+\_\+self}} = takes\+\_\+self
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classattr_1_1__make_1_1_factory_a97c0b6ba6b89fe3765f10a17aad9237d}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}factory"{}, "{}takes\+\_\+self"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Stores a factory callable.
+
+If passed as the default value to `attrs.field`, the factory is used to
+generate a new value.
+
+Args:
+    factory (typing.Callable):
+        A callable that takes either none or exactly one mandatory
+        positional argument depending on *takes_self*.
+
+    takes_self (bool):
+        Pass the partially initialized instance that is being initialized
+        as a positional argument.
+
+.. versionadded:: 17.1.0  *takes_self*
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classattr_1_1__make_1_1_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classattr_1_1__make_1_1_factory_a7aa729f3c6d539189c2dbd98b883da8a}\index{attr.\_make.Factory@{attr.\_make.Factory}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a7aa729f3c6d539189c2dbd98b883da8a} 
+attr.\+\_\+make.\+Factory.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{factory}{, }\item[{}]{takes\+\_\+self}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classattr_1_1__make_1_1_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classattr_1_1__make_1_1_factory_a7c1d165185c6dc628f1316cae6710691}\index{attr.\_make.Factory@{attr.\_make.Factory}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a7c1d165185c6dc628f1316cae6710691} 
+attr.\+\_\+make.\+Factory.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play nice with pickle.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_factory_a4edf08c9f97d5b594120e18e34552e71}\index{attr.\_make.Factory@{attr.\_make.Factory}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a4edf08c9f97d5b594120e18e34552e71} 
+attr.\+\_\+make.\+Factory.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play nice with pickle.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classattr_1_1__make_1_1_factory_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classattr_1_1__make_1_1_factory_a97c0b6ba6b89fe3765f10a17aad9237d}\index{attr.\_make.Factory@{attr.\_make.Factory}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a97c0b6ba6b89fe3765f10a17aad9237d} 
+attr.\+\_\+make.\+Factory.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}factory"{}, "{}takes\+\_\+self"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e}\index{attr.\_make.Factory@{attr.\_make.Factory}!factory@{factory}}
+\index{factory@{factory}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{factory}{factory}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e} 
+attr.\+\_\+make.\+Factory.\+factory = factory}
+
+\Hypertarget{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251}\index{attr.\_make.Factory@{attr.\_make.Factory}!takes\_self@{takes\_self}}
+\index{takes\_self@{takes\_self}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{takes\_self}{takes\_self}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251} 
+attr.\+\_\+make.\+Factory.\+takes\+\_\+self = takes\+\_\+self}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/attr/\mbox{\hyperlink{__make_8py}{\+\_\+make.\+py}}\end{DoxyCompactItemize}

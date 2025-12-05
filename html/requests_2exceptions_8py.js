@@ -1,0 +1,28 @@
+var requests_2exceptions_8py =
+[
+    [ "requests.exceptions.RequestException", "classrequests_1_1exceptions_1_1_request_exception.html", "classrequests_1_1exceptions_1_1_request_exception" ],
+    [ "requests.exceptions.InvalidJSONError", "classrequests_1_1exceptions_1_1_invalid_j_s_o_n_error.html", null ],
+    [ "requests.exceptions.JSONDecodeError", "classrequests_1_1exceptions_1_1_j_s_o_n_decode_error.html", "classrequests_1_1exceptions_1_1_j_s_o_n_decode_error" ],
+    [ "requests.exceptions.HTTPError", "classrequests_1_1exceptions_1_1_h_t_t_p_error.html", null ],
+    [ "requests.exceptions.ConnectionError", "classrequests_1_1exceptions_1_1_connection_error.html", null ],
+    [ "requests.exceptions.ProxyError", "classrequests_1_1exceptions_1_1_proxy_error.html", null ],
+    [ "requests.exceptions.SSLError", "classrequests_1_1exceptions_1_1_s_s_l_error.html", null ],
+    [ "requests.exceptions.Timeout", "classrequests_1_1exceptions_1_1_timeout.html", null ],
+    [ "requests.exceptions.ConnectTimeout", "classrequests_1_1exceptions_1_1_connect_timeout.html", null ],
+    [ "requests.exceptions.ReadTimeout", "classrequests_1_1exceptions_1_1_read_timeout.html", null ],
+    [ "requests.exceptions.URLRequired", "classrequests_1_1exceptions_1_1_u_r_l_required.html", null ],
+    [ "requests.exceptions.TooManyRedirects", "classrequests_1_1exceptions_1_1_too_many_redirects.html", null ],
+    [ "requests.exceptions.MissingSchema", "classrequests_1_1exceptions_1_1_missing_schema.html", null ],
+    [ "requests.exceptions.InvalidSchema", "classrequests_1_1exceptions_1_1_invalid_schema.html", null ],
+    [ "requests.exceptions.InvalidURL", "classrequests_1_1exceptions_1_1_invalid_u_r_l.html", null ],
+    [ "requests.exceptions.InvalidHeader", "classrequests_1_1exceptions_1_1_invalid_header.html", null ],
+    [ "requests.exceptions.InvalidProxyURL", "classrequests_1_1exceptions_1_1_invalid_proxy_u_r_l.html", null ],
+    [ "requests.exceptions.ChunkedEncodingError", "classrequests_1_1exceptions_1_1_chunked_encoding_error.html", null ],
+    [ "requests.exceptions.ContentDecodingError", "classrequests_1_1exceptions_1_1_content_decoding_error.html", null ],
+    [ "requests.exceptions.StreamConsumedError", "classrequests_1_1exceptions_1_1_stream_consumed_error.html", null ],
+    [ "requests.exceptions.RetryError", "classrequests_1_1exceptions_1_1_retry_error.html", null ],
+    [ "requests.exceptions.UnrewindableBodyError", "classrequests_1_1exceptions_1_1_unrewindable_body_error.html", null ],
+    [ "requests.exceptions.RequestsWarning", "classrequests_1_1exceptions_1_1_requests_warning.html", null ],
+    [ "requests.exceptions.FileModeWarning", "classrequests_1_1exceptions_1_1_file_mode_warning.html", null ],
+    [ "requests.exceptions.RequestsDependencyWarning", "classrequests_1_1exceptions_1_1_requests_dependency_warning.html", null ]
+];

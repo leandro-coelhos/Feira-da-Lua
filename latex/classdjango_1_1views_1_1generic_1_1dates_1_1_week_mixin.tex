@@ -1,0 +1,123 @@
+\doxysection{django.\+views.\+generic.\+dates.\+Week\+Mixin Class Reference}
+\hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin}{}\label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+Inheritance diagram for django.\+views.\+generic.\+dates.\+Week\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a06bd9935ad0bc6e3efc0ddecc9656112}{get\+\_\+week\+\_\+format}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a39c8ca71985d8468df01d5dc0ee07750}{get\+\_\+week}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_ad36bddf6c088f551ed7af3be0215898f}{get\+\_\+next\+\_\+week}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a27ef4c4ce4e48a25d156b394b142b4cf}{get\+\_\+previous\+\_\+week}} (self, date)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_af93cabe7a3d65fc2f5e9ee50d1428c25}{week\+\_\+format}} = "{}\%U"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a427294be3843fa09bff711f0b106fd40}{week}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_ad6b2bd301cc2e893254b8d80cb10216a}{\+\_\+get\+\_\+next\+\_\+week}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a29586f851cb802976c3b14d56ac80e40}{\+\_\+get\+\_\+current\+\_\+week}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_aae14b96aff3d89d198093546105830a3}{\+\_\+get\+\_\+weekday}} (self, date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Mixin for views manipulating week-based data.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a29586f851cb802976c3b14d56ac80e40}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!\_get\_current\_week@{\_get\_current\_week}}
+\index{\_get\_current\_week@{\_get\_current\_week}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_current\_week()}{\_get\_current\_week()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a29586f851cb802976c3b14d56ac80e40} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+\_\+get\+\_\+current\+\_\+week (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the start date of the current interval.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_ad6b2bd301cc2e893254b8d80cb10216a}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!\_get\_next\_week@{\_get\_next\_week}}
+\index{\_get\_next\_week@{\_get\_next\_week}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_next\_week()}{\_get\_next\_week()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_ad6b2bd301cc2e893254b8d80cb10216a} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+\_\+get\+\_\+next\+\_\+week (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the start date of the next interval.
+
+The interval is defined by start date <= item date < next start date.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_aae14b96aff3d89d198093546105830a3}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!\_get\_weekday@{\_get\_weekday}}
+\index{\_get\_weekday@{\_get\_weekday}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_weekday()}{\_get\_weekday()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_aae14b96aff3d89d198093546105830a3} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+\_\+get\+\_\+weekday (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the weekday for a given date.
+
+The first day according to the week format is 0 and the last day is 6.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_ad36bddf6c088f551ed7af3be0215898f}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!get\_next\_week@{get\_next\_week}}
+\index{get\_next\_week@{get\_next\_week}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{get\_next\_week()}{get\_next\_week()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_ad36bddf6c088f551ed7af3be0215898f} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+get\+\_\+next\+\_\+week (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{date}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the next valid week.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a27ef4c4ce4e48a25d156b394b142b4cf}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!get\_previous\_week@{get\_previous\_week}}
+\index{get\_previous\_week@{get\_previous\_week}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{get\_previous\_week()}{get\_previous\_week()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a27ef4c4ce4e48a25d156b394b142b4cf} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+get\+\_\+previous\+\_\+week (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{date}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the previous valid week.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a39c8ca71985d8468df01d5dc0ee07750}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!get\_week@{get\_week}}
+\index{get\_week@{get\_week}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{get\_week()}{get\_week()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a39c8ca71985d8468df01d5dc0ee07750} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+get\+\_\+week (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the week for which this view should display data.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a06bd9935ad0bc6e3efc0ddecc9656112}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!get\_week\_format@{get\_week\_format}}
+\index{get\_week\_format@{get\_week\_format}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{get\_week\_format()}{get\_week\_format()}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a06bd9935ad0bc6e3efc0ddecc9656112} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+get\+\_\+week\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a week format string in strptime syntax to be used to parse the
+week from url variables.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a427294be3843fa09bff711f0b106fd40}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!week@{week}}
+\index{week@{week}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{week}{week}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_a427294be3843fa09bff711f0b106fd40} 
+django.\+views.\+generic.\+dates.\+Week\+Mixin.\+week = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_af93cabe7a3d65fc2f5e9ee50d1428c25}\index{django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}!week\_format@{week\_format}}
+\index{week\_format@{week\_format}!django.views.generic.dates.WeekMixin@{django.views.generic.dates.WeekMixin}}
+\doxysubsubsection{\texorpdfstring{week\_format}{week\_format}}
+{\footnotesize\ttfamily \label{classdjango_1_1views_1_1generic_1_1dates_1_1_week_mixin_af93cabe7a3d65fc2f5e9ee50d1428c25} 
+str django.\+views.\+generic.\+dates.\+Week\+Mixin.\+week\+\_\+format = "{}\%U"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/views/generic/\mbox{\hyperlink{views_2generic_2dates_8py}{dates.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+index\+\_\+command Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1cli_1_1index__command}{}\label{namespacepip_1_1__internal_1_1cli_1_1index__command}\index{pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_index_group_command}{Index\+Group\+Command}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin}{Session\+Command\+Mixin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+SSLContext\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1index__command_a11bc4ae56af1bf6a97c4a9d2958ff8cd}{\+\_\+create\+\_\+truststore\+\_\+ssl\+\_\+context}} ()
+\item 
+None \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1index__command_a65b7c1f5dcdd2d849f1569240f2c6700}{\+\_\+pip\+\_\+self\+\_\+version\+\_\+check}} (Pip\+Session session, Values options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1index__command_ac28cfcbf929bd2b8c381813a069c6abd}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Contains command classes which may interact with an index / the network.
+
+Unlike its sister module, req_command, this module still uses lazy imports
+so commands which don't always hit the network (e.g. list w/o --outdated or
+--uptodate) don't need waste time importing PipSession and friends.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1index__command_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1index__command_a11bc4ae56af1bf6a97c4a9d2958ff8cd}\index{pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}!\_create\_truststore\_ssl\_context@{\_create\_truststore\_ssl\_context}}
+\index{\_create\_truststore\_ssl\_context@{\_create\_truststore\_ssl\_context}!pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}}
+\doxysubsubsection{\texorpdfstring{\_create\_truststore\_ssl\_context()}{\_create\_truststore\_ssl\_context()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1index__command_a11bc4ae56af1bf6a97c4a9d2958ff8cd} 
+ SSLContext \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+\_\+create\+\_\+truststore\+\_\+ssl\+\_\+context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1index__command_a65b7c1f5dcdd2d849f1569240f2c6700}\index{pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}!\_pip\_self\_version\_check@{\_pip\_self\_version\_check}}
+\index{\_pip\_self\_version\_check@{\_pip\_self\_version\_check}!pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}}
+\doxysubsubsection{\texorpdfstring{\_pip\_self\_version\_check()}{\_pip\_self\_version\_check()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1index__command_a65b7c1f5dcdd2d849f1569240f2c6700} 
+ None pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+\_\+pip\+\_\+self\+\_\+version\+\_\+check (\begin{DoxyParamCaption}\item[{Pip\+Session}]{session}{, }\item[{Values}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1index__command_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1index__command_ac28cfcbf929bd2b8c381813a069c6abd}\index{pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.cli.index\_command@{pip.\_internal.cli.index\_command}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1index__command_ac28cfcbf929bd2b8c381813a069c6abd} 
+pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

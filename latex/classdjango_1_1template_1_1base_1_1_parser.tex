@@ -1,0 +1,210 @@
+\doxysection{django.\+template.\+base.\+Parser Class Reference}
+\hypertarget{classdjango_1_1template_1_1base_1_1_parser}{}\label{classdjango_1_1template_1_1base_1_1_parser}\index{django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a12eb12e97f472ee24b1fdc05e85c5a28}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a5f624326038b2c48de73187081d1930c}{tokens}}, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_aeb895763ea4a93ba03a8e8342b0639e4}{libraries}}=None, builtins=None, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_af68df5f146bdc72bea0fda9c14b11cec}{origin}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a20b5ebe91cd796f29be666da8c19c4ef}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_adf49a6d849c5bc731f4dcd79bbd13e52}{parse}} (self, parse\+\_\+until=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a72392545b9bed168737680aa4491807f}{skip\+\_\+past}} (self, endtag)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a18cc3b61dee227ebe679d5a97e219f55}{extend\+\_\+nodelist}} (self, nodelist, node, token)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_ad75d5d46d6b8210f6e4dbab08ed53012}{error}} (self, token, e)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_ad5b5b4e7969f94be4891ad344fb51af5}{invalid\+\_\+block\+\_\+tag}} (self, token, command, parse\+\_\+until=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a5ee190e13908db0573b7687deb43b639}{unclosed\+\_\+block\+\_\+tag}} (self, parse\+\_\+until)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_ad28e6269e9294600f2a8d92ade99e671}{next\+\_\+token}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_aacd389a2eb8b8725c238129059318b85}{prepend\+\_\+token}} (self, token)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a29f9e6bb01cd0562113d98ca0552cb0d}{delete\+\_\+first\+\_\+token}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a614a46d6fa278fd49c70697979a6fc85}{add\+\_\+library}} (self, lib)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a9f6d9f50e74b1bc83135180cfd7bca5e}{compile\+\_\+filter}} (self, token)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_aea5cc3406d8d10b26cd7398f5c24e20d}{find\+\_\+filter}} (self, filter\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a5f624326038b2c48de73187081d1930c}{tokens}} = list(reversed(tokens))
+\item 
+dict \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a8659e8514e288f333f449aa06432fbab}{tags}} = \{\}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_a9b1d6c110bc9c895072d97e68272e479}{filters}} = \{\}
+\item 
+list \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_abb28eb7eb2d8e1fc3f27036b16ac0bb0}{command\+\_\+stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_aa44a3f2c0e58fda2cd9e4214a10f4944}{extra\+\_\+data}} = \{\}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_aeb895763ea4a93ba03a8e8342b0639e4}{libraries}} = libraries
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1_parser_af68df5f146bdc72bea0fda9c14b11cec}{origin}} = origin
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a12eb12e97f472ee24b1fdc05e85c5a28}\index{django.template.base.Parser@{django.template.base.Parser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a12eb12e97f472ee24b1fdc05e85c5a28} 
+django.\+template.\+base.\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tokens}{, }\item[{}]{libraries}{ = {\ttfamily None}, }\item[{}]{builtins}{ = {\ttfamily None}, }\item[{}]{origin}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a20b5ebe91cd796f29be666da8c19c4ef}\index{django.template.base.Parser@{django.template.base.Parser}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a20b5ebe91cd796f29be666da8c19c4ef} 
+django.\+template.\+base.\+Parser.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a614a46d6fa278fd49c70697979a6fc85}\index{django.template.base.Parser@{django.template.base.Parser}!add\_library@{add\_library}}
+\index{add\_library@{add\_library}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{add\_library()}{add\_library()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a614a46d6fa278fd49c70697979a6fc85} 
+django.\+template.\+base.\+Parser.\+add\+\_\+library (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lib}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a9f6d9f50e74b1bc83135180cfd7bca5e}\index{django.template.base.Parser@{django.template.base.Parser}!compile\_filter@{compile\_filter}}
+\index{compile\_filter@{compile\_filter}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{compile\_filter()}{compile\_filter()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a9f6d9f50e74b1bc83135180cfd7bca5e} 
+django.\+template.\+base.\+Parser.\+compile\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convenient wrapper for FilterExpression
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a29f9e6bb01cd0562113d98ca0552cb0d}\index{django.template.base.Parser@{django.template.base.Parser}!delete\_first\_token@{delete\_first\_token}}
+\index{delete\_first\_token@{delete\_first\_token}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{delete\_first\_token()}{delete\_first\_token()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a29f9e6bb01cd0562113d98ca0552cb0d} 
+django.\+template.\+base.\+Parser.\+delete\+\_\+first\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_ad75d5d46d6b8210f6e4dbab08ed53012}\index{django.template.base.Parser@{django.template.base.Parser}!error@{error}}
+\index{error@{error}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_ad75d5d46d6b8210f6e4dbab08ed53012} 
+django.\+template.\+base.\+Parser.\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token}{, }\item[{}]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an exception annotated with the originating token. Since the
+parser can be called recursively, check if a token is already set. This
+ensures the innermost token is highlighted if an exception occurs,
+e.g. a compile error within the body of an if statement.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a18cc3b61dee227ebe679d5a97e219f55}\index{django.template.base.Parser@{django.template.base.Parser}!extend\_nodelist@{extend\_nodelist}}
+\index{extend\_nodelist@{extend\_nodelist}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{extend\_nodelist()}{extend\_nodelist()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a18cc3b61dee227ebe679d5a97e219f55} 
+django.\+template.\+base.\+Parser.\+extend\+\_\+nodelist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nodelist}{, }\item[{}]{node}{, }\item[{}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_aea5cc3406d8d10b26cd7398f5c24e20d}\index{django.template.base.Parser@{django.template.base.Parser}!find\_filter@{find\_filter}}
+\index{find\_filter@{find\_filter}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{find\_filter()}{find\_filter()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_aea5cc3406d8d10b26cd7398f5c24e20d} 
+django.\+template.\+base.\+Parser.\+find\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filter\+\_\+name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_ad5b5b4e7969f94be4891ad344fb51af5}\index{django.template.base.Parser@{django.template.base.Parser}!invalid\_block\_tag@{invalid\_block\_tag}}
+\index{invalid\_block\_tag@{invalid\_block\_tag}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{invalid\_block\_tag()}{invalid\_block\_tag()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_ad5b5b4e7969f94be4891ad344fb51af5} 
+django.\+template.\+base.\+Parser.\+invalid\+\_\+block\+\_\+tag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token}{, }\item[{}]{command}{, }\item[{}]{parse\+\_\+until}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_ad28e6269e9294600f2a8d92ade99e671}\index{django.template.base.Parser@{django.template.base.Parser}!next\_token@{next\_token}}
+\index{next\_token@{next\_token}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{next\_token()}{next\_token()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_ad28e6269e9294600f2a8d92ade99e671} 
+django.\+template.\+base.\+Parser.\+next\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_adf49a6d849c5bc731f4dcd79bbd13e52}\index{django.template.base.Parser@{django.template.base.Parser}!parse@{parse}}
+\index{parse@{parse}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_adf49a6d849c5bc731f4dcd79bbd13e52} 
+django.\+template.\+base.\+Parser.\+parse (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parse\+\_\+until}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate through the parser tokens and compiles each one into a node.
+
+If parse_until is provided, parsing will stop once one of the
+specified tokens has been reached. This is formatted as a list of
+tokens, e.g. ['elif', 'else', 'endif']. If no matching token is
+reached, raise an exception with the unclosed block tag details.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1base_1_1_parser_aacd389a2eb8b8725c238129059318b85}\index{django.template.base.Parser@{django.template.base.Parser}!prepend\_token@{prepend\_token}}
+\index{prepend\_token@{prepend\_token}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{prepend\_token()}{prepend\_token()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_aacd389a2eb8b8725c238129059318b85} 
+django.\+template.\+base.\+Parser.\+prepend\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a72392545b9bed168737680aa4491807f}\index{django.template.base.Parser@{django.template.base.Parser}!skip\_past@{skip\_past}}
+\index{skip\_past@{skip\_past}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{skip\_past()}{skip\_past()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a72392545b9bed168737680aa4491807f} 
+django.\+template.\+base.\+Parser.\+skip\+\_\+past (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{endtag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a5ee190e13908db0573b7687deb43b639}\index{django.template.base.Parser@{django.template.base.Parser}!unclosed\_block\_tag@{unclosed\_block\_tag}}
+\index{unclosed\_block\_tag@{unclosed\_block\_tag}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{unclosed\_block\_tag()}{unclosed\_block\_tag()}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a5ee190e13908db0573b7687deb43b639} 
+django.\+template.\+base.\+Parser.\+unclosed\+\_\+block\+\_\+tag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parse\+\_\+until}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_abb28eb7eb2d8e1fc3f27036b16ac0bb0}\index{django.template.base.Parser@{django.template.base.Parser}!command\_stack@{command\_stack}}
+\index{command\_stack@{command\_stack}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{command\_stack}{command\_stack}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_abb28eb7eb2d8e1fc3f27036b16ac0bb0} 
+list django.\+template.\+base.\+Parser.\+command\+\_\+stack = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_aa44a3f2c0e58fda2cd9e4214a10f4944}\index{django.template.base.Parser@{django.template.base.Parser}!extra\_data@{extra\_data}}
+\index{extra\_data@{extra\_data}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{extra\_data}{extra\_data}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_aa44a3f2c0e58fda2cd9e4214a10f4944} 
+dict django.\+template.\+base.\+Parser.\+extra\+\_\+data = \{\}}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a9b1d6c110bc9c895072d97e68272e479}\index{django.template.base.Parser@{django.template.base.Parser}!filters@{filters}}
+\index{filters@{filters}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{filters}{filters}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a9b1d6c110bc9c895072d97e68272e479} 
+dict django.\+template.\+base.\+Parser.\+filters = \{\}}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_aeb895763ea4a93ba03a8e8342b0639e4}\index{django.template.base.Parser@{django.template.base.Parser}!libraries@{libraries}}
+\index{libraries@{libraries}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{libraries}{libraries}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_aeb895763ea4a93ba03a8e8342b0639e4} 
+django.\+template.\+base.\+Parser.\+libraries = libraries}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_af68df5f146bdc72bea0fda9c14b11cec}\index{django.template.base.Parser@{django.template.base.Parser}!origin@{origin}}
+\index{origin@{origin}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_af68df5f146bdc72bea0fda9c14b11cec} 
+django.\+template.\+base.\+Parser.\+origin = origin}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a8659e8514e288f333f449aa06432fbab}\index{django.template.base.Parser@{django.template.base.Parser}!tags@{tags}}
+\index{tags@{tags}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{tags}{tags}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a8659e8514e288f333f449aa06432fbab} 
+dict django.\+template.\+base.\+Parser.\+tags = \{\}}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1_parser_a5f624326038b2c48de73187081d1930c}\index{django.template.base.Parser@{django.template.base.Parser}!tokens@{tokens}}
+\index{tokens@{tokens}!django.template.base.Parser@{django.template.base.Parser}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily \label{classdjango_1_1template_1_1base_1_1_parser_a5f624326038b2c48de73187081d1930c} 
+django.\+template.\+base.\+Parser.\+tokens = list(reversed(tokens))}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/template/\mbox{\hyperlink{django_2template_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

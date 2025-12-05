@@ -1,0 +1,192 @@
+\doxysection{pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer}{}\label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a98320309e32261ebcb86e9fa36e49a36}{dump}} (Mapping\mbox{[}str, Any\mbox{]} obj, IO\mbox{[}bytes\mbox{]} fp, \texorpdfstring{$\ast$}{*}, bool multiline\+\_\+strings=False, int indent=4)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a989df6e4ba810d7824dfa0ed5e7e93e4}{dumps}} (Mapping\mbox{[}str, Any\mbox{]} obj, \texorpdfstring{$\ast$}{*}, bool multiline\+\_\+strings=False, int indent=4)
+\item 
+Generator\mbox{[}str, None, None\mbox{]} \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a7c4bbd49c1a335b816d56b1e0b9c1b1c}{gen\+\_\+table\+\_\+chunks}} (Mapping\mbox{[}str, Any\mbox{]} table, \mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}} ctx, \texorpdfstring{$\ast$}{*}, str name, bool inside\+\_\+aot=False)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a28c5163d404d5c205a24835e94c45349}{format\+\_\+literal}} (object obj, \mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}} ctx, \texorpdfstring{$\ast$}{*}, int nest\+\_\+level=0)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_ae3041a9b86ab80e94a59664090b827ba}{format\+\_\+decimal}} (Decimal obj)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a1793d647dc19c3f47230fc78eb266241}{format\+\_\+inline\+\_\+table}} (Mapping obj, \mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}} ctx)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a5df64ea9e732ac3fdd02e69a4c7d1b18}{format\+\_\+inline\+\_\+array}} (tuple\texorpdfstring{$\vert$}{|}list obj, \mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}} ctx, int nest\+\_\+level)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a6b2eef9a834127f7f13921fc32fc0550}{format\+\_\+key\+\_\+part}} (str part)
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a167d4660aa60a491ff44ddd2ec692b7b}{format\+\_\+string}} (str s, \texorpdfstring{$\ast$}{*}, bool allow\+\_\+multiline)
+\item 
+bool \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a7319739554dd98d99f9985413922bd2d}{is\+\_\+aot}} (Any obj)
+\item 
+bool \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a2be8340f521a6f09a46be74ea62b990b}{is\+\_\+suitable\+\_\+inline\+\_\+table}} (Mapping obj, \mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}} ctx)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_abd44f757657aa5b6b9176cd4632be7a4}{TYPE\+\_\+\+CHECKING}} = False
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_aced2dda5f6bfd6725bd81965577e5f07}{ASCII\+\_\+\+CTRL}} = frozenset(chr(i) for i in range(32)) \texorpdfstring{$\vert$}{|} frozenset(chr(127))
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_aed641e7c61e653f3840c1a1f3710b30e}{ILLEGAL\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS}} = frozenset(\textquotesingle{}"{}\textbackslash{}\textbackslash{}\textquotesingle{}) \texorpdfstring{$\vert$}{|} ASCII\+\_\+\+CTRL -\/ frozenset("{}\textbackslash{}t"{})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a6436cbf97c6c9f1856ce91c262a6073b}{BARE\+\_\+\+KEY\+\_\+\+CHARS}}
+\item 
+tuple \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_acf3be56d6ef26d1f79f5c56dc48d593b}{ARRAY\+\_\+\+TYPES}} = (list, tuple)
+\item 
+int \mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a8c9b875c8a996eaf16a8ccd958fba8dd}{MAX\+\_\+\+LINE\+\_\+\+LENGTH}} = 100
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a110eed885594bf8f8492a775fcd0727a}{COMPACT\+\_\+\+ESCAPES}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a98320309e32261ebcb86e9fa36e49a36}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!dump@{dump}}
+\index{dump@{dump}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a98320309e32261ebcb86e9fa36e49a36} 
+ None pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+dump (\begin{DoxyParamCaption}\item[{Mapping\mbox{[}str, Any\mbox{]}}]{obj}{, }\item[{IO\mbox{[}bytes\mbox{]}}]{fp}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{multiline\+\_\+strings}{ = {\ttfamily False}, }\item[{int }]{indent}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a989df6e4ba810d7824dfa0ed5e7e93e4}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!dumps@{dumps}}
+\index{dumps@{dumps}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{dumps()}{dumps()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a989df6e4ba810d7824dfa0ed5e7e93e4} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+dumps (\begin{DoxyParamCaption}\item[{Mapping\mbox{[}str, Any\mbox{]}}]{obj}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{multiline\+\_\+strings}{ = {\ttfamily False}, }\item[{int }]{indent}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_ae3041a9b86ab80e94a59664090b827ba}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!format\_decimal@{format\_decimal}}
+\index{format\_decimal@{format\_decimal}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{format\_decimal()}{format\_decimal()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_ae3041a9b86ab80e94a59664090b827ba} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+format\+\_\+decimal (\begin{DoxyParamCaption}\item[{Decimal}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a5df64ea9e732ac3fdd02e69a4c7d1b18}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!format\_inline\_array@{format\_inline\_array}}
+\index{format\_inline\_array@{format\_inline\_array}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{format\_inline\_array()}{format\_inline\_array()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a5df64ea9e732ac3fdd02e69a4c7d1b18} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+format\+\_\+inline\+\_\+array (\begin{DoxyParamCaption}\item[{tuple \texorpdfstring{$\vert$}{|} list}]{obj}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}}}]{ctx}{, }\item[{int}]{nest\+\_\+level}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a1793d647dc19c3f47230fc78eb266241}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!format\_inline\_table@{format\_inline\_table}}
+\index{format\_inline\_table@{format\_inline\_table}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{format\_inline\_table()}{format\_inline\_table()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a1793d647dc19c3f47230fc78eb266241} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+format\+\_\+inline\+\_\+table (\begin{DoxyParamCaption}\item[{Mapping}]{obj}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a6b2eef9a834127f7f13921fc32fc0550}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!format\_key\_part@{format\_key\_part}}
+\index{format\_key\_part@{format\_key\_part}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{format\_key\_part()}{format\_key\_part()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a6b2eef9a834127f7f13921fc32fc0550} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+format\+\_\+key\+\_\+part (\begin{DoxyParamCaption}\item[{str}]{part}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a28c5163d404d5c205a24835e94c45349}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!format\_literal@{format\_literal}}
+\index{format\_literal@{format\_literal}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{format\_literal()}{format\_literal()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a28c5163d404d5c205a24835e94c45349} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+format\+\_\+literal (\begin{DoxyParamCaption}\item[{object}]{obj}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}}}]{ctx}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int }]{nest\+\_\+level}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a167d4660aa60a491ff44ddd2ec692b7b}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!format\_string@{format\_string}}
+\index{format\_string@{format\_string}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{format\_string()}{format\_string()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a167d4660aa60a491ff44ddd2ec692b7b} 
+ str pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+format\+\_\+string (\begin{DoxyParamCaption}\item[{str}]{s}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool}]{allow\+\_\+multiline}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a7c4bbd49c1a335b816d56b1e0b9c1b1c}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!gen\_table\_chunks@{gen\_table\_chunks}}
+\index{gen\_table\_chunks@{gen\_table\_chunks}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{gen\_table\_chunks()}{gen\_table\_chunks()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a7c4bbd49c1a335b816d56b1e0b9c1b1c} 
+ Generator\mbox{[}str, None, None\mbox{]} pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+gen\+\_\+table\+\_\+chunks (\begin{DoxyParamCaption}\item[{Mapping\mbox{[}str, Any\mbox{]}}]{table}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}}}]{ctx}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str}]{name}{, }\item[{bool }]{inside\+\_\+aot}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a7319739554dd98d99f9985413922bd2d}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!is\_aot@{is\_aot}}
+\index{is\_aot@{is\_aot}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{is\_aot()}{is\_aot()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a7319739554dd98d99f9985413922bd2d} 
+ bool pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+is\+\_\+aot (\begin{DoxyParamCaption}\item[{Any}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decides if an object behaves as an array of tables (i.e. a nonempty list
+of dicts).\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a2be8340f521a6f09a46be74ea62b990b}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!is\_suitable\_inline\_table@{is\_suitable\_inline\_table}}
+\index{is\_suitable\_inline\_table@{is\_suitable\_inline\_table}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{is\_suitable\_inline\_table()}{is\_suitable\_inline\_table()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a2be8340f521a6f09a46be74ea62b990b} 
+ bool pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+is\+\_\+suitable\+\_\+inline\+\_\+table (\begin{DoxyParamCaption}\item[{Mapping}]{obj}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1tomli__w_1_1__writer_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use heuristics to decide if the inline-style representation is a good
+choice for a given table.\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_acf3be56d6ef26d1f79f5c56dc48d593b}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!ARRAY\_TYPES@{ARRAY\_TYPES}}
+\index{ARRAY\_TYPES@{ARRAY\_TYPES}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{ARRAY\_TYPES}{ARRAY\_TYPES}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_acf3be56d6ef26d1f79f5c56dc48d593b} 
+tuple pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+ARRAY\+\_\+\+TYPES = (list, tuple)}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_aced2dda5f6bfd6725bd81965577e5f07}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!ASCII\_CTRL@{ASCII\_CTRL}}
+\index{ASCII\_CTRL@{ASCII\_CTRL}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{ASCII\_CTRL}{ASCII\_CTRL}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_aced2dda5f6bfd6725bd81965577e5f07} 
+pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+ASCII\+\_\+\+CTRL = frozenset(chr(i) for i in range(32)) \texorpdfstring{$\vert$}{|} frozenset(chr(127))}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a6436cbf97c6c9f1856ce91c262a6073b}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!BARE\_KEY\_CHARS@{BARE\_KEY\_CHARS}}
+\index{BARE\_KEY\_CHARS@{BARE\_KEY\_CHARS}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{BARE\_KEY\_CHARS}{BARE\_KEY\_CHARS}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a6436cbf97c6c9f1856ce91c262a6073b} 
+pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+BARE\+\_\+\+KEY\+\_\+\+CHARS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ frozenset(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}abcdefghijklmnopqrstuvwxyz"{}}\ \textcolor{stringliteral}{"{}ABCDEFGHIJKLMNOPQRSTUVWXYZ"{}}\ \textcolor{stringliteral}{"{}0123456789"{}}\ \textcolor{stringliteral}{"{}-\/\_"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a110eed885594bf8f8492a775fcd0727a}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!COMPACT\_ESCAPES@{COMPACT\_ESCAPES}}
+\index{COMPACT\_ESCAPES@{COMPACT\_ESCAPES}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{COMPACT\_ESCAPES}{COMPACT\_ESCAPES}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a110eed885594bf8f8492a775fcd0727a} 
+pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+COMPACT\+\_\+\+ESCAPES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ MappingProxyType(}
+\DoxyCodeLine{00002\ \ \ \ \ \{}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)u0008"{}}:\ \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)b"{}},\ \ \textcolor{comment}{\#\ backspace}}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)u000A"{}}:\ \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)n"{}},\ \ \textcolor{comment}{\#\ linefeed}}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)u000C"{}}:\ \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)f"{}},\ \ \textcolor{comment}{\#\ form\ feed}}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)u000D"{}}:\ \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)r"{}},\ \ \textcolor{comment}{\#\ carriage\ return}}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)u0022"{}}:\ \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)"{}'},\ \ \textcolor{comment}{\#\ quote}}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)u005C"{}}:\ \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)"{}},\ \ \textcolor{comment}{\#\ backslash}}
+\DoxyCodeLine{00009\ \ \ \ \ \}}
+\DoxyCodeLine{00010\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_aed641e7c61e653f3840c1a1f3710b30e}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!ILLEGAL\_BASIC\_STR\_CHARS@{ILLEGAL\_BASIC\_STR\_CHARS}}
+\index{ILLEGAL\_BASIC\_STR\_CHARS@{ILLEGAL\_BASIC\_STR\_CHARS}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{ILLEGAL\_BASIC\_STR\_CHARS}{ILLEGAL\_BASIC\_STR\_CHARS}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_aed641e7c61e653f3840c1a1f3710b30e} 
+pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+ILLEGAL\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS = frozenset(\textquotesingle{}"{}\textbackslash{}\textbackslash{}\textquotesingle{}) \texorpdfstring{$\vert$}{|} ASCII\+\_\+\+CTRL -\/ frozenset("{}\textbackslash{}t"{})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a8c9b875c8a996eaf16a8ccd958fba8dd}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!MAX\_LINE\_LENGTH@{MAX\_LINE\_LENGTH}}
+\index{MAX\_LINE\_LENGTH@{MAX\_LINE\_LENGTH}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{MAX\_LINE\_LENGTH}{MAX\_LINE\_LENGTH}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_a8c9b875c8a996eaf16a8ccd958fba8dd} 
+int pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+MAX\+\_\+\+LINE\+\_\+\+LENGTH = 100}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_abd44f757657aa5b6b9176cd4632be7a4}\index{pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}!TYPE\_CHECKING@{TYPE\_CHECKING}}
+\index{TYPE\_CHECKING@{TYPE\_CHECKING}!pip.\_vendor.tomli\_w.\_writer@{pip.\_vendor.tomli\_w.\_writer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_CHECKING}{TYPE\_CHECKING}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1tomli__w_1_1__writer_abd44f757657aa5b6b9176cd4632be7a4} 
+bool pip.\+\_\+vendor.\+tomli\+\_\+w.\+\_\+writer.\+TYPE\+\_\+\+CHECKING = False}
+

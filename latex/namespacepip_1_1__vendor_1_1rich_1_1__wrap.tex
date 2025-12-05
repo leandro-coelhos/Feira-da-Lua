@@ -1,0 +1,66 @@
+\doxysection{pip.\+\_\+vendor.\+rich.\+\_\+wrap Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap}{}\label{namespacepip_1_1__vendor_1_1rich_1_1__wrap}\index{pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Iterable\mbox{[}tuple\mbox{[}int, int, str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a11ebb1ddaf4fc1198bb34ddc57017c88}{words}} (str text)
+\item 
+list\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a6321513d9bb17877156ce76efab8a1ef}{divide\+\_\+line}} (str text, int width, bool fold=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1__wrap_ad10afa0f0f783afbcf9b50365605b6bd}{re\+\_\+word}} = re.\+compile(r"{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}S+\textbackslash{}s\texorpdfstring{$\ast$}{*}"{})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a58dfa6e27cf5778c3f564b049238f3b8}{console}} = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console}{Console}}(width=10)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a6321513d9bb17877156ce76efab8a1ef}\index{pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}!divide\_line@{divide\_line}}
+\index{divide\_line@{divide\_line}!pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}}
+\doxysubsubsection{\texorpdfstring{divide\_line()}{divide\_line()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a6321513d9bb17877156ce76efab8a1ef} 
+ list\mbox{[}int\mbox{]} pip.\+\_\+vendor.\+rich.\+\_\+wrap.\+divide\+\_\+line (\begin{DoxyParamCaption}\item[{str}]{text}{, }\item[{int}]{width}{, }\item[{bool }]{fold}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a string of text, and a width (measured in cells), return a list
+of cell offsets which the string should be split at in order for it to fit
+within the given width.
+
+Args:
+    text: The text to examine.
+    width: The available cell width.
+    fold: If True, words longer than `width` will be folded onto a new line.
+
+Returns:
+    A list of indices to break the line at.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a11ebb1ddaf4fc1198bb34ddc57017c88}\index{pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}!words@{words}}
+\index{words@{words}!pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}}
+\doxysubsubsection{\texorpdfstring{words()}{words()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a11ebb1ddaf4fc1198bb34ddc57017c88} 
+ Iterable\mbox{[}tuple\mbox{[}int, int, str\mbox{]}\mbox{]} pip.\+\_\+vendor.\+rich.\+\_\+wrap.\+words (\begin{DoxyParamCaption}\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yields each word from the text as a tuple
+containing (start_index, end_index, word). A "word" in this context may
+include the actual word and any whitespace to the right.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a58dfa6e27cf5778c3f564b049238f3b8}\index{pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}!console@{console}}
+\index{console@{console}!pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}}
+\doxysubsubsection{\texorpdfstring{console}{console}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1rich_1_1__wrap_a58dfa6e27cf5778c3f564b049238f3b8} 
+pip.\+\_\+vendor.\+rich.\+\_\+wrap.\+console = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console}{Console}}(width=10)}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1rich_1_1__wrap_ad10afa0f0f783afbcf9b50365605b6bd}\index{pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}!re\_word@{re\_word}}
+\index{re\_word@{re\_word}!pip.\_vendor.rich.\_wrap@{pip.\_vendor.rich.\_wrap}}
+\doxysubsubsection{\texorpdfstring{re\_word}{re\_word}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1rich_1_1__wrap_ad10afa0f0f783afbcf9b50365605b6bd} 
+pip.\+\_\+vendor.\+rich.\+\_\+wrap.\+re\+\_\+word = re.\+compile(r"{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}S+\textbackslash{}s\texorpdfstring{$\ast$}{*}"{})}
+

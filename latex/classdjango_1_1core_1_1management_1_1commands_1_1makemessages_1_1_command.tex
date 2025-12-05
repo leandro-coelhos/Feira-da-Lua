@@ -1,0 +1,346 @@
+\doxysection{django.\+core.\+management.\+commands.\+makemessages.\+Command Class Reference}
+\hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command}{}\label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+Inheritance diagram for django.\+core.\+management.\+commands.\+makemessages.\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa37fa28cef269d841212992650598ee0}{add\+\_\+arguments}} (self, parser)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a10de58af9924679bd2c747fa210ac674}{handle}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a9b5da593b33bd76da621a70d33406c86}{gettext\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ae26a52b07e380efb113829780481a0f8}{settings\+\_\+available}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a1e5b45a9b25225ccf5de235010b14e20}{build\+\_\+potfiles}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a5b2e81220c9c6d6ec5454062d99e861e}{remove\+\_\+potfiles}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a48738d4d61e79f32e0c43c80087080f8}{find\+\_\+files}} (self, root)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ad8045bdc401d718e27c2b0270b0846c3}{process\+\_\+files}} (self, file\+\_\+list)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8bab716751eee0bd1079990555dbaa1a}{process\+\_\+locale\+\_\+dir}} (self, locale\+\_\+dir, files)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a6bdea65ad45825c790d4079b72c6e835}{write\+\_\+po\+\_\+file}} (self, potfile, locale)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ac9f6e69b38b6d64d19a4442c6b79b7d4}{copy\+\_\+plural\+\_\+forms}} (self, msgs, locale)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9695953f0be8c6f8c6d1ef34d7ea5d49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}}=None, no\+\_\+color=False, force\+\_\+color=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad1a0ff17727df93596c37baec5368461}{get\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae878e488f18d67acf1037a7e2db5b478}{create\+\_\+parser}} (self, prog\+\_\+name, subcommand, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ae1a4dc5642d9d1f21301d519f3221e84}{add\+\_\+base\+\_\+argument}} (self, parser, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a9f81b6c52db3a2b0a123ca7bdd0ee819}{print\+\_\+help}} (self, prog\+\_\+name, subcommand)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a6c1cc5fc9ec35d268e45ebaadd2ac4a7}{run\+\_\+from\+\_\+argv}} (self, argv)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5621c1fb51be6a2deff6777d90c25ee0}{execute}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ab2ff3d25e971a2ba69819666c6f064b2}{get\+\_\+check\+\_\+kwargs}} (self, options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ff1b562b3f6e68600b828fce3cf09b6}{check}} (self, app\+\_\+configs=None, tags=None, display\+\_\+num\+\_\+errors=False, include\+\_\+deployment\+\_\+checks=False, fail\+\_\+level=checks.\+ERROR, databases=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a163d7c2584c28d8775107140aa16237b}{check\+\_\+migrations}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a61738312a5bb27c1bd23258d842d806f}{domain}} = options\mbox{[}"{}domain"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8d39d1a18997097991329cece2ff254d}{verbosity}} = options\mbox{[}"{}verbosity"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa67faecb33c6402ee66688eada063d6e}{symlinks}} = options\mbox{[}"{}symlinks"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a37d488ba4c394fd2330f73daab779891}{ignore\+\_\+patterns}} = list(set(ignore\+\_\+patterns))
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a07ad1fab50c26d7056862d5cd674bf99}{no\+\_\+obsolete}} = options\mbox{[}"{}no\+\_\+obsolete"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a46c4cf0ed6278d280742f40ed62331b4}{keep\+\_\+pot}} = options\mbox{[}"{}keep\+\_\+pot"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a609278ae4dee9af7c6fd5b9f34a2c325}{extensions}} = handle\+\_\+extensions(exts)
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_af3649a64df897de256fbb17b449c69ed}{invoked\+\_\+for\+\_\+django}} = False
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a7324b47e5c4522b86be1eb72cde990ee}{locale\+\_\+paths}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa1e6828ed207ca47c4854e7dc39838d9}{default\+\_\+locale\+\_\+path}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a58c3eaaaac66257949f60f5b41e0436c}{settings\+\_\+available}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5f0c98535677240304448f75e4f2d63d}{stdout}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stdout or sys.\+stdout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_output_wrapper}{Output\+Wrapper}}(stderr or sys.\+stderr)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ad6d1595308e72c47dffa375715cbad81}{style}} = no\+\_\+style()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa8ca5c752eef408ea3a15499a589b6d9}{translatable\+\_\+file\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_translatable_file}{Translatable\+File}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8be20afccddda547072f759491951a05}{build\+\_\+file\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_build_file}{Build\+File}}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a50794371d406372e1c9f0434aa14c903}{msgmerge\+\_\+options}} = \mbox{[}"{}-\/q"{}, "{}-\/-\/backup=none"{}, "{}-\/-\/previous"{}, "{}-\/-\/update"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a41a505e541c8ffbf601090a6496a471a}{msguniq\+\_\+options}} = \mbox{[}"{}-\/-\/to-\/code=utf-\/8"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a14f49ab4d3f282019e76a246655d493d}{msgattrib\+\_\+options}} = \mbox{[}"{}-\/-\/no-\/obsolete"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a702a0f7bb15ddf28f9e0ff914bd14fc3}{xgettext\+\_\+options}} = \mbox{[}"{}-\/-\/from-\/code=UTF-\/8"{}, "{}-\/-\/add-\/comments=Translators"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a5251899eaa230e9dc39d6f13bfb7738b}{help}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_afa4724a6b9eaa88dc153bcf618638984}{output\+\_\+transaction}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_af863dc49e813257bcc3f5ab2adbe1133}{requires\+\_\+migrations\+\_\+checks}} = False
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_aba2da6354253ce03349947d947e49993}{requires\+\_\+system\+\_\+checks}} = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a792d54d83b488928d57a8c6d06651b93}{base\+\_\+stealth\+\_\+options}} = ("{}stderr"{}, "{}stdout"{})
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a0ae78baa0f34d38dada61deb73b45650}{stealth\+\_\+options}} = ()
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a26536fa90d5c93dbc2e0d3218d1ae1dc}{suppressed\+\_\+base\+\_\+arguments}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_ac73d933ceec032782fbcbec37d6c8ebb}{\+\_\+called\+\_\+from\+\_\+command\+\_\+line}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa37fa28cef269d841212992650598ee0}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!add\_arguments@{add\_arguments}}
+\index{add\_arguments@{add\_arguments}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{add\_arguments()}{add\_arguments()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa37fa28cef269d841212992650598ee0} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+add\+\_\+arguments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parser}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Entry point for subclassed commands to add custom arguments.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a00539c5da3157007e2485338da279887}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a1e5b45a9b25225ccf5de235010b14e20}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!build\_potfiles@{build\_potfiles}}
+\index{build\_potfiles@{build\_potfiles}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{build\_potfiles()}{build\_potfiles()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a1e5b45a9b25225ccf5de235010b14e20} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+build\+\_\+potfiles (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build pot files and apply msguniq to them.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ac9f6e69b38b6d64d19a4442c6b79b7d4}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!copy\_plural\_forms@{copy\_plural\_forms}}
+\index{copy\_plural\_forms@{copy\_plural\_forms}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{copy\_plural\_forms()}{copy\_plural\_forms()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ac9f6e69b38b6d64d19a4442c6b79b7d4} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+copy\+\_\+plural\+\_\+forms (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{msgs}{, }\item[{}]{locale}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy plural forms header contents from a Django catalog of locale to
+the msgs string, inserting it at the right place. msgs should be the
+contents of a newly created .po file.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a48738d4d61e79f32e0c43c80087080f8}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!find\_files@{find\_files}}
+\index{find\_files@{find\_files}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{find\_files()}{find\_files()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a48738d4d61e79f32e0c43c80087080f8} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+find\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{root}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get all files in the given root. Also check that there is a matching
+locale dir for each file.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a9b5da593b33bd76da621a70d33406c86}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!gettext\_version@{gettext\_version}}
+\index{gettext\_version@{gettext\_version}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{gettext\_version()}{gettext\_version()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a9b5da593b33bd76da621a70d33406c86} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+gettext\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a10de58af9924679bd2c747fa210ac674}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!handle@{handle}}
+\index{handle@{handle}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a10de58af9924679bd2c747fa210ac674} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual logic of the command. Subclasses must implement
+this method.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1_base_command_a52656ddf33d25f682f484c5d505a811d}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ad8045bdc401d718e27c2b0270b0846c3}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!process\_files@{process\_files}}
+\index{process\_files@{process\_files}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{process\_files()}{process\_files()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ad8045bdc401d718e27c2b0270b0846c3} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+process\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+\_\+list}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Group translatable files by locale directory and run pot file build
+process for each group.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8bab716751eee0bd1079990555dbaa1a}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!process\_locale\_dir@{process\_locale\_dir}}
+\index{process\_locale\_dir@{process\_locale\_dir}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{process\_locale\_dir()}{process\_locale\_dir()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8bab716751eee0bd1079990555dbaa1a} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+process\+\_\+locale\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{locale\+\_\+dir}{, }\item[{}]{files}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract translatable literals from the specified files, creating or
+updating the POT file for a given locale directory.
+
+Use the xgettext GNU gettext utility.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a5b2e81220c9c6d6ec5454062d99e861e}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!remove\_potfiles@{remove\_potfiles}}
+\index{remove\_potfiles@{remove\_potfiles}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{remove\_potfiles()}{remove\_potfiles()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a5b2e81220c9c6d6ec5454062d99e861e} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+remove\+\_\+potfiles (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ae26a52b07e380efb113829780481a0f8}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!settings\_available@{settings\_available}}
+\index{settings\_available@{settings\_available}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{settings\_available()}{settings\_available()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_ae26a52b07e380efb113829780481a0f8} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+settings\+\_\+available (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a6bdea65ad45825c790d4079b72c6e835}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!write\_po\_file@{write\_po\_file}}
+\index{write\_po\_file@{write\_po\_file}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{write\_po\_file()}{write\_po\_file()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a6bdea65ad45825c790d4079b72c6e835} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+write\+\_\+po\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{potfile}{, }\item[{}]{locale}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create or update the PO file for self.domain and `locale`.
+Use contents of the existing `potfile`.
+
+Use msgmerge and msgattrib GNU gettext utilities.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8be20afccddda547072f759491951a05}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!build\_file\_class@{build\_file\_class}}
+\index{build\_file\_class@{build\_file\_class}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{build\_file\_class}{build\_file\_class}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8be20afccddda547072f759491951a05} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+build\+\_\+file\+\_\+class = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_build_file}{Build\+File}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa1e6828ed207ca47c4854e7dc39838d9}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!default\_locale\_path@{default\_locale\_path}}
+\index{default\_locale\_path@{default\_locale\_path}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{default\_locale\_path}{default\_locale\_path}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa1e6828ed207ca47c4854e7dc39838d9} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+default\+\_\+locale\+\_\+path = None}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a61738312a5bb27c1bd23258d842d806f}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!domain@{domain}}
+\index{domain@{domain}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{domain}{domain}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a61738312a5bb27c1bd23258d842d806f} 
+str django.\+core.\+management.\+commands.\+makemessages.\+Command.\+domain = options\mbox{[}"{}domain"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a609278ae4dee9af7c6fd5b9f34a2c325}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!extensions@{extensions}}
+\index{extensions@{extensions}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{extensions}{extensions}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a609278ae4dee9af7c6fd5b9f34a2c325} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+extensions = handle\+\_\+extensions(exts)}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a37d488ba4c394fd2330f73daab779891}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!ignore\_patterns@{ignore\_patterns}}
+\index{ignore\_patterns@{ignore\_patterns}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{ignore\_patterns}{ignore\_patterns}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a37d488ba4c394fd2330f73daab779891} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+ignore\+\_\+patterns = list(set(ignore\+\_\+patterns))}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_af3649a64df897de256fbb17b449c69ed}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!invoked\_for\_django@{invoked\_for\_django}}
+\index{invoked\_for\_django@{invoked\_for\_django}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{invoked\_for\_django}{invoked\_for\_django}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_af3649a64df897de256fbb17b449c69ed} 
+bool django.\+core.\+management.\+commands.\+makemessages.\+Command.\+invoked\+\_\+for\+\_\+django = False}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a46c4cf0ed6278d280742f40ed62331b4}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!keep\_pot@{keep\_pot}}
+\index{keep\_pot@{keep\_pot}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{keep\_pot}{keep\_pot}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a46c4cf0ed6278d280742f40ed62331b4} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+keep\+\_\+pot = options\mbox{[}"{}keep\+\_\+pot"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a7324b47e5c4522b86be1eb72cde990ee}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!locale\_paths@{locale\_paths}}
+\index{locale\_paths@{locale\_paths}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{locale\_paths}{locale\_paths}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a7324b47e5c4522b86be1eb72cde990ee} 
+list django.\+core.\+management.\+commands.\+makemessages.\+Command.\+locale\+\_\+paths = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a14f49ab4d3f282019e76a246655d493d}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!msgattrib\_options@{msgattrib\_options}}
+\index{msgattrib\_options@{msgattrib\_options}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{msgattrib\_options}{msgattrib\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a14f49ab4d3f282019e76a246655d493d} 
+list django.\+core.\+management.\+commands.\+makemessages.\+Command.\+msgattrib\+\_\+options = \mbox{[}"{}-\/-\/no-\/obsolete"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a50794371d406372e1c9f0434aa14c903}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!msgmerge\_options@{msgmerge\_options}}
+\index{msgmerge\_options@{msgmerge\_options}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{msgmerge\_options}{msgmerge\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a50794371d406372e1c9f0434aa14c903} 
+list django.\+core.\+management.\+commands.\+makemessages.\+Command.\+msgmerge\+\_\+options = \mbox{[}"{}-\/q"{}, "{}-\/-\/backup=none"{}, "{}-\/-\/previous"{}, "{}-\/-\/update"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a41a505e541c8ffbf601090a6496a471a}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!msguniq\_options@{msguniq\_options}}
+\index{msguniq\_options@{msguniq\_options}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{msguniq\_options}{msguniq\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a41a505e541c8ffbf601090a6496a471a} 
+list django.\+core.\+management.\+commands.\+makemessages.\+Command.\+msguniq\+\_\+options = \mbox{[}"{}-\/-\/to-\/code=utf-\/8"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a07ad1fab50c26d7056862d5cd674bf99}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!no\_obsolete@{no\_obsolete}}
+\index{no\_obsolete@{no\_obsolete}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{no\_obsolete}{no\_obsolete}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a07ad1fab50c26d7056862d5cd674bf99} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+no\+\_\+obsolete = options\mbox{[}"{}no\+\_\+obsolete"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a58c3eaaaac66257949f60f5b41e0436c}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!settings\_available@{settings\_available}}
+\index{settings\_available@{settings\_available}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{settings\_available}{settings\_available}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a58c3eaaaac66257949f60f5b41e0436c} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+settings\+\_\+available}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa67faecb33c6402ee66688eada063d6e}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!symlinks@{symlinks}}
+\index{symlinks@{symlinks}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{symlinks}{symlinks}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa67faecb33c6402ee66688eada063d6e} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+symlinks = options\mbox{[}"{}symlinks"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa8ca5c752eef408ea3a15499a589b6d9}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!translatable\_file\_class@{translatable\_file\_class}}
+\index{translatable\_file\_class@{translatable\_file\_class}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{translatable\_file\_class}{translatable\_file\_class}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_aa8ca5c752eef408ea3a15499a589b6d9} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+translatable\+\_\+file\+\_\+class = \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_translatable_file}{Translatable\+File}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8d39d1a18997097991329cece2ff254d}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!verbosity@{verbosity}}
+\index{verbosity@{verbosity}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{verbosity}{verbosity}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a8d39d1a18997097991329cece2ff254d} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+verbosity = options\mbox{[}"{}verbosity"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a702a0f7bb15ddf28f9e0ff914bd14fc3}\index{django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}!xgettext\_options@{xgettext\_options}}
+\index{xgettext\_options@{xgettext\_options}!django.core.management.commands.makemessages.Command@{django.core.management.commands.makemessages.Command}}
+\doxysubsubsection{\texorpdfstring{xgettext\_options}{xgettext\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1_command_a702a0f7bb15ddf28f9e0ff914bd14fc3} 
+django.\+core.\+management.\+commands.\+makemessages.\+Command.\+xgettext\+\_\+options = \mbox{[}"{}-\/-\/from-\/code=UTF-\/8"{}, "{}-\/-\/add-\/comments=Translators"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/management/commands/\mbox{\hyperlink{makemessages_8py}{makemessages.\+py}}\end{DoxyCompactItemize}

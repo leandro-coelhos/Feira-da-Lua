@@ -1,0 +1,155 @@
+\doxysection{\+\_\+pytest.\+cacheprovider Namespace Reference}
+\hypertarget{namespace__pytest_1_1cacheprovider}{}\label{namespace__pytest_1_1cacheprovider}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_l_f_plugin}{LFPlugin}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_l_f_plugin_coll_skipfiles}{LFPlugin\+Coll\+Skipfiles}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_l_f_plugin_coll_wrapper}{LFPlugin\+Coll\+Wrapper}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin}{NFPlugin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a7b516b384956cef1c47c2367f12de4d0}{pytest\+\_\+addoption}} (\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}} parser)
+\item 
+int\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a2e908f3bd721a62ff45988c395ff5e53}{pytest\+\_\+cmdline\+\_\+main}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a281bba4bd8dc6d89742d9d2f84860499}{pytest\+\_\+configure}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a9ea772b4176206067b4719be2d6ebfb2}{cache}} (\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} request)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_aa97f5bae538b2da9a2ec8011cb3d791a}{pytest\+\_\+report\+\_\+header}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+int \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a54737112f3e0f9e88da96be7d653847b}{cacheshow}} (\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config, \mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}} session)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a1fead9873b26476ca3e5a8563ef6f24e}{README\+\_\+\+CONTENT}}
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1cacheprovider_a83e23c8fbdc533cda4987c3aa1850857}{CACHEDIR\+\_\+\+TAG\+\_\+\+CONTENT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implementation of the cache provider.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1cacheprovider_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1cacheprovider_a9ea772b4176206067b4719be2d6ebfb2}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!cache@{cache}}
+\index{cache@{cache}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{cache()}{cache()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a9ea772b4176206067b4719be2d6ebfb2} 
+ \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_cache}{Cache}} \+\_\+pytest.\+cacheprovider.\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a cache object that can persist state between testing sessions.
+
+cache.get(key, default)
+cache.set(key, value)
+
+Keys must be ``/`` separated strings, where the first part is usually the
+name of your plugin or application to avoid clashes with other cache users.
+
+Values can be any object handled by the json stdlib module.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1cacheprovider_a54737112f3e0f9e88da96be7d653847b}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!cacheshow@{cacheshow}}
+\index{cacheshow@{cacheshow}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{cacheshow()}{cacheshow()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a54737112f3e0f9e88da96be7d653847b} 
+ int \+\_\+pytest.\+cacheprovider.\+cacheshow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{\mbox{\hyperlink{class__pytest_1_1main_1_1_session}{Session}}}]{session}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display cache contents when --cache-show is used.
+
+Shows cached values and directories matching the specified glob pattern
+(default: '*'). Displays cache location, cached test results, and
+any cached directories created by plugins.
+
+:param config: pytest configuration object.
+:param session: pytest session object.
+:returns: Exit code (0 for success).
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1cacheprovider_a7b516b384956cef1c47c2367f12de4d0}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!pytest\_addoption@{pytest\_addoption}}
+\index{pytest\_addoption@{pytest\_addoption}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{pytest\_addoption()}{pytest\_addoption()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a7b516b384956cef1c47c2367f12de4d0} 
+ None \+\_\+pytest.\+cacheprovider.\+pytest\+\_\+addoption (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1argparsing_1_1_parser}{Parser}}}]{parser}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add command-line options for cache functionality.
+
+:param parser: Parser object to add command-line options to.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1cacheprovider_a2e908f3bd721a62ff45988c395ff5e53}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!pytest\_cmdline\_main@{pytest\_cmdline\_main}}
+\index{pytest\_cmdline\_main@{pytest\_cmdline\_main}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{pytest\_cmdline\_main()}{pytest\_cmdline\_main()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a2e908f3bd721a62ff45988c395ff5e53} 
+ int \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+cacheprovider.\+pytest\+\_\+cmdline\+\_\+main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1cacheprovider_a281bba4bd8dc6d89742d9d2f84860499}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a281bba4bd8dc6d89742d9d2f84860499} 
+ None \+\_\+pytest.\+cacheprovider.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure cache system and register related plugins.
+
+Creates the Cache instance and registers the last-failed (LFPlugin)
+and new-first (NFPlugin) plugins with the plugin manager.
+
+:param config: pytest configuration object.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1cacheprovider_aa97f5bae538b2da9a2ec8011cb3d791a}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!pytest\_report\_header@{pytest\_report\_header}}
+\index{pytest\_report\_header@{pytest\_report\_header}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{pytest\_report\_header()}{pytest\_report\_header()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_aa97f5bae538b2da9a2ec8011cb3d791a} 
+ str \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+cacheprovider.\+pytest\+\_\+report\+\_\+header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display cachedir with --cache-show and if non-default.\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1cacheprovider_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1cacheprovider_a83e23c8fbdc533cda4987c3aa1850857}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!CACHEDIR\_TAG\_CONTENT@{CACHEDIR\_TAG\_CONTENT}}
+\index{CACHEDIR\_TAG\_CONTENT@{CACHEDIR\_TAG\_CONTENT}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{CACHEDIR\_TAG\_CONTENT}{CACHEDIR\_TAG\_CONTENT}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a83e23c8fbdc533cda4987c3aa1850857} 
+str \+\_\+pytest.\+cacheprovider.\+CACHEDIR\+\_\+\+TAG\+\_\+\+CONTENT}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ b\textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{Signature:\ 8a477f597d28d172789f06886806bc55}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{\#\ This\ file\ is\ a\ cache\ directory\ tag\ created\ by\ pytest.}}
+\DoxyCodeLine{00004\ \textcolor{stringliteral}{\#\ For\ information\ about\ cache\ directory\ tags,\ see:}}
+\DoxyCodeLine{00005\ \textcolor{stringliteral}{\#\ \ \ https://bford.info/cachedir/spec.html}}
+\DoxyCodeLine{00006\ \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1cacheprovider_a1fead9873b26476ca3e5a8563ef6f24e}\index{\_pytest.cacheprovider@{\_pytest.cacheprovider}!README\_CONTENT@{README\_CONTENT}}
+\index{README\_CONTENT@{README\_CONTENT}!\_pytest.cacheprovider@{\_pytest.cacheprovider}}
+\doxysubsubsection{\texorpdfstring{README\_CONTENT}{README\_CONTENT}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1cacheprovider_a1fead9873b26476ca3e5a8563ef6f24e} 
+str \+\_\+pytest.\+cacheprovider.\+README\+\_\+\+CONTENT}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{\#\ pytest\ cache\ directory\ \#}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{00004\ \textcolor{stringliteral}{This\ directory\ contains\ data\ from\ the\ pytest's\ cache\ plugin,}}
+\DoxyCodeLine{00005\ \textcolor{stringliteral}{which\ provides\ the\ \`{}-\/-\/lf\`{}\ and\ \`{}-\/-\/ff\`{}\ options,\ as\ well\ as\ the\ \`{}cache\`{}\ fixture.}}
+\DoxyCodeLine{00006\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{00007\ \textcolor{stringliteral}{**Do\ not**\ commit\ this\ to\ version\ control.}}
+\DoxyCodeLine{00008\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{See\ [the\ docs](https://docs.pytest.org/en/stable/how-\/to/cache.html)\ for\ more\ information.}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}

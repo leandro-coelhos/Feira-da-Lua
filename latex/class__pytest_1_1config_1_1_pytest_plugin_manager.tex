@@ -1,0 +1,320 @@
+\doxysection{\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager Class Reference}
+\hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager}{}\label{class__pytest_1_1config_1_1_pytest_plugin_manager}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+Inheritance diagram for \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class__pytest_1_1config_1_1_pytest_plugin_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a5cdf4660a7358ea6b16b9977673fe469}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+Hookimpl\+Opts\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_aa8d25f94faab937c59cbffb85924b953}{parse\+\_\+hookimpl\+\_\+opts}} (self, \mbox{\hyperlink{namespace__pytest_1_1config_a595c02a0e355e0ba3ffe90ffde2edbff}{\+\_\+\+Pluggy\+Plugin}} plugin, str name)
+\item 
+Hookspec\+Opts\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a0848687f9fd3db535e2aacd1de21316b}{parse\+\_\+hookspec\+\_\+opts}} (self, module\+\_\+or\+\_\+class, str name)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ae12c91d72a7748a03d938cea2e73955b}{register}} (self, \mbox{\hyperlink{namespace__pytest_1_1config_a595c02a0e355e0ba3ffe90ffde2edbff}{\+\_\+\+Pluggy\+Plugin}} plugin, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_af8e7238d3f0cee61205b640fa44b5826}{getplugin}} (self, str name)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a22cc8ea9e4453b6735317f4dc815bdf3}{hasplugin}} (self, str name)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ab1d592a2978174ee3ede612d8743d4f2}{pytest\+\_\+configure}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} config)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a78e43b61e0b71f7a76fe0a751662aaf5}{consider\+\_\+preparse}} (self, Sequence\mbox{[}str\mbox{]} args, \texorpdfstring{$\ast$}{*}, bool exclude\+\_\+only=False)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a6e81b6803e8cca1e3d0252c299a58a99}{consider\+\_\+pluginarg}} (self, str arg)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ab5557038b13755847ce96353da0a65fb}{consider\+\_\+conftest}} (self, types.\+Module\+Type conftestmodule, str registration\+\_\+name)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a7c3d8749a749f39e6d94de666aac89f2}{consider\+\_\+env}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a7168c35e5354c5bbdbe1a589fed3e728}{consider\+\_\+module}} (self, types.\+Module\+Type mod)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_af33bfc41a71408e4d5b2766d0ba2053c}{import\+\_\+plugin}} (self, str modname, bool consider\+\_\+entry\+\_\+points=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a0b130e4a4dfd9c21279ee146b2d4187d}{skipped\+\_\+plugins}} = \mbox{[}$\,$\mbox{]}
+\item 
+Rewrite\+Hook \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a3495b44fd747483bce1d3446d0acd8ce}{rewrite\+\_\+hook}} = Dummy\+Rewrite\+Hook()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ad168e05c6a27758f168793eba9700ce9}{\+\_\+set\+\_\+initial\+\_\+conftests}} (self, Sequence\mbox{[}str\texorpdfstring{$\vert$}{|}pathlib.\+Path\mbox{]} args, bool pyargs, bool noconftest, pathlib.\+Path rootpath, pathlib.\+Path\texorpdfstring{$\vert$}{|}None confcutdir, pathlib.\+Path invocation\+\_\+dir, \mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}}\texorpdfstring{$\vert$}{|}str importmode, \texorpdfstring{$\ast$}{*}, bool consider\+\_\+namespace\+\_\+packages)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ab3b96bf3cc25cdacd469001c95cdc34a}{\+\_\+is\+\_\+in\+\_\+confcutdir}} (self, pathlib.\+Path path)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ae38d366e58ea6fdfe2a32411b09efdb1}{\+\_\+try\+\_\+load\+\_\+conftest}} (self, pathlib.\+Path anchor, str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}} importmode, pathlib.\+Path rootpath, \texorpdfstring{$\ast$}{*}, bool consider\+\_\+namespace\+\_\+packages)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a0468e03b3e337cde41d71838608805d3}{\+\_\+loadconftestmodules}} (self, pathlib.\+Path path, str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}} importmode, pathlib.\+Path rootpath, \texorpdfstring{$\ast$}{*}, bool consider\+\_\+namespace\+\_\+packages)
+\item 
+Sequence\mbox{[}types.\+Module\+Type\mbox{]} \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a7207fd70227c9aecf693d5fe32783214}{\+\_\+getconftestmodules}} (self, pathlib.\+Path path)
+\item 
+tuple\mbox{[}types.\+Module\+Type, Any\mbox{]} \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a0104006bb6717471f7b4a2f8df329aff}{\+\_\+rget\+\_\+with\+\_\+confmod}} (self, str name, pathlib.\+Path path)
+\item 
+types.\+Module\+Type \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ac8f162733c68fe9b2cb317ce94fb5369}{\+\_\+importconftest}} (self, pathlib.\+Path conftestpath, str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}} importmode, pathlib.\+Path rootpath, \texorpdfstring{$\ast$}{*}, bool consider\+\_\+namespace\+\_\+packages)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a88810cc9ccd3a53525ac779fa66114d1}{\+\_\+check\+\_\+non\+\_\+top\+\_\+pytest\+\_\+plugins}} (self, types.\+Module\+Type mod, pathlib.\+Path conftestpath)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_adbd1828b5555c6a70c40eaefa111f3b8}{\+\_\+import\+\_\+plugin\+\_\+specs}} (self, None\texorpdfstring{$\vert$}{|}types.\+Module\+Type\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}Sequence\mbox{[}str\mbox{]} spec)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}types.\+Module\+Type\mbox{]} \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a8effe4ba2699dbe83846007318690ad8}{\+\_\+conftest\+\_\+plugins}} = set()
+\item 
+dict \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ae52289cdf8cec5f0cbf3911c00c6dd37}{\+\_\+dirpath2confmods}} = \{\}
+\item 
+pathlib.\+Path\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a8ab383a477bb16a38460bec42d95ec93}{\+\_\+confcutdir}} = None
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_ae3c178ea13dd0276a512b9171a7e2129}{\+\_\+noconftest}} = False
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a27672aeb34b2442659f6b849547ecd8f}{\+\_\+get\+\_\+directory}} = lru\+\_\+cache(256)(\+\_\+get\+\_\+directory)
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a3586857aca9018674b37f3b565fff8f7}{\+\_\+configured}} = False
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager_a844201481759551010bea7c009af5153}{\+\_\+using\+\_\+pyargs}} = pyargs
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :py:class:`pluggy.PluginManager <pluggy.PluginManager>` with
+additional pytest-specific functionality:
+
+* Loading plugins from the command line, ``PYTEST_PLUGINS`` env variable and
+  ``pytest_plugins`` global variables found in plugins being loaded.
+* ``conftest.py`` loading during start-up.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a5cdf4660a7358ea6b16b9977673fe469}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a5cdf4660a7358ea6b16b9977673fe469} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a88810cc9ccd3a53525ac779fa66114d1}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_check\_non\_top\_pytest\_plugins@{\_check\_non\_top\_pytest\_plugins}}
+\index{\_check\_non\_top\_pytest\_plugins@{\_check\_non\_top\_pytest\_plugins}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_check\_non\_top\_pytest\_plugins()}{\_check\_non\_top\_pytest\_plugins()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a88810cc9ccd3a53525ac779fa66114d1} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+check\+\_\+non\+\_\+top\+\_\+pytest\+\_\+plugins (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{types.\+Module\+Type}]{mod}{, }\item[{pathlib.\+Path}]{conftestpath}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a7207fd70227c9aecf693d5fe32783214}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_getconftestmodules@{\_getconftestmodules}}
+\index{\_getconftestmodules@{\_getconftestmodules}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_getconftestmodules()}{\_getconftestmodules()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a7207fd70227c9aecf693d5fe32783214} 
+ Sequence\mbox{[}types.\+Module\+Type\mbox{]} \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+getconftestmodules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pathlib.\+Path}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_adbd1828b5555c6a70c40eaefa111f3b8}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_import\_plugin\_specs@{\_import\_plugin\_specs}}
+\index{\_import\_plugin\_specs@{\_import\_plugin\_specs}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_import\_plugin\_specs()}{\_import\_plugin\_specs()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_adbd1828b5555c6a70c40eaefa111f3b8} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+import\+\_\+plugin\+\_\+specs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{None \texorpdfstring{$\vert$}{|} types.\+Module\+Type \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} Sequence\mbox{[}str\mbox{]}     }]{spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ac8f162733c68fe9b2cb317ce94fb5369}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_importconftest@{\_importconftest}}
+\index{\_importconftest@{\_importconftest}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_importconftest()}{\_importconftest()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ac8f162733c68fe9b2cb317ce94fb5369} 
+ types.\+Module\+Type \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+importconftest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pathlib.\+Path}]{conftestpath}{, }\item[{str \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}}}]{importmode}{, }\item[{pathlib.\+Path}]{rootpath}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool}]{consider\+\_\+namespace\+\_\+packages}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ab3b96bf3cc25cdacd469001c95cdc34a}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_is\_in\_confcutdir@{\_is\_in\_confcutdir}}
+\index{\_is\_in\_confcutdir@{\_is\_in\_confcutdir}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_is\_in\_confcutdir()}{\_is\_in\_confcutdir()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ab3b96bf3cc25cdacd469001c95cdc34a} 
+ bool \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+is\+\_\+in\+\_\+confcutdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pathlib.\+Path}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Whether to consider the given path to load conftests from.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a0468e03b3e337cde41d71838608805d3}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_loadconftestmodules@{\_loadconftestmodules}}
+\index{\_loadconftestmodules@{\_loadconftestmodules}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_loadconftestmodules()}{\_loadconftestmodules()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a0468e03b3e337cde41d71838608805d3} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+loadconftestmodules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pathlib.\+Path}]{path}{, }\item[{str \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}}}]{importmode}{, }\item[{pathlib.\+Path}]{rootpath}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool}]{consider\+\_\+namespace\+\_\+packages}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a0104006bb6717471f7b4a2f8df329aff}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_rget\_with\_confmod@{\_rget\_with\_confmod}}
+\index{\_rget\_with\_confmod@{\_rget\_with\_confmod}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_rget\_with\_confmod()}{\_rget\_with\_confmod()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a0104006bb6717471f7b4a2f8df329aff} 
+ tuple\mbox{[}types.\+Module\+Type, Any\mbox{]} \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+rget\+\_\+with\+\_\+confmod (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{pathlib.\+Path}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ad168e05c6a27758f168793eba9700ce9}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_set\_initial\_conftests@{\_set\_initial\_conftests}}
+\index{\_set\_initial\_conftests@{\_set\_initial\_conftests}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_set\_initial\_conftests()}{\_set\_initial\_conftests()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ad168e05c6a27758f168793eba9700ce9} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+set\+\_\+initial\+\_\+conftests (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}str \texorpdfstring{$\vert$}{|} pathlib.\+Path\mbox{]}}]{args}{, }\item[{bool}]{pyargs}{, }\item[{bool}]{noconftest}{, }\item[{pathlib.\+Path}]{rootpath}{, }\item[{pathlib.\+Path \texorpdfstring{$\vert$}{|} None}]{confcutdir}{, }\item[{pathlib.\+Path}]{invocation\+\_\+dir}{, }\item[{\mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}} \texorpdfstring{$\vert$}{|} str}]{importmode}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool}]{consider\+\_\+namespace\+\_\+packages}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Load initial conftest files given a preparsed "namespace".
+
+As conftest files may add their own command line options which have
+arguments ('--my-opt somepath') we might get some false positives.
+All builtin and 3rd party plugins will have been loaded, however, so
+common options will not confuse our logic here.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ae38d366e58ea6fdfe2a32411b09efdb1}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_try\_load\_conftest@{\_try\_load\_conftest}}
+\index{\_try\_load\_conftest@{\_try\_load\_conftest}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_try\_load\_conftest()}{\_try\_load\_conftest()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ae38d366e58ea6fdfe2a32411b09efdb1} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+try\+\_\+load\+\_\+conftest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{pathlib.\+Path}]{anchor}{, }\item[{str \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1pathlib_1_1_import_mode}{Import\+Mode}}}]{importmode}{, }\item[{pathlib.\+Path}]{rootpath}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool}]{consider\+\_\+namespace\+\_\+packages}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ab5557038b13755847ce96353da0a65fb}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!consider\_conftest@{consider\_conftest}}
+\index{consider\_conftest@{consider\_conftest}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{consider\_conftest()}{consider\_conftest()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ab5557038b13755847ce96353da0a65fb} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+consider\+\_\+conftest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{types.\+Module\+Type}]{conftestmodule}{, }\item[{str     }]{registration\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a7c3d8749a749f39e6d94de666aac89f2}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!consider\_env@{consider\_env}}
+\index{consider\_env@{consider\_env}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{consider\_env()}{consider\_env()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a7c3d8749a749f39e6d94de666aac89f2} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+consider\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a7168c35e5354c5bbdbe1a589fed3e728}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!consider\_module@{consider\_module}}
+\index{consider\_module@{consider\_module}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{consider\_module()}{consider\_module()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a7168c35e5354c5bbdbe1a589fed3e728} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+consider\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{types.\+Module\+Type}]{mod}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a6e81b6803e8cca1e3d0252c299a58a99}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!consider\_pluginarg@{consider\_pluginarg}}
+\index{consider\_pluginarg@{consider\_pluginarg}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{consider\_pluginarg()}{consider\_pluginarg()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a6e81b6803e8cca1e3d0252c299a58a99} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+consider\+\_\+pluginarg (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{arg}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a78e43b61e0b71f7a76fe0a751662aaf5}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!consider\_preparse@{consider\_preparse}}
+\index{consider\_preparse@{consider\_preparse}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{consider\_preparse()}{consider\_preparse()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a78e43b61e0b71f7a76fe0a751662aaf5} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+consider\+\_\+preparse (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}str\mbox{]}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{exclude\+\_\+only}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_af8e7238d3f0cee61205b640fa44b5826}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!getplugin@{getplugin}}
+\index{getplugin@{getplugin}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{getplugin()}{getplugin()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_af8e7238d3f0cee61205b640fa44b5826} 
+\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+getplugin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a22cc8ea9e4453b6735317f4dc815bdf3}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!hasplugin@{hasplugin}}
+\index{hasplugin@{hasplugin}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{hasplugin()}{hasplugin()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a22cc8ea9e4453b6735317f4dc815bdf3} 
+ bool \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+hasplugin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether a plugin with the given name is registered.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_af33bfc41a71408e4d5b2766d0ba2053c}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!import\_plugin@{import\_plugin}}
+\index{import\_plugin@{import\_plugin}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{import\_plugin()}{import\_plugin()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_af33bfc41a71408e4d5b2766d0ba2053c} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+import\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{modname}{, }\item[{bool }]{consider\+\_\+entry\+\_\+points}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Import a plugin with ``modname``.
+
+If ``consider_entry_points`` is True, entry point names are also
+considered to find a plugin.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_aa8d25f94faab937c59cbffb85924b953}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!parse\_hookimpl\_opts@{parse\_hookimpl\_opts}}
+\index{parse\_hookimpl\_opts@{parse\_hookimpl\_opts}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{parse\_hookimpl\_opts()}{parse\_hookimpl\_opts()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_aa8d25f94faab937c59cbffb85924b953} 
+ Hookimpl\+Opts \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+parse\+\_\+hookimpl\+\_\+opts (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespace__pytest_1_1config_a595c02a0e355e0ba3ffe90ffde2edbff}{\+\_\+\+Pluggy\+Plugin}}}]{plugin}{, }\item[{str     }]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a0848687f9fd3db535e2aacd1de21316b}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!parse\_hookspec\_opts@{parse\_hookspec\_opts}}
+\index{parse\_hookspec\_opts@{parse\_hookspec\_opts}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{parse\_hookspec\_opts()}{parse\_hookspec\_opts()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a0848687f9fd3db535e2aacd1de21316b} 
+ Hookspec\+Opts \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+parse\+\_\+hookspec\+\_\+opts (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module\+\_\+or\+\_\+class}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ab1d592a2978174ee3ede612d8743d4f2}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!pytest\_configure@{pytest\_configure}}
+\index{pytest\_configure@{pytest\_configure}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{pytest\_configure()}{pytest\_configure()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ab1d592a2978174ee3ede612d8743d4f2} 
+ None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+pytest\+\_\+configure (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:meta private:\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ae12c91d72a7748a03d938cea2e73955b}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!register@{register}}
+\index{register@{register}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ae12c91d72a7748a03d938cea2e73955b} 
+ str \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+register (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespace__pytest_1_1config_a595c02a0e355e0ba3ffe90ffde2edbff}{\+\_\+\+Pluggy\+Plugin}}}]{plugin}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a8ab383a477bb16a38460bec42d95ec93}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_confcutdir@{\_confcutdir}}
+\index{\_confcutdir@{\_confcutdir}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_confcutdir}{\_confcutdir}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a8ab383a477bb16a38460bec42d95ec93} 
+\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+confcutdir = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a3586857aca9018674b37f3b565fff8f7}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_configured@{\_configured}}
+\index{\_configured@{\_configured}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_configured}{\_configured}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a3586857aca9018674b37f3b565fff8f7} 
+bool \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+configured = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a8effe4ba2699dbe83846007318690ad8}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_conftest\_plugins@{\_conftest\_plugins}}
+\index{\_conftest\_plugins@{\_conftest\_plugins}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_conftest\_plugins}{\_conftest\_plugins}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a8effe4ba2699dbe83846007318690ad8} 
+set\mbox{[}types.\+Module\+Type\mbox{]} \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+conftest\+\_\+plugins = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ae52289cdf8cec5f0cbf3911c00c6dd37}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_dirpath2confmods@{\_dirpath2confmods}}
+\index{\_dirpath2confmods@{\_dirpath2confmods}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_dirpath2confmods}{\_dirpath2confmods}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ae52289cdf8cec5f0cbf3911c00c6dd37} 
+dict \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+dirpath2confmods = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a27672aeb34b2442659f6b849547ecd8f}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_get\_directory@{\_get\_directory}}
+\index{\_get\_directory@{\_get\_directory}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_get\_directory}{\_get\_directory}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a27672aeb34b2442659f6b849547ecd8f} 
+\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+get\+\_\+directory = lru\+\_\+cache(256)(\+\_\+get\+\_\+directory)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_ae3c178ea13dd0276a512b9171a7e2129}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_noconftest@{\_noconftest}}
+\index{\_noconftest@{\_noconftest}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_noconftest}{\_noconftest}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_ae3c178ea13dd0276a512b9171a7e2129} 
+bool \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+noconftest = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a844201481759551010bea7c009af5153}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!\_using\_pyargs@{\_using\_pyargs}}
+\index{\_using\_pyargs@{\_using\_pyargs}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{\_using\_pyargs}{\_using\_pyargs}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a844201481759551010bea7c009af5153} 
+\+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+\_\+using\+\_\+pyargs = pyargs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a3495b44fd747483bce1d3446d0acd8ce}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!rewrite\_hook@{rewrite\_hook}}
+\index{rewrite\_hook@{rewrite\_hook}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{rewrite\_hook}{rewrite\_hook}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a3495b44fd747483bce1d3446d0acd8ce} 
+Rewrite\+Hook \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+rewrite\+\_\+hook = Dummy\+Rewrite\+Hook()}
+
+\Hypertarget{class__pytest_1_1config_1_1_pytest_plugin_manager_a0b130e4a4dfd9c21279ee146b2d4187d}\index{\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}!skipped\_plugins@{skipped\_plugins}}
+\index{skipped\_plugins@{skipped\_plugins}!\_pytest.config.PytestPluginManager@{\_pytest.config.PytestPluginManager}}
+\doxysubsubsection{\texorpdfstring{skipped\_plugins}{skipped\_plugins}}
+{\footnotesize\ttfamily \label{class__pytest_1_1config_1_1_pytest_plugin_manager_a0b130e4a4dfd9c21279ee146b2d4187d} 
+list \+\_\+pytest.\+config.\+Pytest\+Plugin\+Manager.\+skipped\+\_\+plugins = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/config/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2__pytest_2config_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

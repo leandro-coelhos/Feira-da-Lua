@@ -1,0 +1,126 @@
+\doxysection{attr.\+\_\+version\+\_\+info.\+Version\+Info Class Reference}
+\hypertarget{classattr_1_1__version__info_1_1_version_info}{}\label{classattr_1_1__version__info_1_1_version_info}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_ab3d9b96558c9f9b1bff8bfb8619c62f6}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_aec5cdefd1f09c7eb054009182c7ae350}{\+\_\+\+\_\+lt\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_adf67cc5d23166da35dd33bc25b5ab7b5}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_ab583873016fb5525a1916e498edc6f5e}{year}} = attrib(type=int)
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_aef4ab70909ee35c4d4535ade1afdfedc}{minor}} = attrib(type=int)
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_a4139f2047f274ada9596a6be2594bee0}{micro}} = attrib(type=int)
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_a5a95367d815b184c5799b3c53373529b}{releaselevel}} = attrib(type=str)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_abc28280abb99d71547caef7386569c75}{\+\_\+from\+\_\+version\+\_\+string}} (cls, \mbox{\hyperlink{namespaceattr_ab7304213fe02a4828528ee572122c00b}{s}})
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_a4f73db2ccebe79c5c9273e6b655ec9f8}{\+\_\+ensure\+\_\+tuple}} (self, other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A version object that can be compared to tuple of length 1--4:
+
+>>> attr.VersionInfo(19, 1, 0, "final")  <= (19, 2)
+True
+>>> attr.VersionInfo(19, 1, 0, "final") < (19, 1, 1)
+True
+>>> vi = attr.VersionInfo(19, 2, 0, "final")
+>>> vi < (19, 1, 1)
+False
+>>> vi < (19,)
+False
+>>> vi == (19, 2,)
+True
+>>> vi == (19, 2, 1)
+False
+
+.. versionadded:: 19.2
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_ab3d9b96558c9f9b1bff8bfb8619c62f6}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_ab3d9b96558c9f9b1bff8bfb8619c62f6} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_adf67cc5d23166da35dd33bc25b5ab7b5}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_adf67cc5d23166da35dd33bc25b5ab7b5} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_aec5cdefd1f09c7eb054009182c7ae350}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_\_lt\_\_@{\_\_lt\_\_}}
+\index{\_\_lt\_\_@{\_\_lt\_\_}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_\_lt\_\_()}{\_\_lt\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_aec5cdefd1f09c7eb054009182c7ae350} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+\+\_\+lt\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_a4f73db2ccebe79c5c9273e6b655ec9f8}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_ensure\_tuple@{\_ensure\_tuple}}
+\index{\_ensure\_tuple@{\_ensure\_tuple}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_tuple()}{\_ensure\_tuple()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_a4f73db2ccebe79c5c9273e6b655ec9f8} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+ensure\+\_\+tuple (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Ensure *other* is a tuple of a valid length.
+
+Returns a possibly transformed *other* and ourselves as a tuple of
+the same length as *other*.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__version__info_1_1_version_info_abc28280abb99d71547caef7386569c75}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_from\_version\_string@{\_from\_version\_string}}
+\index{\_from\_version\_string@{\_from\_version\_string}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_from\_version\_string()}{\_from\_version\_string()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_abc28280abb99d71547caef7386569c75} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+from\+\_\+version\+\_\+string (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse *s* and return a _VersionInfo.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_a4139f2047f274ada9596a6be2594bee0}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!micro@{micro}}
+\index{micro@{micro}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{micro}{micro}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_a4139f2047f274ada9596a6be2594bee0} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+micro = attrib(type=int)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_aef4ab70909ee35c4d4535ade1afdfedc}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!minor@{minor}}
+\index{minor@{minor}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{minor}{minor}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_aef4ab70909ee35c4d4535ade1afdfedc} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+minor = attrib(type=int)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_a5a95367d815b184c5799b3c53373529b}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!releaselevel@{releaselevel}}
+\index{releaselevel@{releaselevel}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{releaselevel}{releaselevel}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_a5a95367d815b184c5799b3c53373529b} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+releaselevel = attrib(type=str)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_ab583873016fb5525a1916e498edc6f5e}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!year@{year}}
+\index{year@{year}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_ab583873016fb5525a1916e498edc6f5e} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+year = attrib(type=int)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/attr/\mbox{\hyperlink{__version__info_8py}{\+\_\+version\+\_\+info.\+py}}\end{DoxyCompactItemize}

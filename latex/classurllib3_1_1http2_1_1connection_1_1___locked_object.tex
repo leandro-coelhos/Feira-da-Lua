@@ -1,0 +1,105 @@
+\doxysection{urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object Class Reference}
+\hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object}{}\label{classurllib3_1_1http2_1_1connection_1_1___locked_object}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+Inheritance diagram for urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classurllib3_1_1http2_1_1connection_1_1___locked_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object_aa1eeb4c455f61130501e47ee0e2f1ed2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespaceurllib3_1_1http2_1_1connection_a9dbcc9c8cf289c8497cad83559242ff9}{T}} obj)
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1http2_1_1connection_a9dbcc9c8cf289c8497cad83559242ff9}{T}} \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object_a133058796a1e8fe5eb49ba5fff304c9e}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object_aee484db62f2c8ea51368da6708f38dd7}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\mbox{[}Base\+Exception\mbox{]}\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+val, types.\+Traceback\+Type\texorpdfstring{$\vert$}{|}None exc\+\_\+tb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object_a668b6960b4192d8e51c1d5c28b7f9ead}{lock}} = threading.\+RLock()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object_aaaeb203fca2e215092818c364dfca9a4}{\+\_\+obj}} = obj
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object_ae39eebf6db276b2c2e7ca70718e15783}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A wrapper class that hides a specific object behind a lock.
+The goal here is to provide a simple way to protect access to an object
+that cannot safely be simultaneously accessed from multiple threads. The
+intended use of this class is simple: take hold of it with a context
+manager, which returns the protected object.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_aa1eeb4c455f61130501e47ee0e2f1ed2}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1___locked_object_aa1eeb4c455f61130501e47ee0e2f1ed2} 
+urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1http2_1_1connection_a9dbcc9c8cf289c8497cad83559242ff9}{T}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_a133058796a1e8fe5eb49ba5fff304c9e}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1___locked_object_a133058796a1e8fe5eb49ba5fff304c9e} 
+ \mbox{\hyperlink{namespaceurllib3_1_1http2_1_1connection_a9dbcc9c8cf289c8497cad83559242ff9}{T}} urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_aee484db62f2c8ea51368da6708f38dd7}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1___locked_object_aee484db62f2c8ea51368da6708f38dd7} 
+ None urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\mbox{[}Base\+Exception\mbox{]} \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+val}{, }\item[{types.\+Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+tb}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_ae39eebf6db276b2c2e7ca70718e15783}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1___locked_object_ae39eebf6db276b2c2e7ca70718e15783} 
+tuple urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}lock"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_obj"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_aaaeb203fca2e215092818c364dfca9a4}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}!\_obj@{\_obj}}
+\index{\_obj@{\_obj}!urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+\doxysubsubsection{\texorpdfstring{\_obj}{\_obj}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1___locked_object_aaaeb203fca2e215092818c364dfca9a4} 
+urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object.\+\_\+obj = obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1___locked_object_a668b6960b4192d8e51c1d5c28b7f9ead}\index{urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}!lock@{lock}}
+\index{lock@{lock}!urllib3.http2.connection.\_LockedObject@{urllib3.http2.connection.\_LockedObject}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1___locked_object_a668b6960b4192d8e51c1d5c28b7f9ead} 
+urllib3.\+http2.\+connection.\+\_\+\+Locked\+Object.\+lock = threading.\+RLock()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/urllib3/http2/\mbox{\hyperlink{urllib3_2http2_2connection_8py}{connection.\+py}}\end{DoxyCompactItemize}

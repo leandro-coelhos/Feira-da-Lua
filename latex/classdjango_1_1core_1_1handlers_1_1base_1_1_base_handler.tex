@@ -1,0 +1,187 @@
+\doxysection{django.\+core.\+handlers.\+base.\+Base\+Handler Class Reference}
+\hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler}{}\label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+Inheritance diagram for django.\+core.\+handlers.\+base.\+Base\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.294798cm]{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a41bd96bf0cbb7de9f97bd651f186eb2e}{load\+\_\+middleware}} (self, is\+\_\+async=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_ab6faacdd2c8728e76b608a0ef487045a}{adapt\+\_\+method\+\_\+mode}} (self, is\+\_\+async, method, method\+\_\+is\+\_\+async=None, debug=False, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_af2ac57e82855ce854f89ccbd56e5842d}{get\+\_\+response}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a71ab5f10299a12effdebaaa6776993e2}{get\+\_\+response\+\_\+async}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a1169ca20bb1d49582495be30dd9b88f3}{resolve\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a5077bcaa40256bd623901217f2a1922d}{check\+\_\+response}} (self, response, callback, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aa6935e287f0194fc8d6a0b8a66ca15ff}{make\+\_\+view\+\_\+atomic}} (self, view)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aff37489dfa4ce6ba160af57f46ab20e6}{process\+\_\+exception\+\_\+by\+\_\+middleware}} (self, exception, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aed17459d3e401e8397c44c345ae47c1d}{\+\_\+get\+\_\+response}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a67de707a070dcf01138a3ce0b55cfe0b}{\+\_\+get\+\_\+response\+\_\+async}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a6b39a910b7b321e3f48132260f4c1189}{\+\_\+view\+\_\+middleware}} = None
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_acb2beef3981a7e05e557b4fc2c8e6842}{\+\_\+template\+\_\+response\+\_\+middleware}} = None
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_afd70aeca46cc3fbc227359096d5cf039}{\+\_\+exception\+\_\+middleware}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_ab620578cce0526a85ab1236f5dac47a3}{\+\_\+middleware\+\_\+chain}} = None
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aed17459d3e401e8397c44c345ae47c1d}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!\_get\_response@{\_get\_response}}
+\index{\_get\_response@{\_get\_response}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_get\_response()}{\_get\_response()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aed17459d3e401e8397c44c345ae47c1d} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+\_\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Resolve and call the view, then apply view, exception, and
+template_response middleware. This method is everything that happens
+inside the request/response middleware.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a67de707a070dcf01138a3ce0b55cfe0b}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!\_get\_response\_async@{\_get\_response\_async}}
+\index{\_get\_response\_async@{\_get\_response\_async}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_get\_response\_async()}{\_get\_response\_async()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a67de707a070dcf01138a3ce0b55cfe0b} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+\_\+get\+\_\+response\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Resolve and call the view, then apply view, exception, and
+template_response middleware. This method is everything that happens
+inside the request/response middleware.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_ab6faacdd2c8728e76b608a0ef487045a}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!adapt\_method\_mode@{adapt\_method\_mode}}
+\index{adapt\_method\_mode@{adapt\_method\_mode}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{adapt\_method\_mode()}{adapt\_method\_mode()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_ab6faacdd2c8728e76b608a0ef487045a} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+adapt\+\_\+method\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{is\+\_\+async}{, }\item[{}]{method}{, }\item[{}]{method\+\_\+is\+\_\+async}{ = {\ttfamily None}, }\item[{}]{debug}{ = {\ttfamily False}, }\item[{}]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adapt a method to be in the correct "mode":
+- If is_async is False:
+  - Synchronous methods are left alone
+  - Asynchronous methods are wrapped with async_to_sync
+- If is_async is True:
+  - Synchronous methods are wrapped with sync_to_async()
+  - Asynchronous methods are left alone
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a5077bcaa40256bd623901217f2a1922d}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!check\_response@{check\_response}}
+\index{check\_response@{check\_response}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{check\_response()}{check\_response()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a5077bcaa40256bd623901217f2a1922d} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+check\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{, }\item[{}]{callback}{, }\item[{}]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise an error if the view returned None or an uncalled coroutine.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_af2ac57e82855ce854f89ccbd56e5842d}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_af2ac57e82855ce854f89ccbd56e5842d} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an HttpResponse object for the given HttpRequest.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_f_s_files_handler_a3fe9c64fff8bf16b0c2a46ceb5bc2713}{django.\+test.\+testcases.\+FSFiles\+Handler}}.
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a71ab5f10299a12effdebaaa6776993e2}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!get\_response\_async@{get\_response\_async}}
+\index{get\_response\_async@{get\_response\_async}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{get\_response\_async()}{get\_response\_async()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a71ab5f10299a12effdebaaa6776993e2} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+get\+\_\+response\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Asynchronous version of get_response.
+
+Funneling everything, including WSGI, into a single async
+get_response() is too slow. Avoid the context switch by using
+a separate async response path.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_a_s_g_i_static_files_handler_a3eb205f4bb966d10c0969b9c1cbd1643}{django.\+contrib.\+staticfiles.\+handlers.\+ASGIStatic\+Files\+Handler}}.
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a41bd96bf0cbb7de9f97bd651f186eb2e}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!load\_middleware@{load\_middleware}}
+\index{load\_middleware@{load\_middleware}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{load\_middleware()}{load\_middleware()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a41bd96bf0cbb7de9f97bd651f186eb2e} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+load\+\_\+middleware (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{is\+\_\+async}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Populate middleware lists from settings.MIDDLEWARE.
+
+Must be called after the environment is fixed (see __call__ in subclasses).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aa6935e287f0194fc8d6a0b8a66ca15ff}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!make\_view\_atomic@{make\_view\_atomic}}
+\index{make\_view\_atomic@{make\_view\_atomic}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{make\_view\_atomic()}{make\_view\_atomic()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aa6935e287f0194fc8d6a0b8a66ca15ff} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+make\+\_\+view\+\_\+atomic (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{view}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aff37489dfa4ce6ba160af57f46ab20e6}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!process\_exception\_by\_middleware@{process\_exception\_by\_middleware}}
+\index{process\_exception\_by\_middleware@{process\_exception\_by\_middleware}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{process\_exception\_by\_middleware()}{process\_exception\_by\_middleware()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_aff37489dfa4ce6ba160af57f46ab20e6} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+process\+\_\+exception\+\_\+by\+\_\+middleware (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exception}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pass the exception to the exception middleware. If no middleware
+return a response for this exception, return None.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a1169ca20bb1d49582495be30dd9b88f3}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!resolve\_request@{resolve\_request}}
+\index{resolve\_request@{resolve\_request}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{resolve\_request()}{resolve\_request()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a1169ca20bb1d49582495be30dd9b88f3} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+resolve\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve/set the urlconf for the request. Return the view resolved,
+with its args and kwargs.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_afd70aeca46cc3fbc227359096d5cf039}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!\_exception\_middleware@{\_exception\_middleware}}
+\index{\_exception\_middleware@{\_exception\_middleware}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_exception\_middleware}{\_exception\_middleware}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_afd70aeca46cc3fbc227359096d5cf039} 
+list django.\+core.\+handlers.\+base.\+Base\+Handler.\+\_\+exception\+\_\+middleware = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_ab620578cce0526a85ab1236f5dac47a3}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!\_middleware\_chain@{\_middleware\_chain}}
+\index{\_middleware\_chain@{\_middleware\_chain}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_middleware\_chain}{\_middleware\_chain}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_ab620578cce0526a85ab1236f5dac47a3} 
+django.\+core.\+handlers.\+base.\+Base\+Handler.\+\_\+middleware\+\_\+chain = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_acb2beef3981a7e05e557b4fc2c8e6842}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!\_template\_response\_middleware@{\_template\_response\_middleware}}
+\index{\_template\_response\_middleware@{\_template\_response\_middleware}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_template\_response\_middleware}{\_template\_response\_middleware}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_acb2beef3981a7e05e557b4fc2c8e6842} 
+list django.\+core.\+handlers.\+base.\+Base\+Handler.\+\_\+template\+\_\+response\+\_\+middleware = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a6b39a910b7b321e3f48132260f4c1189}\index{django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}!\_view\_middleware@{\_view\_middleware}}
+\index{\_view\_middleware@{\_view\_middleware}!django.core.handlers.base.BaseHandler@{django.core.handlers.base.BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_view\_middleware}{\_view\_middleware}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1handlers_1_1base_1_1_base_handler_a6b39a910b7b321e3f48132260f4c1189} 
+list django.\+core.\+handlers.\+base.\+Base\+Handler.\+\_\+view\+\_\+middleware = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/handlers/\mbox{\hyperlink{django_2core_2handlers_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

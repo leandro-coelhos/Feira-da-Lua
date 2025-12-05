@@ -1,0 +1,270 @@
+\doxysection{aiohttp.\+worker.\+Gunicorn\+Web\+Worker Class Reference}
+\hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker}{}\label{classaiohttp_1_1worker_1_1_gunicorn_web_worker}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+Inheritance diagram for aiohttp.\+worker.\+Gunicorn\+Web\+Worker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1worker_1_1_gunicorn_web_worker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a4da6e78cb5c87847b6b0768f92d5f4b1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ad59bdb7f953e75a03d2fc11617f4c873}{init\+\_\+process}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a0c2b5ee270f29b158445f1d41475379e}{run}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a6698a5698c5a0c11a2199dcf18e63753}{init\+\_\+signals}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a654415b2b0842677f89bf3485924fcdc}{handle\+\_\+quit}} (self, int sig, Optional\mbox{[}Frame\+Type\mbox{]} frame)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a230c7120a2ab3f05f9e1df8ad75a618b}{handle\+\_\+abort}} (self, int sig, Optional\mbox{[}Frame\+Type\mbox{]} frame)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ab7033ab17142a8d8ea1c1330ab0a4b79}{exit\+\_\+code}} = 0
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a32d237dd93e9dd193dfd9462d590fc8f}{loop}} = asyncio.\+new\+\_\+event\+\_\+loop()
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aa6edad73eba6d85ac1cc44be676c1d05}{wsgi}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a65437109b96f99f2a16027f2753d1840}{sockets}}
+\item 
+\# type ignore\mbox{[}has-\/type\mbox{]} \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a78d8dd0ec4b11e438d447ec428e597bb}{alive}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_afcb244df067c291d37a3225af91c51dd}{max\+\_\+requests}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a60998109725f1f72944c9d6386afa6e5}{handle\+\_\+quit}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aadab892f64cc82e972558f53db53764e}{handle\+\_\+exit}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a80f3fde1c3cf5e82db48f2b4838e403c}{handle\+\_\+winch}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ae9c28650805193a12561b19fa9966f3f}{handle\+\_\+usr1}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ac7c97d29cdf953f80fcf9d4d30567c86}{handle\+\_\+abort}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a995ed869798e9cf09b2067b4ccb2c99e}{DEFAULT\+\_\+\+AIOHTTP\+\_\+\+LOG\+\_\+\+FORMAT}} = \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{Access\+Logger.\+LOG\+\_\+\+FORMAT}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a55ecddbaec75ae55df3e2d4cc6b1dcfa}{DEFAULT\+\_\+\+GUNICORN\+\_\+\+LOG\+\_\+\+FORMAT}} = Gunicorn\+Access\+Log\+Format.\+default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aeac3f113379376888ac000e96c585714}{\+\_\+run}} (self)
+\item 
+"{}asyncio.\+Future\mbox{[}bool\mbox{]}"{} \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a1ae69383f8067be32e5a81da1432f93b}{\+\_\+wait\+\_\+next\+\_\+notify}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a6750cbc7a859d2e5a61a09ef2b38f2c6}{\+\_\+notify\+\_\+waiter\+\_\+done}} (self, Optional\mbox{[}"{}asyncio.\+Future\mbox{[}bool\mbox{]}"{}\mbox{]} waiter=None)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ae2d6b8efe4adf4c36d410683ea66dbed}{\+\_\+get\+\_\+valid\+\_\+log\+\_\+format}} (self, str source\+\_\+format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+"{}SSLContext"{} \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a4605f8660ec3e37b42a1d3be32ee3036}{\+\_\+create\+\_\+ssl\+\_\+context}} (Any cfg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}asyncio.\+Task\mbox{[}None\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ab93128d45e87588058619510ae9a7544}{\+\_\+task}} = None
+\item 
+Optional\mbox{[}asyncio.\+Future\mbox{[}bool\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a5272d0ed334dfee314c03111e406157f}{\+\_\+notify\+\_\+waiter}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aa71cfd05b2f0347ac35202f51c5bc7ba}{\+\_\+notify\+\_\+waiter\+\_\+done}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a4da6e78cb5c87847b6b0768f92d5f4b1}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a4da6e78cb5c87847b6b0768f92d5f4b1} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kw}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a4605f8660ec3e37b42a1d3be32ee3036}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_create\_ssl\_context@{\_create\_ssl\_context}}
+\index{\_create\_ssl\_context@{\_create\_ssl\_context}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_create\_ssl\_context()}{\_create\_ssl\_context()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a4605f8660ec3e37b42a1d3be32ee3036} 
+ "{}SSLContext"{} aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+create\+\_\+ssl\+\_\+context (\begin{DoxyParamCaption}\item[{Any}]{cfg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Creates SSLContext instance for usage in asyncio.create_server.
+
+See ssl.SSLSocket.__init__ for more details.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ae2d6b8efe4adf4c36d410683ea66dbed}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_get\_valid\_log\_format@{\_get\_valid\_log\_format}}
+\index{\_get\_valid\_log\_format@{\_get\_valid\_log\_format}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_get\_valid\_log\_format()}{\_get\_valid\_log\_format()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ae2d6b8efe4adf4c36d410683ea66dbed} 
+ str aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+get\+\_\+valid\+\_\+log\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source\+\_\+format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a6750cbc7a859d2e5a61a09ef2b38f2c6}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_notify\_waiter\_done@{\_notify\_waiter\_done}}
+\index{\_notify\_waiter\_done@{\_notify\_waiter\_done}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_notify\_waiter\_done()}{\_notify\_waiter\_done()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a6750cbc7a859d2e5a61a09ef2b38f2c6} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+notify\+\_\+waiter\+\_\+done (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}"{}asyncio.\+Future\mbox{[}bool\mbox{]}"{}\mbox{]} }]{waiter}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aeac3f113379376888ac000e96c585714}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_run@{\_run}}
+\index{\_run@{\_run}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_run()}{\_run()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aeac3f113379376888ac000e96c585714} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a1ae69383f8067be32e5a81da1432f93b}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_wait\_next\_notify@{\_wait\_next\_notify}}
+\index{\_wait\_next\_notify@{\_wait\_next\_notify}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_wait\_next\_notify()}{\_wait\_next\_notify()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a1ae69383f8067be32e5a81da1432f93b} 
+ "{}asyncio.\+Future\mbox{[}bool\mbox{]}"{} aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+wait\+\_\+next\+\_\+notify (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a230c7120a2ab3f05f9e1df8ad75a618b}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_abort@{handle\_abort}}
+\index{handle\_abort@{handle\_abort}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_abort()}{handle\_abort()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a230c7120a2ab3f05f9e1df8ad75a618b} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+abort (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{sig}{, }\item[{Optional\mbox{[}Frame\+Type\mbox{]}}]{frame}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a654415b2b0842677f89bf3485924fcdc}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_quit@{handle\_quit}}
+\index{handle\_quit@{handle\_quit}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_quit()}{handle\_quit()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a654415b2b0842677f89bf3485924fcdc} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+quit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{sig}{, }\item[{Optional\mbox{[}Frame\+Type\mbox{]}}]{frame}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ad59bdb7f953e75a03d2fc11617f4c873}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!init\_process@{init\_process}}
+\index{init\_process@{init\_process}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{init\_process()}{init\_process()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ad59bdb7f953e75a03d2fc11617f4c873} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+init\+\_\+process (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1worker_1_1_gunicorn_u_v_loop_web_worker_a1f6475490ae8d8e34051fa7da5f1eda4}{aiohttp.\+worker.\+Gunicorn\+UVLoop\+Web\+Worker}}.
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a6698a5698c5a0c11a2199dcf18e63753}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!init\_signals@{init\_signals}}
+\index{init\_signals@{init\_signals}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{init\_signals()}{init\_signals()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a6698a5698c5a0c11a2199dcf18e63753} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+init\+\_\+signals (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a0c2b5ee270f29b158445f1d41475379e}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!run@{run}}
+\index{run@{run}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a0c2b5ee270f29b158445f1d41475379e} 
+ None aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a5272d0ed334dfee314c03111e406157f}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_notify\_waiter@{\_notify\_waiter}}
+\index{\_notify\_waiter@{\_notify\_waiter}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_notify\_waiter}{\_notify\_waiter}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a5272d0ed334dfee314c03111e406157f} 
+Optional\mbox{[}asyncio.\+Future\mbox{[}bool\mbox{]}\mbox{]} aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+notify\+\_\+waiter = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aa71cfd05b2f0347ac35202f51c5bc7ba}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_notify\_waiter\_done@{\_notify\_waiter\_done}}
+\index{\_notify\_waiter\_done@{\_notify\_waiter\_done}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_notify\_waiter\_done}{\_notify\_waiter\_done}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aa71cfd05b2f0347ac35202f51c5bc7ba} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+notify\+\_\+waiter\+\_\+done\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ab93128d45e87588058619510ae9a7544}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!\_task@{\_task}}
+\index{\_task@{\_task}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{\_task}{\_task}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ab93128d45e87588058619510ae9a7544} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+\_\+task = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a78d8dd0ec4b11e438d447ec428e597bb}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!alive@{alive}}
+\index{alive@{alive}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{alive}{alive}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a78d8dd0ec4b11e438d447ec428e597bb} 
+\# type ignore\mbox{[}has-\/type\mbox{]} aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+alive}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a995ed869798e9cf09b2067b4ccb2c99e}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!DEFAULT\_AIOHTTP\_LOG\_FORMAT@{DEFAULT\_AIOHTTP\_LOG\_FORMAT}}
+\index{DEFAULT\_AIOHTTP\_LOG\_FORMAT@{DEFAULT\_AIOHTTP\_LOG\_FORMAT}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_AIOHTTP\_LOG\_FORMAT}{DEFAULT\_AIOHTTP\_LOG\_FORMAT}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a995ed869798e9cf09b2067b4ccb2c99e} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+DEFAULT\+\_\+\+AIOHTTP\+\_\+\+LOG\+\_\+\+FORMAT = \mbox{\hyperlink{classaiohttp_1_1web__log_1_1_access_logger_a36ee53928722cf9ad29bbee5b5e0ae58}{Access\+Logger.\+LOG\+\_\+\+FORMAT}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a55ecddbaec75ae55df3e2d4cc6b1dcfa}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!DEFAULT\_GUNICORN\_LOG\_FORMAT@{DEFAULT\_GUNICORN\_LOG\_FORMAT}}
+\index{DEFAULT\_GUNICORN\_LOG\_FORMAT@{DEFAULT\_GUNICORN\_LOG\_FORMAT}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_GUNICORN\_LOG\_FORMAT}{DEFAULT\_GUNICORN\_LOG\_FORMAT}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a55ecddbaec75ae55df3e2d4cc6b1dcfa} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+DEFAULT\+\_\+\+GUNICORN\+\_\+\+LOG\+\_\+\+FORMAT = Gunicorn\+Access\+Log\+Format.\+default\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ab7033ab17142a8d8ea1c1330ab0a4b79}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!exit\_code@{exit\_code}}
+\index{exit\_code@{exit\_code}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{exit\_code}{exit\_code}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ab7033ab17142a8d8ea1c1330ab0a4b79} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+exit\+\_\+code = 0}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ac7c97d29cdf953f80fcf9d4d30567c86}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_abort@{handle\_abort}}
+\index{handle\_abort@{handle\_abort}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_abort}{handle\_abort}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ac7c97d29cdf953f80fcf9d4d30567c86} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+abort}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aadab892f64cc82e972558f53db53764e}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_exit@{handle\_exit}}
+\index{handle\_exit@{handle\_exit}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_exit}{handle\_exit}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aadab892f64cc82e972558f53db53764e} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+exit}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a60998109725f1f72944c9d6386afa6e5}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_quit@{handle\_quit}}
+\index{handle\_quit@{handle\_quit}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_quit}{handle\_quit}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a60998109725f1f72944c9d6386afa6e5} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+quit}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ae9c28650805193a12561b19fa9966f3f}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_usr1@{handle\_usr1}}
+\index{handle\_usr1@{handle\_usr1}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_usr1}{handle\_usr1}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_ae9c28650805193a12561b19fa9966f3f} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+usr1}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a80f3fde1c3cf5e82db48f2b4838e403c}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!handle\_winch@{handle\_winch}}
+\index{handle\_winch@{handle\_winch}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{handle\_winch}{handle\_winch}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a80f3fde1c3cf5e82db48f2b4838e403c} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+handle\+\_\+winch}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a32d237dd93e9dd193dfd9462d590fc8f}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!loop@{loop}}
+\index{loop@{loop}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a32d237dd93e9dd193dfd9462d590fc8f} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+loop = asyncio.\+new\+\_\+event\+\_\+loop()}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_afcb244df067c291d37a3225af91c51dd}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!max\_requests@{max\_requests}}
+\index{max\_requests@{max\_requests}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{max\_requests}{max\_requests}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_afcb244df067c291d37a3225af91c51dd} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+max\+\_\+requests}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a65437109b96f99f2a16027f2753d1840}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!sockets@{sockets}}
+\index{sockets@{sockets}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{sockets}{sockets}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_a65437109b96f99f2a16027f2753d1840} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+sockets}
+
+\Hypertarget{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aa6edad73eba6d85ac1cc44be676c1d05}\index{aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}!wsgi@{wsgi}}
+\index{wsgi@{wsgi}!aiohttp.worker.GunicornWebWorker@{aiohttp.worker.GunicornWebWorker}}
+\doxysubsubsection{\texorpdfstring{wsgi}{wsgi}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1worker_1_1_gunicorn_web_worker_aa6edad73eba6d85ac1cc44be676c1d05} 
+aiohttp.\+worker.\+Gunicorn\+Web\+Worker.\+wsgi}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{worker_8py}{worker.\+py}}\end{DoxyCompactItemize}

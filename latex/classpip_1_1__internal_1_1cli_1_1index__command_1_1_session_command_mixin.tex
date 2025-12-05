@@ -1,0 +1,100 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin}{}\label{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin}\index{pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}}
+Inheritance diagram for pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.364522cm]{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a625f98a9f6fc98fffda1a2e2ee68ba2c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+Pip\+Session \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a0534b58b9b2272a9c287282c3af31a97}{get\+\_\+default\+\_\+session}} (self, Values options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_ac66381e0cf691286a57b0a13471236f7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_abe6c9895db2e49d99513111f76a43fdd}{main\+\_\+context}} (self)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1command__context_a7525ef54d8c7ac0f264b88324ebf22f1}{\+\_\+T}} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_a1a4327ab36cea3f5d59ceceecb6fed23}{enter\+\_\+context}} (self, Abstract\+Context\+Manager\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1command__context_a7525ef54d8c7ac0f264b88324ebf22f1}{\+\_\+T}}\mbox{]} context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a3ff33d073659e836e5e9d75d227acfa5}{\+\_\+get\+\_\+index\+\_\+urls}} (cls, Values options)
+\item 
+Pip\+Session \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a5cbbd0f5ebe224336ff2871dc312e571}{\+\_\+build\+\_\+session}} (self, Values options, int\texorpdfstring{$\vert$}{|}None retries=None, int\texorpdfstring{$\vert$}{|}None timeout=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Pip\+Session\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a3c3fb211c2f8851ff3ea80b0c9f4e1aa}{\+\_\+session}} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_ab05c95b49616f41aeae8f61ec92bce65}{\+\_\+in\+\_\+main\+\_\+context}} = False
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in_a3b442734053208d198898396956eef77}{\+\_\+main\+\_\+context}} = Exit\+Stack()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class mixin for command classes needing _build_session().
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a625f98a9f6fc98fffda1a2e2ee68ba2c}\index{pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a625f98a9f6fc98fffda1a2e2ee68ba2c} 
+ None pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a5cbbd0f5ebe224336ff2871dc312e571}\index{pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}!\_build\_session@{\_build\_session}}
+\index{\_build\_session@{\_build\_session}!pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{\_build\_session()}{\_build\_session()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a5cbbd0f5ebe224336ff2871dc312e571} 
+ Pip\+Session pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin.\+\_\+build\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{retries}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{timeout}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a3ff33d073659e836e5e9d75d227acfa5}\index{pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}!\_get\_index\_urls@{\_get\_index\_urls}}
+\index{\_get\_index\_urls@{\_get\_index\_urls}!pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_index\_urls()}{\_get\_index\_urls()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a3ff33d073659e836e5e9d75d227acfa5} 
+ list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin.\+\_\+get\+\_\+index\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Values}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list of index urls from user-provided options.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a0534b58b9b2272a9c287282c3af31a97}\index{pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}!get\_default\_session@{get\_default\_session}}
+\index{get\_default\_session@{get\_default\_session}!pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{get\_default\_session()}{get\_default\_session()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a0534b58b9b2272a9c287282c3af31a97} 
+ Pip\+Session pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin.\+get\+\_\+default\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Values}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a default-managed session.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a3c3fb211c2f8851ff3ea80b0c9f4e1aa}\index{pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}!\_session@{\_session}}
+\index{\_session@{\_session}!pip.\_internal.cli.index\_command.SessionCommandMixin@{pip.\_internal.cli.index\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{\_session}{\_session}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1index__command_1_1_session_command_mixin_a3c3fb211c2f8851ff3ea80b0c9f4e1aa} 
+Pip\+Session \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Session\+Command\+Mixin.\+\_\+session = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+internal/cli/\mbox{\hyperlink{index__command_8py}{index\+\_\+command.\+py}}\end{DoxyCompactItemize}

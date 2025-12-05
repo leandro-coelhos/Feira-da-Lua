@@ -1,0 +1,161 @@
+\doxysection{django.\+core.\+validators.\+Email\+Validator Class Reference}
+\hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator}{}\label{classdjango_1_1core_1_1validators_1_1_email_validator}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a35882b08085b9fe88180967f604ed9b8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a341c9dbffd88ba25ee773d7044927818}{message}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a60bbf4a6c12148bb5dc32dc99372ef61}{code}}=None, allowlist=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_ac0268c199dc40556656d540cd51410f8}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a0069b89e6af51fff5be4f2a7bb329503}{validate\+\_\+domain\+\_\+part}} (self, domain\+\_\+part)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a0c0423cabf7734c70c6a5161b3724f22}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a341c9dbffd88ba25ee773d7044927818}{message}} = \+\_\+("{}Enter a valid email address."{})
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a60bbf4a6c12148bb5dc32dc99372ef61}{code}} = "{}invalid"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a1d603decb01c7127522228dfc3e1e83b}{hostname\+\_\+re}} = Domain\+Name\+Validator.\+hostname\+\_\+re
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a5466d3e2e713994175b256ad0b8afaab}{domain\+\_\+re}} = Domain\+Name\+Validator.\+domain\+\_\+re
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a1ca8f7b86797e6150bedf36c3d579548}{tld\+\_\+no\+\_\+fqdn\+\_\+re}} = Domain\+Name\+Validator.\+tld\+\_\+no\+\_\+fqdn\+\_\+re
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_adfeb847b295489844ebc1d8aef819d2b}{user\+\_\+regex}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a10c4dc094fc1a1f776698c80e70983c3}{domain\+\_\+regex}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_af47f650e81ba21b196704a9468197cf2}{literal\+\_\+regex}}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1validators_1_1_email_validator_a5f7ab52bc9bbfefa22da673caed2722d}{domain\+\_\+allowlist}} = \mbox{[}"{}localhost"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a35882b08085b9fe88180967f604ed9b8}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a35882b08085b9fe88180967f604ed9b8} 
+django.\+core.\+validators.\+Email\+Validator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{message}{ = {\ttfamily None}, }\item[{}]{code}{ = {\ttfamily None}, }\item[{}]{allowlist}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_ac0268c199dc40556656d540cd51410f8}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_ac0268c199dc40556656d540cd51410f8} 
+django.\+core.\+validators.\+Email\+Validator.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a0c0423cabf7734c70c6a5161b3724f22}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a0c0423cabf7734c70c6a5161b3724f22} 
+django.\+core.\+validators.\+Email\+Validator.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a0069b89e6af51fff5be4f2a7bb329503}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!validate\_domain\_part@{validate\_domain\_part}}
+\index{validate\_domain\_part@{validate\_domain\_part}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{validate\_domain\_part()}{validate\_domain\_part()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a0069b89e6af51fff5be4f2a7bb329503} 
+django.\+core.\+validators.\+Email\+Validator.\+validate\+\_\+domain\+\_\+part (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{domain\+\_\+part}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a60bbf4a6c12148bb5dc32dc99372ef61}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!code@{code}}
+\index{code@{code}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a60bbf4a6c12148bb5dc32dc99372ef61} 
+str django.\+core.\+validators.\+Email\+Validator.\+code = "{}invalid"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a5f7ab52bc9bbfefa22da673caed2722d}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!domain\_allowlist@{domain\_allowlist}}
+\index{domain\_allowlist@{domain\_allowlist}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{domain\_allowlist}{domain\_allowlist}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a5f7ab52bc9bbfefa22da673caed2722d} 
+django.\+core.\+validators.\+Email\+Validator.\+domain\+\_\+allowlist = \mbox{[}"{}localhost"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a5466d3e2e713994175b256ad0b8afaab}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!domain\_re@{domain\_re}}
+\index{domain\_re@{domain\_re}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{domain\_re}{domain\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a5466d3e2e713994175b256ad0b8afaab} 
+django.\+core.\+validators.\+Email\+Validator.\+domain\+\_\+re = Domain\+Name\+Validator.\+domain\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a10c4dc094fc1a1f776698c80e70983c3}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!domain\_regex@{domain\_regex}}
+\index{domain\_regex@{domain\_regex}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{domain\_regex}{domain\_regex}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a10c4dc094fc1a1f776698c80e70983c3} 
+django.\+core.\+validators.\+Email\+Validator.\+domain\+\_\+regex\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\string^"{}}\ +\ hostname\_re\ +\ domain\_re\ +\ tld\_no\_fqdn\_re\ +\ \textcolor{stringliteral}{r"{}\(\backslash\)Z"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ re.IGNORECASE,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a1d603decb01c7127522228dfc3e1e83b}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!hostname\_re@{hostname\_re}}
+\index{hostname\_re@{hostname\_re}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{hostname\_re}{hostname\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a1d603decb01c7127522228dfc3e1e83b} 
+django.\+core.\+validators.\+Email\+Validator.\+hostname\+\_\+re = Domain\+Name\+Validator.\+hostname\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_af47f650e81ba21b196704a9468197cf2}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!literal\_regex@{literal\_regex}}
+\index{literal\_regex@{literal\_regex}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{literal\_regex}{literal\_regex}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_af47f650e81ba21b196704a9468197cf2} 
+django.\+core.\+validators.\+Email\+Validator.\+literal\+\_\+regex\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ literal\ form,\ ipv4\ or\ ipv6\ address\ (SMTP\ 4.1.3)}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\(\backslash\)[([A-\/F0-\/9:.]+)\(\backslash\)]\(\backslash\)Z"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ re.IGNORECASE,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a341c9dbffd88ba25ee773d7044927818}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!message@{message}}
+\index{message@{message}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a341c9dbffd88ba25ee773d7044927818} 
+django.\+core.\+validators.\+Email\+Validator.\+message = \+\_\+("{}Enter a valid email address."{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_a1ca8f7b86797e6150bedf36c3d579548}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!tld\_no\_fqdn\_re@{tld\_no\_fqdn\_re}}
+\index{tld\_no\_fqdn\_re@{tld\_no\_fqdn\_re}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{tld\_no\_fqdn\_re}{tld\_no\_fqdn\_re}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_a1ca8f7b86797e6150bedf36c3d579548} 
+django.\+core.\+validators.\+Email\+Validator.\+tld\+\_\+no\+\_\+fqdn\+\_\+re = Domain\+Name\+Validator.\+tld\+\_\+no\+\_\+fqdn\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1validators_1_1_email_validator_adfeb847b295489844ebc1d8aef819d2b}\index{django.core.validators.EmailValidator@{django.core.validators.EmailValidator}!user\_regex@{user\_regex}}
+\index{user\_regex@{user\_regex}!django.core.validators.EmailValidator@{django.core.validators.EmailValidator}}
+\doxysubsubsection{\texorpdfstring{user\_regex}{user\_regex}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1validators_1_1_email_validator_adfeb847b295489844ebc1d8aef819d2b} 
+django.\+core.\+validators.\+Email\+Validator.\+user\+\_\+regex\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ dot-\/atom}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(\string^[-\/!\#\$\%\&'*+/=?\string^\_`\{\}|\string~0-\/9A-\/Z]+(\(\backslash\).[-\/!\#\$\%\&'*+/=?\string^\_`\{\}|\string~0-\/9A-\/Z]+)*\(\backslash\)Z"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ quoted-\/string}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'|\string^"{}([\(\backslash\)001-\/\(\backslash\)010\(\backslash\)013\(\backslash\)014\(\backslash\)016-\/\(\backslash\)037!\#-\/\(\backslash\)[\(\backslash\)]-\/\(\backslash\)177]|\(\backslash\)\(\backslash\)[\(\backslash\)001-\/\(\backslash\)011\(\backslash\)013\(\backslash\)014\(\backslash\)016-\/\(\backslash\)177])'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'*"{}\(\backslash\)Z)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ re.IGNORECASE,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/\mbox{\hyperlink{django_2core_2validators_8py}{validators.\+py}}\end{DoxyCompactItemize}

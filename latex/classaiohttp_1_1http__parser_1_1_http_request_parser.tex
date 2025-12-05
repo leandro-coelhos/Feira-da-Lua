@@ -1,0 +1,127 @@
+\doxysection{aiohttp.\+http\+\_\+parser.\+Http\+Request\+Parser Class Reference}
+\hypertarget{classaiohttp_1_1http__parser_1_1_http_request_parser}{}\label{classaiohttp_1_1http__parser_1_1_http_request_parser}\index{aiohttp.http\_parser.HttpRequestParser@{aiohttp.http\_parser.HttpRequestParser}}
+Inheritance diagram for aiohttp.\+http\+\_\+parser.\+Http\+Request\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.693548cm]{classaiohttp_1_1http__parser_1_1_http_request_parser}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser_a184b6ba3df34bcd2fda2e7a753206d38}{parse\+\_\+message}} (self, List\mbox{[}bytes\mbox{]} lines)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser}{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a871105e7fbc1d44a70345f6b488303dd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1base__protocol_1_1_base_protocol}{Base\+Protocol}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_adef15f0fb552a49e063203ec6846a02f}{protocol}}=None, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a414855fea16da14f89c28b8dfc5db872}{loop}}=None, int limit=2 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16, int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a75fe5a8947f7c2c1be70e4fac48679dd}{max\+\_\+line\+\_\+size}}=8190, int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a9efbe1959e295a7c98af21868a252f9f}{max\+\_\+headers}}=32768, int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_afbd4f6d8605b4c3876fb4bb546548197}{max\+\_\+field\+\_\+size}}=8190, Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context}{Base\+Timer\+Context}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a98798390f3f8e8d7de8ecf67c3d95ac8}{timer}}=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_aa92c1d74a3d19d338b46978df181c7e1}{code}}=None, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a73e70542ef5e0441a44bb4f2dfaa2d94}{method}}=None, Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a422dfce412368829e7f64c449b4c5a0b}{payload\+\_\+exception}}=None, bool \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a706f6035c972843641e05969f364b9f9}{response\+\_\+with\+\_\+body}}=True, bool \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a991efaacf245c0c782d486085b1ef603}{read\+\_\+until\+\_\+eof}}=False, bool auto\+\_\+decompress=True)
+\item 
+Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ad74b4f939a8d62bcf0ee4b476b4d96ac}{\+\_\+\+MsgT}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_aa67ae8d7f36f1e0301f0f8111f0ba49a}{feed\+\_\+eof}} (self)
+\item 
+Tuple\mbox{[}List\mbox{[}Tuple\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_ad74b4f939a8d62bcf0ee4b476b4d96ac}{\+\_\+\+MsgT}}, \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{Stream\+Reader}}\mbox{]}\mbox{]}, bool, bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_ac4a731a4e7dc70cd2f8a3dda43f3a1dc}{feed\+\_\+data}} (self, bytes data, \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a806dbc168d14a54d815fef854a2dc9ee}{\+\_\+\+SEP}} SEP=b"{}\textbackslash{}r\textbackslash{}n"{}, bytes EMPTY=b"{}"{}, \mbox{\hyperlink{classmultidict_1_1__multidict__py_1_1istr}{istr}} CONTENT\+\_\+\+LENGTH=\mbox{\hyperlink{namespaceaiohttp_1_1hdrs_aaf0d9f51c90fc577226e2bc12b0f2e94}{hdrs.\+CONTENT\+\_\+\+LENGTH}}, str METH\+\_\+\+CONNECT=\mbox{\hyperlink{namespaceaiohttp_1_1hdrs_a9c045b11c6091b028b0650d91ea7f4db}{hdrs.\+METH\+\_\+\+CONNECT}}, \mbox{\hyperlink{classmultidict_1_1__multidict__py_1_1istr}{istr}} SEC\+\_\+\+WEBSOCKET\+\_\+\+KEY1=\mbox{\hyperlink{namespaceaiohttp_1_1hdrs_a0455dc53263e3328757d3a8407c4c2e7}{hdrs.\+SEC\+\_\+\+WEBSOCKET\+\_\+\+KEY1}})
+\item 
+Tuple\mbox{[} "{}CIMulti\+Dict\+Proxy\mbox{[}str\mbox{]}"{}, Raw\+Headers, Optional\mbox{[}bool\mbox{]}, Optional\mbox{[}str\mbox{]}, bool, bool\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_ad48aa1bbe5d09c55c09d8bb1702ca630}{parse\+\_\+headers}} (self, List\mbox{[}bytes\mbox{]} lines)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a7a99d62b2cc67a039eabb447b31744a0}{set\+\_\+upgraded}} (self, bool val)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_request_parser_af17b2506d610f87ddd29d2070d5a8682}{\+\_\+is\+\_\+chunked\+\_\+te}} (self, str te)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser}{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_adef15f0fb552a49e063203ec6846a02f}{protocol}} = protocol
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a414855fea16da14f89c28b8dfc5db872}{loop}} = loop
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a75fe5a8947f7c2c1be70e4fac48679dd}{max\+\_\+line\+\_\+size}} = max\+\_\+line\+\_\+size
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a9efbe1959e295a7c98af21868a252f9f}{max\+\_\+headers}} = max\+\_\+headers
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_afbd4f6d8605b4c3876fb4bb546548197}{max\+\_\+field\+\_\+size}} = max\+\_\+field\+\_\+size
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a98798390f3f8e8d7de8ecf67c3d95ac8}{timer}} = timer
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_aa92c1d74a3d19d338b46978df181c7e1}{code}} = code
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a73e70542ef5e0441a44bb4f2dfaa2d94}{method}} = method
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a422dfce412368829e7f64c449b4c5a0b}{payload\+\_\+exception}} = payload\+\_\+exception
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a706f6035c972843641e05969f364b9f9}{response\+\_\+with\+\_\+body}} = response\+\_\+with\+\_\+body
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a991efaacf245c0c782d486085b1ef603}{read\+\_\+until\+\_\+eof}} = read\+\_\+until\+\_\+eof
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser}{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+Class\+Var \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a8c0d7e8c36a79a5608b20898bfc9e9aa}{lax}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{aiohttp.\+http\+\_\+parser.\+Raw\+Request\+Message}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__writer_1_1_http_version}{Http\+Version}} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message_ab24a49e522483c2df89cec47f6d62657}{headers}} \+: "{}CIMulti\+Dict\+Proxy\mbox{[}str\mbox{]}"{}
+\item 
+Optional \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message_a23af19d4547ace7449b3c852fca14c2a}{compression}} \mbox{[}str\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser}{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a70be8b32dfe18f818dbd1f24ee365940}{\+\_\+lines}} = \mbox{[}$\,$\mbox{]}
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a3144f0e3cdc6479d2bf6c5dedf04cc91}{\+\_\+tail}} = b"{}"{}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a69d873cd102e70c937ae0456dc078924}{\+\_\+upgraded}} = False
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a085d839cc78dd9cb5e80f594dc753a67}{\+\_\+payload}} = None
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser}{Http\+Payload\+Parser}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a8c3c72acaabeda101d73590e454ab744}{\+\_\+payload\+\_\+parser}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a68c36545ddd9aec92b6d8ae93c441ec5}{\+\_\+auto\+\_\+decompress}} = auto\+\_\+decompress
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_ab5ee4f5cc3e3857b248c106101574bac}{\+\_\+limit}} = limit
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_ac404522085bc2d381d2f4d7b9ff0db4e}{\+\_\+headers\+\_\+parser}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Read request status line.
+
+Exception .http_exceptions.BadStatusLine
+could be raised in case of any errors in status line.
+Returns RawRequestMessage.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_request_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_request_parser_af17b2506d610f87ddd29d2070d5a8682}\index{aiohttp.http\_parser.HttpRequestParser@{aiohttp.http\_parser.HttpRequestParser}!\_is\_chunked\_te@{\_is\_chunked\_te}}
+\index{\_is\_chunked\_te@{\_is\_chunked\_te}!aiohttp.http\_parser.HttpRequestParser@{aiohttp.http\_parser.HttpRequestParser}}
+\doxysubsubsection{\texorpdfstring{\_is\_chunked\_te()}{\_is\_chunked\_te()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_request_parser_af17b2506d610f87ddd29d2070d5a8682} 
+ bool aiohttp.\+http\+\_\+parser.\+Http\+Request\+Parser.\+\_\+is\+\_\+chunked\+\_\+te (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{te}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a3a0b9c6fc018d431881884dfdf3b7bb7}{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}.
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_request_parser_a184b6ba3df34bcd2fda2e7a753206d38}\index{aiohttp.http\_parser.HttpRequestParser@{aiohttp.http\_parser.HttpRequestParser}!parse\_message@{parse\_message}}
+\index{parse\_message@{parse\_message}!aiohttp.http\_parser.HttpRequestParser@{aiohttp.http\_parser.HttpRequestParser}}
+\doxysubsubsection{\texorpdfstring{parse\_message()}{parse\_message()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_request_parser_a184b6ba3df34bcd2fda2e7a753206d38} 
+ \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_raw_request_message}{Raw\+Request\+Message}} aiohttp.\+http\+\_\+parser.\+Http\+Request\+Parser.\+parse\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}bytes\mbox{]}}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_parser_a0f9644dd69e0429377882645792ddad3}{aiohttp.\+http\+\_\+parser.\+Http\+Parser}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{http__parser_8py}{http\+\_\+parser.\+py}}\end{DoxyCompactItemize}

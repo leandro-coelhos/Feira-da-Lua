@@ -1,0 +1,123 @@
+\doxysection{django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin}{}\label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+Inheritance diagram for django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.613833cm]{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_ab28312ba79c2ed24fa91805928dd04d5}{load\+\_\+middleware}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a3fed98488381a2150add4f42b451bff8}{get\+\_\+base\+\_\+url}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a7e2cadc23c933005f253457a8d364c95}{file\+\_\+path}} (self, url)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a2a2f401f3e4d5fcd1fede4521c989dfb}{serve}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a16d2e135a0bb896a994b0b90fd41dadf}{get\+\_\+response}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_acbcc35eba9bdf08ab2a113e23b9172a4}{get\+\_\+response\+\_\+async}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_ac5b857530cc2dfbce52750a97d91c1d7}{serve}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a8e455f6ce80c3e172a833e3b3b08c1e2}{handles\+\_\+files}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a928f220633234323f990e519f53f6f3c}{\+\_\+should\+\_\+handle}} (self, path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Common methods used by WSGI and ASGI handlers.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a928f220633234323f990e519f53f6f3c}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!\_should\_handle@{\_should\_handle}}
+\index{\_should\_handle@{\_should\_handle}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{\_should\_handle()}{\_should\_handle()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a928f220633234323f990e519f53f6f3c} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+\_\+should\+\_\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the path should be handled. Ignore the path if:
+* the host is provided as part of the base_url
+* the request's path isn't under the media path (or equal)
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a7e2cadc23c933005f253457a8d364c95}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!file\_path@{file\_path}}
+\index{file\_path@{file\_path}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{file\_path()}{file\_path()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a7e2cadc23c933005f253457a8d364c95} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+file\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the relative path to the media file on disk for the given URL.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a3fed98488381a2150add4f42b451bff8}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!get\_base\_url@{get\_base\_url}}
+\index{get\_base\_url@{get\_base\_url}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{get\_base\_url()}{get\_base\_url()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a3fed98488381a2150add4f42b451bff8} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+get\+\_\+base\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a16d2e135a0bb896a994b0b90fd41dadf}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a16d2e135a0bb896a994b0b90fd41dadf} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_acbcc35eba9bdf08ab2a113e23b9172a4}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!get\_response\_async@{get\_response\_async}}
+\index{get\_response\_async@{get\_response\_async}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{get\_response\_async()}{get\_response\_async()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_acbcc35eba9bdf08ab2a113e23b9172a4} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+get\+\_\+response\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_a_s_g_i_static_files_handler_a3eb205f4bb966d10c0969b9c1cbd1643}{django.\+contrib.\+staticfiles.\+handlers.\+ASGIStatic\+Files\+Handler}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_ab28312ba79c2ed24fa91805928dd04d5}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!load\_middleware@{load\_middleware}}
+\index{load\_middleware@{load\_middleware}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{load\_middleware()}{load\_middleware()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_ab28312ba79c2ed24fa91805928dd04d5} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+load\+\_\+middleware (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a2a2f401f3e4d5fcd1fede4521c989dfb}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!serve@{serve}}
+\index{serve@{serve}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{serve()}{serve()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a2a2f401f3e4d5fcd1fede4521c989dfb} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+serve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serve the request path.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a8e455f6ce80c3e172a833e3b3b08c1e2}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!handles\_files@{handles\_files}}
+\index{handles\_files@{handles\_files}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{handles\_files}{handles\_files}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_a8e455f6ce80c3e172a833e3b3b08c1e2} 
+bool django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+handles\+\_\+files = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_ac5b857530cc2dfbce52750a97d91c1d7}\index{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}!serve@{serve}}
+\index{serve@{serve}!django.contrib.staticfiles.handlers.StaticFilesHandlerMixin@{django.contrib.staticfiles.handlers.StaticFilesHandlerMixin}}
+\doxysubsubsection{\texorpdfstring{serve}{serve}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1_static_files_handler_mixin_ac5b857530cc2dfbce52750a97d91c1d7} 
+django.\+contrib.\+staticfiles.\+handlers.\+Static\+Files\+Handler\+Mixin.\+serve}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/staticfiles/\mbox{\hyperlink{handlers_8py}{handlers.\+py}}\end{DoxyCompactItemize}

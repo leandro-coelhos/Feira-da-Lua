@@ -1,0 +1,5 @@
+var remove__stale__contenttypes_8py =
+[
+    [ "django.contrib.contenttypes.management.commands.remove_stale_contenttypes.Command", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command.html", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_command" ],
+    [ "django.contrib.contenttypes.management.commands.remove_stale_contenttypes.NoFastDeleteCollector", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_no_fast_delete_collector.html", "classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_no_fast_delete_collector" ]
+];
