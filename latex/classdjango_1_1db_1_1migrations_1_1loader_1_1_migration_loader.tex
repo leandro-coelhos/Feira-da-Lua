@@ -1,0 +1,259 @@
+\doxysection{django.\+db.\+migrations.\+loader.\+Migration\+Loader Class Reference}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader}{}\label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_ac718c2537be5ec4bb179bb4b33ca5c4e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7ebd0836b1ad495a4ff262c74ad1426f}{connection}}, load=True, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a420cb327d5916a385a2171fd42a60a8f}{ignore\+\_\+no\+\_\+migrations}}=False, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a5ed9767ce1f48d3945cf4e75782c1c9e}{replace\+\_\+migrations}}=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a644cdf4c7b215e1efb448ab257cf6ce6}{migrations\+\_\+module}} (cls, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a6f740c666b56e85572f2f7a37a016991}{load\+\_\+disk}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a0c58411eb2099e26a2d002e62f379807}{get\+\_\+migration}} (self, app\+\_\+label, name\+\_\+prefix)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a647c158d483c511ef2eaf30e54571cdb}{get\+\_\+migration\+\_\+by\+\_\+prefix}} (self, app\+\_\+label, name\+\_\+prefix)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a41824669029aa2b625b86c6247561826}{check\+\_\+key}} (self, key, current\+\_\+app)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a61a084f40e17cdb0009983834fde4a93}{add\+\_\+internal\+\_\+dependencies}} (self, key, migration)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_af4877eea2813969af426aebe0ae69a78}{add\+\_\+external\+\_\+dependencies}} (self, key, migration)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_adc6f767cd41b69e78749d30189d6ccfb}{build\+\_\+graph}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_aa6a473f9c5c81d54c3932e4056a1e7f5}{check\+\_\+consistent\+\_\+history}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7ebd0836b1ad495a4ff262c74ad1426f}{connection}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a8828bfac13ec67512d329b6b7d6cca03}{detect\+\_\+conflicts}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a8faf34a2f3e1388ffb7791d1ea8fa0be}{project\+\_\+state}} (self, nodes=None, at\+\_\+end=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7eb6541a9af57a1c6ee39da3da900277}{collect\+\_\+sql}} (self, plan)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7ebd0836b1ad495a4ff262c74ad1426f}{connection}} = connection
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a358a8da87dbb6d807461c81b8d5cf924}{disk\+\_\+migrations}} = None
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a418547b8fd0e16cff4fadf237dc46739}{applied\+\_\+migrations}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a420cb327d5916a385a2171fd42a60a8f}{ignore\+\_\+no\+\_\+migrations}} = ignore\+\_\+no\+\_\+migrations
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a5ed9767ce1f48d3945cf4e75782c1c9e}{replace\+\_\+migrations}} = replace\+\_\+migrations
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_ac5e5251f8a5a98c011f9c6513755ffb1}{unmigrated\+\_\+apps}} = set()
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a2ff12cf467521abae120f19aafbf17d5}{migrated\+\_\+apps}} = set()
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_aecc80d97a4120c555b234399bca1bf3a}{graph}} = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph}{Migration\+Graph}}()
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a9bc7a26a5752f1e93befdd54d9eeca3a}{replacements}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Load migration files from disk and their status from the database.
+
+Migration files are expected to live in the "migrations" directory of
+an app. Their names are entirely unimportant from a code perspective,
+but will probably follow the 1234_name.py convention.
+
+On initialization, this class will scan those directories, and open and
+read the Python files, looking for a class called Migration, which should
+inherit from django.db.migrations.Migration. See
+django.db.migrations.migration for what that looks like.
+
+Some migrations will be marked as "replacing" another set of migrations.
+These are loaded into a separate set of migrations away from the main ones.
+If all the migrations they replace are either unapplied or missing from
+disk, then they are injected into the main set, replacing the named migrations.
+Any dependency pointers to the replaced migrations are re-pointed to the
+new migration.
+
+This does mean that this class MUST also talk to the database as well as
+to disk, but this is probably fine. We're already not just operating
+in memory.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_ac718c2537be5ec4bb179bb4b33ca5c4e}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_ac718c2537be5ec4bb179bb4b33ca5c4e} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{connection}{, }\item[{}]{load}{ = {\ttfamily True}, }\item[{}]{ignore\+\_\+no\+\_\+migrations}{ = {\ttfamily False}, }\item[{}]{replace\+\_\+migrations}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_af4877eea2813969af426aebe0ae69a78}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!add\_external\_dependencies@{add\_external\_dependencies}}
+\index{add\_external\_dependencies@{add\_external\_dependencies}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{add\_external\_dependencies()}{add\_external\_dependencies()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_af4877eea2813969af426aebe0ae69a78} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+add\+\_\+external\+\_\+dependencies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{migration}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a61a084f40e17cdb0009983834fde4a93}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!add\_internal\_dependencies@{add\_internal\_dependencies}}
+\index{add\_internal\_dependencies@{add\_internal\_dependencies}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{add\_internal\_dependencies()}{add\_internal\_dependencies()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a61a084f40e17cdb0009983834fde4a93} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+add\+\_\+internal\+\_\+dependencies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{migration}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Internal dependencies need to be added first to ensure `__first__`
+dependencies find the correct root node.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_adc6f767cd41b69e78749d30189d6ccfb}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!build\_graph@{build\_graph}}
+\index{build\_graph@{build\_graph}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{build\_graph()}{build\_graph()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_adc6f767cd41b69e78749d30189d6ccfb} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+build\+\_\+graph (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a migration dependency graph using both the disk and database.
+You'll need to rebuild the graph if you apply migrations. This isn't
+usually a problem as generally migration stuff runs in a one-shot process.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_aa6a473f9c5c81d54c3932e4056a1e7f5}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!check\_consistent\_history@{check\_consistent\_history}}
+\index{check\_consistent\_history@{check\_consistent\_history}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{check\_consistent\_history()}{check\_consistent\_history()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_aa6a473f9c5c81d54c3932e4056a1e7f5} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+check\+\_\+consistent\+\_\+history (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{connection}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise InconsistentMigrationHistory if any applied migrations have
+unapplied dependencies.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a41824669029aa2b625b86c6247561826}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!check\_key@{check\_key}}
+\index{check\_key@{check\_key}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{check\_key()}{check\_key()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a41824669029aa2b625b86c6247561826} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+check\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{current\+\_\+app}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7eb6541a9af57a1c6ee39da3da900277}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!collect\_sql@{collect\_sql}}
+\index{collect\_sql@{collect\_sql}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{collect\_sql()}{collect\_sql()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7eb6541a9af57a1c6ee39da3da900277} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+collect\+\_\+sql (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{plan}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take a migration plan and return a list of collected SQL statements
+that represent the best-efforts version of that plan.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a8828bfac13ec67512d329b6b7d6cca03}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!detect\_conflicts@{detect\_conflicts}}
+\index{detect\_conflicts@{detect\_conflicts}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{detect\_conflicts()}{detect\_conflicts()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a8828bfac13ec67512d329b6b7d6cca03} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+detect\+\_\+conflicts (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look through the loaded graph and detect any conflicts - apps
+with more than one leaf migration. Return a dict of the app labels
+that conflict with the migration names that conflict.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a0c58411eb2099e26a2d002e62f379807}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!get\_migration@{get\_migration}}
+\index{get\_migration@{get\_migration}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{get\_migration()}{get\_migration()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a0c58411eb2099e26a2d002e62f379807} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+get\+\_\+migration (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+label}{, }\item[{}]{name\+\_\+prefix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the named migration or raise NodeNotFoundError.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a647c158d483c511ef2eaf30e54571cdb}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!get\_migration\_by\_prefix@{get\_migration\_by\_prefix}}
+\index{get\_migration\_by\_prefix@{get\_migration\_by\_prefix}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{get\_migration\_by\_prefix()}{get\_migration\_by\_prefix()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a647c158d483c511ef2eaf30e54571cdb} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+get\+\_\+migration\+\_\+by\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app\+\_\+label}{, }\item[{}]{name\+\_\+prefix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the migration(s) which match the given app label and name_prefix.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a6f740c666b56e85572f2f7a37a016991}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!load\_disk@{load\_disk}}
+\index{load\_disk@{load\_disk}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{load\_disk()}{load\_disk()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a6f740c666b56e85572f2f7a37a016991} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+load\+\_\+disk (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load the migrations from all INSTALLED_APPS from disk.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a644cdf4c7b215e1efb448ab257cf6ce6}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!migrations\_module@{migrations\_module}}
+\index{migrations\_module@{migrations\_module}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{migrations\_module()}{migrations\_module()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a644cdf4c7b215e1efb448ab257cf6ce6} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+migrations\+\_\+module (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{app\+\_\+label}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the path to the migrations module for the specified app_label
+and a boolean indicating if the module is specified in
+settings.MIGRATION_MODULE.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a8faf34a2f3e1388ffb7791d1ea8fa0be}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!project\_state@{project\_state}}
+\index{project\_state@{project\_state}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{project\_state()}{project\_state()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a8faf34a2f3e1388ffb7791d1ea8fa0be} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+project\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nodes}{ = {\ttfamily None}, }\item[{}]{at\+\_\+end}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a ProjectState object representing the most recent state
+that the loaded migrations represent.
+
+See graph.make_state() for the meaning of "nodes" and "at_end".
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a418547b8fd0e16cff4fadf237dc46739}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!applied\_migrations@{applied\_migrations}}
+\index{applied\_migrations@{applied\_migrations}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{applied\_migrations}{applied\_migrations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a418547b8fd0e16cff4fadf237dc46739} 
+dict django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+applied\+\_\+migrations = None}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7ebd0836b1ad495a4ff262c74ad1426f}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!connection@{connection}}
+\index{connection@{connection}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a7ebd0836b1ad495a4ff262c74ad1426f} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+connection = connection}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a358a8da87dbb6d807461c81b8d5cf924}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!disk\_migrations@{disk\_migrations}}
+\index{disk\_migrations@{disk\_migrations}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{disk\_migrations}{disk\_migrations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a358a8da87dbb6d807461c81b8d5cf924} 
+dict django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+disk\+\_\+migrations = None}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_aecc80d97a4120c555b234399bca1bf3a}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!graph@{graph}}
+\index{graph@{graph}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_aecc80d97a4120c555b234399bca1bf3a} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+graph = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph}{Migration\+Graph}}()}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a420cb327d5916a385a2171fd42a60a8f}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!ignore\_no\_migrations@{ignore\_no\_migrations}}
+\index{ignore\_no\_migrations@{ignore\_no\_migrations}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{ignore\_no\_migrations}{ignore\_no\_migrations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a420cb327d5916a385a2171fd42a60a8f} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+ignore\+\_\+no\+\_\+migrations = ignore\+\_\+no\+\_\+migrations}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a2ff12cf467521abae120f19aafbf17d5}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!migrated\_apps@{migrated\_apps}}
+\index{migrated\_apps@{migrated\_apps}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{migrated\_apps}{migrated\_apps}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a2ff12cf467521abae120f19aafbf17d5} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+migrated\+\_\+apps = set()}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a5ed9767ce1f48d3945cf4e75782c1c9e}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!replace\_migrations@{replace\_migrations}}
+\index{replace\_migrations@{replace\_migrations}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{replace\_migrations}{replace\_migrations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a5ed9767ce1f48d3945cf4e75782c1c9e} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+replace\+\_\+migrations = replace\+\_\+migrations}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a9bc7a26a5752f1e93befdd54d9eeca3a}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!replacements@{replacements}}
+\index{replacements@{replacements}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{replacements}{replacements}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_a9bc7a26a5752f1e93befdd54d9eeca3a} 
+dict django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+replacements = \{\}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_ac5e5251f8a5a98c011f9c6513755ffb1}\index{django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}!unmigrated\_apps@{unmigrated\_apps}}
+\index{unmigrated\_apps@{unmigrated\_apps}!django.db.migrations.loader.MigrationLoader@{django.db.migrations.loader.MigrationLoader}}
+\doxysubsubsection{\texorpdfstring{unmigrated\_apps}{unmigrated\_apps}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader_ac5e5251f8a5a98c011f9c6513755ffb1} 
+django.\+db.\+migrations.\+loader.\+Migration\+Loader.\+unmigrated\+\_\+apps = set()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/migrations/\mbox{\hyperlink{db_2migrations_2loader_8py}{loader.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\doxysection{django.\+core.\+mail Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1mail}{}\label{namespacedjango_1_1core_1_1mail}\index{django.core.mail@{django.core.mail}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1backends}{backends}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message}{message}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_a9b20a2ea30180fa70d7bd0e936bcca79}{get\+\_\+connection}} (backend=None, fail\+\_\+silently=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_a7c0f0f869757f5380612415cf33f8de8}{send\+\_\+mail}} (subject, message, from\+\_\+email, recipient\+\_\+list, fail\+\_\+silently=False, auth\+\_\+user=None, auth\+\_\+password=None, connection=None, html\+\_\+message=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_a03f2d60bf6d4ad2009b0089752838f89}{send\+\_\+mass\+\_\+mail}} (datatuple, fail\+\_\+silently=False, auth\+\_\+user=None, auth\+\_\+password=None, connection=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_a26178a8dc6219a441e24369d812d680f}{mail\+\_\+admins}} (subject, message, fail\+\_\+silently=False, connection=None, html\+\_\+message=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_aa4ca99531916fccde614f361cf358912}{mail\+\_\+managers}} (subject, message, fail\+\_\+silently=False, connection=None, html\+\_\+message=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_af65428892d4adccfa05d4af924e5fe5a}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tools for sending email.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1mail_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1mail_a9b20a2ea30180fa70d7bd0e936bcca79}\index{django.core.mail@{django.core.mail}!get\_connection@{get\_connection}}
+\index{get\_connection@{get\_connection}!django.core.mail@{django.core.mail}}
+\doxysubsubsection{\texorpdfstring{get\_connection()}{get\_connection()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1mail_a9b20a2ea30180fa70d7bd0e936bcca79} 
+django.\+core.\+mail.\+get\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{backend}{ = {\ttfamily None}, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load an email backend and return an instance of it.
+
+If backend is None (default), use settings.EMAIL_BACKEND.
+
+Both fail_silently and other keyword arguments are used in the
+constructor of the backend.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1mail_a26178a8dc6219a441e24369d812d680f}\index{django.core.mail@{django.core.mail}!mail\_admins@{mail\_admins}}
+\index{mail\_admins@{mail\_admins}!django.core.mail@{django.core.mail}}
+\doxysubsubsection{\texorpdfstring{mail\_admins()}{mail\_admins()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1mail_a26178a8dc6219a441e24369d812d680f} 
+django.\+core.\+mail.\+mail\+\_\+admins (\begin{DoxyParamCaption}\item[{}]{subject}{, }\item[{}]{message}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}, }\item[{}]{connection}{ = {\ttfamily None}, }\item[{}]{html\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send a message to the admins, as defined by the ADMINS setting.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1mail_aa4ca99531916fccde614f361cf358912}\index{django.core.mail@{django.core.mail}!mail\_managers@{mail\_managers}}
+\index{mail\_managers@{mail\_managers}!django.core.mail@{django.core.mail}}
+\doxysubsubsection{\texorpdfstring{mail\_managers()}{mail\_managers()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1mail_aa4ca99531916fccde614f361cf358912} 
+django.\+core.\+mail.\+mail\+\_\+managers (\begin{DoxyParamCaption}\item[{}]{subject}{, }\item[{}]{message}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}, }\item[{}]{connection}{ = {\ttfamily None}, }\item[{}]{html\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send a message to the managers, as defined by the MANAGERS setting.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1mail_a7c0f0f869757f5380612415cf33f8de8}\index{django.core.mail@{django.core.mail}!send\_mail@{send\_mail}}
+\index{send\_mail@{send\_mail}!django.core.mail@{django.core.mail}}
+\doxysubsubsection{\texorpdfstring{send\_mail()}{send\_mail()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1mail_a7c0f0f869757f5380612415cf33f8de8} 
+django.\+core.\+mail.\+send\+\_\+mail (\begin{DoxyParamCaption}\item[{}]{subject}{, }\item[{}]{message}{, }\item[{}]{from\+\_\+email}{, }\item[{}]{recipient\+\_\+list}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}, }\item[{}]{auth\+\_\+user}{ = {\ttfamily None}, }\item[{}]{auth\+\_\+password}{ = {\ttfamily None}, }\item[{}]{connection}{ = {\ttfamily None}, }\item[{}]{html\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Easy wrapper for sending a single message to a recipient list. All members
+of the recipient list will see the other recipients in the 'To' field.
+
+If from_email is None, use the DEFAULT_FROM_EMAIL setting.
+If auth_user is None, use the EMAIL_HOST_USER setting.
+If auth_password is None, use the EMAIL_HOST_PASSWORD setting.
+
+Note: The API for this method is frozen. New code wanting to extend the
+functionality should use the EmailMessage class directly.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1mail_a03f2d60bf6d4ad2009b0089752838f89}\index{django.core.mail@{django.core.mail}!send\_mass\_mail@{send\_mass\_mail}}
+\index{send\_mass\_mail@{send\_mass\_mail}!django.core.mail@{django.core.mail}}
+\doxysubsubsection{\texorpdfstring{send\_mass\_mail()}{send\_mass\_mail()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1mail_a03f2d60bf6d4ad2009b0089752838f89} 
+django.\+core.\+mail.\+send\+\_\+mass\+\_\+mail (\begin{DoxyParamCaption}\item[{}]{datatuple}{, }\item[{}]{fail\+\_\+silently}{ = {\ttfamily False}, }\item[{}]{auth\+\_\+user}{ = {\ttfamily None}, }\item[{}]{auth\+\_\+password}{ = {\ttfamily None}, }\item[{}]{connection}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a datatuple of (subject, message, from_email, recipient_list), send
+each message to each recipient list. Return the number of emails sent.
+
+If from_email is None, use the DEFAULT_FROM_EMAIL setting.
+If auth_user and auth_password are set, use them to log in.
+If auth_user is None, use the EMAIL_HOST_USER setting.
+If auth_password is None, use the EMAIL_HOST_PASSWORD setting.
+
+Note: The API for this method is frozen. New code wanting to extend the
+functionality should use the EmailMessage class directly.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1core_1_1mail_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1mail_af65428892d4adccfa05d4af924e5fe5a}\index{django.core.mail@{django.core.mail}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!django.core.mail@{django.core.mail}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1mail_af65428892d4adccfa05d4af924e5fe5a} 
+list django.\+core.\+mail.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}CachedDnsName"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}DNS\_NAME"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}EmailMessage"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}EmailMultiAlternatives"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}SafeMIMEText"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}SafeMIMEMultipart"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}DEFAULT\_ATTACHMENT\_MIME\_TYPE"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}make\_msgid"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}BadHeaderError"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}forbid\_multi\_line\_headers"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}get\_connection"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}send\_mail"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}send\_mass\_mail"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}mail\_admins"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}mail\_managers"{}},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}EmailAlternative"{}},}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{"{}EmailAttachment"{}},}
+\DoxyCodeLine{00019\ ]}
+
+\end{DoxyCode}

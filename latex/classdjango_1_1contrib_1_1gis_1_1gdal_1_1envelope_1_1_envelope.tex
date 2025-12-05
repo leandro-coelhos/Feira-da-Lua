@@ -1,0 +1,203 @@
+\doxysection{django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope}{}\label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a9d96d6c860c982f624a4bb50670398d7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a7360c8c975e3a7bff76b438baf731cfb}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_afad1960026b9d02ff213cc04a0747743}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ab5d68c8d82ebf1a7f13604bff9dccb64}{expand\+\_\+to\+\_\+include}} (self, \texorpdfstring{$\ast$}{*}args)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a2888219f2371db8c5091d0d81ce6a81f}{min\+\_\+x}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a2849b0085d0eb5d16a9fd3533fb023a8}{min\+\_\+y}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a8d99845298ec22e38fed6fa62d63f0e4}{max\+\_\+x}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ae0a7e73486622dac4b33268a5e6d1173}{max\+\_\+y}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a4bb7a797dec4df2209f2bc897873ac03}{ur}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ac464caf2783469a5a227e3120ba274dd}{ll}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ac5a5bab18abd1020c7b4c81dd826f75c}{tuple}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a51e54ccebf9c49f966851f95da54b493}{wkt}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a42dfbdc6e20f104526c166a56d6c7d18}{max\+\_\+x}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_aec279590299ab247cd222cabd172e8b4}{max\+\_\+y}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a064d125b556f124ab891c6bbc9df78ce}{min\+\_\+x}} = other.\+min\+\_\+x)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_acac7742f90fc4c7b0b2b7c02a7d8ac54}{min\+\_\+y}} = other.\+min\+\_\+y)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a584866c4baf0416ea4afda8afc7687c7}{tuple}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a65e586845ddeec625d0f7f0076c9b7e3}{\+\_\+from\+\_\+sequence}} (self, seq)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a936514439e461e0a3518d42212d633f3}{\+\_\+envelope}} = args\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The Envelope object is a C structure that contains the minimum and
+maximum X, Y coordinates for a rectangle bounding box.  The naming
+of the variables is compatible with the OGR Envelope structure.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a9d96d6c860c982f624a4bb50670398d7}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a9d96d6c860c982f624a4bb50670398d7} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The initialization function may take an OGREnvelope structure, 4-element
+tuple or list, or 4 individual arguments.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a7360c8c975e3a7bff76b438baf731cfb}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a7360c8c975e3a7bff76b438baf731cfb} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the envelopes are equivalent; can compare against
+other Envelopes and 4-tuples.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_afad1960026b9d02ff213cc04a0747743}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_afad1960026b9d02ff213cc04a0747743} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a65e586845ddeec625d0f7f0076c9b7e3}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!\_from\_sequence@{\_from\_sequence}}
+\index{\_from\_sequence@{\_from\_sequence}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence()}{\_from\_sequence()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a65e586845ddeec625d0f7f0076c9b7e3} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+\_\+from\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{seq}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ab5d68c8d82ebf1a7f13604bff9dccb64}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!expand\_to\_include@{expand\_to\_include}}
+\index{expand\_to\_include@{expand\_to\_include}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{expand\_to\_include()}{expand\_to\_include()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ab5d68c8d82ebf1a7f13604bff9dccb64} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+expand\+\_\+to\+\_\+include (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Modify the envelope to expand to include the boundaries of
+the passed-in 2-tuple (a point), 4-tuple (an extent) or
+envelope.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ac464caf2783469a5a227e3120ba274dd}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!ll@{ll}}
+\index{ll@{ll}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{ll()}{ll()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ac464caf2783469a5a227e3120ba274dd} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+ll (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a8d99845298ec22e38fed6fa62d63f0e4}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!max\_x@{max\_x}}
+\index{max\_x@{max\_x}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{max\_x()}{max\_x()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a8d99845298ec22e38fed6fa62d63f0e4} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+max\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ae0a7e73486622dac4b33268a5e6d1173}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!max\_y@{max\_y}}
+\index{max\_y@{max\_y}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{max\_y()}{max\_y()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ae0a7e73486622dac4b33268a5e6d1173} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+max\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a2888219f2371db8c5091d0d81ce6a81f}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!min\_x@{min\_x}}
+\index{min\_x@{min\_x}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{min\_x()}{min\_x()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a2888219f2371db8c5091d0d81ce6a81f} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+min\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a2849b0085d0eb5d16a9fd3533fb023a8}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!min\_y@{min\_y}}
+\index{min\_y@{min\_y}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{min\_y()}{min\_y()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a2849b0085d0eb5d16a9fd3533fb023a8} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+min\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ac5a5bab18abd1020c7b4c81dd826f75c}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!tuple@{tuple}}
+\index{tuple@{tuple}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{tuple()}{tuple()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_ac5a5bab18abd1020c7b4c81dd826f75c} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+tuple (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a4bb7a797dec4df2209f2bc897873ac03}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!ur@{ur}}
+\index{ur@{ur}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{ur()}{ur()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a4bb7a797dec4df2209f2bc897873ac03} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+ur (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a51e54ccebf9c49f966851f95da54b493}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!wkt@{wkt}}
+\index{wkt@{wkt}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{wkt()}{wkt()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a51e54ccebf9c49f966851f95da54b493} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+wkt (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a936514439e461e0a3518d42212d633f3}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!\_envelope@{\_envelope}}
+\index{\_envelope@{\_envelope}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{\_envelope}{\_envelope}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a936514439e461e0a3518d42212d633f3} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+\_\+envelope = args\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a42dfbdc6e20f104526c166a56d6c7d18}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!max\_x@{max\_x}}
+\index{max\_x@{max\_x}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{max\_x}{max\_x}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a42dfbdc6e20f104526c166a56d6c7d18} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+max\+\_\+x}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_aec279590299ab247cd222cabd172e8b4}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!max\_y@{max\_y}}
+\index{max\_y@{max\_y}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{max\_y}{max\_y}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_aec279590299ab247cd222cabd172e8b4} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+max\+\_\+y}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a064d125b556f124ab891c6bbc9df78ce}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!min\_x@{min\_x}}
+\index{min\_x@{min\_x}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{min\_x}{min\_x}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a064d125b556f124ab891c6bbc9df78ce} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+min\+\_\+x = other.\+min\+\_\+x)}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_acac7742f90fc4c7b0b2b7c02a7d8ac54}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!min\_y@{min\_y}}
+\index{min\_y@{min\_y}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{min\_y}{min\_y}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_acac7742f90fc4c7b0b2b7c02a7d8ac54} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+min\+\_\+y = other.\+min\+\_\+y)}
+
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a584866c4baf0416ea4afda8afc7687c7}\index{django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}!tuple@{tuple}}
+\index{tuple@{tuple}!django.contrib.gis.gdal.envelope.Envelope@{django.contrib.gis.gdal.envelope.Envelope}}
+\doxysubsubsection{\texorpdfstring{tuple}{tuple}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1gis_1_1gdal_1_1envelope_1_1_envelope_a584866c4baf0416ea4afda8afc7687c7} 
+django.\+contrib.\+gis.\+gdal.\+envelope.\+Envelope.\+tuple}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/gis/gdal/\mbox{\hyperlink{envelope_8py}{envelope.\+py}}\end{DoxyCompactItemize}

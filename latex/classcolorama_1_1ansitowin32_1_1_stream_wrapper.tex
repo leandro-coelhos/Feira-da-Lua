@@ -1,0 +1,137 @@
+\doxysection{colorama.\+ansitowin32.\+Stream\+Wrapper Class Reference}
+\hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper}{}\label{classcolorama_1_1ansitowin32_1_1_stream_wrapper}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+Inheritance diagram for colorama.\+ansitowin32.\+Stream\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcolorama_1_1ansitowin32_1_1_stream_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a1e9d3735f8a5ac408c2d4dd2e483442a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, wrapped, converter)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_af6598e31467ac83c820a612e9e8f2067}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, name)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a30782cb395be2981d7adf1685b24331c}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_aaf4430068fcb09a95adb30b9df073195}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a6141b34cdb787676815839dea1e72fb5}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a908589b79b40879e9990b23f8a6b51e7}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a551910ddf0a34dde1db2a38e00b789d4}{write}} (self, text)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a5fc1c28e44048b8fba0d4c564ab9843c}{isatty}} (self)
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a101801ca638f486a0e1a1b043add737f}{closed}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_ab5c4679ee13122fee783a41166a82bb2}{\+\_\+\+\_\+wrapped}} = wrapped
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a6f9552c2f7384a296e5f01b5fd5420c9}{\+\_\+\+\_\+convertor}} = converter
+\item 
+\mbox{\hyperlink{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a623bf1f2ed24327c64c689a7d2cf1062}{\+\_\+\+\_\+dict\+\_\+\+\_\+}} = state
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a stream (such as stdout), acting as a transparent proxy for all
+attribute access apart from method 'write()', which is delegated to our
+Converter instance.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a1e9d3735f8a5ac408c2d4dd2e483442a}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a1e9d3735f8a5ac408c2d4dd2e483442a} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{wrapped}{, }\item[{}]{converter}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a30782cb395be2981d7adf1685b24331c}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a30782cb395be2981d7adf1685b24331c} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_aaf4430068fcb09a95adb30b9df073195}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_aaf4430068fcb09a95adb30b9df073195} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_af6598e31467ac83c820a612e9e8f2067}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_af6598e31467ac83c820a612e9e8f2067} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a908589b79b40879e9990b23f8a6b51e7}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a908589b79b40879e9990b23f8a6b51e7} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a6141b34cdb787676815839dea1e72fb5}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a6141b34cdb787676815839dea1e72fb5} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a101801ca638f486a0e1a1b043add737f}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!closed@{closed}}
+\index{closed@{closed}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a101801ca638f486a0e1a1b043add737f} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+closed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a5fc1c28e44048b8fba0d4c564ab9843c}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!isatty@{isatty}}
+\index{isatty@{isatty}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{isatty()}{isatty()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a5fc1c28e44048b8fba0d4c564ab9843c} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+isatty (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a551910ddf0a34dde1db2a38e00b789d4}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!write@{write}}
+\index{write@{write}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a551910ddf0a34dde1db2a38e00b789d4} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a6f9552c2f7384a296e5f01b5fd5420c9}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_convertor@{\_\_convertor}}
+\index{\_\_convertor@{\_\_convertor}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_convertor}{\_\_convertor}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a6f9552c2f7384a296e5f01b5fd5420c9} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+convertor = converter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a623bf1f2ed24327c64c689a7d2cf1062}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_a623bf1f2ed24327c64c689a7d2cf1062} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+dict\+\_\+\+\_\+ = state\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcolorama_1_1ansitowin32_1_1_stream_wrapper_ab5c4679ee13122fee783a41166a82bb2}\index{colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}!\_\_wrapped@{\_\_wrapped}}
+\index{\_\_wrapped@{\_\_wrapped}!colorama.ansitowin32.StreamWrapper@{colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_wrapped}{\_\_wrapped}}
+{\footnotesize\ttfamily \label{classcolorama_1_1ansitowin32_1_1_stream_wrapper_ab5c4679ee13122fee783a41166a82bb2} 
+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+wrapped = wrapped\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/colorama/\mbox{\hyperlink{ansitowin32_8py}{ansitowin32.\+py}}\end{DoxyCompactItemize}

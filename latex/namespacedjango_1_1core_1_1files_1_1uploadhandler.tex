@@ -1,0 +1,81 @@
+\doxysection{django.\+core.\+files.\+uploadhandler Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1files_1_1uploadhandler}{}\label{namespacedjango_1_1core_1_1files_1_1uploadhandler}\index{django.core.files.uploadhandler@{django.core.files.uploadhandler}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_file_upload_handler}{File\+Upload\+Handler}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_memory_file_upload_handler}{Memory\+File\+Upload\+Handler}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_skip_file}{Skip\+File}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_stop_future_handlers}{Stop\+Future\+Handlers}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_stop_upload}{Stop\+Upload}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_temporary_file_upload_handler}{Temporary\+File\+Upload\+Handler}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1uploadhandler_1_1_upload_file_exception}{Upload\+File\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1files_1_1uploadhandler_a513ad733387e07140ec811cd00a27ec0}{load\+\_\+handler}} (path, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacedjango_1_1core_1_1files_1_1uploadhandler_a2756c5b98a7eb6319d2165059d0273a2}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base file upload handler classes, and the built-in concrete subclasses
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1uploadhandler_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1uploadhandler_a513ad733387e07140ec811cd00a27ec0}\index{django.core.files.uploadhandler@{django.core.files.uploadhandler}!load\_handler@{load\_handler}}
+\index{load\_handler@{load\_handler}!django.core.files.uploadhandler@{django.core.files.uploadhandler}}
+\doxysubsubsection{\texorpdfstring{load\_handler()}{load\_handler()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1files_1_1uploadhandler_a513ad733387e07140ec811cd00a27ec0} 
+django.\+core.\+files.\+uploadhandler.\+load\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a path to a handler, return an instance of that handler.
+
+E.g.::
+    >>> from django.http import HttpRequest
+    >>> request = HttpRequest()
+    >>> load_handler(
+    ...     'django.core.files.uploadhandler.TemporaryFileUploadHandler',
+    ...     request,
+    ... )
+    <TemporaryFileUploadHandler object at 0x...>
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1uploadhandler_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1uploadhandler_a2756c5b98a7eb6319d2165059d0273a2}\index{django.core.files.uploadhandler@{django.core.files.uploadhandler}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!django.core.files.uploadhandler@{django.core.files.uploadhandler}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1files_1_1uploadhandler_a2756c5b98a7eb6319d2165059d0273a2} 
+list django.\+core.\+files.\+uploadhandler.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}UploadFileException"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}StopUpload"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}SkipFile"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}FileUploadHandler"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}TemporaryFileUploadHandler"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}MemoryFileUploadHandler"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}load\_handler"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}StopFutureHandlers"{}},}
+\DoxyCodeLine{00010\ ]}
+
+\end{DoxyCode}

@@ -1,0 +1,25 @@
+var marketplace_2service_8py =
+[
+    [ "feira_da_lua.marketplace.service.CalculateDistance", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a2a05d6b8cd6d25b1620d7b865469e227", null ],
+    [ "feira_da_lua.marketplace.service.CreateMarketPlace", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a289abe9875592d299030913cbe0d8e41", null ],
+    [ "feira_da_lua.marketplace.service.CreateProduct", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a2a534c066ed703801687335fed5f3a88", null ],
+    [ "feira_da_lua.marketplace.service.DeleteMarketPlace", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a62aa6a3bf82f67263ae6a4bf5d32c26b", null ],
+    [ "feira_da_lua.marketplace.service.DeleteProduct", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a85f9197a3ed165d24cd0b785ed7a5ac5", null ],
+    [ "feira_da_lua.marketplace.service.FilterMarketPlacesByAddress", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a4bb7502dca3486383bc79715806cb125", null ],
+    [ "feira_da_lua.marketplace.service.FilterMarketPlacesByGPS", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a3c428775cd56b29becf5e7f4555c032d", null ],
+    [ "feira_da_lua.marketplace.service.FilterMarketPlacesByRating", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a326eba36d9c75eb339f14366e9a4ac6e", null ],
+    [ "feira_da_lua.marketplace.service.FilterProductsByPrice", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a27671bb409ad0a5040ca965a992ed43e", null ],
+    [ "feira_da_lua.marketplace.service.GetAllMarketPlaces", "namespacefeira__da__lua_1_1marketplace_1_1service.html#adb460452d913072dcb2cac006df0b5f8", null ],
+    [ "feira_da_lua.marketplace.service.GetAllProducts", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a97d786b049ca52ae47b6a57f83b3e411", null ],
+    [ "feira_da_lua.marketplace.service.GetMarketPlaceAverageRating", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a9f3ec25d6e3eaa3d48e687dee75c7c8c", null ],
+    [ "feira_da_lua.marketplace.service.GetMarketPlaceById", "namespacefeira__da__lua_1_1marketplace_1_1service.html#adb6587695f485a6bb3c5bb9bc072b34d", null ],
+    [ "feira_da_lua.marketplace.service.GetMarketPlacesByMarketer", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a5a7068ab53964b931e36532588fec649", null ],
+    [ "feira_da_lua.marketplace.service.GetMarketPlacesWithRatings", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a762b53165fb69eba220fd64186d07015", null ],
+    [ "feira_da_lua.marketplace.service.GetProductById", "namespacefeira__da__lua_1_1marketplace_1_1service.html#ad2907d852d5325eefa9fdc6af3106b7f", null ],
+    [ "feira_da_lua.marketplace.service.GetProductsByMarketer", "namespacefeira__da__lua_1_1marketplace_1_1service.html#ad54f202e49e1bd78e90f1b82c68549e1", null ],
+    [ "feira_da_lua.marketplace.service.SearchMarketPlaces", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a6364629e2beef89e35586c7f7f705e54", null ],
+    [ "feira_da_lua.marketplace.service.SearchProducts", "namespacefeira__da__lua_1_1marketplace_1_1service.html#ab9973e6db9e67863f6bb1bd68565dc6d", null ],
+    [ "feira_da_lua.marketplace.service.SortMarketPlacesByRating", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a3a0ff6c12004493afd1e83cbe7115b4b", null ],
+    [ "feira_da_lua.marketplace.service.UpdateMarketPlace", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a73141b073e429c24567d52b49a43d215", null ],
+    [ "feira_da_lua.marketplace.service.UpdateProduct", "namespacefeira__da__lua_1_1marketplace_1_1service.html#a02df0b8cc7acf41ccef50e3b5bb6e32e", null ]
+];

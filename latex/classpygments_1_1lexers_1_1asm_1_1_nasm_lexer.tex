@@ -1,0 +1,280 @@
+\doxysection{pygments.\+lexers.\+asm.\+Nasm\+Lexer Class Reference}
+\hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer}{}\label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+Inheritance diagram for pygments.\+lexers.\+asm.\+Nasm\+Lexer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.431373cm]{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a3a56bc51a020e97fcc694d3e59712a07}{analyse\+\_\+text}} (text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer}{pygments.\+lexer.\+Regex\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_a56bd1a609a7e589293afd2d71637f91a}{get\+\_\+tokens\+\_\+unprocessed}} (self, text, stack=(\textquotesingle{}root\textquotesingle{},))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer}{pygments.\+lexer.\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_ad4f2ca2ced009731f38895a0699e1067}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}})
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a77c5461377226219104fa3a547cf9e33}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_ad48533fea796f7164306ca3c6c0c1043}{add\+\_\+filter}} (self, filter\+\_\+, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}})
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_af86049e12f03e404f068b59f2e0d0ef9}{get\+\_\+tokens}} (self, text, unfiltered=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_meta}{pygments.\+lexer.\+Lexer\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_meta_a0b5228b77a52a88ecf192702b6dce30a}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (mcs, name, bases, d)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta}{pygments.\+lexer.\+Regex\+Lexer\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a78aff20634156007820ebc7d91db4263}{process\+\_\+tokendef}} (cls, name, tokendefs=None)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_ad1718986775db465d8f0c43e169bd989}{get\+\_\+tokendefs}} (cls)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a3c5937ef31d368e49226c1f044cc8a6c}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a0c942802033660b1a899e6a849e59445}{identifier}} = r\textquotesingle{}\mbox{[}a-\/z\$.\+\_\+?\mbox{]}\mbox{[}\textbackslash{}w\$.?\#@\texorpdfstring{$\sim$}{\string~}\mbox{]}\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_af3c522db377813258dfbe2f892330229}{hexn}} = r\textquotesingle{}(?\+:0x\mbox{[}0-\/9a-\/f\mbox{]}+\texorpdfstring{$\vert$}{|}\$0\mbox{[}0-\/9a-\/f\mbox{]}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}\mbox{[}0-\/9\mbox{]}+\mbox{[}0-\/9a-\/f\mbox{]}\texorpdfstring{$\ast$}{*}h)\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_aff10349a27eaca76a354b04f971cda87}{octn}} = r\textquotesingle{}\mbox{[}0-\/7\mbox{]}+q\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac19480841de6f0f2144a8c96ea4870f5}{binn}} = r\textquotesingle{}\mbox{[}01\mbox{]}+b\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439}{decn}} = r\textquotesingle{}\mbox{[}0-\/9\mbox{]}+\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a5bd12e90773af70ba5b868b2d9c30533}{floatn}} = \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439}{decn}} + r\textquotesingle{}\textbackslash{}.e?\textquotesingle{} + \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439}{decn}}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a80bce2f0adfdfde80afee3b271cb9fcf}{string}} = r\textquotesingle{}"{}(\textbackslash{}\textbackslash{}"{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}"{}\textbackslash{}n\mbox{]})\texorpdfstring{$\ast$}{*}"{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + r"{}\textquotesingle{}(\textbackslash{}\textbackslash{}\textquotesingle{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{}\textbackslash{}n\mbox{]})\texorpdfstring{$\ast$}{*}\textquotesingle{}\texorpdfstring{$\vert$}{|}"{} + r"{}\`{}(\textbackslash{}\textbackslash{}\`{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\`{}\textbackslash{}n\mbox{]})\texorpdfstring{$\ast$}{*}\`{}"{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ae7abf11a6a8e5492f8a89051112dea8b}{declkw}} = r\textquotesingle{}(?\+:res\texorpdfstring{$\vert$}{|}d)\mbox{[}bwdqt\mbox{]}\texorpdfstring{$\vert$}{|}times\textquotesingle{}
+\item 
+tuple \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a0f61087f55abc892424435bbe349c3c4}{register}}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a4317a46c704c0e67a4ab72378fe53abf}{wordop}} = r\textquotesingle{}seg\texorpdfstring{$\vert$}{|}wrt\texorpdfstring{$\vert$}{|}strict\texorpdfstring{$\vert$}{|}rel\texorpdfstring{$\vert$}{|}abs\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ae08cc79a729c55c27ded1a06f819bcc1}{type}} = r\textquotesingle{}byte\texorpdfstring{$\vert$}{|}\mbox{[}dq\mbox{]}?word\textquotesingle{}
+\item 
+tuple \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a7210fb19ad7497bbd56ed8591a58655b}{directives}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer}{pygments.\+lexer.\+Regex\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_a1d59f564add28ef2e21d9e7dd04dfd58}{flags}} = re.\+MULTILINE
+\item 
+dict \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_ae849470cb42d45333070ee6e066420ff}{tokens}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer}{pygments.\+lexer.\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a2a8746feaf0e62a6aa46e07b154184b5}{name}} = None
+\item 
+list \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_aef5e36cd837bff0efdf90e3481eb77f7}{aliases}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a3b36a4d24bbb244f6bfb37a7f6d5e685}{filenames}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a1b0fca440ab575d120cffcb34a26b523}{alias\+\_\+filenames}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_ac12a75a694741ea3ce2ba92a563f6024}{mimetypes}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a9c16c936d7720dcf0896c6ffe8f0940a}{priority}} = 0
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a6efe46a76ee13c70eb988113171e002f}{url}} = None
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a530517a17d89ca92d7561cac2c92d842}{version\+\_\+added}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer}{pygments.\+lexer.\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}} = options
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a45050ade1ac2c72144f50d834072f550}{stripnl}} = get\+\_\+bool\+\_\+opt(\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}}, \textquotesingle{}stripnl\textquotesingle{}, True)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a14599a1ae24dfaed51efde08304ababf}{stripall}} = get\+\_\+bool\+\_\+opt(\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}}, \textquotesingle{}stripall\textquotesingle{}, False)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a6f3b7e20978c032dd70cb126996d3b28}{ensurenl}} = get\+\_\+bool\+\_\+opt(\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}}, \textquotesingle{}ensurenl\textquotesingle{}, True)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_ae8095c143f113c202c849113c3862502}{tabsize}} = get\+\_\+int\+\_\+opt(\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_a02f7fee78518987bae46e78e4fb3f81a}{options}}, \textquotesingle{}tabsize\textquotesingle{}, 0)
+\item 
+str \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_acbdfa9930221be53e7598e10b0d3ea51}{encoding}} = options.\+get(\textquotesingle{}encoding\textquotesingle{}, \textquotesingle{}guess\textquotesingle{})
+\item 
+list \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_abb3eb95963518a417f33d98d9d6eb441}{filters}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta}{pygments.\+lexer.\+Regex\+Lexer\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_af2fd788b9141a49838a33e3ec282f406}{token\+\_\+variants}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer}{pygments.\+lexer.\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_ac6218da310c855d57209faf59fb3a69d}{\+\_\+preprocess\+\_\+lexer\+\_\+input}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta}{pygments.\+lexer.\+Regex\+Lexer\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a0ea8580f410a245152475da1fb74805c}{\+\_\+process\+\_\+regex}} (cls, regex, rflags, state)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a6e07c09c6030f8daefbca8950cfb01ef}{\+\_\+process\+\_\+token}} (cls, token)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a8ea4d75536df57c8bef0ee50dc0e6616}{\+\_\+process\+\_\+new\+\_\+state}} (cls, new\+\_\+state, unprocessed, processed)
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_ac15a1d28ec003eeb537c44467e9ea339}{\+\_\+process\+\_\+state}} (cls, unprocessed, processed, state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta}{pygments.\+lexer.\+Regex\+Lexer\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a343a345dd461d9b76fa5fa8fe01e0e12}{\+\_\+all\+\_\+tokens}} = \{\}
+\item 
+int \mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_a3d2853e3f3b15b95b862d75592035c12}{\+\_\+tmpname}} = 0
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_regex_lexer_meta_aa3ae09d07595010128d176a6c27804df}{\+\_\+tokens}} = cls.\+process\+\_\+tokendef(\textquotesingle{}\textquotesingle{}, cls.\+get\+\_\+tokendefs())
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer}{pygments.\+lexer.\+Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_af494147481054da17a4a69ad9ceecdbf}{\+\_\+example}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For Nasm (Intel) assembly code.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a3a56bc51a020e97fcc694d3e59712a07}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!analyse\_text@{analyse\_text}}
+\index{analyse\_text@{analyse\_text}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{analyse\_text()}{analyse\_text()}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a3a56bc51a020e97fcc694d3e59712a07} 
+pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+analyse\+\_\+text (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A static method which is called for lexer guessing.
+
+It should analyse the text and return a float in the range
+from ``0.0`` to ``1.0``.  If it returns ``0.0``, the lexer
+will not be selected as the most probable one, if it returns
+``1.0``, it will be selected immediately.  This is used by
+`guess_lexer`.
+
+The `LexerMeta` metaclass automatically wraps this function so
+that it works like a static method (no ``self`` or ``cls``
+parameter) and the return value is automatically converted to
+`float`. If the return value is an object that is boolean `False`
+it's the same as if the return values was ``0.0``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpygments_1_1lexer_1_1_lexer_acb2d7eefc23ce9b9ae69e1477461533a}{pygments.\+lexer.\+Lexer}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac19480841de6f0f2144a8c96ea4870f5}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!binn@{binn}}
+\index{binn@{binn}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{binn}{binn}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac19480841de6f0f2144a8c96ea4870f5} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+binn = r\textquotesingle{}\mbox{[}01\mbox{]}+b\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ae7abf11a6a8e5492f8a89051112dea8b}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!declkw@{declkw}}
+\index{declkw@{declkw}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{declkw}{declkw}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ae7abf11a6a8e5492f8a89051112dea8b} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+declkw = r\textquotesingle{}(?\+:res\texorpdfstring{$\vert$}{|}d)\mbox{[}bwdqt\mbox{]}\texorpdfstring{$\vert$}{|}times\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!decn@{decn}}
+\index{decn@{decn}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{decn}{decn}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+decn = r\textquotesingle{}\mbox{[}0-\/9\mbox{]}+\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a7210fb19ad7497bbd56ed8591a58655b}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!directives@{directives}}
+\index{directives@{directives}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{directives}{directives}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a7210fb19ad7497bbd56ed8591a58655b} 
+tuple pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+directives\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{stringliteral}{r'(?:BITS|USE16|USE32|SECTION|SEGMENT|ABSOLUTE|EXTERN|GLOBAL|'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'ORG|ALIGN|STRUC|ENDSTRUC|COMMON|CPU|GROUP|UPPERCASE|IMPORT|'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'EXPORT|LIBRARY|MODULE)(?=\(\backslash\)s)'})}
+
+\end{DoxyCode}
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a5bd12e90773af70ba5b868b2d9c30533}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!floatn@{floatn}}
+\index{floatn@{floatn}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{floatn}{floatn}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a5bd12e90773af70ba5b868b2d9c30533} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+floatn = \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439}{decn}} + r\textquotesingle{}\textbackslash{}.e?\textquotesingle{} + \mbox{\hyperlink{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ac93261bc0262d70b92ea720af4cb5439}{decn}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_af3c522db377813258dfbe2f892330229}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!hexn@{hexn}}
+\index{hexn@{hexn}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{hexn}{hexn}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_af3c522db377813258dfbe2f892330229} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+hexn = r\textquotesingle{}(?\+:0x\mbox{[}0-\/9a-\/f\mbox{]}+\texorpdfstring{$\vert$}{|}\$0\mbox{[}0-\/9a-\/f\mbox{]}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}\mbox{[}0-\/9\mbox{]}+\mbox{[}0-\/9a-\/f\mbox{]}\texorpdfstring{$\ast$}{*}h)\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a0c942802033660b1a899e6a849e59445}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!identifier@{identifier}}
+\index{identifier@{identifier}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a0c942802033660b1a899e6a849e59445} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+identifier = r\textquotesingle{}\mbox{[}a-\/z\$.\+\_\+?\mbox{]}\mbox{[}\textbackslash{}w\$.?\#@\texorpdfstring{$\sim$}{\string~}\mbox{]}\texorpdfstring{$\ast$}{*}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_aff10349a27eaca76a354b04f971cda87}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!octn@{octn}}
+\index{octn@{octn}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{octn}{octn}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_aff10349a27eaca76a354b04f971cda87} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+octn = r\textquotesingle{}\mbox{[}0-\/7\mbox{]}+q\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a0f61087f55abc892424435bbe349c3c4}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!register@{register}}
+\index{register@{register}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{register}{register}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a0f61087f55abc892424435bbe349c3c4} 
+tuple pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+register\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{stringliteral}{r'(r[0-\/9][0-\/5]?[bwd]?|'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'[a-\/d][lh]|[er]?[a-\/d]x|[er]?[sb]p|[er]?[sd]i|[c-\/gs]s|st[0-\/7]|'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'mm[0-\/7]|cr[0-\/4]|dr[0-\/367]|tr[3-\/7]|k[0-\/7]|'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'[xyz]mm(?:[12][0-\/9]?|3[01]?|[04-\/9]))\(\backslash\)b'})}
+
+\end{DoxyCode}
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a80bce2f0adfdfde80afee3b271cb9fcf}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!string@{string}}
+\index{string@{string}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a80bce2f0adfdfde80afee3b271cb9fcf} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+string = r\textquotesingle{}"{}(\textbackslash{}\textbackslash{}"{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}"{}\textbackslash{}n\mbox{]})\texorpdfstring{$\ast$}{*}"{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + r"{}\textquotesingle{}(\textbackslash{}\textbackslash{}\textquotesingle{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{}\textbackslash{}n\mbox{]})\texorpdfstring{$\ast$}{*}\textquotesingle{}\texorpdfstring{$\vert$}{|}"{} + r"{}\`{}(\textbackslash{}\textbackslash{}\`{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\`{}\textbackslash{}n\mbox{]})\texorpdfstring{$\ast$}{*}\`{}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ae08cc79a729c55c27ded1a06f819bcc1}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!type@{type}}
+\index{type@{type}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_ae08cc79a729c55c27ded1a06f819bcc1} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+type = r\textquotesingle{}byte\texorpdfstring{$\vert$}{|}\mbox{[}dq\mbox{]}?word\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a4317a46c704c0e67a4ab72378fe53abf}\index{pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}!wordop@{wordop}}
+\index{wordop@{wordop}!pygments.lexers.asm.NasmLexer@{pygments.lexers.asm.NasmLexer}}
+\doxysubsubsection{\texorpdfstring{wordop}{wordop}}
+{\footnotesize\ttfamily \label{classpygments_1_1lexers_1_1asm_1_1_nasm_lexer_a4317a46c704c0e67a4ab72378fe53abf} 
+str pygments.\+lexers.\+asm.\+Nasm\+Lexer.\+wordop = r\textquotesingle{}seg\texorpdfstring{$\vert$}{|}wrt\texorpdfstring{$\vert$}{|}strict\texorpdfstring{$\vert$}{|}rel\texorpdfstring{$\vert$}{|}abs\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pygments/lexers/\mbox{\hyperlink{asm_8py}{asm.\+py}}\end{DoxyCompactItemize}

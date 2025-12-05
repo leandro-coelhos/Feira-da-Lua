@@ -1,0 +1,172 @@
+\doxysection{\+\_\+pytest.\+deprecated Namespace Reference}
+\hypertarget{namespace__pytest_1_1deprecated}{}\label{namespace__pytest_1_1deprecated}\index{\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespace__pytest_1_1deprecated_a38698d3940bfaef75e25feb5584d4c9b}{check\+\_\+ispytest}} (bool ispytest)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespace__pytest_1_1deprecated_ab57a73a5a4990f98504ddc0b4854fb0b}{DEPRECATED\+\_\+\+EXTERNAL\+\_\+\+PLUGINS}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_afb68aa41149bdd86cbfa8b428ed8cd01}{YIELD\+\_\+\+FIXTURE}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_a24b3f1b8fdc8551af2e25c26cd31d682}{PRIVATE}} = \mbox{\hyperlink{class__pytest_1_1warning__types_1_1_pytest_deprecation_warning}{Pytest\+Deprecation\+Warning}}("{}A private pytest class or function was used."{})
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_a810a6121e7c3bc468b8bd3a234133c3f}{HOOK\+\_\+\+LEGACY\+\_\+\+PATH\+\_\+\+ARG}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_ab1511026a8524cd929b536d809a76cc8}{NODE\+\_\+\+CTOR\+\_\+\+FSPATH\+\_\+\+ARG}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_aae0336026d6c093017cebad62d0a76ee}{HOOK\+\_\+\+LEGACY\+\_\+\+MARKING}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_aed7f50387d785731639d0cb83a9e7de9}{MARKED\+\_\+\+FIXTURE}}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1deprecated_abf0ea8f0540b137637a3deb83d1d7fa8}{MONKEYPATCH\+\_\+\+LEGACY\+\_\+\+NAMESPACE\+\_\+\+PACKAGES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Deprecation messages and bits of code used elsewhere in the codebase that
+is planned to be removed in the next pytest release.
+
+Keeping it in a central location makes it easy to track what is deprecated and should
+be removed when the time comes.
+
+All constants defined in this module should be either instances of
+:class:`PytestWarning`, or :class:`UnformattedWarning`
+in case of warnings which need to format their messages.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1deprecated_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1deprecated_a38698d3940bfaef75e25feb5584d4c9b}\index{\_pytest.deprecated@{\_pytest.deprecated}!check\_ispytest@{check\_ispytest}}
+\index{check\_ispytest@{check\_ispytest}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{check\_ispytest()}{check\_ispytest()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_a38698d3940bfaef75e25feb5584d4c9b} 
+ None \+\_\+pytest.\+deprecated.\+check\+\_\+ispytest (\begin{DoxyParamCaption}\item[{bool}]{ispytest}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1deprecated_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1deprecated_ab57a73a5a4990f98504ddc0b4854fb0b}\index{\_pytest.deprecated@{\_pytest.deprecated}!DEPRECATED\_EXTERNAL\_PLUGINS@{DEPRECATED\_EXTERNAL\_PLUGINS}}
+\index{DEPRECATED\_EXTERNAL\_PLUGINS@{DEPRECATED\_EXTERNAL\_PLUGINS}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{DEPRECATED\_EXTERNAL\_PLUGINS}{DEPRECATED\_EXTERNAL\_PLUGINS}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_ab57a73a5a4990f98504ddc0b4854fb0b} 
+dict \+\_\+pytest.\+deprecated.\+DEPRECATED\+\_\+\+EXTERNAL\+\_\+\+PLUGINS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}pytest\_catchlog"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}pytest\_capturelog"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}pytest\_faulthandler"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}pytest\_subtests"{}},}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1deprecated_aae0336026d6c093017cebad62d0a76ee}\index{\_pytest.deprecated@{\_pytest.deprecated}!HOOK\_LEGACY\_MARKING@{HOOK\_LEGACY\_MARKING}}
+\index{HOOK\_LEGACY\_MARKING@{HOOK\_LEGACY\_MARKING}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{HOOK\_LEGACY\_MARKING}{HOOK\_LEGACY\_MARKING}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_aae0336026d6c093017cebad62d0a76ee} 
+\+\_\+pytest.\+deprecated.\+HOOK\+\_\+\+LEGACY\+\_\+\+MARKING}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ UnformattedWarning(}
+\DoxyCodeLine{00002\ \ \ \ \ PytestDeprecationWarning,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}The\ hook\{type\}\ \{fullname\}\ uses\ old-\/style\ configuration\ options\ (marks\ or\ attributes).\(\backslash\)n"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}Please\ use\ the\ pytest.hook\{type\}(\{hook\_opts\})\ decorator\ instead\(\backslash\)n"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}\ to\ configure\ the\ hooks.\(\backslash\)n"{}}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}\ See\ https://docs.pytest.org/en/latest/deprecations.html"{}}}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}\#configuring-\/hook-\/specs-\/impls-\/using-\/markers"{}},}
+\DoxyCodeLine{00008\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1deprecated_a810a6121e7c3bc468b8bd3a234133c3f}\index{\_pytest.deprecated@{\_pytest.deprecated}!HOOK\_LEGACY\_PATH\_ARG@{HOOK\_LEGACY\_PATH\_ARG}}
+\index{HOOK\_LEGACY\_PATH\_ARG@{HOOK\_LEGACY\_PATH\_ARG}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{HOOK\_LEGACY\_PATH\_ARG}{HOOK\_LEGACY\_PATH\_ARG}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_a810a6121e7c3bc468b8bd3a234133c3f} 
+\+\_\+pytest.\+deprecated.\+HOOK\+\_\+\+LEGACY\+\_\+\+PATH\+\_\+\+ARG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ UnformattedWarning(}
+\DoxyCodeLine{00002\ \ \ \ \ PytestRemovedIn9Warning,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}The\ (\{pylib\_path\_arg\}:\ py.path.local)\ argument\ is\ deprecated,\ please\ use\ (\{pathlib\_path\_arg\}:\ pathlib.Path)\(\backslash\)n"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}see\ https://docs.pytest.org/en/latest/deprecations.html"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}\#py-\/path-\/local-\/arguments-\/for-\/hooks-\/replaced-\/with-\/pathlib-\/path"{}},}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1deprecated_aed7f50387d785731639d0cb83a9e7de9}\index{\_pytest.deprecated@{\_pytest.deprecated}!MARKED\_FIXTURE@{MARKED\_FIXTURE}}
+\index{MARKED\_FIXTURE@{MARKED\_FIXTURE}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{MARKED\_FIXTURE}{MARKED\_FIXTURE}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_aed7f50387d785731639d0cb83a9e7de9} 
+\+\_\+pytest.\+deprecated.\+MARKED\+\_\+\+FIXTURE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ PytestRemovedIn9Warning(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Marks\ applied\ to\ fixtures\ have\ no\ effect\(\backslash\)n"{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}See\ docs:\ https://docs.pytest.org/en/stable/deprecations.html\#applying-\/a-\/mark-\/to-\/a-\/fixture-\/function"{}}}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1deprecated_abf0ea8f0540b137637a3deb83d1d7fa8}\index{\_pytest.deprecated@{\_pytest.deprecated}!MONKEYPATCH\_LEGACY\_NAMESPACE\_PACKAGES@{MONKEYPATCH\_LEGACY\_NAMESPACE\_PACKAGES}}
+\index{MONKEYPATCH\_LEGACY\_NAMESPACE\_PACKAGES@{MONKEYPATCH\_LEGACY\_NAMESPACE\_PACKAGES}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{MONKEYPATCH\_LEGACY\_NAMESPACE\_PACKAGES}{MONKEYPATCH\_LEGACY\_NAMESPACE\_PACKAGES}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_abf0ea8f0540b137637a3deb83d1d7fa8} 
+\+\_\+pytest.\+deprecated.\+MONKEYPATCH\+\_\+\+LEGACY\+\_\+\+NAMESPACE\+\_\+\+PACKAGES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ PytestRemovedIn10Warning(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}monkeypatch.syspath\_prepend()\ called\ with\ pkg\_resources\ legacy\ namespace\ packages\ detected.\(\backslash\)n"{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}Legacy\ namespace\ packages\ (using\ pkg\_resources.declare\_namespace)\ are\ deprecated.\(\backslash\)n"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}Please\ use\ native\ namespace\ packages\ (PEP\ 420)\ instead.\(\backslash\)n"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}See\ https://docs.pytest.org/en/stable/deprecations.html\#monkeypatch-\/fixup-\/namespace-\/packages"{}}}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1deprecated_ab1511026a8524cd929b536d809a76cc8}\index{\_pytest.deprecated@{\_pytest.deprecated}!NODE\_CTOR\_FSPATH\_ARG@{NODE\_CTOR\_FSPATH\_ARG}}
+\index{NODE\_CTOR\_FSPATH\_ARG@{NODE\_CTOR\_FSPATH\_ARG}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{NODE\_CTOR\_FSPATH\_ARG}{NODE\_CTOR\_FSPATH\_ARG}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_ab1511026a8524cd929b536d809a76cc8} 
+\+\_\+pytest.\+deprecated.\+NODE\+\_\+\+CTOR\+\_\+\+FSPATH\+\_\+\+ARG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ UnformattedWarning(}
+\DoxyCodeLine{00002\ \ \ \ \ PytestRemovedIn9Warning,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}The\ (fspath:\ py.path.local)\ argument\ to\ \{node\_type\_name\}\ is\ deprecated.\ "{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}Please\ use\ the\ (path:\ pathlib.Path)\ argument\ instead.\(\backslash\)n"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}See\ https://docs.pytest.org/en/latest/deprecations.html"{}}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}\#fspath-\/argument-\/for-\/node-\/constructors-\/replaced-\/with-\/pathlib-\/path"{}},}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1deprecated_a24b3f1b8fdc8551af2e25c26cd31d682}\index{\_pytest.deprecated@{\_pytest.deprecated}!PRIVATE@{PRIVATE}}
+\index{PRIVATE@{PRIVATE}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{PRIVATE}{PRIVATE}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_a24b3f1b8fdc8551af2e25c26cd31d682} 
+\+\_\+pytest.\+deprecated.\+PRIVATE = \mbox{\hyperlink{class__pytest_1_1warning__types_1_1_pytest_deprecation_warning}{Pytest\+Deprecation\+Warning}}("{}A private pytest class or function was used."{})}
+
+\Hypertarget{namespace__pytest_1_1deprecated_afb68aa41149bdd86cbfa8b428ed8cd01}\index{\_pytest.deprecated@{\_pytest.deprecated}!YIELD\_FIXTURE@{YIELD\_FIXTURE}}
+\index{YIELD\_FIXTURE@{YIELD\_FIXTURE}!\_pytest.deprecated@{\_pytest.deprecated}}
+\doxysubsubsection{\texorpdfstring{YIELD\_FIXTURE}{YIELD\_FIXTURE}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1deprecated_afb68aa41149bdd86cbfa8b428ed8cd01} 
+\+\_\+pytest.\+deprecated.\+YIELD\+\_\+\+FIXTURE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ PytestDeprecationWarning(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}@pytest.yield\_fixture\ is\ deprecated.\(\backslash\)n"{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}Use\ @pytest.fixture\ instead;\ they\ are\ the\ same."{}}}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}

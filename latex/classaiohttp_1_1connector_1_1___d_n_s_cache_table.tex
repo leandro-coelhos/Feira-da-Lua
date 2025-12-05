@@ -1,0 +1,108 @@
+\doxysection{aiohttp.\+connector.\+\_\+\+DNSCache\+Table Class Reference}
+\hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table}{}\label{classaiohttp_1_1connector_1_1___d_n_s_cache_table}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a963ed3bbf4e08d9f740f90db381289fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Optional\mbox{[}float\mbox{]} ttl=None)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_adc04d05586a0fb01f5a0f2f1042e2400}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, object host)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a986a05b6a02d72276503d813364df6d4}{add}} (self, Tuple\mbox{[}str, int\mbox{]} key, List\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_resolve_result}{Resolve\+Result}}\mbox{]} addrs)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a2a784f144cdf07a525b8c1d4c209923c}{remove}} (self, Tuple\mbox{[}str, int\mbox{]} key)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a9265afc55b4c2c758fe2f15584a7f080}{clear}} (self)
+\item 
+List\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_resolve_result}{Resolve\+Result}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a1ddd067315631d7104276ee8a28b0d7a}{next\+\_\+addrs}} (self, Tuple\mbox{[}str, int\mbox{]} key)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a775443af4f8db577a441785bfe1c0d65}{expired}} (self, Tuple\mbox{[}str, int\mbox{]} key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a2d5cc6dbf99fb0db78be38945fcda40e}{\+\_\+addrs\+\_\+rr}} = \{\}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_acd25b5b2b7f1fecc8bff137e8730fea8}{\+\_\+timestamps}} = \{\}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1___d_n_s_cache_table_ab57298b1adada1c2c6ddf74f0aca1cda}{\+\_\+ttl}} = ttl
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a963ed3bbf4e08d9f740f90db381289fc}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a963ed3bbf4e08d9f740f90db381289fc} 
+ None aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}float\mbox{]} }]{ttl}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_adc04d05586a0fb01f5a0f2f1042e2400}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_adc04d05586a0fb01f5a0f2f1042e2400} 
+ bool aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{host}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a986a05b6a02d72276503d813364df6d4}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!add@{add}}
+\index{add@{add}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a986a05b6a02d72276503d813364df6d4} 
+ None aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tuple\mbox{[}str, int\mbox{]}}]{key}{, }\item[{List\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_resolve_result}{Resolve\+Result}}\mbox{]}}]{addrs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a9265afc55b4c2c758fe2f15584a7f080}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!clear@{clear}}
+\index{clear@{clear}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a9265afc55b4c2c758fe2f15584a7f080} 
+ None aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a775443af4f8db577a441785bfe1c0d65}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!expired@{expired}}
+\index{expired@{expired}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{expired()}{expired()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a775443af4f8db577a441785bfe1c0d65} 
+ bool aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+expired (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tuple\mbox{[}str, int\mbox{]}}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a1ddd067315631d7104276ee8a28b0d7a}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!next\_addrs@{next\_addrs}}
+\index{next\_addrs@{next\_addrs}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{next\_addrs()}{next\_addrs()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a1ddd067315631d7104276ee8a28b0d7a} 
+ List\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_resolve_result}{Resolve\+Result}}\mbox{]} aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+next\+\_\+addrs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tuple\mbox{[}str, int\mbox{]}}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a2a784f144cdf07a525b8c1d4c209923c}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!remove@{remove}}
+\index{remove@{remove}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a2a784f144cdf07a525b8c1d4c209923c} 
+ None aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tuple\mbox{[}str, int\mbox{]}}]{key}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a2d5cc6dbf99fb0db78be38945fcda40e}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!\_addrs\_rr@{\_addrs\_rr}}
+\index{\_addrs\_rr@{\_addrs\_rr}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{\_addrs\_rr}{\_addrs\_rr}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_a2d5cc6dbf99fb0db78be38945fcda40e} 
+dict aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+\_\+addrs\+\_\+rr = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_acd25b5b2b7f1fecc8bff137e8730fea8}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!\_timestamps@{\_timestamps}}
+\index{\_timestamps@{\_timestamps}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{\_timestamps}{\_timestamps}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_acd25b5b2b7f1fecc8bff137e8730fea8} 
+dict aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+\_\+timestamps = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1___d_n_s_cache_table_ab57298b1adada1c2c6ddf74f0aca1cda}\index{aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}!\_ttl@{\_ttl}}
+\index{\_ttl@{\_ttl}!aiohttp.connector.\_DNSCacheTable@{aiohttp.connector.\_DNSCacheTable}}
+\doxysubsubsection{\texorpdfstring{\_ttl}{\_ttl}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1___d_n_s_cache_table_ab57298b1adada1c2c6ddf74f0aca1cda} 
+aiohttp.\+connector.\+\_\+\+DNSCache\+Table.\+\_\+ttl = ttl\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{connector_8py}{connector.\+py}}\end{DoxyCompactItemize}

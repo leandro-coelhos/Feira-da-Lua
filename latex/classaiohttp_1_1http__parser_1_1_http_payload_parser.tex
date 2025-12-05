@@ -1,0 +1,143 @@
+\doxysection{aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser Class Reference}
+\hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser}{}\label{classaiohttp_1_1http__parser_1_1_http_payload_parser}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_ab01f8dcd07365365b2f35893929cc268}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{Stream\+Reader}} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_afa712cbdc9c940275a2795d68adc3f13}{payload}}, Optional\mbox{[}int\mbox{]} length=None, bool chunked=False, Optional\mbox{[}str\mbox{]} compression=None, Optional\mbox{[}int\mbox{]} code=None, Optional\mbox{[}str\mbox{]} method=None, bool response\+\_\+with\+\_\+body=True, bool auto\+\_\+decompress=True, bool lax=False, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_headers_parser}{Headers\+Parser}} headers\+\_\+parser)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a106421a711b5463a860502c94e31ee81}{feed\+\_\+eof}} (self)
+\item 
+Tuple\mbox{[}bool, bytes\mbox{]} \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_adb90af713f849c7b18628e7ebd7a95cd}{feed\+\_\+data}} (self, bytes chunk, \mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a806dbc168d14a54d815fef854a2dc9ee}{\+\_\+\+SEP}} SEP=b"{}\textbackslash{}r\textbackslash{}n"{}, bytes CHUNK\+\_\+\+EXT=b"{};"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a54915cfbfa9e74d5bc93cea179496a8d}{done}} = False
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_afa712cbdc9c940275a2795d68adc3f13}{payload}} = real\+\_\+payload
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a5219f3a0afe845d5f82249f065879280}{\+\_\+length}} = 0
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_adf7db1d85f2bb5bf5f3687d91e9b3bff}{\+\_\+type}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_parse_state_a1640b917e6dec531e1b352b6a3aa08bb}{Parse\+State.\+PARSE\+\_\+\+UNTIL\+\_\+\+EOF}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a455e505321b8836d6680dedd03bf048f}{\+\_\+chunk}} = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_chunk_state_aa46ef3fcfd39659246ad5f0103aa2095}{Chunk\+State.\+PARSE\+\_\+\+CHUNKED\+\_\+\+SIZE}}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_acd64ad67e7e78febce3cf8d512e21924}{\+\_\+chunk\+\_\+size}} = 0
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a2cfb76c9743797d89af7208c3183d534}{\+\_\+chunk\+\_\+tail}} = b"{}"{}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_af033ae826fc25085972aed4050b4d85f}{\+\_\+auto\+\_\+decompress}} = auto\+\_\+decompress
+\item 
+\# Allow whitespace in lax mode. \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a3b4fd29ed76962fee8f9be7582ad97d2}{\+\_\+lax}} = lax
+\item 
+\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a4065e88574cf6bb0f0bf43417473aa69}{\+\_\+headers\+\_\+parser}} = headers\+\_\+parser
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_http_payload_parser_a877cfe8c3a7a4ea7d3c43294ecef4e2b}{\+\_\+trailer\+\_\+lines}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_ab01f8dcd07365365b2f35893929cc268}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_ab01f8dcd07365365b2f35893929cc268} 
+ None aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1streams_1_1_stream_reader}{Stream\+Reader}}}]{payload}{, }\item[{Optional\mbox{[}int\mbox{]} }]{length}{ = {\ttfamily None}, }\item[{bool }]{chunked}{ = {\ttfamily False}, }\item[{Optional\mbox{[}str\mbox{]} }]{compression}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{code}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{method}{ = {\ttfamily None}, }\item[{bool }]{response\+\_\+with\+\_\+body}{ = {\ttfamily True}, }\item[{bool }]{auto\+\_\+decompress}{ = {\ttfamily True}, }\item[{bool }]{lax}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_headers_parser}{Headers\+Parser}}}]{headers\+\_\+parser}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_adb90af713f849c7b18628e7ebd7a95cd}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!feed\_data@{feed\_data}}
+\index{feed\_data@{feed\_data}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{feed\_data()}{feed\_data()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_adb90af713f849c7b18628e7ebd7a95cd} 
+ Tuple\mbox{[}bool, bytes\mbox{]} aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+feed\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{chunk}{, }\item[{\mbox{\hyperlink{namespaceaiohttp_1_1http__parser_a806dbc168d14a54d815fef854a2dc9ee}{\+\_\+\+SEP}} }]{SEP}{ = {\ttfamily b"{}\textbackslash{}r\textbackslash{}n"{}}, }\item[{bytes }]{CHUNK\+\_\+\+EXT}{ = {\ttfamily b"{};"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a106421a711b5463a860502c94e31ee81}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!feed\_eof@{feed\_eof}}
+\index{feed\_eof@{feed\_eof}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{feed\_eof()}{feed\_eof()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a106421a711b5463a860502c94e31ee81} 
+ None aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+feed\+\_\+eof (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_af033ae826fc25085972aed4050b4d85f}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_auto\_decompress@{\_auto\_decompress}}
+\index{\_auto\_decompress@{\_auto\_decompress}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_auto\_decompress}{\_auto\_decompress}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_af033ae826fc25085972aed4050b4d85f} 
+aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+auto\+\_\+decompress = auto\+\_\+decompress\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a455e505321b8836d6680dedd03bf048f}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_chunk@{\_chunk}}
+\index{\_chunk@{\_chunk}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_chunk}{\_chunk}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a455e505321b8836d6680dedd03bf048f} 
+aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+chunk = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_chunk_state_aa46ef3fcfd39659246ad5f0103aa2095}{Chunk\+State.\+PARSE\+\_\+\+CHUNKED\+\_\+\+SIZE}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_acd64ad67e7e78febce3cf8d512e21924}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_chunk\_size@{\_chunk\_size}}
+\index{\_chunk\_size@{\_chunk\_size}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_chunk\_size}{\_chunk\_size}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_acd64ad67e7e78febce3cf8d512e21924} 
+int aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+chunk\+\_\+size = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a2cfb76c9743797d89af7208c3183d534}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_chunk\_tail@{\_chunk\_tail}}
+\index{\_chunk\_tail@{\_chunk\_tail}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_chunk\_tail}{\_chunk\_tail}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a2cfb76c9743797d89af7208c3183d534} 
+str aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+chunk\+\_\+tail = b"{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a4065e88574cf6bb0f0bf43417473aa69}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_headers\_parser@{\_headers\_parser}}
+\index{\_headers\_parser@{\_headers\_parser}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_headers\_parser}{\_headers\_parser}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a4065e88574cf6bb0f0bf43417473aa69} 
+aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+headers\+\_\+parser = headers\+\_\+parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a3b4fd29ed76962fee8f9be7582ad97d2}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_lax@{\_lax}}
+\index{\_lax@{\_lax}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_lax}{\_lax}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a3b4fd29ed76962fee8f9be7582ad97d2} 
+\# Allow whitespace in lax mode. aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+lax = lax\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a5219f3a0afe845d5f82249f065879280}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_length@{\_length}}
+\index{\_length@{\_length}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_length}{\_length}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a5219f3a0afe845d5f82249f065879280} 
+int aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+length = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a877cfe8c3a7a4ea7d3c43294ecef4e2b}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_trailer\_lines@{\_trailer\_lines}}
+\index{\_trailer\_lines@{\_trailer\_lines}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_trailer\_lines}{\_trailer\_lines}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a877cfe8c3a7a4ea7d3c43294ecef4e2b} 
+list aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+trailer\+\_\+lines = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_adf7db1d85f2bb5bf5f3687d91e9b3bff}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!\_type@{\_type}}
+\index{\_type@{\_type}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{\_type}{\_type}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_adf7db1d85f2bb5bf5f3687d91e9b3bff} 
+aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+\_\+type = \mbox{\hyperlink{classaiohttp_1_1http__parser_1_1_parse_state_a1640b917e6dec531e1b352b6a3aa08bb}{Parse\+State.\+PARSE\+\_\+\+UNTIL\+\_\+\+EOF}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_a54915cfbfa9e74d5bc93cea179496a8d}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!done@{done}}
+\index{done@{done}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_a54915cfbfa9e74d5bc93cea179496a8d} 
+bool aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+done = False}
+
+\Hypertarget{classaiohttp_1_1http__parser_1_1_http_payload_parser_afa712cbdc9c940275a2795d68adc3f13}\index{aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}!payload@{payload}}
+\index{payload@{payload}!aiohttp.http\_parser.HttpPayloadParser@{aiohttp.http\_parser.HttpPayloadParser}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1http__parser_1_1_http_payload_parser_afa712cbdc9c940275a2795d68adc3f13} 
+aiohttp.\+http\+\_\+parser.\+Http\+Payload\+Parser.\+payload = real\+\_\+payload}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{http__parser_8py}{http\+\_\+parser.\+py}}\end{DoxyCompactItemize}

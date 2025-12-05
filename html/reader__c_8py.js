@@ -1,0 +1,26 @@
+var reader__c_8py =
+[
+    [ "aiohttp._websocket.reader_c.WebSocketDataQueue", "classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_data_queue.html", "classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_data_queue" ],
+    [ "aiohttp._websocket.reader_c.WebSocketReader", "classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader.html", "classaiohttp_1_1__websocket_1_1reader__c_1_1_web_socket_reader" ],
+    [ "aiohttp._websocket.reader_c.ALLOWED_CLOSE_CODES", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#ad923b0bb218da3df1b1d991db72cb6d6", null ],
+    [ "aiohttp._websocket.reader_c.COMPRESSED_FALSE", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a8287b384ccd87ce8674e7749af3223e8", null ],
+    [ "aiohttp._websocket.reader_c.COMPRESSED_NOT_SET", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#ab5b240b1f091c5d0ef8ac9686b8a93f9", null ],
+    [ "aiohttp._websocket.reader_c.COMPRESSED_TRUE", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a8a42158006cde21024fcc1175496b16d", null ],
+    [ "aiohttp._websocket.reader_c.cython_int", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a35e7b48943945b659ccd83b2e96fd9ef", null ],
+    [ "aiohttp._websocket.reader_c.EMPTY_FRAME", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#ad3165a0914d913d91b616a223a34aff6", null ],
+    [ "aiohttp._websocket.reader_c.EMPTY_FRAME_ERROR", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a8909e9c958333a6e9e3cd8dddafa951e", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_BINARY", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a65053b5a0d2ebf9f3470503fee16a1c8", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_CLOSE", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a3a097e769be0613c0492c34e19f8359b", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_CONTINUATION", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a83ffb2cd08ee8586a8d6e8ca7cefd623", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_NOT_SET", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#ae8697fd08a2b4449c831bcbeefd080fa", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_PING", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#af8ce9cffcab8f29cc5ddc2aab7c8e827", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_PONG", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#ad85488b9f53935492b6d9756d32f907a", null ],
+    [ "aiohttp._websocket.reader_c.OP_CODE_TEXT", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a4acd039a1132618d68e0804ddc59ae72", null ],
+    [ "aiohttp._websocket.reader_c.READ_HEADER", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a748c77ad30c6d178cd31849ec0899cbb", null ],
+    [ "aiohttp._websocket.reader_c.READ_PAYLOAD", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a4a1b80c0618c1b498d569dba6c1b734f", null ],
+    [ "aiohttp._websocket.reader_c.READ_PAYLOAD_LENGTH", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a6f4f6238a19a6605c8948885fa839e08", null ],
+    [ "aiohttp._websocket.reader_c.READ_PAYLOAD_MASK", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a7f4aadf05a89bfcb7777a3357f1bfab5", null ],
+    [ "aiohttp._websocket.reader_c.TUPLE_NEW", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#adf335440239da9e987fce15e8d8a6482", null ],
+    [ "aiohttp._websocket.reader_c.WS_MSG_TYPE_BINARY", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a66505b8559b278f584009038cbba09c7", null ],
+    [ "aiohttp._websocket.reader_c.WS_MSG_TYPE_TEXT", "namespaceaiohttp_1_1__websocket_1_1reader__c.html#a1d110dcfd47392e7a41ea6c0edf2920e", null ]
+];

@@ -1,0 +1,123 @@
+\doxysection{django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation}{}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a16b8ce7cc5a49170d68634f14a3cbdf6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a4b48612ed916aef95d2b2a2ce960f546}{relation\+\_\+name}}, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a6f0121bf39e5a8894ecf5b5252006df2}{condition}}=\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_q}{Q}}())
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ab58c32cfc0669c190e2e9ecec0ed06b8}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_aaf3e959023ac69e42587bd1fa4c23679}{clone}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a54721cf88cda04227bc9137fac94d470}{relabeled\+\_\+clone}} (self, change\+\_\+map)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a3f24fb1b73679c55925f8e4dcd511536}{resolve\+\_\+expression}} (self, query, reuse, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ab330bc2ee45998d31299accfb630092a}{as\+\_\+sql}} (self, compiler, \mbox{\hyperlink{namespacedjango_1_1db_ae7b00a677e3c99c34670870d343c0341}{connection}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a4b48612ed916aef95d2b2a2ce960f546}{relation\+\_\+name}} = relation\+\_\+name
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a909935fea4dad8824daa6330aaa3b67a}{alias}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a6f0121bf39e5a8894ecf5b5252006df2}{condition}} = condition
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_aa6e7ef39cb25e8bc073e36462d8bc8b0}{resolved\+\_\+condition}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ad97957761839782967a9d536a364af09}{\+\_\+\+\_\+class\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Specify custom filtering in the ON clause of SQL joins.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a16b8ce7cc5a49170d68634f14a3cbdf6}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a16b8ce7cc5a49170d68634f14a3cbdf6} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{relation\+\_\+name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{condition}{ = {\ttfamily \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1_q}{Q}}()}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ab58c32cfc0669c190e2e9ecec0ed06b8}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ab58c32cfc0669c190e2e9ecec0ed06b8} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ab330bc2ee45998d31299accfb630092a}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!as\_sql@{as\_sql}}
+\index{as\_sql@{as\_sql}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{as\_sql()}{as\_sql()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ab330bc2ee45998d31299accfb630092a} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+as\+\_\+sql (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{compiler}{, }\item[{}]{connection}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_aaf3e959023ac69e42587bd1fa4c23679}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!clone@{clone}}
+\index{clone@{clone}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_aaf3e959023ac69e42587bd1fa4c23679} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+clone (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a54721cf88cda04227bc9137fac94d470}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!relabeled\_clone@{relabeled\_clone}}
+\index{relabeled\_clone@{relabeled\_clone}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{relabeled\_clone()}{relabeled\_clone()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a54721cf88cda04227bc9137fac94d470} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+relabeled\+\_\+clone (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{change\+\_\+map}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a3f24fb1b73679c55925f8e4dcd511536}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!resolve\_expression@{resolve\_expression}}
+\index{resolve\_expression@{resolve\_expression}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{resolve\_expression()}{resolve\_expression()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a3f24fb1b73679c55925f8e4dcd511536} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+resolve\+\_\+expression (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{query}{, }\item[{}]{reuse}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ad97957761839782967a9d536a364af09}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!\_\_class\_\_@{\_\_class\_\_}}
+\index{\_\_class\_\_@{\_\_class\_\_}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{\_\_class\_\_}{\_\_class\_\_}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_ad97957761839782967a9d536a364af09} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+\_\+\+\_\+class\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a909935fea4dad8824daa6330aaa3b67a}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!alias@{alias}}
+\index{alias@{alias}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{alias}{alias}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a909935fea4dad8824daa6330aaa3b67a} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+alias = None}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a6f0121bf39e5a8894ecf5b5252006df2}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!condition@{condition}}
+\index{condition@{condition}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{condition}{condition}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a6f0121bf39e5a8894ecf5b5252006df2} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+condition = condition}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a4b48612ed916aef95d2b2a2ce960f546}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!relation\_name@{relation\_name}}
+\index{relation\_name@{relation\_name}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{relation\_name}{relation\_name}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_a4b48612ed916aef95d2b2a2ce960f546} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+relation\+\_\+name = relation\+\_\+name}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_aa6e7ef39cb25e8bc073e36462d8bc8b0}\index{django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}!resolved\_condition@{resolved\_condition}}
+\index{resolved\_condition@{resolved\_condition}!django.db.models.query\_utils.FilteredRelation@{django.db.models.query\_utils.FilteredRelation}}
+\doxysubsubsection{\texorpdfstring{resolved\_condition}{resolved\_condition}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query__utils_1_1_filtered_relation_aa6e7ef39cb25e8bc073e36462d8bc8b0} 
+django.\+db.\+models.\+query\+\_\+utils.\+Filtered\+Relation.\+resolved\+\_\+condition = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/\mbox{\hyperlink{query__utils_8py}{query\+\_\+utils.\+py}}\end{DoxyCompactItemize}

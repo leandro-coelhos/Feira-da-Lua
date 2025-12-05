@@ -1,0 +1,124 @@
+\doxysection{django.\+views.\+decorators.\+http Namespace Reference}
+\hypertarget{namespacedjango_1_1views_1_1decorators_1_1http}{}\label{namespacedjango_1_1views_1_1decorators_1_1http}\index{django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}} (request\+\_\+method\+\_\+list)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a3ca1200ee3e1cf7cda405f8c10b08ded}{condition}} (etag\+\_\+func=None, last\+\_\+modified\+\_\+func=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a1ca9f68efc03a8655fcfbe963fca9c8b}{etag}} (etag\+\_\+func)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a88c4edd7fb42622f52f0856ff06d7e37}{last\+\_\+modified}} (last\+\_\+modified\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_ac7d0ee281180c7870477168bbbca78aa}{conditional\+\_\+page}} = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1middleware_1_1http_1_1_conditional_get_middleware}{Conditional\+Get\+Middleware}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a1a7c926c4bed2f9fdb76a18d9923be9c}{require\+\_\+\+GET}} = \mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}}(\mbox{[}"{}GET"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a31cc365f878b912c8083487d784d89f6}{\+\_\+\+\_\+doc\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a96090bcc98b726a7b9fb7cc0ea648b96}{require\+\_\+\+POST}} = \mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}}(\mbox{[}"{}POST"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a31a42bd1b6cd38e834bf190fa396439d}{require\+\_\+safe}} = \mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}}(\mbox{[}"{}GET"{}, "{}HEAD"{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Decorators for views based on HTTP headers.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a3ca1200ee3e1cf7cda405f8c10b08ded}\index{django.views.decorators.http@{django.views.decorators.http}!condition@{condition}}
+\index{condition@{condition}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{condition()}{condition()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a3ca1200ee3e1cf7cda405f8c10b08ded} 
+django.\+views.\+decorators.\+http.\+condition (\begin{DoxyParamCaption}\item[{}]{etag\+\_\+func}{ = {\ttfamily None}, }\item[{}]{last\+\_\+modified\+\_\+func}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to support conditional retrieval (or change) for a view
+function.
+
+The parameters are callables to compute the ETag and last modified time for
+the requested resource, respectively. The callables are passed the same
+parameters as the view itself. The ETag function should return a string (or
+None if the resource doesn't exist), while the last_modified function
+should return a datetime object (or None if the resource doesn't exist).
+
+The ETag function should return a complete ETag, including quotes (e.g.
+'"etag"'), since that's the only way to distinguish between weak and strong
+ETags. If an unquoted ETag is returned (e.g. 'etag'), it will be converted
+to a strong ETag by adding quotes.
+
+This decorator will either pass control to the wrapped view function or
+return an HTTP 304 response (unmodified) or 412 response (precondition
+failed), depending upon the request method. In either case, the decorator
+will add the generated ETag and Last-Modified headers to the response if
+the headers aren't already set and if the request's method is safe.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a1ca9f68efc03a8655fcfbe963fca9c8b}\index{django.views.decorators.http@{django.views.decorators.http}!etag@{etag}}
+\index{etag@{etag}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{etag()}{etag()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a1ca9f68efc03a8655fcfbe963fca9c8b} 
+django.\+views.\+decorators.\+http.\+etag (\begin{DoxyParamCaption}\item[{}]{etag\+\_\+func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a88c4edd7fb42622f52f0856ff06d7e37}\index{django.views.decorators.http@{django.views.decorators.http}!last\_modified@{last\_modified}}
+\index{last\_modified@{last\_modified}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{last\_modified()}{last\_modified()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a88c4edd7fb42622f52f0856ff06d7e37} 
+django.\+views.\+decorators.\+http.\+last\+\_\+modified (\begin{DoxyParamCaption}\item[{}]{last\+\_\+modified\+\_\+func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}\index{django.views.decorators.http@{django.views.decorators.http}!require\_http\_methods@{require\_http\_methods}}
+\index{require\_http\_methods@{require\_http\_methods}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{require\_http\_methods()}{require\_http\_methods()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965} 
+django.\+views.\+decorators.\+http.\+require\+\_\+http\+\_\+methods (\begin{DoxyParamCaption}\item[{}]{request\+\_\+method\+\_\+list}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to make a view only accept particular request methods.  Usage::
+
+    @require_http_methods(["GET", "POST"])
+    def my_view(request):
+        # I can assume now that only GET or POST requests make it this far
+        # ...
+
+Note that request methods should be in uppercase.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a31cc365f878b912c8083487d784d89f6}\index{django.views.decorators.http@{django.views.decorators.http}!\_\_doc\_\_@{\_\_doc\_\_}}
+\index{\_\_doc\_\_@{\_\_doc\_\_}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{\_\_doc\_\_}{\_\_doc\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a31cc365f878b912c8083487d784d89f6} 
+django.\+views.\+decorators.\+http.\+\_\+\+\_\+doc\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_ac7d0ee281180c7870477168bbbca78aa}\index{django.views.decorators.http@{django.views.decorators.http}!conditional\_page@{conditional\_page}}
+\index{conditional\_page@{conditional\_page}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{conditional\_page}{conditional\_page}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_ac7d0ee281180c7870477168bbbca78aa} 
+django.\+views.\+decorators.\+http.\+conditional\+\_\+page = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1middleware_1_1http_1_1_conditional_get_middleware}{Conditional\+Get\+Middleware}})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a1a7c926c4bed2f9fdb76a18d9923be9c}\index{django.views.decorators.http@{django.views.decorators.http}!require\_GET@{require\_GET}}
+\index{require\_GET@{require\_GET}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{require\_GET}{require\_GET}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a1a7c926c4bed2f9fdb76a18d9923be9c} 
+django.\+views.\+decorators.\+http.\+require\+\_\+\+GET = \mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}}(\mbox{[}"{}GET"{}\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a96090bcc98b726a7b9fb7cc0ea648b96}\index{django.views.decorators.http@{django.views.decorators.http}!require\_POST@{require\_POST}}
+\index{require\_POST@{require\_POST}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{require\_POST}{require\_POST}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a96090bcc98b726a7b9fb7cc0ea648b96} 
+django.\+views.\+decorators.\+http.\+require\+\_\+\+POST = \mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}}(\mbox{[}"{}POST"{}\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1http_a31a42bd1b6cd38e834bf190fa396439d}\index{django.views.decorators.http@{django.views.decorators.http}!require\_safe@{require\_safe}}
+\index{require\_safe@{require\_safe}!django.views.decorators.http@{django.views.decorators.http}}
+\doxysubsubsection{\texorpdfstring{require\_safe}{require\_safe}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1http_a31a42bd1b6cd38e834bf190fa396439d} 
+django.\+views.\+decorators.\+http.\+require\+\_\+safe = \mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1http_a9186c393da9b4f23ac8bf236261e7965}{require\+\_\+http\+\_\+methods}}(\mbox{[}"{}GET"{}, "{}HEAD"{}\mbox{]})}
+

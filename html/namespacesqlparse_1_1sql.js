@@ -1,0 +1,26 @@
+var namespacesqlparse_1_1sql =
+[
+    [ "Assignment", "classsqlparse_1_1sql_1_1_assignment.html", null ],
+    [ "Begin", "classsqlparse_1_1sql_1_1_begin.html", "classsqlparse_1_1sql_1_1_begin" ],
+    [ "Case", "classsqlparse_1_1sql_1_1_case.html", "classsqlparse_1_1sql_1_1_case" ],
+    [ "Command", "classsqlparse_1_1sql_1_1_command.html", null ],
+    [ "Comment", "classsqlparse_1_1sql_1_1_comment.html", "classsqlparse_1_1sql_1_1_comment" ],
+    [ "Comparison", "classsqlparse_1_1sql_1_1_comparison.html", "classsqlparse_1_1sql_1_1_comparison" ],
+    [ "For", "classsqlparse_1_1sql_1_1_for.html", "classsqlparse_1_1sql_1_1_for" ],
+    [ "Function", "classsqlparse_1_1sql_1_1_function.html", "classsqlparse_1_1sql_1_1_function" ],
+    [ "Having", "classsqlparse_1_1sql_1_1_having.html", "classsqlparse_1_1sql_1_1_having" ],
+    [ "Identifier", "classsqlparse_1_1sql_1_1_identifier.html", "classsqlparse_1_1sql_1_1_identifier" ],
+    [ "IdentifierList", "classsqlparse_1_1sql_1_1_identifier_list.html", "classsqlparse_1_1sql_1_1_identifier_list" ],
+    [ "If", "classsqlparse_1_1sql_1_1_if.html", "classsqlparse_1_1sql_1_1_if" ],
+    [ "NameAliasMixin", "classsqlparse_1_1sql_1_1_name_alias_mixin.html", "classsqlparse_1_1sql_1_1_name_alias_mixin" ],
+    [ "Operation", "classsqlparse_1_1sql_1_1_operation.html", null ],
+    [ "Over", "classsqlparse_1_1sql_1_1_over.html", "classsqlparse_1_1sql_1_1_over" ],
+    [ "Parenthesis", "classsqlparse_1_1sql_1_1_parenthesis.html", "classsqlparse_1_1sql_1_1_parenthesis" ],
+    [ "SquareBrackets", "classsqlparse_1_1sql_1_1_square_brackets.html", "classsqlparse_1_1sql_1_1_square_brackets" ],
+    [ "Statement", "classsqlparse_1_1sql_1_1_statement.html", "classsqlparse_1_1sql_1_1_statement" ],
+    [ "Token", "classsqlparse_1_1sql_1_1_token.html", "classsqlparse_1_1sql_1_1_token" ],
+    [ "TokenList", "classsqlparse_1_1sql_1_1_token_list.html", "classsqlparse_1_1sql_1_1_token_list" ],
+    [ "TypedLiteral", "classsqlparse_1_1sql_1_1_typed_literal.html", "classsqlparse_1_1sql_1_1_typed_literal" ],
+    [ "Values", "classsqlparse_1_1sql_1_1_values.html", null ],
+    [ "Where", "classsqlparse_1_1sql_1_1_where.html", "classsqlparse_1_1sql_1_1_where" ]
+];

@@ -1,0 +1,74 @@
+\doxysection{django.\+db.\+migrations.\+optimizer.\+Migration\+Optimizer Class Reference}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer}{}\label{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer}\index{django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a3930754d1717833eb5d63f786f22da28}{optimize}} (self, operations, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a896a290e9c5f1f7fca6e93be3b54f016}{optimize\+\_\+inner}} (self, operations, app\+\_\+label)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a67afd93da5d87491dc5d5979a2389169}{\+\_\+iterations}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Power the optimization process, where you provide a list of Operations
+and you are returned a list of equal or shorter length - operations
+are merged into one if possible.
+
+For example, a CreateModel and an AddField can be optimized into a
+new CreateModel, and CreateModel and DeleteModel can be optimized into
+nothing.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a3930754d1717833eb5d63f786f22da28}\index{django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}!optimize@{optimize}}
+\index{optimize@{optimize}!django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}}
+\doxysubsubsection{\texorpdfstring{optimize()}{optimize()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a3930754d1717833eb5d63f786f22da28} 
+django.\+db.\+migrations.\+optimizer.\+Migration\+Optimizer.\+optimize (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operations}{, }\item[{}]{app\+\_\+label}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main optimization entry point. Pass in a list of Operation instances,
+get out a new list of Operation instances.
+
+Unfortunately, due to the scope of the optimization (two combinable
+operations might be separated by several hundred others), this can't be
+done as a peephole optimization with checks/output implemented on
+the Operations themselves; instead, the optimizer looks at each
+individual operation and scans forwards in the list to see if there
+are any matches, stopping at boundaries - operations which can't
+be optimized over (RunSQL, operations on the same field/model, etc.)
+
+The inner loop is run until the starting list is the same as the result
+list, and then the result is returned. This means that operation
+optimization must be stable and always return an equal or shorter list.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a896a290e9c5f1f7fca6e93be3b54f016}\index{django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}!optimize\_inner@{optimize\_inner}}
+\index{optimize\_inner@{optimize\_inner}!django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}}
+\doxysubsubsection{\texorpdfstring{optimize\_inner()}{optimize\_inner()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a896a290e9c5f1f7fca6e93be3b54f016} 
+django.\+db.\+migrations.\+optimizer.\+Migration\+Optimizer.\+optimize\+\_\+inner (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operations}{, }\item[{}]{app\+\_\+label}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inner optimization loop.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a67afd93da5d87491dc5d5979a2389169}\index{django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}!\_iterations@{\_iterations}}
+\index{\_iterations@{\_iterations}!django.db.migrations.optimizer.MigrationOptimizer@{django.db.migrations.optimizer.MigrationOptimizer}}
+\doxysubsubsection{\texorpdfstring{\_iterations}{\_iterations}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1optimizer_1_1_migration_optimizer_a67afd93da5d87491dc5d5979a2389169} 
+int django.\+db.\+migrations.\+optimizer.\+Migration\+Optimizer.\+\_\+iterations = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/migrations/\mbox{\hyperlink{optimizer_8py}{optimizer.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\doxysection{pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set Class Reference}
+\hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set}{}\label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a2d736a72160569b228b87a693d4fb914}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae0cd02dd40841c8bb39d4c1b6ddd506c}{check\+\_\+supported\+\_\+wheels}}=True)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae590481a85140875b6986abbd5f33729}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a8fe265baf36c7abd85a85bb625952336}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ad37f233a59ffe8b49c43a6134bd8d2eb}{add\+\_\+unnamed\+\_\+requirement}} (self, \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} install\+\_\+req)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a70686d50122dba1ecd53d844aa346220}{add\+\_\+named\+\_\+requirement}} (self, \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} install\+\_\+req)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_afcda10978eb60d78456ae5e81aca9dce}{has\+\_\+requirement}} (self, str name)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ac157ecb51d66efd369fcd0dedd2c4b7d}{get\+\_\+requirement}} (self, str name)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a6fa8d1fe9f1c700bc7acd362af9769e2}{all\+\_\+requirements}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a108d01bc8f7c67866f9360741a780f1c}{requirements\+\_\+to\+\_\+install}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict\mbox{[}str, \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_aeca4aa07b96013011a61cae595df433f}{requirements}} = Ordered\+Dict()
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae0cd02dd40841c8bb39d4c1b6ddd506c}{check\+\_\+supported\+\_\+wheels}} = check\+\_\+supported\+\_\+wheels
+\item 
+list \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_adb2f121fde36d0d1398ef4c53d347e87}{unnamed\+\_\+requirements}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a2d736a72160569b228b87a693d4fb914}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a2d736a72160569b228b87a693d4fb914} 
+ None pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{check\+\_\+supported\+\_\+wheels}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a RequirementSet.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a8fe265baf36c7abd85a85bb625952336}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a8fe265baf36c7abd85a85bb625952336} 
+ str pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae590481a85140875b6986abbd5f33729}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae590481a85140875b6986abbd5f33729} 
+ str pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a70686d50122dba1ecd53d844aa346220}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!add\_named\_requirement@{add\_named\_requirement}}
+\index{add\_named\_requirement@{add\_named\_requirement}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{add\_named\_requirement()}{add\_named\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a70686d50122dba1ecd53d844aa346220} 
+ None pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+add\+\_\+named\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}}]{install\+\_\+req}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ad37f233a59ffe8b49c43a6134bd8d2eb}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!add\_unnamed\_requirement@{add\_unnamed\_requirement}}
+\index{add\_unnamed\_requirement@{add\_unnamed\_requirement}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{add\_unnamed\_requirement()}{add\_unnamed\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ad37f233a59ffe8b49c43a6134bd8d2eb} 
+ None pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+add\+\_\+unnamed\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}}]{install\+\_\+req}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a6fa8d1fe9f1c700bc7acd362af9769e2}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!all\_requirements@{all\_requirements}}
+\index{all\_requirements@{all\_requirements}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{all\_requirements()}{all\_requirements()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a6fa8d1fe9f1c700bc7acd362af9769e2} 
+ list\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+all\+\_\+requirements (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ac157ecb51d66efd369fcd0dedd2c4b7d}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!get\_requirement@{get\_requirement}}
+\index{get\_requirement@{get\_requirement}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{get\_requirement()}{get\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ac157ecb51d66efd369fcd0dedd2c4b7d} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+get\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_afcda10978eb60d78456ae5e81aca9dce}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!has\_requirement@{has\_requirement}}
+\index{has\_requirement@{has\_requirement}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{has\_requirement()}{has\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_afcda10978eb60d78456ae5e81aca9dce} 
+ bool pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+has\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a108d01bc8f7c67866f9360741a780f1c}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!requirements\_to\_install@{requirements\_to\_install}}
+\index{requirements\_to\_install@{requirements\_to\_install}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{requirements\_to\_install()}{requirements\_to\_install()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_a108d01bc8f7c67866f9360741a780f1c} 
+ list\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+requirements\+\_\+to\+\_\+install (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the list of requirements that need to be installed.
+
+TODO remove this property together with the legacy resolver, since the new
+     resolver only returns requirements that need to be installed.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae0cd02dd40841c8bb39d4c1b6ddd506c}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!check\_supported\_wheels@{check\_supported\_wheels}}
+\index{check\_supported\_wheels@{check\_supported\_wheels}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{check\_supported\_wheels}{check\_supported\_wheels}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_ae0cd02dd40841c8bb39d4c1b6ddd506c} 
+pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+check\+\_\+supported\+\_\+wheels = check\+\_\+supported\+\_\+wheels}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_aeca4aa07b96013011a61cae595df433f}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!requirements@{requirements}}
+\index{requirements@{requirements}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{requirements}{requirements}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_aeca4aa07b96013011a61cae595df433f} 
+dict\mbox{[}str, \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+requirements = Ordered\+Dict()}
+
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_adb2f121fde36d0d1398ef4c53d347e87}\index{pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}!unnamed\_requirements@{unnamed\_requirements}}
+\index{unnamed\_requirements@{unnamed\_requirements}!pip.\_internal.req.req\_set.RequirementSet@{pip.\_internal.req.req\_set.RequirementSet}}
+\doxysubsubsection{\texorpdfstring{unnamed\_requirements}{unnamed\_requirements}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set_adb2f121fde36d0d1398ef4c53d347e87} 
+list pip.\+\_\+internal.\+req.\+req\+\_\+set.\+Requirement\+Set.\+unnamed\+\_\+requirements = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+internal/req/\mbox{\hyperlink{req__set_8py}{req\+\_\+set.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\doxysection{django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor}{}\label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor}\index{django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}}
+Inheritance diagram for django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a642e9ee16b291f08ffd3e5e2430edf6e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor}{rel}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a037765b4244b9af5d3ec7dbb26e43f5c}{reverse}}=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_ac7a1f930ce674fb7c0ef5ded7879fc5e}{through}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a99a6fa7d9725abf9b0317ed84e8b3c05}{related\+\_\+manager\+\_\+cls}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor}{django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+Many\+To\+One\+Descriptor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_a6974b6410824667afcc8e59f6498d285}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_aff38f3b38965b2338e473f820cd464c1}{rel}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_a59025a5b7330e19fe8fe12222acff2a9}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1fields_1_1related__descriptors_a2d4f6982d2433fa20c5b1a44f4cd95c9}{instance}}, cls=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_a4f8de1944e03c2d6de6ed38616bf67ec}{\+\_\+\+\_\+set\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1fields_1_1related__descriptors_a2d4f6982d2433fa20c5b1a44f4cd95c9}{instance}}, value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a037765b4244b9af5d3ec7dbb26e43f5c}{reverse}} = reverse
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor}{django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+Many\+To\+One\+Descriptor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_aff38f3b38965b2338e473f820cd464c1}{rel}} = rel
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_a49d36a3d4b42da8f21ccb9809e7cb53d}{field}} = rel.\+field
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a8a0bcb869894fe9b7fde21076f29b1bd}{\+\_\+get\+\_\+set\+\_\+deprecation\+\_\+msg\+\_\+params}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Accessor to the related objects manager on the forward and reverse sides of
+a many-to-many relation.
+
+In the example::
+
+    class Pizza(Model):
+        toppings = ManyToManyField(Topping, related_name='pizzas')
+
+``Pizza.toppings`` and ``Topping.pizzas`` are ``ManyToManyDescriptor``
+instances.
+
+Most of the implementation is delegated to a dynamically defined manager
+class built by ``create_forward_many_to_many_manager()`` defined below.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a642e9ee16b291f08ffd3e5e2430edf6e}\index{django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a642e9ee16b291f08ffd3e5e2430edf6e} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{rel}{, }\item[{}]{reverse}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a8a0bcb869894fe9b7fde21076f29b1bd}\index{django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}!\_get\_set\_deprecation\_msg\_params@{\_get\_set\_deprecation\_msg\_params}}
+\index{\_get\_set\_deprecation\_msg\_params@{\_get\_set\_deprecation\_msg\_params}!django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_get\_set\_deprecation\_msg\_params()}{\_get\_set\_deprecation\_msg\_params()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a8a0bcb869894fe9b7fde21076f29b1bd} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor.\+\_\+get\+\_\+set\+\_\+deprecation\+\_\+msg\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_a3b906003a5657185fc86f6967fc2d598}{django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+Many\+To\+One\+Descriptor}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a99a6fa7d9725abf9b0317ed84e8b3c05}\index{django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}!related\_manager\_cls@{related\_manager\_cls}}
+\index{related\_manager\_cls@{related\_manager\_cls}!django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}}
+\doxysubsubsection{\texorpdfstring{related\_manager\_cls()}{related\_manager\_cls()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a99a6fa7d9725abf9b0317ed84e8b3c05} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor.\+related\+\_\+manager\+\_\+cls (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_reverse_many_to_one_descriptor_a6a2b3b446b9ad1afedccb5531f220cd0}{django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Reverse\+Many\+To\+One\+Descriptor}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_ac7a1f930ce674fb7c0ef5ded7879fc5e}\index{django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}!through@{through}}
+\index{through@{through}!django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}}
+\doxysubsubsection{\texorpdfstring{through()}{through()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_ac7a1f930ce674fb7c0ef5ded7879fc5e} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor.\+through (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a037765b4244b9af5d3ec7dbb26e43f5c}\index{django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}!reverse@{reverse}}
+\index{reverse@{reverse}!django.db.models.fields.related\_descriptors.ManyToManyDescriptor@{django.db.models.fields.related\_descriptors.ManyToManyDescriptor}}
+\doxysubsubsection{\texorpdfstring{reverse}{reverse}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1fields_1_1related__descriptors_1_1_many_to_many_descriptor_a037765b4244b9af5d3ec7dbb26e43f5c} 
+django.\+db.\+models.\+fields.\+related\+\_\+descriptors.\+Many\+To\+Many\+Descriptor.\+reverse = reverse}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/fields/\mbox{\hyperlink{related__descriptors_8py}{related\+\_\+descriptors.\+py}}\end{DoxyCompactItemize}

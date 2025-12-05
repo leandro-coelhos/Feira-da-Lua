@@ -1,0 +1,66 @@
+\doxysection{django.\+core.\+files.\+temp Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1files_1_1temp}{}\label{namespacedjango_1_1core_1_1files_1_1temp}\index{django.core.files.temp@{django.core.files.temp}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1temp_1_1_temporary_file}{Temporary\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1core_1_1files_1_1temp_a48e3ff9fb578a6bdd9c39cb4db4e5848}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1files_1_1temp_a837f479a3261abbe7fc4c72fae1742c5}{Named\+Temporary\+File}} = tempfile.\+Named\+Temporary\+File
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1files_1_1temp_a3bf1a94c861fca2da64199d3bec7a0a8}{gettempdir}} = tempfile.\+gettempdir
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The temp module provides a NamedTemporaryFile that can be reopened in the same
+process on any platform. Most platforms use the standard Python
+tempfile.NamedTemporaryFile class, but Windows users are given a custom class.
+
+This is needed because the Python implementation of NamedTemporaryFile uses the
+O_TEMPORARY flag under Windows, which prevents the file from being reopened
+if the same flag is not provided [1][2]. Note that this does not address the
+more general issue of opening a file for writing and reading in multiple
+processes in a manner that works across platforms.
+
+The custom version of NamedTemporaryFile doesn't support the same keyword
+arguments available in tempfile.NamedTemporaryFile.
+
+1: https://mail.python.org/pipermail/python-list/2005-December/336955.html
+2: https://bugs.python.org/issue14243
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1temp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1temp_a48e3ff9fb578a6bdd9c39cb4db4e5848}\index{django.core.files.temp@{django.core.files.temp}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!django.core.files.temp@{django.core.files.temp}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1files_1_1temp_a48e3ff9fb578a6bdd9c39cb4db4e5848} 
+tuple django.\+core.\+files.\+temp.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}NamedTemporaryFile"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}gettempdir"{}},}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1temp_a3bf1a94c861fca2da64199d3bec7a0a8}\index{django.core.files.temp@{django.core.files.temp}!gettempdir@{gettempdir}}
+\index{gettempdir@{gettempdir}!django.core.files.temp@{django.core.files.temp}}
+\doxysubsubsection{\texorpdfstring{gettempdir}{gettempdir}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1files_1_1temp_a3bf1a94c861fca2da64199d3bec7a0a8} 
+django.\+core.\+files.\+temp.\+gettempdir = tempfile.\+gettempdir}
+
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1temp_a837f479a3261abbe7fc4c72fae1742c5}\index{django.core.files.temp@{django.core.files.temp}!NamedTemporaryFile@{NamedTemporaryFile}}
+\index{NamedTemporaryFile@{NamedTemporaryFile}!django.core.files.temp@{django.core.files.temp}}
+\doxysubsubsection{\texorpdfstring{NamedTemporaryFile}{NamedTemporaryFile}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1files_1_1temp_a837f479a3261abbe7fc4c72fae1742c5} 
+django.\+core.\+files.\+temp.\+Named\+Temporary\+File = tempfile.\+Named\+Temporary\+File}
+

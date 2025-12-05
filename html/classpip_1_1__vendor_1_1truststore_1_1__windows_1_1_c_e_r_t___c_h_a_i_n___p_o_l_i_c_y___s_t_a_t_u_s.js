@@ -1,0 +1,4 @@
+var classpip_1_1__vendor_1_1truststore_1_1__windows_1_1_c_e_r_t___c_h_a_i_n___p_o_l_i_c_y___s_t_a_t_u_s =
+[
+    [ "_fields_", "classpip_1_1__vendor_1_1truststore_1_1__windows_1_1_c_e_r_t___c_h_a_i_n___p_o_l_i_c_y___s_t_a_t_u_s.html#a255434af6ef5f714bcb2863fe5666f0a", null ]
+];

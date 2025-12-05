@@ -1,0 +1,5 @@
+var namespacedjango_1_1contrib_1_1contenttypes_1_1migrations =
+[
+    [ "0001_initial", "namespacedjango_1_1contrib_1_1contenttypes_1_1migrations_1_10001__initial.html", "namespacedjango_1_1contrib_1_1contenttypes_1_1migrations_1_10001__initial" ],
+    [ "0002_remove_content_type_name", "namespacedjango_1_1contrib_1_1contenttypes_1_1migrations_1_10002__remove__content__type__name.html", "namespacedjango_1_1contrib_1_1contenttypes_1_1migrations_1_10002__remove__content__type__name" ]
+];

@@ -1,0 +1,91 @@
+\doxysection{\+\_\+pytest.\+cacheprovider.\+NFPlugin Class Reference}
+\hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin}{}\label{class__pytest_1_1cacheprovider_1_1_n_f_plugin}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a03095db55ff2a85cf95aa023f409cfd2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a5d1e08d407163c628d672048a6cdd64c}{config}})
+\item 
+Generator\mbox{[}None\mbox{]} \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_ab23a8bd0838ed2dbc2cf198f1a0a3bc6}{pytest\+\_\+collection\+\_\+modifyitems}} (self, list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]} items)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a795315c896059073bd2ddd0a0f0c4b27}{pytest\+\_\+sessionfinish}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a5d1e08d407163c628d672048a6cdd64c}{config}} = config
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_af3891b595439f0f5342a124c7318051b}{active}} = config.\+option.\+newfirst
+\item 
+\mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a47ef5d5fff47642cb38172d35fc9d189}{cached\+\_\+nodeids}} = set(config.\+cache.\+get("{}cache/nodeids"{}, \mbox{[}$\,$\mbox{]}))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1cacheprovider_1_1_n_f_plugin_ad1dfc7f4b2cc38e7fadd3c24bd32c222}{\+\_\+get\+\_\+increasing\+\_\+order}} (self, Iterable\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]} items)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Plugin which implements the --nf (run new-first) option.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a03095db55ff2a85cf95aa023f409cfd2}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a03095db55ff2a85cf95aa023f409cfd2} 
+ None \+\_\+pytest.\+cacheprovider.\+NFPlugin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_ad1dfc7f4b2cc38e7fadd3c24bd32c222}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!\_get\_increasing\_order@{\_get\_increasing\_order}}
+\index{\_get\_increasing\_order@{\_get\_increasing\_order}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{\_get\_increasing\_order()}{\_get\_increasing\_order()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_ad1dfc7f4b2cc38e7fadd3c24bd32c222} 
+ list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]} \+\_\+pytest.\+cacheprovider.\+NFPlugin.\+\_\+get\+\_\+increasing\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]}}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_ab23a8bd0838ed2dbc2cf198f1a0a3bc6}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!pytest\_collection\_modifyitems@{pytest\_collection\_modifyitems}}
+\index{pytest\_collection\_modifyitems@{pytest\_collection\_modifyitems}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_collection\_modifyitems()}{pytest\_collection\_modifyitems()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_ab23a8bd0838ed2dbc2cf198f1a0a3bc6} 
+ Generator\mbox{[}None\mbox{]} \+\_\+pytest.\+cacheprovider.\+NFPlugin.\+pytest\+\_\+collection\+\_\+modifyitems (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{nodes.\+Item}}\mbox{]}}]{items}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a795315c896059073bd2ddd0a0f0c4b27}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!pytest\_sessionfinish@{pytest\_sessionfinish}}
+\index{pytest\_sessionfinish@{pytest\_sessionfinish}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{pytest\_sessionfinish()}{pytest\_sessionfinish()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a795315c896059073bd2ddd0a0f0c4b27} 
+ None \+\_\+pytest.\+cacheprovider.\+NFPlugin.\+pytest\+\_\+sessionfinish (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_af3891b595439f0f5342a124c7318051b}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!active@{active}}
+\index{active@{active}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_af3891b595439f0f5342a124c7318051b} 
+\+\_\+pytest.\+cacheprovider.\+NFPlugin.\+active = config.\+option.\+newfirst}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a47ef5d5fff47642cb38172d35fc9d189}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!cached\_nodeids@{cached\_nodeids}}
+\index{cached\_nodeids@{cached\_nodeids}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{cached\_nodeids}{cached\_nodeids}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a47ef5d5fff47642cb38172d35fc9d189} 
+\+\_\+pytest.\+cacheprovider.\+NFPlugin.\+cached\+\_\+nodeids = set(config.\+cache.\+get("{}cache/nodeids"{}, \mbox{[}$\,$\mbox{]}))}
+
+\Hypertarget{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a5d1e08d407163c628d672048a6cdd64c}\index{\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}!config@{config}}
+\index{config@{config}!\_pytest.cacheprovider.NFPlugin@{\_pytest.cacheprovider.NFPlugin}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1cacheprovider_1_1_n_f_plugin_a5d1e08d407163c628d672048a6cdd64c} 
+\+\_\+pytest.\+cacheprovider.\+NFPlugin.\+config = config}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{cacheprovider_8py}{cacheprovider.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\doxysection{geoip2.\+records.\+Location Class Reference}
+\hypertarget{classgeoip2_1_1records_1_1_location}{}\label{classgeoip2_1_1records_1_1_location}\index{geoip2.records.Location@{geoip2.records.Location}}
+Inheritance diagram for geoip2.\+records.\+Location\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.544304cm]{classgeoip2_1_1records_1_1_location}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a257e19ae5dd8b535675df5c8073c7e6a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a3b82814c52c6d02edc92a428d77e8155}{average\+\_\+income}}=None, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_ad9e2296799b2dab9d1f3fe4783b50276}{accuracy\+\_\+radius}}=None, float\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a6c74f371160363930bb4e4e527e3671a}{latitude}}=None, float\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a68edd4876a7f0637a1d12a65de3d529c}{longitude}}=None, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_aecaa8362763a7f47486798dc08e0ba38}{metro\+\_\+code}}=None, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a7c7d67f29b2983031dc4e82173d1aba3}{population\+\_\+density}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a93bbf3debfccfc1b742cdb48dd266c82}{time\+\_\+zone}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any \+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgeoip2_1_1records_1_1_record}{geoip2.\+records.\+Record}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classgeoip2_1_1records_1_1_record_a4d4ab53a96d47cab62327121425a3bc9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgeoip2_1_1__internal_1_1_model}{geoip2.\+\_\+internal.\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classgeoip2_1_1__internal_1_1_model_ab89c2e19603aad3562ca15506e9952d3}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+bool \mbox{\hyperlink{classgeoip2_1_1__internal_1_1_model_af1284915869491d7808b9be2a7c53f60}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, object other)
+\item 
+int \mbox{\hyperlink{classgeoip2_1_1__internal_1_1_model_abec37975d13dc48494ad536dec00b0ca}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classgeoip2_1_1__internal_1_1_model_a1d1cc66e3f390da766ae5dda9ecc4d7d}{to\+\_\+dict}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a3b82814c52c6d02edc92a428d77e8155}{average\+\_\+income}} \texorpdfstring{$\vert$}{|} None
+\item 
+int \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_ad9e2296799b2dab9d1f3fe4783b50276}{accuracy\+\_\+radius}} \texorpdfstring{$\vert$}{|} None
+\item 
+float \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a6c74f371160363930bb4e4e527e3671a}{latitude}} \texorpdfstring{$\vert$}{|} None
+\item 
+float \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a68edd4876a7f0637a1d12a65de3d529c}{longitude}} \texorpdfstring{$\vert$}{|} None
+\item 
+int \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_aecaa8362763a7f47486798dc08e0ba38}{metro\+\_\+code}} \texorpdfstring{$\vert$}{|} None
+\item 
+int \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a7c7d67f29b2983031dc4e82173d1aba3}{population\+\_\+density}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \mbox{\hyperlink{classgeoip2_1_1records_1_1_location_a93bbf3debfccfc1b742cdb48dd266c82}{time\+\_\+zone}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Contains data for the location record associated with an IP address.
+
+This class contains the location data associated with an IP address.
+
+This record is returned by ``city``, ``enterprise``, and ``insights``.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classgeoip2_1_1records_1_1_location_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgeoip2_1_1records_1_1_location_a257e19ae5dd8b535675df5c8073c7e6a}\index{geoip2.records.Location@{geoip2.records.Location}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_a257e19ae5dd8b535675df5c8073c7e6a} 
+ None geoip2.\+records.\+Location.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{average\+\_\+income}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{accuracy\+\_\+radius}{ = {\ttfamily None}, }\item[{float \texorpdfstring{$\vert$}{|} None }]{latitude}{ = {\ttfamily None}, }\item[{float \texorpdfstring{$\vert$}{|} None }]{longitude}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{metro\+\_\+code}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{population\+\_\+density}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{time\+\_\+zone}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classgeoip2_1_1records_1_1_location_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classgeoip2_1_1records_1_1_location_ad9e2296799b2dab9d1f3fe4783b50276}\index{geoip2.records.Location@{geoip2.records.Location}!accuracy\_radius@{accuracy\_radius}}
+\index{accuracy\_radius@{accuracy\_radius}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{accuracy\_radius}{accuracy\_radius}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_ad9e2296799b2dab9d1f3fe4783b50276} 
+int geoip2.\+records.\+Location.\+accuracy\+\_\+radius \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1records_1_1_location_a3b82814c52c6d02edc92a428d77e8155}\index{geoip2.records.Location@{geoip2.records.Location}!average\_income@{average\_income}}
+\index{average\_income@{average\_income}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{average\_income}{average\_income}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_a3b82814c52c6d02edc92a428d77e8155} 
+int geoip2.\+records.\+Location.\+average\+\_\+income \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1records_1_1_location_a6c74f371160363930bb4e4e527e3671a}\index{geoip2.records.Location@{geoip2.records.Location}!latitude@{latitude}}
+\index{latitude@{latitude}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{latitude}{latitude}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_a6c74f371160363930bb4e4e527e3671a} 
+float geoip2.\+records.\+Location.\+latitude \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1records_1_1_location_a68edd4876a7f0637a1d12a65de3d529c}\index{geoip2.records.Location@{geoip2.records.Location}!longitude@{longitude}}
+\index{longitude@{longitude}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{longitude}{longitude}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_a68edd4876a7f0637a1d12a65de3d529c} 
+float geoip2.\+records.\+Location.\+longitude \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1records_1_1_location_aecaa8362763a7f47486798dc08e0ba38}\index{geoip2.records.Location@{geoip2.records.Location}!metro\_code@{metro\_code}}
+\index{metro\_code@{metro\_code}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{metro\_code}{metro\_code}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_aecaa8362763a7f47486798dc08e0ba38} 
+int geoip2.\+records.\+Location.\+metro\+\_\+code \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1records_1_1_location_a7c7d67f29b2983031dc4e82173d1aba3}\index{geoip2.records.Location@{geoip2.records.Location}!population\_density@{population\_density}}
+\index{population\_density@{population\_density}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{population\_density}{population\_density}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_a7c7d67f29b2983031dc4e82173d1aba3} 
+int geoip2.\+records.\+Location.\+population\+\_\+density \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classgeoip2_1_1records_1_1_location_a93bbf3debfccfc1b742cdb48dd266c82}\index{geoip2.records.Location@{geoip2.records.Location}!time\_zone@{time\_zone}}
+\index{time\_zone@{time\_zone}!geoip2.records.Location@{geoip2.records.Location}}
+\doxysubsubsection{\texorpdfstring{time\_zone}{time\_zone}}
+{\footnotesize\ttfamily \label{classgeoip2_1_1records_1_1_location_a93bbf3debfccfc1b742cdb48dd266c82} 
+str geoip2.\+records.\+Location.\+time\+\_\+zone \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/geoip2/\mbox{\hyperlink{records_8py}{records.\+py}}\end{DoxyCompactItemize}

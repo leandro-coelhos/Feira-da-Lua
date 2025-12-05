@@ -1,0 +1,27 @@
+var django_2core_2exceptions_8py =
+[
+    [ "django.core.exceptions.FieldDoesNotExist", "classdjango_1_1core_1_1exceptions_1_1_field_does_not_exist.html", null ],
+    [ "django.core.exceptions.AppRegistryNotReady", "classdjango_1_1core_1_1exceptions_1_1_app_registry_not_ready.html", null ],
+    [ "django.core.exceptions.ObjectDoesNotExist", "classdjango_1_1core_1_1exceptions_1_1_object_does_not_exist.html", "classdjango_1_1core_1_1exceptions_1_1_object_does_not_exist" ],
+    [ "django.core.exceptions.MultipleObjectsReturned", "classdjango_1_1core_1_1exceptions_1_1_multiple_objects_returned.html", null ],
+    [ "django.core.exceptions.SuspiciousOperation", "classdjango_1_1core_1_1exceptions_1_1_suspicious_operation.html", null ],
+    [ "django.core.exceptions.SuspiciousMultipartForm", "classdjango_1_1core_1_1exceptions_1_1_suspicious_multipart_form.html", null ],
+    [ "django.core.exceptions.SuspiciousFileOperation", "classdjango_1_1core_1_1exceptions_1_1_suspicious_file_operation.html", null ],
+    [ "django.core.exceptions.DisallowedHost", "classdjango_1_1core_1_1exceptions_1_1_disallowed_host.html", null ],
+    [ "django.core.exceptions.DisallowedRedirect", "classdjango_1_1core_1_1exceptions_1_1_disallowed_redirect.html", null ],
+    [ "django.core.exceptions.TooManyFieldsSent", "classdjango_1_1core_1_1exceptions_1_1_too_many_fields_sent.html", null ],
+    [ "django.core.exceptions.TooManyFilesSent", "classdjango_1_1core_1_1exceptions_1_1_too_many_files_sent.html", null ],
+    [ "django.core.exceptions.RequestDataTooBig", "classdjango_1_1core_1_1exceptions_1_1_request_data_too_big.html", null ],
+    [ "django.core.exceptions.RequestAborted", "classdjango_1_1core_1_1exceptions_1_1_request_aborted.html", null ],
+    [ "django.core.exceptions.BadRequest", "classdjango_1_1core_1_1exceptions_1_1_bad_request.html", null ],
+    [ "django.core.exceptions.PermissionDenied", "classdjango_1_1core_1_1exceptions_1_1_permission_denied.html", null ],
+    [ "django.core.exceptions.ViewDoesNotExist", "classdjango_1_1core_1_1exceptions_1_1_view_does_not_exist.html", null ],
+    [ "django.core.exceptions.MiddlewareNotUsed", "classdjango_1_1core_1_1exceptions_1_1_middleware_not_used.html", null ],
+    [ "django.core.exceptions.ImproperlyConfigured", "classdjango_1_1core_1_1exceptions_1_1_improperly_configured.html", null ],
+    [ "django.core.exceptions.FieldError", "classdjango_1_1core_1_1exceptions_1_1_field_error.html", null ],
+    [ "django.core.exceptions.ValidationError", "classdjango_1_1core_1_1exceptions_1_1_validation_error.html", "classdjango_1_1core_1_1exceptions_1_1_validation_error" ],
+    [ "django.core.exceptions.EmptyResultSet", "classdjango_1_1core_1_1exceptions_1_1_empty_result_set.html", null ],
+    [ "django.core.exceptions.FullResultSet", "classdjango_1_1core_1_1exceptions_1_1_full_result_set.html", null ],
+    [ "django.core.exceptions.SynchronousOnlyOperation", "classdjango_1_1core_1_1exceptions_1_1_synchronous_only_operation.html", null ],
+    [ "django.core.exceptions.NON_FIELD_ERRORS", "namespacedjango_1_1core_1_1exceptions.html#a536048baa3a7a1f027d097fae8391dec", null ]
+];

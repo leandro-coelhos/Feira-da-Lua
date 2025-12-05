@@ -1,0 +1,124 @@
+\doxysection{sqlparse Namespace Reference}
+\hypertarget{namespacesqlparse}{}\label{namespacesqlparse}\index{sqlparse@{sqlparse}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1____main____}{\+\_\+\+\_\+main\+\_\+\+\_\+}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1cli}{cli}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1engine}{engine}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1exceptions}{exceptions}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1filters}{filters}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1formatter}{formatter}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1keywords}{keywords}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1lexer}{lexer}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1sql}{sql}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1tokens}{tokens}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}\mbox{\hyperlink{classsqlparse_1_1sql_1_1_statement}{sql.\+Statement}},...\mbox{]} \mbox{\hyperlink{namespacesqlparse_a7001ab39feb12c85f689ef272ccff0ff}{parse}} (str sql, Optional\mbox{[}str\mbox{]} encoding=None)
+\item 
+Generator\mbox{[}\mbox{\hyperlink{classsqlparse_1_1sql_1_1_statement}{sql.\+Statement}}, None, None\mbox{]} \mbox{\hyperlink{namespacesqlparse_a85cd367d896ac46b0c47d0bd374bc58a}{parsestream}} (Union\mbox{[}str, IO\mbox{[}str\mbox{]}\mbox{]} stream, Optional\mbox{[}str\mbox{]} encoding=None)
+\item 
+str \mbox{\hyperlink{namespacesqlparse_a9cbab75239928b45c65fb73dc6843b63}{format}} (str sql, Optional\mbox{[}str\mbox{]} encoding=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any options)
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacesqlparse_a8676274137b74d99c7af00295ff2c9a8}{split}} (str sql, Optional\mbox{[}str\mbox{]} encoding=None, bool strip\+\_\+semicolon=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacesqlparse_a2fa4f6708e4f45300f52e51dabbb94ba}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = "{}0.\+5.\+4"{}
+\item 
+list \mbox{\hyperlink{namespacesqlparse_abb049c559c0d49c36ad6b317fc15294d}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}engine"{}, "{}filters"{}, "{}formatter"{}, "{}sql"{}, "{}tokens"{}, "{}cli"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Parse SQL statements.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacesqlparse_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesqlparse_a9cbab75239928b45c65fb73dc6843b63}\index{sqlparse@{sqlparse}!format@{format}}
+\index{format@{format}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{namespacesqlparse_a9cbab75239928b45c65fb73dc6843b63} 
+ str sqlparse.\+format (\begin{DoxyParamCaption}\item[{str}]{sql}{, }\item[{Optional\mbox{[}str\mbox{]} }]{encoding}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format *sql* according to *options*.
+
+Available options are documented in :ref:`formatting`.
+
+In addition to the formatting options this function accepts the
+keyword "encoding" which determines the encoding of the statement.
+
+:returns: The formatted SQL statement as string.
+\end{DoxyVerb}
+ \Hypertarget{namespacesqlparse_a7001ab39feb12c85f689ef272ccff0ff}\index{sqlparse@{sqlparse}!parse@{parse}}
+\index{parse@{parse}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{namespacesqlparse_a7001ab39feb12c85f689ef272ccff0ff} 
+ Tuple\mbox{[}\mbox{\hyperlink{classsqlparse_1_1sql_1_1_statement}{sql.\+Statement}}, ...\mbox{]} sqlparse.\+parse (\begin{DoxyParamCaption}\item[{str}]{sql}{, }\item[{Optional\mbox{[}str\mbox{]} }]{encoding}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse sql and return a list of statements.
+
+:param sql: A string containing one or more SQL statements.
+:param encoding: The encoding of the statement (optional).
+:returns: A tuple of :class:`~sqlparse.sql.Statement` instances.
+\end{DoxyVerb}
+ \Hypertarget{namespacesqlparse_a85cd367d896ac46b0c47d0bd374bc58a}\index{sqlparse@{sqlparse}!parsestream@{parsestream}}
+\index{parsestream@{parsestream}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{parsestream()}{parsestream()}}
+{\footnotesize\ttfamily \label{namespacesqlparse_a85cd367d896ac46b0c47d0bd374bc58a} 
+ Generator\mbox{[}\mbox{\hyperlink{classsqlparse_1_1sql_1_1_statement}{sql.\+Statement}}, None, None\mbox{]} sqlparse.\+parsestream (\begin{DoxyParamCaption}\item[{Union\mbox{[}str, IO\mbox{[}str\mbox{]}\mbox{]}}]{stream}{, }\item[{Optional\mbox{[}str\mbox{]} }]{encoding}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses sql statements from file-like object.
+
+:param stream: A file-like object.
+:param encoding: The encoding of the stream contents (optional).
+:returns: A generator of :class:`~sqlparse.sql.Statement` instances.
+\end{DoxyVerb}
+ \Hypertarget{namespacesqlparse_a8676274137b74d99c7af00295ff2c9a8}\index{sqlparse@{sqlparse}!split@{split}}
+\index{split@{split}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{namespacesqlparse_a8676274137b74d99c7af00295ff2c9a8} 
+ List\mbox{[}str\mbox{]} sqlparse.\+split (\begin{DoxyParamCaption}\item[{str}]{sql}{, }\item[{Optional\mbox{[}str\mbox{]} }]{encoding}{ = {\ttfamily None}, }\item[{bool }]{strip\+\_\+semicolon}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split *sql* into single statements.
+
+:param sql: A string containing one or more SQL statements.
+:param encoding: The encoding of the statement (optional).
+:param strip_semicolon: If True, remove trailing semicolons
+    (default: False).
+:returns: A list of strings.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacesqlparse_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacesqlparse_abb049c559c0d49c36ad6b317fc15294d}\index{sqlparse@{sqlparse}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacesqlparse_abb049c559c0d49c36ad6b317fc15294d} 
+list sqlparse.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}engine"{}, "{}filters"{}, "{}formatter"{}, "{}sql"{}, "{}tokens"{}, "{}cli"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacesqlparse_a2fa4f6708e4f45300f52e51dabbb94ba}\index{sqlparse@{sqlparse}!\_\_version\_\_@{\_\_version\_\_}}
+\index{\_\_version\_\_@{\_\_version\_\_}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{\_\_version\_\_}{\_\_version\_\_}}
+{\footnotesize\ttfamily \label{namespacesqlparse_a2fa4f6708e4f45300f52e51dabbb94ba} 
+str sqlparse.\+\_\+\+\_\+version\+\_\+\+\_\+ = "{}0.\+5.\+4"{}\hspace{0.3cm}{\ttfamily [private]}}
+

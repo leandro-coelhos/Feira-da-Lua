@@ -1,0 +1,117 @@
+\doxysection{urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache Class Reference}
+\hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache}{}\label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a977a0ff975d00d0ca33488b5b61ef69f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a992619b9c81e54295b20884bfe62c6f3}{acquire\+\_\+and\+\_\+get}} (self, str host, int port)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a3ed26c9f5650d8d07f3255add1b157ac}{set\+\_\+and\+\_\+release}} (self, str host, int port, bool\texorpdfstring{$\vert$}{|}None supports\+\_\+http2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+dict\mbox{[}tuple\mbox{[}str, int\mbox{]}, bool\texorpdfstring{$\vert$}{|}None\mbox{]} \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_aaf6b71fb7450bcc2df6f7c954dc3b4e3}{\+\_\+values}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_abffc3640df74df39a53b4a9d89a9110a}{\+\_\+reset}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a8d8202e7c33d0736e499ad3d9061056c}{\+\_\+lock}} = threading.\+Lock()
+\item 
+dict \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a95ccaeb3ea8d53a254bc9934159a44c1}{\+\_\+cache\+\_\+locks}} = \{\}
+\item 
+dict \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a43bc11e63995017d22cf795d3ec52269}{\+\_\+cache\+\_\+values}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a4bbb88c46ecef8b00ddeea0179f14764}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a977a0ff975d00d0ca33488b5b61ef69f}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a977a0ff975d00d0ca33488b5b61ef69f} 
+ None urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_abffc3640df74df39a53b4a9d89a9110a}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_reset@{\_reset}}
+\index{\_reset@{\_reset}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_reset()}{\_reset()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_abffc3640df74df39a53b4a9d89a9110a} 
+ None urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This function is for testing purposes only. Reset the cache values\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_aaf6b71fb7450bcc2df6f7c954dc3b4e3}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_values@{\_values}}
+\index{\_values@{\_values}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_values()}{\_values()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_aaf6b71fb7450bcc2df6f7c954dc3b4e3} 
+ dict\mbox{[}tuple\mbox{[}str, int\mbox{]}, bool \texorpdfstring{$\vert$}{|} None\mbox{]} urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This function is for testing purposes only. Gets the current state of the probe cache\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a992619b9c81e54295b20884bfe62c6f3}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!acquire\_and\_get@{acquire\_and\_get}}
+\index{acquire\_and\_get@{acquire\_and\_get}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{acquire\_and\_get()}{acquire\_and\_get()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a992619b9c81e54295b20884bfe62c6f3} 
+ bool \texorpdfstring{$\vert$}{|} None urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+acquire\+\_\+and\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int}]{port}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a3ed26c9f5650d8d07f3255add1b157ac}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!set\_and\_release@{set\_and\_release}}
+\index{set\_and\_release@{set\_and\_release}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{set\_and\_release()}{set\_and\_release()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a3ed26c9f5650d8d07f3255add1b157ac} 
+ None urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+set\+\_\+and\+\_\+release (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int}]{port}{, }\item[{bool \texorpdfstring{$\vert$}{|} None     }]{supports\+\_\+http2}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a4bbb88c46ecef8b00ddeea0179f14764}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a4bbb88c46ecef8b00ddeea0179f14764} 
+tuple urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_lock"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_cache\_locks"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_cache\_values"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a95ccaeb3ea8d53a254bc9934159a44c1}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_cache\_locks@{\_cache\_locks}}
+\index{\_cache\_locks@{\_cache\_locks}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_cache\_locks}{\_cache\_locks}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a95ccaeb3ea8d53a254bc9934159a44c1} 
+dict urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+cache\+\_\+locks = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a43bc11e63995017d22cf795d3ec52269}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_cache\_values@{\_cache\_values}}
+\index{\_cache\_values@{\_cache\_values}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_cache\_values}{\_cache\_values}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a43bc11e63995017d22cf795d3ec52269} 
+dict urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+cache\+\_\+values = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a8d8202e7c33d0736e499ad3d9061056c}\index{urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}!\_lock@{\_lock}}
+\index{\_lock@{\_lock}!urllib3.http2.probe.\_HTTP2ProbeCache@{urllib3.http2.probe.\_HTTP2ProbeCache}}
+\doxysubsubsection{\texorpdfstring{\_lock}{\_lock}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1probe_1_1___h_t_t_p2_probe_cache_a8d8202e7c33d0736e499ad3d9061056c} 
+urllib3.\+http2.\+probe.\+\_\+\+HTTP2\+Probe\+Cache.\+\_\+lock = threading.\+Lock()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/urllib3/http2/\mbox{\hyperlink{probe_8py}{probe.\+py}}\end{DoxyCompactItemize}

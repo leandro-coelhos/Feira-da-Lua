@@ -1,0 +1,336 @@
+\doxysection{urllib3.\+util.\+ssl\+\_\+ Namespace Reference}
+\hypertarget{namespaceurllib3_1_1util_1_1ssl__}{}\label{namespaceurllib3_1_1util_1_1ssl__}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classurllib3_1_1util_1_1ssl___1_1___t_y_p_e___p_e_e_r___c_e_r_t___r_e_t___d_i_c_t}{\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET\+\_\+\+DICT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a21a231443975cdc94a2c1db7f3e1111e}{\+\_\+is\+\_\+bpo\+\_\+43522\+\_\+fixed}} (str implementation\+\_\+name, \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}} version\+\_\+info, \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}}\texorpdfstring{$\vert$}{|}None pypy\+\_\+version\+\_\+info)
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a58c3f60f3a875e2e17a4dde62679a7d1}{\+\_\+is\+\_\+has\+\_\+never\+\_\+check\+\_\+common\+\_\+name\+\_\+reliable}} (str openssl\+\_\+version, int openssl\+\_\+version\+\_\+number, str implementation\+\_\+name, \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}} version\+\_\+info, \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}}\texorpdfstring{$\vert$}{|}None pypy\+\_\+version\+\_\+info)
+\item 
+None \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___af76c6309b47d7ced0d5d90496b6345bb}{assert\+\_\+fingerprint}} (bytes\texorpdfstring{$\vert$}{|}None cert, str fingerprint)
+\item 
+Verify\+Mode \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ac7a8cf22d3515e5ecba535d79eed1db2}{resolve\+\_\+cert\+\_\+reqs}} (None\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}str candidate)
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___af7aa025f6f0f6a2d226f272c1b9b0275}{resolve\+\_\+ssl\+\_\+version}} (None\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}str candidate)
+\item 
+ssl.\+SSLContext \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a9700f2e2c3584a2df9560056bb80c330}{create\+\_\+urllib3\+\_\+context}} (int\texorpdfstring{$\vert$}{|}None ssl\+\_\+version=None, int\texorpdfstring{$\vert$}{|}None cert\+\_\+reqs=None, int\texorpdfstring{$\vert$}{|}None options=None, str\texorpdfstring{$\vert$}{|}None ciphers=None, int\texorpdfstring{$\vert$}{|}None ssl\+\_\+minimum\+\_\+version=None, int\texorpdfstring{$\vert$}{|}None ssl\+\_\+maximum\+\_\+version=None, int\texorpdfstring{$\vert$}{|}None verify\+\_\+flags=None)
+\item 
+ssl.\+SSLSocket \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a874f350ac8544608d4525ea92d2b230a}{ssl\+\_\+wrap\+\_\+socket}} (socket.\+socket sock, str\texorpdfstring{$\vert$}{|}None keyfile=..., str\texorpdfstring{$\vert$}{|}None certfile=..., int\texorpdfstring{$\vert$}{|}None cert\+\_\+reqs=..., str\texorpdfstring{$\vert$}{|}None ca\+\_\+certs=..., str\texorpdfstring{$\vert$}{|}None server\+\_\+hostname=..., int\texorpdfstring{$\vert$}{|}None ssl\+\_\+version=..., str\texorpdfstring{$\vert$}{|}None ciphers=..., ssl.\+SSLContext\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=..., str\texorpdfstring{$\vert$}{|}None ca\+\_\+cert\+\_\+dir=..., str\texorpdfstring{$\vert$}{|}None key\+\_\+password=..., None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}bytes ca\+\_\+cert\+\_\+data=..., typing.\+Literal\mbox{[}False\mbox{]} tls\+\_\+in\+\_\+tls=...)
+\item 
+ssl.\+SSLSocket\texorpdfstring{$\vert$}{|}SSLTransport\+Type \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___acce0cb270baf5b8740d6555b7819629e}{ssl\+\_\+wrap\+\_\+socket}} (socket.\+socket sock, str\texorpdfstring{$\vert$}{|}None keyfile=..., str\texorpdfstring{$\vert$}{|}None certfile=..., int\texorpdfstring{$\vert$}{|}None cert\+\_\+reqs=..., str\texorpdfstring{$\vert$}{|}None ca\+\_\+certs=..., str\texorpdfstring{$\vert$}{|}None server\+\_\+hostname=..., int\texorpdfstring{$\vert$}{|}None ssl\+\_\+version=..., str\texorpdfstring{$\vert$}{|}None ciphers=..., ssl.\+SSLContext\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=..., str\texorpdfstring{$\vert$}{|}None ca\+\_\+cert\+\_\+dir=..., str\texorpdfstring{$\vert$}{|}None key\+\_\+password=..., None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}bytes ca\+\_\+cert\+\_\+data=..., bool tls\+\_\+in\+\_\+tls=...)
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a07491a621bac463562d4b066084c42d8}{is\+\_\+ipaddress}} (str\texorpdfstring{$\vert$}{|}bytes hostname)
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae3fb89896839204f6ff02749df90ab02}{\+\_\+is\+\_\+key\+\_\+file\+\_\+encrypted}} (str key\+\_\+file)
+\item 
+ssl.\+SSLSocket\texorpdfstring{$\vert$}{|}SSLTransport\+Type \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae9db0be5c316648421cd38090e105acc}{\+\_\+ssl\+\_\+wrap\+\_\+socket\+\_\+impl}} (socket.\+socket sock, ssl.\+SSLContext ssl\+\_\+context, bool tls\+\_\+in\+\_\+tls, str\texorpdfstring{$\vert$}{|}None server\+\_\+hostname=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a7a253de14f2b8023a70529697faefa45}{SSLContext}} = None
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___aa410d07f935b7fbf691a75edffab840a}{SSLTransport}} = None
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ab4f6cd642aab550092955c5188362b4e}{HAS\+\_\+\+NEVER\+\_\+\+CHECK\+\_\+\+COMMON\+\_\+\+NAME}} = False
+\item 
+bool \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a0181b63e45ecce7d6421c33795617a6d}{IS\+\_\+\+PYOPENSSL}} = False
+\item 
+list \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a80e5166bab0b9d1ceab20dc2ad33f565}{ALPN\+\_\+\+PROTOCOLS}} = \mbox{[}"{}http/1.\+1"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}} = tuple\mbox{[}int, int, int, str, int\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a5019f6ad2ab04a28668db2a0d56876a1}{HASHFUNC\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a463088c4f4234cc0ea92aa6b86bec232}{PROTOCOL\+\_\+\+SSLv23}} = PROTOCOL\+\_\+\+TLS
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a3151453b46372eceadb86d479f56f813}{VERIFY\+\_\+\+X509\+\_\+\+PARTIAL\+\_\+\+CHAIN}} = getattr(ssl, "{}VERIFY\+\_\+\+X509\+\_\+\+PARTIAL\+\_\+\+CHAIN"{}, 0x80000)
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___aec1224c620f6b839da0a62b504683441}{OP\+\_\+\+NO\+\_\+\+COMPRESSION}} = 0x20000
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___af41f5e1ea91de40d636270ebbb660f4d}{OP\+\_\+\+NO\+\_\+\+TICKET}} = 0x4000
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___adc46caf66ed7964e720114ce4ca3503a}{OP\+\_\+\+NO\+\_\+\+SSLv2}} = 0x1000000
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a4d4bffa5c1bc3ca198213da4dc22c6e2}{OP\+\_\+\+NO\+\_\+\+SSLv3}} = 0x2000000
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a5310ffd91418a5c6dcbbf074c2828551}{PROTOCOL\+\_\+\+TLS\+\_\+\+CLIENT}} = 16
+\item 
+int \mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___a183b51343826a0a0ea3fd78e17d5f8b1}{VERIFY\+\_\+\+X509\+\_\+\+STRICT}} = 0x20
+\item 
+\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___aa05af2713c4ef95c7ec6ba90a0889e97}{\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET}} = typing.\+Union\mbox{[}"{}\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET\+\_\+\+DICT"{}, bytes, None\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a21a231443975cdc94a2c1db7f3e1111e}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!\_is\_bpo\_43522\_fixed@{\_is\_bpo\_43522\_fixed}}
+\index{\_is\_bpo\_43522\_fixed@{\_is\_bpo\_43522\_fixed}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{\_is\_bpo\_43522\_fixed()}{\_is\_bpo\_43522\_fixed()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a21a231443975cdc94a2c1db7f3e1111e} 
+ bool urllib3.\+util.\+ssl\+\_\+.\+\_\+is\+\_\+bpo\+\_\+43522\+\_\+fixed (\begin{DoxyParamCaption}\item[{str}]{implementation\+\_\+name}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}}}]{version\+\_\+info}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}} \texorpdfstring{$\vert$}{|} None}]{pypy\+\_\+version\+\_\+info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return True for CPython 3.9.3+ or 3.10+ and PyPy 7.3.8+ where
+setting SSLContext.hostname_checks_common_name to False works.
+
+Outside of CPython and PyPy we don't know which implementations work
+or not so we conservatively use our hostname matching as we know that works
+on all implementations.
+
+https://github.com/urllib3/urllib3/issues/2192#issuecomment-821832963
+https://foss.heptapod.net/pypy/pypy/-/issues/3539
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___a58c3f60f3a875e2e17a4dde62679a7d1}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!\_is\_has\_never\_check\_common\_name\_reliable@{\_is\_has\_never\_check\_common\_name\_reliable}}
+\index{\_is\_has\_never\_check\_common\_name\_reliable@{\_is\_has\_never\_check\_common\_name\_reliable}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{\_is\_has\_never\_check\_common\_name\_reliable()}{\_is\_has\_never\_check\_common\_name\_reliable()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a58c3f60f3a875e2e17a4dde62679a7d1} 
+ bool urllib3.\+util.\+ssl\+\_\+.\+\_\+is\+\_\+has\+\_\+never\+\_\+check\+\_\+common\+\_\+name\+\_\+reliable (\begin{DoxyParamCaption}\item[{str}]{openssl\+\_\+version}{, }\item[{int}]{openssl\+\_\+version\+\_\+number}{, }\item[{str}]{implementation\+\_\+name}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}}}]{version\+\_\+info}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}{\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO}} \texorpdfstring{$\vert$}{|} None}]{pypy\+\_\+version\+\_\+info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___ae3fb89896839204f6ff02749df90ab02}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!\_is\_key\_file\_encrypted@{\_is\_key\_file\_encrypted}}
+\index{\_is\_key\_file\_encrypted@{\_is\_key\_file\_encrypted}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{\_is\_key\_file\_encrypted()}{\_is\_key\_file\_encrypted()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___ae3fb89896839204f6ff02749df90ab02} 
+ bool urllib3.\+util.\+ssl\+\_\+.\+\_\+is\+\_\+key\+\_\+file\+\_\+encrypted (\begin{DoxyParamCaption}\item[{str}]{key\+\_\+file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Detects if a key file is encrypted or not.\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___ae9db0be5c316648421cd38090e105acc}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!\_ssl\_wrap\_socket\_impl@{\_ssl\_wrap\_socket\_impl}}
+\index{\_ssl\_wrap\_socket\_impl@{\_ssl\_wrap\_socket\_impl}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{\_ssl\_wrap\_socket\_impl()}{\_ssl\_wrap\_socket\_impl()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___ae9db0be5c316648421cd38090e105acc} 
+ ssl.\+SSLSocket \texorpdfstring{$\vert$}{|} SSLTransport\+Type urllib3.\+util.\+ssl\+\_\+.\+\_\+ssl\+\_\+wrap\+\_\+socket\+\_\+impl (\begin{DoxyParamCaption}\item[{socket.\+socket}]{sock}{, }\item[{ssl.\+SSLContext}]{ssl\+\_\+context}{, }\item[{bool}]{tls\+\_\+in\+\_\+tls}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{server\+\_\+hostname}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___af76c6309b47d7ced0d5d90496b6345bb}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!assert\_fingerprint@{assert\_fingerprint}}
+\index{assert\_fingerprint@{assert\_fingerprint}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{assert\_fingerprint()}{assert\_fingerprint()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___af76c6309b47d7ced0d5d90496b6345bb} 
+ None urllib3.\+util.\+ssl\+\_\+.\+assert\+\_\+fingerprint (\begin{DoxyParamCaption}\item[{bytes \texorpdfstring{$\vert$}{|} None}]{cert}{, }\item[{str}]{fingerprint}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if given fingerprint matches the supplied certificate.
+
+:param cert:
+    Certificate as bytes object.
+:param fingerprint:
+    Fingerprint as string of hexdigits, can be interspersed by colons.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___a9700f2e2c3584a2df9560056bb80c330}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!create\_urllib3\_context@{create\_urllib3\_context}}
+\index{create\_urllib3\_context@{create\_urllib3\_context}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{create\_urllib3\_context()}{create\_urllib3\_context()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a9700f2e2c3584a2df9560056bb80c330} 
+ ssl.\+SSLContext urllib3.\+util.\+ssl\+\_\+.\+create\+\_\+urllib3\+\_\+context (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+version}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{cert\+\_\+reqs}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{options}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{ciphers}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+minimum\+\_\+version}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+maximum\+\_\+version}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{verify\+\_\+flags}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates and configures an :class:`ssl.SSLContext` instance for use with urllib3.
+
+:param ssl_version:
+    The desired protocol version to use. This will default to
+    PROTOCOL_SSLv23 which will negotiate the highest protocol that both
+    the server and your installation of OpenSSL support.
+
+    This parameter is deprecated instead use 'ssl_minimum_version'.
+:param ssl_minimum_version:
+    The minimum version of TLS to be used. Use the 'ssl.TLSVersion' enum for specifying the value.
+:param ssl_maximum_version:
+    The maximum version of TLS to be used. Use the 'ssl.TLSVersion' enum for specifying the value.
+    Not recommended to set to anything other than 'ssl.TLSVersion.MAXIMUM_SUPPORTED' which is the
+    default value.
+:param cert_reqs:
+    Whether to require the certificate verification. This defaults to
+    ``ssl.CERT_REQUIRED``.
+:param options:
+    Specific OpenSSL options. These default to ``ssl.OP_NO_SSLv2``,
+    ``ssl.OP_NO_SSLv3``, ``ssl.OP_NO_COMPRESSION``, and ``ssl.OP_NO_TICKET``.
+:param ciphers:
+    Which cipher suites to allow the server to select. Defaults to either system configured
+    ciphers if OpenSSL 1.1.1+, otherwise uses a secure default set of ciphers.
+:param verify_flags:
+    The flags for certificate verification operations. These default to
+    ``ssl.VERIFY_X509_PARTIAL_CHAIN`` and ``ssl.VERIFY_X509_STRICT`` for Python 3.13+.
+:returns:
+    Constructed SSLContext object with specified options
+:rtype: SSLContext
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___a07491a621bac463562d4b066084c42d8}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!is\_ipaddress@{is\_ipaddress}}
+\index{is\_ipaddress@{is\_ipaddress}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{is\_ipaddress()}{is\_ipaddress()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a07491a621bac463562d4b066084c42d8} 
+ bool urllib3.\+util.\+ssl\+\_\+.\+is\+\_\+ipaddress (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} bytes}]{hostname}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Detects whether the hostname given is an IPv4 or IPv6 address.
+Also detects IPv6 addresses with Zone IDs.
+
+:param str hostname: Hostname to examine.
+:return: True if the hostname is an IP address, False otherwise.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___ac7a8cf22d3515e5ecba535d79eed1db2}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!resolve\_cert\_reqs@{resolve\_cert\_reqs}}
+\index{resolve\_cert\_reqs@{resolve\_cert\_reqs}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{resolve\_cert\_reqs()}{resolve\_cert\_reqs()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___ac7a8cf22d3515e5ecba535d79eed1db2} 
+ Verify\+Mode urllib3.\+util.\+ssl\+\_\+.\+resolve\+\_\+cert\+\_\+reqs (\begin{DoxyParamCaption}\item[{None \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} str}]{candidate}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolves the argument to a numeric constant, which can be passed to
+the wrap_socket function/method from the ssl module.
+Defaults to :data:`ssl.CERT_REQUIRED`.
+If given a string it is assumed to be the name of the constant in the
+:mod:`ssl` module or its abbreviation.
+(So you can specify `REQUIRED` instead of `CERT_REQUIRED`.
+If it's neither `None` nor a string we assume it is already the numeric
+constant which can directly be passed to wrap_socket.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___af7aa025f6f0f6a2d226f272c1b9b0275}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!resolve\_ssl\_version@{resolve\_ssl\_version}}
+\index{resolve\_ssl\_version@{resolve\_ssl\_version}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{resolve\_ssl\_version()}{resolve\_ssl\_version()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___af7aa025f6f0f6a2d226f272c1b9b0275} 
+ int urllib3.\+util.\+ssl\+\_\+.\+resolve\+\_\+ssl\+\_\+version (\begin{DoxyParamCaption}\item[{None \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} str}]{candidate}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}like resolve_cert_reqs
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___acce0cb270baf5b8740d6555b7819629e}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!ssl\_wrap\_socket@{ssl\_wrap\_socket}}
+\index{ssl\_wrap\_socket@{ssl\_wrap\_socket}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{ssl\_wrap\_socket()}{ssl\_wrap\_socket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___acce0cb270baf5b8740d6555b7819629e} 
+ssl SSLSocket SSLTransport\+Type urllib3.\+util.\+ssl\+\_\+.\+ssl\+\_\+wrap\+\_\+socket (\begin{DoxyParamCaption}\item[{socket.\+socket}]{sock}{, }\item[{str\texorpdfstring{$\vert$}{|}None}]{keyfile}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{certfile}{ = {\ttfamily None}, }\item[{int\texorpdfstring{$\vert$}{|}None}]{cert\+\_\+reqs}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{ca\+\_\+certs}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{server\+\_\+hostname}{ = {\ttfamily None}, }\item[{int\texorpdfstring{$\vert$}{|}None}]{ssl\+\_\+version}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{ciphers}{ = {\ttfamily None}, }\item[{ssl.\+SSLContext\texorpdfstring{$\vert$}{|}None}]{ssl\+\_\+context}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{ca\+\_\+cert\+\_\+dir}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{key\+\_\+password}{ = {\ttfamily None}, }\item[{None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}bytes}]{ca\+\_\+cert\+\_\+data}{ = {\ttfamily None}, }\item[{bool}]{tls\+\_\+in\+\_\+tls}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}All arguments except for server_hostname, ssl_context, tls_in_tls, ca_cert_data and
+ca_cert_dir have the same meaning as they do when using
+:func:`ssl.create_default_context`, :meth:`ssl.SSLContext.load_cert_chain`,
+:meth:`ssl.SSLContext.set_ciphers` and :meth:`ssl.SSLContext.wrap_socket`.
+
+:param server_hostname:
+    When SNI is supported, the expected hostname of the certificate
+:param ssl_context:
+    A pre-made :class:`SSLContext` object. If none is provided, one will
+    be created using :func:`create_urllib3_context`.
+:param ciphers:
+    A string of ciphers we wish the client to support.
+:param ca_cert_dir:
+    A directory containing CA certificates in multiple separate files, as
+    supported by OpenSSL's -CApath flag or the capath argument to
+    SSLContext.load_verify_locations().
+:param key_password:
+    Optional password if the keyfile is encrypted.
+:param ca_cert_data:
+    Optional string containing CA certificates in PEM format suitable for
+    passing as the cadata parameter to SSLContext.load_verify_locations()
+:param tls_in_tls:
+    Use SSLTransport to wrap the existing socket.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_1_1util_1_1ssl___a874f350ac8544608d4525ea92d2b230a}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!ssl\_wrap\_socket@{ssl\_wrap\_socket}}
+\index{ssl\_wrap\_socket@{ssl\_wrap\_socket}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{ssl\_wrap\_socket()}{ssl\_wrap\_socket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a874f350ac8544608d4525ea92d2b230a} 
+ ssl.\+SSLSocket urllib3.\+util.\+ssl\+\_\+.\+ssl\+\_\+wrap\+\_\+socket (\begin{DoxyParamCaption}\item[{socket.\+socket}]{sock}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{keyfile}{ = {\ttfamily ...}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{certfile}{ = {\ttfamily ...}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{cert\+\_\+reqs}{ = {\ttfamily ...}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{ca\+\_\+certs}{ = {\ttfamily ...}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{server\+\_\+hostname}{ = {\ttfamily ...}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+version}{ = {\ttfamily ...}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{ciphers}{ = {\ttfamily ...}, }\item[{ssl.\+SSLContext \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+context}{ = {\ttfamily ...}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{ca\+\_\+cert\+\_\+dir}{ = {\ttfamily ...}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{key\+\_\+password}{ = {\ttfamily ...}, }\item[{None \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} bytes }]{ca\+\_\+cert\+\_\+data}{ = {\ttfamily ...}, }\item[{typing.\+Literal\mbox{[}False\mbox{]} }]{tls\+\_\+in\+\_\+tls}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___aa05af2713c4ef95c7ec6ba90a0889e97}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!\_TYPE\_PEER\_CERT\_RET@{\_TYPE\_PEER\_CERT\_RET}}
+\index{\_TYPE\_PEER\_CERT\_RET@{\_TYPE\_PEER\_CERT\_RET}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{\_TYPE\_PEER\_CERT\_RET}{\_TYPE\_PEER\_CERT\_RET}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___aa05af2713c4ef95c7ec6ba90a0889e97} 
+urllib3.\+util.\+ssl\+\_\+.\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET = typing.\+Union\mbox{[}"{}\+\_\+\+TYPE\+\_\+\+PEER\+\_\+\+CERT\+\_\+\+RET\+\_\+\+DICT"{}, bytes, None\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!\_TYPE\_VERSION\_INFO@{\_TYPE\_VERSION\_INFO}}
+\index{\_TYPE\_VERSION\_INFO@{\_TYPE\_VERSION\_INFO}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{\_TYPE\_VERSION\_INFO}{\_TYPE\_VERSION\_INFO}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___ae4018d3af25aa05b53c4f890edfb9ec6} 
+urllib3.\+util.\+ssl\+\_\+.\+\_\+\+TYPE\+\_\+\+VERSION\+\_\+\+INFO = tuple\mbox{[}int, int, int, str, int\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a80e5166bab0b9d1ceab20dc2ad33f565}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!ALPN\_PROTOCOLS@{ALPN\_PROTOCOLS}}
+\index{ALPN\_PROTOCOLS@{ALPN\_PROTOCOLS}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{ALPN\_PROTOCOLS}{ALPN\_PROTOCOLS}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a80e5166bab0b9d1ceab20dc2ad33f565} 
+list urllib3.\+util.\+ssl\+\_\+.\+ALPN\+\_\+\+PROTOCOLS = \mbox{[}"{}http/1.\+1"{}\mbox{]}}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___ab4f6cd642aab550092955c5188362b4e}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!HAS\_NEVER\_CHECK\_COMMON\_NAME@{HAS\_NEVER\_CHECK\_COMMON\_NAME}}
+\index{HAS\_NEVER\_CHECK\_COMMON\_NAME@{HAS\_NEVER\_CHECK\_COMMON\_NAME}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{HAS\_NEVER\_CHECK\_COMMON\_NAME}{HAS\_NEVER\_CHECK\_COMMON\_NAME}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___ab4f6cd642aab550092955c5188362b4e} 
+bool urllib3.\+util.\+ssl\+\_\+.\+HAS\+\_\+\+NEVER\+\_\+\+CHECK\+\_\+\+COMMON\+\_\+\+NAME = False}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a5019f6ad2ab04a28668db2a0d56876a1}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!HASHFUNC\_MAP@{HASHFUNC\_MAP}}
+\index{HASHFUNC\_MAP@{HASHFUNC\_MAP}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{HASHFUNC\_MAP}{HASHFUNC\_MAP}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a5019f6ad2ab04a28668db2a0d56876a1} 
+dict urllib3.\+util.\+ssl\+\_\+.\+HASHFUNC\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ length:\ getattr(hashlib,\ algorithm,\ \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{keywordflow}{for}\ length,\ algorithm\ \textcolor{keywordflow}{in}\ ((32,\ \textcolor{stringliteral}{"{}md5"{}}),\ (40,\ \textcolor{stringliteral}{"{}sha1"{}}),\ (64,\ \textcolor{stringliteral}{"{}sha256"{}}))}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a0181b63e45ecce7d6421c33795617a6d}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!IS\_PYOPENSSL@{IS\_PYOPENSSL}}
+\index{IS\_PYOPENSSL@{IS\_PYOPENSSL}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{IS\_PYOPENSSL}{IS\_PYOPENSSL}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a0181b63e45ecce7d6421c33795617a6d} 
+bool urllib3.\+util.\+ssl\+\_\+.\+IS\+\_\+\+PYOPENSSL = False}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___aec1224c620f6b839da0a62b504683441}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!OP\_NO\_COMPRESSION@{OP\_NO\_COMPRESSION}}
+\index{OP\_NO\_COMPRESSION@{OP\_NO\_COMPRESSION}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{OP\_NO\_COMPRESSION}{OP\_NO\_COMPRESSION}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___aec1224c620f6b839da0a62b504683441} 
+int urllib3.\+util.\+ssl\+\_\+.\+OP\+\_\+\+NO\+\_\+\+COMPRESSION = 0x20000}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___adc46caf66ed7964e720114ce4ca3503a}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!OP\_NO\_SSLv2@{OP\_NO\_SSLv2}}
+\index{OP\_NO\_SSLv2@{OP\_NO\_SSLv2}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{OP\_NO\_SSLv2}{OP\_NO\_SSLv2}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___adc46caf66ed7964e720114ce4ca3503a} 
+int urllib3.\+util.\+ssl\+\_\+.\+OP\+\_\+\+NO\+\_\+\+SSLv2 = 0x1000000}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a4d4bffa5c1bc3ca198213da4dc22c6e2}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!OP\_NO\_SSLv3@{OP\_NO\_SSLv3}}
+\index{OP\_NO\_SSLv3@{OP\_NO\_SSLv3}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{OP\_NO\_SSLv3}{OP\_NO\_SSLv3}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a4d4bffa5c1bc3ca198213da4dc22c6e2} 
+int urllib3.\+util.\+ssl\+\_\+.\+OP\+\_\+\+NO\+\_\+\+SSLv3 = 0x2000000}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___af41f5e1ea91de40d636270ebbb660f4d}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!OP\_NO\_TICKET@{OP\_NO\_TICKET}}
+\index{OP\_NO\_TICKET@{OP\_NO\_TICKET}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{OP\_NO\_TICKET}{OP\_NO\_TICKET}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___af41f5e1ea91de40d636270ebbb660f4d} 
+int urllib3.\+util.\+ssl\+\_\+.\+OP\+\_\+\+NO\+\_\+\+TICKET = 0x4000}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a463088c4f4234cc0ea92aa6b86bec232}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!PROTOCOL\_SSLv23@{PROTOCOL\_SSLv23}}
+\index{PROTOCOL\_SSLv23@{PROTOCOL\_SSLv23}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{PROTOCOL\_SSLv23}{PROTOCOL\_SSLv23}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a463088c4f4234cc0ea92aa6b86bec232} 
+int urllib3.\+util.\+ssl\+\_\+.\+PROTOCOL\+\_\+\+SSLv23 = PROTOCOL\+\_\+\+TLS}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a5310ffd91418a5c6dcbbf074c2828551}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!PROTOCOL\_TLS\_CLIENT@{PROTOCOL\_TLS\_CLIENT}}
+\index{PROTOCOL\_TLS\_CLIENT@{PROTOCOL\_TLS\_CLIENT}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{PROTOCOL\_TLS\_CLIENT}{PROTOCOL\_TLS\_CLIENT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a5310ffd91418a5c6dcbbf074c2828551} 
+int urllib3.\+util.\+ssl\+\_\+.\+PROTOCOL\+\_\+\+TLS\+\_\+\+CLIENT = 16}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a7a253de14f2b8023a70529697faefa45}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!SSLContext@{SSLContext}}
+\index{SSLContext@{SSLContext}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{SSLContext}{SSLContext}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a7a253de14f2b8023a70529697faefa45} 
+urllib3.\+util.\+ssl\+\_\+.\+SSLContext = None}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___aa410d07f935b7fbf691a75edffab840a}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!SSLTransport@{SSLTransport}}
+\index{SSLTransport@{SSLTransport}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{SSLTransport}{SSLTransport}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___aa410d07f935b7fbf691a75edffab840a} 
+\mbox{\hyperlink{classurllib3_1_1util_1_1ssltransport_1_1_s_s_l_transport}{urllib3.\+util.\+ssl\+\_\+.\+SSLTransport}} = None}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a3151453b46372eceadb86d479f56f813}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!VERIFY\_X509\_PARTIAL\_CHAIN@{VERIFY\_X509\_PARTIAL\_CHAIN}}
+\index{VERIFY\_X509\_PARTIAL\_CHAIN@{VERIFY\_X509\_PARTIAL\_CHAIN}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{VERIFY\_X509\_PARTIAL\_CHAIN}{VERIFY\_X509\_PARTIAL\_CHAIN}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a3151453b46372eceadb86d479f56f813} 
+int urllib3.\+util.\+ssl\+\_\+.\+VERIFY\+\_\+\+X509\+\_\+\+PARTIAL\+\_\+\+CHAIN = getattr(ssl, "{}VERIFY\+\_\+\+X509\+\_\+\+PARTIAL\+\_\+\+CHAIN"{}, 0x80000)}
+
+\Hypertarget{namespaceurllib3_1_1util_1_1ssl___a183b51343826a0a0ea3fd78e17d5f8b1}\index{urllib3.util.ssl\_@{urllib3.util.ssl\_}!VERIFY\_X509\_STRICT@{VERIFY\_X509\_STRICT}}
+\index{VERIFY\_X509\_STRICT@{VERIFY\_X509\_STRICT}!urllib3.util.ssl\_@{urllib3.util.ssl\_}}
+\doxysubsubsection{\texorpdfstring{VERIFY\_X509\_STRICT}{VERIFY\_X509\_STRICT}}
+{\footnotesize\ttfamily \label{namespaceurllib3_1_1util_1_1ssl___a183b51343826a0a0ea3fd78e17d5f8b1} 
+int urllib3.\+util.\+ssl\+\_\+.\+VERIFY\+\_\+\+X509\+\_\+\+STRICT = 0x20}
+

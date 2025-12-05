@@ -1,0 +1,189 @@
+\doxysection{django.\+http.\+multipartparser.\+Lazy\+Stream Class Reference}
+\hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream}{}\label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a7fcffd0ac7e95025dc1248f83bbaf909}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, producer, \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a3cbf146f5ad1050ae11017fda9dce375}{length}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a041c0b87d9478cc8f8d6d9782e8ca314}{tell}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_af5553676fbef507453fe16dbce30f2d6}{read}} (self, size=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_ab7991f0c9ec747c531cc8f71d2def43a}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a8cc031a8e3e86872b4d5d12ebb448573}{close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_aac0ec0811d7031f7776ec5949164bc26}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_af64abf6bee66a0d47bfb44bea3680e08}{unget}} (self, bytes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a3cbf146f5ad1050ae11017fda9dce375}{length}} = length
+\item 
+int \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a1828967887258d8efd392d9e034bed13}{position}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a85c49c727b6ae63dc00386c595f84712}{\+\_\+update\+\_\+unget\+\_\+history}} (self, num\+\_\+bytes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a2c4658598ec1da190b1bdeb3e6eebf80}{\+\_\+producer}} = producer
+\item 
+bool \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a494e18466a03fc0962a4143c9aa3458f}{\+\_\+empty}} = False
+\item 
+str \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a5667867699b2b788df9c3ce5ce563800}{\+\_\+leftover}} = b"{}"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a63904d23bee6fd6744a51bbd5c322c2a}{\+\_\+remaining}} = \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a3cbf146f5ad1050ae11017fda9dce375}{length}}
+\item 
+list \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_aaf9e57513899a20703d857118375f479}{\+\_\+unget\+\_\+history}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The LazyStream wrapper allows one to get and "unget" bytes from a stream.
+
+Given a producer object (an iterator that yields bytestrings), the
+LazyStream object will support iteration, reading, and keeping a "look-back"
+variable in case you need to "unget" some bytes.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a7fcffd0ac7e95025dc1248f83bbaf909}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a7fcffd0ac7e95025dc1248f83bbaf909} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{producer}{, }\item[{}]{length}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Every LazyStream must have a producer when instantiated.
+
+A producer is an iterable that returns a string each time it
+is called.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_aac0ec0811d7031f7776ec5949164bc26}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_aac0ec0811d7031f7776ec5949164bc26} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_ab7991f0c9ec747c531cc8f71d2def43a}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_ab7991f0c9ec747c531cc8f71d2def43a} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used when the exact number of bytes to read is unimportant.
+
+Return whatever chunk is conveniently returned from the iterator.
+Useful to avoid unnecessary bookkeeping if performance is an issue.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a85c49c727b6ae63dc00386c595f84712}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_update\_unget\_history@{\_update\_unget\_history}}
+\index{\_update\_unget\_history@{\_update\_unget\_history}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_update\_unget\_history()}{\_update\_unget\_history()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a85c49c727b6ae63dc00386c595f84712} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+update\+\_\+unget\+\_\+history (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{num\+\_\+bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Update the unget history as a sanity check to see if we've pushed
+back the same number of bytes in one chunk. If we keep ungetting the
+same number of bytes many times (here, 50), we're mostly likely in an
+infinite loop of some sort. This is usually caused by a
+maliciously-malformed MIME request.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a8cc031a8e3e86872b4d5d12ebb448573}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!close@{close}}
+\index{close@{close}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a8cc031a8e3e86872b4d5d12ebb448573} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used to invalidate/disable this lazy stream.
+
+Replace the producer with an empty list. Any leftover bytes that have
+already been read will still be reported upon read() and/or next().
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_af5553676fbef507453fe16dbce30f2d6}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!read@{read}}
+\index{read@{read}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_af5553676fbef507453fe16dbce30f2d6} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a041c0b87d9478cc8f8d6d9782e8ca314}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!tell@{tell}}
+\index{tell@{tell}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a041c0b87d9478cc8f8d6d9782e8ca314} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+tell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_af64abf6bee66a0d47bfb44bea3680e08}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!unget@{unget}}
+\index{unget@{unget}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{unget()}{unget()}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_af64abf6bee66a0d47bfb44bea3680e08} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+unget (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{bytes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Place bytes back onto the front of the lazy stream.
+
+Future calls to read() will return those bytes first. The
+stream position and thus tell() will be rewound.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a494e18466a03fc0962a4143c9aa3458f}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_empty@{\_empty}}
+\index{\_empty@{\_empty}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_empty}{\_empty}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a494e18466a03fc0962a4143c9aa3458f} 
+bool django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+empty = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a5667867699b2b788df9c3ce5ce563800}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_leftover@{\_leftover}}
+\index{\_leftover@{\_leftover}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_leftover}{\_leftover}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a5667867699b2b788df9c3ce5ce563800} 
+str django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+leftover = b"{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a2c4658598ec1da190b1bdeb3e6eebf80}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_producer@{\_producer}}
+\index{\_producer@{\_producer}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_producer}{\_producer}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a2c4658598ec1da190b1bdeb3e6eebf80} 
+list django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+producer = producer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a63904d23bee6fd6744a51bbd5c322c2a}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_remaining@{\_remaining}}
+\index{\_remaining@{\_remaining}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_remaining}{\_remaining}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a63904d23bee6fd6744a51bbd5c322c2a} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+remaining = \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a3cbf146f5ad1050ae11017fda9dce375}{length}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_aaf9e57513899a20703d857118375f479}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!\_unget\_history@{\_unget\_history}}
+\index{\_unget\_history@{\_unget\_history}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{\_unget\_history}{\_unget\_history}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_aaf9e57513899a20703d857118375f479} 
+list django.\+http.\+multipartparser.\+Lazy\+Stream.\+\_\+unget\+\_\+history = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a3cbf146f5ad1050ae11017fda9dce375}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!length@{length}}
+\index{length@{length}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a3cbf146f5ad1050ae11017fda9dce375} 
+django.\+http.\+multipartparser.\+Lazy\+Stream.\+length = length}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a1828967887258d8efd392d9e034bed13}\index{django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}!position@{position}}
+\index{position@{position}!django.http.multipartparser.LazyStream@{django.http.multipartparser.LazyStream}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{classdjango_1_1http_1_1multipartparser_1_1_lazy_stream_a1828967887258d8efd392d9e034bed13} 
+int django.\+http.\+multipartparser.\+Lazy\+Stream.\+position = 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/http/\mbox{\hyperlink{multipartparser_8py}{multipartparser.\+py}}\end{DoxyCompactItemize}

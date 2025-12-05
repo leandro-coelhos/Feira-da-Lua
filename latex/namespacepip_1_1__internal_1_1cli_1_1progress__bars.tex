@@ -1,0 +1,89 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars}{}\label{namespacepip_1_1__internal_1_1cli_1_1progress__bars}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Generator\mbox{[}bytes, None, None\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a5fbbe383a76dd2cb0bb9f3dac2a59994}{\+\_\+rich\+\_\+download\+\_\+progress\+\_\+bar}} (Iterable\mbox{[}bytes\mbox{]} iterable, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}} bar\+\_\+type, int\texorpdfstring{$\vert$}{|}None size, int\texorpdfstring{$\vert$}{|}None initial\+\_\+progress=None)
+\item 
+Iterator\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a829f8319c3ca0354332b3a7578c23149}{\+\_\+rich\+\_\+install\+\_\+progress\+\_\+bar}} (Iterable\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} iterable, \texorpdfstring{$\ast$}{*}, int total)
+\item 
+Generator\mbox{[}bytes, None, None\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a14f4ce22dc414f88394d440c1b319f41}{\+\_\+raw\+\_\+progress\+\_\+bar}} (Iterable\mbox{[}bytes\mbox{]} iterable, \texorpdfstring{$\ast$}{*}, int\texorpdfstring{$\vert$}{|}None size, int\texorpdfstring{$\vert$}{|}None initial\+\_\+progress=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485}{Progress\+Renderer}}\mbox{[}bytes\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_af7da3c95cbf962d3bc562c0d235d9b3b}{get\+\_\+download\+\_\+progress\+\_\+renderer}} (\texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}} bar\+\_\+type, int\texorpdfstring{$\vert$}{|}None size=None, int\texorpdfstring{$\vert$}{|}None initial\+\_\+progress=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485}{Progress\+Renderer}}\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_ae9f5d1e8cc1ebc99f19d35654515a874}{get\+\_\+install\+\_\+progress\+\_\+renderer}} (\texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}} bar\+\_\+type, int total)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d}{T}} = Type\+Var("{}T"{})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485}{Progress\+Renderer}} = Callable\mbox{[}\mbox{[}Iterable\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d}{T}}\mbox{]}\mbox{]}, Iterator\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d}{T}}\mbox{]}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}} = Literal\mbox{[}"{}on"{}, "{}off"{}, "{}raw"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a14f4ce22dc414f88394d440c1b319f41}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!\_raw\_progress\_bar@{\_raw\_progress\_bar}}
+\index{\_raw\_progress\_bar@{\_raw\_progress\_bar}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{\_raw\_progress\_bar()}{\_raw\_progress\_bar()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a14f4ce22dc414f88394d440c1b319f41} 
+ Generator\mbox{[}bytes, None, None\mbox{]} pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+\_\+raw\+\_\+progress\+\_\+bar (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}bytes\mbox{]}}]{iterable}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{size}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{initial\+\_\+progress}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a5fbbe383a76dd2cb0bb9f3dac2a59994}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!\_rich\_download\_progress\_bar@{\_rich\_download\_progress\_bar}}
+\index{\_rich\_download\_progress\_bar@{\_rich\_download\_progress\_bar}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{\_rich\_download\_progress\_bar()}{\_rich\_download\_progress\_bar()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a5fbbe383a76dd2cb0bb9f3dac2a59994} 
+ Generator\mbox{[}bytes, None, None\mbox{]} pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+\_\+rich\+\_\+download\+\_\+progress\+\_\+bar (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}bytes\mbox{]}}]{iterable}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}}}]{bar\+\_\+type}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{size}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{initial\+\_\+progress}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a829f8319c3ca0354332b3a7578c23149}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!\_rich\_install\_progress\_bar@{\_rich\_install\_progress\_bar}}
+\index{\_rich\_install\_progress\_bar@{\_rich\_install\_progress\_bar}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{\_rich\_install\_progress\_bar()}{\_rich\_install\_progress\_bar()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a829f8319c3ca0354332b3a7578c23149} 
+ Iterator\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+\_\+rich\+\_\+install\+\_\+progress\+\_\+bar (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]}}]{iterable}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int }]{total}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_af7da3c95cbf962d3bc562c0d235d9b3b}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!get\_download\_progress\_renderer@{get\_download\_progress\_renderer}}
+\index{get\_download\_progress\_renderer@{get\_download\_progress\_renderer}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{get\_download\_progress\_renderer()}{get\_download\_progress\_renderer()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_af7da3c95cbf962d3bc562c0d235d9b3b} 
+ \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485}{Progress\+Renderer}}\mbox{[}bytes\mbox{]} pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+get\+\_\+download\+\_\+progress\+\_\+renderer (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}}}]{bar\+\_\+type}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{size}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{initial\+\_\+progress}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an object that can be used to render the download progress.
+
+Returns a callable, that takes an iterable to "wrap".
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_ae9f5d1e8cc1ebc99f19d35654515a874}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!get\_install\_progress\_renderer@{get\_install\_progress\_renderer}}
+\index{get\_install\_progress\_renderer@{get\_install\_progress\_renderer}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{get\_install\_progress\_renderer()}{get\_install\_progress\_renderer()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_ae9f5d1e8cc1ebc99f19d35654515a874} 
+ \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485}{Progress\+Renderer}}\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}\mbox{]} pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+get\+\_\+install\+\_\+progress\+\_\+renderer (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}{Bar\+Type}}}]{bar\+\_\+type}{, }\item[{int }]{total}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an object that can be used to render the install progress.
+Returns a callable, that takes an iterable to "wrap".
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!BarType@{BarType}}
+\index{BarType@{BarType}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{BarType}{BarType}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_abbcf6e3617e022b620f5fbd613435fc3} 
+pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Bar\+Type = Literal\mbox{[}"{}on"{}, "{}off"{}, "{}raw"{}\mbox{]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!ProgressRenderer@{ProgressRenderer}}
+\index{ProgressRenderer@{ProgressRenderer}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{ProgressRenderer}{ProgressRenderer}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_aaec2a4b48dc0897930ef3924275b4485} 
+pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Progress\+Renderer = Callable\mbox{[}\mbox{[}Iterable\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d}{T}}\mbox{]}\mbox{]}, Iterator\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d}{T}}\mbox{]}\mbox{]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d}\index{pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}!T@{T}}
+\index{T@{T}!pip.\_internal.cli.progress\_bars@{pip.\_internal.cli.progress\_bars}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1progress__bars_a885ce619e2095f4ed252853be3ab7c2d} 
+pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+T = Type\+Var("{}T"{})}
+

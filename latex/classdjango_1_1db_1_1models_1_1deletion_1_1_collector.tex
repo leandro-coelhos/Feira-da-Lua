@@ -1,0 +1,269 @@
+\doxysection{django.\+db.\+models.\+deletion.\+Collector Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector}{}\label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+Inheritance diagram for django.\+db.\+models.\+deletion.\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.931780cm]{classdjango_1_1db_1_1models_1_1deletion_1_1_collector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae34a7e5250f45b50208e756f668d9a25}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7f38ef7a136fda5e0937d38f19c2e4a8}{using}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_acb0c0f8c71cbb0c58dd2ee5ee7091805}{origin}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a92a25e9aef2930eb72e650f4e05abd18}{add}} (self, objs, source=None, nullable=False, reverse\+\_\+dependency=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a574d0f3a7a5934549fdb9a7db96db1ef}{add\+\_\+dependency}} (self, model, dependency, reverse\+\_\+dependency=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ab62ed021572de79cf980f1c648782dbe}{add\+\_\+field\+\_\+update}} (self, field, value, objs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae28c5f2827ed5af42f8f24102cd663ae}{add\+\_\+restricted\+\_\+objects}} (self, field, objs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a118f11790e3dd93ff3db9348bf15396c}{clear\+\_\+restricted\+\_\+objects\+\_\+from\+\_\+set}} (self, model, objs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7563be82fd446ef9bcfb114e56dfd22d}{clear\+\_\+restricted\+\_\+objects\+\_\+from\+\_\+queryset}} (self, model, qs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a2bc4a123c8d70b0d953103900848ec96}{can\+\_\+fast\+\_\+delete}} (self, objs, from\+\_\+field=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ac6166e73ca2a20fe76e48db3aa8bfbad}{get\+\_\+del\+\_\+batches}} (self, objs, fields)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae6d2a061dcb129755a51ced6ab45edad}{collect}} (self, objs, source=None, nullable=False, collect\+\_\+related=True, source\+\_\+attr=None, reverse\+\_\+dependency=False, keep\+\_\+parents=False, fail\+\_\+on\+\_\+restricted=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af37e07de0acd4667ff4ba5a6e52002ac}{related\+\_\+objects}} (self, related\+\_\+model, related\+\_\+fields, objs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aa9b21b7799f8225f3b8dad9c58326540}{instances\+\_\+with\+\_\+model}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aed167225de4a87068c3156b198e7697c}{sort}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aabaf91f3931f344113179c2f8f94686b}{delete}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7f38ef7a136fda5e0937d38f19c2e4a8}{using}} = using
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_acb0c0f8c71cbb0c58dd2ee5ee7091805}{origin}} = origin
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a80440fa60e010bac58ce2fc60ed03a38}{data}} = defaultdict(set)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a5cea62de0143341e98597a01640bdf2c}{field\+\_\+updates}} = defaultdict(list)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af48110a2579f74e8a0cf0aede0ca7a1d}{restricted\+\_\+objects}} = defaultdict(partial(defaultdict, set))
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af2834b1a33d053dad320c9a72cc6b9a1}{fast\+\_\+deletes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aeefca6cefa8c3cedf85becbe33d43cd9}{dependencies}} = defaultdict(set)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a53652ec4795083fd79452b85336538fd}{\+\_\+has\+\_\+signal\+\_\+listeners}} (self, model)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae34a7e5250f45b50208e756f668d9a25}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae34a7e5250f45b50208e756f668d9a25} 
+django.\+db.\+models.\+deletion.\+Collector.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{using}{, }\item[{}]{origin}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a53652ec4795083fd79452b85336538fd}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!\_has\_signal\_listeners@{\_has\_signal\_listeners}}
+\index{\_has\_signal\_listeners@{\_has\_signal\_listeners}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{\_has\_signal\_listeners()}{\_has\_signal\_listeners()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a53652ec4795083fd79452b85336538fd} 
+django.\+db.\+models.\+deletion.\+Collector.\+\_\+has\+\_\+signal\+\_\+listeners (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a92a25e9aef2930eb72e650f4e05abd18}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!add@{add}}
+\index{add@{add}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a92a25e9aef2930eb72e650f4e05abd18} 
+django.\+db.\+models.\+deletion.\+Collector.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{objs}{, }\item[{}]{source}{ = {\ttfamily None}, }\item[{}]{nullable}{ = {\ttfamily False}, }\item[{}]{reverse\+\_\+dependency}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add 'objs' to the collection of objects to be deleted.  If the call is
+the result of a cascade, 'source' should be the model that caused it,
+and 'nullable' should be set to True if the relation can be null.
+
+Return a list of all objects that were not already collected.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a574d0f3a7a5934549fdb9a7db96db1ef}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!add\_dependency@{add\_dependency}}
+\index{add\_dependency@{add\_dependency}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{add\_dependency()}{add\_dependency()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a574d0f3a7a5934549fdb9a7db96db1ef} 
+django.\+db.\+models.\+deletion.\+Collector.\+add\+\_\+dependency (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{dependency}{, }\item[{}]{reverse\+\_\+dependency}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ab62ed021572de79cf980f1c648782dbe}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!add\_field\_update@{add\_field\_update}}
+\index{add\_field\_update@{add\_field\_update}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{add\_field\_update()}{add\_field\_update()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ab62ed021572de79cf980f1c648782dbe} 
+django.\+db.\+models.\+deletion.\+Collector.\+add\+\_\+field\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{, }\item[{}]{value}{, }\item[{}]{objs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Schedule a field update. 'objs' must be a homogeneous iterable
+collection of model instances (e.g. a QuerySet).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae28c5f2827ed5af42f8f24102cd663ae}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!add\_restricted\_objects@{add\_restricted\_objects}}
+\index{add\_restricted\_objects@{add\_restricted\_objects}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{add\_restricted\_objects()}{add\_restricted\_objects()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae28c5f2827ed5af42f8f24102cd663ae} 
+django.\+db.\+models.\+deletion.\+Collector.\+add\+\_\+restricted\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{, }\item[{}]{objs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a2bc4a123c8d70b0d953103900848ec96}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!can\_fast\_delete@{can\_fast\_delete}}
+\index{can\_fast\_delete@{can\_fast\_delete}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{can\_fast\_delete()}{can\_fast\_delete()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a2bc4a123c8d70b0d953103900848ec96} 
+django.\+db.\+models.\+deletion.\+Collector.\+can\+\_\+fast\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{objs}{, }\item[{}]{from\+\_\+field}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if the objects in the given queryset-like or single object
+can be fast-deleted. This can be done if there are no cascades, no
+parents and no signal listeners for the object class.
+
+The 'from_field' tells where we are coming from - we need this to
+determine if the objects are in fact to be deleted. Allow also
+skipping parent -> child -> parent chain preventing fast delete of
+the child.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1utils_1_1_nested_objects_a0e26a713ea24f7f94dd80387f690cfaf}{django.\+contrib.\+admin.\+utils.\+Nested\+Objects}}, and \mbox{\hyperlink{classdjango_1_1contrib_1_1contenttypes_1_1management_1_1commands_1_1remove__stale__contenttypes_1_1_no_fast_delete_collector_a45246e216bd0e8f424c879547527a319}{django.\+contrib.\+contenttypes.\+management.\+commands.\+remove\+\_\+stale\+\_\+contenttypes.\+No\+Fast\+Delete\+Collector}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7563be82fd446ef9bcfb114e56dfd22d}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!clear\_restricted\_objects\_from\_queryset@{clear\_restricted\_objects\_from\_queryset}}
+\index{clear\_restricted\_objects\_from\_queryset@{clear\_restricted\_objects\_from\_queryset}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{clear\_restricted\_objects\_from\_queryset()}{clear\_restricted\_objects\_from\_queryset()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7563be82fd446ef9bcfb114e56dfd22d} 
+django.\+db.\+models.\+deletion.\+Collector.\+clear\+\_\+restricted\+\_\+objects\+\_\+from\+\_\+queryset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{qs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a118f11790e3dd93ff3db9348bf15396c}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!clear\_restricted\_objects\_from\_set@{clear\_restricted\_objects\_from\_set}}
+\index{clear\_restricted\_objects\_from\_set@{clear\_restricted\_objects\_from\_set}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{clear\_restricted\_objects\_from\_set()}{clear\_restricted\_objects\_from\_set()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a118f11790e3dd93ff3db9348bf15396c} 
+django.\+db.\+models.\+deletion.\+Collector.\+clear\+\_\+restricted\+\_\+objects\+\_\+from\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{objs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae6d2a061dcb129755a51ced6ab45edad}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!collect@{collect}}
+\index{collect@{collect}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ae6d2a061dcb129755a51ced6ab45edad} 
+django.\+db.\+models.\+deletion.\+Collector.\+collect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{objs}{, }\item[{}]{source}{ = {\ttfamily None}, }\item[{}]{nullable}{ = {\ttfamily False}, }\item[{}]{collect\+\_\+related}{ = {\ttfamily True}, }\item[{}]{source\+\_\+attr}{ = {\ttfamily None}, }\item[{}]{reverse\+\_\+dependency}{ = {\ttfamily False}, }\item[{}]{keep\+\_\+parents}{ = {\ttfamily False}, }\item[{}]{fail\+\_\+on\+\_\+restricted}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add 'objs' to the collection of objects to be deleted as well as all
+parent instances.  'objs' must be a homogeneous iterable collection of
+model instances (e.g. a QuerySet).  If 'collect_related' is True,
+related objects will be handled by their respective on_delete handler.
+
+If the call is the result of a cascade, 'source' should be the model
+that caused it and 'nullable' should be set to True, if the relation
+can be null.
+
+If 'reverse_dependency' is True, 'source' will be deleted before the
+current model, rather than after. (Needed for cascading to parent
+models, the one case in which the cascade follows the forwards
+direction of an FK rather than the reverse direction.)
+
+If 'keep_parents' is True, data of parent model's will be not deleted.
+
+If 'fail_on_restricted' is False, error won't be raised even if it's
+prohibited to delete such objects due to RESTRICT, that defers
+restricted object checking in recursive calls where the top-level call
+may need to collect more objects to determine whether restricted ones
+can be deleted.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1utils_1_1_nested_objects_a7f12de8cdcd29cea840a8b3367a8e03c}{django.\+contrib.\+admin.\+utils.\+Nested\+Objects}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aabaf91f3931f344113179c2f8f94686b}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!delete@{delete}}
+\index{delete@{delete}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aabaf91f3931f344113179c2f8f94686b} 
+django.\+db.\+models.\+deletion.\+Collector.\+delete (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ac6166e73ca2a20fe76e48db3aa8bfbad}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!get\_del\_batches@{get\_del\_batches}}
+\index{get\_del\_batches@{get\_del\_batches}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{get\_del\_batches()}{get\_del\_batches()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_ac6166e73ca2a20fe76e48db3aa8bfbad} 
+django.\+db.\+models.\+deletion.\+Collector.\+get\+\_\+del\+\_\+batches (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{objs}{, }\item[{}]{fields}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the objs in suitably sized batches for the used connection.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aa9b21b7799f8225f3b8dad9c58326540}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!instances\_with\_model@{instances\_with\_model}}
+\index{instances\_with\_model@{instances\_with\_model}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{instances\_with\_model()}{instances\_with\_model()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aa9b21b7799f8225f3b8dad9c58326540} 
+django.\+db.\+models.\+deletion.\+Collector.\+instances\+\_\+with\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af37e07de0acd4667ff4ba5a6e52002ac}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!related\_objects@{related\_objects}}
+\index{related\_objects@{related\_objects}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{related\_objects()}{related\_objects()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af37e07de0acd4667ff4ba5a6e52002ac} 
+django.\+db.\+models.\+deletion.\+Collector.\+related\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{related\+\_\+model}{, }\item[{}]{related\+\_\+fields}{, }\item[{}]{objs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a QuerySet of the related model to objs via related fields.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1utils_1_1_nested_objects_af94052abe9c123a95ba743d0202bdd05}{django.\+contrib.\+admin.\+utils.\+Nested\+Objects}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aed167225de4a87068c3156b198e7697c}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!sort@{sort}}
+\index{sort@{sort}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aed167225de4a87068c3156b198e7697c} 
+django.\+db.\+models.\+deletion.\+Collector.\+sort (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a80440fa60e010bac58ce2fc60ed03a38}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!data@{data}}
+\index{data@{data}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a80440fa60e010bac58ce2fc60ed03a38} 
+django.\+db.\+models.\+deletion.\+Collector.\+data = defaultdict(set)}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aeefca6cefa8c3cedf85becbe33d43cd9}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_aeefca6cefa8c3cedf85becbe33d43cd9} 
+django.\+db.\+models.\+deletion.\+Collector.\+dependencies = defaultdict(set)}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af2834b1a33d053dad320c9a72cc6b9a1}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!fast\_deletes@{fast\_deletes}}
+\index{fast\_deletes@{fast\_deletes}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{fast\_deletes}{fast\_deletes}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af2834b1a33d053dad320c9a72cc6b9a1} 
+list django.\+db.\+models.\+deletion.\+Collector.\+fast\+\_\+deletes = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a5cea62de0143341e98597a01640bdf2c}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!field\_updates@{field\_updates}}
+\index{field\_updates@{field\_updates}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{field\_updates}{field\_updates}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a5cea62de0143341e98597a01640bdf2c} 
+django.\+db.\+models.\+deletion.\+Collector.\+field\+\_\+updates = defaultdict(list)}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_acb0c0f8c71cbb0c58dd2ee5ee7091805}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!origin@{origin}}
+\index{origin@{origin}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_acb0c0f8c71cbb0c58dd2ee5ee7091805} 
+django.\+db.\+models.\+deletion.\+Collector.\+origin = origin}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af48110a2579f74e8a0cf0aede0ca7a1d}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!restricted\_objects@{restricted\_objects}}
+\index{restricted\_objects@{restricted\_objects}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{restricted\_objects}{restricted\_objects}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_af48110a2579f74e8a0cf0aede0ca7a1d} 
+django.\+db.\+models.\+deletion.\+Collector.\+restricted\+\_\+objects = defaultdict(partial(defaultdict, set))}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7f38ef7a136fda5e0937d38f19c2e4a8}\index{django.db.models.deletion.Collector@{django.db.models.deletion.Collector}!using@{using}}
+\index{using@{using}!django.db.models.deletion.Collector@{django.db.models.deletion.Collector}}
+\doxysubsubsection{\texorpdfstring{using}{using}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1deletion_1_1_collector_a7f38ef7a136fda5e0937d38f19c2e4a8} 
+django.\+db.\+models.\+deletion.\+Collector.\+using = using}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/\mbox{\hyperlink{deletion_8py}{deletion.\+py}}\end{DoxyCompactItemize}

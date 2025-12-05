@@ -1,0 +1,868 @@
+\doxysection{\+\_\+pytest.\+pytester.\+Pytester Class Reference}
+\hypertarget{class__pytest_1_1pytester_1_1_pytester}{}\label{class__pytest_1_1pytester_1_1_pytester}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_1_1_timeout_expired}{Timeout\+Expired}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_abc3c239760879ffb92854935c80fe392}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}} request, \mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory}{Temp\+Path\+Factory}} tmp\+\_\+path\+\_\+factory, \mbox{\hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch}{Monkey\+Patch}} monkeypatch, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a403c804f74a87f5e5705774fa896cc1f}{path}} (self)
+\item 
+str \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a747e02c36f5e7bc568141ec74da1ba1c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4ac7212b3586a4be3826c0f032b7b286}{make\+\_\+hook\+\_\+recorder}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} pluginmanager)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a74e9a485053fe4fcb093a907976e985f}{chdir}} (self)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a048469530759e07445ba6768ddaf5f76}{makefile}} (self, str ext, \texorpdfstring{$\ast$}{*}str args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str kwargs)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a340428d493ff5ffb37db222b455636be}{makeconftest}} (self, str source)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_aa557160a5ab0b3da244d59204de00a13}{makeini}} (self, str source)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a8b0a5c3095143c30d46d9199c5f58cf1}{maketoml}} (self, str source)
+\item 
+\mbox{\hyperlink{classiniconfig_1_1_section_wrapper}{Section\+Wrapper}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_ae7ec94933a2716ffc641311744081298}{getinicfg}} (self, str source)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_ad389bf8ce66b45d963cf83c1af2f9944}{makepyprojecttoml}} (self, str source)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a3cc4c4ef5e0a1d920ec92af24f1acab7}{makepyfile}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a93873390a654cc7887dc4b60c47dd458}{maketxtfile}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_ad584ca824d3ba591e937bbb1623aa2d7}{syspathinsert}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f}{path}}=None)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a7901c4e885af1632532678113a8f14cc}{mkdir}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} name)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a56f306017b18ec87cb79cc25b7e90f92}{mkpydir}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} name)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_aeeae92470f10e16abb52e25a149a3eb0}{copy\+\_\+example}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a36d84ff5fa4078e2094664a16759763c}{getnode}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_add7777352b97fdc8731d134e84723569}{config}}, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} arg)
+\item 
+\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a04c6bdeea9e870ef0861ffe57b5004d9}{getpathnode}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f}{path}})
+\item 
+list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a818757aeade00f27f7214ce6e9d281fc}{genitems}} (self, Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\mbox{]} colitems)
+\item 
+Any \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a6adf3f87cb648ddac372aa10def81ac0}{runitem}} (self, str source)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_af29cefaea9dffc5c40da8a44fb0d4c5f}{inline\+\_\+runsource}} (self, str source, \texorpdfstring{$\ast$}{*}cmdlineargs)
+\item 
+tuple\mbox{[}list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]}, \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a35166ef23c5e8792310b9babaab79658}{inline\+\_\+genitems}} (self, \texorpdfstring{$\ast$}{*}args)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_ac79a22242a19304fc0243e9aeb17a122}{inline\+\_\+run}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} args, \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a1bce2fc5b1073fa529fcd207b9a7abb8}{plugins}}=(), bool no\+\_\+reraise\+\_\+ctrlc=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a75f677a6e763dbfa334842881f6a1692}{runpytest\+\_\+inprocess}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a2765db48ffe1b8853581d711ff43a87b}{runpytest}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a981ee204e0ac7b2864b92ce0cfd01ec1}{parseconfig}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} args)
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a251fe567edf61840f14a7b5a36acd358}{parseconfigure}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} args)
+\item 
+\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a04fceaffb163cbd66e78c47ddd303f64}{getitem}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} source, str funcname="{}test\+\_\+func"{})
+\item 
+list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a1fa5f11b4d2d7c7e0ab417fae878e7be}{getitems}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} source)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_aa1e7a6c7c394537ca4eca8ac982cab6d}{getmodulecol}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} source, configargs=(), \texorpdfstring{$\ast$}{*}, bool withinit=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a89b60af2254afa04043487ddd0f3746f}{collect\+\_\+by\+\_\+name}} (self, \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} modcol, str name)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4402510cbb3592c648c409c62354feb9}{popen}} (self, Sequence\mbox{[}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\mbox{]} cmdargs, int\texorpdfstring{$\vert$}{|}Text\+IO stdout=subprocess.\+PIPE, int\texorpdfstring{$\vert$}{|}Text\+IO stderr=subprocess.\+PIPE, \mbox{\hyperlink{class__pytest_1_1compat_1_1_not_set_type}{Not\+Set\+Type}}\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}IO\mbox{[}Any\mbox{]}\texorpdfstring{$\vert$}{|}int stdin=\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c}{CLOSE\+\_\+\+STDIN}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kw)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_afeeb62d42c70853b64653313ee439674}{run}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} cmdargs, float\texorpdfstring{$\vert$}{|}None timeout=None, \mbox{\hyperlink{class__pytest_1_1compat_1_1_not_set_type}{Not\+Set\+Type}}\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}IO\mbox{[}Any\mbox{]}\texorpdfstring{$\vert$}{|}int stdin=\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c}{CLOSE\+\_\+\+STDIN}})
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4e0c539507f15fd333cf618faf9687ef}{runpython}} (self, os.\+Path\+Like\mbox{[}str\mbox{]} script)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_aea789acfe206d9c40d9a6bf54a337f2a}{runpython\+\_\+c}} (self, str command)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a59323c6d6a1469a1206f1c0b8fce99c9}{runpytest\+\_\+subprocess}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} args, float\texorpdfstring{$\vert$}{|}None timeout=None)
+\item 
+pexpect.\+spawn \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a32c3ce023d6c0a13902fa5ea68cbc2e4}{spawn\+\_\+pytest}} (self, str string, float expect\+\_\+timeout=10.\+0)
+\item 
+pexpect.\+spawn \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_abebb7155ff193e7514ef38b8569e6b58}{spawn}} (self, str cmd, float expect\+\_\+timeout=10.\+0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a1bce2fc5b1073fa529fcd207b9a7abb8}{plugins}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f}{path}}
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_add7777352b97fdc8731d134e84723569}{config}} = self.\+parseconfigure(\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f}{path}}, \texorpdfstring{$\ast$}{*}configargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Final \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c}{CLOSE\+\_\+\+STDIN}} = NOTSET
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a9ab77284b7983928b08eaf0bf103a2ff}{\+\_\+finalize}} (self)
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a7a55c8d58e26455aa4fa8bc9c5d692c6}{\+\_\+makefile}} (self, str ext, Sequence\mbox{[}Any\texorpdfstring{$\vert$}{|}bytes\mbox{]} lines, dict\mbox{[}str, str\mbox{]} files, str encoding="{}utf-\/8"{})
+\item 
+list\mbox{[}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a0351682a9bda53abcddfe725386e43be}{\+\_\+ensure\+\_\+basetemp}} (self, Sequence\mbox{[}str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\mbox{]} args)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a17d13ef475d0319f4d2175a2e3a90131}{\+\_\+dump\+\_\+lines}} (self, lines, fp)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_ab5dbc8afb29dfcd2bd1cf65229137849}{\+\_\+getpytestargs}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a1685f1400be90411a1c5888321fd980f}{\+\_\+request}} = request
+\item 
+tuple \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a29cfe6112cd083b6a30940ddeb928eec}{\+\_\+mod\+\_\+collections}}
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a131375830d6539aa0fd35a94e28c0ea3}{\+\_\+name}} = name
+\item 
+Path \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a5c5861205c074a38c05b97965253e526}{\+\_\+path}} = tmp\+\_\+path\+\_\+factory.\+mktemp(name, numbered=True)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a86f9453f2389a540b5cd3c2917e3aa9c}{\+\_\+sys\+\_\+path\+\_\+snapshot}} = \mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_paths_snapshot}{Sys\+Paths\+Snapshot}}()
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_modules_snapshot}{Sys\+Modules\+Snapshot}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a3e3d4f2e674764cba309251fa14bf722}{\+\_\+sys\+\_\+modules\+\_\+snapshot}} = self.\+\_\+\+\_\+take\+\_\+sys\+\_\+modules\+\_\+snapshot()
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a756d4a3ee168c2c1cba946c902a470e1}{\+\_\+finalize}}
+\item 
+str \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a8596e321231854d0e03fcb284388f485}{\+\_\+method}} = self.\+\_\+request.\+config.\+getoption("{}-\/-\/runpytest"{})
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a3d5bfbbceb185adf96c1bf0006c7fce0}{\+\_\+test\+\_\+tmproot}} = tmp\+\_\+path\+\_\+factory.\+mktemp(f"{}tmp-\/\{name\}"{}, numbered=True)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a84f7d424b82264135b4ba11c3b77fd11}{\+\_\+monkeypatch}} = monkeypatch
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_modules_snapshot}{Sys\+Modules\+Snapshot}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a692c8b7784c4b83b8173c97505acbba7}{\+\_\+\+\_\+take\+\_\+sys\+\_\+modules\+\_\+snapshot}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_af4722fb07afbe1f29ebe69998e7566fc}{\+\_\+\+\_\+test\+\_\+\+\_\+}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Facilities to write tests/configuration files, execute pytest in isolation, and match
+against expected output, perfect for black-box testing of pytest plugins.
+
+It attempts to isolate the test run from external factors as much as possible, modifying
+the current working directory to :attr:`path` and environment variables during initialization.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_abc3c239760879ffb92854935c80fe392}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_abc3c239760879ffb92854935c80fe392} 
+ None \+\_\+pytest.\+pytester.\+Pytester.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_fixture_request}{Fixture\+Request}}}]{request}{, }\item[{\mbox{\hyperlink{class__pytest_1_1tmpdir_1_1_temp_path_factory}{Temp\+Path\+Factory}}}]{tmp\+\_\+path\+\_\+factory}{, }\item[{\mbox{\hyperlink{class__pytest_1_1monkeypatch_1_1_monkey_patch}{Monkey\+Patch}}}]{monkeypatch}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a747e02c36f5e7bc568141ec74da1ba1c}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a747e02c36f5e7bc568141ec74da1ba1c} 
+ str \+\_\+pytest.\+pytester.\+Pytester.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a692c8b7784c4b83b8173c97505acbba7}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_\_take\_sys\_modules\_snapshot@{\_\_take\_sys\_modules\_snapshot}}
+\index{\_\_take\_sys\_modules\_snapshot@{\_\_take\_sys\_modules\_snapshot}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_\_take\_sys\_modules\_snapshot()}{\_\_take\_sys\_modules\_snapshot()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a692c8b7784c4b83b8173c97505acbba7} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_modules_snapshot}{Sys\+Modules\+Snapshot}} \+\_\+pytest.\+pytester.\+Pytester.\+\_\+\+\_\+take\+\_\+sys\+\_\+modules\+\_\+snapshot (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a17d13ef475d0319f4d2175a2e3a90131}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_dump\_lines@{\_dump\_lines}}
+\index{\_dump\_lines@{\_dump\_lines}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_dump\_lines()}{\_dump\_lines()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a17d13ef475d0319f4d2175a2e3a90131} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+dump\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lines}{, }\item[{}]{fp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a0351682a9bda53abcddfe725386e43be}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_ensure\_basetemp@{\_ensure\_basetemp}}
+\index{\_ensure\_basetemp@{\_ensure\_basetemp}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_basetemp()}{\_ensure\_basetemp()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a0351682a9bda53abcddfe725386e43be} 
+ list\mbox{[}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}\mbox{]} \+\_\+pytest.\+pytester.\+Pytester.\+\_\+ensure\+\_\+basetemp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}\mbox{]}     }]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a9ab77284b7983928b08eaf0bf103a2ff}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_finalize@{\_finalize}}
+\index{\_finalize@{\_finalize}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_finalize()}{\_finalize()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a9ab77284b7983928b08eaf0bf103a2ff} 
+ None \+\_\+pytest.\+pytester.\+Pytester.\+\_\+finalize (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Clean up global state artifacts.
+
+Some methods modify the global interpreter state and this tries to
+clean this up. It does not remove the temporary directory however so
+it can be looked at after the test run has finished.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_ab5dbc8afb29dfcd2bd1cf65229137849}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_getpytestargs@{\_getpytestargs}}
+\index{\_getpytestargs@{\_getpytestargs}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_getpytestargs()}{\_getpytestargs()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_ab5dbc8afb29dfcd2bd1cf65229137849} 
+ tuple\mbox{[}str, ...\mbox{]} \+\_\+pytest.\+pytester.\+Pytester.\+\_\+getpytestargs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a7a55c8d58e26455aa4fa8bc9c5d692c6}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_makefile@{\_makefile}}
+\index{\_makefile@{\_makefile}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_makefile()}{\_makefile()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a7a55c8d58e26455aa4fa8bc9c5d692c6} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+\_\+makefile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{ext}{, }\item[{Sequence\mbox{[}Any \texorpdfstring{$\vert$}{|} bytes\mbox{]}}]{lines}{, }\item[{dict\mbox{[}str, str\mbox{]}}]{files}{, }\item[{str }]{encoding}{ = {\ttfamily "{}utf-\/8"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a74e9a485053fe4fcb093a907976e985f}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!chdir@{chdir}}
+\index{chdir@{chdir}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{chdir()}{chdir()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a74e9a485053fe4fcb093a907976e985f} 
+ None \+\_\+pytest.\+pytester.\+Pytester.\+chdir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cd into the temporary directory.
+
+This is done automatically upon instantiation.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a89b60af2254afa04043487ddd0f3746f}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!collect\_by\_name@{collect\_by\_name}}
+\index{collect\_by\_name@{collect\_by\_name}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{collect\_by\_name()}{collect\_by\_name()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a89b60af2254afa04043487ddd0f3746f} 
+ \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+pytester.\+Pytester.\+collect\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}}]{modcol}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the collection node for name from the module collection.
+
+Searches a module collection node for a collection node matching the
+given name.
+
+:param modcol: A module collection node; see :py:meth:`getmodulecol`.
+:param name: The name of the node to return.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_aeeae92470f10e16abb52e25a149a3eb0}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!copy\_example@{copy\_example}}
+\index{copy\_example@{copy\_example}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{copy\_example()}{copy\_example()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_aeeae92470f10e16abb52e25a149a3eb0} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+copy\+\_\+example (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy file from project's directory into the testdir.
+
+:param name:
+    The name of the file to copy.
+:return:
+    Path to the copied directory (inside ``self.path``).
+:rtype: pathlib.Path
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a818757aeade00f27f7214ce6e9d281fc}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!genitems@{genitems}}
+\index{genitems@{genitems}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{genitems()}{genitems()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a818757aeade00f27f7214ce6e9d281fc} 
+ list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} \+\_\+pytest.\+pytester.\+Pytester.\+genitems (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}}\mbox{]}}]{colitems}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate all test items from a collection node.
+
+This recurses into the collection node and returns a list of all the
+test items contained within.
+
+:param colitems:
+    The collection nodes.
+:returns:
+    The collected items.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_ae7ec94933a2716ffc641311744081298}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!getinicfg@{getinicfg}}
+\index{getinicfg@{getinicfg}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{getinicfg()}{getinicfg()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_ae7ec94933a2716ffc641311744081298} 
+ \mbox{\hyperlink{classiniconfig_1_1_section_wrapper}{Section\+Wrapper}} \+\_\+pytest.\+pytester.\+Pytester.\+getinicfg (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the pytest section from the tox.ini config file.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a04fceaffb163cbd66e78c47ddd303f64}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!getitem@{getitem}}
+\index{getitem@{getitem}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{getitem()}{getitem()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a04fceaffb163cbd66e78c47ddd303f64} 
+ \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \+\_\+pytest.\+pytester.\+Pytester.\+getitem (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{source}{, }\item[{str }]{funcname}{ = {\ttfamily "{}test\+\_\+func"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the test item for a test function.
+
+Writes the source to a python file and runs pytest's collection on
+the resulting module, returning the test item for the requested
+function name.
+
+:param source:
+    The module source.
+:param funcname:
+    The name of the test function for which to return a test item.
+:returns:
+    The test item.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a1fa5f11b4d2d7c7e0ab417fae878e7be}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!getitems@{getitems}}
+\index{getitems@{getitems}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{getitems()}{getitems()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a1fa5f11b4d2d7c7e0ab417fae878e7be} 
+ list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]} \+\_\+pytest.\+pytester.\+Pytester.\+getitems (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return all test items collected from the module.
+
+Writes the source to a Python file and runs pytest's collection on
+the resulting module, returning all test items contained within.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_aa1e7a6c7c394537ca4eca8ac982cab6d}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!getmodulecol@{getmodulecol}}
+\index{getmodulecol@{getmodulecol}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{getmodulecol()}{getmodulecol()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_aa1e7a6c7c394537ca4eca8ac982cab6d} 
+\+\_\+pytest.\+pytester.\+Pytester.\+getmodulecol (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{source}{, }\item[{}]{configargs}{ = {\ttfamily ()}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{withinit}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the module collection node for ``source``.
+
+Writes ``source`` to a file using :py:meth:`makepyfile` and then
+runs the pytest collection on it, returning the collection node for the
+test module.
+
+:param source:
+    The source code of the module to collect.
+
+:param configargs:
+    Any extra arguments to pass to :py:meth:`parseconfigure`.
+
+:param withinit:
+    Whether to also write an ``__init__.py`` file to the same
+    directory to ensure it is a package.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a36d84ff5fa4078e2094664a16759763c}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!getnode@{getnode}}
+\index{getnode@{getnode}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{getnode()}{getnode()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a36d84ff5fa4078e2094664a16759763c} 
+ \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \+\_\+pytest.\+pytester.\+Pytester.\+getnode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}}]{config}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{arg}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the collection node of a file.
+
+:param config:
+   A pytest config.
+   See :py:meth:`parseconfig` and :py:meth:`parseconfigure` for creating it.
+:param arg:
+    Path to the file.
+:returns:
+    The node.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a04c6bdeea9e870ef0861ffe57b5004d9}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!getpathnode@{getpathnode}}
+\index{getpathnode@{getpathnode}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{getpathnode()}{getpathnode()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a04c6bdeea9e870ef0861ffe57b5004d9} 
+ \mbox{\hyperlink{class__pytest_1_1nodes_1_1_collector}{Collector}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}} \+\_\+pytest.\+pytester.\+Pytester.\+getpathnode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the collection node of a file.
+
+This is like :py:meth:`getnode` but uses :py:meth:`parseconfigure` to
+create the (configured) pytest Config instance.
+
+:param path:
+    Path to the file.
+:returns:
+    The node.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a35166ef23c5e8792310b9babaab79658}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!inline\_genitems@{inline\_genitems}}
+\index{inline\_genitems@{inline\_genitems}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{inline\_genitems()}{inline\_genitems()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a35166ef23c5e8792310b9babaab79658} 
+ tuple\mbox{[}list\mbox{[}\mbox{\hyperlink{class__pytest_1_1nodes_1_1_item}{Item}}\mbox{]}, \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}}\mbox{]} \+\_\+pytest.\+pytester.\+Pytester.\+inline\+\_\+genitems (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run ``pytest.main(['--collect-only'])`` in-process.
+
+Runs the :py:func:`pytest.main` function to run all of pytest inside
+the test process itself like :py:meth:`inline_run`, but returns a
+tuple of the collected items and a :py:class:`HookRecorder` instance.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_ac79a22242a19304fc0243e9aeb17a122}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!inline\_run@{inline\_run}}
+\index{inline\_run@{inline\_run}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{inline\_run()}{inline\_run()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_ac79a22242a19304fc0243e9aeb17a122} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}} \+\_\+pytest.\+pytester.\+Pytester.\+inline\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{args}{, }\item[{}]{plugins}{ = {\ttfamily ()}, }\item[{bool }]{no\+\_\+reraise\+\_\+ctrlc}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run ``pytest.main()`` in-process, returning a HookRecorder.
+
+Runs the :py:func:`pytest.main` function to run all of pytest inside
+the test process itself.  This means it can return a
+:py:class:`HookRecorder` instance which gives more detailed results
+from that run than can be done by matching stdout/stderr from
+:py:meth:`runpytest`.
+
+:param args:
+    Command line arguments to pass to :py:func:`pytest.main`.
+:param plugins:
+    Extra plugin instances the ``pytest.main()`` instance should use.
+:param no_reraise_ctrlc:
+    Typically we reraise keyboard interrupts from the child run. If
+    True, the KeyboardInterrupt exception is captured.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_af29cefaea9dffc5c40da8a44fb0d4c5f}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!inline\_runsource@{inline\_runsource}}
+\index{inline\_runsource@{inline\_runsource}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{inline\_runsource()}{inline\_runsource()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_af29cefaea9dffc5c40da8a44fb0d4c5f} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}} \+\_\+pytest.\+pytester.\+Pytester.\+inline\+\_\+runsource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{, }\item[{\texorpdfstring{$\ast$}{*}}]{cmdlineargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a test module in process using ``pytest.main()``.
+
+This run writes "source" into a temporary file and runs
+``pytest.main()`` on it, returning a :py:class:`HookRecorder` instance
+for the result.
+
+:param source: The source code of the test module.
+:param cmdlineargs: Any extra command line arguments to use.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a4ac7212b3586a4be3826c0f032b7b286}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!make\_hook\_recorder@{make\_hook\_recorder}}
+\index{make\_hook\_recorder@{make\_hook\_recorder}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{make\_hook\_recorder()}{make\_hook\_recorder()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a4ac7212b3586a4be3826c0f032b7b286} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder}{Hook\+Recorder}} \+\_\+pytest.\+pytester.\+Pytester.\+make\+\_\+hook\+\_\+recorder (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{pluginmanager}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new :class:`HookRecorder` for a :class:`PytestPluginManager`.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a340428d493ff5ffb37db222b455636be}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!makeconftest@{makeconftest}}
+\index{makeconftest@{makeconftest}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{makeconftest()}{makeconftest()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a340428d493ff5ffb37db222b455636be} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+makeconftest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a conftest.py file.
+
+:param source: The contents.
+:returns: The conftest.py file.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a048469530759e07445ba6768ddaf5f76}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!makefile@{makefile}}
+\index{makefile@{makefile}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{makefile()}{makefile()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a048469530759e07445ba6768ddaf5f76} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+makefile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{ext}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create new text file(s) in the test directory.
+
+:param ext:
+The extension the file(s) should use, including the dot, e.g. `.py`.
+:param args:
+All args are treated as strings and joined using newlines.
+The result is written as contents to the file.  The name of the
+file is based on the test function requesting this fixture.
+:param kwargs:
+Each keyword is the name of a file, while the value of it will
+be written as contents of the file.
+:returns:
+The first created file.
+
+Examples:
+
+.. code-block:: python
+
+pytester.makefile(".txt", "line1", "line2")
+
+pytester.makefile(".ini", pytest="[pytest]\naddopts=-rs\n")
+
+To create binary files, use :meth:`pathlib.Path.write_bytes` directly:
+
+.. code-block:: python
+
+filename = pytester.path.joinpath("foo.bin")
+filename.write_bytes(b"...")
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_aa557160a5ab0b3da244d59204de00a13}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!makeini@{makeini}}
+\index{makeini@{makeini}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{makeini()}{makeini()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_aa557160a5ab0b3da244d59204de00a13} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+makeini (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a tox.ini file.
+
+:param source: The contents.
+:returns: The tox.ini file.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a3cc4c4ef5e0a1d920ec92af24f1acab7}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!makepyfile@{makepyfile}}
+\index{makepyfile@{makepyfile}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{makepyfile()}{makepyfile()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a3cc4c4ef5e0a1d920ec92af24f1acab7} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+makepyfile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for .makefile() with a .py extension.
+
+Defaults to the test name with a '.py' extension, e.g test_foobar.py, overwriting
+existing files.
+
+Examples:
+
+.. code-block:: python
+
+    def test_something(pytester):
+        # Initial file is created test_something.py.
+        pytester.makepyfile("foobar")
+        # To create multiple files, pass kwargs accordingly.
+        pytester.makepyfile(custom="foobar")
+        # At this point, both 'test_something.py' & 'custom.py' exist in the test directory.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_ad389bf8ce66b45d963cf83c1af2f9944}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!makepyprojecttoml@{makepyprojecttoml}}
+\index{makepyprojecttoml@{makepyprojecttoml}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{makepyprojecttoml()}{makepyprojecttoml()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_ad389bf8ce66b45d963cf83c1af2f9944} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+makepyprojecttoml (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a pyproject.toml file.
+
+:param source: The contents.
+:returns: The pyproject.ini file.
+
+.. versionadded:: 6.0
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a8b0a5c3095143c30d46d9199c5f58cf1}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!maketoml@{maketoml}}
+\index{maketoml@{maketoml}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{maketoml()}{maketoml()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a8b0a5c3095143c30d46d9199c5f58cf1} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+maketoml (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a pytest.toml file.
+
+:param source: The contents.
+:returns: The pytest.toml file.
+
+.. versionadded:: 9.0
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a93873390a654cc7887dc4b60c47dd458}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!maketxtfile@{maketxtfile}}
+\index{maketxtfile@{maketxtfile}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{maketxtfile()}{maketxtfile()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a93873390a654cc7887dc4b60c47dd458} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+maketxtfile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for .makefile() with a .txt extension.
+
+Defaults to the test name with a '.txt' extension, e.g test_foobar.txt, overwriting
+existing files.
+
+Examples:
+
+.. code-block:: python
+
+    def test_something(pytester):
+        # Initial file is created test_something.txt.
+        pytester.maketxtfile("foobar")
+        # To create multiple files, pass kwargs accordingly.
+        pytester.maketxtfile(custom="foobar")
+        # At this point, both 'test_something.txt' & 'custom.txt' exist in the test directory.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a7901c4e885af1632532678113a8f14cc}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{mkdir()}{mkdir()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a7901c4e885af1632532678113a8f14cc} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+mkdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new (sub)directory.
+
+:param name:
+    The name of the directory, relative to the pytester path.
+:returns:
+    The created directory.
+:rtype: pathlib.Path
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a56f306017b18ec87cb79cc25b7e90f92}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!mkpydir@{mkpydir}}
+\index{mkpydir@{mkpydir}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{mkpydir()}{mkpydir()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a56f306017b18ec87cb79cc25b7e90f92} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+mkpydir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new python package.
+
+This creates a (sub)directory with an empty ``__init__.py`` file so it
+gets recognised as a Python package.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a981ee204e0ac7b2864b92ce0cfd01ec1}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!parseconfig@{parseconfig}}
+\index{parseconfig@{parseconfig}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{parseconfig()}{parseconfig()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a981ee204e0ac7b2864b92ce0cfd01ec1} 
+ \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \+\_\+pytest.\+pytester.\+Pytester.\+parseconfig (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new pytest :class:`pytest.Config` instance from given
+commandline args.
+
+This invokes the pytest bootstrapping code in _pytest.config to create a
+new :py:class:`pytest.PytestPluginManager` and call the
+:hook:`pytest_cmdline_parse` hook to create a new :class:`pytest.Config`
+instance.
+
+If :attr:`plugins` has been populated they should be plugin modules
+to be registered with the plugin manager.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a251fe567edf61840f14a7b5a36acd358}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!parseconfigure@{parseconfigure}}
+\index{parseconfigure@{parseconfigure}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{parseconfigure()}{parseconfigure()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a251fe567edf61840f14a7b5a36acd358} 
+ \mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \+\_\+pytest.\+pytester.\+Pytester.\+parseconfigure (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new pytest configured Config instance.
+
+Returns a new :py:class:`pytest.Config` instance like
+:py:meth:`parseconfig`, but also calls the :hook:`pytest_configure`
+hook.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a403c804f74a87f5e5705774fa896cc1f}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!path@{path}}
+\index{path@{path}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a403c804f74a87f5e5705774fa896cc1f} 
+ Path \+\_\+pytest.\+pytester.\+Pytester.\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Temporary directory path used to create files/run tests from, etc.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a4402510cbb3592c648c409c62354feb9}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!popen@{popen}}
+\index{popen@{popen}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{popen()}{popen()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a4402510cbb3592c648c409c62354feb9} 
+\+\_\+pytest.\+pytester.\+Pytester.\+popen (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}\mbox{]}}]{cmdargs}{, }\item[{int \texorpdfstring{$\vert$}{|} Text\+IO }]{stdout}{ = {\ttfamily subprocess.PIPE}, }\item[{int \texorpdfstring{$\vert$}{|} Text\+IO }]{stderr}{ = {\ttfamily subprocess.PIPE}, }\item[{\mbox{\hyperlink{class__pytest_1_1compat_1_1_not_set_type}{Not\+Set\+Type}} \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} IO\mbox{[}Any\mbox{]} \texorpdfstring{$\vert$}{|} int }]{stdin}{ = {\ttfamily \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c}{CLOSE\+\_\+\+STDIN}}}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invoke :py:class:`subprocess.Popen`.
+
+Calls :py:class:`subprocess.Popen` making sure the current working
+directory is in ``PYTHONPATH``.
+
+You probably want to use :py:meth:`run` instead.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_afeeb62d42c70853b64653313ee439674}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!run@{run}}
+\index{run@{run}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_afeeb62d42c70853b64653313ee439674} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \+\_\+pytest.\+pytester.\+Pytester.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{cmdargs}{, }\item[{float \texorpdfstring{$\vert$}{|} None }]{timeout}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{class__pytest_1_1compat_1_1_not_set_type}{Not\+Set\+Type}} \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} IO\mbox{[}Any\mbox{]} \texorpdfstring{$\vert$}{|} int }]{stdin}{ = {\ttfamily \mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c}{CLOSE\+\_\+\+STDIN}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a command with arguments.
+
+Run a process using :py:class:`subprocess.Popen` saving the stdout and
+stderr.
+
+:param cmdargs:
+    The sequence of arguments to pass to :py:class:`subprocess.Popen`,
+    with path-like objects being converted to :py:class:`str`
+    automatically.
+:param timeout:
+    The period in seconds after which to timeout and raise
+    :py:class:`Pytester.TimeoutExpired`.
+:param stdin:
+    Optional standard input.
+
+    - If it is ``CLOSE_STDIN`` (Default), then this method calls
+      :py:class:`subprocess.Popen` with ``stdin=subprocess.PIPE``, and
+      the standard input is closed immediately after the new command is
+      started.
+
+    - If it is of type :py:class:`bytes`, these bytes are sent to the
+      standard input of the command.
+
+    - Otherwise, it is passed through to :py:class:`subprocess.Popen`.
+      For further information in this case, consult the document of the
+      ``stdin`` parameter in :py:class:`subprocess.Popen`.
+:type stdin: _pytest.compat.NotSetType | bytes | IO[Any] | int
+:returns:
+    The result.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a6adf3f87cb648ddac372aa10def81ac0}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!runitem@{runitem}}
+\index{runitem@{runitem}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{runitem()}{runitem()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a6adf3f87cb648ddac372aa10def81ac0} 
+ Any \+\_\+pytest.\+pytester.\+Pytester.\+runitem (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the "test_func" Item.
+
+The calling test instance (class containing the test method) must
+provide a ``.getrunner()`` method which should return a runner which
+can run the test protocol for a single item, e.g.
+``_pytest.runner.runtestprotocol``.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a2765db48ffe1b8853581d711ff43a87b}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!runpytest@{runpytest}}
+\index{runpytest@{runpytest}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{runpytest()}{runpytest()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a2765db48ffe1b8853581d711ff43a87b} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \+\_\+pytest.\+pytester.\+Pytester.\+runpytest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run pytest inline or in a subprocess, depending on the command line
+option "--runpytest" and return a :py:class:`~pytest.RunResult`.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a75f677a6e763dbfa334842881f6a1692}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!runpytest\_inprocess@{runpytest\_inprocess}}
+\index{runpytest\_inprocess@{runpytest\_inprocess}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{runpytest\_inprocess()}{runpytest\_inprocess()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a75f677a6e763dbfa334842881f6a1692} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \+\_\+pytest.\+pytester.\+Pytester.\+runpytest\+\_\+inprocess (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return result of running pytest in-process, providing a similar
+interface to what self.runpytest() provides.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a59323c6d6a1469a1206f1c0b8fce99c9}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!runpytest\_subprocess@{runpytest\_subprocess}}
+\index{runpytest\_subprocess@{runpytest\_subprocess}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{runpytest\_subprocess()}{runpytest\_subprocess()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a59323c6d6a1469a1206f1c0b8fce99c9} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \+\_\+pytest.\+pytester.\+Pytester.\+runpytest\+\_\+subprocess (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{args}{, }\item[{float \texorpdfstring{$\vert$}{|} None }]{timeout}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run pytest as a subprocess with given arguments.
+
+Any plugins added to the :py:attr:`plugins` list will be added using the
+``-p`` command line option.  Additionally ``--basetemp`` is used to put
+any temporary files and directories in a numbered directory prefixed
+with "runpytest-" to not conflict with the normal numbered pytest
+location for temporary files and directories.
+
+:param args:
+    The sequence of arguments to pass to the pytest subprocess.
+:param timeout:
+    The period in seconds after which to timeout and raise
+    :py:class:`Pytester.TimeoutExpired`.
+:returns:
+    The result.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a4e0c539507f15fd333cf618faf9687ef}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!runpython@{runpython}}
+\index{runpython@{runpython}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{runpython()}{runpython()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a4e0c539507f15fd333cf618faf9687ef} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \+\_\+pytest.\+pytester.\+Pytester.\+runpython (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{os.\+Path\+Like\mbox{[}str\mbox{]}}]{script}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a python script using sys.executable as interpreter.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_aea789acfe206d9c40d9a6bf54a337f2a}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!runpython\_c@{runpython\_c}}
+\index{runpython\_c@{runpython\_c}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{runpython\_c()}{runpython\_c()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_aea789acfe206d9c40d9a6bf54a337f2a} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_run_result}{Run\+Result}} \+\_\+pytest.\+pytester.\+Pytester.\+runpython\+\_\+c (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{command}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run ``python -c "command"``.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_abebb7155ff193e7514ef38b8569e6b58}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!spawn@{spawn}}
+\index{spawn@{spawn}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_abebb7155ff193e7514ef38b8569e6b58} 
+ pexpect.\+spawn \+\_\+pytest.\+pytester.\+Pytester.\+spawn (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{cmd}{, }\item[{float }]{expect\+\_\+timeout}{ = {\ttfamily 10.0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a command using pexpect.
+
+The pexpect child is returned.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_a32c3ce023d6c0a13902fa5ea68cbc2e4}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!spawn\_pytest@{spawn\_pytest}}
+\index{spawn\_pytest@{spawn\_pytest}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{spawn\_pytest()}{spawn\_pytest()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a32c3ce023d6c0a13902fa5ea68cbc2e4} 
+ pexpect.\+spawn \+\_\+pytest.\+pytester.\+Pytester.\+spawn\+\_\+pytest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{string}{, }\item[{float }]{expect\+\_\+timeout}{ = {\ttfamily 10.0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run pytest using pexpect.
+
+This makes sure to use the right pytest and sets up the temporary
+directory locations.
+
+The pexpect child is returned.
+\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_pytester_ad584ca824d3ba591e937bbb1623aa2d7}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!syspathinsert@{syspathinsert}}
+\index{syspathinsert@{syspathinsert}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{syspathinsert()}{syspathinsert()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_ad584ca824d3ba591e937bbb1623aa2d7} 
+ None \+\_\+pytest.\+pytester.\+Pytester.\+syspathinsert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{path}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepend a directory to sys.path, defaults to :attr:`path`.
+
+This is undone automatically when this object dies at the end of each
+test.
+
+:param path:
+    The path.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_af4722fb07afbe1f29ebe69998e7566fc}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_\_test\_\_@{\_\_test\_\_}}
+\index{\_\_test\_\_@{\_\_test\_\_}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_\_test\_\_}{\_\_test\_\_}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_af4722fb07afbe1f29ebe69998e7566fc} 
+bool \+\_\+pytest.\+pytester.\+Pytester.\+\_\+\+\_\+test\+\_\+\+\_\+ = False\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a756d4a3ee168c2c1cba946c902a470e1}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_finalize@{\_finalize}}
+\index{\_finalize@{\_finalize}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_finalize}{\_finalize}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a756d4a3ee168c2c1cba946c902a470e1} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+finalize\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a8596e321231854d0e03fcb284388f485}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_method@{\_method}}
+\index{\_method@{\_method}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_method}{\_method}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a8596e321231854d0e03fcb284388f485} 
+str \+\_\+pytest.\+pytester.\+Pytester.\+\_\+method = self.\+\_\+request.\+config.\+getoption("{}-\/-\/runpytest"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a29cfe6112cd083b6a30940ddeb928eec}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_mod\_collections@{\_mod\_collections}}
+\index{\_mod\_collections@{\_mod\_collections}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_mod\_collections}{\_mod\_collections}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a29cfe6112cd083b6a30940ddeb928eec} 
+tuple \+\_\+pytest.\+pytester.\+Pytester.\+\_\+mod\+\_\+collections\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ WeakKeyDictionary()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a84f7d424b82264135b4ba11c3b77fd11}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_monkeypatch@{\_monkeypatch}}
+\index{\_monkeypatch@{\_monkeypatch}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_monkeypatch}{\_monkeypatch}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a84f7d424b82264135b4ba11c3b77fd11} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+monkeypatch = monkeypatch\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a131375830d6539aa0fd35a94e28c0ea3}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_name@{\_name}}
+\index{\_name@{\_name}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a131375830d6539aa0fd35a94e28c0ea3} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+name = name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a5c5861205c074a38c05b97965253e526}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_path@{\_path}}
+\index{\_path@{\_path}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a5c5861205c074a38c05b97965253e526} 
+Path \+\_\+pytest.\+pytester.\+Pytester.\+\_\+path = tmp\+\_\+path\+\_\+factory.\+mktemp(name, numbered=True)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a1685f1400be90411a1c5888321fd980f}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_request@{\_request}}
+\index{\_request@{\_request}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_request}{\_request}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a1685f1400be90411a1c5888321fd980f} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+request = request\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a3e3d4f2e674764cba309251fa14bf722}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_sys\_modules\_snapshot@{\_sys\_modules\_snapshot}}
+\index{\_sys\_modules\_snapshot@{\_sys\_modules\_snapshot}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_sys\_modules\_snapshot}{\_sys\_modules\_snapshot}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a3e3d4f2e674764cba309251fa14bf722} 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_modules_snapshot}{Sys\+Modules\+Snapshot}} \+\_\+pytest.\+pytester.\+Pytester.\+\_\+sys\+\_\+modules\+\_\+snapshot = self.\+\_\+\+\_\+take\+\_\+sys\+\_\+modules\+\_\+snapshot()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a86f9453f2389a540b5cd3c2917e3aa9c}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_sys\_path\_snapshot@{\_sys\_path\_snapshot}}
+\index{\_sys\_path\_snapshot@{\_sys\_path\_snapshot}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_sys\_path\_snapshot}{\_sys\_path\_snapshot}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a86f9453f2389a540b5cd3c2917e3aa9c} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+sys\+\_\+path\+\_\+snapshot = \mbox{\hyperlink{class__pytest_1_1pytester_1_1_sys_paths_snapshot}{Sys\+Paths\+Snapshot}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a3d5bfbbceb185adf96c1bf0006c7fce0}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!\_test\_tmproot@{\_test\_tmproot}}
+\index{\_test\_tmproot@{\_test\_tmproot}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{\_test\_tmproot}{\_test\_tmproot}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a3d5bfbbceb185adf96c1bf0006c7fce0} 
+\+\_\+pytest.\+pytester.\+Pytester.\+\_\+test\+\_\+tmproot = tmp\+\_\+path\+\_\+factory.\+mktemp(f"{}tmp-\/\{name\}"{}, numbered=True)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!CLOSE\_STDIN@{CLOSE\_STDIN}}
+\index{CLOSE\_STDIN@{CLOSE\_STDIN}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{CLOSE\_STDIN}{CLOSE\_STDIN}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a4cad0a40e3a7d68c9f3a1f414accf48c} 
+Final \+\_\+pytest.\+pytester.\+Pytester.\+CLOSE\+\_\+\+STDIN = NOTSET\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_add7777352b97fdc8731d134e84723569}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!config@{config}}
+\index{config@{config}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_add7777352b97fdc8731d134e84723569} 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \+\_\+pytest.\+pytester.\+Pytester.\+config = self.\+parseconfigure(\mbox{\hyperlink{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f}{path}}, \texorpdfstring{$\ast$}{*}configargs)}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!path@{path}}
+\index{path@{path}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a406f72071d1ac5b5bd04503460f0e75f} 
+\+\_\+pytest.\+pytester.\+Pytester.\+path}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_pytester_a1bce2fc5b1073fa529fcd207b9a7abb8}\index{\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}!plugins@{plugins}}
+\index{plugins@{plugins}!\_pytest.pytester.Pytester@{\_pytest.pytester.Pytester}}
+\doxysubsubsection{\texorpdfstring{plugins}{plugins}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_pytester_a1bce2fc5b1073fa529fcd207b9a7abb8} 
+list \+\_\+pytest.\+pytester.\+Pytester.\+plugins = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{pytester_8py}{pytester.\+py}}\end{DoxyCompactItemize}

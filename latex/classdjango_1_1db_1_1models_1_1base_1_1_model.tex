@@ -1,0 +1,795 @@
+\doxysection{django.\+db.\+models.\+base.\+Model Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model}{}\label{classdjango_1_1db_1_1models_1_1base_1_1_model}\index{django.db.models.base.Model@{django.db.models.base.Model}}
+Inheritance diagram for django.\+db.\+models.\+base.\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.200000cm]{classdjango_1_1db_1_1models_1_1base_1_1_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a27e6498b4f82fb8cce4083a76e668633}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8553c46f975f7909f04a9b0f69f8ef0f}{from\+\_\+db}} (cls, db, field\+\_\+names, values)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8985591681c30b9a78171ddabe67b4d6}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_aa83adee6a66b433fde8098db9997dd1e}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a95134de2c3e415232248922916915a82}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a5bc6fa29d61558a84790432068d59659}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a3a79ef9c3e5da2fa6380eb9f57a24f23}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_aece658091b36a70115210b5f7bc2eaa6}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a2b0582bd6c2a6ba82242c189a9512745}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a80c778a83301745c4ef76b800cee8fb2}{get\+\_\+deferred\+\_\+fields}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a91c8a637ab0c03ec0a54c33cfa4ba131}{refresh\+\_\+from\+\_\+db}} (self, using=None, fields=None, from\+\_\+queryset=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_aada7fbf6d7b4f0982a08bf17ea597730}{arefresh\+\_\+from\+\_\+db}} (self, using=None, fields=None, from\+\_\+queryset=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a02ac03df9277c7ad34cfe21b03f70e8e}{serializable\+\_\+value}} (self, field\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a9eb5656053e9a88c97af31553765a83c}{save}} (self, \texorpdfstring{$\ast$}{*}args, force\+\_\+insert=False, force\+\_\+update=False, using=None, update\+\_\+fields=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a1f58b9c262f8ea5e9bb49ed45c78b098}{asave}} (self, \texorpdfstring{$\ast$}{*}args, force\+\_\+insert=False, force\+\_\+update=False, using=None, update\+\_\+fields=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a3a9501fdfc0efa07d31c7bf47409ca57}{save\+\_\+base}} (self, raw=False, force\+\_\+insert=False, force\+\_\+update=False, using=None, update\+\_\+fields=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a11e00c6156c7fd5649c0959b3c8ea673}{delete}} (self, using=None, keep\+\_\+parents=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a36da28e111bb108f380fc0be51ca78e5}{adelete}} (self, using=None, keep\+\_\+parents=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ae2c5ba1de3dfaebd10921dbde16e6cbb}{prepare\+\_\+database\+\_\+save}} (self, field)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a0feceff0a338bf3f8b96a07c281b135f}{clean}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_aab30b72617517d880b6144c8225de11c}{validate\+\_\+unique}} (self, exclude=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8a426913fec2b582ff47215f33cf9640}{date\+\_\+error\+\_\+message}} (self, lookup\+\_\+type, field\+\_\+name, unique\+\_\+for)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b9e296b66f94a6cf803ef081e683fda}{unique\+\_\+error\+\_\+message}} (self, model\+\_\+class, unique\+\_\+check)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad79f1752973c64296010c82c9b78a282}{get\+\_\+constraints}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_af6f277f8e822324745ea37a39c2ede5e}{validate\+\_\+constraints}} (self, exclude=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a2e68bd042bd3e52b086f8838eeaa416f}{full\+\_\+clean}} (self, exclude=None, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_aab30b72617517d880b6144c8225de11c}{validate\+\_\+unique}}=True, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_af6f277f8e822324745ea37a39c2ede5e}{validate\+\_\+constraints}}=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8c43974ed95a2c79074fcf2023d21f8a}{clean\+\_\+fields}} (self, exclude=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ab2d7ad77a925236e80619ead6c3d7f4b}{check}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1utils_1_1_alters_data}{django.\+db.\+models.\+utils.\+Alters\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1utils_1_1_alters_data_aecc4ee6529ddf8a4425078d54b0108e2}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base}{django.\+db.\+models.\+base.\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_a5688192f626b496760655c3b5309a0bc}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, name, bases, attrs, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_a71c55aac933b198e8d8a59d2eb352635}{add\+\_\+to\+\_\+class}} (cls, name, value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ade3b5661366bc8942b6b85681a692563}{refresh\+\_\+from\+\_\+db}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_af6909af53a82642ae53ef8643362a267}{save}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a10f1be997761d35dbd0949959fc1186e}{delete}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base}{django.\+db.\+models.\+base.\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_adc56daa5e88ac4c855aa80a884e9eeff}{get\+\_\+next\+\_\+in\+\_\+order}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_a8d095c4aff25e1943b8495c48adf1498}{get\+\_\+previous\+\_\+in\+\_\+order}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad87024e81b71a3ffa85effe37c1c87f2}{alters\+\_\+data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b3ebf8eaafc83378d176fe6546fce0d}{\+\_\+get\+\_\+pk\+\_\+val}} (self, meta=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ac932ae5bc34a2a811a3052da5693452b}{\+\_\+set\+\_\+pk\+\_\+val}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ab21ed2d30ff7aafcbe4407a43f8f2f58}{\+\_\+is\+\_\+pk\+\_\+set}} (self, meta=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_afb8486d4f2371bf7a85d23d91f93408e}{\+\_\+parse\+\_\+save\+\_\+params}} (self, \texorpdfstring{$\ast$}{*}args, method\+\_\+name, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a4b727720232f0a86db470906054874e9}{\+\_\+validate\+\_\+force\+\_\+insert}} (cls, force\+\_\+insert)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a63a5abe55c81574f23af43a75fe76708}{\+\_\+save\+\_\+parents}} (self, cls, using, update\+\_\+fields, force\+\_\+insert, updated\+\_\+parents=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a36cd7ebb8b17df157c761b3cdc44ade3}{\+\_\+save\+\_\+table}} (self, raw=False, cls=None, force\+\_\+insert=False, force\+\_\+update=False, using=None, update\+\_\+fields=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a50a7aab449f41bb6a807634eb335ecdf}{\+\_\+do\+\_\+update}} (self, base\+\_\+qs, using, pk\+\_\+val, values, update\+\_\+fields, forced\+\_\+update)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a3c98b376eb7e9e4cb9e24039c80c4766}{\+\_\+do\+\_\+insert}} (self, manager, using, fields, returning\+\_\+fields, raw)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a4b00ea9f793416d31a7ede6a6a2e1c59}{\+\_\+prepare\+\_\+related\+\_\+fields\+\_\+for\+\_\+save}} (self, operation\+\_\+name, fields=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ac77ec7c914d6b6891406933de4692bd9}{\+\_\+get\+\_\+\+FIELD\+\_\+display}} (self, field)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad372f1a881d1e38f2e52829693156e23}{\+\_\+get\+\_\+next\+\_\+or\+\_\+previous\+\_\+by\+\_\+\+FIELD}} (self, field, is\+\_\+next, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a21746b1d81fe696f108cc59113834c09}{\+\_\+get\+\_\+next\+\_\+or\+\_\+previous\+\_\+in\+\_\+order}} (self, is\+\_\+next)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad41b2ffb4659ad023959ab18e165c5aa}{\+\_\+get\+\_\+field\+\_\+expression\+\_\+map}} (self, meta, exclude=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad7f8ce630631ccf2f13206293230e4f6}{\+\_\+get\+\_\+unique\+\_\+checks}} (self, exclude=None, include\+\_\+meta\+\_\+constraints=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ab9de62dd8c0cddf5de9ee74a91527424}{\+\_\+perform\+\_\+unique\+\_\+checks}} (self, unique\+\_\+checks)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad99f06677ede60ba18c6c7a2d99a8ddf}{\+\_\+perform\+\_\+date\+\_\+checks}} (self, date\+\_\+checks)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ae40e757e8ef66930e5a8f50e988ddad2}{\+\_\+check\+\_\+default\+\_\+pk}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ac43d632dd206d60ebfac4fa9d4e60e27}{\+\_\+check\+\_\+composite\+\_\+pk}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a4edd734e148238d19851bfbc6928a56f}{\+\_\+check\+\_\+db\+\_\+table\+\_\+comment}} (cls, databases)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a4ba9848015ed815ebca79a6ded2a17dc}{\+\_\+check\+\_\+swappable}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a7404de1ec65f82d7847b3b66f6ade893}{\+\_\+check\+\_\+model}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a7223b74336f7a43358dcb714e32639e7}{\+\_\+check\+\_\+managers}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a2a0ed93ac8c374f4214471de230c038b}{\+\_\+check\+\_\+fields}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a6e2ec93a9b34377dbf70f348c0136c7a}{\+\_\+check\+\_\+m2m\+\_\+through\+\_\+same\+\_\+relationship}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a73f97762ddb1ae234c896b363984c220}{\+\_\+check\+\_\+id\+\_\+field}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ad401b4a8a61643639bcfe379c6fbc2e7}{\+\_\+check\+\_\+field\+\_\+name\+\_\+clashes}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_aaa2b4a6a8d4da157cd0a85c62c65cf7b}{\+\_\+check\+\_\+column\+\_\+name\+\_\+clashes}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a5b86f9bec3b5877fed6135688ee22616}{\+\_\+check\+\_\+model\+\_\+name\+\_\+db\+\_\+lookup\+\_\+clashes}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ae154b0d563bf0441a74e05975fae0ba0}{\+\_\+check\+\_\+property\+\_\+name\+\_\+related\+\_\+field\+\_\+accessor\+\_\+clashes}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a3fdf381c44bf4b80218e0b5d8d65034d}{\+\_\+check\+\_\+single\+\_\+primary\+\_\+key}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ac6fddf964f5b9bc62dd1a1b75896eaed}{\+\_\+check\+\_\+unique\+\_\+together}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a5a36f6ab516b04dfe40433082fcb2e77}{\+\_\+check\+\_\+indexes}} (cls, databases)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8a9db2fe708895cf04e679ef38521e1a}{\+\_\+check\+\_\+local\+\_\+fields}} (cls, fields, option)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a945afe6ffda6f9f2c4e31b13dc811358}{\+\_\+check\+\_\+ordering}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a5ca3e6bb3b768949e0d06eb4bf3aee88}{\+\_\+check\+\_\+long\+\_\+column\+\_\+names}} (cls, databases)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ab786486301d8ff16791e6788b5efebdb}{\+\_\+get\+\_\+expr\+\_\+references}} (cls, expr)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a1f39343cd2b66807dbe20b6464626e80}{\+\_\+check\+\_\+constraints}} (cls, databases)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base}{django.\+db.\+models.\+base.\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_a2726f82a6964bc6047871649b1e8e512}{\+\_\+prepare}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_a1cdc3479337eb56db2a21267c1d186e3}{\+\_\+base\+\_\+manager}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_base_a061ba03a9270128b0a21ec6b9260b528}{\+\_\+default\+\_\+manager}} (cls)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a61b6a3b91ab9ab010f0667cddb3f795a}{\+\_\+state}} = \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_state}{Model\+State}}()
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a52fdab3132779c9f62cee2977c64cb68}{\+\_\+prefetched\+\_\+objects\+\_\+cache}} = \{\}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a975579cec9fdc6d289e94489e667bf3d}{\+\_\+order}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a1d9bf47f776824982a643684a764a9cf}{pk}} = property(\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b3ebf8eaafc83378d176fe6546fce0d}{\+\_\+get\+\_\+pk\+\_\+val}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ac932ae5bc34a2a811a3052da5693452b}{\+\_\+set\+\_\+pk\+\_\+val}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a4e7e9df25edfa376f3d3a9924a40241a}{\+\_\+\+\_\+name\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a27e6498b4f82fb8cce4083a76e668633}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a27e6498b4f82fb8cce4083a76e668633} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a95134de2c3e415232248922916915a82}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a95134de2c3e415232248922916915a82} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_aece658091b36a70115210b5f7bc2eaa6}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_aece658091b36a70115210b5f7bc2eaa6} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hook to allow choosing the attributes to pickle.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a5bc6fa29d61558a84790432068d59659}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a5bc6fa29d61558a84790432068d59659} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a3a79ef9c3e5da2fa6380eb9f57a24f23}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a3a79ef9c3e5da2fa6380eb9f57a24f23} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8985591681c30b9a78171ddabe67b4d6}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8985591681c30b9a78171ddabe67b4d6} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a2b0582bd6c2a6ba82242c189a9512745}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a2b0582bd6c2a6ba82242c189a9512745} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_aa83adee6a66b433fde8098db9997dd1e}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_aa83adee6a66b433fde8098db9997dd1e} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_aaa2b4a6a8d4da157cd0a85c62c65cf7b}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_column\_name\_clashes@{\_check\_column\_name\_clashes}}
+\index{\_check\_column\_name\_clashes@{\_check\_column\_name\_clashes}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_column\_name\_clashes()}{\_check\_column\_name\_clashes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_aaa2b4a6a8d4da157cd0a85c62c65cf7b} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+column\+\_\+name\+\_\+clashes (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ac43d632dd206d60ebfac4fa9d4e60e27}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_composite\_pk@{\_check\_composite\_pk}}
+\index{\_check\_composite\_pk@{\_check\_composite\_pk}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_composite\_pk()}{\_check\_composite\_pk()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ac43d632dd206d60ebfac4fa9d4e60e27} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+composite\+\_\+pk (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a1f39343cd2b66807dbe20b6464626e80}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_constraints@{\_check\_constraints}}
+\index{\_check\_constraints@{\_check\_constraints}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_constraints()}{\_check\_constraints()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a1f39343cd2b66807dbe20b6464626e80} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+constraints (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{databases}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a4edd734e148238d19851bfbc6928a56f}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_db\_table\_comment@{\_check\_db\_table\_comment}}
+\index{\_check\_db\_table\_comment@{\_check\_db\_table\_comment}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_db\_table\_comment()}{\_check\_db\_table\_comment()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a4edd734e148238d19851bfbc6928a56f} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+db\+\_\+table\+\_\+comment (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{databases}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ae40e757e8ef66930e5a8f50e988ddad2}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_default\_pk@{\_check\_default\_pk}}
+\index{\_check\_default\_pk@{\_check\_default\_pk}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_default\_pk()}{\_check\_default\_pk()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ae40e757e8ef66930e5a8f50e988ddad2} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+default\+\_\+pk (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad401b4a8a61643639bcfe379c6fbc2e7}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_field\_name\_clashes@{\_check\_field\_name\_clashes}}
+\index{\_check\_field\_name\_clashes@{\_check\_field\_name\_clashes}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_field\_name\_clashes()}{\_check\_field\_name\_clashes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad401b4a8a61643639bcfe379c6fbc2e7} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+field\+\_\+name\+\_\+clashes (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Forbid field shadowing in multi-table inheritance.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a2a0ed93ac8c374f4214471de230c038b}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_fields@{\_check\_fields}}
+\index{\_check\_fields@{\_check\_fields}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_fields()}{\_check\_fields()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a2a0ed93ac8c374f4214471de230c038b} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Perform all field checks.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a73f97762ddb1ae234c896b363984c220}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_id\_field@{\_check\_id\_field}}
+\index{\_check\_id\_field@{\_check\_id\_field}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_id\_field()}{\_check\_id\_field()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a73f97762ddb1ae234c896b363984c220} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+id\+\_\+field (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if `id` field is a primary key.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a5a36f6ab516b04dfe40433082fcb2e77}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_indexes@{\_check\_indexes}}
+\index{\_check\_indexes@{\_check\_indexes}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_indexes()}{\_check\_indexes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a5a36f6ab516b04dfe40433082fcb2e77} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+indexes (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{databases}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check fields, names, and conditions of indexes.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8a9db2fe708895cf04e679ef38521e1a}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_local\_fields@{\_check\_local\_fields}}
+\index{\_check\_local\_fields@{\_check\_local\_fields}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_local\_fields()}{\_check\_local\_fields()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8a9db2fe708895cf04e679ef38521e1a} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+local\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{fields}{, }\item[{}]{option}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a5ca3e6bb3b768949e0d06eb4bf3aee88}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_long\_column\_names@{\_check\_long\_column\_names}}
+\index{\_check\_long\_column\_names@{\_check\_long\_column\_names}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_long\_column\_names()}{\_check\_long\_column\_names()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a5ca3e6bb3b768949e0d06eb4bf3aee88} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+long\+\_\+column\+\_\+names (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{databases}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check that any auto-generated column names are shorter than the limits
+for each database in which the model will be created.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a6e2ec93a9b34377dbf70f348c0136c7a}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_m2m\_through\_same\_relationship@{\_check\_m2m\_through\_same\_relationship}}
+\index{\_check\_m2m\_through\_same\_relationship@{\_check\_m2m\_through\_same\_relationship}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_m2m\_through\_same\_relationship()}{\_check\_m2m\_through\_same\_relationship()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a6e2ec93a9b34377dbf70f348c0136c7a} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+m2m\+\_\+through\+\_\+same\+\_\+relationship (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if no relationship model is used by more than one m2m field.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a7223b74336f7a43358dcb714e32639e7}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_managers@{\_check\_managers}}
+\index{\_check\_managers@{\_check\_managers}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_managers()}{\_check\_managers()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a7223b74336f7a43358dcb714e32639e7} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+managers (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Perform all manager checks.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a7404de1ec65f82d7847b3b66f6ade893}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_model@{\_check\_model}}
+\index{\_check\_model@{\_check\_model}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_model()}{\_check\_model()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a7404de1ec65f82d7847b3b66f6ade893} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+model (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a5b86f9bec3b5877fed6135688ee22616}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_model\_name\_db\_lookup\_clashes@{\_check\_model\_name\_db\_lookup\_clashes}}
+\index{\_check\_model\_name\_db\_lookup\_clashes@{\_check\_model\_name\_db\_lookup\_clashes}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_model\_name\_db\_lookup\_clashes()}{\_check\_model\_name\_db\_lookup\_clashes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a5b86f9bec3b5877fed6135688ee22616} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+model\+\_\+name\+\_\+db\+\_\+lookup\+\_\+clashes (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a945afe6ffda6f9f2c4e31b13dc811358}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_ordering@{\_check\_ordering}}
+\index{\_check\_ordering@{\_check\_ordering}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_ordering()}{\_check\_ordering()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a945afe6ffda6f9f2c4e31b13dc811358} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+ordering (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check "ordering" option -- is it a list of strings and do all fields
+exist?
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ae154b0d563bf0441a74e05975fae0ba0}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_property\_name\_related\_field\_accessor\_clashes@{\_check\_property\_name\_related\_field\_accessor\_clashes}}
+\index{\_check\_property\_name\_related\_field\_accessor\_clashes@{\_check\_property\_name\_related\_field\_accessor\_clashes}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_property\_name\_related\_field\_accessor\_clashes()}{\_check\_property\_name\_related\_field\_accessor\_clashes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ae154b0d563bf0441a74e05975fae0ba0} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+property\+\_\+name\+\_\+related\+\_\+field\+\_\+accessor\+\_\+clashes (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a3fdf381c44bf4b80218e0b5d8d65034d}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_single\_primary\_key@{\_check\_single\_primary\_key}}
+\index{\_check\_single\_primary\_key@{\_check\_single\_primary\_key}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_single\_primary\_key()}{\_check\_single\_primary\_key()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a3fdf381c44bf4b80218e0b5d8d65034d} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+single\+\_\+primary\+\_\+key (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a4ba9848015ed815ebca79a6ded2a17dc}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_swappable@{\_check\_swappable}}
+\index{\_check\_swappable@{\_check\_swappable}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_swappable()}{\_check\_swappable()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a4ba9848015ed815ebca79a6ded2a17dc} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+swappable (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the swapped model exists.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ac6fddf964f5b9bc62dd1a1b75896eaed}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_check\_unique\_together@{\_check\_unique\_together}}
+\index{\_check\_unique\_together@{\_check\_unique\_together}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_check\_unique\_together()}{\_check\_unique\_together()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ac6fddf964f5b9bc62dd1a1b75896eaed} 
+django.\+db.\+models.\+base.\+Model.\+\_\+check\+\_\+unique\+\_\+together (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check the value of "unique_together" option.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a3c98b376eb7e9e4cb9e24039c80c4766}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_do\_insert@{\_do\_insert}}
+\index{\_do\_insert@{\_do\_insert}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_do\_insert()}{\_do\_insert()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a3c98b376eb7e9e4cb9e24039c80c4766} 
+django.\+db.\+models.\+base.\+Model.\+\_\+do\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{manager}{, }\item[{}]{using}{, }\item[{}]{fields}{, }\item[{}]{returning\+\_\+fields}{, }\item[{}]{raw}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Do an INSERT. If returning_fields is defined then this method should
+return the newly created data for the model.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a50a7aab449f41bb6a807634eb335ecdf}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_do\_update@{\_do\_update}}
+\index{\_do\_update@{\_do\_update}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_do\_update()}{\_do\_update()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a50a7aab449f41bb6a807634eb335ecdf} 
+django.\+db.\+models.\+base.\+Model.\+\_\+do\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{base\+\_\+qs}{, }\item[{}]{using}{, }\item[{}]{pk\+\_\+val}{, }\item[{}]{values}{, }\item[{}]{update\+\_\+fields}{, }\item[{}]{forced\+\_\+update}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Try to update the model. Return True if the model was updated (if an
+update query was done and a matching row was found in the DB).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ab786486301d8ff16791e6788b5efebdb}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_expr\_references@{\_get\_expr\_references}}
+\index{\_get\_expr\_references@{\_get\_expr\_references}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_expr\_references()}{\_get\_expr\_references()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ab786486301d8ff16791e6788b5efebdb} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+expr\+\_\+references (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{expr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ac77ec7c914d6b6891406933de4692bd9}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_FIELD\_display@{\_get\_FIELD\_display}}
+\index{\_get\_FIELD\_display@{\_get\_FIELD\_display}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_FIELD\_display()}{\_get\_FIELD\_display()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ac77ec7c914d6b6891406933de4692bd9} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+\+FIELD\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad41b2ffb4659ad023959ab18e165c5aa}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_field\_expression\_map@{\_get\_field\_expression\_map}}
+\index{\_get\_field\_expression\_map@{\_get\_field\_expression\_map}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_field\_expression\_map()}{\_get\_field\_expression\_map()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad41b2ffb4659ad023959ab18e165c5aa} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+field\+\_\+expression\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meta}{, }\item[{}]{exclude}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad372f1a881d1e38f2e52829693156e23}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_next\_or\_previous\_by\_FIELD@{\_get\_next\_or\_previous\_by\_FIELD}}
+\index{\_get\_next\_or\_previous\_by\_FIELD@{\_get\_next\_or\_previous\_by\_FIELD}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_next\_or\_previous\_by\_FIELD()}{\_get\_next\_or\_previous\_by\_FIELD()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad372f1a881d1e38f2e52829693156e23} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+next\+\_\+or\+\_\+previous\+\_\+by\+\_\+\+FIELD (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{, }\item[{}]{is\+\_\+next}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a21746b1d81fe696f108cc59113834c09}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_next\_or\_previous\_in\_order@{\_get\_next\_or\_previous\_in\_order}}
+\index{\_get\_next\_or\_previous\_in\_order@{\_get\_next\_or\_previous\_in\_order}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_next\_or\_previous\_in\_order()}{\_get\_next\_or\_previous\_in\_order()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a21746b1d81fe696f108cc59113834c09} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+next\+\_\+or\+\_\+previous\+\_\+in\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{is\+\_\+next}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b3ebf8eaafc83378d176fe6546fce0d}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_pk\_val@{\_get\_pk\_val}}
+\index{\_get\_pk\_val@{\_get\_pk\_val}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_pk\_val()}{\_get\_pk\_val()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b3ebf8eaafc83378d176fe6546fce0d} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+pk\+\_\+val (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meta}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad7f8ce630631ccf2f13206293230e4f6}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_get\_unique\_checks@{\_get\_unique\_checks}}
+\index{\_get\_unique\_checks@{\_get\_unique\_checks}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_get\_unique\_checks()}{\_get\_unique\_checks()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad7f8ce630631ccf2f13206293230e4f6} 
+django.\+db.\+models.\+base.\+Model.\+\_\+get\+\_\+unique\+\_\+checks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exclude}{ = {\ttfamily None}, }\item[{}]{include\+\_\+meta\+\_\+constraints}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list of checks to perform. Since validate_unique() could be
+called from a ModelForm, some fields may have been excluded; we can't
+perform a unique check on a model that is missing fields involved
+in that check. Fields that did not validate should also be excluded,
+but they need to be passed in via the exclude argument.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ab21ed2d30ff7aafcbe4407a43f8f2f58}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_is\_pk\_set@{\_is\_pk\_set}}
+\index{\_is\_pk\_set@{\_is\_pk\_set}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_is\_pk\_set()}{\_is\_pk\_set()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ab21ed2d30ff7aafcbe4407a43f8f2f58} 
+django.\+db.\+models.\+base.\+Model.\+\_\+is\+\_\+pk\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meta}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_afb8486d4f2371bf7a85d23d91f93408e}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_parse\_save\_params@{\_parse\_save\_params}}
+\index{\_parse\_save\_params@{\_parse\_save\_params}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_parse\_save\_params()}{\_parse\_save\_params()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_afb8486d4f2371bf7a85d23d91f93408e} 
+django.\+db.\+models.\+base.\+Model.\+\_\+parse\+\_\+save\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{}]{method\+\_\+name}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad99f06677ede60ba18c6c7a2d99a8ddf}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_perform\_date\_checks@{\_perform\_date\_checks}}
+\index{\_perform\_date\_checks@{\_perform\_date\_checks}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_perform\_date\_checks()}{\_perform\_date\_checks()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad99f06677ede60ba18c6c7a2d99a8ddf} 
+django.\+db.\+models.\+base.\+Model.\+\_\+perform\+\_\+date\+\_\+checks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{date\+\_\+checks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ab9de62dd8c0cddf5de9ee74a91527424}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_perform\_unique\_checks@{\_perform\_unique\_checks}}
+\index{\_perform\_unique\_checks@{\_perform\_unique\_checks}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_perform\_unique\_checks()}{\_perform\_unique\_checks()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ab9de62dd8c0cddf5de9ee74a91527424} 
+django.\+db.\+models.\+base.\+Model.\+\_\+perform\+\_\+unique\+\_\+checks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{unique\+\_\+checks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a4b00ea9f793416d31a7ede6a6a2e1c59}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_prepare\_related\_fields\_for\_save@{\_prepare\_related\_fields\_for\_save}}
+\index{\_prepare\_related\_fields\_for\_save@{\_prepare\_related\_fields\_for\_save}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_related\_fields\_for\_save()}{\_prepare\_related\_fields\_for\_save()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a4b00ea9f793416d31a7ede6a6a2e1c59} 
+django.\+db.\+models.\+base.\+Model.\+\_\+prepare\+\_\+related\+\_\+fields\+\_\+for\+\_\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation\+\_\+name}{, }\item[{}]{fields}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a63a5abe55c81574f23af43a75fe76708}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_save\_parents@{\_save\_parents}}
+\index{\_save\_parents@{\_save\_parents}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_save\_parents()}{\_save\_parents()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a63a5abe55c81574f23af43a75fe76708} 
+django.\+db.\+models.\+base.\+Model.\+\_\+save\+\_\+parents (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cls}{, }\item[{}]{using}{, }\item[{}]{update\+\_\+fields}{, }\item[{}]{force\+\_\+insert}{, }\item[{}]{updated\+\_\+parents}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Save all the parents of cls using values from self.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a36cd7ebb8b17df157c761b3cdc44ade3}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_save\_table@{\_save\_table}}
+\index{\_save\_table@{\_save\_table}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_save\_table()}{\_save\_table()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a36cd7ebb8b17df157c761b3cdc44ade3} 
+django.\+db.\+models.\+base.\+Model.\+\_\+save\+\_\+table (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{raw}{ = {\ttfamily False}, }\item[{}]{cls}{ = {\ttfamily None}, }\item[{}]{force\+\_\+insert}{ = {\ttfamily False}, }\item[{}]{force\+\_\+update}{ = {\ttfamily False}, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{update\+\_\+fields}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Do the heavy-lifting involved in saving. Update or insert the data
+for a single table.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ac932ae5bc34a2a811a3052da5693452b}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_set\_pk\_val@{\_set\_pk\_val}}
+\index{\_set\_pk\_val@{\_set\_pk\_val}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_set\_pk\_val()}{\_set\_pk\_val()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ac932ae5bc34a2a811a3052da5693452b} 
+django.\+db.\+models.\+base.\+Model.\+\_\+set\+\_\+pk\+\_\+val (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a4b727720232f0a86db470906054874e9}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_validate\_force\_insert@{\_validate\_force\_insert}}
+\index{\_validate\_force\_insert@{\_validate\_force\_insert}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_validate\_force\_insert()}{\_validate\_force\_insert()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a4b727720232f0a86db470906054874e9} 
+django.\+db.\+models.\+base.\+Model.\+\_\+validate\+\_\+force\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{force\+\_\+insert}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a36da28e111bb108f380fc0be51ca78e5}\index{django.db.models.base.Model@{django.db.models.base.Model}!adelete@{adelete}}
+\index{adelete@{adelete}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{adelete()}{adelete()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a36da28e111bb108f380fc0be51ca78e5} 
+django.\+db.\+models.\+base.\+Model.\+adelete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{keep\+\_\+parents}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_aada7fbf6d7b4f0982a08bf17ea597730}\index{django.db.models.base.Model@{django.db.models.base.Model}!arefresh\_from\_db@{arefresh\_from\_db}}
+\index{arefresh\_from\_db@{arefresh\_from\_db}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{arefresh\_from\_db()}{arefresh\_from\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_aada7fbf6d7b4f0982a08bf17ea597730} 
+django.\+db.\+models.\+base.\+Model.\+arefresh\+\_\+from\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{fields}{ = {\ttfamily None}, }\item[{}]{from\+\_\+queryset}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a1f58b9c262f8ea5e9bb49ed45c78b098}\index{django.db.models.base.Model@{django.db.models.base.Model}!asave@{asave}}
+\index{asave@{asave}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{asave()}{asave()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a1f58b9c262f8ea5e9bb49ed45c78b098} 
+django.\+db.\+models.\+base.\+Model.\+asave (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{}]{force\+\_\+insert}{ = {\ttfamily False}, }\item[{}]{force\+\_\+update}{ = {\ttfamily False}, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{update\+\_\+fields}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ab2d7ad77a925236e80619ead6c3d7f4b}\index{django.db.models.base.Model@{django.db.models.base.Model}!check@{check}}
+\index{check@{check}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ab2d7ad77a925236e80619ead6c3d7f4b} 
+django.\+db.\+models.\+base.\+Model.\+check (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a0feceff0a338bf3f8b96a07c281b135f}\index{django.db.models.base.Model@{django.db.models.base.Model}!clean@{clean}}
+\index{clean@{clean}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a0feceff0a338bf3f8b96a07c281b135f} 
+django.\+db.\+models.\+base.\+Model.\+clean (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Hook for doing any extra model-wide validation after clean() has been
+called on every field by self.clean_fields. Any ValidationError raised
+by this method will not be associated with a particular field; it will
+have a special-case association with the field defined by NON_FIELD_ERRORS.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1base__user_1_1_abstract_base_user_a59a4f0bed1f43f2ba4e0a4302429ca48}{django.\+contrib.\+auth.\+base\+\_\+user.\+Abstract\+Base\+User}}, and \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1_abstract_user_ac8621484179e7de35ac40504cebf4d48}{django.\+contrib.\+auth.\+models.\+Abstract\+User}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8c43974ed95a2c79074fcf2023d21f8a}\index{django.db.models.base.Model@{django.db.models.base.Model}!clean\_fields@{clean\_fields}}
+\index{clean\_fields@{clean\_fields}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{clean\_fields()}{clean\_fields()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8c43974ed95a2c79074fcf2023d21f8a} 
+django.\+db.\+models.\+base.\+Model.\+clean\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exclude}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean all fields and raise a ValidationError containing a dict
+of all validation errors if any occur.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8a426913fec2b582ff47215f33cf9640}\index{django.db.models.base.Model@{django.db.models.base.Model}!date\_error\_message@{date\_error\_message}}
+\index{date\_error\_message@{date\_error\_message}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{date\_error\_message()}{date\_error\_message()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8a426913fec2b582ff47215f33cf9640} 
+django.\+db.\+models.\+base.\+Model.\+date\+\_\+error\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lookup\+\_\+type}{, }\item[{}]{field\+\_\+name}{, }\item[{}]{unique\+\_\+for}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a11e00c6156c7fd5649c0959b3c8ea673}\index{django.db.models.base.Model@{django.db.models.base.Model}!delete@{delete}}
+\index{delete@{delete}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a11e00c6156c7fd5649c0959b3c8ea673} 
+django.\+db.\+models.\+base.\+Model.\+delete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{keep\+\_\+parents}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8553c46f975f7909f04a9b0f69f8ef0f}\index{django.db.models.base.Model@{django.db.models.base.Model}!from\_db@{from\_db}}
+\index{from\_db@{from\_db}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{from\_db()}{from\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8553c46f975f7909f04a9b0f69f8ef0f} 
+django.\+db.\+models.\+base.\+Model.\+from\+\_\+db (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{db}{, }\item[{}]{field\+\_\+names}{, }\item[{}]{values}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a2e68bd042bd3e52b086f8838eeaa416f}\index{django.db.models.base.Model@{django.db.models.base.Model}!full\_clean@{full\_clean}}
+\index{full\_clean@{full\_clean}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{full\_clean()}{full\_clean()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a2e68bd042bd3e52b086f8838eeaa416f} 
+django.\+db.\+models.\+base.\+Model.\+full\+\_\+clean (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exclude}{ = {\ttfamily None}, }\item[{}]{validate\+\_\+unique}{ = {\ttfamily True}, }\item[{}]{validate\+\_\+constraints}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call clean_fields(), clean(), validate_unique(), and
+validate_constraints() on the model. Raise a ValidationError for any
+errors that occur.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad79f1752973c64296010c82c9b78a282}\index{django.db.models.base.Model@{django.db.models.base.Model}!get\_constraints@{get\_constraints}}
+\index{get\_constraints@{get\_constraints}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{get\_constraints()}{get\_constraints()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad79f1752973c64296010c82c9b78a282} 
+django.\+db.\+models.\+base.\+Model.\+get\+\_\+constraints (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a80c778a83301745c4ef76b800cee8fb2}\index{django.db.models.base.Model@{django.db.models.base.Model}!get\_deferred\_fields@{get\_deferred\_fields}}
+\index{get\_deferred\_fields@{get\_deferred\_fields}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{get\_deferred\_fields()}{get\_deferred\_fields()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a80c778a83301745c4ef76b800cee8fb2} 
+django.\+db.\+models.\+base.\+Model.\+get\+\_\+deferred\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a set containing names of deferred fields for this instance.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ae2c5ba1de3dfaebd10921dbde16e6cbb}\index{django.db.models.base.Model@{django.db.models.base.Model}!prepare\_database\_save@{prepare\_database\_save}}
+\index{prepare\_database\_save@{prepare\_database\_save}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{prepare\_database\_save()}{prepare\_database\_save()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ae2c5ba1de3dfaebd10921dbde16e6cbb} 
+django.\+db.\+models.\+base.\+Model.\+prepare\+\_\+database\+\_\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a91c8a637ab0c03ec0a54c33cfa4ba131}\index{django.db.models.base.Model@{django.db.models.base.Model}!refresh\_from\_db@{refresh\_from\_db}}
+\index{refresh\_from\_db@{refresh\_from\_db}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{refresh\_from\_db()}{refresh\_from\_db()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a91c8a637ab0c03ec0a54c33cfa4ba131} 
+django.\+db.\+models.\+base.\+Model.\+refresh\+\_\+from\+\_\+db (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{fields}{ = {\ttfamily None}, }\item[{}]{from\+\_\+queryset}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reload field values from the database.
+
+By default, the reloading happens from the database this instance was
+loaded from, or by the read router if this instance wasn't loaded from
+any database. The using parameter will override the default.
+
+Fields can be used to specify which fields to reload. The fields
+should be an iterable of field attnames. If fields is None, then
+all non-deferred fields are reloaded.
+
+When accessing deferred fields of an instance, the deferred loading
+of the field will call this method.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a9eb5656053e9a88c97af31553765a83c}\index{django.db.models.base.Model@{django.db.models.base.Model}!save@{save}}
+\index{save@{save}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a9eb5656053e9a88c97af31553765a83c} 
+django.\+db.\+models.\+base.\+Model.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{}]{force\+\_\+insert}{ = {\ttfamily False}, }\item[{}]{force\+\_\+update}{ = {\ttfamily False}, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{update\+\_\+fields}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the current instance. Override this in a subclass if you want to
+control the saving process.
+
+The 'force_insert' and 'force_update' parameters can be used to insist
+that the "save" must be an SQL insert or update (or equivalent for
+non-SQL backends), respectively. Normally, they should not be set.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1base__user_1_1_abstract_base_user_a5c8a96ad78dafb9ab5d897082e3afb66}{django.\+contrib.\+auth.\+base\+\_\+user.\+Abstract\+Base\+User}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a3a9501fdfc0efa07d31c7bf47409ca57}\index{django.db.models.base.Model@{django.db.models.base.Model}!save\_base@{save\_base}}
+\index{save\_base@{save\_base}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{save\_base()}{save\_base()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a3a9501fdfc0efa07d31c7bf47409ca57} 
+django.\+db.\+models.\+base.\+Model.\+save\+\_\+base (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{raw}{ = {\ttfamily False}, }\item[{}]{force\+\_\+insert}{ = {\ttfamily False}, }\item[{}]{force\+\_\+update}{ = {\ttfamily False}, }\item[{}]{using}{ = {\ttfamily None}, }\item[{}]{update\+\_\+fields}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle the parts of saving which should be done only once per save,
+yet need to be done in raw saves, too. This includes some sanity
+checks and signal sending.
+
+The 'raw' argument is telling save_base not to save any parent
+models and not to do any changes to the values before save. This
+is used by fixture loading.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a02ac03df9277c7ad34cfe21b03f70e8e}\index{django.db.models.base.Model@{django.db.models.base.Model}!serializable\_value@{serializable\_value}}
+\index{serializable\_value@{serializable\_value}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{serializable\_value()}{serializable\_value()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a02ac03df9277c7ad34cfe21b03f70e8e} 
+django.\+db.\+models.\+base.\+Model.\+serializable\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the value of the field name for this instance. If the field is
+a foreign key, return the id value instead of the object. If there's
+no Field object with this name on the model, return the model
+attribute's value.
+
+Used to serialize a field's value (in the serializer, or form output,
+for example). Normally, you would just access the attribute directly
+and not use this method.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b9e296b66f94a6cf803ef081e683fda}\index{django.db.models.base.Model@{django.db.models.base.Model}!unique\_error\_message@{unique\_error\_message}}
+\index{unique\_error\_message@{unique\_error\_message}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{unique\_error\_message()}{unique\_error\_message()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b9e296b66f94a6cf803ef081e683fda} 
+django.\+db.\+models.\+base.\+Model.\+unique\+\_\+error\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model\+\_\+class}{, }\item[{}]{unique\+\_\+check}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_af6f277f8e822324745ea37a39c2ede5e}\index{django.db.models.base.Model@{django.db.models.base.Model}!validate\_constraints@{validate\_constraints}}
+\index{validate\_constraints@{validate\_constraints}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{validate\_constraints()}{validate\_constraints()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_af6f277f8e822324745ea37a39c2ede5e} 
+django.\+db.\+models.\+base.\+Model.\+validate\+\_\+constraints (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exclude}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_aab30b72617517d880b6144c8225de11c}\index{django.db.models.base.Model@{django.db.models.base.Model}!validate\_unique@{validate\_unique}}
+\index{validate\_unique@{validate\_unique}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{validate\_unique()}{validate\_unique()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_aab30b72617517d880b6144c8225de11c} 
+django.\+db.\+models.\+base.\+Model.\+validate\+\_\+unique (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exclude}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check unique constraints on the model and raise ValidationError if any
+failed.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a4e7e9df25edfa376f3d3a9924a40241a}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_\_name\_\_@{\_\_name\_\_}}
+\index{\_\_name\_\_@{\_\_name\_\_}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_name\_\_}{\_\_name\_\_}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a4e7e9df25edfa376f3d3a9924a40241a} 
+django.\+db.\+models.\+base.\+Model.\+\_\+\+\_\+name\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a975579cec9fdc6d289e94489e667bf3d}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_order@{\_order}}
+\index{\_order@{\_order}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_order}{\_order}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a975579cec9fdc6d289e94489e667bf3d} 
+tuple django.\+db.\+models.\+base.\+Model.\+\_\+order\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cls.\_base\_manager.using(using)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .filter(**filter\_args)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .aggregate(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_order\_\_max=Coalesce(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ExpressionWrapper(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Max(\textcolor{stringliteral}{"{}\_order"{}})\ +\ Value(1),\ output\_field=IntegerField()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Value(0),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )[\textcolor{stringliteral}{"{}\_order\_\_max"{}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a52fdab3132779c9f62cee2977c64cb68}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_prefetched\_objects\_cache@{\_prefetched\_objects\_cache}}
+\index{\_prefetched\_objects\_cache@{\_prefetched\_objects\_cache}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_prefetched\_objects\_cache}{\_prefetched\_objects\_cache}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a52fdab3132779c9f62cee2977c64cb68} 
+dict django.\+db.\+models.\+base.\+Model.\+\_\+prefetched\+\_\+objects\+\_\+cache = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a61b6a3b91ab9ab010f0667cddb3f795a}\index{django.db.models.base.Model@{django.db.models.base.Model}!\_state@{\_state}}
+\index{\_state@{\_state}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{\_state}{\_state}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a61b6a3b91ab9ab010f0667cddb3f795a} 
+django.\+db.\+models.\+base.\+Model.\+\_\+state = \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_state}{Model\+State}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ad87024e81b71a3ffa85effe37c1c87f2}\index{django.db.models.base.Model@{django.db.models.base.Model}!alters\_data@{alters\_data}}
+\index{alters\_data@{alters\_data}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{alters\_data}{alters\_data}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ad87024e81b71a3ffa85effe37c1c87f2} 
+django.\+db.\+models.\+base.\+Model.\+alters\+\_\+data\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a10f1be997761d35dbd0949959fc1186e}\index{django.db.models.base.Model@{django.db.models.base.Model}!delete@{delete}}
+\index{delete@{delete}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{delete}{delete}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a10f1be997761d35dbd0949959fc1186e} 
+django.\+db.\+models.\+base.\+Model.\+delete}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_ade3b5661366bc8942b6b85681a692563}\index{django.db.models.base.Model@{django.db.models.base.Model}!refresh\_from\_db@{refresh\_from\_db}}
+\index{refresh\_from\_db@{refresh\_from\_db}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{refresh\_from\_db}{refresh\_from\_db}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_ade3b5661366bc8942b6b85681a692563} 
+django.\+db.\+models.\+base.\+Model.\+refresh\+\_\+from\+\_\+db}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_af6909af53a82642ae53ef8643362a267}\index{django.db.models.base.Model@{django.db.models.base.Model}!save@{save}}
+\index{save@{save}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{save}{save}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_af6909af53a82642ae53ef8643362a267} 
+django.\+db.\+models.\+base.\+Model.\+save}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1base__user_1_1_abstract_base_user_a5c8a96ad78dafb9ab5d897082e3afb66}{django.\+contrib.\+auth.\+base\+\_\+user.\+Abstract\+Base\+User}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1base_1_1_model_a1d9bf47f776824982a643684a764a9cf}\index{django.db.models.base.Model@{django.db.models.base.Model}!pk@{pk}}
+\index{pk@{pk}!django.db.models.base.Model@{django.db.models.base.Model}}
+\doxysubsubsection{\texorpdfstring{pk}{pk}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1base_1_1_model_a1d9bf47f776824982a643684a764a9cf} 
+django.\+db.\+models.\+base.\+Model.\+pk = property(\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_a8b3ebf8eaafc83378d176fe6546fce0d}{\+\_\+get\+\_\+pk\+\_\+val}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1base_1_1_model_ac932ae5bc34a2a811a3052da5693452b}{\+\_\+set\+\_\+pk\+\_\+val}})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/\mbox{\hyperlink{django_2db_2models_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

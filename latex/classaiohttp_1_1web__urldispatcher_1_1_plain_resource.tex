@@ -1,0 +1,192 @@
+\doxysection{aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource Class Reference}
+\hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource}{}\label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+Inheritance diagram for aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classaiohttp_1_1web__urldispatcher_1_1_plain_resource}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a07598dbeb9de933b5eb9346067cd232c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str path, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a15ec80ffaaf16c9a50ef7a0c492c36c0}{name}}=None)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_ac44a6b003f82930c55a0a04bfca816bf}{canonical}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a4c7a6ae9caed76d872210aa6ab0be984}{freeze}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a16ec93bc0ee09d4456c097ceabb81cf6}{add\+\_\+prefix}} (self, str prefix)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a2d0ada978273ac196419a72b606d2be9}{raw\+\_\+match}} (self, str path)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1___info_dict}{\+\_\+\+Info\+Dict}} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_ad41672931807234ef55d3c37ae257091}{get\+\_\+info}} (self)
+\item 
+\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a1d62e5039e059461f9f37b13c45c6ca5}{url\+\_\+for}} (self)
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a5cc0a690a6f3e39bad2f1b69b85eff13}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource}{aiohttp.\+web\+\_\+urldispatcher.\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_a3bb67cfbfd141d5ac09c8f9b1489bf7b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a15ec80ffaaf16c9a50ef7a0c492c36c0}{name}}=None)
+\item 
+"{}Resource\+Route"{} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_abc95280592edd222933ab346619914f0}{add\+\_\+route}} (self, str method, Union\mbox{[}Type\mbox{[}\mbox{\hyperlink{classaiohttp_1_1abc_1_1_abstract_view}{Abstract\+View}}\mbox{]}, Handler\mbox{]} handler, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1web__urldispatcher_a00ce71f5eb3f2539724a08967ed49fb2}{\+\_\+\+Expect\+Handler}}\mbox{]} expect\+\_\+handler=None)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_aa601259a90e25fd94a45337ad41aadd7}{register\+\_\+route}} (self, "{}Resource\+Route"{} route)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__urldispatcher_afe99d3b3dea2f8e1a4e25e1f87e4c000}{\+\_\+\+Resolve}} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_a331039e28960f1cd76507853c8ba3ad0}{resolve}} (self, \mbox{\hyperlink{classaiohttp_1_1web__request_1_1_request}{Request}} request)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_a6c11a8ecc2b65f9d68c324c8d3dc0392}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Iterator\mbox{[}"{}Resource\+Route"{}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_ac629628bd855ef856e3dc8eae98f12d3}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a6763854d51a8f7a2c75c776af8b4f2a2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a15ec80ffaaf16c9a50ef7a0c492c36c0}{name}}=None)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a15ec80ffaaf16c9a50ef7a0c492c36c0}{name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}Dict\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a4b55430db01c9c52b162b471e18c278c}{\+\_\+match}} (self, str path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a3b10377a37af2773f55bc9fd4283b4a5}{\+\_\+path}} = path
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource}{aiohttp.\+web\+\_\+urldispatcher.\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_af560c054acd1fb9fb94312c980f84753}{\+\_\+routes}} = \{\}
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_route}{Resource\+Route}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_a5ea95eeffa176bdc189f9e570d899987}{\+\_\+any\+\_\+route}} = None
+\item 
+Set\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_abcecf768e618608cc211c84d91e3f683}{\+\_\+allowed\+\_\+methods}} = set()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a542172251dbbedd4fc7c3cd85e54c548}{\+\_\+name}} = \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a15ec80ffaaf16c9a50ef7a0c492c36c0}{name}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a07598dbeb9de933b5eb9346067cd232c}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a07598dbeb9de933b5eb9346067cd232c} 
+ None aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a5cc0a690a6f3e39bad2f1b69b85eff13}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a5cc0a690a6f3e39bad2f1b69b85eff13} 
+ str aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a4b55430db01c9c52b162b471e18c278c}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!\_match@{\_match}}
+\index{\_match@{\_match}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{\_match()}{\_match()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a4b55430db01c9c52b162b471e18c278c} 
+ Optional\mbox{[}Dict\mbox{[}str, str\mbox{]}\mbox{]} aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+\_\+match (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_resource_a18705f12f8ab57303d42440f6028d855}{aiohttp.\+web\+\_\+urldispatcher.\+Resource}}.
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a16ec93bc0ee09d4456c097ceabb81cf6}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!add\_prefix@{add\_prefix}}
+\index{add\_prefix@{add\_prefix}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{add\_prefix()}{add\_prefix()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a16ec93bc0ee09d4456c097ceabb81cf6} 
+ None aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+add\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{prefix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a prefix to processed URLs.
+
+Required for subapplications support.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_ac0514e9f9c6806194597c14aecceb3db}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}.
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_ac44a6b003f82930c55a0a04bfca816bf}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!canonical@{canonical}}
+\index{canonical@{canonical}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{canonical()}{canonical()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_ac44a6b003f82930c55a0a04bfca816bf} 
+ str aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+canonical (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exposes the resource's canonical path.
+
+For example '/foo/bar/{name}'
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a5d95f1f4b1fdea307f621828d71c3683}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}.
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a4c7a6ae9caed76d872210aa6ab0be984}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!freeze@{freeze}}
+\index{freeze@{freeze}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a4c7a6ae9caed76d872210aa6ab0be984} 
+ None aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+freeze (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a159fd1f9019cc1993913ed574c1fb6e0}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}.
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_ad41672931807234ef55d3c37ae257091}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!get\_info@{get\_info}}
+\index{get\_info@{get\_info}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{get\_info()}{get\_info()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_ad41672931807234ef55d3c37ae257091} 
+ \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1___info_dict}{\+\_\+\+Info\+Dict}} aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+get\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict with additional info useful for introspection\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a0a37c37538d328424c27e759d53df964}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}.
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a2d0ada978273ac196419a72b606d2be9}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!raw\_match@{raw\_match}}
+\index{raw\_match@{raw\_match}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{raw\_match()}{raw\_match()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a2d0ada978273ac196419a72b606d2be9} 
+ bool aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+raw\+\_\+match (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform a raw match against path\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a87f0d9e6ff0e0d126da9dca069899985}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}.
+
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a1d62e5039e059461f9f37b13c45c6ca5}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!url\_for@{url\_for}}
+\index{url\_for@{url\_for}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{url\_for()}{url\_for()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a1d62e5039e059461f9f37b13c45c6ca5} 
+ \mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+url\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct url for resource with additional params.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource_a558cf3d9d3754ef33131d53f26589628}{aiohttp.\+web\+\_\+urldispatcher.\+Abstract\+Resource}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a3b10377a37af2773f55bc9fd4283b4a5}\index{aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}!\_path@{\_path}}
+\index{\_path@{\_path}!aiohttp.web\_urldispatcher.PlainResource@{aiohttp.web\_urldispatcher.PlainResource}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1web__urldispatcher_1_1_plain_resource_a3b10377a37af2773f55bc9fd4283b4a5} 
+str aiohttp.\+web\+\_\+urldispatcher.\+Plain\+Resource.\+\_\+path = path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{web__urldispatcher_8py}{web\+\_\+urldispatcher.\+py}}\end{DoxyCompactItemize}

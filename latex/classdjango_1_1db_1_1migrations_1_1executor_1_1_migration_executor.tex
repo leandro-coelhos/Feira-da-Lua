@@ -1,0 +1,193 @@
+\doxysection{django.\+db.\+migrations.\+executor.\+Migration\+Executor Class Reference}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor}{}\label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a1477a333393bf6937872bfbcf6e92eae}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6c746bbe3762aa973593a8c156130657}{connection}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a49c027b7985d0e8ea73200698de3279a}{progress\+\_\+callback}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6a631428a359bc1bc8ddb42461653cca}{migration\+\_\+plan}} (self, targets, clean\+\_\+start=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a3d41c1ebde143043232873af2bef51a1}{migrate}} (self, targets, plan=None, state=None, fake=False, fake\+\_\+initial=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a5fb41ce1752ad66bbd077781881cc1b7}{apply\+\_\+migration}} (self, state, migration, fake=False, fake\+\_\+initial=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a17528206250c4c61af03400234fe3991}{record\+\_\+migration}} (self, migration)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_adfa1f8f366a5596c93f9336c04255dfb}{unapply\+\_\+migration}} (self, state, migration, fake=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a7d362323af6b5606d8ec498a3609e6e6}{check\+\_\+replacements}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_ae5187f7d12375bec66bd59e906b6fa84}{detect\+\_\+soft\+\_\+applied}} (self, project\+\_\+state, migration)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6c746bbe3762aa973593a8c156130657}{connection}} = connection
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_adb4f0e2105923a3274fb795b1667f9eb}{loader}} = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader}{Migration\+Loader}}(self.\+connection)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_ac7e13a39158fef3f62da91ee964b612a}{recorder}} = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1recorder_1_1_migration_recorder}{Migration\+Recorder}}(self.\+connection)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a49c027b7985d0e8ea73200698de3279a}{progress\+\_\+callback}} = progress\+\_\+callback
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_afaf30aa5a76cba76ebcdb61c9cdc6733}{\+\_\+create\+\_\+project\+\_\+state}} (self, with\+\_\+applied\+\_\+migrations=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6394e1f1c0780231233cfcf879892a9c}{\+\_\+migrate\+\_\+all\+\_\+forwards}} (self, state, plan, full\+\_\+plan, fake, fake\+\_\+initial)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a0de959c3ef56dd5973ad2f87e6ad8ad2}{\+\_\+migrate\+\_\+all\+\_\+backwards}} (self, plan, full\+\_\+plan, fake)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}End-to-end migration execution - load migrations and run them up or down
+to a specified set of targets.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a1477a333393bf6937872bfbcf6e92eae}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a1477a333393bf6937872bfbcf6e92eae} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{connection}{, }\item[{}]{progress\+\_\+callback}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_afaf30aa5a76cba76ebcdb61c9cdc6733}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!\_create\_project\_state@{\_create\_project\_state}}
+\index{\_create\_project\_state@{\_create\_project\_state}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{\_create\_project\_state()}{\_create\_project\_state()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_afaf30aa5a76cba76ebcdb61c9cdc6733} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+\_\+create\+\_\+project\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{with\+\_\+applied\+\_\+migrations}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a project state including all the applications without
+migrations and applied migrations if with_applied_migrations=True.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a0de959c3ef56dd5973ad2f87e6ad8ad2}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!\_migrate\_all\_backwards@{\_migrate\_all\_backwards}}
+\index{\_migrate\_all\_backwards@{\_migrate\_all\_backwards}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{\_migrate\_all\_backwards()}{\_migrate\_all\_backwards()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a0de959c3ef56dd5973ad2f87e6ad8ad2} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+\_\+migrate\+\_\+all\+\_\+backwards (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{plan}{, }\item[{}]{full\+\_\+plan}{, }\item[{}]{fake}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Take a list of 2-tuples of the form (migration instance, True) and
+unapply them in reverse order they occur in the full_plan.
+
+Since unapplying a migration requires the project state prior to that
+migration, Django will compute the migration states before each of them
+in a first run over the plan and then unapply them in a second run over
+the plan.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6394e1f1c0780231233cfcf879892a9c}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!\_migrate\_all\_forwards@{\_migrate\_all\_forwards}}
+\index{\_migrate\_all\_forwards@{\_migrate\_all\_forwards}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{\_migrate\_all\_forwards()}{\_migrate\_all\_forwards()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6394e1f1c0780231233cfcf879892a9c} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+\_\+migrate\+\_\+all\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{, }\item[{}]{plan}{, }\item[{}]{full\+\_\+plan}{, }\item[{}]{fake}{, }\item[{}]{fake\+\_\+initial}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Take a list of 2-tuples of the form (migration instance, False) and
+apply them in the order they occur in the full_plan.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a5fb41ce1752ad66bbd077781881cc1b7}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!apply\_migration@{apply\_migration}}
+\index{apply\_migration@{apply\_migration}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{apply\_migration()}{apply\_migration()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a5fb41ce1752ad66bbd077781881cc1b7} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+apply\+\_\+migration (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{, }\item[{}]{migration}{, }\item[{}]{fake}{ = {\ttfamily False}, }\item[{}]{fake\+\_\+initial}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a migration forwards.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a7d362323af6b5606d8ec498a3609e6e6}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!check\_replacements@{check\_replacements}}
+\index{check\_replacements@{check\_replacements}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{check\_replacements()}{check\_replacements()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a7d362323af6b5606d8ec498a3609e6e6} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+check\+\_\+replacements (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mark replacement migrations applied if their replaced set all are.
+
+Do this unconditionally on every migrate, rather than just when
+migrations are applied or unapplied, to correctly handle the case
+when a new squash migration is pushed to a deployment that already had
+all its replaced migrations applied. In this case no new migration will
+be applied, but the applied state of the squashed migration must be
+maintained.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_ae5187f7d12375bec66bd59e906b6fa84}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!detect\_soft\_applied@{detect\_soft\_applied}}
+\index{detect\_soft\_applied@{detect\_soft\_applied}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{detect\_soft\_applied()}{detect\_soft\_applied()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_ae5187f7d12375bec66bd59e906b6fa84} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+detect\+\_\+soft\+\_\+applied (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{project\+\_\+state}{, }\item[{}]{migration}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test whether a migration has been implicitly applied - that the
+tables or columns it would create exist. This is intended only for use
+on initial migrations (as it only looks for CreateModel and AddField).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a3d41c1ebde143043232873af2bef51a1}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!migrate@{migrate}}
+\index{migrate@{migrate}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{migrate()}{migrate()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a3d41c1ebde143043232873af2bef51a1} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+migrate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{targets}{, }\item[{}]{plan}{ = {\ttfamily None}, }\item[{}]{state}{ = {\ttfamily None}, }\item[{}]{fake}{ = {\ttfamily False}, }\item[{}]{fake\+\_\+initial}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Migrate the database up to the given targets.
+
+Django first needs to create all project states before a migration is
+(un)applied and in a second step run all the database operations.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6a631428a359bc1bc8ddb42461653cca}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!migration\_plan@{migration\_plan}}
+\index{migration\_plan@{migration\_plan}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{migration\_plan()}{migration\_plan()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6a631428a359bc1bc8ddb42461653cca} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+migration\+\_\+plan (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{targets}{, }\item[{}]{clean\+\_\+start}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a set of targets, return a list of (Migration instance, backwards?).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a17528206250c4c61af03400234fe3991}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!record\_migration@{record\_migration}}
+\index{record\_migration@{record\_migration}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{record\_migration()}{record\_migration()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a17528206250c4c61af03400234fe3991} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+record\+\_\+migration (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{migration}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_adfa1f8f366a5596c93f9336c04255dfb}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!unapply\_migration@{unapply\_migration}}
+\index{unapply\_migration@{unapply\_migration}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{unapply\_migration()}{unapply\_migration()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_adfa1f8f366a5596c93f9336c04255dfb} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+unapply\+\_\+migration (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{, }\item[{}]{migration}{, }\item[{}]{fake}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a migration backwards.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6c746bbe3762aa973593a8c156130657}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!connection@{connection}}
+\index{connection@{connection}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a6c746bbe3762aa973593a8c156130657} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+connection = connection}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_adb4f0e2105923a3274fb795b1667f9eb}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!loader@{loader}}
+\index{loader@{loader}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_adb4f0e2105923a3274fb795b1667f9eb} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+loader = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1loader_1_1_migration_loader}{Migration\+Loader}}(self.\+connection)}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a49c027b7985d0e8ea73200698de3279a}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!progress\_callback@{progress\_callback}}
+\index{progress\_callback@{progress\_callback}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{progress\_callback}{progress\_callback}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_a49c027b7985d0e8ea73200698de3279a} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+progress\+\_\+callback = progress\+\_\+callback}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_ac7e13a39158fef3f62da91ee964b612a}\index{django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}!recorder@{recorder}}
+\index{recorder@{recorder}!django.db.migrations.executor.MigrationExecutor@{django.db.migrations.executor.MigrationExecutor}}
+\doxysubsubsection{\texorpdfstring{recorder}{recorder}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1executor_1_1_migration_executor_ac7e13a39158fef3f62da91ee964b612a} 
+django.\+db.\+migrations.\+executor.\+Migration\+Executor.\+recorder = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1recorder_1_1_migration_recorder}{Migration\+Recorder}}(self.\+connection)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/migrations/\mbox{\hyperlink{executor_8py}{executor.\+py}}\end{DoxyCompactItemize}

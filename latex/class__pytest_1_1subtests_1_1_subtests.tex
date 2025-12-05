@@ -1,0 +1,91 @@
+\doxysection{\+\_\+pytest.\+subtests.\+Subtests Class Reference}
+\hypertarget{class__pytest_1_1subtests_1_1_subtests}{}\label{class__pytest_1_1subtests_1_1_subtests}\index{\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtests_ac41837e91cf6d4d34846dd9425de7d7b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_relay}{pluggy.\+Hook\+Relay}} ihook, Callable\mbox{[}\mbox{[}$\,$\mbox{]}, Abstract\+Context\+Manager\mbox{[}None\mbox{]}\mbox{]} suspend\+\_\+capture\+\_\+ctx, \mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}} request, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager}{\+\_\+\+Sub\+Test\+Context\+Manager}} \mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtests_ab27627c3f885c8d7a81199e3ed218119}{test}} (self, str\texorpdfstring{$\vert$}{|}None msg=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtests_a525c8d4dbaa7828c08631a6f44641827}{\+\_\+ihook}} = ihook
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtests_a69a1f700a996d3b40c5adb3aac634561}{\+\_\+suspend\+\_\+capture\+\_\+ctx}} = suspend\+\_\+capture\+\_\+ctx
+\item 
+\mbox{\hyperlink{class__pytest_1_1subtests_1_1_subtests_af4952e25c47f231194f09c9fd3168767}{\+\_\+request}} = request
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subtests fixture, enables declaring subtests inside test functions via the :meth:`test` method.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_ac41837e91cf6d4d34846dd9425de7d7b}\index{\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1_subtests_ac41837e91cf6d4d34846dd9425de7d7b} 
+ None \+\_\+pytest.\+subtests.\+Subtests.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpluggy_1_1__hooks_1_1_hook_relay}{pluggy.\+Hook\+Relay}}}]{ihook}{, }\item[{Callable\mbox{[}\mbox{[}$\,$\mbox{]}, Abstract\+Context\+Manager\mbox{[}None\mbox{]}\mbox{]}}]{suspend\+\_\+capture\+\_\+ctx}{, }\item[{\mbox{\hyperlink{class__pytest_1_1fixtures_1_1_sub_request}{Sub\+Request}}}]{request}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_ab27627c3f885c8d7a81199e3ed218119}\index{\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}!test@{test}}
+\index{test@{test}!\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1_subtests_ab27627c3f885c8d7a81199e3ed218119} 
+ \mbox{\hyperlink{class__pytest_1_1subtests_1_1___sub_test_context_manager}{\+\_\+\+Sub\+Test\+Context\+Manager}} \+\_\+pytest.\+subtests.\+Subtests.\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{msg}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager for subtests, capturing exceptions raised inside the subtest scope and
+reporting assertion failures and errors individually.
+
+Usage
+-----
+
+.. code-block:: python
+
+    def test(subtests):
+        for i in range(5):
+            with subtests.test("custom message", i=i):
+                assert i % 2 == 0
+
+:param msg:
+    If given, the message will be shown in the test report in case of subtest failure.
+
+:param kwargs:
+    Arbitrary values that are also added to the subtest report.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_a525c8d4dbaa7828c08631a6f44641827}\index{\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}!\_ihook@{\_ihook}}
+\index{\_ihook@{\_ihook}!\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}}
+\doxysubsubsection{\texorpdfstring{\_ihook}{\_ihook}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1_subtests_a525c8d4dbaa7828c08631a6f44641827} 
+\+\_\+pytest.\+subtests.\+Subtests.\+\_\+ihook = ihook\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_af4952e25c47f231194f09c9fd3168767}\index{\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}!\_request@{\_request}}
+\index{\_request@{\_request}!\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}}
+\doxysubsubsection{\texorpdfstring{\_request}{\_request}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1_subtests_af4952e25c47f231194f09c9fd3168767} 
+\+\_\+pytest.\+subtests.\+Subtests.\+\_\+request = request\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1subtests_1_1_subtests_a69a1f700a996d3b40c5adb3aac634561}\index{\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}!\_suspend\_capture\_ctx@{\_suspend\_capture\_ctx}}
+\index{\_suspend\_capture\_ctx@{\_suspend\_capture\_ctx}!\_pytest.subtests.Subtests@{\_pytest.subtests.Subtests}}
+\doxysubsubsection{\texorpdfstring{\_suspend\_capture\_ctx}{\_suspend\_capture\_ctx}}
+{\footnotesize\ttfamily \label{class__pytest_1_1subtests_1_1_subtests_a69a1f700a996d3b40c5adb3aac634561} 
+\+\_\+pytest.\+subtests.\+Subtests.\+\_\+suspend\+\_\+capture\+\_\+ctx = suspend\+\_\+capture\+\_\+ctx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{subtests_8py}{subtests.\+py}}\end{DoxyCompactItemize}

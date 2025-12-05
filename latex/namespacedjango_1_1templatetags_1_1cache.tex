@@ -1,0 +1,62 @@
+\doxysection{django.\+templatetags.\+cache Namespace Reference}
+\hypertarget{namespacedjango_1_1templatetags_1_1cache}{}\label{namespacedjango_1_1templatetags_1_1cache}\index{django.templatetags.cache@{django.templatetags.cache}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1templatetags_1_1cache_1_1_cache_node}{Cache\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1templatetags_1_1cache_a41602df7046c57738ebb321e068094c4}{do\+\_\+cache}} (parser, token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1templatetags_1_1cache_a2958b72e44afc7f096e7d0384eacc5bc}{register}} = \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_library}{Library}}()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1templatetags_1_1cache_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1templatetags_1_1cache_a41602df7046c57738ebb321e068094c4}\index{django.templatetags.cache@{django.templatetags.cache}!do\_cache@{do\_cache}}
+\index{do\_cache@{do\_cache}!django.templatetags.cache@{django.templatetags.cache}}
+\doxysubsubsection{\texorpdfstring{do\_cache()}{do\_cache()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1templatetags_1_1cache_a41602df7046c57738ebb321e068094c4} 
+django.\+templatetags.\+cache.\+do\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{parser}{, }\item[{}]{token}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This will cache the contents of a template fragment for a given amount
+of time.
+
+Usage::
+
+    {% load cache %}
+    {% cache [expire_time] [fragment_name] %}
+        .. some expensive processing ..
+    {% endcache %}
+
+This tag also supports varying by a list of arguments::
+
+    {% load cache %}
+    {% cache [expire_time] [fragment_name] [var1] [var2] .. %}
+        .. some expensive processing ..
+    {% endcache %}
+
+Optionally the cache to use may be specified thus::
+
+    {% cache ....  using="cachename" %}
+
+Each unique set of arguments will result in a unique cache entry.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1templatetags_1_1cache_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1templatetags_1_1cache_a2958b72e44afc7f096e7d0384eacc5bc}\index{django.templatetags.cache@{django.templatetags.cache}!register@{register}}
+\index{register@{register}!django.templatetags.cache@{django.templatetags.cache}}
+\doxysubsubsection{\texorpdfstring{register}{register}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1templatetags_1_1cache_a2958b72e44afc7f096e7d0384eacc5bc} 
+django.\+templatetags.\+cache.\+register = \mbox{\hyperlink{classdjango_1_1template_1_1library_1_1_library}{Library}}()}
+

@@ -1,0 +1,73 @@
+\doxysection{geoip2.\+webservice Namespace Reference}
+\hypertarget{namespacegeoip2_1_1webservice}{}\label{namespacegeoip2_1_1webservice}\index{geoip2.webservice@{geoip2.webservice}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_async_client}{Async\+Client}}
+\item 
+class \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_base_client}{Base\+Client}}
+\item 
+class \mbox{\hyperlink{classgeoip2_1_1webservice_1_1_client}{Client}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacegeoip2_1_1webservice_a321f4a206caca5e120b4db0c37e3ace2}{\+\_\+\+AIOHTTP\+\_\+\+UA}}
+\item 
+tuple \mbox{\hyperlink{namespacegeoip2_1_1webservice_a6f0b13ecb7f806669bf81bb8cdffaceb}{\+\_\+\+REQUEST\+\_\+\+UA}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Client for GeoIP2 and GeoLite2 web services.
+
+The web services are Country, City Plus, and Insights. Each service returns a
+different set of data about an IP address, with Country returning the least
+data and Insights the most.
+
+Each service is represented by a different model class, and these model
+classes in turn contain multiple record classes. The record classes have
+attributes which contain data about the IP address.
+
+If the service does not return a particular piece of data for an IP address,
+the associated attribute is not populated.
+
+The service may not return any information for an entire record, in which
+case all of the attributes for that record class will be empty.
+
+SSL
+---
+
+Requests to the web service are always made with SSL.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacegeoip2_1_1webservice_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacegeoip2_1_1webservice_a321f4a206caca5e120b4db0c37e3ace2}\index{geoip2.webservice@{geoip2.webservice}!\_AIOHTTP\_UA@{\_AIOHTTP\_UA}}
+\index{\_AIOHTTP\_UA@{\_AIOHTTP\_UA}!geoip2.webservice@{geoip2.webservice}}
+\doxysubsubsection{\texorpdfstring{\_AIOHTTP\_UA}{\_AIOHTTP\_UA}}
+{\footnotesize\ttfamily \label{namespacegeoip2_1_1webservice_a321f4a206caca5e120b4db0c37e3ace2} 
+tuple geoip2.\+webservice.\+\_\+\+AIOHTTP\+\_\+\+UA\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ f\textcolor{stringliteral}{"{}GeoIP2-\/Python-\/Client/\{geoip2.\_\_version\_\_\}\ \{aiohttp.http.SERVER\_SOFTWARE\}"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacegeoip2_1_1webservice_a6f0b13ecb7f806669bf81bb8cdffaceb}\index{geoip2.webservice@{geoip2.webservice}!\_REQUEST\_UA@{\_REQUEST\_UA}}
+\index{\_REQUEST\_UA@{\_REQUEST\_UA}!geoip2.webservice@{geoip2.webservice}}
+\doxysubsubsection{\texorpdfstring{\_REQUEST\_UA}{\_REQUEST\_UA}}
+{\footnotesize\ttfamily \label{namespacegeoip2_1_1webservice_a6f0b13ecb7f806669bf81bb8cdffaceb} 
+tuple geoip2.\+webservice.\+\_\+\+REQUEST\+\_\+\+UA\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ f\textcolor{stringliteral}{"{}GeoIP2-\/Python-\/Client/\{geoip2.\_\_version\_\_\}\ \{requests.utils.default\_user\_agent()\}"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

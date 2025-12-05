@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Minhas Feiras - Feira da Lua{% endblock %}
+
+{% block content %}
+<main class="home-main">
+  <section class="hero-section">
+    <h1 class="hero-title">Gerencie suas feiras</h1>
+    <p class="hero-subtitle">Visualize, edite ou exclua suas feiras cadastradas.</p>
+  </section>
+
+  <section class="results-section">
+    <div class="section-header">
+        <h2 class="section-title">Suas Feiras ({{ marketplaces|length }})</h2>
+        <a href="{% url 'create_fair' %}" class="btn btn-primary">Cadastrar nova feira</a>
+    </div>
+    <div class="marketplaces-grid">
+      {% for marketplace in marketplaces %}
+      <div class="marketplace-card">
+        <div class="marketplace-info">
+          <h3 class="marketplace-name">{{ marketplace.name }}</h3>
+          <p class="marketplace-address">
+            <img src="{% static 'img/Map pin.svg' %}" alt="" class="icon-small">
+            {{ marketplace.address }}
+          </p>
+        </div>
+        <div class="marketplace-actions">
+          <a href="{% url 'edit_fair' marketplace_id=marketplace.id %}" class="btn btn-sm btn-primary">Editar</a>
+          <a href="#" class="btn btn-sm btn-danger">Excluir</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if not marketplaces %}
+    <div class="empty-state">
+      <h3>Nenhuma feira cadastrada</h3>
+      <p>Voce ainda nao cadastrou nenhuma feira.</p>
+    </div>
+    {% endif %}
+  </section>
+</main>
+{% endblock %}
+

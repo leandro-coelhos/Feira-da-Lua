@@ -1,0 +1,148 @@
+\doxysection{feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/helpers.py File Reference}
+\hypertarget{aiohttp_2helpers_8py}{}\label{aiohttp_2helpers_8py}\index{feira\_venv/Lib/site-\/packages/aiohttp/helpers.py@{feira\_venv/Lib/site-\/packages/aiohttp/helpers.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1noop}{aiohttp.\+helpers.\+noop}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth}{aiohttp.\+helpers.\+Basic\+Auth}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_proxy_info}{aiohttp.\+helpers.\+Proxy\+Info}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_mime_type}{aiohttp.\+helpers.\+Mime\+Type}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_ensure_octet_stream}{aiohttp.\+helpers.\+Ensure\+Octet\+Stream}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timeout_handle}{aiohttp.\+helpers.\+Timeout\+Handle}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context}{aiohttp.\+helpers.\+Base\+Timer\+Context}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_noop}{aiohttp.\+helpers.\+Timer\+Noop}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context}{aiohttp.\+helpers.\+Timer\+Context}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_headers_mixin}{aiohttp.\+helpers.\+Headers\+Mixin}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_errorable_protocol}{aiohttp.\+helpers.\+Errorable\+Protocol}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_app_key}{aiohttp.\+helpers.\+App\+Key}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_chain_map_proxy}{aiohttp.\+helpers.\+Chain\+Map\+Proxy}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_e_tag}{aiohttp.\+helpers.\+ETag}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceaiohttp}{aiohttp}}
+\item 
+namespace \mbox{\hyperlink{namespaceaiohttp_1_1helpers}{aiohttp.\+helpers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}, Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth}{Basic\+Auth}}\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a3dc876d7c137f8203a7048a11b2ec8f1}{aiohttp.\+helpers.\+strip\+\_\+auth\+\_\+from\+\_\+url}} (\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url)
+\item 
+Optional\mbox{[}netrc.\+netrc\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a74e58bde3481f2aa943968e3e8bb78aa}{aiohttp.\+helpers.\+netrc\+\_\+from\+\_\+env}} ()
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth}{Basic\+Auth}} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a52cdaccf1134a592282af57b63a83710}{aiohttp.\+helpers.\+basicauth\+\_\+from\+\_\+netrc}} (Optional\mbox{[}netrc.\+netrc\mbox{]} netrc\+\_\+obj, str host)
+\item 
+Dict\mbox{[}str, \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_proxy_info}{Proxy\+Info}}\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_aefbb3182cff4f82c3d7f9ecaaa2c2750}{aiohttp.\+helpers.\+proxies\+\_\+from\+\_\+env}} ()
+\item 
+Tuple\mbox{[}\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}}, Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_basic_auth}{Basic\+Auth}}\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a240ea78e8e1b2689daef7a6da75902eb}{aiohttp.\+helpers.\+get\+\_\+env\+\_\+proxy\+\_\+for\+\_\+url}} (\mbox{\hyperlink{classyarl_1_1__url_1_1_u_r_l}{URL}} url)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_mime_type}{Mime\+Type}} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a229975086f46fa96d616162e458a6991}{aiohttp.\+helpers.\+parse\+\_\+mimetype}} (str mimetype)
+\item 
+Tuple\mbox{[}str, Mapping\+Proxy\+Type\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ab2dac4e90a39bbb6b51788c8ff4ac423}{aiohttp.\+helpers.\+parse\+\_\+content\+\_\+type}} (str raw)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a5dcba2e80b5e600ea65f84764654ae84}{aiohttp.\+helpers.\+guess\+\_\+filename}} (Any obj, Optional\mbox{[}str\mbox{]} default=None)
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a52c6dc4b06019adb99b94951e44265ce}{aiohttp.\+helpers.\+quoted\+\_\+string}} (str content)
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_aa291f5fa21ecdb1ad234db946714c2c1}{aiohttp.\+helpers.\+content\+\_\+disposition\+\_\+header}} (str disptype, bool quote\+\_\+fields=True, str \+\_\+charset="{}utf-\/8"{}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str params)
+\item 
+bool \mbox{\hyperlink{namespaceaiohttp_1_1helpers_afe32b5653bf5adccdcd654d57de45629}{aiohttp.\+helpers.\+is\+\_\+ip\+\_\+address}} (Optional\mbox{[}str\mbox{]} host)
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a9045a01162bc0a8a869b60f66c45f055}{aiohttp.\+helpers.\+rfc822\+\_\+formatted\+\_\+time}} ()
+\item 
+None \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a01058967c7ee84120b0af511f72944e5}{aiohttp.\+helpers.\+\_\+weakref\+\_\+handle}} ("{}Tuple\mbox{[}weakref.\+ref\mbox{[}object\mbox{]}, str\mbox{]}"{} info)
+\item 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a292c5948bb1b75315515f79b105dfda7}{aiohttp.\+helpers.\+weakref\+\_\+handle}} (object ob, str name, float timeout, asyncio.\+Abstract\+Event\+Loop loop, float timeout\+\_\+ceil\+\_\+threshold=5)
+\item 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ab081ab3432096e55d21f9e849113be76}{aiohttp.\+helpers.\+call\+\_\+later}} (Callable\mbox{[}\mbox{[}$\,$\mbox{]}, Any\mbox{]} cb, float timeout, asyncio.\+Abstract\+Event\+Loop loop, float timeout\+\_\+ceil\+\_\+threshold=5)
+\item 
+float \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a544d71b67893989279e5672b7b7012a5}{aiohttp.\+helpers.\+calculate\+\_\+timeout\+\_\+when}} (float loop\+\_\+time, float timeout, float timeout\+\_\+ceiling\+\_\+threshold)
+\item 
+async\+\_\+timeout.\+Timeout \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ae773b17c1fab0b78009f41cbf017f051}{aiohttp.\+helpers.\+ceil\+\_\+timeout}} (Optional\mbox{[}float\mbox{]} delay, float ceil\+\_\+threshold=5)
+\item 
+None \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ac1766042ed0968ac0da726b16a3213f7}{aiohttp.\+helpers.\+set\+\_\+result}} ("{}asyncio.\+Future\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a0cbbefeb7ccde32f73c613640e6f5149}{\+\_\+T}}\mbox{]}"{} fut, \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a0cbbefeb7ccde32f73c613640e6f5149}{\+\_\+T}} result)
+\item 
+None \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a6d334a0422c7c584f34f4a80e155ad34}{aiohttp.\+helpers.\+set\+\_\+exception}} ("{}asyncio.\+Future\mbox{[}\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a0cbbefeb7ccde32f73c613640e6f5149}{\+\_\+T}}\mbox{]} \texorpdfstring{$\vert$}{|} Errorable\+Protocol"{} fut, Base\+Exception exc, Base\+Exception exc\+\_\+cause=\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a0faa53e8481d13b41a95c5faf30a6e72}{\+\_\+\+EXC\+\_\+\+SENTINEL}})
+\item 
+None \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a6d61abb1f6f1bbe4fc70f2f7edd5ce9d}{aiohttp.\+helpers.\+validate\+\_\+etag\+\_\+value}} (str value)
+\item 
+Optional\mbox{[}datetime.\+datetime\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a58bd7411b095b0a601c5cfb41630c3c5}{aiohttp.\+helpers.\+parse\+\_\+http\+\_\+date}} (Optional\mbox{[}str\mbox{]} date\+\_\+str)
+\item 
+bool \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ac501142a447f1392fabb67c79152f023}{aiohttp.\+helpers.\+must\+\_\+be\+\_\+empty\+\_\+body}} (str method, int code)
+\item 
+bool \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ac3c5e55d732c27a0f616d3b0f1d7033a}{aiohttp.\+helpers.\+should\+\_\+remove\+\_\+content\+\_\+length}} (str method, int code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a9f53de3845b704628ae3f52bda3e8ac2}{aiohttp.\+helpers.\+\_\+\+\_\+all\+\_\+\+\_\+}} = ("{}Basic\+Auth"{}, "{}Chain\+Map\+Proxy"{}, "{}ETag"{}, "{}reify"{})
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_ae33f6f73218aa9945ee0029b855f4788}{aiohttp.\+helpers.\+IS\+\_\+\+MACOS}} = "{}Darwin"{}
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8c46ac81af9aae44a6069d3926491a79}{aiohttp.\+helpers.\+IS\+\_\+\+WINDOWS}} = "{}Windows"{}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a69c7cbba7bb23a449a0b95953e04bcbc}{aiohttp.\+helpers.\+PY\+\_\+310}} = (3, 10)
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a43e6e6c0d75f3c5fe4c4f350672b92eb}{aiohttp.\+helpers.\+PY\+\_\+311}} = (3, 11)
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a0cbbefeb7ccde32f73c613640e6f5149}{aiohttp.\+helpers.\+\_\+T}} = Type\+Var("{}\+\_\+\+T"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a190fd38439b42e362230d0485007a51e}{aiohttp.\+helpers.\+\_\+S}} = Type\+Var("{}\+\_\+\+S"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a7b6438a4a56300f8683c096d8b0ead12}{aiohttp.\+helpers.\+\_\+\+SENTINEL}} = enum.\+Enum("{}\+\_\+\+SENTINEL"{}, "{}sentinel"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8ceaf0cec9a540e1b996ec39b3e92ba9}{aiohttp.\+helpers.\+sentinel}} = \+\_\+\+SENTINEL.\+sentinel
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_aad41b68ba7084b8ba73e7dc54555f761}{aiohttp.\+helpers.\+NO\+\_\+\+EXTENSIONS}} = bool(os.\+environ.\+get("{}AIOHTTP\+\_\+\+NO\+\_\+\+EXTENSIONS"{}))
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a24c5c16e097ea339880cd85b1bb098de}{aiohttp.\+helpers.\+EMPTY\+\_\+\+BODY\+\_\+\+STATUS\+\_\+\+CODES}} = frozenset((204, 304, \texorpdfstring{$\ast$}{*}range(100, 200)))
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_aeec121e9ae92a1fdb30395a922e11b5c}{aiohttp.\+helpers.\+EMPTY\+\_\+\+BODY\+\_\+\+METHODS}} = \mbox{\hyperlink{namespaceaiohttp_1_1hdrs_a4a04b3487d66b117542b2894cdb717c4}{hdrs.\+METH\+\_\+\+HEAD\+\_\+\+ALL}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a19fec4b847e9cb024891ad2988f0ba22}{aiohttp.\+helpers.\+DEBUG}}
+\item 
+dict \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8ad7505d1312184153d00c529cfe51c7}{aiohttp.\+helpers.\+CHAR}} = \{chr(i) for i in range(0, 128)\}
+\item 
+dict \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8645fc503ab7add5c89337000a9ef7bb}{aiohttp.\+helpers.\+CTL}}
+\item 
+dict \mbox{\hyperlink{namespaceaiohttp_1_1helpers_aea0b8b9914a05eb13f6cb74803ef1997}{aiohttp.\+helpers.\+SEPARATORS}}
+\item 
+dict \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8cb99ef0d8983466f9b949d5ac3af51e}{aiohttp.\+helpers.\+TOKEN}} = \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8ad7505d1312184153d00c529cfe51c7}{CHAR}} \texorpdfstring{$^\wedge$}{\string^} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8645fc503ab7add5c89337000a9ef7bb}{CTL}} \texorpdfstring{$^\wedge$}{\string^} \mbox{\hyperlink{namespaceaiohttp_1_1helpers_aea0b8b9914a05eb13f6cb74803ef1997}{SEPARATORS}}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a695bc554f2f5df2e7b64f3be2c461021}{aiohttp.\+helpers.\+not\+\_\+qtext\+\_\+re}} = re.\+compile(r"{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}041\textbackslash{}043-\/\textbackslash{}133\textbackslash{}135-\/\textbackslash{}176\mbox{]}"{})
+\item 
+dict \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a1b60a2b3da0b8a1ce793d95d3a200d37}{aiohttp.\+helpers.\+QCONTENT}} = \{chr(i) for i in range(0x20, 0x7F)\} \texorpdfstring{$\vert$}{|} \{"{}\textbackslash{}t"{}\}
+\item 
+Optional \mbox{\hyperlink{namespaceaiohttp_1_1helpers_acb277fa4715c331d27a4064e67362920}{aiohttp.\+helpers.\+\_\+cached\+\_\+current\+\_\+datetime}} = None
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a8e4e0e021ace3f579ad2074b85dd78e4}{aiohttp.\+helpers.\+\_\+cached\+\_\+formatted\+\_\+datetime}} = "{}"{}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a0faa53e8481d13b41a95c5faf30a6e72}{aiohttp.\+helpers.\+\_\+\+EXC\+\_\+\+SENTINEL}} = Base\+Exception()
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_aa27d2866fe9dd240301615401ba97618}{aiohttp.\+helpers.\+\_\+\+ETAGC}} = r"{}\mbox{[}!\textbackslash{}x23-\/\textbackslash{}x7\+E\textbackslash{}x80-\/\textbackslash{}xff\mbox{]}+"{}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a7329d0710f02362d848668d36f56f290}{aiohttp.\+helpers.\+\_\+\+ETAGC\+\_\+\+RE}} = re.\+compile(\mbox{\hyperlink{namespaceaiohttp_1_1helpers_aa27d2866fe9dd240301615401ba97618}{\+\_\+\+ETAGC}})
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a2517b50117829fe58a5c36d1f5d93757}{aiohttp.\+helpers.\+\_\+\+QUOTED\+\_\+\+ETAG}} = rf\textquotesingle{}(W/)?"{}(\{\+\_\+\+ETAGC\})"{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a80294dae2d059bfce37b51e4ae6e221a}{aiohttp.\+helpers.\+QUOTED\+\_\+\+ETAG\+\_\+\+RE}} = re.\+compile(\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a2517b50117829fe58a5c36d1f5d93757}{\+\_\+\+QUOTED\+\_\+\+ETAG}})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a304d854c6991a12f835ded48c52095c2}{aiohttp.\+helpers.\+LIST\+\_\+\+QUOTED\+\_\+\+ETAG\+\_\+\+RE}} = re.\+compile(rf"{}(\{\mbox{\hyperlink{namespaceaiohttp_1_1helpers_a2517b50117829fe58a5c36d1f5d93757}{\+\_\+\+QUOTED\+\_\+\+ETAG}}\})(?\+:\textbackslash{}s\texorpdfstring{$\ast$}{*},\textbackslash{}s\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}\$)\texorpdfstring{$\vert$}{|}(.)"{})
+\item 
+str \mbox{\hyperlink{namespaceaiohttp_1_1helpers_a39dff2e1872c384cdac9cc966cbffd3e}{aiohttp.\+helpers.\+ETAG\+\_\+\+ANY}} = "{}\texorpdfstring{$\ast$}{*}"{}
+\end{DoxyCompactItemize}

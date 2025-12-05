@@ -1,0 +1,43 @@
+\doxysection{django.\+core.\+checks.\+model\+\_\+checks Namespace Reference}
+\hypertarget{namespacedjango_1_1core_1_1checks_1_1model__checks}{}\label{namespacedjango_1_1core_1_1checks_1_1model__checks}\index{django.core.checks.model\_checks@{django.core.checks.model\_checks}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1checks_1_1model__checks_a2b974f0b59721f0e59ac2257f60a06b0}{check\+\_\+all\+\_\+models}} (app\+\_\+configs=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1checks_1_1model__checks_a1790debe79f3669e948d099c0e8ee6f1}{\+\_\+check\+\_\+lazy\+\_\+references}} (apps, ignore=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1checks_1_1model__checks_a23d6c6ee1d333a9dafd75e64ed9fd1f6}{check\+\_\+lazy\+\_\+references}} (app\+\_\+configs=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1core_1_1checks_1_1model__checks_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1core_1_1checks_1_1model__checks_a1790debe79f3669e948d099c0e8ee6f1}\index{django.core.checks.model\_checks@{django.core.checks.model\_checks}!\_check\_lazy\_references@{\_check\_lazy\_references}}
+\index{\_check\_lazy\_references@{\_check\_lazy\_references}!django.core.checks.model\_checks@{django.core.checks.model\_checks}}
+\doxysubsubsection{\texorpdfstring{\_check\_lazy\_references()}{\_check\_lazy\_references()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1checks_1_1model__checks_a1790debe79f3669e948d099c0e8ee6f1} 
+django.\+core.\+checks.\+model\+\_\+checks.\+\_\+check\+\_\+lazy\+\_\+references (\begin{DoxyParamCaption}\item[{}]{apps}{, }\item[{}]{ignore}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Ensure all lazy (i.e. string) model references have been resolved.
+
+Lazy references are used in various places throughout Django, primarily in
+related fields and model signals. Identify those common cases and provide
+more helpful error messages for them.
+
+The ignore parameter is used by StateApps to exclude swappable models from
+this check.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1checks_1_1model__checks_a2b974f0b59721f0e59ac2257f60a06b0}\index{django.core.checks.model\_checks@{django.core.checks.model\_checks}!check\_all\_models@{check\_all\_models}}
+\index{check\_all\_models@{check\_all\_models}!django.core.checks.model\_checks@{django.core.checks.model\_checks}}
+\doxysubsubsection{\texorpdfstring{check\_all\_models()}{check\_all\_models()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1checks_1_1model__checks_a2b974f0b59721f0e59ac2257f60a06b0} 
+django.\+core.\+checks.\+model\+\_\+checks.\+check\+\_\+all\+\_\+models (\begin{DoxyParamCaption}\item[{}]{app\+\_\+configs}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1checks_1_1model__checks_a23d6c6ee1d333a9dafd75e64ed9fd1f6}\index{django.core.checks.model\_checks@{django.core.checks.model\_checks}!check\_lazy\_references@{check\_lazy\_references}}
+\index{check\_lazy\_references@{check\_lazy\_references}!django.core.checks.model\_checks@{django.core.checks.model\_checks}}
+\doxysubsubsection{\texorpdfstring{check\_lazy\_references()}{check\_lazy\_references()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1core_1_1checks_1_1model__checks_a23d6c6ee1d333a9dafd75e64ed9fd1f6} 
+django.\+core.\+checks.\+model\+\_\+checks.\+check\+\_\+lazy\+\_\+references (\begin{DoxyParamCaption}\item[{}]{app\+\_\+configs}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+

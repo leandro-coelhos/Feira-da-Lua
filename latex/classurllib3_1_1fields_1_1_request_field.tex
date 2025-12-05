@@ -1,0 +1,190 @@
+\doxysection{urllib3.\+fields.\+Request\+Field Class Reference}
+\hypertarget{classurllib3_1_1fields_1_1_request_field}{}\label{classurllib3_1_1fields_1_1_request_field}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a8dbf62007be844b9f66ae3df18fa77c1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str name, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}} \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a89e7750d0ecb348bbc7b77b08d8883f3}{data}}, str\texorpdfstring{$\vert$}{|}None filename=None, typing.\+Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a8e6facf6e9ff5f0b498cc0b615e431c7}{headers}}=None, typing.\+Callable\mbox{[}\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}\mbox{]}, str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a4dee62894ff46afb69adce716cc0e017}{header\+\_\+formatter}}=None)
+\item 
+\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field}{Request\+Field}} \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_ad8054d6d0d9ec5c5785326b0c97754f3}{from\+\_\+tuples}} (cls, str fieldname, \mbox{\hyperlink{namespaceurllib3_1_1fields_a5738a68e18ea35c237d42602273c71b7}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE\+\_\+\+TUPLE}} value, typing.\+Callable\mbox{[}\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}\mbox{]}, str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a4dee62894ff46afb69adce716cc0e017}{header\+\_\+formatter}}=None)
+\item 
+str \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_ad0b5264b1a7e76c7dcf245cd0f254d3f}{render\+\_\+headers}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a21ce3838bdd9805217ba2ffc7c35d480}{make\+\_\+multipart}} (self, str\texorpdfstring{$\vert$}{|}None content\+\_\+disposition=None, str\texorpdfstring{$\vert$}{|}None content\+\_\+type=None, str\texorpdfstring{$\vert$}{|}None content\+\_\+location=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a89e7750d0ecb348bbc7b77b08d8883f3}{data}} = data
+\item 
+dict \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a8e6facf6e9ff5f0b498cc0b615e431c7}{headers}} = \{\}
+\item 
+\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a4dee62894ff46afb69adce716cc0e017}{header\+\_\+formatter}} = header\+\_\+formatter
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a282d280f4a71ea5422b69657f306016c}{\+\_\+render\+\_\+part}} (self, str name, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}} value)
+\item 
+str \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_ac17721bda1071518590d0ddb7deeebdd}{\+\_\+render\+\_\+parts}} (self,(dict\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}\texorpdfstring{$\vert$}{|}None\mbox{]}\texorpdfstring{$\vert$}{|}typing.\+Sequence\mbox{[}tuple\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}\texorpdfstring{$\vert$}{|}None\mbox{]}\mbox{]}) header\+\_\+parts)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_aa7a92ecd7845d47b66f4564bf36764d8}{\+\_\+name}} = name
+\item 
+\mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field_a32b8c2934947a6a9eae46fc53b1a3f83}{\+\_\+filename}} = filename
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A data container for request body parameters.
+
+:param name:
+    The name of this request field. Must be unicode.
+:param data:
+    The data/value body.
+:param filename:
+    An optional filename of the request field. Must be unicode.
+:param headers:
+    An optional dict-like object of headers to initially use for the field.
+
+.. versionchanged:: 2.0.0
+    The ``header_formatter`` parameter is deprecated and will
+    be removed in urllib3 v2.1.0.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_a8dbf62007be844b9f66ae3df18fa77c1}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a8dbf62007be844b9f66ae3df18fa77c1} 
+urllib3.\+fields.\+Request\+Field.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}}]{data}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{filename}{ = {\ttfamily None}, }\item[{typing.\+Mapping\mbox{[}str, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}, }\item[{typing.\+Callable\mbox{[}\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}\mbox{]}, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{header\+\_\+formatter}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_a282d280f4a71ea5422b69657f306016c}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!\_render\_part@{\_render\_part}}
+\index{\_render\_part@{\_render\_part}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{\_render\_part()}{\_render\_part()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a282d280f4a71ea5422b69657f306016c} 
+ str urllib3.\+fields.\+Request\+Field.\+\_\+render\+\_\+part (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Override this method to change how each multipart header
+parameter is formatted. By default, this calls
+:func:`format_multipart_header_param`.
+
+:param name:
+    The name of the parameter, an ASCII-only ``str``.
+:param value:
+    The value of the parameter, a ``str`` or UTF-8 encoded
+    ``bytes``.
+
+:meta public:
+\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1fields_1_1_request_field_ac17721bda1071518590d0ddb7deeebdd}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!\_render\_parts@{\_render\_parts}}
+\index{\_render\_parts@{\_render\_parts}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{\_render\_parts()}{\_render\_parts()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_ac17721bda1071518590d0ddb7deeebdd} 
+ str urllib3.\+fields.\+Request\+Field.\+\_\+render\+\_\+parts (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             dict\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}} \texorpdfstring{$\vert$}{|} None\mbox{]}             \texorpdfstring{$\vert$}{|} typing.\+Sequence\mbox{[}tuple\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}} \texorpdfstring{$\vert$}{|} None\mbox{]}\mbox{]}         )}]{header\+\_\+parts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper function to format and quote a single header.
+
+Useful for single headers that are composed of multiple items. E.g.,
+'Content-Disposition' fields.
+
+:param header_parts:
+    A sequence of (k, v) tuples or a :class:`dict` of (k, v) to format
+    as `k1="v1"; k2="v2"; ...`.
+\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1fields_1_1_request_field_ad8054d6d0d9ec5c5785326b0c97754f3}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!from\_tuples@{from\_tuples}}
+\index{from\_tuples@{from\_tuples}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{from\_tuples()}{from\_tuples()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_ad8054d6d0d9ec5c5785326b0c97754f3} 
+ \mbox{\hyperlink{classurllib3_1_1fields_1_1_request_field}{Request\+Field}} urllib3.\+fields.\+Request\+Field.\+from\+\_\+tuples (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{fieldname}{, }\item[{\mbox{\hyperlink{namespaceurllib3_1_1fields_a5738a68e18ea35c237d42602273c71b7}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE\+\_\+\+TUPLE}}}]{value}{, }\item[{typing.\+Callable\mbox{[}\mbox{[}str, \mbox{\hyperlink{namespaceurllib3_1_1fields_a68b8f1cffd50c65cc9b0900169c156f3}{\+\_\+\+TYPE\+\_\+\+FIELD\+\_\+\+VALUE}}\mbox{]}, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{header\+\_\+formatter}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class:`~urllib3.fields.RequestField` factory from old-style tuple parameters.
+
+Supports constructing :class:`~urllib3.fields.RequestField` from
+parameter of key/value strings AND key/filetuple. A filetuple is a
+(filename, data, MIME type) tuple where the MIME type is optional.
+For example::
+
+    'foo': 'bar',
+    'fakefile': ('foofile.txt', 'contents of foofile'),
+    'realfile': ('barfile.txt', open('realfile').read()),
+    'typedfile': ('bazfile.bin', open('bazfile').read(), 'image/jpeg'),
+    'nonamefile': 'contents of nonamefile field',
+
+Field names and filenames must be unicode.
+\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1fields_1_1_request_field_a21ce3838bdd9805217ba2ffc7c35d480}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!make\_multipart@{make\_multipart}}
+\index{make\_multipart@{make\_multipart}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{make\_multipart()}{make\_multipart()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a21ce3838bdd9805217ba2ffc7c35d480} 
+ None urllib3.\+fields.\+Request\+Field.\+make\+\_\+multipart (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{content\+\_\+disposition}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{content\+\_\+type}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{content\+\_\+location}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes this request field into a multipart request field.
+
+This method overrides "Content-Disposition", "Content-Type" and
+"Content-Location" headers to the request parameter.
+
+:param content_disposition:
+    The 'Content-Disposition' of the request body. Defaults to 'form-data'
+:param content_type:
+    The 'Content-Type' of the request body.
+:param content_location:
+    The 'Content-Location' of the request body.
+\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1fields_1_1_request_field_ad0b5264b1a7e76c7dcf245cd0f254d3f}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!render\_headers@{render\_headers}}
+\index{render\_headers@{render\_headers}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{render\_headers()}{render\_headers()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_ad0b5264b1a7e76c7dcf245cd0f254d3f} 
+ str urllib3.\+fields.\+Request\+Field.\+render\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Renders the headers for this request field.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_a32b8c2934947a6a9eae46fc53b1a3f83}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!\_filename@{\_filename}}
+\index{\_filename@{\_filename}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{\_filename}{\_filename}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a32b8c2934947a6a9eae46fc53b1a3f83} 
+urllib3.\+fields.\+Request\+Field.\+\_\+filename = filename\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_aa7a92ecd7845d47b66f4564bf36764d8}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!\_name@{\_name}}
+\index{\_name@{\_name}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_aa7a92ecd7845d47b66f4564bf36764d8} 
+urllib3.\+fields.\+Request\+Field.\+\_\+name = name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_a89e7750d0ecb348bbc7b77b08d8883f3}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!data@{data}}
+\index{data@{data}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a89e7750d0ecb348bbc7b77b08d8883f3} 
+urllib3.\+fields.\+Request\+Field.\+data = data}
+
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_a4dee62894ff46afb69adce716cc0e017}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!header\_formatter@{header\_formatter}}
+\index{header\_formatter@{header\_formatter}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{header\_formatter}{header\_formatter}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a4dee62894ff46afb69adce716cc0e017} 
+urllib3.\+fields.\+Request\+Field.\+header\+\_\+formatter = header\+\_\+formatter}
+
+\Hypertarget{classurllib3_1_1fields_1_1_request_field_a8e6facf6e9ff5f0b498cc0b615e431c7}\index{urllib3.fields.RequestField@{urllib3.fields.RequestField}!headers@{headers}}
+\index{headers@{headers}!urllib3.fields.RequestField@{urllib3.fields.RequestField}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \label{classurllib3_1_1fields_1_1_request_field_a8e6facf6e9ff5f0b498cc0b615e431c7} 
+dict urllib3.\+fields.\+Request\+Field.\+headers = \{\}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/urllib3/\mbox{\hyperlink{urllib3_2fields_8py}{fields.\+py}}\end{DoxyCompactItemize}

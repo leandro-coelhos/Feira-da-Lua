@@ -1,0 +1,78 @@
+\doxysection{\+\_\+pytest.\+mark.\+structures.\+Mark\+Generator Class Reference}
+\hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator}{}\label{class__pytest_1_1mark_1_1structures_1_1_mark_generator}\index{\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark_generator_ad6e112b32c08fb734deb51a3aa0ee7be}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+\mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark_decorator}{Mark\+Decorator}} \mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark_generator_a8e96769e1dd2ebc736662c6541c64a61}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark_generator_a0b0eefe9e6f11ea5413597897bd27de5}{\+\_\+config}} = None
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark_generator_ab5251dfacd7a72f7a4226125420c6d21}{\+\_\+markers}} = set()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Factory for :class:`MarkDecorator` objects - exposed as
+a ``pytest.mark`` singleton instance.
+
+Example::
+
+     import pytest
+
+
+     @pytest.mark.slowtest
+     def test_function():
+         pass
+
+applies a 'slowtest' :class:`Mark` on ``test_function``.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_ad6e112b32c08fb734deb51a3aa0ee7be}\index{\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1structures_1_1_mark_generator_ad6e112b32c08fb734deb51a3aa0ee7be} 
+ None \+\_\+pytest.\+mark.\+structures.\+Mark\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_a8e96769e1dd2ebc736662c6541c64a61}\index{\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1structures_1_1_mark_generator_a8e96769e1dd2ebc736662c6541c64a61} 
+ \mbox{\hyperlink{class__pytest_1_1mark_1_1structures_1_1_mark_decorator}{Mark\+Decorator}} \+\_\+pytest.\+mark.\+structures.\+Mark\+Generator.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a new :class:`MarkDecorator` with the given name.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_a0b0eefe9e6f11ea5413597897bd27de5}\index{\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}!\_config@{\_config}}
+\index{\_config@{\_config}!\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}}
+\doxysubsubsection{\texorpdfstring{\_config}{\_config}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1structures_1_1_mark_generator_a0b0eefe9e6f11ea5413597897bd27de5} 
+\mbox{\hyperlink{class__pytest_1_1config_1_1_config}{Config}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+mark.\+structures.\+Mark\+Generator.\+\_\+config = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1mark_1_1structures_1_1_mark_generator_ab5251dfacd7a72f7a4226125420c6d21}\index{\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}!\_markers@{\_markers}}
+\index{\_markers@{\_markers}!\_pytest.mark.structures.MarkGenerator@{\_pytest.mark.structures.MarkGenerator}}
+\doxysubsubsection{\texorpdfstring{\_markers}{\_markers}}
+{\footnotesize\ttfamily \label{class__pytest_1_1mark_1_1structures_1_1_mark_generator_ab5251dfacd7a72f7a4226125420c6d21} 
+set\mbox{[}str\mbox{]} \+\_\+pytest.\+mark.\+structures.\+Mark\+Generator.\+\_\+markers = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/mark/\mbox{\hyperlink{__pytest_2mark_2structures_8py}{structures.\+py}}\end{DoxyCompactItemize}

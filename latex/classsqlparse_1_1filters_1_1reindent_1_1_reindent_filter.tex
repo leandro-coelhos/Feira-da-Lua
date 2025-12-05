@@ -1,0 +1,275 @@
+\doxysection{sqlparse.\+filters.\+reindent.\+Reindent\+Filter Class Reference}
+\hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter}{}\label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ae3fc2b4dd9eff571af38cda1982f0fe7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a64a8c66e58bcdc13334081cd4c4335de}{width}}=2, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a68fde26cb84381b356ee3fe86b55a4bc}{char}}=\textquotesingle{} \textquotesingle{}, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab93a81bba6db3968b5df5415b5bd68cf}{wrap\+\_\+after}}=0, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5573c6520f73d90eba1cd7ae116c3b9b}{n}}=\textquotesingle{}\textbackslash{}\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5573c6520f73d90eba1cd7ae116c3b9b}{n}}\textquotesingle{}, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a61b3f06be0e6adf515df7a5111a993c3}{comma\+\_\+first}}=False, indent\+\_\+after\+\_\+first=False, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a2001258c9f65829fa86e8983e806ada4}{indent\+\_\+columns}}=False, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ad32eb0e5106a864b1985c182fe30eeb3}{compact}}=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a75cf71d340673c54ed22a864dd4227ce}{leading\+\_\+ws}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ae085b652281f61b558e777b836a54ee2}{nl}} (self, \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a02ea284c4d276ae7f42eacb1af9e8257}{offset}}=0)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aee98c0fb7d6a3052e6c3c837f706830e}{process}} (self, stmt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5573c6520f73d90eba1cd7ae116c3b9b}{n}} = n
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a64a8c66e58bcdc13334081cd4c4335de}{width}} = width
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a68fde26cb84381b356ee3fe86b55a4bc}{char}} = char
+\item 
+int \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aee3a4030d142ff255ecfa9990029a945}{indent}} = 1 if indent\+\_\+after\+\_\+first else 0
+\item 
+int \mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a02ea284c4d276ae7f42eacb1af9e8257}{offset}} = 0
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab93a81bba6db3968b5df5415b5bd68cf}{wrap\+\_\+after}} = wrap\+\_\+after
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a61b3f06be0e6adf515df7a5111a993c3}{comma\+\_\+first}} = comma\+\_\+first
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a2001258c9f65829fa86e8983e806ada4}{indent\+\_\+columns}} = indent\+\_\+columns
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ad32eb0e5106a864b1985c182fe30eeb3}{compact}} = compact
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa124bd823a3d7827a5e12291c2f480ea}{leading\+\_\+ws}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab76ce5fce6e547959af6448484a4f9d7}{\+\_\+flatten\+\_\+up\+\_\+to\+\_\+token}} (self, token)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5d6056cdda5ba502c0b5fe4db7acd2d4}{\+\_\+get\+\_\+offset}} (self, token)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a726d200457bbe323492773e34be4b045}{\+\_\+next\+\_\+token}} (self, tlist, idx=-\/1)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a1fca586c26a325f1e9150ed20bb699e5}{\+\_\+split\+\_\+kwds}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a172a5c6d57edffb58c5a1860295f83cc}{\+\_\+split\+\_\+statements}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa8d7cd3a887a74b15b60245754c2f0ad}{\+\_\+process}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a3c457b0c21ece405ff6e543b59dfc8a7}{\+\_\+process\+\_\+where}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a9d47731036de8918efc549068ebb75c8}{\+\_\+process\+\_\+parenthesis}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a4743aabf7578671b08c44758a79221a1}{\+\_\+process\+\_\+function}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a78569a89684b032ab25014f95ec08ca6}{\+\_\+process\+\_\+identifierlist}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa388d01e64872b26a75ecd643e04756d}{\+\_\+process\+\_\+case}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a8462e70a444c879c3afdf0d3b56e5a28}{\+\_\+process\+\_\+values}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a1c1a3a8db38895a336e3e44c9ce4dc14}{\+\_\+process\+\_\+default}} (self, tlist, stmts=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a37e0048ed6127346f3d8bff351ed5027}{\+\_\+curr\+\_\+stmt}} = None
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a52b02082b57b426380cdb71642ee792c}{\+\_\+last\+\_\+stmt}} = None
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab7d71874ebb10c605820645861d5cffb}{\+\_\+last\+\_\+func}} = None
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ae3fc2b4dd9eff571af38cda1982f0fe7}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ae3fc2b4dd9eff571af38cda1982f0fe7} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{width}{ = {\ttfamily 2}, }\item[{}]{char}{ = {\ttfamily \textquotesingle{}~\textquotesingle{}}, }\item[{}]{wrap\+\_\+after}{ = {\ttfamily 0}, }\item[{}]{n}{ = {\ttfamily \textquotesingle{}\textbackslash{}\mbox{\hyperlink{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5573c6520f73d90eba1cd7ae116c3b9b}{n}}\textquotesingle{}}, }\item[{}]{comma\+\_\+first}{ = {\ttfamily False}, }\item[{}]{indent\+\_\+after\+\_\+first}{ = {\ttfamily False}, }\item[{}]{indent\+\_\+columns}{ = {\ttfamily False}, }\item[{}]{compact}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab76ce5fce6e547959af6448484a4f9d7}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_flatten\_up\_to\_token@{\_flatten\_up\_to\_token}}
+\index{\_flatten\_up\_to\_token@{\_flatten\_up\_to\_token}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_flatten\_up\_to\_token()}{\_flatten\_up\_to\_token()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab76ce5fce6e547959af6448484a4f9d7} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+flatten\+\_\+up\+\_\+to\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Yields all tokens up to token but excluding current.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5d6056cdda5ba502c0b5fe4db7acd2d4}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_get\_offset@{\_get\_offset}}
+\index{\_get\_offset@{\_get\_offset}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_get\_offset()}{\_get\_offset()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5d6056cdda5ba502c0b5fe4db7acd2d4} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+get\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a726d200457bbe323492773e34be4b045}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_next\_token@{\_next\_token}}
+\index{\_next\_token@{\_next\_token}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_next\_token()}{\_next\_token()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a726d200457bbe323492773e34be4b045} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+next\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{, }\item[{}]{idx}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa8d7cd3a887a74b15b60245754c2f0ad}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process@{\_process}}
+\index{\_process@{\_process}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process()}{\_process()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa8d7cd3a887a74b15b60245754c2f0ad} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa388d01e64872b26a75ecd643e04756d}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_case@{\_process\_case}}
+\index{\_process\_case@{\_process\_case}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_case()}{\_process\_case()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa388d01e64872b26a75ecd643e04756d} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a1c1a3a8db38895a336e3e44c9ce4dc14}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_default@{\_process\_default}}
+\index{\_process\_default@{\_process\_default}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_default()}{\_process\_default()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a1c1a3a8db38895a336e3e44c9ce4dc14} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{, }\item[{}]{stmts}{ = {\ttfamily True}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a4743aabf7578671b08c44758a79221a1}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_function@{\_process\_function}}
+\index{\_process\_function@{\_process\_function}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_function()}{\_process\_function()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a4743aabf7578671b08c44758a79221a1} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a78569a89684b032ab25014f95ec08ca6}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_identifierlist@{\_process\_identifierlist}}
+\index{\_process\_identifierlist@{\_process\_identifierlist}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_identifierlist()}{\_process\_identifierlist()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a78569a89684b032ab25014f95ec08ca6} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+identifierlist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a9d47731036de8918efc549068ebb75c8}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_parenthesis@{\_process\_parenthesis}}
+\index{\_process\_parenthesis@{\_process\_parenthesis}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_parenthesis()}{\_process\_parenthesis()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a9d47731036de8918efc549068ebb75c8} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+parenthesis (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a8462e70a444c879c3afdf0d3b56e5a28}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_values@{\_process\_values}}
+\index{\_process\_values@{\_process\_values}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_values()}{\_process\_values()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a8462e70a444c879c3afdf0d3b56e5a28} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a3c457b0c21ece405ff6e543b59dfc8a7}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_process\_where@{\_process\_where}}
+\index{\_process\_where@{\_process\_where}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_where()}{\_process\_where()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a3c457b0c21ece405ff6e543b59dfc8a7} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+process\+\_\+where (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a1fca586c26a325f1e9150ed20bb699e5}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_split\_kwds@{\_split\_kwds}}
+\index{\_split\_kwds@{\_split\_kwds}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_split\_kwds()}{\_split\_kwds()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a1fca586c26a325f1e9150ed20bb699e5} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+split\+\_\+kwds (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a172a5c6d57edffb58c5a1860295f83cc}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_split\_statements@{\_split\_statements}}
+\index{\_split\_statements@{\_split\_statements}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_split\_statements()}{\_split\_statements()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a172a5c6d57edffb58c5a1860295f83cc} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+split\+\_\+statements (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tlist}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a75cf71d340673c54ed22a864dd4227ce}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!leading\_ws@{leading\_ws}}
+\index{leading\_ws@{leading\_ws}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{leading\_ws()}{leading\_ws()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a75cf71d340673c54ed22a864dd4227ce} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+leading\+\_\+ws (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ae085b652281f61b558e777b836a54ee2}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!nl@{nl}}
+\index{nl@{nl}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{nl()}{nl()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ae085b652281f61b558e777b836a54ee2} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+nl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aee98c0fb7d6a3052e6c3c837f706830e}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!process@{process}}
+\index{process@{process}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aee98c0fb7d6a3052e6c3c837f706830e} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+process (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stmt}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a37e0048ed6127346f3d8bff351ed5027}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_curr\_stmt@{\_curr\_stmt}}
+\index{\_curr\_stmt@{\_curr\_stmt}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_curr\_stmt}{\_curr\_stmt}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a37e0048ed6127346f3d8bff351ed5027} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+curr\+\_\+stmt = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab7d71874ebb10c605820645861d5cffb}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_last\_func@{\_last\_func}}
+\index{\_last\_func@{\_last\_func}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_last\_func}{\_last\_func}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab7d71874ebb10c605820645861d5cffb} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+last\+\_\+func = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a52b02082b57b426380cdb71642ee792c}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!\_last\_stmt@{\_last\_stmt}}
+\index{\_last\_stmt@{\_last\_stmt}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{\_last\_stmt}{\_last\_stmt}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a52b02082b57b426380cdb71642ee792c} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+\_\+last\+\_\+stmt = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a68fde26cb84381b356ee3fe86b55a4bc}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!char@{char}}
+\index{char@{char}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{char}{char}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a68fde26cb84381b356ee3fe86b55a4bc} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+char = char}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a61b3f06be0e6adf515df7a5111a993c3}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!comma\_first@{comma\_first}}
+\index{comma\_first@{comma\_first}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{comma\_first}{comma\_first}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a61b3f06be0e6adf515df7a5111a993c3} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+comma\+\_\+first = comma\+\_\+first}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ad32eb0e5106a864b1985c182fe30eeb3}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!compact@{compact}}
+\index{compact@{compact}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{compact}{compact}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ad32eb0e5106a864b1985c182fe30eeb3} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+compact = compact}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aee3a4030d142ff255ecfa9990029a945}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!indent@{indent}}
+\index{indent@{indent}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{indent}{indent}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aee3a4030d142ff255ecfa9990029a945} 
+int sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+indent = 1 if indent\+\_\+after\+\_\+first else 0}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a2001258c9f65829fa86e8983e806ada4}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!indent\_columns@{indent\_columns}}
+\index{indent\_columns@{indent\_columns}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{indent\_columns}{indent\_columns}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a2001258c9f65829fa86e8983e806ada4} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+indent\+\_\+columns = indent\+\_\+columns}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa124bd823a3d7827a5e12291c2f480ea}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!leading\_ws@{leading\_ws}}
+\index{leading\_ws@{leading\_ws}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{leading\_ws}{leading\_ws}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_aa124bd823a3d7827a5e12291c2f480ea} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+leading\+\_\+ws}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5573c6520f73d90eba1cd7ae116c3b9b}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!n@{n}}
+\index{n@{n}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a5573c6520f73d90eba1cd7ae116c3b9b} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+n = n}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a02ea284c4d276ae7f42eacb1af9e8257}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!offset@{offset}}
+\index{offset@{offset}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a02ea284c4d276ae7f42eacb1af9e8257} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+offset = 0}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a64a8c66e58bcdc13334081cd4c4335de}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!width@{width}}
+\index{width@{width}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_a64a8c66e58bcdc13334081cd4c4335de} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+width = width}
+
+\Hypertarget{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab93a81bba6db3968b5df5415b5bd68cf}\index{sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}!wrap\_after@{wrap\_after}}
+\index{wrap\_after@{wrap\_after}!sqlparse.filters.reindent.ReindentFilter@{sqlparse.filters.reindent.ReindentFilter}}
+\doxysubsubsection{\texorpdfstring{wrap\_after}{wrap\_after}}
+{\footnotesize\ttfamily \label{classsqlparse_1_1filters_1_1reindent_1_1_reindent_filter_ab93a81bba6db3968b5df5415b5bd68cf} 
+sqlparse.\+filters.\+reindent.\+Reindent\+Filter.\+wrap\+\_\+after = wrap\+\_\+after}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/sqlparse/filters/\mbox{\hyperlink{reindent_8py}{reindent.\+py}}\end{DoxyCompactItemize}

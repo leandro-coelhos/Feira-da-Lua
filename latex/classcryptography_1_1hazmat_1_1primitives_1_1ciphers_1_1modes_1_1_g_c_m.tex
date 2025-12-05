@@ -1,0 +1,133 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+Inheritance diagram for cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.719101cm]{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_aee75b99d1068f7039b3193d231911a25}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a86faec67fcefbb5018be7dc62fd3f093}{initialization\+\_\+vector}}, bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_addf5369d4d757745281f5574f29ca725}{tag}}=None, int min\+\_\+tag\+\_\+length=16)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_addf5369d4d757745281f5574f29ca725}{tag}} (self)
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a86faec67fcefbb5018be7dc62fd3f093}{initialization\+\_\+vector}} (self)
+\item 
+None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a315baeea3b419b5061f00f3455483d7e}{validate\+\_\+for\+\_\+algorithm}} (self, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__cipheralgorithm_1_1_cipher_algorithm}{Cipher\+Algorithm}} algorithm)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_mode}{cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+Mode}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_mode_a99d93fd1370a2abbb5bb5cffbd5ff0f7}{name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a927375edc5c3365f58667ecf567a076b}{\+\_\+initialization\+\_\+vector}} = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a86faec67fcefbb5018be7dc62fd3f093}{initialization\+\_\+vector}}
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a2f15c6e5e73ed6b515983290b7480861}{\+\_\+tag}} = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_addf5369d4d757745281f5574f29ca725}{tag}}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a5cebd009598b935244ba654ea7fb97cb}{\+\_\+min\+\_\+tag\+\_\+length}} = min\+\_\+tag\+\_\+length
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a0b47f53287353907164f787958007f0e}{\+\_\+\+MAX\+\_\+\+ENCRYPTED\+\_\+\+BYTES}} = (2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}39 -\/ 256) // 8
+\item 
+tuple \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a1a1b52cfd3aa30ce9f920cf3222fbf54}{\+\_\+\+MAX\+\_\+\+AAD\+\_\+\+BYTES}} = (2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}64) // 8
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_aee75b99d1068f7039b3193d231911a25}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_aee75b99d1068f7039b3193d231911a25} 
+cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}}}]{initialization\+\_\+vector}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None }]{tag}{ = {\ttfamily None}, }\item[{int }]{min\+\_\+tag\+\_\+length}{ = {\ttfamily 16}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a86faec67fcefbb5018be7dc62fd3f093}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!initialization\_vector@{initialization\_vector}}
+\index{initialization\_vector@{initialization\_vector}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{initialization\_vector()}{initialization\_vector()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a86faec67fcefbb5018be7dc62fd3f093} 
+ \mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+initialization\+\_\+vector (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The value of the initialization vector for this mode as bytes.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_mode_with_initialization_vector_a7c3c0bd40f5b2c9d79d219679c1353ed}{cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+Mode\+With\+Initialization\+Vector}}.
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_addf5369d4d757745281f5574f29ca725}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!tag@{tag}}
+\index{tag@{tag}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_addf5369d4d757745281f5574f29ca725} 
+ bytes \texorpdfstring{$\vert$}{|} None cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+tag (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The value of the tag supplied to the constructor of this mode.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_mode_with_authentication_tag_a184ce751a28aa441d024b73667d272a7}{cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+Mode\+With\+Authentication\+Tag}}.
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a315baeea3b419b5061f00f3455483d7e}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!validate\_for\_algorithm@{validate\_for\_algorithm}}
+\index{validate\_for\_algorithm@{validate\_for\_algorithm}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{validate\_for\_algorithm()}{validate\_for\_algorithm()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a315baeea3b419b5061f00f3455483d7e} 
+ None cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+validate\+\_\+for\+\_\+algorithm (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1__cipheralgorithm_1_1_cipher_algorithm}{Cipher\+Algorithm}}}]{algorithm}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks that all the necessary invariants of this (mode, algorithm)
+combination are met.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_mode_a0503210a6f08e20a1b4fa2d60703bfd5}{cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+Mode}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a927375edc5c3365f58667ecf567a076b}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!\_initialization\_vector@{\_initialization\_vector}}
+\index{\_initialization\_vector@{\_initialization\_vector}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{\_initialization\_vector}{\_initialization\_vector}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a927375edc5c3365f58667ecf567a076b} 
+\mbox{\hyperlink{namespacecryptography_1_1utils_a72e32ac5157ff2ef56e34a630e6a83b0}{utils.\+Buffer}} cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+\_\+initialization\+\_\+vector = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a86faec67fcefbb5018be7dc62fd3f093}{initialization\+\_\+vector}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a1a1b52cfd3aa30ce9f920cf3222fbf54}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!\_MAX\_AAD\_BYTES@{\_MAX\_AAD\_BYTES}}
+\index{\_MAX\_AAD\_BYTES@{\_MAX\_AAD\_BYTES}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{\_MAX\_AAD\_BYTES}{\_MAX\_AAD\_BYTES}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a1a1b52cfd3aa30ce9f920cf3222fbf54} 
+tuple cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+\_\+\+MAX\+\_\+\+AAD\+\_\+\+BYTES = (2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}64) // 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a0b47f53287353907164f787958007f0e}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!\_MAX\_ENCRYPTED\_BYTES@{\_MAX\_ENCRYPTED\_BYTES}}
+\index{\_MAX\_ENCRYPTED\_BYTES@{\_MAX\_ENCRYPTED\_BYTES}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{\_MAX\_ENCRYPTED\_BYTES}{\_MAX\_ENCRYPTED\_BYTES}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a0b47f53287353907164f787958007f0e} 
+tuple cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+\_\+\+MAX\+\_\+\+ENCRYPTED\+\_\+\+BYTES = (2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}39 -\/ 256) // 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a5cebd009598b935244ba654ea7fb97cb}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!\_min\_tag\_length@{\_min\_tag\_length}}
+\index{\_min\_tag\_length@{\_min\_tag\_length}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{\_min\_tag\_length}{\_min\_tag\_length}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a5cebd009598b935244ba654ea7fb97cb} 
+cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+\_\+min\+\_\+tag\+\_\+length = min\+\_\+tag\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a2f15c6e5e73ed6b515983290b7480861}\index{cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}!\_tag@{\_tag}}
+\index{\_tag@{\_tag}!cryptography.hazmat.primitives.ciphers.modes.GCM@{cryptography.hazmat.primitives.ciphers.modes.GCM}}
+\doxysubsubsection{\texorpdfstring{\_tag}{\_tag}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_a2f15c6e5e73ed6b515983290b7480861} 
+cryptography.\+hazmat.\+primitives.\+ciphers.\+modes.\+GCM.\+\_\+tag = \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1ciphers_1_1modes_1_1_g_c_m_addf5369d4d757745281f5574f29ca725}{tag}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/ciphers/\mbox{\hyperlink{modes_8py}{modes.\+py}}\end{DoxyCompactItemize}

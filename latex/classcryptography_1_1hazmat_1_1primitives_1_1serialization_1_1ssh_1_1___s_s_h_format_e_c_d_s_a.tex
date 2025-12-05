@@ -1,0 +1,110 @@
+\doxysection{cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA Class Reference}
+\hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a}{}\label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a93096c608763d262d435815dbeab4618}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bytes \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a76049577c1d4e13f4e89a1212bb5ded9}{ssh\+\_\+curve\+\_\+name}}, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve}{ec.\+Elliptic\+Curve}} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_af485b15a9463550f40dff470db658682}{curve}})
+\item 
+tuple\mbox{[}tuple\mbox{[}memoryview, memoryview\mbox{]}, memoryview\mbox{]} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a169e5ff2fa9eb10e4af8f3e25c7b549f}{get\+\_\+public}} (self, memoryview data)
+\item 
+tuple\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}}, memoryview\mbox{]} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a7a9ef61d7ea5609c25b59d35d07c6b9a}{load\+\_\+public}} (self, memoryview data)
+\item 
+tuple\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_private_key}{ec.\+Elliptic\+Curve\+Private\+Key}}, memoryview\mbox{]} \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a195d5120f0edbdfaf48e8e30c419322d}{load\+\_\+private}} (self, memoryview data, pubfields, bool unsafe\+\_\+skip\+\_\+rsa\+\_\+key\+\_\+validation)
+\item 
+None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a57c9262c6a09e76efbc571fae8be9514}{encode\+\_\+public}} (self, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}} public\+\_\+key, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___frag_list}{\+\_\+\+Frag\+List}} f\+\_\+pub)
+\item 
+None \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_acd7559ea46bf834b1ec0983458534cd5}{encode\+\_\+private}} (self, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_private_key}{ec.\+Elliptic\+Curve\+Private\+Key}} private\+\_\+key, \mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___frag_list}{\+\_\+\+Frag\+List}} f\+\_\+priv)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a76049577c1d4e13f4e89a1212bb5ded9}{ssh\+\_\+curve\+\_\+name}} = ssh\+\_\+curve\+\_\+name
+\item 
+\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_af485b15a9463550f40dff470db658682}{curve}} = curve
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Format for ECDSA keys.
+
+Public:
+    str curve
+    bytes point
+Private:
+    str curve
+    bytes point
+    mpint secret
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a93096c608763d262d435815dbeab4618}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a93096c608763d262d435815dbeab4618} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{ssh\+\_\+curve\+\_\+name}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve}{ec.\+Elliptic\+Curve}}}]{curve}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_acd7559ea46bf834b1ec0983458534cd5}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!encode\_private@{encode\_private}}
+\index{encode\_private@{encode\_private}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{encode\_private()}{encode\_private()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_acd7559ea46bf834b1ec0983458534cd5} 
+ None cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+encode\+\_\+private (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_private_key}{ec.\+Elliptic\+Curve\+Private\+Key}}}]{private\+\_\+key}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___frag_list}{\+\_\+\+Frag\+List}}     }]{f\+\_\+priv}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write ECDSA private key\end{DoxyVerb}
+ \Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a57c9262c6a09e76efbc571fae8be9514}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!encode\_public@{encode\_public}}
+\index{encode\_public@{encode\_public}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{encode\_public()}{encode\_public()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a57c9262c6a09e76efbc571fae8be9514} 
+ None cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+encode\+\_\+public (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}}}]{public\+\_\+key}{, }\item[{\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___frag_list}{\+\_\+\+Frag\+List}}     }]{f\+\_\+pub}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write ECDSA public key\end{DoxyVerb}
+ \Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a169e5ff2fa9eb10e4af8f3e25c7b549f}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!get\_public@{get\_public}}
+\index{get\_public@{get\_public}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{get\_public()}{get\_public()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a169e5ff2fa9eb10e4af8f3e25c7b549f} 
+ tuple\mbox{[}tuple\mbox{[}memoryview, memoryview\mbox{]}, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+get\+\_\+public (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{memoryview     }]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ECDSA public fields\end{DoxyVerb}
+ \Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a195d5120f0edbdfaf48e8e30c419322d}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!load\_private@{load\_private}}
+\index{load\_private@{load\_private}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{load\_private()}{load\_private()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a195d5120f0edbdfaf48e8e30c419322d} 
+ tuple\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_private_key}{ec.\+Elliptic\+Curve\+Private\+Key}}, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+load\+\_\+private (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{memoryview}]{data}{, }\item[{}]{pubfields}{, }\item[{bool     }]{unsafe\+\_\+skip\+\_\+rsa\+\_\+key\+\_\+validation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make ECDSA private key from data.\end{DoxyVerb}
+ \Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a7a9ef61d7ea5609c25b59d35d07c6b9a}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!load\_public@{load\_public}}
+\index{load\_public@{load\_public}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{load\_public()}{load\_public()}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a7a9ef61d7ea5609c25b59d35d07c6b9a} 
+ tuple\mbox{[}\mbox{\hyperlink{classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1_elliptic_curve_public_key}{ec.\+Elliptic\+Curve\+Public\+Key}}, memoryview\mbox{]} cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+load\+\_\+public (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{memoryview     }]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make ECDSA public key from data.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_af485b15a9463550f40dff470db658682}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!curve@{curve}}
+\index{curve@{curve}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{curve}{curve}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_af485b15a9463550f40dff470db658682} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+curve = curve}
+
+\Hypertarget{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a76049577c1d4e13f4e89a1212bb5ded9}\index{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}!ssh\_curve\_name@{ssh\_curve\_name}}
+\index{ssh\_curve\_name@{ssh\_curve\_name}!cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA@{cryptography.hazmat.primitives.serialization.ssh.\_SSHFormatECDSA}}
+\doxysubsubsection{\texorpdfstring{ssh\_curve\_name}{ssh\_curve\_name}}
+{\footnotesize\ttfamily \label{classcryptography_1_1hazmat_1_1primitives_1_1serialization_1_1ssh_1_1___s_s_h_format_e_c_d_s_a_a76049577c1d4e13f4e89a1212bb5ded9} 
+cryptography.\+hazmat.\+primitives.\+serialization.\+ssh.\+\_\+\+SSHFormat\+ECDSA.\+ssh\+\_\+curve\+\_\+name = ssh\+\_\+curve\+\_\+name}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/cryptography/hazmat/primitives/serialization/\mbox{\hyperlink{ssh_8py}{ssh.\+py}}\end{DoxyCompactItemize}

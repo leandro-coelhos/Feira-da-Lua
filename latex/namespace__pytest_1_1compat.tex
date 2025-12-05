@@ -1,0 +1,238 @@
+\doxysection{\+\_\+pytest.\+compat Namespace Reference}
+\hypertarget{namespace__pytest_1_1compat}{}\label{namespace__pytest_1_1compat}\index{\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1compat_1_1_callable_bool}{Callable\+Bool}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1compat_1_1_not_set_type}{Not\+Set\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1compat_aa2c81fb2b7edc48daa388b056b67dc83}{LEGACY\+\_\+\+PATH}} \mbox{\hyperlink{namespace__pytest_1_1compat_a40d22dee339d84e52798c9d49b01eaf0}{legacy\+\_\+path}} (str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]} path)
+\item 
+bool \mbox{\hyperlink{namespace__pytest_1_1compat_a370d03fca0acdf24b00bb07cc7b035a7}{iscoroutinefunction}} (object func)
+\item 
+bool \mbox{\hyperlink{namespace__pytest_1_1compat_a9cf45c8215a169992648eb75d8004623}{is\+\_\+async\+\_\+function}} (object func)
+\item 
+Signature \mbox{\hyperlink{namespace__pytest_1_1compat_ac8c792eee6e0535aaae3d4668a0b2dd4}{signature}} (Callable\mbox{[}..., Any\mbox{]} obj)
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1compat_a19d2481a32bcb24c23c1e835f663c607}{getlocation}} (function, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None curdir=None)
+\item 
+int \mbox{\hyperlink{namespace__pytest_1_1compat_a5b1a612936dda01a1db052b22b49c2d8}{num\+\_\+mock\+\_\+patch\+\_\+args}} (function)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1compat_a7e6efcd0ee4a1eccdf955033544f5ef2}{getfuncargnames}} (Callable\mbox{[}..., object\mbox{]} function, \texorpdfstring{$\ast$}{*}, str name="{}"{}, type\texorpdfstring{$\vert$}{|}None cls=None)
+\item 
+tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1compat_a61047ffc34bc564b85deff153f2254c2}{get\+\_\+default\+\_\+arg\+\_\+names}} (Callable\mbox{[}..., Any\mbox{]} function)
+\item 
+str \mbox{\hyperlink{namespace__pytest_1_1compat_a20d2a906bdd291629c522c8d57cff5ff}{ascii\+\_\+escaped}} (bytes\texorpdfstring{$\vert$}{|}str val)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1compat_a56730528ddaf8b4204116cfac3665c47}{get\+\_\+real\+\_\+func}} (obj)
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1compat_aae54bfb032c8ba2719e8ae1a58b3c790}{getimfunc}} (func)
+\item 
+Any \mbox{\hyperlink{namespace__pytest_1_1compat_ad5721f26d329b95daaebb481d2c23a92}{safe\+\_\+getattr}} (Any object, str name, Any default)
+\item 
+bool \mbox{\hyperlink{namespace__pytest_1_1compat_a9b82db572b64e3dec770b69dbdb401bd}{safe\+\_\+isclass}} (object obj)
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespace__pytest_1_1compat_ab9fa7c2606a3985ecb72f919c91eaed2}{get\+\_\+user\+\_\+id}} ()
+\item 
+No\+Return \mbox{\hyperlink{namespace__pytest_1_1compat_a47d5ddabe98fe657da58d69efe831acc}{assert\+\_\+never}} (No\+Return value)
+\item 
+bool \mbox{\hyperlink{namespace__pytest_1_1compat_a9b885c0d43d848b878616d221461bdf8}{running\+\_\+on\+\_\+ci}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace__pytest_1_1compat_aa2c81fb2b7edc48daa388b056b67dc83}{LEGACY\+\_\+\+PATH}} = py.\+path. local
+\item 
+dict \mbox{\hyperlink{namespace__pytest_1_1compat_a48d80c3869d5030dc099386c437adb57}{\+\_\+non\+\_\+printable\+\_\+ascii\+\_\+translate\+\_\+table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Python version compatibility code and random general utilities.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1compat_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1compat_a20d2a906bdd291629c522c8d57cff5ff}\index{\_pytest.compat@{\_pytest.compat}!ascii\_escaped@{ascii\_escaped}}
+\index{ascii\_escaped@{ascii\_escaped}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{ascii\_escaped()}{ascii\_escaped()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a20d2a906bdd291629c522c8d57cff5ff} 
+ str \+\_\+pytest.\+compat.\+ascii\+\_\+escaped (\begin{DoxyParamCaption}\item[{bytes \texorpdfstring{$\vert$}{|} str}]{val}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If val is pure ASCII, return it as an str, otherwise, escape
+bytes objects into a sequence of escaped bytes:
+
+b'\xc3\xb4\xc5\xd6' -> r'\xc3\xb4\xc5\xd6'
+
+and escapes strings into a sequence of escaped unicode ids, e.g.:
+
+r'4\nV\U00043efa\x0eMXWB\x1e\u3028\u15fd\xcd\U0007d944'
+
+Note:
+   The obvious "v.decode('unicode-escape')" will return
+   valid UTF-8 unicode if it finds them in bytes, but we
+   want to return escaped bytes for any byte, even if they match
+   a UTF-8 string.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a47d5ddabe98fe657da58d69efe831acc}\index{\_pytest.compat@{\_pytest.compat}!assert\_never@{assert\_never}}
+\index{assert\_never@{assert\_never}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{assert\_never()}{assert\_never()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a47d5ddabe98fe657da58d69efe831acc} 
+ No\+Return \+\_\+pytest.\+compat.\+assert\+\_\+never (\begin{DoxyParamCaption}\item[{No\+Return}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1compat_a61047ffc34bc564b85deff153f2254c2}\index{\_pytest.compat@{\_pytest.compat}!get\_default\_arg\_names@{get\_default\_arg\_names}}
+\index{get\_default\_arg\_names@{get\_default\_arg\_names}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{get\_default\_arg\_names()}{get\_default\_arg\_names()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a61047ffc34bc564b85deff153f2254c2} 
+ tuple\mbox{[}str, ...\mbox{]} \+\_\+pytest.\+compat.\+get\+\_\+default\+\_\+arg\+\_\+names (\begin{DoxyParamCaption}\item[{Callable\mbox{[}..., Any\mbox{]}}]{function}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1compat_a56730528ddaf8b4204116cfac3665c47}\index{\_pytest.compat@{\_pytest.compat}!get\_real\_func@{get\_real\_func}}
+\index{get\_real\_func@{get\_real\_func}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{get\_real\_func()}{get\_real\_func()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a56730528ddaf8b4204116cfac3665c47} 
+\+\_\+pytest.\+compat.\+get\+\_\+real\+\_\+func (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the real function object of the (possibly) wrapped object by
+:func:`functools.wraps`, or :func:`functools.partial`.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_ab9fa7c2606a3985ecb72f919c91eaed2}\index{\_pytest.compat@{\_pytest.compat}!get\_user\_id@{get\_user\_id}}
+\index{get\_user\_id@{get\_user\_id}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{get\_user\_id()}{get\_user\_id()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_ab9fa7c2606a3985ecb72f919c91eaed2} 
+ int \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+compat.\+get\+\_\+user\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the current process's real user id or None if it could not be
+determined.
+
+:return: The user id or None if it could not be determined.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a7e6efcd0ee4a1eccdf955033544f5ef2}\index{\_pytest.compat@{\_pytest.compat}!getfuncargnames@{getfuncargnames}}
+\index{getfuncargnames@{getfuncargnames}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{getfuncargnames()}{getfuncargnames()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a7e6efcd0ee4a1eccdf955033544f5ef2} 
+ tuple\mbox{[}str, ...\mbox{]} \+\_\+pytest.\+compat.\+getfuncargnames (\begin{DoxyParamCaption}\item[{Callable\mbox{[}..., object\mbox{]}}]{function}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{name}{ = {\ttfamily "{}"{}}, }\item[{type \texorpdfstring{$\vert$}{|} None }]{cls}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the names of a function's mandatory arguments.
+
+Should return the names of all function arguments that:
+* Aren't bound to an instance or type as in instance or class methods.
+* Don't have default values.
+* Aren't bound with functools.partial.
+* Aren't replaced with mocks.
+
+The cls arguments indicate that the function should be treated as a bound
+method even though it's not unless the function is a static method.
+
+The name parameter should be the original name in which the function was collected.
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_aae54bfb032c8ba2719e8ae1a58b3c790}\index{\_pytest.compat@{\_pytest.compat}!getimfunc@{getimfunc}}
+\index{getimfunc@{getimfunc}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{getimfunc()}{getimfunc()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_aae54bfb032c8ba2719e8ae1a58b3c790} 
+\+\_\+pytest.\+compat.\+getimfunc (\begin{DoxyParamCaption}\item[{}]{func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1compat_a19d2481a32bcb24c23c1e835f663c607}\index{\_pytest.compat@{\_pytest.compat}!getlocation@{getlocation}}
+\index{getlocation@{getlocation}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{getlocation()}{getlocation()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a19d2481a32bcb24c23c1e835f663c607} 
+ str \+\_\+pytest.\+compat.\+getlocation (\begin{DoxyParamCaption}\item[{}]{function}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{curdir}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1compat_a9cf45c8215a169992648eb75d8004623}\index{\_pytest.compat@{\_pytest.compat}!is\_async\_function@{is\_async\_function}}
+\index{is\_async\_function@{is\_async\_function}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{is\_async\_function()}{is\_async\_function()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a9cf45c8215a169992648eb75d8004623} 
+ bool \+\_\+pytest.\+compat.\+is\+\_\+async\+\_\+function (\begin{DoxyParamCaption}\item[{object}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the given function seems to be an async function or
+an async generator.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a370d03fca0acdf24b00bb07cc7b035a7}\index{\_pytest.compat@{\_pytest.compat}!iscoroutinefunction@{iscoroutinefunction}}
+\index{iscoroutinefunction@{iscoroutinefunction}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{iscoroutinefunction()}{iscoroutinefunction()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a370d03fca0acdf24b00bb07cc7b035a7} 
+ bool \+\_\+pytest.\+compat.\+iscoroutinefunction (\begin{DoxyParamCaption}\item[{object}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if func is a coroutine function (a function defined with async
+def syntax, and doesn't contain yield), or a function decorated with
+@asyncio.coroutine.
+
+Note: copied and modified from Python 3.5's builtin coroutines.py to avoid
+importing asyncio directly, which in turns also initializes the "logging"
+module as a side-effect (see issue #8).
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a40d22dee339d84e52798c9d49b01eaf0}\index{\_pytest.compat@{\_pytest.compat}!legacy\_path@{legacy\_path}}
+\index{legacy\_path@{legacy\_path}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{legacy\_path()}{legacy\_path()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a40d22dee339d84e52798c9d49b01eaf0} 
+ \mbox{\hyperlink{namespace__pytest_1_1compat_aa2c81fb2b7edc48daa388b056b67dc83}{LEGACY\+\_\+\+PATH}} \+\_\+pytest.\+compat.\+legacy\+\_\+path (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\mbox{[}str\mbox{]}}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Internal wrapper to prepare lazy proxies for legacy_path instances\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a5b1a612936dda01a1db052b22b49c2d8}\index{\_pytest.compat@{\_pytest.compat}!num\_mock\_patch\_args@{num\_mock\_patch\_args}}
+\index{num\_mock\_patch\_args@{num\_mock\_patch\_args}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{num\_mock\_patch\_args()}{num\_mock\_patch\_args()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a5b1a612936dda01a1db052b22b49c2d8} 
+ int \+\_\+pytest.\+compat.\+num\+\_\+mock\+\_\+patch\+\_\+args (\begin{DoxyParamCaption}\item[{}]{function}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return number of arguments used up by mock arguments (if any).\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a9b885c0d43d848b878616d221461bdf8}\index{\_pytest.compat@{\_pytest.compat}!running\_on\_ci@{running\_on\_ci}}
+\index{running\_on\_ci@{running\_on\_ci}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{running\_on\_ci()}{running\_on\_ci()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a9b885c0d43d848b878616d221461bdf8} 
+ bool \+\_\+pytest.\+compat.\+running\+\_\+on\+\_\+ci (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we're currently running on a CI system.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_ad5721f26d329b95daaebb481d2c23a92}\index{\_pytest.compat@{\_pytest.compat}!safe\_getattr@{safe\_getattr}}
+\index{safe\_getattr@{safe\_getattr}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{safe\_getattr()}{safe\_getattr()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_ad5721f26d329b95daaebb481d2c23a92} 
+ Any \+\_\+pytest.\+compat.\+safe\+\_\+getattr (\begin{DoxyParamCaption}\item[{Any}]{object}{, }\item[{str}]{name}{, }\item[{Any}]{default}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like getattr but return default upon any Exception or any OutcomeException.
+
+Attribute access can potentially fail for 'evil' Python objects.
+See issue #214.
+It catches OutcomeException because of #2490 (issue #580), new outcomes
+are derived from BaseException instead of Exception (for more details
+check #2707).
+\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_a9b82db572b64e3dec770b69dbdb401bd}\index{\_pytest.compat@{\_pytest.compat}!safe\_isclass@{safe\_isclass}}
+\index{safe\_isclass@{safe\_isclass}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{safe\_isclass()}{safe\_isclass()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a9b82db572b64e3dec770b69dbdb401bd} 
+ bool \+\_\+pytest.\+compat.\+safe\+\_\+isclass (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ignore any exception via isinstance on Python 3.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1compat_ac8c792eee6e0535aaae3d4668a0b2dd4}\index{\_pytest.compat@{\_pytest.compat}!signature@{signature}}
+\index{signature@{signature}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_ac8c792eee6e0535aaae3d4668a0b2dd4} 
+ Signature \+\_\+pytest.\+compat.\+signature (\begin{DoxyParamCaption}\item[{Callable\mbox{[}..., Any\mbox{]}}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return signature without evaluating annotations.\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1compat_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1compat_a48d80c3869d5030dc099386c437adb57}\index{\_pytest.compat@{\_pytest.compat}!\_non\_printable\_ascii\_translate\_table@{\_non\_printable\_ascii\_translate\_table}}
+\index{\_non\_printable\_ascii\_translate\_table@{\_non\_printable\_ascii\_translate\_table}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{\_non\_printable\_ascii\_translate\_table}{\_non\_printable\_ascii\_translate\_table}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_a48d80c3869d5030dc099386c437adb57} 
+dict \+\_\+pytest.\+compat.\+\_\+non\+\_\+printable\+\_\+ascii\+\_\+translate\+\_\+table\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ i:\ f\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)x\{i:02x\}"{}}\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(128)\ \textcolor{keywordflow}{if}\ i\ \textcolor{keywordflow}{not}\ \textcolor{keywordflow}{in}\ range(32,\ 127)}
+\DoxyCodeLine{00003\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespace__pytest_1_1compat_aa2c81fb2b7edc48daa388b056b67dc83}\index{\_pytest.compat@{\_pytest.compat}!LEGACY\_PATH@{LEGACY\_PATH}}
+\index{LEGACY\_PATH@{LEGACY\_PATH}!\_pytest.compat@{\_pytest.compat}}
+\doxysubsubsection{\texorpdfstring{LEGACY\_PATH}{LEGACY\_PATH}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1compat_aa2c81fb2b7edc48daa388b056b67dc83} 
+\+\_\+pytest.\+compat.\+LEGACY\+\_\+\+PATH = py.\+path. local}
+

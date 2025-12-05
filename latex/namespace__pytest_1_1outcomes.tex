@@ -1,0 +1,98 @@
+\doxysection{\+\_\+pytest.\+outcomes Namespace Reference}
+\hypertarget{namespace__pytest_1_1outcomes}{}\label{namespace__pytest_1_1outcomes}\index{\_pytest.outcomes@{\_pytest.outcomes}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___exit}{\+\_\+\+Exit}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___fail}{\+\_\+\+Fail}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___skip}{\+\_\+\+Skip}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1___x_fail}{\+\_\+\+XFail}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_exit}{Exit}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_failed}{Failed}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_outcome_exception}{Outcome\+Exception}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_skipped}{Skipped}}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1outcomes_1_1_x_failed}{XFailed}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Any \mbox{\hyperlink{namespace__pytest_1_1outcomes_a7be6197a4625eb6a43f82abf6e4c8928}{importorskip}} (str modname, str\texorpdfstring{$\vert$}{|}None minversion=None, str\texorpdfstring{$\vert$}{|}None reason=None, \texorpdfstring{$\ast$}{*}, type\mbox{[}Import\+Error\mbox{]}\texorpdfstring{$\vert$}{|}None exc\+\_\+type=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespace__pytest_1_1outcomes_a39222e93e981edb7fbba0267b8ef6032}{TEST\+\_\+\+OUTCOME}} = (\mbox{\hyperlink{class__pytest_1_1outcomes_1_1_outcome_exception}{Outcome\+Exception}}, Exception)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Exception classes and constants handling test outcomes as well as
+functions creating them.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1outcomes_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1outcomes_a7be6197a4625eb6a43f82abf6e4c8928}\index{\_pytest.outcomes@{\_pytest.outcomes}!importorskip@{importorskip}}
+\index{importorskip@{importorskip}!\_pytest.outcomes@{\_pytest.outcomes}}
+\doxysubsubsection{\texorpdfstring{importorskip()}{importorskip()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1outcomes_a7be6197a4625eb6a43f82abf6e4c8928} 
+ Any \+\_\+pytest.\+outcomes.\+importorskip (\begin{DoxyParamCaption}\item[{str}]{modname}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{minversion}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{reason}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{type\mbox{[}Import\+Error\mbox{]} \texorpdfstring{$\vert$}{|} None }]{exc\+\_\+type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Import and return the requested module ``modname``, or skip the
+current test if the module cannot be imported.
+
+:param modname:
+    The name of the module to import.
+:param minversion:
+    If given, the imported module's ``__version__`` attribute must be at
+    least this minimal version, otherwise the test is still skipped.
+:param reason:
+    If given, this reason is shown as the message when the module cannot
+    be imported.
+:param exc_type:
+    The exception that should be captured in order to skip modules.
+    Must be :py:class:`ImportError` or a subclass.
+
+    If the module can be imported but raises :class:`ImportError`, pytest will
+    issue a warning to the user, as often users expect the module not to be
+    found (which would raise :class:`ModuleNotFoundError` instead).
+
+    This warning can be suppressed by passing ``exc_type=ImportError`` explicitly.
+
+    See :ref:`import-or-skip-import-error` for details.
+
+
+:returns:
+    The imported module. This should be assigned to its canonical name.
+
+:raises pytest.skip.Exception:
+    If the module cannot be imported.
+
+Example::
+
+    docutils = pytest.importorskip("docutils")
+
+.. versionadded:: 8.2
+
+    The ``exc_type`` parameter.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace__pytest_1_1outcomes_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace__pytest_1_1outcomes_a39222e93e981edb7fbba0267b8ef6032}\index{\_pytest.outcomes@{\_pytest.outcomes}!TEST\_OUTCOME@{TEST\_OUTCOME}}
+\index{TEST\_OUTCOME@{TEST\_OUTCOME}!\_pytest.outcomes@{\_pytest.outcomes}}
+\doxysubsubsection{\texorpdfstring{TEST\_OUTCOME}{TEST\_OUTCOME}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1outcomes_a39222e93e981edb7fbba0267b8ef6032} 
+tuple \+\_\+pytest.\+outcomes.\+TEST\+\_\+\+OUTCOME = (\mbox{\hyperlink{class__pytest_1_1outcomes_1_1_outcome_exception}{Outcome\+Exception}}, Exception)}
+

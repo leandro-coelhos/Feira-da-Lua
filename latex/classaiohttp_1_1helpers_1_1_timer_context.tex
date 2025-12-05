@@ -1,0 +1,126 @@
+\doxysection{aiohttp.\+helpers.\+Timer\+Context Class Reference}
+\hypertarget{classaiohttp_1_1helpers_1_1_timer_context}{}\label{classaiohttp_1_1helpers_1_1_timer_context}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+Inheritance diagram for aiohttp.\+helpers.\+Timer\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classaiohttp_1_1helpers_1_1_timer_context}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_a2b7c7008ef04159ab2e41574bd00d2e5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, asyncio.\+Abstract\+Event\+Loop loop)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_abaf77c176b178dfd5f398242df7230d5}{assert\+\_\+timeout}} (self)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context}{Base\+Timer\+Context}} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_a9d35b51fbb13b50458c918db77c86470}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+Optional\mbox{[}bool\mbox{]} \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_a2f0cf8f636df0a212c8ade9aa30c1771}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} exc\+\_\+type, Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+val, Optional\mbox{[}Traceback\+Type\mbox{]} exc\+\_\+tb)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_a67cc1390a7d9ba9c4cc1ab0c82aa48f2}{timeout}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_afc8a79dd2ebe7de636900d50b1e1fc3b}{\+\_\+loop}} = loop
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_ace258cda68a66dd8366fe193a6f29de7}{\+\_\+tasks}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_a8975543fde9a38a58a29b70619439142}{\+\_\+cancelled}} = False
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_af41352fd8895a764668ef7364700f929}{\+\_\+cancelling}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_timer_context_a68989977f390f784837138df6724a213}{\+\_\+\+\_\+slots\+\_\+\+\_\+}} = ("{}\+\_\+loop"{}, "{}\+\_\+tasks"{}, "{}\+\_\+cancelled"{}, "{}\+\_\+cancelling"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Low resolution timeout context manager\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_a2b7c7008ef04159ab2e41574bd00d2e5}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_a2b7c7008ef04159ab2e41574bd00d2e5} 
+ None aiohttp.\+helpers.\+Timer\+Context.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{asyncio.\+Abstract\+Event\+Loop}]{loop}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_a9d35b51fbb13b50458c918db77c86470}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_a9d35b51fbb13b50458c918db77c86470} 
+ \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context}{Base\+Timer\+Context}} aiohttp.\+helpers.\+Timer\+Context.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_a2f0cf8f636df0a212c8ade9aa30c1771}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_a2f0cf8f636df0a212c8ade9aa30c1771} 
+ Optional\mbox{[}bool\mbox{]} aiohttp.\+helpers.\+Timer\+Context.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]}}]{exc\+\_\+type}{, }\item[{Optional\mbox{[}Base\+Exception\mbox{]}}]{exc\+\_\+val}{, }\item[{Optional\mbox{[}Traceback\+Type\mbox{]}}]{exc\+\_\+tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_abaf77c176b178dfd5f398242df7230d5}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!assert\_timeout@{assert\_timeout}}
+\index{assert\_timeout@{assert\_timeout}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{assert\_timeout()}{assert\_timeout()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_abaf77c176b178dfd5f398242df7230d5} 
+ None aiohttp.\+helpers.\+Timer\+Context.\+assert\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise TimeoutError if timer has already been cancelled.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classaiohttp_1_1helpers_1_1_base_timer_context_ade33589423dd3947b357ee6b02fd6917}{aiohttp.\+helpers.\+Base\+Timer\+Context}}.
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_a67cc1390a7d9ba9c4cc1ab0c82aa48f2}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!timeout@{timeout}}
+\index{timeout@{timeout}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{timeout()}{timeout()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_a67cc1390a7d9ba9c4cc1ab0c82aa48f2} 
+ None aiohttp.\+helpers.\+Timer\+Context.\+timeout (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_a68989977f390f784837138df6724a213}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_a68989977f390f784837138df6724a213} 
+tuple aiohttp.\+helpers.\+Timer\+Context.\+\_\+\+\_\+slots\+\_\+\+\_\+ = ("{}\+\_\+loop"{}, "{}\+\_\+tasks"{}, "{}\+\_\+cancelled"{}, "{}\+\_\+cancelling"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_a8975543fde9a38a58a29b70619439142}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_cancelled@{\_cancelled}}
+\index{\_cancelled@{\_cancelled}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_cancelled}{\_cancelled}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_a8975543fde9a38a58a29b70619439142} 
+bool aiohttp.\+helpers.\+Timer\+Context.\+\_\+cancelled = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_af41352fd8895a764668ef7364700f929}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_cancelling@{\_cancelling}}
+\index{\_cancelling@{\_cancelling}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_cancelling}{\_cancelling}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_af41352fd8895a764668ef7364700f929} 
+int aiohttp.\+helpers.\+Timer\+Context.\+\_\+cancelling = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_afc8a79dd2ebe7de636900d50b1e1fc3b}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_afc8a79dd2ebe7de636900d50b1e1fc3b} 
+aiohttp.\+helpers.\+Timer\+Context.\+\_\+loop = loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1helpers_1_1_timer_context_ace258cda68a66dd8366fe193a6f29de7}\index{aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}!\_tasks@{\_tasks}}
+\index{\_tasks@{\_tasks}!aiohttp.helpers.TimerContext@{aiohttp.helpers.TimerContext}}
+\doxysubsubsection{\texorpdfstring{\_tasks}{\_tasks}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1helpers_1_1_timer_context_ace258cda68a66dd8366fe193a6f29de7} 
+aiohttp.\+helpers.\+Timer\+Context.\+\_\+tasks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{aiohttp_2helpers_8py}{helpers.\+py}}\end{DoxyCompactItemize}

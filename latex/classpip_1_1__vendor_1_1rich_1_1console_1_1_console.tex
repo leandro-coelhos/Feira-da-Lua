@@ -1,0 +1,1527 @@
+\doxysection{pip.\+\_\+vendor.\+rich.\+console.\+Console Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console}{}\label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+Inheritance diagram for pip.\+\_\+vendor.\+rich.\+console.\+Console\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1rich_1_1console_1_1_console}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a61f9bf2d9e366265e58917b9325f9677}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}Literal\mbox{[}"{}auto"{}, "{}standard"{}, "{}256"{}, "{}truecolor"{}, "{}windows"{}\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab9409fa8d8d2eb171c673372a1bb2fa5}{color\+\_\+system}}="{}auto"{}, Optional\mbox{[}bool\mbox{]} force\+\_\+terminal=None, Optional\mbox{[}bool\mbox{]} force\+\_\+jupyter=None, Optional\mbox{[}bool\mbox{]} force\+\_\+interactive=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af1641a4a6cc475395c5b271929765789}{soft\+\_\+wrap}}=False, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme}{Theme}}\mbox{]} theme=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5ea4ee9a245a4e6d6b71f5ed9be18c83}{stderr}}=False, Optional\mbox{[}IO\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a4f4c9bf101af6a8df971e89971574a8e}{file}}=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0a5732afb51dc1184e0bac38be21a27f}{quiet}}=False, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}{width}}=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53}{height}}=None, Optional\mbox{[}Style\+Type\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}=None, Optional\mbox{[}bool\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af07bd5973b9d8e7ebda17cf2404aca6d}{no\+\_\+color}}=None, int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af5dc146c4385f7c5d2954b0b2e810d31}{tab\+\_\+size}}=8, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8957e7f34979312854e89496a996548d}{record}}=False, bool markup=True, bool emoji=True, Optional\mbox{[}Emoji\+Variant\mbox{]} emoji\+\_\+variant=None, bool highlight=True, bool log\+\_\+time=True, bool log\+\_\+path=True, Union\mbox{[}str, Format\+Time\+Callable\mbox{]} log\+\_\+time\+\_\+format="{}\mbox{[}\%X\mbox{]}"{}, Optional\mbox{[}"{}Highlighter\+Type"{}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a60205811d7847f2e9b488c6d97aaf9f8}{highlighter}}=\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1_repr_highlighter}{Repr\+Highlighter}}(), Optional\mbox{[}bool\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab63ee622128f7d22e2958bbac54e8aba}{legacy\+\_\+windows}}=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aced1bff77cbc7305504a90008f3b151a}{safe\+\_\+box}}=True, Optional\mbox{[}Callable\mbox{[}\mbox{[}$\,$\mbox{]}, datetime\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a37714c4810ad5c71aa2d26a16b65e98d}{get\+\_\+datetime}}=None, Optional\mbox{[}Callable\mbox{[}\mbox{[}$\,$\mbox{]}, float\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9a42c54936149921c7fe81dc6ef0173}{get\+\_\+time}}=None, Optional\mbox{[}Mapping\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abaac358db3406c30d69826e7098d525f}{\+\_\+environ}}=None)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a12605849227b2da017b11dc63ecfc788}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+IO\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af37c1c8bfe4a9b4dcd3b0ff2d14357bf}{file}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aeea14249658b94049a5be89c15fd5bc1}{file}} (self, IO\mbox{[}str\mbox{]} new\+\_\+file)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a203f5bf925f26df77a4ec83b846ff7dd}{set\+\_\+live}} (self, "{}Live"{} live)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a99fab0ec9ee80c93cc72ecb02f197c6f}{clear\+\_\+live}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad1575c3c569db21818ba63a8fb4e09b0}{push\+\_\+render\+\_\+hook}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_render_hook}{Render\+Hook}} hook)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a25bf887016a4a5de0f47540c854f47ec}{pop\+\_\+render\+\_\+hook}} (self)
+\item 
+"{}Console"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9607651af96c2c3afb137b6474df9c4}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1137fb4cbd24dd1953e3dec04c23807b}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, Any exc\+\_\+type, Any exc\+\_\+value, Any traceback)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a610d6781a13b09285f8f96041a89a359}{begin\+\_\+capture}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a99a29007b769351e160fc43ffc868902}{end\+\_\+capture}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a314da3affefd7eb9dcd007ef79df7069}{push\+\_\+theme}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme}{Theme}} theme, \texorpdfstring{$\ast$}{*}, bool inherit=True)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a2a3b9d4cbac11b2b81ce4bdf70e3d13e}{pop\+\_\+theme}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_theme_context}{Theme\+Context}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a15df885aafa3b20302142dd1e33a0331}{use\+\_\+theme}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme}{Theme}} theme, \texorpdfstring{$\ast$}{*}, bool inherit=True)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab9409fa8d8d2eb171c673372a1bb2fa5}{color\+\_\+system}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aaa95f0495607d199f34c4ebd90ea1cfe}{encoding}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa5f54734cb3bf4d939d074d6c9cbcb46}{is\+\_\+terminal}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aee4dd2e4d0b85eb67c99a6eae0cf6b35}{is\+\_\+dumb\+\_\+terminal}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00}{options}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_dimensions}{Console\+Dimensions}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51e25cd9881c627f959a35e7623b81db}{size}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae882677fb24c61ad973112e90fadafa7}{size}} (self, Tuple\mbox{[}int, int\mbox{]} new\+\_\+size)
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3163e1b4e2842bc355d0f5c3100ecc08}{width}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa2ba8c5fa1dd224794b0ac2acd384863}{width}} (self, int width)
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53}{height}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab53d9f9fda0d620f747ea404220d1e89}{height}} (self, int height)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a348eb00855bc260c0ae58310833e97d0}{bell}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_capture}{Capture}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0532fbc9f2de3566e255cb108f1d0bc4}{capture}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_pager_context}{Pager\+Context}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a569078bc942c244f6e590322d4645a61}{pager}} (self, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1pager_1_1_pager}{Pager}}\mbox{]} pager=None, bool styles=False, bool links=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41d951735692dcacd03f429df410629c}{line}} (self, int count=1)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}} (self, bool home=True)
+\item 
+"{}Status"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a47be51f37f4a3becb0c0b65d8d76a628}{status}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}} status, \texorpdfstring{$\ast$}{*}, str spinner="{}dots"{}, Style\+Type spinner\+\_\+style="{}status.\+spinner"{}, float speed=1.\+0, float refresh\+\_\+per\+\_\+second=12.\+5)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae5dae6a27d73e647107c790046f0d47f}{show\+\_\+cursor}} (self, bool show=True)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9cf99545cefcba7f70fa2a6684f59182}{set\+\_\+alt\+\_\+screen}} (self, bool enable=True)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3be2d0d876ca45bab460a28915ee0866}{is\+\_\+alt\+\_\+screen}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac41b14853db3c79a78e6346200c2a847}{set\+\_\+window\+\_\+title}} (self, str title)
+\item 
+"{}Screen\+Context"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a82b9388c89dd4eff2cad7a4de0d76e47}{screen}} (self, bool hide\+\_\+cursor=True, Optional\mbox{[}Style\+Type\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1measure_1_1_measurement}{Measurement}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adb8302118790a3e3d4867afa804a79a9}{measure}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}} renderable, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00}{options}}=None)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9551b8254c573105adde80622393a938}{render}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}} renderable, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00}{options}}=None)
+\item 
+List\mbox{[}List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5818808a49db20c5bee6986425f96f14}{render\+\_\+lines}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}} renderable, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00}{options}}=None, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}=None, bool pad=True, bool new\+\_\+lines=False)
+\item 
+"{}Text"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a7a68ccf9144b1ce9a575298858e575a5}{render\+\_\+str}} (self, str text, \texorpdfstring{$\ast$}{*}, Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}="{}"{}, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} justify=None, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_af6c8b2b110464beaf0446c3066cb2983}{Overflow\+Method}}\mbox{]} overflow=None, Optional\mbox{[}bool\mbox{]} emoji=None, Optional\mbox{[}bool\mbox{]} markup=None, Optional\mbox{[}bool\mbox{]} highlight=None, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ab59273f81ded73523025a5d15d28cc97}{Highlighter\+Type}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a60205811d7847f2e9b488c6d97aaf9f8}{highlighter}}=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad6363f2eab416ae6106f6a1dc8e115ff}{get\+\_\+style}} (self, Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} name, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}Union\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}, str\mbox{]}\mbox{]} default=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abec6041d93810e8b1089d8bd7d00c397}{rule}} (self, Text\+Type title="{}"{}, \texorpdfstring{$\ast$}{*}, str characters="{}─"{}, Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}="{}rule.\+line"{}, Align\+Method align="{}center"{})
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8ab200feaa21a0a6894c1b84e46ce9bd}{control}} (self, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1control_1_1_control}{Control}} control)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0c9115b561fade062d2890c860ef184e}{out}} (self, \texorpdfstring{$\ast$}{*}Any objects, str sep="{} "{}, str end="{}\textbackslash{}n"{}, Optional\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}=None, Optional\mbox{[}bool\mbox{]} highlight=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af954370cdbb49236b597f2c11064549d}{print}} (self, \texorpdfstring{$\ast$}{*}Any objects, str sep="{} "{}, str end="{}\textbackslash{}n"{}, Optional\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}=None, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} justify=None, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_af6c8b2b110464beaf0446c3066cb2983}{Overflow\+Method}}\mbox{]} overflow=None, Optional\mbox{[}bool\mbox{]} no\+\_\+wrap=None, Optional\mbox{[}bool\mbox{]} emoji=None, Optional\mbox{[}bool\mbox{]} markup=None, Optional\mbox{[}bool\mbox{]} highlight=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}{width}}=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53}{height}}=None, bool crop=True, Optional\mbox{[}bool\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af1641a4a6cc475395c5b271929765789}{soft\+\_\+wrap}}=None, bool new\+\_\+line\+\_\+start=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aeed95249b1ae90e65853d5e14969ee2c}{print\+\_\+json}} (self, Optional\mbox{[}str\mbox{]} json=None, \texorpdfstring{$\ast$}{*}, Any data=None, Union\mbox{[}None, int, str\mbox{]} indent=2, bool highlight=True, bool skip\+\_\+keys=False, bool ensure\+\_\+ascii=False, bool check\+\_\+circular=True, bool allow\+\_\+nan=True, Optional\mbox{[}Callable\mbox{[}\mbox{[}Any\mbox{]}, Any\mbox{]}\mbox{]} default=None, bool sort\+\_\+keys=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51a3b92f56d77e335bc6b397198368f3}{update\+\_\+screen}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}} renderable, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1region_1_1_region}{Region}}\mbox{]} region=None, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00}{options}}=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a21cfe5af86ec7533f23d45fe2969817e}{update\+\_\+screen\+\_\+lines}} (self, List\mbox{[}List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]}\mbox{]} lines, int x=0, int y=0)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3583d42397fa8ff2012463686963c615}{print\+\_\+exception}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}{width}}=100, int extra\+\_\+lines=3, Optional\mbox{[}str\mbox{]} theme=None, bool word\+\_\+wrap=False, bool show\+\_\+locals=False, Iterable\mbox{[}Union\mbox{[}str, Module\+Type\mbox{]}\mbox{]} suppress=(), int max\+\_\+frames=100)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af9c77e39f9413fc2b134c60cfa23b0f1}{log}} (self, \texorpdfstring{$\ast$}{*}Any objects, str sep="{} "{}, str end="{}\textbackslash{}n"{}, Optional\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}}=None, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} justify=None, Optional\mbox{[}bool\mbox{]} emoji=None, Optional\mbox{[}bool\mbox{]} markup=None, Optional\mbox{[}bool\mbox{]} highlight=None, bool log\+\_\+locals=False, int \+\_\+stack\+\_\+offset=1)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae95a5b39b7e11d4f109500713f41dee9}{on\+\_\+broken\+\_\+pipe}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a2dfce8a2a83b1c41764caac6b359bf11}{input}} (self, Text\+Type prompt="{}"{}, \texorpdfstring{$\ast$}{*}, bool markup=True, bool emoji=True, bool password=False, Optional\mbox{[}Text\+IO\mbox{]} stream=None)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1094df18f44c12e241d7695148d2a9f9}{export\+\_\+text}} (self, \texorpdfstring{$\ast$}{*}, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}}=True, bool styles=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a01531df21f8edf6614ed9ff64dca7830}{save\+\_\+text}} (self, str path, \texorpdfstring{$\ast$}{*}, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}}=True, bool styles=False)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a654e7fe7b950d2779fd32fbc22475e17}{export\+\_\+html}} (self, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} theme=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}}=True, Optional\mbox{[}str\mbox{]} code\+\_\+format=None, bool inline\+\_\+styles=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9203e55433a2151dc85ab3b02019d342}{save\+\_\+html}} (self, str path, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} theme=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}}=True, str code\+\_\+format=CONSOLE\+\_\+\+HTML\+\_\+\+FORMAT, bool inline\+\_\+styles=False)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab76a5040ab201da4e89130b7b884a74b}{export\+\_\+svg}} (self, \texorpdfstring{$\ast$}{*}, str title="{}Rich"{}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} theme=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}}=True, str code\+\_\+format=CONSOLE\+\_\+\+SVG\+\_\+\+FORMAT, float font\+\_\+aspect\+\_\+ratio=0.\+61, Optional\mbox{[}str\mbox{]} unique\+\_\+id=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51de7478289d31f29eb250e4dbcd14db}{save\+\_\+svg}} (self, str path, \texorpdfstring{$\ast$}{*}, str title="{}Rich"{}, Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} theme=None, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}{clear}}=True, str code\+\_\+format=CONSOLE\+\_\+\+SVG\+\_\+\+FORMAT, float font\+\_\+aspect\+\_\+ratio=0.\+61, Optional\mbox{[}str\mbox{]} unique\+\_\+id=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\# pragma no cover \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad83abd69483380da4f4256ee12f7d224}{is\+\_\+jupyter}} = \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a640e7515757a685bda27bfcb5a9e4e63}{\+\_\+is\+\_\+jupyter}}() if force\+\_\+jupyter is None else force\+\_\+jupyter
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af5dc146c4385f7c5d2954b0b2e810d31}{tab\+\_\+size}} = tab\+\_\+size
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8957e7f34979312854e89496a996548d}{record}} = record
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab63ee622128f7d22e2958bbac54e8aba}{legacy\+\_\+windows}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af1641a4a6cc475395c5b271929765789}{soft\+\_\+wrap}} = soft\+\_\+wrap
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0a5732afb51dc1184e0bac38be21a27f}{quiet}} = quiet
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5ea4ee9a245a4e6d6b71f5ed9be18c83}{stderr}} = stderr
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ab59273f81ded73523025a5d15d28cc97}{Highlighter\+Type}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a60205811d7847f2e9b488c6d97aaf9f8}{highlighter}} = highlighter or \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ab93a1940e2112ca7788f163283f67c5d}{\+\_\+null\+\_\+highlighter}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aced1bff77cbc7305504a90008f3b151a}{safe\+\_\+box}} = safe\+\_\+box
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a37714c4810ad5c71aa2d26a16b65e98d}{get\+\_\+datetime}} = get\+\_\+datetime or datetime.\+now
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9a42c54936149921c7fe81dc6ef0173}{get\+\_\+time}} = get\+\_\+time or monotonic
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}{style}} = style
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af07bd5973b9d8e7ebda17cf2404aca6d}{no\+\_\+color}}
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a413e020345bc76f4ca30b277d0b935f6}{is\+\_\+interactive}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8a7ea61b40da7bb8d251b5c595a26bd6}{is\+\_\+dumb\+\_\+terminal}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a4f4c9bf101af6a8df971e89971574a8e}{file}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a077b38cb18f36478ac0798b701f491fb}{is\+\_\+terminal}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}{width}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa1f9717d8734dca0298dd50e5f38ff29}{is\+\_\+alt\+\_\+screen}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51eaf031922c907e4085937b82f5564e}{\+\_\+buffer}} (self)
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a98e574f94a305ddb7db2ebdd983618a7}{\+\_\+buffer\+\_\+index}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0701c2a737b786a8932b18c8d6c32034}{\+\_\+buffer\+\_\+index}} (self, int value)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme_stack}{Theme\+Stack}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a49d2a720a65cb279dc0f15cbe019fa8e}{\+\_\+theme\+\_\+stack}} (self)
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1color_1_1_color_system}{Color\+System}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a6754bc9279773e1e7da952846d46c700}{\+\_\+detect\+\_\+color\+\_\+system}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aedbd0021260619f6aeb4e096e74ef0aa}{\+\_\+enter\+\_\+buffer}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa07c4404d127ec8855af06e36618eedb}{\+\_\+exit\+\_\+buffer}} (self)
+\item 
+List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_renderable}{Console\+Renderable}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab053dc750094e77e036523f6d2c14899}{\+\_\+collect\+\_\+renderables}} (self, Iterable\mbox{[}Any\mbox{]} objects, str sep, str end, \texorpdfstring{$\ast$}{*}, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} justify=None, Optional\mbox{[}bool\mbox{]} emoji=None, Optional\mbox{[}bool\mbox{]} markup=None, Optional\mbox{[}bool\mbox{]} highlight=None)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a010c0cd974ad0a87f53dc0869827ec07}{\+\_\+check\+\_\+buffer}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa4bf769a8bbfb5af378cfe192617ad4e}{\+\_\+write\+\_\+buffer}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a77e752f71e66ab77ff617c0d791b15e4}{\+\_\+render\+\_\+buffer}} (self, Iterable\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]} buffer)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}str, int, Dict\mbox{[}str, Any\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac43cb4290591af4f04cd264aa1fc1b0f}{\+\_\+caller\+\_\+frame\+\_\+info}} (int offset, Callable\mbox{[}\mbox{[}$\,$\mbox{]}, Optional\mbox{[}Frame\+Type\mbox{]}\mbox{]} currentframe=inspect.\+currentframe)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa6321b8eb3d9503906e08bc7eb77f51f}{\+\_\+markup}} = markup
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5b9142bc7ba5778d08a60ae85e0d8273}{\+\_\+emoji}} = emoji
+\item 
+Optional\mbox{[}Emoji\+Variant\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a523c0a15538525f6b6b2488f0077f0ea}{\+\_\+emoji\+\_\+variant}} = emoji\+\_\+variant
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_acbfd1549e1ef3e39f6ea1fca12e9c496}{\+\_\+highlight}} = highlight
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aae49d0271b155c2be063fb28f6c19a81}{\+\_\+width}} = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}{width}}
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aadb3b2373d317343f1158c99f6ed497a}{\+\_\+height}} = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53}{height}}
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1color_1_1_color_system}{Color\+System}}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aecb1653aa391bf86b4fa9507b97fbf77}{\+\_\+color\+\_\+system}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac6836b5e16a012c11ab10553950129c7}{\+\_\+force\+\_\+terminal}} = None
+\item 
+IO\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a66b8117cd1a5ac00b396a2b196f6366c}{\+\_\+file}} = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a4f4c9bf101af6a8df971e89971574a8e}{file}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a02a084442603b7f70c3f0d14750bbc70}{\+\_\+lock}} = threading.\+RLock()
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0417cf31cde5f4d41a82483a267ccb08}{\+\_\+log\+\_\+render}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae1c9f132de5905d413a29de34d5c6bf7}{\+\_\+record\+\_\+buffer\+\_\+lock}} = threading.\+RLock()
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a625bc221803cfdb67b77783deda24f6e}{\+\_\+thread\+\_\+locals}}
+\item 
+list \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a6079ce28e2cffb790c8059ab38e08873}{\+\_\+record\+\_\+buffer}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae067a38d4c141d9716e880c998c38b33}{\+\_\+render\+\_\+hooks}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1b344f2fa7643f4d9438e67d464edccd}{\+\_\+live\+\_\+stack}} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a7ebe96e5a5af0672fee36eafc9bc5f67}{\+\_\+is\+\_\+alt\+\_\+screen}} = False
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a36a186a1843bc980347268df12727f5f}{\+\_\+buffer\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9906741a9ab58f26a7e3a319ba476741}{\+\_\+buffer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mapping \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abaac358db3406c30d69826e7098d525f}{\+\_\+environ}} = os.\+environ
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A high level console interface.
+
+Args:
+    color_system (str, optional): The color system supported by your terminal,
+        either ``"standard"``, ``"256"`` or ``"truecolor"``. Leave as ``"auto"`` to autodetect.
+    force_terminal (Optional[bool], optional): Enable/disable terminal control codes, or None to auto-detect terminal. Defaults to None.
+    force_jupyter (Optional[bool], optional): Enable/disable Jupyter rendering, or None to auto-detect Jupyter. Defaults to None.
+    force_interactive (Optional[bool], optional): Enable/disable interactive mode, or None to auto detect. Defaults to None.
+    soft_wrap (Optional[bool], optional): Set soft wrap default on print method. Defaults to False.
+    theme (Theme, optional): An optional style theme object, or ``None`` for default theme.
+    stderr (bool, optional): Use stderr rather than stdout if ``file`` is not specified. Defaults to False.
+    file (IO, optional): A file object where the console should write to. Defaults to stdout.
+    quiet (bool, Optional): Boolean to suppress all output. Defaults to False.
+    width (int, optional): The width of the terminal. Leave as default to auto-detect width.
+    height (int, optional): The height of the terminal. Leave as default to auto-detect height.
+    style (StyleType, optional): Style to apply to all output, or None for no style. Defaults to None.
+    no_color (Optional[bool], optional): Enabled no color mode, or None to auto detect. Defaults to None.
+    tab_size (int, optional): Number of spaces used to replace a tab character. Defaults to 8.
+    record (bool, optional): Boolean to enable recording of terminal output,
+        required to call :meth:`export_html`, :meth:`export_svg`, and :meth:`export_text`. Defaults to False.
+    markup (bool, optional): Boolean to enable :ref:`console_markup`. Defaults to True.
+    emoji (bool, optional): Enable emoji code. Defaults to True.
+    emoji_variant (str, optional): Optional emoji variant, either "text" or "emoji". Defaults to None.
+    highlight (bool, optional): Enable automatic highlighting. Defaults to True.
+    log_time (bool, optional): Boolean to enable logging of time by :meth:`log` methods. Defaults to True.
+    log_path (bool, optional): Boolean to enable the logging of the caller by :meth:`log`. Defaults to True.
+    log_time_format (Union[str, TimeFormatterCallable], optional): If ``log_time`` is enabled, either string for strftime or callable that formats the time. Defaults to "[%X] ".
+    highlighter (HighlighterType, optional): Default highlighter.
+    legacy_windows (bool, optional): Enable legacy Windows mode, or ``None`` to auto detect. Defaults to ``None``.
+    safe_box (bool, optional): Restrict box options that don't render on legacy Windows.
+    get_datetime (Callable[[], datetime], optional): Callable that gets the current time as a datetime.datetime object (used by Console.log),
+        or None for datetime.now.
+    get_time (Callable[[], time], optional): Callable that gets the current time in seconds, default uses time.monotonic.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a61f9bf2d9e366265e58917b9325f9677}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a61f9bf2d9e366265e58917b9325f9677} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}             Literal\mbox{[}"{}auto"{}, "{}standard"{}, "{}256"{}, "{}truecolor"{}, "{}windows"{}\mbox{]}         \mbox{]} }]{color\+\_\+system}{ = {\ttfamily "{}auto"{}}, }\item[{Optional\mbox{[}bool\mbox{]} }]{force\+\_\+terminal}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{force\+\_\+jupyter}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{force\+\_\+interactive}{ = {\ttfamily None}, }\item[{bool }]{soft\+\_\+wrap}{ = {\ttfamily False}, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme}{Theme}}\mbox{]} }]{theme}{ = {\ttfamily None}, }\item[{bool }]{stderr}{ = {\ttfamily False}, }\item[{Optional\mbox{[}IO\mbox{[}str\mbox{]}\mbox{]} }]{file}{ = {\ttfamily None}, }\item[{bool }]{quiet}{ = {\ttfamily False}, }\item[{Optional\mbox{[}int\mbox{]} }]{width}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{height}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Style\+Type\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{no\+\_\+color}{ = {\ttfamily None}, }\item[{int }]{tab\+\_\+size}{ = {\ttfamily 8}, }\item[{bool }]{record}{ = {\ttfamily False}, }\item[{bool }]{markup}{ = {\ttfamily True}, }\item[{bool }]{emoji}{ = {\ttfamily True}, }\item[{Optional\mbox{[}Emoji\+Variant\mbox{]} }]{emoji\+\_\+variant}{ = {\ttfamily None}, }\item[{bool }]{highlight}{ = {\ttfamily True}, }\item[{bool }]{log\+\_\+time}{ = {\ttfamily True}, }\item[{bool }]{log\+\_\+path}{ = {\ttfamily True}, }\item[{Union\mbox{[}str, Format\+Time\+Callable\mbox{]} }]{log\+\_\+time\+\_\+format}{ = {\ttfamily "{}\mbox{[}\%X\mbox{]}"{}}, }\item[{Optional\mbox{[}"{}Highlighter\+Type"{}\mbox{]} }]{highlighter}{ = {\ttfamily \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1_repr_highlighter}{Repr\+Highlighter}}()}, }\item[{Optional\mbox{[}bool\mbox{]} }]{legacy\+\_\+windows}{ = {\ttfamily None}, }\item[{bool }]{safe\+\_\+box}{ = {\ttfamily True}, }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}$\,$\mbox{]}, datetime\mbox{]}\mbox{]} }]{get\+\_\+datetime}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}$\,$\mbox{]}, float\mbox{]}\mbox{]} }]{get\+\_\+time}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Mapping\mbox{[}str, str\mbox{]}\mbox{]} }]{\+\_\+environ}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9607651af96c2c3afb137b6474df9c4}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9607651af96c2c3afb137b6474df9c4} 
+ "{}Console"{} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Own context manager to enter buffer context.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1137fb4cbd24dd1953e3dec04c23807b}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1137fb4cbd24dd1953e3dec04c23807b} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{exc\+\_\+type}{, }\item[{Any}]{exc\+\_\+value}{, }\item[{Any}]{traceback}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exit buffer context.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a12605849227b2da017b11dc63ecfc788}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a12605849227b2da017b11dc63ecfc788} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51eaf031922c907e4085937b82f5564e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_buffer@{\_buffer}}
+\index{\_buffer@{\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_buffer()}{\_buffer()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51eaf031922c907e4085937b82f5564e} 
+ List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get a thread local buffer.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a98e574f94a305ddb7db2ebdd983618a7}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_buffer\_index@{\_buffer\_index}}
+\index{\_buffer\_index@{\_buffer\_index}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_buffer\_index()}{\_buffer\_index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a98e574f94a305ddb7db2ebdd983618a7} 
+ int pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+buffer\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get a thread local buffer.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0701c2a737b786a8932b18c8d6c32034}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_buffer\_index@{\_buffer\_index}}
+\index{\_buffer\_index@{\_buffer\_index}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_buffer\_index()}{\_buffer\_index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0701c2a737b786a8932b18c8d6c32034} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+buffer\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac43cb4290591af4f04cd264aa1fc1b0f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_caller\_frame\_info@{\_caller\_frame\_info}}
+\index{\_caller\_frame\_info@{\_caller\_frame\_info}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_caller\_frame\_info()}{\_caller\_frame\_info()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac43cb4290591af4f04cd264aa1fc1b0f} 
+ Tuple\mbox{[}str, int, Dict\mbox{[}str, Any\mbox{]}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+caller\+\_\+frame\+\_\+info (\begin{DoxyParamCaption}\item[{int}]{offset}{, }\item[{Callable\mbox{[}\mbox{[}$\,$\mbox{]}, Optional\mbox{[}Frame\+Type\mbox{]}\mbox{]} }]{currentframe}{ = {\ttfamily inspect.currentframe}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get caller frame information.
+
+Args:
+    offset (int): the caller offset within the current frame stack.
+    currentframe (Callable[[], Optional[FrameType]], optional): the callable to use to
+        retrieve the current frame. Defaults to ``inspect.currentframe``.
+
+Returns:
+    Tuple[str, int, Dict[str, Any]]: A tuple containing the filename, the line number and
+        the dictionary of local variables associated with the caller frame.
+
+Raises:
+    RuntimeError: If the stack offset is invalid.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a010c0cd974ad0a87f53dc0869827ec07}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_check\_buffer@{\_check\_buffer}}
+\index{\_check\_buffer@{\_check\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_check\_buffer()}{\_check\_buffer()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a010c0cd974ad0a87f53dc0869827ec07} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+check\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the buffer may be rendered. Render it if it can (e.g. Console.quiet is False)
+Rendering is supported on Windows, Unix and Jupyter environments. For
+legacy Windows consoles, the win32 API is called directly.
+This method will also record what it renders if recording is enabled via Console.record.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab053dc750094e77e036523f6d2c14899}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_collect\_renderables@{\_collect\_renderables}}
+\index{\_collect\_renderables@{\_collect\_renderables}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_collect\_renderables()}{\_collect\_renderables()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab053dc750094e77e036523f6d2c14899} 
+ List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_renderable}{Console\+Renderable}}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+collect\+\_\+renderables (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}Any\mbox{]}}]{objects}{, }\item[{str}]{sep}{, }\item[{str}]{end}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} }]{justify}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{emoji}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{markup}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{highlight}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Combine a number of renderables and text into one renderable.
+
+Args:
+    objects (Iterable[Any]): Anything that Rich can render.
+    sep (str): String to write between print data.
+    end (str): String to write at end of print data.
+    justify (str, optional): One of "left", "right", "center", or "full". Defaults to ``None``.
+    emoji (Optional[bool], optional): Enable emoji code, or ``None`` to use console default.
+    markup (Optional[bool], optional): Enable markup, or ``None`` to use console default.
+    highlight (Optional[bool], optional): Enable automatic highlighting, or ``None`` to use console default.
+
+Returns:
+    List[ConsoleRenderable]: A list of things to render.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a6754bc9279773e1e7da952846d46c700}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_detect\_color\_system@{\_detect\_color\_system}}
+\index{\_detect\_color\_system@{\_detect\_color\_system}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_detect\_color\_system()}{\_detect\_color\_system()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a6754bc9279773e1e7da952846d46c700} 
+ Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1color_1_1_color_system}{Color\+System}}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+detect\+\_\+color\+\_\+system (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Detect color system from env vars.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aedbd0021260619f6aeb4e096e74ef0aa}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_enter\_buffer@{\_enter\_buffer}}
+\index{\_enter\_buffer@{\_enter\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_enter\_buffer()}{\_enter\_buffer()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aedbd0021260619f6aeb4e096e74ef0aa} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+enter\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Enter in to a buffer context, and buffer all output.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa07c4404d127ec8855af06e36618eedb}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_exit\_buffer@{\_exit\_buffer}}
+\index{\_exit\_buffer@{\_exit\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_exit\_buffer()}{\_exit\_buffer()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa07c4404d127ec8855af06e36618eedb} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+exit\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Leave buffer context, and render content if required.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a77e752f71e66ab77ff617c0d791b15e4}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_render\_buffer@{\_render\_buffer}}
+\index{\_render\_buffer@{\_render\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_render\_buffer()}{\_render\_buffer()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a77e752f71e66ab77ff617c0d791b15e4} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+render\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]}}]{buffer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Render buffered output, and clear buffer.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a49d2a720a65cb279dc0f15cbe019fa8e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_theme\_stack@{\_theme\_stack}}
+\index{\_theme\_stack@{\_theme\_stack}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_theme\_stack()}{\_theme\_stack()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a49d2a720a65cb279dc0f15cbe019fa8e} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme_stack}{Theme\+Stack}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+theme\+\_\+stack (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the thread local theme stack.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa4bf769a8bbfb5af378cfe192617ad4e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_write\_buffer@{\_write\_buffer}}
+\index{\_write\_buffer@{\_write\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_write\_buffer()}{\_write\_buffer()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa4bf769a8bbfb5af378cfe192617ad4e} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+write\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Write the buffer to the output file.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a610d6781a13b09285f8f96041a89a359}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!begin\_capture@{begin\_capture}}
+\index{begin\_capture@{begin\_capture}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{begin\_capture()}{begin\_capture()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a610d6781a13b09285f8f96041a89a359} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+begin\+\_\+capture (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Begin capturing console output. Call :meth:`end_capture` to exit capture mode and return output.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a348eb00855bc260c0ae58310833e97d0}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!bell@{bell}}
+\index{bell@{bell}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{bell()}{bell()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a348eb00855bc260c0ae58310833e97d0} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+bell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play a 'bell' sound (if supported by the terminal).\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0532fbc9f2de3566e255cb108f1d0bc4}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!capture@{capture}}
+\index{capture@{capture}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{capture()}{capture()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0532fbc9f2de3566e255cb108f1d0bc4} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_capture}{Capture}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+capture (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A context manager to *capture* the result of print() or log() in a string,
+rather than writing it to the console.
+
+Example:
+    >>> from rich.console import Console
+    >>> console = Console()
+    >>> with console.capture() as capture:
+    ...     console.print("[bold magenta]Hello World[/]")
+    >>> print(capture.get())
+
+Returns:
+    Capture: Context manager with disables writing to the terminal.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!clear@{clear}}
+\index{clear@{clear}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a070ad8e3a6105d8de88b03a9e1f3a17f} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{home}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear the screen.
+
+Args:
+    home (bool, optional): Also move the cursor to 'home' position. Defaults to True.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a99fab0ec9ee80c93cc72ecb02f197c6f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!clear\_live@{clear\_live}}
+\index{clear\_live@{clear\_live}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{clear\_live()}{clear\_live()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a99fab0ec9ee80c93cc72ecb02f197c6f} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+clear\+\_\+live (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear the Live instance. Used by the Live context manager (no need to call directly).\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab9409fa8d8d2eb171c673372a1bb2fa5}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!color\_system@{color\_system}}
+\index{color\_system@{color\_system}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{color\_system()}{color\_system()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab9409fa8d8d2eb171c673372a1bb2fa5} 
+ Optional\mbox{[}str\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+color\+\_\+system (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get color system string.
+
+Returns:
+    Optional[str]: "standard", "256" or "truecolor".
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8ab200feaa21a0a6894c1b84e46ce9bd}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!control@{control}}
+\index{control@{control}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8ab200feaa21a0a6894c1b84e46ce9bd} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+control (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1control_1_1_control}{Control}}}]{control}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Insert non-printing control codes.
+
+Args:
+    control_codes (str): Control codes, such as those that may move the cursor.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aaa95f0495607d199f34c4ebd90ea1cfe}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!encoding@{encoding}}
+\index{encoding@{encoding}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{encoding()}{encoding()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aaa95f0495607d199f34c4ebd90ea1cfe} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+encoding (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the encoding of the console file, e.g. ``"utf-8"``.
+
+Returns:
+    str: A standard encoding string.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a99a29007b769351e160fc43ffc868902}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!end\_capture@{end\_capture}}
+\index{end\_capture@{end\_capture}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{end\_capture()}{end\_capture()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a99a29007b769351e160fc43ffc868902} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+end\+\_\+capture (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}End capture mode and return captured string.
+
+Returns:
+    str: Console output.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a654e7fe7b950d2779fd32fbc22475e17}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!export\_html@{export\_html}}
+\index{export\_html@{export\_html}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{export\_html()}{export\_html()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a654e7fe7b950d2779fd32fbc22475e17} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+export\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} }]{theme}{ = {\ttfamily None}, }\item[{bool }]{clear}{ = {\ttfamily True}, }\item[{Optional\mbox{[}str\mbox{]} }]{code\+\_\+format}{ = {\ttfamily None}, }\item[{bool }]{inline\+\_\+styles}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate HTML from console contents (requires record=True argument in constructor).
+
+Args:
+    theme (TerminalTheme, optional): TerminalTheme object containing console colors.
+    clear (bool, optional): Clear record buffer after exporting. Defaults to ``True``.
+    code_format (str, optional): Format string to render HTML. In addition to '{foreground}',
+        '{background}', and '{code}', should contain '{stylesheet}' if inline_styles is ``False``.
+    inline_styles (bool, optional): If ``True`` styles will be inlined in to spans, which makes files
+        larger but easier to cut and paste markup. If ``False``, styles will be embedded in a style tag.
+        Defaults to False.
+
+Returns:
+    str: String containing console contents as HTML.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab76a5040ab201da4e89130b7b884a74b}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!export\_svg@{export\_svg}}
+\index{export\_svg@{export\_svg}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{export\_svg()}{export\_svg()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab76a5040ab201da4e89130b7b884a74b} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+export\+\_\+svg (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{title}{ = {\ttfamily "{}Rich"{}}, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} }]{theme}{ = {\ttfamily None}, }\item[{bool }]{clear}{ = {\ttfamily True}, }\item[{str }]{code\+\_\+format}{ = {\ttfamily CONSOLE\+\_\+SVG\+\_\+FORMAT}, }\item[{float }]{font\+\_\+aspect\+\_\+ratio}{ = {\ttfamily 0.61}, }\item[{Optional\mbox{[}str\mbox{]} }]{unique\+\_\+id}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate an SVG from the console contents (requires record=True in Console constructor).
+
+Args:
+    title (str, optional): The title of the tab in the output image
+    theme (TerminalTheme, optional): The ``TerminalTheme`` object to use to style the terminal
+    clear (bool, optional): Clear record buffer after exporting. Defaults to ``True``
+    code_format (str, optional): Format string used to generate the SVG. Rich will inject a number of variables
+        into the string in order to form the final SVG output. The default template used and the variables
+        injected by Rich can be found by inspecting the ``console.CONSOLE_SVG_FORMAT`` variable.
+    font_aspect_ratio (float, optional): The width to height ratio of the font used in the ``code_format``
+        string. Defaults to 0.61, which is the width to height ratio of Fira Code (the default font).
+        If you aren't specifying a different font inside ``code_format``, you probably don't need this.
+    unique_id (str, optional): unique id that is used as the prefix for various elements (CSS styles, node
+        ids). If not set, this defaults to a computed value based on the recorded content.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1094df18f44c12e241d7695148d2a9f9}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!export\_text@{export\_text}}
+\index{export\_text@{export\_text}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{export\_text()}{export\_text()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1094df18f44c12e241d7695148d2a9f9} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+export\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{clear}{ = {\ttfamily True}, }\item[{bool }]{styles}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate text from console contents (requires record=True argument in constructor).
+
+Args:
+    clear (bool, optional): Clear record buffer after exporting. Defaults to ``True``.
+    styles (bool, optional): If ``True``, ansi escape codes will be included. ``False`` for plain text.
+        Defaults to ``False``.
+
+Returns:
+    str: String containing console contents.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af37c1c8bfe4a9b4dcd3b0ff2d14357bf}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!file@{file}}
+\index{file@{file}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af37c1c8bfe4a9b4dcd3b0ff2d14357bf} 
+ IO\mbox{[}str\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+file (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the file object to write to.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aeea14249658b94049a5be89c15fd5bc1}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!file@{file}}
+\index{file@{file}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aeea14249658b94049a5be89c15fd5bc1} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\mbox{[}str\mbox{]}}]{new\+\_\+file}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set a new file object.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad6363f2eab416ae6106f6a1dc8e115ff}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!get\_style@{get\_style}}
+\index{get\_style@{get\_style}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{get\_style()}{get\_style()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad6363f2eab416ae6106f6a1dc8e115ff} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+get\+\_\+style (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}}]{name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}Union\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}, str\mbox{]}\mbox{]} }]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a Style instance by its theme name or parse a definition.
+
+Args:
+    name (str): The name of a style or a style definition.
+
+Returns:
+    Style: A Style object.
+
+Raises:
+    MissingStyle: If no style could be parsed from name.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!height@{height}}
+\index{height@{height}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53} 
+ int pip.\+\_\+vendor.\+rich.\+console.\+Console.\+height (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the height of the console.
+
+Returns:
+    int: The height (in lines) of the console.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab53d9f9fda0d620f747ea404220d1e89}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!height@{height}}
+\index{height@{height}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab53d9f9fda0d620f747ea404220d1e89} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+height (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set height.
+
+Args:
+    height (int): new height.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a2dfce8a2a83b1c41764caac6b359bf11}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!input@{input}}
+\index{input@{input}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a2dfce8a2a83b1c41764caac6b359bf11} 
+ str pip.\+\_\+vendor.\+rich.\+console.\+Console.\+input (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Text\+Type }]{prompt}{ = {\ttfamily "{}"{}}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{markup}{ = {\ttfamily True}, }\item[{bool }]{emoji}{ = {\ttfamily True}, }\item[{bool }]{password}{ = {\ttfamily False}, }\item[{Optional\mbox{[}Text\+IO\mbox{]} }]{stream}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Displays a prompt and waits for input from the user. The prompt may contain color / style.
+
+It works in the same way as Python's builtin :func:`input` function and provides elaborate line editing and history features if Python's builtin :mod:`readline` module is previously loaded.
+
+Args:
+    prompt (Union[str, Text]): Text to render in the prompt.
+    markup (bool, optional): Enable console markup (requires a str prompt). Defaults to True.
+    emoji (bool, optional): Enable emoji (requires a str prompt). Defaults to True.
+    password: (bool, optional): Hide typed text. Defaults to False.
+    stream: (TextIO, optional): Optional file to read input from (rather than stdin). Defaults to None.
+
+Returns:
+    str: Text read from stdin.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3be2d0d876ca45bab460a28915ee0866}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_alt\_screen@{is\_alt\_screen}}
+\index{is\_alt\_screen@{is\_alt\_screen}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_alt\_screen()}{is\_alt\_screen()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3be2d0d876ca45bab460a28915ee0866} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+alt\+\_\+screen (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the alt screen was enabled.
+
+Returns:
+    bool: True if the alt screen was enabled, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aee4dd2e4d0b85eb67c99a6eae0cf6b35}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_dumb\_terminal@{is\_dumb\_terminal}}
+\index{is\_dumb\_terminal@{is\_dumb\_terminal}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_dumb\_terminal()}{is\_dumb\_terminal()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aee4dd2e4d0b85eb67c99a6eae0cf6b35} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+dumb\+\_\+terminal (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Detect dumb terminal.
+
+Returns:
+    bool: True if writing to a dumb terminal, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa5f54734cb3bf4d939d074d6c9cbcb46}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_terminal@{is\_terminal}}
+\index{is\_terminal@{is\_terminal}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_terminal()}{is\_terminal()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa5f54734cb3bf4d939d074d6c9cbcb46} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+terminal (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the console is writing to a terminal.
+
+Returns:
+    bool: True if the console writing to a device capable of
+        understanding escape sequences, otherwise False.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41d951735692dcacd03f429df410629c}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!line@{line}}
+\index{line@{line}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41d951735692dcacd03f429df410629c} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{count}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write new line(s).
+
+Args:
+    count (int, optional): Number of new lines. Defaults to 1.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af9c77e39f9413fc2b134c60cfa23b0f1}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!log@{log}}
+\index{log@{log}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af9c77e39f9413fc2b134c60cfa23b0f1} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{objects}{, }\item[{str }]{sep}{ = {\ttfamily "{}~"{}}, }\item[{str }]{end}{ = {\ttfamily "{}\textbackslash{}n"{}}, }\item[{Optional\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} }]{justify}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{emoji}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{markup}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{highlight}{ = {\ttfamily None}, }\item[{bool }]{log\+\_\+locals}{ = {\ttfamily False}, }\item[{int }]{\+\_\+stack\+\_\+offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Log rich content to the terminal.
+
+Args:
+    objects (positional args): Objects to log to the terminal.
+    sep (str, optional): String to write between print data. Defaults to " ".
+    end (str, optional): String to write at end of print data. Defaults to "\\\\n".
+    style (Union[str, Style], optional): A style to apply to output. Defaults to None.
+    justify (str, optional): One of "left", "right", "center", or "full". Defaults to ``None``.
+    emoji (Optional[bool], optional): Enable emoji code, or ``None`` to use console default. Defaults to None.
+    markup (Optional[bool], optional): Enable markup, or ``None`` to use console default. Defaults to None.
+    highlight (Optional[bool], optional): Enable automatic highlighting, or ``None`` to use console default. Defaults to None.
+    log_locals (bool, optional): Boolean to enable logging of locals where ``log()``
+        was called. Defaults to False.
+    _stack_offset (int, optional): Offset of caller from end of call stack. Defaults to 1.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adb8302118790a3e3d4867afa804a79a9}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!measure@{measure}}
+\index{measure@{measure}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adb8302118790a3e3d4867afa804a79a9} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1measure_1_1_measurement}{Measurement}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+measure (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}}}]{renderable}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} }]{options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Measure a renderable. Returns a :class:`~rich.measure.Measurement` object which contains
+information regarding the number of characters required to print the renderable.
+
+Args:
+    renderable (RenderableType): Any renderable or string.
+    options (Optional[ConsoleOptions], optional): Options to use when measuring, or None
+        to use default options. Defaults to None.
+
+Returns:
+    Measurement: A measurement of the renderable.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae95a5b39b7e11d4f109500713f41dee9}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!on\_broken\_pipe@{on\_broken\_pipe}}
+\index{on\_broken\_pipe@{on\_broken\_pipe}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{on\_broken\_pipe()}{on\_broken\_pipe()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae95a5b39b7e11d4f109500713f41dee9} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+on\+\_\+broken\+\_\+pipe (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is called when a `BrokenPipeError` is raised.
+
+This can occur when piping Textual output in Linux and macOS.
+The default implementation is to exit the app, but you could implement
+this method in a subclass to change the behavior.
+
+See https://docs.python.org/3/library/signal.html#note-on-sigpipe for details.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1logging_1_1_pip_console_aa9fd911001da7f43152081bb8b3eace6}{pip.\+\_\+internal.\+utils.\+logging.\+Pip\+Console}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!options@{options}}
+\index{options@{options}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a41c8efe30ea45a9a4a3f8c34c688fe00} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+options (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get default console options.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0c9115b561fade062d2890c860ef184e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!out@{out}}
+\index{out@{out}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{out()}{out()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0c9115b561fade062d2890c860ef184e} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+out (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{objects}{, }\item[{str }]{sep}{ = {\ttfamily "{}~"{}}, }\item[{str }]{end}{ = {\ttfamily "{}\textbackslash{}n"{}}, }\item[{Optional\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{highlight}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Output to the terminal. This is a low-level way of writing to the terminal which unlike
+:meth:`~rich.console.Console.print` won't pretty print, wrap text, or apply markup, but will
+optionally apply highlighting and a basic style.
+
+Args:
+    sep (str, optional): String to write between print data. Defaults to " ".
+    end (str, optional): String to write at end of print data. Defaults to "\\\\n".
+    style (Union[str, Style], optional): A style to apply to output. Defaults to None.
+    highlight (Optional[bool], optional): Enable automatic highlighting, or ``None`` to use
+        console default. Defaults to ``None``.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a569078bc942c244f6e590322d4645a61}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!pager@{pager}}
+\index{pager@{pager}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{pager()}{pager()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a569078bc942c244f6e590322d4645a61} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_pager_context}{Pager\+Context}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+pager (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1pager_1_1_pager}{Pager}}\mbox{]} }]{pager}{ = {\ttfamily None}, }\item[{bool }]{styles}{ = {\ttfamily False}, }\item[{bool }]{links}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A context manager to display anything printed within a "pager". The pager application
+is defined by the system and will typically support at least pressing a key to scroll.
+
+Args:
+    pager (Pager, optional): A pager object, or None to use :class:`~rich.pager.SystemPager`. Defaults to None.
+    styles (bool, optional): Show styles in pager. Defaults to False.
+    links (bool, optional): Show links in pager. Defaults to False.
+
+Example:
+    >>> from rich.console import Console
+    >>> from rich.__main__ import make_test_card
+    >>> console = Console()
+    >>> with console.pager():
+            console.print(make_test_card())
+
+Returns:
+    PagerContext: A context manager.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a25bf887016a4a5de0f47540c854f47ec}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!pop\_render\_hook@{pop\_render\_hook}}
+\index{pop\_render\_hook@{pop\_render\_hook}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{pop\_render\_hook()}{pop\_render\_hook()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a25bf887016a4a5de0f47540c854f47ec} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+pop\+\_\+render\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pop the last renderhook from the stack.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a2a3b9d4cbac11b2b81ce4bdf70e3d13e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!pop\_theme@{pop\_theme}}
+\index{pop\_theme@{pop\_theme}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{pop\_theme()}{pop\_theme()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a2a3b9d4cbac11b2b81ce4bdf70e3d13e} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+pop\+\_\+theme (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove theme from top of stack, restoring previous theme.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af954370cdbb49236b597f2c11064549d}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!print@{print}}
+\index{print@{print}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af954370cdbb49236b597f2c11064549d} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+print (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{objects}{, }\item[{str }]{sep}{ = {\ttfamily "{}~"{}}, }\item[{str }]{end}{ = {\ttfamily "{}\textbackslash{}n"{}}, }\item[{Optional\mbox{[}Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]}\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} }]{justify}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_af6c8b2b110464beaf0446c3066cb2983}{Overflow\+Method}}\mbox{]} }]{overflow}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{no\+\_\+wrap}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{emoji}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{markup}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{highlight}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{width}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{height}{ = {\ttfamily None}, }\item[{bool }]{crop}{ = {\ttfamily True}, }\item[{Optional\mbox{[}bool\mbox{]} }]{soft\+\_\+wrap}{ = {\ttfamily None}, }\item[{bool }]{new\+\_\+line\+\_\+start}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print to the console.
+
+Args:
+    objects (positional args): Objects to log to the terminal.
+    sep (str, optional): String to write between print data. Defaults to " ".
+    end (str, optional): String to write at end of print data. Defaults to "\\\\n".
+    style (Union[str, Style], optional): A style to apply to output. Defaults to None.
+    justify (str, optional): Justify method: "default", "left", "right", "center", or "full". Defaults to ``None``.
+    overflow (str, optional): Overflow method: "ignore", "crop", "fold", or "ellipsis". Defaults to None.
+    no_wrap (Optional[bool], optional): Disable word wrapping. Defaults to None.
+    emoji (Optional[bool], optional): Enable emoji code, or ``None`` to use console default. Defaults to ``None``.
+    markup (Optional[bool], optional): Enable markup, or ``None`` to use console default. Defaults to ``None``.
+    highlight (Optional[bool], optional): Enable automatic highlighting, or ``None`` to use console default. Defaults to ``None``.
+    width (Optional[int], optional): Width of output, or ``None`` to auto-detect. Defaults to ``None``.
+    crop (Optional[bool], optional): Crop output to width of terminal. Defaults to True.
+    soft_wrap (bool, optional): Enable soft wrap mode which disables word wrapping and cropping of text or ``None`` for
+        Console default. Defaults to ``None``.
+    new_line_start (bool, False): Insert a new line at the start if the output contains more than one line. Defaults to ``False``.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3583d42397fa8ff2012463686963c615}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!print\_exception@{print\_exception}}
+\index{print\_exception@{print\_exception}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{print\_exception()}{print\_exception()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3583d42397fa8ff2012463686963c615} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+print\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}int\mbox{]} }]{width}{ = {\ttfamily 100}, }\item[{int }]{extra\+\_\+lines}{ = {\ttfamily 3}, }\item[{Optional\mbox{[}str\mbox{]} }]{theme}{ = {\ttfamily None}, }\item[{bool }]{word\+\_\+wrap}{ = {\ttfamily False}, }\item[{bool }]{show\+\_\+locals}{ = {\ttfamily False}, }\item[{Iterable\mbox{[}Union\mbox{[}str, Module\+Type\mbox{]}\mbox{]} }]{suppress}{ = {\ttfamily ()}, }\item[{int }]{max\+\_\+frames}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints a rich render of the last exception and traceback.
+
+Args:
+    width (Optional[int], optional): Number of characters used to render code. Defaults to 100.
+    extra_lines (int, optional): Additional lines of code to render. Defaults to 3.
+    theme (str, optional): Override pygments theme used in traceback
+    word_wrap (bool, optional): Enable word wrapping of long lines. Defaults to False.
+    show_locals (bool, optional): Enable display of local variables. Defaults to False.
+    suppress (Iterable[Union[str, ModuleType]]): Optional sequence of modules or paths to exclude from traceback.
+    max_frames (int): Maximum number of frames to show in a traceback, 0 for no maximum. Defaults to 100.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aeed95249b1ae90e65853d5e14969ee2c}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!print\_json@{print\_json}}
+\index{print\_json@{print\_json}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{print\_json()}{print\_json()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aeed95249b1ae90e65853d5e14969ee2c} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+print\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}str\mbox{]} }]{json}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Any }]{data}{ = {\ttfamily None}, }\item[{Union\mbox{[}None, int, str\mbox{]} }]{indent}{ = {\ttfamily 2}, }\item[{bool }]{highlight}{ = {\ttfamily True}, }\item[{bool }]{skip\+\_\+keys}{ = {\ttfamily False}, }\item[{bool }]{ensure\+\_\+ascii}{ = {\ttfamily False}, }\item[{bool }]{check\+\_\+circular}{ = {\ttfamily True}, }\item[{bool }]{allow\+\_\+nan}{ = {\ttfamily True}, }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}Any\mbox{]}, Any\mbox{]}\mbox{]} }]{default}{ = {\ttfamily None}, }\item[{bool }]{sort\+\_\+keys}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pretty prints JSON. Output will be valid JSON.
+
+Args:
+    json (Optional[str]): A string containing JSON.
+    data (Any): If json is not supplied, then encode this data.
+    indent (Union[None, int, str], optional): Number of spaces to indent. Defaults to 2.
+    highlight (bool, optional): Enable highlighting of output: Defaults to True.
+    skip_keys (bool, optional): Skip keys not of a basic type. Defaults to False.
+    ensure_ascii (bool, optional): Escape all non-ascii characters. Defaults to False.
+    check_circular (bool, optional): Check for circular references. Defaults to True.
+    allow_nan (bool, optional): Allow NaN and Infinity values. Defaults to True.
+    default (Callable, optional): A callable that converts values that can not be encoded
+        in to something that can be JSON encoded. Defaults to None.
+    sort_keys (bool, optional): Sort dictionary keys. Defaults to False.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad1575c3c569db21818ba63a8fb4e09b0}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!push\_render\_hook@{push\_render\_hook}}
+\index{push\_render\_hook@{push\_render\_hook}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{push\_render\_hook()}{push\_render\_hook()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad1575c3c569db21818ba63a8fb4e09b0} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+push\+\_\+render\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_render_hook}{Render\+Hook}}}]{hook}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new render hook to the stack.
+
+Args:
+    hook (RenderHook): Render hook instance.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a314da3affefd7eb9dcd007ef79df7069}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!push\_theme@{push\_theme}}
+\index{push\_theme@{push\_theme}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{push\_theme()}{push\_theme()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a314da3affefd7eb9dcd007ef79df7069} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+push\+\_\+theme (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme}{Theme}}}]{theme}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{inherit}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Push a new theme on to the top of the stack, replacing the styles from the previous theme.
+Generally speaking, you should call :meth:`~rich.console.Console.use_theme` to get a context manager, rather
+than calling this method directly.
+
+Args:
+    theme (Theme): A theme instance.
+    inherit (bool, optional): Inherit existing styles. Defaults to True.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9551b8254c573105adde80622393a938}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!render@{render}}
+\index{render@{render}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9551b8254c573105adde80622393a938} 
+ Iterable\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+render (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}}}]{renderable}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} }]{options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render an object in to an iterable of `Segment` instances.
+
+This method contains the logic for rendering objects with the console protocol.
+You are unlikely to need to use it directly, unless you are extending the library.
+
+Args:
+    renderable (RenderableType): An object supporting the console protocol, or
+        an object that may be converted to a string.
+    options (ConsoleOptions, optional): An options object, or None to use self.options. Defaults to None.
+
+Returns:
+    Iterable[Segment]: An iterable of segments that may be rendered.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5818808a49db20c5bee6986425f96f14}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!render\_lines@{render\_lines}}
+\index{render\_lines@{render\_lines}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{render\_lines()}{render\_lines()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5818808a49db20c5bee6986425f96f14} 
+ List\mbox{[}List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+render\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}}}]{renderable}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} }]{options}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} }]{style}{ = {\ttfamily None}, }\item[{bool }]{pad}{ = {\ttfamily True}, }\item[{bool }]{new\+\_\+lines}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render objects in to a list of lines.
+
+The output of render_lines is useful when further formatting of rendered console text
+is required, such as the Panel class which draws a border around any renderable object.
+
+Args:
+    renderable (RenderableType): Any object renderable in the console.
+    options (Optional[ConsoleOptions], optional): Console options, or None to use self.options. Default to ``None``.
+    style (Style, optional): Optional style to apply to renderables. Defaults to ``None``.
+    pad (bool, optional): Pad lines shorter than render width. Defaults to ``True``.
+    new_lines (bool, optional): Include "\n" characters at end of lines.
+
+Returns:
+    List[List[Segment]]: A list of lines, where a line is a list of Segment objects.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a7a68ccf9144b1ce9a575298858e575a5}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!render\_str@{render\_str}}
+\index{render\_str@{render\_str}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{render\_str()}{render\_str()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a7a68ccf9144b1ce9a575298858e575a5} 
+ "{}Text"{} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+render\+\_\+str (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{text}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} }]{style}{ = {\ttfamily "{}"{}}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ad4b432fbb490e18c06769e09f03c0468}{Justify\+Method}}\mbox{]} }]{justify}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_af6c8b2b110464beaf0446c3066cb2983}{Overflow\+Method}}\mbox{]} }]{overflow}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{emoji}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{markup}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{highlight}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ab59273f81ded73523025a5d15d28cc97}{Highlighter\+Type}}\mbox{]} }]{highlighter}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a string to a Text instance. This is called automatically if
+you print or log a string.
+
+Args:
+    text (str): Text to render.
+    style (Union[str, Style], optional): Style to apply to rendered text.
+    justify (str, optional): Justify method: "default", "left", "center", "full", or "right". Defaults to ``None``.
+    overflow (str, optional): Overflow method: "crop", "fold", or "ellipsis". Defaults to ``None``.
+    emoji (Optional[bool], optional): Enable emoji, or ``None`` to use Console default.
+    markup (Optional[bool], optional): Enable markup, or ``None`` to use Console default.
+    highlight (Optional[bool], optional): Enable highlighting, or ``None`` to use Console default.
+    highlighter (HighlighterType, optional): Optional highlighter to apply.
+Returns:
+    ConsoleRenderable: Renderable object.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abec6041d93810e8b1089d8bd7d00c397}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!rule@{rule}}
+\index{rule@{rule}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{rule()}{rule()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abec6041d93810e8b1089d8bd7d00c397} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Text\+Type }]{title}{ = {\ttfamily "{}"{}}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{characters}{ = {\ttfamily "{}─"{}}, }\item[{Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1_style}{Style}}\mbox{]} }]{style}{ = {\ttfamily "{}rule.line"{}}, }\item[{Align\+Method }]{align}{ = {\ttfamily "{}center"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw a line with optional centered title.
+
+Args:
+    title (str, optional): Text to render over the rule. Defaults to "".
+    characters (str, optional): Character(s) to form the line. Defaults to "─".
+    style (str, optional): Style of line. Defaults to "rule.line".
+    align (str, optional): How to align the title, one of "left", "center", or "right". Defaults to "center".
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9203e55433a2151dc85ab3b02019d342}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!save\_html@{save\_html}}
+\index{save\_html@{save\_html}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{save\_html()}{save\_html()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9203e55433a2151dc85ab3b02019d342} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+save\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} }]{theme}{ = {\ttfamily None}, }\item[{bool }]{clear}{ = {\ttfamily True}, }\item[{str }]{code\+\_\+format}{ = {\ttfamily CONSOLE\+\_\+HTML\+\_\+FORMAT}, }\item[{bool }]{inline\+\_\+styles}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate HTML from console contents and write to a file (requires record=True argument in constructor).
+
+Args:
+    path (str): Path to write html file.
+    theme (TerminalTheme, optional): TerminalTheme object containing console colors.
+    clear (bool, optional): Clear record buffer after exporting. Defaults to ``True``.
+    code_format (str, optional): Format string to render HTML. In addition to '{foreground}',
+        '{background}', and '{code}', should contain '{stylesheet}' if inline_styles is ``False``.
+    inline_styles (bool, optional): If ``True`` styles will be inlined in to spans, which makes files
+        larger but easier to cut and paste markup. If ``False``, styles will be embedded in a style tag.
+        Defaults to False.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51de7478289d31f29eb250e4dbcd14db}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!save\_svg@{save\_svg}}
+\index{save\_svg@{save\_svg}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{save\_svg()}{save\_svg()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51de7478289d31f29eb250e4dbcd14db} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+save\+\_\+svg (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{title}{ = {\ttfamily "{}Rich"{}}, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1terminal__theme_1_1_terminal_theme}{Terminal\+Theme}}\mbox{]} }]{theme}{ = {\ttfamily None}, }\item[{bool }]{clear}{ = {\ttfamily True}, }\item[{str }]{code\+\_\+format}{ = {\ttfamily CONSOLE\+\_\+SVG\+\_\+FORMAT}, }\item[{float }]{font\+\_\+aspect\+\_\+ratio}{ = {\ttfamily 0.61}, }\item[{Optional\mbox{[}str\mbox{]} }]{unique\+\_\+id}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate an SVG file from the console contents (requires record=True in Console constructor).
+
+Args:
+    path (str): The path to write the SVG to.
+    title (str, optional): The title of the tab in the output image
+    theme (TerminalTheme, optional): The ``TerminalTheme`` object to use to style the terminal
+    clear (bool, optional): Clear record buffer after exporting. Defaults to ``True``
+    code_format (str, optional): Format string used to generate the SVG. Rich will inject a number of variables
+        into the string in order to form the final SVG output. The default template used and the variables
+        injected by Rich can be found by inspecting the ``console.CONSOLE_SVG_FORMAT`` variable.
+    font_aspect_ratio (float, optional): The width to height ratio of the font used in the ``code_format``
+        string. Defaults to 0.61, which is the width to height ratio of Fira Code (the default font).
+        If you aren't specifying a different font inside ``code_format``, you probably don't need this.
+    unique_id (str, optional): unique id that is used as the prefix for various elements (CSS styles, node
+        ids). If not set, this defaults to a computed value based on the recorded content.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a01531df21f8edf6614ed9ff64dca7830}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!save\_text@{save\_text}}
+\index{save\_text@{save\_text}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{save\_text()}{save\_text()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a01531df21f8edf6614ed9ff64dca7830} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+save\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{clear}{ = {\ttfamily True}, }\item[{bool }]{styles}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate text from console and save to a given location (requires record=True argument in constructor).
+
+Args:
+    path (str): Path to write text files.
+    clear (bool, optional): Clear record buffer after exporting. Defaults to ``True``.
+    styles (bool, optional): If ``True``, ansi style codes will be included. ``False`` for plain text.
+        Defaults to ``False``.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a82b9388c89dd4eff2cad7a4de0d76e47}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!screen@{screen}}
+\index{screen@{screen}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{screen()}{screen()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a82b9388c89dd4eff2cad7a4de0d76e47} 
+ "{}Screen\+Context"{} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+screen (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{hide\+\_\+cursor}{ = {\ttfamily True}, }\item[{Optional\mbox{[}Style\+Type\mbox{]} }]{style}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager to enable and disable 'alternative screen' mode.
+
+Args:
+    hide_cursor (bool, optional): Also hide the cursor. Defaults to False.
+    style (Style, optional): Optional style for screen. Defaults to None.
+
+Returns:
+    ~ScreenContext: Context which enables alternate screen on enter, and disables it on exit.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9cf99545cefcba7f70fa2a6684f59182}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!set\_alt\_screen@{set\_alt\_screen}}
+\index{set\_alt\_screen@{set\_alt\_screen}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{set\_alt\_screen()}{set\_alt\_screen()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9cf99545cefcba7f70fa2a6684f59182} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+set\+\_\+alt\+\_\+screen (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{enable}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enables alternative screen mode.
+
+Note, if you enable this mode, you should ensure that is disabled before
+the application exits. See :meth:`~rich.Console.screen` for a context manager
+that handles this for you.
+
+Args:
+    enable (bool, optional): Enable (True) or disable (False) alternate screen. Defaults to True.
+
+Returns:
+    bool: True if the control codes were written.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a203f5bf925f26df77a4ec83b846ff7dd}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!set\_live@{set\_live}}
+\index{set\_live@{set\_live}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{set\_live()}{set\_live()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a203f5bf925f26df77a4ec83b846ff7dd} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+set\+\_\+live (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Live"{}}]{live}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set Live instance. Used by Live context manager (no need to call directly).
+
+Args:
+    live (Live): Live instance using this Console.
+
+Returns:
+    Boolean that indicates if the live is the topmost of the stack.
+
+Raises:
+    errors.LiveError: If this Console has a Live context currently active.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac41b14853db3c79a78e6346200c2a847}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!set\_window\_title@{set\_window\_title}}
+\index{set\_window\_title@{set\_window\_title}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{set\_window\_title()}{set\_window\_title()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac41b14853db3c79a78e6346200c2a847} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+set\+\_\+window\+\_\+title (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{title}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the title of the console terminal window.
+
+Warning: There is no means within Rich of "resetting" the window title to its
+previous value, meaning the title you set will persist even after your application
+exits.
+
+``fish`` shell resets the window title before and after each command by default,
+negating this issue. Windows Terminal and command prompt will also reset the title for you.
+Most other shells and terminals, however, do not do this.
+
+Some terminals may require configuration changes before you can set the title.
+Some terminals may not support setting the title at all.
+
+Other software (including the terminal itself, the shell, custom prompts, plugins, etc.)
+may also set the terminal window title. This could result in whatever value you write
+using this method being overwritten.
+
+Args:
+    title (str): The new title of the terminal window.
+
+Returns:
+    bool: True if the control code to change the terminal title was
+        written, otherwise False. Note that a return value of True
+        does not guarantee that the window title has actually changed,
+        since the feature may be unsupported/disabled in some terminals.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae5dae6a27d73e647107c790046f0d47f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!show\_cursor@{show\_cursor}}
+\index{show\_cursor@{show\_cursor}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{show\_cursor()}{show\_cursor()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae5dae6a27d73e647107c790046f0d47f} 
+ bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+show\+\_\+cursor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{show}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Show or hide the cursor.
+
+Args:
+    show (bool, optional): Set visibility of the cursor.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51e25cd9881c627f959a35e7623b81db}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!size@{size}}
+\index{size@{size}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51e25cd9881c627f959a35e7623b81db} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_dimensions}{Console\+Dimensions}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the size of the console.
+
+Returns:
+    ConsoleDimensions: A named tuple containing the dimensions.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae882677fb24c61ad973112e90fadafa7}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!size@{size}}
+\index{size@{size}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae882677fb24c61ad973112e90fadafa7} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+size (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tuple\mbox{[}int, int\mbox{]}}]{new\+\_\+size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set a new size for the terminal.
+
+Args:
+    new_size (Tuple[int, int]): New width and height.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a47be51f37f4a3becb0c0b65d8d76a628}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!status@{status}}
+\index{status@{status}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a47be51f37f4a3becb0c0b65d8d76a628} 
+ "{}Status"{} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}}}]{status}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str }]{spinner}{ = {\ttfamily "{}dots"{}}, }\item[{Style\+Type }]{spinner\+\_\+style}{ = {\ttfamily "{}status.spinner"{}}, }\item[{float }]{speed}{ = {\ttfamily 1.0}, }\item[{float }]{refresh\+\_\+per\+\_\+second}{ = {\ttfamily 12.5}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display a status and spinner.
+
+Args:
+    status (RenderableType): A status renderable (str or Text typically).
+    spinner (str, optional): Name of spinner animation (see python -m rich.spinner). Defaults to "dots".
+    spinner_style (StyleType, optional): Style of spinner. Defaults to "status.spinner".
+    speed (float, optional): Speed factor for spinner animation. Defaults to 1.0.
+    refresh_per_second (float, optional): Number of refreshes per second. Defaults to 12.5.
+
+Returns:
+    Status: A Status object that may be used as a context manager.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51a3b92f56d77e335bc6b397198368f3}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!update\_screen@{update\_screen}}
+\index{update\_screen@{update\_screen}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{update\_screen()}{update\_screen()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a51a3b92f56d77e335bc6b397198368f3} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+update\+\_\+screen (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a9d183f24bfe07c2ca59ed2ab439dc3d9}{Renderable\+Type}}}]{renderable}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1region_1_1_region}{Region}}\mbox{]} }]{region}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_options}{Console\+Options}}\mbox{]} }]{options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the screen at a given offset.
+
+Args:
+    renderable (RenderableType): A Rich renderable.
+    region (Region, optional): Region of screen to update, or None for entire screen. Defaults to None.
+    x (int, optional): x offset. Defaults to 0.
+    y (int, optional): y offset. Defaults to 0.
+
+Raises:
+    errors.NoAltScreen: If the Console isn't in alt screen mode.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a21cfe5af86ec7533f23d45fe2969817e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!update\_screen\_lines@{update\_screen\_lines}}
+\index{update\_screen\_lines@{update\_screen\_lines}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{update\_screen\_lines()}{update\_screen\_lines()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a21cfe5af86ec7533f23d45fe2969817e} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+update\+\_\+screen\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}List\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1segment_1_1_segment}{Segment}}\mbox{]}\mbox{]}}]{lines}{, }\item[{int }]{x}{ = {\ttfamily 0}, }\item[{int }]{y}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update lines of the screen at a given offset.
+
+Args:
+    lines (List[List[Segment]]): Rendered lines (as produced by :meth:`~rich.Console.render_lines`).
+    x (int, optional): x offset (column no). Defaults to 0.
+    y (int, optional): y offset (column no). Defaults to 0.
+
+Raises:
+    errors.NoAltScreen: If the Console isn't in alt screen mode.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a15df885aafa3b20302142dd1e33a0331}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!use\_theme@{use\_theme}}
+\index{use\_theme@{use\_theme}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{use\_theme()}{use\_theme()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a15df885aafa3b20302142dd1e33a0331} 
+ \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_theme_context}{Theme\+Context}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+use\+\_\+theme (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1theme_1_1_theme}{Theme}}}]{theme}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{inherit}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use a different theme for the duration of the context manager.
+
+Args:
+    theme (Theme): Theme instance to user.
+    inherit (bool, optional): Inherit existing console styles. Defaults to True.
+
+Returns:
+    ThemeContext: [description]
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3163e1b4e2842bc355d0f5c3100ecc08}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!width@{width}}
+\index{width@{width}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a3163e1b4e2842bc355d0f5c3100ecc08} 
+ int pip.\+\_\+vendor.\+rich.\+console.\+Console.\+width (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the width of the console.
+
+Returns:
+    int: The width (in characters) of the console.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa2ba8c5fa1dd224794b0ac2acd384863}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!width@{width}}
+\index{width@{width}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa2ba8c5fa1dd224794b0ac2acd384863} 
+ None pip.\+\_\+vendor.\+rich.\+console.\+Console.\+width (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{width}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set width.
+
+Args:
+    width (int): New width.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9906741a9ab58f26a7e3a319ba476741}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_buffer@{\_buffer}}
+\index{\_buffer@{\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_buffer}{\_buffer}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a9906741a9ab58f26a7e3a319ba476741} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a36a186a1843bc980347268df12727f5f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_buffer\_index@{\_buffer\_index}}
+\index{\_buffer\_index@{\_buffer\_index}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_buffer\_index}{\_buffer\_index}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a36a186a1843bc980347268df12727f5f} 
+int pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+buffer\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aecb1653aa391bf86b4fa9507b97fbf77}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_color\_system@{\_color\_system}}
+\index{\_color\_system@{\_color\_system}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_color\_system}{\_color\_system}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aecb1653aa391bf86b4fa9507b97fbf77} 
+Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1color_1_1_color_system}{Color\+System}}\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+color\+\_\+system\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5b9142bc7ba5778d08a60ae85e0d8273}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_emoji@{\_emoji}}
+\index{\_emoji@{\_emoji}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_emoji}{\_emoji}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5b9142bc7ba5778d08a60ae85e0d8273} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+emoji = emoji\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a523c0a15538525f6b6b2488f0077f0ea}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_emoji\_variant@{\_emoji\_variant}}
+\index{\_emoji\_variant@{\_emoji\_variant}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_emoji\_variant}{\_emoji\_variant}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a523c0a15538525f6b6b2488f0077f0ea} 
+Optional\mbox{[}Emoji\+Variant\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+emoji\+\_\+variant = emoji\+\_\+variant\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abaac358db3406c30d69826e7098d525f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_environ@{\_environ}}
+\index{\_environ@{\_environ}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_environ}{\_environ}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_abaac358db3406c30d69826e7098d525f} 
+Mapping pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+environ = os.\+environ\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a66b8117cd1a5ac00b396a2b196f6366c}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_file@{\_file}}
+\index{\_file@{\_file}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_file}{\_file}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a66b8117cd1a5ac00b396a2b196f6366c} 
+IO\mbox{[}str\mbox{]} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+file = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a4f4c9bf101af6a8df971e89971574a8e}{file}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac6836b5e16a012c11ab10553950129c7}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_force\_terminal@{\_force\_terminal}}
+\index{\_force\_terminal@{\_force\_terminal}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_force\_terminal}{\_force\_terminal}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ac6836b5e16a012c11ab10553950129c7} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+force\+\_\+terminal = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aadb3b2373d317343f1158c99f6ed497a}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_height@{\_height}}
+\index{\_height@{\_height}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_height}{\_height}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aadb3b2373d317343f1158c99f6ed497a} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+height = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_adf55ca44bd09a7285363cdfd2a411a53}{height}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_acbfd1549e1ef3e39f6ea1fca12e9c496}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_highlight@{\_highlight}}
+\index{\_highlight@{\_highlight}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_highlight}{\_highlight}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_acbfd1549e1ef3e39f6ea1fca12e9c496} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+highlight = highlight\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a7ebe96e5a5af0672fee36eafc9bc5f67}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_is\_alt\_screen@{\_is\_alt\_screen}}
+\index{\_is\_alt\_screen@{\_is\_alt\_screen}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_is\_alt\_screen}{\_is\_alt\_screen}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a7ebe96e5a5af0672fee36eafc9bc5f67} 
+bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+is\+\_\+alt\+\_\+screen = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1b344f2fa7643f4d9438e67d464edccd}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_live\_stack@{\_live\_stack}}
+\index{\_live\_stack@{\_live\_stack}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_live\_stack}{\_live\_stack}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a1b344f2fa7643f4d9438e67d464edccd} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+live\+\_\+stack = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a02a084442603b7f70c3f0d14750bbc70}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_lock@{\_lock}}
+\index{\_lock@{\_lock}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_lock}{\_lock}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a02a084442603b7f70c3f0d14750bbc70} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+lock = threading.\+RLock()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0417cf31cde5f4d41a82483a267ccb08}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_log\_render@{\_log\_render}}
+\index{\_log\_render@{\_log\_render}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_log\_render}{\_log\_render}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0417cf31cde5f4d41a82483a267ccb08} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+log\+\_\+render\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ LogRender(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ show\_time=log\_time,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ show\_path=log\_path,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ time\_format=log\_time\_format,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa6321b8eb3d9503906e08bc7eb77f51f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_markup@{\_markup}}
+\index{\_markup@{\_markup}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_markup}{\_markup}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa6321b8eb3d9503906e08bc7eb77f51f} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+markup = markup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a6079ce28e2cffb790c8059ab38e08873}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_record\_buffer@{\_record\_buffer}}
+\index{\_record\_buffer@{\_record\_buffer}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_record\_buffer}{\_record\_buffer}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a6079ce28e2cffb790c8059ab38e08873} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+record\+\_\+buffer = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae1c9f132de5905d413a29de34d5c6bf7}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_record\_buffer\_lock@{\_record\_buffer\_lock}}
+\index{\_record\_buffer\_lock@{\_record\_buffer\_lock}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_record\_buffer\_lock}{\_record\_buffer\_lock}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae1c9f132de5905d413a29de34d5c6bf7} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+record\+\_\+buffer\+\_\+lock = threading.\+RLock()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae067a38d4c141d9716e880c998c38b33}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_render\_hooks@{\_render\_hooks}}
+\index{\_render\_hooks@{\_render\_hooks}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_render\_hooks}{\_render\_hooks}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae067a38d4c141d9716e880c998c38b33} 
+list pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+render\+\_\+hooks = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a625bc221803cfdb67b77783deda24f6e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_thread\_locals@{\_thread\_locals}}
+\index{\_thread\_locals@{\_thread\_locals}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_thread\_locals}{\_thread\_locals}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a625bc221803cfdb67b77783deda24f6e} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+thread\+\_\+locals\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConsoleThreadLocals(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ theme\_stack=ThemeStack(themes.DEFAULT\ \textcolor{keywordflow}{if}\ theme\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}\ \textcolor{keywordflow}{else}\ theme)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aae49d0271b155c2be063fb28f6c19a81}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!\_width@{\_width}}
+\index{\_width@{\_width}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{\_width}{\_width}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aae49d0271b155c2be063fb28f6c19a81} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+\_\+width = \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}{width}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a4f4c9bf101af6a8df971e89971574a8e}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!file@{file}}
+\index{file@{file}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a4f4c9bf101af6a8df971e89971574a8e} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+file}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a37714c4810ad5c71aa2d26a16b65e98d}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!get\_datetime@{get\_datetime}}
+\index{get\_datetime@{get\_datetime}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{get\_datetime}{get\_datetime}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a37714c4810ad5c71aa2d26a16b65e98d} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+get\+\_\+datetime = get\+\_\+datetime or datetime.\+now}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9a42c54936149921c7fe81dc6ef0173}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{get\_time}{get\_time}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae9a42c54936149921c7fe81dc6ef0173} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+get\+\_\+time = get\+\_\+time or monotonic}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a60205811d7847f2e9b488c6d97aaf9f8}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!highlighter@{highlighter}}
+\index{highlighter@{highlighter}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{highlighter}{highlighter}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a60205811d7847f2e9b488c6d97aaf9f8} 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ab59273f81ded73523025a5d15d28cc97}{Highlighter\+Type}} pip.\+\_\+vendor.\+rich.\+console.\+Console.\+highlighter = highlighter or \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_ab93a1940e2112ca7788f163283f67c5d}{\+\_\+null\+\_\+highlighter}}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa1f9717d8734dca0298dd50e5f38ff29}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_alt\_screen@{is\_alt\_screen}}
+\index{is\_alt\_screen@{is\_alt\_screen}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_alt\_screen}{is\_alt\_screen}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aa1f9717d8734dca0298dd50e5f38ff29} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+alt\+\_\+screen}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8a7ea61b40da7bb8d251b5c595a26bd6}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_dumb\_terminal@{is\_dumb\_terminal}}
+\index{is\_dumb\_terminal@{is\_dumb\_terminal}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_dumb\_terminal}{is\_dumb\_terminal}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8a7ea61b40da7bb8d251b5c595a26bd6} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+dumb\+\_\+terminal}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a413e020345bc76f4ca30b277d0b935f6}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_interactive@{is\_interactive}}
+\index{is\_interactive@{is\_interactive}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_interactive}{is\_interactive}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a413e020345bc76f4ca30b277d0b935f6} 
+tuple pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+interactive}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (self.is\_terminal\ \textcolor{keywordflow}{and}\ \textcolor{keywordflow}{not}\ self.is\_dumb\_terminal)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ force\_interactive\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ force\_interactive}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad83abd69483380da4f4256ee12f7d224}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_jupyter@{is\_jupyter}}
+\index{is\_jupyter@{is\_jupyter}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_jupyter}{is\_jupyter}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad83abd69483380da4f4256ee12f7d224} 
+\# pragma no cover pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+jupyter = \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1console_a640e7515757a685bda27bfcb5a9e4e63}{\+\_\+is\+\_\+jupyter}}() if force\+\_\+jupyter is None else force\+\_\+jupyter}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a077b38cb18f36478ac0798b701f491fb}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!is\_terminal@{is\_terminal}}
+\index{is\_terminal@{is\_terminal}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{is\_terminal}{is\_terminal}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a077b38cb18f36478ac0798b701f491fb} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+is\+\_\+terminal}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab63ee622128f7d22e2958bbac54e8aba}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!legacy\_windows@{legacy\_windows}}
+\index{legacy\_windows@{legacy\_windows}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{legacy\_windows}{legacy\_windows}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ab63ee622128f7d22e2958bbac54e8aba} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+legacy\+\_\+windows}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (detect\_legacy\_windows()\ \textcolor{keywordflow}{and}\ \textcolor{keywordflow}{not}\ self.is\_jupyter)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ legacy\_windows\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ legacy\_windows}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af07bd5973b9d8e7ebda17cf2404aca6d}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!no\_color@{no\_color}}
+\index{no\_color@{no\_color}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{no\_color}{no\_color}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af07bd5973b9d8e7ebda17cf2404aca6d} 
+tuple pip.\+\_\+vendor.\+rich.\+console.\+Console.\+no\+\_\+color}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ no\_color}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ no\_color\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ self.\_environ.get(\textcolor{stringliteral}{"{}NO\_COLOR"{}},\ \textcolor{stringliteral}{"{}"{}})\ !=\ \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0a5732afb51dc1184e0bac38be21a27f}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!quiet@{quiet}}
+\index{quiet@{quiet}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{quiet}{quiet}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a0a5732afb51dc1184e0bac38be21a27f} 
+bool pip.\+\_\+vendor.\+rich.\+console.\+Console.\+quiet = quiet}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8957e7f34979312854e89496a996548d}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!record@{record}}
+\index{record@{record}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{record}{record}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a8957e7f34979312854e89496a996548d} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+record = record}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aced1bff77cbc7305504a90008f3b151a}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!safe\_box@{safe\_box}}
+\index{safe\_box@{safe\_box}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{safe\_box}{safe\_box}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_aced1bff77cbc7305504a90008f3b151a} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+safe\+\_\+box = safe\+\_\+box}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af1641a4a6cc475395c5b271929765789}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!soft\_wrap@{soft\_wrap}}
+\index{soft\_wrap@{soft\_wrap}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{soft\_wrap}{soft\_wrap}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af1641a4a6cc475395c5b271929765789} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+soft\+\_\+wrap = soft\+\_\+wrap}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5ea4ee9a245a4e6d6b71f5ed9be18c83}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!stderr@{stderr}}
+\index{stderr@{stderr}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{stderr}{stderr}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_a5ea4ee9a245a4e6d6b71f5ed9be18c83} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+stderr = stderr}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!style@{style}}
+\index{style@{style}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ad4d5803778fe4f937aa84018cbc6d807} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+style = style}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af5dc146c4385f7c5d2954b0b2e810d31}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!tab\_size@{tab\_size}}
+\index{tab\_size@{tab\_size}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{tab\_size}{tab\_size}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_af5dc146c4385f7c5d2954b0b2e810d31} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+tab\+\_\+size = tab\+\_\+size}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77}\index{pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}!width@{width}}
+\index{width@{width}!pip.\_vendor.rich.console.Console@{pip.\_vendor.rich.console.Console}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1rich_1_1console_1_1_console_ae764c63b4253c6d5f2f419ecf7c12e77} 
+pip.\+\_\+vendor.\+rich.\+console.\+Console.\+width}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/rich/\mbox{\hyperlink{pip_2__vendor_2rich_2console_8py}{console.\+py}}\end{DoxyCompactItemize}

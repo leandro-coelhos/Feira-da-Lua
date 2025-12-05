@@ -1,0 +1,50 @@
+\doxysection{django.\+contrib.\+contenttypes.\+management Namespace Reference}
+\hypertarget{namespacedjango_1_1contrib_1_1contenttypes_1_1management}{}\label{namespacedjango_1_1contrib_1_1contenttypes_1_1management}\index{django.contrib.contenttypes.management@{django.contrib.contenttypes.management}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1contrib_1_1contenttypes_1_1management_1_1commands}{commands}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1contenttypes_1_1management_1_1_rename_content_type}{Rename\+Content\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1contenttypes_1_1management_aab80c24b66e5ac37512a1bac0c15f0f3}{inject\+\_\+rename\+\_\+contenttypes\+\_\+operations}} (plan=None, apps=global\+\_\+apps, using=DEFAULT\+\_\+\+DB\+\_\+\+ALIAS, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1contenttypes_1_1management_a04fecd6ba106b776c3dcd8228daf5caa}{get\+\_\+contenttypes\+\_\+and\+\_\+models}} (app\+\_\+config, using, Content\+Type)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1contenttypes_1_1management_a773941909c7c217674193022ad9237c9}{create\+\_\+contenttypes}} (app\+\_\+config, verbosity=2, interactive=True, using=DEFAULT\+\_\+\+DB\+\_\+\+ALIAS, apps=global\+\_\+apps, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1contrib_1_1contenttypes_1_1management_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1contrib_1_1contenttypes_1_1management_a773941909c7c217674193022ad9237c9}\index{django.contrib.contenttypes.management@{django.contrib.contenttypes.management}!create\_contenttypes@{create\_contenttypes}}
+\index{create\_contenttypes@{create\_contenttypes}!django.contrib.contenttypes.management@{django.contrib.contenttypes.management}}
+\doxysubsubsection{\texorpdfstring{create\_contenttypes()}{create\_contenttypes()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1contenttypes_1_1management_a773941909c7c217674193022ad9237c9} 
+django.\+contrib.\+contenttypes.\+management.\+create\+\_\+contenttypes (\begin{DoxyParamCaption}\item[{}]{app\+\_\+config}{, }\item[{}]{verbosity}{ = {\ttfamily 2}, }\item[{}]{interactive}{ = {\ttfamily True}, }\item[{}]{using}{ = {\ttfamily DEFAULT\+\_\+DB\+\_\+ALIAS}, }\item[{}]{apps}{ = {\ttfamily global\+\_\+apps}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create content types for models in the given app.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1contenttypes_1_1management_a04fecd6ba106b776c3dcd8228daf5caa}\index{django.contrib.contenttypes.management@{django.contrib.contenttypes.management}!get\_contenttypes\_and\_models@{get\_contenttypes\_and\_models}}
+\index{get\_contenttypes\_and\_models@{get\_contenttypes\_and\_models}!django.contrib.contenttypes.management@{django.contrib.contenttypes.management}}
+\doxysubsubsection{\texorpdfstring{get\_contenttypes\_and\_models()}{get\_contenttypes\_and\_models()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1contenttypes_1_1management_a04fecd6ba106b776c3dcd8228daf5caa} 
+django.\+contrib.\+contenttypes.\+management.\+get\+\_\+contenttypes\+\_\+and\+\_\+models (\begin{DoxyParamCaption}\item[{}]{app\+\_\+config}{, }\item[{}]{using}{, }\item[{}]{Content\+Type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1contenttypes_1_1management_aab80c24b66e5ac37512a1bac0c15f0f3}\index{django.contrib.contenttypes.management@{django.contrib.contenttypes.management}!inject\_rename\_contenttypes\_operations@{inject\_rename\_contenttypes\_operations}}
+\index{inject\_rename\_contenttypes\_operations@{inject\_rename\_contenttypes\_operations}!django.contrib.contenttypes.management@{django.contrib.contenttypes.management}}
+\doxysubsubsection{\texorpdfstring{inject\_rename\_contenttypes\_operations()}{inject\_rename\_contenttypes\_operations()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1contrib_1_1contenttypes_1_1management_aab80c24b66e5ac37512a1bac0c15f0f3} 
+django.\+contrib.\+contenttypes.\+management.\+inject\+\_\+rename\+\_\+contenttypes\+\_\+operations (\begin{DoxyParamCaption}\item[{}]{plan}{ = {\ttfamily None}, }\item[{}]{apps}{ = {\ttfamily global\+\_\+apps}, }\item[{}]{using}{ = {\ttfamily DEFAULT\+\_\+DB\+\_\+ALIAS}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Insert a `RenameContentType` operation after every planned `RenameModel`
+operation.
+\end{DoxyVerb}
+ 

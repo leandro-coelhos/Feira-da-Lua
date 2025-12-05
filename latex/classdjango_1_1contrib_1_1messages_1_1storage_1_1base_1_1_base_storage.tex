@@ -1,0 +1,275 @@
+\doxysection{django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}{}\label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+Inheritance diagram for django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.066667cm]{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a04788244049b0eebfa91073edcc27d13}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8e451347d277c31eea1950e478e1a2c5}{request}}, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a2d255b62fb6986db1482f63acdce702a}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a89c594a6d79beed25f3396208bd84400}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa0b6fbe6aacbe913194613f52754053d}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, item)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a451e61c13ceeb4ee464d5e4b84022c1f}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a6e7b6b257bc8af4bd1d58d53235679a2}{update}} (self, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aafc1151a94b34b80803c99d883ca268c}{add}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_af65cee7ee0cf34fe54e5ee0b9cae67ff}{level}}, message, extra\+\_\+tags="{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8e451347d277c31eea1950e478e1a2c5}{request}} = request
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac99f868ab79e0e2236ff8f21fbaabf3b}{used}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a635627109c5cafd6f5c7d625d4239718}{added\+\_\+new}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aae271e69706ef6bcb050affc180b81e1}{\+\_\+loaded\+\_\+messages}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a3d2749021b22c9e5f32af8b23feae3f1}{\+\_\+get}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa5132a4a7ce775d6ecf062de7fe92296}{\+\_\+store}} (self, messages, response, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8b041dcd1b43d70d14a307f76e870a1a}{\+\_\+prepare\+\_\+messages}} (self, messages)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2}{\+\_\+get\+\_\+level}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}} (self, value=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a4c71d855e8fca3dbd0fb120a49de9bf9}{\+\_\+queued\+\_\+messages}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac71a42a338bbe7f91e7a8f75b880adbb}{\+\_\+loaded\+\_\+messages}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a9e509c39ca4eaccb53c97dc4d7c34a07}{\+\_\+loaded\+\_\+data}} = messages or \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa49e6d3e95284612cae53ff0e50119ef}{\+\_\+level}} = getattr(settings, "{}MESSAGE\+\_\+\+LEVEL"{}, \mbox{\hyperlink{namespacedjango_1_1contrib_1_1messages_1_1constants_a154b11c36e7de45673e2dbf26c786f24}{constants.\+INFO}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_af65cee7ee0cf34fe54e5ee0b9cae67ff}{level}} = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2}{\+\_\+get\+\_\+level}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is the base backend for temporary message storage.
+
+This is not a complete class; to be a usable storage backend, it must be
+subclassed and the two methods ``_get`` and ``_store`` overridden.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a04788244049b0eebfa91073edcc27d13}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a04788244049b0eebfa91073edcc27d13} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa0b6fbe6aacbe913194613f52754053d}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa0b6fbe6aacbe913194613f52754053d} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{item}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a89c594a6d79beed25f3396208bd84400}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a89c594a6d79beed25f3396208bd84400} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a2d255b62fb6986db1482f63acdce702a}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a2d255b62fb6986db1482f63acdce702a} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a451e61c13ceeb4ee464d5e4b84022c1f}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a451e61c13ceeb4ee464d5e4b84022c1f} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a3d2749021b22c9e5f32af8b23feae3f1}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_get@{\_get}}
+\index{\_get@{\_get}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a3d2749021b22c9e5f32af8b23feae3f1} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Retrieve a list of stored messages. Return a tuple of the messages
+and a flag indicating whether or not all the messages originally
+intended to be stored in this storage were, in fact, stored and
+retrieved; e.g., ``(messages, all_retrieved)``.
+
+**This method must be implemented by a subclass.**
+
+If it is possible to tell if the backend was not used (as opposed to
+just containing no messages) then ``None`` should be returned in
+place of ``messages``.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_a39d084f6072109675c9ef06c047174e8}{django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1fallback_1_1_fallback_storage_a868fecdc6202920df6e41e4e2cdb5ed2}{django.\+contrib.\+messages.\+storage.\+fallback.\+Fallback\+Storage}}, and \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1session_1_1_session_storage_ad3dc3100f2bb7bc5e7ff4db39177fb69}{django.\+contrib.\+messages.\+storage.\+session.\+Session\+Storage}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_get\_level@{\_get\_level}}
+\index{\_get\_level@{\_get\_level}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_get\_level()}{\_get\_level()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+get\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the minimum recorded level.
+
+The default level is the ``MESSAGE_LEVEL`` setting. If this is
+not found, the ``INFO`` level is used.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aae271e69706ef6bcb050affc180b81e1}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_loaded\_messages@{\_loaded\_messages}}
+\index{\_loaded\_messages@{\_loaded\_messages}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_loaded\_messages()}{\_loaded\_messages()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aae271e69706ef6bcb050affc180b81e1} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+loaded\+\_\+messages (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list of loaded messages, retrieving them first if they have
+not been loaded yet.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8b041dcd1b43d70d14a307f76e870a1a}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_prepare\_messages@{\_prepare\_messages}}
+\index{\_prepare\_messages@{\_prepare\_messages}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_messages()}{\_prepare\_messages()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8b041dcd1b43d70d14a307f76e870a1a} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+prepare\+\_\+messages (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{messages}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Prepare a list of messages for storage.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_set\_level@{\_set\_level}}
+\index{\_set\_level@{\_set\_level}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_set\_level()}{\_set\_level()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+set\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Set a custom minimum recorded level.
+
+If set to ``None``, the default level will be used (see the
+``_get_level`` method).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa5132a4a7ce775d6ecf062de7fe92296}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_store@{\_store}}
+\index{\_store@{\_store}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_store()}{\_store()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa5132a4a7ce775d6ecf062de7fe92296} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+store (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{messages}{, }\item[{}]{response}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Store a list of messages and return a list of any messages which could
+not be stored.
+
+One type of object must be able to be stored, ``Message``.
+
+**This method must be implemented by a subclass.**
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1cookie_1_1_cookie_storage_aa0af435ad461f081d2fae1ec0043982e}{django.\+contrib.\+messages.\+storage.\+cookie.\+Cookie\+Storage}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1fallback_1_1_fallback_storage_a294192cf0db825e0e3da59c8a1c95e21}{django.\+contrib.\+messages.\+storage.\+fallback.\+Fallback\+Storage}}, and \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1session_1_1_session_storage_a371ed03facbc7ae28602ede4c99950d0}{django.\+contrib.\+messages.\+storage.\+session.\+Session\+Storage}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aafc1151a94b34b80803c99d883ca268c}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!add@{add}}
+\index{add@{add}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aafc1151a94b34b80803c99d883ca268c} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{level}{, }\item[{}]{message}{, }\item[{}]{extra\+\_\+tags}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Queue a message to be stored.
+
+The message is only queued if it contained something and its level is
+not less than the recording level (``self.level``).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a6e7b6b257bc8af4bd1d58d53235679a2}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!update@{update}}
+\index{update@{update}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a6e7b6b257bc8af4bd1d58d53235679a2} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Store all unread messages.
+
+If the backend has yet to be iterated, store previously stored messages
+again. Otherwise, only store messages added after the last iteration.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa49e6d3e95284612cae53ff0e50119ef}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_level@{\_level}}
+\index{\_level@{\_level}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_level}{\_level}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_aa49e6d3e95284612cae53ff0e50119ef} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+level = getattr(settings, "{}MESSAGE\+\_\+\+LEVEL"{}, \mbox{\hyperlink{namespacedjango_1_1contrib_1_1messages_1_1constants_a154b11c36e7de45673e2dbf26c786f24}{constants.\+INFO}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a9e509c39ca4eaccb53c97dc4d7c34a07}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_loaded\_data@{\_loaded\_data}}
+\index{\_loaded\_data@{\_loaded\_data}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_loaded\_data}{\_loaded\_data}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a9e509c39ca4eaccb53c97dc4d7c34a07} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+loaded\+\_\+data = messages or \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac71a42a338bbe7f91e7a8f75b880adbb}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_loaded\_messages@{\_loaded\_messages}}
+\index{\_loaded\_messages@{\_loaded\_messages}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_loaded\_messages}{\_loaded\_messages}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac71a42a338bbe7f91e7a8f75b880adbb} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+loaded\+\_\+messages\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a4c71d855e8fca3dbd0fb120a49de9bf9}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!\_queued\_messages@{\_queued\_messages}}
+\index{\_queued\_messages@{\_queued\_messages}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{\_queued\_messages}{\_queued\_messages}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a4c71d855e8fca3dbd0fb120a49de9bf9} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+\_\+queued\+\_\+messages = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a635627109c5cafd6f5c7d625d4239718}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!added\_new@{added\_new}}
+\index{added\_new@{added\_new}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{added\_new}{added\_new}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a635627109c5cafd6f5c7d625d4239718} 
+bool django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+added\+\_\+new = False}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8e451347d277c31eea1950e478e1a2c5}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!request@{request}}
+\index{request@{request}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8e451347d277c31eea1950e478e1a2c5} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+request = request}
+
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac99f868ab79e0e2236ff8f21fbaabf3b}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!used@{used}}
+\index{used@{used}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{used}{used}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_ac99f868ab79e0e2236ff8f21fbaabf3b} 
+bool django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+used = False}
+
+
+
+\label{doc-property-members}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_af65cee7ee0cf34fe54e5ee0b9cae67ff}\index{django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}!level@{level}}
+\index{level@{level}!django.contrib.messages.storage.base.BaseStorage@{django.contrib.messages.storage.base.BaseStorage}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_af65cee7ee0cf34fe54e5ee0b9cae67ff} 
+django.\+contrib.\+messages.\+storage.\+base.\+Base\+Storage.\+level = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a8152bdca5e114e91e020e38fdedac5e2}{\+\_\+get\+\_\+level}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1messages_1_1storage_1_1base_1_1_base_storage_a46703eaed340c04e2e0fc0f04bc48ee4}{\+\_\+set\+\_\+level}})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/messages/storage/\mbox{\hyperlink{django_2contrib_2messages_2storage_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

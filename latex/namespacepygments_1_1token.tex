@@ -1,0 +1,196 @@
+\doxysection{pygments.\+token Namespace Reference}
+\hypertarget{namespacepygments_1_1token}{}\label{namespacepygments_1_1token}\index{pygments.token@{pygments.token}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpygments_1_1token_1_1___token_type}{\+\_\+\+Token\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a378862b91a8865ae410c80e6885cc980}{is\+\_\+token\+\_\+subtype}} (ttype, other)
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a7d233c2ce9ccc70843d13e6d2d186e8d}{string\+\_\+to\+\_\+tokentype}} (s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a12d1fa29e14f613fc02cb7cf6dc4ebb9}{Token}} = \mbox{\hyperlink{classpygments_1_1token_1_1___token_type}{\+\_\+\+Token\+Type}}()
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a7a0462d8fb6712fa36fed4b9011ca5cd}{Text}} = Token.\+Text
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a1d014fe31a297c9944d9c3a3513e4f77}{Whitespace}} = Text.\+Whitespace
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a37ffc2c25b7d300a9dd393586f7e2238}{Escape}} = Token.\+Escape
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a9a9303993f99ee792528b2815c4c58f4}{Error}} = Token.\+Error
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_ad60ab90c51daf9848126c8fb6dff4e0f}{Other}} = Token.\+Other
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_ad65a5615360b3ee0996504f2a28387aa}{Keyword}} = Token.\+Keyword
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a38808f7bc27300fbdc83a3a358cdefae}{Name}} = Token.\+Name
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a1067913bcd223b6edb5c5a95f262b52a}{Literal}} = Token.\+Literal
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_aa0872957536c30bc04ed33effbba9d71}{String}} = Literal.\+String
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a5894ff86fab28f60ae55f881ab803844}{Number}} = Literal.\+Number
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_af061d3328c6105dc8f7a51008dc5919b}{Punctuation}} = Token.\+Punctuation
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a273fc092e288892f5f77a8d6fcccd7bb}{Operator}} = Token.\+Operator
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_a3d3b89518de3846fb62e8fc46d97a4ed}{Comment}} = Token.\+Comment
+\item 
+\mbox{\hyperlink{namespacepygments_1_1token_ae1e4296d7a2a1ab4e877087f3b05dd9a}{Generic}} = Token.\+Generic
+\item 
+dict \mbox{\hyperlink{namespacepygments_1_1token_ac8bd8ee97939943f2e26faa28d174753}{STANDARD\+\_\+\+TYPES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    pygments.token
+    ~~~~~~~~~~~~~~
+
+    Basic token types and the standard tokens.
+
+    :copyright: Copyright 2006-2025 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacepygments_1_1token_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepygments_1_1token_a378862b91a8865ae410c80e6885cc980}\index{pygments.token@{pygments.token}!is\_token\_subtype@{is\_token\_subtype}}
+\index{is\_token\_subtype@{is\_token\_subtype}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{is\_token\_subtype()}{is\_token\_subtype()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a378862b91a8865ae410c80e6885cc980} 
+pygments.\+token.\+is\+\_\+token\+\_\+subtype (\begin{DoxyParamCaption}\item[{}]{ttype}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if ``ttype`` is a subtype of ``other``.
+
+exists for backwards compatibility. use ``ttype in other`` now.
+\end{DoxyVerb}
+ \Hypertarget{namespacepygments_1_1token_a7d233c2ce9ccc70843d13e6d2d186e8d}\index{pygments.token@{pygments.token}!string\_to\_tokentype@{string\_to\_tokentype}}
+\index{string\_to\_tokentype@{string\_to\_tokentype}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{string\_to\_tokentype()}{string\_to\_tokentype()}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a7d233c2ce9ccc70843d13e6d2d186e8d} 
+pygments.\+token.\+string\+\_\+to\+\_\+tokentype (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a string into a token type::
+
+    >>> string_to_token('String.Double')
+    Token.Literal.String.Double
+    >>> string_to_token('Token.Literal.Number')
+    Token.Literal.Number
+    >>> string_to_token('')
+    Token
+
+Tokens that are already tokens are returned unchanged:
+
+    >>> string_to_token(String)
+    Token.Literal.String
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepygments_1_1token_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepygments_1_1token_a3d3b89518de3846fb62e8fc46d97a4ed}\index{pygments.token@{pygments.token}!Comment@{Comment}}
+\index{Comment@{Comment}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Comment}{Comment}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a3d3b89518de3846fb62e8fc46d97a4ed} 
+pygments.\+token.\+Comment = Token.\+Comment}
+
+\Hypertarget{namespacepygments_1_1token_a9a9303993f99ee792528b2815c4c58f4}\index{pygments.token@{pygments.token}!Error@{Error}}
+\index{Error@{Error}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Error}{Error}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a9a9303993f99ee792528b2815c4c58f4} 
+pygments.\+token.\+Error = Token.\+Error}
+
+\Hypertarget{namespacepygments_1_1token_a37ffc2c25b7d300a9dd393586f7e2238}\index{pygments.token@{pygments.token}!Escape@{Escape}}
+\index{Escape@{Escape}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Escape}{Escape}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a37ffc2c25b7d300a9dd393586f7e2238} 
+pygments.\+token.\+Escape = Token.\+Escape}
+
+\Hypertarget{namespacepygments_1_1token_ae1e4296d7a2a1ab4e877087f3b05dd9a}\index{pygments.token@{pygments.token}!Generic@{Generic}}
+\index{Generic@{Generic}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Generic}{Generic}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_ae1e4296d7a2a1ab4e877087f3b05dd9a} 
+pygments.\+token.\+Generic = Token.\+Generic}
+
+\Hypertarget{namespacepygments_1_1token_ad65a5615360b3ee0996504f2a28387aa}\index{pygments.token@{pygments.token}!Keyword@{Keyword}}
+\index{Keyword@{Keyword}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Keyword}{Keyword}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_ad65a5615360b3ee0996504f2a28387aa} 
+pygments.\+token.\+Keyword = Token.\+Keyword}
+
+\Hypertarget{namespacepygments_1_1token_a1067913bcd223b6edb5c5a95f262b52a}\index{pygments.token@{pygments.token}!Literal@{Literal}}
+\index{Literal@{Literal}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Literal}{Literal}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a1067913bcd223b6edb5c5a95f262b52a} 
+pygments.\+token.\+Literal = Token.\+Literal}
+
+\Hypertarget{namespacepygments_1_1token_a38808f7bc27300fbdc83a3a358cdefae}\index{pygments.token@{pygments.token}!Name@{Name}}
+\index{Name@{Name}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a38808f7bc27300fbdc83a3a358cdefae} 
+pygments.\+token.\+Name = Token.\+Name}
+
+\Hypertarget{namespacepygments_1_1token_a5894ff86fab28f60ae55f881ab803844}\index{pygments.token@{pygments.token}!Number@{Number}}
+\index{Number@{Number}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Number}{Number}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a5894ff86fab28f60ae55f881ab803844} 
+pygments.\+token.\+Number = Literal.\+Number}
+
+\Hypertarget{namespacepygments_1_1token_a273fc092e288892f5f77a8d6fcccd7bb}\index{pygments.token@{pygments.token}!Operator@{Operator}}
+\index{Operator@{Operator}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Operator}{Operator}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a273fc092e288892f5f77a8d6fcccd7bb} 
+pygments.\+token.\+Operator = Token.\+Operator}
+
+\Hypertarget{namespacepygments_1_1token_ad60ab90c51daf9848126c8fb6dff4e0f}\index{pygments.token@{pygments.token}!Other@{Other}}
+\index{Other@{Other}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Other}{Other}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_ad60ab90c51daf9848126c8fb6dff4e0f} 
+pygments.\+token.\+Other = Token.\+Other}
+
+\Hypertarget{namespacepygments_1_1token_af061d3328c6105dc8f7a51008dc5919b}\index{pygments.token@{pygments.token}!Punctuation@{Punctuation}}
+\index{Punctuation@{Punctuation}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Punctuation}{Punctuation}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_af061d3328c6105dc8f7a51008dc5919b} 
+pygments.\+token.\+Punctuation = Token.\+Punctuation}
+
+\Hypertarget{namespacepygments_1_1token_ac8bd8ee97939943f2e26faa28d174753}\index{pygments.token@{pygments.token}!STANDARD\_TYPES@{STANDARD\_TYPES}}
+\index{STANDARD\_TYPES@{STANDARD\_TYPES}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{STANDARD\_TYPES}{STANDARD\_TYPES}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_ac8bd8ee97939943f2e26faa28d174753} 
+dict pygments.\+token.\+STANDARD\+\_\+\+TYPES}
+
+\Hypertarget{namespacepygments_1_1token_aa0872957536c30bc04ed33effbba9d71}\index{pygments.token@{pygments.token}!String@{String}}
+\index{String@{String}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{String}{String}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_aa0872957536c30bc04ed33effbba9d71} 
+pygments.\+token.\+String = Literal.\+String}
+
+\Hypertarget{namespacepygments_1_1token_a7a0462d8fb6712fa36fed4b9011ca5cd}\index{pygments.token@{pygments.token}!Text@{Text}}
+\index{Text@{Text}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a7a0462d8fb6712fa36fed4b9011ca5cd} 
+pygments.\+token.\+Text = Token.\+Text}
+
+\Hypertarget{namespacepygments_1_1token_a12d1fa29e14f613fc02cb7cf6dc4ebb9}\index{pygments.token@{pygments.token}!Token@{Token}}
+\index{Token@{Token}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Token}{Token}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a12d1fa29e14f613fc02cb7cf6dc4ebb9} 
+pygments.\+token.\+Token = \mbox{\hyperlink{classpygments_1_1token_1_1___token_type}{\+\_\+\+Token\+Type}}()}
+
+\Hypertarget{namespacepygments_1_1token_a1d014fe31a297c9944d9c3a3513e4f77}\index{pygments.token@{pygments.token}!Whitespace@{Whitespace}}
+\index{Whitespace@{Whitespace}!pygments.token@{pygments.token}}
+\doxysubsubsection{\texorpdfstring{Whitespace}{Whitespace}}
+{\footnotesize\ttfamily \label{namespacepygments_1_1token_a1d014fe31a297c9944d9c3a3513e4f77} 
+pygments.\+token.\+Whitespace = Text.\+Whitespace}
+

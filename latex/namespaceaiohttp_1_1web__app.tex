@@ -1,0 +1,124 @@
+\doxysection{aiohttp.\+web\+\_\+app Namespace Reference}
+\hypertarget{namespaceaiohttp_1_1web__app}{}\label{namespaceaiohttp_1_1web__app}\index{aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1web__app_1_1_application}{Application}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1web__app_1_1_cleanup_context}{Cleanup\+Context}}
+\item 
+class \mbox{\hyperlink{classaiohttp_1_1web__app_1_1_cleanup_error}{Cleanup\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_request}{Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceaiohttp_1_1web__app_afcdec0b48d358020ba27756214b13500}{\+\_\+build\+\_\+middlewares}} (Handler handler, Tuple\mbox{[}"{}Application"{},...\mbox{]} apps)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespaceaiohttp_1_1web__app_a12eb4c6bc85b097f6fe477d982f9260b}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = ("{}Application"{}, "{}Cleanup\+Error"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a56ca7a1de0a312e7110ffcf687f8b788}{\+\_\+\+App\+Signal}} = \mbox{\hyperlink{classaiosignal_1_1_signal}{Signal}}\mbox{[}"{}Application"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a3bbee74e9732cc3d0ad7230b9c1b40fb}{\+\_\+\+Resp\+Prepare\+Signal}} = \mbox{\hyperlink{classaiosignal_1_1_signal}{Signal}}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_request}{Request}}, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a7230645b5ba0ae6eb75f76116d1546f2}{\+\_\+\+Middlewares}} = \mbox{\hyperlink{classfrozenlist_1_1_frozen_list}{Frozen\+List}}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1typedefs_1_1_middleware}{Middleware}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a81b3efc712209f71322c230dbb9ee232}{\+\_\+\+Middlewares\+Handlers}} = Optional\mbox{[}Sequence\mbox{[}Tuple\mbox{[}\mbox{\hyperlink{classaiohttp_1_1typedefs_1_1_middleware}{Middleware}}, bool\mbox{]}\mbox{]}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a14178c99167ef3ade8f4ddf67b97f4e5}{\+\_\+\+Subapps}} = List\mbox{[}"{}Application"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a910dd0c4714175a9271c8ff6c077bc8c}{\+\_\+T}} = Type\+Var("{}\+\_\+\+T"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_af28b83e30fef7abe02f8e1978f6678c1}{\+\_\+U}} = Type\+Var("{}\+\_\+\+U"{})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a69a3adf2ccbb15879d60d78bba2fb244}{\+\_\+\+Resource}} = Type\+Var("{}\+\_\+\+Resource"{}, bound=\mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource}{Abstract\+Resource}})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a3b558905c521a42eee84ac5c6f201f3c}{\+\_\+cached\+\_\+build\+\_\+middleware}} = lru\+\_\+cache(maxsize=1024)(\mbox{\hyperlink{namespaceaiohttp_1_1web__app_afcdec0b48d358020ba27756214b13500}{\+\_\+build\+\_\+middlewares}})
+\item 
+\mbox{\hyperlink{namespaceaiohttp_1_1web__app_a52b15f0de55306f103068b8df0b428d5}{\+\_\+\+Cleanup\+Context\+Base}} = \mbox{\hyperlink{classfrozenlist_1_1_frozen_list}{Frozen\+List}}\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__app_1_1_application}{Application}}\mbox{]}, Async\+Iterator\mbox{[}None\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceaiohttp_1_1web__app_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceaiohttp_1_1web__app_afcdec0b48d358020ba27756214b13500}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_build\_middlewares@{\_build\_middlewares}}
+\index{\_build\_middlewares@{\_build\_middlewares}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_build\_middlewares()}{\_build\_middlewares()}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_afcdec0b48d358020ba27756214b13500} 
+ Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_request}{Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\mbox{]} aiohttp.\+web\+\_\+app.\+\_\+build\+\_\+middlewares (\begin{DoxyParamCaption}\item[{Handler}]{handler}{, }\item[{Tuple\mbox{[}"{}Application"{}, ...\mbox{]} }]{apps}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Apply middlewares to handler.\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceaiohttp_1_1web__app_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceaiohttp_1_1web__app_a12eb4c6bc85b097f6fe477d982f9260b}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a12eb4c6bc85b097f6fe477d982f9260b} 
+tuple aiohttp.\+web\+\_\+app.\+\_\+\+\_\+all\+\_\+\+\_\+ = ("{}Application"{}, "{}Cleanup\+Error"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a56ca7a1de0a312e7110ffcf687f8b788}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_AppSignal@{\_AppSignal}}
+\index{\_AppSignal@{\_AppSignal}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_AppSignal}{\_AppSignal}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a56ca7a1de0a312e7110ffcf687f8b788} 
+aiohttp.\+web\+\_\+app.\+\_\+\+App\+Signal = \mbox{\hyperlink{classaiosignal_1_1_signal}{Signal}}\mbox{[}"{}Application"{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a3b558905c521a42eee84ac5c6f201f3c}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_cached\_build\_middleware@{\_cached\_build\_middleware}}
+\index{\_cached\_build\_middleware@{\_cached\_build\_middleware}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_cached\_build\_middleware}{\_cached\_build\_middleware}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a3b558905c521a42eee84ac5c6f201f3c} 
+aiohttp.\+web\+\_\+app.\+\_\+cached\+\_\+build\+\_\+middleware = lru\+\_\+cache(maxsize=1024)(\mbox{\hyperlink{namespaceaiohttp_1_1web__app_afcdec0b48d358020ba27756214b13500}{\+\_\+build\+\_\+middlewares}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a52b15f0de55306f103068b8df0b428d5}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_CleanupContextBase@{\_CleanupContextBase}}
+\index{\_CleanupContextBase@{\_CleanupContextBase}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_CleanupContextBase}{\_CleanupContextBase}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a52b15f0de55306f103068b8df0b428d5} 
+aiohttp.\+web\+\_\+app.\+\_\+\+Cleanup\+Context\+Base = \mbox{\hyperlink{classfrozenlist_1_1_frozen_list}{Frozen\+List}}\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__app_1_1_application}{Application}}\mbox{]}, Async\+Iterator\mbox{[}None\mbox{]}\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a7230645b5ba0ae6eb75f76116d1546f2}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_Middlewares@{\_Middlewares}}
+\index{\_Middlewares@{\_Middlewares}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_Middlewares}{\_Middlewares}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a7230645b5ba0ae6eb75f76116d1546f2} 
+aiohttp.\+web\+\_\+app.\+\_\+\+Middlewares = \mbox{\hyperlink{classfrozenlist_1_1_frozen_list}{Frozen\+List}}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1typedefs_1_1_middleware}{Middleware}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a81b3efc712209f71322c230dbb9ee232}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_MiddlewaresHandlers@{\_MiddlewaresHandlers}}
+\index{\_MiddlewaresHandlers@{\_MiddlewaresHandlers}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_MiddlewaresHandlers}{\_MiddlewaresHandlers}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a81b3efc712209f71322c230dbb9ee232} 
+aiohttp.\+web\+\_\+app.\+\_\+\+Middlewares\+Handlers = Optional\mbox{[}Sequence\mbox{[}Tuple\mbox{[}\mbox{\hyperlink{classaiohttp_1_1typedefs_1_1_middleware}{Middleware}}, bool\mbox{]}\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a69a3adf2ccbb15879d60d78bba2fb244}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_Resource@{\_Resource}}
+\index{\_Resource@{\_Resource}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_Resource}{\_Resource}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a69a3adf2ccbb15879d60d78bba2fb244} 
+aiohttp.\+web\+\_\+app.\+\_\+\+Resource = Type\+Var("{}\+\_\+\+Resource"{}, bound=\mbox{\hyperlink{classaiohttp_1_1web__urldispatcher_1_1_abstract_resource}{Abstract\+Resource}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a3bbee74e9732cc3d0ad7230b9c1b40fb}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_RespPrepareSignal@{\_RespPrepareSignal}}
+\index{\_RespPrepareSignal@{\_RespPrepareSignal}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_RespPrepareSignal}{\_RespPrepareSignal}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a3bbee74e9732cc3d0ad7230b9c1b40fb} 
+aiohttp.\+web\+\_\+app.\+\_\+\+Resp\+Prepare\+Signal = \mbox{\hyperlink{classaiosignal_1_1_signal}{Signal}}\mbox{[}\mbox{\hyperlink{classaiohttp_1_1web__request_1_1_request}{Request}}, \mbox{\hyperlink{classaiohttp_1_1web__response_1_1_stream_response}{Stream\+Response}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a14178c99167ef3ade8f4ddf67b97f4e5}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_Subapps@{\_Subapps}}
+\index{\_Subapps@{\_Subapps}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_Subapps}{\_Subapps}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a14178c99167ef3ade8f4ddf67b97f4e5} 
+aiohttp.\+web\+\_\+app.\+\_\+\+Subapps = List\mbox{[}"{}Application"{}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_a910dd0c4714175a9271c8ff6c077bc8c}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_T@{\_T}}
+\index{\_T@{\_T}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_T}{\_T}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_a910dd0c4714175a9271c8ff6c077bc8c} 
+aiohttp.\+web\+\_\+app.\+\_\+T = Type\+Var("{}\+\_\+\+T"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceaiohttp_1_1web__app_af28b83e30fef7abe02f8e1978f6678c1}\index{aiohttp.web\_app@{aiohttp.web\_app}!\_U@{\_U}}
+\index{\_U@{\_U}!aiohttp.web\_app@{aiohttp.web\_app}}
+\doxysubsubsection{\texorpdfstring{\_U}{\_U}}
+{\footnotesize\ttfamily \label{namespaceaiohttp_1_1web__app_af28b83e30fef7abe02f8e1978f6678c1} 
+aiohttp.\+web\+\_\+app.\+\_\+U = Type\+Var("{}\+\_\+\+U"{})\hspace{0.3cm}{\ttfamily [protected]}}
+

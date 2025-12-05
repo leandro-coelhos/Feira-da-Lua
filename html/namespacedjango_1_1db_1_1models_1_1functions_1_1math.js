@@ -1,0 +1,26 @@
+var namespacedjango_1_1db_1_1models_1_1functions_1_1math =
+[
+    [ "Abs", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_abs.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_abs" ],
+    [ "ACos", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_cos.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_cos" ],
+    [ "ASin", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_sin.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_sin" ],
+    [ "ATan", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_tan.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_tan" ],
+    [ "ATan2", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_tan2.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_a_tan2" ],
+    [ "Ceil", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_ceil.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_ceil" ],
+    [ "Cos", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_cos.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_cos" ],
+    [ "Cot", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_cot.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_cot" ],
+    [ "Degrees", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_degrees.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_degrees" ],
+    [ "Exp", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_exp.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_exp" ],
+    [ "Floor", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_floor.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_floor" ],
+    [ "Ln", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_ln.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_ln" ],
+    [ "Log", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_log.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_log" ],
+    [ "Mod", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_mod.html", null ],
+    [ "Pi", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_pi.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_pi" ],
+    [ "Power", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_power.html", null ],
+    [ "Radians", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_radians.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_radians" ],
+    [ "Random", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_random.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_random" ],
+    [ "Round", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_round.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_round" ],
+    [ "Sign", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_sign.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_sign" ],
+    [ "Sin", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_sin.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_sin" ],
+    [ "Sqrt", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_sqrt.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_sqrt" ],
+    [ "Tan", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_tan.html", "classdjango_1_1db_1_1models_1_1functions_1_1math_1_1_tan" ]
+];

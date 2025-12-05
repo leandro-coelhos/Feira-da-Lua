@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Feira da Lua</title>
+  <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="titulo">Criar Conta</h1>
+      <p class="subtitulo">Escolha como deseja se cadastrar</p>
+
+      <div class="escolha-tipo">
+        <a href="{% url 'register_user' %}" class="escolha-card">
+          <div class="escolha-card-titulo">Cliente</div>
+          <div class="escolha-card-desc">Quero comprar produtos nas feiras</div>
+        </a>
+
+        <a href="{% url 'register_marketer' %}" class="escolha-card">
+          <div class="escolha-card-titulo">Feirante</div>
+          <div class="escolha-card-desc">Quero vender meus produtos</div>
+        </a>
+      </div>
+
+      <p class="texto-inferior">
+        Ja tem uma conta? <a href="{% url 'login' %}" class="link">Entrar</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+\doxysection{django.\+test.\+testcases.\+Live\+Server\+Thread Class Reference}
+\hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread}{}\label{classdjango_1_1test_1_1testcases_1_1_live_server_thread}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+Inheritance diagram for django.\+test.\+testcases.\+Live\+Server\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1test_1_1testcases_1_1_live_server_thread}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ae3d7b22cc089a1991df5bdf9620d4f4b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a65a166d1f8e088e2557d14bb896fbdb7}{host}}, \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a68b1589ac207da58beb13241c3e918e0}{static\+\_\+handler}}, \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3356809b6af6a0c35afdbe8ada21d789}{connections\+\_\+override}}=None, \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a56e96c3502841bb4aabcb8c3abce9836}{port}}=0)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3e2891b3de93573e00b90a21dcb0be47}{run}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_adc8afd6c8c80097132f7d72c395bd331}{terminate}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a65a166d1f8e088e2557d14bb896fbdb7}{host}} = host
+\item 
+int \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a56e96c3502841bb4aabcb8c3abce9836}{port}} = port
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ad0cd131ee529ae847a1803c37825db53}{is\+\_\+ready}} = threading.\+Event()
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a36376674ea33e0443d843d388838073f}{error}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a68b1589ac207da58beb13241c3e918e0}{static\+\_\+handler}} = static\+\_\+handler
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3356809b6af6a0c35afdbe8ada21d789}{connections\+\_\+override}} = connections\+\_\+override
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3e2d084f5c1b632a76e816d2f3edfcf8}{httpd}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ab450411407b86b2ba8a47d63ee1d8196}{server\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_threaded_w_s_g_i_server}{Threaded\+WSGIServer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a6c7f14fa15aaa838908f0293418bcf4a}{\+\_\+create\+\_\+server}} (self, \mbox{\hyperlink{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3356809b6af6a0c35afdbe8ada21d789}{connections\+\_\+override}}=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Thread for running a live HTTP server while the tests are running.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ae3d7b22cc089a1991df5bdf9620d4f4b}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ae3d7b22cc089a1991df5bdf9620d4f4b} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{host}{, }\item[{}]{static\+\_\+handler}{, }\item[{}]{connections\+\_\+override}{ = {\ttfamily None}, }\item[{}]{port}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a6c7f14fa15aaa838908f0293418bcf4a}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!\_create\_server@{\_create\_server}}
+\index{\_create\_server@{\_create\_server}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{\_create\_server()}{\_create\_server()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a6c7f14fa15aaa838908f0293418bcf4a} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+\_\+create\+\_\+server (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{connections\+\_\+override}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3e2891b3de93573e00b90a21dcb0be47}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!run@{run}}
+\index{run@{run}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3e2891b3de93573e00b90a21dcb0be47} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set up the live server and databases, and then loop over handling
+HTTP requests.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_adc8afd6c8c80097132f7d72c395bd331}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!terminate@{terminate}}
+\index{terminate@{terminate}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_adc8afd6c8c80097132f7d72c395bd331} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+terminate (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3356809b6af6a0c35afdbe8ada21d789}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!connections\_override@{connections\_override}}
+\index{connections\_override@{connections\_override}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{connections\_override}{connections\_override}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3356809b6af6a0c35afdbe8ada21d789} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+connections\+\_\+override = connections\+\_\+override}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a36376674ea33e0443d843d388838073f}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!error@{error}}
+\index{error@{error}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a36376674ea33e0443d843d388838073f} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+error = None}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a65a166d1f8e088e2557d14bb896fbdb7}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!host@{host}}
+\index{host@{host}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a65a166d1f8e088e2557d14bb896fbdb7} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+host = host}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3e2d084f5c1b632a76e816d2f3edfcf8}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!httpd@{httpd}}
+\index{httpd@{httpd}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{httpd}{httpd}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a3e2d084f5c1b632a76e816d2f3edfcf8} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+httpd}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.\_create\_server(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ connections\_override=self.connections\_override,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ad0cd131ee529ae847a1803c37825db53}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!is\_ready@{is\_ready}}
+\index{is\_ready@{is\_ready}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{is\_ready}{is\_ready}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ad0cd131ee529ae847a1803c37825db53} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+is\+\_\+ready = threading.\+Event()}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a56e96c3502841bb4aabcb8c3abce9836}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!port@{port}}
+\index{port@{port}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a56e96c3502841bb4aabcb8c3abce9836} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+port = port}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ab450411407b86b2ba8a47d63ee1d8196}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!server\_class@{server\_class}}
+\index{server\_class@{server\_class}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{server\_class}{server\_class}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_ab450411407b86b2ba8a47d63ee1d8196} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+server\+\_\+class = \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1_threaded_w_s_g_i_server}{Threaded\+WSGIServer}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a68b1589ac207da58beb13241c3e918e0}\index{django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}!static\_handler@{static\_handler}}
+\index{static\_handler@{static\_handler}!django.test.testcases.LiveServerThread@{django.test.testcases.LiveServerThread}}
+\doxysubsubsection{\texorpdfstring{static\_handler}{static\_handler}}
+{\footnotesize\ttfamily \label{classdjango_1_1test_1_1testcases_1_1_live_server_thread_a68b1589ac207da58beb13241c3e918e0} 
+django.\+test.\+testcases.\+Live\+Server\+Thread.\+static\+\_\+handler = static\+\_\+handler}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/test/\mbox{\hyperlink{testcases_8py}{testcases.\+py}}\end{DoxyCompactItemize}

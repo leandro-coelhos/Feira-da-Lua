@@ -1,0 +1,75 @@
+\doxysection{django.\+template.\+backends.\+django Namespace Reference}
+\hypertarget{namespacedjango_1_1template_1_1backends_1_1django}{}\label{namespacedjango_1_1template_1_1backends_1_1django}\index{django.template.backends.django@{django.template.backends.django}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1django_1_1_django_templates}{Django\+Templates}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1django_1_1_template}{Template}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1backends_1_1django_a647e0004e13f25adf2ecb791a608ee61}{copy\+\_\+exception}} (exc, backend=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1backends_1_1django_afb8364b72bf23f8b18ce771c8914bbea}{reraise}} (exc, backend)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1backends_1_1django_a8a82723374a2be2ba6db00959bf1a25e}{get\+\_\+template\+\_\+tag\+\_\+modules}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1backends_1_1django_a6a36ec2a1f333eed75ecbabbc2e2522c}{get\+\_\+installed\+\_\+libraries}} ()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_1_1backends_1_1django_a986bd3c40d453b1e1e1cbfa13967bd84}{get\+\_\+package\+\_\+libraries}} (pkg)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1template_1_1backends_1_1django_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1template_1_1backends_1_1django_a647e0004e13f25adf2ecb791a608ee61}\index{django.template.backends.django@{django.template.backends.django}!copy\_exception@{copy\_exception}}
+\index{copy\_exception@{copy\_exception}!django.template.backends.django@{django.template.backends.django}}
+\doxysubsubsection{\texorpdfstring{copy\_exception()}{copy\_exception()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1backends_1_1django_a647e0004e13f25adf2ecb791a608ee61} 
+django.\+template.\+backends.\+django.\+copy\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{exc}{, }\item[{}]{backend}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new TemplateDoesNotExist. Preserve its declared attributes and
+template debug data but discard __traceback__, __context__, and __cause__
+to make this object suitable for keeping around (in a cache, for example).
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1template_1_1backends_1_1django_a6a36ec2a1f333eed75ecbabbc2e2522c}\index{django.template.backends.django@{django.template.backends.django}!get\_installed\_libraries@{get\_installed\_libraries}}
+\index{get\_installed\_libraries@{get\_installed\_libraries}!django.template.backends.django@{django.template.backends.django}}
+\doxysubsubsection{\texorpdfstring{get\_installed\_libraries()}{get\_installed\_libraries()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1backends_1_1django_a6a36ec2a1f333eed75ecbabbc2e2522c} 
+django.\+template.\+backends.\+django.\+get\+\_\+installed\+\_\+libraries (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the built-in template tag libraries and those from installed
+applications. Libraries are stored in a dictionary where keys are the
+individual module names, not the full module paths. Example:
+django.templatetags.i18n is stored as i18n.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1template_1_1backends_1_1django_a986bd3c40d453b1e1e1cbfa13967bd84}\index{django.template.backends.django@{django.template.backends.django}!get\_package\_libraries@{get\_package\_libraries}}
+\index{get\_package\_libraries@{get\_package\_libraries}!django.template.backends.django@{django.template.backends.django}}
+\doxysubsubsection{\texorpdfstring{get\_package\_libraries()}{get\_package\_libraries()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1backends_1_1django_a986bd3c40d453b1e1e1cbfa13967bd84} 
+django.\+template.\+backends.\+django.\+get\+\_\+package\+\_\+libraries (\begin{DoxyParamCaption}\item[{}]{pkg}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recursively yield template tag libraries defined in submodules of a
+package.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1template_1_1backends_1_1django_a8a82723374a2be2ba6db00959bf1a25e}\index{django.template.backends.django@{django.template.backends.django}!get\_template\_tag\_modules@{get\_template\_tag\_modules}}
+\index{get\_template\_tag\_modules@{get\_template\_tag\_modules}!django.template.backends.django@{django.template.backends.django}}
+\doxysubsubsection{\texorpdfstring{get\_template\_tag\_modules()}{get\_template\_tag\_modules()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1backends_1_1django_a8a82723374a2be2ba6db00959bf1a25e} 
+django.\+template.\+backends.\+django.\+get\+\_\+template\+\_\+tag\+\_\+modules (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield (module_name, module_path) pairs for all installed template tag
+libraries.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1template_1_1backends_1_1django_afb8364b72bf23f8b18ce771c8914bbea}\index{django.template.backends.django@{django.template.backends.django}!reraise@{reraise}}
+\index{reraise@{reraise}!django.template.backends.django@{django.template.backends.django}}
+\doxysubsubsection{\texorpdfstring{reraise()}{reraise()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1template_1_1backends_1_1django_afb8364b72bf23f8b18ce771c8914bbea} 
+django.\+template.\+backends.\+django.\+reraise (\begin{DoxyParamCaption}\item[{}]{exc}{, }\item[{}]{backend}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reraise TemplateDoesNotExist while maintaining template debug information.
+\end{DoxyVerb}
+ 

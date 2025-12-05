@@ -1,0 +1,207 @@
+\doxysection{django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client Class Reference}
+\hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client}{}\label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a24ce7c789770de77e920967bcf661f3c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, servers, serializer=None, pool\+\_\+class=None, parser\+\_\+class=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ad4ebb3c1fdf65da9748101b2a57e1fec}{get\+\_\+client}} (self, key=None, \texorpdfstring{$\ast$}{*}, write=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a38d58b9a92fa6243e62635c678251410}{add}} (self, key, value, timeout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aa437370e2a6efba9f9cdf9beb76611ea}{get}} (self, key, default)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a2cafaaab54553f9af5555d14eb41655b}{set}} (self, key, value, timeout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ae4a4f4894ce8eb26d5206534aab73238}{touch}} (self, key, timeout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ad2bd6bf0bc4e0d4f8c4bd84d472dd4ec}{delete}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af4be26527847131d227c17e30a1e107c}{get\+\_\+many}} (self, keys)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af657e74970dc9d85e28d843fb20b8a66}{has\+\_\+key}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a4061339c70451cc0d14e641415be6783}{incr}} (self, key, delta)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a30e82e84bf78742d50922c424f2ce2f8}{set\+\_\+many}} (self, data, timeout)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ab5496d7c852fb1ba43d638600a5992fd}{delete\+\_\+many}} (self, keys)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aeaa14fd87f6d60367334717b61ba5993}{clear}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aed2eb714adadebd3cd12e0e658d8428a}{\+\_\+get\+\_\+connection\+\_\+pool\+\_\+index}} (self, write)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a4a84e6e0cb2a900c615512ab41acebf6}{\+\_\+get\+\_\+connection\+\_\+pool}} (self, write)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a46e3d6ed5eedab484140ed786e7b5d1c}{\+\_\+lib}} = redis
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a36e0a9cfeda309fcb06671fbb17992c8}{\+\_\+servers}} = servers
+\item 
+dict \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a295d6dcff8b5f4ce49c04b67de4f04e2}{\+\_\+pools}} = \{\}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a82213f5f9f8af52f9ee81ec0ef4c73af}{\+\_\+client}} = self.\+\_\+lib.\+Redis
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af3913af027a10f57f9afe9c3914b7911}{\+\_\+pool\+\_\+class}} = pool\+\_\+class or self.\+\_\+lib.\+Connection\+Pool
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a952d1f539b1b27f662dc5c2f1ada9454}{\+\_\+serializer}} = serializer or \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_serializer}{Redis\+Serializer}}()
+\item 
+dict \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a74ba05e2af76a7cc1f0197803f2dffdc}{\+\_\+pool\+\_\+options}} = \{"{}parser\+\_\+class"{}\+: parser\+\_\+class, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a24ce7c789770de77e920967bcf661f3c}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a24ce7c789770de77e920967bcf661f3c} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{servers}{, }\item[{}]{serializer}{ = {\ttfamily None}, }\item[{}]{pool\+\_\+class}{ = {\ttfamily None}, }\item[{}]{parser\+\_\+class}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a4a84e6e0cb2a900c615512ab41acebf6}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_get\_connection\_pool@{\_get\_connection\_pool}}
+\index{\_get\_connection\_pool@{\_get\_connection\_pool}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_get\_connection\_pool()}{\_get\_connection\_pool()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a4a84e6e0cb2a900c615512ab41acebf6} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+get\+\_\+connection\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{write}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aed2eb714adadebd3cd12e0e658d8428a}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_get\_connection\_pool\_index@{\_get\_connection\_pool\_index}}
+\index{\_get\_connection\_pool\_index@{\_get\_connection\_pool\_index}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_get\_connection\_pool\_index()}{\_get\_connection\_pool\_index()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aed2eb714adadebd3cd12e0e658d8428a} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+get\+\_\+connection\+\_\+pool\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{write}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a38d58b9a92fa6243e62635c678251410}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!add@{add}}
+\index{add@{add}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a38d58b9a92fa6243e62635c678251410} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{timeout}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aeaa14fd87f6d60367334717b61ba5993}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!clear@{clear}}
+\index{clear@{clear}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aeaa14fd87f6d60367334717b61ba5993} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ad2bd6bf0bc4e0d4f8c4bd84d472dd4ec}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!delete@{delete}}
+\index{delete@{delete}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ad2bd6bf0bc4e0d4f8c4bd84d472dd4ec} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+delete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ab5496d7c852fb1ba43d638600a5992fd}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!delete\_many@{delete\_many}}
+\index{delete\_many@{delete\_many}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{delete\_many()}{delete\_many()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ab5496d7c852fb1ba43d638600a5992fd} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+delete\+\_\+many (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{keys}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aa437370e2a6efba9f9cdf9beb76611ea}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!get@{get}}
+\index{get@{get}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_aa437370e2a6efba9f9cdf9beb76611ea} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ad4ebb3c1fdf65da9748101b2a57e1fec}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!get\_client@{get\_client}}
+\index{get\_client@{get\_client}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{get\_client()}{get\_client()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ad4ebb3c1fdf65da9748101b2a57e1fec} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+get\+\_\+client (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{write}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af4be26527847131d227c17e30a1e107c}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!get\_many@{get\_many}}
+\index{get\_many@{get\_many}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{get\_many()}{get\_many()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af4be26527847131d227c17e30a1e107c} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+get\+\_\+many (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{keys}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af657e74970dc9d85e28d843fb20b8a66}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!has\_key@{has\_key}}
+\index{has\_key@{has\_key}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{has\_key()}{has\_key()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af657e74970dc9d85e28d843fb20b8a66} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+has\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a4061339c70451cc0d14e641415be6783}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!incr@{incr}}
+\index{incr@{incr}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{incr()}{incr()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a4061339c70451cc0d14e641415be6783} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+incr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{delta}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a2cafaaab54553f9af5555d14eb41655b}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!set@{set}}
+\index{set@{set}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a2cafaaab54553f9af5555d14eb41655b} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{timeout}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a30e82e84bf78742d50922c424f2ce2f8}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!set\_many@{set\_many}}
+\index{set\_many@{set\_many}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{set\_many()}{set\_many()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a30e82e84bf78742d50922c424f2ce2f8} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+set\+\_\+many (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{, }\item[{}]{timeout}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ae4a4f4894ce8eb26d5206534aab73238}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!touch@{touch}}
+\index{touch@{touch}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{touch()}{touch()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_ae4a4f4894ce8eb26d5206534aab73238} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+touch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{timeout}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a82213f5f9f8af52f9ee81ec0ef4c73af}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_client@{\_client}}
+\index{\_client@{\_client}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_client}{\_client}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a82213f5f9f8af52f9ee81ec0ef4c73af} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+client = self.\+\_\+lib.\+Redis\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a46e3d6ed5eedab484140ed786e7b5d1c}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_lib@{\_lib}}
+\index{\_lib@{\_lib}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_lib}{\_lib}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a46e3d6ed5eedab484140ed786e7b5d1c} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+lib = redis\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af3913af027a10f57f9afe9c3914b7911}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_pool\_class@{\_pool\_class}}
+\index{\_pool\_class@{\_pool\_class}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_pool\_class}{\_pool\_class}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_af3913af027a10f57f9afe9c3914b7911} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+pool\+\_\+class = pool\+\_\+class or self.\+\_\+lib.\+Connection\+Pool\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a74ba05e2af76a7cc1f0197803f2dffdc}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_pool\_options@{\_pool\_options}}
+\index{\_pool\_options@{\_pool\_options}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_pool\_options}{\_pool\_options}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a74ba05e2af76a7cc1f0197803f2dffdc} 
+dict django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+pool\+\_\+options = \{"{}parser\+\_\+class"{}\+: parser\+\_\+class, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a295d6dcff8b5f4ce49c04b67de4f04e2}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_pools@{\_pools}}
+\index{\_pools@{\_pools}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_pools}{\_pools}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a295d6dcff8b5f4ce49c04b67de4f04e2} 
+dict django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+pools = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a952d1f539b1b27f662dc5c2f1ada9454}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_serializer@{\_serializer}}
+\index{\_serializer@{\_serializer}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_serializer}{\_serializer}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a952d1f539b1b27f662dc5c2f1ada9454} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+serializer = serializer or \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_serializer}{Redis\+Serializer}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a36e0a9cfeda309fcb06671fbb17992c8}\index{django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}!\_servers@{\_servers}}
+\index{\_servers@{\_servers}!django.core.cache.backends.redis.RedisCacheClient@{django.core.cache.backends.redis.RedisCacheClient}}
+\doxysubsubsection{\texorpdfstring{\_servers}{\_servers}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1cache_1_1backends_1_1redis_1_1_redis_cache_client_a36e0a9cfeda309fcb06671fbb17992c8} 
+django.\+core.\+cache.\+backends.\+redis.\+Redis\+Cache\+Client.\+\_\+servers = servers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/cache/backends/\mbox{\hyperlink{redis_8py}{redis.\+py}}\end{DoxyCompactItemize}

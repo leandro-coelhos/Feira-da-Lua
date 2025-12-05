@@ -1,0 +1,258 @@
+\doxysection{django.\+db.\+migrations.\+graph.\+Migration\+Graph Class Reference}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph}{}\label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a160dd5680f3379cd0c974683d57081db}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a0901e33a9bf43ca56f44f6c58d08fbf5}{add\+\_\+node}} (self, key, migration)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1204a0f2fe71c237b3d9acf01d3cbbac}{add\+\_\+dummy\+\_\+node}} (self, key, origin, error\+\_\+message)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_aadcf1e9f643124f8ccd3ba35b7bac539}{add\+\_\+dependency}} (self, migration, child, parent, skip\+\_\+validation=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a6c0e085ebacfda60d4562f28d168d3f3}{remove\+\_\+replaced\+\_\+nodes}} (self, replacement, replaced)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_aa6b16c08c74b3a08451247b8e2ec702b}{remove\+\_\+replacement\+\_\+node}} (self, replacement, replaced)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a8d35701ec2699bd2ee365cdb482fedca}{validate\+\_\+consistency}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a09546f517130948a4aab36ab03f77b7e}{forwards\+\_\+plan}} (self, target)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a81112dcaac2ad6350e8e8c50b197d4f5}{backwards\+\_\+plan}} (self, target)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a2ed6573f91898fd98ebd11fef49330b8}{iterative\+\_\+dfs}} (self, start, forwards=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_acf1fab46b3a97620c709fee0f1f599a3}{root\+\_\+nodes}} (self, app=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_af11675a65131e70af3e5b9cca556310f}{leaf\+\_\+nodes}} (self, app=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a7b9fdaca5d86cf3e5957a37e900a15dd}{ensure\+\_\+not\+\_\+cyclic}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a566ee15250a42cc87ed9815fe2e99448}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a31fabe7752458982ca894d06a3e0236e}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a631a47545010f06b3d9a60f2e84c968e}{make\+\_\+state}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1f0cba1a7241144fdfe754e3af087fe8}{nodes}}=None, at\+\_\+end=True, real\+\_\+apps=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a0fe3d4d608540f0bed5a1c75ad25afbd}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a455a8c8a3ce67d8ec30290ee53394d16}{node\+\_\+map}} = \{\}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1f0cba1a7241144fdfe754e3af087fe8}{nodes}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a6c85969cb214b50398fb199d0fc53540}{\+\_\+nodes\+\_\+and\+\_\+edges}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a3dc1a5d0f4ef6554a6ca422887632ce9}{\+\_\+generate\+\_\+plan}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1f0cba1a7241144fdfe754e3af087fe8}{nodes}}, at\+\_\+end)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represent the digraph of all migrations in a project.
+
+Each migration is a node, and each dependency is an edge. There are
+no implicit dependencies between numbered migrations - the numbering is
+merely a convention to aid file listing. Every new numbered migration
+has a declared dependency to the previous number, meaning that VCS
+branch merges can be detected and resolved.
+
+Migrations files can be marked as replacing another set of migrations -
+this is to support the "squash" feature. The graph handler isn't responsible
+for these; instead, the code to load them in here should examine the
+migration files and if the replaced migrations are all either unapplied
+or not present, it should ignore the replaced ones, load in just the
+replacing migration, and repoint any dependencies that pointed to the
+replaced migrations to point to the replacing one.
+
+A node should be a tuple: (app_path, migration_name). The tree special-cases
+things within an app - namely, root nodes and leaf nodes ignore dependencies
+to other apps.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a160dd5680f3379cd0c974683d57081db}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a160dd5680f3379cd0c974683d57081db} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a0fe3d4d608540f0bed5a1c75ad25afbd}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a0fe3d4d608540f0bed5a1c75ad25afbd} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a31fabe7752458982ca894d06a3e0236e}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a31fabe7752458982ca894d06a3e0236e} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a566ee15250a42cc87ed9815fe2e99448}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a566ee15250a42cc87ed9815fe2e99448} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a3dc1a5d0f4ef6554a6ca422887632ce9}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!\_generate\_plan@{\_generate\_plan}}
+\index{\_generate\_plan@{\_generate\_plan}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{\_generate\_plan()}{\_generate\_plan()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a3dc1a5d0f4ef6554a6ca422887632ce9} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+\_\+generate\+\_\+plan (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nodes}{, }\item[{}]{at\+\_\+end}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a6c85969cb214b50398fb199d0fc53540}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!\_nodes\_and\_edges@{\_nodes\_and\_edges}}
+\index{\_nodes\_and\_edges@{\_nodes\_and\_edges}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{\_nodes\_and\_edges()}{\_nodes\_and\_edges()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a6c85969cb214b50398fb199d0fc53540} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+\_\+nodes\+\_\+and\+\_\+edges (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_aadcf1e9f643124f8ccd3ba35b7bac539}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!add\_dependency@{add\_dependency}}
+\index{add\_dependency@{add\_dependency}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{add\_dependency()}{add\_dependency()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_aadcf1e9f643124f8ccd3ba35b7bac539} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+add\+\_\+dependency (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{migration}{, }\item[{}]{child}{, }\item[{}]{parent}{, }\item[{}]{skip\+\_\+validation}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This may create dummy nodes if they don't yet exist. If
+`skip_validation=True`, validate_consistency() should be called
+afterward.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1204a0f2fe71c237b3d9acf01d3cbbac}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!add\_dummy\_node@{add\_dummy\_node}}
+\index{add\_dummy\_node@{add\_dummy\_node}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{add\_dummy\_node()}{add\_dummy\_node()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1204a0f2fe71c237b3d9acf01d3cbbac} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+add\+\_\+dummy\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{origin}{, }\item[{}]{error\+\_\+message}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a0901e33a9bf43ca56f44f6c58d08fbf5}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!add\_node@{add\_node}}
+\index{add\_node@{add\_node}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{add\_node()}{add\_node()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a0901e33a9bf43ca56f44f6c58d08fbf5} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+add\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{migration}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a81112dcaac2ad6350e8e8c50b197d4f5}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!backwards\_plan@{backwards\_plan}}
+\index{backwards\_plan@{backwards\_plan}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{backwards\_plan()}{backwards\_plan()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a81112dcaac2ad6350e8e8c50b197d4f5} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+backwards\+\_\+plan (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{target}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a node, return a list of which dependent nodes (dependencies)
+must be unapplied, ending with the node itself. This is the list you
+would follow if removing the migrations from a database.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a7b9fdaca5d86cf3e5957a37e900a15dd}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!ensure\_not\_cyclic@{ensure\_not\_cyclic}}
+\index{ensure\_not\_cyclic@{ensure\_not\_cyclic}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{ensure\_not\_cyclic()}{ensure\_not\_cyclic()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a7b9fdaca5d86cf3e5957a37e900a15dd} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+ensure\+\_\+not\+\_\+cyclic (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a09546f517130948a4aab36ab03f77b7e}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!forwards\_plan@{forwards\_plan}}
+\index{forwards\_plan@{forwards\_plan}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{forwards\_plan()}{forwards\_plan()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a09546f517130948a4aab36ab03f77b7e} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+forwards\+\_\+plan (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{target}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a node, return a list of which previous nodes (dependencies) must
+be applied, ending with the node itself. This is the list you would
+follow if applying the migrations to a database.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a2ed6573f91898fd98ebd11fef49330b8}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!iterative\_dfs@{iterative\_dfs}}
+\index{iterative\_dfs@{iterative\_dfs}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{iterative\_dfs()}{iterative\_dfs()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a2ed6573f91898fd98ebd11fef49330b8} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+iterative\+\_\+dfs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{forwards}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterative depth-first search for finding dependencies.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_af11675a65131e70af3e5b9cca556310f}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!leaf\_nodes@{leaf\_nodes}}
+\index{leaf\_nodes@{leaf\_nodes}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{leaf\_nodes()}{leaf\_nodes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_af11675a65131e70af3e5b9cca556310f} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+leaf\+\_\+nodes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return all leaf nodes - that is, nodes with no dependents in their app.
+These are the "most current" version of an app's schema.
+Having more than one per app is technically an error, but one that
+gets handled further up, in the interactive command - it's usually the
+result of a VCS merge and needs some user input.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a631a47545010f06b3d9a60f2e84c968e}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!make\_state@{make\_state}}
+\index{make\_state@{make\_state}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{make\_state()}{make\_state()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a631a47545010f06b3d9a60f2e84c968e} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+make\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nodes}{ = {\ttfamily None}, }\item[{}]{at\+\_\+end}{ = {\ttfamily True}, }\item[{}]{real\+\_\+apps}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a migration node or nodes, return a complete ProjectState for it.
+If at_end is False, return the state before the migration has run.
+If nodes is not provided, return the overall most current project state.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a6c0e085ebacfda60d4562f28d168d3f3}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!remove\_replaced\_nodes@{remove\_replaced\_nodes}}
+\index{remove\_replaced\_nodes@{remove\_replaced\_nodes}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{remove\_replaced\_nodes()}{remove\_replaced\_nodes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a6c0e085ebacfda60d4562f28d168d3f3} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+remove\+\_\+replaced\+\_\+nodes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{replacement}{, }\item[{}]{replaced}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove each of the `replaced` nodes (when they exist). Any
+dependencies that were referencing them are changed to reference the
+`replacement` node instead.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_aa6b16c08c74b3a08451247b8e2ec702b}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!remove\_replacement\_node@{remove\_replacement\_node}}
+\index{remove\_replacement\_node@{remove\_replacement\_node}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{remove\_replacement\_node()}{remove\_replacement\_node()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_aa6b16c08c74b3a08451247b8e2ec702b} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+remove\+\_\+replacement\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{replacement}{, }\item[{}]{replaced}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The inverse operation to `remove_replaced_nodes`. Almost. Remove the
+replacement node `replacement` and remap its child nodes to `replaced`
+- the list of nodes it would have replaced. Don't remap its parent
+nodes as they are expected to be correct already.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_acf1fab46b3a97620c709fee0f1f599a3}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!root\_nodes@{root\_nodes}}
+\index{root\_nodes@{root\_nodes}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{root\_nodes()}{root\_nodes()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_acf1fab46b3a97620c709fee0f1f599a3} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+root\+\_\+nodes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{app}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return all root nodes - that is, nodes with no dependencies inside
+their app. These are the starting point for an app.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a8d35701ec2699bd2ee365cdb482fedca}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!validate\_consistency@{validate\_consistency}}
+\index{validate\_consistency@{validate\_consistency}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{validate\_consistency()}{validate\_consistency()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a8d35701ec2699bd2ee365cdb482fedca} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+validate\+\_\+consistency (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure there are no dummy nodes remaining in the graph.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a455a8c8a3ce67d8ec30290ee53394d16}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!node\_map@{node\_map}}
+\index{node\_map@{node\_map}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{node\_map}{node\_map}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a455a8c8a3ce67d8ec30290ee53394d16} 
+dict django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+node\+\_\+map = \{\}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1f0cba1a7241144fdfe754e3af087fe8}\index{django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}!nodes@{nodes}}
+\index{nodes@{nodes}!django.db.migrations.graph.MigrationGraph@{django.db.migrations.graph.MigrationGraph}}
+\doxysubsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1migrations_1_1graph_1_1_migration_graph_a1f0cba1a7241144fdfe754e3af087fe8} 
+django.\+db.\+migrations.\+graph.\+Migration\+Graph.\+nodes = \{\}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/migrations/\mbox{\hyperlink{django_2db_2migrations_2graph_8py}{graph.\+py}}\end{DoxyCompactItemize}

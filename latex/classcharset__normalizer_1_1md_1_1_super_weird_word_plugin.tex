@@ -1,0 +1,180 @@
+\doxysection{charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin Class Reference}
+\hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin}{}\label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+Inheritance diagram for charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ade099380132cf2793dc78b94cf72b5f3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ab33e20d3128fd17930a97838134ffe24}{eligible}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ad619d1ea25d7dca135e92a1393555961}{feed}} (self, str character)
+\item 
+None \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a3d18dd2c6738673bbaa40a33c47effea}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4d8594604ece7ee400b21b6ba15c993a}{ratio}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ae9c5662ea0acc6b1eab10571aca527d8}{\+\_\+word\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a9c1c1ea5141052fb786b8a6335c4ffd3}{\+\_\+bad\+\_\+word\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a307eb9bc6097c8b0f2cda7c4d12e3dcc}{\+\_\+foreign\+\_\+long\+\_\+count}} = 0
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a9016d6794094edb446a6c98bccd21623}{\+\_\+is\+\_\+current\+\_\+word\+\_\+bad}} = False
+\item 
+bool \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a465ed28f52dedac4b5b5d4f85bd70f21}{\+\_\+foreign\+\_\+long\+\_\+watch}} = False
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4a3a264af0c4b26e993705a262bdac0d}{\+\_\+character\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a81713a10b5b6e39df488bd00ee7aa39e}{\+\_\+bad\+\_\+character\+\_\+count}} = 0
+\item 
+str \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a93bedbc75cb047bc25a878171ba40083}{\+\_\+buffer}} = "{}"{}
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a72677829510c9d95cf5a11f33d41b4f5}{\+\_\+buffer\+\_\+accent\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a47a526a4b10bdde0bfad3e3b88da21ed}{\+\_\+buffer\+\_\+glyph\+\_\+count}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ade099380132cf2793dc78b94cf72b5f3}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ade099380132cf2793dc78b94cf72b5f3} 
+ None charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ab33e20d3128fd17930a97838134ffe24}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!eligible@{eligible}}
+\index{eligible@{eligible}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{eligible()}{eligible()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ab33e20d3128fd17930a97838134ffe24} 
+ bool charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+eligible (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{character}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if given character should be fed in.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a6c90e20b89fb11f27a99c4bb1b7b4aeb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ad619d1ea25d7dca135e92a1393555961}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!feed@{feed}}
+\index{feed@{feed}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ad619d1ea25d7dca135e92a1393555961} 
+ None charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+feed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{character}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a1d7b6ef49fad244c8841e7dacf4a1bdb}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4d8594604ece7ee400b21b6ba15c993a}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!ratio@{ratio}}
+\index{ratio@{ratio}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4d8594604ece7ee400b21b6ba15c993a} 
+ float charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+ratio (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_ac8f7c272b946d769ca5d6c478b6dd8a1}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a3d18dd2c6738673bbaa40a33c47effea}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!reset@{reset}}
+\index{reset@{reset}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a3d18dd2c6738673bbaa40a33c47effea} 
+ None charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permit to reset the plugin to the initial state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcharset__normalizer_1_1md_1_1_mess_detector_plugin_a82ba1b462302d9374e38614cd8a918b9}{charset\+\_\+normalizer.\+md.\+Mess\+Detector\+Plugin}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a81713a10b5b6e39df488bd00ee7aa39e}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_bad\_character\_count@{\_bad\_character\_count}}
+\index{\_bad\_character\_count@{\_bad\_character\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_bad\_character\_count}{\_bad\_character\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a81713a10b5b6e39df488bd00ee7aa39e} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+bad\+\_\+character\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a9c1c1ea5141052fb786b8a6335c4ffd3}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_bad\_word\_count@{\_bad\_word\_count}}
+\index{\_bad\_word\_count@{\_bad\_word\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_bad\_word\_count}{\_bad\_word\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a9c1c1ea5141052fb786b8a6335c4ffd3} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+bad\+\_\+word\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a93bedbc75cb047bc25a878171ba40083}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_buffer@{\_buffer}}
+\index{\_buffer@{\_buffer}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_buffer}{\_buffer}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a93bedbc75cb047bc25a878171ba40083} 
+charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+buffer = "{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a72677829510c9d95cf5a11f33d41b4f5}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_buffer\_accent\_count@{\_buffer\_accent\_count}}
+\index{\_buffer\_accent\_count@{\_buffer\_accent\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_buffer\_accent\_count}{\_buffer\_accent\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a72677829510c9d95cf5a11f33d41b4f5} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+buffer\+\_\+accent\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a47a526a4b10bdde0bfad3e3b88da21ed}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_buffer\_glyph\_count@{\_buffer\_glyph\_count}}
+\index{\_buffer\_glyph\_count@{\_buffer\_glyph\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_buffer\_glyph\_count}{\_buffer\_glyph\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a47a526a4b10bdde0bfad3e3b88da21ed} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+buffer\+\_\+glyph\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4a3a264af0c4b26e993705a262bdac0d}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_character\_count@{\_character\_count}}
+\index{\_character\_count@{\_character\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_character\_count}{\_character\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a4a3a264af0c4b26e993705a262bdac0d} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+character\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a307eb9bc6097c8b0f2cda7c4d12e3dcc}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_foreign\_long\_count@{\_foreign\_long\_count}}
+\index{\_foreign\_long\_count@{\_foreign\_long\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_foreign\_long\_count}{\_foreign\_long\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a307eb9bc6097c8b0f2cda7c4d12e3dcc} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+foreign\+\_\+long\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a465ed28f52dedac4b5b5d4f85bd70f21}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_foreign\_long\_watch@{\_foreign\_long\_watch}}
+\index{\_foreign\_long\_watch@{\_foreign\_long\_watch}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_foreign\_long\_watch}{\_foreign\_long\_watch}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a465ed28f52dedac4b5b5d4f85bd70f21} 
+bool charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+foreign\+\_\+long\+\_\+watch = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a9016d6794094edb446a6c98bccd21623}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_is\_current\_word\_bad@{\_is\_current\_word\_bad}}
+\index{\_is\_current\_word\_bad@{\_is\_current\_word\_bad}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_is\_current\_word\_bad}{\_is\_current\_word\_bad}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_a9016d6794094edb446a6c98bccd21623} 
+bool charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+is\+\_\+current\+\_\+word\+\_\+bad = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ae9c5662ea0acc6b1eab10571aca527d8}\index{charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}!\_word\_count@{\_word\_count}}
+\index{\_word\_count@{\_word\_count}!charset\_normalizer.md.SuperWeirdWordPlugin@{charset\_normalizer.md.SuperWeirdWordPlugin}}
+\doxysubsubsection{\texorpdfstring{\_word\_count}{\_word\_count}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_super_weird_word_plugin_ae9c5662ea0acc6b1eab10571aca527d8} 
+int charset\+\_\+normalizer.\+md.\+Super\+Weird\+Word\+Plugin.\+\_\+word\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/charset\+\_\+normalizer/\mbox{\hyperlink{md_8py}{md.\+py}}\end{DoxyCompactItemize}

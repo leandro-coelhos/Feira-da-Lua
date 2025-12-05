@@ -1,0 +1,382 @@
+\doxysection{urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper Class Reference}
+\hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper}{}\label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+Inheritance diagram for urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_acfec835b8323f54ab1dd96e2e22d6a86}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_response}{Emscripten\+Response}} internal\+\_\+response, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a18ba1fc6b22881c5c47f803a8ca553b7}{url}}=None, \mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_connection}{Base\+HTTPConnection}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_s_connection}{Base\+HTTPSConnection}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a750d2f0bfee740b0583634ac1d5f9660}{connection}}=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a18ba1fc6b22881c5c47f803a8ca553b7}{url}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_abcf68c33abc0642e9a48b128a3037e0d}{url}} (self, str\texorpdfstring{$\vert$}{|}None url)
+\item 
+\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_connection}{Base\+HTTPConnection}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_s_connection}{Base\+HTTPSConnection}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a750d2f0bfee740b0583634ac1d5f9660}{connection}} (self)
+\item 
+\mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a2ff683ccb4e88aa06fdfcfb709fd4351}{retries}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a1e23bb0ca7a7455054415382220b1333}{retries}} (self, \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}}\texorpdfstring{$\vert$}{|}None retries)
+\item 
+typing.\+Generator\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a5c0cf61ac62dd8101a4f427494398e4b}{stream}} (self, int\texorpdfstring{$\vert$}{|}None amt=2 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}}=None)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a45568d24f267905d8600f249afb0e13e}{read}} (self, int\texorpdfstring{$\vert$}{|}None amt=None, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}}=None, bool cache\+\_\+content=False)
+\item 
+typing.\+Generator\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a9613a9914d38e764b8aba4c6ba2d7d96}{read\+\_\+chunked}} (self, int\texorpdfstring{$\vert$}{|}None amt=None, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}}=None)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a8ab7c66af2f3571b6eeacfa60812ac42}{release\+\_\+conn}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aa0b99bdddb649261a20a9cb375c4ef29}{drain\+\_\+conn}} (self)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_ad03a58519080fa0d6826185c0cbdbc75}{data}} (self)
+\item 
+typing.\+Any \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_ad6176119567c5be3bbf3a9fa3a5360a1}{json}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a1e23bbbe59de6a8138011979c0a155ec}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{urllib3.\+response.\+Base\+HTTPResponse}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a710dabce590c45a6e8f10822d34a3701}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, typing.\+Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}typing.\+Mapping\mbox{[}bytes, bytes\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af53aa00777ff500268c8adb6e2fe0dc6}{headers}}=None, int \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a59e01214a51f899d9ada2bc3b5f5ada3}{status}}, int \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_aeb314c050d086c868d0a165b6dab7e94}{version}}, str \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af1ff330f080d9efc0273422b072d0abd}{version\+\_\+string}}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a6d33724c8432f3df19a1fd4cfa85a9bf}{reason}}, bool \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}}, str\texorpdfstring{$\vert$}{|}None request\+\_\+url, \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af3b2c0ccae55d8aac14b6e4209d26f3f}{retries}}=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None\texorpdfstring{$\vert$}{|}typing.\+Literal\mbox{[}False\mbox{]} \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_aba3dcc6513a624138792b1b4f27c5fbd}{get\+\_\+redirect\+\_\+location}} (self)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a25b624bbe87eb718af9ae2126debd4d6}{read1}} (self, int\texorpdfstring{$\vert$}{|}None amt=None, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}}=None)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ad37cf7de3e2b9918ab4d5c6539f02c6f}{shutdown}} (self)
+\item 
+int \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af6f6f444e9b914469d27788f892887f9}{readinto}} (self, bytearray b)
+\item 
+\mbox{\hyperlink{classurllib3_1_1__collections_1_1_h_t_t_p_header_dict}{HTTPHeader\+Dict}} \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ac04a25b5aa7be0d55b3a18aec2f5d2ab}{getheaders}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ab4d5c1b3e5004a2e5747cb07f12e5d7c}{getheader}} (self, str name, str\texorpdfstring{$\vert$}{|}None default=None)
+\item 
+\mbox{\hyperlink{classurllib3_1_1__collections_1_1_h_t_t_p_header_dict}{HTTPHeader\+Dict}} \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a593bd62fb400da7e34dfeecc2233eda7}{info}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a65386fb2d11b6180577f32bffd867a0d}{geturl}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a0d1b2935dc9b0a428ae6fd975ee5d32f}{length\+\_\+is\+\_\+certain}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{urllib3.\+response.\+Base\+HTTPResponse}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af53aa00777ff500268c8adb6e2fe0dc6}{headers}} = headers
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a59e01214a51f899d9ada2bc3b5f5ada3}{status}} = status
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_aeb314c050d086c868d0a165b6dab7e94}{version}} = version
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af1ff330f080d9efc0273422b072d0abd}{version\+\_\+string}} = version\+\_\+string
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a6d33724c8432f3df19a1fd4cfa85a9bf}{reason}} = reason
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}} = decode\+\_\+content
+\item 
+bool \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a3864905445d6bab578de4a7452ac9777}{chunked}} = False
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_acd96bd0957b2cb9e5619ba1815afbd51}{length\+\_\+remaining}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a6b745b207c663552248b69536645ddb2}{\+\_\+init\+\_\+length}} (self, str\texorpdfstring{$\vert$}{|}None request\+\_\+method)
+\item 
+typing.\+Generator\mbox{[}None\mbox{]} \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a7fbf7e9291ecd9a9cc2a911fa315b9cb}{\+\_\+error\+\_\+catcher}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{urllib3.\+response.\+Base\+HTTPResponse}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a5968ec8ee73bf0fb9596e712309a0cdf}{\+\_\+init\+\_\+decoder}} (self)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_abdf20c6e37586031a8934c548301808c}{\+\_\+decode}} (self, bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a975e27acdd91f017d4932062ae1e21b3}{data}}, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4a79fbfa71500aee996d1c632d61d46c}{decode\+\_\+content}}, bool flush\+\_\+decoder)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ad639a0705d4787b573b65d63d5d04feb}{\+\_\+flush\+\_\+decoder}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_afe14483b2c2460d993ba8322f34efc1e}{\+\_\+pool}} = None
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a3943c89760d2b4eb4e529bdae0a75468}{\+\_\+body}} = None
+\item 
+\mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aa4498d9834114893f36af8505442e13d}{\+\_\+response}} = internal\+\_\+response
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a0469013839bd5150c63d9465df4cc7ea}{\+\_\+url}} = \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a18ba1fc6b22881c5c47f803a8ca553b7}{url}}
+\item 
+\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_connection}{Base\+HTTPConnection}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_s_connection}{Base\+HTTPSConnection}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a352f9a40aa5ad2d3b753aa90ae972929}{\+\_\+connection}} = \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a750d2f0bfee740b0583634ac1d5f9660}{connection}}
+\item 
+bool \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aedd742bc4e319a8cc81bf269ab444102}{\+\_\+closed}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{urllib3.\+response.\+Base\+HTTPResponse}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a9ddc8b35134cfb254fd92785cdbe62cc}{\+\_\+has\+\_\+decoded\+\_\+content}} = False
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a8e0fd5f4d7ff80eb996d67f9081d31d8}{\+\_\+request\+\_\+url}} = request\+\_\+url
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_content_decoder}{Content\+Decoder}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a7959945a61c6dc0d5217d43bf5c1e704}{\+\_\+decoder}} = None
+\item 
+\mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ae9e994b774dca47382f5ce8cbf11a03d}{\+\_\+retries}} = \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af3b2c0ccae55d8aac14b6e4209d26f3f}{retries}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{urllib3.\+response.\+Base\+HTTPResponse}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ac8c28917c9738eb854fe54614b7d0df8}{CONTENT\+\_\+\+DECODERS}} = \mbox{[}"{}gzip"{}, "{}x-\/gzip"{}, "{}deflate"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a24e7cfb4c4a8a8c045ecf7010d65b7fd}{REDIRECT\+\_\+\+STATUSES}} = \mbox{[}301, 302, 303, 307, 308\mbox{]}
+\item 
+tuple \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a13c25c020d330eb6e64e96c44559c8ce}{DECODER\+\_\+\+ERROR\+\_\+\+CLASSES}} = (IOError, zlib.\+error)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_acfec835b8323f54ab1dd96e2e22d6a86}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_acfec835b8323f54ab1dd96e2e22d6a86} 
+urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_response}{Emscripten\+Response}}}]{internal\+\_\+response}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{url}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_connection}{Base\+HTTPConnection}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_s_connection}{Base\+HTTPSConnection}} \texorpdfstring{$\vert$}{|} None }]{connection}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a7fbf7e9291ecd9a9cc2a911fa315b9cb}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_error\_catcher@{\_error\_catcher}}
+\index{\_error\_catcher@{\_error\_catcher}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_error\_catcher()}{\_error\_catcher()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a7fbf7e9291ecd9a9cc2a911fa315b9cb} 
+ typing.\+Generator\mbox{[}None\mbox{]} urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+error\+\_\+catcher (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Catch Emscripten specific exceptions thrown by fetch.py,
+instead re-raising urllib3 variants, so that low-level exceptions
+are not leaked in the high-level api.
+
+On exit, release the connection back to the pool.
+\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a6b745b207c663552248b69536645ddb2}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_init\_length@{\_init\_length}}
+\index{\_init\_length@{\_init\_length}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_init\_length()}{\_init\_length()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a6b745b207c663552248b69536645ddb2} 
+ int \texorpdfstring{$\vert$}{|} None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+init\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{request\+\_\+method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a1e23bbbe59de6a8138011979c0a155ec}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!close@{close}}
+\index{close@{close}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a1e23bbbe59de6a8138011979c0a155ec} 
+ None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a999b39580f0d11828f3a784b3a2ff042}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a750d2f0bfee740b0583634ac1d5f9660}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!connection@{connection}}
+\index{connection@{connection}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a750d2f0bfee740b0583634ac1d5f9660} 
+ \mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_connection}{Base\+HTTPConnection}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classurllib3_1_1__base__connection_1_1_base_h_t_t_p_s_connection}{Base\+HTTPSConnection}} \texorpdfstring{$\vert$}{|} None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+connection (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_afe4fc94a2a2e15ce402fe2b59336d83d}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_ad03a58519080fa0d6826185c0cbdbc75}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!data@{data}}
+\index{data@{data}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_ad03a58519080fa0d6826185c0cbdbc75} 
+ bytes urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+data (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a975e27acdd91f017d4932062ae1e21b3}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aa0b99bdddb649261a20a9cb375c4ef29}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!drain\_conn@{drain\_conn}}
+\index{drain\_conn@{drain\_conn}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{drain\_conn()}{drain\_conn()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aa0b99bdddb649261a20a9cb375c4ef29} 
+ None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+drain\+\_\+conn (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a4c516d9b9621dafc3f28343a67d7c1f0}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_ad6176119567c5be3bbf3a9fa3a5360a1}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!json@{json}}
+\index{json@{json}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_ad6176119567c5be3bbf3a9fa3a5360a1} 
+ typing.\+Any urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deserializes the body of the HTTP response as a Python object.
+
+The body of the HTTP response must be encoded using UTF-8, as per
+`RFC 8529 Section 8.1 <https://www.rfc-editor.org/rfc/rfc8259#section-8.1>`_.
+
+To use a custom JSON decoder pass the result of :attr:`HTTPResponse.data` to
+your custom decoder instead.
+
+If the body of the HTTP response is not decodable to UTF-8, a
+`UnicodeDecodeError` will be raised. If the body of the HTTP response is not a
+valid JSON document, a `json.JSONDecodeError` will be raised.
+
+Read more :ref:`here <json_content>`.
+
+:returns: The body of the HTTP response as a Python object.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_abd598e644e5e22506aa77c4f23c7d77b}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a45568d24f267905d8600f249afb0e13e}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!read@{read}}
+\index{read@{read}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a45568d24f267905d8600f249afb0e13e} 
+ bytes urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{amt}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{decode\+\_\+content}{ = {\ttfamily None}, }\item[{bool }]{cache\+\_\+content}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a0e3817794b0699fe2a5017a5d33e847e}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a9613a9914d38e764b8aba4c6ba2d7d96}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!read\_chunked@{read\_chunked}}
+\index{read\_chunked@{read\_chunked}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{read\_chunked()}{read\_chunked()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a9613a9914d38e764b8aba4c6ba2d7d96} 
+ typing.\+Generator\mbox{[}bytes\mbox{]} urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+read\+\_\+chunked (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{amt}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{decode\+\_\+content}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_aa30ef1e859a2d936e954f67c59425cad}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a8ab7c66af2f3571b6eeacfa60812ac42}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!release\_conn@{release\_conn}}
+\index{release\_conn@{release\_conn}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{release\_conn()}{release\_conn()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a8ab7c66af2f3571b6eeacfa60812ac42} 
+ None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+release\+\_\+conn (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a7ce54536a9d3ff844261be30b3423948}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a2ff683ccb4e88aa06fdfcfb709fd4351}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!retries@{retries}}
+\index{retries@{retries}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{retries()}{retries()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a2ff683ccb4e88aa06fdfcfb709fd4351} 
+ \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}} \texorpdfstring{$\vert$}{|} None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+retries (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af3b2c0ccae55d8aac14b6e4209d26f3f}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a1e23bb0ca7a7455054415382220b1333}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!retries@{retries}}
+\index{retries@{retries}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{retries()}{retries()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a1e23bb0ca7a7455054415382220b1333} 
+ None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+retries (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}} \texorpdfstring{$\vert$}{|} None}]{retries}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_af3b2c0ccae55d8aac14b6e4209d26f3f}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a5c0cf61ac62dd8101a4f427494398e4b}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!stream@{stream}}
+\index{stream@{stream}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a5c0cf61ac62dd8101a4f427494398e4b} 
+ typing.\+Generator\mbox{[}bytes\mbox{]} urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+stream (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{amt}{ = {\ttfamily 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{decode\+\_\+content}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A generator wrapper for the read() method. A call will block until
+``amt`` bytes have been read from the connection or until the
+connection is closed.
+
+:param amt:
+    How much of the content to read. The generator will return up to
+    much data per iteration, but may return less. This is particularly
+    likely when using compressed data. However, the empty string will
+    never be returned.
+
+:param decode_content:
+    If True, will attempt to decode the body based on the
+    'content-encoding' header.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_a083508b4a51e27aa76cd73f5f2a1f84b}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a18ba1fc6b22881c5c47f803a8ca553b7}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!url@{url}}
+\index{url@{url}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a18ba1fc6b22881c5c47f803a8ca553b7} 
+ str \texorpdfstring{$\vert$}{|} None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ab91db1893977adeb7b15b8348d1c1236}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_abcf68c33abc0642e9a48b128a3037e0d}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!url@{url}}
+\index{url@{url}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_abcf68c33abc0642e9a48b128a3037e0d} 
+ None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{url}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response_ab91db1893977adeb7b15b8348d1c1236}{urllib3.\+response.\+Base\+HTTPResponse}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a3943c89760d2b4eb4e529bdae0a75468}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_body@{\_body}}
+\index{\_body@{\_body}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_body}{\_body}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a3943c89760d2b4eb4e529bdae0a75468} 
+bytes urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+body = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aedd742bc4e319a8cc81bf269ab444102}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_closed@{\_closed}}
+\index{\_closed@{\_closed}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_closed}{\_closed}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aedd742bc4e319a8cc81bf269ab444102} 
+bool urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+closed = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a352f9a40aa5ad2d3b753aa90ae972929}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_connection@{\_connection}}
+\index{\_connection@{\_connection}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_connection}{\_connection}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a352f9a40aa5ad2d3b753aa90ae972929} 
+urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+connection = \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a750d2f0bfee740b0583634ac1d5f9660}{connection}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_afe14483b2c2460d993ba8322f34efc1e}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_pool@{\_pool}}
+\index{\_pool@{\_pool}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_pool}{\_pool}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_afe14483b2c2460d993ba8322f34efc1e} 
+urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+pool = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aa4498d9834114893f36af8505442e13d}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_response@{\_response}}
+\index{\_response@{\_response}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_response}{\_response}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_aa4498d9834114893f36af8505442e13d} 
+urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+response = internal\+\_\+response\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a0469013839bd5150c63d9465df4cc7ea}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!\_url@{\_url}}
+\index{\_url@{\_url}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{\_url}{\_url}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a0469013839bd5150c63d9465df4cc7ea} 
+str \texorpdfstring{$\vert$}{|} None urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+\_\+url = \mbox{\hyperlink{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a18ba1fc6b22881c5c47f803a8ca553b7}{url}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a0d1b2935dc9b0a428ae6fd975ee5d32f}\index{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}!length\_is\_certain@{length\_is\_certain}}
+\index{length\_is\_certain@{length\_is\_certain}!urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper@{urllib3.contrib.emscripten.response.EmscriptenHttpResponseWrapper}}
+\doxysubsubsection{\texorpdfstring{length\_is\_certain}{length\_is\_certain}}
+{\footnotesize\ttfamily \label{classurllib3_1_1contrib_1_1emscripten_1_1response_1_1_emscripten_http_response_wrapper_a0d1b2935dc9b0a428ae6fd975ee5d32f} 
+bool urllib3.\+contrib.\+emscripten.\+response.\+Emscripten\+Http\+Response\+Wrapper.\+length\+\_\+is\+\_\+certain = False}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/urllib3/contrib/emscripten/\mbox{\hyperlink{urllib3_2contrib_2emscripten_2response_8py}{response.\+py}}\end{DoxyCompactItemize}

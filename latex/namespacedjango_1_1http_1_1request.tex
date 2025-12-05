@@ -1,0 +1,104 @@
+\doxysection{django.\+http.\+request Namespace Reference}
+\hypertarget{namespacedjango_1_1http_1_1request}{}\label{namespacedjango_1_1http_1_1request}\index{django.http.request@{django.http.request}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1_http_headers}{Http\+Headers}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1_http_request}{Http\+Request}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1_media_type}{Media\+Type}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1_query_dict}{Query\+Dict}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1_raw_post_data_exception}{Raw\+Post\+Data\+Exception}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1_unreadable_post_error}{Unreadable\+Post\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1request_a467ec892075875edb774582f5b063bba}{bytes\+\_\+to\+\_\+text}} (s, encoding)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1request_aa500b01752b64629fd6ec881b3488b63}{split\+\_\+domain\+\_\+port}} (host)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1request_afb02a27ae60d1071d455c4ec34bec12f}{validate\+\_\+host}} (host, allowed\+\_\+hosts)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1request_ac8424f2711a447ec93c2c7c86d23074e}{RAISE\+\_\+\+ERROR}} = object()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1request_ab874568a2367f2ad8219599c2c16094d}{host\+\_\+validation\+\_\+re}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1http_1_1request_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1http_1_1request_a467ec892075875edb774582f5b063bba}\index{django.http.request@{django.http.request}!bytes\_to\_text@{bytes\_to\_text}}
+\index{bytes\_to\_text@{bytes\_to\_text}!django.http.request@{django.http.request}}
+\doxysubsubsection{\texorpdfstring{bytes\_to\_text()}{bytes\_to\_text()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1http_1_1request_a467ec892075875edb774582f5b063bba} 
+django.\+http.\+request.\+bytes\+\_\+to\+\_\+text (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{encoding}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert bytes objects to strings, using the given encoding. Illegally
+encoded input characters are replaced with Unicode "unknown" codepoint
+(\ufffd).
+
+Return any non-bytes objects without change.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1http_1_1request_aa500b01752b64629fd6ec881b3488b63}\index{django.http.request@{django.http.request}!split\_domain\_port@{split\_domain\_port}}
+\index{split\_domain\_port@{split\_domain\_port}!django.http.request@{django.http.request}}
+\doxysubsubsection{\texorpdfstring{split\_domain\_port()}{split\_domain\_port()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1http_1_1request_aa500b01752b64629fd6ec881b3488b63} 
+django.\+http.\+request.\+split\+\_\+domain\+\_\+port (\begin{DoxyParamCaption}\item[{}]{host}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a (domain, port) tuple from a given host.
+
+Returned domain is lowercased. If the host is invalid, the domain will be
+empty.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1http_1_1request_afb02a27ae60d1071d455c4ec34bec12f}\index{django.http.request@{django.http.request}!validate\_host@{validate\_host}}
+\index{validate\_host@{validate\_host}!django.http.request@{django.http.request}}
+\doxysubsubsection{\texorpdfstring{validate\_host()}{validate\_host()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1http_1_1request_afb02a27ae60d1071d455c4ec34bec12f} 
+django.\+http.\+request.\+validate\+\_\+host (\begin{DoxyParamCaption}\item[{}]{host}{, }\item[{}]{allowed\+\_\+hosts}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Validate the given host for this site.
+
+Check that the host looks valid and matches a host or host pattern in the
+given list of ``allowed_hosts``. Any pattern beginning with a period
+matches a domain and all its subdomains (e.g. ``.example.com`` matches
+``example.com`` and any subdomain), ``*`` matches anything, and anything
+else must match exactly.
+
+Note: This function assumes that the given host is lowercased and has
+already had the port, if any, stripped off.
+
+Return ``True`` for a valid host, ``False`` otherwise.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1http_1_1request_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1http_1_1request_ab874568a2367f2ad8219599c2c16094d}\index{django.http.request@{django.http.request}!host\_validation\_re@{host\_validation\_re}}
+\index{host\_validation\_re@{host\_validation\_re}!django.http.request@{django.http.request}}
+\doxysubsubsection{\texorpdfstring{host\_validation\_re}{host\_validation\_re}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1http_1_1request_ab874568a2367f2ad8219599c2c16094d} 
+django.\+http.\+request.\+host\+\_\+validation\+\_\+re}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r"{}\string^([a-\/z0-\/9.-\/]+|\(\backslash\)[[a-\/f0-\/9]*:[a-\/f0-\/9.:]+\(\backslash\)])(?::([0-\/9]+))?\$"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1http_1_1request_ac8424f2711a447ec93c2c7c86d23074e}\index{django.http.request@{django.http.request}!RAISE\_ERROR@{RAISE\_ERROR}}
+\index{RAISE\_ERROR@{RAISE\_ERROR}!django.http.request@{django.http.request}}
+\doxysubsubsection{\texorpdfstring{RAISE\_ERROR}{RAISE\_ERROR}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1http_1_1request_ac8424f2711a447ec93c2c7c86d23074e} 
+django.\+http.\+request.\+RAISE\+\_\+\+ERROR = object()}
+

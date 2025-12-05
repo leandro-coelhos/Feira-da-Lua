@@ -1,0 +1,499 @@
+\doxysection{pip.\+\_\+internal.\+models.\+link.\+Link Class Reference}
+\hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link}{}\label{classpip_1_1__internal_1_1models_1_1link_1_1_link}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab56975fdda47c1ee86d9395730b91639}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}{url}}, str\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_index_content}{Index\+Content}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_aed0fb4d4320bf51a309c719ef452ec7f}{comes\+\_\+from}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_afbf7631c356c23c439f39b35407161dd}{requires\+\_\+python}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af68edcd6a5a6f4c22ea34802fbd83e9c}{yanked\+\_\+reason}}=None, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_metadata_file}{Metadata\+File}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_abac655fca8b079dae2a59e2c721bdd48}{metadata\+\_\+file\+\_\+data}}=None, bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a67c7b7d876a4d8531d504aca2238202e}{cache\+\_\+link\+\_\+parsing}}=True, Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None hashes=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a950287979f697b13ad89d99c391c9979}{from\+\_\+json}} (cls, dict\mbox{[}str, Any\mbox{]} file\+\_\+data, str page\+\_\+url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_aa537b33bcd8b0f88df76fae9d4d091b9}{from\+\_\+element}} (cls, dict\mbox{[}str, str\texorpdfstring{$\vert$}{|}None\mbox{]} anchor\+\_\+attribs, str page\+\_\+url, str base\+\_\+url)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_aea9fc235d37d639ac167cdeac53ba308}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a851368df15250db2c52515f1e46a1f5f}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a23bcb650aff290ec51cc734e23612ce4}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af9248a214cea97e4b676ae7471491499}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, Any other)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a49f7af2b63553615991be4a6f55a02dd}{\+\_\+\+\_\+lt\+\_\+\+\_\+}} (self, Any other)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a6a4e9c09f8076390a11cc9b3fe51aede}{url}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af666a145e853c52698155e39725d4d65}{redacted\+\_\+url}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5fb02f5a5a42909c89a18745b74cf998}{filename}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a72e9faf9a2a5f838cfdce89db07e3150}{file\+\_\+path}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a0086cb599d01ffeffa03c0c35ab85a42}{scheme}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a3b75bb1dffe191f8f61239e8af2135cc}{netloc}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a30f454216dcb615e3ed986238490f180}{path}} (self)
+\item 
+tuple\mbox{[}str, str\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a09fc0c6b6ee11bd18101e0faba1389b1}{splitext}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a800ca5662fff90f5fbc245e1218a5528}{ext}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a1453871423228f04baaa00bb3ecc2594}{url\+\_\+without\+\_\+fragment}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_aec393755be5022460f72b9f066c33cff}{subdirectory\+\_\+fragment}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a16be6acdbe25038ab6880d9d1d65282b}{metadata\+\_\+link}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}} \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_adc3aa52207f953fd0e556419536aab35}{as\+\_\+hashes}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ad47729bb335f34a5bb12295126e11342}{hash}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ada3d19424c3602c613c30f87d60f9ccf}{hash\+\_\+name}} (self)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a18ca3abeab4eb436d6cfab79d7e54da9}{show\+\_\+url}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a78868a5dc936bd6f4ddc425ccbc11c99}{is\+\_\+file}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5cffdd4be3ce3949a92df10e51976841}{is\+\_\+existing\+\_\+dir}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5dd1bbaac3ddd31fcbd9581c2be36a69}{is\+\_\+wheel}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a476ab6666a9c80e29394f429d4e9eb77}{is\+\_\+vcs}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ad5a9983dc2842d8b51f43f26345ea672}{is\+\_\+yanked}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_aa12e1776af173c655789509d5e8cfb43}{has\+\_\+hash}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a718bd5e4de87bbcafbce081ac161f09e}{is\+\_\+hash\+\_\+allowed}} (self, \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}}\texorpdfstring{$\vert$}{|}None hashes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_aed0fb4d4320bf51a309c719ef452ec7f}{comes\+\_\+from}} = comes\+\_\+from
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_afbf7631c356c23c439f39b35407161dd}{requires\+\_\+python}} = requires\+\_\+python if requires\+\_\+python else None
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af68edcd6a5a6f4c22ea34802fbd83e9c}{yanked\+\_\+reason}} = yanked\+\_\+reason
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_abac655fca8b079dae2a59e2c721bdd48}{metadata\+\_\+file\+\_\+data}} = metadata\+\_\+file\+\_\+data
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a67c7b7d876a4d8531d504aca2238202e}{cache\+\_\+link\+\_\+parsing}} = cache\+\_\+link\+\_\+parsing
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a032877ccd8569fff4ce9225a3b75454d}{egg\+\_\+fragment}} = self.\+\_\+egg\+\_\+fragment()
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}{url}}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a3bb795cdf98672f4e084566820e6c7f7}{scheme}} = "{}file"{}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a6542bec4aeec14279b094156837dedea}{file\+\_\+path}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a638d7375efa13338c3579494c34ed159}{ext}} = WHEEL\+\_\+\+EXTENSION
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a876c6555cea8ad9a3cf8bc7a2f1be2fb}{\+\_\+egg\+\_\+fragment}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a2bc6f4e878cb4031b3e1a0da05f7c982}{\+\_\+parsed\+\_\+url}} = urllib.\+parse.\+urlsplit(\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}{url}})
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab3314b2581efb7fe79fe569bb8451d0e}{\+\_\+url}} = \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}{url}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_affec62afea653e9e295124633885f20c}{\+\_\+path}} = urllib.\+parse.\+unquote(self.\+\_\+parsed\+\_\+url.\+path)
+\item 
+dict \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a48c0d230c340a21fd28050d07c3dcc5c}{\+\_\+hashes}} = hashes\+\_\+from\+\_\+link
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a95651e61aa9f23805824835c9d4c086e}{\+\_\+egg\+\_\+fragment\+\_\+re}} = re.\+compile(r"{}\mbox{[}\#\&\mbox{]}egg=(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\&\mbox{]}\texorpdfstring{$\ast$}{*})"{})
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_a28a8618d3d7451a8becd34ec8fead66d}{\+\_\+project\+\_\+name\+\_\+re}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab54813b8c61bc78b931e0df07be306da}{\+\_\+subdirectory\+\_\+fragment\+\_\+re}} = re.\+compile(r"{}\mbox{[}\#\&\mbox{]}subdirectory=(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\&\mbox{]}\texorpdfstring{$\ast$}{*})"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab93d887d8a5822435a2fd30f4299898e}{\+\_\+\+\_\+slots\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a parsed link from a Package Index's simple URL\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab56975fdda47c1ee86d9395730b91639}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab56975fdda47c1ee86d9395730b91639} 
+ None pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{url}{, }\item[{str \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_index_content}{Index\+Content}} \texorpdfstring{$\vert$}{|} None }]{comes\+\_\+from}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{requires\+\_\+python}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{yanked\+\_\+reason}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_metadata_file}{Metadata\+File}} \texorpdfstring{$\vert$}{|} None }]{metadata\+\_\+file\+\_\+data}{ = {\ttfamily None}, }\item[{bool }]{cache\+\_\+link\+\_\+parsing}{ = {\ttfamily True}, }\item[{Mapping\mbox{[}str, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{hashes}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param url: url of the resource pointed to (href of the link)
+:param comes_from: instance of IndexContent where the link was found,
+    or string.
+:param requires_python: String containing the `Requires-Python`
+    metadata field, specified in PEP 345. This may be specified by
+    a data-requires-python attribute in the HTML link tag, as
+    described in PEP 503.
+:param yanked_reason: the reason the file has been yanked, if the
+    file has been yanked, or None if the file hasn't been yanked.
+    This is the value of the "data-yanked" attribute, if present, in
+    a simple repository HTML link. If the file has been yanked but
+    no reason was provided, this should be the empty string. See
+    PEP 592 for more information and the specification.
+:param metadata_file_data: the metadata attached to the file, or None if
+    no such metadata is provided. This argument, if not None, indicates
+    that a separate metadata file exists, and also optionally supplies
+    hashes for that file.
+:param cache_link_parsing: A flag that is used elsewhere to determine
+    whether resources retrieved from this link should be cached. PyPI
+    URLs should generally have this set to False, for example.
+:param hashes: A mapping of hash names to digests to allow us to
+    determine the validity of a download.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_af9248a214cea97e4b676ae7471491499}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_af9248a214cea97e4b676ae7471491499} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a23bcb650aff290ec51cc734e23612ce4}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a23bcb650aff290ec51cc734e23612ce4} 
+ int pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a49f7af2b63553615991be4a6f55a02dd}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_lt\_\_@{\_\_lt\_\_}}
+\index{\_\_lt\_\_@{\_\_lt\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_lt\_\_()}{\_\_lt\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a49f7af2b63553615991be4a6f55a02dd} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+lt\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a851368df15250db2c52515f1e46a1f5f}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a851368df15250db2c52515f1e46a1f5f} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_aea9fc235d37d639ac167cdeac53ba308}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_aea9fc235d37d639ac167cdeac53ba308} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a876c6555cea8ad9a3cf8bc7a2f1be2fb}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_egg\_fragment@{\_egg\_fragment}}
+\index{\_egg\_fragment@{\_egg\_fragment}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_egg\_fragment()}{\_egg\_fragment()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a876c6555cea8ad9a3cf8bc7a2f1be2fb} 
+ str \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+egg\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_adc3aa52207f953fd0e556419536aab35}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!as\_hashes@{as\_hashes}}
+\index{as\_hashes@{as\_hashes}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{as\_hashes()}{as\_hashes()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_adc3aa52207f953fd0e556419536aab35} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}} pip.\+\_\+internal.\+models.\+link.\+Link.\+as\+\_\+hashes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a800ca5662fff90f5fbc245e1218a5528}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!ext@{ext}}
+\index{ext@{ext}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{ext()}{ext()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a800ca5662fff90f5fbc245e1218a5528} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+ext (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a72e9faf9a2a5f838cfdce89db07e3150}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!file\_path@{file\_path}}
+\index{file\_path@{file\_path}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{file\_path()}{file\_path()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a72e9faf9a2a5f838cfdce89db07e3150} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+file\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5fb02f5a5a42909c89a18745b74cf998}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!filename@{filename}}
+\index{filename@{filename}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5fb02f5a5a42909c89a18745b74cf998} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+filename (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_aa537b33bcd8b0f88df76fae9d4d091b9}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!from\_element@{from\_element}}
+\index{from\_element@{from\_element}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{from\_element()}{from\_element()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_aa537b33bcd8b0f88df76fae9d4d091b9} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+from\+\_\+element (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{dict\mbox{[}str, str \texorpdfstring{$\vert$}{|} None\mbox{]}}]{anchor\+\_\+attribs}{, }\item[{str}]{page\+\_\+url}{, }\item[{str}]{base\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert an anchor element's attributes in a simple repository page to a Link.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a950287979f697b13ad89d99c391c9979}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!from\_json@{from\_json}}
+\index{from\_json@{from\_json}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{from\_json()}{from\_json()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a950287979f697b13ad89d99c391c9979} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+from\+\_\+json (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{dict\mbox{[}str, Any\mbox{]}}]{file\+\_\+data}{, }\item[{str}]{page\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert an pypi json document from a simple repository page into a Link.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_aa12e1776af173c655789509d5e8cfb43}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!has\_hash@{has\_hash}}
+\index{has\_hash@{has\_hash}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{has\_hash()}{has\_hash()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_aa12e1776af173c655789509d5e8cfb43} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+has\+\_\+hash (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ad47729bb335f34a5bb12295126e11342}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!hash@{hash}}
+\index{hash@{hash}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ad47729bb335f34a5bb12295126e11342} 
+ str \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+hash (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ada3d19424c3602c613c30f87d60f9ccf}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!hash\_name@{hash\_name}}
+\index{hash\_name@{hash\_name}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{hash\_name()}{hash\_name()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ada3d19424c3602c613c30f87d60f9ccf} 
+ str \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+hash\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5cffdd4be3ce3949a92df10e51976841}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!is\_existing\_dir@{is\_existing\_dir}}
+\index{is\_existing\_dir@{is\_existing\_dir}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{is\_existing\_dir()}{is\_existing\_dir()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5cffdd4be3ce3949a92df10e51976841} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+is\+\_\+existing\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a78868a5dc936bd6f4ddc425ccbc11c99}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!is\_file@{is\_file}}
+\index{is\_file@{is\_file}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{is\_file()}{is\_file()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a78868a5dc936bd6f4ddc425ccbc11c99} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+is\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a718bd5e4de87bbcafbce081ac161f09e}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!is\_hash\_allowed@{is\_hash\_allowed}}
+\index{is\_hash\_allowed@{is\_hash\_allowed}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{is\_hash\_allowed()}{is\_hash\_allowed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a718bd5e4de87bbcafbce081ac161f09e} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+is\+\_\+hash\+\_\+allowed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}} \texorpdfstring{$\vert$}{|} None}]{hashes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the link has a hash and it is allowed by `hashes`.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a476ab6666a9c80e29394f429d4e9eb77}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!is\_vcs@{is\_vcs}}
+\index{is\_vcs@{is\_vcs}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{is\_vcs()}{is\_vcs()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a476ab6666a9c80e29394f429d4e9eb77} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+is\+\_\+vcs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5dd1bbaac3ddd31fcbd9581c2be36a69}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!is\_wheel@{is\_wheel}}
+\index{is\_wheel@{is\_wheel}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{is\_wheel()}{is\_wheel()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a5dd1bbaac3ddd31fcbd9581c2be36a69} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+is\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ad5a9983dc2842d8b51f43f26345ea672}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!is\_yanked@{is\_yanked}}
+\index{is\_yanked@{is\_yanked}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{is\_yanked()}{is\_yanked()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ad5a9983dc2842d8b51f43f26345ea672} 
+ bool pip.\+\_\+internal.\+models.\+link.\+Link.\+is\+\_\+yanked (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a16be6acdbe25038ab6880d9d1d65282b}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!metadata\_link@{metadata\_link}}
+\index{metadata\_link@{metadata\_link}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{metadata\_link()}{metadata\_link()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a16be6acdbe25038ab6880d9d1d65282b} 
+ \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+metadata\+\_\+link (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a link to the associated core metadata file (if any).\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a3b75bb1dffe191f8f61239e8af2135cc}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!netloc@{netloc}}
+\index{netloc@{netloc}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{netloc()}{netloc()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a3b75bb1dffe191f8f61239e8af2135cc} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+netloc (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This can contain auth information.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a30f454216dcb615e3ed986238490f180}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!path@{path}}
+\index{path@{path}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a30f454216dcb615e3ed986238490f180} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_af666a145e853c52698155e39725d4d65}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!redacted\_url@{redacted\_url}}
+\index{redacted\_url@{redacted\_url}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{redacted\_url()}{redacted\_url()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_af666a145e853c52698155e39725d4d65} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+redacted\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a0086cb599d01ffeffa03c0c35ab85a42}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!scheme@{scheme}}
+\index{scheme@{scheme}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{scheme()}{scheme()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a0086cb599d01ffeffa03c0c35ab85a42} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+scheme (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a18ca3abeab4eb436d6cfab79d7e54da9}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!show\_url@{show\_url}}
+\index{show\_url@{show\_url}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{show\_url()}{show\_url()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a18ca3abeab4eb436d6cfab79d7e54da9} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+show\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a09fc0c6b6ee11bd18101e0faba1389b1}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!splitext@{splitext}}
+\index{splitext@{splitext}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{splitext()}{splitext()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a09fc0c6b6ee11bd18101e0faba1389b1} 
+ tuple\mbox{[}str, str\mbox{]} pip.\+\_\+internal.\+models.\+link.\+Link.\+splitext (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_aec393755be5022460f72b9f066c33cff}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!subdirectory\_fragment@{subdirectory\_fragment}}
+\index{subdirectory\_fragment@{subdirectory\_fragment}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{subdirectory\_fragment()}{subdirectory\_fragment()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_aec393755be5022460f72b9f066c33cff} 
+ str \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+subdirectory\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a6a4e9c09f8076390a11cc9b3fe51aede}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!url@{url}}
+\index{url@{url}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a6a4e9c09f8076390a11cc9b3fe51aede} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a1453871423228f04baaa00bb3ecc2594}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!url\_without\_fragment@{url\_without\_fragment}}
+\index{url\_without\_fragment@{url\_without\_fragment}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{url\_without\_fragment()}{url\_without\_fragment()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a1453871423228f04baaa00bb3ecc2594} 
+ str pip.\+\_\+internal.\+models.\+link.\+Link.\+url\+\_\+without\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab93d887d8a5822435a2fd30f4299898e}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_\_slots\_\_@{\_\_slots\_\_}}
+\index{\_\_slots\_\_@{\_\_slots\_\_}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_\_slots\_\_}{\_\_slots\_\_}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab93d887d8a5822435a2fd30f4299898e} 
+list pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+\+\_\+slots\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_parsed\_url"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_url"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_path"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_hashes"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}comes\_from"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}requires\_python"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}yanked\_reason"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}metadata\_file\_data"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cache\_link\_parsing"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}egg\_fragment"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a95651e61aa9f23805824835c9d4c086e}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_egg\_fragment\_re@{\_egg\_fragment\_re}}
+\index{\_egg\_fragment\_re@{\_egg\_fragment\_re}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_egg\_fragment\_re}{\_egg\_fragment\_re}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a95651e61aa9f23805824835c9d4c086e} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+egg\+\_\+fragment\+\_\+re = re.\+compile(r"{}\mbox{[}\#\&\mbox{]}egg=(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\&\mbox{]}\texorpdfstring{$\ast$}{*})"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a48c0d230c340a21fd28050d07c3dcc5c}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_hashes@{\_hashes}}
+\index{\_hashes@{\_hashes}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_hashes}{\_hashes}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a48c0d230c340a21fd28050d07c3dcc5c} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+hashes = hashes\+\_\+from\+\_\+link\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a2bc6f4e878cb4031b3e1a0da05f7c982}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_parsed\_url@{\_parsed\_url}}
+\index{\_parsed\_url@{\_parsed\_url}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_parsed\_url}{\_parsed\_url}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a2bc6f4e878cb4031b3e1a0da05f7c982} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+parsed\+\_\+url = urllib.\+parse.\+urlsplit(\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}{url}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_affec62afea653e9e295124633885f20c}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_path@{\_path}}
+\index{\_path@{\_path}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_path}{\_path}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_affec62afea653e9e295124633885f20c} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+path = urllib.\+parse.\+unquote(self.\+\_\+parsed\+\_\+url.\+path)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a28a8618d3d7451a8becd34ec8fead66d}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_project\_name\_re@{\_project\_name\_re}}
+\index{\_project\_name\_re@{\_project\_name\_re}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_project\_name\_re}{\_project\_name\_re}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a28a8618d3d7451a8becd34ec8fead66d} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+project\+\_\+name\+\_\+re\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\string^([A-\/Z0-\/9]|[A-\/Z0-\/9][A-\/Z0-\/9.\_-\/]*[A-\/Z0-\/9])\$"{}},\ re.IGNORECASE}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab54813b8c61bc78b931e0df07be306da}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_subdirectory\_fragment\_re@{\_subdirectory\_fragment\_re}}
+\index{\_subdirectory\_fragment\_re@{\_subdirectory\_fragment\_re}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_subdirectory\_fragment\_re}{\_subdirectory\_fragment\_re}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab54813b8c61bc78b931e0df07be306da} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+subdirectory\+\_\+fragment\+\_\+re = re.\+compile(r"{}\mbox{[}\#\&\mbox{]}subdirectory=(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\&\mbox{]}\texorpdfstring{$\ast$}{*})"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab3314b2581efb7fe79fe569bb8451d0e}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!\_url@{\_url}}
+\index{\_url@{\_url}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{\_url}{\_url}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_ab3314b2581efb7fe79fe569bb8451d0e} 
+str pip.\+\_\+internal.\+models.\+link.\+Link.\+\_\+url = \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}{url}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a67c7b7d876a4d8531d504aca2238202e}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!cache\_link\_parsing@{cache\_link\_parsing}}
+\index{cache\_link\_parsing@{cache\_link\_parsing}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{cache\_link\_parsing}{cache\_link\_parsing}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a67c7b7d876a4d8531d504aca2238202e} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+cache\+\_\+link\+\_\+parsing = cache\+\_\+link\+\_\+parsing}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_aed0fb4d4320bf51a309c719ef452ec7f}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!comes\_from@{comes\_from}}
+\index{comes\_from@{comes\_from}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{comes\_from}{comes\_from}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_aed0fb4d4320bf51a309c719ef452ec7f} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+comes\+\_\+from = comes\+\_\+from}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a032877ccd8569fff4ce9225a3b75454d}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!egg\_fragment@{egg\_fragment}}
+\index{egg\_fragment@{egg\_fragment}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{egg\_fragment}{egg\_fragment}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a032877ccd8569fff4ce9225a3b75454d} 
+str \texorpdfstring{$\vert$}{|} None pip.\+\_\+internal.\+models.\+link.\+Link.\+egg\+\_\+fragment = self.\+\_\+egg\+\_\+fragment()}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a638d7375efa13338c3579494c34ed159}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!ext@{ext}}
+\index{ext@{ext}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{ext}{ext}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a638d7375efa13338c3579494c34ed159} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+ext = WHEEL\+\_\+\+EXTENSION}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a6542bec4aeec14279b094156837dedea}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!file\_path@{file\_path}}
+\index{file\_path@{file\_path}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{file\_path}{file\_path}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a6542bec4aeec14279b094156837dedea} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+file\+\_\+path}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_abac655fca8b079dae2a59e2c721bdd48}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!metadata\_file\_data@{metadata\_file\_data}}
+\index{metadata\_file\_data@{metadata\_file\_data}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{metadata\_file\_data}{metadata\_file\_data}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_abac655fca8b079dae2a59e2c721bdd48} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+metadata\+\_\+file\+\_\+data = metadata\+\_\+file\+\_\+data}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_afbf7631c356c23c439f39b35407161dd}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!requires\_python@{requires\_python}}
+\index{requires\_python@{requires\_python}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{requires\_python}{requires\_python}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_afbf7631c356c23c439f39b35407161dd} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+requires\+\_\+python = requires\+\_\+python if requires\+\_\+python else None}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_a3bb795cdf98672f4e084566820e6c7f7}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!scheme@{scheme}}
+\index{scheme@{scheme}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{scheme}{scheme}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_a3bb795cdf98672f4e084566820e6c7f7} 
+str pip.\+\_\+internal.\+models.\+link.\+Link.\+scheme = "{}file"{}}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!url@{url}}
+\index{url@{url}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_af67004cdb29d12b7420984c694262af3} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+url}
+
+\Hypertarget{classpip_1_1__internal_1_1models_1_1link_1_1_link_af68edcd6a5a6f4c22ea34802fbd83e9c}\index{pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}!yanked\_reason@{yanked\_reason}}
+\index{yanked\_reason@{yanked\_reason}!pip.\_internal.models.link.Link@{pip.\_internal.models.link.Link}}
+\doxysubsubsection{\texorpdfstring{yanked\_reason}{yanked\_reason}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1link_1_1_link_af68edcd6a5a6f4c22ea34802fbd83e9c} 
+pip.\+\_\+internal.\+models.\+link.\+Link.\+yanked\+\_\+reason = yanked\+\_\+reason}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+internal/models/\mbox{\hyperlink{link_8py}{link.\+py}}\end{DoxyCompactItemize}

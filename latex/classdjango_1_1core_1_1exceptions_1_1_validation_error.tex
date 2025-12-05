@@ -1,0 +1,157 @@
+\doxysection{django.\+core.\+exceptions.\+Validation\+Error Class Reference}
+\hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error}{}\label{classdjango_1_1core_1_1exceptions_1_1_validation_error}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+Inheritance diagram for django.\+core.\+exceptions.\+Validation\+Error\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1core_1_1exceptions_1_1_validation_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a90aa6b872a3763f5d8292c030586c418}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_af4c4242c443b8ce7d74c89f1d7d56251}{message}}, \mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a204d3e81c7d6cd25ec5ad887f896ff53}{code}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0e9e2a5a67dde3c21f6188801d5ebaa5}{params}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_aed742396dadec1467f07f602ff83abec}{message\+\_\+dict}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a2d518884efde41b1c39578cec70cb563}{messages}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a7f0f5ab3ed4ce71f7d7211901c61f079}{update\+\_\+error\+\_\+dict}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_ac77caa1b45621fb59849d3bd6cf4a1b8}{error\+\_\+dict}})
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_acf33bbef9ecdf2c36fd9255464522234}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a73fb24810b63a4149319127012833d64}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_afa30f972140d3ce577543d2292d4635d}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a79086c0c668b7734fa5475c41ee59d58}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0fbfa1e6ff93f5f41447b8d1b89595e0}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_ac77caa1b45621fb59849d3bd6cf4a1b8}{error\+\_\+dict}} = \{\}
+\item 
+list \mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_ad02984c553c55322b2658a9605e6d217}{error\+\_\+list}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_af4c4242c443b8ce7d74c89f1d7d56251}{message}} = message
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a204d3e81c7d6cd25ec5ad887f896ff53}{code}} = code
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0e9e2a5a67dde3c21f6188801d5ebaa5}{params}} = params
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An error while validating data.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a90aa6b872a3763f5d8292c030586c418}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a90aa6b872a3763f5d8292c030586c418} 
+django.\+core.\+exceptions.\+Validation\+Error.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{message}{, }\item[{}]{code}{ = {\ttfamily None}, }\item[{}]{params}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The `message` argument can be a single error, a list of errors, or a
+dictionary that maps field names to lists of errors. What we define as
+an "error" can be either a simple string or an instance of
+ValidationError with its message attribute set, and what we define as
+list or dictionary can be an actual `list` or `dict` or an instance
+of ValidationError with its `error_list` or `error_dict` attribute set.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a79086c0c668b7734fa5475c41ee59d58}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a79086c0c668b7734fa5475c41ee59d58} 
+django.\+core.\+exceptions.\+Validation\+Error.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0fbfa1e6ff93f5f41447b8d1b89595e0}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0fbfa1e6ff93f5f41447b8d1b89595e0} 
+django.\+core.\+exceptions.\+Validation\+Error.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_acf33bbef9ecdf2c36fd9255464522234}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_acf33bbef9ecdf2c36fd9255464522234} 
+django.\+core.\+exceptions.\+Validation\+Error.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_afa30f972140d3ce577543d2292d4635d}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_afa30f972140d3ce577543d2292d4635d} 
+django.\+core.\+exceptions.\+Validation\+Error.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a73fb24810b63a4149319127012833d64}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a73fb24810b63a4149319127012833d64} 
+django.\+core.\+exceptions.\+Validation\+Error.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_aed742396dadec1467f07f602ff83abec}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!message\_dict@{message\_dict}}
+\index{message\_dict@{message\_dict}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{message\_dict()}{message\_dict()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_aed742396dadec1467f07f602ff83abec} 
+django.\+core.\+exceptions.\+Validation\+Error.\+message\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a2d518884efde41b1c39578cec70cb563}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!messages@{messages}}
+\index{messages@{messages}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{messages()}{messages()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a2d518884efde41b1c39578cec70cb563} 
+django.\+core.\+exceptions.\+Validation\+Error.\+messages (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a7f0f5ab3ed4ce71f7d7211901c61f079}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!update\_error\_dict@{update\_error\_dict}}
+\index{update\_error\_dict@{update\_error\_dict}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{update\_error\_dict()}{update\_error\_dict()}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a7f0f5ab3ed4ce71f7d7211901c61f079} 
+django.\+core.\+exceptions.\+Validation\+Error.\+update\+\_\+error\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{error\+\_\+dict}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a204d3e81c7d6cd25ec5ad887f896ff53}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!code@{code}}
+\index{code@{code}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a204d3e81c7d6cd25ec5ad887f896ff53} 
+django.\+core.\+exceptions.\+Validation\+Error.\+code = code}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_ac77caa1b45621fb59849d3bd6cf4a1b8}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!error\_dict@{error\_dict}}
+\index{error\_dict@{error\_dict}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{error\_dict}{error\_dict}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_ac77caa1b45621fb59849d3bd6cf4a1b8} 
+django.\+core.\+exceptions.\+Validation\+Error.\+error\+\_\+dict = \{\}}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_ad02984c553c55322b2658a9605e6d217}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!error\_list@{error\_list}}
+\index{error\_list@{error\_list}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{error\_list}{error\_list}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_ad02984c553c55322b2658a9605e6d217} 
+django.\+core.\+exceptions.\+Validation\+Error.\+error\+\_\+list = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_af4c4242c443b8ce7d74c89f1d7d56251}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!message@{message}}
+\index{message@{message}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_af4c4242c443b8ce7d74c89f1d7d56251} 
+django.\+core.\+exceptions.\+Validation\+Error.\+message = message}
+
+\Hypertarget{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0e9e2a5a67dde3c21f6188801d5ebaa5}\index{django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}!params@{params}}
+\index{params@{params}!django.core.exceptions.ValidationError@{django.core.exceptions.ValidationError}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \label{classdjango_1_1core_1_1exceptions_1_1_validation_error_a0e9e2a5a67dde3c21f6188801d5ebaa5} 
+django.\+core.\+exceptions.\+Validation\+Error.\+params = params}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/core/\mbox{\hyperlink{django_2core_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

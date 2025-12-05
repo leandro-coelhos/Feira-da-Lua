@@ -1,0 +1,466 @@
+\doxysection{aiohttp.\+connector.\+Base\+Connector Class Reference}
+\hypertarget{classaiohttp_1_1connector_1_1_base_connector}{}\label{classaiohttp_1_1connector_1_1_base_connector}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+Inheritance diagram for aiohttp.\+connector.\+Base\+Connector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.523810cm]{classaiohttp_1_1connector_1_1_base_connector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a59eb70902221dc28f5b7ba1bb452f590}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Union\mbox{[}object, None, float\mbox{]} keepalive\+\_\+timeout=sentinel, bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a29d47b0fb073d2cdebd8d6f37a9b2c03}{force\+\_\+close}}=False, int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0407438f951061bf5a3efc4db740e831}{limit}}=100, int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a2918d62dd3af538f4c7d9770fba39829}{limit\+\_\+per\+\_\+host}}=0, bool enable\+\_\+cleanup\+\_\+closed=False, Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} loop=None, float timeout\+\_\+ceil\+\_\+threshold=5)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_aab3833f16b013fe1fc624d4d2d1266fa}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self, Any \+\_\+warnings=warnings)
+\item 
+"{}Base\+Connector"{} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a3f58495f40ade18b8643239ab0031e09}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a602a82e59b75d6205155a937e1f2ff47}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any exc)
+\item 
+"{}Base\+Connector"{} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_ad916b20b5318a40e4270f83c7f4b464f}{\+\_\+\+\_\+aenter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a4fcd6ee724c958c5e30079bab3ba3e7f}{\+\_\+\+\_\+aexit\+\_\+\+\_\+}} (self, Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} exc\+\_\+type=None, Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+value=None, Optional\mbox{[}Traceback\+Type\mbox{]} exc\+\_\+traceback=None)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a29d47b0fb073d2cdebd8d6f37a9b2c03}{force\+\_\+close}} (self)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0407438f951061bf5a3efc4db740e831}{limit}} (self)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a2918d62dd3af538f4c7d9770fba39829}{limit\+\_\+per\+\_\+host}} (self)
+\item 
+Awaitable\mbox{[}None\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0e656ae1867a424bce2d7dc9f5bd0277}{close}} (self, \texorpdfstring{$\ast$}{*}, bool abort\+\_\+ssl=False)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0d6bf3bf68e6c80dadac72a5fa7d6e09}{closed}} (self)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_connection}{Connection}} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a9bca0f6c1757967a31b76b0dc4359fdc}{connect}} (self, \mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_request}{Client\+Request}} req, List\mbox{[}"{}Trace"{}\mbox{]} traces, "{}Client\+Timeout"{} timeout)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a2ab024a1e37168fdce80af010d5b0a08}{allowed\+\_\+protocol\+\_\+schema\+\_\+set}} = \mbox{\hyperlink{namespaceaiohttp_1_1connector_a2320a90429b028c9e1b7d50c949a939f}{HIGH\+\_\+\+LEVEL\+\_\+\+SCHEMA\+\_\+\+SET}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a1f14b910bb2c2b27146ccde969d00d81}{\+\_\+cleanup}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_ae9dd791c1834480ae43aa0fe2fe5a830}{\+\_\+cleanup\+\_\+closed}} (self)
+\item 
+List\mbox{[}Awaitable\mbox{[}object\mbox{]}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a86882c748d5d53cf77a2a4d75f5196d6}{\+\_\+close}} (self, \texorpdfstring{$\ast$}{*}, bool abort\+\_\+ssl=False)
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_aaf9343d1afdab936b950005191e5573a}{\+\_\+available\+\_\+connections}} (self, "{}Connection\+Key"{} key)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a66e3b8c8c49476899cd2ca8bd45c8675}{\+\_\+wait\+\_\+for\+\_\+available\+\_\+connection}} (self, "{}Connection\+Key"{} key, List\mbox{[}"{}Trace"{}\mbox{]} traces)
+\item 
+Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1connector_1_1_connection}{Connection}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a992d78b5154c9d386808b1a43a867522}{\+\_\+get}} (self, "{}Connection\+Key"{} key, List\mbox{[}"{}Trace"{}\mbox{]} traces)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0aec5f8e53aaa9eca68d28254c06ed06}{\+\_\+release\+\_\+waiter}} (self)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a6aa71c8d9e1b8aeb26f9dd18d06126e8}{\+\_\+release\+\_\+acquired}} (self, "{}Connection\+Key"{} key, \mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}} proto)
+\item 
+None \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a16fc3c17ea580277cb94f47e8257fd7d}{\+\_\+release}} (self, "{}Connection\+Key"{} key, \mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}} protocol, \texorpdfstring{$\ast$}{*}, bool should\+\_\+close=False)
+\item 
+\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a634c824bd13af002f94950cd6bdf083e}{\+\_\+create\+\_\+connection}} (self, \mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_request}{Client\+Request}} req, List\mbox{[}"{}Trace"{}\mbox{]} traces, "{}Client\+Timeout"{} timeout)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_afd4245efae3552fd666bec7577abcc18}{\+\_\+timeout\+\_\+ceil\+\_\+threshold}} = timeout\+\_\+ceil\+\_\+threshold
+\item 
+Default\+Dict\mbox{[} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a2519ae2a866a69e547230f84b9f74b1a}{\+\_\+conns}}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a6e22ad02703405f2e3e380653c7b6745}{\+\_\+limit}} = \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0407438f951061bf5a3efc4db740e831}{limit}}
+\item 
+int \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a557a3582b3825414f50c78f75d9629f9}{\+\_\+limit\+\_\+per\+\_\+host}} = \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a2918d62dd3af538f4c7d9770fba39829}{limit\+\_\+per\+\_\+host}}
+\item 
+Set\mbox{[}\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}}\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a625f216cd1fa360480c8f165415fa235}{\+\_\+acquired}} = set()
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a90928d88f0c15faaf70608a3a4732ee4}{\+\_\+acquired\+\_\+per\+\_\+host}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_aed798b08a503d7cafcdcea46d2f17fb9}{\+\_\+keepalive\+\_\+timeout}} = cast(float, keepalive\+\_\+timeout)
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a98dd932b41efc91e30be8f9403005f46}{\+\_\+force\+\_\+close}} = \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a29d47b0fb073d2cdebd8d6f37a9b2c03}{force\+\_\+close}}
+\item 
+Default\+Dict\mbox{[} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a17a65f82ad5dec379fa8998aad07d1c1}{\+\_\+waiters}}
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_acbc6836719957da2a8d3907484b50611}{\+\_\+loop}} = loop
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a6952fd55ffe9eb6427253c3f0cbac35f}{\+\_\+factory}} = functools.\+partial(\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}}, loop=loop)
+\item 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_ac1b7469396f5a56c83f4ac4984279c91}{\+\_\+cleanup\+\_\+handle}} = None
+\item 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_af5b732f2bf67720e62f5313f73acdfc4}{\+\_\+cleanup\+\_\+closed\+\_\+handle}} = None
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a33398c2f686ff290d2d30d54347db23c}{\+\_\+cleanup\+\_\+closed\+\_\+disabled}} = not enable\+\_\+cleanup\+\_\+closed
+\item 
+list \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0f33536f1aefe259e9ff39e32fba3714}{\+\_\+cleanup\+\_\+closed\+\_\+transports}} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_af3382d5ddb0ef4d9d3b1704008ce6b38}{\+\_\+placeholder\+\_\+future}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a938676759fc204f93d8f5121c97ab58e}{\+\_\+closed}} = True
+\item 
+\mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a6406282b7ebb69e5af150e8d9f1f6739}{\+\_\+source\+\_\+traceback}} = None
+\item 
+float \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a215401084cd6fe0aeb7132c88eae5608}{\+\_\+cleanup\+\_\+closed\+\_\+period}} = 2.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base connector class.
+
+keepalive_timeout - (optional) Keep-alive timeout.
+force_close - Set to True to force close and do reconnect
+    after each request (and between redirects).
+limit - The total number of simultaneous connections.
+limit_per_host - Number of simultaneous connections to one host.
+enable_cleanup_closed - Enables clean-up closed ssl transports.
+                        Disabled by default.
+timeout_ceil_threshold - Trigger ceiling of timeout values when
+                         it's above timeout_ceil_threshold.
+loop - Optional event loop.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a59eb70902221dc28f5b7ba1bb452f590}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a59eb70902221dc28f5b7ba1bb452f590} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Union\mbox{[}object, None, float\mbox{]} }]{keepalive\+\_\+timeout}{ = {\ttfamily sentinel}, }\item[{bool }]{force\+\_\+close}{ = {\ttfamily False}, }\item[{int }]{limit}{ = {\ttfamily 100}, }\item[{int }]{limit\+\_\+per\+\_\+host}{ = {\ttfamily 0}, }\item[{bool }]{enable\+\_\+cleanup\+\_\+closed}{ = {\ttfamily False}, }\item[{Optional\mbox{[}asyncio.\+Abstract\+Event\+Loop\mbox{]} }]{loop}{ = {\ttfamily None}, }\item[{float }]{timeout\+\_\+ceil\+\_\+threshold}{ = {\ttfamily 5}}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_aab3833f16b013fe1fc624d4d2d1266fa}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_aab3833f16b013fe1fc624d4d2d1266fa} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any }]{\+\_\+warnings}{ = {\ttfamily warnings}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_ad916b20b5318a40e4270f83c7f4b464f}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_\_aenter\_\_@{\_\_aenter\_\_}}
+\index{\_\_aenter\_\_@{\_\_aenter\_\_}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_\_aenter\_\_()}{\_\_aenter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_ad916b20b5318a40e4270f83c7f4b464f} 
+ "{}Base\+Connector"{} aiohttp.\+connector.\+Base\+Connector.\+\_\+\+\_\+aenter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a4fcd6ee724c958c5e30079bab3ba3e7f}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_\_aexit\_\_@{\_\_aexit\_\_}}
+\index{\_\_aexit\_\_@{\_\_aexit\_\_}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_\_aexit\_\_()}{\_\_aexit\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a4fcd6ee724c958c5e30079bab3ba3e7f} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+\+\_\+aexit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} }]{exc\+\_\+type}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Base\+Exception\mbox{]} }]{exc\+\_\+value}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Traceback\+Type\mbox{]} }]{exc\+\_\+traceback}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a3f58495f40ade18b8643239ab0031e09}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a3f58495f40ade18b8643239ab0031e09} 
+ "{}Base\+Connector"{} aiohttp.\+connector.\+Base\+Connector.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a602a82e59b75d6205155a937e1f2ff47}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a602a82e59b75d6205155a937e1f2ff47} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{exc}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_aaf9343d1afdab936b950005191e5573a}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_available\_connections@{\_available\_connections}}
+\index{\_available\_connections@{\_available\_connections}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_available\_connections()}{\_available\_connections()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_aaf9343d1afdab936b950005191e5573a} 
+ int aiohttp.\+connector.\+Base\+Connector.\+\_\+available\+\_\+connections (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Connection\+Key"{}}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return number of available connections.
+
+The limit, limit_per_host and the connection key are taken into account.
+
+If it returns less than 1 means that there are no connections
+available.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a1f14b910bb2c2b27146ccde969d00d81}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup@{\_cleanup}}
+\index{\_cleanup@{\_cleanup}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup()}{\_cleanup()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a1f14b910bb2c2b27146ccde969d00d81} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Cleanup unused transports.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_ae9dd791c1834480ae43aa0fe2fe5a830}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup\_closed@{\_cleanup\_closed}}
+\index{\_cleanup\_closed@{\_cleanup\_closed}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_closed()}{\_cleanup\_closed()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_ae9dd791c1834480ae43aa0fe2fe5a830} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup\+\_\+closed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Double confirmation for transport close.
+
+Some broken ssl servers may leave socket open without proper close.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a86882c748d5d53cf77a2a4d75f5196d6}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_close@{\_close}}
+\index{\_close@{\_close}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a86882c748d5d53cf77a2a4d75f5196d6} 
+ List\mbox{[}Awaitable\mbox{[}object\mbox{]}\mbox{]} aiohttp.\+connector.\+Base\+Connector.\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{abort\+\_\+ssl}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1connector_1_1_t_c_p_connector_afd184d9d6ec6be205f88ababcdf0c096}{aiohttp.\+connector.\+TCPConnector}}.
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a634c824bd13af002f94950cd6bdf083e}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_create\_connection@{\_create\_connection}}
+\index{\_create\_connection@{\_create\_connection}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_create\_connection()}{\_create\_connection()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a634c824bd13af002f94950cd6bdf083e} 
+ \mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}} aiohttp.\+connector.\+Base\+Connector.\+\_\+create\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_request}{Client\+Request}}}]{req}{, }\item[{List\mbox{[}"{}Trace"{}\mbox{]}}]{traces}{, }\item[{"{}Client\+Timeout"{}     }]{timeout}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1connector_1_1_named_pipe_connector_a949001fd024395eeb6f424372112196a}{aiohttp.\+connector.\+Named\+Pipe\+Connector}}, \mbox{\hyperlink{classaiohttp_1_1connector_1_1_t_c_p_connector_a12c9c293fe602650420b2fe64ea0d0dc}{aiohttp.\+connector.\+TCPConnector}}, and \mbox{\hyperlink{classaiohttp_1_1connector_1_1_unix_connector_ad07d03f22b658718e35345a24b887c23}{aiohttp.\+connector.\+Unix\+Connector}}.
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a992d78b5154c9d386808b1a43a867522}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_get@{\_get}}
+\index{\_get@{\_get}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a992d78b5154c9d386808b1a43a867522} 
+ Optional\mbox{[}\mbox{\hyperlink{classaiohttp_1_1connector_1_1_connection}{Connection}}\mbox{]} aiohttp.\+connector.\+Base\+Connector.\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Connection\+Key"{}}]{key}{, }\item[{List\mbox{[}"{}Trace"{}\mbox{]}     }]{traces}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get next reusable connection for the key or None.
+
+The connection will be marked as acquired.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a16fc3c17ea580277cb94f47e8257fd7d}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_release@{\_release}}
+\index{\_release@{\_release}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_release()}{\_release()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a16fc3c17ea580277cb94f47e8257fd7d} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+release (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Connection\+Key"{}}]{key}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}}}]{protocol}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{should\+\_\+close}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a6aa71c8d9e1b8aeb26f9dd18d06126e8}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_release\_acquired@{\_release\_acquired}}
+\index{\_release\_acquired@{\_release\_acquired}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_release\_acquired()}{\_release\_acquired()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a6aa71c8d9e1b8aeb26f9dd18d06126e8} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+release\+\_\+acquired (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Connection\+Key"{}}]{key}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}}}]{proto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Release acquired connection.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a0aec5f8e53aaa9eca68d28254c06ed06}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_release\_waiter@{\_release\_waiter}}
+\index{\_release\_waiter@{\_release\_waiter}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_release\_waiter()}{\_release\_waiter()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a0aec5f8e53aaa9eca68d28254c06ed06} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+release\+\_\+waiter (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Iterates over all waiters until one to be released is found.
+
+The one to be released is not finished and
+belongs to a host that has available connections.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a66e3b8c8c49476899cd2ca8bd45c8675}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_wait\_for\_available\_connection@{\_wait\_for\_available\_connection}}
+\index{\_wait\_for\_available\_connection@{\_wait\_for\_available\_connection}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_wait\_for\_available\_connection()}{\_wait\_for\_available\_connection()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a66e3b8c8c49476899cd2ca8bd45c8675} 
+ None aiohttp.\+connector.\+Base\+Connector.\+\_\+wait\+\_\+for\+\_\+available\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Connection\+Key"{}}]{key}{, }\item[{List\mbox{[}"{}Trace"{}\mbox{]}     }]{traces}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Wait for an available connection slot.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a0e656ae1867a424bce2d7dc9f5bd0277}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!close@{close}}
+\index{close@{close}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a0e656ae1867a424bce2d7dc9f5bd0277} 
+ Awaitable\mbox{[}None\mbox{]} aiohttp.\+connector.\+Base\+Connector.\+close (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{abort\+\_\+ssl}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close all opened transports.
+
+:param abort_ssl: If True, SSL connections will be aborted immediately
+                 without performing the shutdown handshake. This provides
+                 faster cleanup at the cost of less graceful disconnection.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classaiohttp_1_1connector_1_1_t_c_p_connector_a6ad9acb4665e19d98ebfea07982197c1}{aiohttp.\+connector.\+TCPConnector}}.
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a0d6bf3bf68e6c80dadac72a5fa7d6e09}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!closed@{closed}}
+\index{closed@{closed}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a0d6bf3bf68e6c80dadac72a5fa7d6e09} 
+ bool aiohttp.\+connector.\+Base\+Connector.\+closed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is connector closed.
+
+A readonly property.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a9bca0f6c1757967a31b76b0dc4359fdc}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!connect@{connect}}
+\index{connect@{connect}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a9bca0f6c1757967a31b76b0dc4359fdc} 
+ \mbox{\hyperlink{classaiohttp_1_1connector_1_1_connection}{Connection}} aiohttp.\+connector.\+Base\+Connector.\+connect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classaiohttp_1_1client__reqrep_1_1_client_request}{Client\+Request}}}]{req}{, }\item[{List\mbox{[}"{}Trace"{}\mbox{]}}]{traces}{, }\item[{"{}Client\+Timeout"{}     }]{timeout}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get from pool or create new connection.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a29d47b0fb073d2cdebd8d6f37a9b2c03}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!force\_close@{force\_close}}
+\index{force\_close@{force\_close}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{force\_close()}{force\_close()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a29d47b0fb073d2cdebd8d6f37a9b2c03} 
+ bool aiohttp.\+connector.\+Base\+Connector.\+force\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ultimately close connection on releasing if True.\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a0407438f951061bf5a3efc4db740e831}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!limit@{limit}}
+\index{limit@{limit}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a0407438f951061bf5a3efc4db740e831} 
+ int aiohttp.\+connector.\+Base\+Connector.\+limit (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The total number for simultaneous connections.
+
+If limit is 0 the connector has no limit.
+The default limit size is 100.
+\end{DoxyVerb}
+ \Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a2918d62dd3af538f4c7d9770fba39829}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!limit\_per\_host@{limit\_per\_host}}
+\index{limit\_per\_host@{limit\_per\_host}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{limit\_per\_host()}{limit\_per\_host()}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a2918d62dd3af538f4c7d9770fba39829} 
+ int aiohttp.\+connector.\+Base\+Connector.\+limit\+\_\+per\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The limit for simultaneous connections to the same endpoint.
+
+Endpoints are the same if they are have equal
+(host, port, is_ssl) triple.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a625f216cd1fa360480c8f165415fa235}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_acquired@{\_acquired}}
+\index{\_acquired@{\_acquired}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_acquired}{\_acquired}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a625f216cd1fa360480c8f165415fa235} 
+Set\mbox{[}\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}}\mbox{]} aiohttp.\+connector.\+Base\+Connector.\+\_\+acquired = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a90928d88f0c15faaf70608a3a4732ee4}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_acquired\_per\_host@{\_acquired\_per\_host}}
+\index{\_acquired\_per\_host@{\_acquired\_per\_host}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_acquired\_per\_host}{\_acquired\_per\_host}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a90928d88f0c15faaf70608a3a4732ee4} 
+tuple aiohttp.\+connector.\+Base\+Connector.\+\_\+acquired\+\_\+per\+\_\+host\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ defaultdict(set)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a33398c2f686ff290d2d30d54347db23c}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup\_closed\_disabled@{\_cleanup\_closed\_disabled}}
+\index{\_cleanup\_closed\_disabled@{\_cleanup\_closed\_disabled}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_closed\_disabled}{\_cleanup\_closed\_disabled}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a33398c2f686ff290d2d30d54347db23c} 
+aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup\+\_\+closed\+\_\+disabled = not enable\+\_\+cleanup\+\_\+closed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_af5b732f2bf67720e62f5313f73acdfc4}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup\_closed\_handle@{\_cleanup\_closed\_handle}}
+\index{\_cleanup\_closed\_handle@{\_cleanup\_closed\_handle}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_closed\_handle}{\_cleanup\_closed\_handle}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_af5b732f2bf67720e62f5313f73acdfc4} 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup\+\_\+closed\+\_\+handle = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a215401084cd6fe0aeb7132c88eae5608}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup\_closed\_period@{\_cleanup\_closed\_period}}
+\index{\_cleanup\_closed\_period@{\_cleanup\_closed\_period}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_closed\_period}{\_cleanup\_closed\_period}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a215401084cd6fe0aeb7132c88eae5608} 
+float aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup\+\_\+closed\+\_\+period = 2.\+0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a0f33536f1aefe259e9ff39e32fba3714}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup\_closed\_transports@{\_cleanup\_closed\_transports}}
+\index{\_cleanup\_closed\_transports@{\_cleanup\_closed\_transports}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_closed\_transports}{\_cleanup\_closed\_transports}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a0f33536f1aefe259e9ff39e32fba3714} 
+list aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup\+\_\+closed\+\_\+transports = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_ac1b7469396f5a56c83f4ac4984279c91}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_cleanup\_handle@{\_cleanup\_handle}}
+\index{\_cleanup\_handle@{\_cleanup\_handle}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_handle}{\_cleanup\_handle}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_ac1b7469396f5a56c83f4ac4984279c91} 
+Optional\mbox{[}asyncio.\+Timer\+Handle\mbox{]} aiohttp.\+connector.\+Base\+Connector.\+\_\+cleanup\+\_\+handle = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a938676759fc204f93d8f5121c97ab58e}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_closed@{\_closed}}
+\index{\_closed@{\_closed}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_closed}{\_closed}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a938676759fc204f93d8f5121c97ab58e} 
+bool aiohttp.\+connector.\+Base\+Connector.\+\_\+closed = True\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a2519ae2a866a69e547230f84b9f74b1a}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_conns@{\_conns}}
+\index{\_conns@{\_conns}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_conns}{\_conns}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a2519ae2a866a69e547230f84b9f74b1a} 
+Default\+Dict\mbox{[} aiohttp.\+connector.\+Base\+Connector.\+\_\+conns\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a6952fd55ffe9eb6427253c3f0cbac35f}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_factory@{\_factory}}
+\index{\_factory@{\_factory}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_factory}{\_factory}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a6952fd55ffe9eb6427253c3f0cbac35f} 
+aiohttp.\+connector.\+Base\+Connector.\+\_\+factory = functools.\+partial(\mbox{\hyperlink{classaiohttp_1_1client__proto_1_1_response_handler}{Response\+Handler}}, loop=loop)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a98dd932b41efc91e30be8f9403005f46}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_force\_close@{\_force\_close}}
+\index{\_force\_close@{\_force\_close}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_force\_close}{\_force\_close}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a98dd932b41efc91e30be8f9403005f46} 
+bool aiohttp.\+connector.\+Base\+Connector.\+\_\+force\+\_\+close = \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a29d47b0fb073d2cdebd8d6f37a9b2c03}{force\+\_\+close}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_aed798b08a503d7cafcdcea46d2f17fb9}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_keepalive\_timeout@{\_keepalive\_timeout}}
+\index{\_keepalive\_timeout@{\_keepalive\_timeout}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_keepalive\_timeout}{\_keepalive\_timeout}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_aed798b08a503d7cafcdcea46d2f17fb9} 
+aiohttp.\+connector.\+Base\+Connector.\+\_\+keepalive\+\_\+timeout = cast(float, keepalive\+\_\+timeout)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a6e22ad02703405f2e3e380653c7b6745}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_limit@{\_limit}}
+\index{\_limit@{\_limit}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_limit}{\_limit}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a6e22ad02703405f2e3e380653c7b6745} 
+int aiohttp.\+connector.\+Base\+Connector.\+\_\+limit = \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a0407438f951061bf5a3efc4db740e831}{limit}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a557a3582b3825414f50c78f75d9629f9}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_limit\_per\_host@{\_limit\_per\_host}}
+\index{\_limit\_per\_host@{\_limit\_per\_host}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_limit\_per\_host}{\_limit\_per\_host}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a557a3582b3825414f50c78f75d9629f9} 
+int aiohttp.\+connector.\+Base\+Connector.\+\_\+limit\+\_\+per\+\_\+host = \mbox{\hyperlink{classaiohttp_1_1connector_1_1_base_connector_a2918d62dd3af538f4c7d9770fba39829}{limit\+\_\+per\+\_\+host}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_acbc6836719957da2a8d3907484b50611}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_loop@{\_loop}}
+\index{\_loop@{\_loop}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_loop}{\_loop}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_acbc6836719957da2a8d3907484b50611} 
+aiohttp.\+connector.\+Base\+Connector.\+\_\+loop = loop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_af3382d5ddb0ef4d9d3b1704008ce6b38}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_placeholder\_future@{\_placeholder\_future}}
+\index{\_placeholder\_future@{\_placeholder\_future}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_placeholder\_future}{\_placeholder\_future}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_af3382d5ddb0ef4d9d3b1704008ce6b38} 
+tuple aiohttp.\+connector.\+Base\+Connector.\+\_\+placeholder\+\_\+future\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ loop.create\_future()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a6406282b7ebb69e5af150e8d9f1f6739}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_source\_traceback@{\_source\_traceback}}
+\index{\_source\_traceback@{\_source\_traceback}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_source\_traceback}{\_source\_traceback}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a6406282b7ebb69e5af150e8d9f1f6739} 
+aiohttp.\+connector.\+Base\+Connector.\+\_\+source\+\_\+traceback = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_afd4245efae3552fd666bec7577abcc18}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_timeout\_ceil\_threshold@{\_timeout\_ceil\_threshold}}
+\index{\_timeout\_ceil\_threshold@{\_timeout\_ceil\_threshold}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_timeout\_ceil\_threshold}{\_timeout\_ceil\_threshold}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_afd4245efae3552fd666bec7577abcc18} 
+aiohttp.\+connector.\+Base\+Connector.\+\_\+timeout\+\_\+ceil\+\_\+threshold = timeout\+\_\+ceil\+\_\+threshold\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a17a65f82ad5dec379fa8998aad07d1c1}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!\_waiters@{\_waiters}}
+\index{\_waiters@{\_waiters}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{\_waiters}{\_waiters}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a17a65f82ad5dec379fa8998aad07d1c1} 
+Default\+Dict\mbox{[} aiohttp.\+connector.\+Base\+Connector.\+\_\+waiters\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classaiohttp_1_1connector_1_1_base_connector_a2ab024a1e37168fdce80af010d5b0a08}\index{aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}!allowed\_protocol\_schema\_set@{allowed\_protocol\_schema\_set}}
+\index{allowed\_protocol\_schema\_set@{allowed\_protocol\_schema\_set}!aiohttp.connector.BaseConnector@{aiohttp.connector.BaseConnector}}
+\doxysubsubsection{\texorpdfstring{allowed\_protocol\_schema\_set}{allowed\_protocol\_schema\_set}}
+{\footnotesize\ttfamily \label{classaiohttp_1_1connector_1_1_base_connector_a2ab024a1e37168fdce80af010d5b0a08} 
+aiohttp.\+connector.\+Base\+Connector.\+allowed\+\_\+protocol\+\_\+schema\+\_\+set = \mbox{\hyperlink{namespaceaiohttp_1_1connector_a2320a90429b028c9e1b7d50c949a939f}{HIGH\+\_\+\+LEVEL\+\_\+\+SCHEMA\+\_\+\+SET}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/aiohttp/\mbox{\hyperlink{connector_8py}{connector.\+py}}\end{DoxyCompactItemize}

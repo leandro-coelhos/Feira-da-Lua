@@ -1,0 +1,56 @@
+\doxysection{\+\_\+pytest.\+\_\+code.\+source Namespace Reference}
+\hypertarget{namespace__pytest_1_1__code_1_1source}{}\label{namespace__pytest_1_1__code_1_1source}\index{\_pytest.\_code.source@{\_pytest.\_code.source}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}}\texorpdfstring{$\vert$}{|}None, int\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1__code_1_1source_a15a3a076cf3a2b4289d7b981cb8e1fc3}{findsource}} (obj)
+\item 
+types.\+Code\+Type \mbox{\hyperlink{namespace__pytest_1_1__code_1_1source_a295420ad1677a566487816956d0fb9f4}{getrawcode}} (object obj, bool trycall=True)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1__code_1_1source_a7499d5b32d3c5e31b17e6652360b8b3c}{deindent}} (Iterable\mbox{[}str\mbox{]} lines)
+\item 
+tuple\mbox{[}int, int\texorpdfstring{$\vert$}{|}None\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1__code_1_1source_a42c974899864eede687978a448c0f0d9}{get\+\_\+statement\+\_\+startend2}} (int lineno, ast.\+AST node)
+\item 
+tuple\mbox{[}ast.\+AST, int, int\mbox{]} \mbox{\hyperlink{namespace__pytest_1_1__code_1_1source_acb5aa5d0206f8390e3f05c7d11c9a850}{getstatementrange\+\_\+ast}} (int lineno, \mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} source, bool assertion=False, ast.\+AST\texorpdfstring{$\vert$}{|}None astnode=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace__pytest_1_1__code_1_1source_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace__pytest_1_1__code_1_1source_a7499d5b32d3c5e31b17e6652360b8b3c}\index{\_pytest.\_code.source@{\_pytest.\_code.source}!deindent@{deindent}}
+\index{deindent@{deindent}!\_pytest.\_code.source@{\_pytest.\_code.source}}
+\doxysubsubsection{\texorpdfstring{deindent()}{deindent()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__code_1_1source_a7499d5b32d3c5e31b17e6652360b8b3c} 
+ list\mbox{[}str\mbox{]} \+\_\+pytest.\+\_\+code.\+source.\+deindent (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}str\mbox{]}}]{lines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1__code_1_1source_a15a3a076cf3a2b4289d7b981cb8e1fc3}\index{\_pytest.\_code.source@{\_pytest.\_code.source}!findsource@{findsource}}
+\index{findsource@{findsource}!\_pytest.\_code.source@{\_pytest.\_code.source}}
+\doxysubsubsection{\texorpdfstring{findsource()}{findsource()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__code_1_1source_a15a3a076cf3a2b4289d7b981cb8e1fc3} 
+ tuple\mbox{[}\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}} \texorpdfstring{$\vert$}{|} None, int\mbox{]} \+\_\+pytest.\+\_\+code.\+source.\+findsource (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1__code_1_1source_a42c974899864eede687978a448c0f0d9}\index{\_pytest.\_code.source@{\_pytest.\_code.source}!get\_statement\_startend2@{get\_statement\_startend2}}
+\index{get\_statement\_startend2@{get\_statement\_startend2}!\_pytest.\_code.source@{\_pytest.\_code.source}}
+\doxysubsubsection{\texorpdfstring{get\_statement\_startend2()}{get\_statement\_startend2()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__code_1_1source_a42c974899864eede687978a448c0f0d9} 
+ tuple\mbox{[}int, int \texorpdfstring{$\vert$}{|} None\mbox{]} \+\_\+pytest.\+\_\+code.\+source.\+get\+\_\+statement\+\_\+startend2 (\begin{DoxyParamCaption}\item[{int}]{lineno}{, }\item[{ast.\+AST}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace__pytest_1_1__code_1_1source_a295420ad1677a566487816956d0fb9f4}\index{\_pytest.\_code.source@{\_pytest.\_code.source}!getrawcode@{getrawcode}}
+\index{getrawcode@{getrawcode}!\_pytest.\_code.source@{\_pytest.\_code.source}}
+\doxysubsubsection{\texorpdfstring{getrawcode()}{getrawcode()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__code_1_1source_a295420ad1677a566487816956d0fb9f4} 
+ types.\+Code\+Type \+\_\+pytest.\+\_\+code.\+source.\+getrawcode (\begin{DoxyParamCaption}\item[{object}]{obj}{, }\item[{bool }]{trycall}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return code object for given function.\end{DoxyVerb}
+ \Hypertarget{namespace__pytest_1_1__code_1_1source_acb5aa5d0206f8390e3f05c7d11c9a850}\index{\_pytest.\_code.source@{\_pytest.\_code.source}!getstatementrange\_ast@{getstatementrange\_ast}}
+\index{getstatementrange\_ast@{getstatementrange\_ast}!\_pytest.\_code.source@{\_pytest.\_code.source}}
+\doxysubsubsection{\texorpdfstring{getstatementrange\_ast()}{getstatementrange\_ast()}}
+{\footnotesize\ttfamily \label{namespace__pytest_1_1__code_1_1source_acb5aa5d0206f8390e3f05c7d11c9a850} 
+ tuple\mbox{[}ast.\+AST, int, int\mbox{]} \+\_\+pytest.\+\_\+code.\+source.\+getstatementrange\+\_\+ast (\begin{DoxyParamCaption}\item[{int}]{lineno}{, }\item[{\mbox{\hyperlink{class__pytest_1_1__code_1_1source_1_1_source}{Source}}}]{source}{, }\item[{bool }]{assertion}{ = {\ttfamily False}, }\item[{ast.\+AST \texorpdfstring{$\vert$}{|} None }]{astnode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+

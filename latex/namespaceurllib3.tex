@@ -1,0 +1,231 @@
+\doxysection{urllib3 Namespace Reference}
+\hypertarget{namespaceurllib3}{}\label{namespaceurllib3}\index{urllib3@{urllib3}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1__base__connection}{\+\_\+base\+\_\+connection}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1__collections}{\+\_\+collections}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1__request__methods}{\+\_\+request\+\_\+methods}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1__version}{\+\_\+version}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1connection}{connection}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1connectionpool}{connectionpool}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1contrib}{contrib}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1exceptions}{exceptions}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1fields}{fields}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1filepost}{filepost}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1http2}{http2}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1poolmanager}{poolmanager}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1response}{response}}
+\item 
+namespace \mbox{\hyperlink{namespaceurllib3_1_1util}{util}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+logging.\+Stream\+Handler\mbox{[}typing.\+Text\+IO\mbox{]} \mbox{\hyperlink{namespaceurllib3_a175f21a8722c7300d2df6702fdb5af75}{add\+\_\+stderr\+\_\+logger}} (int level=logging.\+DEBUG)
+\item 
+None \mbox{\hyperlink{namespaceurllib3_a266618465dff8a454090e79e9af2b488}{disable\+\_\+warnings}} (type\mbox{[}Warning\mbox{]} category=\mbox{\hyperlink{classurllib3_1_1exceptions_1_1_h_t_t_p_warning}{exceptions.\+HTTPWarning}})
+\item 
+\mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{Base\+HTTPResponse}} \mbox{\hyperlink{namespaceurllib3_a53d4060ce108903ab10aa129ad35bd83}{request}} (str method, str url, \texorpdfstring{$\ast$}{*}, \+\_\+\+TYPE\+\_\+\+BODY\texorpdfstring{$\vert$}{|}None body=None, \+\_\+\+TYPE\+\_\+\+FIELDS\texorpdfstring{$\vert$}{|}None fields=None, typing.\+Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None headers=None, bool\texorpdfstring{$\vert$}{|}None preload\+\_\+content=True, bool\texorpdfstring{$\vert$}{|}None decode\+\_\+content=True, bool\texorpdfstring{$\vert$}{|}None redirect=True, \mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}}\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None retries=None, \mbox{\hyperlink{classurllib3_1_1util_1_1timeout_1_1_timeout}{Timeout}}\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None timeout=3, typing.\+Any\texorpdfstring{$\vert$}{|}None json=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_a7052976a67606b391829667903889a8e}{\+\_\+\+\_\+author\+\_\+\+\_\+}} = "{}Andrey Petrov (andrey.\+petrov@shazow.\+net)"{}
+\item 
+str \mbox{\hyperlink{namespaceurllib3_a332875e4e8e8843328f47e0ba8b58542}{\+\_\+\+\_\+license\+\_\+\+\_\+}} = "{}MIT"{}
+\item 
+\mbox{\hyperlink{namespaceurllib3_a93b0004051bdd5f8ff0cdba12edb138e}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = \+\_\+\+\_\+version\+\_\+\+\_\+
+\item 
+tuple \mbox{\hyperlink{namespaceurllib3_adc275542fa0c5f99205a774c5b6523b0}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_a9fe0702bfa0304762891179fc0c13512}{Security\+Warning}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_a482c1279db41ee6ce12aa11d58296fb5}{append}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_affad24dfc72abce42092b35f3b1fafa4}{Insecure\+Platform\+Warning}}
+\item 
+\mbox{\hyperlink{namespaceurllib3_a623f32816e4e65dd9ea02a76d3d78cdc}{\+\_\+\+DEFAULT\+\_\+\+POOL}} = \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1_pool_manager}{Pool\+Manager}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Python HTTP library with thread-safe connection pooling, file post support, user friendly, and more
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespaceurllib3_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceurllib3_a175f21a8722c7300d2df6702fdb5af75}\index{urllib3@{urllib3}!add\_stderr\_logger@{add\_stderr\_logger}}
+\index{add\_stderr\_logger@{add\_stderr\_logger}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{add\_stderr\_logger()}{add\_stderr\_logger()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a175f21a8722c7300d2df6702fdb5af75} 
+ logging.\+Stream\+Handler\mbox{[}typing.\+Text\+IO\mbox{]} urllib3.\+add\+\_\+stderr\+\_\+logger (\begin{DoxyParamCaption}\item[{int }]{level}{ = {\ttfamily logging.DEBUG}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper for quickly adding a StreamHandler to the logger. Useful for
+debugging.
+
+Returns the handler after adding it.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_a266618465dff8a454090e79e9af2b488}\index{urllib3@{urllib3}!disable\_warnings@{disable\_warnings}}
+\index{disable\_warnings@{disable\_warnings}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{disable\_warnings()}{disable\_warnings()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a266618465dff8a454090e79e9af2b488} 
+ None urllib3.\+disable\+\_\+warnings (\begin{DoxyParamCaption}\item[{type\mbox{[}Warning\mbox{]} }]{category}{ = {\ttfamily \mbox{\hyperlink{classurllib3_1_1exceptions_1_1_h_t_t_p_warning}{exceptions.\+HTTPWarning}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper for quickly disabling all urllib3 warnings.
+\end{DoxyVerb}
+ \Hypertarget{namespaceurllib3_a53d4060ce108903ab10aa129ad35bd83}\index{urllib3@{urllib3}!request@{request}}
+\index{request@{request}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a53d4060ce108903ab10aa129ad35bd83} 
+ \mbox{\hyperlink{classurllib3_1_1response_1_1_base_h_t_t_p_response}{Base\+HTTPResponse}} urllib3.\+request (\begin{DoxyParamCaption}\item[{str}]{method}{, }\item[{str}]{url}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{\+\_\+\+TYPE\+\_\+\+BODY \texorpdfstring{$\vert$}{|} None }]{body}{ = {\ttfamily None}, }\item[{\+\_\+\+TYPE\+\_\+\+FIELDS \texorpdfstring{$\vert$}{|} None }]{fields}{ = {\ttfamily None}, }\item[{typing.\+Mapping\mbox{[}str, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{preload\+\_\+content}{ = {\ttfamily True}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{decode\+\_\+content}{ = {\ttfamily True}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{redirect}{ = {\ttfamily True}, }\item[{\mbox{\hyperlink{classurllib3_1_1util_1_1retry_1_1_retry}{Retry}} \texorpdfstring{$\vert$}{|} bool \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} None }]{retries}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classurllib3_1_1util_1_1timeout_1_1_timeout}{Timeout}} \texorpdfstring{$\vert$}{|} float \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} None }]{timeout}{ = {\ttfamily 3}, }\item[{typing.\+Any \texorpdfstring{$\vert$}{|} None }]{json}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A convenience, top-level request method. It uses a module-global ``PoolManager`` instance.
+Therefore, its side effects could be shared across dependencies relying on it.
+To avoid side effects create a new ``PoolManager`` instance and use it instead.
+The method does not accept low-level ``**urlopen_kw`` keyword arguments.
+
+:param method:
+    HTTP request method (such as GET, POST, PUT, etc.)
+
+:param url:
+    The URL to perform the request on.
+
+:param body:
+    Data to send in the request body, either :class:`str`, :class:`bytes`,
+    an iterable of :class:`str`/:class:`bytes`, or a file-like object.
+
+:param fields:
+    Data to encode and send in the request body.
+
+:param headers:
+    Dictionary of custom headers to send, such as User-Agent,
+    If-None-Match, etc.
+
+:param bool preload_content:
+    If True, the response's body will be preloaded into memory.
+
+:param bool decode_content:
+    If True, will attempt to decode the body based on the
+    'content-encoding' header.
+
+:param redirect:
+    If True, automatically handle redirects (status codes 301, 302,
+    303, 307, 308). Each redirect counts as a retry. Disabling retries
+    will disable redirect, too.
+
+:param retries:
+    Configure the number of retries to allow before raising a
+    :class:`~urllib3.exceptions.MaxRetryError` exception.
+
+    If ``None`` (default) will retry 3 times, see ``Retry.DEFAULT``. Pass a
+    :class:`~urllib3.util.retry.Retry` object for fine-grained control
+    over different types of retries.
+    Pass an integer number to retry connection errors that many times,
+    but no other types of errors. Pass zero to never retry.
+
+    If ``False``, then retries are disabled and any exception is raised
+    immediately. Also, instead of raising a MaxRetryError on redirects,
+    the redirect response will be returned.
+
+:type retries: :class:`~urllib3.util.retry.Retry`, False, or an int.
+
+:param timeout:
+    If specified, overrides the default timeout for this one
+    request. It may be a float (in seconds) or an instance of
+    :class:`urllib3.util.Timeout`.
+
+:param json:
+    Data to encode and send as JSON with UTF-encoded in the request body.
+    The ``"Content-Type"`` header will be set to ``"application/json"``
+    unless specified otherwise.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceurllib3_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceurllib3_adc275542fa0c5f99205a774c5b6523b0}\index{urllib3@{urllib3}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespaceurllib3_adc275542fa0c5f99205a774c5b6523b0} 
+tuple urllib3.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}HTTPConnectionPool"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}HTTPHeaderDict"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}HTTPSConnectionPool"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}PoolManager"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}ProxyManager"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}HTTPResponse"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}Retry"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}Timeout"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}add\_stderr\_logger"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}connection\_from\_url"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}disable\_warnings"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}encode\_multipart\_formdata"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}make\_headers"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}proxy\_from\_url"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}request"{}},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}BaseHTTPResponse"{}},}
+\DoxyCodeLine{00018\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespaceurllib3_a7052976a67606b391829667903889a8e}\index{urllib3@{urllib3}!\_\_author\_\_@{\_\_author\_\_}}
+\index{\_\_author\_\_@{\_\_author\_\_}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{\_\_author\_\_}{\_\_author\_\_}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a7052976a67606b391829667903889a8e} 
+str urllib3.\+\_\+\+\_\+author\+\_\+\+\_\+ = "{}Andrey Petrov (andrey.\+petrov@shazow.\+net)"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceurllib3_a332875e4e8e8843328f47e0ba8b58542}\index{urllib3@{urllib3}!\_\_license\_\_@{\_\_license\_\_}}
+\index{\_\_license\_\_@{\_\_license\_\_}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{\_\_license\_\_}{\_\_license\_\_}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a332875e4e8e8843328f47e0ba8b58542} 
+str urllib3.\+\_\+\+\_\+license\+\_\+\+\_\+ = "{}MIT"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceurllib3_a93b0004051bdd5f8ff0cdba12edb138e}\index{urllib3@{urllib3}!\_\_version\_\_@{\_\_version\_\_}}
+\index{\_\_version\_\_@{\_\_version\_\_}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{\_\_version\_\_}{\_\_version\_\_}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a93b0004051bdd5f8ff0cdba12edb138e} 
+urllib3.\+\_\+\+\_\+version\+\_\+\+\_\+ = \+\_\+\+\_\+version\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespaceurllib3_a623f32816e4e65dd9ea02a76d3d78cdc}\index{urllib3@{urllib3}!\_DEFAULT\_POOL@{\_DEFAULT\_POOL}}
+\index{\_DEFAULT\_POOL@{\_DEFAULT\_POOL}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{\_DEFAULT\_POOL}{\_DEFAULT\_POOL}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a623f32816e4e65dd9ea02a76d3d78cdc} 
+urllib3.\+\_\+\+DEFAULT\+\_\+\+POOL = \mbox{\hyperlink{classurllib3_1_1poolmanager_1_1_pool_manager}{Pool\+Manager}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceurllib3_a482c1279db41ee6ce12aa11d58296fb5}\index{urllib3@{urllib3}!append@{append}}
+\index{append@{append}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{append}{append}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a482c1279db41ee6ce12aa11d58296fb5} 
+urllib3.\+append}
+
+\Hypertarget{namespaceurllib3_affad24dfc72abce42092b35f3b1fafa4}\index{urllib3@{urllib3}!InsecurePlatformWarning@{InsecurePlatformWarning}}
+\index{InsecurePlatformWarning@{InsecurePlatformWarning}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{InsecurePlatformWarning}{InsecurePlatformWarning}}
+{\footnotesize\ttfamily \label{namespaceurllib3_affad24dfc72abce42092b35f3b1fafa4} 
+urllib3.\+Insecure\+Platform\+Warning}
+
+\Hypertarget{namespaceurllib3_a9fe0702bfa0304762891179fc0c13512}\index{urllib3@{urllib3}!SecurityWarning@{SecurityWarning}}
+\index{SecurityWarning@{SecurityWarning}!urllib3@{urllib3}}
+\doxysubsubsection{\texorpdfstring{SecurityWarning}{SecurityWarning}}
+{\footnotesize\ttfamily \label{namespaceurllib3_a9fe0702bfa0304762891179fc0c13512} 
+urllib3.\+Security\+Warning}
+

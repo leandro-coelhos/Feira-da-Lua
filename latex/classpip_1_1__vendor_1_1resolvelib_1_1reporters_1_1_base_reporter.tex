@@ -1,0 +1,142 @@
+\doxysection{pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter}{}\label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+Inheritance diagram for pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.076923cm]{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a1eaee5214ef4178add4b621b7775acf2}{starting}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a247ba15b01713df0453dd8a49127b827}{starting\+\_\+round}} (self, int index)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_aa089cd8574d139d40f5124659ff13884}{ending\+\_\+round}} (self, int index, \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1structs_1_1_state}{State}}\mbox{[}RT, CT, KT\mbox{]} state)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_ab64f679cd4834093f609744a7d3189d1}{ending}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1structs_1_1_state}{State}}\mbox{[}RT, CT, KT\mbox{]} state)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a2ff650a7dc8203c4cb8003b5b27e5b21}{adding\+\_\+requirement}} (self, RT requirement, CT\texorpdfstring{$\vert$}{|}None parent)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a930b8b9fc4697c35c3f337c24b2d8d4f}{resolving\+\_\+conflicts}} (self, Collection\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1structs_1_1_requirement_information}{Requirement\+Information}}\mbox{[}RT, CT\mbox{]}\mbox{]} causes)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_ad181d895550899737e6d88d800df1768}{rejecting\+\_\+candidate}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1criterion_1_1_criterion}{Criterion}}\mbox{[}RT, CT\mbox{]} criterion, CT candidate)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a225f2cd3e8c6b9560ab8fb6dfebebf25}{pinning}} (self, CT candidate)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Delegate class to provide progress reporting for the resolver.\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a2ff650a7dc8203c4cb8003b5b27e5b21}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!adding\_requirement@{adding\_requirement}}
+\index{adding\_requirement@{adding\_requirement}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{adding\_requirement()}{adding\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a2ff650a7dc8203c4cb8003b5b27e5b21} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+adding\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{RT}]{requirement}{, }\item[{CT \texorpdfstring{$\vert$}{|} None}]{parent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when adding a new requirement into the resolve criteria.
+
+:param requirement: The additional requirement to be applied to filter
+    the available candidaites.
+:param parent: The candidate that requires ``requirement`` as a
+    dependency, or None if ``requirement`` is one of the root
+    requirements passed in from ``Resolver.resolve()``.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_a6c980b1d6428fe46a41f21766c7acba4}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_ab64f679cd4834093f609744a7d3189d1}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!ending@{ending}}
+\index{ending@{ending}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{ending()}{ending()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_ab64f679cd4834093f609744a7d3189d1} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+ending (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1structs_1_1_state}{State}}\mbox{[}RT, CT, KT\mbox{]}}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before the resolution ends successfully.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_a1d2f08b304c4a5d06bd925a4ac93a6e1}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_aa089cd8574d139d40f5124659ff13884}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!ending\_round@{ending\_round}}
+\index{ending\_round@{ending\_round}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{ending\_round()}{ending\_round()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_aa089cd8574d139d40f5124659ff13884} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+ending\+\_\+round (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1structs_1_1_state}{State}}\mbox{[}RT, CT, KT\mbox{]}}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before each round of resolution ends.
+
+This is NOT called if the resolution ends at this round. Use `ending`
+if you want to report finalization. The index is zero-based.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_a6ed50b9a1a66243e2c71c4fde03ecb9f}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a225f2cd3e8c6b9560ab8fb6dfebebf25}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!pinning@{pinning}}
+\index{pinning@{pinning}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{pinning()}{pinning()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a225f2cd3e8c6b9560ab8fb6dfebebf25} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+pinning (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{CT}]{candidate}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when adding a candidate to the potential solution.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_ac5102908f73462d246da0700b83bb7f3}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_ad181d895550899737e6d88d800df1768}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!rejecting\_candidate@{rejecting\_candidate}}
+\index{rejecting\_candidate@{rejecting\_candidate}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{rejecting\_candidate()}{rejecting\_candidate()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_ad181d895550899737e6d88d800df1768} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+rejecting\+\_\+candidate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1criterion_1_1_criterion}{Criterion}}\mbox{[}RT, CT\mbox{]}}]{criterion}{, }\item[{CT}]{candidate}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when rejecting a candidate during backtracking.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_a31a45da7f27b60389d7559590ec2c887}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_reporter_a94606c7b9b1ac3908b0579ee4a9a318f}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Reporter}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a930b8b9fc4697c35c3f337c24b2d8d4f}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!resolving\_conflicts@{resolving\_conflicts}}
+\index{resolving\_conflicts@{resolving\_conflicts}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{resolving\_conflicts()}{resolving\_conflicts()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a930b8b9fc4697c35c3f337c24b2d8d4f} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+resolving\+\_\+conflicts (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Collection\mbox{[}\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1structs_1_1_requirement_information}{Requirement\+Information}}\mbox{[}RT, CT\mbox{]}\mbox{]}     }]{causes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when starting to attempt requirement conflict resolution.
+
+:param causes: The information on the collision that caused the backtracking.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a1eaee5214ef4178add4b621b7775acf2}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!starting@{starting}}
+\index{starting@{starting}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{starting()}{starting()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a1eaee5214ef4178add4b621b7775acf2} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+starting (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before the resolution actually starts.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_af5fb246c3a4605b4f6939f2a85d0d94c}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a247ba15b01713df0453dd8a49127b827}\index{pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}!starting\_round@{starting\_round}}
+\index{starting\_round@{starting\_round}!pip.\_vendor.resolvelib.reporters.BaseReporter@{pip.\_vendor.resolvelib.reporters.BaseReporter}}
+\doxysubsubsection{\texorpdfstring{starting\_round()}{starting\_round()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1reporters_1_1_base_reporter_a247ba15b01713df0453dd8a49127b827} 
+ None pip.\+\_\+vendor.\+resolvelib.\+reporters.\+Base\+Reporter.\+starting\+\_\+round (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before each round of resolution starts.
+
+The index is zero-based.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1reporter_1_1_pip_debugging_reporter_aa1de0e68891b340d3beebbad5ef1e114}{pip.\+\_\+internal.\+resolution.\+resolvelib.\+reporter.\+Pip\+Debugging\+Reporter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/resolvelib/\mbox{\hyperlink{reporters_8py}{reporters.\+py}}\end{DoxyCompactItemize}

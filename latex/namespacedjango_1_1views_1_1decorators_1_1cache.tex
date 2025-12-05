@@ -1,0 +1,57 @@
+\doxysection{django.\+views.\+decorators.\+cache Namespace Reference}
+\hypertarget{namespacedjango_1_1views_1_1decorators_1_1cache}{}\label{namespacedjango_1_1views_1_1decorators_1_1cache}\index{django.views.decorators.cache@{django.views.decorators.cache}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1cache_a959589e601ece88b35fdf4a3c8cf5e8a}{cache\+\_\+page}} (timeout, \texorpdfstring{$\ast$}{*}, cache=None, key\+\_\+prefix=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1cache_a009890ae6b05ec926364deaf465383c1}{\+\_\+check\+\_\+request}} (request, decorator\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1cache_aa4a9773fafc1f68987600dc2566e153a}{cache\+\_\+control}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1cache_ace9de0c24e81dd6a104a8fc5482351da}{never\+\_\+cache}} (view\+\_\+func)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1cache_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1cache_a009890ae6b05ec926364deaf465383c1}\index{django.views.decorators.cache@{django.views.decorators.cache}!\_check\_request@{\_check\_request}}
+\index{\_check\_request@{\_check\_request}!django.views.decorators.cache@{django.views.decorators.cache}}
+\doxysubsubsection{\texorpdfstring{\_check\_request()}{\_check\_request()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1cache_a009890ae6b05ec926364deaf465383c1} 
+django.\+views.\+decorators.\+cache.\+\_\+check\+\_\+request (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{decorator\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1cache_aa4a9773fafc1f68987600dc2566e153a}\index{django.views.decorators.cache@{django.views.decorators.cache}!cache\_control@{cache\_control}}
+\index{cache\_control@{cache\_control}!django.views.decorators.cache@{django.views.decorators.cache}}
+\doxysubsubsection{\texorpdfstring{cache\_control()}{cache\_control()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1cache_aa4a9773fafc1f68987600dc2566e153a} 
+django.\+views.\+decorators.\+cache.\+cache\+\_\+control (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1cache_a959589e601ece88b35fdf4a3c8cf5e8a}\index{django.views.decorators.cache@{django.views.decorators.cache}!cache\_page@{cache\_page}}
+\index{cache\_page@{cache\_page}!django.views.decorators.cache@{django.views.decorators.cache}}
+\doxysubsubsection{\texorpdfstring{cache\_page()}{cache\_page()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1cache_a959589e601ece88b35fdf4a3c8cf5e8a} 
+django.\+views.\+decorators.\+cache.\+cache\+\_\+page (\begin{DoxyParamCaption}\item[{}]{timeout}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{cache}{ = {\ttfamily None}, }\item[{}]{key\+\_\+prefix}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator for views that tries getting the page from the cache and
+populates the cache if the page isn't in the cache yet.
+
+The cache is keyed by the URL and some data from the headers.
+Additionally there is the key prefix that is used to distinguish different
+cache areas in a multi-site setup. You could use the
+get_current_site().domain, for example, as that is unique across a Django
+project.
+
+Additionally, all headers from the response's Vary header will be taken
+into account on caching -- just like the middleware does.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1views_1_1decorators_1_1cache_ace9de0c24e81dd6a104a8fc5482351da}\index{django.views.decorators.cache@{django.views.decorators.cache}!never\_cache@{never\_cache}}
+\index{never\_cache@{never\_cache}!django.views.decorators.cache@{django.views.decorators.cache}}
+\doxysubsubsection{\texorpdfstring{never\_cache()}{never\_cache()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1views_1_1decorators_1_1cache_ace9de0c24e81dd6a104a8fc5482351da} 
+django.\+views.\+decorators.\+cache.\+never\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{view\+\_\+func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator that adds headers to a response so that it will never be cached.
+\end{DoxyVerb}
+ 

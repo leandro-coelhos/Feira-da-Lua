@@ -1,0 +1,235 @@
+\doxysection{\+\_\+pytest.\+pytester.\+Hook\+Recorder Class Reference}
+\hypertarget{class__pytest_1_1pytester_1_1_hook_recorder}{}\label{class__pytest_1_1pytester_1_1_hook_recorder}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a2dda27f2482d5ea7f424028a1fc35f9b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}} pluginmanager, \texorpdfstring{$\ast$}{*}, bool \+\_\+ispytest=False)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_acfc4339e8dc86f902d38c85d33992428}{finish\+\_\+recording}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_ae251a7675b8f277ed06d59a08da2642a}{getcalls}} (self, str\texorpdfstring{$\vert$}{|}Iterable\mbox{[}str\mbox{]} names)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a63736cf54ae1a355769ca50b76f08c21}{assert\+\_\+contains}} (self, Sequence\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]} entries)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a0cd953a54407b6bd0d2b46d5dcbddaac}{popcall}} (self, str name)
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_aad0a60184658c4026bb0ef673fcf0e45}{getcall}} (self, str name)
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a199ab40398a2aacd3d8944fa3d1218a0}{getreports}} (self, Literal\mbox{[}"{}pytest\+\_\+collectreport"{}\mbox{]} names)
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a0d75c78557d9ef257b85021a5fec5edf}{getreports}} (self, Literal\mbox{[}"{}pytest\+\_\+runtest\+\_\+logreport"{}\mbox{]} names)
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a5bfa612d18dfe54b3a34ae68e90a0205}{getreports}} (self, str\texorpdfstring{$\vert$}{|}Iterable\mbox{[}str\mbox{]} names=("{}pytest\+\_\+collectreport"{}, "{}pytest\+\_\+runtest\+\_\+logreport"{},))
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a5bfa612d18dfe54b3a34ae68e90a0205}{getreports}} (self, str\texorpdfstring{$\vert$}{|}Iterable\mbox{[}str\mbox{]} names=("{}pytest\+\_\+collectreport"{}, "{}pytest\+\_\+runtest\+\_\+logreport"{},))
+\item 
+\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a4d1ac2d627c1ccbf03ba5a74feaa90bb}{matchreport}} (self, str inamepart="{}"{}, str\texorpdfstring{$\vert$}{|}Iterable\mbox{[}str\mbox{]} names=("{}pytest\+\_\+runtest\+\_\+logreport"{}, "{}pytest\+\_\+collectreport"{},), str\texorpdfstring{$\vert$}{|}None when=None)
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a3708f6259f0e42dcfe77daa327bc847a}{getfailures}} (self, Literal\mbox{[}"{}pytest\+\_\+collectreport"{}\mbox{]} names)
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a48235b3f53a8d631d9e62d3acbd4a217}{getfailures}} (self, Literal\mbox{[}"{}pytest\+\_\+runtest\+\_\+logreport"{}\mbox{]} names)
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_adcc5a76324237e324b6110639fa63f2a}{getfailures}} (self, str\texorpdfstring{$\vert$}{|}Iterable\mbox{[}str\mbox{]} names=("{}pytest\+\_\+collectreport"{}, "{}pytest\+\_\+runtest\+\_\+logreport"{},))
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_adcc5a76324237e324b6110639fa63f2a}{getfailures}} (self, str\texorpdfstring{$\vert$}{|}Iterable\mbox{[}str\mbox{]} names=("{}pytest\+\_\+collectreport"{}, "{}pytest\+\_\+runtest\+\_\+logreport"{},))
+\item 
+Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_ad5baf6ed82605b510ce9064286515957}{getfailedcollections}} (self)
+\item 
+tuple\mbox{[} Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]}, Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]}, Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]},\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_ad5bf22d6b8c8d169f9de8a60fd2f7c50}{listoutcomes}} (self)
+\item 
+list\mbox{[}int\mbox{]} \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_afcf80389079f8426895461c41a7c90d3}{countoutcomes}} (self)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a8dc86b5697cc28e4ee009c5ad9795f82}{assertoutcome}} (self, int passed=0, int skipped=0, int failed=0)
+\item 
+None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_ace9cadc17e50ce92135ce95e9cd4840c}{clear}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a5a120ecf53edbc3ffe607bb4bc6238d4}{calls}} = \mbox{[}$\,$\mbox{]}
+\item 
+int\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a7d62df8d1b5cc24de04c7de088e706e0}{ret}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_ae9797b142628483c3fee7837925793b3}{\+\_\+pluginmanager}} = pluginmanager
+\item 
+\mbox{\hyperlink{class__pytest_1_1pytester_1_1_hook_recorder_a25d1a587eb64812a577376817f6644b8}{\+\_\+undo\+\_\+wrapping}} = pluginmanager.\+add\+\_\+hookcall\+\_\+monitoring(before, after)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Record all hooks called in a plugin manager.
+
+Hook recorders are created by :class:`Pytester`.
+
+This wraps all the hook calls in the plugin manager, recording each call
+before propagating the normal calls.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a2dda27f2482d5ea7f424028a1fc35f9b}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a2dda27f2482d5ea7f424028a1fc35f9b} 
+ None \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{class__pytest_1_1config_1_1_pytest_plugin_manager}{Pytest\+Plugin\+Manager}}}]{pluginmanager}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{\+\_\+ispytest}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a63736cf54ae1a355769ca50b76f08c21}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!assert\_contains@{assert\_contains}}
+\index{assert\_contains@{assert\_contains}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{assert\_contains()}{assert\_contains()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a63736cf54ae1a355769ca50b76f08c21} 
+ None \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+assert\+\_\+contains (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\mbox{[}tuple\mbox{[}str, str\mbox{]}\mbox{]}}]{entries}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a8dc86b5697cc28e4ee009c5ad9795f82}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!assertoutcome@{assertoutcome}}
+\index{assertoutcome@{assertoutcome}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{assertoutcome()}{assertoutcome()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a8dc86b5697cc28e4ee009c5ad9795f82} 
+ None \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+assertoutcome (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{passed}{ = {\ttfamily 0}, }\item[{int }]{skipped}{ = {\ttfamily 0}, }\item[{int }]{failed}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ace9cadc17e50ce92135ce95e9cd4840c}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!clear@{clear}}
+\index{clear@{clear}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_ace9cadc17e50ce92135ce95e9cd4840c} 
+ None \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_afcf80389079f8426895461c41a7c90d3}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!countoutcomes@{countoutcomes}}
+\index{countoutcomes@{countoutcomes}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{countoutcomes()}{countoutcomes()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_afcf80389079f8426895461c41a7c90d3} 
+ list\mbox{[}int\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+countoutcomes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_acfc4339e8dc86f902d38c85d33992428}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!finish\_recording@{finish\_recording}}
+\index{finish\_recording@{finish\_recording}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{finish\_recording()}{finish\_recording()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_acfc4339e8dc86f902d38c85d33992428} 
+ None \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+finish\+\_\+recording (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_aad0a60184658c4026bb0ef673fcf0e45}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getcall@{getcall}}
+\index{getcall@{getcall}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getcall()}{getcall()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_aad0a60184658c4026bb0ef673fcf0e45} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getcall (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ae251a7675b8f277ed06d59a08da2642a}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getcalls@{getcalls}}
+\index{getcalls@{getcalls}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getcalls()}{getcalls()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_ae251a7675b8f277ed06d59a08da2642a} 
+ list\mbox{[}\mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getcalls (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} Iterable\mbox{[}str\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get all recorded calls to hooks with the given names (or name).\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ad5baf6ed82605b510ce9064286515957}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getfailedcollections@{getfailedcollections}}
+\index{getfailedcollections@{getfailedcollections}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getfailedcollections()}{getfailedcollections()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_ad5baf6ed82605b510ce9064286515957} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getfailedcollections (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a3708f6259f0e42dcfe77daa327bc847a}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getfailures@{getfailures}}
+\index{getfailures@{getfailures}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getfailures()}{getfailures()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a3708f6259f0e42dcfe77daa327bc847a} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getfailures (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Literal\mbox{[}"{}pytest\+\_\+collectreport"{}\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a48235b3f53a8d631d9e62d3acbd4a217}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getfailures@{getfailures}}
+\index{getfailures@{getfailures}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getfailures()}{getfailures()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a48235b3f53a8d631d9e62d3acbd4a217} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getfailures (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Literal\mbox{[}"{}pytest\+\_\+runtest\+\_\+logreport"{}\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_adcc5a76324237e324b6110639fa63f2a}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getfailures@{getfailures}}
+\index{getfailures@{getfailures}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getfailures()}{getfailures()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_adcc5a76324237e324b6110639fa63f2a} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getfailures (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} Iterable\mbox{[}str\mbox{]} }]{names}{ = {\ttfamily ( ~~~~~~~~~~~~"{}pytest\+\_\+collectreport"{}, ~~~~~~~~~~~~"{}pytest\+\_\+runtest\+\_\+logreport"{}, ~~~~~~~~)}}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_adcc5a76324237e324b6110639fa63f2a}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getfailures@{getfailures}}
+\index{getfailures@{getfailures}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getfailures()}{getfailures()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_adcc5a76324237e324b6110639fa63f2a} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getfailures (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} Iterable\mbox{[}str\mbox{]} }]{names}{ = {\ttfamily ( ~~~~~~~~~~~~"{}pytest\+\_\+collectreport"{}, ~~~~~~~~~~~~"{}pytest\+\_\+runtest\+\_\+logreport"{}, ~~~~~~~~)}}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a199ab40398a2aacd3d8944fa3d1218a0}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getreports@{getreports}}
+\index{getreports@{getreports}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getreports()}{getreports()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a199ab40398a2aacd3d8944fa3d1218a0} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getreports (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Literal\mbox{[}"{}pytest\+\_\+collectreport"{}\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a0d75c78557d9ef257b85021a5fec5edf}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getreports@{getreports}}
+\index{getreports@{getreports}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getreports()}{getreports()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a0d75c78557d9ef257b85021a5fec5edf} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getreports (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Literal\mbox{[}"{}pytest\+\_\+runtest\+\_\+logreport"{}\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a5bfa612d18dfe54b3a34ae68e90a0205}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getreports@{getreports}}
+\index{getreports@{getreports}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getreports()}{getreports()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a5bfa612d18dfe54b3a34ae68e90a0205} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getreports (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} Iterable\mbox{[}str\mbox{]} }]{names}{ = {\ttfamily ( ~~~~~~~~~~~~"{}pytest\+\_\+collectreport"{}, ~~~~~~~~~~~~"{}pytest\+\_\+runtest\+\_\+logreport"{}, ~~~~~~~~)}}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a5bfa612d18dfe54b3a34ae68e90a0205}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!getreports@{getreports}}
+\index{getreports@{getreports}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{getreports()}{getreports()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a5bfa612d18dfe54b3a34ae68e90a0205} 
+ Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+getreports (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} Iterable\mbox{[}str\mbox{]} }]{names}{ = {\ttfamily ( ~~~~~~~~~~~~"{}pytest\+\_\+collectreport"{}, ~~~~~~~~~~~~"{}pytest\+\_\+runtest\+\_\+logreport"{}, ~~~~~~~~)}}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ad5bf22d6b8c8d169f9de8a60fd2f7c50}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!listoutcomes@{listoutcomes}}
+\index{listoutcomes@{listoutcomes}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{listoutcomes()}{listoutcomes()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_ad5bf22d6b8c8d169f9de8a60fd2f7c50} 
+ tuple\mbox{[}         Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]},         Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]},         Sequence\mbox{[}\mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}}\mbox{]},     \mbox{]} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+listoutcomes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a4d1ac2d627c1ccbf03ba5a74feaa90bb}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!matchreport@{matchreport}}
+\index{matchreport@{matchreport}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{matchreport()}{matchreport()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a4d1ac2d627c1ccbf03ba5a74feaa90bb} 
+ \mbox{\hyperlink{class__pytest_1_1reports_1_1_collect_report}{Collect\+Report}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1reports_1_1_test_report}{Test\+Report}} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+matchreport (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{inamepart}{ = {\ttfamily "{}"{}}, }\item[{str \texorpdfstring{$\vert$}{|} Iterable\mbox{[}str\mbox{]} }]{names}{ = {\ttfamily ( ~~~~~~~~~~~~"{}pytest\+\_\+runtest\+\_\+logreport"{}, ~~~~~~~~~~~~"{}pytest\+\_\+collectreport"{}, ~~~~~~~~)}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{when}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a testreport whose dotted import path matches.\end{DoxyVerb}
+ \Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a0cd953a54407b6bd0d2b46d5dcbddaac}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!popcall@{popcall}}
+\index{popcall@{popcall}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{popcall()}{popcall()}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a0cd953a54407b6bd0d2b46d5dcbddaac} 
+ \mbox{\hyperlink{class__pytest_1_1pytester_1_1_recorded_hook_call}{Recorded\+Hook\+Call}} \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+popcall (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_ae9797b142628483c3fee7837925793b3}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!\_pluginmanager@{\_pluginmanager}}
+\index{\_pluginmanager@{\_pluginmanager}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{\_pluginmanager}{\_pluginmanager}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_ae9797b142628483c3fee7837925793b3} 
+\+\_\+pytest.\+pytester.\+Hook\+Recorder.\+\_\+pluginmanager = pluginmanager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a25d1a587eb64812a577376817f6644b8}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!\_undo\_wrapping@{\_undo\_wrapping}}
+\index{\_undo\_wrapping@{\_undo\_wrapping}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{\_undo\_wrapping}{\_undo\_wrapping}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a25d1a587eb64812a577376817f6644b8} 
+\+\_\+pytest.\+pytester.\+Hook\+Recorder.\+\_\+undo\+\_\+wrapping = pluginmanager.\+add\+\_\+hookcall\+\_\+monitoring(before, after)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a5a120ecf53edbc3ffe607bb4bc6238d4}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!calls@{calls}}
+\index{calls@{calls}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{calls}{calls}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a5a120ecf53edbc3ffe607bb4bc6238d4} 
+\+\_\+pytest.\+pytester.\+Hook\+Recorder.\+calls = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{class__pytest_1_1pytester_1_1_hook_recorder_a7d62df8d1b5cc24de04c7de088e706e0}\index{\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}!ret@{ret}}
+\index{ret@{ret}!\_pytest.pytester.HookRecorder@{\_pytest.pytester.HookRecorder}}
+\doxysubsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily \label{class__pytest_1_1pytester_1_1_hook_recorder_a7d62df8d1b5cc24de04c7de088e706e0} 
+int \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{class__pytest_1_1config_1_1_exit_code}{Exit\+Code}} \texorpdfstring{$\vert$}{|} None \+\_\+pytest.\+pytester.\+Hook\+Recorder.\+ret = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/\+\_\+pytest/\mbox{\hyperlink{pytester_8py}{pytester.\+py}}\end{DoxyCompactItemize}

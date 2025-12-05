@@ -1,0 +1,203 @@
+\doxysection{django.\+utils.\+termcolors Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1termcolors}{}\label{namespacedjango_1_1utils_1_1termcolors}\index{django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a9aaa766fe302f9518431dc744774853d}{colorize}} (text="{}"{}, opts=(), \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_af16e041e1a09e59e1f8f27da04137c8e}{make\+\_\+style}} (opts=(), \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a2ced6690e9781c8b26a2d45ee2e1bf2d}{parse\+\_\+color\+\_\+setting}} (config\+\_\+string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6}{color\+\_\+names}} = ("{}black"{}, "{}red"{}, "{}green"{}, "{}yellow"{}, "{}blue"{}, "{}magenta"{}, "{}cyan"{}, "{}white"{})
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_aea540adbc773a610b01b25a03f1c2479}{foreground}} = \{\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6}{color\+\_\+names}}\mbox{[}x\mbox{]}\+: "{}3\%s"{} \% x for x in range(8)\}
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a9e6237a1150ce3ca47b96183c615ae35}{background}} = \{\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6}{color\+\_\+names}}\mbox{[}x\mbox{]}\+: "{}4\%s"{} \% x for x in range(8)\}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a0177a116ba6fcacdeb3a998c874d25be}{RESET}} = "{}0"{}
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a75dc2c0637ca4cbb84c2d833a2e3e327}{opt\+\_\+dict}}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a3d8386e6786e01051dfb8ef330fccbaf}{NOCOLOR\+\_\+\+PALETTE}} = "{}nocolor"{}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a58332cd3bd3d549ba1c077b7489bf924}{DARK\+\_\+\+PALETTE}} = "{}dark"{}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a56b991cfd57614d04afbea2551f26ac4}{LIGHT\+\_\+\+PALETTE}} = "{}light"{}
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_ae50762a6ab4ecb7b9c8f8cf2beb65a68}{PALETTES}}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a13b0afc1bb3d0b963295e55c90830bbb}{DEFAULT\+\_\+\+PALETTE}} = \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a58332cd3bd3d549ba1c077b7489bf924}{DARK\+\_\+\+PALETTE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}termcolors.py
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a9aaa766fe302f9518431dc744774853d}\index{django.utils.termcolors@{django.utils.termcolors}!colorize@{colorize}}
+\index{colorize@{colorize}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{colorize()}{colorize()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a9aaa766fe302f9518431dc744774853d} 
+django.\+utils.\+termcolors.\+colorize (\begin{DoxyParamCaption}\item[{}]{text}{ = {\ttfamily "{}"{}}, }\item[{}]{opts}{ = {\ttfamily ()}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return your text, enclosed in ANSI graphics codes.
+
+Depends on the keyword arguments 'fg' and 'bg', and the contents of
+the opts tuple/list.
+
+Return the RESET code if no parameters are given.
+
+Valid colors:
+    'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'
+
+Valid options:
+    'bold'
+    'underscore'
+    'blink'
+    'reverse'
+    'conceal'
+    'noreset' - string will not be auto-terminated with the RESET code
+
+Examples:
+    colorize('hello', fg='red', bg='blue', opts=('blink',))
+    colorize()
+    colorize('goodbye', opts=('underscore',))
+    print(colorize('first line', fg='red', opts=('noreset',)))
+    print('this should be red too')
+    print(colorize('and so should this'))
+    print('this should not be red')
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1termcolors_af16e041e1a09e59e1f8f27da04137c8e}\index{django.utils.termcolors@{django.utils.termcolors}!make\_style@{make\_style}}
+\index{make\_style@{make\_style}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{make\_style()}{make\_style()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_af16e041e1a09e59e1f8f27da04137c8e} 
+django.\+utils.\+termcolors.\+make\+\_\+style (\begin{DoxyParamCaption}\item[{}]{opts}{ = {\ttfamily ()}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a function with default parameters for colorize()
+
+Example:
+    bold_red = make_style(opts=('bold',), fg='red')
+    print(bold_red('hello'))
+    KEYWORD = make_style(fg='yellow')
+    COMMENT = make_style(fg='blue', opts=('bold',))
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1termcolors_a2ced6690e9781c8b26a2d45ee2e1bf2d}\index{django.utils.termcolors@{django.utils.termcolors}!parse\_color\_setting@{parse\_color\_setting}}
+\index{parse\_color\_setting@{parse\_color\_setting}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{parse\_color\_setting()}{parse\_color\_setting()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a2ced6690e9781c8b26a2d45ee2e1bf2d} 
+django.\+utils.\+termcolors.\+parse\+\_\+color\+\_\+setting (\begin{DoxyParamCaption}\item[{}]{config\+\_\+string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a DJANGO_COLORS environment variable to produce the system palette
+
+The general form of a palette definition is:
+
+    "palette;role=fg;role=fg/bg;role=fg,option,option;role=fg/bg,option,option"
+
+where:
+    palette is a named palette; one of 'light', 'dark', or 'nocolor'.
+    role is a named style used by Django
+    fg is a foreground color.
+    bg is a background color.
+    option is a display options.
+
+Specifying a named palette is the same as manually specifying the individual
+definitions for each role. Any individual definitions following the palette
+definition will augment the base palette definition.
+
+Valid roles:
+    'error', 'success', 'warning', 'notice', 'sql_field', 'sql_coltype',
+    'sql_keyword', 'sql_table', 'http_info', 'http_success',
+    'http_redirect', 'http_not_modified', 'http_bad_request',
+    'http_not_found', 'http_server_error', 'migrate_heading',
+    'migrate_label'
+
+Valid colors:
+    'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'
+
+Valid options:
+    'bold', 'underscore', 'blink', 'reverse', 'conceal', 'noreset'
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a9e6237a1150ce3ca47b96183c615ae35}\index{django.utils.termcolors@{django.utils.termcolors}!background@{background}}
+\index{background@{background}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a9e6237a1150ce3ca47b96183c615ae35} 
+dict django.\+utils.\+termcolors.\+background = \{\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6}{color\+\_\+names}}\mbox{[}x\mbox{]}\+: "{}4\%s"{} \% x for x in range(8)\}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6}\index{django.utils.termcolors@{django.utils.termcolors}!color\_names@{color\_names}}
+\index{color\_names@{color\_names}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{color\_names}{color\_names}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6} 
+tuple django.\+utils.\+termcolors.\+color\+\_\+names = ("{}black"{}, "{}red"{}, "{}green"{}, "{}yellow"{}, "{}blue"{}, "{}magenta"{}, "{}cyan"{}, "{}white"{})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a58332cd3bd3d549ba1c077b7489bf924}\index{django.utils.termcolors@{django.utils.termcolors}!DARK\_PALETTE@{DARK\_PALETTE}}
+\index{DARK\_PALETTE@{DARK\_PALETTE}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{DARK\_PALETTE}{DARK\_PALETTE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a58332cd3bd3d549ba1c077b7489bf924} 
+str django.\+utils.\+termcolors.\+DARK\+\_\+\+PALETTE = "{}dark"{}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a13b0afc1bb3d0b963295e55c90830bbb}\index{django.utils.termcolors@{django.utils.termcolors}!DEFAULT\_PALETTE@{DEFAULT\_PALETTE}}
+\index{DEFAULT\_PALETTE@{DEFAULT\_PALETTE}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PALETTE}{DEFAULT\_PALETTE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a13b0afc1bb3d0b963295e55c90830bbb} 
+str django.\+utils.\+termcolors.\+DEFAULT\+\_\+\+PALETTE = \mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a58332cd3bd3d549ba1c077b7489bf924}{DARK\+\_\+\+PALETTE}}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_aea540adbc773a610b01b25a03f1c2479}\index{django.utils.termcolors@{django.utils.termcolors}!foreground@{foreground}}
+\index{foreground@{foreground}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{foreground}{foreground}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_aea540adbc773a610b01b25a03f1c2479} 
+dict django.\+utils.\+termcolors.\+foreground = \{\mbox{\hyperlink{namespacedjango_1_1utils_1_1termcolors_a8024248266e2adc3fcc5eee871afb2a6}{color\+\_\+names}}\mbox{[}x\mbox{]}\+: "{}3\%s"{} \% x for x in range(8)\}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a56b991cfd57614d04afbea2551f26ac4}\index{django.utils.termcolors@{django.utils.termcolors}!LIGHT\_PALETTE@{LIGHT\_PALETTE}}
+\index{LIGHT\_PALETTE@{LIGHT\_PALETTE}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{LIGHT\_PALETTE}{LIGHT\_PALETTE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a56b991cfd57614d04afbea2551f26ac4} 
+str django.\+utils.\+termcolors.\+LIGHT\+\_\+\+PALETTE = "{}light"{}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a3d8386e6786e01051dfb8ef330fccbaf}\index{django.utils.termcolors@{django.utils.termcolors}!NOCOLOR\_PALETTE@{NOCOLOR\_PALETTE}}
+\index{NOCOLOR\_PALETTE@{NOCOLOR\_PALETTE}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{NOCOLOR\_PALETTE}{NOCOLOR\_PALETTE}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a3d8386e6786e01051dfb8ef330fccbaf} 
+str django.\+utils.\+termcolors.\+NOCOLOR\+\_\+\+PALETTE = "{}nocolor"{}}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a75dc2c0637ca4cbb84c2d833a2e3e327}\index{django.utils.termcolors@{django.utils.termcolors}!opt\_dict@{opt\_dict}}
+\index{opt\_dict@{opt\_dict}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{opt\_dict}{opt\_dict}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a75dc2c0637ca4cbb84c2d833a2e3e327} 
+dict django.\+utils.\+termcolors.\+opt\+\_\+dict}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}bold"{}}:\ \textcolor{stringliteral}{"{}1"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}underscore"{}}:\ \textcolor{stringliteral}{"{}4"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}blink"{}}:\ \textcolor{stringliteral}{"{}5"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}reverse"{}}:\ \textcolor{stringliteral}{"{}7"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}conceal"{}}:\ \textcolor{stringliteral}{"{}8"{}},}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_ae50762a6ab4ecb7b9c8f8cf2beb65a68}\index{django.utils.termcolors@{django.utils.termcolors}!PALETTES@{PALETTES}}
+\index{PALETTES@{PALETTES}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{PALETTES}{PALETTES}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_ae50762a6ab4ecb7b9c8f8cf2beb65a68} 
+dict django.\+utils.\+termcolors.\+PALETTES}
+
+\Hypertarget{namespacedjango_1_1utils_1_1termcolors_a0177a116ba6fcacdeb3a998c874d25be}\index{django.utils.termcolors@{django.utils.termcolors}!RESET@{RESET}}
+\index{RESET@{RESET}!django.utils.termcolors@{django.utils.termcolors}}
+\doxysubsubsection{\texorpdfstring{RESET}{RESET}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1termcolors_a0177a116ba6fcacdeb3a998c874d25be} 
+str django.\+utils.\+termcolors.\+RESET = "{}0"{}}
+

@@ -1,0 +1,109 @@
+\doxysection{django.\+contrib.\+humanize.\+templatetags.\+humanize.\+Natural\+Time\+Formatter Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter}{}\label{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter}\index{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_ab4a3de30bb0005b6e265f35a078b3e01}{string\+\_\+for}} (cls, value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_ac28f1f4941ee3e27bb8e0b37cfdde71d}{time\+\_\+strings}}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_a48088d7f8a87f2a4e35c322ab2774b77}{past\+\_\+substrings}}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_a7e2e3bc94f049cc237c44fff20b3ebd1}{future\+\_\+substrings}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_ab4a3de30bb0005b6e265f35a078b3e01}\index{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}!string\_for@{string\_for}}
+\index{string\_for@{string\_for}!django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}}
+\doxysubsubsection{\texorpdfstring{string\_for()}{string\_for()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_ab4a3de30bb0005b6e265f35a078b3e01} 
+django.\+contrib.\+humanize.\+templatetags.\+humanize.\+Natural\+Time\+Formatter.\+string\+\_\+for (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_a7e2e3bc94f049cc237c44fff20b3ebd1}\index{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}!future\_substrings@{future\_substrings}}
+\index{future\_substrings@{future\_substrings}!django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}}
+\doxysubsubsection{\texorpdfstring{future\_substrings}{future\_substrings}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_a7e2e3bc94f049cc237c44fff20b3ebd1} 
+dict django.\+contrib.\+humanize.\+templatetags.\+humanize.\+Natural\+Time\+Formatter.\+future\+\_\+substrings\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ fmt:\ off}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Translators:\ 'naturaltime-\/future'\ strings\ will\ be\ included\ in}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ '\%(delta)s\ from\ now'.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/future"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ year"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ years"{}},\ \textcolor{stringliteral}{"{}num"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ fmt:\ on}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/future"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ month"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ months"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}week"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/future"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ week"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ weeks"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/future"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ day"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ days"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/future"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ hour"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ hours"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/future"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ minute"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ minutes"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_a48088d7f8a87f2a4e35c322ab2774b77}\index{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}!past\_substrings@{past\_substrings}}
+\index{past\_substrings@{past\_substrings}!django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}}
+\doxysubsubsection{\texorpdfstring{past\_substrings}{past\_substrings}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_a48088d7f8a87f2a4e35c322ab2774b77} 
+dict django.\+contrib.\+humanize.\+templatetags.\+humanize.\+Natural\+Time\+Formatter.\+past\+\_\+substrings\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ fmt:\ off}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Translators:\ 'naturaltime-\/past'\ strings\ will\ be\ included\ in}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ '\%(delta)s\ ago'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/past"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ year"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ years"{}},\ \textcolor{stringliteral}{"{}num"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ fmt:on}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/past"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ month"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ months"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}week"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/past"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ week"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ weeks"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}}:\ npgettext\_lazy(\textcolor{stringliteral}{"{}naturaltime-\/past"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ day"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ days"{}},\ \textcolor{stringliteral}{"{}num"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/past"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ hour"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ hours"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}}:\ npgettext\_lazy(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}naturaltime-\/past"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ minute"{}},\ \textcolor{stringliteral}{"{}\%(num)d\ minutes"{}},\ \textcolor{stringliteral}{"{}num"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_ac28f1f4941ee3e27bb8e0b37cfdde71d}\index{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}!time\_strings@{time\_strings}}
+\index{time\_strings@{time\_strings}!django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter@{django.contrib.humanize.templatetags.humanize.NaturalTimeFormatter}}
+\doxysubsubsection{\texorpdfstring{time\_strings}{time\_strings}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1humanize_1_1templatetags_1_1humanize_1_1_natural_time_formatter_ac28f1f4941ee3e27bb8e0b37cfdde71d} 
+dict django.\+contrib.\+humanize.\+templatetags.\+humanize.\+Natural\+Time\+Formatter.\+time\+\_\+strings\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/humanize/templatetags/\mbox{\hyperlink{humanize_8py}{humanize.\+py}}\end{DoxyCompactItemize}

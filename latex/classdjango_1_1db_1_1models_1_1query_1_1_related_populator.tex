@@ -1,0 +1,147 @@
+\doxysection{django.\+db.\+models.\+query.\+Related\+Populator Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator}{}\label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a0386ac075b223f69f50693ae5d240e1f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, klass\+\_\+info, select, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a9b6b32776a2446c1528dad2cf7919afe}{db}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_aa3aa58889f7c8f4e15d87b4dc082e093}{populate}} (self, row, from\+\_\+obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a9b6b32776a2446c1528dad2cf7919afe}{db}} = db
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a448c941396f10e52206af67feef547b7}{cols\+\_\+start}} = select\+\_\+fields\mbox{[}0\mbox{]}
+\item 
+int \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_acaa38fa8a75eb18a477b1170ad669586}{cols\+\_\+end}} = select\+\_\+fields\mbox{[}-\/1\mbox{]} + 1
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_af299f568bedabbf27a0c2a12ba8d7e40}{init\+\_\+list}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a1760ce1b5e3c844d0eb36ef15fedb193}{reorder\+\_\+for\+\_\+init}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a2a27d33079cdc960adbc7ae359523a0d}{model\+\_\+cls}} = klass\+\_\+info\mbox{[}"{}model"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a96392bb2e91fae48e3dfc6b366b8b770}{pk\+\_\+idx}} = self.\+init\+\_\+list.\+index(self.\+model\+\_\+cls.\+\_\+meta.\+pk\+\_\+fields\mbox{[}0\mbox{]}.attname)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_ad705e169e2f23fa07172cee6d2029ec8}{related\+\_\+populators}} = \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query_aa8c8f87ea3ee226bb101700308190961}{get\+\_\+related\+\_\+populators}}(klass\+\_\+info, select, self.\+db)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_af078bb54e36bf9aa73ccc4c059102038}{local\+\_\+setter}} = klass\+\_\+info\mbox{[}"{}local\+\_\+setter"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a2bb3782308c1efb0ac343341ee9b2b83}{remote\+\_\+setter}} = klass\+\_\+info\mbox{[}"{}remote\+\_\+setter"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}RelatedPopulator is used for select_related() object instantiation.
+
+The idea is that each select_related() model will be populated by a
+different RelatedPopulator instance. The RelatedPopulator instances get
+klass_info and select (computed in SQLCompiler) plus the used db as
+input for initialization. That data is used to compute which columns
+to use, how to instantiate the model, and how to populate the links
+between the objects.
+
+The actual creation of the objects is done in populate() method. This
+method gets row and from_obj as input and populates the select_related()
+model instance.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a0386ac075b223f69f50693ae5d240e1f}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a0386ac075b223f69f50693ae5d240e1f} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{klass\+\_\+info}{, }\item[{}]{select}{, }\item[{}]{db}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_aa3aa58889f7c8f4e15d87b4dc082e093}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!populate@{populate}}
+\index{populate@{populate}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{populate()}{populate()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_aa3aa58889f7c8f4e15d87b4dc082e093} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+populate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{row}{, }\item[{}]{from\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_acaa38fa8a75eb18a477b1170ad669586}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!cols\_end@{cols\_end}}
+\index{cols\_end@{cols\_end}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{cols\_end}{cols\_end}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_acaa38fa8a75eb18a477b1170ad669586} 
+int django.\+db.\+models.\+query.\+Related\+Populator.\+cols\+\_\+end = select\+\_\+fields\mbox{[}-\/1\mbox{]} + 1}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a448c941396f10e52206af67feef547b7}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!cols\_start@{cols\_start}}
+\index{cols\_start@{cols\_start}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{cols\_start}{cols\_start}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a448c941396f10e52206af67feef547b7} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+cols\+\_\+start = select\+\_\+fields\mbox{[}0\mbox{]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a9b6b32776a2446c1528dad2cf7919afe}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!db@{db}}
+\index{db@{db}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a9b6b32776a2446c1528dad2cf7919afe} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+db = db}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_af299f568bedabbf27a0c2a12ba8d7e40}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!init\_list@{init\_list}}
+\index{init\_list@{init\_list}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{init\_list}{init\_list}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_af299f568bedabbf27a0c2a12ba8d7e40} 
+list django.\+db.\+models.\+query.\+Related\+Populator.\+init\+\_\+list}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ f[0].target.attname\ \textcolor{keywordflow}{for}\ f\ \textcolor{keywordflow}{in}\ select[self.cols\_start\ :\ self.cols\_end]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_af078bb54e36bf9aa73ccc4c059102038}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!local\_setter@{local\_setter}}
+\index{local\_setter@{local\_setter}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{local\_setter}{local\_setter}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_af078bb54e36bf9aa73ccc4c059102038} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+local\+\_\+setter = klass\+\_\+info\mbox{[}"{}local\+\_\+setter"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a2a27d33079cdc960adbc7ae359523a0d}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!model\_cls@{model\_cls}}
+\index{model\_cls@{model\_cls}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{model\_cls}{model\_cls}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a2a27d33079cdc960adbc7ae359523a0d} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+model\+\_\+cls = klass\+\_\+info\mbox{[}"{}model"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a96392bb2e91fae48e3dfc6b366b8b770}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!pk\_idx@{pk\_idx}}
+\index{pk\_idx@{pk\_idx}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{pk\_idx}{pk\_idx}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a96392bb2e91fae48e3dfc6b366b8b770} 
+list django.\+db.\+models.\+query.\+Related\+Populator.\+pk\+\_\+idx = self.\+init\+\_\+list.\+index(self.\+model\+\_\+cls.\+\_\+meta.\+pk\+\_\+fields\mbox{[}0\mbox{]}.attname)}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_ad705e169e2f23fa07172cee6d2029ec8}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!related\_populators@{related\_populators}}
+\index{related\_populators@{related\_populators}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{related\_populators}{related\_populators}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_ad705e169e2f23fa07172cee6d2029ec8} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+related\+\_\+populators = \mbox{\hyperlink{namespacedjango_1_1db_1_1models_1_1query_aa8c8f87ea3ee226bb101700308190961}{get\+\_\+related\+\_\+populators}}(klass\+\_\+info, select, self.\+db)}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a2bb3782308c1efb0ac343341ee9b2b83}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!remote\_setter@{remote\_setter}}
+\index{remote\_setter@{remote\_setter}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{remote\_setter}{remote\_setter}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a2bb3782308c1efb0ac343341ee9b2b83} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+remote\+\_\+setter = klass\+\_\+info\mbox{[}"{}remote\+\_\+setter"{}\mbox{]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a1760ce1b5e3c844d0eb36ef15fedb193}\index{django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}!reorder\_for\_init@{reorder\_for\_init}}
+\index{reorder\_for\_init@{reorder\_for\_init}!django.db.models.query.RelatedPopulator@{django.db.models.query.RelatedPopulator}}
+\doxysubsubsection{\texorpdfstring{reorder\_for\_init}{reorder\_for\_init}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1query_1_1_related_populator_a1760ce1b5e3c844d0eb36ef15fedb193} 
+django.\+db.\+models.\+query.\+Related\+Populator.\+reorder\+\_\+for\+\_\+init = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/\mbox{\hyperlink{query_8py}{query.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\doxysection{pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider}{}\label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+Inheritance diagram for pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.937063cm]{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a1ced0274f069a4a7e6b118c4510758db}{get\+\_\+resource\+\_\+filename}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_resource_manager}{Resource\+Manager}} manager, str resource\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1pkg__resources_a621b425a07c36c51872b96bb243542fa}{\+\_\+\+Resource\+Stream}} \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a560580d83cffd7e110fb408e548c64e9}{get\+\_\+resource\+\_\+stream}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_resource_manager}{Resource\+Manager}} manager, str resource\+\_\+name)
+\item 
+bytes \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_af0862f81c6cab26ad5acb56ba2de072a}{get\+\_\+resource\+\_\+string}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_resource_manager}{Resource\+Manager}} manager, str resource\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_aa981a06f12e20e56f3745e8a833d06ae}{has\+\_\+resource}} (self, str resource\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a752b8bf97edfd46c169cacef8d362acb}{resource\+\_\+isdir}} (self, str resource\+\_\+name)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_ac272deb62f21826efd5323d60a2a12ba}{resource\+\_\+listdir}} (self, str resource\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider}{pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider_a0fcc7089e0cadee8d60b5ef3e5f05736}{has\+\_\+metadata}} (self, str name)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider_a6aa14aa67b8beb2bf5248717b0fe6f17}{get\+\_\+metadata}} (self, str name)
+\item 
+Iterator\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider_ac119fd660fdf690f959e005c5ca04133}{get\+\_\+metadata\+\_\+lines}} (self, str name)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider_ab24f08c1482aa80c702aacb4b0c8529c}{metadata\+\_\+isdir}} (self, str name)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider_a1fbcc47bb9c65760ca6b677f4baf83ea}{metadata\+\_\+listdir}} (self, str name)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_i_metadata_provider_aebba9a6c7ff49ab8f583e88b4bf17e37}{run\+\_\+script}} (self, str script\+\_\+name, dict\mbox{[}str, Any\mbox{]} namespace)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An object that provides access to package resources\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a1ced0274f069a4a7e6b118c4510758db}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}!get\_resource\_filename@{get\_resource\_filename}}
+\index{get\_resource\_filename@{get\_resource\_filename}!pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+\doxysubsubsection{\texorpdfstring{get\_resource\_filename()}{get\_resource\_filename()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a1ced0274f069a4a7e6b118c4510758db} 
+ str pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider.\+get\+\_\+resource\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_resource_manager}{Resource\+Manager}}}]{manager}{, }\item[{str     }]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a true filesystem path for `resource_name`
+
+`manager` must be a ``ResourceManager``\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a560580d83cffd7e110fb408e548c64e9}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}!get\_resource\_stream@{get\_resource\_stream}}
+\index{get\_resource\_stream@{get\_resource\_stream}!pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+\doxysubsubsection{\texorpdfstring{get\_resource\_stream()}{get\_resource\_stream()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a560580d83cffd7e110fb408e548c64e9} 
+ \mbox{\hyperlink{namespacepip_1_1__vendor_1_1pkg__resources_a621b425a07c36c51872b96bb243542fa}{\+\_\+\+Resource\+Stream}} pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider.\+get\+\_\+resource\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_resource_manager}{Resource\+Manager}}}]{manager}{, }\item[{str     }]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a readable file-like object for `resource_name`
+
+`manager` must be a ``ResourceManager``\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_af0862f81c6cab26ad5acb56ba2de072a}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}!get\_resource\_string@{get\_resource\_string}}
+\index{get\_resource\_string@{get\_resource\_string}!pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+\doxysubsubsection{\texorpdfstring{get\_resource\_string()}{get\_resource\_string()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_af0862f81c6cab26ad5acb56ba2de072a} 
+ bytes pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider.\+get\+\_\+resource\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_resource_manager}{Resource\+Manager}}}]{manager}{, }\item[{str     }]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the contents of `resource_name` as :obj:`bytes`
+
+`manager` must be a ``ResourceManager``\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_aa981a06f12e20e56f3745e8a833d06ae}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}!has\_resource@{has\_resource}}
+\index{has\_resource@{has\_resource}!pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+\doxysubsubsection{\texorpdfstring{has\_resource()}{has\_resource()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_aa981a06f12e20e56f3745e8a833d06ae} 
+ bool pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider.\+has\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does the package contain the named resource?\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a752b8bf97edfd46c169cacef8d362acb}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}!resource\_isdir@{resource\_isdir}}
+\index{resource\_isdir@{resource\_isdir}!pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+\doxysubsubsection{\texorpdfstring{resource\_isdir()}{resource\_isdir()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_a752b8bf97edfd46c169cacef8d362acb} 
+ bool pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider.\+resource\+\_\+isdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is the named resource a directory?  (like ``os.path.isdir()``)\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_ac272deb62f21826efd5323d60a2a12ba}\index{pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}!resource\_listdir@{resource\_listdir}}
+\index{resource\_listdir@{resource\_listdir}!pip.\_vendor.pkg\_resources.IResourceProvider@{pip.\_vendor.pkg\_resources.IResourceProvider}}
+\doxysubsubsection{\texorpdfstring{resource\_listdir()}{resource\_listdir()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pkg__resources_1_1_i_resource_provider_ac272deb62f21826efd5323d60a2a12ba} 
+ list\mbox{[}str\mbox{]} pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IResource\+Provider.\+resource\+\_\+listdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of resource names in the directory (like ``os.listdir()``)\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/pip/\+\_\+vendor/pkg\+\_\+resources/\mbox{\hyperlink{feira__venv_2_lib_2site-packages_2pip_2__vendor_2pkg__resources_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

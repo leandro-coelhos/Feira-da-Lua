@@ -1,0 +1,57 @@
+\doxysection{django.\+db.\+backends.\+sqlite3.\+introspection Namespace Reference}
+\hypertarget{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection}{}\label{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection}\index{django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_1_1_database_introspection}{Database\+Introspection}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_1_1_flexible_field_lookup_dict}{Flexible\+Field\+Lookup\+Dict}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a83e807ba65a17624a249fbe6756e3932}{get\+\_\+field\+\_\+size}} (name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a7535ad9adbd6c163ef9573f9b50853fb}{Field\+Info}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a38a5ffa1fe116222f73ba11aa10a85c3}{field\+\_\+size\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}s\texorpdfstring{$\ast$}{*}(?\+:var)?char\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(\textbackslash{}d+)\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{})\textbackslash{}s\texorpdfstring{$\ast$}{*}\$"{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a83e807ba65a17624a249fbe6756e3932}\index{django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}!get\_field\_size@{get\_field\_size}}
+\index{get\_field\_size@{get\_field\_size}!django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}}
+\doxysubsubsection{\texorpdfstring{get\_field\_size()}{get\_field\_size()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a83e807ba65a17624a249fbe6756e3932} 
+django.\+db.\+backends.\+sqlite3.\+introspection.\+get\+\_\+field\+\_\+size (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract the size number from a "varchar(11)" type name\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a38a5ffa1fe116222f73ba11aa10a85c3}\index{django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}!field\_size\_re@{field\_size\_re}}
+\index{field\_size\_re@{field\_size\_re}!django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}}
+\doxysubsubsection{\texorpdfstring{field\_size\_re}{field\_size\_re}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a38a5ffa1fe116222f73ba11aa10a85c3} 
+django.\+db.\+backends.\+sqlite3.\+introspection.\+field\+\_\+size\+\_\+re = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}s\texorpdfstring{$\ast$}{*}(?\+:var)?char\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}(\textbackslash{}s\texorpdfstring{$\ast$}{*}(\textbackslash{}d+)\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{})\textbackslash{}s\texorpdfstring{$\ast$}{*}\$"{})}
+
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a7535ad9adbd6c163ef9573f9b50853fb}\index{django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}!FieldInfo@{FieldInfo}}
+\index{FieldInfo@{FieldInfo}!django.db.backends.sqlite3.introspection@{django.db.backends.sqlite3.introspection}}
+\doxysubsubsection{\texorpdfstring{FieldInfo}{FieldInfo}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_a7535ad9adbd6c163ef9573f9b50853fb} 
+django.\+db.\+backends.\+sqlite3.\+introspection.\+Field\+Info}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ namedtuple(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}FieldInfo"{}},\ BaseFieldInfo.\_fields\ +\ (\textcolor{stringliteral}{"{}pk"{}},\ \textcolor{stringliteral}{"{}has\_json\_constraint"{}})}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

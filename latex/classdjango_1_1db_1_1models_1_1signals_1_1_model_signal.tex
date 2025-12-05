@@ -1,0 +1,156 @@
+\doxysection{django.\+db.\+models.\+signals.\+Model\+Signal Class Reference}
+\hypertarget{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal}{}\label{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal}\index{django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}}
+Inheritance diagram for django.\+db.\+models.\+signals.\+Model\+Signal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a9f30fd9b11c3da129cef5ed15df81e6e}{connect}} (self, receiver, sender=None, weak=True, dispatch\+\_\+uid=None, apps=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a70cf1adced46e5af0bb815f9c41fa461}{disconnect}} (self, receiver=None, sender=None, dispatch\+\_\+uid=None, apps=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{django.\+dispatch.\+dispatcher.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a731f76bac4c0143a25c08e9174e5c2ed}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_ad181bd2eb061a79b02183f0ad046db6c}{use\+\_\+caching}}=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_afde14ddc5aa8fb1f32ead37a00cc872e}{has\+\_\+listeners}} (self, sender=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a065269c5c5f8d45e7b902dda3245bdbb}{send}} (self, sender, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}named)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a372184cb683f90ddf2babc226da48f18}{asend}} (self, sender, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}named)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a5f3994372f454e9b1eae29e8aad5adf6}{send\+\_\+robust}} (self, sender, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}named)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a83623e41a218fa698b2ba5a71cc9adbe}{asend\+\_\+robust}} (self, sender, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}named)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a056baf4c0ad79e5bb67e8b3c53ce1fc8}{\+\_\+lazy\+\_\+method}} (self, method, apps, receiver, sender, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{django.\+dispatch.\+dispatcher.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a78306f7ccf18b065c209447298ba6b96}{\+\_\+log\+\_\+robust\+\_\+failure}} (self, \mbox{\hyperlink{namespacedjango_1_1dispatch_1_1dispatcher_aceaa52f347dc367ebaed8c617e782742}{receiver}}, err)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a3629023ea2564d6494bfe2bb84404f9d}{\+\_\+clear\+\_\+dead\+\_\+receivers}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a57712a4f613b82e8a1b19ae6443d604e}{\+\_\+live\+\_\+receivers}} (self, sender)
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_ab4113834829bbcf8bc352c754e64ab08}{\+\_\+remove\+\_\+receiver}} (self, \mbox{\hyperlink{namespacedjango_1_1dispatch_1_1dispatcher_aceaa52f347dc367ebaed8c617e782742}{receiver}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{django.\+dispatch.\+dispatcher.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a9ef7fff70b476c5f2471b328f0a15902}{receivers}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_aeabc4f2254f8bca93cce95a8f21f52dc}{lock}} = threading.\+Lock()
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_ad181bd2eb061a79b02183f0ad046db6c}{use\+\_\+caching}} = use\+\_\+caching
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a428362c380c07294d5e34b2d99ba6fe9}{sender\+\_\+receivers\+\_\+cache}} = weakref.\+Weak\+Key\+Dictionary() if \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_ad181bd2eb061a79b02183f0ad046db6c}{use\+\_\+caching}} else \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal}{django.\+dispatch.\+dispatcher.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_a9b231466628dbbdbc73d5c14d8e3a005}{\+\_\+dead\+\_\+receivers}} = False
+\item 
+\mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_acb3505587b5d611ebc9682d16e87653e}{\+\_\+remove\+\_\+receiver}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Signal subclass that allows the sender to be lazily specified as a string
+of the `app_label.ModelName` form.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a056baf4c0ad79e5bb67e8b3c53ce1fc8}\index{django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}!\_lazy\_method@{\_lazy\_method}}
+\index{\_lazy\_method@{\_lazy\_method}!django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}}
+\doxysubsubsection{\texorpdfstring{\_lazy\_method()}{\_lazy\_method()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a056baf4c0ad79e5bb67e8b3c53ce1fc8} 
+django.\+db.\+models.\+signals.\+Model\+Signal.\+\_\+lazy\+\_\+method (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{method}{, }\item[{}]{apps}{, }\item[{}]{receiver}{, }\item[{}]{sender}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a9f30fd9b11c3da129cef5ed15df81e6e}\index{django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}!connect@{connect}}
+\index{connect@{connect}!django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a9f30fd9b11c3da129cef5ed15df81e6e} 
+django.\+db.\+models.\+signals.\+Model\+Signal.\+connect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{receiver}{, }\item[{}]{sender}{ = {\ttfamily None}, }\item[{}]{weak}{ = {\ttfamily True}, }\item[{}]{dispatch\+\_\+uid}{ = {\ttfamily None}, }\item[{}]{apps}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connect receiver to sender for signal.
+
+Arguments:
+
+    receiver
+        A function or an instance method which is to receive signals.
+        Receivers must be hashable objects. Receivers can be
+        asynchronous.
+
+        If weak is True, then receiver must be weak referenceable.
+
+        Receivers must be able to accept keyword arguments.
+
+        If a receiver is connected with a dispatch_uid argument, it
+        will not be added if another receiver was already connected
+        with that dispatch_uid.
+
+    sender
+        The sender to which the receiver should respond. Must either be
+        a Python object, or None to receive events from any sender.
+
+    weak
+        Whether to use weak references to the receiver. By default, the
+        module will attempt to use weak references to the receiver
+        objects. If this parameter is false, then strong references will
+        be used.
+
+    dispatch_uid
+        An identifier used to uniquely identify a particular instance of
+        a receiver. This will usually be a string, though it may be
+        anything hashable.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_ad0c09a102ff82630078b9fd5af4e0d0d}{django.\+dispatch.\+dispatcher.\+Signal}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a70cf1adced46e5af0bb815f9c41fa461}\index{django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!django.db.models.signals.ModelSignal@{django.db.models.signals.ModelSignal}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{classdjango_1_1db_1_1models_1_1signals_1_1_model_signal_a70cf1adced46e5af0bb815f9c41fa461} 
+django.\+db.\+models.\+signals.\+Model\+Signal.\+disconnect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{receiver}{ = {\ttfamily None}, }\item[{}]{sender}{ = {\ttfamily None}, }\item[{}]{dispatch\+\_\+uid}{ = {\ttfamily None}, }\item[{}]{apps}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disconnect receiver from sender for signal.
+
+If weak references are used, disconnect need not be called. The receiver
+will be removed from dispatch automatically.
+
+Arguments:
+
+    receiver
+        The registered receiver to disconnect. May be none if
+        dispatch_uid is specified.
+
+    sender
+        The registered sender to disconnect
+
+    dispatch_uid
+        the unique identifier of the receiver to disconnect
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdjango_1_1dispatch_1_1dispatcher_1_1_signal_ad7a6bdf68b3bbd0d7ea312af5b0f6e8b}{django.\+dispatch.\+dispatcher.\+Signal}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/db/models/\mbox{\hyperlink{db_2models_2signals_8py}{signals.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+\doxysection{django.\+utils.\+numberformat Namespace Reference}
+\hypertarget{namespacedjango_1_1utils_1_1numberformat}{}\label{namespacedjango_1_1utils_1_1numberformat}\index{django.utils.numberformat@{django.utils.numberformat}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1numberformat_a0ae280b49d8ed0660203f25015afdda8}{format}} (number, decimal\+\_\+sep, decimal\+\_\+pos=None, grouping=0, thousand\+\_\+sep="{}"{}, force\+\_\+grouping=False, use\+\_\+l10n=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedjango_1_1utils_1_1numberformat_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedjango_1_1utils_1_1numberformat_a0ae280b49d8ed0660203f25015afdda8}\index{django.utils.numberformat@{django.utils.numberformat}!format@{format}}
+\index{format@{format}!django.utils.numberformat@{django.utils.numberformat}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{namespacedjango_1_1utils_1_1numberformat_a0ae280b49d8ed0660203f25015afdda8} 
+django.\+utils.\+numberformat.\+format (\begin{DoxyParamCaption}\item[{}]{number}{, }\item[{}]{decimal\+\_\+sep}{, }\item[{}]{decimal\+\_\+pos}{ = {\ttfamily None}, }\item[{}]{grouping}{ = {\ttfamily 0}, }\item[{}]{thousand\+\_\+sep}{ = {\ttfamily "{}"{}}, }\item[{}]{force\+\_\+grouping}{ = {\ttfamily False}, }\item[{}]{use\+\_\+l10n}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a number (as a number or string), and return it as a string,
+using formats defined as arguments:
+
+* decimal_sep: Decimal separator symbol (for example ".")
+* decimal_pos: Number of decimal positions
+* grouping: Number of digits in every group limited by thousand separator.
+    For non-uniform digit grouping, it can be a sequence with the number
+    of digit group sizes following the format used by the Python locale
+    module in locale.localeconv() LC_NUMERIC grouping (e.g. (3, 2, 0)).
+* thousand_sep: Thousand separator symbol (for example ",")
+\end{DoxyVerb}
+ 

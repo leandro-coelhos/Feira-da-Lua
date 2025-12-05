@@ -1,0 +1,164 @@
+\doxysection{django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin Class Reference}
+\hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin}{}\label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+Inheritance diagram for django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.632653cm]{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a5c15b57976f62f7fe2ed75e070b1d9d8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a68360a13f58155b93c1f7d401ab7e90d}{field}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae6f52b3a63e48f09fb809ce723fba3d4}{admin\+\_\+site}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a2f4ff39df68259605bb3dfc9be580cc0}{attrs}}=None, \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a9cd492a6cdfe0a20d2e9970fee9f0e27}{choices}}=(), using=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_aaa0212a9a7a33d8f7824e4afc9378dbc}{get\+\_\+url}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_aed3fed01656a579ee8ca0c435ac2d6f2}{build\+\_\+attrs}} (self, base\+\_\+attrs, extra\+\_\+attrs=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a638ff1cf500030285676b090c8eee8f9}{optgroups}} (self, name, value, attr=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae270cc07d5bb5cce3aae219c2153cb81}{media}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a68360a13f58155b93c1f7d401ab7e90d}{field}} = field
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae6f52b3a63e48f09fb809ce723fba3d4}{admin\+\_\+site}} = admin\+\_\+site
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a105d8d227ce72fef5e77bc73327c4b1f}{db}} = using
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a9cd492a6cdfe0a20d2e9970fee9f0e27}{choices}} = choices
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a2f4ff39df68259605bb3dfc9be580cc0}{attrs}} = \{\} if attrs is None else attrs.\+copy()
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a72bac4a4e863f3e09136e56dc6a0f86a}{i18n\+\_\+name}} = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1widgets_a0c831a620a4bbeccfdc044c979f369af}{get\+\_\+select2\+\_\+language}}()
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ac41bbe4a58bbdec6dde18c1d2f604e10}{is\+\_\+required}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a6d8fd1a4675c5825a1c539b39106edfb}{allow\+\_\+multiple\+\_\+selected}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a201f7c2c106de654cff8d3f75965b5ec}{url\+\_\+name}} = "{}\%s\+:autocomplete"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Select widget mixin that loads options from AutocompleteJsonView via AJAX.
+
+Renders the necessary data attributes for select2 and adds the static form
+media.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a5c15b57976f62f7fe2ed75e070b1d9d8}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a5c15b57976f62f7fe2ed75e070b1d9d8} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{field}{, }\item[{}]{admin\+\_\+site}{, }\item[{}]{attrs}{ = {\ttfamily None}, }\item[{}]{choices}{ = {\ttfamily ()}, }\item[{}]{using}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_aed3fed01656a579ee8ca0c435ac2d6f2}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!build\_attrs@{build\_attrs}}
+\index{build\_attrs@{build\_attrs}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{build\_attrs()}{build\_attrs()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_aed3fed01656a579ee8ca0c435ac2d6f2} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+build\+\_\+attrs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{base\+\_\+attrs}{, }\item[{}]{extra\+\_\+attrs}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set select2's AJAX attributes.
+
+Attributes can be set using the html5 data attribute.
+Nested attributes require a double dash as per
+https://select2.org/configuration/data-attributes#nested-subkey-options
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_aaa0212a9a7a33d8f7824e4afc9378dbc}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!get\_url@{get\_url}}
+\index{get\_url@{get\_url}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{get\_url()}{get\_url()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_aaa0212a9a7a33d8f7824e4afc9378dbc} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+get\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae270cc07d5bb5cce3aae219c2153cb81}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!media@{media}}
+\index{media@{media}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{media()}{media()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae270cc07d5bb5cce3aae219c2153cb81} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+media (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a638ff1cf500030285676b090c8eee8f9}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!optgroups@{optgroups}}
+\index{optgroups@{optgroups}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{optgroups()}{optgroups()}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a638ff1cf500030285676b090c8eee8f9} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+optgroups (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{value}{, }\item[{}]{attr}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return selected options based on the ModelChoiceIterator.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae6f52b3a63e48f09fb809ce723fba3d4}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!admin\_site@{admin\_site}}
+\index{admin\_site@{admin\_site}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{admin\_site}{admin\_site}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ae6f52b3a63e48f09fb809ce723fba3d4} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+admin\+\_\+site = admin\+\_\+site}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a6d8fd1a4675c5825a1c539b39106edfb}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!allow\_multiple\_selected@{allow\_multiple\_selected}}
+\index{allow\_multiple\_selected@{allow\_multiple\_selected}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{allow\_multiple\_selected}{allow\_multiple\_selected}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a6d8fd1a4675c5825a1c539b39106edfb} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+allow\+\_\+multiple\+\_\+selected}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a2f4ff39df68259605bb3dfc9be580cc0}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!attrs@{attrs}}
+\index{attrs@{attrs}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{attrs}{attrs}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a2f4ff39df68259605bb3dfc9be580cc0} 
+dict django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+attrs = \{\} if attrs is None else attrs.\+copy()}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a9cd492a6cdfe0a20d2e9970fee9f0e27}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!choices@{choices}}
+\index{choices@{choices}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{choices}{choices}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a9cd492a6cdfe0a20d2e9970fee9f0e27} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+choices = choices}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a105d8d227ce72fef5e77bc73327c4b1f}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!db@{db}}
+\index{db@{db}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a105d8d227ce72fef5e77bc73327c4b1f} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+db = using}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a68360a13f58155b93c1f7d401ab7e90d}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!field@{field}}
+\index{field@{field}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a68360a13f58155b93c1f7d401ab7e90d} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+field = field}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a72bac4a4e863f3e09136e56dc6a0f86a}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!i18n\_name@{i18n\_name}}
+\index{i18n\_name@{i18n\_name}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{i18n\_name}{i18n\_name}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a72bac4a4e863f3e09136e56dc6a0f86a} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+i18n\+\_\+name = \mbox{\hyperlink{namespacedjango_1_1contrib_1_1admin_1_1widgets_a0c831a620a4bbeccfdc044c979f369af}{get\+\_\+select2\+\_\+language}}()}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ac41bbe4a58bbdec6dde18c1d2f604e10}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!is\_required@{is\_required}}
+\index{is\_required@{is\_required}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{is\_required}{is\_required}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_ac41bbe4a58bbdec6dde18c1d2f604e10} 
+django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+is\+\_\+required}
+
+\Hypertarget{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a201f7c2c106de654cff8d3f75965b5ec}\index{django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}!url\_name@{url\_name}}
+\index{url\_name@{url\_name}!django.contrib.admin.widgets.AutocompleteMixin@{django.contrib.admin.widgets.AutocompleteMixin}}
+\doxysubsubsection{\texorpdfstring{url\_name}{url\_name}}
+{\footnotesize\ttfamily \label{classdjango_1_1contrib_1_1admin_1_1widgets_1_1_autocomplete_mixin_a201f7c2c106de654cff8d3f75965b5ec} 
+str django.\+contrib.\+admin.\+widgets.\+Autocomplete\+Mixin.\+url\+\_\+name = "{}\%s\+:autocomplete"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+feira\+\_\+venv/\+Lib/site-\/packages/django/contrib/admin/\mbox{\hyperlink{contrib_2admin_2widgets_8py}{widgets.\+py}}\end{DoxyCompactItemize}
